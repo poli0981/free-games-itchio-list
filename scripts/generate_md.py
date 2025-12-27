@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 import os
 
-with open('game_info.json', 'r', encoding='utf-8') as f:
+with open('../game_info.json', 'r', encoding='utf-8') as f:
     games = json.load(f)
 
 # Group by primary genre
