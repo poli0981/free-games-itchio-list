@@ -24,9 +24,9 @@ for genre, game_list in grouped.items():
         chunk = game_list[start:start + chunk_size]
         genre_filename = genre.lower().replace(' ', '_').replace('/', '_')  # tránh lỗi nếu genre có /
         if chunk_idx > 0:
-            filename = f"../lists/{genre_filename}_part{chunk_idx + 1}.md"
+            filename = f"lists/{genre_filename}_part{chunk_idx + 1}.md"
         else:
-            filename = f"../lists/{genre_filename}.md"
+            filename = f"lists/{genre_filename}.md"
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(f"# {genre} Games ({len(chunk)} games)\n\n")
             f.write("| No | Thumb | Name | Dev | Short Desc | Safe | Notes | NSFW |\n")
