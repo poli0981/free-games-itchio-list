@@ -1,4 +1,41 @@
-name: update.yml
+name: Update JSON file game information
 on:
+  schedule:
+    - cron: '0 3 * * *'  # Runs daily at 03:00 UTC
+  workflow_dispatch:
 
 jobs:
+  update-game-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.14
+
+      - name: Install dependencies
+        run:
+          pip install BeautifulSoup4 requests
+
+      - name: Update game information
+        run:
+          python scripts/update_info.py
+
+      - name: Check file
+        run: |
+          ls -la
+          ls -la scripts/
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "poli0981"
+          git config --global user.email "127664709+poli0981@users.noreply.github.com"
+          git add scripts/game_info.json
+          git diff --staged --quiet && echo "No changes – skip commit" || (git commit -m "JSON updated [$(date +'%Y-%m-%d')]" && git push)
+        env:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
