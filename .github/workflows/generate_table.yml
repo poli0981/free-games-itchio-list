@@ -1,0 +1,4 @@
+name: generate_table.yml
+on:
+
+jobs:
