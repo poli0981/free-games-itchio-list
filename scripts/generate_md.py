@@ -33,7 +33,7 @@ for genre, game_list in grouped.items():
             f.write("|----|-------|------|-----|------------|------|------|-------|------|\n")
             for i, g in enumerate(chunk, start=1):
                 thumb = f"![thumb]({g['thumbnail']})" if g['thumbnail'] else ""
-                name = f"[{g['name']}])"
+                name = g['name']
                 url = g['url']
                 short_desc = g['description']
                 f.write(
