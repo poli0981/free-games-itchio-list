@@ -1,6 +1,6 @@
 import json
-from collections import defaultdict
 import os
+from collections import defaultdict
 
 with open('scripts/game_info.json', 'r', encoding='utf-8') as f:
     games = json.load(f)
@@ -29,12 +29,15 @@ for genre, game_list in grouped.items():
             filename = f"lists/{genre_filename}.md"
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(f"# {genre} Games ({len(chunk)} games)\n\n")
-            f.write("| No | Thumb | Name | Dev | Short Desc | Safe | Notes | NSFW |\n")
-            f.write("|----|-------|------|-----|------------|------|-------|------|\n")
+            f.write("| No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW |\n")
+            f.write("|----|-------|------|-----|------------|------|------|-------|------|\n")
             for i, g in enumerate(chunk, start=1):
                 thumb = f"![thumb]({g['thumbnail']})" if g['thumbnail'] else ""
-                name_link = f"[{g['name']}]({g['url']})"
+                name = f"[{g['name']}])"
+                url = g['url']
                 short_desc = g['description']
                 f.write(
-                    f"| {i} | {thumb} | {name_link} | {g['dev']} | {short_desc} | {g['safe_virus']} | {g['notes']} | {g['nsfw']} |\n")
+                    f"| {i} | {thumb} | {name} | {g['dev']} | {short_desc} | "
+                    f"[Link]({g['url']}) | {g['safe_virus']} | {g['notes']} |"
+                    f" {g['nsfw']} |\n")
             f.write("\n")
