@@ -1,0 +1,31 @@
+﻿name: 🎮 Add New Games
+description: Suggest new free itch.io games to add to the list (max 50 links per issue pls)
+title: "[Add Games] "
+labels: ["contribution", "games"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks legend! This repo lives on community additions because I'm too lazy to hunt every gem.
+        Paste links below — one per line, max 50 please (so the daily action doesn't die).
+        Only free-to-play games on itch.io, no paid or demo-only stuff.
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Game Links (itch.io only)
+      description: |
+        Format: one URL per line.
+        Example:
+        https://developer.itch.io/game-name
+        https://another.itch.io/cool-game
+      placeholder: |
+        Paste your links here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Optional notes
+      description: Why these games rock? Any NSFW/safe concerns? Personal rating?

@@ -1,0 +1,33 @@
+﻿name: 💡 Feature Request / Code Improvement
+description: Suggest new features, script fixes, or ways to make this repo less mediocre
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Yo! My code is "kinda works" level at best, so suggestions are super welcome.
+        Grok helps me, but real humans might have better ideas :D
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What feature or improvement?
+      description: |
+        Examples: better scraping, auto rating, search function, prettier tables, etc.
+        Bonus points if you include code snippet or pseudocode!
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this would be cool?
+      description: How it helps users or makes my life easier
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Wanna help?
+      options:
+        - label: I'm willing to submit a PR for this (legend!)

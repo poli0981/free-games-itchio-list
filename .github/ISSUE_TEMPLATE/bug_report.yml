@@ -1,0 +1,41 @@
+﻿name: 🐛 Bug Report
+description: Report wrong info, broken links, bad flags, or other issues in the list
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping fix this mess! I'm just an unemployed noob dev, so bugs are basically guaranteed :D
+        Pick the issues below (you can select multiple) and give details/links.
+
+  - type: checkboxes
+    id: bug_types
+    attributes:
+      label: What kind of bug(s)?
+      description: Check all that apply
+      options:
+        - label: Broken link (game page doesn't open or 404)
+        - label: Wrong/missing thumbnail
+        - label: Wrong NSFW flag (should be Yes/No but isn't)
+        - label: Wrong Safe? flag (virus concerns or info)
+        - label: Wrong genre classification
+        - label: Wrong game name or dev name
+        - label: Description outdated or wrong
+        - label: Other (describe below)
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details & Links
+      description: |
+        Give the game URL(s), screenshot if possible, and explain what's wrong.
+        The more specific, the faster I (or Grok) can fix it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, suggestions, or just vibes?

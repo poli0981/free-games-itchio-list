@@ -1,0 +1,19 @@
+﻿name: ❓ Question / Feedback / Other
+description: Anything else — questions, feedback, memes, or just saying hi :D
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Not a bug or new game? Drop it here!
+        I'm introvert max level with zero social skills, but I'll try to reply :D
+        (Or Grok will pretend to be me)
+
+  - type: textarea
+    id: content
+    attributes:
+      label: What's up?
+      description: Ask away, give feedback, share your own list, or roast my code
+    validations:
+      required: true
