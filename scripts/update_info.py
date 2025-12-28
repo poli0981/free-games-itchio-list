@@ -52,13 +52,13 @@ def scrape_game_info(url):
         else:
             description = "No description"
 
-        # NSFW detect: tags + warning div
+        # NSFW detect
         nsfw_keywords = ['adult', 'nsfw', 'erotic', 'hentai', 'porn', 'mature']
         has_nsfw_tag = any(kw in tags.lower() for kw in nsfw_keywords)
         has_warning = soup.find('div', class_=['view_game_warning', 'mature_content_notice'])
         nsfw = "Yes" if has_nsfw_tag or has_warning else "No"
 
-        # Thumbnail: og:image ưu tiên (cover đẹp), fallback screenshot đầu
+        # Thumbnail
         thumb_meta = soup.find('meta', property='og:image')
         thumbnail = thumb_meta['content'] if thumb_meta else ""
         if not thumbnail:
@@ -84,7 +84,7 @@ def scrape_game_info(url):
         return None
 
 
-# Main flow (giữ nguyên)
+# Main flow
 if os.path.exists('temp_link.json'):
     with open('temp_link.json', 'r', encoding='utf-8') as f:
         new_links = json.load(f)

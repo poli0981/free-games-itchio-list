@@ -22,7 +22,7 @@ for genre, game_list in grouped.items():
     chunk_size = 300
     for chunk_idx, start in enumerate(range(0, len(game_list), chunk_size)):
         chunk = game_list[start:start + chunk_size]
-        genre_filename = genre.lower().replace(' ', '_').replace('/', '_')  # tránh lỗi nếu genre có /
+        genre_filename = genre.lower().replace(' ', '_').replace('/', '_')
         if chunk_idx > 0:
             filename = f"lists/{genre_filename}_part{chunk_idx + 1}.md"
         else:
