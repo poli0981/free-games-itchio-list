@@ -1,0 +1,37 @@
+name: 💬 Feedback
+description: General feedback about the repo/docs
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Roast me, praise me, or complain — I'm introvert but I'll read :D
+
+  - type: checkboxes
+    id: reasons
+    attributes:
+      label: What's the feedback about? (can check multiple)
+      options:
+        - label: EULA/ToS too strict/annoying
+        - label: Repo concept wrong/bad
+        - label: Anti-AI vibes (but Grok built half of it :v)
+        - label: Delete the repo pls
+        - label: Other (describe below)
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Full feedback/details
+      description: Be honest — my self-loathing can handle it
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      options:
+        - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
+    validations:
+      required: true

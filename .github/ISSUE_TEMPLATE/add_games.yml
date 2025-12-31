@@ -1,31 +1,54 @@
-﻿name: 🎮 Add New Games
-description: Suggest new free itch.io games to add to the list (max 50 links per issue pls)
+﻿name: 🎮 Add Games
+description: Suggest new free itch.io games (max 15 per issue pls)
 title: "[Add Games] "
 labels: ["contribution", "games"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks legend! This repo lives on community additions because I'm too lazy to hunt every gem.
-        Paste links below — one per line, max 50 please (so the daily action doesn't die).
-        Only free-to-play games on itch.io, no paid or demo-only stuff.
+        Thanks bro! This repo lives on additions because I'm too lazy to hunt alone :D Only free-to-play itch.io games.
 
-  - type: textarea
-    id: links
+  - type: dropdown
+    id: count
     attributes:
-      label: Game Links (itch.io only)
-      description: |
-        Format: one URL per line.
-        Example:
-        https://developer.itch.io/game-name
-        https://another.itch.io/cool-game
-      placeholder: |
-        Paste your links here...
+      label: How many games? (max 15)
+      options:
+        - "1"
+        - "2-5"
+        - "6-10"
+        - "11-15"
     validations:
       required: true
 
   - type: textarea
+    id: links
+    attributes:
+      label: Game Links (one per line!)
+      description: |
+        I'll check (no guarantee perfect). One link per line — two on same line? Your loss :v
+      placeholder: |
+        https://example.itch.io/game1
+        https://example.itch.io/game2
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why these games? (optional)
+      description: e.g. super fun, hidden gem, or just... free?
+
+  - type: textarea
     id: notes
     attributes:
-      label: Optional notes
-      description: Why these games rock? Any NSFW/safe concerns? Personal rating?
+      label: Notes for table? (optional)
+      description: Personal rating, warnings, etc. — I'll add to "Notes" column
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      options:
+        - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
+    validations:
+      required: true
