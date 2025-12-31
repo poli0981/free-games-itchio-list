@@ -55,5 +55,4 @@ body:
       description: I gotta cover my lazy ass :D
       options:
         - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
-    validations:
-      required: true
+          required: true
