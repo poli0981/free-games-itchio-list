@@ -50,5 +50,4 @@ body:
       label: Agreement (required)
       options:
         - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
-    validations:
-      required: true
+          required: true
