@@ -1,33 +1,63 @@
-﻿name: 💡 Feature Request / Code Improvement
-description: Suggest new features, script fixes, or ways to make this repo less mediocre
-title: "[Feature] "
+﻿name: 💡 Feature Request / Improvement
+description: Suggest a new feature or code improvement
+title: "[Feature/Improvement] "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Yo! My code is "kinda works" level at best, so suggestions are super welcome.
-        Grok helps me, but real humans might have better ideas :D
+        Yo legend! My code is mediocre at best, so ideas are welcome. Grok helps, but you might have better ones :D
 
-  - type: textarea
-    id: suggestion
+  - type: checkboxes
+    id: type
     attributes:
-      label: What feature or improvement?
-      description: |
-        Examples: better scraping, auto rating, search function, prettier tables, etc.
-        Bonus points if you include code snippet or pseudocode!
+      label: Type (choose one only)
+      options:
+        - label: New Feature
+        - label: Code Improvement
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Feature/Improvement Name
+      description: Short title — what is it?
     validations:
       required: true
 
   - type: textarea
-    id: why
+    id: reason
     attributes:
-      label: Why this would be cool?
-      description: How it helps users or makes my life easier
+      label: Why? (e.g tables too slow, missing info, etc.)
+      description: Explain the problem it solves or why it's cool/good for the repo.
+    validations:
+      required: true
 
   - type: checkboxes
-    id: willing
+    id: priority
     attributes:
-      label: Wanna help?
+      label: How necessary? (choose one only)
       options:
-        - label: I'm willing to submit a PR for this (legend!)
+        - label: Not urgent (nice to have)
+        - label: Maybe needed
+        - label: Very needed
+        - label: Extremely urgent (repo dying without it)
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: (Optional) Pseudo-code, snippet, or file idea
+      description: |
+        Share code ideas — I'll check (no malware pls, I'm paranoid and lazy :D). My skill is average, so keep it simple.
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      options:
+        - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
+    validations:
+      required: true

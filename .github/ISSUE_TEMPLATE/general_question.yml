@@ -1,19 +1,26 @@
-﻿name: ❓ Question / Feedback / Other
-description: Anything else — questions, feedback, memes, or just saying hi :D
-title: "[Question] "
+﻿name: ❓ General / Off-Topic
+description: Anything not fitting other templates
+title: "[General] "
 labels: ["question"]
 body:
   - type: markdown
     attributes:
       value: |
-        Not a bug or new game? Drop it here!
-        I'm introvert max level with zero social skills, but I'll try to reply :D
-        (Or Grok will pretend to be me)
+        Not bug/feature/games/feedback? Drop it here. Memes welcome :D
 
   - type: textarea
     id: content
     attributes:
-      label: What's up?
-      description: Ask away, give feedback, share your own list, or roast my code
+      label: What's on your mind?
+      description: Questions, random thoughts, or just saying hi
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      options:
+        - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
     validations:
       required: true

@@ -1,0 +1,57 @@
+name: 🚫 Remove Games
+description: Request to remove games from the list (max 10 per issue)
+title: "[Remove Games] "
+labels: ["removal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sad to see them go, but ok! Max 10 because I'm lazy :D
+
+  - type: dropdown
+    id: count
+    attributes:
+      label: How many games? (max 10)
+      options:
+        - "1"
+        - "2-5"
+        - "6-10"
+    validations:
+      required: true
+
+  - type: textarea
+    id: games
+    attributes:
+      label: Game Name(s) or Link(s)
+      description: List them — one per line or clear
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: reasons
+    attributes:
+      label: Reason(s)? (check all)
+      options:
+        - label: Game is boring/trash
+        - label: It's a demo/not fully free
+        - label: Game removed from itch.io store
+        - label: Don't like it anymore
+        - label: Potential malware/virus
+        - label: I'm the dev and don't want it listed
+        - label: Other (describe below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: other_reason
+    attributes:
+      label: If "Other" — explain here
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      options:
+        - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
+    validations:
+      required: true

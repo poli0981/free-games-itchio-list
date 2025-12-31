@@ -1,41 +1,59 @@
 ﻿name: 🐛 Bug Report
-description: Report wrong info, broken links, bad flags, or other issues in the list
+description: Report a bug in the list, tables, scripts, or anything broken
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping fix this mess! I'm just an unemployed noob dev, so bugs are basically guaranteed :D
-        Pick the issues below (you can select multiple) and give details/links.
+        Thanks for reporting! I'm a lazy unemployed dev, so bugs happen a lot :D Grok fixes most, but your help is gold.
 
   - type: checkboxes
     id: bug_types
     attributes:
-      label: What kind of bug(s)?
-      description: Check all that apply
+      label: What kind of bug(s)? (check all that apply)
       options:
-        - label: Broken link (game page doesn't open or 404)
-        - label: Wrong/missing thumbnail
-        - label: Wrong NSFW flag (should be Yes/No but isn't)
-        - label: Wrong Safe? flag (virus concerns or info)
-        - label: Wrong genre classification
+        - label: Broken/dead link (game page 404 or not loading)
+        - label: Thumbnail not showing or wrong
+        - label: Table missing columns or broken format
         - label: Wrong game name or dev name
-        - label: Description outdated or wrong
-        - label: Other (describe below)
+        - label: Wrong game count in tables
+        - label: Wrong genre classification
+        - label: Wrong or outdated description
+        - label: NSFW/Safe flag wrong
+        - label: Other (must describe below)
 
   - type: textarea
     id: details
     attributes:
-      label: Details & Links
+      label: Details (Game name(s)/URL(s), what happened?)
       description: |
-        Give the game URL(s), screenshot if possible, and explain what's wrong.
-        The more specific, the faster I (or Grok) can fix it.
+        If "Other" checked, or multiple games — explain here. The more specific, the faster I fix (or Grok does).
     validations:
       required: true
 
   - type: textarea
-    id: extra
+    id: screenshots
     attributes:
-      label: Anything else?
-      description: Screenshots, suggestions, or just vibes?
+      label: Screenshots/Proof (optional but super helpful)
+      description: Paste links or describe — I believe you, but visuals make me less lazy :D
+
+  - type: checkboxes
+    id: urgency
+    attributes:
+      label: Urgency level?
+      options:
+        - label: Low (annoying but not critical)
+        - label: Medium (affects some games)
+        - label: High (breaks tables or many games)
+        - label: Critical (whole repo broken)
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      description: I gotta cover my lazy ass :D
+      options:
+        - label: I agree — if this issue is off-topic, spam, or violates repo policy, it may be ignored/closed without response.
+    validations:
+      required: true
