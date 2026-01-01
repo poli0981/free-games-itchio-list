@@ -92,7 +92,7 @@ if os.path.exists('scripts/temp_link.json'):
     # Load existing
     existing = []
     if os.path.exists('scripts/game_info.json'):
-        with open('game_info.json', 'r', encoding='utf-8') as f:
+        with open('scripts/game_info.json', 'r', encoding='utf-8') as f:
             existing = json.load(f)
     existing_urls = {g['url'] for g in existing}
 
