@@ -112,5 +112,5 @@ if os.path.exists('scripts/temp_link.json'):
         json.dump(all_games, f, ensure_ascii=False, indent=4)
 
     # Delete temp_link (overwrite empty array)
-    with open('scripts/temp_link. json', 'w', encoding='utf-8') as f:
+    with open('scripts/temp_link.json', 'w', encoding='utf-8') as f:
         json.dump([], f)
