@@ -110,15 +110,4 @@ if os.path.exists('scripts/temp_link.json'):
     all_games = existing + new_games
     with open('scripts/game_info.json', 'w', encoding='utf-8') as f:
         json.dump(all_games, f, ensure_ascii=False, indent=4)
-
-    # Delete temp_link (overwrite empty array)
-    temp_file = '/scripts/temp_link.json'
-    if os.path.exists(temp_file):
-        with open(temp_file, 'w', encoding='utf-8') as f:
-            json.dump([], f, ensure_ascii=False, indent=4)
-        print("Reset temp_link.json")
-else:
-        with open(temp_file, 'w', encoding='utf-8') as f:
-            json.dump([], f, ensure_ascii=False, indent=4)
-        print("Create & reset")
     
