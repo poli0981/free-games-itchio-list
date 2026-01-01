@@ -26,6 +26,12 @@ jobs:
         run:
           python scripts/update_info.py
 
+      - name: Force reset temp_link.json
+        run: |
+            echo "[]" > scripts/temp_link.json
+            git add scripts/temp_link.json
+        shell: bash
+
       - name: Check file
         run: |
           ls -la
