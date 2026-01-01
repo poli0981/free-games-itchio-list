@@ -70,41 +70,5 @@
         "notes": "",
         "thumbnail": "https://img.itch.zone/aW1nLzEwMDI0MDYxLmdpZg==/originalm/0RuFNu.gif",
         "tags": "2D, Creepy, Female Protagonist, Horror, parasite, Psychological Horror, Romance, Story Rich, Yandere"
-    },
-    {
-        "url": "https://studio77dev.itch.io/speedkidd",
-        "name": "SPEED KIDD",
-        "dev": "Studio77Dev",
-        "description": "Speed Kidd is a retro racing game for the Game Boy where you participate in the World Tour, a championship that will take you across 12 different tracks (both real and fictional) around the world i... (see more on itch.io)",
-        "genre": "Racing, Action",
-        "nsfw": "No",
-        "safe_virus": "?",
-        "notes": "",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0NjczNzQ1LnBuZw==/original/zIi5TJ.png",
-        "tags": "8-Bit, chiptune, Game Boy, Game Boy ROM, Pixel Art, Retro, Speedrun"
-    },
-    {
-        "url": "https://azurextwilight.itch.io/low-effort-romance",
-        "name": "Low Effort Romance",
-        "dev": "Unknown",
-        "description": "IMPORTANT: The above is a WEB DEMO. (see more on itch.io)",
-        "genre": "Visual Novel",
-        "nsfw": "No",
-        "safe_virus": "?",
-        "notes": "",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0NzQwNTUzLnBuZw==/original/ExdzFr.png",
-        "tags": "Amare, Christmas, Comedy, Cozy, Female Protagonist, josei, Otome, Romance, Story Rich"
-    },
-    {
-        "url": "https://fireblaze236.itch.io/autopede",
-        "name": "Autopede",
-        "dev": "FireBlaze236",
-        "description": "Race through the streets using your quadruped/biped car. (see more on itch.io)",
-        "genre": "Racing, Action",
-        "nsfw": "No",
-        "safe_virus": "?",
-        "notes": "",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0NzQxMDQzLnBuZw==/original/b%2F9oyz.png",
-        "tags": "Arcade, cars, Fast-Paced, Indie, Pixel Art, Singleplayer, Sprites"
     }
 ]
