@@ -85,13 +85,13 @@ def scrape_game_info(url):
 
 
 # Main flow
-if os.path.exists('temp_link.json'):
+if os.path.exists('scripts/temp_link.json'):
     with open('temp_link.json', 'r', encoding='utf-8') as f:
         new_links = json.load(f)
 
     # Load existing
     existing = []
-    if os.path.exists('game_info.json'):
+    if os.path.exists('scripts/game_info.json'):
         with open('game_info.json', 'r', encoding='utf-8') as f:
             existing = json.load(f)
     existing_urls = {g['url'] for g in existing}
@@ -108,8 +108,8 @@ if os.path.exists('temp_link.json'):
 
     # Save merged
     all_games = existing + new_games
-    with open('game_info.json', 'w', encoding='utf-8') as f:
+    with open('scripts/game_info.json', 'w', encoding='utf-8') as f:
         json.dump(all_games, f, ensure_ascii=False, indent=4)
 
     # Delete temp_link (overwrite empty array)
-    open('temp_link.json', 'w').write('[]')
+    open('scripts/temp_link.json', 'w').write('[]')
