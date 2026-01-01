@@ -28,8 +28,7 @@ jobs:
       - name: Debug ls
         run: |
           ls -la
-          ls -la scripts/
-
+          
       - name: Commit and push if changed
         run: |
           git config --global user.name "poli0981"
