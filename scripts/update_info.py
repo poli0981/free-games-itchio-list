@@ -86,7 +86,7 @@ def scrape_game_info(url):
 
 # Main flow
 if os.path.exists('scripts/temp_link.json'):
-    with open('temp_link.json', 'r', encoding='utf-8') as f:
+    with open('scripts/temp_link.json', 'r', encoding='utf-8') as f:
         new_links = json.load(f)
 
     # Load existing
