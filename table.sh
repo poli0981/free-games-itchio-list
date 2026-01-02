@@ -12,7 +12,7 @@ ls -la lists/*.md
 # push if change
 git config --global user.name "poli0981"
 git config --global user.email "127664709+poli0981@users.noreply.github.com"
-git add lists/*.md
+git add .
 git status
 if git diff --cached --quiet; then
     echo "No diff detected"
