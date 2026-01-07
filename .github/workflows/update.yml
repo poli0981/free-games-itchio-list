@@ -20,6 +20,6 @@ jobs:
 
       - name: Run bash script to update game info
         run: |
-            chmod +x test.sh
-            ./test.sh
+            chmod +x ./bash/test.sh
+            ./bash/test.sh
         shell: bash
