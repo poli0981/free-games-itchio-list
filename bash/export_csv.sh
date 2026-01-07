@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pip install pandas
-python scripts/export_data.py
+python scripts/export_csv.py
 ls -la
 git config --global user.name 'github-actions[bot]'
 git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
