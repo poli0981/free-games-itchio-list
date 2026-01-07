@@ -23,6 +23,6 @@ jobs:
 
       - name: Run bash script to generate table
         run: |
-          chmod +x table.sh
-          ./table.sh
+          chmod +x ./bash/table.sh
+          ./bash/table.sh
         shell: bash
