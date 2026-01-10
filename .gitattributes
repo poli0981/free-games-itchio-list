@@ -15,3 +15,14 @@ SECURITY.md export-ignore
 /docs/Contact.md export-ignore
 /docs/PRIVACY_POLICY.md export-ignore
 CHANGELOG.md export-ignore
+
+*.csv export-ignore
+*.log export-ignore
+*.tmp export-ignore
+.DS_Store export-ignore
+Thumbs.db export-ignore
+/build/ export-ignore
+/dist/ export-ignore
+/node_modules/ export-ignore
+/vendor/ export-ignore
+/.env export-ignore
