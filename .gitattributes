@@ -12,9 +12,10 @@
 CODE_OF_CONDUCT.md export-ignore
 CONTRIBUTING.md export-ignore
 SECURITY.md export-ignore
-/docs/Contact.md export-ignore
-/docs/PRIVACY_POLICY.md export-ignore
+/docs/My_Stuff.md export-ignore
+/docs/PrivacyPolicy.md export-ignore
 CHANGELOG.md export-ignore
+README.md export-ignore
 
 *.csv export-ignore
 *.log export-ignore
