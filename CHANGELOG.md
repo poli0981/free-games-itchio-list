@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented here. I'm a noob dev, so versions are "when I feel like it".
 
+## [1.0.5] - 2026-01-12 (Hotfix 🔧)
+### Fixed
+- UTF-8 decode issue when run `scripts/update_info.py`., see details in [#16](https://github.com/poli0981/free-games-itchio-list/issues/16)
+
+
 ## [1.0.4] - 2026-01-11 (Added Games + New Features ⭐)
 
 ### Added Games

@@ -1,6 +1,6 @@
 # My Free Itch.io Games List 🚀
 
-[![Versions](https://img.shields.io/badge/Versions-1.0.4-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Versions](https://img.shields.io/badge/Versions-1.0.5-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=Last%20Updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
