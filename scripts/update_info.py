@@ -1,8 +1,8 @@
 import json
 import os
-
 import requests
 from bs4 import BeautifulSoup
+from html import unescape
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
@@ -11,6 +11,7 @@ def scrape_game_info(url):
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
         r.raise_for_status()
+        r.encoding = 'utf-8'
         soup = BeautifulSoup(r.text, 'html.parser')
 
         title_tag = soup.find('h1', class_='game_title') or soup.find('h1', attrs={'itemprop': 'name'})
@@ -42,7 +43,10 @@ def scrape_game_info(url):
         # Description
         desc_tag = soup.find('div', class_='formatted_description')
         if desc_tag:
-            full_desc = desc_tag.get_text(strip=True, separator=' ')
+            full_desc_raw = desc_tag.get_text(strip=True, separator=' ')
+            full_desc = unescape(full_desc_raw)
+            full_desc = " ".join(full_desc.split())
+            # Extract first sentence or truncate
             if '.' in full_desc:
                 first_sentence = full_desc.split('.', 1)[0] + '.'
                 description = first_sentence if len(first_sentence) <= 200 else first_sentence[:197] + '...'
@@ -110,4 +114,3 @@ if os.path.exists('scripts/temp_link.json'):
     all_games = existing + new_games
     with open('scripts/game_info.json', 'w', encoding='utf-8') as f:
         json.dump(all_games, f, ensure_ascii=False, indent=4)
-    
