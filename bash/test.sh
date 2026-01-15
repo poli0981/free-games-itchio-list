@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "This is a test script to rewrite workflow shorter."
-echo "This is only a test."
-
 # Install python dependencies
 pip install BeautifulSoup4 requests
 
@@ -16,8 +13,8 @@ echo "Temporary link file has been reset."
 git add scripts/temp_link.json
 
 # Commit and push changes if any
-git config --global user.name "poli0981"
-git config --global user.email "127664709+poli0981@users.noreply.github.com"
+git config --global user.name "github-actions[bot]"
+git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git status
 git add scripts/game_info.json
 git diff --staged --quiet && echo "No changes – skip commit" || (git commit -m "JSON updated [$(date +'%Y-%m-%d')]" && git push)
