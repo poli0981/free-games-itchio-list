@@ -1,4 +1,6 @@
 name: Generate Table of Game
+permissions:
+    contents: write
 on:
   workflow_run:
     workflows:

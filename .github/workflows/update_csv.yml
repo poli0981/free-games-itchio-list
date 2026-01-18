@@ -1,4 +1,6 @@
 name: Export Data from JSON -> CSV
+permissions:
+    contents: write
 on:
   schedule:
     - cron: '13 4 * * *' # 4:13 UTC
