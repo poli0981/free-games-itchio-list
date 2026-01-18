@@ -1,10 +1,11 @@
 name: Update JSON file game information
-permissions:
-    contents: write
 on:
   schedule:
     - cron: '0 3 * * *'  # Runs daily at 03:00 UTC
   workflow_dispatch:
+
+permissions:
+    contents: write
 
 jobs:
   update-game-info:

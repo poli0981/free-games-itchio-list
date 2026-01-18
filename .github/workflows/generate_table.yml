@@ -1,12 +1,13 @@
 name: Generate Table of Game
-permissions:
-    contents: write
 on:
   workflow_run:
     workflows:
       ['Update JSON file game information']
     types: [completed]
   workflow_dispatch:
+
+permissions:
+    contents: write
 
 jobs:
   generate:
