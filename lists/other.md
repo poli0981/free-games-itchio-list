@@ -1,4 +1,4 @@
-# Other Games (13 games)
+# Other Games (15 games)
 
 | No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|------|------|-------|------|
@@ -13,6 +13,8 @@
 | 9 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ4OTc3LnBuZw==/original/jkK6YZ.png) | Neo Chase - Endless runner | Jeffrey Desenfans | No description | [Link](https://slipshod.itch.io/neo-chase) | ? |  | No |
 | 10 | ![thumb](https://img.itch.zone/aW1nLzI1MDI0MTk2LnBuZw==/original/buSYVM.png) | PushPush! | Cicle714 | 連打するだけ (see more on itch.io) | [Link](https://cicle714.itch.io/pushpush) | ? |  | No |
 | 11 | ![thumb](https://img.itch.zone/aW1nLzY0NTMyNTQucG5n/original/Tb1oIG.png) | Slide in the woods | Jonny's Games | A short horror game. (see more on itch.io) | [Link](https://jonnys-games.itch.io/slide-in-the-woods) | ? |  | No |
-| 12 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ3MTg2LnBuZw==/original/9suJNz.png) | This Part of Mine : Black Raincoat (ไทย) | SawieNoowie | This Part of Mine : Black Raincoat นี่คือจุดเริ่มต้นเรื่องราวของ "ริน" นักสืบหนุ่มวัย 21 ปี เขามีชื่อเสียงโด่งดังจากการที่สามารถไขคดีผ่านการนั่งไลฟ์สดแล้วเอาข้อมูลข่าวและสื่อต่าง ๆ มาผสมกันจนกลายเป็นร... (see more on itch.io) | [Link](https://sawienoowie.itch.io/this-part-of-mine) | ? |  | No |
-| 13 | ![thumb](https://img.itch.zone/aW1nLzI0ODQ1MzE1LnBuZw==/original/akBw1M.png) | 相连 Let Connect | Unknown | 相连 Let Connect Let Connect is a short narrative-driven game about human connections across a lifetime. (see more on itch.io) | [Link](https://akane13.itch.io/let-connect) | ? |  | No |
+| 12 | ![thumb](https://img.itch.zone/aW1nLzE3Njg0NDI5LmpwZWc=/original/pzfMZF.jpeg) | Sprunki | wolf_hal | No description | [Link](https://wolf-hal.itch.io/sprunki) | ? |  | No |
+| 13 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ3MTg2LnBuZw==/original/9suJNz.png) | This Part of Mine : Black Raincoat (ไทย) | SawieNoowie | This Part of Mine : Black Raincoat นี่คือจุดเริ่มต้นเรื่องราวของ "ริน" นักสืบหนุ่มวัย 21 ปี เขามีชื่อเสียงโด่งดังจากการที่สามารถไขคดีผ่านการนั่งไลฟ์สดแล้วเอาข้อมูลข่าวและสื่อต่าง ๆ มาผสมกันจนกลายเป็นร... (see more on itch.io) | [Link](https://sawienoowie.itch.io/this-part-of-mine) | ? |  | No |
+| 14 | ![thumb](https://img.itch.zone/aW1nLzI1MDU1MTEyLmdpZg==/originalm/IvDdfB.gif) | 小紅帽大迷路 | b006100123 | 小紅帽大迷路 遊戲說明 小紅帽少女是否可以回到家呢? 遊戲操作 移動：W S A D、上 下 左 右 跳躍：Space 跑步：左邊 Shift 攻擊：滑鼠左鍵 開發者 開發者：tom狐 信 箱：b006100123@gmail. (see more on itch.io) | [Link](https://b006100123.itch.io/tom-20260117) | ? |  | No |
+| 15 | ![thumb](https://img.itch.zone/aW1nLzI0ODQ1MzE1LnBuZw==/original/akBw1M.png) | 相连 Let Connect | Unknown | 相连 Let Connect Let Connect is a short narrative-driven game about human connections across a lifetime. (see more on itch.io) | [Link](https://akane13.itch.io/let-connect) | ? |  | No |
 
