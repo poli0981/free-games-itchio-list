@@ -1,4 +1,4 @@
-# Simulation Games (6 games)
+# Simulation Games (7 games)
 
 | No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|------|------|-------|------|
@@ -8,4 +8,5 @@
 | 4 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ3MTcxLmpwZWc=/original/2ZS2hr.jpeg) | Rule of Tactics | Douzi0026 | East (Shogi) vs West (Chess) — Discard conventional wisdom on the board and win through tactics. (see more on itch.io) | [Link](https://douzi0026.itch.io/2) | ? |  | No |
 | 5 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ4MzczLnBuZw==/original/I8JRe7.png) | Show 5 letters | RedTropicalDevTeam | The letter you changed in the game will be saved to the server and released to everyone else, show us the letters you want to show! -how to play- Replace the alphabet by pressing the â² button or ... (see more on itch.io) | [Link](https://redtropicaldev.itch.io/show-5-letters) | ? |  | No |
 | 6 | ![thumb](https://img.itch.zone/aW1nLzIzOTAwOTk3LnBuZw==/original/mLtbH1.png) | The Plant Shop | Tori | The Plant Shop is a cozy horror game where you manage a small plant shop. Craft plants, serve late-night customers and grow your plant collection to attract more people. You play as Silvia, a 26 years old girl who decides to open her own small plant shop on a late-night shift because she has a corporate job during the day. Your job is to serv... | [Link](https://torigamedev.itch.io/the-plant-shop) | ? |  | No |
+| 7 | ![thumb](https://img.itch.zone/aW1nLzI1MDQ2MDA3LnBuZw==/original/KbnRcx.png) | The Snail and The Worm | Unknown | A little forest-growing incremental game about a snail and a worm turning a worthless desert into a value-producing forest. (see more on itch.io) | [Link](https://indoorsunglasses.itch.io/the-snail-and-the-worm) | ? |  | No |
 
