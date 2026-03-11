@@ -1,0 +1,42 @@
+# Html sample to add logic if the game is free or not:
+# If game -> free -> return true 
+# else -> return false -> skip scraping the game details 
+# Use to: 
+# - Skip scraping the game details if the game is not free 
+# - Add workflow CI/CD to update the list of free games on itch.io, 2 day(s) interval, using GitHub Actions
+# (Avoid itch.io API rate limit, 403 Forbidden, etc)
+# + If game is free, keep info
+# + If game is not free, Delete the game from the list of free games on itch.io, using GitHub Actions
+
+# 1st sample HTML to test: Free game
+<div class="header_buy_row">
+  <p>A downloadable game for Windows</p>
+  <div class="buy_row">
+    <div class="button_message">
+      <a
+        class="button buy_btn"
+        href="https://stef-pinto.itch.io/cookies/purchase"
+        >Download Now</a
+      ><span class="buy_message"
+        ><span class="sub">Name your own price</span></span
+      >
+    </div>
+  </div>
+</div>
+
+# 2nd sample HTML to test: Paid game
+<div class="header_buy_row">
+  <p>A downloadable game for Windows</p>
+  <div class="buy_row">
+    <div class="button_message">
+      <a
+        class="button buy_btn"
+        href="https://master2015hp.itch.io/heroines-paradox-n-anh-hng/purchase"
+        >Buy Now</a
+      ><span class="buy_message"
+        ><span class="dollars" itemprop="price">$8.00 USD</span>
+        <span class="sub">or more</span></span
+      >
+    </div>
+  </div>
+</div>

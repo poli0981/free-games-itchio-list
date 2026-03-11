@@ -1,0 +1,231 @@
+# This is a sample HTML file to test the parsing of game information from an itch.io game page.
+# The first sample contains a complete set of information, while the second sample is missing some fields to test the robustness of the parser.
+
+# 1st: sample HTML to test with info:
+<div class="info_panel_wrapper" style="display: block">
+  <div class="game_info_panel_widget base_widget" id="game_info_panel_1783224">
+    Penquin Games
+    <table>
+      <tbody>
+        <tr>
+          <td>Status</td>
+          <td><a href="https://itch.io/games/released">Released</a></td>
+        </tr>
+        <tr>
+          <td>Platforms</td>
+          <td><a href="https://itch.io/games/platform-windows">Windows</a></td>
+        </tr>
+        <tr>
+          <td>Publisher</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Release date</td>
+          <td>
+            <abbr title="23 April 2021 @ 19:30 UTC"
+              ><span aria-hidden="true" class="icon icon-stopwatch"></span> Apr
+              23, 2021</abbr
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Rating</td>
+          <td>
+            <div
+              itemprop="aggregateRating"
+              itemtype="http://schema.org/AggregateRating"
+              tabindex="0"
+              itemscope=""
+              class="aggregate_rating"
+              data-tooltip="4.59 average rating from 182 total ratings"
+            >
+              <div content="4.6" itemprop="ratingValue" class="star_value">
+                <span class="screenreader_only">Rated 4.6 out of 5 stars</span>
+                <div class="star_fill" style="width: 91.86813%">
+                  <span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span>
+                </div>
+                <div class="star_holes">
+                  <span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span>
+                </div>
+              </div>
+              <span content="182" itemprop="ratingCount" class="rating_count"
+                >(182<span class="screenreader_only"> total ratings</span
+                >)</span
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Authors</td>
+          <td>
+            <a href="https://stef-pinto.itch.io">Stef Pinto</a>,
+            <a href="https://justjonut.itch.io">Jonut🍩</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Genre</td>
+          <td><a href="https://itch.io/games/genre-puzzle">Puzzle</a></td>
+        </tr>
+        <tr>
+          <td>Made with</td>
+          <td>
+            <a href="https://itch.io/games/made-with-unity">Unity</a>,
+            <a href="https://itch.io/games/made-with-3ds-max">3ds Max</a>,
+            <a href="https://itch.io/games/made-with-photoshop"
+              >Adobe Photoshop</a
+            >, <a href="https://itch.io/games/made-with-audacity">Audacity</a>,
+            <a href="https://itch.io/games/made-with-fl-studio">FL Studio</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td>
+            <a href="https://itch.io/games/tag-atmospheric">Atmospheric</a>,
+            <a href="https://itch.io/games/tag-crime">Crime</a>,
+            <a href="https://itch.io/games/tag-dark-humor">Dark Humor</a>,
+            <a href="https://itch.io/games/tag-exploration">Exploration</a>,
+            <a href="https://itch.io/games/tag-horror">Horror</a>,
+            <a href="https://itch.io/games/tag-lo-fi">Lo-fi</a>,
+            <a href="https://itch.io/games/tag-non-linear">Nonlinear</a>,
+            <a href="https://itch.io/games/tag-psx">PSX (PlayStation)</a>,
+            <a href="https://itch.io/games/tag-surreal">Surreal</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Average session</td>
+          <td>
+            <a href="https://itch.io/games/duration-half-hour"
+              >About a half-hour</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Languages</td>
+          <td><a href="https://itch.io/games/lang-en">English</a></td>
+        </tr>
+        <tr>
+          <td>Inputs</td>
+          <td><a href="https://itch.io/games/input-keyboard">Keyboard</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+# 2nd: Another sample with many info missed in 1st sample, to test the robustness of the parser
+
+<div class="info_panel_wrapper" style="display: block">
+  <div id="game_info_panel_9427049" class="game_info_panel_widget base_widget">
+    <table>
+      <tbody>
+        <tr>
+          <td>Updated</td>
+          <td>
+            <abbr title="26 December 2025 @ 11:05 UTC"
+              ><span aria-hidden="true" class="icon icon-stopwatch"></span> 15
+              hours ago</abbr
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td><a href="https://itch.io/games/released">Released</a></td>
+        </tr>
+        <tr>
+          <td>Rating</td>
+          <td>
+            <div
+              data-tooltip="4.70 average rating from 84 total ratings"
+              itemscope=""
+              itemtype="http://schema.org/AggregateRating"
+              class="aggregate_rating"
+              tabindex="0"
+              itemprop="aggregateRating"
+            >
+              <div itemprop="ratingValue" class="star_value" content="4.7">
+                <span class="screenreader_only">Rated 4.7 out of 5 stars</span>
+                <div style="width: 94.04762%" class="star_fill">
+                  <span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span
+                  ><span aria-hidden="true" class="star icon-star"></span>
+                </div>
+                <div class="star_holes">
+                  <span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span
+                  ><span aria-hidden="true" class="star icon-star2"></span>
+                </div>
+              </div>
+              <span itemprop="ratingCount" class="rating_count" content="84"
+                >(84<span class="screenreader_only"> total ratings</span>)</span
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Author</td>
+          <td><a href="https://capybaraforce.itch.io">Capybaraforce</a></td>
+        </tr>
+        <tr>
+          <td>Genre</td>
+          <td>
+            <a href="https://itch.io/games/genre-adventure">Adventure</a>,
+            <a href="https://itch.io/games/genre-puzzle">Puzzle</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td>
+            <a href="https://itch.io/games/tag-3d">3D</a>,
+            <a href="https://itch.io/games/tag-christmas">Christmas</a>,
+            <a href="https://itch.io/games/tag-comedy">Comedy</a>,
+            <a href="https://itch.io/games/tag-creepy">Creepy</a>,
+            <a href="https://itch.io/games/tag-dark">Dark</a>,
+            <a href="https://itch.io/games/tag-dark-humor">Dark Humor</a>,
+            <a href="https://itch.io/games/tag-horror">Horror</a>,
+            <a href="https://itch.io/games/tag-pixel-art">Pixel Art</a>,
+            <a href="https://itch.io/games/tag-psx">PSX (PlayStation)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Average session</td>
+          <td>
+            <a href="https://itch.io/games/duration-minutes">A few minutes</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Languages</td>
+          <td><a href="https://itch.io/games/lang-en">English</a></td>
+        </tr>
+        <tr>
+          <td>Inputs</td>
+          <td>
+            <a href="https://itch.io/games/input-keyboard">Keyboard</a>,
+            <a href="https://itch.io/games/input-mouse">Mouse</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Links</td>
+          <td>
+            <a
+              rel="nofollow noopener"
+              href="https://www.youtube.com/@Capybaraforge"
+              >YouTube</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
