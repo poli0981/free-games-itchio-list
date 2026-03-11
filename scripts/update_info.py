@@ -1,116 +1,99 @@
+"""
+update_info.py — Scrape new game links from temp_link.json.
+
+Flow:
+  1. Read URLs from scripts/temp_link.json
+  2. Skip duplicates already in scripts/game_info.json
+  3. Fetch each page → detect free/paid BEFORE collecting info
+  4. Only keep free games
+  5. Merge into game_info.json
+"""
+
 import json
 import os
-import requests
-from bs4 import BeautifulSoup
-from html import unescape
+import sys
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+sys.path.insert(0, os.path.dirname(__file__))
+from scraper import (
+    create_session,
+    scrape_game_info,
+    polite_delay,
+    batch_pause,
+    should_batch_pause,
+)
 
-
-def scrape_game_info(url):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
-        r.raise_for_status()
-        r.encoding = 'utf-8'
-        soup = BeautifulSoup(r.text, 'html.parser')
-
-        title_tag = soup.find('h1', class_='game_title') or soup.find('h1', attrs={'itemprop': 'name'})
-        name = title_tag.text.strip() if title_tag else "Unknown"
-
-        # Parse info table
-        info_dict = {}
-        info_wrapper = soup.find('div', class_='info_panel_wrapper')
-        if info_wrapper:
-            table = info_wrapper.find('table')
-            if table:
-                rows = table.find_all('tr')
-                for row in rows:
-                    tds = row.find_all('td')
-                    if len(tds) >= 2:
-                        key = tds[0].get_text(strip=True)
-                        value_td = tds[1]
-                        links = value_td.find_all('a')
-                        if links:
-                            value = ', '.join(a.get_text(strip=True) for a in links)
-                        else:
-                            value = value_td.get_text(strip=True)
-                        info_dict[key] = value
-
-        dev = info_dict.get('Author', 'Unknown')
-        genre = info_dict.get('Genre', 'Unknown')
-        tags = info_dict.get('Tags', '')
-
-        # Description
-        desc_tag = soup.find('div', class_='formatted_description')
-        if desc_tag:
-            full_desc_raw = desc_tag.get_text(strip=True, separator=' ')
-            full_desc = unescape(full_desc_raw)
-            full_desc = " ".join(full_desc.split())
-            # Extract first sentence or truncate
-            if '.' in full_desc:
-                first_sentence = full_desc.split('.', 1)[0] + '.'
-                description = first_sentence if len(first_sentence) <= 200 else first_sentence[:197] + '...'
-            else:
-                description = full_desc[:200] + '...' if len(full_desc) > 200 else full_desc
-            description += " (see more on itch.io)"
-        else:
-            description = "No description"
-
-        # NSFW detect
-        nsfw_keywords = ['adult', 'nsfw', 'erotic', 'hentai', 'porn', 'mature']
-        has_nsfw_tag = any(kw in tags.lower() for kw in nsfw_keywords)
-        has_warning = soup.find('div', class_=['view_game_warning', 'mature_content_notice'])
-        nsfw = "Yes" if has_nsfw_tag or has_warning else "No"
-
-        # Thumbnail
-        thumb_meta = soup.find('meta', property='og:image')
-        thumbnail = thumb_meta['content'] if thumb_meta else ""
-        if not thumbnail:
-            screenshot_list = soup.find('div', class_='screenshot_list')
-            if screenshot_list:
-                first_img = screenshot_list.find('img')
-                thumbnail = first_img['src'] if first_img else ""
-
-        return {
-            "url": url,
-            "name": name,
-            "dev": dev,
-            "description": description,
-            "genre": genre,
-            "nsfw": nsfw,
-            "safe_virus": "?",
-            "notes": "",
-            "thumbnail": thumbnail,
-            "tags": tags
-        }
-    except Exception as e:
-        print(f"Error scraping {url}: {e}")
-        return None
+TEMP_LINK = "scripts/temp_link.json"
+GAME_INFO = "scripts/game_info.json"
 
 
-# Main flow
-if os.path.exists('scripts/temp_link.json'):
-    with open('scripts/temp_link.json', 'r', encoding='utf-8') as f:
-        new_links = json.load(f)
+def main() -> None:
+    if not os.path.exists(TEMP_LINK):
+        print("No temp_link.json found — nothing to do.")
+        return
+
+    with open(TEMP_LINK, "r", encoding="utf-8") as f:
+        new_links: list[str] = json.load(f)
+
+    if not new_links:
+        print("temp_link.json is empty — nothing to do.")
+        return
 
     # Load existing
-    existing = []
-    if os.path.exists('scripts/game_info.json'):
-        with open('scripts/game_info.json', 'r', encoding='utf-8') as f:
+    existing: list[dict] = []
+    if os.path.exists(GAME_INFO):
+        with open(GAME_INFO, "r", encoding="utf-8") as f:
             existing = json.load(f)
-    existing_urls = {g['url'] for g in existing}
 
-    new_games = []
-    for link in new_links:
+    existing_urls: set[str] = {g["url"] for g in existing}
+
+    session = create_session()
+    added = 0
+    skipped_paid = 0
+    skipped_dup = 0
+    failed = 0
+    total = len(new_links)
+
+    for idx, link in enumerate(new_links, start=1):
         if link in existing_urls:
-            print(f"Skip duplicate: {link}")
+            print(f"[{idx}/{total}] Skip duplicate: {link}")
+            skipped_dup += 1
             continue
-        info = scrape_game_info(link)
-        if info:
-            new_games.append(info)
-            existing_urls.add(link)
 
-    # Save merged
-    all_games = existing + new_games
-    with open('scripts/game_info.json', 'w', encoding='utf-8') as f:
-        json.dump(all_games, f, ensure_ascii=False, indent=4)
+        print(f"[{idx}/{total}] Scraping: {link}")
+        info = scrape_game_info(session, link)
+
+        if info is None:
+            failed += 1
+            polite_delay()
+            continue
+
+        if not info.get("is_free", True):
+            print(f"  → Paid game, skipping.")
+            skipped_paid += 1
+            polite_delay()
+            continue
+
+        # Remove internal flag before saving
+        info.pop("is_free", None)
+        existing.append(info)
+        existing_urls.add(link)
+        added += 1
+
+        # Rate limiting
+        if should_batch_pause(idx):
+            batch_pause()
+        else:
+            polite_delay()
+
+    # Save
+    with open(GAME_INFO, "w", encoding="utf-8") as f:
+        json.dump(existing, f, ensure_ascii=False, indent=4)
+
+    print(
+        f"\nDone — {added} added, {skipped_paid} paid (skipped), "
+        f"{skipped_dup} duplicates, {failed} failed, {len(existing)} total."
+    )
+
+
+if __name__ == "__main__":
+    main()
