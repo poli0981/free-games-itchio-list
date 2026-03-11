@@ -1,4 +1,4 @@
-# Puzzle Games (7 games)
+# Puzzle Games (8 games)
 
 | No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|------|------|-------|------|
@@ -9,4 +9,5 @@
 | 5 | ![thumb](https://img.itch.zone/aW1nLzI1MDQ5NTI1LnBuZw==/original/AiVUQL.png) | The Building | Piter_051 | No description | [Link](https://piter-051.itch.io/the-building) | ? |  | No |
 | 6 | ![thumb](https://img.itch.zone/aW1nLzI0OTg4MDk2LnBuZw==/original/nV7s%2Fx.png) | The Shovelling Hour | SPARSE//GameDev | Controls: ◀▲▼▶ : move ( X ) : dig ( O ) / Z : undo (hold to increase speed) Created for CorgiJam (see more on itch.io) | [Link](https://sparsegamedev.itch.io/the-shovelling-hour) | ? |  | No |
 | 7 | ![thumb](https://img.itch.zone/aW1nLzI1MDU0NjM1LnBuZw==/original/YaAQKR.png) | Where are my cookies? | sa1jen | My first gamejam and my first game in Unity. (see more on itch.io) | [Link](https://sa1jen.itch.io/where-are-my-cookies) | ? |  | No |
+| 8 | ![thumb](https://img.itch.zone/aW1nLzI1OTY0Nzg0LnBuZw==/original/xG2j7p.png) | █ █ ▄ █ | Hempuli | Climb the tower, defeat opponents, use wands. (see more on itch.io) | [Link](https://hempuli.itch.io/chessrl) | ? |  | No |
 

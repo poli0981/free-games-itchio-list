@@ -1,4 +1,4 @@
-# Action Games (10 games)
+# Action Games (12 games)
 
 | No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|------|------|-------|------|
@@ -8,9 +8,11 @@
 | 4 | ![thumb](https://img.itch.zone/aW1nLzI0ODU2MjU3LnBuZw==/original/KaUWE%2B.png) | Let's Roll | For Little Brother | Let's Roll ist ein lustiges und kinderfreundliches "Endless Runner"-Spiel. (see more on itch.io) | [Link](https://for-little-brother.itch.io/lets-roll) | ? |  | No |
 | 5 | ![thumb](https://img.itch.zone/aW1nLzI0ODEzMTYyLnBuZw==/original/VyBKMj.png) | Railwaze | Ryan Goodyear | Defeat the boss and its minions to win. (see more on itch.io) | [Link](https://ryan-goodyear.itch.io/rainwaze) | ? |  | No |
 | 6 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ5NDc2LmpwZw==/original/fA%2Blkj.jpg) | Rogue Horizon | erwin.pelz | In this high-stakes sci-fi FPS, players find themselves aboard a massive intergalactic spaceship that has been taken over by hostile alien forces. (see more on itch.io) | [Link](https://erwinpelz.itch.io/rogue-horizon) | ? |  | No |
-| 7 | ![thumb](https://img.itch.zone/aW1nLzI0ODU2NjE4LnBuZw==/original/z0hdDv.png) | The watching walls | Nazirovsgames | The watching walls Short indie game horror game about hotel and you. (see more on itch.io) | [Link](https://nazirovsgames.itch.io/the-watching-walls) | ? |  | No |
-| 8 | ![thumb](https://img.itch.zone/aW1nLzI1MDUxMTk5LnBuZw==/original/NZCXVm.png) | Yosaku GM | 125scratch | It's another day of work for Yosaku the woodcutter, chopping down conifers in the mountains of Japan. (see more on itch.io) | [Link](https://125scratch.itch.io/yosaku-gm) | ? |  | No |
-| 9 | ![thumb](https://img.itch.zone/aW1nLzI0ODU3ODA1LnBuZw==/original/DCnwOR.png) | 戰鬥吧哥布林 | Nano16 | 戰鬥吧哥布林！ 遊戲說明 在跨年夜裡，小心不要變成帥潮們的經驗值，擊敗他們並活到2026年吧！ 遊戲操作 移動：W S A D、上 下 左 右 跳躍：Space 攻擊：滑鼠左鍵 - 三段式攻擊 奔跑：Shift 開發者 開發者：資傳3A  112024054  蔡炘洋  （單獨製作） 信 箱：chaixiyang1994@gmail. (see more on itch.io) | [Link](https://nano16.itch.io/fight-goblin-fight-2026) | ? |  | No |
-| 10 | ![thumb](https://img.itch.zone/aW1nLzI0ODU3NTY5LnBuZw==/original/U1BaQu.png) | 開心星人反抗畢制破財命運 | huvjnk | 開心星人反抗畢制破財命運 遊戲說明 打倒負債!籌款2026製作畢製的經費! 2026開心星球上的大學生們即將製作畢制並且面臨了要繳畢委會費16000的高額金額！我們根本沒有錢怎麼辦？ 看起來我們只能盡力還清債款並且存活下去不要因為欠錢破產而死努力! 遊戲操作 移動：W S A D、上 下 左 右 跳躍：Space 攻擊：滑鼠左鍵 - 四段式攻擊 開發者 開發者：
+| 7 | ![thumb](https://img.itch.zone/aW1nLzI1NDU1MDk1LmdpZg==/original/3ehbNP.gif) | SKINFACE | Unknown | if you like this, please check out my other game No Players Online (see more on itch.io) | [Link](https://papercookies.itch.io/skinface) | ? |  | No |
+| 8 | ![thumb](https://img.itch.zone/aW1nLzI1MjE0MDY3LnBuZw==/original/fL%2FOQI.png) | The Skin Stapler | TaintedPact Games | https://store. (see more on itch.io) | [Link](https://taintedpact88.itch.io/the-skin-stapler) | ? |  | No |
+| 9 | ![thumb](https://img.itch.zone/aW1nLzI0ODU2NjE4LnBuZw==/original/z0hdDv.png) | The watching walls | Nazirovsgames | The watching walls Short indie game horror game about hotel and you. (see more on itch.io) | [Link](https://nazirovsgames.itch.io/the-watching-walls) | ? |  | No |
+| 10 | ![thumb](https://img.itch.zone/aW1nLzI1MDUxMTk5LnBuZw==/original/NZCXVm.png) | Yosaku GM | 125scratch | It's another day of work for Yosaku the woodcutter, chopping down conifers in the mountains of Japan. (see more on itch.io) | [Link](https://125scratch.itch.io/yosaku-gm) | ? |  | No |
+| 11 | ![thumb](https://img.itch.zone/aW1nLzI0ODU3ODA1LnBuZw==/original/DCnwOR.png) | 戰鬥吧哥布林 | Nano16 | 戰鬥吧哥布林！ 遊戲說明 在跨年夜裡，小心不要變成帥潮們的經驗值，擊敗他們並活到2026年吧！ 遊戲操作 移動：W S A D、上 下 左 右 跳躍：Space 攻擊：滑鼠左鍵 - 三段式攻擊 奔跑：Shift 開發者 開發者：資傳3A  112024054  蔡炘洋  （單獨製作） 信 箱：chaixiyang1994@gmail. (see more on itch.io) | [Link](https://nano16.itch.io/fight-goblin-fight-2026) | ? |  | No |
+| 12 | ![thumb](https://img.itch.zone/aW1nLzI0ODU3NTY5LnBuZw==/original/U1BaQu.png) | 開心星人反抗畢制破財命運 | huvjnk | 開心星人反抗畢制破財命運 遊戲說明 打倒負債!籌款2026製作畢製的經費! 2026開心星球上的大學生們即將製作畢制並且面臨了要繳畢委會費16000的高額金額！我們根本沒有錢怎麼辦？ 看起來我們只能盡力還清債款並且存活下去不要因為欠錢破產而死努力! 遊戲操作 移動：W S A D、上 下 左 右 跳躍：Space 攻擊：滑鼠左鍵 - 四段式攻擊 開發者 開發者：
 112051049 孫穎軒... (see more on itch.io) | [Link](https://huvjnk.itch.io/happy-happy-c8c8) | ? |  | No |
 
