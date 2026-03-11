@@ -1,8 +1,7 @@
-name: Generate Table of Game
+name: Export deleted games log
 on:
   workflow_run:
     workflows:
-      - 'Update JSON file game information'
       - 'Check paid games'
       - 'Check dead game links'
     types: [completed]
@@ -12,13 +11,13 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  log-deleted:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v6
         with:
           token: ${{ secrets.GH_TOKEN }}
@@ -28,8 +27,8 @@ jobs:
         with:
           python-version: '3.14'
 
-      - name: Generate markdown tables
+      - name: Export deleted games log
         run: |
-          chmod +x ./bash/table.sh
-          ./bash/table.sh
+          chmod +x ./bash/log_deleted.sh
+          ./bash/log_deleted.sh
         shell: bash

@@ -1,14 +1,19 @@
 name: Export Data from JSON -> CSV
 on:
-  schedule:
-    - cron: '13 4 * * *' # 4:13 UTC
+  workflow_run:
+    workflows:
+      - 'Generate Table of Game'
+    types: [completed]
   workflow_dispatch:
 
 permissions:
-    contents: write
+  contents: write
 
 jobs:
   csv-export:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -21,9 +26,8 @@ jobs:
         with:
           python-version: '3.14'
 
-      - name: Run bash script to export data
+      - name: Export CSV
         run: |
           chmod +x ./bash/export_csv.sh
           ./bash/export_csv.sh
         shell: bash
-

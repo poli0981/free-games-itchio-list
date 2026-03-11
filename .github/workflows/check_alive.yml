@@ -1,17 +1,16 @@
-name: Update JSON file game information
+name: Check dead game links
 on:
   schedule:
-    - cron: '0 3 * * *'  # Runs daily at 03:00 UTC
+    - cron: '0 7 */2 * *'   # Every 2 days at 07:00 UTC (3h after check_paid)
   workflow_dispatch:
 
 permissions:
-    contents: write
+  contents: write
 
 jobs:
-  update-game-info:
+  check-alive:
     runs-on: ubuntu-latest
     timeout-minutes: 120
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -21,10 +20,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: 3.14
+          python-version: '3.14'
 
-      - name: Run bash script to update game info
+      - name: Check for dead links
         run: |
-            chmod +x ./bash/test.sh
-            ./bash/test.sh
+          chmod +x ./bash/check_alive.sh
+          ./bash/check_alive.sh
         shell: bash

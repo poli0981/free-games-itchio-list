@@ -1,0 +1,29 @@
+name: Check paid games
+on:
+  schedule:
+    - cron: '0 4 */2 * *'   # Every 2 days at 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check-paid:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180    # May take long for large lists
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Check for paid games
+        run: |
+          chmod +x ./bash/check_paid.sh
+          ./bash/check_paid.sh
+        shell: bash
