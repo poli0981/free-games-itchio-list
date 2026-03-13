@@ -244,7 +244,7 @@ def extract_thumbnail(soup: BeautifulSoup) -> str:
 # NSFW detection
 # ---------------------------------------------------------------------------
 _NSFW_KEYWORDS = ["adult", "nsfw", "erotic", "hentai", "porn", "mature", "sexual",
-                  "18+", "furry"]
+                  "18+", "furry","s&m","nudity", "yuri", "yaoi", "lewd", "ecchi", "bdsm", "fetish"]
 
 
 def detect_nsfw(soup: BeautifulSoup, tags: str, description: str) -> str:
