@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Setup banner (hidden when configured) -->
+  <div id="setup-banner" class="banner" hidden>
+    <span>⚙️ Setup required</span>
+    <a href="#" id="open-options-link">Open Settings</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <div class="logo">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <rect width="20" height="20" rx="4" fill="#378ADD"/>
+          <path d="M6 7h8v2H6zm0 4h6v2H6z" fill="#fff"/>
+        </svg>
+        <span class="title">Itch Collector</span>
+      </div>
+      <button id="sync-btn" class="icon-btn" title="Sync known URLs from GitHub">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M2 8a6 6 0 0110.89-3.47l1.42 1.42A8 8 0 002.05 7.26L.63 5.84 2 8zm12 0a6 6 0 01-10.89 3.47l-1.42-1.42A8 8 0 0013.95 8.74l1.42 1.42L14 8z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Counter -->
+  <div class="counter-section">
+    <div class="counter">
+      <span id="queue-count" class="count">0</span>
+      <span class="separator">/</span>
+      <span class="threshold">15</span>
+    </div>
+    <div class="counter-label">links in queue</div>
+    <div class="progress-bar">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Queue list -->
+  <div id="queue-section" class="queue-section">
+    <div id="queue-list" class="queue-list">
+      <div class="empty-state">Queue is empty</div>
+    </div>
+  </div>
+
+  <!-- Last push status -->
+  <div id="last-push" class="last-push" hidden>
+    <span id="push-status-icon"></span>
+    <span id="push-status-text"></span>
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <button id="push-btn" class="btn btn-primary" disabled>Push Now</button>
+    <button id="clear-btn" class="btn btn-secondary" disabled>Clear</button>
+  </div>
+
+  <!-- Log viewer (collapsible) -->
+  <div class="log-section">
+    <button id="log-toggle" class="log-toggle">
+      <span class="log-toggle-text">Logs</span>
+      <span id="log-toggle-arrow" class="log-toggle-arrow">▸</span>
+    </button>
+    <div id="log-panel" class="log-panel" hidden>
+      <div class="log-actions">
+        <button id="log-export-btn" class="log-btn">Export</button>
+        <button id="log-clear-btn" class="log-btn log-btn-danger">Clear</button>
+      </div>
+      <div id="log-list" class="log-list">
+        <div class="empty-state">No logs yet</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

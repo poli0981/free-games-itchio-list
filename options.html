@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Itch Collector — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
+          <rect width="20" height="20" rx="4" fill="#378ADD"/>
+          <path d="M6 7h8v2H6zm0 4h6v2H6z" fill="#fff"/>
+        </svg>
+        <div>
+          <h1>Itch Collector</h1>
+          <p class="subtitle">GitHub connection settings</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <label class="form-label" for="gh-token">
+        GitHub Personal Access Token
+        <span class="hint">Needs <code>repo</code> scope. <a href="https://github.com/settings/tokens/new?scopes=repo&description=Itch+Collector" target="_blank" rel="noopener">Create one →</a></span>
+      </label>
+      <input type="password" id="gh-token" class="form-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off" spellcheck="false">
+
+      <label class="form-label" for="gh-owner">
+        Repository Owner
+        <span class="hint">GitHub username or organization</span>
+      </label>
+      <input type="text" id="gh-owner" class="form-input" placeholder="your-username" spellcheck="false">
+
+      <label class="form-label" for="gh-repo">
+        Repository Name
+      </label>
+      <input type="text" id="gh-repo" class="form-input" placeholder="itch-free-games" spellcheck="false">
+
+      <label class="form-label" for="gh-path">
+        Path to temp_link.json
+        <span class="hint">Default: scripts/temp_link.json</span>
+      </label>
+      <input type="text" id="gh-path" class="form-input" value="scripts/temp_link.json" spellcheck="false">
+
+      <label class="form-label" for="gh-branch">
+        Branch
+        <span class="hint">Default: main</span>
+      </label>
+      <input type="text" id="gh-branch" class="form-input" value="main" spellcheck="false">
+    </div>
+
+    <div class="actions">
+      <button id="test-btn" class="btn btn-secondary">Test Connection</button>
+      <button id="save-btn" class="btn btn-primary">Save Settings</button>
+    </div>
+
+    <div id="status-msg" class="status" hidden></div>
+
+    <!-- GPG Signing section -->
+    <div class="section-divider"></div>
+
+    <div class="form-section">
+      <h2 class="section-title">GPG commit signing <span class="badge" id="gpg-badge">optional</span></h2>
+      <p class="section-desc">
+        Sign commits with your GPG key so they show as "Verified" on GitHub.
+        Replace the stub <code>lib/openpgp.min.mjs</code> with the
+        <a href="https://unpkg.com/openpgp/dist/openpgp.min.mjs" target="_blank" rel="noopener">real openpgp library</a>,
+        then reload extension.
+        <span id="gpg-lib-status"></span>
+      </p>
+
+      <label class="form-label" for="gpg-name">
+        Committer name
+        <span class="hint">Must match your GitHub account name</span>
+      </label>
+      <input type="text" id="gpg-name" class="form-input" placeholder="Your Name" spellcheck="false">
+
+      <label class="form-label" for="gpg-email">
+        Committer email
+        <span class="hint">Must match your GitHub verified email</span>
+      </label>
+      <input type="email" id="gpg-email" class="form-input" placeholder="you@example.com" spellcheck="false">
+
+      <label class="form-label" for="gpg-key">
+        GPG private key (ASCII-armored)
+        <span class="hint">Paste your exported private key. Stored locally only — never sent to GitHub.</span>
+      </label>
+      <textarea id="gpg-key" class="form-input form-textarea" rows="5" placeholder="-----BEGIN PGP PRIVATE KEY BLOCK-----&#10;...&#10;-----END PGP PRIVATE KEY BLOCK-----" spellcheck="false"></textarea>
+
+      <label class="form-label" for="gpg-passphrase">
+        Passphrase
+        <span class="hint">Leave empty if your key has no passphrase</span>
+      </label>
+      <input type="password" id="gpg-passphrase" class="form-input" placeholder="(optional)" autocomplete="off">
+    </div>
+
+    <div class="actions">
+      <button id="gpg-validate-btn" class="btn btn-secondary">Validate Key</button>
+      <button id="gpg-save-btn" class="btn btn-primary">Save GPG Settings</button>
+    </div>
+
+    <div id="gpg-status-msg" class="status" hidden></div>
+
+    <div class="info-section">
+      <h3>How it works</h3>
+      <p>
+        When you browse itch.io, the extension automatically detects free game pages
+        and adds them to a local queue. Once the queue reaches 15 links,
+        it pushes them to your GitHub repository's <code>temp_link.json</code> file.
+        Your existing GitHub Actions workflow then scrapes the game details.
+      </p>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
