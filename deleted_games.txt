@@ -1,0 +1,8 @@
+=== Deleted Games Log ===
+Total deleted: 1
+==================================================
+
+1. [2026-03-13] Follower
+   URL:    https://grantrimi.itch.io/follower
+   Reason: Game became paid
+
