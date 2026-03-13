@@ -19,6 +19,13 @@ const testBtn  = $("#test-btn");
 const saveBtn  = $("#save-btn");
 const statusEl = $("#status-msg");
 
+// ─── Combobox elements ───────────────────────────────────────────────────
+
+const branchList     = $("#branch-list");
+const pathList       = $("#path-list");
+const fetchBranchBtn = $("#fetch-branches-btn");
+const fetchPathBtn   = $("#fetch-paths-btn");
+
 // ─── GPG fields ──────────────────────────────────────────────────────────
 
 const gpg = {
@@ -93,6 +100,131 @@ async function checkGpgLib() {
 
 // ─── GitHub: Save ────────────────────────────────────────────────────────
 
+// ─── GitHub fetch helpers (for combobox) ─────────────────────────────────
+
+function getGhCredentials() {
+  const token = gh.token.value.trim();
+  const owner = gh.owner.value.trim();
+  const repo  = gh.repo.value.trim();
+  if (!token || !owner || !repo) return null;
+  return { token, owner, repo };
+}
+
+async function ghApiFetch(path, token) {
+  const res = await fetch(`https://api.github.com${path}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: "application/vnd.github+json",
+    },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+function populateDatalist(datalist, items) {
+  datalist.innerHTML = "";
+  for (const item of items) {
+    const opt = document.createElement("option");
+    opt.value = item;
+    datalist.appendChild(opt);
+  }
+}
+
+/**
+ * Fetch branches from the repo and populate datalist.
+ */
+async function fetchBranches() {
+  const cred = getGhCredentials();
+  if (!cred) {
+    showStatus(statusEl, "Fill in token, owner, and repo first.", false);
+    return;
+  }
+
+  fetchBranchBtn.classList.add("spinning");
+  try {
+    // Fetch up to 100 branches (paginated if needed)
+    const branches = await ghApiFetch(
+      `/repos/${cred.owner}/${cred.repo}/branches?per_page=100`,
+      cred.token
+    );
+    const names = branches.map((b) => b.name);
+    populateDatalist(branchList, names);
+
+    // Auto-select default branch if current value is empty
+    if (!gh.branch.value && names.length > 0) {
+      // Prefer "main", then "master", then first
+      gh.branch.value = names.includes("main")
+        ? "main"
+        : names.includes("master")
+          ? "master"
+          : names[0];
+    }
+  } catch (err) {
+    showStatus(statusEl, `Failed to load branches: ${err.message}`, false);
+  } finally {
+    fetchBranchBtn.classList.remove("spinning");
+  }
+}
+
+/**
+ * Fetch the file tree from the current branch and populate path datalist.
+ * Filters to .json files only.
+ */
+async function fetchPaths() {
+  const cred = getGhCredentials();
+  if (!cred) {
+    showStatus(statusEl, "Fill in token, owner, and repo first.", false);
+    return;
+  }
+
+  const branch = gh.branch.value.trim() || "main";
+
+  fetchPathBtn.classList.add("spinning");
+  try {
+    const tree = await ghApiFetch(
+      `/repos/${cred.owner}/${cred.repo}/git/trees/${branch}?recursive=1`,
+      cred.token
+    );
+
+    // Filter: only blob (file) entries ending in .json
+    const jsonPaths = (tree.tree || [])
+      .filter((t) => t.type === "blob" && t.path.endsWith(".json"))
+      .map((t) => t.path)
+      .sort();
+
+    populateDatalist(pathList, jsonPaths);
+
+    // Auto-select if current value is empty and a likely match exists
+    if (!gh.path.value) {
+      const preferred = jsonPaths.find((p) => p.includes("temp_link"));
+      if (preferred) gh.path.value = preferred;
+    }
+  } catch (err) {
+    showStatus(statusEl, `Failed to load file tree: ${err.message}`, false);
+  } finally {
+    fetchPathBtn.classList.remove("spinning");
+  }
+}
+
+/**
+ * Fetch both branches and paths. Called after successful connection test.
+ */
+async function fetchRepoData() {
+  await fetchBranches();
+  await fetchPaths();
+}
+
+// Wire up refresh buttons
+fetchBranchBtn.addEventListener("click", fetchBranches);
+fetchPathBtn.addEventListener("click", fetchPaths);
+
+// Re-fetch paths when branch changes (different branch = different file tree)
+gh.branch.addEventListener("change", () => {
+  if (getGhCredentials()) fetchPaths();
+});
+
+// ─── GitHub: Save ────────────────────────────────────────────────────────
+
 saveBtn.addEventListener("click", async () => {
   const token  = gh.token.value.trim();
   const owner  = gh.owner.value.trim();
@@ -152,6 +284,8 @@ testBtn.addEventListener("click", async () => {
       const data = await res.json();
       if (data.permissions?.push) {
         showStatus(statusEl, `Connected to ${data.full_name}`, true);
+        // Auto-populate branch and path comboboxes
+        fetchRepoData();
       } else {
         showStatus(statusEl, "Token lacks push permission.", false);
       }
@@ -283,4 +417,9 @@ Object.values(gpg).forEach((input) => {
 
 // ─── Init ────────────────────────────────────────────────────────────────
 
-loadSettings();
+loadSettings().then(() => {
+  // Auto-populate comboboxes if credentials already saved
+  if (getGhCredentials()) {
+    fetchRepoData();
+  }
+});

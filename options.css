@@ -146,6 +146,53 @@ h1 {
   color: var(--text-tertiary);
 }
 
+/* Combobox row */
+.combo-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.combo-row .form-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.combo-fetch {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.3s;
+}
+
+.combo-fetch:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.combo-fetch:active {
+  transform: scale(0.92);
+}
+
+.combo-fetch.spinning {
+  animation: options-spin 0.7s linear infinite;
+  pointer-events: none;
+  color: var(--accent);
+}
+
+@keyframes options-spin {
+  to { transform: rotate(360deg); }
+}
+
 /* Actions */
 .actions {
   display: flex;

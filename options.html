@@ -38,17 +38,25 @@
       </label>
       <input type="text" id="gh-repo" class="form-input" placeholder="itch-free-games" spellcheck="false">
 
-      <label class="form-label" for="gh-path">
-        Path to temp_link.json
-        <span class="hint">Default: scripts/temp_link.json</span>
-      </label>
-      <input type="text" id="gh-path" class="form-input" value="scripts/temp_link.json" spellcheck="false">
-
       <label class="form-label" for="gh-branch">
         Branch
-        <span class="hint">Default: main</span>
+        <span class="hint">Select from repo or type manually</span>
       </label>
-      <input type="text" id="gh-branch" class="form-input" value="main" spellcheck="false">
+      <div class="combo-row">
+        <input type="text" id="gh-branch" class="form-input" list="branch-list" value="main" spellcheck="false" placeholder="main" autocomplete="off">
+        <datalist id="branch-list"></datalist>
+        <button type="button" id="fetch-branches-btn" class="combo-fetch" title="Load branches from repo">↻</button>
+      </div>
+
+      <label class="form-label" for="gh-path">
+        Path to temp_link.json
+        <span class="hint">Select a .json file from repo or type manually</span>
+      </label>
+      <div class="combo-row">
+        <input type="text" id="gh-path" class="form-input" list="path-list" value="scripts/temp_link.json" spellcheck="false" placeholder="scripts/temp_link.json" autocomplete="off">
+        <datalist id="path-list"></datalist>
+        <button type="button" id="fetch-paths-btn" class="combo-fetch" title="Load .json files from repo">↻</button>
+      </div>
     </div>
 
     <div class="actions">
