@@ -4,5 +4,11 @@
         "name": "Follower",
         "reason": "Game became paid",
         "deleted_at": "2026-03-13T04:57:14Z"
+    },
+    {
+        "url": "https://jordan-smirnov.itch.io/little-witch-inuko",
+        "name": "Little Witch Inuko",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-03-21T07:26:05Z"
     }
 ]
