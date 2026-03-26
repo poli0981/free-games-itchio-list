@@ -1,25 +1,28 @@
-# My Free Itch.io Games List 🚀
+# Free Itch.io Games List
 
-[![Versions](https://img.shields.io/badge/Versions-1.0.5-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
-[![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=Last%20Updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A curated list of free-to-play gems on itch.io, scraped and maintained by an unemployed, mildly self-loathing Vietnamese dev with way too much free time — and his only non-judgmental friend, Grok (the AI).
+A curated, auto-updating catalog of free games on [itch.io](https://itch.io). Games are scraped, validated, and
+organized into browsable markdown tables — updated daily via GitHub Actions.
 
-Built purely for fun. Quality? Enjoyment? Who knows. No guarantees here — just vibes and indie games. Updated daily via GitHub Actions.
+## Table of contents
 
-## Table of Contents
-- [Genres List](#genres-list)
-- [How It Works](#how-it-works)
-- [Example Table](#example-table)
-- [How to Contribute](#how-to-contribute)
-- [Legal Stuff](#legal-stuff)
-- [About the Dev](#about-the-dev)
+- [Browse by genre](#browse-by-genre)
+- [How it works](#how-it-works)
+- [Project structure](#project-structure)
+- [Automation (GitHub Actions)](#automation-github-actions)
+- [Data fields](#data-fields)
+- [Contributing](#contributing)
+- [Legal](#legal)
 
-## Genres List
-All tables are auto-generated and split by primary genre (300 games max per file). Click to browse:
+## Browse by genre
+
+Tables are auto-generated and split by primary genre (max 300 games per file). New genres appear automatically as games
+are added.
 
 - [Action](lists/action.md)
 - [Adventure](lists/adventure.md)
@@ -27,48 +30,126 @@ All tables are auto-generated and split by primary genre (300 games max per file
 - [Horror](lists/horror.md)
 - [Visual Novel](lists/visual_novel.md)
 - [Simulation](lists/simulation.md)
+- [Platformer](lists/platformer.md)
 - [Other](lists/other.md)
-- ... (more genres appear as games are added)
+- *(more genres auto-create as needed)*
 
-New genres auto-create when needed. Tables include: No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW
+## How it works
 
-## How It Works
-- Games added via `temp_link.json` (manual or PR).
-- Daily GitHub Action (3:00 UTC) scrapes new links from itch.io → merges into `game_info.json` → generates MD tables in `/lists/`.
-- Description short (first sentence + "... (see more on itch.io)").
-- NSFW/Safe flags auto-detected (but manual edit ok).
+```
+temp_link.json          →   update_info.py        →   game_info.json
+(new URLs added here)       (scrape + free check)     (full database)
+                                                          │
+                ┌─────────────────────────────────────────┘
+                ▼                    ▼                    ▼
+        generate_md.py       export_csv.py        check_paid.py
+        (MD tables)          (CSV export)         check_alive.py
+                                                  (cleanup)
+```
 
-## Example Table
-Here's a mini preview (real tables in `/lists/` are way bigger):
+1. **Add links** — paste itch.io URLs into `scripts/temp_link.json` (manually, via PR, or via the companion browser
+   extension).
+2. **Daily scrape** — GitHub Actions runs `update_info.py` at 03:00 UTC. Each link is fetched, checked for free status,
+   and scraped for metadata. Paid games are automatically skipped.
+3. **Generate tables** — `generate_md.py` groups games by primary genre and outputs markdown tables into `/lists/`.
+4. **Periodic cleanup** — every 2 days, `check_paid.py` re-checks if any game in the list became paid, and
+   `check_alive.py` verifies that game pages still exist. Removed games are logged with a reason.
+5. **Export** — `export_csv.py` produces a CSV snapshot of the full database.
 
-| No | Thumb | Name | Dev | Short Desc | Link                                 | Safe | Notes | NSFW |
-|----|-------|------|-----|------------|--------------------------------------|------|-------|------|
-| 1 | ![thumb](https://img.itch.zone/aW1hZ2UvMjA5NjQ5Ny8xMjM0NTY3ODkucG5n/original/abc123.png) | Example Game | Cool Dev | A fun adventure about nothing. (see more on itch.io) | [Link](https://example.itch.io/game) | ? |  | No |
+## Project structure
 
-(Thumbnails from itch.io og:image — mobile might lag if too many :D)
+```
+scripts/
+├── scraper.py          # Shared module: session, rate-limiting, free detection, parsing
+├── update_info.py      # Scrape new games from temp_link.json → game_info.json
+├── check_paid.py       # Re-check existing games for paid status
+├── check_alive.py      # Verify game URLs still exist (404/410 → remove)
+├── generate_md.py      # Generate per-genre markdown tables
+├── log_deleted.py      # Export deleted_games.json → deleted_games.txt
+├── export_csv.py       # Export game_info.json → CSV
+├── game_info.json      # Main database (all game metadata)
+├── temp_link.json      # Input queue for new URLs
+└── deleted_games.json  # Log of removed games with reasons
 
-## How to Contribute
-You're a legend if you help! See [CONTRIBUTING.md](./CONTRIBUTING.md) for details:
-- Add games → Use "Add New Games" issue template (max 50 links).
-- Fix bugs → "Bug Report" template.
-- New features → "Feature Request" or PR.
+bash/
+├── test.sh             # Wrapper: scrape + reset temp_link
+├── table.sh            # Wrapper: generate MD tables
+├── check_paid.sh       # Wrapper: check paid status
+├── check_alive.sh      # Wrapper: check dead links
+├── export_csv.sh       # Wrapper: CSV export
+└── log_deleted.sh      # Wrapper: export deletion log
 
-All contributions shouted out in [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
+lists/                  # Auto-generated markdown tables (one per genre)
 
-## Legal Stuff
-Nobody reads these, but here anyway:
-- [DISCLAIMER](docs/DISCLAIMER.md)
-- [PRIVACY](docs/PrivacyPolicy.md)
-- [TERMS](docs/ToS.md)
-- [EULA](docs/EULA.md) (because why not)
-- [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md)
-- [SECURITY](./SECURITY.md)
+.github/workflows/
+├── update.yml          # Daily 03:00 UTC — scrape new games
+├── generate_table.yml  # Runs after update/check workflows
+├── check_paid.yml      # Every 2 days 04:00 UTC
+├── check_alive.yml     # Every 2 days 07:00 UTC
+├── update_csv.yml      # Runs after table generation
+└── log_deleted.yml     # Runs after check workflows
+```
 
-License: MIT — do whatever.
+## Automation (GitHub Actions)
 
-## About the Dev
-Mediocre setup, mediocre skills. Details in [MY_STUFF.md](docs/My_Stuff.md).
+| Workflow          | Schedule               | Purpose                                    |
+|-------------------|------------------------|--------------------------------------------|
+| Update game info  | Daily 03:00 UTC        | Scrape new links, skip paid games          |
+| Generate tables   | After update/checks    | Rebuild markdown tables in `/lists/`       |
+| Check paid games  | Every 2 days 04:00 UTC | Remove games that became paid              |
+| Check dead links  | Every 2 days 07:00 UTC | Remove 404/410 game pages                  |
+| Export CSV        | After table generation | Produce CSV snapshot                       |
+| Log deleted games | After check workflows  | Export deletion log to `deleted_games.txt` |
 
-This repo exists because of peak unemployment boredom and Grok's infinite patience. Thanks for visiting — go play some free games on easy mode (like me).
+All workflows include rate-limiting (random delays, batch pauses) to avoid being blocked by itch.io. Network errors are
+treated as transient — games are only removed on confirmed 404/410 or confirmed paid status.
 
-Questions? Open an issue. I'll reply... eventually :D 🚀
+## Data fields
+
+Each game entry in `game_info.json` contains:
+
+| Field             | Description                                                |
+|-------------------|------------------------------------------------------------|
+| `url`             | Game page URL                                              |
+| `name`            | Game title                                                 |
+| `dev`             | Developer / author name(s)                                 |
+| `description`     | Short description (first sentence, max 200 chars)          |
+| `genre`           | Genre(s) from itch.io                                      |
+| `tags`            | All tags                                                   |
+| `status`          | Release status                                             |
+| `platforms`       | Available platforms (Windows, macOS, Linux, Web)           |
+| `publisher`       | Publisher (if different from author)                       |
+| `release_date`    | Full release date from page metadata                       |
+| `made_with`       | Engine / tools used                                        |
+| `rating`          | Average rating (from itch.io aggregate)                    |
+| `rating_count`    | Number of ratings                                          |
+| `average_session` | Typical play session length                                |
+| `languages`       | Supported languages                                        |
+| `inputs`          | Input methods (keyboard, mouse, gamepad)                   |
+| `nsfw`            | NSFW flag (auto-detected from tags, warnings, description) |
+| `safe_virus`      | Manual safety note (default: `?`)                          |
+| `notes`           | Manual notes                                               |
+| `thumbnail`       | Thumbnail image URL                                        |
+
+All fields default to `N/A` when not available on the game page.
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for full details.
+
+- **Add games** — use the "Add New Games" issue template (max 50 links per issue).
+- **Report bugs** — use the "Bug Report" template.
+- **Request features** — open an issue or submit a PR.
+
+Contributors are credited in [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
+
+## Legal
+
+- [Disclaimer](docs/DISCLAIMER.md)
+- [Privacy Policy](docs/PrivacyPolicy.md)
+- [Terms of Service](docs/ToS.md)
+- [EULA](docs/EULA.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Security](./SECURITY.md)
+
+Licensed under [MIT](LICENSE).
