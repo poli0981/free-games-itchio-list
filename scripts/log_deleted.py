@@ -6,7 +6,6 @@ Produces a human-readable log file of all games removed from the list.
 
 import json
 import os
-import sys
 
 DELETED_JSON = "scripts/deleted_games.json"
 DELETED_TXT = "deleted_games.txt"
