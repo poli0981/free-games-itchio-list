@@ -16,19 +16,24 @@ def esc(text: str) -> str:
     return text.replace("|", "\\|")
 
 
+def fmt_list(val) -> str:
+    """Format a field that may be list or string for table display."""
+    if isinstance(val, list):
+        return ", ".join(val) if val else NA
+    return val if val else NA
+
+
 def main() -> None:
     with open("scripts/game_info.json", "r", encoding="utf-8") as f:
         games: list[dict] = json.load(f)
 
-    # Group by primary genre
+    # Group by genre (now a single string, not comma-separated)
     grouped: dict[str, list[dict]] = defaultdict(list)
     for g in games:
-        raw_genre = g.get("genre", NA)
-        if raw_genre and raw_genre != NA:
-            primary_genre = raw_genre.split(",")[0].strip()
-        else:
-            primary_genre = "Other"
-        grouped[primary_genre].append(g)
+        genre = g.get("genre", NA)
+        if not genre or genre == NA:
+            genre = "Other"
+        grouped[genre].append(g)
 
     os.makedirs("lists", exist_ok=True)
 
@@ -74,15 +79,15 @@ def main() -> None:
                     dev          = esc(g.get("dev", NA))
                     short_desc   = esc(g.get("description", NA))
                     genre_val    = esc(g.get("genre", NA))
-                    tags         = esc(g.get("tags", NA))
+                    tags         = esc(fmt_list(g.get("tags")))
                     status       = esc(g.get("status", NA))
-                    platforms    = esc(g.get("platforms", NA))
+                    platforms    = esc(fmt_list(g.get("platforms")))
                     publisher    = esc(g.get("publisher", NA))
                     release_date = esc(g.get("release_date", NA))
-                    made_with    = esc(g.get("made_with", NA))
+                    made_with    = esc(fmt_list(g.get("made_with")))
                     avg_session  = esc(g.get("average_session", NA))
-                    languages    = esc(g.get("languages", NA))
-                    inputs       = esc(g.get("inputs", NA))
+                    languages    = esc(fmt_list(g.get("languages")))
+                    inputs       = esc(fmt_list(g.get("inputs")))
                     safe_virus   = esc(g.get("safe_virus", "?"))
                     notes        = esc(g.get("notes", ""))
                     nsfw         = esc(g.get("nsfw", NA))
