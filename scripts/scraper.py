@@ -151,9 +151,19 @@ def now_iso() -> str:
 # ---------------------------------------------------------------------------
 # Info-table parsing
 # ---------------------------------------------------------------------------
-def parse_info_table(soup: BeautifulSoup) -> dict[str, str]:
-    """Parse the right-side info panel into a flat dict."""
-    info: dict[str, str] = {}
+
+# Fields where itch.io lists multiple <a> links → store as JSON array
+_LIST_FIELDS = {"Tags", "Platforms", "Languages", "Inputs", "Made with"}
+
+
+def parse_info_table(soup: BeautifulSoup) -> dict[str, any]:
+    """Parse the right-side info panel into a dict.
+
+    Multi-value fields (Tags, Platforms, etc.) → list[str]
+    Single-value fields (Genre, Status, etc.) → str
+    Missing fields are NOT inserted — caller handles defaults.
+    """
+    info: dict[str, any] = {}
     wrapper = soup.find("div", class_="info_panel_wrapper")
     if not wrapper:
         return info
@@ -176,7 +186,8 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, str]:
             if abbr and abbr.get("title"):
                 info[key] = abbr["title"]
             else:
-                info[key] = value_td.get_text(strip=True) or NA
+                text = value_td.get_text(strip=True)
+                info[key] = text if text else NA
             continue
 
         # --- Rating: extract from itemprop attributes ---
@@ -192,8 +203,22 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, str]:
                 info["RatingCount"] = NA
             continue
 
-        # --- Generic: prefer link texts, fallback to plain text ---
+        # --- Multi-value fields → list of strings ---
         links = value_td.find_all("a")
+        if key in _LIST_FIELDS:
+            info[key] = [a.get_text(strip=True) for a in links] if links else []
+            continue
+
+        # --- Genre: use only the FIRST value (primary genre) ---
+        if key == "Genre":
+            if links:
+                info[key] = links[0].get_text(strip=True)
+            else:
+                text = value_td.get_text(strip=True)
+                info[key] = text if text else NA
+            continue
+
+        # --- Generic single-value: prefer link texts joined, fallback plain ---
         if links:
             value = ", ".join(a.get_text(strip=True) for a in links)
         else:
@@ -217,6 +242,7 @@ def extract_description(soup: BeautifulSoup) -> str:
     if not full:
         return NA
 
+    # First sentence, capped at 200 chars
     if "." in full:
         first = full.split(".", 1)[0] + "."
         return first if len(first) <= 200 else first[:197] + "..."
@@ -243,12 +269,18 @@ def extract_thumbnail(soup: BeautifulSoup) -> str:
 # ---------------------------------------------------------------------------
 # NSFW detection
 # ---------------------------------------------------------------------------
-_NSFW_KEYWORDS = ["adult", "nsfw", "erotic", "hentai", "porn", "mature", "sexual",
-                  "18+", "furry","s&m","nudity", "yuri", "yaoi", "lewd", "ecchi", "bdsm", "fetish"]
+_NSFW_KEYWORDS = ["adult", "nsfw", "erotic", "hentai", "porn", "mature", "sexual"]
 
 
-def detect_nsfw(soup: BeautifulSoup, tags: str, description: str) -> str:
-    if any(kw in tags.lower() for kw in _NSFW_KEYWORDS):
+def detect_nsfw(soup: BeautifulSoup, tags, description: str) -> str:
+    """Detect NSFW. `tags` can be list[str] or str."""
+    # Normalize tags to a single lowercase string for keyword search
+    if isinstance(tags, list):
+        tags_lower = " ".join(t.lower() for t in tags)
+    else:
+        tags_lower = tags.lower() if tags else ""
+
+    if any(kw in tags_lower for kw in _NSFW_KEYWORDS):
         return "Yes"
     if description != NA and any(kw in description.lower() for kw in _NSFW_KEYWORDS):
         return "Yes"
@@ -279,8 +311,8 @@ def scrape_game_info(session: requests.Session, url: str) -> dict | None:
 
         # --- Title ---
         title_tag = (
-            soup.find("h1", class_="game_title")
-            or soup.find("h1", attrs={"itemprop": "name"})
+                soup.find("h1", class_="game_title")
+                or soup.find("h1", attrs={"itemprop": "name"})
         )
         name = _safe_text(title_tag)
 
@@ -288,18 +320,18 @@ def scrape_game_info(session: requests.Session, url: str) -> dict | None:
         info = parse_info_table(soup)
 
         dev          = info.get("Author") or info.get("Authors", NA)
-        genre        = info.get("Genre", NA)
-        tags         = info.get("Tags", NA)
-        status       = info.get("Status", NA)
-        platforms    = info.get("Platforms", NA)
-        publisher    = info.get("Publisher", NA)
-        release_date = info.get("Release date", NA)
-        made_with    = info.get("Made with", NA)
-        rating       = info.get("Rating", NA)
-        rating_count = info.get("RatingCount", NA)
-        avg_session  = info.get("Average session", NA)
-        languages    = info.get("Languages", NA)
-        inputs       = info.get("Inputs", NA)
+        genre        = info.get("Genre", NA)            # str (primary only)
+        tags         = info.get("Tags", [])              # list[str]
+        status       = info.get("Status", NA)            # str
+        platforms    = info.get("Platforms", [])          # list[str]
+        publisher    = info.get("Publisher", NA)          # str
+        release_date = info.get("Release date", NA)      # str
+        made_with    = info.get("Made with", [])          # list[str]
+        rating       = info.get("Rating", NA)            # str
+        rating_count = info.get("RatingCount", NA)       # str
+        avg_session  = info.get("Average session", NA)   # str
+        languages    = info.get("Languages", [])          # list[str]
+        inputs       = info.get("Inputs", [])             # list[str]
 
         description = extract_description(soup)
         thumbnail   = extract_thumbnail(soup)
@@ -312,21 +344,21 @@ def scrape_game_info(session: requests.Session, url: str) -> dict | None:
             "dev": dev,
             "description": description,
             "genre": genre,
-            "tags": tags,
             "status": status,
-            "platforms": platforms,
             "publisher": publisher,
             "release_date": release_date,
-            "made_with": made_with,
             "rating": rating,
             "rating_count": rating_count,
             "average_session": avg_session,
+            "nsfw": nsfw,
+            "thumbnail": thumbnail,
+            "tags": tags,
+            "platforms": platforms,
             "languages": languages,
             "inputs": inputs,
-            "nsfw": nsfw,
+            "made_with": made_with,
             "safe_virus": "?",
             "notes": "",
-            "thumbnail": thumbnail,
         }
 
     except requests.RequestException as e:
