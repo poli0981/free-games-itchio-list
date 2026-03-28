@@ -8737,5 +8737,117 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://dadbodgames.itch.io/it-never-ends",
+        "name": "I.T Never Ends",
+        "dev": "Dadbod Games",
+        "description": "HELLO, WORLD.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "43",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1OTA5NjQ5LnBuZw==/original/g6I5Ww.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Horror",
+            "Indie",
+            "No AI",
+            "Psychological Horror",
+            "Relaxing",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://soffis-mbm.itch.io/to-eat-a-god",
+        "name": "To Eat a God",
+        "dev": "Soffis_mbm",
+        "description": "To Eat a God Plush Wonderland Collaboration *ONGOING!* We’re collaborating with Plush Wonderland to create official plush keychains of the main characters from To Eat a God! It’s important to know ...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "1493",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3OTI1MzIyLmpwZw==/original/6LS5sU.jpg",
+        "tags": [
+            "Dark",
+            "Dating Sim",
+            "drama",
+            "Fantasy",
+            "Mystery",
+            "Ren'Py",
+            "Singleplayer",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kitsukell.itch.io/hunting",
+        "name": "Hunting",
+        "dev": "KitsuKell",
+        "description": "A short horror game where you hunt deer.",
+        "genre": "Horror",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "148",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4ODQ0NTI0LnBuZw==/original/QaUA7Y.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "First-Person",
+            "FPS",
+            "Godot",
+            "Horror",
+            "Monsters",
+            "No AI",
+            "PSX (PlayStation)",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
