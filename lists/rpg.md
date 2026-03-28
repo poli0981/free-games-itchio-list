@@ -1,0 +1,7 @@
+# RPG Games (2 games)
+
+| No | Thumb | Name | Dev | Short Desc | Genre | Tags | Status | Platforms | Publisher | Release Date | Made With | Rating | Session | Languages | Inputs | Link | Safe | Notes | NSFW |
+|----|-------|------|-----|------------|-------|------|--------|-----------|-----------|--------------|----------|--------|---------|-----------|--------|------|------|-------|------|
+| 1 | ![thumb](https://img.itch.zone/aW1nLzI2MzQ2NTcxLnBuZw==/original/l%2BcALp.png) | Gallant Hearts II | Amenable_Bouncer | It has been 50 years since the events of Gallant Hearts, and not all is well. | RPG | Fantasy, JRPG, RPG Maker, RPG Maker MZ | Released | Windows | N/A | 27 March 2026 @ 02:35 UTC | RPG Maker | N/A | About a half-hour | English | Keyboard, Mouse | [Link](https://amenable-bouncer.itch.io/gallant-hearts-ii) | ? |  | No |
+| 2 | ![thumb](https://img.itch.zone/aW1nLzI2Mjg4MjU4LnBuZw==/original/JrrhIs.png) | Nimble Rise of the Runelords Chapter 5 | DMDorga | A fast, tactical, conversion of Pathfinder's Classic Beloved Adventure Path! Converted to play in the Nimble TTRPG system! A fantastic way to experience Pathfinder Adventures! This pdf conversion h... | RPG | dnd, nimble, No AI, pathfinder, rise-of-the-runelords, Tabletop, tabletop-roleplaying-game, Tabletop role-playing game | Released | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://dmdorga.itch.io/nimble-rise-of-the-runelords-chapter-5) | ? |  | No |
+
