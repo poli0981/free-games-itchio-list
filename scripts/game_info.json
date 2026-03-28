@@ -13743,5 +13743,40 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://ricksnake.itch.io/mine-of-my-mind-horror",
+        "name": "Mine of my Mind",
+        "dev": "RickSnake",
+        "description": "Mine of my Mind - is a demo version of a psychological horror game - about guilt, memory, and the darkness inside the human mind Description: You play as Andrew, a miner whose life isn't going very...",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MzA3NzY5LnBuZw==/original/wj09nB.png",
+        "tags": [
+            "3D",
+            "First-Person",
+            "Horror",
+            "Low-poly",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Scary",
+            "Short",
+            "Story Rich",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
