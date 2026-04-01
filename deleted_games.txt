@@ -1,16 +1,20 @@
 === Deleted Games Log ===
-Total deleted: 3
+Total deleted: 4
 ==================================================
 
-1. [2026-03-29] Femdom First Timers
+1. [2026-04-01] Space Travel is Boring
+   URL:    https://potpan.itch.io/spacetravelisboring
+   Reason: Game page no longer exists (HTTP 404)
+
+2. [2026-03-29] Femdom First Timers
    URL:    https://brayden-vargas.itch.io/femdom-first-timers
    Reason: Game page no longer exists (HTTP 404)
 
-2. [2026-03-21] Little Witch Inuko
+3. [2026-03-21] Little Witch Inuko
    URL:    https://jordan-smirnov.itch.io/little-witch-inuko
    Reason: Game page no longer exists (HTTP 404)
 
-3. [2026-03-13] Follower
+4. [2026-03-13] Follower
    URL:    https://grantrimi.itch.io/follower
    Reason: Game became paid
 
