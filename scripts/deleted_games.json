@@ -22,5 +22,11 @@
         "name": "Space Travel is Boring",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-01T07:39:15Z"
+    },
+    {
+        "url": "https://cryzeder.itch.io/package-you-shouldnt-open",
+        "name": "Package You Shouldn’t Open",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-03T07:48:19Z"
     }
 ]

@@ -12195,36 +12195,6 @@
         "notes": ""
     },
     {
-        "url": "https://cryzeder.itch.io/package-you-shouldnt-open",
-        "name": "Package You Shouldn’t Open",
-        "dev": "cryzeder",
-        "description": "A package arrives at your door.",
-        "genre": "Horror",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MzI1NTIyLmpwZw==/original/rxttKM.jpg",
-        "tags": [
-            "2D",
-            "Fantasy",
-            "No AI",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://painthorny.itch.io/justwaves",
         "name": "JustWaves",
         "dev": "Thorny",
