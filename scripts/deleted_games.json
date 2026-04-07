@@ -28,5 +28,11 @@
         "name": "Package You Shouldn’t Open",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-03T07:48:19Z"
+    },
+    {
+        "url": "https://orb-star.itch.io/in-his-gaze",
+        "name": "The Seat Across From Mine",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-07T07:40:14Z"
     }
 ]
