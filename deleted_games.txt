@@ -1,24 +1,28 @@
 === Deleted Games Log ===
-Total deleted: 5
+Total deleted: 6
 ==================================================
 
-1. [2026-04-03] Package You Shouldn’t Open
+1. [2026-04-07] The Seat Across From Mine
+   URL:    https://orb-star.itch.io/in-his-gaze
+   Reason: Game page no longer exists (HTTP 404)
+
+2. [2026-04-03] Package You Shouldn’t Open
    URL:    https://cryzeder.itch.io/package-you-shouldnt-open
    Reason: Game page no longer exists (HTTP 404)
 
-2. [2026-04-01] Space Travel is Boring
+3. [2026-04-01] Space Travel is Boring
    URL:    https://potpan.itch.io/spacetravelisboring
    Reason: Game page no longer exists (HTTP 404)
 
-3. [2026-03-29] Femdom First Timers
+4. [2026-03-29] Femdom First Timers
    URL:    https://brayden-vargas.itch.io/femdom-first-timers
    Reason: Game page no longer exists (HTTP 404)
 
-4. [2026-03-21] Little Witch Inuko
+5. [2026-03-21] Little Witch Inuko
    URL:    https://jordan-smirnov.itch.io/little-witch-inuko
    Reason: Game page no longer exists (HTTP 404)
 
-5. [2026-03-13] Follower
+6. [2026-03-13] Follower
    URL:    https://grantrimi.itch.io/follower
    Reason: Game became paid
 
