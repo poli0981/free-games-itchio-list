@@ -1,4 +1,4 @@
-# Horror Games (27 games)
+# Horror Games (26 games)
 
 | No | Thumb | Name | Dev | Short Desc | Genre | Tags | Status | Platforms | Publisher | Release Date | Made With | Rating | Session | Languages | Inputs | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|-------|------|--------|-----------|-----------|--------------|----------|--------|---------|-----------|--------|------|------|-------|------|
@@ -28,5 +28,4 @@
 | 24 | ![thumb](https://img.itch.zone/aW1nLzI2MTIzNzA3LnBuZw==/original/NtmwKr.png) | wageslave: probation period | cauldron | Controls WASD or Arrow Keys to moveSPACE to pass dialogueEnter to buy or commit codeESC to close vending screen or computerP for pausing (alt P when in computer screen) Wishlist on Steam! | Horror | Narrative, No AI, Psychological Horror, Working Simulator | Released | HTML5 | N/A | N/A | Godot | 5.0 (1) | A few minutes | English | Keyboard | [Link](https://cauldron.itch.io/wageslave) | ? |  | No |
 | 25 | ![thumb](https://img.itch.zone/aW1nLzI2Mjc1MjgwLmpwZw==/original/U7CUDC.jpg) | Wrong Floor | Colby-O, SmoekyTheKittyCat | Content Warning: This game contains jumpscares and flashing lights. | Horror | Exploration, First-Person, Horror, Low-poly, PSX (PlayStation), Psychological Horror, Singleplayer, Story Rich, Unity, Walking simulator | Released | HTML5, Windows | N/A | N/A | Unity, Blender, GIMP, Audacity | 5.0 (2) | N/A | N/A | N/A | [Link](https://colby-o.itch.io/wrong-floor) | ? |  | No |
 | 26 | ![thumb](https://img.itch.zone/aW1nLzI2MjQxNTc3LnBuZw==/original/pmBtg1.png) | ZAKLADNA | FrogMuseum | ZAKLADNA is a short horror game about you being trapped in the control room of a mission gone bad. | Horror | 3D, Gay, Godot, Horror, Low-poly, No AI, Pixel Art, Psychological Horror | Released | N/A | N/A | N/A | N/A | 5.0 (1) | N/A | N/A | N/A | [Link](https://frogmuseum.itch.io/zakladna) | ? |  | No |
-| 27 | ![thumb](https://img.itch.zone/aW1nLzI2MzE5OTQ1LmpwZw==/original/srUESP.jpg) | Zero | AHDevGames | Un día despiertas y no sabes lo que ha ocurrido. | Horror | Horror, Psychological Horror, Survival Horror | Released | Android | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://ahdevgames.itch.io/zero) | ? |  | No |
 
