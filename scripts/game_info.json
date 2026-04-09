@@ -11395,34 +11395,6 @@
         "notes": ""
     },
     {
-        "url": "https://ahdevgames.itch.io/zero",
-        "name": "Zero",
-        "dev": "AHDevGames",
-        "description": "Un día despiertas y no sabes lo que ha ocurrido.",
-        "genre": "Horror",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MzE5OTQ1LmpwZw==/original/srUESP.jpg",
-        "tags": [
-            "Horror",
-            "Psychological Horror",
-            "Survival Horror"
-        ],
-        "platforms": [
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://berniebro.itch.io/japanese-blues-before-coffee",
         "name": "Japanese Blues- Before Coffee",
         "dev": "berniebro",
