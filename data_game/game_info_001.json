@@ -13515,5 +13515,68 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://duckmemeticsgames.itch.io/mind-the-gap",
+        "name": "Mind the Gap — Don’t Miss Your Chance",
+        "dev": "DuckMemeticsGames",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NTU1MDk2LnBuZw==/original/inM01l.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://toru-desu.itch.io/while-you-are-here",
+        "name": "While You Are Here",
+        "dev": "Toru-desu",
+        "description": "This game was made for my assignment along with 3 other group members.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NzAwMzIwLmpwZw==/original/iRW7lx.jpg",
+        "tags": [
+            "2D",
+            "Anime",
+            "Atmospheric",
+            "No AI",
+            "Ren'Py",
+            "Short",
+            "Singleplayer",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
