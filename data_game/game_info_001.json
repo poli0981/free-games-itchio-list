@@ -13578,5 +13578,56 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://2439905184.itch.io/maysky-renpy",
+        "name": "maysky-renpy(Chinese)",
+        "dev": "小沙盒工作室",
+        "description": "https://vndb.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NjgxMjkyLnBuZw==/original/FQXPpC.png",
+        "tags": [
+            "2D",
+            "translate"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://fatecsaocaetano.itch.io/encontro-com-a-morte",
+        "name": "Encontro com a Morte",
+        "dev": "Jogos Digitais Fatec São Caetano do Sul",
+        "description": "Após a sua morte, Alex o protagonista do jogo, ao perceber que sofreu um acidente fatal se encontra com um anjo da Morte que vem coletar sua alma.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2Njc1MzgwLmpwZw==/original/Ey2R5V.jpg",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
