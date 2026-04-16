@@ -37,14 +37,15 @@ are added.
 ## How it works
 
 ```
-temp_link.json          →   update_info.py        →   game_info.json
-(new URLs added here)       (scrape + free check)     (full database)
+temp_link.json          →   update_info.py        →   data_game/
+(new URLs added here)       (scrape + free check)     game_info_001.json
+                                                      game_info_002.json ...
                                                           │
                 ┌─────────────────────────────────────────┘
-                ▼                    ▼                    ▼
-        generate_md.py       export_csv.py        check_paid.py
-        (MD tables)          (CSV export)         check_alive.py
-                                                  (cleanup)
+                ▼                                        ▼
+        generate_md.py                           check_paid.py
+        (MD tables)                              check_alive.py
+                                                 (cleanup)
 ```
 
 1. **Add links** — paste itch.io URLs into `scripts/temp_link.json` (manually, via PR, or via the companion browser
@@ -54,20 +55,23 @@ temp_link.json          →   update_info.py        →   game_info.json
 3. **Generate tables** — `generate_md.py` groups games by primary genre and outputs markdown tables into `/lists/`.
 4. **Periodic cleanup** — every 2 days, `check_paid.py` re-checks if any game in the list became paid, and
    `check_alive.py` verifies that game pages still exist. Removed games are logged with a reason.
-5. **Export** — `export_csv.py` produces a CSV snapshot of the full database.
 
 ## Project structure
 
 ```
+data_game/              # Game database (chunked JSON, max 500 per file)
+├── game_info_001.json
+├── game_info_002.json
+└── ...
+
 scripts/
 ├── scraper.py          # Shared module: session, rate-limiting, free detection, parsing
-├── update_info.py      # Scrape new games from temp_link.json → game_info.json
+├── data_store.py       # Shared module: multi-file load/save/rebalance
+├── update_info.py      # Scrape new games from temp_link.json → data_game/
 ├── check_paid.py       # Re-check existing games for paid status
 ├── check_alive.py      # Verify game URLs still exist (404/410 → remove)
 ├── generate_md.py      # Generate per-genre markdown tables
 ├── log_deleted.py      # Export deleted_games.json → deleted_games.txt
-├── export_csv.py       # Export game_info.json → CSV
-├── game_info.json      # Main database (all game metadata)
 ├── temp_link.json      # Input queue for new URLs
 └── deleted_games.json  # Log of removed games with reasons
 
@@ -76,7 +80,6 @@ bash/
 ├── table.sh            # Wrapper: generate MD tables
 ├── check_paid.sh       # Wrapper: check paid status
 ├── check_alive.sh      # Wrapper: check dead links
-├── export_csv.sh       # Wrapper: CSV export
 └── log_deleted.sh      # Wrapper: export deletion log
 
 lists/                  # Auto-generated markdown tables (one per genre)
@@ -86,7 +89,6 @@ lists/                  # Auto-generated markdown tables (one per genre)
 ├── generate_table.yml  # Runs after update/check workflows
 ├── check_paid.yml      # Every 2 days 04:00 UTC
 ├── check_alive.yml     # Every 2 days 07:00 UTC
-├── update_csv.yml      # Runs after table generation
 └── log_deleted.yml     # Runs after check workflows
 ```
 
@@ -98,7 +100,6 @@ lists/                  # Auto-generated markdown tables (one per genre)
 | Generate tables   | After update/checks    | Rebuild markdown tables in `/lists/`       |
 | Check paid games  | Every 2 days 04:00 UTC | Remove games that became paid              |
 | Check dead links  | Every 2 days 07:00 UTC | Remove 404/410 game pages                  |
-| Export CSV        | After table generation | Produce CSV snapshot                       |
 | Log deleted games | After check workflows  | Export deletion log to `deleted_games.txt` |
 
 All workflows include rate-limiting (random delays, batch pauses) to avoid being blocked by itch.io. Network errors are
@@ -106,7 +107,7 @@ treated as transient — games are only removed on confirmed 404/410 or confirme
 
 ## Data fields
 
-Each game entry in `game_info.json` contains:
+Each game entry in `data_game/game_info_NNN.json` contains:
 
 | Field             | Description                                                |
 |-------------------|------------------------------------------------------------|

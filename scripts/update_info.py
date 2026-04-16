@@ -3,10 +3,10 @@ update_info.py — Scrape new game links from temp_link.json.
 
 Flow:
   1. Read URLs from scripts/temp_link.json
-  2. Skip duplicates already in scripts/game_info.json
+  2. Skip duplicates already in data_game/
   3. Fetch each page → detect free/paid BEFORE collecting info
   4. Only keep free games
-  5. Merge into game_info.json
+  5. Merge into data_game/ (chunked JSON files)
 """
 
 import json
@@ -21,9 +21,9 @@ from scraper import (
     batch_pause,
     should_batch_pause,
 )
+from data_store import load_all_games, save_all_games, get_all_urls
 
 TEMP_LINK = "scripts/temp_link.json"
-GAME_INFO = "scripts/game_info.json"
 
 
 def main() -> None:
@@ -39,12 +39,8 @@ def main() -> None:
         return
 
     # Load existing
-    existing: list[dict] = []
-    if os.path.exists(GAME_INFO):
-        with open(GAME_INFO, "r", encoding="utf-8") as f:
-            existing = json.load(f)
-
-    existing_urls: set[str] = {g["url"] for g in existing}
+    existing: list[dict] = load_all_games()
+    existing_urls: set[str] = get_all_urls(existing)
 
     session = create_session()
     added = 0
@@ -86,8 +82,7 @@ def main() -> None:
             polite_delay()
 
     # Save
-    with open(GAME_INFO, "w", encoding="utf-8") as f:
-        json.dump(existing, f, ensure_ascii=False, indent=4)
+    save_all_games(existing)
 
     print(
         f"\nDone — {added} added, {skipped_paid} paid (skipped), "

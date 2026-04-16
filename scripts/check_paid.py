@@ -2,11 +2,11 @@
 check_paid.py — Re-check existing free games for paid status.
 
 Flow:
-  1. Load scripts/game_info.json
+  1. Load all games from data_game/
   2. For each game, re-fetch page and check is_free
   3. If game became paid → remove from list, log to deleted_games.json
   4. Network errors → keep game (don't delete on transient failures)
-  5. Save updated game_info.json
+  5. Save updated games (auto-rebalanced chunks)
 """
 
 import json
@@ -22,8 +22,8 @@ from scraper import (
     should_batch_pause,
     now_iso,
 )
+from data_store import load_all_games, save_all_games
 
-GAME_INFO = "scripts/game_info.json"
 DELETED_LOG = "scripts/deleted_games.json"
 
 
@@ -42,9 +42,9 @@ def save_json(path: str, data) -> None:
 
 
 def main() -> None:
-    games: list[dict] = load_json(GAME_INFO)
+    games: list[dict] = load_all_games()
     if not games:
-        print("No games in game_info.json — nothing to check.")
+        print("No games found — nothing to check.")
         return
 
     deleted_log: list[dict] = load_json(DELETED_LOG)
@@ -88,7 +88,7 @@ def main() -> None:
             polite_delay()
 
     # Save
-    save_json(GAME_INFO, keep)
+    save_all_games(keep)
     save_json(DELETED_LOG, deleted_log)
 
     print(

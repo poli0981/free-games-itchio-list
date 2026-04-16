@@ -1,7 +1,10 @@
-import json
+import os
+import sys
 
-with open('scripts/game_info.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+sys.path.insert(0, os.path.dirname(__file__))
+from data_store import load_all_games
+
+data = load_all_games()
 
 # Check for dups link on the list
 dups = []
