@@ -1,10 +1,13 @@
 """
-generate_md.py — Generate per-genre markdown tables from game_info.json.
+generate_md.py — Generate per-genre markdown tables from data_game/.
 """
 
-import json
 import os
+import sys
 from collections import defaultdict
+
+sys.path.insert(0, os.path.dirname(__file__))
+from data_store import load_all_games
 
 NA = "N/A"
 
@@ -24,8 +27,7 @@ def fmt_list(val) -> str:
 
 
 def main() -> None:
-    with open("scripts/game_info.json", "r", encoding="utf-8") as f:
-        games: list[dict] = json.load(f)
+    games: list[dict] = load_all_games()
 
     # Group by genre (now a single string, not comma-separated)
     grouped: dict[str, list[dict]] = defaultdict(list)
