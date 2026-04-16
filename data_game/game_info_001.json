@@ -13487,5 +13487,33 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://erixavero.itch.io/nurture-spree",
+        "name": "Nurture Spree",
+        "dev": "erixavero",
+        "description": "Nurture Spree is a babysitter simulation serious game for nurse in training and new parents.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NzIwMDk1LnBuZw==/original/Opxgv1.png",
+        "tags": [
+            "2D",
+            "Cartoon",
+            "Casual"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
