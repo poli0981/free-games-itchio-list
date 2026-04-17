@@ -70,5 +70,11 @@
         "name": "SCP-3008 Infinite Store",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-13T07:49:12Z"
+    },
+    {
+        "url": "https://pro-monkey.itch.io/my-take-splnuko-idk",
+        "name": "My take splnuko Idk",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-17T07:52:11Z"
     }
 ]
