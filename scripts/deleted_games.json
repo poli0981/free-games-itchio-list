@@ -76,5 +76,11 @@
         "name": "My take splnuko Idk",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-17T07:52:11Z"
+    },
+    {
+        "url": "https://e6atejib-hobn4kob.itch.io/devastate",
+        "name": "devastate",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-21T07:48:01Z"
     }
 ]
