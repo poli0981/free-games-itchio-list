@@ -1,56 +1,60 @@
 === Deleted Games Log ===
-Total deleted: 13
+Total deleted: 14
 ==================================================
 
-1. [2026-04-17] My take splnuko Idk
+1. [2026-04-21] devastate
+   URL:    https://e6atejib-hobn4kob.itch.io/devastate
+   Reason: Game page no longer exists (HTTP 404)
+
+2. [2026-04-17] My take splnuko Idk
    URL:    https://pro-monkey.itch.io/my-take-splnuko-idk
    Reason: Game page no longer exists (HTTP 404)
 
-2. [2026-04-13] SCP-3008 Infinite Store
+3. [2026-04-13] SCP-3008 Infinite Store
    URL:    https://christopher-elliot.itch.io/scp-3008-infinite-store
    Reason: Game page no longer exists (HTTP 404)
 
-3. [2026-04-09] Burning Boundaries |Sex Game
+4. [2026-04-09] Burning Boundaries |Sex Game
    URL:    https://hentaeiie.itch.io/burning-boundaries-sex-game
    Reason: Game page no longer exists (HTTP 404)
 
-4. [2026-04-09] FreshWomen - Season 2
+5. [2026-04-09] FreshWomen - Season 2
    URL:    https://epoorew.itch.io/freshwomen-season-2
    Reason: Game page no longer exists (HTTP 404)
 
-5. [2026-04-09] Married Into Hell |Sex Hentai|
+6. [2026-04-09] Married Into Hell |Sex Hentai|
    URL:    https://sexheantai.itch.io/married-into-hell-sex-hentai
    Reason: Game page no longer exists (HTTP 404)
 
-6. [2026-04-09] Fuckstone
+7. [2026-04-09] Fuckstone
    URL:    https://ehn-sabedra.itch.io/turtle-care-simulator
    Reason: Game page no longer exists (HTTP 404)
 
-7. [2026-04-09] Zero
+8. [2026-04-09] Zero
    URL:    https://ahdevgames.itch.io/zero
    Reason: Game became paid
 
-8. [2026-04-07] The Seat Across From Mine
+9. [2026-04-07] The Seat Across From Mine
    URL:    https://orb-star.itch.io/in-his-gaze
    Reason: Game page no longer exists (HTTP 404)
 
-9. [2026-04-03] Package You Shouldn’t Open
+10. [2026-04-03] Package You Shouldn’t Open
    URL:    https://cryzeder.itch.io/package-you-shouldnt-open
    Reason: Game page no longer exists (HTTP 404)
 
-10. [2026-04-01] Space Travel is Boring
+11. [2026-04-01] Space Travel is Boring
    URL:    https://potpan.itch.io/spacetravelisboring
    Reason: Game page no longer exists (HTTP 404)
 
-11. [2026-03-29] Femdom First Timers
+12. [2026-03-29] Femdom First Timers
    URL:    https://brayden-vargas.itch.io/femdom-first-timers
    Reason: Game page no longer exists (HTTP 404)
 
-12. [2026-03-21] Little Witch Inuko
+13. [2026-03-21] Little Witch Inuko
    URL:    https://jordan-smirnov.itch.io/little-witch-inuko
    Reason: Game page no longer exists (HTTP 404)
 
-13. [2026-03-13] Follower
+14. [2026-03-13] Follower
    URL:    https://grantrimi.itch.io/follower
    Reason: Game became paid
 
