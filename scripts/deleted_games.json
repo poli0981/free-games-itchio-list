@@ -82,5 +82,17 @@
         "name": "devastate",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-21T07:48:01Z"
+    },
+    {
+        "url": "https://ellena132005.itch.io/lost-ball",
+        "name": "Lost Ball",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-23T07:45:16Z"
+    },
+    {
+        "url": "https://rhynlen.itch.io/soap-killer",
+        "name": "Soap Killer",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-23T07:56:03Z"
     }
 ]

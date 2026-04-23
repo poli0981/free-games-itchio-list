@@ -6063,28 +6063,6 @@
         "notes": ""
     },
     {
-        "url": "https://ellena132005.itch.io/lost-ball",
-        "name": "Lost Ball",
-        "dev": "Ellena132005",
-        "description": "Use WASD to tilt the maze and get the ball to the goal.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MDg3OTE3LnBuZw==/original/M4WhjX.png",
-        "tags": [],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://shlynneash.itch.io/totally-normal-pet-store",
         "name": "Totally Normal Pet Store!",
         "dev": "ShlynneAsh",
@@ -13689,47 +13667,6 @@
         "notes": ""
     },
     {
-        "url": "https://rhynlen.itch.io/soap-killer",
-        "name": "Soap Killer",
-        "dev": "rhynlen",
-        "description": "\"Soap Killer\" is a Horror/Comedy game,inspired by many iconic indie horror masterpieces.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "3.8",
-        "rating_count": "13",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2NDg3NDAyLnBuZw==/original/9yCp4Z.png",
-        "tags": [
-            "3D",
-            "Comedy",
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "Retro",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English",
-            "Chinese"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://khywae.itch.io/requiems-echo",
         "name": "Requiem's Echo",
         "dev": "khywae",
@@ -17566,6 +17503,38 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://midnight-meister.itch.io/final-fantasy-vii-aerith-goes-to-the-pharmacy",
+        "name": "Final Fantasy VII: Aerith Goes to the Pharmacy",
+        "dev": "Midnight Meister",
+        "description": "One day Aerith Gainsborough gets really bad chest pain and has to go to the pharmacy to get more prescription medicine.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MDk3MjgwLnBuZw==/original/PCUwux.png",
+        "tags": [
+            "Fangame",
+            "ffvii",
+            "final-fantasy",
+            "Parody",
+            "RPG Maker"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
         "safe_virus": "?",
         "notes": ""
     }
