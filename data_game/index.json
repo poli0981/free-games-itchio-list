@@ -4,6 +4,10 @@
         {
             "name": "game_info_001.json",
             "count": 500
+        },
+        {
+            "name": "game_info_002.json",
+            "count": 1
         }
     ]
 }
