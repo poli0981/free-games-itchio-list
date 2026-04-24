@@ -17537,5 +17537,47 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://bayolume.itch.io/h-goddess-anomaly",
+        "name": "H-Goddess Anomaly",
+        "dev": "Bayolume, 工房☆マースリューム, Bayolewd",
+        "description": "This is a free demo with access to the first three animated h-scenes.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "59",
+        "average_session": "About a half-hour",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1MzE0NzU4LnBuZw==/original/VDB2Dy.png",
+        "tags": [
+            "2D",
+            "Adult",
+            "Erotic",
+            "Hentai",
+            "NSFW",
+            "Pixel Art",
+            "Porn"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
