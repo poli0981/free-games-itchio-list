@@ -5519,33 +5519,6 @@
         "notes": ""
     },
     {
-        "url": "https://hunterelise.itch.io/console-games",
-        "name": "C++ Console Games",
-        "dev": "Elise Hunter",
-        "description": "This project contains two C++ console games developed for my uni coursework .",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0ODAxODY0LmpwZw==/original/Fx7fwK.jpg",
-        "tags": [
-            "Arcade",
-            "No AI"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://szalkin.itch.io/bomb-game",
         "name": "Bomb Game",
         "dev": "Sam Zalkin",
@@ -17577,6 +17550,30 @@
         "made_with": [
             "Godot"
         ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://theproair.itch.io/dopamine-fever",
+        "name": "Dopamine Fever",
+        "dev": "TheProair",
+        "description": "N/A",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3NjgzLmpwZw==/original/vxbKXZ.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     }

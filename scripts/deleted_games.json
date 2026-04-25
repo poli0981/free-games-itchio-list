@@ -94,5 +94,11 @@
         "name": "Soap Killer",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-23T07:56:03Z"
+    },
+    {
+        "url": "https://hunterelise.itch.io/console-games",
+        "name": "C++ Console Games",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-25T07:40:19Z"
     }
 ]
