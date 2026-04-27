@@ -100,5 +100,11 @@
         "name": "C++ Console Games",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-04-25T07:40:19Z"
+    },
+    {
+        "url": "https://sickycreator.itch.io/pepsi-express-free",
+        "name": "Pepsi express free",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-04-27T08:06:42Z"
     }
 ]

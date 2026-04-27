@@ -11695,32 +11695,6 @@
         "notes": ""
     },
     {
-        "url": "https://sickycreator.itch.io/pepsi-express-free",
-        "name": "Pepsi express free",
-        "dev": "Sickycreator",
-        "description": "this is the free version this has 15 levels buy the full version for more fun",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MzIyNjc4LmpwZw==/original/YUVurz.jpg",
-        "tags": [
-            "pepsi"
-        ],
-        "platforms": [
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://dmdorga.itch.io/nimble-rise-of-the-runelords-chapter-5",
         "name": "Nimble Rise of the Runelords Chapter 5",
         "dev": "DMDorga",
@@ -17570,6 +17544,35 @@
         "tags": [],
         "platforms": [
             "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://massimodemian.itch.io/cat-laga-demian-2026",
+        "name": "Cat-Laga Demian 2026",
+        "dev": "Dem",
+        "description": "Shooter espacial 2.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3NTMzLmpwZw==/original/G2BLro.jpg",
+        "tags": [
+            "3D",
+            "Cats",
+            "Shoot 'Em Up",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
         ],
         "languages": [],
         "inputs": [],
