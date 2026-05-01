@@ -112,5 +112,17 @@
         "name": "Love the Guard, Be the King (complete)",
         "reason": "Game became paid",
         "deleted_at": "2026-05-01T05:31:50Z"
+    },
+    {
+        "url": "https://anonymous-soul.itch.io/a-crown-of-velvet-thorns",
+        "name": "A Crown of Velvet Thorns",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-01T08:11:29Z"
+    },
+    {
+        "url": "https://tawarre31.itch.io/through-her-eyes",
+        "name": "Through His Eyes",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-01T08:11:36Z"
     }
 ]
