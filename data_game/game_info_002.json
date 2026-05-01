@@ -1,45 +1,5 @@
 [
     {
-        "url": "https://mymellowmilk.itch.io/meet-me-at-sunset",
-        "name": "Meet me at SUNSET",
-        "dev": "MelllowMilk.yWay",
-        "description": "Sip something refreshing and drive along the sea on your way to meet someone at SUNSET Arrow Keys - MOVE Z/X - Interact If nothing happens when you press the button, switch your keyboard to English",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2ODU4NDU0LnBuZw==/original/qyHkwV.png",
-        "tags": [
-            "2D",
-            "Atmospheric",
-            "Game Boy",
-            "Indie",
-            "Pixel Art",
-            "Retro",
-            "Top-Down"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [
-            "Aseprite",
-            "GB Studio"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://skylab304.itch.io/killing-time",
         "name": "Killing Time",
         "dev": "Skylab304",

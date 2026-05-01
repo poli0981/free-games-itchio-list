@@ -3783,47 +3783,6 @@
         "notes": ""
     },
     {
-        "url": "https://ligianunes.itch.io/love-the-guard-be-the-king",
-        "name": "Love the Guard, Be the King (complete)",
-        "dev": "Ligia Nunes",
-        "description": "Two children raised together.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "713",
-        "average_session": "Days or more",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIzODc5ODUwLnBuZw==/original/Rwc%2FPQ.png",
-        "tags": [
-            "Amare",
-            "Fantasy",
-            "Meaningful Choices",
-            "Medieval",
-            "Ren'Py",
-            "Romance",
-            "Singleplayer",
-            "Story Rich"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Gamepad (any)"
-        ],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://daijubudef.itch.io/you-fed-the-wrong-cat",
         "name": "You fed the wrong cat",
         "dev": "Daijubudef",
@@ -17577,6 +17536,46 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mymellowmilk.itch.io/meet-me-at-sunset",
+        "name": "Meet me at SUNSET",
+        "dev": "MelllowMilk.yWay",
+        "description": "Sip something refreshing and drive along the sea on your way to meet someone at SUNSET Arrow Keys - MOVE Z/X - Interact If nothing happens when you press the button, switch your keyboard to English",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODU4NDU0LnBuZw==/original/qyHkwV.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Game Boy",
+            "Indie",
+            "Pixel Art",
+            "Retro",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "Aseprite",
+            "GB Studio"
+        ],
         "safe_virus": "?",
         "notes": ""
     }
