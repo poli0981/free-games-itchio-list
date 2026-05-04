@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react'
 import {
   type ColumnFiltersState,
+  type PaginationState,
   type RowSelectionState,
   type SortingState,
   getCoreRowModel,
   getFilteredRowModel,
+  getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table'
@@ -42,6 +44,7 @@ export default function Games() {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [sorting, setSorting] = useState<SortingState>([{ id: 'name', desc: false }])
   const [rowSelection, setRowSelection] = useState<RowSelectionState>({})
+  const [pagination, setPagination] = useState<PaginationState>({ pageIndex: 0, pageSize: 100 })
   const [editOpen, setEditOpen] = useState(false)
   const [deleteOpen, setDeleteOpen] = useState(false)
 
@@ -74,16 +77,18 @@ export default function Games() {
   const tableForToolbar = useReactTable({
     data,
     columns: gameColumns,
-    state: { columnFilters, sorting, globalFilter, rowSelection },
+    state: { columnFilters, sorting, globalFilter, rowSelection, pagination },
     onColumnFiltersChange: setColumnFilters,
     onSortingChange: setSorting,
     onGlobalFilterChange: setGlobalFilter,
     onRowSelectionChange: setRowSelection,
+    onPaginationChange: setPagination,
     enableRowSelection: true,
     getRowId: (g) => g.url,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
     globalFilterFn: (row, _id, value) => gameSearch(row.original, String(value ?? '')),
     enableMultiSort: true,
   })
@@ -175,6 +180,8 @@ export default function Games() {
         onSortingChange={setSorting}
         rowSelection={rowSelection}
         onRowSelectionChange={setRowSelection}
+        pagination={pagination}
+        onPaginationChange={setPagination}
         globalFilterFn={gameSearch}
         rowKey={(g) => g.url}
         getRowId={(g) => g.url}

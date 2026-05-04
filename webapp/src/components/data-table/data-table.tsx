@@ -2,15 +2,18 @@ import { useMemo, useRef } from 'react'
 import {
   type ColumnDef,
   type ColumnFiltersState,
+  type PaginationState,
   type RowSelectionState,
   type SortingState,
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
+  getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table'
 import { useVirtualizer } from '@tanstack/react-virtual'
+import { DataTablePagination } from './data-table-pagination'
 import { cn } from '@/lib/utils'
 
 const ROW_HEIGHT = 56
@@ -26,6 +29,8 @@ interface DataTableProps<TData> {
   onSortingChange: (v: SortingState) => void
   rowSelection?: RowSelectionState
   onRowSelectionChange?: (v: RowSelectionState) => void
+  pagination?: PaginationState
+  onPaginationChange?: (v: PaginationState) => void
   globalFilterFn: (row: TData, query: string) => boolean
   rowKey: (row: TData) => string
   getRowId?: (row: TData) => string
@@ -42,14 +47,23 @@ export function DataTable<TData>({
   onSortingChange,
   rowSelection,
   onRowSelectionChange,
+  pagination,
+  onPaginationChange,
   globalFilterFn,
   rowKey,
   getRowId,
 }: DataTableProps<TData>) {
+  const enablePagination = !!pagination && !!onPaginationChange
   const table = useReactTable({
     data,
     columns,
-    state: { columnFilters, sorting, globalFilter, rowSelection: rowSelection ?? {} },
+    state: {
+      columnFilters,
+      sorting,
+      globalFilter,
+      rowSelection: rowSelection ?? {},
+      ...(enablePagination ? { pagination } : {}),
+    },
     onGlobalFilterChange: (updater) =>
       onGlobalFilterChange(typeof updater === 'function' ? updater(globalFilter) : updater),
     onColumnFiltersChange: (updater) =>
@@ -64,11 +78,18 @@ export function DataTable<TData>({
             typeof updater === 'function' ? updater(rowSelection ?? {}) : updater,
           )
       : undefined,
+    onPaginationChange: enablePagination
+      ? (updater) =>
+          onPaginationChange(
+            typeof updater === 'function' ? updater(pagination!) : updater,
+          )
+      : undefined,
     getRowId: getRowId,
     enableRowSelection: !!onRowSelectionChange,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    ...(enablePagination ? { getPaginationRowModel: getPaginationRowModel() } : {}),
     globalFilterFn: (row, _columnId, filterValue) =>
       globalFilterFn(row.original as TData, String(filterValue ?? '')),
     enableMultiSort: true,
@@ -90,8 +111,9 @@ export function DataTable<TData>({
   const headerGroups = useMemo(() => table.getHeaderGroups(), [table])
 
   return (
-    <div className="rounded-md border bg-card">
-      <div ref={parentRef} className="relative max-h-[calc(100vh-220px)] overflow-auto">
+    <div className="space-y-2">
+      <div className="rounded-md border bg-card">
+      <div ref={parentRef} className="relative max-h-[calc(100vh-280px)] overflow-auto">
         <table className="w-full text-sm">
           <thead className="sticky top-0 z-10 bg-card shadow-[inset_0_-1px_0_hsl(var(--border))]">
             {headerGroups.map((hg) => (
@@ -155,6 +177,8 @@ export function DataTable<TData>({
           </tbody>
         </table>
       </div>
+      </div>
+      {enablePagination && <DataTablePagination table={table} />}
     </div>
   )
 }
