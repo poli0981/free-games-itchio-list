@@ -13,11 +13,23 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          # Apple Silicon — native build on M-series runner.
           - platform: 'macos-latest'
-            args: '--target universal-apple-darwin'
+            tauri_target: 'aarch64-apple-darwin'
+            arch_label: 'aarch64'
+            args: '--target aarch64-apple-darwin'
+          # Intel — native build on Intel macOS runner.
+          - platform: 'macos-13'
+            tauri_target: 'x86_64-apple-darwin'
+            arch_label: 'x86_64'
+            args: '--target x86_64-apple-darwin'
           - platform: 'ubuntu-22.04'
+            tauri_target: ''
+            arch_label: ''
             args: ''
           - platform: 'windows-latest'
+            tauri_target: ''
+            arch_label: ''
             args: ''
 
     runs-on: ${{ matrix.platform }}
@@ -35,7 +47,7 @@ jobs:
       - name: Set up Rust
         uses: dtolnay/rust-toolchain@stable
         with:
-          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+          targets: ${{ matrix.tauri_target }}
 
       - name: Cache cargo
         uses: Swatinem/rust-cache@v2
@@ -69,3 +81,39 @@ jobs:
           releaseDraft: true
           prerelease: false
           args: ${{ matrix.args }}
+
+      # Tauri's bundler doesn't ship .pkg natively, so build it ourselves with
+      # pkgbuild (preinstalled on macOS runners). Runs even if the DMG step
+      # above failed, as long as the .app bundle was produced — which it always
+      # is, the failure is at the DMG packaging stage.
+      - name: Build .pkg installer (macOS)
+        if: always() && startsWith(matrix.platform, 'macos') && startsWith(github.ref, 'refs/tags/')
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          BUNDLE_DIR="webapp/src-tauri/target/${{ matrix.tauri_target }}/release/bundle/macos"
+          if [ ! -d "$BUNDLE_DIR" ]; then
+            echo "::warning::No macOS bundle directory at $BUNDLE_DIR — skipping pkgbuild."
+            exit 0
+          fi
+          cd "$BUNDLE_DIR"
+          APP=$(ls -d *.app 2>/dev/null | head -1 || true)
+          if [ -z "$APP" ]; then
+            echo "::warning::No .app bundle found — skipping pkgbuild."
+            exit 0
+          fi
+          VERSION=$(node -p "require('${{ github.workspace }}/webapp/src-tauri/tauri.conf.json').version")
+          PKG_NAME="$(basename "$APP" .app)_${VERSION}_${{ matrix.arch_label }}.pkg"
+          pkgbuild \
+            --component "$APP" \
+            --identifier com.poli0981.free-games-itchio-webapp \
+            --version "$VERSION" \
+            --install-location /Applications \
+            "$PKG_NAME"
+          ls -la "$PKG_NAME"
+          # Make sure the (draft) release exists so upload doesn't 404.
+          gh release view "${{ github.ref_name }}" --repo "${{ github.repository }}" >/dev/null 2>&1 \
+            || gh release create "${{ github.ref_name }}" --repo "${{ github.repository }}" --draft --notes "Pending desktop installers."
+          gh release upload "${{ github.ref_name }}" "$PKG_NAME" --repo "${{ github.repository }}" --clobber
