@@ -7,6 +7,9 @@ const isTauri = process.env.TAURI_ENV_PLATFORM !== undefined
 export default defineConfig({
   plugins: [react()],
   base: './',
+  define: {
+    __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10)),
+  },
   build: {
     outDir: isTauri ? 'dist' : '../docs/app',
     emptyOutDir: true,

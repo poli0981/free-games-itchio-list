@@ -13,6 +13,7 @@ const Add = lazy(() => import('@/routes/add'))
 const Charts = lazy(() => import('@/routes/charts'))
 const Workflows = lazy(() => import('@/routes/workflows'))
 const Settings = lazy(() => import('@/routes/settings'))
+const About = lazy(() => import('@/routes/about'))
 
 function RouteFallback() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/workflows" element={<Workflows />} />
             <Route path="/deleted" element={<Deleted />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

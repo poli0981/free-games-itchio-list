@@ -7,6 +7,7 @@ import {
   Workflow,
   Trash2,
   Settings,
+  Info,
   Library,
   PanelLeftClose,
   PanelLeft,
@@ -35,6 +36,7 @@ const NAV_ITEMS: NavItem[] = [
   { to: '/workflows', label: 'Workflows', icon: Workflow },
   { to: '/deleted', label: 'Deleted', icon: Trash2 },
   { to: '/settings', label: 'Settings', icon: Settings },
+  { to: '/about', label: 'About', icon: Info },
 ]
 
 export function Sidebar() {
