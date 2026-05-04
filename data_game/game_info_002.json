@@ -440,5 +440,38 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://apish-box-games.itch.io/passenger-6",
+        "name": "Passenger 6",
+        "dev": "Niven Hedinger",
+        "description": "A bite-sized psychological horror story set in the quite subway station.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "38",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MjcyNDQyLnBuZw==/original/ueMEac.png",
+        "tags": [
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "Spooky",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
