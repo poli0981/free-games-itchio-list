@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { useAuth } from '@/stores/auth'
+import { isTauri } from '@/lib/runtime'
 import { cn } from '@/lib/utils'
 
 interface NavItem {
@@ -73,6 +74,11 @@ export function Sidebar() {
         ))}
       </nav>
       <div className="space-y-2 border-t p-3">
+        {isTauri() && (
+          <div className="rounded-md bg-secondary px-2 py-1 text-xs text-secondary-foreground">
+            Desktop mode (Tauri)
+          </div>
+        )}
         <ThemeToggle />
         <a
           href="https://github.com/poli0981/free-games-itchio-list"

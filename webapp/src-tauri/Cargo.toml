@@ -1,0 +1,30 @@
+[package]
+name = "free-games-itchio-webapp"
+version = "0.1.0"
+description = "Itch.io free games catalog browser & editor"
+authors = ["poli0981"]
+license = "MIT"
+repository = "https://github.com/poli0981/free-games-itchio-list"
+edition = "2021"
+rust-version = "1.77"
+
+[lib]
+name = "free_games_itchio_webapp_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-http = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+incremental = false
+opt-level = "s"
+strip = true
