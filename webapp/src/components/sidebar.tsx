@@ -11,6 +11,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { ThemeToggle } from '@/components/theme-toggle'
+import { useAuth } from '@/stores/auth'
 import { cn } from '@/lib/utils'
 
 interface NavItem {
@@ -31,11 +32,25 @@ const NAV_ITEMS: NavItem[] = [
 ]
 
 export function Sidebar() {
+  const user = useAuth((s) => s.user)
+  const hasStoredPat = useAuth((s) => s.hasStoredPat)
   return (
     <aside className="flex h-screen w-60 flex-col border-r bg-card">
       <div className="flex h-14 items-center gap-2 border-b px-4">
         <Library className="h-5 w-5" />
         <span className="font-semibold">Itch.io DB</span>
+        {user ? (
+          <img
+            src={user.avatar_url}
+            alt={user.login}
+            title={`Signed in as ${user.login}`}
+            className="ml-auto h-6 w-6 rounded-full"
+          />
+        ) : hasStoredPat ? (
+          <span title="PAT saved but locked" className="ml-auto h-2 w-2 rounded-full bg-yellow-500" />
+        ) : (
+          <span title="No PAT saved" className="ml-auto h-2 w-2 rounded-full bg-muted-foreground/40" />
+        )}
       </div>
       <nav className="flex flex-1 flex-col gap-1 p-3">
         {NAV_ITEMS.map(({ to, label, icon: Icon, end }) => (
