@@ -3,6 +3,7 @@ import type { ColumnDef, FilterFn } from '@tanstack/react-table'
 import { ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Checkbox } from '@/components/ui/checkbox'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
 
@@ -36,6 +37,29 @@ function SortableHeader({ label, sorted, onClick }: SortableHeaderProps) {
 }
 
 export const gameColumns: ColumnDef<Game>[] = [
+  {
+    id: 'select',
+    enableSorting: false,
+    enableColumnFilter: false,
+    size: 40,
+    header: ({ table }) => (
+      <Checkbox
+        checked={
+          table.getIsAllPageRowsSelected() ||
+          (table.getIsSomePageRowsSelected() && 'indeterminate')
+        }
+        onCheckedChange={(v) => table.toggleAllRowsSelected(!!v)}
+        aria-label="Select all"
+      />
+    ),
+    cell: ({ row }) => (
+      <Checkbox
+        checked={row.getIsSelected()}
+        onCheckedChange={(v) => row.toggleSelected(!!v)}
+        aria-label="Select row"
+      />
+    ),
+  },
   {
     id: 'thumbnail',
     accessorKey: 'thumbnail',

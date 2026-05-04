@@ -2,6 +2,7 @@ import { useMemo, useRef } from 'react'
 import {
   type ColumnDef,
   type ColumnFiltersState,
+  type RowSelectionState,
   type SortingState,
   flexRender,
   getCoreRowModel,
@@ -23,8 +24,11 @@ interface DataTableProps<TData> {
   onColumnFiltersChange: (v: ColumnFiltersState) => void
   sorting: SortingState
   onSortingChange: (v: SortingState) => void
+  rowSelection?: RowSelectionState
+  onRowSelectionChange?: (v: RowSelectionState) => void
   globalFilterFn: (row: TData, query: string) => boolean
   rowKey: (row: TData) => string
+  getRowId?: (row: TData) => string
 }
 
 export function DataTable<TData>({
@@ -36,13 +40,16 @@ export function DataTable<TData>({
   onColumnFiltersChange,
   sorting,
   onSortingChange,
+  rowSelection,
+  onRowSelectionChange,
   globalFilterFn,
   rowKey,
+  getRowId,
 }: DataTableProps<TData>) {
   const table = useReactTable({
     data,
     columns,
-    state: { columnFilters, sorting, globalFilter },
+    state: { columnFilters, sorting, globalFilter, rowSelection: rowSelection ?? {} },
     onGlobalFilterChange: (updater) =>
       onGlobalFilterChange(typeof updater === 'function' ? updater(globalFilter) : updater),
     onColumnFiltersChange: (updater) =>
@@ -51,6 +58,14 @@ export function DataTable<TData>({
       ),
     onSortingChange: (updater) =>
       onSortingChange(typeof updater === 'function' ? updater(sorting) : updater),
+    onRowSelectionChange: onRowSelectionChange
+      ? (updater) =>
+          onRowSelectionChange(
+            typeof updater === 'function' ? updater(rowSelection ?? {}) : updater,
+          )
+      : undefined,
+    getRowId: getRowId,
+    enableRowSelection: !!onRowSelectionChange,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
