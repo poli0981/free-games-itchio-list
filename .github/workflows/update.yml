@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '0 3 * * *'  # Runs daily at 03:00 UTC
   workflow_dispatch:
+    inputs:
+      url:
+        description: 'itch.io URL to add (optional; if empty, processes scripts/temp_link.json)'
+        required: false
+        type: string
 
 permissions:
     contents: write
@@ -24,6 +29,8 @@ jobs:
           python-version: 3.14
 
       - name: Run bash script to update game info
+        env:
+          INPUT_URL: ${{ inputs.url }}
         run: |
             chmod +x ./bash/test.sh
             ./bash/test.sh

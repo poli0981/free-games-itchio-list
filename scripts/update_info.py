@@ -27,15 +27,23 @@ TEMP_LINK = "scripts/temp_link.json"
 
 
 def main() -> None:
-    if not os.path.exists(TEMP_LINK):
-        print("No temp_link.json found — nothing to do.")
-        return
+    new_links: list[str] = []
 
-    with open(TEMP_LINK, "r", encoding="utf-8") as f:
-        new_links: list[str] = json.load(f)
+    if os.path.exists(TEMP_LINK):
+        with open(TEMP_LINK, "r", encoding="utf-8") as f:
+            new_links = json.load(f)
+
+    # Append a single URL passed via workflow_dispatch input (webapp uses this).
+    input_url = os.environ.get("INPUT_URL", "").strip()
+    if input_url:
+        if input_url not in new_links:
+            new_links.append(input_url)
+            print(f"Added from workflow input: {input_url}")
+        else:
+            print(f"workflow input URL already queued: {input_url}")
 
     if not new_links:
-        print("temp_link.json is empty — nothing to do.")
+        print("No links to process (temp_link.json empty and no INPUT_URL).")
         return
 
     # Load existing

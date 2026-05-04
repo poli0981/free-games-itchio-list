@@ -1,3 +1,10 @@
+/docs/app/
+/webapp/node_modules/
+/webapp/dist/
+/webapp/src-tauri/target/
+/webapp/src-tauri/gen/
+/webapp/src-tauri/Cargo.lock
+
 .idea/*
 cmake-build-*/
 *.iws

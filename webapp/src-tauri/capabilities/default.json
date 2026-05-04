@@ -1,0 +1,19 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default capabilities for the main window",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "http:default",
+    {
+      "identifier": "http:default",
+      "allow": [
+        { "url": "https://*.itch.io/*" },
+        { "url": "https://img.itch.zone/*" },
+        { "url": "https://api.github.com/*" },
+        { "url": "https://raw.githubusercontent.com/*" }
+      ]
+    }
+  ]
+}
