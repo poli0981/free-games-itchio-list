@@ -1,15 +1,27 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Sidebar } from '@/components/sidebar'
+import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import Dashboard from '@/routes/dashboard'
 import Games from '@/routes/games'
-import GameDetail from '@/routes/game-detail'
-import Add from '@/routes/add'
-import Charts from '@/routes/charts'
-import Workflows from '@/routes/workflows'
 import Deleted from '@/routes/deleted'
-import Settings from '@/routes/settings'
 import NotFound from '@/routes/not-found'
+
+const GameDetail = lazy(() => import('@/routes/game-detail'))
+const Add = lazy(() => import('@/routes/add'))
+const Charts = lazy(() => import('@/routes/charts'))
+const Workflows = lazy(() => import('@/routes/workflows'))
+const Settings = lazy(() => import('@/routes/settings'))
+
+function RouteFallback() {
+  return (
+    <div className="container mx-auto space-y-3 p-6">
+      <Skeleton className="h-8 w-48" />
+      <Skeleton className="h-[60vh]" />
+    </div>
+  )
+}
 
 export default function App() {
   useThemeEffect()
@@ -17,17 +29,19 @@ export default function App() {
     <div className="flex h-screen overflow-hidden">
       <Sidebar />
       <main className="flex-1 overflow-y-auto">
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/games" element={<Games />} />
-          <Route path="/games/:slug" element={<GameDetail />} />
-          <Route path="/add" element={<Add />} />
-          <Route path="/charts" element={<Charts />} />
-          <Route path="/workflows" element={<Workflows />} />
-          <Route path="/deleted" element={<Deleted />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<RouteFallback />}>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/games" element={<Games />} />
+            <Route path="/games/:slug" element={<GameDetail />} />
+            <Route path="/add" element={<Add />} />
+            <Route path="/charts" element={<Charts />} />
+            <Route path="/workflows" element={<Workflows />} />
+            <Route path="/deleted" element={<Deleted />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </main>
     </div>
   )
