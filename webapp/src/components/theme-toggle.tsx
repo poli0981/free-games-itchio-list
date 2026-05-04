@@ -15,7 +15,12 @@ const LABELS: Record<Theme, string> = {
   system: 'System',
 }
 
-export function ThemeToggle({ className }: { className?: string }) {
+interface ThemeToggleProps {
+  className?: string
+  showLabel?: boolean
+}
+
+export function ThemeToggle({ className, showLabel = true }: ThemeToggleProps) {
   const theme = useThemeStore((s) => s.theme)
   const setTheme = useThemeStore((s) => s.setTheme)
   const Icon = ICONS[theme]
@@ -23,6 +28,20 @@ export function ThemeToggle({ className }: { className?: string }) {
   function cycle() {
     const next = ORDER[(ORDER.indexOf(theme) + 1) % ORDER.length]
     setTheme(next)
+  }
+
+  if (!showLabel) {
+    return (
+      <Button
+        variant="ghost"
+        size="icon"
+        onClick={cycle}
+        className={cn('h-8 w-8', className)}
+        title={`Theme: ${LABELS[theme]} (click to cycle)`}
+      >
+        <Icon className="h-4 w-4" />
+      </Button>
+    )
   }
 
   return (
