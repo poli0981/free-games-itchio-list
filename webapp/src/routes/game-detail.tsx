@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, ExternalLink, Pencil } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -5,7 +6,9 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Separator } from '@/components/ui/separator'
+import { EditGameForm } from '@/components/edit-game-form'
 import { useGameBySlug } from '@/hooks/useGameBySlug'
+import { useAuth } from '@/stores/auth'
 import type { Game } from '@/types/game'
 
 function FieldRow({ label, children }: { label: string; children: React.ReactNode }) {
@@ -31,6 +34,9 @@ function ArrayBadges({ items, variant = 'outline' }: { items: string[]; variant?
 }
 
 function GameDetailView({ game }: { game: Game }) {
+  const pat = useAuth((s) => s.pat)
+  const [editing, setEditing] = useState(false)
+
   return (
     <div className="container mx-auto p-6">
       <div className="mb-4 flex items-center justify-between">
@@ -40,11 +46,28 @@ function GameDetailView({ game }: { game: Game }) {
             Back to games
           </Link>
         </Button>
-        <Button size="sm" disabled title="Edit form coming in Phase 2">
-          <Pencil className="h-4 w-4" />
-          Edit (Phase 2)
-        </Button>
+        {!editing && (
+          <Button
+            size="sm"
+            onClick={() => setEditing(true)}
+            disabled={!pat}
+            title={pat ? 'Edit annotations' : 'Unlock your PAT in Settings to enable editing'}
+          >
+            <Pencil className="h-4 w-4" />
+            Edit
+          </Button>
+        )}
       </div>
+
+      {editing && (
+        <div className="mb-6">
+          <EditGameForm
+            game={game}
+            onCancel={() => setEditing(false)}
+            onSaved={() => setEditing(false)}
+          />
+        </div>
+      )}
 
       <Card>
         <CardContent className="flex flex-col gap-6 p-6 md:flex-row">
