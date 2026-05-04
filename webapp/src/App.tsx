@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Sidebar } from '@/components/sidebar'
+import { useThemeEffect } from '@/hooks/useThemeEffect'
 import Dashboard from '@/routes/dashboard'
 import Games from '@/routes/games'
 import GameDetail from '@/routes/game-detail'
@@ -11,6 +12,7 @@ import Settings from '@/routes/settings'
 import NotFound from '@/routes/not-found'
 
 export default function App() {
+  useThemeEffect()
   return (
     <div className="flex h-screen overflow-hidden">
       <Sidebar />

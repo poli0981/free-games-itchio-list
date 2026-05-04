@@ -10,6 +10,7 @@ import {
   Library,
   type LucideIcon,
 } from 'lucide-react'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { cn } from '@/lib/utils'
 
 interface NavItem {
@@ -56,12 +57,13 @@ export function Sidebar() {
           </NavLink>
         ))}
       </nav>
-      <div className="border-t p-3 text-xs text-muted-foreground">
+      <div className="space-y-2 border-t p-3">
+        <ThemeToggle />
         <a
           href="https://github.com/poli0981/free-games-itchio-list"
           target="_blank"
           rel="noreferrer"
-          className="hover:underline"
+          className="block text-xs text-muted-foreground hover:underline"
         >
           poli0981/free-games-itchio-list
         </a>
