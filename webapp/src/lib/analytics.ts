@@ -69,6 +69,31 @@ export function parseRating(rating: string): number | null {
   return isFinite(n) ? n : null
 }
 
+export function classifyOnline(games: Game[]): { online: number; offline: number } {
+  let online = 0
+  let offline = 0
+  for (const g of games) {
+    if (g.platforms?.includes('HTML5')) online++
+    else offline++
+  }
+  return { online, offline }
+}
+
+export function topMadeWith(games: Game[], n = 8): CountEntry[] {
+  const m = new Map<string, number>()
+  for (const g of games) {
+    const first = g.made_with?.[0]
+    if (!first) {
+      m.set('Unknown', (m.get('Unknown') ?? 0) + 1)
+      continue
+    }
+    m.set(first, (m.get(first) ?? 0) + 1)
+  }
+  return Array.from(m, ([key, count]) => ({ key, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, n)
+}
+
 export function ratingHistogram(games: Game[], bins = 10): CountEntry[] {
   const out = Array.from({ length: bins }, (_, i) => ({
     key: `${(i * (5 / bins)).toFixed(1)}–${((i + 1) * (5 / bins)).toFixed(1)}`,
