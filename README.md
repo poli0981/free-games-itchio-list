@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
@@ -12,6 +12,7 @@ organized into browsable markdown tables — updated daily via GitHub Actions.
 ## Table of contents
 
 - [Browse by genre](#browse-by-genre)
+- [Webapp (browse + edit + analytics)](#webapp-browse--edit--analytics)
 - [How it works](#how-it-works)
 - [Project structure](#project-structure)
 - [Automation (GitHub Actions)](#automation-github-actions)
@@ -33,6 +34,36 @@ are added.
 - [Platformer](lists/platformer.md)
 - [Other](lists/other.md)
 - *(more genres auto-create as needed)*
+
+## Webapp (browse + edit + analytics)
+
+A React + TypeScript SPA in [`webapp/`](webapp/) provides a browsable UI on top of the same JSON
+catalog: virtualized DataTable for all 500+ games, faceted filters (genre / status / platforms /
+NSFW), 9 charts (Recharts), bulk edit/delete via the GitHub Git Data API, and a one-click "add"
+flow that dispatches the scraper workflow with a URL input.
+
+- **Web build**: deployed to GitHub Pages by [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml)
+  — pushes to `main` that touch `webapp/` ship automatically. (One-time setup: repo
+  Settings → Pages → Source = "GitHub Actions".)
+- **Desktop build (optional)**: same React code wraps as a Tauri 2 native app for Windows / macOS
+  / Linux. See [`webapp/TAURI.md`](webapp/TAURI.md) for prerequisites and `npm run tauri:dev`.
+  Multi-platform installers are built by [`.github/workflows/release_desktop.yml`](.github/workflows/release_desktop.yml)
+  on tag push (`v*`).
+- **Auth**: a fine-grained PAT with `contents:write` + `workflow:write` is encrypted in
+  localStorage with a passphrase (AES-GCM, PBKDF2-SHA256). Decrypted token only lives in memory.
+  Reads are public (no auth needed).
+- **Edits commit as `chore(webapp): …`** so they're easy to filter from the daily scraper
+  commits.
+
+Local dev:
+
+```sh
+cd webapp
+npm install
+npm run dev          # http://localhost:5173
+npm run build        # writes to docs/app/
+npm run tauri:dev    # native desktop (requires Rust)
+```
 
 ## How it works
 
@@ -85,22 +116,35 @@ bash/
 lists/                  # Auto-generated markdown tables (one per genre)
 
 .github/workflows/
-├── update.yml          # Daily 03:00 UTC — scrape new games
-├── generate_table.yml  # Runs after update/check workflows
-├── check_paid.yml      # Every 2 days 04:00 UTC
-├── check_alive.yml     # Every 2 days 07:00 UTC
-└── log_deleted.yml     # Runs after check workflows
+├── update.yml             # Daily 03:00 UTC — scrape new games
+│                          # (also accepts an optional `url` input from webapp)
+├── generate_table.yml     # Runs after update/check workflows
+├── check_paid.yml         # Every 2 days 04:00 UTC
+├── check_alive.yml        # Every 2 days 07:00 UTC
+├── log_deleted.yml        # Runs after check workflows
+├── deploy_webapp.yml      # Build webapp/ → GitHub Pages on push to main
+└── release_desktop.yml    # Build Tauri installers (Win/macOS/Linux) on v* tag
+
+webapp/                 # React + TS SPA + Tauri desktop wrapper
+├── src/                # React app (routes, components, hooks, stores)
+├── src-tauri/          # Rust + Tauri 2 config (icons, capabilities, main.rs)
+├── TAURI.md            # Desktop build prerequisites and instructions
+├── package.json
+├── vite.config.ts
+└── tailwind.config.ts
 ```
 
 ## Automation (GitHub Actions)
 
-| Workflow          | Schedule               | Purpose                                    |
-|-------------------|------------------------|--------------------------------------------|
-| Update game info  | Daily 03:00 UTC        | Scrape new links, skip paid games          |
-| Generate tables   | After update/checks    | Rebuild markdown tables in `/lists/`       |
-| Check paid games  | Every 2 days 04:00 UTC | Remove games that became paid              |
-| Check dead links  | Every 2 days 07:00 UTC | Remove 404/410 game pages                  |
-| Log deleted games | After check workflows  | Export deletion log to `deleted_games.txt` |
+| Workflow           | Schedule               | Purpose                                                     |
+|--------------------|------------------------|-------------------------------------------------------------|
+| Update game info   | Daily 03:00 UTC        | Scrape new links from `temp_link.json` (+ optional `url` input from webapp), skip paid |
+| Generate tables    | After update/checks    | Rebuild markdown tables in `/lists/`                        |
+| Check paid games   | Every 2 days 04:00 UTC | Remove games that became paid                               |
+| Check dead links   | Every 2 days 07:00 UTC | Remove 404/410 game pages                                   |
+| Log deleted games  | After check workflows  | Export deletion log to `deleted_games.txt`                  |
+| Deploy webapp      | On push to main        | Build `webapp/` → GitHub Pages (`docs/app/`)                |
+| Release desktop    | On `v*` tag push       | Build Tauri installers (Win/macOS/Linux) → draft Release    |
 
 All workflows include rate-limiting (random delays, batch pauses) to avoid being blocked by itch.io. Network errors are
 treated as transient — games are only removed on confirmed 404/410 or confirmed paid status.
