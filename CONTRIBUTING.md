@@ -44,6 +44,31 @@ Please use the issue/PR templates — they make my life easier and reduce "wtf" 
 - Test locally if possible (run scripts manually).
 - Clear description — I'll review slowly (unemployed schedule + Grok help).
 
+### 8. Webapp Changes (React + TS)
+
+The browse/edit UI lives in [`webapp/`](webapp/). Same MIT license, same PR template.
+
+**Local dev** (Node 22+, npm):
+```sh
+cd webapp
+npm install
+npm run dev          # http://localhost:5173
+npm run build        # writes to docs/app/ (verify before pushing)
+npm run lint         # eslint
+```
+
+**Tauri desktop dev** (also needs Rust via https://rustup.rs and platform deps — see [`webapp/TAURI.md`](webapp/TAURI.md)):
+```sh
+cd webapp
+npm run tauri:dev    # native window pointing at the Vite dev server
+npm run tauri:build  # produce installers in src-tauri/target/release/bundle/
+```
+
+**House rules**:
+- Don't commit `webapp/dist/` or `docs/app/` — CI builds them on push to `main`.
+- Don't commit a real PAT into the repo (that's also a webapp Settings concern, not a CI concern).
+- Add new third-party deps? Update `webapp/src/lib/about.ts` so the About page lists them.
+
 ## Tips for Smooth Contributing
 - **Test locally**: Clone, add to `temp_link.json`, run `python update_info.py` → `generate_md.py`, check `/lists/`.
 - **Keep clean**: Only free itch.io games, no paid/demo/malware/duplicates.
