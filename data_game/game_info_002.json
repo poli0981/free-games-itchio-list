@@ -524,5 +524,36 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://jamwitch.itch.io/trevosa",
+        "name": "The Archives of Trevosa",
+        "dev": "jamwitch",
+        "description": "\"I am Ludir, oloth-til of Oreleth-cyno-taayen of Trevosa.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "136",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2OTI4MzE2LnBuZw==/original/9o46b8.png",
+        "tags": [
+            "deduction",
+            "language",
+            "Ludum Dare",
+            "Ludum Dare 59",
+            "Narrative",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
