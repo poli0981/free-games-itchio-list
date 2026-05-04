@@ -18,8 +18,11 @@ jobs:
             tauri_target: 'aarch64-apple-darwin'
             arch_label: 'aarch64'
             args: '--target aarch64-apple-darwin'
-          # Intel — native build on Intel macOS runner.
-          - platform: 'macos-13'
+          # Intel — cross-compile from Apple Silicon runner because GitHub
+          # retired `macos-13` from free hosted runners (jobs sit in 'queued'
+          # forever and get auto-cancelled). Xcode CLI tools on `macos-latest`
+          # ship the x86_64 SDK and rustup adds the target below.
+          - platform: 'macos-latest'
             tauri_target: 'x86_64-apple-darwin'
             arch_label: 'x86_64'
             args: '--target x86_64-apple-darwin'
