@@ -201,15 +201,29 @@ export default function Settings() {
                   onChange={(e) => setPatInput(e.target.value)}
                   placeholder="github_pat_..."
                 />
-                <p className="text-xs text-muted-foreground">
-                  Fine-grained token with{' '}
-                  <span className="font-mono">contents:write</span> +{' '}
-                  <span className="font-mono">workflow:write</span> on{' '}
-                  <span className="font-mono">
-                    {REPO.owner}/{REPO.name}
-                  </span>
-                  .
-                </p>
+                <div className="space-y-1 text-xs text-muted-foreground">
+                  <p>
+                    Fine-grained token scoped to only{' '}
+                    <span className="font-mono">
+                      {REPO.owner}/{REPO.name}
+                    </span>
+                    , with these repository permissions:
+                  </p>
+                  <ul className="ml-4 list-disc space-y-0.5">
+                    <li>
+                      <span className="font-mono">Contents</span>: Read and write — required for
+                      edits, deletes, and queueing URLs.
+                    </li>
+                    <li>
+                      <span className="font-mono">Actions</span>: Read and write — required to
+                      dispatch the scraper workflow from Add / Workflows.
+                    </li>
+                  </ul>
+                  <p className="pt-1">
+                    Classic tokens with the <span className="font-mono">workflow</span> scope also
+                    work but grant access to every repo you can write to.
+                  </p>
+                </div>
               </div>
               <div className="space-y-1.5">
                 <Label htmlFor="pass">Passphrase</Label>
