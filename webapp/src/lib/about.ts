@@ -19,6 +19,52 @@ declare global {
   const __BUILD_DATE__: string
 }
 
+export const DEV = {
+  name: 'SkullMute',
+  role: 'Solo maintainer',
+  blurb: 'Unemployed introvert Vietnamese dev. Grok is my non-judgmental coding buddy.',
+  githubUrl: 'https://github.com/poli0981',
+} as const
+
+export const ERROR_TEMPLATE_URL =
+  'https://github.com/poli0981/free-games-itchio-list/issues/new?template=bug_report.yml'
+
+export type SocialGroup = 'social' | 'community' | 'support' | 'gaming'
+
+export interface SocialLink {
+  platform: string
+  label: string
+  handle: string
+  url: string
+  group: SocialGroup
+}
+
+export const SOCIAL_LINKS: SocialLink[] = [
+  // Social
+  { platform: 'x', label: 'X (Twitter)', handle: '@SkullMute0011', url: 'https://x.com/SkullMute0011', group: 'social' },
+  { platform: 'youtube', label: 'YouTube', handle: '@SkullMute', url: 'https://youtube.com/@SkullMute', group: 'social' },
+  { platform: 'bluesky', label: 'Bluesky', handle: '@skullmute0011', url: 'https://bsky.app/profile/skullmute0011.bsky.social', group: 'social' },
+  { platform: 'mastodon', label: 'Mastodon', handle: '@skullmute1122', url: 'https://mastodon.social/@skullmute1122', group: 'social' },
+
+  // Community
+  { platform: 'discord-repo', label: 'Discord — Repo discussion', handle: '#general', url: 'https://discord.gg/2aNR3aVt', group: 'community' },
+  { platform: 'discord-game', label: 'Discord — Game chat', handle: '#general', url: 'https://discord.gg/kDM9GMu5vm', group: 'community' },
+
+  // Support
+  { platform: 'patreon', label: 'Patreon', handle: 'skullmute', url: 'https://patreon.com/skullmute', group: 'support' },
+  { platform: 'kofi', label: 'Ko-fi', handle: 'skullmute', url: 'https://ko-fi.com/skullmute', group: 'support' },
+
+  // Gaming
+  { platform: 'steam', label: 'Steam', handle: 'profile', url: 'https://steamcommunity.com/profiles/76561199544666292/', group: 'gaming' },
+]
+
+export const SOCIAL_GROUP_LABELS: Record<SocialGroup, string> = {
+  social: 'Social',
+  community: 'Community',
+  support: 'Support',
+  gaming: 'Gaming',
+}
+
 export const THIRD_PARTY: ThirdParty[] = [
   // Core
   { name: 'React', version: '19.2', license: 'MIT', url: 'https://react.dev', category: 'core' },
@@ -51,6 +97,7 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
   { name: '@tauri-apps/api', version: '2.11', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
   { name: 'tauri-plugin-http', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
+  { name: 'tauri-plugin-opener', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener', category: 'desktop' },
 ]
 
 export const UPSTREAM_DATA = {

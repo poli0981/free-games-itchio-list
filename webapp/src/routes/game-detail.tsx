@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Separator } from '@/components/ui/separator'
+import { ExtLink } from '@/components/ext-link'
 import { EditGameForm } from '@/components/edit-game-form'
 import { useGameBySlug } from '@/hooks/useGameBySlug'
 import { useAuth } from '@/stores/auth'
@@ -92,10 +93,10 @@ function GameDetailView({ game }: { game: Game }) {
             <p className="mt-3 text-sm">{game.description}</p>
             <div className="mt-auto pt-4">
               <Button variant="outline" size="sm" asChild>
-                <a href={game.url} target="_blank" rel="noreferrer">
+                <ExtLink href={game.url}>
                   Open on itch.io
                   <ExternalLink className="h-4 w-4" />
-                </a>
+                </ExtLink>
               </Button>
             </div>
           </div>
@@ -185,7 +186,7 @@ function GameDetailView({ game }: { game: Game }) {
 
       <Separator className="my-6" />
       <p className="text-xs text-muted-foreground">
-        URL: <a href={game.url} target="_blank" rel="noreferrer" className="hover:underline">{game.url}</a>
+        URL: <ExtLink href={game.url} className="hover:underline">{game.url}</ExtLink>
       </p>
     </div>
   )

@@ -76,10 +76,22 @@ npm run tauri:build  # produce installers in src-tauri/target/release/bundle/
 - **Agreement**: All templates have a required checkbox — off-topic/spam/violate policy = I ignore/close without drama :D
 
 ## Discuss More? (If Templates Not Enough)
-Issues/PRs are best for tracking, but if you wanna describe bugs/features in depth, chit-chat, or share noob stories:
-- Check my GitHub profile for links to X (Twitter) or Facebook (ghost towns, but DM open if you find me :v).
-- Or join Telegram/Discord groups/servers if I ever make one (unlikely, introvert god-mode).
-- Grok can't join, but ping me here — I'll try not to ghost.
+Issues/PRs are best for tracking, but if you wanna describe bugs/features in depth, chit-chat, or share noob stories — there are actual servers now (introvert god-mode breached):
+
+**Chat / community**
+- Discord — Repo discussion (#general): https://discord.gg/2aNR3aVt
+- Discord — Game chat (#general): https://discord.gg/kDM9GMu5vm
+
+**Social (DMs open, replies slow)**
+- X (Twitter): [@SkullMute0011](https://x.com/SkullMute0011)
+- YouTube: [@SkullMute](https://youtube.com/@SkullMute)
+- Bluesky: [@skullmute0011](https://bsky.app/profile/skullmute0011.bsky.social)
+- Mastodon: [@skullmute1122](https://mastodon.social/@skullmute1122)
+
+**Support the boredom project (totally optional, $50 bank account thanks you)**
+- [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
+
+Grok can't join Discord, but ping me on any channel — I'll try not to ghost.
 
 Big thanks in [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md) for any help!
 

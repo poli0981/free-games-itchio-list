@@ -1,8 +1,34 @@
-import { ExternalLink } from 'lucide-react'
+import {
+  Bug,
+  Cloud,
+  Coffee,
+  ExternalLink as ExternalLinkIcon,
+  Gamepad2,
+  Library,
+  Globe,
+  Hash,
+  Heart,
+  MessagesSquare,
+  Video,
+  type LucideIcon,
+} from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { APP, THIRD_PARTY, UPSTREAM_DATA, type ThirdParty } from '@/lib/about'
+import { ExtLink } from '@/components/ext-link'
+import {
+  APP,
+  DEV,
+  ERROR_TEMPLATE_URL,
+  SOCIAL_GROUP_LABELS,
+  SOCIAL_LINKS,
+  THIRD_PARTY,
+  UPSTREAM_DATA,
+  type SocialGroup,
+  type SocialLink,
+  type ThirdParty,
+} from '@/lib/about'
 
 const CATEGORY_LABELS: Record<ThirdParty['category'], string> = {
   core: 'Core',
@@ -11,6 +37,20 @@ const CATEGORY_LABELS: Record<ThirdParty['category'], string> = {
   desktop: 'Desktop (Tauri)',
   dev: 'Dev tooling',
 }
+
+const SOCIAL_ICON: Record<string, LucideIcon> = {
+  x: Hash,
+  youtube: Video,
+  bluesky: Cloud,
+  mastodon: Hash,
+  'discord-repo': MessagesSquare,
+  'discord-game': MessagesSquare,
+  patreon: Heart,
+  kofi: Coffee,
+  steam: Gamepad2,
+}
+
+const SOCIAL_GROUP_ORDER: SocialGroup[] = ['social', 'community', 'support', 'gaming']
 
 function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
   const items = THIRD_PARTY.filter((t) => t.category === category)
@@ -24,16 +64,14 @@ function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
             key={t.name}
             className="flex items-center justify-between gap-2 rounded-md border p-2 text-sm"
           >
-            <a
+            <ExtLink
               href={t.url}
-              target="_blank"
-              rel="noreferrer"
               className="inline-flex items-center gap-1 truncate font-medium hover:underline"
               title={`${t.name} ${t.version}`}
             >
               {t.name}
-              <ExternalLink className="h-3 w-3 opacity-50" />
-            </a>
+              <ExternalLinkIcon className="h-3 w-3 opacity-50" />
+            </ExtLink>
             <div className="flex flex-shrink-0 items-center gap-2 text-xs">
               <span className="text-muted-foreground">{t.version}</span>
               <Badge variant="outline" className="font-mono text-xs">
@@ -44,6 +82,40 @@ function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
         ))}
       </ul>
     </div>
+  )
+}
+
+function SocialGroupSection({ group }: { group: SocialGroup }) {
+  const items = SOCIAL_LINKS.filter((s) => s.group === group)
+  if (items.length === 0) return null
+  return (
+    <div className="space-y-2">
+      <h3 className="text-sm font-semibold text-muted-foreground">{SOCIAL_GROUP_LABELS[group]}</h3>
+      <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
+        {items.map((s) => (
+          <SocialItem key={s.platform} link={s} />
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function SocialItem({ link }: { link: SocialLink }) {
+  const Icon = SOCIAL_ICON[link.platform] ?? Globe
+  return (
+    <li className="rounded-md border">
+      <ExtLink
+        href={link.url}
+        className="flex items-center gap-3 p-2 text-sm hover:bg-accent hover:text-accent-foreground"
+      >
+        <Icon className="h-4 w-4 flex-shrink-0 opacity-70" />
+        <span className="min-w-0 flex-1 truncate">
+          <span className="font-medium">{link.label}</span>
+          <span className="ml-2 text-xs text-muted-foreground">{link.handle}</span>
+        </span>
+        <ExternalLinkIcon className="h-3 w-3 flex-shrink-0 opacity-50" />
+      </ExtLink>
+    </li>
   )
 }
 
@@ -62,9 +134,9 @@ export default function About() {
         <CardContent className="space-y-2 text-sm">
           <p>
             A read/write companion app for the{' '}
-            <a href={APP.repo} target="_blank" rel="noreferrer" className="font-medium hover:underline">
+            <ExtLink href={APP.repo} className="font-medium hover:underline">
               free-games-itchio-list
-            </a>{' '}
+            </ExtLink>{' '}
             catalog. Browse 500+ free games from itch.io, edit annotations, dispatch the scraper
             workflow with one click, and visualize the dataset.
           </p>
@@ -77,19 +149,73 @@ export default function About() {
 
       <Card className="mt-6">
         <CardHeader>
+          <CardTitle className="text-base">Developer</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-2 text-sm">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-medium">{DEV.name}</span>
+            <Badge variant="secondary" className="text-xs">
+              {DEV.role}
+            </Badge>
+          </div>
+          <p className="text-muted-foreground">{DEV.blurb}</p>
+          <ExtLink
+            href={DEV.githubUrl}
+            className="inline-flex items-center gap-1.5 text-sm font-medium hover:underline"
+          >
+            <Library className="h-4 w-4" />
+            {DEV.githubUrl.replace('https://', '')}
+            <ExternalLinkIcon className="h-3 w-3 opacity-50" />
+          </ExtLink>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">Found a bug?</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm">
+          <p className="text-muted-foreground">
+            If something's broken — desktop or web — file it here so I see it. Grok will probably
+            patch it before I wake up :D
+          </p>
+          <Button asChild variant="default" size="sm">
+            <ExtLink href={ERROR_TEMPLATE_URL}>
+              <Bug className="h-4 w-4" />
+              Open bug report template
+              <ExternalLinkIcon className="h-3.5 w-3.5 opacity-80" />
+            </ExtLink>
+          </Button>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">Find me elsewhere</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            DMs open on most. Replies slow (introvert max level). Pick whichever channel fits.
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-5">
+          {SOCIAL_GROUP_ORDER.map((group, i) => (
+            <div key={group} className="space-y-5">
+              {i > 0 && <Separator />}
+              <SocialGroupSection group={group} />
+            </div>
+          ))}
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
           <CardTitle className="text-base">Upstream data attribution</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <p>
             Source:{' '}
-            <a
-              href={UPSTREAM_DATA.url}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium hover:underline"
-            >
+            <ExtLink href={UPSTREAM_DATA.url} className="font-medium hover:underline">
               {UPSTREAM_DATA.source}
-            </a>
+            </ExtLink>
           </p>
           <p className="text-muted-foreground">{UPSTREAM_DATA.note}</p>
         </CardContent>

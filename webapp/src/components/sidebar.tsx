@@ -14,6 +14,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { ExtLink } from '@/components/ext-link'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { SyncButton } from '@/components/sync-button'
 import { useAuth } from '@/stores/auth'
@@ -148,14 +149,12 @@ export function Sidebar() {
         ) : (
           <>
             <ThemeToggle />
-            <a
+            <ExtLink
               href="https://github.com/poli0981/free-games-itchio-list"
-              target="_blank"
-              rel="noreferrer"
               className="block text-xs text-muted-foreground hover:underline"
             >
               poli0981/free-games-itchio-list
-            </a>
+            </ExtLink>
           </>
         )}
       </div>
