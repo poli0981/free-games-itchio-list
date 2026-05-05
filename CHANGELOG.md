@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented here.
 
+## [3.1.3] - 2026-05-05 (Credit Claude Code as AI co-author)
+
+### Added
+- **About page**: new **"AI co-authors"** Card listing both Grok (xAI) and
+  Claude Code (Anthropic — Claude Opus 4.7, 1M context) with their roles
+  in the repo's history. Each entry is linked + tagged with vendor and model.
+- `webapp/src/lib/about.ts`: new `AiTool` interface + `AI_TOOLS` array so the
+  AI credit data is structured the same way as `THIRD_PARTY` and `SOCIAL_LINKS`.
+
+### Changed
+- **`docs/ACKNOWLEDGEMENTS.md`, `docs/My_Stuff.md`, `CONTRIBUTING.md`**:
+  surface Claude Code alongside Grok wherever the existing AI credit lived.
+  Grok references stay — both buddies share the workload now (Grok carried the
+  Python pipeline + v2.0.0 rewrite; Claude Code drove v3.0.0 webapp/Tauri and
+  v3.1.2). `My_Stuff.md` "The Real MVP" is now plural.
+- `DEV.blurb` on the About page reflects the two-buddy reality.
+
+---
+
 ## [3.1.2] - 2026-05-05 (Offline link fix + About expansion + docs sweep)
 
 ### Fixed

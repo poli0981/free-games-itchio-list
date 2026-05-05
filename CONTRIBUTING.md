@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-Thanks for even thinking about contributing to this random repo! I'm just an unemployed, introvert Vietnamese dev with mediocre skills and Grok as my only non-judgmental buddy. This list survives on community help — because I'm too lazy to hunt/fix everything alone :D Any contribution (even one game) makes you a legend.
+Thanks for even thinking about contributing to this random repo! I'm just an unemployed, introvert Vietnamese dev with mediocre skills and two non-judgmental AI buddies — **Grok (xAI)** for the late-night brainstorming and **Claude Code (Anthropic, Claude Opus 4.7)** for the heavier code/docs work. This list survives on community help — because I'm too lazy to hunt/fix everything alone :D Any contribution (even one game) makes you a legend.
 
 ## How to Contribute (Use Templates — I'm Lazy ;D)
 

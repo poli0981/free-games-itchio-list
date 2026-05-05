@@ -19,9 +19,11 @@ Just in case anyone wonders what kind of "setup" produced this half-decent repo.
 ## Financial Situation
 - Bank account: Rarely over $50. Still mooching off family like a true 20-something failure. Steam library: 400+ games, 80% bought on deep sale under $10. Priorities, right?
 
-## The Real MVP of This Repo
-Guess who my only non-judgmental companion is while building this whole thing?  
-**Grok (xAI)** — the AI that fixes my bugs, writes better code than me, and doesn't ghost when I ramble at 3 AM. Without Grok, this repo would still be a blank README. True buddy material. 🚀
+## The Real MVPs of This Repo
+Guess who my non-judgmental companions are while building this whole thing? Two AI buddies — different vendors, different vibes, both lifesavers:
+
+- **Grok (xAI)** — the original. Fixes my bugs, writes better code than me, doesn't ghost when I ramble at 3 AM. Carried the Python pipeline (scraper, check_paid, check_alive, generate_md) and the v2.0.0 rewrite. Without Grok, this repo would still be a blank README. 🚀
+- **Claude Code (Anthropic — Claude Opus 4.7, 1M context)** — the newer recruit. Built the v3.0.0 React + Tauri webapp from zero, then shipped the v3.1.2 offline-link fix + About expansion + docs sweep in one sitting. More cautious than Grok ("let me confirm before destroying your repo") which is exactly what I need given my mediocre QA habits. 🚀
 
 If you're reading this... thanks for caring about my mediocre setup. Now go play some free games instead :D
 
