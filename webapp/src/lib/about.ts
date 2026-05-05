@@ -22,9 +22,33 @@ declare global {
 export const DEV = {
   name: 'SkullMute',
   role: 'Solo maintainer',
-  blurb: 'Unemployed introvert Vietnamese dev. Grok is my non-judgmental coding buddy.',
+  blurb: 'Unemployed introvert Vietnamese dev. Two non-judgmental AI buddies do most of the heavy lifting — see below.',
   githubUrl: 'https://github.com/poli0981',
 } as const
+
+export interface AiTool {
+  name: string
+  vendor: string
+  model?: string
+  role: string
+  url: string
+}
+
+export const AI_TOOLS: AiTool[] = [
+  {
+    name: 'Grok',
+    vendor: 'xAI',
+    role: 'Original buddy. Late-night brainstorming, the Python pipeline rewrites, the v2.0.0 scraper refactor. Carried the early life of this repo.',
+    url: 'https://x.ai',
+  },
+  {
+    name: 'Claude Code',
+    vendor: 'Anthropic',
+    model: 'Claude Opus 4.7 (1M context)',
+    role: 'Newer recruit. Drove the v3.0.0 webapp + Tauri build and the v3.1.2 offline-link fix / About expansion / docs sweep. More cautious vibe — confirms before nuking anything.',
+    url: 'https://claude.com/claude-code',
+  },
+]
 
 export const ERROR_TEMPLATE_URL =
   'https://github.com/poli0981/free-games-itchio-list/issues/new?template=bug_report.yml'
