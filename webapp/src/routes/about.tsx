@@ -9,6 +9,7 @@ import {
   Hash,
   Heart,
   MessagesSquare,
+  ScrollText,
   Video,
   type LucideIcon,
 } from 'lucide-react'
@@ -22,10 +23,14 @@ import {
   APP,
   DEV,
   ERROR_TEMPLATE_URL,
+  LEGAL_GROUP_LABELS,
+  LEGAL_LINKS,
+  LEGAL_VI_INDEX_URL,
   SOCIAL_GROUP_LABELS,
   SOCIAL_LINKS,
   THIRD_PARTY,
   UPSTREAM_DATA,
+  type LegalGroup,
   type SocialGroup,
   type SocialLink,
   type ThirdParty,
@@ -52,6 +57,7 @@ const SOCIAL_ICON: Record<string, LucideIcon> = {
 }
 
 const SOCIAL_GROUP_ORDER: SocialGroup[] = ['social', 'community', 'support', 'gaming']
+const LEGAL_GROUP_ORDER: LegalGroup[] = ['policy', 'meta']
 
 function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
   const items = THIRD_PARTY.filter((t) => t.category === category)
@@ -230,6 +236,55 @@ export default function About() {
               <SocialGroupSection group={group} />
             </div>
           ))}
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-base">
+            <ScrollText className="h-4 w-4" />
+            Legal &amp; policies
+          </CardTitle>
+          <p className="text-xs text-muted-foreground">
+            All policies are MD files in the repo — short, plain-language, slight humor, full
+            on-the-record terms. Updated 2026-05-05.
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-5 text-sm">
+          {LEGAL_GROUP_ORDER.map((group, i) => {
+            const items = LEGAL_LINKS.filter((l) => l.group === group)
+            if (items.length === 0) return null
+            return (
+              <div key={group} className="space-y-2">
+                {i > 0 && <Separator />}
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  {LEGAL_GROUP_LABELS[group]}
+                </h3>
+                <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
+                  {items.map((link) => (
+                    <li key={link.name} className="rounded-md border p-2">
+                      <ExtLink
+                        href={link.url}
+                        className="inline-flex items-center gap-1 font-medium hover:underline"
+                      >
+                        {link.name}
+                        <ExternalLinkIcon className="h-3 w-3 opacity-50" />
+                      </ExtLink>
+                      <p className="mt-0.5 text-xs text-muted-foreground">{link.description}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
+          <p className="pt-1 text-xs text-muted-foreground">
+            Tiếng Việt:{' '}
+            <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium hover:underline">
+              docs/i18n/vi/
+            </ExtLink>{' '}
+            — Vietnamese translations of the policies above (community-readable, English remains
+            the controlling version for legal interpretation).
+          </p>
         </CardContent>
       </Card>
 

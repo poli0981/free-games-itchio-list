@@ -89,6 +89,39 @@ export const SOCIAL_GROUP_LABELS: Record<SocialGroup, string> = {
   gaming: 'Gaming',
 }
 
+const REPO_BLOB = 'https://github.com/poli0981/free-games-itchio-list/blob/main'
+
+export type LegalGroup = 'policy' | 'meta'
+
+export interface LegalLink {
+  name: string
+  description: string
+  url: string
+  group: LegalGroup
+}
+
+export const LEGAL_LINKS: LegalLink[] = [
+  // Policy
+  { name: 'Disclaimer',      description: 'No warranty, no liability, "as-is" basis.',                              url: `${REPO_BLOB}/docs/DISCLAIMER.md`,     group: 'policy' },
+  { name: 'EULA',            description: 'MIT-licensed; what the license does and does not cover.',                url: `${REPO_BLOB}/docs/EULA.md`,           group: 'policy' },
+  { name: 'Terms of Use',    description: 'Permitted uses, prohibited activities, contributor obligations, PAT.',   url: `${REPO_BLOB}/docs/ToS.md`,            group: 'policy' },
+  { name: 'Privacy Policy',  description: 'Zero server-side data collection. Local-only browser storage detailed.', url: `${REPO_BLOB}/docs/PrivacyPolicy.md`,  group: 'policy' },
+  { name: 'Code of Conduct', description: 'Be cool. The full version is on GitHub.',                                url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
+  { name: 'Security Policy', description: 'Reporting vulnerabilities + PAT handling overview.',                     url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
+
+  // Meta
+  { name: 'License (MIT)',   description: 'The canonical license text.',                                            url: `${REPO_BLOB}/LICENSE`,                group: 'meta' },
+  { name: 'Changelog',       description: 'What changed when.',                                                     url: `${REPO_BLOB}/CHANGELOG.md`,           group: 'meta' },
+]
+
+export const LEGAL_GROUP_LABELS: Record<LegalGroup, string> = {
+  policy: 'Policies',
+  meta: 'Meta',
+}
+
+export const LEGAL_VI_INDEX_URL =
+  'https://github.com/poli0981/free-games-itchio-list/tree/main/docs/i18n/vi'
+
 export const THIRD_PARTY: ThirdParty[] = [
   // Core
   { name: 'React', version: '19.2', license: 'MIT', url: 'https://react.dev', category: 'core' },

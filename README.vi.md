@@ -1,0 +1,124 @@
+# Danh sách Game Itch.io Miễn Phí
+
+[![Version](https://img.shields.io/badge/version-3.1.4-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
+
+> Đây là bản dịch tiếng Việt mang tính tham khảo cho cộng đồng. Bản tiếng Anh tại [`README.md`](README.md) là bản chính thức cho mọi điều khoản pháp lý / kỹ thuật.
+
+Một danh mục được duy trì tự động của các game miễn phí trên [itch.io](https://itch.io). Game được cào (scrape), xác thực và tổ chức thành các bảng markdown có thể duyệt — cập nhật hàng ngày qua GitHub Actions.
+
+## Mục lục
+
+- [Duyệt theo thể loại](#duyệt-theo-thể-loại)
+- [Webapp (duyệt + sửa + analytics)](#webapp-duyệt--sửa--analytics)
+- [Cách hoạt động](#cách-hoạt-động)
+- [Cấu trúc dự án](#cấu-trúc-dự-án)
+- [Tự động hóa (GitHub Actions)](#tự-động-hóa-github-actions)
+- [Đóng góp](#đóng-góp)
+- [Kết nối / hỗ trợ](#kết-nối--hỗ-trợ)
+- [Pháp lý](#pháp-lý)
+
+## Duyệt theo thể loại
+
+Các bảng được tự tạo và chia theo thể loại chính (tối đa 300 game / file). Thể loại mới sẽ tự xuất hiện khi có game được thêm vào.
+
+- [Action](lists/action.md)
+- [Adventure](lists/adventure.md)
+- [Puzzle](lists/puzzle.md)
+- [Horror](lists/horror.md)
+- [Visual Novel](lists/visual_novel.md)
+- [Simulation](lists/simulation.md)
+- [Platformer](lists/platformer.md)
+- [Other](lists/other.md)
+- *(các thể loại khác sẽ tự tạo khi cần)*
+
+## Webapp (duyệt + sửa + analytics)
+
+Một SPA React + TypeScript trong [`webapp/`](webapp/) cung cấp giao diện duyệt trên cùng catalog JSON: DataTable virtualized cho 500+ game, faceted filter (thể loại / trạng thái / nền tảng / NSFW), 9 chart (Recharts), bulk edit/delete qua GitHub Git Data API, và một flow "add" một-click dispatch workflow scraper với input URL.
+
+- **Bản web**: deploy lên GitHub Pages bởi [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml) — push vào `main` chạm `webapp/` sẽ tự ship. (Setup một lần: repo Settings → Pages → Source = "GitHub Actions".)
+- **Bản desktop (tùy chọn)**: cùng code React đóng gói thành app native Tauri 2 cho Windows / macOS / Linux. Xem [`webapp/TAURI.md`](webapp/TAURI.md) để biết yêu cầu và `npm run tauri:dev`.
+- **Auth**: PAT fine-grained với `contents:write` + `actions:write` được mã hóa AES-GCM trong localStorage (PBKDF2-SHA256). Token đã giải mã chỉ tồn tại trong bộ nhớ.
+- **Edit commit dạng `chore(webapp): …`** để dễ lọc khỏi commit của scraper hàng ngày.
+
+Dev cục bộ:
+
+```sh
+cd webapp
+npm install
+npm run dev          # http://localhost:5173
+npm run build        # ghi vào docs/app/
+npm run tauri:dev    # native desktop (cần Rust)
+```
+
+## Cách hoạt động
+
+```
+temp_link.json          →   update_info.py        →   data_game/
+(URL mới thêm vào đây)      (scrape + check free)     game_info_001.json
+                                                      game_info_002.json ...
+                                                          │
+                ┌─────────────────────────────────────────┘
+                ▼                                        ▼
+        generate_md.py                           check_paid.py
+        (bảng MD)                                check_alive.py
+                                                 (cleanup)
+```
+
+1. **Thêm link** — dán URL itch.io vào `scripts/temp_link.json` (thủ công, qua PR, hoặc qua extension trình duyệt đi kèm).
+2. **Scrape hàng ngày** — GitHub Actions chạy `update_info.py` lúc 03:00 UTC. Mỗi link được fetch, kiểm tra trạng thái free và cào metadata. Game trả phí tự bị bỏ qua.
+3. **Tạo bảng** — `generate_md.py` nhóm game theo thể loại chính và xuất các bảng markdown vào `/lists/`.
+4. **Cleanup định kỳ** — mỗi 2 ngày, `check_paid.py` kiểm tra lại game nào đã chuyển sang trả phí, và `check_alive.py` xác minh các trang game còn tồn tại. Game bị gỡ được log kèm lý do.
+
+## Cấu trúc dự án
+
+Xem [`README.md`](README.md#project-structure) phiên bản tiếng Anh để có sơ đồ thư mục đầy đủ và mới nhất.
+
+## Tự động hóa (GitHub Actions)
+
+| Workflow | Lịch | Mục đích |
+|---|---|---|
+| Update game info | Hàng ngày 03:00 UTC | Scrape link mới từ `temp_link.json` (+ input `url` tùy chọn từ webapp), bỏ qua game trả phí |
+| Generate tables | Sau update/checks | Build lại các bảng markdown trong `/lists/` |
+| Check paid games | Mỗi 2 ngày 04:00 UTC | Gỡ game đã chuyển sang trả phí |
+| Check dead links | Mỗi 2 ngày 07:00 UTC | Gỡ trang game 404/410 |
+| Log deleted games | Sau check workflows | Xuất log gỡ ra `deleted_games.txt` |
+| Deploy webapp | Khi push vào main | Build `webapp/` → GitHub Pages (`docs/app/`) |
+| Release desktop | Khi push tag `v*` | Build installer Tauri (Win/macOS/Linux) → draft Release |
+
+Tất cả workflow có rate-limit (delay ngẫu nhiên, batch pause) để tránh bị itch.io block. Lỗi mạng được coi là tạm thời — game chỉ bị gỡ khi xác nhận 404/410 hoặc xác nhận trả phí.
+
+## Đóng góp
+
+Xem [CONTRIBUTING.vi](docs/i18n/vi/CONTRIBUTING.md) (hoặc [bản tiếng Anh CONTRIBUTING.md](CONTRIBUTING.md) cho bản chính thức).
+
+- **Thêm game** — dùng issue template "Add New Games" (tối đa 50 link / issue).
+- **Báo bug** — dùng template "Bug Report".
+- **Đề xuất tính năng** — mở issue hoặc gửi PR.
+
+Người đóng góp được ghi nhận trong [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
+
+## Kết nối / hỗ trợ
+
+Hai server Discord giờ đã tồn tại (câu "if I ever make one" chính thức lỗi thời):
+
+- **Chat**: Discord — [Repo discussion](https://discord.gg/2aNR3aVt) · [Game chat](https://discord.gg/kDM9GMu5vm)
+- **Mạng xã hội**: [X/@SkullMute0011](https://x.com/SkullMute0011) · [YouTube/@SkullMute](https://youtube.com/@SkullMute) · [Bluesky](https://bsky.app/profile/skullmute0011.bsky.social) · [Mastodon](https://mastodon.social/@skullmute1122)
+- **Hỗ trợ** (hoàn toàn tùy chọn): [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute)
+- **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
+
+DM mở khắp nơi — trả lời chậm, introvert max level. Trang About trong [webapp](https://poli0981.github.io/free-games-itchio-list/app/#/about) có cùng danh sách dạng nút bấm.
+
+## Pháp lý
+
+Bản tiếng Việt nằm trong [`docs/i18n/vi/`](docs/i18n/vi/) — bản tiếng Anh là bản chính thức cho mọi giải thích pháp lý.
+
+- [Disclaimer](docs/i18n/vi/DISCLAIMER.md) ([EN](docs/DISCLAIMER.md))
+- [Privacy Policy](docs/i18n/vi/PrivacyPolicy.md) ([EN](docs/PrivacyPolicy.md))
+- [Terms of Use](docs/i18n/vi/ToS.md) ([EN](docs/ToS.md))
+- [EULA](docs/i18n/vi/EULA.md) ([EN](docs/EULA.md))
+- [Code of Conduct](docs/i18n/vi/CODE_OF_CONDUCT.md) ([EN](CODE_OF_CONDUCT.md))
+- [Security](docs/i18n/vi/SECURITY.md) ([EN](SECURITY.md))
+
+Cấp phép theo [MIT](LICENSE).

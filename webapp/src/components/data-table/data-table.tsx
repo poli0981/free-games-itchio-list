@@ -113,7 +113,7 @@ export function DataTable<TData>({
   return (
     <div className="space-y-2">
       <div className="rounded-md border bg-card">
-      <div ref={parentRef} className="relative max-h-[calc(100vh-280px)] overflow-auto">
+      <div ref={parentRef} className="scrollbar-hide relative max-h-[calc(100vh-280px)] overflow-auto">
         <table className="w-full text-sm">
           <thead className="sticky top-0 z-10 bg-card shadow-[inset_0_-1px_0_hsl(var(--border))]">
             {headerGroups.map((hg) => (

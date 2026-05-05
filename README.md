@@ -1,10 +1,13 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-3.1.3-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-3.1.4-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tiếng Việt](https://img.shields.io/badge/lang-Tiếng%20Việt-red.svg)](README.vi.md)
+
+> 🇻🇳 Tiếng Việt: see [`README.vi.md`](README.vi.md). Vietnamese translations of the policy docs live in [`docs/i18n/vi/`](docs/i18n/vi/). The English versions in this repo remain controlling for legal interpretation.
 
 A curated, auto-updating catalog of free games on [itch.io](https://itch.io). Games are scraped, validated, and
 organized into browsable markdown tables — updated daily via GitHub Actions.

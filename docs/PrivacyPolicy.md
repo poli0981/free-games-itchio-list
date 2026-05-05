@@ -1,45 +1,134 @@
 # Privacy Policy
 
-Last updated: 2026-05-04
+Last updated: 2026-05-05
 
-This repository is a curated list of free games on itch.io plus a React/TypeScript webapp (and Tauri desktop wrapper) for browsing and editing the catalog. It's a hobby project. Nobody on this side of the screen collects, stores, or processes personal data from you. No backend, no database, no analytics, no telemetry.
+This Privacy Policy describes how the Repository, the Webapp, and the Desktop App handle Your data. The short version: the Maintainer collects nothing on any server he controls. Everything that persists, persists locally on Your device.
 
-## What Data Do We Collect?
-**None on any server we control.** Zero. Zilch.
+> **TL;DR**: No backend, no analytics, no cookies, no tracking, no telemetry. The Webapp keeps a few items in `localStorage` (theme, sidebar state, optional encrypted PAT) and an IndexedDB cache of the public catalog. The Desktop App fetches itch.io and GitHub directly to bypass CORS. That's the entire data story.
 
-- **Visiting this repo on GitHub** — GitHub itself may log standard things (IP, browser, etc.) as part of their platform; that is on GitHub, not on this project.
-- **Downloading games** — links go directly to itch.io; their privacy policy applies once you click.
-- **Contributing** — opening a PR or issue is GitHub-side; I see only the public info GitHub publishes (username, comment text, etc.).
+## 1. Definitions
 
-## What the Webapp Stores in Your Browser
+The defined terms in [EULA §1](EULA.md#1-definitions) apply here as well.
 
-The webapp (`webapp/` in this repo, deployed to GitHub Pages) does not phone home, but it does keep a few things in your browser's `localStorage` so it can remember your preferences across reloads. Everything is local to your browser, never sent anywhere except directly to GitHub's API when you explicitly act:
+## 2. Maintainer-side data collection
 
-| Key | What | When |
-|-----|------|------|
-| `webapp.pat.encrypted` | Your GitHub PAT, encrypted with AES-GCM (key derived from your passphrase via PBKDF2-SHA256). | Only if you choose to enable write access from Settings. |
-| `webapp.theme` | `'light'` / `'dark'` / `'system'`. | When you toggle the theme. |
-| `webapp.prefs` | Sidebar collapsed / expanded. | When you toggle the sidebar. |
-| TanStack Query cache (IndexedDB via `idb-keyval`) | Cached copies of the public catalog JSON for offline reading. | Automatic. |
+**The Maintainer collects, stores, and processes zero personal data on any server he controls.** There is no backend, no database, no analytics service, no error-reporting endpoint, no telemetry, no advertising, no fingerprinting.
 
-You can clear all of this any time via your browser's "clear site data" or by clicking **Remove saved PAT** in the webapp's Settings.
+The Repository runs entirely on:
 
-The webapp talks to two GitHub endpoints:
-- `raw.githubusercontent.com` for read-only catalog fetches (no auth, no cookies).
-- `api.github.com` for writes when a PAT is unlocked.
+- **GitHub** (source hosting, Actions, raw file CDN, Pages hosting for the Webapp).
+- **Your device** (the Webapp in Your browser, or the Desktop App in a Tauri 2 webview).
+- **itch.io** (game pages, fetched on demand by the scraper or the Desktop App's preview feature).
 
-The Tauri desktop build additionally talks directly to `*.itch.io` and `img.itch.zone` to preview new games (a CORS workaround the browser version cannot do).
+The Maintainer has no infrastructure that could collect Your data even if he wanted to.
 
-No cookies. No tracking. No analytics. No third-party scripts.
+## 3. GitHub
 
-## Third-Party Services
-- **itch.io**: All game links go straight there. Their privacy policy applies when you visit or download games: [itch.io Privacy Policy](https://itch.io/docs/legal/privacy-policy)
-- **GitHub**: This whole repo lives on GitHub. Check their privacy policy [here](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+This Repository, the Webapp deployment (GitHub Pages), and the Desktop App release artifacts are hosted on GitHub. GitHub may log standard HTTP request data (IP address, user agent, referrer) per their own policies. The Maintainer has no access to those logs beyond GitHub's repository insights (aggregate clone / view counts).
 
-## Changes to This Policy
-If I ever change this (unlikely, because why bother?), I'll update the date above and commit it. But honestly, this thing will probably stay the same forever.
+GitHub's privacy policy: <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement>
 
-## Questions?
-Open an issue or ping me somewhere (if you can find me). But let's be real � nobody reads these anyway :D
+When You contribute (open an issue, comment, fork, submit a PR), You publish that information on GitHub under Your account. The Maintainer sees only what GitHub makes public.
 
-Built with boredom and zero spying. ??
+## 4. itch.io
+
+All game links in the Catalog point directly to itch.io pages. Clicking a link takes You to itch.io; what happens there is governed by itch.io's terms and privacy policy:
+
+- itch.io Privacy Policy: <https://itch.io/docs/legal/privacy-policy>
+- itch.io Terms of Service: <https://itch.io/docs/legal/terms>
+
+The Repository's `update.yml` GitHub Action also makes server-to-server requests to itch.io to scrape page metadata; those requests come from GitHub's IP ranges, not from Your device.
+
+## 5. What the Webapp stores in Your browser
+
+The Webapp persists the following items locally and never transmits them to any server controlled by the Maintainer.
+
+| Storage | Key | Contents | When written |
+|---|---|---|---|
+| `localStorage` | `webapp.pat.encrypted` | Your GitHub PAT, encrypted with AES-GCM 256-bit. Encryption key is derived from Your passphrase via PBKDF2-SHA256 (100,000 iterations) with a per-token random salt. The plaintext PAT is **never** persisted to disk. | When You enable write access in Settings. |
+| `localStorage` | `webapp.theme` | One of `'light'`, `'dark'`, `'system'`. | When You toggle the theme. |
+| `localStorage` | `webapp.prefs` | UI preferences (sidebar collapsed, table column widths). | When You change a UI preference. |
+| `IndexedDB` (via `idb-keyval`) | TanStack Query cache keys | Cached copies of the public catalog JSON for fast reload and limited offline reads. | Automatic, on first fetch. |
+
+You can erase all of the above at any time by:
+
+- Clicking **Settings → Remove saved PAT** (clears the PAT entry only).
+- Using Your browser's "Clear site data" / "Clear cookies and storage" for `poli0981.github.io` (clears everything).
+- Uninstalling the Desktop App and removing its WebView2 / WebKit profile directory (Desktop only; locations vary by OS).
+
+## 6. PAT (Personal Access Token) handling — in depth
+
+The Webapp's optional write features (edit annotations, dispatch the scraper workflow, bulk delete) require a GitHub fine-grained PAT. The PAT lifecycle is entirely client-side:
+
+1. **Creation** — You generate a fine-grained PAT on github.com, scoped to `poli0981/free-games-itchio-list` only, with `Contents: Read & write` and `Actions: Read & write`. The Maintainer never sees this step.
+2. **Encryption** — You paste the PAT into Settings + a passphrase. The Webapp derives an AES-GCM key from the passphrase via PBKDF2-SHA256 (100k rounds, 16-byte random salt). The PAT is encrypted; the resulting ciphertext + salt + IV is stored in `localStorage` under `webapp.pat.encrypted`. The plaintext PAT and the passphrase are never written to any storage.
+3. **Unlock** — On a later session, You enter the passphrase. The Webapp re-derives the key and decrypts the PAT into a Zustand in-memory store. The decrypted PAT exists only in JavaScript memory.
+4. **Use** — Octokit calls to `api.github.com` include the PAT as `Authorization: Bearer <pat>` over HTTPS. The PAT is sent only to `api.github.com` and never to any other host.
+5. **Lock** — Clicking Lock (or closing the tab) discards the in-memory PAT. The encrypted blob remains in `localStorage` for the next unlock.
+6. **Removal** — Clicking Remove saved PAT deletes the `webapp.pat.encrypted` entry from `localStorage`.
+
+If You suspect Your PAT is compromised:
+
+- Lock or remove it immediately.
+- Revoke it on github.com (Settings → Developer settings → Personal access tokens → Fine-grained tokens).
+- Generate a new one with a fresh passphrase.
+
+See also: [SECURITY.md](../SECURITY.md).
+
+## 7. Network requests
+
+When running, the Webapp and Desktop App make requests to the following endpoints — and only these:
+
+| Endpoint | Purpose | Auth |
+|---|---|---|
+| `raw.githubusercontent.com/poli0981/free-games-itchio-list/main/data_game/*.json` | Read public catalog data. | None (public). |
+| `api.github.com/repos/poli0981/free-games-itchio-list/...` | Write operations: edit, delete, dispatch workflows, list runs. | PAT (only when unlocked). |
+| `*.itch.io/*`, `img.itch.zone/*` | (Desktop App only) Direct itch.io fetches for the in-app game preview, bypassing browser CORS. | None (public). |
+
+No third-party CDN, no analytics endpoint, no telemetry collector, no font CDN. Tailwind, Radix, lucide-react, etc. are bundled at build time.
+
+## 8. Cookies
+
+The Webapp and Desktop App **do not set any cookies.** GitHub Pages may issue cookies as part of its CDN behavior; those are GitHub's, not the Maintainer's.
+
+## 9. Children's privacy
+
+The Repository indexes games hosted on itch.io, which include adult content. The `nsfw` flag is best-effort (see [DISCLAIMER §2](DISCLAIMER.md#2-no-warranty-as-to-the-games)). The Webapp does not gate access by age. If You are under the age of majority in Your jurisdiction, please use the Repository under the supervision of a parent or guardian and respect itch.io's own age-gating where applicable.
+
+The Maintainer does not knowingly collect personal data from children. (He doesn't collect personal data from anyone — see §2.)
+
+## 10. Your rights
+
+Because the Maintainer holds no personal data, requests under GDPR, CCPA, Vietnam's PDPD (Decree 13/2023/ND-CP), or similar regimes that target the Maintainer have nothing to act on. For data on Your device:
+
+- **Right to access**: open Your browser's DevTools → Application → Storage → Local Storage / IndexedDB.
+- **Right to erasure**: clear site data as described in §5.
+- **Right to portability**: export `localStorage` via DevTools (it's plain JSON; the PAT is encrypted).
+
+For data held by GitHub or itch.io about Your interactions with their platforms, contact those providers directly using the privacy contacts in their policies.
+
+## 11. Third-party services
+
+| Service | Used for | Policy |
+|---|---|---|
+| GitHub | Repo, CI, Pages, Releases, API | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
+| itch.io | Game pages, scrape source | <https://itch.io/docs/legal/privacy-policy> |
+
+The webapp does **not** integrate any analytics provider, ad network, error-reporting service (no Sentry, no Datadog), social media SDK, or font CDN.
+
+## 12. Changes to this Policy
+
+The Maintainer may update this Policy. The `Last updated` date at the top reflects the most recent change. Material changes will additionally be noted in [CHANGELOG.md](../CHANGELOG.md). Continued use after a change constitutes acceptance.
+
+## 13. Contact
+
+For questions about this Policy:
+
+- Open a `[General]` or `[Feedback]` issue.
+- DM via any channel listed on the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+
+## 14. Final vibes
+
+No tracking, no analytics, no telemetry, no spying. The Maintainer is too lazy and too unemployed to build a data pipeline even if he wanted one. Browse freely.
+
+Built with boredom and zero data harvesting. 🚀
