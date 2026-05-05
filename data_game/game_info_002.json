@@ -555,5 +555,74 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://vocastar.itch.io/tadds-fangame",
+        "name": "The Amazing Digital Dating Sim",
+        "dev": "Vocastar",
+        "description": "The Amazing Digital Dating Simulator is a visual novel style fan-game for Glitch's popular hit show \"The Amazing Digital Circus\".",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "190",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2OTMzOTg0LnBuZw==/original/%2BvMfmq.png",
+        "tags": [
+            "Dating Sim",
+            "Fangame"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://prikarin.itch.io/killer-trait",
+        "name": "Killer Trait",
+        "dev": "prikarin",
+        "description": "Collaboration ongoing! [Killer Trait x Plush Wonderland] More details about the plushie campaign here! ✘ ✘ ✘ FAQ (Frequently asked questions) 1.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "1282",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMzM0NTc2LnBuZw==/original/%2FLf6Fr.png",
+        "tags": [
+            "Amare",
+            "Boys' Love",
+            "Crime",
+            "Dark",
+            "LGBTQIA",
+            "Mystery",
+            "Otome",
+            "Romance",
+            "Story Rich",
+            "Thriller"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
