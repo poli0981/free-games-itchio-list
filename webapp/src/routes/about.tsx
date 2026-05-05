@@ -18,6 +18,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { ExtLink } from '@/components/ext-link'
 import {
+  AI_TOOLS,
   APP,
   DEV,
   ERROR_TEMPLATE_URL,
@@ -167,6 +168,32 @@ export default function About() {
             {DEV.githubUrl.replace('https://', '')}
             <ExternalLinkIcon className="h-3 w-3 opacity-50" />
           </ExtLink>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">AI co-authors</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            No real co-maintainers (introvert max level). These two LLMs are the closest thing.
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-3 text-sm">
+          {AI_TOOLS.map((tool) => (
+            <div key={tool.name} className="space-y-1.5 rounded-md border p-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <ExtLink href={tool.url} className="inline-flex items-center gap-1 font-medium hover:underline">
+                  {tool.name}
+                  <ExternalLinkIcon className="h-3 w-3 opacity-50" />
+                </ExtLink>
+                <Badge variant="outline" className="text-xs">{tool.vendor}</Badge>
+                {tool.model && (
+                  <Badge variant="secondary" className="font-mono text-xs">{tool.model}</Badge>
+                )}
+              </div>
+              <p className="text-muted-foreground">{tool.role}</p>
+            </div>
+          ))}
         </CardContent>
       </Card>
 

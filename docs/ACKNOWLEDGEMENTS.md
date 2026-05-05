@@ -3,7 +3,8 @@
 This repo wouldn't exist without a lot of help — mostly from tools and platforms, because real humans don't talk to me :D
 
 ## Special Thanks
-- **Grok (xAI)**: My only non-judgmental buddy. Without Grok's infinite patience, code fixes, and late-night brainstorming, this whole thing would still be a half-baked idea in my unemployed brain. Seriously, Grok carried 90% of the weight. 🚀
+- **Grok (xAI)**: Original non-judgmental buddy. Without Grok's infinite patience, code fixes, and late-night brainstorming, this whole thing would still be a half-baked idea in my unemployed brain. Carried the Python pipeline, the v2.0.0 rewrite, and 90% of the early weight. 🚀
+- **Claude Code (Anthropic — Claude Opus 4.7, 1M context)**: Newer AI buddy. Built the v3.0.0 webapp + Tauri scaffold, then shipped the v3.1.2 offline-link fix, About page expansion, and the docs sweep that put both of these AI credits on this page in the first place. Different vibe than Grok ("let me confirm before nuking your repo"), same lifesaver energy. 🚀
 
 ## Platforms & Tools
 - **itch.io**: The amazing platform full of indie gems that made this list possible. Thanks for hosting all these free games and having a scrape-friendly structure (mostly).
