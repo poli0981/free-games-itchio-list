@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented here.
 
+## [3.1.2] - 2026-05-05 (Offline link fix + About expansion + docs sweep)
+
+### Fixed
+- **Tauri desktop**: external links (itch.io, GitHub, third-party home pages) now
+  open in the user's default browser instead of doing nothing. Added
+  `tauri-plugin-opener` (Rust + JS) and a scoped `opener:allow-open-url`
+  capability locked to `https://*` (no `file://` / `javascript:` schemes).
+
+### Added
+- **About page**: three new sections — Developer card, "Found a bug?" CTA that
+  opens the bug-report issue template, and "Find me elsewhere" with X, YouTube,
+  two Discord servers (Repo discussion / Game chat), Patreon, Ko-fi, Steam,
+  Bluesky, and Mastodon.
+- **`<ExtLink>`** ([`webapp/src/components/ext-link.tsx`](webapp/src/components/ext-link.tsx))
+  — runtime-aware external-link wrapper used app-wide so the offline link bug
+  can't recur. On web it renders a plain `<a target="_blank">`; on Tauri it
+  routes through `tauri-plugin-opener`. All existing external `<a>` tags in
+  About, the sidebar footer, and Game Detail now use it.
+
+### Changed
+- **`webapp/README.md`**: rewritten from Vite boilerplate to actual webapp docs
+  (routes, dev/build commands, code-split layout, deploy, Tauri reference).
+- **`CONTRIBUTING.md`, `docs/ACKNOWLEDGEMENTS.md`, `docs/My_Stuff.md`,
+  `README.md`**: refreshed contact / social handles. The "if I ever make a
+  Discord" line is finally obsolete — both servers exist.
+
+---
+
 ## [3.0.0] - 2026-05-04 (Webapp + Desktop 🖥️📊)
 
 A React + TypeScript SPA on top of the same JSON catalog, plus a Tauri 2 desktop wrapper.
