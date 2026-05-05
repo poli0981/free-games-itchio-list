@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented here.
 
+## [3.1.4] - 2026-05-05 (Legal docs rewrite + Vietnamese i18n + Legal Card + UI polish)
+
+### Added
+- **Vietnamese translations** under [`docs/i18n/vi/`](docs/i18n/vi/) — full
+  translations of the four legal docs (DISCLAIMER, EULA, ToS, PrivacyPolicy)
+  plus CONTRIBUTING, CODE_OF_CONDUCT, and SECURITY. Each file notes that the
+  English version is the controlling text for legal interpretation.
+- **`README.vi.md`** at repo root — Vietnamese mirror of the main README, with a
+  language badge and a link back to the English version.
+- **About page → "Legal & policies" Card** — single place to access all policy
+  files (Disclaimer, EULA, ToS, Privacy, Code of Conduct, Security, License,
+  Changelog) plus a pointer to the Vietnamese translations.
+- **`webapp/src/lib/about.ts`**: `LegalLink` interface + `LEGAL_LINKS` array +
+  `LEGAL_VI_INDEX_URL`. Same structured pattern as `THIRD_PARTY` and
+  `SOCIAL_LINKS`.
+
+### Changed
+- **`docs/DISCLAIMER.md`, `docs/EULA.md`, `docs/ToS.md`, `docs/PrivacyPolicy.md`**:
+  rewritten to be tighter and more enforceable while keeping the project's voice.
+  Each doc now has a TL;DR, numbered sections, definitions, severability,
+  governing law (Socialist Republic of Vietnam), explicit "not legal advice"
+  notice, and a removal-request path. Privacy Policy adds a per-storage table
+  for what the webapp persists locally and a step-by-step PAT lifecycle.
+- **`README.md`** version badge → 3.1.4 plus a Vietnamese language badge and a
+  short pointer to `README.vi.md` and `docs/i18n/vi/`.
+
+### Optional UI
+- **Tauri desktop**: maximize button is now disabled (`maximizable: false` in
+  `webapp/src-tauri/tauri.conf.json`). Window is still resizable; only the
+  full-window-maximize action is locked.
+- **DataTable**: scrollbar hidden via a new `.scrollbar-hide` Tailwind utility
+  added to `webapp/src/index.css`. Scrolling still works; the chrome is gone.
+
+---
+
 ## [3.1.3] - 2026-05-05 (Credit Claude Code as AI co-author)
 
 ### Added
