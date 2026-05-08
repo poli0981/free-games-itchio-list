@@ -1292,5 +1292,31 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://monamenagerie.itch.io/barista-hero-wheel-edition",
+        "name": "Barista Hero (Wheel edition)",
+        "dev": "MonaMenagerie",
+        "description": "Ran out of time to fix the mess of my original attempt.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTQ5NDg1LnBuZw==/original/BGeKbU.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
