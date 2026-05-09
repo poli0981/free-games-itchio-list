@@ -1433,5 +1433,76 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://frienziedelf-5929.itch.io/horror-game",
+        "name": "Paranoia",
+        "dev": "Frienziedelf",
+        "description": "Paranoia is a first person low-poly phycological mascot horror game where a child enters an abandoned hospital from the 1950s in his dreams and explores it 15 years after it was abandoned.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTY5MzM5LnBuZw==/original/CnsuB2.png",
+        "tags": [
+            "Horror",
+            "Low-poly",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://s-xavier-uy.itch.io/math-with-kyoukei-chan",
+        "name": "Math with Kyoukei Chan",
+        "dev": "S Xavier Uy",
+        "description": "How to Play Click 🖱️ Practice your math skills with kyoukei-chan in school.",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTUyODU1LnBuZw==/original/1fQRHJ.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Casual",
+            "Cute",
+            "Dating Sim",
+            "Romance",
+            "RPG Maker",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
