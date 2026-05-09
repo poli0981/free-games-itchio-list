@@ -1387,5 +1387,51 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://innervisionstudio.itch.io/eod",
+        "name": "Echoes Of Delivery",
+        "dev": "INNERVISION.Studio",
+        "description": "Survive.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "5",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NDkxNDU1LnBuZw==/original/U%2BcoXP.png",
+        "tags": [
+            "Atmospheric",
+            "Exploration",
+            "Horror",
+            "Indie",
+            "Liminal space",
+            "Low-poly",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "Adobe Photoshop",
+            "FL Studio",
+            "Cinema 4D"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
