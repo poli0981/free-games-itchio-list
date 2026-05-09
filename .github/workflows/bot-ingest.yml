@@ -9,48 +9,52 @@
 #   • Entry script is update_info.py, not ingest_new.py
 #   • Output dirs are data_game/ and scripts/deleted_games.json (not data/ and removed_games.jsonl)
 
-name: Bot Ingest
+name : Bot Ingest
 
-on:
-  workflow_dispatch:
-    inputs:
-      links:
-        description: "Newline-separated itch.io URLs"
-        required: true
-      chat_id:
-        description: "Telegram chat ID for callback"
-        required: true
-      message_id:
-        description: "Telegram message ID to edit"
-        required: true
+on :
+  workflow_dispatch :
+    inputs :
+      links :
+        description : "Newline-separated itch.io URLs"
+        required : true
+      chat_id :
+        description : "Telegram chat ID for callback"
+        required : true
+      message_id :
+        description : "Telegram message ID to edit"
+        required : true
 
-permissions:
-  contents: write
+permissions :
+  contents : write
 
 # Queue concurrent dispatches to prevent commit conflicts on data_game/ shards.
-concurrency:
-  group: bot-ingest
-  cancel-in-progress: false
+concurrency :
+  group : bot-ingest
+  cancel-in-progress : false
 
-jobs:
-  ingest:
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
+jobs :
+  ingest :
+    runs-on : ubuntu-latest
+    timeout-minutes : 30
 
-    steps:
-      - uses: actions/checkout@v6
+    steps :
+      -
+        uses : actions/checkout@v6
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+      -
+        uses : actions/setup-python@v6
+        with :
+          python-version : "3.12"
 
-      - name: Install deps
-        run: pip install --quiet beautifulsoup4 requests
+      -
+        name : Install deps
+        run : pip install --quiet beautifulsoup4 requests
 
-      - name: Append links to temp_link.json (JSON array)
-        env:
-          LINKS: ${{ inputs.links }}
-        run: |
+      -
+        name : Append links to temp_link.json (JSON array)
+        env :
+          LINKS : ${{ inputs.links }}
+        run : |
           python <<'PY'
           import json, os, pathlib
 
@@ -84,9 +88,10 @@ jobs:
           print(f"temp_link.json: {before} → {len(existing)} entries (+{len(existing) - before})")
           PY
 
-      - name: Run update_info.py
-        id: ingest
-        run: |
+      -
+        name : Run update_info.py
+        id : ingest
+        run : |
           set -o pipefail
           python scripts/update_info.py 2>&1 | tee /tmp/ingest.log
 
@@ -103,9 +108,10 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: Commit changes
-        id: commit
-        run: |
+      -
+        name : Commit changes
+        id : commit
+        run : |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data_game/ scripts/temp_link.json scripts/deleted_games.json 2>/dev/null || true
@@ -119,16 +125,17 @@ jobs:
             echo "committed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Notify Telegram (success)
-        if: success()
-        env:
-          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID:   ${{ inputs.chat_id }}
-          MSG_ID:    ${{ inputs.message_id }}
-          SUMMARY:   ${{ steps.ingest.outputs.summary }}
-          COMMITTED: ${{ steps.commit.outputs.committed }}
-          RUN_URL:   ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
+      -
+        name : Notify Telegram (success)
+        if : success()
+        env :
+          BOT_TOKEN : ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID : ${{ inputs.chat_id }}
+          MSG_ID : ${{ inputs.message_id }}
+          SUMMARY : ${{ steps.ingest.outputs.summary }}
+          COMMITTED : ${{ steps.commit.outputs.committed }}
+          RUN_URL : ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run : |
           python <<'PY'
           import os, urllib.request, urllib.parse
 
@@ -162,14 +169,15 @@ jobs:
               print(f"Telegram callback failed: {e}")
           PY
 
-      - name: Notify Telegram (failure)
-        if: failure()
-        env:
-          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID:   ${{ inputs.chat_id }}
-          MSG_ID:    ${{ inputs.message_id }}
-          RUN_URL:   ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
+      -
+        name : Notify Telegram (failure)
+        if : failure()
+        env :
+          BOT_TOKEN : ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID : ${{ inputs.chat_id }}
+          MSG_ID : ${{ inputs.message_id }}
+          RUN_URL : ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run : |
           python <<'PY'
           import os, urllib.request, urllib.parse
 
@@ -192,3 +200,13 @@ jobs:
           except Exception as e:
               print(f"Telegram callback failed: {e}")
           PY
+    
+      -
+       name : Edit Telegram message with run URL
+       if : always()
+       run : |
+          curl -sS -X POST "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/editMessageText" \
+          -d chat_id=${{ inputs.chat_id }} \
+          -d message_id=${{ inputs.message_id }} \
+          --data-urlencode "text=$(cat result.txt)
+        🔗 https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
