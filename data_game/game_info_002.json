@@ -1318,5 +1318,74 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://big-shield-games.itch.io/tiny-towers-playtest",
+        "name": "Tiny Towers (v0.3.5)",
+        "dev": "David Elliot, romeo2487",
+        "description": "Tiny Towers is an active incremental game where you defend your tiny fortress from hordes of tiny mobs.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "97",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2OTM4Mjk5LmdpZg==/original/fdrNe%2B.gif",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Indie",
+            "No AI",
+            "Pixel Art",
+            "Short",
+            "Singleplayer",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ctmatthews.itch.io/hyper-bun-buster-demo",
+        "name": "Hyper Bun Buster: Rocket Hammer Action (demo)",
+        "dev": "C.T. Matthews",
+        "description": "CONTROLS WASD/Arrows (hold): Move and attack (by bumping into enemies) Space: Bomb (uses 1 carrot) Take control of Tess, a bunny girl who uses her huge hammer to send enemies flying into other enem...",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "22",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NzU4ODc4LmdpZg==/original/jSs1Mg.gif",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Pixel Art",
+            "Retro",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
