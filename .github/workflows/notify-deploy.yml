@@ -2,7 +2,8 @@ name: Notify Deploy Status
 
 on:
   workflow_run:
-    workflows: ["*"]
+    workflows:
+      - "Deploy webapp to GitHub Pages"
     types: [completed]
 
 permissions:

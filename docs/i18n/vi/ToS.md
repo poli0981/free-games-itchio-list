@@ -1,6 +1,6 @@
 # Điều khoản sử dụng (Terms of Use)
 
-Cập nhật lần cuối: 2026-05-05
+Cập nhật lần cuối: 2026-05-10
 
 > **Lưu ý**: Đây là bản dịch tiếng Việt mang tính tham khảo cho cộng đồng. **Bản tiếng Anh tại [`docs/ToS.md`](../../ToS.md) là bản chính thức** và sẽ được dùng để giải thích trong trường hợp có khác biệt giữa hai phiên bản.
 
@@ -126,5 +126,43 @@ Các Điều khoản này là tài liệu cho dự án sở thích, được so�
 Đây vẫn là một danh sách game miễn phí + một webapp + một desktop app, xây dựng bởi một dev mệt mỏi và hai LLM. Hãy "be cool", đừng phá đồ, vui vẻ, và mọi người đều hòa thuận.
 
 Câu hỏi? Mở issue. Hoặc DM qua bất kỳ kênh nào trên trang About. Người duy trì sẽ cố gắng không ghost.
+
+## 14. Telegram bot — đường đóng góp tùy chọn
+
+[`CONTRIBUTING.md`](CONTRIBUTING.md) mô tả một flow tùy chọn để gửi game qua
+Telegram bot [@my_skull_bot](https://t.me/my_skull_bot). Sử dụng đường này
+hoàn toàn tự nguyện. Bằng cách chọn dùng nó:
+
+- Bạn tự nguyện chia sẻ Telegram numeric ID của Bạn cho Người duy trì
+  (operator: poli0981) **với mục đích duy nhất** là được thêm vào whitelist
+  runtime của bot.
+- Whitelist nằm trên máy cục bộ của operator (hoặc Docker volume),
+  **không** commit vào Repository này, **không** đồng bộ tới bất kỳ server
+  nào do Người duy trì kiểm soát, và **không** chuyển tiếp tới bất kỳ log
+  aggregator, dịch vụ analytics, hay repository khác bên thứ ba nào.
+- Bot không thu thập nội dung tin nhắn ngoài những gì cần để parse các URL
+  itch.io Bạn gửi. URL itch.io Bạn gửi sẽ trở thành công khai — chúng được
+  commit vào Repository này tại
+  [`scripts/temp_link.json`](../../../scripts/temp_link.json) bởi workflow
+  [`bot-ingest.yml`](../../../.github/workflows/bot-ingest.yml) và được
+  render vào catalog bởi scraper hàng ngày.
+- Bạn có thể yêu cầu gỡ bất kỳ lúc nào bằng cách DM Người duy trì
+  ("remove me from whitelist"). Việc gỡ có hiệu lực ở lần khởi động bot kế
+  tiếp.
+- Bạn đồng ý **không** chia sẻ Telegram ID của người đóng góp khác mà không
+  có sự cho phép rõ ràng của họ. Hành động đó là vi phạm Code of Conduct và
+  đủ căn cứ để bị gỡ theo §8.
+- Bạn đồng ý **không** đăng numeric ID của chính Bạn (hay của bất kỳ ai)
+  vào các kênh chung liên quan tới dự án này (Discord, X, GitHub issue,
+  GitHub comment). Chỉ DM.
+
+Hành vi bot, mã nguồn, và đảm bảo vận hành nằm trong repo riêng của bot:
+[poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
+([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
+
+Vòng đời Telegram ID cũng được mô tả trong
+[Chính sách bảo mật §15](PrivacyPolicy.md#15-telegram-bot-đường-đóng-góp-tùy-chọn).
+
+## 15. Lời cuối thật
 
 Built with boredom, zero budget, and two AI buddies who actually read the EULA. 🚀

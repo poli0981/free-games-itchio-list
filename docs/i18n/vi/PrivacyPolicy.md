@@ -1,6 +1,6 @@
 # Chính sách bảo mật (Privacy Policy)
 
-Cập nhật lần cuối: 2026-05-05
+Cập nhật lần cuối: 2026-05-10
 
 > **Lưu ý**: Đây là bản dịch tiếng Việt mang tính tham khảo cho cộng đồng. **Bản tiếng Anh tại [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md) là bản chính thức** và sẽ được dùng để giải thích trong trường hợp có khác biệt giữa hai phiên bản.
 
@@ -132,5 +132,34 @@ Cho câu hỏi về Chính sách này:
 ## 14. Lời cuối
 
 Không tracking, không analytics, không telemetry, không spying. Người duy trì quá lười và quá thất nghiệp để xây pipeline dữ liệu kể cả khi muốn. Cứ duyệt thoải mái.
+
+## 15. Telegram bot — đường đóng góp tùy chọn
+
+[`CONTRIBUTING.md`](CONTRIBUTING.md) mô tả một flow tùy chọn để gửi game qua
+[@my_skull_bot](https://t.me/my_skull_bot). Flow này bao gồm việc tự nguyện
+chia sẻ Telegram numeric ID với Người duy trì (operator: poli0981). Mục
+này giải thích cách ID đó được xử lý.
+
+| Mục | Lưu ở đâu | Thời gian sống | Đồng bộ ngoài thiết bị | Trong repo này |
+|---|---|---|---|---|
+| Telegram numeric ID của Bạn | Máy cục bộ của operator, trong Docker volume hoặc file cục bộ dùng cho whitelist của bot | Cho tới khi Bạn yêu cầu gỡ, hoặc operator rotate whitelist | Không | **Không** |
+| Tin nhắn Telegram Bạn gửi cho bot | Server Telegram (theo chính sách Telegram) + bộ nhớ tạm của process bot trong khi parse | Theo quy định lưu trữ của Telegram; bot không persist ngoài request đang xử lý | Không (bot không log message body xuống đĩa) | Không |
+| URL itch.io Bạn gửi qua bot | File [`scripts/temp_link.json`](../../../scripts/temp_link.json) trong repo, sau đó merge hàng ngày vào [`data_game/*.json`](../../../data_game/) | Vĩnh viễn (Git history); trở thành catalog công khai | Có — công khai qua GitHub | **Có (chỉ URL, không Telegram metadata)** |
+| Workflow run ID + commit message của batch bot-ingest | GitHub Actions log (theo retention của GitHub) và Git history (commit `bot-ingest: run NNN`) | Retention mặc định GitHub (90 ngày cho log); Git history vĩnh viễn | Có — GitHub | Có (chỉ commit message; không Telegram ID) |
+
+**Gỡ**: DM Người duy trì "remove me from whitelist". Lần khởi động bot kế
+tiếp sẽ drop ID của Bạn; các request đã được chấp nhận khi Bạn còn trong
+whitelist không bị revert ngược (URL Bạn đã gửi vẫn nằm trong catalog với
+tư cách dữ liệu công khai, giống y URL gửi qua GitHub Issue).
+
+**Mã nguồn bot + ghi chú vận hành**:
+[poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
+([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
+
+Cơ sở pháp lý cho việc xử lý dữ liệu trong flow này là **sự đồng ý rõ ràng
+của Bạn** theo Nghị định 13/2023/NĐ-CP của Việt Nam và các quy định tương
+đương của GDPR / CCPA. Bạn có thể rút lại sự đồng ý bất kỳ lúc nào theo
+bước gỡ ở trên; việc rút lại không ảnh hưởng tới tính hợp pháp của xử lý
+trước thời điểm rút lại.
 
 Built with boredom and zero data harvesting. 🚀

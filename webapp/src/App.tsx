@@ -1,6 +1,6 @@
-import { lazy, Suspense } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import { Sidebar } from '@/components/sidebar'
+import { lazy, Suspense, useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { Sidebar, MobileTopBar } from '@/components/sidebar'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import Dashboard from '@/routes/dashboard'
@@ -24,27 +24,48 @@ function RouteFallback() {
   )
 }
 
+function ScrollToHash() {
+  const { hash, pathname } = useLocation()
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo({ top: 0 })
+      return
+    }
+    const id = hash.slice(1)
+    const tryScroll = () => {
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+    requestAnimationFrame(tryScroll)
+  }, [hash, pathname])
+  return null
+}
+
 export default function App() {
   useThemeEffect()
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-[100dvh] overflow-hidden">
+      <ScrollToHash />
       <Sidebar />
-      <main className="flex-1 overflow-y-auto">
-        <Suspense fallback={<RouteFallback />}>
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/games/:slug" element={<GameDetail />} />
-            <Route path="/add" element={<Add />} />
-            <Route path="/charts" element={<Charts />} />
-            <Route path="/workflows" element={<Workflows />} />
-            <Route path="/deleted" element={<Deleted />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </main>
+      <div className="flex min-w-0 flex-1 flex-col">
+        <MobileTopBar />
+        <main className="flex-1 overflow-y-auto">
+          <Suspense fallback={<RouteFallback />}>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/games" element={<Games />} />
+              <Route path="/games/:slug" element={<GameDetail />} />
+              <Route path="/add" element={<Add />} />
+              <Route path="/charts" element={<Charts />} />
+              <Route path="/workflows" element={<Workflows />} />
+              <Route path="/deleted" element={<Deleted />} />
+              <Route path="/settings" element={<Settings />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </main>
+      </div>
     </div>
   )
 }

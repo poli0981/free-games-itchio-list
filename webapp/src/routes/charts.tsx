@@ -13,8 +13,10 @@ import {
   TopTagsChart,
 } from '@/components/charts'
 import { useAllGames, useDeletedGames } from '@/hooks/useGames'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 
 export default function Charts() {
+  useDocumentTitle('Charts')
   const games = useAllGames()
   const deleted = useDeletedGames()
 

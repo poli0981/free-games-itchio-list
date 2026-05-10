@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 2026-05-05
+Last updated: 2026-05-10
 
 This Privacy Policy describes how the Repository, the Webapp, and the Desktop App handle Your data. The short version: the Maintainer collects nothing on any server he controls. Everything that persists, persists locally on Your device.
 
@@ -130,5 +130,34 @@ For questions about this Policy:
 ## 14. Final vibes
 
 No tracking, no analytics, no telemetry, no spying. The Maintainer is too lazy and too unemployed to build a data pipeline even if he wanted one. Browse freely.
+
+## 15. Telegram bot — optional contribution path
+
+[`CONTRIBUTING.md`](../CONTRIBUTING.md) describes an optional flow for
+submitting games via [@my_skull_bot](https://t.me/my_skull_bot). The flow
+involves voluntarily sharing a Telegram numeric ID with the Maintainer
+(operator: poli0981). This section explains how that ID is handled.
+
+| Item | Stored where | Lifetime | Synchronized off-device | In this repo |
+|---|---|---|---|---|
+| Your Telegram numeric ID | Operator's local machine, in a Docker volume or local file used by the bot's whitelist | Until You request removal, or the operator rotates the whitelist | No | **No** |
+| Telegram messages You send to the bot | Telegram's servers (per Telegram's policy) + transient memory of the bot process while parsing | Telegram's retention rules; bot does not persist beyond the in-flight request | No (bot does not log message bodies to disk) | No |
+| itch.io URLs You submit through the bot | Repository file [`scripts/temp_link.json`](../scripts/temp_link.json), then daily-merged into [`data_game/*.json`](../data_game/) | Permanent (Git history); becomes part of the public catalog | Yes — public via GitHub | **Yes (URL only, no Telegram metadata)** |
+| Workflow run ID + commit messages of bot-ingested batches | GitHub Actions logs (subject to GitHub's retention) and Git history (`bot-ingest: run NNN` commits) | GitHub default retention (90 days for logs); Git history is permanent | Yes — GitHub | Yes (commit messages only; no Telegram ID) |
+
+**Removal**: DM the Maintainer with "remove me from whitelist". The next
+bot start drops Your ID; in-flight requests already accepted are not
+retroactively reverted (the URLs You submitted remain in the catalog as
+public data, identical to URLs submitted via the GitHub Issue path).
+
+**Bot source code + operational notes**:
+[poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
+([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
+
+The legal basis for processing in this flow is **Your explicit consent**
+under Vietnam's PDPD (Decree 13/2023/ND-CP) and equivalent provisions of
+GDPR / CCPA. You may withdraw consent at any time per the removal step
+above; withdrawal does not affect the lawfulness of processing prior to
+withdrawal.
 
 Built with boredom and zero data harvesting. 🚀

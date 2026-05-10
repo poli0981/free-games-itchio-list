@@ -1,0 +1,20 @@
+{
+  "name": "Itch.io Free Games DB",
+  "short_name": "Itch.io DB",
+  "description": "A curated, auto-updating catalog of free games on itch.io. Browse 500+ titles, edit annotations, and dispatch the scraper from the browser.",
+  "start_url": "/free-games-itchio-list/app/",
+  "scope": "/free-games-itchio-list/app/",
+  "id": "/free-games-itchio-list/app/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#863bff",
+  "background_color": "#0a0a0f",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["entertainment", "games", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -21,6 +21,7 @@ import { BulkEditDialog } from '@/components/bulk-edit-dialog'
 import { BulkDeleteDialog } from '@/components/bulk-delete-dialog'
 import { UndoTray } from '@/components/undo-tray'
 import { useAllGames } from '@/hooks/useGames'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useAuth } from '@/stores/auth'
 import { countBy, countByArray } from '@/lib/analytics'
 import { formatNumber } from '@/lib/utils'
@@ -38,6 +39,7 @@ function gameSearch(g: Game, q: string): boolean {
 }
 
 export default function Games() {
+  useDocumentTitle('Games')
   const games = useAllGames()
   const pat = useAuth((s) => s.pat)
   const [globalFilter, setGlobalFilter] = useState('')

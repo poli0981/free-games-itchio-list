@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
 import { useAllGames } from '@/hooks/useGames'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useAuth } from '@/stores/auth'
 import { createOctokit } from '@/lib/github/client'
 import { putFile, readFileWithSha } from '@/lib/github/contents'
@@ -27,6 +28,7 @@ function normalizeUrl(u: string): string {
 }
 
 export default function Add() {
+  useDocumentTitle('Add Game')
   const pat = useAuth((s) => s.pat)
   const all = useAllGames()
   const qc = useQueryClient()

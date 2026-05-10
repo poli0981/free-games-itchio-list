@@ -10,6 +10,7 @@ import { useAuth } from '@/stores/auth'
 import { createOctokit } from '@/lib/github/client'
 import { dispatchWorkflow, type WorkflowFile, type WorkflowRunSummary } from '@/lib/github/workflow'
 import { useWorkflowRuns, WORKFLOWS } from '@/hooks/useWorkflows'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 
 function StatusBadge({ run }: { run: WorkflowRunSummary }) {
   if (run.status !== 'completed') {
@@ -110,6 +111,7 @@ function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label
 }
 
 export default function Workflows() {
+  useDocumentTitle('Workflows')
   return (
     <div className="container mx-auto p-6">
       <h1 className="mb-4 text-3xl font-bold tracking-tight">Workflows</h1>

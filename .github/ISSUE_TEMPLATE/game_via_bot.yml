@@ -1,0 +1,68 @@
+name: 🤖 Game already submitted via Telegram bot
+description: Tracking issue for games you submitted via @my_skull_bot
+title: "[Bot] "
+labels: ["contribution", "games", "via-telegram-bot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template **only after** the bot has acknowledged your submission
+        in Telegram. This issue is for tracking + so you get credited in
+        ACKNOWLEDGEMENTS.md.
+
+        New here? See [CONTRIBUTING §1b — Add games via Telegram bot](../blob/main/CONTRIBUTING.md#1b-add-games-via-telegram-bot-my_skull_bot--alternative-to-issues).
+
+        **Privacy reminder**: do **not** paste your Telegram numeric ID into
+        this issue. The numeric ID is private; the username (@SkullMute0011-style)
+        is fine if you want credit on it.
+
+  - type: input
+    id: telegram_username
+    attributes:
+      label: Telegram username (optional, for credit)
+      description: e.g. `@yourname`. Leave blank if you'd rather stay anonymous.
+      placeholder: "@yourname"
+
+  - type: input
+    id: bot_run_id
+    attributes:
+      label: Bot run ID or commit SHA
+      description: |
+        Either the GitHub Actions run ID the bot reported back to you in
+        Telegram, or the commit SHA `bot-ingest: run NNN`.
+      placeholder: "e.g. 25627763897 or 2b22b85"
+    validations:
+      required: true
+
+  - type: textarea
+    id: links
+    attributes:
+      label: itch.io URLs you submitted (one per line)
+      description: |
+        Same URLs you sent the bot. Helps cross-check that the scraper picked
+        them up correctly.
+      placeholder: |
+        https://example.itch.io/game1
+        https://example.itch.io/game2
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything weird with the run? (optional)
+      description: |
+        Bot timed out, scraper missed a field, duplicate already in catalog,
+        etc. If everything went smoothly leave this blank.
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement (required)
+      options:
+        - label: I confirm the bot acknowledged this submission in Telegram before I opened this issue.
+          required: true
+        - label: I did NOT paste my Telegram numeric ID into this issue.
+          required: true
+        - label: I agree to the [Terms of Use](../blob/main/docs/ToS.md) and [Privacy Policy](../blob/main/docs/PrivacyPolicy.md).
+          required: true
