@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-3.1.4-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-3.2.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
 
@@ -94,10 +94,16 @@ Tất cả workflow có rate-limit (delay ngẫu nhiên, batch pause) để trá
 Xem [CONTRIBUTING.vi](docs/i18n/vi/CONTRIBUTING.md) (hoặc [bản tiếng Anh CONTRIBUTING.md](CONTRIBUTING.md) cho bản chính thức).
 
 - **Thêm game** — dùng issue template "Add New Games" (tối đa 50 link / issue).
+- **Thêm game qua Telegram bot** — đường thay thế cho batch submissions qua
+  [@my_skull_bot](https://t.me/my_skull_bot); DM owner để được whitelist.
+  Flow đầy đủ + ghi chú riêng tư: [CONTRIBUTING §1b](docs/i18n/vi/CONTRIBUTING.md#1b-th%C3%AAm-game-qua-telegram-bot-my_skull_bot--thay-th%E1%BA%BF-cho-issue)
+  · Repo bot: [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
+  ([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
 - **Báo bug** — dùng template "Bug Report".
 - **Đề xuất tính năng** — mở issue hoặc gửi PR.
 
 Người đóng góp được ghi nhận trong [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
+Cấu hình máy maintainer + môi trường dev: [`docs/pc_spec.md`](docs/pc_spec.md) ([VI](docs/i18n/vi/pc_spec.md)), [`docs/dev_env.md`](docs/dev_env.md) ([VI](docs/i18n/vi/dev_env.md)).
 
 ## Kết nối / hỗ trợ
 
@@ -105,7 +111,8 @@ Hai server Discord giờ đã tồn tại (câu "if I ever make one" chính th�
 
 - **Chat**: Discord — [Repo discussion](https://discord.gg/2aNR3aVt) · [Game chat](https://discord.gg/kDM9GMu5vm)
 - **Mạng xã hội**: [X/@SkullMute0011](https://x.com/SkullMute0011) · [YouTube/@SkullMute](https://youtube.com/@SkullMute) · [Bluesky](https://bsky.app/profile/skullmute0011.bsky.social) · [Mastodon](https://mastodon.social/@skullmute1122)
-- **Hỗ trợ** (hoàn toàn tùy chọn): [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute)
+- **Messaging**: [Telegram (DM)](https://t.me/SkullMute0011) · [Telegram bot — gửi game](https://t.me/my_skull_bot) (DM numeric ID riêng tư, đừng đăng kênh chung)
+- **Hỗ trợ** (hoàn toàn tùy chọn, mirror [`.github/FUNDING.yml`](.github/FUNDING.yml)): [GitHub Sponsors](https://github.com/sponsors/poli0981) · [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute) · [PayPal](https://paypal.me/DungDang212)
 - **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
 
 DM mở khắp nơi — trả lời chậm, introvert max level. Trang About trong [webapp](https://poli0981.github.io/free-games-itchio-list/app/#/about) có cùng danh sách dạng nút bấm.

@@ -1,11 +1,20 @@
 import { Link } from 'react-router-dom'
-import type { ColumnDef, FilterFn } from '@tanstack/react-table'
+import type { ColumnDef, FilterFn, RowData } from '@tanstack/react-table'
 import { ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
+
+declare module '@tanstack/react-table' {
+  // priority 1 — always visible. priority 2 — visible at md+. priority 3 — visible at lg+.
+  // Read in data-table.tsx to apply Tailwind responsive hiding to the <th>/<td> wrapper.
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface ColumnMeta<TData extends RowData, TValue> {
+    priority?: 1 | 2 | 3
+  }
+}
 
 const arrayIncludesAny: FilterFn<Game> = (row, columnId, filterValue) => {
   const cell = row.getValue(columnId) as string | string[] | undefined
@@ -42,6 +51,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     enableSorting: false,
     enableColumnFilter: false,
     size: 40,
+    meta: { priority: 1 },
     header: ({ table }) => (
       <Checkbox
         checked={
@@ -67,21 +77,27 @@ export const gameColumns: ColumnDef<Game>[] = [
     enableSorting: false,
     enableColumnFilter: false,
     size: 80,
+    meta: { priority: 1 },
     cell: ({ row }) =>
       row.original.thumbnail ? (
         <img
           src={row.original.thumbnail}
           alt=""
+          width={64}
+          height={40}
           loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           className="h-10 w-16 rounded object-cover"
         />
       ) : (
-        <div className="h-10 w-16 rounded bg-muted" />
+        <div aria-hidden="true" className="h-10 w-16 rounded bg-muted" />
       ),
   },
   {
     id: 'name',
     accessorKey: 'name',
+    meta: { priority: 1 },
     header: ({ column }) => (
       <SortableHeader
         label="Name"
@@ -101,6 +117,7 @@ export const gameColumns: ColumnDef<Game>[] = [
   {
     id: 'dev',
     accessorKey: 'dev',
+    meta: { priority: 3 },
     header: ({ column }) => (
       <SortableHeader
         label="Dev"
@@ -116,6 +133,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     id: 'genre',
     accessorKey: 'genre',
     header: 'Genre',
+    meta: { priority: 2 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) => <Badge variant="secondary">{row.original.genre || 'Unknown'}</Badge>,
   },
@@ -124,6 +142,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     accessorKey: 'platforms',
     header: 'Platforms',
     enableSorting: false,
+    meta: { priority: 3 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) => (
       <div className="flex flex-wrap gap-1">
@@ -138,6 +157,7 @@ export const gameColumns: ColumnDef<Game>[] = [
   {
     id: 'rating',
     accessorKey: 'rating',
+    meta: { priority: 2 },
     header: ({ column }) => (
       <SortableHeader
         label="Rating"
@@ -163,6 +183,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     id: 'status',
     accessorKey: 'status',
     header: 'Status',
+    meta: { priority: 3 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) => (
       <Badge variant={row.original.status === 'Released' ? 'default' : 'secondary'}>
@@ -174,6 +195,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     id: 'nsfw',
     accessorKey: 'nsfw',
     header: 'NSFW',
+    meta: { priority: 2 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) =>
       row.original.nsfw === 'Yes' ? (
@@ -186,6 +208,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     id: 'safe_virus',
     accessorKey: 'safe_virus',
     header: 'Safe',
+    meta: { priority: 3 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) => (
       <span className="text-xs">{row.original.safe_virus || '?'}</span>

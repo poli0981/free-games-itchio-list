@@ -14,6 +14,26 @@ Vui lòng dùng các template issue/PR — chúng làm cuộc đời tôi dễ h
 - Tùy chọn: lý do nó hay hoặc note cho bảng.
 - GitHub Action hàng ngày sẽ tự scrape và thêm. Dễ.
 
+#### 1b. Thêm game qua Telegram bot ([@my_skull_bot](https://t.me/my_skull_bot)) — thay thế cho issue
+
+Đường nhanh hơn cho batch nhiều link mà không muốn mở issue cho từng đợt.
+Riêng tư — Telegram ID dạng số của bạn không bao giờ vào repo này.
+
+1. **Liên hệ owner** riêng tư qua Telegram ([@SkullMute0011](https://t.me/SkullMute0011)) — hoặc bất kỳ kênh nào liệt kê trong trang [About](https://poli0981.github.io/free-games-itchio-list/app/#/about) → Find me elsewhere.
+2. **Tìm Telegram numeric ID của bạn** — VD gửi `/start` cho [@userinfobot](https://t.me/userinfobot) và copy ID nó trả về.
+3. **DM ID đó cho owner.** **Tuyệt đối không** đăng numeric ID vào Discord, X, GitHub comment, hay bất kỳ kênh chung nào.
+4. Owner add ID của bạn vào whitelist cục bộ của bot (phía operator, không commit vào repo).
+5. **Owner chạy bot** trong Docker container cục bộ, ~2–5 giờ/ngày. Trạng thái xem tại [@my_skull_bot](https://t.me/my_skull_bot).
+6. **Tuân theo prompt của bot** — paste URL itch.io, bot dispatch workflow `bot-ingest.yml` và sửa lại chính tin nhắn Telegram đó với kết quả khi xong.
+
+Chi tiết hành vi bot + flow kỹ thuật:
+[USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)
+trong repo bot [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot).
+
+Chính sách riêng tư + xử lý Telegram ID được mô tả trong
+[Điều khoản sử dụng §14](../../ToS.md) và [Chính sách bảo mật §15](../../PrivacyPolicy.md).
+Yêu cầu gỡ: DM owner "remove me from whitelist" — xử lý ở lần bot khởi động kế tiếp.
+
 ### 2. Gỡ game
 - Mở issue → chọn template **[Remove Games]**.
 - Tối đa 10 game (vì lười :v).

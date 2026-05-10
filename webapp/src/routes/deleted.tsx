@@ -2,9 +2,11 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Badge } from '@/components/ui/badge'
 import { useDeletedGames } from '@/hooks/useGames'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { formatNumber } from '@/lib/utils'
 
 export default function Deleted() {
+  useDocumentTitle('Deleted Games')
   const deleted = useDeletedGames()
 
   if (deleted.isLoading) {

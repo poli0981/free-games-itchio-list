@@ -9,6 +9,7 @@ import { Separator } from '@/components/ui/separator'
 import { ExtLink } from '@/components/ext-link'
 import { EditGameForm } from '@/components/edit-game-form'
 import { useGameBySlug } from '@/hooks/useGameBySlug'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useAuth } from '@/stores/auth'
 import type { Game } from '@/types/game'
 
@@ -35,6 +36,7 @@ function ArrayBadges({ items, variant = 'outline' }: { items: string[]; variant?
 }
 
 function GameDetailView({ game }: { game: Game }) {
+  useDocumentTitle(game.name)
   const pat = useAuth((s) => s.pat)
   const [editing, setEditing] = useState(false)
 
@@ -75,11 +77,19 @@ function GameDetailView({ game }: { game: Game }) {
           {game.thumbnail ? (
             <img
               src={game.thumbnail}
-              alt=""
+              alt={`${game.name} cover`}
+              width={630}
+              height={500}
+              decoding="async"
+              fetchPriority="high"
               className="h-48 w-full flex-shrink-0 rounded-lg object-cover md:w-80"
             />
           ) : (
-            <div className="h-48 w-full flex-shrink-0 rounded-lg bg-muted md:w-80" />
+            <div
+              role="presentation"
+              aria-hidden="true"
+              className="h-48 w-full flex-shrink-0 rounded-lg bg-muted md:w-80"
+            />
           )}
           <div className="flex min-w-0 flex-1 flex-col">
             <div className="flex flex-wrap items-baseline gap-2">

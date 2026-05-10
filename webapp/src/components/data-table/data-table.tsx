@@ -18,6 +18,18 @@ import { cn } from '@/lib/utils'
 
 const ROW_HEIGHT = 56
 
+function priorityClass(priority: 1 | 2 | 3 | undefined): string {
+  if (priority === 2) return 'hidden md:flex'
+  if (priority === 3) return 'hidden lg:flex'
+  return ''
+}
+
+function priorityHeaderClass(priority: 1 | 2 | 3 | undefined): string {
+  if (priority === 2) return 'hidden md:table-cell'
+  if (priority === 3) return 'hidden lg:table-cell'
+  return ''
+}
+
 interface DataTableProps<TData> {
   data: TData[]
   columns: ColumnDef<TData>[]
@@ -121,7 +133,10 @@ export function DataTable<TData>({
                 {hg.headers.map((h) => (
                   <th
                     key={h.id}
-                    className="h-10 px-3 text-left align-middle font-medium text-muted-foreground"
+                    className={cn(
+                      'h-10 px-3 text-left align-middle font-medium text-muted-foreground',
+                      priorityHeaderClass(h.column.columnDef.meta?.priority),
+                    )}
                     style={{ width: h.getSize() ? `${h.getSize()}px` : undefined }}
                   >
                     {h.isPlaceholder
@@ -159,12 +174,18 @@ export function DataTable<TData>({
                     {row.getVisibleCells().map((cell) => (
                       <td
                         key={cell.id}
-                        className="px-3 align-middle"
+                        className={cn(
+                          'flex items-center px-3 align-middle',
+                          priorityClass(cell.column.columnDef.meta?.priority),
+                        )}
                         style={{
                           width: cell.column.getSize()
                             ? `${cell.column.getSize()}px`
                             : undefined,
-                          flex: cell.column.getSize() ? '0 0 auto' : '1 1 0',
+                          flex: cell.column.getSize()
+                            ? `0 0 ${cell.column.getSize()}px`
+                            : '1 1 0',
+                          height: `${ROW_HEIGHT}px`,
                         }}
                       >
                         {flexRender(cell.column.columnDef.cell, cell.getContext())}

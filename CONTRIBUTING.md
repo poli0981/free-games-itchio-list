@@ -12,6 +12,26 @@ Please use the issue/PR templates — they make my life easier and reduce "wtf" 
 - Optional: why it's good or notes for table.
 - Daily Action will auto-scrape and add. Easy.
 
+#### 1b. Add games via Telegram bot ([@my_skull_bot](https://t.me/my_skull_bot)) — alternative to issues
+
+Faster batch path if you have many links and don't want to file an issue per
+batch. Privacy-conscious — your Telegram numeric ID never enters this repo.
+
+1. **Contact owner** privately on Telegram ([@SkullMute0011](https://t.me/SkullMute0011)) — or via any channel listed in [About](https://poli0981.github.io/free-games-itchio-list/app/#/about) → Find me elsewhere.
+2. **Find your Telegram numeric ID** — e.g. send `/start` to [@userinfobot](https://t.me/userinfobot) and copy the ID it returns.
+3. **DM your ID to the owner.** **Never** post your numeric ID into Discord, X, GitHub comments, or any public channel.
+4. Owner adds your ID to the bot's local whitelist (operator-side, not committed to this repo).
+5. **Owner runs the bot** in a local Docker container, ~2–5 hours per day. Status visible at [@my_skull_bot](https://t.me/my_skull_bot).
+6. **Follow the bot's prompts** — paste itch.io URLs, the bot dispatches the `bot-ingest.yml` workflow, and edits the same Telegram message with the result when done.
+
+Full bot behavior + technical flow:
+[USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)
+in the bot's repo [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot).
+
+Privacy + handling of your Telegram ID is documented in
+[Terms of Use §14](docs/ToS.md) and [Privacy Policy §15](docs/PrivacyPolicy.md).
+Removal request: DM the owner with "remove me from whitelist" — done at next bot start.
+
 ### 2. Remove Games
 - Open issue → Choose **[Remove Games]** template.
 - Max 10 games (because lazy :v).

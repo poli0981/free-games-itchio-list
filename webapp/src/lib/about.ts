@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Itch.io Free Games DB',
-  version: '0.1.0',
+  version: '3.2.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'MIT',
   buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
@@ -53,7 +53,7 @@ export const AI_TOOLS: AiTool[] = [
 export const ERROR_TEMPLATE_URL =
   'https://github.com/poli0981/free-games-itchio-list/issues/new?template=bug_report.yml'
 
-export type SocialGroup = 'social' | 'community' | 'support' | 'gaming'
+export type SocialGroup = 'social' | 'community' | 'messaging' | 'support' | 'gaming'
 
 export interface SocialLink {
   platform: string
@@ -74,9 +74,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'discord-repo', label: 'Discord — Repo discussion', handle: '#general', url: 'https://discord.gg/2aNR3aVt', group: 'community' },
   { platform: 'discord-game', label: 'Discord — Game chat', handle: '#general', url: 'https://discord.gg/kDM9GMu5vm', group: 'community' },
 
-  // Support
-  { platform: 'patreon', label: 'Patreon', handle: 'skullmute', url: 'https://patreon.com/skullmute', group: 'support' },
-  { platform: 'kofi', label: 'Ko-fi', handle: 'skullmute', url: 'https://ko-fi.com/skullmute', group: 'support' },
+  // Messaging — DM only; never post your Telegram numeric ID to public channels.
+  { platform: 'telegram-user', label: 'Telegram (DM for bot whitelist)', handle: '@SkullMute0011', url: 'https://t.me/SkullMute0011', group: 'messaging' },
+  { platform: 'telegram-bot',  label: 'Telegram bot (game submission)',  handle: '@my_skull_bot',  url: 'https://t.me/my_skull_bot',  group: 'messaging' },
+
+  // Support — mirrors .github/FUNDING.yml (single source of truth on GitHub side).
+  { platform: 'github-sponsors', label: 'GitHub Sponsors',  handle: 'poli0981',  url: 'https://github.com/sponsors/poli0981',  group: 'support' },
+  { platform: 'patreon',         label: 'Patreon',           handle: 'skullmute', url: 'https://patreon.com/skullmute',         group: 'support' },
+  { platform: 'kofi',            label: 'Ko-fi',             handle: 'skullmute', url: 'https://ko-fi.com/skullmute',           group: 'support' },
+  { platform: 'bmc',             label: 'Buy Me a Coffee',   handle: 'skullmute', url: 'https://buymeacoffee.com/skullmute',    group: 'support' },
+  { platform: 'paypal',          label: 'PayPal',            handle: 'one-time',  url: 'https://paypal.me/DungDang212',         group: 'support' },
 
   // Gaming
   { platform: 'steam', label: 'Steam', handle: 'profile', url: 'https://steamcommunity.com/profiles/76561199544666292/', group: 'gaming' },
@@ -85,6 +92,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const SOCIAL_GROUP_LABELS: Record<SocialGroup, string> = {
   social: 'Social',
   community: 'Community',
+  messaging: 'Messaging',
   support: 'Support',
   gaming: 'Gaming',
 }
@@ -143,10 +151,11 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'Recharts', version: '3.8', license: 'MIT', url: 'https://recharts.org', category: 'ui' },
 
   // Data
-  { name: 'TanStack Query', version: '5.10', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query', version: '5.100', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'TanStack Table', version: '8.21', license: 'MIT', url: 'https://tanstack.com/table', category: 'data' },
   { name: 'TanStack Virtual', version: '3.13', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
   { name: 'react-hook-form', version: '7.75', license: 'MIT', url: 'https://react-hook-form.com', category: 'data' },
+  { name: '@hookform/resolvers', version: '5.2', license: 'MIT', url: 'https://github.com/react-hook-form/resolvers', category: 'data' },
   { name: '@octokit/rest', version: '22.0', license: 'MIT', url: 'https://github.com/octokit/octokit.js', category: 'data' },
   { name: 'idb-keyval', version: '6.2', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
 

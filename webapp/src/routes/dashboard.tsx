@@ -1,10 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useAllGames, useDeletedGames } from '@/hooks/useGames'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { computeOverview } from '@/lib/analytics'
 import { formatNumber } from '@/lib/utils'
 
 export default function Dashboard() {
+  useDocumentTitle('Dashboard')
   const games = useAllGames()
   const deleted = useDeletedGames()
 

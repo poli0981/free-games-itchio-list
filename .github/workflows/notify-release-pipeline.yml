@@ -2,7 +2,9 @@ name: Notify Release Pipeline
 
 on:
   workflow_run:
-    workflows: ["*"]
+    workflows:
+      - "Release desktop installers (Tauri)"
+      - "Announce Release to Discord"
     types: [completed]
 
 permissions:

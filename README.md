@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-3.1.4-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-3.2.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
@@ -186,10 +186,16 @@ All fields default to `N/A` when not available on the game page.
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for full details.
 
 - **Add games** — use the "Add New Games" issue template (max 50 links per issue).
+- **Add games via Telegram bot** — alternative path for batch submissions through
+  [@my_skull_bot](https://t.me/my_skull_bot); DM the owner to be whitelisted.
+  Full flow + privacy notes: [CONTRIBUTING §1b](CONTRIBUTING.md#1b-add-games-via-telegram-bot-my_skull_bot--alternative-to-issues)
+  · Bot repo: [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
+  ([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
 - **Report bugs** — use the "Bug Report" template.
 - **Request features** — open an issue or submit a PR.
 
 Contributors are credited in [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
+Maintainer hardware + dev environment: [`docs/pc_spec.md`](docs/pc_spec.md), [`docs/dev_env.md`](docs/dev_env.md).
 
 ## Connect / support
 
@@ -197,7 +203,8 @@ Two Discord servers exist now (the "if I ever make one" disclaimer is officially
 
 - **Chat**: Discord — [Repo discussion](https://discord.gg/2aNR3aVt) · [Game chat](https://discord.gg/kDM9GMu5vm)
 - **Social**: [X/@SkullMute0011](https://x.com/SkullMute0011) · [YouTube/@SkullMute](https://youtube.com/@SkullMute) · [Bluesky](https://bsky.app/profile/skullmute0011.bsky.social) · [Mastodon](https://mastodon.social/@skullmute1122)
-- **Support** (totally optional): [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute)
+- **Messaging**: [Telegram (DM)](https://t.me/SkullMute0011) · [Telegram bot — game submission](https://t.me/my_skull_bot) (DM your numeric ID privately, never in public channels)
+- **Support** (totally optional, mirrors [`.github/FUNDING.yml`](.github/FUNDING.yml)): [GitHub Sponsors](https://github.com/sponsors/poli0981) · [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute) · [PayPal](https://paypal.me/DungDang212)
 - **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
 
 DMs are open everywhere — replies slow, introvert max level. The About page in the [webapp](https://poli0981.github.io/free-games-itchio-list/app/#/about) has the same list with one-click buttons.

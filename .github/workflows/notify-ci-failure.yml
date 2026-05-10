@@ -2,7 +2,17 @@ name: Notify CI Failures
 
 on:
   workflow_run:
-    workflows: ["*"]
+    # Listen only to data-pipeline workflows. Deploy/release/scanner notifications
+    # have their own dedicated wrappers (notify-deploy, notify-release-pipeline,
+    # plus CodeQL/Dependabot upstream defaults). Listing them explicitly avoids
+    # the "skip storm" of no-op runs that `workflows: ["*"]` produces.
+    workflows:
+      - "Update JSON file game information"
+      - "Generate Table of Game"
+      - "Check dead game links"
+      - "Check paid games"
+      - "Export deleted games log"
+      - "Bot Ingest"
     types: [completed]
 
 # REQUIRED: declare permissions matching the reusable workflow's needs.

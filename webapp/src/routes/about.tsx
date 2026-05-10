@@ -1,15 +1,20 @@
 import {
+  Bot,
   Bug,
+  CircleDollarSign,
   Cloud,
   Coffee,
+  CupSoda,
   ExternalLink as ExternalLinkIcon,
   Gamepad2,
+  HeartHandshake,
   Library,
   Globe,
   Hash,
   Heart,
   MessagesSquare,
   ScrollText,
+  Send,
   Video,
   type LucideIcon,
 } from 'lucide-react'
@@ -18,6 +23,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { ExtLink } from '@/components/ext-link'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import {
   AI_TOOLS,
   APP,
@@ -51,12 +57,17 @@ const SOCIAL_ICON: Record<string, LucideIcon> = {
   mastodon: Hash,
   'discord-repo': MessagesSquare,
   'discord-game': MessagesSquare,
+  'telegram-user': Send,
+  'telegram-bot': Bot,
+  'github-sponsors': HeartHandshake,
   patreon: Heart,
   kofi: Coffee,
+  bmc: CupSoda,
+  paypal: CircleDollarSign,
   steam: Gamepad2,
 }
 
-const SOCIAL_GROUP_ORDER: SocialGroup[] = ['social', 'community', 'support', 'gaming']
+const SOCIAL_GROUP_ORDER: SocialGroup[] = ['social', 'community', 'messaging', 'support', 'gaming']
 const LEGAL_GROUP_ORDER: LegalGroup[] = ['policy', 'meta']
 
 function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
@@ -92,12 +103,30 @@ function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
   )
 }
 
+const GROUP_NOTE: Partial<Record<SocialGroup, string>> = {
+  messaging:
+    'Please DM your Telegram numeric ID privately. Never post it to Discord/X/public channels.',
+  support:
+    'Mirrors .github/FUNDING.yml — same handles GitHub uses for the Sponsor button.',
+}
+
+const PLATFORM_NOTE: Record<string, string> = {
+  paypal: 'Receipt shows real legal name (DungDang212) — that’s me.',
+}
+
 function SocialGroupSection({ group }: { group: SocialGroup }) {
   const items = SOCIAL_LINKS.filter((s) => s.group === group)
   if (items.length === 0) return null
+  const note = GROUP_NOTE[group]
   return (
     <div className="space-y-2">
-      <h3 className="text-sm font-semibold text-muted-foreground">{SOCIAL_GROUP_LABELS[group]}</h3>
+      <h3
+        id={group === 'support' ? 'support' : undefined}
+        className="text-sm font-semibold text-muted-foreground scroll-mt-20"
+      >
+        {SOCIAL_GROUP_LABELS[group]}
+      </h3>
+      {note && <p className="text-xs text-muted-foreground">{note}</p>}
       <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
         {items.map((s) => (
           <SocialItem key={s.platform} link={s} />
@@ -109,6 +138,7 @@ function SocialGroupSection({ group }: { group: SocialGroup }) {
 
 function SocialItem({ link }: { link: SocialLink }) {
   const Icon = SOCIAL_ICON[link.platform] ?? Globe
+  const note = PLATFORM_NOTE[link.platform]
   return (
     <li className="rounded-md border">
       <ExtLink
@@ -122,11 +152,13 @@ function SocialItem({ link }: { link: SocialLink }) {
         </span>
         <ExternalLinkIcon className="h-3 w-3 flex-shrink-0 opacity-50" />
       </ExtLink>
+      {note && <p className="px-2 pb-1 text-[10px] text-muted-foreground">{note}</p>}
     </li>
   )
 }
 
 export default function About() {
+  useDocumentTitle('About')
   return (
     <div className="container mx-auto max-w-4xl p-6">
       <h1 className="mb-6 text-3xl font-bold tracking-tight">About</h1>

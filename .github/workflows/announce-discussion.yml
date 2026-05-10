@@ -1,0 +1,174 @@
+name: Announce to Discussion
+
+# Two triggers, two destinations:
+#   1. release:published       → Announcements category
+#   2. push (paths: docs/**, CHANGELOG.md, README.md, README.vi.md) → General
+# The push job is gated by a `[skip-discuss]` token in the head-commit message
+# so dev can opt out for typo-only commits.
+#
+# Pre-flight (one-time, then hardcode the IDs into the env block below):
+#   gh api graphql -f query='query{repository(owner:"poli0981",name:"free-games-itchio-list"){
+#     id
+#     discussionCategories(first:20){nodes{id slug name}}
+#   }}'
+
+on:
+  release:
+    types: [published]
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'CHANGELOG.md'
+      - 'README.md'
+      - 'README.vi.md'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Which job to run"
+        required: true
+        type: choice
+        options: [announce-release, announce-docs]
+        default: announce-release
+      tag:
+        description: "Release tag (announce-release mode)"
+        type: string
+        required: false
+
+permissions:
+  contents: read
+  discussions: write
+
+concurrency:
+  group: announce-discussion-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  announce-release:
+    if: >
+      github.event_name == 'release' ||
+      (github.event_name == 'workflow_dispatch' && inputs.mode == 'announce-release')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      # TODO(maintainer): replace these placeholders with the real IDs from the
+      # graphql pre-flight query above. Until then this job is intentionally a
+      # no-op (see the validation step).
+      REPO_ID: ${{ vars.DISCUSSION_REPO_ID }}
+      ANNOUNCEMENTS_CATEGORY_ID: ${{ vars.DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Validate IDs are configured
+        run: |
+          if [ -z "${REPO_ID}" ] || [ -z "${ANNOUNCEMENTS_CATEGORY_ID}" ]; then
+            echo "::warning::DISCUSSION_REPO_ID or DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID not configured as repo variables. Skipping."
+            exit 0
+          fi
+          echo "ids_ok=true" >> "$GITHUB_OUTPUT"
+        id: validate
+
+      - name: Resolve release tag + body
+        if: steps.validate.outputs.ids_ok == 'true'
+        id: rel
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          EVENT_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          TAG="${INPUT_TAG:-$EVENT_TAG}"
+          if [ -z "$TAG" ]; then
+            echo "::error::No release tag available."
+            exit 1
+          fi
+          REL_JSON=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/$TAG")
+          NAME=$(echo "$REL_JSON" | jq -r '.name // ""')
+          BODY=$(echo "$REL_JSON" | jq -r '.body // ""')
+          URL=$(echo "$REL_JSON" | jq -r '.html_url // ""')
+          PRE=$(echo "$REL_JSON" | jq -r '.prerelease // false')
+          {
+            printf '## %s\n\n' "${NAME:-$TAG}"
+            printf '%s\n\n' "$BODY"
+            printf -- '---\n\n'
+            printf '[Release page](%s) · prerelease=%s\n' "$URL" "$PRE"
+          } > body.md
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "title=Release ${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Create Announcements discussion
+        if: steps.validate.outputs.ids_ok == 'true'
+        run: |
+          set -euo pipefail
+          gh api graphql \
+            -f query='mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}' \
+            -f r="${REPO_ID}" \
+            -f c="${ANNOUNCEMENTS_CATEGORY_ID}" \
+            -f t="${{ steps.rel.outputs.title }}" \
+            -F b=@body.md
+
+  announce-docs:
+    if: >
+      github.event_name == 'push' &&
+      !contains(github.event.head_commit.message, '[skip-discuss]') &&
+      !startsWith(github.event.head_commit.message, 'bot-ingest:')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      REPO_ID: ${{ vars.DISCUSSION_REPO_ID }}
+      GENERAL_CATEGORY_ID: ${{ vars.DISCUSSION_GENERAL_CATEGORY_ID }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Validate IDs are configured
+        id: validate
+        run: |
+          if [ -z "${REPO_ID}" ] || [ -z "${GENERAL_CATEGORY_ID}" ]; then
+            echo "::warning::DISCUSSION_REPO_ID or DISCUSSION_GENERAL_CATEGORY_ID not configured as repo variables. Skipping."
+            exit 0
+          fi
+          echo "ids_ok=true" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout (last 2 commits for diff)
+        if: steps.validate.outputs.ids_ok == 'true'
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: List changed docs
+        if: steps.validate.outputs.ids_ok == 'true'
+        id: changes
+        run: |
+          set -euo pipefail
+          git diff --name-only HEAD^ HEAD -- docs/ CHANGELOG.md README.md README.vi.md > changed.txt || true
+          if [ ! -s changed.txt ]; then
+            echo "no-docs-changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build body
+        if: steps.validate.outputs.ids_ok == 'true' && steps.changes.outputs.no-docs-changed != 'true'
+        id: body
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+          URL: ${{ github.event.head_commit.url }}
+          TITLE_SUFFIX: ${{ github.event.head_commit.id }}
+        run: |
+          set -euo pipefail
+          FIRST_LINE=$(printf '%s' "$MSG" | head -n 1)
+          {
+            printf 'Files changed:\n\n```\n'
+            cat changed.txt
+            printf '```\n\n'
+            printf 'Commit message:\n\n> %s\n\n' "$FIRST_LINE"
+            printf '[View commit](%s) · sha=`%s`\n' "$URL" "$TITLE_SUFFIX"
+          } > body.md
+          SHORT_SHA=$(printf '%s' "$TITLE_SUFFIX" | cut -c1-7)
+          echo "title=Docs update — ${FIRST_LINE} (${SHORT_SHA})" >> "$GITHUB_OUTPUT"
+
+      - name: Create General discussion
+        if: steps.validate.outputs.ids_ok == 'true' && steps.changes.outputs.no-docs-changed != 'true'
+        run: |
+          set -euo pipefail
+          gh api graphql \
+            -f query='mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}' \
+            -f r="${REPO_ID}" \
+            -f c="${GENERAL_CATEGORY_ID}" \
+            -f t="${{ steps.body.outputs.title }}" \
+            -F b=@body.md

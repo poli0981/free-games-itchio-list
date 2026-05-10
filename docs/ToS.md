@@ -1,6 +1,6 @@
 # Terms of Use
 
-Last updated: 2026-05-05
+Last updated: 2026-05-10
 
 These Terms of Use ("Terms") govern Your use of the Repository, the Webapp, and the Desktop App. They are written in plain language with deliberate humor — but they apply.
 
@@ -124,5 +124,41 @@ These Terms are a hobby-project document drafted by a non-lawyer with AI assista
 This is still a list of free games + a webapp + a desktop app, built by a tired dev and two LLMs. Be cool, don't break things, have fun, and we all get along.
 
 Questions? Open an issue. Or DM via any channel on the About page. The Maintainer will try not to ghost.
+
+## 14. Telegram bot — optional contribution path
+
+[`CONTRIBUTING.md`](../CONTRIBUTING.md) describes an optional flow for submitting
+games via the Telegram bot [@my_skull_bot](https://t.me/my_skull_bot). Using
+this path is purely opt-in. By choosing to use it:
+
+- You voluntarily share Your Telegram numeric ID with the Maintainer
+  (operator: poli0981) for the **sole purpose** of being added to the bot's
+  runtime whitelist.
+- The whitelist lives on the operator's local machine (or a Docker volume),
+  is **not** committed to this Repository, **not** synchronized to any
+  server controlled by the Maintainer, and **not** forwarded to any
+  third-party log aggregator, analytics service, or other repository.
+- The bot does not collect message contents beyond what is needed to parse
+  the itch.io URLs You submit. itch.io URLs You submit become public — they
+  are committed to this Repository under
+  [`scripts/temp_link.json`](../scripts/temp_link.json) by the
+  [`bot-ingest.yml`](../.github/workflows/bot-ingest.yml) workflow and
+  rendered into the catalog by the daily scraper.
+- You may request removal at any time by DMing the Maintainer
+  ("remove me from whitelist"). Removal takes effect at the next bot start.
+- You agree **not** to share another contributor's Telegram ID without that
+  contributor's explicit permission. Doing so is a Code of Conduct violation
+  and grounds for removal under §8.
+- You agree **not** to post Your own (or anyone else's) Telegram numeric ID
+  to public channels associated with this project (Discord, X, GitHub
+  issues, GitHub comments). DM only.
+
+Bot behavior, source code, and operational guarantees live in the bot's own
+repo: [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
+([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
+
+The Telegram-ID lifecycle is also described in [Privacy Policy §15](PrivacyPolicy.md#15-telegram-bot-optional-contribution-path).
+
+## 15. Final final vibes
 
 Built with boredom, zero budget, and two AI buddies who actually read the EULA. 🚀

@@ -16,8 +16,10 @@ import {
 import { decryptString, encryptString } from '@/lib/crypto'
 import { checkRepoAccess, fetchAuthenticatedUser } from '@/lib/github/client'
 import { REPO } from '@/lib/config'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 
 export default function Settings() {
+  useDocumentTitle('Settings')
   const { pat, user, hasStoredPat, setPat, setUser, lock, refreshStoredFlag } = useAuth()
   const [patInput, setPatInput] = useState('')
   const [passphrase, setPassphrase] = useState('')

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Reads of the catalog are public. The webapp's write features all live
+# behind a fine-grained PAT held in memory after passphrase unlock; nothing
+# crawler-accessible writes anything.
+
+Sitemap: https://poli0981.github.io/free-games-itchio-list/sitemap.xml
