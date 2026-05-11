@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented here.
 
+## [3.2.1] - 2026-05-11 (Hotfix: single-instance enforcement on desktop)
+
+### Fixed
+
+- **Desktop app spawned a new process on every launch.** Each double-click of the installed app added another `free-games-itchio-webapp.exe` (Windows) / equivalent on macOS+Linux to the task list instead of focusing the existing window. Added [`tauri-plugin-single-instance`](https://tauri.app/plugin/single-instance/) v2 in [`webapp/src-tauri/src/lib.rs`](webapp/src-tauri/src/lib.rs) — second launch now unminimizes + focuses the running window and exits its own process before creating a duplicate. Plugin registered first in the builder chain per Tauri 2 docs so duplicate processes die before initializing HTTP/opener plugins. Gated by `#[cfg(desktop)]` + matching `cfg(not(android, ios))` in [`Cargo.toml`](webapp/src-tauri/Cargo.toml). Desktop binary boundary change → bumped [`Cargo.toml`](webapp/src-tauri/Cargo.toml) and [`tauri.conf.json`](webapp/src-tauri/tauri.conf.json) from `0.1.0` to `0.1.1` (first time these have moved since v3.0.0).
+
+### Changed
+
+- **README + README.vi badges** bumped to `3.2.1`.
+- **About page** lists `tauri-plugin-single-instance` v2 under Desktop dependencies.
+
+---
+
 ## [3.2.0] - 2026-05-10 (CI cleanup + mobile + SEO + Telegram bot path + auto-discussion)
 
 ### Added
