@@ -124,5 +124,17 @@
         "name": "Through His Eyes",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-01T08:11:36Z"
+    },
+    {
+        "url": "https://carlosgames.itch.io/la-casa-abandonada",
+        "name": "La casa abandonada",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-13T08:19:27Z"
+    },
+    {
+        "url": "https://carlosgames.itch.io/codigo-404",
+        "name": "Código 404",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-13T08:19:37Z"
     }
 ]

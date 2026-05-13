@@ -12292,44 +12292,6 @@
         "notes": ""
     },
     {
-        "url": "https://carlosgames.itch.io/la-casa-abandonada",
-        "name": "La casa abandonada",
-        "dev": "Carlos Games",
-        "description": "🏚️ La casa abandonada En las afueras del pueblo se levanta una vieja construcción olvidada por el tiempo.",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MjUyNTE1LnBuZw==/original/HpeI6k.png",
-        "tags": [
-            "aventuradetexto",
-            "casaabandonada",
-            "decisiones",
-            "exploracion",
-            "finalesmultiples",
-            "microaventura",
-            "misterio",
-            "retrogaming",
-            "terrorclasico",
-            "ZX Spectrum"
-        ],
-        "platforms": [],
-        "languages": [
-            "Spanish; Castilian",
-            "Spanish; Latin America"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://harunluk.itch.io/knight-task",
         "name": "Knight Task",
         "dev": "HARUNLUK",
@@ -12466,44 +12428,6 @@
         "made_with": [
             "GDevelop"
         ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://carlosgames.itch.io/codigo-404",
-        "name": "Código 404",
-        "dev": "Carlos Games",
-        "description": "💻 Código 404 Un mensaje inesperado aparece en la pantalla: Error 404.",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MjU0MDUxLnBuZw==/original/LVqvBU.png",
-        "tags": [
-            "aventuradetexto",
-            "codigo404",
-            "exploracion",
-            "finalesmultiples",
-            "microaventura",
-            "misterio",
-            "retrogaming",
-            "tecnologia",
-            "thrillerdigital",
-            "ZX Spectrum"
-        ],
-        "platforms": [],
-        "languages": [
-            "Spanish; Castilian",
-            "Spanish; Latin America"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     },
@@ -17553,6 +17477,70 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://unhindgedgekkostudios.itch.io/arteus-victus-prologue-x-aria",
+        "name": "Arteus Victus: Prologue X Aria",
+        "dev": "Unhinged Gekko Studios",
+        "description": "The year is 32XX.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3MTYyLnBuZw==/original/ey4p1k.png",
+        "tags": [
+            "Arcade",
+            "Bullet Hell",
+            "Godot",
+            "Sci-fi",
+            "Shoot 'Em Up"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://monnettie.itch.io/this-fucking-sucks",
+        "name": "This fucking sucks",
+        "dev": "monnettie",
+        "description": "there's nothing else to say content warning: contains themes of suicide & death part of a bitsy anthology about the five stages of grief check out the collection credits: created by sofia orlandomu...",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODA3MTI5LnBuZw==/original/uByrRE.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Bitsy",
+            "poem",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
         "safe_virus": "?",
         "notes": ""
     }
