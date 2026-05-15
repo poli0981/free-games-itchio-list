@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'data_game/**'
       - 'webapp/**'
       - '.github/workflows/deploy_webapp.yml'
   workflow_dispatch:
