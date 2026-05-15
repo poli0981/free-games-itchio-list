@@ -6687,5 +6687,27 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://stephensmith.itch.io/atic-atac-3d",
+        "name": "Atic Atac 3D",
+        "dev": "Stephen Smith",
+        "description": "OBJECTIVE Collect the 3 parts of the ACG key and use them to go through the ACG door and escape the castle.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjQyMzgxLnBuZw==/original/SOtOev.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
