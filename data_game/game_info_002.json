@@ -6245,5 +6245,447 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://virtua-sinner.itch.io/caverns-of-xaskazien-ii",
+        "name": "Caverns of Xaskazien II",
+        "dev": "Virtua Sinner",
+        "description": "In conjunction with its predecessor, Caverns of Xaskazien II has been in development since 1995.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "25",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjg5NjI5LzE0MTI4ODguanBn/original/V2IQhS.jpg",
+        "tags": [
+            "dungeon",
+            "Dungeon Crawler",
+            "Fantasy",
+            "Procedural Generation",
+            "Roguelike"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://deuronius.itch.io/gariax",
+        "name": "Gariax",
+        "dev": "Deuronius",
+        "description": "Gariax Manga Gariax OST Gariax is the first Kenyan Fighting Game and Africa's first 2D hand drawn fighting Game.",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDM3ODk4LmpwZw==/original/rEF80F.jpg",
+        "tags": [
+            "2D",
+            "Anime",
+            "Arcade",
+            "Female Protagonist",
+            "Pixel Art",
+            "PvP",
+            "Retro",
+            "Short",
+            "Two Player"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sekaligoose.itch.io/4me",
+        "name": "Me / 我 / Saya / நான்",
+        "dev": "BIRD COLLECTIVE",
+        "description": "Me / 我 / Saya / நான் Me I watch the scenes in front of me.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "24",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NzM2MTYyLnBuZw==/original/YYMFHs.png",
+        "tags": [
+            "Narrative"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Indonesian",
+            "Malay",
+            "Tamil",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://talihi.itch.io/spralt-remake-overhaul-re-overhauled",
+        "name": "Spralt V3",
+        "dev": "T4LI_",
+        "description": "This mod may not support low end devices IF YOU ARE DOING A MIX FOR THE MOD, PRESS E TO CHANGE THE DAYLIGHT SETTINGS, THIS DOES NOT APPLY TO MOBILE DEVICES Here is something I've actually been maki...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDczMjkyLnBuZw==/original/EKyjtZ.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://snapsro.itch.io/the-donut-room",
+        "name": "THE DONUT ROOM",
+        "dev": "Snapsro",
+        "description": "An incremental game where you're trapped in a room and forced to throw donuts into a hole.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODcwNTU1LmdpZg==/original/PrCn%2B1.gif",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "Incremental",
+            "No AI",
+            "PSX (PlayStation)",
+            "Retro",
+            "weird"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://barely-stable-games.itch.io/pulbere",
+        "name": "Pulbere",
+        "dev": "Barely Stable Games",
+        "description": "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ A fast-paced, speedrunning, first person combat game where every second counts.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "4",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2Njg0MDEwLnBuZw==/original/P7Vcua.png",
+        "tags": [
+            "Arcade",
+            "FPS Platformer",
+            "High Score",
+            "Indie",
+            "Magic",
+            "No AI",
+            "Parkour",
+            "Singleplayer",
+            "Speedrun",
+            "Vampire"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sumi03c.itch.io/pakupaku-gyaru",
+        "name": "PakuPaku Gyaru! 「 パクパクギャル！」",
+        "dev": "SUMI03",
+        "description": "PakuPaku Gyaru! A very small visual novel with gyaru energy and good luck! Just a quick fortune reading with Rina (~a few seconds per session) ⊂(･ω･*⊂) Want Rina to read your fortune today? Meet Ri...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjUxNDYxLnBuZw==/original/1mVPQg.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Cute",
+            "gyaru",
+            "Hand-drawn",
+            "Indie",
+            "japanese",
+            "kawaii",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Japanese"
+        ],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://alimsmgfan.itch.io/motel",
+        "name": "Motel",
+        "dev": "alimsmgfan",
+        "description": "The Story An empty tank and a long road lead you to an isolated motel.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjI3MzM5LmpwZWc=/original/FrlzMf.jpeg",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "Low-poly",
+            "Psychological Horror",
+            "Short",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://snekofspice.itch.io/resist-the-urge-to-blow-up-your-life",
+        "name": "Resist the urge to blow up your life",
+        "dev": "Snek RK",
+        "description": "660 words of self-destruction A smoldering companion to Fermenting on the 7th Floor (not available) Drone: Opal Vessel - Drenched Font: OldStyle",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDMyNTQ0LnBuZw==/original/GJwBDT.png",
+        "tags": [
+            "diary",
+            "Lesbian",
+            "LGBT",
+            "LGBTQIA",
+            "Short",
+            "Transgender"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://visualmemoryunit.itch.io/veillee",
+        "name": "VEILLÉE「夜晚」",
+        "dev": "vmu_, citizencokane, unlucky_script",
+        "description": "⚠️ Browser notice: Best experienced on Chrome or Edge .",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDYwMzE5LmdpZg==/original/qYMXgu.gif",
+        "tags": [
+            "3D",
+            "Godot",
+            "Horror",
+            "Retro",
+            "Romance",
+            "Short",
+            "Singleplayer",
+            "weirdcore"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://paxanga.itch.io/godzilla-balls",
+        "name": "Godzilla Balls (MSX)",
+        "dev": "Paxanga Software",
+        "description": "This is an puzzle/exploration/action game for any MSX computer with at least 16Kb of RAM.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTY2NzYyLnBuZw==/original/ekVAfp.png",
+        "tags": [
+            "8-Bit",
+            "Exploration",
+            "gamera",
+            "godzilla",
+            "MSX",
+            "Pixel Art",
+            "Retro"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lenshor-bib-limited.itch.io/mr-mix-original",
+        "name": "Mr Mix Original ( Android Port )",
+        "dev": "Lenshor Bib Limited",
+        "description": "Please accept my congratulations.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxNDIwNTA3LnBuZw==/original/XrsRXd.png",
+        "tags": [
+            "android",
+            "Creepy",
+            "creepypasta",
+            "Horror",
+            "Indie",
+            "mr-mix",
+            "mr_mix",
+            "mr-mix-apk",
+            "Scary",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://coffeeisatea.itch.io/maid-to-sin",
+        "name": "Maid to Sin",
+        "dev": "CoffeeisaTea",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTYxMTQ0LnBuZw==/original/FTMt6Z.png",
+        "tags": [
+            "helluvaboss",
+            "maid-cafe"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
