@@ -136,5 +136,23 @@
         "name": "Código 404",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-13T08:19:37Z"
+    },
+    {
+        "url": "https://delightfulredstar.itch.io/samsara-again-regain-again-rewind-retrainwizesigned",
+        "name": "Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-16T03:57:58Z"
+    },
+    {
+        "url": "https://kozarto.itch.io/skeleton-quest",
+        "name": "Skeleton Quest",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-16T04:04:53Z"
+    },
+    {
+        "url": "https://kozarto.itch.io/samsara-again-regain-again-rewind-retrainwizesigned",
+        "name": "Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-16T04:05:08Z"
     }
 ]

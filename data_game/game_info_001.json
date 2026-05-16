@@ -11960,36 +11960,6 @@
         "notes": ""
     },
     {
-        "url": "https://delightfulredstar.itch.io/samsara-again-regain-again-rewind-retrainwizesigned",
-        "name": "Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED",
-        "dev": "DelightfulRedStar",
-        "description": "By chanceI've found a breakthroughSuddenly, my journey has beguna delightful red starin the middle - another layera kind blue rageNot a reflection.",
-        "genre": "Roguelite",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MzMxMzQ4LmpwZw==/original/jyzlFw.jpg",
-        "tags": [
-            "2D",
-            "Episodic",
-            "Roguelite",
-            "RPG Maker",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://sterntech.itch.io/annao",
         "name": "AnnaO",
         "dev": "sterntech",
@@ -16417,39 +16387,6 @@
         "notes": ""
     },
     {
-        "url": "https://kozarto.itch.io/skeleton-quest",
-        "name": "Skeleton Quest",
-        "dev": "Kozarto",
-        "description": "These are the tales of a hero.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2NzUwMTk0LnBuZw==/original/KcJN0N.png",
-        "tags": [
-            "2D",
-            "Episodic",
-            "Fantasy",
-            "No AI",
-            "quest",
-            "RPG Maker",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://scribbles-2004.itch.io/luis-quest",
         "name": "Luis's Quest",
         "dev": "Scribbles_2004",
@@ -16663,36 +16600,6 @@
             "Pixel Art",
             "RPG Maker",
             "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://kozarto.itch.io/samsara-again-regain-again-rewind-retrainwizesigned",
-        "name": "Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED",
-        "dev": "Kozarto",
-        "description": "By chanceI've found a breakthroughSuddenly, my journey has beguna delightful red starin the middle - another layera kind blue rageNot a reflection.",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MzMxMzQ4LmpwZw==/original/jyzlFw.jpg",
-        "tags": [
-            "2D",
-            "Episodic",
-            "Roguelite",
-            "RPG Maker",
             "Singleplayer"
         ],
         "platforms": [
@@ -17540,6 +17447,93 @@
         "inputs": [],
         "made_with": [
             "bitsy"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://echoos.itch.io/echo-of-sacrifice",
+        "name": "Echo of Sacrifice",
+        "dev": "EchoOS",
+        "description": "Our project aims to convey a self-contained, compelling narrative via the development of a 2D action-adventure PC game called Echo of Sacrifice (EoS).",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY2NjI2LnBuZw==/original/iC8SvG.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Godot",
+            "Metroidvania",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://13pilgrims.itch.io/under-signals",
+        "name": "Under Signals",
+        "dev": "13pilgrims",
+        "description": "Under Signals Decode the signal.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3NDA0LnBuZw==/original/OlS34R.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://microvoxel.itch.io/ice-cubecreamcone",
+        "name": "Ice CubeCreamCone",
+        "dev": "MicroVoxel",
+        "description": "☀️ Ice CubeCreamCone 🍉 - Drop, Merge & Serve! ฤดูร้อนนี้.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3MzgwLnBuZw==/original/6C7hji.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Indie"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
         ],
         "safe_virus": "?",
         "notes": ""
