@@ -1,4 +1,4 @@
-# Rhythm Games (7 games)
+# Rhythm Games (8 games)
 
 | No | Thumb | Name | Dev | Short Desc | Genre | Tags | Status | Platforms | Publisher | Release Date | Made With | Rating | Session | Languages | Inputs | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|-------|------|--------|-----------|-----------|--------------|----------|--------|---------|-----------|--------|------|------|-------|------|
@@ -9,4 +9,5 @@
 | 5 | ![thumb](https://img.itch.zone/aW1nLzI2MTE0MzA4LnBuZw==/original/EHw7Oq.png) | Sprunki-Mirror Swapped Revamped | confusedtelletuby | WARNING: IF YOU HAVE TRYPOPHOBIA, ARE SENSITIVE TO GORE, OR ARE UNDER 16, LEAVE RIGHT NOW!!!!! This is a lazy ass remake of one of my mods. | Rhythm | Horror, No AI, Sprunki | Released | HTML5, Windows, macOS, Linux, Android | N/A | N/A | N/A | 5.0 (1) | N/A | N/A | N/A | [Link](https://confusedtelletuby.itch.io/sprunki-mirror-swapped-revamped) | ? |  | No |
 | 6 | ![thumb](https://img.itch.zone/aW1nLzIyNjc2MzY0LnBuZw==/original/h%2FH2Re.png) | Torturebox V1 - UNFORGIVEN | NyankoBfLol | Welcome to Torturebox V1, Unforgiven. | Rhythm | Fangame, Horror, Incredibox, torturebox, unforgiven | Released | HTML5 | N/A | N/A | N/A | 4.8 (95) | N/A | N/A | N/A | [Link](https://nyankobflol.itch.io/tortureboxv1-unforgiven) | ? |  | No |
 | 7 | ![thumb](https://img.itch.zone/aW1nLzI0OTQ4ODkyLnBuZw==/original/nvGw45.png) | twohops | mun09 | Try this game when drinking with your friends | Rhythm | 2D, Multiplayer | Released | HTML5 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://mun09.itch.io/twohops) | ? |  | No |
+| 8 | ![thumb](https://img.itch.zone/aW1nLzI3MjQzOTAzLnBuZw==/original/L0WoVX.png) | 포스기가 멈추지 않아 | MaiGamesDev | (Fullscreen recommended) ESC - RETURN TO MAIN MENU 포근버거에 오신걸 환영합니다! 당신은 한 망해가는 버거 매장에 새로 입사한 신입입니다. | Rhythm | 2D, burger, Cooking | Released | HTML5, Windows | N/A | N/A | Godot | N/A | N/A | N/A | N/A | [Link](https://maigamesdev.itch.io/endless-order) | ? |  | No |
 

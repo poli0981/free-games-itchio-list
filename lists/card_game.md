@@ -1,6 +1,8 @@
-# Card Game Games (1 games)
+# Card Game Games (3 games)
 
 | No | Thumb | Name | Dev | Short Desc | Genre | Tags | Status | Platforms | Publisher | Release Date | Made With | Rating | Session | Languages | Inputs | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|-------|------|--------|-----------|-----------|--------------|----------|--------|---------|-----------|--------|------|------|-------|------|
-| 1 | ![thumb](https://img.itch.zone/aW1nLzI0Njk2NjE2LnBuZw==/original/Vgoo1L.png) | Bomb Game | Sam Zalkin | Bomb Game is a multiplayer card and party game that tests players ability to strategize quickly. | Card Game | Aseprite, Indie, No AI, party-game | Released | Windows | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://szalkin.itch.io/bomb-game) | ? |  | No |
+| 1 | ![thumb](https://img.itch.zone/aW1nLzI3MjU4NjI3LmpwZw==/original/%2F8qUND.jpg) | Baatlo | Weird Brothers | N/A | Card Game | 2D, Casual, Short, Singleplayer | Released | HTML5 | N/A | N/A | Unity | N/A | N/A | N/A | N/A | [Link](https://weirdbrothers.itch.io/baatlo) | ? |  | No |
+| 2 | ![thumb](https://img.itch.zone/aW1nLzI0Njk2NjE2LnBuZw==/original/Vgoo1L.png) | Bomb Game | Sam Zalkin | Bomb Game is a multiplayer card and party game that tests players ability to strategize quickly. | Card Game | Aseprite, Indie, No AI, party-game | Released | Windows | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://szalkin.itch.io/bomb-game) | ? |  | No |
+| 3 | ![thumb](https://img.itch.zone/aW1nLzEwNTA1MzgxLnBuZw==/original/3hX7Bt.png) | Stacks:Space! | Stacks:Engine | STACKS:SPACE! Stacks:Space is a space-themed base builder card game with rogue-like elements. | Card Game | Crafting, Game engine, Singleplayer, stacklands | Released | HTML5, Windows, macOS, Linux, Android | N/A | 06 October 2022 @ 04:00 UTC | N/A | 4.7 (12) | About an hour | German, English, Spanish; Latin America, Italian, Portuguese (Brazil), Russian, Turkish, Ukrainian, Chinese (Simplified) | Keyboard, Mouse, Touchscreen, Smartphone | [Link](https://stacksengine.itch.io/stacks-space) | ? |  | No |
 
