@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { Sidebar, MobileTopBar } from '@/components/sidebar'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
+import { useDensityEffect } from '@/hooks/useDensityEffect'
 import Dashboard from '@/routes/dashboard'
 import Games from '@/routes/games'
 import Deleted from '@/routes/deleted'
@@ -43,6 +44,7 @@ function ScrollToHash() {
 
 export default function App() {
   useThemeEffect()
+  useDensityEffect()
   return (
     <div className="flex h-[100dvh] overflow-hidden">
       <ScrollToHash />

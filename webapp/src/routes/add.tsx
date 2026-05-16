@@ -13,7 +13,7 @@ import { useAllGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useAuth } from '@/stores/auth'
 import { createOctokit } from '@/lib/github/client'
-import { putFile, readFileWithSha } from '@/lib/github/contents'
+import { commitSingleFile } from '@/lib/github/contents'
 import {
   dispatchWorkflow,
   findRecentDispatchedRun,
@@ -131,13 +131,11 @@ export default function Add() {
     setProgressMsg(`Writing scripts/temp_link.json with ${valid.length} URLs...`)
     try {
       const octokit = createOctokit()
-      const { sha } = await readFileWithSha(octokit, PATHS.tempLink)
       const newJson = JSON.stringify(valid, null, 4) + '\n'
-      await putFile(
+      await commitSingleFile(
         octokit,
         PATHS.tempLink,
         newJson,
-        sha,
         `chore(webapp): queue ${valid.length} new URLs`,
       )
       setProgressMsg('Dispatching update workflow...')

@@ -1,26 +1,51 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
-import { Lock, Unlock, Trash2, Check, X } from 'lucide-react'
+import { Lock, Unlock, Trash2, Check, X, Sun, Moon, Monitor } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import { Switch } from '@/components/ui/switch'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import {
   clearEncryptedPat,
   readEncryptedPat,
   useAuth,
   writeEncryptedPat,
 } from '@/stores/auth'
+import {
+  IDLE_TIMEOUT_OPTIONS,
+  NOTIFICATION_DURATION_OPTIONS,
+  usePrefs,
+} from '@/stores/prefs'
+import { useThemeStore, type Theme } from '@/stores/theme'
 import { decryptString, encryptString } from '@/lib/crypto'
 import { checkRepoAccess, fetchAuthenticatedUser } from '@/lib/github/client'
 import { REPO } from '@/lib/config'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { GpgCard } from '@/components/settings/gpg-card'
+import { cn } from '@/lib/utils'
+
+const THEME_CHOICES: { value: Theme; label: string; icon: typeof Sun }[] = [
+  { value: 'light', label: 'Light', icon: Sun },
+  { value: 'dark', label: 'Dark', icon: Moon },
+  { value: 'system', label: 'System', icon: Monitor },
+]
 
 export default function Settings() {
   useDocumentTitle('Settings')
   const { pat, user, hasStoredPat, setPat, setUser, lock, refreshStoredFlag } = useAuth()
+  const theme = useThemeStore((s) => s.theme)
+  const setTheme = useThemeStore((s) => s.setTheme)
+  const prefs = usePrefs()
   const [patInput, setPatInput] = useState('')
   const [passphrase, setPassphrase] = useState('')
   const [unlockPassphrase, setUnlockPassphrase] = useState('')
@@ -247,16 +272,171 @@ export default function Settings() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Theme</CardTitle>
+          <CardTitle className="text-base">Appearance</CardTitle>
           <p className="text-xs text-muted-foreground">
-            Toggle in the sidebar bottom-left. The choice persists in localStorage and follows
-            your OS in System mode.
+            Theme and layout density. Choices persist to localStorage.
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-5">
+          <div className="space-y-2">
+            <Label>Theme</Label>
+            <div className="flex flex-wrap gap-2">
+              {THEME_CHOICES.map(({ value, label, icon: Icon }) => (
+                <Button
+                  key={value}
+                  variant={theme === value ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => setTheme(value)}
+                  className={cn('min-w-[88px]')}
+                >
+                  <Icon className="h-4 w-4" />
+                  {label}
+                </Button>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="density">Density</Label>
+            <Select
+              value={prefs.density}
+              onValueChange={(v) => prefs.setDensity(v as 'normal' | 'compact')}
+            >
+              <SelectTrigger id="density" className="w-[200px]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="normal">Normal</SelectItem>
+                <SelectItem value="compact">Compact (smaller rows)</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="flex items-center justify-between gap-3">
+            <div className="space-y-0.5">
+              <Label htmlFor="sidebar-collapsed">Collapse sidebar</Label>
+              <p className="text-xs text-muted-foreground">
+                Mirror of the toggle in the sidebar footer.
+              </p>
+            </div>
+            <Switch
+              id="sidebar-collapsed"
+              checked={prefs.sidebarCollapsed}
+              onCheckedChange={prefs.setSidebarCollapsed}
+            />
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">Session</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            How long the decrypted PAT stays in memory after unlock.
           </p>
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-muted-foreground">
-            More appearance options come in Phase 6 polish.
+          <div className="space-y-2">
+            <Label htmlFor="idle">Idle timeout</Label>
+            <Select
+              value={String(prefs.idleTimeoutMs / 60_000)}
+              onValueChange={(v) => prefs.setIdleTimeoutMs(Number(v) * 60_000)}
+            >
+              <SelectTrigger id="idle" className="w-[200px]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {IDLE_TIMEOUT_OPTIONS.map((m) => (
+                  <SelectItem key={m} value={String(m)}>
+                    {m < 60 ? `${m} minutes` : `${m / 60} hour${m === 60 ? '' : 's'}`}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <p className="text-xs text-muted-foreground">
+              The PAT auto-locks on idle. Re-enter your passphrase to unlock again.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">Commit author</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Optional override for the <span className="font-mono">author</span> and{' '}
+            <span className="font-mono">committer</span> blocks of commits made from this app.
+            Leave blank to use the GitHub user from your PAT.
           </p>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          <div className="space-y-1.5">
+            <Label htmlFor="author-name">Name</Label>
+            <Input
+              id="author-name"
+              value={prefs.authorName}
+              onChange={(e) => prefs.setAuthorName(e.target.value)}
+              placeholder={user?.name ?? user?.login ?? 'e.g. Your Name'}
+            />
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="author-email">Email</Label>
+            <Input
+              id="author-email"
+              type="email"
+              value={prefs.authorEmail}
+              onChange={(e) => prefs.setAuthorEmail(e.target.value)}
+              placeholder={user ? `${user.login}@users.noreply.github.com` : 'you@example.com'}
+            />
+            <p className="text-xs text-muted-foreground">
+              For GPG-signed commits to show as <b>Verified</b>, this email must match one of the
+              UIDs in your GPG key.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      <GpgCard />
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">Notifications</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Toast notifications shown at the top-right corner.
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex items-center justify-between gap-3">
+            <div className="space-y-0.5">
+              <Label htmlFor="notif-enabled">Enable toasts</Label>
+              <p className="text-xs text-muted-foreground">
+                Disables success / error / info popups globally.
+              </p>
+            </div>
+            <Switch
+              id="notif-enabled"
+              checked={prefs.notificationsEnabled}
+              onCheckedChange={prefs.setNotificationsEnabled}
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="notif-duration">Duration</Label>
+            <Select
+              value={String(prefs.notificationDurationMs)}
+              onValueChange={(v) => prefs.setNotificationDurationMs(Number(v))}
+            >
+              <SelectTrigger id="notif-duration" className="w-[200px]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {NOTIFICATION_DURATION_OPTIONS.map((ms) => (
+                  <SelectItem key={ms} value={String(ms)}>
+                    {ms / 1000}s
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </CardContent>
       </Card>
     </div>

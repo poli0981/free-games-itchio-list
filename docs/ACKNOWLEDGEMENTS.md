@@ -17,7 +17,7 @@ The webapp + Tauri desktop build on a stack of open-source libraries — full ve
 
 - **Core**: React 19, TypeScript 6, Vite 8, React Router 7, Zustand 5, Zod 4
 - **UI**: Tailwind CSS 3, shadcn/ui (pattern), Radix UI primitives, lucide-react, sonner, class-variance-authority, tailwind-merge, clsx, Recharts
-- **Data**: TanStack Query / Table / Virtual, react-hook-form + `@hookform/resolvers`, `@octokit/rest`, `idb-keyval`
+- **Data**: TanStack Query / Table / Virtual, react-hook-form + `@hookform/resolvers`, `@octokit/rest`, `idb-keyval`, `openpgp` (lazy-loaded for in-browser commit signing)
 - **Desktop**: Tauri 2, `@tauri-apps/api`, `tauri-plugin-http`, `tauri-plugin-opener`
 
 When you add a new dep to `webapp/package.json`, also add it to the `THIRD_PARTY` array so the About page lists it. House rule documented in [CONTRIBUTING.md §8](../CONTRIBUTING.md#8-webapp-changes-react--ts).

@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { DataTable } from '@/components/data-table/data-table'
 import { DataTableToolbar } from '@/components/data-table/data-table-toolbar'
+import { MobileCardList } from '@/components/data-table/mobile-card-list'
 import { gameColumns } from '@/components/data-table/columns'
 import type { FacetOption } from '@/components/data-table/faceted-filter'
 import { BulkEditDialog } from '@/components/bulk-edit-dialog'
@@ -187,6 +188,7 @@ export default function Games() {
         globalFilterFn={gameSearch}
         rowKey={(g) => g.url}
         getRowId={(g) => g.url}
+        renderMobileList={(rows) => <MobileCardList rows={rows} selectable />}
       />
 
       <p className="mt-3 text-xs text-muted-foreground">
