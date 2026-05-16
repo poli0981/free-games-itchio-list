@@ -50,7 +50,7 @@ export default function Charts() {
       <h1 className="mb-4 text-3xl font-bold tracking-tight">Charts</h1>
 
       <Tabs defaultValue="overview">
-        <TabsList>
+        <TabsList className="flex-wrap">
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="reach">Reach</TabsTrigger>
           <TabsTrigger value="quality">Quality</TabsTrigger>

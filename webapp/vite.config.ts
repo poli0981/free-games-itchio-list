@@ -20,6 +20,7 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
+            if (id.includes('openpgp')) return 'vendor-openpgp'
             if (id.includes('recharts') || id.includes('d3-')) return 'vendor-charts'
             if (id.includes('@octokit')) return 'vendor-github'
             if (id.includes('@tanstack')) return 'vendor-query'

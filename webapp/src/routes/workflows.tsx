@@ -6,6 +6,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { useAuth } from '@/stores/auth'
 import { createOctokit } from '@/lib/github/client'
 import { dispatchWorkflow, type WorkflowFile, type WorkflowRunSummary } from '@/lib/github/workflow'
@@ -112,11 +119,26 @@ function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label
 
 export default function Workflows() {
   useDocumentTitle('Workflows')
+  const [current, setCurrent] = useState<string>(WORKFLOWS[0].file)
   return (
     <div className="container mx-auto p-6">
       <h1 className="mb-4 text-3xl font-bold tracking-tight">Workflows</h1>
-      <Tabs defaultValue="update.yml">
-        <TabsList className="flex-wrap">
+      <div className="mb-3 md:hidden">
+        <Select value={current} onValueChange={setCurrent}>
+          <SelectTrigger className="h-10 w-full">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {WORKFLOWS.map((w) => (
+              <SelectItem key={w.file} value={w.file}>
+                {w.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+      <Tabs value={current} onValueChange={setCurrent}>
+        <TabsList className="hidden flex-wrap md:inline-flex">
           {WORKFLOWS.map((w) => (
             <TabsTrigger key={w.file} value={w.file}>
               {w.label}

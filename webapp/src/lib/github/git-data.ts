@@ -1,6 +1,8 @@
 import type { Octokit } from '@octokit/rest'
 import { PATHS, REPO } from '../config'
 import { rebalance } from './data-store'
+import { buildCommitObject, currentTzOffsetMin, isoFromTs } from '../gpg/canonicalize'
+import { getSignerIfEnabled, type CommitSigner } from './signer'
 import type { Game } from '@/types/game'
 
 export interface FileChange {
@@ -19,8 +21,14 @@ export async function atomicCommit(
   octokit: Octokit,
   changes: FileChange[],
   message: string,
+  signerOverride?: CommitSigner | null,
 ): Promise<{ commitSha: string }> {
   if (changes.length === 0) throw new Error('No changes to commit')
+  // null = caller explicitly opts out of signing; undefined = use default
+  const signer =
+    signerOverride === null
+      ? undefined
+      : signerOverride ?? getSignerIfEnabled()
 
   const { data: refData } = await octokit.git.getRef({
     owner: REPO.owner,
@@ -74,13 +82,39 @@ export async function atomicCommit(
     tree: treeEntries,
   })
 
-  const { data: newCommit } = await octokit.git.createCommit({
+  const createOpts: Parameters<typeof octokit.git.createCommit>[0] = {
     owner: REPO.owner,
     repo: REPO.name,
     message,
     tree: newTree.sha,
     parents: [baseSha],
-  })
+  }
+
+  if (signer) {
+    const ts = Math.floor(Date.now() / 1000)
+    const tzOffsetMin = currentTzOffsetMin()
+    // Normalize message to strip any trailing newlines — GitHub stores commit messages
+    // verbatim (no auto-trailing-newline), so the canonical bytes we sign must match what
+    // GitHub will re-derive from the stored message.
+    const normalizedMessage = message.replace(/\n+$/, '')
+    createOpts.message = normalizedMessage
+    const canonical = buildCommitObject({
+      tree: newTree.sha,
+      parents: [baseSha],
+      author: signer.identity,
+      committer: signer.identity,
+      ts,
+      tzOffsetMin,
+      message: normalizedMessage,
+    })
+    const signature = await signer.sign(canonical)
+    const dateIso = isoFromTs(ts, tzOffsetMin)
+    createOpts.author = { ...signer.identity, date: dateIso }
+    createOpts.committer = { ...signer.identity, date: dateIso }
+    createOpts.signature = signature
+  }
+
+  const { data: newCommit } = await octokit.git.createCommit(createOpts)
 
   await octokit.git.updateRef({
     owner: REPO.owner,

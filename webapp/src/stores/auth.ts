@@ -1,7 +1,7 @@
 import { create } from 'zustand'
+import { usePrefs } from './prefs'
 
 const PAT_STORAGE_KEY = 'webapp.pat.encrypted'
-const IDLE_TIMEOUT_MS = 30 * 60 * 1000
 
 export interface GitHubUserInfo {
   login: string
@@ -34,7 +34,8 @@ export const useAuth = create<AuthState>()((set) => ({
 
 export function isIdleExpired(unlockedAt: number | null): boolean {
   if (unlockedAt === null) return true
-  return Date.now() - unlockedAt > IDLE_TIMEOUT_MS
+  const timeoutMs = usePrefs.getState().idleTimeoutMs
+  return Date.now() - unlockedAt > timeoutMs
 }
 
 export function readEncryptedPat(): string | null {

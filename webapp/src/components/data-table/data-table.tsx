@@ -1,8 +1,9 @@
-import { useMemo, useRef } from 'react'
+import { type ReactNode, useMemo, useRef } from 'react'
 import {
   type ColumnDef,
   type ColumnFiltersState,
   type PaginationState,
+  type Row,
   type RowSelectionState,
   type SortingState,
   flexRender,
@@ -15,6 +16,7 @@ import {
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { DataTablePagination } from './data-table-pagination'
 import { cn } from '@/lib/utils'
+import { useIsMobile } from '@/lib/use-is-mobile'
 
 const ROW_HEIGHT = 56
 
@@ -46,6 +48,7 @@ interface DataTableProps<TData> {
   globalFilterFn: (row: TData, query: string) => boolean
   rowKey: (row: TData) => string
   getRowId?: (row: TData) => string
+  renderMobileList?: (rows: Row<TData>[]) => ReactNode
 }
 
 export function DataTable<TData>({
@@ -64,7 +67,9 @@ export function DataTable<TData>({
   globalFilterFn,
   rowKey,
   getRowId,
+  renderMobileList,
 }: DataTableProps<TData>) {
+  const isMobile = useIsMobile()
   const enablePagination = !!pagination && !!onPaginationChange
   const table = useReactTable({
     data,
@@ -121,6 +126,15 @@ export function DataTable<TData>({
   const virtualItems = virtualizer.getVirtualItems()
 
   const headerGroups = useMemo(() => table.getHeaderGroups(), [table])
+
+  if (isMobile && renderMobileList) {
+    return (
+      <div className="space-y-2">
+        {renderMobileList(rows)}
+        {enablePagination && <DataTablePagination table={table} />}
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-2">

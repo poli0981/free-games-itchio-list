@@ -73,3 +73,19 @@
     display: none;
   }
 }
+
+html[data-density='compact'] .density-pad {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+html[data-density='compact'] table {
+  font-size: 0.8125rem;
+}
+html[data-density='compact'] table th,
+html[data-density='compact'] table td {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+html[data-density='compact'] [data-card-pad] {
+  padding: 0.75rem;
+}

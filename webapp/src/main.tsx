@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { HashRouter } from 'react-router-dom'
-import { Toaster } from 'sonner'
 import App from './App'
+import { AppToaster } from './components/app-toaster'
 import './index.css'
 
 const queryClient = new QueryClient({
@@ -26,7 +26,7 @@ createRoot(rootEl).render(
       <HashRouter>
         <App />
       </HashRouter>
-      <Toaster richColors position="top-right" />
+      <AppToaster />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </StrictMode>,
