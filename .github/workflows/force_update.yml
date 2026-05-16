@@ -1,0 +1,34 @@
+name: Force update
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'itch.io URL to re-scrape (optional; empty = re-scrape ALL games)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  force-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Force re-scrape (preserve safe_virus / notes / nsfw)
+        env:
+          INPUT_URL: ${{ inputs.url }}
+        run: |
+          chmod +x ./bash/force_update.sh
+          ./bash/force_update.sh
+        shell: bash

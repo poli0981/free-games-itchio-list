@@ -54,8 +54,11 @@ Of the 23 fields per game, only **3** are user-editable: `safe_virus`, `notes`, 
 |---|---|---|
 | `update.yml` | Daily 03:00 UTC + `workflow_dispatch` (with optional `url` input) | Reads `INPUT_URL` env var; falls back to `scripts/temp_link.json`. |
 | `check_paid.yml` | Every 2 days 04:00 UTC | |
+| `update_reviews.yml` | 1st + 15th of each month, 05:00 UTC + `workflow_dispatch` | Refresh `rating` + `rating_count`. Skip-on-error keeps old values. |
+| `update_status.yml` | 1st of each month, 06:00 UTC + `workflow_dispatch` | Refresh `status` only. Same skip semantics. |
 | `check_alive.yml` | Every 2 days 07:00 UTC | |
-| `generate_table.yml` | After update / check workflows succeed | Rebuilds `lists/*.md`. |
+| `force_update.yml` | `workflow_dispatch` ONLY (optional `url` input) | Emergency re-scrape. Empty input = re-scrape all. Always preserves `safe_virus` / `notes` / `nsfw`. Canonical tool for repairing mojibake. |
+| `generate_table.yml` | After update / check / refresh workflows succeed | Rebuilds `lists/*.md`. Chain list lives in this file under `workflow_run.workflows` — keep in sync when adding scrape workflows. |
 | `log_deleted.yml` | After check workflows | Exports `deleted_games.txt`. |
 | `deploy_webapp.yml` | Push to `main` touching `webapp/`, or manual | Builds → `docs/app/` → GitHub Pages. Requires repo Settings → Pages → Source = "GitHub Actions". |
 | `release_desktop.yml` | Tag `v*` push, or manual | Tauri build for Win + macOS aarch64 + macOS x86_64 (cross-compile) + Linux. Uploads `.dmg` / `.app.tar.gz` / `.pkg` (macOS), `.msi` / `.exe` (Windows), `.deb` / `.AppImage` (Linux). |
@@ -89,7 +92,7 @@ Fine-grained PAT scoped to **only this repo** with:
 5. **Vite v8 `base`** only accepts `'./'`, an absolute URL, or an empty string. Anything else warns and silently breaks asset paths.
 6. **TS 6** deprecates `baseUrl`. Use `paths` alone.
 7. **lucide-react v1+** removed/renamed brand icons (`Github` → not available). Use `Library`, `Database`, etc. for repo icons.
-8. **`/repos/.../contents` `content` is base64 with newlines**; strip them before decoding (`atob(data.content.replace(/\n/g, ''))`).
+8. **`/repos/.../contents` `content` is base64 with newlines AND base64-decoded data is UTF-8.** Strip newlines first, but `atob` alone returns a Latin-1 binary string — multi-byte UTF-8 sequences become mojibake. Go through `TextDecoder('utf-8')` via the `base64ToUtf8` helper in `webapp/src/lib/github/encoding.ts`. The matching `utf8ToBase64` is correct as-is.
 9. **`createWorkflowDispatch` returns 204 with no run id.** To track the run, list runs filtered by `event=workflow_dispatch` and a dispatch timestamp from a few seconds before.
 10. **`docs/app/` is gitignored.** CI builds it. Don't commit build output.
 11. **PUT `/repos/.../contents/{path}` can never be "Verified".** GitHub authors that commit itself from the PAT; there is no `signature` field. All webapp writes must go through the Git Data API (blob → tree → commit → updateRef) to allow GPG signing. `contents.ts` `putFile` was removed for this reason — use `commitSingleFile` (wraps `atomicCommit`).

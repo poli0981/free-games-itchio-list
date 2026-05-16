@@ -5,6 +5,9 @@ on:
       - 'Update JSON file game information'
       - 'Check paid games'
       - 'Check dead game links'
+      - 'Update reviews'
+      - 'Update status'
+      - 'Force update'
     types: [completed]
   workflow_dispatch:
 
