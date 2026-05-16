@@ -2,6 +2,7 @@ import { Octokit } from '@octokit/rest'
 import { PATHS, REPO } from '../config'
 import { atomicCommit } from './git-data'
 import { rebalance } from './data-store'
+import { base64ToUtf8 } from './encoding'
 import type { Game } from '@/types/game'
 
 interface FileWithSha {
@@ -19,7 +20,7 @@ export async function readFileWithSha(octokit: Octokit, path: string): Promise<F
   if (Array.isArray(data) || data.type !== 'file' || !('content' in data)) {
     throw new Error(`${path} is not a file`)
   }
-  const content = atob(data.content.replace(/\n/g, ''))
+  const content = base64ToUtf8(data.content)
   return { content, sha: data.sha }
 }
 

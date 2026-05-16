@@ -1,0 +1,29 @@
+name: Update reviews
+on:
+  schedule:
+    - cron: '0 5 1,15 * *'   # 05:00 UTC on the 1st and 15th of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-reviews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Refresh rating + rating_count
+        run: |
+          chmod +x ./bash/update_reviews.sh
+          ./bash/update_reviews.sh
+        shell: bash

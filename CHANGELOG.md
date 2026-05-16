@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented here.
 
+## [3.4.0] - 2026-05-16 (Periodic refresh workflows + UTF-8 round-trip fix)
+
+### Added
+
+- **Update reviews — bi-weekly workflow.** New [`scripts/update_reviews.py`](scripts/update_reviews.py), wrapper [`bash/update_reviews.sh`](bash/update_reviews.sh), and [`.github/workflows/update_reviews.yml`](.github/workflows/update_reviews.yml) re-scrape every existing game's itch.io page on the 1st and 15th of each month (05:00 UTC) and write fresh `rating` + `rating_count`. Network errors / 404 keep the old values. Touches only those two fields — everything else (annotations, metadata) is left alone.
+- **Update status — monthly workflow.** New [`scripts/update_status.py`](scripts/update_status.py), [`bash/update_status.sh`](bash/update_status.sh), and [`.github/workflows/update_status.yml`](.github/workflows/update_status.yml) refresh the `status` field on the 1st of each month (06:00 UTC). Same skip-on-error semantics.
+- **Force update — manual emergency button.** New [`scripts/force_update.py`](scripts/force_update.py), [`bash/force_update.sh`](bash/force_update.sh), and [`.github/workflows/force_update.yml`](.github/workflows/force_update.yml) accept an optional `url` input. Empty input re-scrapes every game; a single URL targets just that one. `workflow_dispatch` only — no schedule. Every run preserves the three user-editable annotations (`safe_virus`, `notes`, `nsfw`) per the read/write field convention in [CLAUDE.md](CLAUDE.md). Doubles as the canonical repair tool for mojibake left by older webapp commits — re-scrape pulls clean UTF-8 from itch.io.
+- **`generate_table.yml` chained on the three new workflows** so `lists/*.md` stay in sync after any data mutation.
+
+### Fixed
+
+- **UTF-8 mojibake on webapp commits.** [`webapp/src/lib/github/contents.ts`](webapp/src/lib/github/contents.ts) `readFileWithSha` and [`webapp/src/lib/github/git-data.ts`](webapp/src/lib/github/git-data.ts) `bulkDeleteGames` were decoding GitHub's base64 content with `atob` alone, producing a Latin-1 binary string. Multi-byte UTF-8 sequences (e.g. Vietnamese `ã` = `0xC3 0xA3`) became two Latin-1 code points (`Ã£`); the next write re-encoded them as UTF-8 bytes, double-corrupting on every edit. Confirmed live damage in `data_game/game_info_002.json` (`BotÃÂÃÂ£o Esquerdo` was originally `Botão Esquerdo`). Extracted a shared helper [`webapp/src/lib/github/encoding.ts`](webapp/src/lib/github/encoding.ts) (`base64ToUtf8` / `utf8ToBase64`) that uses `TextDecoder('utf-8')` / `TextEncoder` and routes both call sites through it. Write path was already correct.
+
+### Notes
+
+- **Repair existing mojibake**: after this release deploys, run `Force update` once via `workflow_dispatch` with no input. It re-scrapes every game (~15–25 min) and writes back clean UTF-8 while preserving manual annotations. `generate_table.yml` will then auto-regenerate the markdown lists.
+- **Browser cache**: anyone editing via the webapp should hard-refresh once after the new build lands so they're not using the pre-fix bundle (which would continue to mangle non-Latin chars on the next edit).
+- **README + README.vi badges** bumped to `3.4.0`. No Tauri / Rust binary change — `Cargo.toml` and `tauri.conf.json` stay at `0.1.1`.
+
+---
+
 ## [3.3.0] - 2026-05-16 (Mobile polish + Settings + in-browser GPG commit signing)
 
 ### Added

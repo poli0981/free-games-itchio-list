@@ -1,6 +1,7 @@
 import type { Octokit } from '@octokit/rest'
 import { PATHS, REPO } from '../config'
 import { rebalance } from './data-store'
+import { base64ToUtf8, utf8ToBase64 } from './encoding'
 import { buildCommitObject, currentTzOffsetMin, isoFromTs } from '../gpg/canonicalize'
 import { getSignerIfEnabled, type CommitSigner } from './signer'
 import type { Game } from '@/types/game'
@@ -8,13 +9,6 @@ import type { Game } from '@/types/game'
 export interface FileChange {
   path: string
   content: string | null
-}
-
-function utf8ToBase64(s: string): string {
-  const bytes = new TextEncoder().encode(s)
-  let bin = ''
-  for (let i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i])
-  return btoa(bin)
 }
 
 export async function atomicCommit(
@@ -205,7 +199,7 @@ export async function bulkDeleteGames(
       ref: REPO.branch,
     })
     if (!Array.isArray(data) && data.type === 'file' && 'content' in data) {
-      const decoded = atob(data.content.replace(/\n/g, ''))
+      const decoded = base64ToUtf8(data.content)
       deletedLog = JSON.parse(decoded || '[]')
     }
   } catch {
