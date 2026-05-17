@@ -2949,5 +2949,1851 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://ozzyouzo.itch.io/double-dragon",
+        "name": "Double Dragon One",
+        "dev": "OzzyOuzo, Johnny16bit",
+        "description": "DESCRIPTION In 1995 Double Dragon was released on the Neo Geo.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMTE5MzY4LnBuZw==/original/4Ag1jz.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://santiago-garcia.itch.io/play-with-him",
+        "name": "Play With Him",
+        "dev": "Santiago Garcia",
+        "description": "He watches.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "60",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDY5MTI3LmdpZg==/original/7mI6vZ.gif",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://partulla.itch.io/gavril",
+        "name": "GAVRIL",
+        "dev": "Part",
+        "description": "WARNING FOR: Loud sounds Strong language Death scenes Jumpscare You wake up to a loud crash downstairs.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "931",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyMzgwNjU2LnBuZw==/original/O%2Fuy0s.png",
+        "tags": [
+            "Creepy",
+            "Dark",
+            "Horror",
+            "Multiple Endings",
+            "Ren'Py",
+            "Short",
+            "Spooky",
+            "storygame",
+            "Thriller"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bun-tired.itch.io/special-order",
+        "name": "Special Order",
+        "dev": "bun_tired",
+        "description": "'Special Order' is a short visual novel , where you make an order in a femboy themed fast-food chain.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.1",
+        "rating_count": "146",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDAyOTU0LnBuZw==/original/Yh6jYn.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Dark Humor",
+            "femboy",
+            "Male protagonist",
+            "Mouse only",
+            "Short",
+            "Singleplayer",
+            "TyranoBuilder"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Smartphone"
+        ],
+        "made_with": [
+            "TyranoBuilder",
+            "Paint Tool SAI"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://limestudio.itch.io/unheard-scream",
+        "name": "Unheard Scream",
+        "dev": "LimeStudio",
+        "description": "A horror survival game where you, as urban explorers, find yourselves trapped and must solve interconnected puzzles to escape the subway station.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.1",
+        "rating_count": "17",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5NzI5OTg2LnBuZw==/original/ILw%2B46.png",
+        "tags": [
+            "3D",
+            "Co-op",
+            "First-Person",
+            "Horror",
+            "Multiplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mangopp.itch.io/the-blue-human",
+        "name": "The Blue Human",
+        "dev": "mangopp",
+        "description": "This is an oc game made for fun.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "63",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyNTY2NDE4LnBuZw==/original/u%2Byo%2Fz.png",
+        "tags": [
+            "2D",
+            "blood",
+            "Family Friendly",
+            "sad"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://powerhoof.itch.io/the-telwynium",
+        "name": "The Telwynium: Book One",
+        "dev": "Powerhoof",
+        "description": "The Telwynium: Book One - Winter's Dawn - The Telwynium is an early 90s style adventure game, with Sierra SCI0 style graphics, but with a fancy new-fangled point 'n click interface.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "177",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzYzMDAwODUuZ2lm/original/x22iFw.gif",
+        "tags": [
+            "2D",
+            "Dark Fantasy",
+            "Fantasy",
+            "Medieval",
+            "Pixel Art",
+            "Point & Click",
+            "powerquest",
+            "sierra"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://numijulie.itch.io/bob-velseb-the-cannibal-the-dating-simulator",
+        "name": "Bob Velseb the Cannibal the Dating Simulator",
+        "dev": "numijulie",
+        "description": "HEADS UP! Update 1/2/25 : Game is now available with less graphics on browser! It's pretty ugly so if you have a laptop/computer please download them to experience the game as intended .",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "73",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5MjE1ODM5LnBuZw==/original/UGwOfM.png",
+        "tags": [
+            "Abstract",
+            "bob-velseb",
+            "Dating Sim",
+            "Fangame",
+            "Horror",
+            "Ren'Py",
+            "Romance",
+            "spooky-month",
+            "sr-pelo"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bluemonkeyvr1212.itch.io/tag-of-fear-but-reversed",
+        "name": "Tag of fear: But REVERSED (Chapter 1-2 )",
+        "dev": "Genesis",
+        "description": "chapter 2 IS OUT! My socials https://www.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDI4MDA3LnBuZw==/original/8kcpaa.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://rdein.itch.io/momodora-i",
+        "name": "Momodora I",
+        "dev": "rdein",
+        "description": "Momodora I is the first game in the Momodora series.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvOTc1Ni8yODU5Mi5wbmc=/original/TEhrVb.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://dieselrave.itch.io/a-mall-near-you",
+        "name": "A Mall Near You",
+        "dev": "Diesel Rave Studios, smpletan, adriotes, oakey, Narwhix",
+        "description": "Whoops! Oops! Your family forgot to stock up on gifts for the holidays, and it's up to YOU, a child, to pick up the slack! Return the undesirable gifts your mom just saddled you with, and use your ...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "340",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwOTQyNDUyLmpwZw==/original/GqsU8c.jpg",
+        "tags": [
+            "abandoned-mall",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Funny",
+            "holiday",
+            "Horror",
+            "madvent-2022",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://inkyblinkyarts.itch.io/summon-a-sweetheart",
+        "name": "Summon a Sweetheart",
+        "dev": "InkyBlinkyArts",
+        "description": "Note: The in-browser version of the game may be a bit slow, or glitchy.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "223",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NDY3MTI1LnBuZw==/original/ueGDCD.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Female Protagonist",
+            "Horror",
+            "Indie",
+            "Pixel Art",
+            "RPG Maker",
+            "RPG Maker MV",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://futurecatgames.itch.io/oneshot-pancake-episode",
+        "name": "OneShot: the pancake episode",
+        "dev": "Future Cat Games",
+        "description": "It's the 10th anniversary of OneShot, and Niko has decided to share their mama's pancake recipe with the world! Join them on a special interactive cooking lesson in OneShot Cafe, the coffee shop AU...",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "199",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE2ODE5NTU2LnBuZw==/original/3AhNLC.png",
+        "tags": [
+            "2D",
+            "Cooking",
+            "Cute",
+            "niko",
+            "niko-from-oneshot",
+            "oneshot",
+            "pancakes",
+            "Pixel Art",
+            "RPG Maker",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America",
+            "French",
+            "Japanese",
+            "Korean",
+            "Turkish",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://zephi.itch.io/danganronpa-another-storybuild",
+        "name": "Danganronpa Another (Story CH2-6)",
+        "dev": "Zephirum",
+        "description": "---------------------------- 2021 Update: Danganronpa Chapter 2-4 Public Release 2022 Updates : Danganronpa Story Build CH2-6 release.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "26",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5Mzk0MjIzLmpwZw==/original/iEV5du.jpg",
+        "tags": [
+            "another",
+            "danganronpa",
+            "english",
+            "zephirum"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jamwitch.itch.io/the-case-of-the-dungeon-descent",
+        "name": "The Case of the Dungeon Descent",
+        "dev": "jamwitch, Celia, Rose",
+        "description": "👑 Investigate the princess's fate The princess has disappeared in the dungeon! Scry on magical events to deduce what spells were cast when, piece together the stories of multiple adventurers, and u...",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "303",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxODk5ODM4LnBuZw==/original/KH2PCk.png",
+        "tags": [
+            "deduction",
+            "Detective",
+            "Fantasy",
+            "investigation",
+            "Ludum Dare 57",
+            "Narrative",
+            "Nonlinear",
+            "Pixel Art",
+            "story",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://thankshrew.itch.io/skaian-survey",
+        "name": "Skaian Survey",
+        "dev": "Thank Shrew",
+        "description": "\"All the world's a stage, And all the men and women merely players…\" - Charles Dutton, first Son of Skaia SKAIAN SURVEY is a resource for classpecting (the assignment of CLASS and ASPECT to a perso...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "33",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDExNDIwLnBuZw==/original/ZUw01F.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "Fantasy",
+            "homestuck",
+            "Quiz",
+            "Short",
+            "Singleplayer",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://nagainyu.itch.io/select-kiss",
+        "name": "Select Kiss",
+        "dev": "nagainyu",
+        "description": "Summary You've applied for the job of \"picking two people to put in The Room Where You Must Kiss to Leave.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "40",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2Mzg4OTIwLnBuZw==/original/KvMpzm.png",
+        "tags": [
+            "Comedy",
+            "Cute",
+            "japanese",
+            "kiss",
+            "Pixel Art",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://gruelscum.itch.io/honorplusplus",
+        "name": "HONOR++",
+        "dev": "GruelScum",
+        "description": "!!! OFFICIAL VERSION ON ITCH.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "06 September 2023 @ 15:47 UTC",
+        "rating": "4.9",
+        "rating_count": "22",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzMzMzMjg1LnBuZw==/original/c%2FAR1I.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Cartoon",
+            "Indie",
+            "Multiplayer",
+            "PvP",
+            "Sci-fi",
+            "Swords",
+            "Unity",
+            "weird"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "ZBrush",
+            "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://pinlin.itch.io/darknights",
+        "name": "Dark Nights",
+        "dev": "pinlin",
+        "description": "08/04/2023: Chinese fan transtion available: Link here (Read description) 01/11/2023: Steam version available & new update on itch: Link here 31/10/2022: Campaign for extra routes: https://ko-fi.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2019 @ 23:00 UTC",
+        "rating": "4.7",
+        "rating_count": "636",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjcxNzMxLzEzMzc5MjUucG5n/original/mu4qYc.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Dating Sim",
+            "Fantasy",
+            "Multiple Endings",
+            "Mystery",
+            "Otome",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bloofbloof.itch.io/drvoldritch",
+        "name": "Doctor Voldritch's Experiment",
+        "dev": "Bloof, Battleship Halberd",
+        "description": "Please look up how hypnosis works before playing this game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "177",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQwMTIxMTQuanBn/original/CX8l8l.jpg",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "First-Person",
+            "hypnosis",
+            "hypnotic",
+            "No AI",
+            "Sci-fi",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kultisti.itch.io/katti",
+        "name": "Katti",
+        "dev": "Kultisti",
+        "description": "move around, shift the world make yourself a new path home FEATURES: - 20+ tiny puzzles to solve - many many moving tiles - and a cat!!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "438",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzNzE4NTc1LmdpZg==/original/2ndhtF.gif",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Cats",
+            "Cute",
+            "Fantasy",
+            "Mouse only",
+            "Pixel Art",
+            "Short",
+            "Singleplayer",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "GameMaker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sgadrat.itch.io/super-tilt-bro",
+        "name": "Super Tilt Bro. for NES",
+        "dev": "sgadrat",
+        "description": "Super Tilt Bro is a demake of the Super Smash Bros .",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "117",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzY5MzI1MjIucG5n/original/OzsaO8.png",
+        "tags": [
+            "8-Bit",
+            "Local multiplayer",
+            "Multiplayer",
+            "NES (Nintendo Entertainment System)",
+            "Pixel Art",
+            "platform-fighter",
+            "PvP",
+            "Retro",
+            "sourcecode",
+            "Versus"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sovonight.itch.io/swooning-over-stans",
+        "name": "Swooning Over Stans",
+        "dev": "sovonight",
+        "description": "Ever watch Gravity Falls and think, man, that Stan sure is hot? Well, indulge that thought by playing this Grunkle Dating Sim, a Gravity Falls fangame! SYNOPSIS A summer road trip leads to an unexp...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 June 2018 @ 08:50 UTC",
+        "rating": "4.9",
+        "rating_count": "1237",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjgwNjg4LzEzNjI2MjYucG5n/original/X1%2FGDk.png",
+        "tags": [
+            "Dating Sim"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://reludum.itch.io/copycats-phenomenon",
+        "name": "Copycat's Phenomenon",
+        "dev": "Reludum",
+        "description": "You're an elite member of the search-and-rescue team sent by \"Black Ravens\" security organization.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "105",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1MDU4ODMuanBn/original/Ml%2Fi%2Bc.jpg",
+        "tags": [
+            "Furry",
+            "Horror",
+            "Multiplayer",
+            "Singleplayer",
+            "Spooky"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://retroarchofficial.itch.io/retroarch",
+        "name": "RetroArch",
+        "dev": "RetroArch, gadsby",
+        "description": "RetroArch is a frontend for emulators, game engines and media players.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 May 2010 @ 21:00 UTC",
+        "rating": "5.0",
+        "rating_count": "110",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQ2MDIwODcucG5n/original/Fnsd51.png",
+        "tags": [
+            "Emulator",
+            "libretro",
+            "Open Source",
+            "Retro",
+            "retroarch"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "Arabic",
+            "German",
+            "Greek Modern",
+            "English",
+            "Esperanto",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "Persian",
+            "Finnish",
+            "French",
+            "Hebrew (modern)",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Slovak",
+            "Swedish",
+            "Turkish",
+            "Ukrainian",
+            "Vietnamese",
+            "Chinese",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Joystick",
+            "Touchscreen",
+            "Wiimote",
+            "Smartphone",
+            "Playstation controller",
+            "Joy-Con"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://whitefox-fcp.itch.io/still-standing",
+        "name": "Still Standing",
+        "dev": "WhiteFox FCP",
+        "description": "CONTROLS: This game is played almost exclusively with the mouse, use right click to open and close cameras and use the left click to interact with elements.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "34",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyNDY3NDYwLnBuZw==/original/Gh6svx.png",
+        "tags": [
+            "Five Nights at Freddy's",
+            "Hand-drawn",
+            "No AI",
+            "Short",
+            "Singleplayer",
+            "Spooky",
+            "Spoopy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Construct",
+            "Audacity",
+            "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://foxchaotica.itch.io/kryptic",
+        "name": "Kryptic",
+        "dev": "Fox Chaotica",
+        "description": "You've just received a mysterious program from a friend of yours, claiming to have secret information.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 June 2019 @ 00:00 UTC",
+        "rating": "4.8",
+        "rating_count": "79",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxOTcwMDMucG5n/original/61NaCt.png",
+        "tags": [
+            "Ciphers",
+            "codes"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://nomnomnami.itch.io/astras-garden",
+        "name": "Astra's Garden",
+        "dev": "NomnomNami",
+        "description": "ASTRA'S GARDEN is an idle game where you grow plants to make medicine for your customers.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "539",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg3NzgxMTAucG5n/original/7j0Mcr.png",
+        "tags": [
+            "Casual",
+            "Endless",
+            "Fantasy",
+            "Feel Good",
+            "Female Protagonist",
+            "Gardening",
+            "Idle",
+            "LGBT",
+            "Mental Health",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "Czech",
+            "German",
+            "English",
+            "Spanish; Latin America",
+            "French",
+            "Hungarian",
+            "Italian",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Thai",
+            "Turkish",
+            "Ukrainian",
+            "Vietnamese",
+            "Chinese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Clip Studio Paint",
+            "FL Studio"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://arcadekitten.itch.io/sweet-no-death",
+        "name": "Sweet No Death",
+        "dev": "arcadekitten",
+        "description": "Your classic pink & cutesy game that suddenly turns dark.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "262",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyNTY0NjE4LnBuZw==/original/bH750J.png",
+        "tags": [
+            "2D",
+            "Creepy",
+            "Cute",
+            "Female Protagonist",
+            "Horror",
+            "Pixel Art",
+            "RPG Maker"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Latin America",
+            "French",
+            "Hungarian",
+            "Korean",
+            "Portuguese (Brazil)",
+            "Chinese"
+        ],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://managore.itch.io/print-gallery-of-an-artist",
+        "name": "Print Gallery Of An Artist",
+        "dev": "Daniel Linssen",
+        "description": "A brief exploration of recursive spaces Left/Right to move Up/Space to jump/wall jump Made by Daniel Linssen using Paint Tiles Inspired by a 3Blue1Brown video which was in turn inspired by M.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "258",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NTczODMwLmdpZg==/original/96%2FQ%2FS.gif",
+        "tags": [
+            "Colorful",
+            "Painting",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://astra-ukraine.itch.io/lurking-for-love-ua-fan-localization",
+        "name": "Lurking For Love (UA) FAN LOCALIZATION",
+        "dev": "Astra",
+        "description": "ORIGINAL PAGE Наразі повна версія гри знаходиться в розробці! Більше інформації про проект та команду на офіційному сайті! SinisterShrike Website [Демо версія гри містить елементи хоррору та ненорм...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "59",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3NTc4MDIwLnBuZw==/original/zCddIi.png",
+        "tags": [
+            "Creepy",
+            "Dark",
+            "Dating Sim",
+            "Horror",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://helllst4r.itch.io/birdhouse",
+        "name": "BIRDHOUSE",
+        "dev": "helllst4r",
+        "description": "BIRDHOUSE is a short interactive horror experience created by HELLLST4R featuring hand drawn graphics, animated cutscenes, and an original soundtrack.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "26",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMTQ1NDk3LnBuZw==/original/hIc%2FBh.png",
+        "tags": [
+            "2D",
+            "eldritch",
+            "Hand-drawn",
+            "Horror",
+            "Indie",
+            "Lovecraftian Horror",
+            "RPG Maker"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://skullbutton.itch.io/infinite-monkeys",
+        "name": "Infinite Monkeys",
+        "dev": "Skullbutton Interactive",
+        "description": "Enjoy the game? Check out my upcoming game VSCS-II , which contains an 80s-style remake of Infinite Monkeys (link opens in new tab ).",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "183",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc0OTIzNzQuZ2lm/original/IfCZCo.gif",
+        "tags": [
+            "Animals",
+            "Funny",
+            "Idle",
+            "Math",
+            "monkey",
+            "Pixel Art",
+            "random",
+            "sitting-simulator"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://terrycavanagh.itch.io/egg",
+        "name": "Egg",
+        "dev": "Terry Cavanagh",
+        "description": "egg, egg, egg, egg",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "460",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzODI2MzI3LnBuZw==/original/s8jCuk.png",
+        "tags": [
+            "3D Platformer",
+            "egg",
+            "Godot"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://snowyrey.itch.io/after-hours",
+        "name": "After Hours",
+        "dev": "Snowyrey",
+        "description": "Personally, I think Sun and Moon are the most underutilized characters in Security Breach.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "678",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyNDU0NzQ4LnBuZw==/original/YLuHXp.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Cute",
+            "Fangame",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://khywae.itch.io/before-the-darkness",
+        "name": "Before the Darkness",
+        "dev": "khywae",
+        "description": "♡ ABOUT ♡ The year is 2017, and Geto Suguru has announced a terrorist attack in Tokyo and Kyoto.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "505",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3OTkxMDU2LnBuZw==/original/aDMH0X.png",
+        "tags": [
+            "Dating Sim",
+            "Fangame",
+            "Female Protagonist",
+            "Otome",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://zephyo.itch.io/an-average-day-at-the-cat-cafe",
+        "name": "an average day at the cat cafe",
+        "dev": "angela he, Alex Rose, atmospherium",
+        "description": "*+:｡.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "1903",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMjAxMzY0LmdpZg==/original/qshzx5.gif",
+        "tags": [
+            "2D",
+            "Cats",
+            "Characters",
+            "Colorful",
+            "Cozy",
+            "Hand-drawn",
+            "Ludum Dare 51",
+            "Slice Of Life",
+            "Tilemap"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mithrandir133.itch.io/final-fantasy-xi-braver",
+        "name": "Final Fantasy XI Braver",
+        "dev": "mithrandir133",
+        "description": "Return to Vana'diel - A Single-Player Fan Tribute to FFXI Vana'diel , a world brimming with ancient mysteries, fearsome beasts, and glory to be claimed.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "84",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxNzA1NDA4LnBuZw==/original/Xrwrmx.png",
+        "tags": [
+            "Fangame",
+            "Fantasy",
+            "ffxi",
+            "final-fantasy",
+            "job-system",
+            "RPG Maker",
+            "Top-Down",
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)",
+            "Joy-Con"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tarkovsky.itch.io/picohot",
+        "name": "PICOHOT",
+        "dev": "tarkovsky, PirxOS, Warjoy Heir",
+        "description": "If you enjoyed PICOHOT, check out our new game FUMES - try the demo on Steam and wishlist now! Hello! We present to you PICOHOT, an 8-bit homage to the original SUPERHOT game created by three membe...",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "728",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzM0MzYxNTUucG5n/original/DPeQMB.png",
+        "tags": [
+            "Arcade",
+            "fantasy-console",
+            "FPS",
+            "PICO-8",
+            "Pixel Art",
+            "Retro",
+            "superhot",
+            "time-manipulation"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "PICO-8"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://nospillketchup.itch.io/mixology",
+        "name": "Mixology",
+        "dev": "NoSpillKetchup",
+        "description": "It's your first day bartending, and you've decided to make your own menu with your own custom cocktails.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "17",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzA2NjQ0LnBuZw==/original/1cYa3o.png",
+        "tags": [
+            "2D",
+            "body-horror",
+            "Horror",
+            "Indie",
+            "No AI",
+            "One-shot",
+            "Pixel Art",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://torfi.itch.io/klifur",
+        "name": "Klifur",
+        "dev": "Torfi",
+        "description": "Get the new version of Klifur on Steam! --- A squishy physics puzzle game.",
+        "genre": "Sports",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "711",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzkzNTg1OTUucG5n/original/YnBfBz.png",
+        "tags": [
+            "climbing",
+            "Physics",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://classof09.itch.io/demo",
+        "name": "Class of '09 Demo",
+        "dev": "Classof09",
+        "description": "Every visual novel under the sun has you assume the role of an average guy meeting beautiful anime girls who magically fall for him after a few clicks.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "124",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQzODUwNTMuanBn/original/4aorIJ.jpg",
+        "tags": [
+            "bullying",
+            "Comedy",
+            "Female Protagonist",
+            "fully-voiced",
+            "Ren'Py",
+            "Retro",
+            "school-simulator",
+            "social-simulator",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop",
+            "Paint Tool SAI",
+            "Clip Studio Paint",
+            "FL Studio"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://spicaze.itch.io/silver-thread-deux",
+        "name": "Silver Thread : Deux",
+        "dev": "Spica",
+        "description": "Do ghosts actually exist? An exorcist that doubts the existence of ghost might sound contradictory but to Alicia Wilkershire, this is the right way to get closer to the truth.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "439",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1ODMwMDM2LnBuZw==/original/%2Btyjch.png",
+        "tags": [
+            "eufree",
+            "Horror",
+            "Pixel Art",
+            "RPG Maker",
+            "RPG Maker MV"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tsundere-studio.itch.io/i-want-to-pursue-the-mean-side-character",
+        "name": "I Want to Pursue the Mean Side Character!",
+        "dev": "Tsundere Studio, M., Tsundere Studio",
+        "description": "I Want to Pursue the Mean Side Character! is my very first visual novel! I hope you enjoy it! ----- Beatrix is used to being misunderstood by her fellow peers.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "499",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg4MzM4MjIucG5n/original/IbXXVA.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Fantasy",
+            "Female Protagonist",
+            "LGBT",
+            "Ren'Py",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Paint Tool SAI"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kodiqi.itch.io/idle-breakout",
+        "name": "Idle Breakout",
+        "dev": "Kodiqi",
+        "description": "An idle version of classic Breakout.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "892",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4MDAyMjQucG5n/original/ZP612q.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "GameMaker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://objetdiscret.itch.io/tai-fab-museum",
+        "name": "Taiyaki Fabulous Museum of Fish",
+        "dev": "objetdiscret, Columbrine",
+        "description": "🐟 Controls 🐟 Keyboard GB Action WASD/↑←↓→ D-pad Move Z A Interact/confirm X B Cancel Enter Start View inventory and Fish Power Shift Select View completed puzzle albums 🐟 Description 🐟 Welcome to F...",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "207",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4MDI4MjE2LnBuZw==/original/qf8ujs.png",
+        "tags": [
+            "Cozy",
+            "Cute",
+            "Exploration",
+            "Funny",
+            "Game Boy",
+            "Nonogram",
+            "Picross",
+            "Pixel Art",
+            "Relaxing",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "GB Studio"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://gacha-friend.itch.io/gacha-nox-by-noxula",
+        "name": "Gacha Nox by Noxula",
+        "dev": "Gacha Friend",
+        "description": "Thanks for installing my Gacha mod! I hope you like it :) For more information visit the official Itch.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 December 2022 @ 08:00 UTC",
+        "rating": "4.0",
+        "rating_count": "57",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExMDYxNDAyLnBuZw==/original/pQ2XFm.png",
+        "tags": [
+            "chibi",
+            "Cute",
+            "Gacha",
+            "Gacha Club",
+            "gacha-nox",
+            "gachaverse",
+            "noxula"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://michael-murder.itch.io/make-a-scene",
+        "name": "Make-A-Scene Workshop",
+        "dev": "michael murder",
+        "description": "Do not redistribute this game.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "20",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTMwMjkyLnBuZw==/original/h4bWa%2F.png",
+        "tags": [
+            "2D",
+            "Dress Up",
+            "emo",
+            "No AI",
+            "scene"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://celianna.itch.io/tailor-tales",
+        "name": "Tailor Tales",
+        "dev": "Celianna",
+        "description": "Tailor Tales is an otome game with elements of fashion design.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "1106",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzM3Nzk5OTUucG5n/original/%2FwJ4ws.png",
+        "tags": [
+            "Anime",
+            "Character Customization",
+            "Dating Sim",
+            "Dress Up",
+            "Female Protagonist",
+            "Multiple Endings",
+            "Otome",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker",
+            "Adobe Photoshop"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
