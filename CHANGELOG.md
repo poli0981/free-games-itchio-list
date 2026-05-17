@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented here.
 
+## [3.4.1] - 2026-05-17 (Hotfix: DataTable column alignment + Discussion-announce auto-discovery)
+
+### Fixed
+
+- **DataTable columns misaligned at desktop widths.** Header used native table-layout (`<table className="w-full">` + `<th style={{width}}>`) while body rows used flex layout (`position: absolute` + `flex w-full`, cells with `flex: 0 0 Npx` / `1 1 0`). Native table-layout stretched the 8 size-less columns to fill the container based on content, but the absolutely-positioned body `<tr>` never participated in table layout — so its flex children stayed at their fixed flex-basis. Result: at the Tauri default 1280×800 window (and any viewport wider than the natural sum of header content widths) header columns drifted off the cells below them. [`webapp/src/components/data-table/data-table.tsx`](webapp/src/components/data-table/data-table.tsx) now renders the header `<tr>` with `flex w-full` and each `<th>` with `flex h-10 items-center` + the same `flex: 0 0 Npx` / `1 1 0` style block as the body `<td>` — header and body now compute width identically. Helper `priorityHeaderClass` (which emitted `table-cell` variants) is gone; the existing `priorityClass` (`flex` variants) now drives both. No change to column definitions in [`columns.tsx`](webapp/src/components/data-table/columns.tsx).
+- **`announce-discussion.yml` was a silent no-op since v3.2.0.** Both jobs (`announce-release`, `announce-docs`) gated on three repo variables (`DISCUSSION_REPO_ID`, `DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID`, `DISCUSSION_GENERAL_CATEGORY_ID`) that had never been configured — the validation step printed `::warning::… Skipping.` and `exit 0`, so every release silently failed to post to Discussions without surfacing a failed run. Replaced the two validation steps with a `Discover Discussion IDs` step that queries `gh api graphql` for `repository.id` and looks up the category by slug (`announcements` / `general`). Zero config now — works on any repo with Discussions enabled. Fails loudly with a clear `::error::` message if Discussions isn't enabled or the expected category is missing. Dropped the dependency on `vars.DISCUSSION_*` and removed every `if: steps.validate.outputs.ids_ok == 'true'` gate.
+
+### Changed
+
+- **README + README.vi badges** bumped to `3.4.1`.
+
+### Notes
+
+- This is a webapp + CI hotfix. No Python pipeline changes, no Tauri / Rust binary boundary change — `Cargo.toml` and `tauri.conf.json` stay at `0.1.1`, no THIRD_PARTY entries change.
+- The leftover `DISCUSSION_REPO_ID` / `DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID` / `DISCUSSION_GENERAL_CATEGORY_ID` repo variables (if you set them earlier) are now unused and can be removed from Settings → Variables.
+
+---
+
 ## [3.4.0] - 2026-05-16 (Periodic refresh workflows + UTF-8 round-trip fix)
 
 ### Added
