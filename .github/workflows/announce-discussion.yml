@@ -6,11 +6,9 @@ name: Announce to Discussion
 # The push job is gated by a `[skip-discuss]` token in the head-commit message
 # so dev can opt out for typo-only commits.
 #
-# Pre-flight (one-time, then hardcode the IDs into the env block below):
-#   gh api graphql -f query='query{repository(owner:"poli0981",name:"free-games-itchio-list"){
-#     id
-#     discussionCategories(first:20){nodes{id slug name}}
-#   }}'
+# No pre-flight needed — repo ID and category IDs are auto-discovered at
+# runtime via GraphQL (by category slug: "announcements" / "general").
+# Requires: GitHub Discussions enabled on the repo with both categories present.
 
 on:
   release:
@@ -51,24 +49,35 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      # TODO(maintainer): replace these placeholders with the real IDs from the
-      # graphql pre-flight query above. Until then this job is intentionally a
-      # no-op (see the validation step).
-      REPO_ID: ${{ vars.DISCUSSION_REPO_ID }}
-      ANNOUNCEMENTS_CATEGORY_ID: ${{ vars.DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Validate IDs are configured
+      - name: Discover Discussion IDs
+        id: ids
         run: |
-          if [ -z "${REPO_ID}" ] || [ -z "${ANNOUNCEMENTS_CATEGORY_ID}" ]; then
-            echo "::warning::DISCUSSION_REPO_ID or DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID not configured as repo variables. Skipping."
-            exit 0
+          set -euo pipefail
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          NAME="${GITHUB_REPOSITORY##*/}"
+          JSON=$(gh api graphql -f owner="$OWNER" -f name="$NAME" -f query='
+            query($owner:String!,$name:String!){
+              repository(owner:$owner,name:$name){
+                id
+                discussionCategories(first:25){nodes{id slug name}}
+              }
+            }')
+          REPO_ID=$(echo "$JSON" | jq -r '.data.repository.id // empty')
+          CAT_ID=$(echo "$JSON" | jq -r '.data.repository.discussionCategories.nodes[] | select(.slug=="announcements") | .id' | head -n1)
+          if [ -z "$REPO_ID" ]; then
+            echo "::error::Could not resolve repository GraphQL ID. Are Discussions enabled on this repo?"
+            exit 1
           fi
-          echo "ids_ok=true" >> "$GITHUB_OUTPUT"
-        id: validate
+          if [ -z "$CAT_ID" ]; then
+            echo "::error::No 'announcements' discussion category found. Create it under Settings → Discussions."
+            exit 1
+          fi
+          echo "repo_id=$REPO_ID" >> "$GITHUB_OUTPUT"
+          echo "category_id=$CAT_ID" >> "$GITHUB_OUTPUT"
 
       - name: Resolve release tag + body
-        if: steps.validate.outputs.ids_ok == 'true'
         id: rel
         env:
           INPUT_TAG: ${{ inputs.tag }}
@@ -95,13 +104,12 @@ jobs:
           echo "title=Release ${TAG}" >> "$GITHUB_OUTPUT"
 
       - name: Create Announcements discussion
-        if: steps.validate.outputs.ids_ok == 'true'
         run: |
           set -euo pipefail
           gh api graphql \
             -f query='mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}' \
-            -f r="${REPO_ID}" \
-            -f c="${ANNOUNCEMENTS_CATEGORY_ID}" \
+            -f r="${{ steps.ids.outputs.repo_id }}" \
+            -f c="${{ steps.ids.outputs.category_id }}" \
             -f t="${{ steps.rel.outputs.title }}" \
             -F b=@body.md
 
@@ -113,27 +121,40 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      REPO_ID: ${{ vars.DISCUSSION_REPO_ID }}
-      GENERAL_CATEGORY_ID: ${{ vars.DISCUSSION_GENERAL_CATEGORY_ID }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Validate IDs are configured
-        id: validate
+      - name: Discover Discussion IDs
+        id: ids
         run: |
-          if [ -z "${REPO_ID}" ] || [ -z "${GENERAL_CATEGORY_ID}" ]; then
-            echo "::warning::DISCUSSION_REPO_ID or DISCUSSION_GENERAL_CATEGORY_ID not configured as repo variables. Skipping."
-            exit 0
+          set -euo pipefail
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          NAME="${GITHUB_REPOSITORY##*/}"
+          JSON=$(gh api graphql -f owner="$OWNER" -f name="$NAME" -f query='
+            query($owner:String!,$name:String!){
+              repository(owner:$owner,name:$name){
+                id
+                discussionCategories(first:25){nodes{id slug name}}
+              }
+            }')
+          REPO_ID=$(echo "$JSON" | jq -r '.data.repository.id // empty')
+          CAT_ID=$(echo "$JSON" | jq -r '.data.repository.discussionCategories.nodes[] | select(.slug=="general") | .id' | head -n1)
+          if [ -z "$REPO_ID" ]; then
+            echo "::error::Could not resolve repository GraphQL ID. Are Discussions enabled on this repo?"
+            exit 1
           fi
-          echo "ids_ok=true" >> "$GITHUB_OUTPUT"
+          if [ -z "$CAT_ID" ]; then
+            echo "::error::No 'general' discussion category found. Create it under Settings → Discussions."
+            exit 1
+          fi
+          echo "repo_id=$REPO_ID" >> "$GITHUB_OUTPUT"
+          echo "category_id=$CAT_ID" >> "$GITHUB_OUTPUT"
 
       - name: Checkout (last 2 commits for diff)
-        if: steps.validate.outputs.ids_ok == 'true'
         uses: actions/checkout@v6
         with:
           fetch-depth: 2
 
       - name: List changed docs
-        if: steps.validate.outputs.ids_ok == 'true'
         id: changes
         run: |
           set -euo pipefail
@@ -143,7 +164,7 @@ jobs:
           fi
 
       - name: Build body
-        if: steps.validate.outputs.ids_ok == 'true' && steps.changes.outputs.no-docs-changed != 'true'
+        if: steps.changes.outputs.no-docs-changed != 'true'
         id: body
         env:
           MSG: ${{ github.event.head_commit.message }}
@@ -163,12 +184,12 @@ jobs:
           echo "title=Docs update — ${FIRST_LINE} (${SHORT_SHA})" >> "$GITHUB_OUTPUT"
 
       - name: Create General discussion
-        if: steps.validate.outputs.ids_ok == 'true' && steps.changes.outputs.no-docs-changed != 'true'
+        if: steps.changes.outputs.no-docs-changed != 'true'
         run: |
           set -euo pipefail
           gh api graphql \
             -f query='mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}' \
-            -f r="${REPO_ID}" \
-            -f c="${GENERAL_CATEGORY_ID}" \
+            -f r="${{ steps.ids.outputs.repo_id }}" \
+            -f c="${{ steps.ids.outputs.category_id }}" \
             -f t="${{ steps.body.outputs.title }}" \
             -F b=@body.md

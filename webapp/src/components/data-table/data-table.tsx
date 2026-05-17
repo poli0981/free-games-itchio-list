@@ -26,12 +26,6 @@ function priorityClass(priority: 1 | 2 | 3 | undefined): string {
   return ''
 }
 
-function priorityHeaderClass(priority: 1 | 2 | 3 | undefined): string {
-  if (priority === 2) return 'hidden md:table-cell'
-  if (priority === 3) return 'hidden lg:table-cell'
-  return ''
-}
-
 interface DataTableProps<TData> {
   data: TData[]
   columns: ColumnDef<TData>[]
@@ -143,15 +137,18 @@ export function DataTable<TData>({
         <table className="w-full text-sm">
           <thead className="sticky top-0 z-10 bg-card shadow-[inset_0_-1px_0_hsl(var(--border))]">
             {headerGroups.map((hg) => (
-              <tr key={hg.id}>
+              <tr key={hg.id} className="flex w-full">
                 {hg.headers.map((h) => (
                   <th
                     key={h.id}
                     className={cn(
-                      'h-10 px-3 text-left align-middle font-medium text-muted-foreground',
-                      priorityHeaderClass(h.column.columnDef.meta?.priority),
+                      'flex h-10 items-center px-3 text-left font-medium text-muted-foreground',
+                      priorityClass(h.column.columnDef.meta?.priority),
                     )}
-                    style={{ width: h.getSize() ? `${h.getSize()}px` : undefined }}
+                    style={{
+                      width: h.getSize() ? `${h.getSize()}px` : undefined,
+                      flex: h.getSize() ? `0 0 ${h.getSize()}px` : '1 1 0',
+                    }}
                   >
                     {h.isPlaceholder
                       ? null
