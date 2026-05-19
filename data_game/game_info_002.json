@@ -1,27 +1,5 @@
 [
     {
-        "url": "https://jimbojones7.itch.io/trials-of-duralis",
-        "name": "Trials of Duralis",
-        "dev": "JimboJones7",
-        "description": "My 4th year Honours Project for University :)",
-        "genre": "Platformer",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3NDI5LnBuZw==/original/0ijMTp.png",
-        "tags": [],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://victorcito.itch.io/color-theory",
         "name": "Color Theory",
         "dev": "VictorCito",
@@ -6389,45 +6367,6 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://sumi03c.itch.io/pakupaku-gyaru",
-        "name": "PakuPaku Gyaru! 「 パクパクギャル！」",
-        "dev": "SUMI03",
-        "description": "PakuPaku Gyaru! A very small visual novel with gyaru energy and good luck! Just a quick fortune reading with Rina (~a few seconds per session) ⊂(･ω･*⊂) Want Rina to read your fortune today? Meet Ri...",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.0",
-        "rating_count": "1",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Mjk1NjIwLnBuZw==/original/E0FwXY.png",
-        "tags": [
-            "2D",
-            "Anime",
-            "Cute",
-            "gyaru",
-            "Hand-drawn",
-            "Indie",
-            "japanese",
-            "kawaii",
-            "Short"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English",
-            "Japanese"
-        ],
-        "inputs": [],
-        "made_with": [
-            "TyranoBuilder"
-        ],
         "safe_virus": "?",
         "notes": ""
     },
@@ -18109,6 +18048,67 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://rhythmhell.itch.io/rhythm-hell",
+        "name": "Rhythm Hell",
+        "dev": "Rhythm Hell",
+        "description": "Download links are further down! Rhythm Hell! Help a poor seal out by clapping back the rhythms shown! Clapping on cue makes the meter go up, missing cues makes the meter go down! Aim for the highest ...",
+        "genre": "Rhythm",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "295",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyNjg4MjY2LnBuZw==/original/6c02aj.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://setamopixel.itch.io/dungeon-sweeper",
+        "name": "Dungeon Sweeper",
+        "dev": "せたも",
+        "description": "マインスイーパーのようにダンジョンの位置を特定しながらワールドマップを広げていくパズル、もしくはクリッカーゲームです。 スコアが高くなるとバイオームが増えていって賑やかになっていきます。のんびりプレイできるゲームなのでぜひ遊んでみてね。 基本操作： 左クリック：マスを開放 右クリック長押し：フラグを設置する 右クリック＋スライド：視点移動 スクロール：ズーム -English- \"It's ...",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "109",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE0MzI0ODQwLnBuZw==/original/QZ92dU.png",
+        "tags": [
+            "Clicker",
+            "Godot",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
         "safe_virus": "?",
         "notes": ""
     }

@@ -1,66 +1,5 @@
 [
     {
-        "url": "https://rhythmhell.itch.io/rhythm-hell",
-        "name": "Rhythm Hell",
-        "dev": "Rhythm Hell",
-        "description": "Download links are further down! Rhythm Hell! Help a poor seal out by clapping back the rhythms shown! Clapping on cue makes the meter go up, missing cues makes the meter go down! Aim for the highest ...",
-        "genre": "Rhythm",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "295",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyNjg4MjY2LnBuZw==/original/6c02aj.png",
-        "tags": [],
-        "platforms": [
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://setamopixel.itch.io/dungeon-sweeper",
-        "name": "Dungeon Sweeper",
-        "dev": "せたも",
-        "description": "マインスイーパーのようにダンジョンの位置を特定しながらワールドマップを広げていくパズル、もしくはクリッカーゲームです。 スコアが高くなるとバイオームが増えていって賑やかになっていきます。のんびりプレイできるゲームなのでぜひ遊んでみてね。 基本操作： 左クリック：マスを開放 右クリック長押し：フラグを設置する 右クリック＋スライド：視点移動 スクロール：ズーム -English- \"It's ...",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "109",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE0MzI0ODQwLnBuZw==/original/QZ92dU.png",
-        "tags": [
-            "Clicker",
-            "Godot",
-            "Pixel Art"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://walkedoutneimans.itch.io/ipad-baby",
         "name": "iPad Baby",
         "dev": "walkedoutneimans",
@@ -10700,51 +10639,6 @@
         ],
         "made_with": [
             "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://dreadloom-studios.itch.io/pretend-its-not-there",
-        "name": "Pretend it's not There",
-        "dev": "Dreadloom",
-        "description": "Thank you for 100k+ downloads! You are a young student returning home from school, burdened by an unsettling presence of something following you.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.3",
-        "rating_count": "552",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE4ODMxMDI3LnBuZw==/original/KRMGd5.png",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "First-Person",
-            "Horror",
-            "PSX (PlayStation)",
-            "Psychological Horror",
-            "Short",
-            "Singleplayer",
-            "Unity"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "German",
-            "English",
-            "Spanish; Latin America",
-            "French",
-            "Indonesian",
-            "Italian",
-            "Portuguese (Brazil)",
-            "Turkish"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Unity"
         ],
         "safe_virus": "?",
         "notes": ""

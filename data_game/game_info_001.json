@@ -515,48 +515,6 @@
         "notes": ""
     },
     {
-        "url": "https://dreadloom-studios.itch.io/alone-in-christmas",
-        "name": "Alone in Christmas",
-        "dev": "Dreadloom",
-        "description": "Story: Upon returning home after a party, you realize that your family is not there, and you find yourself alone.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "11",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE0NTE2ODYyLnBuZw==/original/Hzgh5s.png",
-        "tags": [
-            "3D",
-            "Christmas",
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "Multiple Endings",
-            "Short",
-            "Singleplayer",
-            "Unity"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://teamsalvato.itch.io/ddlc",
         "name": "Doki Doki Literature Club!",
         "dev": "Team Salvato",
@@ -17613,6 +17571,28 @@
         "made_with": [
             "Unity"
         ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jimbojones7.itch.io/trials-of-duralis",
+        "name": "Trials of Duralis",
+        "dev": "JimboJones7",
+        "description": "My 4th year Honours Project for University :)",
+        "genre": "Platformer",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY3NDI5LnBuZw==/original/0ijMTp.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     }

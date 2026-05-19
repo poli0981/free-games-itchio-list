@@ -154,5 +154,23 @@
         "name": "Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-16T04:05:08Z"
+    },
+    {
+        "url": "https://dreadloom-studios.itch.io/alone-in-christmas",
+        "name": "Alone in Christmas",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-19T08:13:05Z"
+    },
+    {
+        "url": "https://sumi03c.itch.io/pakupaku-gyaru",
+        "name": "PakuPaku Gyaru! 「 パクパクギャル！」",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-19T08:45:39Z"
+    },
+    {
+        "url": "https://dreadloom-studios.itch.io/pretend-its-not-there",
+        "name": "Pretend it's not There",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-19T09:15:42Z"
     }
 ]
