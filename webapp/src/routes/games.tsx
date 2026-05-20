@@ -51,7 +51,7 @@ export default function Games() {
   const [editOpen, setEditOpen] = useState(false)
   const [deleteOpen, setDeleteOpen] = useState(false)
 
-  const data = games.data?.games ?? []
+  const data = useMemo(() => games.data?.games ?? [], [games.data])
 
   const facets = useMemo(() => {
     if (data.length === 0)

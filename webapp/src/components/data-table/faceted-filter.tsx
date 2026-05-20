@@ -20,8 +20,8 @@ interface FacetedFilterProps<TData> {
 }
 
 export function FacetedFilter<TData>({ column, title, options }: FacetedFilterProps<TData>) {
-  const filterValue = (column?.getFilterValue() as string[] | undefined) ?? []
-  const selected = useMemo(() => new Set(filterValue), [filterValue])
+  const rawFilterValue = column?.getFilterValue() as string[] | undefined
+  const selected = useMemo(() => new Set(rawFilterValue ?? []), [rawFilterValue])
 
   function toggle(value: string) {
     const next = new Set(selected)

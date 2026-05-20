@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented here.
 
+## [3.5.1] - 2026-05-20 (Lint cleanup — zero ESLint problems)
+
+### Changed
+
+- **`npm run lint` now runs clean — 0 errors, 0 warnings** (down from 17 errors + 5 warnings, all pre-existing; v3.5.0 added none).
+  - [`webapp/eslint.config.js`](webapp/eslint.config.js): `react-refresh/only-export-components` is turned off for `src/components/ui/**` — the vendored shadcn primitives intentionally mix component and variant/constant exports and cannot satisfy the rule without forking upstream. The rule stays on for all other app code.
+  - `react-hooks/incompatible-library` is turned off — it only flagged TanStack Table's `useReactTable`, whose API is not React-Compiler-memoizable by design (not actionable).
+- **`SortableHeader` extracted** into its own [`webapp/src/components/data-table/sortable-header.tsx`](webapp/src/components/data-table/sortable-header.tsx); [`columns.tsx`](webapp/src/components/data-table/columns.tsx) is now a pure column-definition module.
+
+### Fixed
+
+- **`react-hooks/exhaustive-deps`** in [`routes/games.tsx`](webapp/src/routes/games.tsx) and [`data-table/faceted-filter.tsx`](webapp/src/components/data-table/faceted-filter.tsx): values built with `?? []` created a fresh array every render, defeating the `useMemo`s that depended on them. `data` is now wrapped in `useMemo`; the faceted-filter `selected` memo was restructured to depend on a stable value.
+
+### Notes
+
+- DX / code-quality only — no runtime behaviour change. No Tauri / Rust binary change (`Cargo.toml` / `tauri.conf.json` stay `0.1.1`); no `THIRD_PARTY` change.
+
+---
+
 ## [3.5.0] - 2026-05-20 (Charts expansion + game-count history + pipeline cleanup)
 
 ### Added
