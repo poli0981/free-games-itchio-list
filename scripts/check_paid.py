@@ -9,36 +9,22 @@ Flow:
   5. Save updated games (auto-rebalanced chunks)
 """
 
-import json
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from scraper import (
-    create_session,
-    check_still_free,
-    polite_delay,
-    batch_pause,
-    should_batch_pause,
-    now_iso,
-)
 from data_store import load_all_games, save_all_games
+from json_io import dedup_deleted, load_json, save_json
+from scraper import (
+    batch_pause,
+    check_still_free,
+    create_session,
+    now_iso,
+    polite_delay,
+    should_batch_pause,
+)
 
 DELETED_LOG = "scripts/deleted_games.json"
-
-
-def load_json(path: str, default=None):
-    if default is None:
-        default = []
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return default
-
-
-def save_json(path: str, data) -> None:
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 def main() -> None:
@@ -64,7 +50,7 @@ def main() -> None:
 
         if result is None:
             # Network error — don't delete, keep game
-            print(f"  → Network error, keeping game.")
+            print("  → Network error, keeping game.")
             keep.append(game)
             errors += 1
         elif result is True:
@@ -72,7 +58,7 @@ def main() -> None:
             keep.append(game)
         else:
             # Became paid → remove
-            print(f"  ✘ Game became paid — removing.")
+            print("  ✘ Game became paid — removing.")
             deleted_log.append({
                 "url": url,
                 "name": name,
@@ -89,7 +75,7 @@ def main() -> None:
 
     # Save
     save_all_games(keep)
-    save_json(DELETED_LOG, deleted_log)
+    save_json(DELETED_LOG, dedup_deleted(deleted_log))
 
     print(
         f"\nDone — {removed} removed (paid), {errors} network errors, "

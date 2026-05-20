@@ -6,6 +6,10 @@ Produces a human-readable log file of all games removed from the list.
 
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(__file__))
+from json_io import dedup_deleted
 
 DELETED_JSON = "scripts/deleted_games.json"
 DELETED_TXT = "deleted_games.txt"
@@ -16,8 +20,10 @@ def main() -> None:
         print("No deleted_games.json found — nothing to export.")
         return
 
-    with open(DELETED_JSON, "r", encoding="utf-8") as f:
+    with open(DELETED_JSON, encoding="utf-8") as f:
         entries: list[dict] = json.load(f)
+
+    entries = dedup_deleted(entries)
 
     if not entries:
         print("deleted_games.json is empty — nothing to export.")
@@ -48,7 +54,7 @@ def main() -> None:
             f.write(f"   Reason: {reason}\n")
             f.write("\n")
 
-    print(f"Exported {len(entries)} deleted game(s) → {DELETED_TXT}")
+    print(f"Exported {len(entries)} deleted game(s) -> {DELETED_TXT}")
 
 
 if __name__ == "__main__":

@@ -31,7 +31,7 @@ show the build date.
 | `/games` | [src/routes/games.tsx](src/routes/games.tsx) | Virtualized DataTable + faceted filters; bulk edit / delete |
 | `/games/:slug` | [src/routes/game-detail.tsx](src/routes/game-detail.tsx) | 23-field read view + edit form for `safe_virus` / `notes` / `nsfw` |
 | `/add` | [src/routes/add.tsx](src/routes/add.tsx) | Single URL or bulk paste → dispatch scraper workflow |
-| `/charts` | [src/routes/charts.tsx](src/routes/charts.tsx) | 9 Recharts visualizations across 4 tabs |
+| `/charts` | [src/routes/charts.tsx](src/routes/charts.tsx) | 16 charts + KPI cards across 4 tabs |
 | `/workflows` | [src/routes/workflows.tsx](src/routes/workflows.tsx) | Workflow run history + manual dispatch |
 | `/deleted` | [src/routes/deleted.tsx](src/routes/deleted.tsx) | Tombstone log of removed games |
 | `/settings` | [src/routes/settings.tsx](src/routes/settings.tsx) | PAT lock/unlock, theme, sidebar prefs |

@@ -1,6 +1,7 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { lazy, Suspense, useEffect, useRef } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { Sidebar, MobileTopBar } from '@/components/sidebar'
+import ScrollToTop from '@/components/scroll-to-top'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import { useDensityEffect } from '@/hooks/useDensityEffect'
@@ -45,13 +46,14 @@ function ScrollToHash() {
 export default function App() {
   useThemeEffect()
   useDensityEffect()
+  const mainRef = useRef<HTMLElement>(null)
   return (
     <div className="flex h-[100dvh] overflow-hidden">
       <ScrollToHash />
       <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
         <MobileTopBar />
-        <main className="flex-1 overflow-y-auto">
+        <main ref={mainRef} className="flex-1 overflow-y-auto">
           <Suspense fallback={<RouteFallback />}>
             <Routes>
               <Route path="/" element={<Dashboard />} />
@@ -67,6 +69,7 @@ export default function App() {
             </Routes>
           </Suspense>
         </main>
+        <ScrollToTop targetRef={mainRef} />
       </div>
     </div>
   )

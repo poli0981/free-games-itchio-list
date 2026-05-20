@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-3.4.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-3.5.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
 
@@ -35,7 +35,7 @@ Các bảng được tự tạo và chia theo thể loại chính (tối đa 300
 
 ## Webapp (duyệt + sửa + analytics)
 
-Một SPA React + TypeScript trong [`webapp/`](webapp/) cung cấp giao diện duyệt trên cùng catalog JSON: DataTable virtualized cho 500+ game, faceted filter (thể loại / trạng thái / nền tảng / NSFW), 9 chart (Recharts), bulk edit/delete qua GitHub Git Data API, và một flow "add" một-click dispatch workflow scraper với input URL.
+Một SPA React + TypeScript trong [`webapp/`](webapp/) cung cấp giao diện duyệt trên cùng catalog JSON: DataTable virtualized cho 500+ game, faceted filter (thể loại / trạng thái / nền tảng / NSFW), 16 chart (Recharts), bulk edit/delete qua GitHub Git Data API, và một flow "add" một-click dispatch workflow scraper với input URL.
 
 - **Bản web**: deploy lên GitHub Pages bởi [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml) — push vào `main` chạm `webapp/` sẽ tự ship. (Setup một lần: repo Settings → Pages → Source = "GitHub Actions".)
 - **Bản desktop (tùy chọn)**: cùng code React đóng gói thành app native Tauri 2 cho Windows / macOS / Linux. Xem [`webapp/TAURI.md`](webapp/TAURI.md) để biết yêu cầu và `npm run tauri:dev`.

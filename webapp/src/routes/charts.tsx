@@ -2,7 +2,12 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
   AvgSessionChart,
+  DeletionReasonsChart,
+  DeletionsOverTimeChart,
+  GameCountChart,
   GenreChart,
+  GenreTreemapChart,
+  KpiCards,
   LanguagesChart,
   MadeWithChart,
   OnlineOfflineChart,
@@ -10,15 +15,17 @@ import {
   RatingChart,
   RecentDeletedChart,
   StatusChart,
+  TopRatedCountChart,
   TopTagsChart,
 } from '@/components/charts'
-import { useAllGames, useDeletedGames } from '@/hooks/useGames'
+import { useAllGames, useCountHistory, useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 
 export default function Charts() {
   useDocumentTitle('Charts')
   const games = useAllGames()
   const deleted = useDeletedGames()
+  const history = useCountHistory()
 
   if (games.isLoading) {
     return (
@@ -44,6 +51,7 @@ export default function Charts() {
 
   const data = games.data?.games ?? []
   const deletedList = deleted.data ?? []
+  const historyList = history.data ?? []
 
   return (
     <div className="container mx-auto p-6">
@@ -57,12 +65,14 @@ export default function Charts() {
           <TabsTrigger value="discovery">Discovery</TabsTrigger>
         </TabsList>
 
-        <TabsContent value="overview">
+        <TabsContent value="overview" className="space-y-4">
+          <KpiCards games={data} deleted={deletedList} />
           <div className="grid gap-4 md:grid-cols-2">
             <GenreChart games={data} />
             <StatusChart games={data} />
             <OnlineOfflineChart games={data} />
             <MadeWithChart games={data} />
+            <GameCountChart history={historyList} />
           </div>
         </TabsContent>
 
@@ -76,15 +86,18 @@ export default function Charts() {
         </TabsContent>
 
         <TabsContent value="quality">
-          <div className="grid gap-4 md:grid-cols-1">
+          <div className="grid gap-4 md:grid-cols-2">
             <RatingChart games={data} />
-            <RecentDeletedChart deleted={deletedList} />
+            <TopRatedCountChart games={data} />
+            <DeletionsOverTimeChart deleted={deletedList} />
+            <DeletionReasonsChart deleted={deletedList} />
           </div>
         </TabsContent>
 
         <TabsContent value="discovery">
-          <div className="grid gap-4">
+          <div className="grid gap-4 md:grid-cols-2">
             <TopTagsChart games={data} />
+            <GenreTreemapChart games={data} />
           </div>
         </TabsContent>
       </Tabs>

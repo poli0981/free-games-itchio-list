@@ -13,10 +13,10 @@ Provides:
 import random
 import time
 from datetime import datetime, timezone
+from html import unescape
 
 import requests
 from bs4 import BeautifulSoup
-from html import unescape
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 

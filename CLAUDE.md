@@ -7,8 +7,9 @@ Quick context so future Claude sessions don't have to re-derive it.
 Two layers stacked on the same JSON catalog of free itch.io games:
 
 1. **Python pipeline** — the data layer.
-   - `data_game/game_info_NNN.json` — chunked records, max 500 per file, ~514 games as of v3.1.1.
-   - `scripts/` — `scraper.py` (shared session + parsing), `data_store.py` (chunk load/save/rebalance), `update_info.py`, `check_paid.py`, `check_alive.py`, `generate_md.py`, `log_deleted.py`.
+   - `data_game/game_info_NNN.json` — chunked records, max 500 per file, ~1,470 games as of v3.5.0.
+   - `data_game/index.json` — chunk manifest (total + per-file counts). `data_game/count_history.json` — date-keyed `{date,total}` series powering the "games over time" chart.
+   - `scripts/` — `scraper.py` (shared session + parsing), `data_store.py` (chunk load/save/rebalance, writes `index.json` + `count_history.json`), `json_io.py` (shared `load_json`/`save_json` + `dedup_deleted`), `update_info.py`, `check_paid.py`, `check_alive.py`, `check_duplicate.py`, `update_reviews.py`, `update_status.py`, `force_update.py`, `generate_md.py`, `log_deleted.py`, `backfill_count_history.py` (one-time count-history seed). Lint: `ruff check scripts/` (config in root `pyproject.toml`).
    - `lists/{genre}.md` — auto-generated, **never edit by hand**.
    - `bash/` — wrappers used by the GitHub Actions workflows.
 2. **Webapp** — `webapp/` (React 19 + TypeScript 6 + Vite 8 + Tailwind v3 + shadcn/ui, Tauri 2 desktop wrapper in `webapp/src-tauri/`). Reads from `raw.githubusercontent.com`; writes via GitHub API with an encrypted PAT.
@@ -36,7 +37,7 @@ Path alias: `@/*` → `webapp/src/*`. Vite `define`s `__BUILD_DATE__` so About p
 - `src/routes/*.tsx` — one file per route; `App.tsx` wires `react-router-dom` HashRouter.
 - `src/components/data-table/*` — `DataTable` (TanStack Table + Virtual + pagination), `data-table-toolbar`, `data-table-pagination`, `faceted-filter`, `columns`. Row keys are URL-based (`getRowId: g => g.url`) so selection survives sort/filter/page changes.
 - `src/components/ui/*` — shadcn primitives (Button, Card, Input, Label, Badge, Skeleton, Separator, Tabs, Popover, Checkbox, Select, Switch, Textarea, Dialog).
-- `src/components/charts.tsx` — 9 Recharts charts grouped into 4 tabs.
+- `src/components/charts/` — chart module (one file per chart, shared `chart-card.tsx` with `ChartCard` + `PALETTE`, `index.ts` barrel). 16 charts across 4 tabs.
 - `src/lib/github/` — `client.ts` (Octokit factory), `data-store.ts` (TS port of `scripts/data_store.py`), `contents.ts` (single-file commits — routed through Git Data API so they can be signed), `git-data.ts` (atomic multi-file commit; optional signer for GPG), `signer.ts` (builds a `CommitSigner` from gpg store + auth + prefs), `workflow.ts` (dispatch + poll).
 - `src/lib/gpg/` — `canonicalize.ts` (pure: builds the byte string Git would hash for a commit), `sign.ts` (lazy-imports `openpgp`, exports `loadPrivateKey` / `signCommit` / `verifyDetached`), `storage.ts` (encrypted-key + metadata in localStorage).
 - `src/lib/crypto.ts` — AES-GCM 256 + PBKDF2-SHA256 100k rounds. **Uint8Array generic must be `<ArrayBuffer>`** under TS 6, not `<ArrayBufferLike>` — Web Crypto rejects the latter.
@@ -107,6 +108,6 @@ Fine-grained PAT scoped to **only this repo** with:
 - Don't commit a real PAT, ever. Settings page handles it client-side; CI uses `secrets.GH_TOKEN`.
 - When adding an npm dep, also add it to `webapp/src/lib/about.ts` so the About page lists it.
 
-## Current state (as of v3.1.1)
+## Current state (as of v3.5.0)
 
-`main` is the trunk. All feature work has merged. Tags `v3.0.0`, `v3.0.1`, `v3.1.0`, `v3.1.1` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/` once the user enables Pages → Source = GitHub Actions in repo Settings.
+`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.5.0` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`.
