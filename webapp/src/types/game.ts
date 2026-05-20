@@ -38,6 +38,11 @@ export interface DeletedGameEntry {
   deleted_at: string
 }
 
+export interface CountHistoryPoint {
+  date: string
+  total: number
+}
+
 export interface ChunkPlan {
   name: string
   games: Game[]

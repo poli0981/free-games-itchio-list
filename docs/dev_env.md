@@ -32,6 +32,7 @@ checked into the repo.
 ```sh
 pip install -r scripts/requirements.txt   # if/when present, else: beautifulsoup4 requests
 python scripts/update_info.py
+ruff check scripts/                        # lint Python (pip install ruff; config in root pyproject.toml)
 ```
 
 The pipeline reads `scripts/temp_link.json` (a JSON array of itch.io URLs)

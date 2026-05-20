@@ -12,39 +12,25 @@ Flow:
 Uses lighter delays than full scrape since we don't parse HTML.
 """
 
-import json
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from scraper import (
-    create_session,
-    check_url_alive,
-    light_delay,
-    batch_pause,
-    should_batch_pause,
-    now_iso,
-)
 from data_store import load_all_games, save_all_games
+from json_io import dedup_deleted, load_json, save_json
+from scraper import (
+    batch_pause,
+    check_url_alive,
+    create_session,
+    light_delay,
+    now_iso,
+    should_batch_pause,
+)
 
 DELETED_LOG = "scripts/deleted_games.json"
 
 # Only these status codes trigger deletion
 DEAD_CODES = {404, 410}  # Not Found, Gone
-
-
-def load_json(path: str, default=None):
-    if default is None:
-        default = []
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return default
-
-
-def save_json(path: str, data) -> None:
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 def main() -> None:
@@ -70,7 +56,7 @@ def main() -> None:
 
         if status is None:
             # Connection failed entirely — keep game
-            print(f"  → Connection error, keeping game.")
+            print("  → Connection error, keeping game.")
             keep.append(game)
             errors += 1
         elif status in DEAD_CODES:
@@ -96,7 +82,7 @@ def main() -> None:
 
     # Save
     save_all_games(keep)
-    save_json(DELETED_LOG, deleted_log)
+    save_json(DELETED_LOG, dedup_deleted(deleted_log))
 
     print(
         f"\nDone — {removed} removed (dead), {errors} errors, "

@@ -16,14 +16,14 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
+from data_store import load_all_games, save_all_games
 from scraper import (
-    create_session,
-    scrape_game_info,
-    polite_delay,
     batch_pause,
+    create_session,
+    polite_delay,
+    scrape_game_info,
     should_batch_pause,
 )
-from data_store import load_all_games, save_all_games
 
 
 def main() -> None:

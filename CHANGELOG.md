@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented here.
 
+## [3.5.0] - 2026-05-20 (Charts expansion + game-count history + pipeline cleanup)
+
+### Added
+
+- **Six new charts on `/charts`.**
+  - **Game count over time** — a `LineChart` of the catalog size by day, backed by a new `data_game/count_history.json` (date-keyed `{date, total}` series). [`scripts/data_store.py`](scripts/data_store.py) `_append_count_history()` upserts today's total on every catalog write (last-write-wins per UTC day). [`scripts/backfill_count_history.py`](scripts/backfill_count_history.py) is a one-time dev tool that reconstructs the series from git history (`data_game/index.json`, plus the pre-refactor `scripts/game_info.json`). The webapp loads it via `loadCountHistory` / `useCountHistory`.
+  - **Genre treemap** — a Recharts `Treemap` with a custom cell renderer that hides labels on rectangles too small to fit them, so it stays legible on mobile.
+  - **KPI summary cards** — total games / online / NSFW / deleted / average rating, above the Overview grid.
+  - **Deletions over time** (bar, by month), **Deletion reasons** (pie: became-paid vs page-removed), and **Most rated games** (top 10 by `rating_count`).
+- **Scroll-to-top button** — a floating bottom-right button that appears after scrolling the main pane. New [`webapp/src/components/scroll-to-top.tsx`](webapp/src/components/scroll-to-top.tsx).
+- **Python linting** — `ruff` config in a new root `pyproject.toml`; run `ruff check scripts/`.
+
+### Changed
+
+- **`charts.tsx` split into a module.** The monolith is now a `webapp/src/components/charts/` folder — one file per chart, a shared `chart-card.tsx` (`ChartCard` + `PALETTE`), and an `index.ts` barrel. 16 charts across the 4 tabs.
+- **`scripts/json_io.py`** — new shared module. `load_json` / `save_json` (previously copy-pasted into both `check_alive.py` and `check_paid.py`) live here now, alongside `dedup_deleted`.
+- README + README.vi badges bumped to `3.5.0`.
+
+### Fixed
+
+- **The deleted-games log can no longer accumulate duplicate URLs.** `check_alive.py` and `check_paid.py` appended to `scripts/deleted_games.json` with no guard — a game removed, re-added by the scraper, then removed again would be logged twice. The new `dedup_deleted()` (keyed by URL, keeping the earliest `deleted_at`) runs on every write and inside `log_deleted.py`. Two genuinely different games that share a title but have different urls are kept separate.
+
+### Notes
+
+- No Tauri / Rust binary boundary change — `Cargo.toml` and `tauri.conf.json` stay at `0.1.1`, no `THIRD_PARTY` entries change (Recharts already shipped; `Treemap` / `LineChart` need no new dependency).
+- `data_game/count_history.json` is auto-committed by the scrape workflows — the bash wrappers already `git add data_game/` wholesale, so no workflow changes were needed.
+- The dead-code sweep found the project already tidy (TS strict mode + ESLint catch unused webapp code). `webapp/src/lib/tauri-scrape.ts` `tauriScrapePreview` was reviewed and intentionally kept as a Phase-8b stub.
+
+---
+
 ## [3.4.1] - 2026-05-17 (Hotfix: DataTable column alignment + Discussion-announce auto-discovery)
 
 ### Fixed

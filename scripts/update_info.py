@@ -14,14 +14,14 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
+from data_store import get_all_urls, load_all_games, save_all_games
 from scraper import (
-    create_session,
-    scrape_game_info,
-    polite_delay,
     batch_pause,
+    create_session,
+    polite_delay,
+    scrape_game_info,
     should_batch_pause,
 )
-from data_store import load_all_games, save_all_games, get_all_urls
 
 TEMP_LINK = "scripts/temp_link.json"
 
@@ -30,7 +30,7 @@ def main() -> None:
     new_links: list[str] = []
 
     if os.path.exists(TEMP_LINK):
-        with open(TEMP_LINK, "r", encoding="utf-8") as f:
+        with open(TEMP_LINK, encoding="utf-8") as f:
             new_links = json.load(f)
 
     # Append a single URL passed via workflow_dispatch input (webapp uses this).
@@ -72,7 +72,7 @@ def main() -> None:
             continue
 
         if not info.get("is_free", True):
-            print(f"  → Paid game, skipping.")
+            print("  → Paid game, skipping.")
             skipped_paid += 1
             polite_delay()
             continue

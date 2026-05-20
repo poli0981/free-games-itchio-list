@@ -35,6 +35,7 @@ VS Code, Sublime, vim, v.v. đều dùng được; không có gì JetBrains-spec
 ```sh
 pip install beautifulsoup4 requests
 python scripts/update_info.py
+ruff check scripts/                  # lint Python (pip install ruff; cấu hình ở pyproject.toml gốc)
 ```
 
 Pipeline đọc `scripts/temp_link.json` (mảng JSON các URL itch.io)

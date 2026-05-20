@@ -20,6 +20,7 @@ DATA_DIR = "data_game"
 FILE_PREFIX = "game_info_"
 FILE_SUFFIX = ".json"
 INDEX_FILE = os.path.join(DATA_DIR, "index.json")
+COUNT_HISTORY_FILE = os.path.join(DATA_DIR, "count_history.json")
 CHUNK_SIZE = 500
 
 
@@ -38,15 +39,16 @@ def load_all_games() -> list[dict]:
     """Load every chunk file and return a single flat list."""
     games: list[dict] = []
     for path in _list_chunk_files():
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             games.extend(json.load(f))
     return games
 
 
 def _write_index(chunks: list[tuple[str, int]]) -> None:
     """Write data_game/index.json with metadata about all chunk files."""
+    total = sum(count for _, count in chunks)
     index = {
-        "total_games": sum(count for _, count in chunks),
+        "total_games": total,
         "max_per_file": CHUNK_SIZE,
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "files": [
@@ -56,6 +58,34 @@ def _write_index(chunks: list[tuple[str, int]]) -> None:
     }
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=4)
+    _append_count_history(total)
+
+
+def _append_count_history(total: int) -> None:
+    """Record today's total game count in data_game/count_history.json.
+
+    Date-keyed upsert: each UTC day holds one row. Multiple pipeline runs
+    on the same day overwrite that day's count (last write wins), so the
+    series stays one point per day. A corrupt or unreadable file falls
+    back to an empty history rather than aborting the save.
+    """
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    history: list[dict] = []
+    if os.path.exists(COUNT_HISTORY_FILE):
+        try:
+            with open(COUNT_HISTORY_FILE, encoding="utf-8") as f:
+                history = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            history = []
+    for row in history:
+        if row.get("date") == today:
+            row["total"] = total
+            break
+    else:
+        history.append({"date": today, "total": total})
+    history.sort(key=lambda r: r.get("date", ""))
+    with open(COUNT_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=4)
 
 
 def save_all_games(games: list[dict]) -> None:

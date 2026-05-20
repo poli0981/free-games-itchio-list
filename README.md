@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-3.4.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
+[![Version](https://img.shields.io/badge/version-3.5.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
@@ -42,7 +42,7 @@ are added.
 
 A React + TypeScript SPA in [`webapp/`](webapp/) provides a browsable UI on top of the same JSON
 catalog: virtualized DataTable for all 500+ games, faceted filters (genre / status / platforms /
-NSFW), 9 charts (Recharts), bulk edit/delete via the GitHub Git Data API, and a one-click "add"
+NSFW), 16 charts (Recharts), bulk edit/delete via the GitHub Git Data API, and a one-click "add"
 flow that dispatches the scraper workflow with a URL input.
 
 - **Web build**: deployed to GitHub Pages by [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml)

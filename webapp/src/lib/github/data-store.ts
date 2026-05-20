@@ -1,4 +1,10 @@
-import type { Game, GameDbIndex, ChunkPlan, DeletedGameEntry } from '@/types/game'
+import type {
+  Game,
+  GameDbIndex,
+  ChunkPlan,
+  DeletedGameEntry,
+  CountHistoryPoint,
+} from '@/types/game'
 import { MAX_PER_FILE, PATHS } from '../config'
 import { fetchRaw } from './raw'
 
@@ -20,6 +26,14 @@ export async function loadAllGames(): Promise<{ games: Game[]; index: GameDbInde
 export async function loadDeletedLog(): Promise<DeletedGameEntry[]> {
   try {
     return await fetchRaw<DeletedGameEntry[]>(PATHS.deletedJson)
+  } catch {
+    return []
+  }
+}
+
+export async function loadCountHistory(): Promise<CountHistoryPoint[]> {
+  try {
+    return await fetchRaw<CountHistoryPoint[]>(PATHS.countHistory)
   } catch {
     return []
   }

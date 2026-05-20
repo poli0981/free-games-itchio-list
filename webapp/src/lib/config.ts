@@ -9,6 +9,7 @@ export const RAW_BASE = `https://raw.githubusercontent.com/${REPO.owner}/${REPO.
 export const PATHS = {
   index: 'data_game/index.json',
   chunk: (filename: string) => `data_game/${filename}`,
+  countHistory: 'data_game/count_history.json',
   deletedJson: 'scripts/deleted_games.json',
   tempLink: 'scripts/temp_link.json',
 } as const
