@@ -18,5 +18,18 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
     },
+    rules: {
+      // TanStack Table's useReactTable returns functions that can't be
+      // memoized — the React Compiler warning is not actionable here.
+      'react-hooks/incompatible-library': 'off',
+    },
+  },
+  {
+    // shadcn/ui primitives intentionally mix component and variant/
+    // constant exports; the rule can't be satisfied without forking them.
+    files: ['src/components/ui/**'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
   },
 ])

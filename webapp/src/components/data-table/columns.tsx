@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 import type { ColumnDef, FilterFn, RowData } from '@tanstack/react-table'
-import { ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
+import { SortableHeader } from './sortable-header'
 
 declare module '@tanstack/react-table' {
   // priority 1 — always visible. priority 2 — visible at md+. priority 3 — visible at lg+.
@@ -22,27 +21,6 @@ const arrayIncludesAny: FilterFn<Game> = (row, columnId, filterValue) => {
   if (Array.isArray(cell)) return cell.some((v) => filterValue.includes(v))
   if (typeof cell === 'string') return filterValue.includes(cell)
   return false
-}
-
-interface SortableHeaderProps {
-  label: string
-  sorted: false | 'asc' | 'desc'
-  onClick: (e: React.MouseEvent) => void
-}
-
-function SortableHeader({ label, sorted, onClick }: SortableHeaderProps) {
-  return (
-    <Button variant="ghost" size="sm" onClick={onClick} className="-ml-3 h-8">
-      {label}
-      {sorted === 'asc' ? (
-        <ArrowUp className="h-3.5 w-3.5" />
-      ) : sorted === 'desc' ? (
-        <ArrowDown className="h-3.5 w-3.5" />
-      ) : (
-        <ArrowUpDown className="h-3.5 w-3.5 opacity-50" />
-      )}
-    </Button>
-  )
 }
 
 export const gameColumns: ColumnDef<Game>[] = [
