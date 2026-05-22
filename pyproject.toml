@@ -1,8 +1,9 @@
 # Project tooling configuration.
 #
-# Ruff is the only tool configured here: the repo has no Python build
-# system — the scraper pipeline runs the scripts/ modules directly.
-# Run it with:  ruff check scripts/
+# The repo has no Python build system — the scraper pipeline runs the
+# scripts/ modules directly. Lint + dead-code tools configured here:
+#   ruff check scripts/   — style, unused imports/variables
+#   vulture               — dead code (unused functions, classes, attributes)
 
 [tool.ruff]
 line-length = 100
@@ -10,3 +11,10 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W", "UP", "B"]
+
+[tool.vulture]
+paths = ["scripts", "webapp/scripts"]
+min_confidence = 60
+# requests.Response.encoding is assigned to force UTF-8 decoding but is read
+# internally by requests, so vulture flags the assignment as an unused attribute.
+ignore_names = ["encoding"]

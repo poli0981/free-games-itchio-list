@@ -4,7 +4,6 @@ import { forwardRef, type ComponentPropsWithoutRef, type ElementRef } from 'reac
 import { cn } from '@/lib/utils'
 
 export const Select = SelectPrimitive.Root
-export const SelectGroup = SelectPrimitive.Group
 export const SelectValue = SelectPrimitive.Value
 
 export const SelectTrigger = forwardRef<

@@ -1,15 +1,14 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { X } from 'lucide-react'
-import { forwardRef, type ComponentPropsWithoutRef, type ElementRef, type HTMLAttributes } from 'react'
+import { forwardRef, type ComponentPropsWithoutRef, type ElementRef } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 export const Sheet = DialogPrimitive.Root
 export const SheetTrigger = DialogPrimitive.Trigger
-export const SheetClose = DialogPrimitive.Close
-export const SheetPortal = DialogPrimitive.Portal
+const SheetPortal = DialogPrimitive.Portal
 
-export const SheetOverlay = forwardRef<
+const SheetOverlay = forwardRef<
   ElementRef<typeof DialogPrimitive.Overlay>,
   ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
 >(({ className, ...props }, ref) => (
@@ -63,10 +62,6 @@ export const SheetContent = forwardRef<
   </SheetPortal>
 ))
 SheetContent.displayName = 'SheetContent'
-
-export const SheetHeader = ({ className, ...props }: HTMLAttributes<HTMLDivElement>) => (
-  <div className={cn('flex flex-col space-y-1 px-4 pb-2 pt-3 text-left', className)} {...props} />
-)
 
 export const SheetTitle = forwardRef<
   ElementRef<typeof DialogPrimitive.Title>,

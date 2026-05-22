@@ -3,7 +3,7 @@ import { useAuth } from '@/stores/auth'
 import { useGpg } from '@/stores/gpg'
 import { usePrefs } from '@/stores/prefs'
 
-export interface CommitIdentity {
+interface CommitIdentity {
   name: string
   email: string
 }
@@ -24,7 +24,7 @@ export interface CommitSigner {
  * For GPG-signed commits to show as "Verified" on GitHub, the email MUST match a UID in the
  * uploaded public key — that's why we prefer the GPG key's email over the GitHub noreply.
  */
-export function resolveCommitIdentity(): CommitIdentity {
+function resolveCommitIdentity(): CommitIdentity {
   const prefs = usePrefs.getState()
   const gpg = useGpg.getState()
   const user = useAuth.getState().user

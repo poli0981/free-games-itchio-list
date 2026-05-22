@@ -8,7 +8,3 @@ export async function fetchRaw<T>(path: string): Promise<T> {
   }
   return res.json() as Promise<T>
 }
-
-export function rawUrl(path: string): string {
-  return `${RAW_BASE}/${path}`
-}

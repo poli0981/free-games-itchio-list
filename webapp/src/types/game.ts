@@ -47,27 +47,3 @@ export interface ChunkPlan {
   name: string
   games: Game[]
 }
-
-export const EDITABLE_FIELDS = ['safe_virus', 'notes', 'nsfw'] as const
-export type EditableField = (typeof EDITABLE_FIELDS)[number]
-
-export const READONLY_FIELDS = [
-  'url',
-  'name',
-  'dev',
-  'description',
-  'genre',
-  'status',
-  'publisher',
-  'release_date',
-  'rating',
-  'rating_count',
-  'average_session',
-  'thumbnail',
-  'tags',
-  'platforms',
-  'languages',
-  'inputs',
-  'made_with',
-] as const
-export type ReadonlyField = (typeof READONLY_FIELDS)[number]

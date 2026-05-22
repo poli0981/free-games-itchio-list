@@ -1,10 +1,9 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
-export type Density = 'compact' | 'normal'
+type Density = 'compact' | 'normal'
 
 export const IDLE_TIMEOUT_OPTIONS = [5, 15, 30, 60, 120] as const
-export type IdleTimeoutMin = (typeof IDLE_TIMEOUT_OPTIONS)[number]
 
 export const NOTIFICATION_DURATION_OPTIONS = [2_000, 4_000, 6_000, 10_000] as const
 
