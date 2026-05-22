@@ -17375,5 +17375,38 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://tost-games.itch.io/concrete-abyss",
+        "name": "Concrete Abyss",
+        "dev": "TOST, LeN",
+        "description": "Concrete Abyss is an atmospheric first-person action game set within the vast substructure E-01 — a dead concrete-metal world where surveillance systems still operate and system units perceive you ...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "31",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTExODg4LnBuZw==/original/RdxeTG.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Female Protagonist",
+            "First-Person",
+            "FPS",
+            "Horror",
+            "Sci-fi",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
