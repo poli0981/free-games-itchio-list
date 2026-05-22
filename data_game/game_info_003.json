@@ -17408,5 +17408,1144 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://sheol01.itch.io/can-i-come-in",
+        "name": "Can I Come In?",
+        "dev": "SHEOL GAMES",
+        "description": "Plot: Find yourself being awoken in the middle of the night.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.1",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyMzQwMTA3LmpwZw==/original/QBVwME.jpg",
+        "tags": [
+            "3D",
+            "Creepy",
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Scary",
+            "Survival Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://nogginfrog.itch.io/absorbpit",
+        "name": "AbsorbPit",
+        "dev": "nogginfrog",
+        "description": "AbsorbPit is an incremental game about throwing magical orbs into a sinkhole to get treasure, have fun and possibly awaken an elder god.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzkzNzgwLnBuZw==/original/LVhITD.png",
+        "tags": [
+            "2D",
+            "Incremental",
+            "Pixel Art",
+            "Side Scroller"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://volnyinteractive.itch.io/setor-87",
+        "name": "Sector 87",
+        "dev": "Volny Interactive",
+        "description": "[EN] Location: Interior of Northeast Brazil.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NzEzOTQ5LnBuZw==/original/n%2FY5Ft.png",
+        "tags": [
+            "brazil",
+            "demo",
+            "Horror",
+            "Low-poly",
+            "PSX (PlayStation)",
+            "Retro",
+            "Short",
+            "Survival Horror",
+            "Third Person"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://fansi.itch.io/criticalmass",
+        "name": "CriticalMass",
+        "dev": "Sir_Fansi",
+        "description": "Every black hole starts with a single particle.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "2.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk4NDM4LnBuZw==/original/c2mLsy.png",
+        "tags": [
+            "Arcade",
+            "Casual",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Indie",
+            "Management"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jotd666.itch.io/rocnrope",
+        "name": "Roc'N Rope",
+        "dev": "jotd666",
+        "description": "\"# Roc'NRope\" port of Roc'NRope for Amiga AGA or ECS.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzEyNzU0LnBuZw==/original/RvC1n8.png",
+        "tags": [
+            "Arcade",
+            "Cult Classic",
+            "retrogaming"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://retroteamgames.itch.io/chrome-horizon",
+        "name": "Chrome-Horizon C64",
+        "dev": "retroteamgames",
+        "description": "Classic Shoot'em up Action Meets Modern Engineering Chrome Horizon is a fast-paced horizontal scrolling shoot 'em up for the Commodore 64 .",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk1MzAzLnBuZw==/original/VBzUAS.png",
+        "tags": [
+            "8-Bit",
+            "Commodore 64",
+            "Retro",
+            "Sci-fi",
+            "Shoot 'Em Up",
+            "Side Scroller"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Joystick"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://carnaxcce.itch.io/numberpop",
+        "name": "NumberPOP",
+        "dev": "carnaxcce",
+        "description": "A little game I made in Odin with Raylib and Box2D! Left click to drop a ball, right click to swap balls.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk3ODU4LnBuZw==/original/LfVl%2FB.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "No AI",
+            "odin",
+            "raylib",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://hrdtsn.itch.io/increnoir",
+        "name": "INCRENoir",
+        "dev": "Hrdtsn",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzkwNDUyLnBuZw==/original/IPaYK%2B.png",
+        "tags": [
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://irgamer.itch.io/kaiju-kaiser",
+        "name": "Kaiju Kaiser",
+        "dev": "iRgamer",
+        "description": "Fight, Train, create the ultimate Kaiju",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk2MTc1LmpwZw==/original/tCcgmS.jpg",
+        "tags": [
+            "3D",
+            "Casual",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Monsters",
+            "Sci-fi",
+            "Singleplayer",
+            "Strategy RPG",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kwetka.itch.io/leave",
+        "name": "LEAVE: Remake",
+        "dev": "Kwetka",
+        "description": "Ryan's ship has crashed on an unknown planet.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "17",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTU1NDIyLnBuZw==/original/sPEMIA.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Indie",
+            "Ludum Dare 59",
+            "Narrative",
+            "Sci-fi",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Construct"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://neokry.itch.io/custody",
+        "name": "Custody",
+        "dev": "neokry",
+        "description": "The Filing Desk receives one specimen at a time.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAwMDQwLmpwZWc=/original/fjAXwr.jpeg",
+        "tags": [
+            "Atmospheric",
+            "Detective",
+            "Horror",
+            "Mystery",
+            "Point & Click",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bodinhe.itch.io/takecareofthedog",
+        "name": "TAKE CARE OF THE DOG",
+        "dev": "bodinhe",
+        "description": "■ Woof woof! -Dog.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDY0NDYwLnBuZw==/original/GOxZTa.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Dogs",
+            "Horror",
+            "Indie",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Adobe Photoshop"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://loganmc10.itch.io/gopher64",
+        "name": "Gopher64",
+        "dev": "loganmc10",
+        "description": "Gopher64 is a cross-platform N64 emulator.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODcwNTcwLnBuZw==/original/xacNGq.png",
+        "tags": [
+            "Emulator",
+            "n64",
+            "Nintendo 64",
+            "Open Source",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Japanese",
+            "Dutch",
+            "Portuguese (Brazil)",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Joystick",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "SDL",
+            "Rust"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://molisoft.itch.io/beltalowda-eng",
+        "name": "Beltalowda (English Version)",
+        "dev": "molisoft",
+        "description": "This game is a text adventure for ZX Spectrum 128K (tape).",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjgyMjExLnBuZw==/original/y9cVOf.png",
+        "tags": [
+            "Retro",
+            "text-adventure",
+            "ZX Spectrum"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://smashwall.itch.io/panzer-deck",
+        "name": "Panzer Deck",
+        "dev": "SmashWall",
+        "description": "In Panzer Deck, cards are more than just stats, they are geometric patterns that allow you to manage resources, recruit units, and amplify their power.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "3",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzcxMTYzLnBuZw==/original/WxKQn9.png",
+        "tags": [
+            "Deck Building",
+            "No AI",
+            "Singleplayer",
+            "Tactical",
+            "Tanks",
+            "Turn-based",
+            "World War II"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Latin America",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Chinese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://donian.itch.io/kitty-kingdom",
+        "name": "Kitty Kingdom",
+        "dev": "Donian",
+        "description": "Click the cats to pet them, giving you points.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk2MTc4LnBuZw==/original/BGWwqk.png",
+        "tags": [
+            "2D",
+            "Cats",
+            "Clicker",
+            "Idle",
+            "No AI",
+            "Simple"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://pulpaulaa.itch.io/membrillo-hid-my-socks",
+        "name": "Membrillo Hid My Socks",
+        "dev": "pulpaulaa",
+        "description": "Membrillo Hid My Socks is a point & click hidden object game about finding your missing sock collection after your cat goes on a rampage and scatters them around your room.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "18",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDkyNjkxLmpwZw==/original/J8OTJW.jpg",
+        "tags": [
+            "2D",
+            "Cats",
+            "Colorful",
+            "Comedy",
+            "Cozy",
+            "Cute",
+            "Escape Game",
+            "Hand-drawn",
+            "Hidden Object",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://piro775.itch.io/fnaf-secret-of-the-mimic-fangame",
+        "name": "FNAF Secret of the mimic fangame",
+        "dev": "PIRO775",
+        "description": "V1.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA3OTYxLnBuZw==/original/g9nXJw.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://keddyy.itch.io/rainy-cafe",
+        "name": "Rainy Cafe",
+        "dev": "keddyy",
+        "description": "Rainy Cafe is a cafe management game that has a pixel graphics, there are 24 levels and total 1 hour of gameplay time, at advanced levels new drinks and cakes are unlocked and customer count increa...",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDQwMjY3LnBuZw==/original/w7JuwI.png",
+        "tags": [
+            "2D",
+            "Aseprite",
+            "Family Friendly",
+            "Indie",
+            "Pixel Art",
+            "Short",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://elteras.itch.io/agis",
+        "name": "Agis",
+        "dev": "Elteras",
+        "description": "My first proper learner project, made in Godot.",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTAyMjcxLnBuZw==/original/F2xI7G.png",
+        "tags": [
+            "Fantasy",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://quarantineweightgain.itch.io/primitive-saiyans-browser",
+        "name": "Primitive Saiyans Browser Version",
+        "dev": "Quarantine Weight Gain Funnies",
+        "description": "PC controls-------------------------------------------------------- SPACE - To Attack WASD or arrow keys to move around Pressing Exit Game may freeze the game.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgwMjMyLnBuZw==/original/dokVnN.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://requiem-games-xoxo.itch.io/requiem-a-new-world",
+        "name": "REQUIEM: A New World",
+        "dev": "Requiem Games",
+        "description": "\"In a world beyond the outer realm, beings of legend remain unknown.",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "10",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NTY0NzU3LnBuZw==/original/7ersyD.png",
+        "tags": [
+            "Boss battle",
+            "Fantasy",
+            "feet",
+            "Hand-drawn",
+            "Local Co-Op",
+            "Multiplayer",
+            "Roguelite",
+            "Romance",
+            "tickle",
+            "tickling"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller"
+        ],
+        "made_with": [
+            "GDevelop"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://luparc.itch.io/a-part-of-the-whole",
+        "name": "A Part of the Whole",
+        "dev": "Luparc Games",
+        "description": "A Part of the Whole is a quiet, atmospheric narrative experience about a boy searching through impossible worlds to find his missing sister.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTI3OTQ2LnBuZw==/original/UtZhG9.png",
+        "tags": [
+            "Atmospheric",
+            "Fantasy",
+            "Mystery",
+            "Narrative",
+            "Singleplayer",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Turkish"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://xvibit.itch.io/xvibit",
+        "name": "xvibit",
+        "dev": "xvibit",
+        "description": "DESCRIPTION: \"We fight.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzQ0OTA5LnBuZw==/original/0upmx%2B.png",
+        "tags": [
+            "2D",
+            "Demake",
+            "final-fantasy",
+            "JRPG",
+            "No AI",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Dance pad",
+            "Playstation controller",
+            "Joy-Con"
+        ],
+        "made_with": [
+            "RPG Maker",
+            "Aseprite"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://putuk.itch.io/zippis-ad-dodge",
+        "name": "Zippi's Ad-Dodge",
+        "dev": "Putuk",
+        "description": "Dodge ads and see how long you can go! Collect the data sphere for an additional 100 points! Maybe leave your high-score in the comments.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgzNjY3LnBuZw==/original/%2F1P4uz.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://clutch-games.itch.io/clickrealm-idle-mmorpg",
+        "name": "ClickRealm - Online MMORPG",
+        "dev": "Clutch Games",
+        "description": "ClickRealm is BACK! Season 1 is Live! ClickRealm is a free browser-based idle MMORPG where you fight monsters, explore dungeons, collect pets, craft gear, and compete with other players on the lead...",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjYxOTE2LmpwZw==/original/cFXri5.jpg",
+        "tags": [
+            "browser",
+            "Clicker",
+            "Crafting",
+            "Idle",
+            "MMORPG",
+            "Multiplayer",
+            "PvP"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://rinucomics.itch.io/god-is-dead-im-starving",
+        "name": "God is Dead & I'm Starving",
+        "dev": "rinucomics",
+        "description": "ABOUT GAME - Submission is the core thread of society.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "87",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mjk3NDUwLnBuZw==/original/zNSkM2.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Creepy",
+            "Horror",
+            "Psychological Horror",
+            "RPG Maker",
+            "Yandere",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://hit2key.itch.io/fun-fish-facts",
+        "name": "FUN FISH FACTS",
+        "dev": "hit2key",
+        "description": "There are creatures alive in the ocean.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAwNDA0LnBuZw==/original/Wa6Rrm.png",
+        "tags": [
+            "Bitsy",
+            "Minimalist",
+            "Narrative",
+            "Pixel Art",
+            "Short",
+            "Walking simulator",
+            "weird"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://aktham.itch.io/silkyroad",
+        "name": "SilkyRoad",
+        "dev": "aktham",
+        "description": "A roguelike train-builder auto-battler.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAwMTU1LnBuZw==/original/yuzDQD.png",
+        "tags": [
+            "2D",
+            "Auto Battler",
+            "Deck Building",
+            "Pixel Art",
+            "Roguelike",
+            "Singleplayer",
+            "Tower Defense",
+            "Trains"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ipipgamedev.itch.io/idle-primes",
+        "name": "idle primes",
+        "dev": "ipip",
+        "description": "prime numbers are important click primes Note: Game is under development.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk1NDk0LnBuZw==/original/LHgbT5.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "primes"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://madlab-games.itch.io/diannascrazyaddiction",
+        "name": "DIANNA'S CRAZY ADDICTION",
+        "dev": "Madlab Games",
+        "description": "A year has passed, but the reunion isn't what you expected💔.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTA3MjYyLnBuZw==/original/xFrzS2.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://eyes-a.itch.io/shovel-merge-dig-and-mine",
+        "name": "Shovel Merge Dig and Mine",
+        "dev": "EYES_A+",
+        "description": "Start with a simple shovel and build your way up by merging stronger ones to dig deeper and earn more cash.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgwMTM5LnBuZw==/original/yj2Y9l.png",
+        "tags": [
+            "2D",
+            "Destruction",
+            "Idle",
+            "Minecraft",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
