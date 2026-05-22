@@ -1,9 +1,8 @@
 import { create } from 'zustand'
-import { usePrefs } from './prefs'
 
 const PAT_STORAGE_KEY = 'webapp.pat.encrypted'
 
-export interface GitHubUserInfo {
+interface GitHubUserInfo {
   login: string
   avatar_url: string
   name?: string | null
@@ -31,12 +30,6 @@ export const useAuth = create<AuthState>()((set) => ({
   refreshStoredFlag: () =>
     set({ hasStoredPat: !!localStorage.getItem(PAT_STORAGE_KEY) }),
 }))
-
-export function isIdleExpired(unlockedAt: number | null): boolean {
-  if (unlockedAt === null) return true
-  const timeoutMs = usePrefs.getState().idleTimeoutMs
-  return Date.now() - unlockedAt > timeoutMs
-}
 
 export function readEncryptedPat(): string | null {
   return localStorage.getItem(PAT_STORAGE_KEY)

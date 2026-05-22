@@ -6,10 +6,6 @@ opt-in and skipped when running as a plain web SPA.
 
 ## What desktop adds over web
 
-- **No CORS** — `tauri-plugin-http` lets the renderer fetch any whitelisted
-  URL (itch.io, GitHub API, raw.githubusercontent.com) directly. The
-  `tauri-scrape.ts` helper uses this to preview a game record without
-  dispatching the workflow (~5 s vs ~75–120 s).
 - **Smaller footprint than Electron** — installer is ~10 MB.
 - **Native window chrome** — system tray, OS notifications, etc. (not
   enabled yet; can be added in a follow-up).
@@ -60,10 +56,10 @@ installers to a draft GitHub Release. Bump `webapp/package.json` and
 ## Detecting Tauri at runtime
 
 ```ts
-import { isTauri, getRuntimeInfo } from '@/lib/runtime'
+import { isTauri } from '@/lib/runtime'
 
 if (isTauri()) {
-  const info = await getRuntimeInfo() // { platform: 'windows', version: '0.1.0' }
+  // running inside the native desktop shell
 }
 ```
 
@@ -87,12 +83,3 @@ Then call from the frontend:
 const { invoke } = await import('@tauri-apps/api/core')
 await invoke<string>('my_thing', { arg: 'hello' })
 ```
-
-## Roadmap (Phase 8b)
-
-The current scrape preview parses `og:title` / `og:description` / `og:image`
-from the HTML in TS. The full 23-field extraction (genre, tags, platforms,
-languages, made_with, …) still lives in `scripts/scraper.py` and runs in
-CI. Porting that to Rust (using `scraper` crate) is tracked as Phase 8b
-and would make the desktop app fully autonomous (no workflow_dispatch
-needed for adds).

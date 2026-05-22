@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Itch.io Free Games DB',
-  version: '3.5.1',
+  version: '3.5.2',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'MIT',
   buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
@@ -137,7 +137,6 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'Vite', version: '8.0', license: 'MIT', url: 'https://vite.dev', category: 'core' },
   { name: 'React Router', version: '7.14', license: 'MIT', url: 'https://reactrouter.com', category: 'core' },
   { name: 'Zustand', version: '5.0', license: 'MIT', url: 'https://github.com/pmndrs/zustand', category: 'core' },
-  { name: 'Zod', version: '4.4', license: 'MIT', url: 'https://zod.dev', category: 'core' },
 
   // UI
   { name: 'Tailwind CSS', version: '3.4', license: 'MIT', url: 'https://tailwindcss.com', category: 'ui' },
@@ -154,16 +153,11 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'TanStack Query', version: '5.100', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'TanStack Table', version: '8.21', license: 'MIT', url: 'https://tanstack.com/table', category: 'data' },
   { name: 'TanStack Virtual', version: '3.13', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
-  { name: 'react-hook-form', version: '7.75', license: 'MIT', url: 'https://react-hook-form.com', category: 'data' },
-  { name: '@hookform/resolvers', version: '5.2', license: 'MIT', url: 'https://github.com/react-hook-form/resolvers', category: 'data' },
   { name: '@octokit/rest', version: '22.0', license: 'MIT', url: 'https://github.com/octokit/octokit.js', category: 'data' },
-  { name: 'idb-keyval', version: '6.2', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
   { name: 'OpenPGP.js', version: '6.3', license: 'LGPL-3.0', url: 'https://openpgpjs.org', category: 'data' },
 
   // Desktop
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
-  { name: '@tauri-apps/api', version: '2.11', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
-  { name: 'tauri-plugin-http', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
   { name: 'tauri-plugin-opener', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener', category: 'desktop' },
   { name: 'tauri-plugin-single-instance', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/single-instance', category: 'desktop' },
 ]

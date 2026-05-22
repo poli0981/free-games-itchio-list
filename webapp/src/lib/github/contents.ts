@@ -10,7 +10,7 @@ interface FileWithSha {
   sha: string
 }
 
-export async function readFileWithSha(octokit: Octokit, path: string): Promise<FileWithSha> {
+async function readFileWithSha(octokit: Octokit, path: string): Promise<FileWithSha> {
   const { data } = await octokit.repos.getContent({
     owner: REPO.owner,
     repo: REPO.name,

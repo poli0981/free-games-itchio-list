@@ -15,12 +15,14 @@ This repo wouldn't exist without a lot of help — mostly from tools and platfor
 
 The webapp + Tauri desktop build on a stack of open-source libraries — full versioned list with licenses lives on the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about) and in [`webapp/src/lib/about.ts`](../webapp/src/lib/about.ts) (the `THIRD_PARTY` array). Highlights:
 
-- **Core**: React 19, TypeScript 6, Vite 8, React Router 7, Zustand 5, Zod 4
+- **Core**: React 19, TypeScript 6, Vite 8, React Router 7, Zustand 5
 - **UI**: Tailwind CSS 3, shadcn/ui (pattern), Radix UI primitives, lucide-react, sonner, class-variance-authority, tailwind-merge, clsx, Recharts
-- **Data**: TanStack Query / Table / Virtual, react-hook-form + `@hookform/resolvers`, `@octokit/rest`, `idb-keyval`, `openpgp` (lazy-loaded for in-browser commit signing)
-- **Desktop**: Tauri 2, `@tauri-apps/api`, `tauri-plugin-http`, `tauri-plugin-opener`
+- **Data**: TanStack Query / Table / Virtual, `@octokit/rest`, `openpgp` (lazy-loaded for in-browser commit signing)
+- **Desktop**: Tauri 2, `tauri-plugin-opener`
 
 When you add a new dep to `webapp/package.json`, also add it to the `THIRD_PARTY` array so the About page lists it. House rule documented in [CONTRIBUTING.md §8](../CONTRIBUTING.md#8-webapp-changes-react--ts).
+
+Dev-only tooling — linters and dead-code detectors that never ship in a build — is tracked separately in [`THIRD_PARTY.md`](THIRD_PARTY.md).
 
 ## Telegram bot — ingest path
 

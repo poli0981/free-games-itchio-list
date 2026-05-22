@@ -1,17 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 import {
   loadAllGames,
-  loadIndex,
   loadDeletedLog,
   loadCountHistory,
 } from '@/lib/github/data-store'
-
-export function useIndex() {
-  return useQuery({
-    queryKey: ['db', 'index'],
-    queryFn: loadIndex,
-  })
-}
 
 export function useAllGames() {
   return useQuery({

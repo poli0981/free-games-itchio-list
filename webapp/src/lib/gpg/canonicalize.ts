@@ -1,4 +1,4 @@
-export interface CommitIdentity {
+interface CommitIdentity {
   name: string
   email: string
 }

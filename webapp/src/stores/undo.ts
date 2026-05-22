@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-export interface UndoEntry {
+interface UndoEntry {
   id: string
   label: string
   timestamp: number

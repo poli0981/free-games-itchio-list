@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented here.
 
+## [3.5.2] - 2026-05-23 (Dead-code cleanup — knip + vulture)
+
+### Added
+
+- **knip** (v6) wired into the webapp as the unused-files / exports /
+  dependencies detector — config in [`webapp/knip.json`](webapp/knip.json),
+  run via `cd webapp && npm run knip`.
+- **vulture** configured for the Python pipeline (`[tool.vulture]` in
+  [`pyproject.toml`](pyproject.toml)) — it catches dead functions, classes, and
+  attributes that ruff's `F` rules don't.
+- **[`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md)** — a new doc attributing the
+  dev-only tooling (knip, vulture, ruff, ESLint, TypeScript), cross-linked from
+  [`docs/ACKNOWLEDGEMENTS.md`](docs/ACKNOWLEDGEMENTS.md).
+
+### Removed
+
+- **8 unused webapp dependencies**: `react-hook-form`, `@hookform/resolvers`,
+  `zod`, `idb-keyval`, `@radix-ui/react-dropdown-menu`,
+  `@radix-ui/react-tooltip`, `@tauri-apps/plugin-http`, `@tauri-apps/api`.
+- **The unwired Tauri Phase-8b scrape-preview scaffold** —
+  `webapp/src/lib/tauri-scrape.ts` and `getRuntimeInfo` / `RuntimeInfo` in
+  [`runtime.ts`](webapp/src/lib/runtime.ts). It was documented but never wired
+  into any UI; [`webapp/TAURI.md`](webapp/TAURI.md) was trimmed to match.
+- **~20 unused webapp exports / types** — dead helpers (`findChunkFor`,
+  `indexByUrl`, `rawUrl`, `useIndex`, `isIdleExpired`, …), the unused
+  `EDITABLE_FIELDS` / `READONLY_FIELDS` constants, and 7 unused shadcn/ui
+  primitive exports. Exports used only inside their own module were demoted
+  from `export` rather than deleted.
+
+### Changed
+
+- `webapp/src/lib/about.ts` `THIRD_PARTY` array trimmed to match the removed
+  dependencies.
+
+### Notes
+
+- DX / code-quality only — no runtime behaviour change. `isIdleExpired` was
+  already dead (nothing called it), so PAT idle auto-lock is unchanged — still
+  not enforced.
+- No Tauri / Rust binary boundary change — `Cargo.toml` and `tauri.conf.json`
+  stay at `0.1.1`. The Rust `tauri-plugin-http` crate is now unreferenced from
+  the front-end — a candidate for a future Rust-side cleanup.
+- knip + vulture join `npm run lint`, `ruff check`, and `npm audit` as the
+  standing pre-release QA pass.
+
 ## [3.5.1] - 2026-05-20 (Lint cleanup — zero ESLint problems)
 
 ### Changed
