@@ -172,5 +172,11 @@
         "name": "Pretend it's not There",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-19T09:15:42Z"
+    },
+    {
+        "url": "https://worsteventgames.itch.io/tarotro",
+        "name": "Tarotro",
+        "reason": "Game became paid",
+        "deleted_at": "2026-05-23T07:32:01Z"
     }
 ]

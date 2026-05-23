@@ -1930,45 +1930,6 @@
         "notes": ""
     },
     {
-        "url": "https://worsteventgames.itch.io/tarotro",
-        "name": "Tarotro",
-        "dev": "Worst Event Games",
-        "description": "Please rate and comment if you'd liked it.",
-        "genre": "Card Game",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzYwOTQ4LnBuZw==/original/yovEOl.png",
-        "tags": [
-            "Atmospheric",
-            "Casual",
-            "Generator",
-            "Magic",
-            "occult",
-            "Tarot"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://gingerbeardman.itch.io/yoyozo",
         "name": "YOYOZO",
         "dev": "gingerbeardman",
