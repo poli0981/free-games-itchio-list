@@ -1,4 +1,4 @@
-# Strategy Games (53 games)
+# Strategy Games (52 games)
 
 | No | Thumb | Name | Dev | Short Desc | Genre | Tags | Status | Platforms | Publisher | Release Date | Made With | Rating | Session | Languages | Inputs | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|-------|------|--------|-----------|-----------|--------------|----------|--------|---------|-----------|--------|------|------|-------|------|
@@ -54,5 +54,4 @@
 | 50 | ![thumb](https://img.itch.zone/aW1nLzc5NTQ2NTAucG5n/original/5Z2Lxd.png) | UnDUNE II | Paul Nicholas (Liquidream) | They who controls the spice. | Strategy | 8-Bit, Demake, dune2, PICO-8, Pixel Art, Real time strategy, Retro | Released | HTML5, Windows, macOS, Linux | N/A | N/A | PICO-8 | 4.8 (68) | About a half-hour | English | Keyboard, Mouse, Gamepad (any), Touchscreen | [Link](https://liquidream.itch.io/undune2) | ? |  | No |
 | 51 | ![thumb](https://img.itch.zone/aW1nLzI2MzAzNjA2LnBuZw==/original/YL2QXy.png) | Word War III | zcas | You are the Steward of Veridia — a nation surrounded by seven others, each with their own agenda. | Strategy | Atmospheric, diplomacy, Indie, Narrative, political, resource-management, Singleplayer, Typing | Released | HTML5 | N/A | 24 March 2026 @ 14:00 UTC | N/A | N/A | About a half-hour | English | Keyboard, Mouse | [Link](https://zcas.itch.io/word-war-iii) | ? |  | No |
 | 52 | ![thumb](https://img.itch.zone/aW1nLzEwNzc3MDc3LnBuZw==/original/d8nsYE.png) | Your Only Move Is HUSTLE (Open Beta Version) | ivysly | BUY THE FULL VERSION ON STEAM JOIN THE DISCORD If the game doesn't run, try installing this. | Strategy | PvP, Turn-based | In development | Windows | N/A | 10 November 2022 @ 21:15 UTC | N/A | 4.8 (688) | About a half-hour | English | Keyboard, Mouse | [Link](https://ivysly.itch.io/your-only-move-is-hustle) | ? |  | No |
-| 53 | ![thumb](https://img.itch.zone/aW1nLzI3Mzc1ODc3LnBuZw==/original/V2vbpf.png) | Zenith Miner - Space Project - English | gamersz | 👨‍🚀 💻PC-Version💻 ZENITH MINER: Space Project (V6. | Strategy | Clicker, Farming Simulator, Mouse only, Sci-fi, Space, Time Travel | Released | HTML5 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://gamersz.itch.io/zenith-miner-space-project-english-version) | ? |  | No |
 
