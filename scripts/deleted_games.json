@@ -178,5 +178,11 @@
         "name": "Tarotro",
         "reason": "Game became paid",
         "deleted_at": "2026-05-23T07:32:01Z"
+    },
+    {
+        "url": "https://gamersz.itch.io/zenith-miner-space-project-english-version",
+        "name": "Zenith Miner - Space Project - English",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-23T11:35:24Z"
     }
 ]
