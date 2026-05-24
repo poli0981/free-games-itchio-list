@@ -3547,5 +3547,844 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://evertides.itch.io/the-midnight-hours-shorts",
+        "name": "The Midnight Hours: Shorts",
+        "dev": "evertides",
+        "description": "A collection of short stories involving the ros of The Midnight Hours for various different occasions.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "314",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzgxNjM3MzYucG5n/original/0VGmwi.png",
+        "tags": [
+            "Dating Sim",
+            "LGBTQIA",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://brandonhare.itch.io/bluejeweled",
+        "name": "BLUEJEWELED",
+        "dev": "brandonhare",
+        "description": "a mod for bejeweled 3 to add more blue title image by @krystalcoconut",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 December 2024 @ 12:59 UTC",
+        "rating": "4.9",
+        "rating_count": "337",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5MTg3NzU5LmpwZw==/original/ZwJZeR.jpg",
+        "tags": [
+            "2D",
+            "Arcade",
+            "bejeweled",
+            "blue",
+            "Casual",
+            "Comedy",
+            "match-3",
+            "mod",
+            "Parody",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ghoulkiss.itch.io/monster-girl-maker",
+        "name": "Monster Girl Maker",
+        "dev": "Emmy- GhoulKiss",
+        "description": "Play the sequel here Available on Android & iOS (recommended)! Ever wanted to create your own cute monster character but didn't know where to start? Lost on what aesthetics they should have, what f...",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "1399",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjc5NDEzLzEzNTYxMDguZ2lm/original/60xArw.gif",
+        "tags": [
+            "2D",
+            "Anime",
+            "artgame",
+            "character-creator",
+            "Character Customization",
+            "Creepy",
+            "doll-maker",
+            "Dress Up",
+            "Monsters",
+            "pastel"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://spratt.itch.io/woodworm-classic",
+        "name": "Woodworm Classic",
+        "dev": "spratt",
+        "description": "Controls Move with Arrow Keys Press Z to undo Press X to reset level, and again to return to level select If you enjoyed Woodworm Classic, you should check out the new and improved version ! :)",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "490",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE2NTU1MzE3LnBuZw==/original/ppqyk%2F.png",
+        "tags": [
+            "PICO-8"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "PICO-8"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kindanice.itch.io/bases-loaded",
+        "name": "BASES LOADED",
+        "dev": "kindanice",
+        "description": "swing for the fences! reach level 20 to win.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "675",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExMTY5NzY3LnBuZw==/original/qN5dn4.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Pixel Art",
+            "Roguelike",
+            "Short",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tamanidamani.itch.io/nijikas-ahoge",
+        "name": "Nijika, whose ahoge can grow infinitely",
+        "dev": "TamaniDamani",
+        "description": "Use your mouse or fingers to grab Nijika's ahoge and have fun! When Seika appears, throw her Bocchi-chan.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "417",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExMDAyNTEwLnBuZw==/original/Do%2BcMt.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Funny",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ztul.itch.io/the-uncle-who-works-for-nintendo",
+        "name": "the uncle who works for nintendo",
+        "dev": "ztul",
+        "description": "You are 11 years old.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "481",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTQwMjcvNTI5ODkucG5n/original/ElyDed.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://gbpatch.itch.io/lake-of-voices",
+        "name": "Lake Of Voices",
+        "dev": "GBPatch",
+        "description": "Lake of Voices is a story that forces you to accept that there’s no perfect way to handle dire times and asks you to decide what, and who, is going to be sacrificed.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "571",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTk1MzkwLzkxMzExOS5naWY=/original/R6C2%2FI.gif",
+        "tags": [
+            "Dark",
+            "Female Protagonist",
+            "Horror",
+            "Multiple Endings",
+            "Otome",
+            "Romance",
+            "Spooky",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ompuco.itch.io/truss",
+        "name": "Truss",
+        "dev": "ompuco",
+        "description": "Developed for Haunted PS1 's Madvent Calendar 3: Necrosis , with 3D art contributions by G.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 December 2022 @ 06:00 UTC",
+        "rating": "4.9",
+        "rating_count": "189",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwNzM3OTA2LnBuZw==/original/fT8u7A.png",
+        "tags": [
+            "3D",
+            "artgame",
+            "Atmospheric",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Singleplayer",
+            "Walking simulator",
+            "winter"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://adamatomic.itch.io/mole-mole",
+        "name": "Mole Mole",
+        "dev": "Adam Saltsman",
+        "description": "In Mole Mole , you have to blow stuff up and take a nap.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "397",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNzc1OTY5LnBuZw==/original/rQ8GDi.png",
+        "tags": [
+            "PICO-8",
+            "Pixel Art",
+            "Sokoban"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "PICO-8"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://moon-creations.itch.io/channel-tag",
+        "name": "CHANNEL TAG V2! (going in making)",
+        "dev": "ZELO  CREATIONS",
+        "description": "7234pookeee is kovx's dc name",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIyMTMyLnBuZw==/original/zAL19O.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://beetlemachine.itch.io/heartsleeves",
+        "name": "Heartsleeves",
+        "dev": "beetlemachine",
+        "description": "Beneath the rotten logs, amongst the moldy dirt, festering in carrion frozen solid by winter, life flourishes.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxNzI3LnBuZw==/original/apJMmx.png",
+        "tags": [
+            "2D",
+            "body-horror",
+            "Gore",
+            "Horror",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://traiki.itch.io/sprunkmediareanimated",
+        "name": "Sprunki | You found sprunk media! But I Reanimated Stuff",
+        "dev": "Traiki",
+        "description": "credits to awesomeleak for the og mod ok? ORIGINAL MOD: https://imawesomeleek.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxODY3LnBuZw==/original/Z40YfZ.png",
+        "tags": [
+            "Incredibox",
+            "Sprunki"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://pioterrr.itch.io/milionerzy-z-kubciem",
+        "name": "Milionerzy z Kubciem",
+        "dev": "piot.errr",
+        "description": "bez opisu bo mi sie nie chce",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxNzQ0LnBuZw==/original/oktfHC.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bksil.itch.io/hyperfall",
+        "name": "Hyperfall",
+        "dev": "bksil",
+        "description": "The girl dreams of falling endlessly.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg2MzA2NzIucG5n/original/2AeAVq.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://worm-works.itch.io/worm-quiz1",
+        "name": "Worm's Mental Marathon (for the) Most Mindful Mogchamp!",
+        "dev": "worm_works",
+        "description": "This is a fangame for Moguday 2026 made by worm4ugirl ! It's a 77 multiple-choice question quiz about all things Mogu - her streams, stories and silly bits from the past year and a bit! Disclaimer:...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxMzYyLnBuZw==/original/cKeB7Q.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mounirx77cs.itch.io/speed-racing",
+        "name": "Speed racing",
+        "dev": "MouNirx77cs",
+        "description": "N/A",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxMTg5LnBuZw==/original/f3Apsm.png",
+        "tags": [
+            "3D",
+            "Godot",
+            "Low-poly"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://michifauseky.itch.io/talking-michi",
+        "name": "Talking Michi",
+        "dev": "Michifauseky",
+        "description": "Talking Michi es un juego de mascota virtual",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 May 2026 @ 23:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxMzE4LnBuZw==/original/pPjBSy.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [
+            "Spanish; Latin America"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Scratch"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://hikari-soft.itch.io/sweet-dreams",
+        "name": "Sweet Dreams",
+        "dev": "HIKARI SOFT",
+        "description": "You play as Bara , a young man who finally gets a job as a grocery store clerk on the night shift, in a deserted area.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjI0MDUxLnBuZw==/original/0yst3H.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Blender",
+            "First-Person",
+            "Godot",
+            "Indie",
+            "Short",
+            "slice",
+            "stor",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Indonesian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://qwarq.itch.io/ku-ru-waku",
+        "name": "Ku-Ru-Waku: The Search for Unlimited Power",
+        "dev": "Qwarq",
+        "description": "An odd energy signature was detected in a remote asteroid and it's up to you to investigate.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDIxMjk1LnBuZw==/original/k9YK2K.png",
+        "tags": [
+            "3D",
+            "Exploration",
+            "Sci-fi",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://cardigan-cardigan.itch.io/wolf-and-holy-man",
+        "name": "The Wolf and the Holy Man",
+        "dev": "Cardigan",
+        "description": "A town is terrorised by the threat of a wolf that devours both lifestock and man.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE2Nzc1LmdpZg==/original/1PvTd6.gif",
+        "tags": [
+            "drama",
+            "Fantasy",
+            "Furry",
+            "Historical",
+            "Kinetic Novel",
+            "my-wolf",
+            "Queer",
+            "Ren'Py",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Playstation controller"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://underdevlar.itch.io/seek",
+        "name": "Seek VR: Reimagined",
+        "dev": "UnderdevLAR",
+        "description": "This is the like the original Seek by Stelladev, but with multiplayer.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE3MzYxLnBuZw==/original/En6L7G.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://faontastique.itch.io/timeweaver",
+        "name": "Time Weaver",
+        "dev": "Faontastique, Ceriseaa, Yoru, SwaggMessiah, atlastoby1738",
+        "description": "Synopsis : - - - - - - - - - - - - = - - - - - - - - - - - - Space-time has been intertwined.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE3ODgwLnBuZw==/original/NMQWwV.png",
+        "tags": [
+            "Cozy",
+            "No AI",
+            "Short",
+            "Space"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mikeyeldey.itch.io/mikeyeldey95",
+        "name": "mikeyeldey95 for Sega Genesis / Mega Drive",
+        "dev": "mikeyeldey",
+        "description": "Unlock the potential of your Sega console with mikeyeldey95 .",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 June 2022 @ 07:00 UTC",
+        "rating": "4.9",
+        "rating_count": "9",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg3NDkwNzEucG5n/original/LA4JLN.png",
+        "tags": [
+            "16-bit",
+            "Casual",
+            "chiptune",
+            "Mega Drive",
+            "Music",
+            "Parody",
+            "Pixel Art",
+            "Retro",
+            "Sega Genesis",
+            "windows-95"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)",
+            "Smartphone"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://acoolbrazillianguy.itch.io/dont-get-robbed",
+        "name": "Don't Get Robbed!",
+        "dev": "ACoolBrazillianGuy",
+        "description": "Click on the money to earn money.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE5ODg3LnBuZw==/original/qFJj9v.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://yeloyo.itch.io/weegees-challenge",
+        "name": "Weegee's Challenge",
+        "dev": "Yeloyo",
+        "description": "Weegee is trying to capture you! Collect all the 100 Toasts before he does! Game inspired by \"Wega's Challenge\" This is a joke game.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE5NDYzLnBuZw==/original/g3p%2BBZ.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tac777.itch.io/the-night-of-rain-and-nemu",
+        "name": "The Night of Rain and Nemu",
+        "dev": "TAC777",
+        "description": "This is the English version of The Night of Rain and Nemu.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDI3ODAzLnBuZw==/original/9iwlOv.png",
+        "tags": [
+            "Anime",
+            "Atmospheric",
+            "Casual",
+            "Cute",
+            "Indie",
+            "Narrative",
+            "Short",
+            "Singleplayer",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
