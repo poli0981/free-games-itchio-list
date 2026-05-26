@@ -4386,5 +4386,750 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://iamderlencer.itch.io/corrode",
+        "name": "CORRODE",
+        "dev": "iamderlencer",
+        "description": "CORRODE 03/K Languages English Русский Español About the Game CORRODE 03/K is a short immersive horror experience that plunges you into a corporate nightmare.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.1",
+        "rating_count": "52",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyMjAwNjE2LnBuZw==/original/6%2FoHhd.png",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "creepypasta",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "Adobe Photoshop",
+            "Audacity",
+            "FL Studio"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://taoran.itch.io/shanlanyuanju",
+        "name": "山岚缘聚",
+        "dev": "陶然",
+        "description": "《山岚缘聚》——一部已完结的兽人题材视觉小说。 这是一个关于接纳与理解的故事。小说家陆七安回到已故外婆的老宅，在上山途中意外遇见了三位性格迥异的兽人。这段缘分——究竟是今生的初遇，还是前世未尽的牵绊？又或者一切都只是命中注定？ 全篇字数35–40万字，收录CG共18张，完整游玩时长约6–8小时。 剧情结构分为共通线与个人线：共通线包含8个结局，三条个人线合计6个结局，全线总计14个结局。在共通线打...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2OTczNTQwLnBuZw==/original/PY9PVg.png",
+        "tags": [
+            "Furry"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://wondereater.itch.io/birdsofbloodandsnow",
+        "name": "birds of blood and snow",
+        "dev": "jisatsu",
+        "description": "\" the world as humans know it will be buried in snow by the end of next week.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDcxMDM4LmdpZg==/original/CZUNv2.gif",
+        "tags": [
+            "2D",
+            "Boys' Love",
+            "denpa",
+            "Gay",
+            "Indie",
+            "LGBT",
+            "Queer",
+            "winter",
+            "Yaoi"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://projet-cormoran.itch.io/padeloup",
+        "name": "Padeloup",
+        "dev": "projet_cormoran",
+        "description": "Episode 1 : Edge of Wood Vic had started acting strangely for a while now.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDA2NjU3LnBuZw==/original/buh0fn.png",
+        "tags": [
+            "Forest",
+            "Godot",
+            "Indie",
+            "Point & Click"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "French"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://17713688443.itch.io/422-escape",
+        "name": "422 Escape",
+        "dev": "17713688443",
+        "description": "N/A",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDcwNTA5LnBuZw==/original/fcpNDv.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jing-ouie.itch.io/demon-at-the-door",
+        "name": "勇者と同じ町に住んでる魔王ちゃん（ダウンロード版）",
+        "dev": "JING（ジン）",
+        "description": "勇者ちゃんと魔王ちゃんが同じ町で暮らす、短編ほのぼのコメディノベルです。 絵本で「勇者と魔王は因縁のライバル」と知ってしまった魔王ちゃん・ルルベル。 今日こそ勇者ちゃんと決着をつけるため、執事のグレイスと一緒にユウの家へやって来ます。 でもこの町は、もうとても平和。 世界征服より、おやつ会議とぬいぐるみ整列のほうが大事かもしれません。 プレイ時間：短め ジャンル：短編ノベル / コメディ / ほの...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDUwNzAyLnBuZw==/original/M%2FMi5X.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Cute",
+            "demon-queen",
+            "Fantasy",
+            "japanese",
+            "Ren'Py",
+            "Short",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jing-ouie.itch.io/maouchan-yuushato-onaji-machi",
+        "name": "勇者と同じ町に住んでる魔王ちゃん（Web版）",
+        "dev": "JING（ジン）",
+        "description": "※ブラウザ版はPCでのプレイを推奨しています。 スマホブラウザでは環境によって起動しない場合があります。 スマホで遊ぶ場合は、Ren'Py対応アプリ（例：Renpy Pocket）を利用すると起動できる場合があります。 うまく起動しない場合は、Windows版のダウンロード版をご利用ください。 勇者ちゃんと魔王ちゃんが同じ町で暮らす、短編ほのぼのコメディノベルです。 絵本で「勇者と魔王は因縁のライ...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDcwNDkzLnBuZw==/original/kXhn05.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Cute",
+            "demon-queen",
+            "Fantasy",
+            "japanese",
+            "Ren'Py",
+            "Short",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://rhubarb-game.itch.io/cave-of-coins",
+        "name": "CAVE of COINS",
+        "dev": "Rhubarb_game",
+        "description": "About Guide your wizard through the procedurally generated caves to collect all the coins! Keep dodging the enemy knights and bombs to get a hi-score! Controls - Use the arrow keys.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDY4NTQwLnBuZw==/original/KdKPYb.png",
+        "tags": [
+            "2D",
+            "maze",
+            "Pixel Art",
+            "Procedural Generation"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://danidev.itch.io/milkmankarlson",
+        "name": "Milkman Karlson",
+        "dev": "Dani",
+        "description": "Karlson is thristy, and only you can help him get his milk.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "416",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMzMjAwNTMucG5n/original/v8HZu7.png",
+        "tags": [
+            "3D",
+            "Shoot 'Em Up",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bellainthegame.itch.io/neverwood",
+        "name": "Neverwood (EARLY ALPHA)",
+        "dev": "Bella <3",
+        "description": "WARNING THIS GAME IS IN VERY EARLY DEVELOPMENT AND DOESN'T REALLY FULLY FUNCTION YET.",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "9",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjE4NjIxLnBuZw==/original/ImNuku.png",
+        "tags": [
+            "Cute",
+            "Female Protagonist",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer",
+            "Tabletop role-playing game",
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://cake-logic.itch.io/ultrakill-web-port",
+        "name": "ULTRAKILL PRELUDE WEB PORT",
+        "dev": "Cake Logic",
+        "description": "Shout out to my man genizy and Draven for (indirectly) motivating me on this.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "56",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxNzk2NTMwLnBuZw==/original/EeGwId.png",
+        "tags": [
+            "3D",
+            "First-Person",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://khywae.itch.io/stay-with-me",
+        "name": "Stay With Me",
+        "dev": "khywae",
+        "description": "♡ ABOUT ♡ Nanami wasn’t supposed to make it out of Shibuya.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "98",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDIyMDg4LnBuZw==/original/3QO8Dp.png",
+        "tags": [
+            "Dating Sim",
+            "Fangame",
+            "Female Protagonist",
+            "Otome",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://the-quinnspiracy.itch.io/depressionquest",
+        "name": "Depression Quest",
+        "dev": "Unburnt Witch",
+        "description": "Depression Quest is an interactive fiction game where you play as someone living with depression.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "263",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvOTc4Mi8yODY5NS5qcGc=/original/WmHrD5.jpg",
+        "tags": [
+            "depression",
+            "empathy",
+            "serious-game",
+            "Twine"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://vanillamoontea.itch.io/datelineelevator",
+        "name": "Dateline Elevator",
+        "dev": "vanillamoontea",
+        "description": "DATELINE ELEVATOR is a Regretevator Fangame!! Your days in the Regretevator are spent enjoying the floors, all the while repelling a certain dream parasite with the power of friendship.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "60",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNTgzNTM1LnBuZw==/original/GGFL1N.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "Fangame",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://overfull.itch.io/plantdaddy",
+        "name": "plant daddy",
+        "dev": "brady soglin",
+        "description": "plant daddy is a laid-back browser game about raising houseplants in your sunny apartment.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "1742",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NTAwMDIucG5n/original/jwNlC%2F.png",
+        "tags": [
+            "browser",
+            "Casual",
+            "Comedy",
+            "Cute",
+            "Idle",
+            "Incremental",
+            "meditation",
+            "plants",
+            "Procedural Generation",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://himebee.itch.io/inclement-idee-fixe",
+        "name": "Inclement Idée Fixe",
+        "dev": "HimeBee",
+        "description": "Story Description: It's a typical workday for you as a barista at your local cafe, or at least it was supposed to be.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "383",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzMTU1MzQ2LnBuZw==/original/n0xeFl.png",
+        "tags": [
+            "Creepy",
+            "Female Protagonist",
+            "josei",
+            "Otome",
+            "Romance",
+            "Singleplayer",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://papercookies.itch.io/no-players-online-classic",
+        "name": "No Players Online Classic",
+        "dev": "adam pype",
+        "description": "this is the old game, >click here to go to the page for the new game< \"No Players Online sees me, booting up old games, looking for that sweet nostalgia kick, and suggests that maybe I let dead thi...",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "111",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1NTUyNzEyLmdpZg==/original/S6r9ZO.gif",
+        "tags": [
+            "FPS",
+            "Horror",
+            "meta",
+            "Narrative",
+            "Short",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://show-more.itch.io/siren-head-resurrection",
+        "name": "Siren Head Resurrection",
+        "dev": "show-more",
+        "description": "Siren Head Resurrection A group of young cave divers went missing.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "59",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzUyOTYxMTQuanBlZw==/original/SFPoBt.jpeg",
+        "tags": [
+            "Action-Adventure",
+            "Altgame",
+            "Creepy",
+            "Horror",
+            "Mystery",
+            "Siren Head",
+            "sirenhead"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "GIMP",
+            "Inkscape",
+            "Audacity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ipodtouch0218.itch.io/nsmb-mariovsluigi",
+        "name": "NSMB - Mario Vs Luigi Online",
+        "dev": "ipodtouch0218",
+        "description": "What is this game? A standalone 2-10 player remake of the Mario vs Luigi gamemode from New Super Mario Bros DS.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "1054",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxOTk5MjgyLmdpZg==/original/MVNGek.gif",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Fangame",
+            "Multiplayer",
+            "Side Scroller",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kjam.itch.io/but-you-seem-fine",
+        "name": "But You Seem Fine",
+        "dev": "KJAM",
+        "description": "But You Seem Fine is a visual novel based on one of the developer’s struggles with invisible illness.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "692",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDUyMTgucG5n/original/2A1sr5.png",
+        "tags": [
+            "2D",
+            "Coming Of Age",
+            "Cute",
+            "Female Protagonist",
+            "Meaningful Choices",
+            "Singleplayer",
+            "Story Rich",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jazzainab.itch.io/divine-possession",
+        "name": "Divine Possession",
+        "dev": "jazzainab",
+        "description": "Divine Possession (DEMO).",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "120",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NDUzNzE4LnBuZw==/original/v2KbNQ.png",
+        "tags": [
+            "2D",
+            "Creepy",
+            "Dark",
+            "Fantasy",
+            "Multiple Endings",
+            "Otome",
+            "Romance",
+            "storygame",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
