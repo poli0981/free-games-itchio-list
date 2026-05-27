@@ -184,5 +184,23 @@
         "name": "Zenith Miner - Space Project - English",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-23T11:35:24Z"
+    },
+    {
+        "url": "https://talihi.itch.io/spralt-remake-overhaul-re-overhauled",
+        "name": "Spralt V3",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-27T08:55:23Z"
+    },
+    {
+        "url": "https://clutch-games.itch.io/clickrealm-idle-mmorpg",
+        "name": "ClickRealm - Online MMORPG",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-27T09:36:54Z"
+    },
+    {
+        "url": "https://zohaven.itch.io/gorilla-bouncers",
+        "name": "GORILLA BOUNCER V4",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-27T09:38:52Z"
     }
 ]

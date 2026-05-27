@@ -6277,30 +6277,6 @@
         "notes": ""
     },
     {
-        "url": "https://talihi.itch.io/spralt-remake-overhaul-re-overhauled",
-        "name": "Spralt V3",
-        "dev": "T4LI_",
-        "description": "This mod may not support low end devices IF YOU ARE DOING A MIX FOR THE MOD, PRESS E TO CHANGE THE DAYLIGHT SETTINGS, THIS DOES NOT APPLY TO MOBILE DEVICES Here is something I've actually been maki...",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "10",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MDczMjkyLnBuZw==/original/EKyjtZ.png",
-        "tags": [],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://snapsro.itch.io/the-donut-room",
         "name": "THE DONUT ROOM",
         "dev": "Snapsro",
@@ -18109,6 +18085,41 @@
         "made_with": [
             "Godot"
         ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://walkedoutneimans.itch.io/ipad-baby",
+        "name": "iPad Baby",
+        "dev": "walkedoutneimans",
+        "description": "Alright Here Is The Description For My New Game This New Game That I've Been Working On Gameplay Experience And Is Trends And Topics And Assorted And News Cabin Empty Promise You I Can’t Aneurysm A...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "121",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE0NTU3OTk5LmdpZg==/original/bTWEyd.gif",
+        "tags": [
+            "Backrooms",
+            "Creepy",
+            "creepypasta",
+            "Experimental",
+            "Horror",
+            "Liminal space",
+            "Low-poly",
+            "Mystery",
+            "PSX (PlayStation)",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     }

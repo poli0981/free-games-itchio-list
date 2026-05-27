@@ -1,40 +1,5 @@
 [
     {
-        "url": "https://walkedoutneimans.itch.io/ipad-baby",
-        "name": "iPad Baby",
-        "dev": "walkedoutneimans",
-        "description": "Alright Here Is The Description For My New Game This New Game That I've Been Working On Gameplay Experience And Is Trends And Topics And Assorted And News Cabin Empty Promise You I Can’t Aneurysm A...",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "121",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE0NTU3OTk5LmdpZg==/original/bTWEyd.gif",
-        "tags": [
-            "Backrooms",
-            "Creepy",
-            "creepypasta",
-            "Experimental",
-            "Horror",
-            "Liminal space",
-            "Low-poly",
-            "Mystery",
-            "PSX (PlayStation)",
-            "Psychological Horror"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://sproutcoo.itch.io/cosy-bear-cafe",
         "name": "Cosy Bear Cafe",
         "dev": "Sprout",
@@ -18305,45 +18270,6 @@
         "notes": ""
     },
     {
-        "url": "https://clutch-games.itch.io/clickrealm-idle-mmorpg",
-        "name": "ClickRealm - Online MMORPG",
-        "dev": "Clutch Games",
-        "description": "ClickRealm is BACK! Season 1 is Live! ClickRealm is a free browser-based idle MMORPG where you fight monsters, explore dungeons, collect pets, craft gear, and compete with other players on the lead...",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "3",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MjYxOTE2LmpwZw==/original/cFXri5.jpg",
-        "tags": [
-            "browser",
-            "Clicker",
-            "Crafting",
-            "Idle",
-            "MMORPG",
-            "Multiplayer",
-            "PvP"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Touchscreen",
-            "Smartphone"
-        ],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://rinucomics.itch.io/god-is-dead-im-starving",
         "name": "God is Dead & I'm Starving",
         "dev": "rinucomics",
@@ -18544,6 +18470,81 @@
         "inputs": [],
         "made_with": [
             "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://thechunkypenguin.itch.io/keeper",
+        "name": "Keeper",
+        "dev": "thechunkypenguin",
+        "description": "Try to block as many goals as you can! A goalie mini game I made originally for a game jam but never turned in.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAzMDk3LnBuZw==/original/dp6jSs.png",
+        "tags": [
+            "2D",
+            "Endless",
+            "Hand-drawn",
+            "High Score",
+            "minigames",
+            "one-button",
+            "Singleplayer",
+            "Soccer",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://killgorack.itch.io/sledge",
+        "name": "Sledge",
+        "dev": "KillGorack",
+        "description": "Sledge is a home built FPS tank shooter where everything is designed to go a little off the rails.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 May 2026 @ 17:16 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDYwMzM3LnBuZw==/original/dkcZMi.png",
+        "tags": [
+            "3D",
+            "Creative",
+            "First-Person",
+            "FPS",
+            "Godot",
+            "Tanks"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "Godot"
         ],
         "safe_virus": "?",
         "notes": ""

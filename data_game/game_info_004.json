@@ -1,80 +1,5 @@
 [
     {
-        "url": "https://thechunkypenguin.itch.io/keeper",
-        "name": "Keeper",
-        "dev": "thechunkypenguin",
-        "description": "Try to block as many goals as you can! A goalie mini game I made originally for a game jam but never turned in.",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAzMDk3LnBuZw==/original/dp6jSs.png",
-        "tags": [
-            "2D",
-            "Endless",
-            "Hand-drawn",
-            "High Score",
-            "minigames",
-            "one-button",
-            "Singleplayer",
-            "Soccer",
-            "Unity"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://killgorack.itch.io/sledge",
-        "name": "Sledge",
-        "dev": "KillGorack",
-        "description": "Sledge is a home built FPS tank shooter where everything is designed to go a little off the rails.",
-        "genre": "Shooter",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "03 May 2026 @ 17:16 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MDYwMzM3LnBuZw==/original/dkcZMi.png",
-        "tags": [
-            "3D",
-            "Creative",
-            "First-Person",
-            "FPS",
-            "Godot",
-            "Tanks"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://tap3r.itch.io/glow-of-dungeon",
         "name": "Glow of Dungeon",
         "dev": "tap3r",
@@ -860,28 +785,6 @@
         "made_with": [
             "Godot"
         ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://zohaven.itch.io/gorilla-bouncers",
-        "name": "GORILLA BOUNCER V4",
-        "dev": "zohaven",
-        "description": "UPDATING",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgyMDQyLnBuZw==/original/llPvFh.png",
-        "tags": [],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     },
