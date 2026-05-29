@@ -202,5 +202,17 @@
         "name": "GORILLA BOUNCER V4",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-27T09:38:52Z"
+    },
+    {
+        "url": "https://azurextwilight.itch.io/low-effort-romance",
+        "name": "Low Effort Romance [Prototype]",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-29T08:26:21Z"
+    },
+    {
+        "url": "https://diegodelgadog6.itch.io/arcane-kitchen-v3",
+        "name": "Arcane KItchen v.3",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-29T09:35:39Z"
     }
 ]

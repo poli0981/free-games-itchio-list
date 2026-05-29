@@ -1,41 +1,5 @@
 [
     {
-        "url": "https://victorcito.itch.io/color-theory",
-        "name": "Color Theory",
-        "dev": "VictorCito",
-        "description": "WASD + MOUSE (Move with WASD, aim with Mouse, shoot with Left Click) WASD + MOUSE (WASD para mover, Mouse para mirar, Botão Esquerdo para atirar) EN A game where colors come to life and battle to r...",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY2NjAzLnBuZw==/original/TQJ%2Bfy.png",
-        "tags": [
-            "2D",
-            "Bullet Hell",
-            "Colorful",
-            "Physics",
-            "Pixel Art"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "Portuguese (Brazil)"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [
-            "pygame"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://stangshinez.itch.io/dont-talk-i-need-coffee",
         "name": "[DTINC] Don't talk, I need Coffee ☕",
         "dev": "ShineZ, zar_iiiii",
@@ -18120,6 +18084,48 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sproutcoo.itch.io/cosy-bear-cafe",
+        "name": "Cosy Bear Cafe",
+        "dev": "Sprout",
+        "description": "Work a shift at the cosy bear cafe and try to earn as many coins as possible to support your cosy bear financial commitments! Click the button in the top right to read your recipe book and serve th...",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "51",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4MTQ5NjMzLnBuZw==/original/jNGii9.png",
+        "tags": [
+            "cafe",
+            "Cooking",
+            "cosy",
+            "Cozy",
+            "Cute",
+            "cute-cooking",
+            "restaurant",
+            "simulator",
+            "Tycoon",
+            "Working Simulator"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Aseprite"
+        ],
         "safe_virus": "?",
         "notes": ""
     }

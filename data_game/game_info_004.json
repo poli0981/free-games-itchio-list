@@ -1,39 +1,5 @@
 [
     {
-        "url": "https://tap3r.itch.io/glow-of-dungeon",
-        "name": "Glow of Dungeon",
-        "dev": "tap3r",
-        "description": "Glow of Dungeon English Have you ever dreamed of killing mobs and just testing your skills? In Glow of Dungeon, it's possible.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MDY2NTU4LnBuZw==/original/5O1HZW.png",
-        "tags": [
-            "2D",
-            "Godot",
-            "Indie",
-            "Pixel Art",
-            "Top-Down",
-            "Vampire"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://biggie-modding.itch.io/bucket-pack-for-fs22",
         "name": "FS22 Attachment Pack",
         "dev": "BIGGIE Modding",
@@ -1597,32 +1563,6 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://diegodelgadog6.itch.io/arcane-kitchen-v3",
-        "name": "Arcane KItchen v.3",
-        "dev": "diegodelgadog6",
-        "description": "Arcane Kitchen es un juego 2D ambientado en el Fiordo de Asgard, donde un cocinero mágico debe sobrevivir a las criaturas marinas que invaden su cocina.",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk4NTMwLnBuZw==/original/1QoXDG.png",
-        "tags": [],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
         "safe_virus": "?",
         "notes": ""
     },

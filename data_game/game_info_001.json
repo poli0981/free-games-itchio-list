@@ -5158,45 +5158,6 @@
         "notes": ""
     },
     {
-        "url": "https://azurextwilight.itch.io/low-effort-romance",
-        "name": "Low Effort Romance [Prototype]",
-        "dev": "azureXtwilight, OTOJANG Games, skai2blue4u",
-        "description": "IMPORTANT: The above is a WEB DEMO.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "120",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0NzQwNTUzLnBuZw==/original/ExdzFr.png",
-        "tags": [
-            "Amare",
-            "Christmas",
-            "Comedy",
-            "Cozy",
-            "Female Protagonist",
-            "josei",
-            "Otome",
-            "Romance",
-            "Story Rich"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://fireblaze236.itch.io/autopede",
         "name": "Autopede",
         "dev": "FireBlaze236",
@@ -17593,6 +17554,42 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://victorcito.itch.io/color-theory",
+        "name": "Color Theory",
+        "dev": "VictorCito",
+        "description": "WASD + MOUSE (Move with WASD, aim with Mouse, shoot with Left Click) WASD + MOUSE (WASD para mover, Mouse para mirar, Botão Esquerdo para atirar) EN A game where colors come to life and battle to r...",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY2NjAzLnBuZw==/original/TQJ%2Bfy.png",
+        "tags": [
+            "2D",
+            "Bullet Hell",
+            "Colorful",
+            "Physics",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "pygame"
+        ],
         "safe_virus": "?",
         "notes": ""
     }
