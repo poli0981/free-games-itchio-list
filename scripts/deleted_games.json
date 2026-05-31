@@ -214,5 +214,11 @@
         "name": "Arcane KItchen v.3",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-29T09:35:39Z"
+    },
+    {
+        "url": "https://renzk.itch.io/berserksurvivor",
+        "name": "BERSERK SURVIVOR",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-05-31T08:46:56Z"
     }
 ]
