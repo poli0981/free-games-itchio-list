@@ -220,5 +220,17 @@
         "name": "BERSERK SURVIVOR",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-05-31T08:46:56Z"
+    },
+    {
+        "url": "https://superleisurelylife.itch.io/l-rockpaperscissors-l-fanmadegame",
+        "name": "Lとじゃんけんするだけ",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-03T09:09:21Z"
+    },
+    {
+        "url": "https://ipipgamedev.itch.io/idle-primes",
+        "name": "idle primes",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-03T09:55:22Z"
     }
 ]

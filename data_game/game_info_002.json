@@ -2471,33 +2471,6 @@
         "notes": ""
     },
     {
-        "url": "https://superleisurelylife.itch.io/l-rockpaperscissors-l-fanmadegame",
-        "name": "Lとじゃんけんするだけ",
-        "dev": "UF oh",
-        "description": "Lとじゃんけんするだけの非公式ファンメイドゲームです。予告無しに非公開にする可能性があります。",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.0",
-        "rating_count": "1",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MTU1MTE2LnBuZw==/original/mYJbHH.png",
-        "tags": [],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English",
-            "Japanese"
-        ],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://santiago-garcia.itch.io/the-one-behind-you",
         "name": "The One Behind You",
         "dev": "Santiago Garcia",
@@ -18114,6 +18087,42 @@
         ],
         "inputs": [
             "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mistermorrisgames.itch.io/pegs-x-stickers",
+        "name": "Pegs X Stickers",
+        "dev": "Mister Morris, Tyler Ray Games",
+        "description": "Pegs X Stickers is a pachinko-roguelite that combines Balatro with the cult-classic Peggle.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "98",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NDczNDExLnBuZw==/original/msbov1.png",
+        "tags": [
+            "2D",
+            "Roguelike",
+            "Roguelite",
+            "Singleplayer",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
             "Mouse"
         ],
         "made_with": [

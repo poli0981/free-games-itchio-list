@@ -1,41 +1,5 @@
 [
     {
-        "url": "https://mistermorrisgames.itch.io/pegs-x-stickers",
-        "name": "Pegs X Stickers",
-        "dev": "Mister Morris, Tyler Ray Games",
-        "description": "Pegs X Stickers is a pachinko-roguelite that combines Balatro with the cult-classic Peggle.",
-        "genre": "Strategy",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "98",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2NDczNDExLnBuZw==/original/msbov1.png",
-        "tags": [
-            "2D",
-            "Roguelike",
-            "Roguelite",
-            "Singleplayer",
-            "Turn-based"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://krajzeg.itch.io/dank-tomb",
         "name": "Dank Tomb",
         "dev": "Jakub Wasilewski",
@@ -18298,37 +18262,6 @@
         "notes": ""
     },
     {
-        "url": "https://ipipgamedev.itch.io/idle-primes",
-        "name": "idle primes",
-        "dev": "ipip",
-        "description": "prime numbers are important click primes Note: Game is under development.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk1NDk0LnBuZw==/original/LHgbT5.png",
-        "tags": [
-            "Clicker",
-            "Idle",
-            "Incremental",
-            "primes"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://madlab-games.itch.io/diannascrazyaddiction",
         "name": "DIANNA'S CRAZY ADDICTION",
         "dev": "Madlab Games",
@@ -18523,6 +18456,79 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ferghas.itch.io/the-adventures-of-ferghas-the-coo-curse-of-the-fae",
+        "name": "The Adventures of Ferghas the Coo Curse of the Fae",
+        "dev": "Ferghas",
+        "description": "The Adventures of Ferghas the Coo: The Curse of the Fae Become Ferghas, a loyal, big hearted Highland coo who refuses to let his homeland fall to darkness.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 March 2026 @ 10:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NjI5MDYxLnBuZw==/original/7xPPJO.png",
+        "tags": [
+            "coo",
+            "fae",
+            "ferghas",
+            "ferghas-the-coo",
+            "highland-coo",
+            "highlands",
+            "RPG Maker",
+            "scotland"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Joystick",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jpyann.itch.io/unschool-battle-fanmade",
+        "name": "Unschool Battle Fan-Made",
+        "dev": "JPYann",
+        "description": "Ini adalah game yang saya buat sebagai viewer Marapthon, mengambil salah satu aktivitasnya, yaitu Unschool Battle .",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA1MzU2LnBuZw==/original/HKpKLm.png",
+        "tags": [
+            "Fangame",
+            "Quiz",
+            "streamer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
         "safe_virus": "?",
         "notes": ""
     }
