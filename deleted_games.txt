@@ -1,152 +1,160 @@
 === Deleted Games Log ===
-Total deleted: 37
+Total deleted: 39
 ==================================================
 
-1. [2026-05-31] BERSERK SURVIVOR
+1. [2026-06-03] idle primes
+   URL:    https://ipipgamedev.itch.io/idle-primes
+   Reason: Game page no longer exists (HTTP 404)
+
+2. [2026-06-03] Lとじゃんけんするだけ
+   URL:    https://superleisurelylife.itch.io/l-rockpaperscissors-l-fanmadegame
+   Reason: Game page no longer exists (HTTP 404)
+
+3. [2026-05-31] BERSERK SURVIVOR
    URL:    https://renzk.itch.io/berserksurvivor
    Reason: Game page no longer exists (HTTP 404)
 
-2. [2026-05-29] Arcane KItchen v.3
+4. [2026-05-29] Arcane KItchen v.3
    URL:    https://diegodelgadog6.itch.io/arcane-kitchen-v3
    Reason: Game page no longer exists (HTTP 404)
 
-3. [2026-05-29] Low Effort Romance [Prototype]
+5. [2026-05-29] Low Effort Romance [Prototype]
    URL:    https://azurextwilight.itch.io/low-effort-romance
    Reason: Game page no longer exists (HTTP 404)
 
-4. [2026-05-27] GORILLA BOUNCER V4
+6. [2026-05-27] GORILLA BOUNCER V4
    URL:    https://zohaven.itch.io/gorilla-bouncers
    Reason: Game page no longer exists (HTTP 404)
 
-5. [2026-05-27] ClickRealm - Online MMORPG
+7. [2026-05-27] ClickRealm - Online MMORPG
    URL:    https://clutch-games.itch.io/clickrealm-idle-mmorpg
    Reason: Game page no longer exists (HTTP 404)
 
-6. [2026-05-27] Spralt V3
+8. [2026-05-27] Spralt V3
    URL:    https://talihi.itch.io/spralt-remake-overhaul-re-overhauled
    Reason: Game page no longer exists (HTTP 404)
 
-7. [2026-05-23] Zenith Miner - Space Project - English
+9. [2026-05-23] Zenith Miner - Space Project - English
    URL:    https://gamersz.itch.io/zenith-miner-space-project-english-version
    Reason: Game page no longer exists (HTTP 404)
 
-8. [2026-05-23] Tarotro
+10. [2026-05-23] Tarotro
    URL:    https://worsteventgames.itch.io/tarotro
    Reason: Game became paid
 
-9. [2026-05-19] Pretend it's not There
+11. [2026-05-19] Pretend it's not There
    URL:    https://dreadloom-studios.itch.io/pretend-its-not-there
    Reason: Game page no longer exists (HTTP 404)
 
-10. [2026-05-19] PakuPaku Gyaru! 「 パクパクギャル！」
+12. [2026-05-19] PakuPaku Gyaru! 「 パクパクギャル！」
    URL:    https://sumi03c.itch.io/pakupaku-gyaru
    Reason: Game page no longer exists (HTTP 404)
 
-11. [2026-05-19] Alone in Christmas
+13. [2026-05-19] Alone in Christmas
    URL:    https://dreadloom-studios.itch.io/alone-in-christmas
    Reason: Game page no longer exists (HTTP 404)
 
-12. [2026-05-16] Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED
+14. [2026-05-16] Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED
    URL:    https://kozarto.itch.io/samsara-again-regain-again-rewind-retrainwizesigned
    Reason: Game page no longer exists (HTTP 404)
 
-13. [2026-05-16] Skeleton Quest
+15. [2026-05-16] Skeleton Quest
    URL:    https://kozarto.itch.io/skeleton-quest
    Reason: Game page no longer exists (HTTP 404)
 
-14. [2026-05-16] Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED
+16. [2026-05-16] Samsara: Again Regain Again Rewind - Retrain.WIZE/SIGNED
    URL:    https://delightfulredstar.itch.io/samsara-again-regain-again-rewind-retrainwizesigned
    Reason: Game page no longer exists (HTTP 404)
 
-15. [2026-05-13] Código 404
+17. [2026-05-13] Código 404
    URL:    https://carlosgames.itch.io/codigo-404
    Reason: Game page no longer exists (HTTP 404)
 
-16. [2026-05-13] La casa abandonada
+18. [2026-05-13] La casa abandonada
    URL:    https://carlosgames.itch.io/la-casa-abandonada
    Reason: Game page no longer exists (HTTP 404)
 
-17. [2026-05-01] Through His Eyes
+19. [2026-05-01] Through His Eyes
    URL:    https://tawarre31.itch.io/through-her-eyes
    Reason: Game page no longer exists (HTTP 404)
 
-18. [2026-05-01] A Crown of Velvet Thorns
+20. [2026-05-01] A Crown of Velvet Thorns
    URL:    https://anonymous-soul.itch.io/a-crown-of-velvet-thorns
    Reason: Game page no longer exists (HTTP 404)
 
-19. [2026-05-01] Love the Guard, Be the King (complete)
+21. [2026-05-01] Love the Guard, Be the King (complete)
    URL:    https://ligianunes.itch.io/love-the-guard-be-the-king
    Reason: Game became paid
 
-20. [2026-04-27] Pepsi express free
+22. [2026-04-27] Pepsi express free
    URL:    https://sickycreator.itch.io/pepsi-express-free
    Reason: Game page no longer exists (HTTP 404)
 
-21. [2026-04-25] C++ Console Games
+23. [2026-04-25] C++ Console Games
    URL:    https://hunterelise.itch.io/console-games
    Reason: Game page no longer exists (HTTP 404)
 
-22. [2026-04-23] Soap Killer
+24. [2026-04-23] Soap Killer
    URL:    https://rhynlen.itch.io/soap-killer
    Reason: Game page no longer exists (HTTP 404)
 
-23. [2026-04-23] Lost Ball
+25. [2026-04-23] Lost Ball
    URL:    https://ellena132005.itch.io/lost-ball
    Reason: Game page no longer exists (HTTP 404)
 
-24. [2026-04-21] devastate
+26. [2026-04-21] devastate
    URL:    https://e6atejib-hobn4kob.itch.io/devastate
    Reason: Game page no longer exists (HTTP 404)
 
-25. [2026-04-17] My take splnuko Idk
+27. [2026-04-17] My take splnuko Idk
    URL:    https://pro-monkey.itch.io/my-take-splnuko-idk
    Reason: Game page no longer exists (HTTP 404)
 
-26. [2026-04-13] SCP-3008 Infinite Store
+28. [2026-04-13] SCP-3008 Infinite Store
    URL:    https://christopher-elliot.itch.io/scp-3008-infinite-store
    Reason: Game page no longer exists (HTTP 404)
 
-27. [2026-04-09] Burning Boundaries |Sex Game
+29. [2026-04-09] Burning Boundaries |Sex Game
    URL:    https://hentaeiie.itch.io/burning-boundaries-sex-game
    Reason: Game page no longer exists (HTTP 404)
 
-28. [2026-04-09] FreshWomen - Season 2
+30. [2026-04-09] FreshWomen - Season 2
    URL:    https://epoorew.itch.io/freshwomen-season-2
    Reason: Game page no longer exists (HTTP 404)
 
-29. [2026-04-09] Married Into Hell |Sex Hentai|
+31. [2026-04-09] Married Into Hell |Sex Hentai|
    URL:    https://sexheantai.itch.io/married-into-hell-sex-hentai
    Reason: Game page no longer exists (HTTP 404)
 
-30. [2026-04-09] Fuckstone
+32. [2026-04-09] Fuckstone
    URL:    https://ehn-sabedra.itch.io/turtle-care-simulator
    Reason: Game page no longer exists (HTTP 404)
 
-31. [2026-04-09] Zero
+33. [2026-04-09] Zero
    URL:    https://ahdevgames.itch.io/zero
    Reason: Game became paid
 
-32. [2026-04-07] The Seat Across From Mine
+34. [2026-04-07] The Seat Across From Mine
    URL:    https://orb-star.itch.io/in-his-gaze
    Reason: Game page no longer exists (HTTP 404)
 
-33. [2026-04-03] Package You Shouldn’t Open
+35. [2026-04-03] Package You Shouldn’t Open
    URL:    https://cryzeder.itch.io/package-you-shouldnt-open
    Reason: Game page no longer exists (HTTP 404)
 
-34. [2026-04-01] Space Travel is Boring
+36. [2026-04-01] Space Travel is Boring
    URL:    https://potpan.itch.io/spacetravelisboring
    Reason: Game page no longer exists (HTTP 404)
 
-35. [2026-03-29] Femdom First Timers
+37. [2026-03-29] Femdom First Timers
    URL:    https://brayden-vargas.itch.io/femdom-first-timers
    Reason: Game page no longer exists (HTTP 404)
 
-36. [2026-03-21] Little Witch Inuko
+38. [2026-03-21] Little Witch Inuko
    URL:    https://jordan-smirnov.itch.io/little-witch-inuko
    Reason: Game page no longer exists (HTTP 404)
 
-37. [2026-03-13] Follower
+39. [2026-03-13] Follower
    URL:    https://grantrimi.itch.io/follower
    Reason: Game became paid
 
