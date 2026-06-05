@@ -232,5 +232,17 @@
         "name": "idle primes",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-06-03T09:55:22Z"
+    },
+    {
+        "url": "https://sea-of-ghosts.itch.io/the-method-of-hiding-a-body",
+        "name": "The Method of Hiding a Body",
+        "reason": "Game became paid",
+        "deleted_at": "2026-06-05T06:26:35Z"
+    },
+    {
+        "url": "https://tngineers.itch.io/snacktorio",
+        "name": "Snacktorio",
+        "reason": "Game became paid",
+        "deleted_at": "2026-06-05T07:35:00Z"
     }
 ]

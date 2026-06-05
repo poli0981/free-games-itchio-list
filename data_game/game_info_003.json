@@ -1,47 +1,5 @@
 [
     {
-        "url": "https://krajzeg.itch.io/dank-tomb",
-        "name": "Dank Tomb",
-        "dev": "Jakub Wasilewski",
-        "description": "Delve down into the dimly lit corridors of Dank Tomb and see if you can solve all its puzzles.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "25 July 2017 @ 17:00 UTC",
-        "rating": "4.7",
-        "rating_count": "306",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTQwOTY3Lzc0NjIyOS5naWY=/original/XyYEpT.gif",
-        "tags": [
-            "2D",
-            "Action-Adventure",
-            "Atmospheric",
-            "Exploration",
-            "Metroidvania",
-            "PICO-8",
-            "Pixel Art",
-            "Puzzle-Platformer",
-            "Singleplayer",
-            "Top Down Adventure"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Gamepad (any)"
-        ],
-        "made_with": [
-            "PICO-8"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://lumpytouch.itch.io/bad-monday-simulator",
         "name": "Bad Monday Simulator",
         "dev": "Lumpy, Spasco",
@@ -13822,37 +13780,6 @@
         "notes": ""
     },
     {
-        "url": "https://tngineers.itch.io/snacktorio",
-        "name": "Snacktorio",
-        "dev": "TNgineers",
-        "description": "Long ago, hungry monsters threatened to consume the world, until their appetites were sated - with delicious food! But now their numbers have grown, and there are more orders than we can keep up wi...",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "22",
-        "average_session": "N/A",
-        "nsfw": "Yes",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyNjAxMTcyLnBuZw==/original/YBg34W.png",
-        "tags": [
-            "Automation",
-            "Casual",
-            "factory",
-            "Food"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://danidev.itch.io/karlson",
         "name": "KARLSON",
         "dev": "Dani",
@@ -18523,6 +18450,80 @@
         ],
         "platforms": [
             "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://killgorack.itch.io/galactic-drift",
+        "name": "Galactic Drift",
+        "dev": "KillGorack",
+        "description": "Navigate a colorful 2D world in this fast‑paced top‑down scroller.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 May 2026 @ 04:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDYwMzk2LnBuZw==/original/uRwNwn.png",
+        "tags": [
+            "2D",
+            "Space",
+            "top"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://antiquegeargames.itch.io/letter-dragon",
+        "name": "Letter Dragon",
+        "dev": "AntiqueGearGames",
+        "description": "You're a dragon bee who has a delivery service.",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk5MjM1LnBuZw==/original/By5dYb.png",
+        "tags": [
+            "3D",
+            "3D Platformer",
+            "Arcade",
+            "Colorful",
+            "Cozy",
+            "Dragons",
+            "Mouse only",
+            "No AI",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
         ],
         "languages": [],
         "inputs": [],

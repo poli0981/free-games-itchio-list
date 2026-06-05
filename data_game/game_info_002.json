@@ -1967,39 +1967,6 @@
         "notes": ""
     },
     {
-        "url": "https://sea-of-ghosts.itch.io/the-method-of-hiding-a-body",
-        "name": "The Method of Hiding a Body",
-        "dev": "Sea of Ghosts",
-        "description": "You will play as a resentful ghost, prowling the deep mountains at midnight, possessing the living, and constantly searching for your own corpse.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MTc3MzIwLnBuZw==/original/IrNQsU.png",
-        "tags": [
-            "Atmospheric",
-            "Crime",
-            "First-Person",
-            "Horror",
-            "No AI",
-            "Psychological Horror",
-            "Story Rich",
-            "Unreal Engine"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://mikerayitagames.itch.io/washywashy",
         "name": "WashyWashy",
         "dev": "mikerayitagames",
@@ -18127,6 +18094,48 @@
         ],
         "made_with": [
             "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://krajzeg.itch.io/dank-tomb",
+        "name": "Dank Tomb",
+        "dev": "Jakub Wasilewski",
+        "description": "Delve down into the dimly lit corridors of Dank Tomb and see if you can solve all its puzzles.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 July 2017 @ 17:00 UTC",
+        "rating": "4.7",
+        "rating_count": "306",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTQwOTY3Lzc0NjIyOS5naWY=/original/XyYEpT.gif",
+        "tags": [
+            "2D",
+            "Action-Adventure",
+            "Atmospheric",
+            "Exploration",
+            "Metroidvania",
+            "PICO-8",
+            "Pixel Art",
+            "Puzzle-Platformer",
+            "Singleplayer",
+            "Top Down Adventure"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "PICO-8"
         ],
         "safe_virus": "?",
         "notes": ""
