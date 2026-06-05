@@ -1,47 +1,5 @@
 [
     {
-        "url": "https://stangshinez.itch.io/dont-talk-i-need-coffee",
-        "name": "[DTINC] Don't talk, I need Coffee ☕",
-        "dev": "ShineZ, zar_iiiii",
-        "description": "☕ Don't talk, I need Coffee! ☕ [Demo] \"One wrong choice, and you're back to sending resumes!\" [ PC build is highly recommended :3 ] ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ A Point & Click 2.",
-        "genre": "Survival",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "4",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2ODM3NDQ4LmdpZg==/original/tTXZUB.gif",
-        "tags": [
-            "coffee",
-            "Cute",
-            "dont-talk",
-            "dont-talk-i-need-coffee",
-            "dtinc",
-            "Female Protagonist",
-            "i-need-coffee",
-            "Narrative",
-            "Roguelike",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://izikalequin.itch.io/flower-galaxy",
         "name": "Flower Galaxy",
         "dev": "Izik Alequin",
@@ -18136,6 +18094,42 @@
         ],
         "made_with": [
             "PICO-8"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lumpytouch.itch.io/bad-monday-simulator",
+        "name": "Bad Monday Simulator",
+        "dev": "Lumpy, Spasco",
+        "description": "Undergarf is where the characters of Garfield and Undertale combine.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "759",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzkxMzI5NjkucG5n/original/splulK.png",
+        "tags": [
+            "Boss battle",
+            "Fangame",
+            "Indie",
+            "lumpy",
+            "Parody",
+            "Pixel Art",
+            "Singleplayer",
+            "Undertale",
+            "video"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
         ],
         "safe_virus": "?",
         "notes": ""

@@ -1,31 +1,5 @@
 [
     {
-        "url": "https://rotemeshet.itch.io/veptaleta",
-        "name": "Veptaleta",
-        "dev": "RotemEshet",
-        "description": "Hi Galil :)",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "N/A",
-        "tags": [],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://carlossss111.itch.io/timebeat",
         "name": "Timebeat 32",
         "dev": "Dan R",
@@ -3889,28 +3863,6 @@
             "Xbox controller",
             "Playstation controller"
         ],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://underdevlar.itch.io/seek",
-        "name": "Seek VR: Reimagined",
-        "dev": "UnderdevLAR",
-        "description": "This is the like the original Seek by Stelladev, but with multiplayer.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE3MzYxLnBuZw==/original/En6L7G.png",
-        "tags": [],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
         "made_with": [],
         "safe_virus": "?",
         "notes": ""

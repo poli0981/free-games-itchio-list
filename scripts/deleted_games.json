@@ -244,5 +244,17 @@
         "name": "Snacktorio",
         "reason": "Game became paid",
         "deleted_at": "2026-06-05T07:35:00Z"
+    },
+    {
+        "url": "https://aliothgames.itch.io/cigarette-christine",
+        "name": "cigarette christine",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-05T08:39:52Z"
+    },
+    {
+        "url": "https://underdevlar.itch.io/seek",
+        "name": "Seek VR: Reimagined",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-05T09:44:11Z"
     }
 ]
