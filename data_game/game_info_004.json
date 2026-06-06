@@ -4937,5 +4937,175 @@
         ],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://baobungames.itch.io/truck-race",
+        "name": "Truck Race",
+        "dev": "BaobunGames",
+        "description": "Player 1 (Red): Controls: WASD | Switch Camera: Shift Player 2 (Blue): Controls: Arrow keys | Switch Camera: Ctrl",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NzAwMTY3LmpwZw==/original/IK9mXW.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lux-uhoh.itch.io/la-casa-numero-11-a11",
+        "name": "La Casa Numero 11 (Grupo A11)",
+        "dev": "Lux_UhOh, Sofifrog, Mor8, PaulaAlonso, TomPace",
+        "description": "Ruth, una señora de 82 años tiene que sobrevivir la noche de entidades que la asechan.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NzAwMTEzLmpwZWc=/original/d0KCux.jpeg",
+        "tags": [
+            "First-Person",
+            "Horror",
+            "Psychological Horror",
+            "Survival Horror"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://digital-arson.itch.io/vigil-in-the-mist",
+        "name": "Vigil in the Mist",
+        "dev": "Digital Arson, Bean, SirDiabo, MEPHIS",
+        "description": "This is an atmospheric survival horror game, where you are stranded on a watchtower.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 May 2026 @ 11:00 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NTk2MDg5LnBuZw==/original/GdCo98.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "Singleplayer",
+            "Survival Horror",
+            "Unreal Engine"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "GIMP",
+            "Substance Painter & designer",
+            "Audacity",
+            "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jellyhoshiumi.itch.io/raise-a-wish",
+        "name": "Raise-a-Wish",
+        "dev": "jelly",
+        "description": "Awoken by the end of the world, the girl is thrust unprepared into a futile battle.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "8",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NTcyNDA1LnBuZw==/original/%2F5WktI.png",
+        "tags": [
+            "Multiple Endings",
+            "Sci-fi",
+            "Short",
+            "Singleplayer",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://noctroom.itch.io/namelesslady",
+        "name": "Nameless Lady",
+        "dev": "Noctroom-ノクトルーム-",
+        "description": "STORY それは、とある館にて。 任じられ、訪れた5人の男。 各々「人ならざる女」を発見す。 応援の至るまで、5分。 これを監視せねばならず。 OVERVIEW 【ルール】 5つのカメラを切り替えながら5分間リアルタイムで監視するゲーム。 各部屋にいる「対象」は、時間経過・ランダム・プレイヤーの行動等により襲ってくることがある。 状況により「銃を発砲する」「注視する(ズームする)」等の対処...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDg4MjUxLmpwZw==/original/o4o3tM.jpg",
+        "tags": [
+            "2D",
+            "Horror",
+            "monitoring",
+            "nonhuman"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
