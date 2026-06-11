@@ -10970,45 +10970,6 @@
         "notes": ""
     },
     {
-        "url": "https://cauldron.itch.io/wageslave",
-        "name": "wageslave: probation period",
-        "dev": "cauldron",
-        "description": "A short, narrative, dystopian office survival game.",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "2",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MTIzNzA3LnBuZw==/original/NtmwKr.png",
-        "tags": [
-            "2D",
-            "Dystopian",
-            "Narrative",
-            "No AI",
-            "Psychological Horror",
-            "Short",
-            "Story Rich",
-            "Working Simulator"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://toonshifters.itch.io/the-remedial",
         "name": "The Remedial ( School Horror )",
         "dev": "Toon Shifters",
@@ -17607,6 +17568,36 @@
         ],
         "made_with": [
             "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://izikalequin.itch.io/flower-galaxy",
+        "name": "Flower Galaxy",
+        "dev": "Izik Alequin",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODY2NjkyLnBuZw==/original/FabXQE.png",
+        "tags": [
+            "nature",
+            "Space",
+            "Wholesome"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
         ],
         "safe_virus": "?",
         "notes": ""

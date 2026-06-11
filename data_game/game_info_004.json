@@ -1,39 +1,5 @@
 [
     {
-        "url": "https://carlossss111.itch.io/timebeat",
-        "name": "Timebeat 32",
-        "dev": "Dan R",
-        "description": "Feel the rhythm in JUST 32 kilobytes! Hot new game for the Nintendo Gameboy! ------------------------- [ How to play ] Timebeat is a rhythm game for the 1989 Nintendo Gameboy programmed to fit on t...",
-        "genre": "Rhythm",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2NjcwODk5LnBuZw==/original/qPZDYv.png",
-        "tags": [
-            "2-bit",
-            "Game Boy",
-            "High Score",
-            "Music",
-            "No AI",
-            "Pixel Art",
-            "Retro",
-            "Singleplayer",
-            "tiny"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://ghanimationpro.itch.io/doki-doki-arakisou",
         "name": "Doki Doki 心跳荒木莊",
         "dev": "Gentleman Hat Animation Production",
@@ -17697,6 +17663,47 @@
             "Blender",
             "Aseprite",
             "Audacity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://the-drayn.itch.io/fnafso",
+        "name": "FNAF Simulator: Origins",
+        "dev": "Drayn",
+        "description": "Here you can buy and play for animatronics from the fnaf game universe not only! You will also be able to play and for the animatronics, made by fans.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 November 2020 @ 18:00 UTC",
+        "rating": "4.2",
+        "rating_count": "24",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzU5NzM3NTYuanBn/original/lkurIZ.jpg",
+        "tags": [
+            "16-bit",
+            "2D",
+            "8-Bit",
+            "Five Nights at Freddy's",
+            "Funny",
+            "Horror",
+            "Multiplayer",
+            "Pixel Art",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "Clickteam Fusion"
         ],
         "safe_virus": "?",
         "notes": ""

@@ -1,46 +1,5 @@
 [
     {
-        "url": "https://the-drayn.itch.io/fnafso",
-        "name": "FNAF Simulator: Origins",
-        "dev": "Drayn",
-        "description": "Here you can buy and play for animatronics from the fnaf game universe not only! You will also be able to play and for the animatronics, made by fans.",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "03 November 2020 @ 18:00 UTC",
-        "rating": "4.2",
-        "rating_count": "24",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzU5NzM3NTYuanBn/original/lkurIZ.jpg",
-        "tags": [
-            "16-bit",
-            "2D",
-            "8-Bit",
-            "Five Nights at Freddy's",
-            "Funny",
-            "Horror",
-            "Multiplayer",
-            "Pixel Art",
-            "Retro"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English",
-            "Russian"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [
-            "Clickteam Fusion"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://hazeyeyed.itch.io/penumbra-lane",
         "name": "Penumbra Lane",
         "dev": "HaZeyEyed",

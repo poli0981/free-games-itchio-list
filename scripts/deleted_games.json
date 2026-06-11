@@ -268,5 +268,11 @@
         "name": "Frunkers Lyratick Pluse [Animus_Gulitar's take]",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-06-07T09:32:13Z"
+    },
+    {
+        "url": "https://cauldron.itch.io/wageslave",
+        "name": "wageslave: probation period",
+        "reason": "Game became paid",
+        "deleted_at": "2026-06-11T06:08:10Z"
     }
 ]
