@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented here.
 
+## [3.6.1] - 2026-06-12 (Hotfix — desktop build vs broken `time` 0.3.48)
+
+### Fixed
+
+- **v3.6.0's desktop installers never built**: `time` 0.3.48 (released
+  2026-06-12, hours before the v3.6.0 tag) fails to compile inside
+  `tauri-utils` with `E0119: conflicting implementations of trait From<…>`
+  ([time-rs/time#783](https://github.com/time-rs/time/issues/783)). Since no
+  `Cargo.lock` is committed, CI resolved the broken release fresh.
+  `webapp/src-tauri/Cargo.toml` now pins `time = "=0.3.47"` (the version every
+  release through v3.5.2 built with) — remove the pin once the upstream fix
+  ships.
+
+### Notes
+
+- Web feature set is identical to v3.6.0; this tag exists to produce the
+  desktop installers. `about.ts` version bump also busts the new IndexedDB
+  catalog cache, which is harmless.
+- No Tauri version bump (`Cargo.toml` / `tauri.conf.json` stay `0.1.1`) — a
+  dependency pin to the previously-resolved version changes no binary
+  behavior.
+
 ## [3.6.0] - 2026-06-12 (i18n EN/VI + offline cache + custom error pages)
 
 ### Added

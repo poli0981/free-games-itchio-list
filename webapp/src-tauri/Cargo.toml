@@ -21,6 +21,10 @@ tauri-plugin-http = "2"
 tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+# time 0.3.48 (2026-06-12) fails to compile via tauri-utils (E0119,
+# https://github.com/time-rs/time/issues/783). No Cargo.lock is committed, so
+# pin the last good version until the upstream fix ships, then remove.
+time = "=0.3.47"
 
 [target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
 tauri-plugin-single-instance = "2"
