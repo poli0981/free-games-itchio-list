@@ -42,7 +42,10 @@ Path alias: `@/*` → `webapp/src/*`. Vite `define`s `__BUILD_DATE__` so About p
 - `src/lib/gpg/` — `canonicalize.ts` (pure: builds the byte string Git would hash for a commit), `sign.ts` (lazy-imports `openpgp`, exports `loadPrivateKey` / `signCommit` / `verifyDetached`), `storage.ts` (encrypted-key + metadata in localStorage).
 - `src/lib/crypto.ts` — AES-GCM 256 + PBKDF2-SHA256 100k rounds. **Uint8Array generic must be `<ArrayBuffer>`** under TS 6, not `<ArrayBufferLike>` — Web Crypto rejects the latter.
 - `src/lib/use-is-mobile.ts` — `useIsMobile()` hook based on `matchMedia('(max-width: 767px)')`. Use it for branches that need a distinct mobile layout (e.g. card view instead of a wide table).
-- `src/stores/` — Zustand stores: `auth` (in-memory PAT + GitHub user; idle timeout pulled from `prefs`), `theme`, `prefs` (sidebar collapsed + density + idle timeout + author override + notification settings), `gpg` (in-memory PrivateKey + fingerprint + uid + enabled), `undo` (20-entry FIFO of reverse ops).
+- `src/lib/i18n/` — minimal typed i18n. `en.ts` is the source of truth (`MessageKey = keyof typeof en`); `vi.ts` must **never** be static-imported — it stays a lazy chunk via `import('./vi')` in `index.ts` only. `t()` imperative, `useT()` reactive hook; language pref lives in the `prefs` store.
+- `src/main.tsx` — react-query cache persisted to IndexedDB via `idb-keyval` (`PersistQueryClientProvider`). Only public catalog queries (`db` / `deleted` / `count-history`) are dehydrated, never PAT-gated data. `buster = APP.version`, so bumping `about.ts` invalidates the cache. **`gcTime` must stay >= persist `maxAge`** or restored queries are garbage-collected right after hydration.
+- Error handling — `src/lib/http-error.ts` (`HttpError`), `src/components/error-page.tsx` + `route-error.tsx` + `error-boundary.tsx`. Hidden preview route `/errors/:code` (not linked from nav). `webapp/public/404.html` serves as the GitHub Pages custom 404.
+- `src/stores/` — Zustand stores: `auth` (in-memory PAT + GitHub user; idle timeout pulled from `prefs`), `theme`, `prefs` (sidebar collapsed + density + idle timeout + author override + notification settings + language), `gpg` (in-memory PrivateKey + fingerprint + uid + enabled), `undo` (20-entry FIFO of reverse ops).
 - `src/lib/about.ts` — keep the `THIRD_PARTY` array up to date when adding npm deps; About page reads it.
 
 ## Editable vs read-only fields
@@ -108,6 +111,6 @@ Fine-grained PAT scoped to **only this repo** with:
 - Don't commit a real PAT, ever. Settings page handles it client-side; CI uses `secrets.GH_TOKEN`.
 - When adding an npm dep, also add it to `webapp/src/lib/about.ts` so the About page lists it.
 
-## Current state (as of v3.5.0)
+## Current state (as of v3.6.1)
 
-`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.5.0` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`.
+`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.6.1` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`.
