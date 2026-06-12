@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Itch.io Free Games DB',
-  version: '3.5.2',
+  version: '3.6.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'MIT',
   buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
@@ -153,6 +153,9 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'TanStack Query', version: '5.100', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'TanStack Table', version: '8.21', license: 'MIT', url: 'https://tanstack.com/table', category: 'data' },
   { name: 'TanStack Virtual', version: '3.13', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
+  { name: 'TanStack Query Persist Client', version: '5.101', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query Async Storage Persister', version: '5.101', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'idb-keyval', version: '6.2', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
   { name: '@octokit/rest', version: '22.0', license: 'MIT', url: 'https://github.com/octokit/octokit.js', category: 'data' },
   { name: 'OpenPGP.js', version: '6.3', license: 'LGPL-3.0', url: 'https://openpgpjs.org', category: 'data' },
 

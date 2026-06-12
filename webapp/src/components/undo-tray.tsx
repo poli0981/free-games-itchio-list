@@ -4,8 +4,10 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { useUndo } from '@/stores/undo'
 import { useState } from 'react'
+import { useT } from '@/lib/i18n'
 
 export function UndoTray() {
+  const t = useT()
   const ops = useUndo((s) => s.ops)
   const remove = useUndo((s) => s.remove)
   const [pending, setPending] = useState<string | null>(null)
@@ -18,10 +20,10 @@ export function UndoTray() {
     setPending(id)
     try {
       await op.reverse()
-      toast.success(`Undone: ${op.label}`)
+      toast.success(t('undo.toast.done', { label: op.label }))
       remove(id)
     } catch (e) {
-      toast.error(`Undo failed: ${(e as Error).message}`)
+      toast.error(t('undo.toast.failed', { message: (e as Error).message }))
     } finally {
       setPending(null)
     }
@@ -31,7 +33,7 @@ export function UndoTray() {
     <Card className="border-dashed">
       <CardContent className="flex flex-wrap items-center gap-2 p-3 text-sm">
         <Undo2 className="h-4 w-4 text-muted-foreground" />
-        <span className="text-muted-foreground">Recent commits:</span>
+        <span className="text-muted-foreground">{t('undo.recentCommits')}</span>
         {ops.slice(0, 3).map((o) => (
           <Button
             key={o.id}
@@ -39,14 +41,14 @@ export function UndoTray() {
             size="sm"
             disabled={pending === o.id}
             onClick={() => runUndo(o.id)}
-            title={`Created ${new Date(o.timestamp).toLocaleString()}`}
+            title={t('undo.createdAt', { date: new Date(o.timestamp).toLocaleString() })}
           >
             <Undo2 className="h-3 w-3" />
-            {pending === o.id ? 'Undoing...' : `Undo: ${o.label}`}
+            {pending === o.id ? t('undo.undoing') : t('undo.action', { label: o.label })}
           </Button>
         ))}
         {ops.length > 3 && (
-          <span className="text-xs text-muted-foreground">+ {ops.length - 3} older</span>
+          <span className="text-xs text-muted-foreground">{t('undo.older', { count: ops.length - 3 })}</span>
         )}
       </CardContent>
     </Card>

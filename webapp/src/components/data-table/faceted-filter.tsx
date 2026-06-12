@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
+import { useT } from '@/lib/i18n'
 
 export interface FacetOption {
   value: string
@@ -20,6 +21,7 @@ interface FacetedFilterProps<TData> {
 }
 
 export function FacetedFilter<TData>({ column, title, options }: FacetedFilterProps<TData>) {
+  const t = useT()
   const rawFilterValue = column?.getFilterValue() as string[] | undefined
   const selected = useMemo(() => new Set(rawFilterValue ?? []), [rawFilterValue])
 
@@ -52,7 +54,7 @@ export function FacetedFilter<TData>({ column, title, options }: FacetedFilterPr
         </div>
         <div className="max-h-72 overflow-y-auto p-1">
           {options.length === 0 ? (
-            <p className="p-3 text-sm text-muted-foreground">No options</p>
+            <p className="p-3 text-sm text-muted-foreground">{t('table.noOptions')}</p>
           ) : (
             options.map((opt) => {
               const isSelected = selected.has(opt.value)
@@ -82,7 +84,7 @@ export function FacetedFilter<TData>({ column, title, options }: FacetedFilterPr
               onClick={() => column?.setFilterValue(undefined)}
               className="w-full rounded-sm px-2 py-1.5 text-center text-sm hover:bg-accent"
             >
-              Clear filters
+              {t('table.clearFilters')}
             </button>
           </div>
         )}

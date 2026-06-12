@@ -1,14 +1,16 @@
 import { useMemo } from 'react'
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { countBy } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { PALETTE } from './palette'
 
 export function StatusChart({ games }: { games: Game[] }) {
+  const t = useT()
   const data = useMemo(() => countBy(games, 'status'), [games])
   return (
-    <ChartCard title="Status Mix" description="Released vs prototype/in-progress">
+    <ChartCard title={t('charts.status.title')} description={t('charts.status.desc')}>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie data={data} dataKey="count" nameKey="key" outerRadius="80%">

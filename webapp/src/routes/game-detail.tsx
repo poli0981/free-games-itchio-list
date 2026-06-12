@@ -8,9 +8,13 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { Separator } from '@/components/ui/separator'
 import { ExtLink } from '@/components/ext-link'
 import { EditGameForm } from '@/components/edit-game-form'
+import { ErrorPage } from '@/components/error-page'
+import { RouteError } from '@/components/route-error'
+import { GameThumb } from '@/components/game-thumb'
 import { useGameBySlug } from '@/hooks/useGameBySlug'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useAuth } from '@/stores/auth'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 
 function FieldRow({ label, children }: { label: string; children: React.ReactNode }) {
@@ -36,6 +40,7 @@ function ArrayBadges({ items, variant = 'outline' }: { items: string[]; variant?
 }
 
 function GameDetailView({ game }: { game: Game }) {
+  const t = useT()
   useDocumentTitle(game.name)
   const pat = useAuth((s) => s.pat)
   const [editing, setEditing] = useState(false)
@@ -46,7 +51,7 @@ function GameDetailView({ game }: { game: Game }) {
         <Button variant="ghost" size="sm" asChild>
           <Link to="/games">
             <ArrowLeft className="h-4 w-4" />
-            Back to games
+            {t('detail.backToGames')}
           </Link>
         </Button>
         {!editing && (
@@ -54,10 +59,10 @@ function GameDetailView({ game }: { game: Game }) {
             size="sm"
             onClick={() => setEditing(true)}
             disabled={!pat}
-            title={pat ? 'Edit annotations' : 'Unlock your PAT in Settings to enable editing'}
+            title={pat ? t('detail.editTooltip') : t('detail.editTooltipLocked')}
           >
             <Pencil className="h-4 w-4" />
-            Edit
+            {t('common.edit')}
           </Button>
         )}
       </div>
@@ -74,37 +79,29 @@ function GameDetailView({ game }: { game: Game }) {
 
       <Card>
         <CardContent className="flex flex-col gap-6 p-6 md:flex-row">
-          {game.thumbnail ? (
-            <img
-              src={game.thumbnail}
-              alt={`${game.name} cover`}
-              width={630}
-              height={500}
-              decoding="async"
-              fetchPriority="high"
-              className="h-48 w-full flex-shrink-0 rounded-lg object-cover md:w-80"
-            />
-          ) : (
-            <div
-              role="presentation"
-              aria-hidden="true"
-              className="h-48 w-full flex-shrink-0 rounded-lg bg-muted md:w-80"
-            />
-          )}
+          <GameThumb
+            src={game.thumbnail}
+            alt={t('detail.coverAlt', { name: game.name })}
+            width={630}
+            height={500}
+            decoding="async"
+            fetchPriority="high"
+            className="h-48 w-full flex-shrink-0 rounded-lg object-cover md:w-80"
+          />
           <div className="flex min-w-0 flex-1 flex-col">
             <div className="flex flex-wrap items-baseline gap-2">
               <h1 className="text-3xl font-bold tracking-tight">{game.name}</h1>
               {game.nsfw === 'Yes' && <Badge variant="destructive">NSFW</Badge>}
               <Badge variant={game.status === 'Released' ? 'default' : 'secondary'}>
-                {game.status || 'Unknown'}
+                {game.status || t('common.unknown')}
               </Badge>
             </div>
-            <p className="mt-1 text-sm text-muted-foreground">by {game.dev}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{t('detail.byDev', { dev: game.dev })}</p>
             <p className="mt-3 text-sm">{game.description}</p>
             <div className="mt-auto pt-4">
               <Button variant="outline" size="sm" asChild>
                 <ExtLink href={game.url}>
-                  Open on itch.io
+                  {t('detail.openOnItch')}
                   <ExternalLink className="h-4 w-4" />
                 </ExtLink>
               </Button>
@@ -116,28 +113,28 @@ function GameDetailView({ game }: { game: Game }) {
       <div className="mt-6 grid gap-6 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Metadata</CardTitle>
+            <CardTitle className="text-base">{t('detail.metadata')}</CardTitle>
           </CardHeader>
           <CardContent>
             <dl className="divide-y">
-              <FieldRow label="Genre">
-                <Badge variant="secondary">{game.genre || 'Unknown'}</Badge>
+              <FieldRow label={t('detail.genre')}>
+                <Badge variant="secondary">{game.genre || t('common.unknown')}</Badge>
               </FieldRow>
-              <FieldRow label="Publisher">{game.publisher || '—'}</FieldRow>
-              <FieldRow label="Release date">{game.release_date || '—'}</FieldRow>
-              <FieldRow label="Rating">
+              <FieldRow label={t('detail.publisher')}>{game.publisher || '—'}</FieldRow>
+              <FieldRow label={t('detail.releaseDate')}>{game.release_date || '—'}</FieldRow>
+              <FieldRow label={t('detail.rating')}>
                 {game.rating ? (
                   <span>
                     {game.rating}{' '}
                     <span className="text-muted-foreground">
-                      {game.rating_count ? `(${game.rating_count} reviews)` : ''}
+                      {game.rating_count ? t('detail.reviewsCount', { count: game.rating_count }) : ''}
                     </span>
                   </span>
                 ) : (
                   '—'
                 )}
               </FieldRow>
-              <FieldRow label="Avg session">{game.average_session || '—'}</FieldRow>
+              <FieldRow label={t('detail.avgSession')}>{game.average_session || '—'}</FieldRow>
               <FieldRow label="NSFW">{game.nsfw || '—'}</FieldRow>
             </dl>
           </CardContent>
@@ -145,23 +142,23 @@ function GameDetailView({ game }: { game: Game }) {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Tech & Reach</CardTitle>
+            <CardTitle className="text-base">{t('detail.techReach')}</CardTitle>
           </CardHeader>
           <CardContent>
             <dl className="divide-y">
-              <FieldRow label="Platforms">
+              <FieldRow label={t('detail.platforms')}>
                 <ArrayBadges items={game.platforms} />
               </FieldRow>
-              <FieldRow label="Languages">
+              <FieldRow label={t('detail.languages')}>
                 <ArrayBadges items={game.languages} />
               </FieldRow>
-              <FieldRow label="Inputs">
+              <FieldRow label={t('detail.inputs')}>
                 <ArrayBadges items={game.inputs} />
               </FieldRow>
-              <FieldRow label="Made with">
+              <FieldRow label={t('detail.madeWith')}>
                 <ArrayBadges items={game.made_with} />
               </FieldRow>
-              <FieldRow label="Tags">
+              <FieldRow label={t('detail.tags')}>
                 <ArrayBadges items={game.tags} variant="secondary" />
               </FieldRow>
             </dl>
@@ -171,23 +168,20 @@ function GameDetailView({ game }: { game: Game }) {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Manual Annotations</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            These three fields are user-editable in Phase 2 (safe_virus, notes, nsfw). Everything
-            above comes from the scraper and is read-only.
-          </p>
+          <CardTitle className="text-base">{t('detail.manualAnnotations')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('detail.annotationsDesc')}</p>
         </CardHeader>
         <CardContent>
           <dl className="divide-y">
-            <FieldRow label="Safe / virus">
+            <FieldRow label={t('detail.safeVirus')}>
               <Badge variant="outline">{game.safe_virus || '?'}</Badge>
             </FieldRow>
-            <FieldRow label="NSFW (override)">{game.nsfw || '—'}</FieldRow>
-            <FieldRow label="Notes">
+            <FieldRow label={t('detail.nsfwOverride')}>{game.nsfw || '—'}</FieldRow>
+            <FieldRow label={t('detail.notes')}>
               {game.notes ? (
                 <span className="whitespace-pre-wrap">{game.notes}</span>
               ) : (
-                <span className="text-muted-foreground">No notes yet</span>
+                <span className="text-muted-foreground">{t('detail.noNotes')}</span>
               )}
             </FieldRow>
           </dl>
@@ -203,9 +197,10 @@ function GameDetailView({ game }: { game: Game }) {
 }
 
 export default function GameDetail() {
+  const t = useT()
   const { slug } = useParams()
   const decoded = slug ? decodeURIComponent(slug) : undefined
-  const { game, isLoading, isError, error } = useGameBySlug(decoded)
+  const { game, isLoading, isError, error, refetch } = useGameBySlug(decoded)
 
   if (isLoading) {
     return (
@@ -221,24 +216,24 @@ export default function GameDetail() {
   }
 
   if (isError) {
-    return (
-      <div className="container mx-auto p-6">
-        <p className="text-destructive">Failed to load: {error?.message}</p>
-      </div>
-    )
+    return <RouteError error={error} onRetry={() => void refetch()} />
   }
 
   if (!game) {
     return (
-      <div className="container mx-auto p-6">
-        <Button variant="ghost" size="sm" asChild className="mb-4">
-          <Link to="/games">
-            <ArrowLeft className="h-4 w-4" />
-            Back to games
-          </Link>
-        </Button>
-        <p className="text-muted-foreground">Game not found for slug: <code>{decoded}</code></p>
-      </div>
+      <ErrorPage
+        status={404}
+        title={t('error.gameNotFound.title')}
+        description={t('error.gameNotFound.desc', { slug: decoded ?? '' })}
+        actions={
+          <Button asChild>
+            <Link to="/games">
+              <ArrowLeft className="h-4 w-4" />
+              {t('detail.backToGames')}
+            </Link>
+          </Button>
+        }
+      />
     )
   }
 

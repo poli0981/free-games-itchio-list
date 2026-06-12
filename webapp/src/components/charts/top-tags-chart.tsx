@@ -1,23 +1,25 @@
 import { useMemo } from 'react'
 import { countByArray, topN } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 
 export function TopTagsChart({ games }: { games: Game[] }) {
+  const t = useT()
   const data = useMemo(() => topN(countByArray(games, 'tags'), 30), [games])
   return (
-    <ChartCard title="Top 30 Tags" description="Word-cloud-style ranking (sized by count)">
+    <ChartCard title={t('charts.topTags.title')} description={t('charts.topTags.desc')}>
       <div className="flex h-full flex-wrap content-start items-baseline gap-2 overflow-y-auto p-2">
-        {data.map((t) => {
-          const fontSize = computeTagFontSize(t.count, data[0]?.count ?? 1)
+        {data.map((tag) => {
+          const fontSize = computeTagFontSize(tag.count, data[0]?.count ?? 1)
           return (
             <span
-              key={t.key}
+              key={tag.key}
               style={{ fontSize: `${fontSize}px`, lineHeight: 1.1 }}
               className="font-medium text-foreground/80 hover:text-foreground"
-              title={`${t.count} games`}
+              title={t('charts.topTags.tagTitle', { count: tag.count })}
             >
-              {t.key}
+              {tag.key}
             </span>
           )
         })}

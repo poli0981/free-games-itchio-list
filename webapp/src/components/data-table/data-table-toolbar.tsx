@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { FacetedFilter, type FacetOption } from './faceted-filter'
 import type { Table } from '@tanstack/react-table'
+import { useT } from '@/lib/i18n'
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>
@@ -17,6 +18,7 @@ export function DataTableToolbar<TData>({
   onGlobalFilterChange,
   facets,
 }: DataTableToolbarProps<TData>) {
+  const t = useT()
   const isFiltered = table.getState().columnFilters.length > 0 || globalFilter.length > 0
 
   return (
@@ -24,7 +26,7 @@ export function DataTableToolbar<TData>({
       <div className="relative min-w-[240px] flex-1">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <Input
-          placeholder="Search name, dev, description..."
+          placeholder={t('table.searchPlaceholder')}
           value={globalFilter}
           onChange={(e) => onGlobalFilterChange(e.target.value)}
           className="h-9 pl-9"
@@ -47,7 +49,7 @@ export function DataTableToolbar<TData>({
             onGlobalFilterChange('')
           }}
         >
-          Reset
+          {t('table.reset')}
           <X className="h-4 w-4" />
         </Button>
       )}

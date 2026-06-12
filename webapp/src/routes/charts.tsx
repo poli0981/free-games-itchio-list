@@ -18,11 +18,14 @@ import {
   TopRatedCountChart,
   TopTagsChart,
 } from '@/components/charts'
+import { RouteError } from '@/components/route-error'
 import { useAllGames, useCountHistory, useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useT } from '@/lib/i18n'
 
 export default function Charts() {
-  useDocumentTitle('Charts')
+  const t = useT()
+  useDocumentTitle(t('titles.charts'))
   const games = useAllGames()
   const deleted = useDeletedGames()
   const history = useCountHistory()
@@ -30,7 +33,7 @@ export default function Charts() {
   if (games.isLoading) {
     return (
       <div className="container mx-auto p-6 space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight">Charts</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{t('titles.charts')}</h1>
         <div className="grid gap-4 md:grid-cols-2">
           {Array.from({ length: 6 }).map((_, i) => (
             <Skeleton key={i} className="h-72" />
@@ -41,12 +44,7 @@ export default function Charts() {
   }
 
   if (games.isError) {
-    return (
-      <div className="container mx-auto p-6">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight">Charts</h1>
-        <p className="text-destructive">Failed to load: {games.error.message}</p>
-      </div>
-    )
+    return <RouteError error={games.error} onRetry={() => void games.refetch()} />
   }
 
   const data = games.data?.games ?? []
@@ -55,14 +53,14 @@ export default function Charts() {
 
   return (
     <div className="container mx-auto p-6">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight">Charts</h1>
+      <h1 className="mb-4 text-3xl font-bold tracking-tight">{t('titles.charts')}</h1>
 
       <Tabs defaultValue="overview">
         <TabsList className="flex-wrap">
-          <TabsTrigger value="overview">Overview</TabsTrigger>
-          <TabsTrigger value="reach">Reach</TabsTrigger>
-          <TabsTrigger value="quality">Quality</TabsTrigger>
-          <TabsTrigger value="discovery">Discovery</TabsTrigger>
+          <TabsTrigger value="overview">{t('charts.tabs.overview')}</TabsTrigger>
+          <TabsTrigger value="reach">{t('charts.tabs.reach')}</TabsTrigger>
+          <TabsTrigger value="quality">{t('charts.tabs.quality')}</TabsTrigger>
+          <TabsTrigger value="discovery">{t('charts.tabs.discovery')}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="overview" className="space-y-4">

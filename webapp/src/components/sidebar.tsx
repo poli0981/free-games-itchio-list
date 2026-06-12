@@ -24,24 +24,25 @@ import { SyncButton } from '@/components/sync-button'
 import { useAuth } from '@/stores/auth'
 import { usePrefs } from '@/stores/prefs'
 import { isTauri } from '@/lib/runtime'
+import { useT, type MessageKey } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
 interface NavItem {
   to: string
-  label: string
+  label: MessageKey
   icon: LucideIcon
   end?: boolean
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { to: '/', label: 'Dashboard', icon: LayoutDashboard, end: true },
-  { to: '/games', label: 'Games', icon: Gamepad2 },
-  { to: '/add', label: 'Add Game', icon: Plus },
-  { to: '/charts', label: 'Charts', icon: BarChart3 },
-  { to: '/workflows', label: 'Workflows', icon: Workflow },
-  { to: '/deleted', label: 'Deleted', icon: Trash2 },
-  { to: '/settings', label: 'Settings', icon: Settings },
-  { to: '/about', label: 'About', icon: Info },
+  { to: '/', label: 'nav.dashboard', icon: LayoutDashboard, end: true },
+  { to: '/games', label: 'nav.games', icon: Gamepad2 },
+  { to: '/add', label: 'nav.addGame', icon: Plus },
+  { to: '/charts', label: 'nav.charts', icon: BarChart3 },
+  { to: '/workflows', label: 'nav.workflows', icon: Workflow },
+  { to: '/deleted', label: 'nav.deleted', icon: Trash2 },
+  { to: '/settings', label: 'nav.settings', icon: Settings },
+  { to: '/about', label: 'nav.about', icon: Info },
 ]
 
 interface SidebarBodyProps {
@@ -56,6 +57,7 @@ function SidebarHeader({
   variant,
   onToggleCollapsed,
 }: Pick<SidebarBodyProps, 'collapsed' | 'variant' | 'onToggleCollapsed'>) {
+  const t = useT()
   const user = useAuth((s) => s.user)
   const hasStoredPat = useAuth((s) => s.hasStoredPat)
   return (
@@ -75,7 +77,7 @@ function SidebarHeader({
               <img
                 src={user.avatar_url}
                 alt={user.login}
-                title={`Signed in as ${user.login}`}
+                title={t('sidebar.signedInAs', { login: user.login })}
                 width={24}
                 height={24}
                 loading="lazy"
@@ -83,9 +85,9 @@ function SidebarHeader({
                 className="h-6 w-6 rounded-full"
               />
             ) : hasStoredPat ? (
-              <span title="PAT saved but locked" className="h-2 w-2 rounded-full bg-yellow-500" />
+              <span title={t('sidebar.patLocked')} className="h-2 w-2 rounded-full bg-yellow-500" />
             ) : (
-              <span title="No PAT saved" className="h-2 w-2 rounded-full bg-muted-foreground/40" />
+              <span title={t('sidebar.noPat')} className="h-2 w-2 rounded-full bg-muted-foreground/40" />
             )}
           </div>
         </>
@@ -96,8 +98,8 @@ function SidebarHeader({
           size="icon"
           onClick={onToggleCollapsed}
           className={cn('h-8 w-8', !collapsed && 'ml-1')}
-          title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-          aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+          title={collapsed ? t('sidebar.expand') : t('sidebar.collapse')}
+          aria-label={collapsed ? t('sidebar.expand') : t('sidebar.collapse')}
         >
           {collapsed ? <PanelLeft className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
         </Button>
@@ -107,6 +109,7 @@ function SidebarHeader({
 }
 
 function SidebarNav({ collapsed, variant, onNavigate }: SidebarBodyProps) {
+  const t = useT()
   const isCompact = variant === 'desktop' && collapsed
   return (
     <nav className={cn('flex flex-1 flex-col gap-1 p-2', !isCompact && 'p-3')}>
@@ -116,7 +119,7 @@ function SidebarNav({ collapsed, variant, onNavigate }: SidebarBodyProps) {
           to={to}
           end={end}
           onClick={onNavigate}
-          title={isCompact ? label : undefined}
+          title={isCompact ? t(label) : undefined}
           className={({ isActive }) =>
             cn(
               'flex items-center rounded-md text-sm transition-colors',
@@ -128,7 +131,7 @@ function SidebarNav({ collapsed, variant, onNavigate }: SidebarBodyProps) {
           }
         >
           <Icon className="h-4 w-4" />
-          {!isCompact && label}
+          {!isCompact && t(label)}
         </NavLink>
       ))}
     </nav>
@@ -136,6 +139,7 @@ function SidebarNav({ collapsed, variant, onNavigate }: SidebarBodyProps) {
 }
 
 function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
+  const t = useT()
   const user = useAuth((s) => s.user)
   const hasStoredPat = useAuth((s) => s.hasStoredPat)
   const isCompact = variant === 'desktop' && collapsed
@@ -148,7 +152,7 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
     >
       {isTauri() && !isCompact && (
         <div className="rounded-md bg-secondary px-2 py-1 text-xs text-secondary-foreground">
-          Desktop mode (Tauri)
+          {t('sidebar.desktopMode')}
         </div>
       )}
       {isCompact ? (
@@ -158,8 +162,8 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
           <NavLink
             to="/about#support"
             onClick={onNavigate}
-            title="Support the project"
-            aria-label="Support the project"
+            title={t('sidebar.support')}
+            aria-label={t('sidebar.support')}
             className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             <Heart className="h-4 w-4" />
@@ -168,7 +172,7 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
             <img
               src={user.avatar_url}
               alt={user.login}
-              title={`Signed in as ${user.login}`}
+              title={t('sidebar.signedInAs', { login: user.login })}
               width={24}
               height={24}
               loading="lazy"
@@ -176,9 +180,9 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
               className="h-6 w-6 rounded-full"
             />
           ) : hasStoredPat ? (
-            <span title="PAT saved but locked" className="h-2 w-2 rounded-full bg-yellow-500" />
+            <span title={t('sidebar.patLocked')} className="h-2 w-2 rounded-full bg-yellow-500" />
           ) : (
-            <span title="No PAT saved" className="h-2 w-2 rounded-full bg-muted-foreground/40" />
+            <span title={t('sidebar.noPat')} className="h-2 w-2 rounded-full bg-muted-foreground/40" />
           )}
         </>
       ) : (
@@ -190,7 +194,7 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
             className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             <Heart className="h-3.5 w-3.5" />
-            Support the project
+            {t('sidebar.support')}
           </NavLink>
           <ExtLink
             href="https://github.com/poli0981/free-games-itchio-list"
@@ -230,6 +234,7 @@ export function Sidebar() {
 }
 
 export function MobileTopBar() {
+  const t = useT()
   const [open, setOpen] = useState(false)
   const location = useLocation()
   useEffect(() => {
@@ -242,14 +247,14 @@ export function MobileTopBar() {
     <header className="flex h-12 items-center justify-between gap-2 border-b bg-card px-2 md:hidden">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" aria-label="Open navigation" className="h-10 w-10">
+          <Button variant="ghost" size="icon" aria-label={t('sidebar.openNav')} className="h-10 w-10">
             <Menu className="h-5 w-5" />
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="w-64 p-0">
-          <SheetTitle className="sr-only">Navigation</SheetTitle>
+          <SheetTitle className="sr-only">{t('sidebar.navigation')}</SheetTitle>
           <SheetDescription className="sr-only">
-            Browse routes, support links, and account status.
+            {t('sidebar.navDescription')}
           </SheetDescription>
           <SidebarBody variant="mobile" onNavigate={() => setOpen(false)} />
         </SheetContent>

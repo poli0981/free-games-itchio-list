@@ -27,6 +27,7 @@ import { useUndo } from '@/stores/undo'
 import { createOctokit } from '@/lib/github/client'
 import { bulkUpdateGames, type BulkEditPatch } from '@/lib/github/git-data'
 import { useAllGames } from '@/hooks/useGames'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 
 interface BulkEditDialogProps {
@@ -39,6 +40,7 @@ interface BulkEditDialogProps {
 const SAFE_OPTIONS = ['?', 'Yes', 'No', 'Caution'] as const
 
 export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: BulkEditDialogProps) {
+  const t = useT()
   const pat = useAuth((s) => s.pat)
   const all = useAllGames()
   const qc = useQueryClient()
@@ -51,6 +53,15 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
   const [notesVal, setNotesVal] = useState('')
   const [busy, setBusy] = useState(false)
 
+  const safeLabel = (o: string) =>
+    o === 'Yes'
+      ? t('common.yes')
+      : o === 'No'
+        ? t('common.no')
+        : o === 'Caution'
+          ? t('bulk.safe.caution')
+          : o
+
   function buildPatch(): Partial<Pick<Game, 'safe_virus' | 'notes' | 'nsfw'>> {
     const p: Partial<Pick<Game, 'safe_virus' | 'notes' | 'nsfw'>> = {}
     if (editSafe) p.safe_virus = safeVal
@@ -60,11 +71,11 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
   }
 
   async function handleApply() {
-    if (!pat) return toast.error('Unlock your PAT in Settings.')
-    if (!all.data) return toast.error('Game cache not ready.')
+    if (!pat) return toast.error(t('bulk.toast.unlockPat'))
+    if (!all.data) return toast.error(t('bulk.toast.cacheNotReady'))
     const patch = buildPatch()
     if (Object.keys(patch).length === 0) {
-      return toast.error('Toggle at least one field to update.')
+      return toast.error(t('bulk.toast.noField'))
     }
     setBusy(true)
     try {
@@ -89,7 +100,7 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
 
       pushUndo({
         id: commitSha,
-        label: `Bulk-edit of ${selected.length} games`,
+        label: t('bulk.undo.editLabel', { n: selected.length }),
         timestamp: Date.now(),
         reverse: async () => {
           const { games } = (await qc.ensureQueryData({
@@ -106,13 +117,17 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
       })
 
       toast.success(
-        `${selected.length} games updated in ${touchedFiles.length} file(s) (${commitSha.slice(0, 7)}).`,
+        t('bulk.toast.updated', {
+          n: selected.length,
+          files: touchedFiles.length,
+          sha: commitSha.slice(0, 7),
+        }),
       )
       await qc.invalidateQueries({ queryKey: ['db'] })
       onComplete()
       onOpenChange(false)
     } catch (e) {
-      toast.error(`Bulk-edit failed: ${(e as Error).message}`)
+      toast.error(t('bulk.toast.editFailed', { msg: (e as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -122,18 +137,15 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Bulk Edit ({selected.length} games)</DialogTitle>
-          <DialogDescription>
-            Toggle a field on the left to apply the same value to every selected game. Untoggled
-            fields stay as they are.
-          </DialogDescription>
+          <DialogTitle>{t('bulk.edit.title', { n: selected.length })}</DialogTitle>
+          <DialogDescription>{t('bulk.edit.desc')}</DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4">
           <div className="flex items-start gap-3">
             <Checkbox checked={editSafe} onCheckedChange={(v) => setEditSafe(!!v)} className="mt-2" />
             <div className="flex-1 space-y-1.5">
-              <Label>Safe / virus</Label>
+              <Label>{t('bulk.field.safeVirus')}</Label>
               <Select value={safeVal} onValueChange={setSafeVal} disabled={!editSafe}>
                 <SelectTrigger className="w-40">
                   <SelectValue />
@@ -141,7 +153,7 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
                 <SelectContent>
                   {SAFE_OPTIONS.map((o) => (
                     <SelectItem key={o} value={o}>
-                      {o}
+                      {safeLabel(o)}
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -154,20 +166,22 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
             <div className="flex flex-1 items-center gap-3">
               <Label>NSFW</Label>
               <Switch checked={nsfwVal} onCheckedChange={setNsfwVal} disabled={!editNsfw} />
-              <span className="text-sm text-muted-foreground">{nsfwVal ? 'Yes' : 'No'}</span>
+              <span className="text-sm text-muted-foreground">
+                {nsfwVal ? t('common.yes') : t('common.no')}
+              </span>
             </div>
           </div>
 
           <div className="flex items-start gap-3">
             <Checkbox checked={editNotes} onCheckedChange={(v) => setEditNotes(!!v)} className="mt-2" />
             <div className="flex-1 space-y-1.5">
-              <Label>Notes (replaces existing)</Label>
+              <Label>{t('bulk.field.notesReplace')}</Label>
               <Textarea
                 value={notesVal}
                 onChange={(e) => setNotesVal(e.target.value)}
                 disabled={!editNotes}
                 rows={3}
-                placeholder="Same notes for every selected game"
+                placeholder={t('bulk.edit.notesPlaceholder')}
               />
             </div>
           </div>
@@ -175,11 +189,11 @@ export function BulkEditDialog({ open, onOpenChange, selected, onComplete }: Bul
 
         <DialogFooter>
           <Button variant="ghost" onClick={() => onOpenChange(false)} disabled={busy}>
-            Cancel
+            {t('common.cancel')}
           </Button>
           <Button onClick={handleApply} disabled={busy || !pat}>
             <Save className="h-4 w-4" />
-            {busy ? 'Applying...' : 'Apply to selected'}
+            {busy ? t('bulk.edit.applying') : t('bulk.edit.apply')}
           </Button>
         </DialogFooter>
       </DialogContent>

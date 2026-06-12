@@ -2,13 +2,14 @@ import { useQuery } from '@tanstack/react-query'
 import { useAuth } from '@/stores/auth'
 import { createOctokit } from '@/lib/github/client'
 import { listWorkflowRuns, type WorkflowFile } from '@/lib/github/workflow'
+import type { MessageKey } from '@/lib/i18n'
 
-export const WORKFLOWS: { file: WorkflowFile; label: string; description: string }[] = [
-  { file: 'update.yml', label: 'Update', description: 'Scrape new URLs from temp_link.json + INPUT_URL' },
-  { file: 'check_paid.yml', label: 'Check Paid', description: 'Re-verify free/paid status' },
-  { file: 'check_alive.yml', label: 'Check Alive', description: 'Verify URLs return 2xx/3xx' },
-  { file: 'generate_table.yml', label: 'Generate Tables', description: 'Regenerate lists/*.md' },
-  { file: 'log_deleted.yml', label: 'Log Deleted', description: 'Update deleted_games.txt' },
+export const WORKFLOWS: { file: WorkflowFile; labelKey: MessageKey; descriptionKey: MessageKey }[] = [
+  { file: 'update.yml', labelKey: 'workflows.update.label', descriptionKey: 'workflows.update.desc' },
+  { file: 'check_paid.yml', labelKey: 'workflows.checkPaid.label', descriptionKey: 'workflows.checkPaid.desc' },
+  { file: 'check_alive.yml', labelKey: 'workflows.checkAlive.label', descriptionKey: 'workflows.checkAlive.desc' },
+  { file: 'generate_table.yml', labelKey: 'workflows.generateTables.label', descriptionKey: 'workflows.generateTables.desc' },
+  { file: 'log_deleted.yml', labelKey: 'workflows.logDeleted.label', descriptionKey: 'workflows.logDeleted.desc' },
 ]
 
 export function useWorkflowRuns(workflow: WorkflowFile, enabled = true) {

@@ -32,16 +32,18 @@ import { checkRepoAccess, fetchAuthenticatedUser } from '@/lib/github/client'
 import { REPO } from '@/lib/config'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { GpgCard } from '@/components/settings/gpg-card'
+import { switchLanguage, useT, type MessageKey } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
-const THEME_CHOICES: { value: Theme; label: string; icon: typeof Sun }[] = [
-  { value: 'light', label: 'Light', icon: Sun },
-  { value: 'dark', label: 'Dark', icon: Moon },
-  { value: 'system', label: 'System', icon: Monitor },
+const THEME_CHOICES: { value: Theme; labelKey: MessageKey; icon: typeof Sun }[] = [
+  { value: 'light', labelKey: 'settings.theme.light', icon: Sun },
+  { value: 'dark', labelKey: 'settings.theme.dark', icon: Moon },
+  { value: 'system', labelKey: 'settings.theme.system', icon: Monitor },
 ]
 
 export default function Settings() {
-  useDocumentTitle('Settings')
+  const t = useT()
+  useDocumentTitle(t('titles.settings'))
   const { pat, user, hasStoredPat, setPat, setUser, lock, refreshStoredFlag } = useAuth()
   const theme = useThemeStore((s) => s.theme)
   const setTheme = useThemeStore((s) => s.setTheme)
@@ -54,11 +56,11 @@ export default function Settings() {
 
   async function handleSavePat() {
     if (!patInput.trim()) {
-      toast.error('Paste a Personal Access Token first.')
+      toast.error(t('settings.toast.pastePat'))
       return
     }
     if (passphrase.length < 8) {
-      toast.error('Passphrase must be at least 8 characters.')
+      toast.error(t('settings.toast.passMin'))
       return
     }
     setBusy(true)
@@ -71,9 +73,9 @@ export default function Settings() {
       refreshStoredFlag()
       setPatInput('')
       setPassphrase('')
-      toast.success(`Saved & unlocked as ${userInfo.login}`)
+      toast.success(t('settings.toast.savedUnlockedAs', { login: userInfo.login }))
     } catch (err) {
-      toast.error(`Could not validate PAT: ${(err as Error).message}`)
+      toast.error(t('settings.toast.patInvalid', { message: (err as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -82,11 +84,11 @@ export default function Settings() {
   async function handleUnlock() {
     const packed = readEncryptedPat()
     if (!packed) {
-      toast.error('No saved PAT found.')
+      toast.error(t('settings.toast.noSavedPat'))
       return
     }
     if (!unlockPassphrase) {
-      toast.error('Enter your passphrase.')
+      toast.error(t('settings.toast.enterPassphrase'))
       return
     }
     setBusy(true)
@@ -96,9 +98,9 @@ export default function Settings() {
       setPat(decrypted)
       setUser(userInfo)
       setUnlockPassphrase('')
-      toast.success(`Unlocked as ${userInfo.login}`)
+      toast.success(t('settings.toast.unlockedAs', { login: userInfo.login }))
     } catch (err) {
-      toast.error(`Unlock failed: ${(err as Error).message}`)
+      toast.error(t('settings.toast.unlockFailed', { message: (err as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -107,17 +109,16 @@ export default function Settings() {
   function handleLock() {
     lock()
     setRepoOk(null)
-    toast.info('Locked. Enter your passphrase to unlock again.')
+    toast.info(t('settings.toast.locked'))
   }
 
   function handleRemove() {
-    if (!confirm('Remove the encrypted PAT from this browser? You will need to paste it again.'))
-      return
+    if (!confirm(t('settings.confirm.removePat'))) return
     clearEncryptedPat()
     lock()
     refreshStoredFlag()
     setRepoOk(null)
-    toast.success('Encrypted PAT removed from localStorage.')
+    toast.success(t('settings.toast.patRemoved'))
   }
 
   async function handleTestRepo() {
@@ -129,8 +130,8 @@ export default function Settings() {
       setRepoOk(ok)
       toast[ok ? 'success' : 'error'](
         ok
-          ? `Can access ${REPO.owner}/${REPO.name}`
-          : `No access to ${REPO.owner}/${REPO.name}. Check token scopes.`,
+          ? t('settings.toast.repoOk', { repo: `${REPO.owner}/${REPO.name}` })
+          : t('settings.toast.repoFail', { repo: `${REPO.owner}/${REPO.name}` }),
       )
     } finally {
       setBusy(false)
@@ -139,36 +140,43 @@ export default function Settings() {
 
   return (
     <div className="container mx-auto max-w-2xl p-6">
-      <h1 className="mb-6 text-3xl font-bold tracking-tight">Settings</h1>
+      <h1 className="mb-6 text-3xl font-bold tracking-tight">{t('titles.settings')}</h1>
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">GitHub Authentication</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            Your PAT is encrypted with AES-GCM (PBKDF2-SHA256, 100k iterations) using your
-            passphrase before being stored in localStorage. The decrypted token only lives in
-            memory while the tab is open.
-          </p>
+          <CardTitle className="text-base">{t('settings.auth.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('settings.auth.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-5">
           <div className="flex flex-wrap items-center gap-3">
             <div className="text-sm">
-              Status:{' '}
+              {t('settings.auth.status')}{' '}
               {pat ? (
                 <Badge variant="default">
-                  <Unlock className="mr-1 h-3 w-3" /> Unlocked
+                  <Unlock className="mr-1 h-3 w-3" /> {t('settings.auth.unlocked')}
                 </Badge>
               ) : hasStoredPat ? (
                 <Badge variant="secondary">
-                  <Lock className="mr-1 h-3 w-3" /> Saved (locked)
+                  <Lock className="mr-1 h-3 w-3" /> {t('settings.auth.savedLocked')}
                 </Badge>
               ) : (
-                <Badge variant="outline">No token saved</Badge>
+                <Badge variant="outline">{t('settings.auth.noToken')}</Badge>
               )}
             </div>
             {user && (
               <div className="flex items-center gap-2 text-sm">
-                <img src={user.avatar_url} alt="" className="h-6 w-6 rounded-full" />
+                <img
+                  src={user.avatar_url}
+                  alt=""
+                  width={24}
+                  height={24}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-6 w-6 rounded-full"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none'
+                  }}
+                />
                 <span>{user.login}</span>
               </div>
             )}
@@ -180,47 +188,47 @@ export default function Settings() {
             <div className="space-y-3">
               <div className="flex flex-wrap gap-2">
                 <Button onClick={handleTestRepo} disabled={busy} variant="outline" size="sm">
-                  Test repo access
+                  {t('settings.auth.testRepo')}
                   {repoOk === true && <Check className="h-4 w-4 text-green-600" />}
                   {repoOk === false && <X className="h-4 w-4 text-destructive" />}
                 </Button>
                 <Button onClick={handleLock} variant="outline" size="sm">
                   <Lock className="h-4 w-4" />
-                  Lock
+                  {t('settings.auth.lock')}
                 </Button>
                 <Button onClick={handleRemove} variant="destructive" size="sm">
                   <Trash2 className="h-4 w-4" />
-                  Remove saved PAT
+                  {t('settings.auth.removeSaved')}
                 </Button>
               </div>
             </div>
           ) : hasStoredPat ? (
             <div className="space-y-3">
               <div className="space-y-1.5">
-                <Label htmlFor="unlock-pass">Passphrase</Label>
+                <Label htmlFor="unlock-pass">{t('settings.auth.passphrase')}</Label>
                 <Input
                   id="unlock-pass"
                   type="password"
                   value={unlockPassphrase}
                   onChange={(e) => setUnlockPassphrase(e.target.value)}
-                  placeholder="Your passphrase"
+                  placeholder={t('settings.auth.passphrasePlaceholder')}
                   onKeyDown={(e) => e.key === 'Enter' && handleUnlock()}
                 />
               </div>
               <div className="flex flex-wrap gap-2">
                 <Button onClick={handleUnlock} disabled={busy}>
                   <Unlock className="h-4 w-4" />
-                  Unlock
+                  {t('settings.auth.unlock')}
                 </Button>
                 <Button onClick={handleRemove} variant="ghost" size="sm">
-                  Forget saved PAT
+                  {t('settings.auth.forgetSaved')}
                 </Button>
               </div>
             </div>
           ) : (
             <div className="space-y-3">
               <div className="space-y-1.5">
-                <Label htmlFor="pat">Personal Access Token</Label>
+                <Label htmlFor="pat">{t('settings.auth.patLabel')}</Label>
                 <Input
                   id="pat"
                   type="password"
@@ -230,40 +238,41 @@ export default function Settings() {
                 />
                 <div className="space-y-1 text-xs text-muted-foreground">
                   <p>
-                    Fine-grained token scoped to only{' '}
+                    {t('settings.auth.patScopePrefix')}{' '}
                     <span className="font-mono">
                       {REPO.owner}/{REPO.name}
                     </span>
-                    , with these repository permissions:
+                    {t('settings.auth.patScopeSuffix')}
                   </p>
                   <ul className="ml-4 list-disc space-y-0.5">
                     <li>
-                      <span className="font-mono">Contents</span>: Read and write — required for
-                      edits, deletes, and queueing URLs.
+                      <span className="font-mono">Contents</span>: Read and write —{' '}
+                      {t('settings.auth.permContents')}
                     </li>
                     <li>
-                      <span className="font-mono">Actions</span>: Read and write — required to
-                      dispatch the scraper workflow from Add / Workflows.
+                      <span className="font-mono">Actions</span>: Read and write —{' '}
+                      {t('settings.auth.permActions')}
                     </li>
                   </ul>
                   <p className="pt-1">
-                    Classic tokens with the <span className="font-mono">workflow</span> scope also
-                    work but grant access to every repo you can write to.
+                    {t('settings.auth.classicPrefix')}{' '}
+                    <span className="font-mono">workflow</span>{' '}
+                    {t('settings.auth.classicSuffix')}
                   </p>
                 </div>
               </div>
               <div className="space-y-1.5">
-                <Label htmlFor="pass">Passphrase</Label>
+                <Label htmlFor="pass">{t('settings.auth.passphrase')}</Label>
                 <Input
                   id="pass"
                   type="password"
                   value={passphrase}
                   onChange={(e) => setPassphrase(e.target.value)}
-                  placeholder="Min 8 chars; required to unlock later"
+                  placeholder={t('settings.auth.passPlaceholder')}
                 />
               </div>
               <Button onClick={handleSavePat} disabled={busy}>
-                Save & unlock
+                {t('settings.auth.saveUnlock')}
               </Button>
             </div>
           )}
@@ -272,16 +281,30 @@ export default function Settings() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Appearance</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            Theme and layout density. Choices persist to localStorage.
-          </p>
+          <CardTitle className="text-base">{t('settings.appearance.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('settings.appearance.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-5">
           <div className="space-y-2">
-            <Label>Theme</Label>
+            <Label htmlFor="language">{t('common.language')}</Label>
+            <Select
+              value={prefs.language}
+              onValueChange={(v) => void switchLanguage(v as 'en' | 'vi')}
+            >
+              <SelectTrigger id="language" className="w-[200px]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">English</SelectItem>
+                <SelectItem value="vi">Tiếng Việt</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="space-y-2">
+            <Label>{t('settings.appearance.theme')}</Label>
             <div className="flex flex-wrap gap-2">
-              {THEME_CHOICES.map(({ value, label, icon: Icon }) => (
+              {THEME_CHOICES.map(({ value, labelKey, icon: Icon }) => (
                 <Button
                   key={value}
                   variant={theme === value ? 'default' : 'outline'}
@@ -290,14 +313,14 @@ export default function Settings() {
                   className={cn('min-w-[88px]')}
                 >
                   <Icon className="h-4 w-4" />
-                  {label}
+                  {t(labelKey)}
                 </Button>
               ))}
             </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="density">Density</Label>
+            <Label htmlFor="density">{t('settings.appearance.density')}</Label>
             <Select
               value={prefs.density}
               onValueChange={(v) => prefs.setDensity(v as 'normal' | 'compact')}
@@ -306,17 +329,17 @@ export default function Settings() {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="normal">Normal</SelectItem>
-                <SelectItem value="compact">Compact (smaller rows)</SelectItem>
+                <SelectItem value="normal">{t('settings.density.normal')}</SelectItem>
+                <SelectItem value="compact">{t('settings.density.compact')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div className="flex items-center justify-between gap-3">
             <div className="space-y-0.5">
-              <Label htmlFor="sidebar-collapsed">Collapse sidebar</Label>
+              <Label htmlFor="sidebar-collapsed">{t('settings.appearance.collapseSidebar')}</Label>
               <p className="text-xs text-muted-foreground">
-                Mirror of the toggle in the sidebar footer.
+                {t('settings.appearance.collapseSidebarDesc')}
               </p>
             </div>
             <Switch
@@ -330,14 +353,12 @@ export default function Settings() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Session</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            How long the decrypted PAT stays in memory after unlock.
-          </p>
+          <CardTitle className="text-base">{t('settings.session.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('settings.session.desc')}</p>
         </CardHeader>
         <CardContent>
           <div className="space-y-2">
-            <Label htmlFor="idle">Idle timeout</Label>
+            <Label htmlFor="idle">{t('settings.session.idleTimeout')}</Label>
             <Select
               value={String(prefs.idleTimeoutMs / 60_000)}
               onValueChange={(v) => prefs.setIdleTimeoutMs(Number(v) * 60_000)}
@@ -348,39 +369,41 @@ export default function Settings() {
               <SelectContent>
                 {IDLE_TIMEOUT_OPTIONS.map((m) => (
                   <SelectItem key={m} value={String(m)}>
-                    {m < 60 ? `${m} minutes` : `${m / 60} hour${m === 60 ? '' : 's'}`}
+                    {m < 60
+                      ? t('settings.session.minutes', { m })
+                      : m === 60
+                        ? t('settings.session.hour')
+                        : t('settings.session.hours', { h: m / 60 })}
                   </SelectItem>
                 ))}
               </SelectContent>
             </Select>
-            <p className="text-xs text-muted-foreground">
-              The PAT auto-locks on idle. Re-enter your passphrase to unlock again.
-            </p>
+            <p className="text-xs text-muted-foreground">{t('settings.session.idleNote')}</p>
           </div>
         </CardContent>
       </Card>
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Commit author</CardTitle>
+          <CardTitle className="text-base">{t('settings.author.title')}</CardTitle>
           <p className="text-xs text-muted-foreground">
-            Optional override for the <span className="font-mono">author</span> and{' '}
-            <span className="font-mono">committer</span> blocks of commits made from this app.
-            Leave blank to use the GitHub user from your PAT.
+            {t('settings.author.descPrefix')} <span className="font-mono">author</span>{' '}
+            {t('settings.author.descAnd')} <span className="font-mono">committer</span>{' '}
+            {t('settings.author.descSuffix')}
           </p>
         </CardHeader>
         <CardContent className="space-y-3">
           <div className="space-y-1.5">
-            <Label htmlFor="author-name">Name</Label>
+            <Label htmlFor="author-name">{t('settings.author.name')}</Label>
             <Input
               id="author-name"
               value={prefs.authorName}
               onChange={(e) => prefs.setAuthorName(e.target.value)}
-              placeholder={user?.name ?? user?.login ?? 'e.g. Your Name'}
+              placeholder={user?.name ?? user?.login ?? t('settings.author.namePlaceholder')}
             />
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="author-email">Email</Label>
+            <Label htmlFor="author-email">{t('settings.author.email')}</Label>
             <Input
               id="author-email"
               type="email"
@@ -389,8 +412,8 @@ export default function Settings() {
               placeholder={user ? `${user.login}@users.noreply.github.com` : 'you@example.com'}
             />
             <p className="text-xs text-muted-foreground">
-              For GPG-signed commits to show as <b>Verified</b>, this email must match one of the
-              UIDs in your GPG key.
+              {t('settings.author.verifiedPrefix')} <b>Verified</b>
+              {t('settings.author.verifiedSuffix')}
             </p>
           </div>
         </CardContent>
@@ -400,18 +423,14 @@ export default function Settings() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Notifications</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            Toast notifications shown at the top-right corner.
-          </p>
+          <CardTitle className="text-base">{t('settings.notif.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('settings.notif.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="flex items-center justify-between gap-3">
             <div className="space-y-0.5">
-              <Label htmlFor="notif-enabled">Enable toasts</Label>
-              <p className="text-xs text-muted-foreground">
-                Disables success / error / info popups globally.
-              </p>
+              <Label htmlFor="notif-enabled">{t('settings.notif.enable')}</Label>
+              <p className="text-xs text-muted-foreground">{t('settings.notif.enableDesc')}</p>
             </div>
             <Switch
               id="notif-enabled"
@@ -420,7 +439,7 @@ export default function Settings() {
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="notif-duration">Duration</Label>
+            <Label htmlFor="notif-duration">{t('settings.notif.duration')}</Label>
             <Select
               value={String(prefs.notificationDurationMs)}
               onValueChange={(v) => prefs.setNotificationDurationMs(Number(v))}

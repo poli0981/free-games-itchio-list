@@ -24,6 +24,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { ExtLink } from '@/components/ext-link'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useT, type MessageKey } from '@/lib/i18n'
 import {
   AI_TOOLS,
   APP,
@@ -42,12 +43,12 @@ import {
   type ThirdParty,
 } from '@/lib/about'
 
-const CATEGORY_LABELS: Record<ThirdParty['category'], string> = {
-  core: 'Core',
-  ui: 'UI / styling',
-  data: 'Data layer',
-  desktop: 'Desktop (Tauri)',
-  dev: 'Dev tooling',
+const CATEGORY_LABELS: Record<ThirdParty['category'], MessageKey> = {
+  core: 'about.thirdParty.core',
+  ui: 'about.thirdParty.ui',
+  data: 'about.thirdParty.data',
+  desktop: 'about.thirdParty.desktop',
+  dev: 'about.thirdParty.dev',
 }
 
 const SOCIAL_ICON: Record<string, LucideIcon> = {
@@ -71,29 +72,32 @@ const SOCIAL_GROUP_ORDER: SocialGroup[] = ['social', 'community', 'messaging', '
 const LEGAL_GROUP_ORDER: LegalGroup[] = ['policy', 'meta']
 
 function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
-  const items = THIRD_PARTY.filter((t) => t.category === category)
+  const t = useT()
+  const items = THIRD_PARTY.filter((lib) => lib.category === category)
   if (items.length === 0) return null
   return (
     <div className="space-y-2">
-      <h3 className="text-sm font-semibold text-muted-foreground">{CATEGORY_LABELS[category]}</h3>
+      <h3 className="text-sm font-semibold text-muted-foreground">
+        {t(CATEGORY_LABELS[category])}
+      </h3>
       <ul className="grid grid-cols-1 gap-1.5 md:grid-cols-2">
-        {items.map((t) => (
+        {items.map((lib) => (
           <li
-            key={t.name}
+            key={lib.name}
             className="flex items-center justify-between gap-2 rounded-md border p-2 text-sm"
           >
             <ExtLink
-              href={t.url}
+              href={lib.url}
               className="inline-flex items-center gap-1 truncate font-medium hover:underline"
-              title={`${t.name} ${t.version}`}
+              title={`${lib.name} ${lib.version}`}
             >
-              {t.name}
+              {lib.name}
               <ExternalLinkIcon className="h-3 w-3 opacity-50" />
             </ExtLink>
             <div className="flex flex-shrink-0 items-center gap-2 text-xs">
-              <span className="text-muted-foreground">{t.version}</span>
+              <span className="text-muted-foreground">{lib.version}</span>
               <Badge variant="outline" className="font-mono text-xs">
-                {t.license}
+                {lib.license}
               </Badge>
             </div>
           </li>
@@ -103,21 +107,20 @@ function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
   )
 }
 
-const GROUP_NOTE: Partial<Record<SocialGroup, string>> = {
-  messaging:
-    'Please DM your Telegram numeric ID privately. Never post it to Discord/X/public channels.',
-  support:
-    'Mirrors .github/FUNDING.yml — same handles GitHub uses for the Sponsor button.',
+const GROUP_NOTE: Partial<Record<SocialGroup, MessageKey>> = {
+  messaging: 'about.social.messagingNote',
+  support: 'about.social.supportNote',
 }
 
-const PLATFORM_NOTE: Record<string, string> = {
-  paypal: 'Receipt shows real legal name (DungDang212) — that’s me.',
+const PLATFORM_NOTE: Record<string, MessageKey> = {
+  paypal: 'about.social.paypalNote',
 }
 
 function SocialGroupSection({ group }: { group: SocialGroup }) {
+  const t = useT()
   const items = SOCIAL_LINKS.filter((s) => s.group === group)
   if (items.length === 0) return null
-  const note = GROUP_NOTE[group]
+  const noteKey = GROUP_NOTE[group]
   return (
     <div className="space-y-2">
       <h3
@@ -126,7 +129,7 @@ function SocialGroupSection({ group }: { group: SocialGroup }) {
       >
         {SOCIAL_GROUP_LABELS[group]}
       </h3>
-      {note && <p className="text-xs text-muted-foreground">{note}</p>}
+      {noteKey && <p className="text-xs text-muted-foreground">{t(noteKey)}</p>}
       <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
         {items.map((s) => (
           <SocialItem key={s.platform} link={s} />
@@ -137,8 +140,9 @@ function SocialGroupSection({ group }: { group: SocialGroup }) {
 }
 
 function SocialItem({ link }: { link: SocialLink }) {
+  const t = useT()
   const Icon = SOCIAL_ICON[link.platform] ?? Globe
-  const note = PLATFORM_NOTE[link.platform]
+  const noteKey = PLATFORM_NOTE[link.platform]
   return (
     <li className="rounded-md border">
       <ExtLink
@@ -152,43 +156,44 @@ function SocialItem({ link }: { link: SocialLink }) {
         </span>
         <ExternalLinkIcon className="h-3 w-3 flex-shrink-0 opacity-50" />
       </ExtLink>
-      {note && <p className="px-2 pb-1 text-[10px] text-muted-foreground">{note}</p>}
+      {noteKey && <p className="px-2 pb-1 text-[10px] text-muted-foreground">{t(noteKey)}</p>}
     </li>
   )
 }
 
 export default function About() {
-  useDocumentTitle('About')
+  const t = useT()
+  useDocumentTitle(t('titles.about'))
   return (
     <div className="container mx-auto max-w-4xl p-6">
-      <h1 className="mb-6 text-3xl font-bold tracking-tight">About</h1>
+      <h1 className="mb-6 text-3xl font-bold tracking-tight">{t('titles.about')}</h1>
 
       <Card>
         <CardHeader>
           <CardTitle>{APP.name}</CardTitle>
           <p className="text-xs text-muted-foreground">
-            v{APP.version} · built {APP.buildDate} · {APP.license} licensed
+            {t('about.app.meta', {
+              version: APP.version,
+              buildDate: APP.buildDate,
+              license: APP.license,
+            })}
           </p>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <p>
-            A read/write companion app for the{' '}
+            {t('about.app.descPrefix')}
             <ExtLink href={APP.repo} className="font-medium hover:underline">
               free-games-itchio-list
-            </ExtLink>{' '}
-            catalog. Browse 500+ free games from itch.io, edit annotations, dispatch the scraper
-            workflow with one click, and visualize the dataset.
+            </ExtLink>
+            {t('about.app.descSuffix')}
           </p>
-          <p className="text-muted-foreground">
-            Reads are public (no auth needed). Writes use a fine-grained GitHub PAT held only in
-            memory after passphrase unlock — see Settings.
-          </p>
+          <p className="text-muted-foreground">{t('about.app.access')}</p>
         </CardContent>
       </Card>
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Developer</CardTitle>
+          <CardTitle className="text-base">{t('about.developer.title')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <div className="flex flex-wrap items-center gap-2">
@@ -211,10 +216,8 @@ export default function About() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">AI co-authors</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            No real co-maintainers (introvert max level). These two LLMs are the closest thing.
-          </p>
+          <CardTitle className="text-base">{t('about.ai.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('about.ai.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-3 text-sm">
           {AI_TOOLS.map((tool) => (
@@ -237,17 +240,14 @@ export default function About() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Found a bug?</CardTitle>
+          <CardTitle className="text-base">{t('about.bug.title')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-3 text-sm">
-          <p className="text-muted-foreground">
-            If something's broken — desktop or web — file it here so I see it. Grok will probably
-            patch it before I wake up :D
-          </p>
+          <p className="text-muted-foreground">{t('about.bug.desc')}</p>
           <Button asChild variant="default" size="sm">
             <ExtLink href={ERROR_TEMPLATE_URL}>
               <Bug className="h-4 w-4" />
-              Open bug report template
+              {t('about.bug.openTemplate')}
               <ExternalLinkIcon className="h-3.5 w-3.5 opacity-80" />
             </ExtLink>
           </Button>
@@ -256,10 +256,8 @@ export default function About() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Find me elsewhere</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            DMs open on most. Replies slow (introvert max level). Pick whichever channel fits.
-          </p>
+          <CardTitle className="text-base">{t('about.social.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('about.social.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-5">
           {SOCIAL_GROUP_ORDER.map((group, i) => (
@@ -275,12 +273,9 @@ export default function About() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-base">
             <ScrollText className="h-4 w-4" />
-            Legal &amp; policies
+            {t('about.legal.title')}
           </CardTitle>
-          <p className="text-xs text-muted-foreground">
-            All policies are MD files in the repo — short, plain-language, slight humor, full
-            on-the-record terms. Updated 2026-05-05.
-          </p>
+          <p className="text-xs text-muted-foreground">{t('about.legal.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-5 text-sm">
           {LEGAL_GROUP_ORDER.map((group, i) => {
@@ -314,19 +309,18 @@ export default function About() {
             <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium hover:underline">
               docs/i18n/vi/
             </ExtLink>{' '}
-            — Vietnamese translations of the policies above (community-readable, English remains
-            the controlling version for legal interpretation).
+            {t('about.legal.viNote')}
           </p>
         </CardContent>
       </Card>
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Upstream data attribution</CardTitle>
+          <CardTitle className="text-base">{t('about.upstream.title')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <p>
-            Source:{' '}
+            {t('about.upstream.source')}{' '}
             <ExtLink href={UPSTREAM_DATA.url} className="font-medium hover:underline">
               {UPSTREAM_DATA.source}
             </ExtLink>
@@ -337,11 +331,8 @@ export default function About() {
 
       <Card className="mt-6">
         <CardHeader>
-          <CardTitle className="text-base">Third-party software</CardTitle>
-          <p className="text-xs text-muted-foreground">
-            Open-source libraries this app builds on. Click any name for the project's home page;
-            license names link to the SPDX identifier.
-          </p>
+          <CardTitle className="text-base">{t('about.thirdParty.title')}</CardTitle>
+          <p className="text-xs text-muted-foreground">{t('about.thirdParty.desc')}</p>
         </CardHeader>
         <CardContent className="space-y-5">
           <ThirdPartySection category="core" />
@@ -354,9 +345,7 @@ export default function About() {
         </CardContent>
       </Card>
 
-      <p className="mt-6 text-center text-xs text-muted-foreground">
-        Made with the libraries above. No tracking, no analytics, no telemetry.
-      </p>
+      <p className="mt-6 text-center text-xs text-muted-foreground">{t('about.footer')}</p>
     </div>
   )
 }

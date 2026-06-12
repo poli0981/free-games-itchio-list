@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import { computeKpis } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import { formatNumber } from '@/lib/utils'
 import type { DeletedGameEntry, Game } from '@/types/game'
 
@@ -10,13 +11,14 @@ interface KpiCardsProps {
 }
 
 export function KpiCards({ games, deleted }: KpiCardsProps) {
+  const t = useT()
   const kpis = useMemo(() => computeKpis(games, deleted), [games, deleted])
   const items = [
-    { label: 'Total games', value: formatNumber(kpis.totalGames) },
-    { label: 'Online (HTML5)', value: formatNumber(kpis.onlineCount) },
-    { label: 'NSFW', value: formatNumber(kpis.nsfwCount) },
-    { label: 'Deleted (total)', value: formatNumber(kpis.totalDeleted) },
-    { label: 'Avg rating', value: kpis.avgRating.toFixed(2) },
+    { label: t('charts.kpi.totalGames'), value: formatNumber(kpis.totalGames) },
+    { label: t('charts.kpi.online'), value: formatNumber(kpis.onlineCount) },
+    { label: t('charts.kpi.nsfw'), value: formatNumber(kpis.nsfwCount) },
+    { label: t('charts.kpi.deletedTotal'), value: formatNumber(kpis.totalDeleted) },
+    { label: t('charts.kpi.avgRating'), value: kpis.avgRating.toFixed(2) },
   ]
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
