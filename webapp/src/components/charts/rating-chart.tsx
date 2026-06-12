@@ -1,14 +1,16 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { ratingHistogram } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { PALETTE } from './palette'
 
 export function RatingChart({ games }: { games: Game[] }) {
+  const t = useT()
   const data = useMemo(() => ratingHistogram(games, 10), [games])
   return (
-    <ChartCard title="Rating Histogram" description="Bins of 0.5 stars from 0 to 5">
+    <ChartCard title={t('charts.rating.title')} description={t('charts.rating.desc')}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />

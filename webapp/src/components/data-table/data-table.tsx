@@ -17,6 +17,7 @@ import { useVirtualizer } from '@tanstack/react-virtual'
 import { DataTablePagination } from './data-table-pagination'
 import { cn } from '@/lib/utils'
 import { useIsMobile } from '@/lib/use-is-mobile'
+import { useT } from '@/lib/i18n'
 
 const ROW_HEIGHT = 56
 
@@ -63,6 +64,7 @@ export function DataTable<TData>({
   getRowId,
   renderMobileList,
 }: DataTableProps<TData>) {
+  const t = useT()
   const isMobile = useIsMobile()
   const enablePagination = !!pagination && !!onPaginationChange
   const table = useReactTable({
@@ -162,7 +164,7 @@ export function DataTable<TData>({
             {rows.length === 0 ? (
               <tr>
                 <td colSpan={columns.length} className="h-24 text-center text-muted-foreground">
-                  No results.
+                  {t('table.noResults')}
                 </td>
               </tr>
             ) : (

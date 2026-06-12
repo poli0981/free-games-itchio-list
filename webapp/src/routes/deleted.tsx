@@ -1,18 +1,21 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Badge } from '@/components/ui/badge'
+import { RouteError } from '@/components/route-error'
 import { useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { formatNumber } from '@/lib/utils'
+import { useT } from '@/lib/i18n'
 
 export default function Deleted() {
-  useDocumentTitle('Deleted Games')
+  const t = useT()
+  useDocumentTitle(t('titles.deleted'))
   const deleted = useDeletedGames()
 
   if (deleted.isLoading) {
     return (
       <div className="container mx-auto p-8 space-y-3">
-        <h1 className="text-3xl font-bold tracking-tight">Deleted Games</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{t('titles.deleted')}</h1>
         {Array.from({ length: 5 }).map((_, i) => (
           <Skeleton key={i} className="h-16" />
         ))}
@@ -21,12 +24,7 @@ export default function Deleted() {
   }
 
   if (deleted.isError) {
-    return (
-      <div className="container mx-auto p-8">
-        <h1 className="mb-6 text-3xl font-bold tracking-tight">Deleted Games</h1>
-        <p className="text-destructive">Failed to load: {deleted.error.message}</p>
-      </div>
-    )
+    return <RouteError error={deleted.error} onRetry={() => void deleted.refetch()} />
   }
 
   const entries = deleted.data ?? []
@@ -37,14 +35,14 @@ export default function Deleted() {
   return (
     <div className="container mx-auto p-8">
       <div className="mb-6 flex items-baseline justify-between">
-        <h1 className="text-3xl font-bold tracking-tight">Deleted Games</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{t('titles.deleted')}</h1>
         <p className="text-sm text-muted-foreground">
-          {formatNumber(sorted.length)} entries
+          {t('deleted.count', { count: formatNumber(sorted.length) })}
         </p>
       </div>
 
       {sorted.length === 0 ? (
-        <p className="text-muted-foreground">No deletions logged.</p>
+        <p className="text-muted-foreground">{t('deleted.empty')}</p>
       ) : (
         <div className="space-y-2">
           {sorted.map((d) => (

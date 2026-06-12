@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import type { ColumnDef, FilterFn, RowData } from '@tanstack/react-table'
 import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
+import { GameThumb } from '@/components/game-thumb'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
+import { t } from '@/lib/i18n'
 import { SortableHeader } from './sortable-header'
 
 declare module '@tanstack/react-table' {
@@ -37,14 +39,14 @@ export const gameColumns: ColumnDef<Game>[] = [
           (table.getIsSomePageRowsSelected() && 'indeterminate')
         }
         onCheckedChange={(v) => table.toggleAllRowsSelected(!!v)}
-        aria-label="Select all"
+        aria-label={t('table.selectAll')}
       />
     ),
     cell: ({ row }) => (
       <Checkbox
         checked={row.getIsSelected()}
         onCheckedChange={(v) => row.toggleSelected(!!v)}
-        aria-label="Select row"
+        aria-label={t('table.selectRow')}
       />
     ),
   },
@@ -56,21 +58,18 @@ export const gameColumns: ColumnDef<Game>[] = [
     enableColumnFilter: false,
     size: 80,
     meta: { priority: 1 },
-    cell: ({ row }) =>
-      row.original.thumbnail ? (
-        <img
-          src={row.original.thumbnail}
-          alt=""
-          width={64}
-          height={40}
-          loading="lazy"
-          decoding="async"
-          fetchPriority="low"
-          className="h-10 w-16 rounded object-cover"
-        />
-      ) : (
-        <div aria-hidden="true" className="h-10 w-16 rounded bg-muted" />
-      ),
+    cell: ({ row }) => (
+      <GameThumb
+        src={row.original.thumbnail}
+        alt=""
+        width={64}
+        height={40}
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
+        className="h-10 w-16 rounded object-cover"
+      />
+    ),
   },
   {
     id: 'name',
@@ -78,7 +77,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     meta: { priority: 1 },
     header: ({ column }) => (
       <SortableHeader
-        label="Name"
+        label={t('table.name')}
         sorted={column.getIsSorted()}
         onClick={(e) => column.toggleSorting(undefined, e.shiftKey)}
       />
@@ -98,7 +97,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     meta: { priority: 3 },
     header: ({ column }) => (
       <SortableHeader
-        label="Dev"
+        label={t('table.dev')}
         sorted={column.getIsSorted()}
         onClick={(e) => column.toggleSorting(undefined, e.shiftKey)}
       />
@@ -110,15 +109,15 @@ export const gameColumns: ColumnDef<Game>[] = [
   {
     id: 'genre',
     accessorKey: 'genre',
-    header: 'Genre',
+    header: () => t('table.genre'),
     meta: { priority: 2 },
     filterFn: arrayIncludesAny,
-    cell: ({ row }) => <Badge variant="secondary">{row.original.genre || 'Unknown'}</Badge>,
+    cell: ({ row }) => <Badge variant="secondary">{row.original.genre || t('common.unknown')}</Badge>,
   },
   {
     id: 'platforms',
     accessorKey: 'platforms',
-    header: 'Platforms',
+    header: () => t('table.platforms'),
     enableSorting: false,
     meta: { priority: 3 },
     filterFn: arrayIncludesAny,
@@ -138,7 +137,7 @@ export const gameColumns: ColumnDef<Game>[] = [
     meta: { priority: 2 },
     header: ({ column }) => (
       <SortableHeader
-        label="Rating"
+        label={t('table.rating')}
         sorted={column.getIsSorted()}
         onClick={(e) => column.toggleSorting(undefined, e.shiftKey)}
       />
@@ -160,32 +159,32 @@ export const gameColumns: ColumnDef<Game>[] = [
   {
     id: 'status',
     accessorKey: 'status',
-    header: 'Status',
+    header: () => t('table.status'),
     meta: { priority: 3 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) => (
       <Badge variant={row.original.status === 'Released' ? 'default' : 'secondary'}>
-        {row.original.status || 'Unknown'}
+        {row.original.status || t('common.unknown')}
       </Badge>
     ),
   },
   {
     id: 'nsfw',
     accessorKey: 'nsfw',
-    header: 'NSFW',
+    header: () => t('table.nsfw'),
     meta: { priority: 2 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) =>
       row.original.nsfw === 'Yes' ? (
         <Badge variant="destructive">NSFW</Badge>
       ) : (
-        <span className="text-xs text-muted-foreground">No</span>
+        <span className="text-xs text-muted-foreground">{t('common.no')}</span>
       ),
   },
   {
     id: 'safe_virus',
     accessorKey: 'safe_virus',
-    header: 'Safe',
+    header: () => t('table.safe'),
     meta: { priority: 3 },
     filterFn: arrayIncludesAny,
     cell: ({ row }) => (

@@ -18,6 +18,7 @@ import { createOctokit } from '@/lib/github/client'
 import { dispatchWorkflow, type WorkflowFile, type WorkflowRunSummary } from '@/lib/github/workflow'
 import { useWorkflowRuns, WORKFLOWS } from '@/hooks/useWorkflows'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useT, type MessageKey } from '@/lib/i18n'
 
 function StatusBadge({ run }: { run: WorkflowRunSummary }) {
   if (run.status !== 'completed') {
@@ -28,20 +29,21 @@ function StatusBadge({ run }: { run: WorkflowRunSummary }) {
   return <Badge variant="outline">{run.conclusion ?? '—'}</Badge>
 }
 
-function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label: string; description: string }) {
+function WorkflowPanel({ file, labelKey, descriptionKey }: { file: WorkflowFile; labelKey: MessageKey; descriptionKey: MessageKey }) {
+  const t = useT()
   const pat = useAuth((s) => s.pat)
   const runs = useWorkflowRuns(file)
   const [busy, setBusy] = useState(false)
 
   async function handleDispatch() {
-    if (!pat) return toast.error('Unlock your PAT in Settings.')
+    if (!pat) return toast.error(t('workflows.toast.unlockPat'))
     setBusy(true)
     try {
       await dispatchWorkflow(createOctokit(), file)
-      toast.success(`Dispatched ${file}.`)
+      toast.success(t('workflows.toast.dispatched', { file }))
       setTimeout(() => runs.refetch(), 3_000)
     } catch (e) {
-      toast.error(`Dispatch failed: ${(e as Error).message}`)
+      toast.error(t('workflows.toast.dispatchFailed', { message: (e as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -52,8 +54,8 @@ function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label
       <CardHeader>
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <div>
-            <CardTitle className="text-base">{label}</CardTitle>
-            <p className="text-xs text-muted-foreground">{description}</p>
+            <CardTitle className="text-base">{t(labelKey)}</CardTitle>
+            <p className="text-xs text-muted-foreground">{t(descriptionKey)}</p>
           </div>
           <div className="flex items-center gap-2">
             <Button
@@ -63,24 +65,24 @@ function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label
               disabled={runs.isFetching}
             >
               <RefreshCw className={`h-4 w-4 ${runs.isFetching ? 'animate-spin' : ''}`} />
-              Refresh
+              {t('workflows.refresh')}
             </Button>
             <Button size="sm" onClick={handleDispatch} disabled={busy || !pat}>
               <Play className="h-4 w-4" />
-              Dispatch
+              {t('workflows.dispatch')}
             </Button>
           </div>
         </div>
       </CardHeader>
       <CardContent>
         {!pat ? (
-          <p className="text-sm text-muted-foreground">Unlock your PAT to view runs.</p>
+          <p className="text-sm text-muted-foreground">{t('workflows.unlockPatToView')}</p>
         ) : runs.isLoading ? (
           <Skeleton className="h-32" />
         ) : runs.isError ? (
           <p className="text-sm text-destructive">{runs.error.message}</p>
         ) : (runs.data?.length ?? 0) === 0 ? (
-          <p className="text-sm text-muted-foreground">No runs yet.</p>
+          <p className="text-sm text-muted-foreground">{t('workflows.noRuns')}</p>
         ) : (
           <ul className="space-y-1.5 text-sm">
             {runs.data!.slice(0, 10).map((r) => (
@@ -104,7 +106,7 @@ function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label
                     rel="noreferrer"
                     className="inline-flex items-center gap-1 text-primary hover:underline"
                   >
-                    Open
+                    {t('workflows.openRun')}
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
@@ -118,11 +120,12 @@ function WorkflowPanel({ file, label, description }: { file: WorkflowFile; label
 }
 
 export default function Workflows() {
-  useDocumentTitle('Workflows')
+  const t = useT()
+  useDocumentTitle(t('titles.workflows'))
   const [current, setCurrent] = useState<string>(WORKFLOWS[0].file)
   return (
     <div className="container mx-auto p-6">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight">Workflows</h1>
+      <h1 className="mb-4 text-3xl font-bold tracking-tight">{t('titles.workflows')}</h1>
       <div className="mb-3 md:hidden">
         <Select value={current} onValueChange={setCurrent}>
           <SelectTrigger className="h-10 w-full">
@@ -131,7 +134,7 @@ export default function Workflows() {
           <SelectContent>
             {WORKFLOWS.map((w) => (
               <SelectItem key={w.file} value={w.file}>
-                {w.label}
+                {t(w.labelKey)}
               </SelectItem>
             ))}
           </SelectContent>
@@ -141,13 +144,13 @@ export default function Workflows() {
         <TabsList className="hidden flex-wrap md:inline-flex">
           {WORKFLOWS.map((w) => (
             <TabsTrigger key={w.file} value={w.file}>
-              {w.label}
+              {t(w.labelKey)}
             </TabsTrigger>
           ))}
         </TabsList>
         {WORKFLOWS.map((w) => (
           <TabsContent key={w.file} value={w.file}>
-            <WorkflowPanel file={w.file} label={w.label} description={w.description} />
+            <WorkflowPanel file={w.file} labelKey={w.labelKey} descriptionKey={w.descriptionKey} />
           </TabsContent>
         ))}
       </Tabs>

@@ -1,14 +1,16 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { countBy, topN } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { PALETTE } from './palette'
 
 export function AvgSessionChart({ games }: { games: Game[] }) {
+  const t = useT()
   const data = useMemo(() => topN(countBy(games, 'average_session'), 8), [games])
   return (
-    <ChartCard title="Average Session Length">
+    <ChartCard title={t('charts.avgSession.title')}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />

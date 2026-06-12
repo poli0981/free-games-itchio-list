@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+  GitHub Pages custom 404. Served for any missing *path* on the Pages origin
+  (the SPA itself uses HashRouter, so bad in-app routes are handled by the
+  React catch-all instead). Self-contained on purpose: no JS, no external
+  assets, colors mirror webapp/src/index.css tokens via prefers-color-scheme.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>404 — Itch.io Free Games Database</title>
+    <style>
+      :root {
+        --bg: hsl(0 0% 100%);
+        --fg: hsl(240 10% 3.9%);
+        --muted: hsl(240 3.8% 46.1%);
+        --border: hsl(240 5.9% 90%);
+        --card: hsl(0 0% 100%);
+        --btn-bg: hsl(240 5.9% 10%);
+        --btn-fg: hsl(0 0% 98%);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: hsl(240 10% 3.9%);
+          --fg: hsl(0 0% 98%);
+          --muted: hsl(240 5% 64.9%);
+          --border: hsl(240 3.7% 15.9%);
+          --card: hsl(240 10% 3.9%);
+          --btn-bg: hsl(0 0% 98%);
+          --btn-fg: hsl(240 5.9% 10%);
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        padding: 1.5rem;
+      }
+      .card {
+        max-width: 28rem;
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        background: var(--card);
+        padding: 2rem;
+        text-align: center;
+      }
+      .code {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        margin: 0;
+        font-variant-numeric: tabular-nums;
+      }
+      h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.025em; margin: 0.5rem 0 0; }
+      p { color: var(--muted); font-size: 0.875rem; line-height: 1.5; margin: 0.75rem 0 0; }
+      .vi { font-style: normal; }
+      a.btn {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.375rem;
+        background: var(--btn-bg);
+        color: var(--btn-fg);
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      a.btn:hover { opacity: 0.9; }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <p class="code">404</p>
+      <h1>Page not found</h1>
+      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <p lang="vi" class="vi">Trang bạn tìm không tồn tại hoặc đã bị di chuyển.</p>
+      <a class="btn" href="./">Open the app · Mở ứng dụng</a>
+    </main>
+  </body>
+</html>

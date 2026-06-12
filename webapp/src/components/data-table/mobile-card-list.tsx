@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import type { Row } from '@tanstack/react-table'
 import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
+import { GameThumb } from '@/components/game-thumb'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
+import { useT } from '@/lib/i18n'
 
 interface MobileCardListProps {
   rows: Row<Game>[]
@@ -11,10 +13,11 @@ interface MobileCardListProps {
 }
 
 export function MobileCardList({ rows, selectable }: MobileCardListProps) {
+  const t = useT()
   if (rows.length === 0) {
     return (
       <div className="rounded-md border bg-card p-6 text-center text-sm text-muted-foreground">
-        No results.
+        {t('table.noResults')}
       </div>
     )
   }
@@ -32,7 +35,7 @@ export function MobileCardList({ rows, selectable }: MobileCardListProps) {
                   <Checkbox
                     checked={row.getIsSelected()}
                     onCheckedChange={(v) => row.toggleSelected(!!v)}
-                    aria-label={`Select ${g.name}`}
+                    aria-label={t('table.selectGame', { name: g.name })}
                   />
                 </div>
               )}
@@ -40,22 +43,15 @@ export function MobileCardList({ rows, selectable }: MobileCardListProps) {
                 to={`/games/${encodeURIComponent(slug)}`}
                 className="flex min-w-0 flex-1 gap-3"
               >
-                {g.thumbnail ? (
-                  <img
-                    src={g.thumbnail}
-                    alt=""
-                    width={72}
-                    height={56}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-14 w-[72px] shrink-0 rounded object-cover"
-                  />
-                ) : (
-                  <div
-                    aria-hidden="true"
-                    className="h-14 w-[72px] shrink-0 rounded bg-muted"
-                  />
-                )}
+                <GameThumb
+                  src={g.thumbnail || undefined}
+                  alt=""
+                  width={72}
+                  height={56}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-14 w-[72px] shrink-0 rounded object-cover"
+                />
                 <div className="min-w-0 flex-1 space-y-1">
                   <div className="flex items-start justify-between gap-2">
                     <h3 className="line-clamp-2 text-sm font-medium leading-tight">

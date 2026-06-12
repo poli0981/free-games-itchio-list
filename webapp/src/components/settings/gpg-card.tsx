@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Switch } from '@/components/ui/switch'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import { useT } from '@/lib/i18n'
 import { useAuth } from '@/stores/auth'
 import { useGpg } from '@/stores/gpg'
 import { usePrefs } from '@/stores/prefs'
@@ -21,6 +22,7 @@ function formatFingerprint(fp: string): string {
 }
 
 export function GpgCard() {
+  const t = useT()
   const pat = useAuth((s) => s.pat)
   const gpg = useGpg()
   const prefs = usePrefs()
@@ -41,11 +43,11 @@ export function GpgCard() {
 
   async function handleImport() {
     if (!armoredInput.trim()) {
-      toast.error('Paste or upload an armored GPG private key.')
+      toast.error(t('gpg.toast.pasteKey'))
       return
     }
     if (webappPassphrase.length < 8) {
-      toast.error('Confirm your webapp passphrase (min 8 chars) to encrypt the key locally.')
+      toast.error(t('gpg.toast.confirmPassphrase'))
       return
     }
     setBusy(true)
@@ -68,9 +70,9 @@ export function GpgCard() {
       setArmoredInput('')
       setGpgPassphrase('')
       setWebappPassphrase('')
-      toast.success(`Imported ${formatFingerprint(fingerprint)} — signing enabled.`)
+      toast.success(t('gpg.toast.imported', { fingerprint: formatFingerprint(fingerprint) }))
     } catch (err) {
-      toast.error(`Import failed: ${(err as Error).message}`)
+      toast.error(t('gpg.toast.importFailed', { message: (err as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -79,11 +81,11 @@ export function GpgCard() {
   async function handleUnlock() {
     const packed = readEncryptedGpg()
     if (!packed) {
-      toast.error('No GPG key stored.')
+      toast.error(t('gpg.toast.noStoredKey'))
       return
     }
     if (!unlockPassphrase) {
-      toast.error('Enter your webapp passphrase.')
+      toast.error(t('gpg.toast.enterPassphrase'))
       return
     }
     setBusy(true)
@@ -94,9 +96,9 @@ export function GpgCard() {
       const { key, fingerprint, uid, emails } = await loadPrivateKey(decryptedArmored, null)
       gpg.setKey(key, fingerprint, uid, emails)
       setUnlockPassphrase('')
-      toast.success(`Signing unlocked (${formatFingerprint(fingerprint)}).`)
+      toast.success(t('gpg.toast.unlocked', { fingerprint: formatFingerprint(fingerprint) }))
     } catch (err) {
-      toast.error(`Unlock failed: ${(err as Error).message}`)
+      toast.error(t('gpg.toast.unlockFailed', { message: (err as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -104,14 +106,14 @@ export function GpgCard() {
 
   function handleLock() {
     gpg.lock()
-    toast.info('Signing locked. Re-enter your passphrase to unlock.')
+    toast.info(t('gpg.toast.locked'))
   }
 
   function handleRemove() {
-    if (!confirm('Remove the encrypted GPG key from this browser? You will need to re-import it.'))
+    if (!confirm(t('gpg.confirm.remove')))
       return
     gpg.remove()
-    toast.success('GPG key removed.')
+    toast.success(t('gpg.toast.removed'))
   }
 
   async function handleCopyPublic() {
@@ -119,11 +121,9 @@ export function GpgCard() {
     try {
       const armored = gpg.privateKey.toPublic().armor()
       await navigator.clipboard.writeText(armored)
-      toast.success(
-        'Public key copied. Paste it into github.com/settings/keys → New GPG key.',
-      )
+      toast.success(t('gpg.toast.publicCopied'))
     } catch (err) {
-      toast.error(`Copy failed: ${(err as Error).message}`)
+      toast.error(t('gpg.toast.copyFailed', { message: (err as Error).message }))
     }
   }
 
@@ -148,12 +148,10 @@ export function GpgCard() {
       const pubArmored = gpg.privateKey.toPublic().armor()
       const ok = await verifyDetached(pubArmored, canonical, sig)
       toast[ok ? 'success' : 'error'](
-        ok
-          ? 'Round-trip verified: signing is wired correctly.'
-          : 'Signature failed verification — please re-import the key.',
+        ok ? t('gpg.toast.testOk') : t('gpg.toast.testFail'),
       )
     } catch (err) {
-      toast.error(`Test sign failed: ${(err as Error).message}`)
+      toast.error(t('gpg.toast.testError', { message: (err as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -164,28 +162,26 @@ export function GpgCard() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-base">
           <KeyRound className="h-4 w-4" />
-          Commit signing (GPG)
+          {t('gpg.title')}
         </CardTitle>
         <p className="text-xs text-muted-foreground">
-          Sign every commit this app makes so they show as <b>Verified</b> on GitHub. The private
-          key is decrypted once at import and re-encrypted with your webapp passphrase (AES-GCM)
-          before being stored in localStorage — same scheme as the PAT.
+          {t('gpg.desc.1')} <b>Verified</b> {t('gpg.desc.2')}
         </p>
       </CardHeader>
       <CardContent className="space-y-5">
         <div className="flex flex-wrap items-center gap-3">
           <div className="text-sm">
-            Status:{' '}
+            {t('gpg.status')}{' '}
             {gpg.privateKey ? (
               <Badge variant="default">
-                <Unlock className="mr-1 h-3 w-3" /> Unlocked
+                <Unlock className="mr-1 h-3 w-3" /> {t('gpg.status.unlocked')}
               </Badge>
             ) : gpg.hasStoredGpg ? (
               <Badge variant="secondary">
-                <Lock className="mr-1 h-3 w-3" /> Saved (locked)
+                <Lock className="mr-1 h-3 w-3" /> {t('gpg.status.savedLocked')}
               </Badge>
             ) : (
-              <Badge variant="outline">No key imported</Badge>
+              <Badge variant="outline">{t('gpg.status.noKey')}</Badge>
             )}
           </div>
           {gpg.fingerprint && (
@@ -205,9 +201,9 @@ export function GpgCard() {
         {gpg.hasStoredGpg && (
           <div className="flex items-center justify-between gap-3">
             <div className="space-y-0.5">
-              <Label htmlFor="gpg-enabled">Sign commits</Label>
+              <Label htmlFor="gpg-enabled">{t('gpg.signCommits')}</Label>
               <p className="text-xs text-muted-foreground">
-                Turn off to keep the key imported but commit unsigned.
+                {t('gpg.signCommits.desc')}
               </p>
             </div>
             <Switch
@@ -224,40 +220,40 @@ export function GpgCard() {
           <div className="flex flex-wrap gap-2">
             <Button onClick={handleTestSign} disabled={busy} variant="outline" size="sm">
               <ShieldCheck className="h-4 w-4" />
-              Test sign
+              {t('gpg.testSign')}
             </Button>
             <Button onClick={handleCopyPublic} disabled={busy} variant="outline" size="sm">
-              Copy public key
+              {t('gpg.copyPublic')}
             </Button>
             <Button onClick={handleLock} variant="outline" size="sm">
               <Lock className="h-4 w-4" />
-              Lock
+              {t('gpg.lock')}
             </Button>
             <Button onClick={handleRemove} variant="destructive" size="sm">
               <Trash2 className="h-4 w-4" />
-              Remove key
+              {t('gpg.removeKey')}
             </Button>
           </div>
         ) : gpg.hasStoredGpg ? (
           <div className="space-y-3">
             <div className="space-y-1.5">
-              <Label htmlFor="gpg-unlock-pass">Webapp passphrase</Label>
+              <Label htmlFor="gpg-unlock-pass">{t('gpg.webappPassphrase')}</Label>
               <Input
                 id="gpg-unlock-pass"
                 type="password"
                 value={unlockPassphrase}
                 onChange={(e) => setUnlockPassphrase(e.target.value)}
-                placeholder="The passphrase that encrypts your PAT"
+                placeholder={t('gpg.unlockPlaceholder')}
                 onKeyDown={(e) => e.key === 'Enter' && handleUnlock()}
               />
             </div>
             <div className="flex flex-wrap gap-2">
               <Button onClick={handleUnlock} disabled={busy}>
                 <Unlock className="h-4 w-4" />
-                Unlock
+                {t('gpg.unlock')}
               </Button>
               <Button onClick={handleRemove} variant="ghost" size="sm">
-                Remove key
+                {t('gpg.removeKey')}
               </Button>
             </div>
           </div>
@@ -265,11 +261,11 @@ export function GpgCard() {
           <div className="space-y-3">
             {!pat && (
               <p className="text-xs text-muted-foreground">
-                Unlock your PAT first so we can use the same passphrase to encrypt the key.
+                {t('gpg.patFirst')}
               </p>
             )}
             <div className="space-y-1.5">
-              <Label htmlFor="gpg-armored">Armored private key</Label>
+              <Label htmlFor="gpg-armored">{t('gpg.armoredKey')}</Label>
               <Textarea
                 id="gpg-armored"
                 rows={6}
@@ -285,7 +281,7 @@ export function GpgCard() {
                   onClick={() => fileRef.current?.click()}
                   type="button"
                 >
-                  Upload .asc / .key
+                  {t('gpg.upload')}
                 </Button>
                 <input
                   ref={fileRef}
@@ -295,43 +291,43 @@ export function GpgCard() {
                   onChange={handleFileUpload}
                 />
                 <span className="text-xs text-muted-foreground">
-                  Or paste from <code>gpg --export-secret-keys --armor &lt;key-id&gt;</code>
+                  {t('gpg.pasteFrom')} <code>gpg --export-secret-keys --armor &lt;key-id&gt;</code>
                 </span>
               </div>
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="gpg-pass">GPG key passphrase</Label>
+              <Label htmlFor="gpg-pass">{t('gpg.keyPassphrase')}</Label>
               <Input
                 id="gpg-pass"
                 type="password"
                 value={gpgPassphrase}
                 onChange={(e) => setGpgPassphrase(e.target.value)}
-                placeholder="Leave blank if the key has no passphrase"
+                placeholder={t('gpg.keyPassphrasePlaceholder')}
               />
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="gpg-wapp-pass">Webapp passphrase</Label>
+              <Label htmlFor="gpg-wapp-pass">{t('gpg.webappPassphrase')}</Label>
               <Input
                 id="gpg-wapp-pass"
                 type="password"
                 value={webappPassphrase}
                 onChange={(e) => setWebappPassphrase(e.target.value)}
-                placeholder="Same passphrase used for your PAT — min 8 chars"
+                placeholder={t('gpg.webappPassphrasePlaceholder')}
               />
               <p className="text-xs text-muted-foreground">
-                Used to AES-GCM-encrypt the (already-decrypted) key in localStorage.
+                {t('gpg.webappPassphraseDesc')}
               </p>
             </div>
             <Button onClick={handleImport} disabled={busy}>
               <KeyRound className="h-4 w-4" />
-              Import key
+              {t('gpg.importKey')}
             </Button>
           </div>
         )}
 
         <Separator />
         <p className="text-xs text-muted-foreground">
-          The public half of this key must be uploaded to{' '}
+          {t('gpg.footer.1')}{' '}
           <a
             href="https://github.com/settings/keys"
             target="_blank"
@@ -340,8 +336,7 @@ export function GpgCard() {
           >
             github.com/settings/keys
           </a>{' '}
-          for the Verified badge to appear. Use <b>Copy public key</b> above (when unlocked) — it
-          puts the armored public block on your clipboard.
+          {t('gpg.footer.2')} <b>{t('gpg.copyPublic')}</b> {t('gpg.footer.3')}
         </p>
       </CardContent>
     </Card>
@@ -355,12 +350,13 @@ function EmailMatchInfo({
   emails: string[]
   authorEmail: string
 }) {
+  const t = useT()
   const trimmed = authorEmail.trim().toLowerCase()
   const matches = trimmed && emails.some((e) => e.toLowerCase() === trimmed)
   const noOverride = !trimmed
   return (
     <div className="space-y-1.5 rounded-md border bg-muted/30 p-3 text-xs">
-      <div className="font-medium">Key UIDs (one of these must be your commit author email)</div>
+      <div className="font-medium">{t('gpg.uids.title')}</div>
       <div className="flex flex-wrap gap-1">
         {emails.map((e) => (
           <Badge
@@ -374,19 +370,19 @@ function EmailMatchInfo({
       </div>
       {noOverride ? (
         <p className="text-muted-foreground">
-          No override set in <b>Commit author</b>. The first UID will be used automatically.
+          {t('gpg.uids.noOverride.1')} <b>{t('gpg.commitAuthor')}</b>{t('gpg.uids.noOverride.2')}
         </p>
       ) : matches ? (
         <p className="text-green-700 dark:text-green-500">
-          ✓ <span className="font-mono">{authorEmail}</span> matches a UID — commits will Verify.
+          ✓ <span className="font-mono">{authorEmail}</span> {t('gpg.uids.matches')}
         </p>
       ) : (
         <p className="flex items-start gap-1.5 text-amber-700 dark:text-amber-400">
           <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0" />
           <span>
-            <span className="font-mono">{authorEmail}</span> is not in this key's UIDs. GitHub will
-            show <b>"could not be verified"</b> even with a valid signature. Update <b>Commit
-            author</b> above to one of the badges, or clear it to auto-use the primary UID.
+            <span className="font-mono">{authorEmail}</span> {t('gpg.uids.mismatch.1')}{' '}
+            <b>"could not be verified"</b> {t('gpg.uids.mismatch.2')}{' '}
+            <b>{t('gpg.commitAuthor')}</b> {t('gpg.uids.mismatch.3')}
           </span>
         </p>
       )}

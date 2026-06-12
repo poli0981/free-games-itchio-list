@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useRef } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { Sidebar, MobileTopBar } from '@/components/sidebar'
 import ScrollToTop from '@/components/scroll-to-top'
+import { RouteErrorBoundary } from '@/components/error-boundary'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import { useDensityEffect } from '@/hooks/useDensityEffect'
@@ -16,6 +17,7 @@ const Charts = lazy(() => import('@/routes/charts'))
 const Workflows = lazy(() => import('@/routes/workflows'))
 const Settings = lazy(() => import('@/routes/settings'))
 const About = lazy(() => import('@/routes/about'))
+const ErrorPreview = lazy(() => import('@/routes/error-preview'))
 
 function RouteFallback() {
   return (
@@ -54,20 +56,23 @@ export default function App() {
       <div className="flex min-w-0 flex-1 flex-col">
         <MobileTopBar />
         <main ref={mainRef} className="flex-1 overflow-y-auto">
-          <Suspense fallback={<RouteFallback />}>
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/games" element={<Games />} />
-              <Route path="/games/:slug" element={<GameDetail />} />
-              <Route path="/add" element={<Add />} />
-              <Route path="/charts" element={<Charts />} />
-              <Route path="/workflows" element={<Workflows />} />
-              <Route path="/deleted" element={<Deleted />} />
-              <Route path="/settings" element={<Settings />} />
-              <Route path="/about" element={<About />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
+          <RouteErrorBoundary>
+            <Suspense fallback={<RouteFallback />}>
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/games" element={<Games />} />
+                <Route path="/games/:slug" element={<GameDetail />} />
+                <Route path="/add" element={<Add />} />
+                <Route path="/charts" element={<Charts />} />
+                <Route path="/workflows" element={<Workflows />} />
+                <Route path="/deleted" element={<Deleted />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/errors/:code" element={<ErrorPreview />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </RouteErrorBoundary>
         </main>
         <ScrollToTop targetRef={mainRef} />
       </div>

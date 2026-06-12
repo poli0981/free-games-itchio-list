@@ -20,10 +20,12 @@ import { gameColumns } from '@/components/data-table/columns'
 import type { FacetOption } from '@/components/data-table/faceted-filter'
 import { BulkEditDialog } from '@/components/bulk-edit-dialog'
 import { BulkDeleteDialog } from '@/components/bulk-delete-dialog'
+import { RouteError } from '@/components/route-error'
 import { UndoTray } from '@/components/undo-tray'
 import { useAllGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useAuth } from '@/stores/auth'
+import { useT } from '@/lib/i18n'
 import { countBy, countByArray } from '@/lib/analytics'
 import { formatNumber } from '@/lib/utils'
 import type { Game } from '@/types/game'
@@ -40,7 +42,8 @@ function gameSearch(g: Game, q: string): boolean {
 }
 
 export default function Games() {
-  useDocumentTitle('Games')
+  const t = useT()
+  useDocumentTitle(t('titles.games'))
   const games = useAllGames()
   const pat = useAuth((s) => s.pat)
   const [globalFilter, setGlobalFilter] = useState('')
@@ -59,23 +62,23 @@ export default function Games() {
     const toOpts = (entries: { key: string; count: number }[]): FacetOption[] =>
       entries.map((e) => ({ value: e.key, label: e.key, count: e.count }))
     return [
-      { columnId: 'genre', title: 'Genre', options: toOpts(countBy(data, 'genre')) },
-      { columnId: 'status', title: 'Status', options: toOpts(countBy(data, 'status')) },
+      { columnId: 'genre', title: t('games.facet.genre'), options: toOpts(countBy(data, 'genre')) },
+      { columnId: 'status', title: t('games.facet.status'), options: toOpts(countBy(data, 'status')) },
       {
         columnId: 'platforms',
-        title: 'Platforms',
+        title: t('games.facet.platforms'),
         options: toOpts(countByArray(data, 'platforms')),
       },
       {
         columnId: 'nsfw',
-        title: 'NSFW',
+        title: t('games.facet.nsfw'),
         options: [
           { value: 'Yes', label: 'Yes', count: data.filter((g) => g.nsfw === 'Yes').length },
           { value: 'No', label: 'No', count: data.filter((g) => g.nsfw === 'No').length },
         ],
       },
     ]
-  }, [data])
+  }, [data, t])
 
   const tableForToolbar = useReactTable({
     data,
@@ -106,7 +109,7 @@ export default function Games() {
   if (games.isLoading) {
     return (
       <div className="container mx-auto p-8 space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight">Games</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{t('nav.games')}</h1>
         <Skeleton className="h-9" />
         <Skeleton className="h-[60vh]" />
       </div>
@@ -114,21 +117,16 @@ export default function Games() {
   }
 
   if (games.isError) {
-    return (
-      <div className="container mx-auto p-8">
-        <h1 className="mb-6 text-3xl font-bold tracking-tight">Games</h1>
-        <p className="text-destructive">Failed to load: {games.error.message}</p>
-      </div>
-    )
+    return <RouteError error={games.error} onRetry={() => void games.refetch()} />
   }
 
   return (
     <div className="container mx-auto p-6">
       <div className="mb-4 flex items-baseline justify-between">
-        <h1 className="text-3xl font-bold tracking-tight">Games</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{t('nav.games')}</h1>
         <p className="text-sm text-muted-foreground">
-          {formatNumber(filteredCount)} of {formatNumber(data.length)}
-          {selectedUrls.length > 0 && ` — ${selectedUrls.length} selected`}
+          {t('games.count', { shown: formatNumber(filteredCount), total: formatNumber(data.length) })}
+          {selectedUrls.length > 0 && ` — ${t('games.selected', { count: selectedUrls.length })}`}
         </p>
       </div>
 
@@ -142,29 +140,29 @@ export default function Games() {
 
         {selectedUrls.length > 0 && (
           <div className="flex flex-wrap items-center gap-2 rounded-md border bg-accent/40 p-2">
-            <span className="px-1 text-sm font-medium">{selectedUrls.length} selected</span>
+            <span className="px-1 text-sm font-medium">{t('games.selected', { count: selectedUrls.length })}</span>
             <Button
               size="sm"
               variant="outline"
               onClick={() => setEditOpen(true)}
               disabled={!pat}
-              title={pat ? 'Bulk edit annotations' : 'Unlock PAT first'}
+              title={pat ? t('games.bulkEditTitle') : t('games.unlockPatFirst')}
             >
               <Pencil className="h-3.5 w-3.5" />
-              Edit
+              {t('common.edit')}
             </Button>
             <Button
               size="sm"
               variant="destructive"
               onClick={() => setDeleteOpen(true)}
               disabled={!pat}
-              title={pat ? 'Bulk delete' : 'Unlock PAT first'}
+              title={pat ? t('games.bulkDeleteTitle') : t('games.unlockPatFirst')}
             >
               <Trash2 className="h-3.5 w-3.5" />
-              Delete
+              {t('common.delete')}
             </Button>
             <Button size="sm" variant="ghost" onClick={() => setRowSelection({})}>
-              Clear selection
+              {t('games.clearSelection')}
             </Button>
           </div>
         )}
@@ -192,8 +190,7 @@ export default function Games() {
       />
 
       <p className="mt-3 text-xs text-muted-foreground">
-        Tip: Shift-click column headers for multi-column sort. Select rows to enable bulk Edit /
-        Delete.
+        {t('games.tip')}
       </p>
 
       <BulkEditDialog

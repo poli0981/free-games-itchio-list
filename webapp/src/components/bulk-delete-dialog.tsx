@@ -27,6 +27,7 @@ import { atomicCommit, bulkDeleteGames } from '@/lib/github/git-data'
 import { useAllGames } from '@/hooks/useGames'
 import { rebalance } from '@/lib/github/data-store'
 import { PATHS } from '@/lib/config'
+import { useT, type MessageKey } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 
 interface BulkDeleteDialogProps {
@@ -38,7 +39,15 @@ interface BulkDeleteDialogProps {
 
 const REASONS = ['Manual cleanup', 'Quality issue', 'Duplicate', 'Other']
 
+const REASON_LABELS: Record<string, MessageKey> = {
+  'Manual cleanup': 'bulk.reason.manualCleanup',
+  'Quality issue': 'bulk.reason.qualityIssue',
+  Duplicate: 'bulk.reason.duplicate',
+  Other: 'bulk.reason.other',
+}
+
 export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: BulkDeleteDialogProps) {
+  const t = useT()
   const pat = useAuth((s) => s.pat)
   const all = useAllGames()
   const qc = useQueryClient()
@@ -51,9 +60,9 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
   const canDelete = confirm.toLowerCase() === expected
 
   async function handleDelete() {
-    if (!pat) return toast.error('Unlock your PAT in Settings.')
-    if (!all.data) return toast.error('Game cache not ready.')
-    if (!canDelete) return toast.error(`Type '${expected}' to confirm.`)
+    if (!pat) return toast.error(t('bulk.toast.unlockPat'))
+    if (!all.data) return toast.error(t('bulk.toast.cacheNotReady'))
+    if (!canDelete) return toast.error(t('bulk.delete.confirmToast', { expected }))
     setBusy(true)
     try {
       const octokit = createOctokit()
@@ -71,7 +80,7 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
 
       pushUndo({
         id: commitSha,
-        label: `Bulk-delete of ${urls.length} games`,
+        label: t('bulk.undo.deleteLabel', { n: urls.length }),
         timestamp: Date.now(),
         reverse: async () => {
           const { games } = (await qc.ensureQueryData({
@@ -93,14 +102,18 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
       })
 
       toast.success(
-        `${urls.length} games deleted across ${touchedFiles.length} file(s) (${commitSha.slice(0, 7)}).`,
+        t('bulk.toast.deleted', {
+          n: urls.length,
+          files: touchedFiles.length,
+          sha: commitSha.slice(0, 7),
+        }),
       )
       await qc.invalidateQueries({ queryKey: ['db'] })
       onComplete()
       onOpenChange(false)
       setConfirm('')
     } catch (e) {
-      toast.error(`Delete failed: ${(e as Error).message}`)
+      toast.error(t('bulk.toast.deleteFailed', { msg: (e as Error).message }))
     } finally {
       setBusy(false)
     }
@@ -110,12 +123,8 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete {selected.length} games</DialogTitle>
-          <DialogDescription>
-            One atomic commit removes the records from data_game/ chunks (rebalanced) and appends
-            entries to scripts/deleted_games.json. Use the undo button after committing to roll
-            back. This is reversible only via undo or git revert.
-          </DialogDescription>
+          <DialogTitle>{t('bulk.delete.title', { n: selected.length })}</DialogTitle>
+          <DialogDescription>{t('bulk.delete.desc')}</DialogDescription>
         </DialogHeader>
 
         <div className="max-h-40 overflow-y-auto rounded-md border bg-muted/30 p-2 text-xs">
@@ -126,14 +135,16 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
               </li>
             ))}
             {selected.length > 50 && (
-              <li className="text-muted-foreground">… and {selected.length - 50} more</li>
+              <li className="text-muted-foreground">
+                {t('bulk.delete.more', { n: selected.length - 50 })}
+              </li>
             )}
           </ul>
         </div>
 
         <div className="space-y-3">
           <div className="space-y-1.5">
-            <Label>Reason</Label>
+            <Label>{t('bulk.delete.reason')}</Label>
             <Select value={reason} onValueChange={setReason}>
               <SelectTrigger>
                 <SelectValue />
@@ -141,7 +152,7 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
               <SelectContent>
                 {REASONS.map((r) => (
                   <SelectItem key={r} value={r}>
-                    {r}
+                    {t(REASON_LABELS[r])}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -150,7 +161,8 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
 
           <div className="space-y-1.5">
             <Label>
-              Type <code className="font-mono">{expected}</code> to confirm
+              {t('bulk.delete.typePrefix')} <code className="font-mono">{expected}</code>{' '}
+              {t('bulk.delete.typeSuffix')}
             </Label>
             <Input
               value={confirm}
@@ -163,11 +175,11 @@ export function BulkDeleteDialog({ open, onOpenChange, selected, onComplete }: B
 
         <DialogFooter>
           <Button variant="ghost" onClick={() => onOpenChange(false)} disabled={busy}>
-            Cancel
+            {t('common.cancel')}
           </Button>
           <Button variant="destructive" onClick={handleDelete} disabled={busy || !canDelete}>
             <Trash2 className="h-4 w-4" />
-            {busy ? 'Deleting...' : `Delete ${selected.length}`}
+            {busy ? t('bulk.delete.deleting') : t('bulk.delete.cta', { n: selected.length })}
           </Button>
         </DialogFooter>
       </DialogContent>

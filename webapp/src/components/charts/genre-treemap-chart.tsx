@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { ResponsiveContainer, Tooltip, Treemap } from 'recharts'
 import { genreTreemapData } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { PALETTE } from './palette'
@@ -41,12 +42,13 @@ function TreemapCell(props: TreemapCellProps) {
 }
 
 export function GenreTreemapChart({ games }: { games: Game[] }) {
+  const t = useT()
   const data = useMemo(() => genreTreemapData(games, 12), [games])
   // Recharts' Treemap data prop demands an index signature; our typed nodes
   // are valid treemap data at runtime, so cast through unknown.
   const treemapData = data as unknown as React.ComponentProps<typeof Treemap>['data']
   return (
-    <ChartCard title="Genre Treemap" description="Top 12 genres sized by game count">
+    <ChartCard title={t('charts.genreTreemap.title')} description={t('charts.genreTreemap.desc')}>
       <ResponsiveContainer width="100%" height="100%">
         <Treemap data={treemapData} dataKey="size" nameKey="name" content={<TreemapCell />}>
           <Tooltip

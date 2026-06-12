@@ -18,6 +18,7 @@ import { useAuth } from '@/stores/auth'
 import { createOctokit } from '@/lib/github/client'
 import { updateGameInChunk } from '@/lib/github/contents'
 import { useAllGames } from '@/hooks/useGames'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 
 interface EditGameFormProps {
@@ -30,6 +31,7 @@ const SAFE_OPTIONS = ['?', 'Yes', 'No', 'Caution'] as const
 const NOTES_MAX = 500
 
 export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
+  const t = useT()
   const pat = useAuth((s) => s.pat)
   const all = useAllGames()
   const qc = useQueryClient()
@@ -43,17 +45,26 @@ export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
     notes !== (game.notes || '') ||
     nsfw !== (game.nsfw === 'Yes')
 
+  const safeLabel = (o: string) =>
+    o === 'Yes'
+      ? t('common.yes')
+      : o === 'No'
+        ? t('common.no')
+        : o === 'Caution'
+          ? t('editForm.safe.caution')
+          : o
+
   async function handleSave() {
     if (!pat) {
-      toast.error('Unlock your PAT in Settings first.')
+      toast.error(t('editForm.toast.unlockPat'))
       return
     }
     if (!all.data) {
-      toast.error('Game cache not loaded yet.')
+      toast.error(t('editForm.toast.cacheNotLoaded'))
       return
     }
     if (notes.length > NOTES_MAX) {
-      toast.error(`Notes too long (${notes.length}/${NOTES_MAX}).`)
+      toast.error(t('editForm.toast.notesTooLong', { len: notes.length, max: NOTES_MAX }))
       return
     }
     setBusy(true)
@@ -70,15 +81,15 @@ export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
         },
         `chore(webapp): update annotations for ${game.name}`,
       )
-      toast.success(`Saved to ${chunkFile} (${commitSha.slice(0, 7)})`)
+      toast.success(t('editForm.toast.saved', { file: chunkFile, sha: commitSha.slice(0, 7) }))
       await qc.invalidateQueries({ queryKey: ['db'] })
       onSaved()
     } catch (err) {
       const msg = (err as Error).message
       if (msg.includes('does not match') || msg.includes('409')) {
-        toast.error('Conflict: file changed on the remote. Refresh and re-edit.')
+        toast.error(t('editForm.toast.conflict'))
       } else {
-        toast.error(`Save failed: ${msg}`)
+        toast.error(t('editForm.toast.saveFailed', { msg }))
       }
     } finally {
       setBusy(false)
@@ -88,14 +99,12 @@ export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Edit Annotations</CardTitle>
-        <p className="text-xs text-muted-foreground">
-          Three user-editable fields. Everything else is auto-fetched and read-only.
-        </p>
+        <CardTitle className="text-base">{t('editForm.title')}</CardTitle>
+        <p className="text-xs text-muted-foreground">{t('editForm.desc')}</p>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-1.5">
-          <Label htmlFor="safe-virus">Safe / virus</Label>
+          <Label htmlFor="safe-virus">{t('editForm.field.safeVirus')}</Label>
           <Select value={safeVirus} onValueChange={setSafeVirus}>
             <SelectTrigger id="safe-virus" className="w-40">
               <SelectValue />
@@ -103,7 +112,7 @@ export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
             <SelectContent>
               {SAFE_OPTIONS.map((opt) => (
                 <SelectItem key={opt} value={opt}>
-                  {opt}
+                  {safeLabel(opt)}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -113,13 +122,13 @@ export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
         <div className="flex items-center gap-3">
           <Switch id="nsfw" checked={nsfw} onCheckedChange={setNsfw} />
           <Label htmlFor="nsfw" className="cursor-pointer">
-            NSFW (override auto-detection)
+            {t('editForm.field.nsfw')}
           </Label>
         </div>
 
         <div className="space-y-1.5">
           <div className="flex items-baseline justify-between">
-            <Label htmlFor="notes">Notes</Label>
+            <Label htmlFor="notes">{t('editForm.field.notes')}</Label>
             <span
               className={
                 notes.length > NOTES_MAX
@@ -135,23 +144,21 @@ export function EditGameForm({ game, onCancel, onSaved }: EditGameFormProps) {
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             rows={4}
-            placeholder="Free-form notes (markdown allowed)"
+            placeholder={t('editForm.notesPlaceholder')}
           />
         </div>
 
         <div className="flex items-center gap-2 pt-2">
           <Button onClick={handleSave} disabled={!dirty || busy || !pat}>
             <Save className="h-4 w-4" />
-            {busy ? 'Saving...' : 'Save'}
+            {busy ? t('editForm.saving') : t('common.save')}
           </Button>
           <Button variant="ghost" onClick={onCancel} disabled={busy}>
             <X className="h-4 w-4" />
-            Cancel
+            {t('common.cancel')}
           </Button>
           {!pat && (
-            <span className="text-xs text-muted-foreground">
-              Unlock your PAT in Settings to enable Save.
-            </span>
+            <span className="text-xs text-muted-foreground">{t('editForm.unlockHint')}</span>
           )}
         </div>
       </CardContent>

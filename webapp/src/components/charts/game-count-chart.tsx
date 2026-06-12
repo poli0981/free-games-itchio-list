@@ -1,14 +1,16 @@
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { useT } from '@/lib/i18n'
 import type { CountHistoryPoint } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { PALETTE } from './palette'
 
 export function GameCountChart({ history }: { history: CountHistoryPoint[] }) {
+  const t = useT()
   return (
-    <ChartCard title="Game Count Over Time" description="Total games in the catalog by day">
+    <ChartCard title={t('charts.gameCount.title')} description={t('charts.gameCount.desc')}>
       {history.length === 0 ? (
         <p className="flex h-full items-center justify-center text-sm text-muted-foreground">
-          No history data yet.
+          {t('charts.gameCount.empty')}
         </p>
       ) : (
         <ResponsiveContainer width="100%" height="100%">

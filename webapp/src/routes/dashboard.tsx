@@ -1,19 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
+import { RouteError } from '@/components/route-error'
 import { useAllGames, useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useT } from '@/lib/i18n'
 import { computeOverview } from '@/lib/analytics'
 import { formatNumber } from '@/lib/utils'
 
 export default function Dashboard() {
-  useDocumentTitle('Dashboard')
+  const t = useT()
+  useDocumentTitle(t('titles.dashboard'))
   const games = useAllGames()
   const deleted = useDeletedGames()
 
   if (games.isLoading) {
     return (
       <div className="container mx-auto p-8">
-        <h1 className="mb-6 text-3xl font-bold tracking-tight">Dashboard</h1>
+        <h1 className="mb-6 text-3xl font-bold tracking-tight">{t('nav.dashboard')}</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {Array.from({ length: 4 }).map((_, i) => (
             <Skeleton key={i} className="h-32" />
@@ -24,12 +27,7 @@ export default function Dashboard() {
   }
 
   if (games.isError) {
-    return (
-      <div className="container mx-auto p-8">
-        <h1 className="mb-6 text-3xl font-bold tracking-tight">Dashboard</h1>
-        <p className="text-destructive">Failed to load games: {games.error.message}</p>
-      </div>
-    )
+    return <RouteError error={games.error} onRetry={() => void games.refetch()} />
   }
 
   const stats = games.data ? computeOverview(games.data.games) : null
@@ -40,21 +38,21 @@ export default function Dashboard() {
   return (
     <div className="container mx-auto p-8">
       <div className="mb-6 flex items-baseline justify-between">
-        <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-        <p className="text-sm text-muted-foreground">Last updated: {lastUpdated}</p>
+        <h1 className="text-3xl font-bold tracking-tight">{t('nav.dashboard')}</h1>
+        <p className="text-sm text-muted-foreground">{t('dashboard.lastUpdated', { date: lastUpdated })}</p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
-              Total Games
+              {t('dashboard.totalGames')}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold">{stats ? formatNumber(stats.total) : '—'}</div>
             <p className="text-xs text-muted-foreground">
-              {stats?.releasedCount ?? 0} released
+              {t('dashboard.released', { count: stats?.releasedCount ?? 0 })}
             </p>
           </CardContent>
         </Card>
@@ -62,41 +60,41 @@ export default function Dashboard() {
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
-              NSFW Ratio
+              {t('dashboard.nsfwRatio')}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold">
               {stats ? `${stats.nsfwPercent.toFixed(1)}%` : '—'}
             </div>
-            <p className="text-xs text-muted-foreground">{stats?.nsfwCount ?? 0} flagged</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.flagged', { count: stats?.nsfwCount ?? 0 })}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
-              Online (HTML5)
+              {t('dashboard.onlineHtml5')}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold">
               {stats ? `${stats.onlinePercent.toFixed(1)}%` : '—'}
             </div>
-            <p className="text-xs text-muted-foreground">{stats?.htmlCount ?? 0} playable in browser</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.playableInBrowser', { count: stats?.htmlCount ?? 0 })}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
-              Top Genre
+              {t('dashboard.topGenre')}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold">{stats?.topGenre ?? '—'}</div>
             <p className="text-xs text-muted-foreground">
-              {stats ? `${formatNumber(stats.topGenreCount)} games` : ''}
+              {stats ? t('dashboard.gamesCount', { count: formatNumber(stats.topGenreCount) }) : ''}
             </p>
           </CardContent>
         </Card>
@@ -105,14 +103,14 @@ export default function Dashboard() {
       <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Database Files</CardTitle>
+            <CardTitle className="text-base">{t('dashboard.databaseFiles')}</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-1 text-sm">
               {games.data?.index.files.map((f) => (
                 <li key={f.name} className="flex justify-between border-b py-1 last:border-0">
                   <span className="font-mono text-muted-foreground">{f.name}</span>
-                  <span>{formatNumber(f.count)} games</span>
+                  <span>{t('dashboard.gamesCount', { count: formatNumber(f.count) })}</span>
                 </li>
               ))}
             </ul>
@@ -121,7 +119,7 @@ export default function Dashboard() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Deletion Log</CardTitle>
+            <CardTitle className="text-base">{t('dashboard.deletionLog')}</CardTitle>
           </CardHeader>
           <CardContent>
             {deleted.isLoading ? (
@@ -129,7 +127,7 @@ export default function Dashboard() {
             ) : (
               <p className="text-sm">
                 <span className="text-3xl font-bold">{formatNumber(deleted.data?.length ?? 0)}</span>{' '}
-                games removed total
+                {t('dashboard.removedTotal')}
               </p>
             )}
           </CardContent>

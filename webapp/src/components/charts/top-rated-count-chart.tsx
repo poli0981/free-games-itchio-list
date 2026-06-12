@@ -1,14 +1,16 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { topByRatingCount } from '@/lib/analytics'
+import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { PALETTE } from './palette'
 
 export function TopRatedCountChart({ games }: { games: Game[] }) {
+  const t = useT()
   const data = useMemo(() => topByRatingCount(games, 10), [games])
   return (
-    <ChartCard title="Most Rated Games" description="Top 10 by number of ratings">
+    <ChartCard title={t('charts.topRatedCount.title')} description={t('charts.topRatedCount.desc')}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} layout="vertical" margin={{ left: 20 }}>
           <CartesianGrid horizontal={false} strokeDasharray="3 3" />
