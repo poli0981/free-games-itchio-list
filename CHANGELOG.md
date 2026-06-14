@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented here.
 
+## [3.7.1] - 2026-06-14 (Hotfix — desktop build vs invalid Tauri NSIS license key)
+
+### Fixed
+
+- **v3.7.0's desktop installers never built.** The NSIS EULA was wired via
+  `bundle.windows.nsis.license`, but `@tauri-apps/cli` 2.11.0's `NsisConfig`
+  has no `license` key (it was added in a later release), so every platform
+  failed config validation at the `Build Tauri app` step. Switched to the
+  top-level `bundle.licenseFile` (valid in 2.11.0) pointing at an **RTF** EULA
+  ([`webapp/src-tauri/installer/EULA.rtf`](webapp/src-tauri/installer/EULA.rtf)).
+  RTF satisfies **both** Windows bundlers — WiX (`.msi`) requires RTF and NSIS
+  (`.exe`) auto-detects it — so both installers show the "I Agree" page. The
+  previous plain-text `EULA.txt` would also have broken the WiX/`.msi` build.
+
+### Notes
+
+- Web feature set is identical to v3.7.0 (which deployed fine); this tag exists
+  to produce the desktop installers. `about.ts` version bump also busts the
+  IndexedDB catalog cache, which is harmless. No Tauri version bump
+  (`tauri.conf.json` stays `0.1.1`).
+
 ## [3.7.0] - 2026-06-14 (Legal-acceptance gates + per-tab chart lazy-loading)
 
 ### Added
@@ -18,12 +39,13 @@ All notable changes to this project will be documented here.
   "no cookies" privacy stance). A `LEGAL_VERSION` constant
   ([`webapp/src/stores/prefs.ts`](webapp/src/stores/prefs.ts)) lets a future
   policy edit re-prompt every user with a one-line bump.
-- **Windows installer EULA page** — the Tauri NSIS `.exe` now shows an
-  "I Agree" license step before installing, wired via
-  `bundle.windows.nsis.license` →
-  [`webapp/src-tauri/installer/EULA.txt`](webapp/src-tauri/installer/EULA.txt)
-  (plain text so NSIS renders it cleanly). The in-app gate above covers
-  first-run consent on macOS / Linux, whose installers have no equivalent step.
+- **Windows installer EULA page** — both Windows installers (the NSIS `.exe`
+  and the WiX `.msi`) now show an "I Agree" license step before installing,
+  wired via the top-level `bundle.licenseFile` →
+  [`webapp/src-tauri/installer/EULA.rtf`](webapp/src-tauri/installer/EULA.rtf).
+  RTF is used so both bundlers render it (WiX requires RTF; NSIS auto-detects
+  it). The in-app gate above covers first-run consent on macOS / Linux, whose
+  installers have no equivalent step.
 
 ### Changed
 
