@@ -38,6 +38,11 @@
     ],
     "category": "Utility",
     "shortDescription": "Browse and edit the free Itch.io games catalog",
-    "longDescription": "Desktop wrapper for the free-games-itchio-list webapp. Adds local-network scrape (no CORS) and works offline-first."
+    "longDescription": "Desktop wrapper for the free-games-itchio-list webapp. Adds local-network scrape (no CORS) and works offline-first.",
+    "windows": {
+      "nsis": {
+        "license": "installer/EULA.txt"
+      }
+    }
   }
 }
