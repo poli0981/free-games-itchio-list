@@ -49,7 +49,7 @@ Webapp lưu các mục sau cục bộ và **không bao giờ** gửi chúng tớ
 |---|---|---|---|
 | `localStorage` | `webapp.pat.encrypted` | PAT GitHub của Bạn, mã hóa AES-GCM 256-bit. Khóa mã hóa được dẫn xuất từ passphrase qua PBKDF2-SHA256 (100.000 vòng) với salt ngẫu nhiên cho mỗi token. PAT plaintext **không bao giờ** được lưu xuống đĩa. | Khi Bạn bật quyền ghi trong Settings. |
 | `localStorage` | `webapp.theme` | Một trong `'light'`, `'dark'`, `'system'`. | Khi Bạn chuyển theme. |
-| `localStorage` | `webapp.prefs` | Tùy chỉnh UI (sidebar collapsed, độ rộng cột bảng). | Khi Bạn thay đổi tùy chỉnh UI. |
+| `localStorage` | `webapp.prefs` | Tùy chỉnh UI (sidebar collapsed, mật độ, ngôn ngữ, cài đặt thông báo, ghi đè tác giả commit tùy chọn) và phiên bản điều khoản pháp lý Bạn đã chấp nhận (`acceptedLegalVersion`). | Khi Bạn thay đổi tùy chỉnh UI hoặc chấp nhận điều khoản pháp lý. |
 | `IndexedDB` (qua `idb-keyval`) | Khóa cache TanStack Query | Bản sao cache của catalog JSON công khai để tải nhanh và đọc offline có giới hạn. | Tự động, sau lần fetch đầu tiên. |
 
 Bạn có thể xóa toàn bộ những gì ở trên bất kỳ lúc nào bằng cách:

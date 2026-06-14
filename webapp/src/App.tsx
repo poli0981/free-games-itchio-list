@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useRef } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { Sidebar, MobileTopBar } from '@/components/sidebar'
+import { LegalGate } from '@/components/legal-gate'
 import ScrollToTop from '@/components/scroll-to-top'
 import { RouteErrorBoundary } from '@/components/error-boundary'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -50,32 +51,34 @@ export default function App() {
   useDensityEffect()
   const mainRef = useRef<HTMLElement>(null)
   return (
-    <div className="flex h-[100dvh] overflow-hidden">
-      <ScrollToHash />
-      <Sidebar />
-      <div className="flex min-w-0 flex-1 flex-col">
-        <MobileTopBar />
-        <main ref={mainRef} className="flex-1 overflow-y-auto">
-          <RouteErrorBoundary>
-            <Suspense fallback={<RouteFallback />}>
-              <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/games" element={<Games />} />
-                <Route path="/games/:slug" element={<GameDetail />} />
-                <Route path="/add" element={<Add />} />
-                <Route path="/charts" element={<Charts />} />
-                <Route path="/workflows" element={<Workflows />} />
-                <Route path="/deleted" element={<Deleted />} />
-                <Route path="/settings" element={<Settings />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/errors/:code" element={<ErrorPreview />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </RouteErrorBoundary>
-        </main>
-        <ScrollToTop targetRef={mainRef} />
+    <LegalGate>
+      <div className="flex h-[100dvh] overflow-hidden">
+        <ScrollToHash />
+        <Sidebar />
+        <div className="flex min-w-0 flex-1 flex-col">
+          <MobileTopBar />
+          <main ref={mainRef} className="flex-1 overflow-y-auto">
+            <RouteErrorBoundary>
+              <Suspense fallback={<RouteFallback />}>
+                <Routes>
+                  <Route path="/" element={<Dashboard />} />
+                  <Route path="/games" element={<Games />} />
+                  <Route path="/games/:slug" element={<GameDetail />} />
+                  <Route path="/add" element={<Add />} />
+                  <Route path="/charts" element={<Charts />} />
+                  <Route path="/workflows" element={<Workflows />} />
+                  <Route path="/deleted" element={<Deleted />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/errors/:code" element={<ErrorPreview />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Suspense>
+            </RouteErrorBoundary>
+          </main>
+          <ScrollToTop targetRef={mainRef} />
+        </div>
       </div>
-    </div>
+    </LegalGate>
   )
 }

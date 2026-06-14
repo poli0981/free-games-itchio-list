@@ -37,7 +37,8 @@ Path alias: `@/*` → `webapp/src/*`. Vite `define`s `__BUILD_DATE__` so About p
 - `src/routes/*.tsx` — one file per route; `App.tsx` wires `react-router-dom` HashRouter.
 - `src/components/data-table/*` — `DataTable` (TanStack Table + Virtual + pagination), `data-table-toolbar`, `data-table-pagination`, `faceted-filter`, `columns`. Row keys are URL-based (`getRowId: g => g.url`) so selection survives sort/filter/page changes.
 - `src/components/ui/*` — shadcn primitives (Button, Card, Input, Label, Badge, Skeleton, Separator, Tabs, Popover, Checkbox, Select, Switch, Textarea, Dialog).
-- `src/components/charts/` — chart module (one file per chart, shared `chart-card.tsx` with `ChartCard` + `PALETTE`, `index.ts` barrel). 16 charts across 4 tabs.
+- `src/components/charts/` — chart module (one file per chart, shared `chart-card.tsx` with `ChartCard` + `PALETTE`). 16 charts across 4 tabs. Each tab is a `React.lazy` default export under `charts/tabs/{overview,reach,quality,discovery}-tab.tsx`, wrapped in `<Suspense>` from `routes/charts.tsx`. **Tabs import chart components directly (no `index.ts` barrel — it was removed in v3.7.0)** so the bundler keeps each tab's components in its own chunk; a barrel re-exporting all 16 would collapse them into one shared chunk and defeat the split. Radix unmounts inactive `TabsContent`, so a non-default tab's component code downloads only on first activation. Recharts (`vendor-charts`) still loads with the default Overview tab.
+- `src/components/legal-gate.tsx` — full-screen, non-dismissible first-launch legal-acceptance gate (raw Radix Dialog, no close-X, Esc/outside-click disabled). Wraps the shell in `App.tsx`; renders instead of the shell until `prefs.acceptedLegalVersion === LEGAL_VERSION`. Reuses `LEGAL_LINKS` from `about.ts`; persists via `prefs.acceptLegal()`.
 - `src/lib/github/` — `client.ts` (Octokit factory), `data-store.ts` (TS port of `scripts/data_store.py`), `contents.ts` (single-file commits — routed through Git Data API so they can be signed), `git-data.ts` (atomic multi-file commit; optional signer for GPG), `signer.ts` (builds a `CommitSigner` from gpg store + auth + prefs), `workflow.ts` (dispatch + poll).
 - `src/lib/gpg/` — `canonicalize.ts` (pure: builds the byte string Git would hash for a commit), `sign.ts` (lazy-imports `openpgp`, exports `loadPrivateKey` / `signCommit` / `verifyDetached`), `storage.ts` (encrypted-key + metadata in localStorage).
 - `src/lib/crypto.ts` — AES-GCM 256 + PBKDF2-SHA256 100k rounds. **Uint8Array generic must be `<ArrayBuffer>`** under TS 6, not `<ArrayBufferLike>` — Web Crypto rejects the latter.
@@ -45,7 +46,7 @@ Path alias: `@/*` → `webapp/src/*`. Vite `define`s `__BUILD_DATE__` so About p
 - `src/lib/i18n/` — minimal typed i18n. `en.ts` is the source of truth (`MessageKey = keyof typeof en`); `vi.ts` must **never** be static-imported — it stays a lazy chunk via `import('./vi')` in `index.ts` only. `t()` imperative, `useT()` reactive hook; language pref lives in the `prefs` store.
 - `src/main.tsx` — react-query cache persisted to IndexedDB via `idb-keyval` (`PersistQueryClientProvider`). Only public catalog queries (`db` / `deleted` / `count-history`) are dehydrated, never PAT-gated data. `buster = APP.version`, so bumping `about.ts` invalidates the cache. **`gcTime` must stay >= persist `maxAge`** or restored queries are garbage-collected right after hydration.
 - Error handling — `src/lib/http-error.ts` (`HttpError`), `src/components/error-page.tsx` + `route-error.tsx` + `error-boundary.tsx`. Hidden preview route `/errors/:code` (not linked from nav). `webapp/public/404.html` serves as the GitHub Pages custom 404.
-- `src/stores/` — Zustand stores: `auth` (in-memory PAT + GitHub user; idle timeout pulled from `prefs`), `theme`, `prefs` (sidebar collapsed + density + idle timeout + author override + notification settings + language), `gpg` (in-memory PrivateKey + fingerprint + uid + enabled), `undo` (20-entry FIFO of reverse ops).
+- `src/stores/` — Zustand stores: `auth` (in-memory PAT + GitHub user; idle timeout pulled from `prefs`), `theme`, `prefs` (sidebar collapsed + density + idle timeout + author override + notification settings + language + `acceptedLegalVersion` — re-prompts the legal gate when the exported `LEGAL_VERSION` constant bumps), `gpg` (in-memory PrivateKey + fingerprint + uid + enabled), `undo` (20-entry FIFO of reverse ops).
 - `src/lib/about.ts` — keep the `THIRD_PARTY` array up to date when adding npm deps; About page reads it.
 
 ## Editable vs read-only fields
@@ -111,6 +112,6 @@ Fine-grained PAT scoped to **only this repo** with:
 - Don't commit a real PAT, ever. Settings page handles it client-side; CI uses `secrets.GH_TOKEN`.
 - When adding an npm dep, also add it to `webapp/src/lib/about.ts` so the About page lists it.
 
-## Current state (as of v3.6.1)
+## Current state (as of v3.7.0)
 
-`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.6.1` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`.
+`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.7.0` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`. v3.7.0 added the first-launch legal-acceptance gate, the Windows NSIS installer EULA page, and per-tab lazy-loading of the charts route.

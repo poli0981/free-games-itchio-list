@@ -47,7 +47,7 @@ The Webapp persists the following items locally and never transmits them to any 
 |---|---|---|---|
 | `localStorage` | `webapp.pat.encrypted` | Your GitHub PAT, encrypted with AES-GCM 256-bit. Encryption key is derived from Your passphrase via PBKDF2-SHA256 (100,000 iterations) with a per-token random salt. The plaintext PAT is **never** persisted to disk. | When You enable write access in Settings. |
 | `localStorage` | `webapp.theme` | One of `'light'`, `'dark'`, `'system'`. | When You toggle the theme. |
-| `localStorage` | `webapp.prefs` | UI preferences (sidebar collapsed, table column widths). | When You change a UI preference. |
+| `localStorage` | `webapp.prefs` | UI preferences (sidebar collapsed, density, language, notification settings, optional commit-author override) and the version of the legal terms You accepted (`acceptedLegalVersion`). | When You change a UI preference or accept the legal terms. |
 | `IndexedDB` (via `idb-keyval`) | TanStack Query cache keys | Cached copies of the public catalog JSON for fast reload and limited offline reads. | Automatic, on first fetch. |
 
 You can erase all of the above at any time by:
