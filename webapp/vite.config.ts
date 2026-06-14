@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     outDir: isTauri ? 'dist' : '../docs/app',
     emptyOutDir: true,
-    sourcemap: !isTauri,
+    sourcemap: false,
     target: isTauri ? 'es2022' : 'es2020',
     chunkSizeWarningLimit: 600,
     rollupOptions: {
