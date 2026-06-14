@@ -104,6 +104,7 @@ Fine-grained PAT scoped to **only this repo** with:
 12. **GPG signing must use binary mode in openpgp.js.** `openpgp.createMessage({ text })` normalizes line endings before hashing → signature won't verify against the LF-only Git commit object. Use `createMessage({ binary: TextEncoder.encode(canonical) })`.
 13. **Commit object canonical timestamp must match Octokit's `author.date` exactly.** GitHub re-derives `<unix_ts> <±HHMM>` from the ISO date and recomputes the SHA. Use a single `ts + tzOffsetMin` source for both, derive `author.date` via `isoFromTs(ts, tzOffsetMin)`.
 14. **TabsList primitive is `inline-flex` with `whitespace-nowrap` triggers.** Many tabs + narrow viewport → overflow. The fix in `/workflows` is dual-render: `<Select>` on mobile (`md:hidden`), TabsList on desktop (`hidden md:inline-flex`). Charts uses `flex-wrap` defensively but the labels are short enough to fit at 430px.
+15. **`bundle.windows.nsis.license` does NOT exist in `@tauri-apps/cli` 2.11.0** (added in a later release) — it fails config validation on *all* platforms at the `Build Tauri app` step (this broke the v3.7.0 desktop build). For installer license/EULA pages on the pinned CLI, use the **top-level `bundle.licenseFile`** instead. It must be **RTF** because this repo builds **both** Windows installers: WiX (`.msi`) requires RTF and NSIS (`.exe`) auto-detects it (a plain `.txt` breaks the `.msi`). File lives at `webapp/src-tauri/installer/EULA.rtf`; path is relative to `src-tauri/`.
 
 ## Safe-edit rules
 
@@ -112,6 +113,6 @@ Fine-grained PAT scoped to **only this repo** with:
 - Don't commit a real PAT, ever. Settings page handles it client-side; CI uses `secrets.GH_TOKEN`.
 - When adding an npm dep, also add it to `webapp/src/lib/about.ts` so the About page lists it.
 
-## Current state (as of v3.7.0)
+## Current state (as of v3.7.1)
 
-`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.7.0` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`. v3.7.0 added the first-launch legal-acceptance gate, the Windows NSIS installer EULA page, and per-tab lazy-loading of the charts route.
+`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.7.1` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`. v3.7.0 added the first-launch legal-acceptance gate, the Windows installer EULA page, and per-tab lazy-loading of the charts route; **v3.7.1** is a desktop-build hotfix — v3.7.0's installer EULA used the non-existent `bundle.windows.nsis.license` key (see gotcha #15) so its desktop installers never built; v3.7.1 ships them via `bundle.licenseFile` (RTF).
