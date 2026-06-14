@@ -18,12 +18,13 @@ All notable changes to this project will be documented here.
   "no cookies" privacy stance). A `LEGAL_VERSION` constant
   ([`webapp/src/stores/prefs.ts`](webapp/src/stores/prefs.ts)) lets a future
   policy edit re-prompt every user with a one-line bump.
-- **Windows installer EULA page** — the Tauri NSIS `.exe` now shows an
-  "I Agree" license step before installing, wired via
-  `bundle.windows.nsis.license` →
-  [`webapp/src-tauri/installer/EULA.txt`](webapp/src-tauri/installer/EULA.txt)
-  (plain text so NSIS renders it cleanly). The in-app gate above covers
-  first-run consent on macOS / Linux, whose installers have no equivalent step.
+- **Windows installer EULA page** — both Windows installers (the NSIS `.exe`
+  and the WiX `.msi`) now show an "I Agree" license step before installing,
+  wired via the top-level `bundle.licenseFile` →
+  [`webapp/src-tauri/installer/EULA.rtf`](webapp/src-tauri/installer/EULA.rtf).
+  RTF is used so both bundlers render it (WiX requires RTF; NSIS auto-detects
+  it). The in-app gate above covers first-run consent on macOS / Linux, whose
+  installers have no equivalent step.
 
 ### Changed
 
