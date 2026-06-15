@@ -274,5 +274,11 @@
         "name": "wageslave: probation period",
         "reason": "Game became paid",
         "deleted_at": "2026-06-11T06:08:10Z"
+    },
+    {
+        "url": "https://woundmark.itch.io/winddrawn-a-solo-adventure-game",
+        "name": "WINDDRAWN A Solo Adventure Game",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-15T09:47:13Z"
     }
 ]

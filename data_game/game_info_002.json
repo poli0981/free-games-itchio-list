@@ -8157,37 +8157,6 @@
         "notes": ""
     },
     {
-        "url": "https://woundmark.itch.io/winddrawn-a-solo-adventure-game",
-        "name": "WINDDRAWN A Solo Adventure Game",
-        "dev": "WoundMark",
-        "description": "The map starts empty.",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MjMzNjc2LmpwZw==/original/SfpR3k.jpg",
-        "tags": [
-            "explore",
-            "Fantasy",
-            "GM-Less",
-            "map-drawing",
-            "oracle",
-            "Solo RPG",
-            "Story Rich",
-            "Tabletop role-playing game"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://dapperaxol.itch.io/picture-this-death-of-a-richman",
         "name": "Picture This: Death Of A Richman",
         "dev": "DapperAxol, qk64x, Weverwolf",
@@ -18138,6 +18107,48 @@
         "inputs": [],
         "made_with": [
             "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://benjelter.itch.io/the-machine",
+        "name": "The Machine",
+        "dev": "BenJelter",
+        "description": "The Machine is OUT NOW! You can get your copy here: TheMachineGame.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 February 2022 @ 05:00 UTC",
+        "rating": "4.7",
+        "rating_count": "110",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc4MzU0MDguZ2lm/original/dFHzIu.gif",
+        "tags": [
+            "8-Bit",
+            "Game Boy",
+            "Game Boy ROM",
+            "gbstudio",
+            "Meaningful Choices",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Clip Studio Paint",
+            "Pyxel Edit",
+            "GB Studio"
         ],
         "safe_virus": "?",
         "notes": ""

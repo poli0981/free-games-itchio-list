@@ -1,44 +1,5 @@
 [
     {
-        "url": "https://hazeyeyed.itch.io/penumbra-lane",
-        "name": "Penumbra Lane",
-        "dev": "HaZeyEyed",
-        "description": "Penumbra Lane is a point-and-click adventure horror game in which you play as a depressed cat-man named Xavier, who is attempting to break the lease for his new apartment.",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "28",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEzMzgyMTM4LmdpZg==/original/VPAK%2Fq.gif",
-        "tags": [
-            "Creepy",
-            "Furry",
-            "Horror",
-            "Point & Click"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Ren'Py",
-            "Krita"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://kripkode.itch.io/rubysvittenparty",
         "name": "Ruby's Vitten Party [VTuber Game]",
         "dev": "KripKode",

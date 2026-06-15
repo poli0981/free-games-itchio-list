@@ -1,47 +1,5 @@
 [
     {
-        "url": "https://benjelter.itch.io/the-machine",
-        "name": "The Machine",
-        "dev": "BenJelter",
-        "description": "The Machine is OUT NOW! You can get your copy here: TheMachineGame.",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "16 February 2022 @ 05:00 UTC",
-        "rating": "4.7",
-        "rating_count": "110",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzc4MzU0MDguZ2lm/original/dFHzIu.gif",
-        "tags": [
-            "8-Bit",
-            "Game Boy",
-            "Game Boy ROM",
-            "gbstudio",
-            "Meaningful Choices",
-            "Pixel Art"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Xbox controller",
-            "Playstation controller"
-        ],
-        "made_with": [
-            "Aseprite",
-            "Clip Studio Paint",
-            "Pyxel Edit",
-            "GB Studio"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://tokipetal.itch.io/clockwatching",
         "name": "CLOCKWATCHING",
         "dev": "TOKIPETAL",
@@ -18516,6 +18474,38 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ghanimationpro.itch.io/doki-doki-arakisou",
+        "name": "Doki Doki 心跳荒木莊",
+        "dev": "Gentleman Hat Animation Production",
+        "description": "(遊戲可以正常玩了，有bug請通知我😭。) 簡介 吉良陷入一個十分奇妙的夢境。夢中的他和荒木莊各人也在同一所高中上學，並在一個名為荒木莊的文學部一起活躍。 傲嬌任性的後輩Dio、聰明過人的文靜科學家卡兹、青梅竹馬的多比歐、最喜歡Dio的普奇、文學部的部長瓦倫泰、有點野性的迪亞哥和神秘的文藝書生透龍。 劇情走向逐漸瞹眛（失控），吉良能逃出這夢境嗎？ (我有點事要幹，暫時隨便掉上來。) Visu...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA1MzUwLnBuZw==/original/hmfAky.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "Horror",
+            "Psychological Horror",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
         "safe_virus": "?",
         "notes": ""
     }
