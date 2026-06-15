@@ -1,8 +1,10 @@
-# Tauri desktop wrapper
+# Tauri desktop & Android wrapper
 
-The webapp can also ship as a native desktop app (Windows / macOS / Linux)
-through Tauri 2. The same React build is reused; the desktop runtime is
-opt-in and skipped when running as a plain web SPA.
+The webapp can also ship as a native desktop app (Windows / macOS / Linux) and
+as a sideloadable Android `.apk` through Tauri 2. The same React build is reused
+on every platform; the native runtime is opt-in and skipped when running as a
+plain web SPA. Desktop instructions come first; the **[Android](#android-apk)**
+section is at the bottom.
 
 ## What desktop adds over web
 
@@ -50,8 +52,9 @@ Outputs:
 
 `.github/workflows/release_desktop.yml` builds for all three platforms when
 a `v*` tag is pushed (or via `workflow_dispatch`) and attaches the
-installers to a draft GitHub Release. Bump `webapp/package.json` and
-`webapp/src-tauri/Cargo.toml` together, tag, and push.
+installers to a draft GitHub Release. Bump `webapp/src-tauri/tauri.conf.json`
+and `webapp/src-tauri/Cargo.toml` together (that's the version the bundlers
+read — `webapp/package.json` stays `0.0.0`), tag, and push.
 
 ## Detecting Tauri at runtime
 
@@ -63,7 +66,8 @@ if (isTauri()) {
 }
 ```
 
-The sidebar shows a small "Desktop mode (Tauri)" badge when running native.
+The sidebar shows a small "Desktop app (Tauri)" / "Mobile app (Tauri)" badge
+(picked by `useIsMobile()`) when running native.
 
 ## Adding new Rust commands
 
@@ -83,3 +87,85 @@ Then call from the frontend:
 const { invoke } = await import('@tauri-apps/api/core')
 await invoke<string>('my_thing', { arg: 'hello' })
 ```
+
+## Android APK
+
+Same React build, wrapped in an Android WebView via Tauri mobile, shipped as a
+**sideloadable `.apk`** (no Play Store). The Rust side is already mobile-ready
+(`#[cfg_attr(mobile, tauri::mobile_entry_point)]` in `lib.rs`, `cdylib` crate
+type, single-instance plugin gated to desktop).
+
+### Prerequisites
+
+- Android Studio + SDK + **NDK** + command-line tools.
+- **JDK 17 or 21** for the Gradle build — Android Studio's bundled JBR is ideal.
+  The Android Gradle Plugin does **not** support JDK 26, so if a newer JDK is
+  your system default, point `JAVA_HOME` at a 17/21 JDK (or the JBR) for the
+  `android build` step. CI uses Temurin 17.
+- Env vars (Windows example — adjust paths):
+  ```powershell
+  setx JAVA_HOME    "C:\Program Files\Android\Android Studio\jbr"   # JDK 17/21 — NOT 26
+  setx ANDROID_HOME "$env:LOCALAPPDATA\Android\Sdk"
+  setx NDK_HOME     "$env:LOCALAPPDATA\Android\Sdk\ndk\<version>"   # ls $ANDROID_HOME\ndk
+  ```
+- Rust Android targets:
+  ```sh
+  rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
+  ```
+
+### Init / dev / build
+
+```sh
+cd webapp
+npm run tauri -- android init                                # generates src-tauri/gen/android (gitignored)
+npm run tauri -- android dev                                 # live-reload on a connected device/emulator
+npm run tauri -- android build --apk --debug --target aarch64  # debug APK you can install by hand
+npm run tauri -- android build --apk --target aarch64        # release (unsigned) APK, arm64-v8a only
+```
+
+We ship **arm64-v8a only** (every phone since ~2017; smaller download). `minSdkVersion`
+is **24** (Android 7.0 — the floor for SubtleCrypto / OpenPGP.js / IndexedDB, set in
+`tauri.conf.json` `bundle.android`). `versionName`/`versionCode` derive from the
+`tauri.conf.json` version (`versionCode = major*1e6 + minor*1e3 + patch`).
+
+### Signing for distribution
+
+`src-tauri/gen/android` is **gitignored and regenerated** by `android init`, so we do
+**not** edit the generated Gradle. Instead, build an unsigned APK and sign it afterwards
+with `zipalign` + `apksigner` (the CI workflow does exactly this).
+
+```sh
+# one-time: create a release keystore (keep the .jks out of git, never lose it)
+keytool -genkey -v -keystore release.jks -storetype JKS \
+  -keyalg RSA -keysize 2048 -validity 10000 -alias itchio-release
+
+# after `android build --apk`:
+BT="$ANDROID_HOME/build-tools/<ver>"
+UNSIGNED=$(find src-tauri/gen/android/app/build/outputs/apk -name "*-release-unsigned.apk" | head -1)
+"$BT/zipalign" -v -p 4 "$UNSIGNED" aligned.apk          # zipalign BEFORE apksigner
+"$BT/apksigner" sign --ks release.jks --ks-key-alias itchio-release \
+  --out FreeGamesItchio.apk aligned.apk
+"$BT/apksigner" verify --verbose FreeGamesItchio.apk
+```
+
+### CI
+
+`.github/workflows/release_android.yml` builds + signs on a `v*` tag and attaches the APK
+to the same draft Release as the desktop installers (manual `workflow_dispatch` instead
+uploads it as a downloadable workflow artifact for device testing). Required repo secrets:
+
+- `ANDROID_KEYSTORE_BASE64` — `base64` of `release.jks`
+- `ANDROID_KEYSTORE_PASSWORD`
+- `ANDROID_KEY_ALIAS` (`itchio-release`)
+
+### Gotchas (each cost a release if relearned)
+
+1. **Identifier must be hyphen- AND underscore-free.** Android rejects hyphens in the
+   package id (`android init` panics); Tauri's config validator rejects underscores. The
+   only string valid on both is alphanumeric — ours is `com.poli0981.freegamesitchio`.
+2. **`zipalign` BEFORE `apksigner`.** Re-aligning a signed APK invalidates the signature.
+3. **`gen/android` is gitignored** — signing is a post-build step, not a Gradle edit, so it
+   survives regeneration. Don't commit `gen/`.
+4. **Pin the NDK** in CI to match local. A floating NDK is a "works locally, breaks in CI."
+5. **Keep the signing key forever.** Lose it and users can't upgrade an installed APK in
+   place (Android requires a stable signing identity).

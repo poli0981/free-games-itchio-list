@@ -52,6 +52,10 @@ flow that dispatches the scraper workflow with a URL input.
   / Linux. See [`webapp/TAURI.md`](webapp/TAURI.md) for prerequisites and `npm run tauri:dev`.
   Multi-platform installers are built by [`.github/workflows/release_desktop.yml`](.github/workflows/release_desktop.yml)
   on tag push (`v*`).
+- **Android build (optional)**: the same app also ships as a sideloadable `.apk` (arm64-v8a) via
+  Tauri mobile. A signed APK is built by [`.github/workflows/release_android.yml`](.github/workflows/release_android.yml)
+  and attached to the same draft Release. See [Android (download & install)](#android-download--install)
+  below and the Android section of [`webapp/TAURI.md`](webapp/TAURI.md).
 - **Auth**: a fine-grained PAT with `contents:write` + `workflow:write` is encrypted in
   localStorage with a passphrase (AES-GCM, PBKDF2-SHA256). Decrypted token only lives in memory.
   Reads are public (no auth needed).
@@ -67,6 +71,22 @@ npm run dev          # http://localhost:5173
 npm run build        # writes to docs/app/
 npm run tauri:dev    # native desktop (requires Rust)
 ```
+
+## Android (download & install)
+
+No Play Store — just grab the `.apk` and sideload it (Android is fine with this, it just
+asks nicely first):
+
+1. Open the latest [Release](https://github.com/poli0981/free-games-itchio-list/releases) and
+   download `FreeGamesItchio_<version>_arm64-v8a.apk`.
+2. Tap it. Android will ask to **allow installs from this source** (browser / file manager) —
+   turn it on (Settings → *Apps* → *Special access* → *Install unknown apps*).
+3. Accept the "not from Play Store" warning and install. It's the same app as the web/desktop
+   build, just signed by me instead of Google.
+
+Notes: **arm64-v8a only** (every phone since ~2017 — 32-bit-only devices aren't supported), and
+Android **7.0+** (API 24). Building it yourself is in the Android section of
+[`webapp/TAURI.md`](webapp/TAURI.md).
 
 ## How it works
 
@@ -126,9 +146,10 @@ lists/                  # Auto-generated markdown tables (one per genre)
 ├── check_alive.yml        # Every 2 days 07:00 UTC
 ├── log_deleted.yml        # Runs after check workflows
 ├── deploy_webapp.yml      # Build webapp/ → GitHub Pages on push to main
-└── release_desktop.yml    # Build Tauri installers (Win/macOS/Linux) on v* tag
+├── release_desktop.yml    # Build Tauri installers (Win/macOS/Linux) on v* tag
+└── release_android.yml    # Build signed Android APK (arm64-v8a) on v* tag
 
-webapp/                 # React + TS SPA + Tauri desktop wrapper
+webapp/                 # React + TS SPA + Tauri desktop & Android wrapper
 ├── src/                # React app (routes, components, hooks, stores)
 ├── src-tauri/          # Rust + Tauri 2 config (icons, capabilities, main.rs)
 ├── TAURI.md            # Desktop build prerequisites and instructions
@@ -148,6 +169,7 @@ webapp/                 # React + TS SPA + Tauri desktop wrapper
 | Log deleted games  | After check workflows  | Export deletion log to `deleted_games.txt`                  |
 | Deploy webapp      | On push to main        | Build `webapp/` → GitHub Pages (`docs/app/`)                |
 | Release desktop    | On `v*` tag push       | Build Tauri installers (Win/macOS/Linux) → draft Release    |
+| Release Android    | On `v*` tag push       | Build signed APK (arm64-v8a) → draft Release                |
 
 All workflows include rate-limiting (random delays, batch pauses) to avoid being blocked by itch.io. Network errors are
 treated as transient — games are only removed on confirmed 404/410 or confirmed paid status.

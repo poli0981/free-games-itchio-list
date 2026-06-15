@@ -12,7 +12,7 @@ Two layers stacked on the same JSON catalog of free itch.io games:
    - `scripts/` — `scraper.py` (shared session + parsing), `data_store.py` (chunk load/save/rebalance, writes `index.json` + `count_history.json`), `json_io.py` (shared `load_json`/`save_json` + `dedup_deleted`), `update_info.py`, `check_paid.py`, `check_alive.py`, `check_duplicate.py`, `update_reviews.py`, `update_status.py`, `force_update.py`, `generate_md.py`, `log_deleted.py`, `backfill_count_history.py` (one-time count-history seed). Lint: `ruff check scripts/` (config in root `pyproject.toml`).
    - `lists/{genre}.md` — auto-generated, **never edit by hand**.
    - `bash/` — wrappers used by the GitHub Actions workflows.
-2. **Webapp** — `webapp/` (React 19 + TypeScript 6 + Vite 8 + Tailwind v3 + shadcn/ui, Tauri 2 desktop wrapper in `webapp/src-tauri/`). Reads from `raw.githubusercontent.com`; writes via GitHub API with an encrypted PAT.
+2. **Webapp** — `webapp/` (React 19 + TypeScript 6 + Vite 8 + Tailwind v3 + shadcn/ui, Tauri 2 desktop **and Android** wrapper in `webapp/src-tauri/`). Reads from `raw.githubusercontent.com`; writes via GitHub API with an encrypted PAT.
 
 ## How to work in webapp/
 
@@ -24,7 +24,12 @@ npm run build          # writes to ../docs/app/  (NOT webapp/dist — that path 
 npm run tauri:dev      # native window; needs Rust toolchain
 npm run tauri:build    # native installers
 npm run tauri icon -- path/to/source-1024.png   # regenerate src-tauri/icons/
+npm run tauri -- android init                    # generate src-tauri/gen/android (gitignored)
+npm run tauri -- android dev                     # live-reload on device/emulator
+npm run tauri -- android build --apk --target aarch64   # arm64-v8a release APK (unsigned; CI post-signs)
 ```
+
+Android details (env vars, signing, CI secrets, gotchas) live in `webapp/TAURI.md` → **Android APK**.
 
 Path alias: `@/*` → `webapp/src/*`. Vite `define`s `__BUILD_DATE__` so About page shows the build date.
 
@@ -66,7 +71,8 @@ Of the 23 fields per game, only **3** are user-editable: `safe_virus`, `notes`, 
 | `generate_table.yml` | After update / check / refresh workflows succeed | Rebuilds `lists/*.md`. Chain list lives in this file under `workflow_run.workflows` — keep in sync when adding scrape workflows. |
 | `log_deleted.yml` | After check workflows | Exports `deleted_games.txt`. |
 | `deploy_webapp.yml` | Push to `main` touching `webapp/`, or manual | Builds → `docs/app/` → GitHub Pages. Requires repo Settings → Pages → Source = "GitHub Actions". |
-| `release_desktop.yml` | Tag `v*` push, or manual | Tauri build for Win + macOS aarch64 + macOS x86_64 (cross-compile) + Linux. Uploads `.dmg` / `.app.tar.gz` / `.pkg` (macOS), `.msi` / `.exe` (Windows), `.deb` / `.AppImage` (Linux). |
+| `release_desktop.yml` | Tag `v*` push, or manual | Tauri build for Win + macOS aarch64 + macOS x86_64 (cross-compile) + Linux. Uploads `.dmg` / `.app.tar.gz` / `.pkg` (macOS), `.msi` / `.exe` (Windows), `.deb` / `.AppImage` (Linux). macOS `.pkg` `--identifier` reads `tauri.conf.json` so it never drifts from the bundle ID. |
+| `release_android.yml` | Tag `v*` push, or manual | Tauri **Android** build → arm64-v8a APK, **post-signed** with `zipalign`+`apksigner` (gen/ stays gitignored). Tag → attaches to the same draft Release; manual dispatch → uploads as a workflow artifact. Secrets: `ANDROID_KEYSTORE_BASE64` / `ANDROID_KEYSTORE_PASSWORD` / `ANDROID_KEY_ALIAS`. |
 
 ## Release / tag process
 
@@ -105,14 +111,17 @@ Fine-grained PAT scoped to **only this repo** with:
 13. **Commit object canonical timestamp must match Octokit's `author.date` exactly.** GitHub re-derives `<unix_ts> <±HHMM>` from the ISO date and recomputes the SHA. Use a single `ts + tzOffsetMin` source for both, derive `author.date` via `isoFromTs(ts, tzOffsetMin)`.
 14. **TabsList primitive is `inline-flex` with `whitespace-nowrap` triggers.** Many tabs + narrow viewport → overflow. The fix in `/workflows` is dual-render: `<Select>` on mobile (`md:hidden`), TabsList on desktop (`hidden md:inline-flex`). Charts uses `flex-wrap` defensively but the labels are short enough to fit at 430px.
 15. **`bundle.windows.nsis.license` does NOT exist in `@tauri-apps/cli` 2.11.0** (added in a later release) — it fails config validation on *all* platforms at the `Build Tauri app` step (this broke the v3.7.0 desktop build). For installer license/EULA pages on the pinned CLI, use the **top-level `bundle.licenseFile`** instead. It must be **RTF** because this repo builds **both** Windows installers: WiX (`.msi`) requires RTF and NSIS (`.exe`) auto-detects it (a plain `.txt` breaks the `.msi`). File lives at `webapp/src-tauri/installer/EULA.rtf`; path is relative to `src-tauri/`.
+16. **The bundle `identifier` must be alphanumeric (no `-`, no `_`).** Android rejects hyphens in the app id (`tauri android init` panics — `NotAsciiAlphanumeric`), while Tauri's own config validator rejects underscores. The only form valid on *both* is alphanumeric segments — ours is `com.poli0981.freegamesitchio` (changed from the old hyphenated `com.poli0981.free-games-itchio-webapp` in v3.8.0). Tauri uses ONE identifier across all platforms, so this also changed the desktop bundle ID (one-time OS-level reinstall). The macOS `.pkg` `pkgbuild --identifier` in `release_desktop.yml` reads it from `tauri.conf.json` so it can't drift.
+17. **Android signing: `zipalign` BEFORE `apksigner`.** `gen/android` is gitignored + regenerated by `android init`, so we never edit the generated Gradle — `release_android.yml` builds an *unsigned* APK and post-signs it. Re-aligning a *signed* APK invalidates the signature, so the order is zipalign → apksigner → verify. Pin the CI NDK to match local. Never lose the signing keystore (Android needs a stable signing identity to upgrade an installed APK in place).
+18. **Android `versionCode`/`versionName` derive from `tauri.conf.json` version** (`versionCode = major*1e6 + minor*1e3 + patch`). Keep `tauri.conf.json` + `Cargo.toml` versions aligned with the real release line (was a long-standing `0.1.1` vs `3.x` drift — fixed to `3.8.0` in v3.8.0) so the code is sensible and monotonic.
 
 ## Safe-edit rules
 
 - Don't edit `lists/*.md` directly — they're regenerated by `generate_md.py`.
-- Don't commit `webapp/dist/`, `webapp/src-tauri/target/`, `Cargo.lock`, or `webapp/src-tauri/icon-source.png`.
+- Don't commit `webapp/dist/`, `webapp/src-tauri/target/`, `webapp/src-tauri/gen/` (the generated Android/iOS projects — regenerated by `tauri android init`; Android signing is post-build, not a Gradle edit), `Cargo.lock`, or `webapp/src-tauri/icon-source.png`.
 - Don't commit a real PAT, ever. Settings page handles it client-side; CI uses `secrets.GH_TOKEN`.
 - When adding an npm dep, also add it to `webapp/src/lib/about.ts` so the About page lists it.
 
-## Current state (as of v3.7.1)
+## Current state (as of v3.8.0)
 
-`main` is the trunk. All feature work has merged. Tags `v3.0.0` through `v3.7.1` exist (all GPG-signed). The webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`. v3.7.0 added the first-launch legal-acceptance gate, the Windows installer EULA page, and per-tab lazy-loading of the charts route; **v3.7.1** is a desktop-build hotfix — v3.7.0's installer EULA used the non-existent `bundle.windows.nsis.license` key (see gotcha #15) so its desktop installers never built; v3.7.1 ships them via `bundle.licenseFile` (RTF).
+`main` is the trunk. Tags `v3.0.0` through `v3.7.1` exist (all GPG-signed); the webapp is published at `https://poli0981.github.io/free-games-itchio-list/app/`. v3.7.0 added the first-launch legal-acceptance gate, the Windows installer EULA page, and per-tab lazy-loading of the charts route; v3.7.1 was a desktop-build hotfix (installer EULA via `bundle.licenseFile` RTF — see gotcha #15). **v3.8.0 (in progress)** adds the **Android APK** target: same React + Tauri app shipped as a sideloadable arm64-v8a `.apk` (`release_android.yml`, post-signed). It also fixed the bundle `identifier` to be Android-valid (`com.poli0981.freegamesitchio`, gotcha #16) and realigned `tauri.conf.json`/`Cargo.toml`/`about.ts` versions to `3.8.0` (gotcha #18). Mobile UX: Android back button → router history (`useBackButton`), safe-area insets, and a platform-aware sidebar badge ("Desktop app" / "Mobile app"). Added dep: `@tauri-apps/api`.

@@ -39,6 +39,7 @@ Một SPA React + TypeScript trong [`webapp/`](webapp/) cung cấp giao diện d
 
 - **Bản web**: deploy lên GitHub Pages bởi [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml) — push vào `main` chạm `webapp/` sẽ tự ship. (Setup một lần: repo Settings → Pages → Source = "GitHub Actions".)
 - **Bản desktop (tùy chọn)**: cùng code React đóng gói thành app native Tauri 2 cho Windows / macOS / Linux. Xem [`webapp/TAURI.md`](webapp/TAURI.md) để biết yêu cầu và `npm run tauri:dev`.
+- **Bản Android (tùy chọn)**: cùng app cũng xuất thành file `.apk` cài tay (arm64-v8a) qua Tauri mobile. APK đã ký được build bởi [`.github/workflows/release_android.yml`](.github/workflows/release_android.yml) và đính vào cùng draft Release. Xem [Android (tải & cài đặt)](#android-tải--cài-đặt) bên dưới và mục Android trong [`webapp/TAURI.md`](webapp/TAURI.md).
 - **Auth**: PAT fine-grained với `contents:write` + `actions:write` được mã hóa AES-GCM trong localStorage (PBKDF2-SHA256). Token đã giải mã chỉ tồn tại trong bộ nhớ.
 - **Edit commit dạng `chore(webapp): …`** để dễ lọc khỏi commit của scraper hàng ngày.
 
@@ -51,6 +52,16 @@ npm run dev          # http://localhost:5173
 npm run build        # ghi vào docs/app/
 npm run tauri:dev    # native desktop (cần Rust)
 ```
+
+## Android (tải & cài đặt)
+
+Không lên Play Store — chỉ cần tải `.apk` về và cài tay (Android cho phép, chỉ hỏi xác nhận trước):
+
+1. Mở [Release](https://github.com/poli0981/free-games-itchio-list/releases) mới nhất và tải `FreeGamesItchio_<version>_arm64-v8a.apk`.
+2. Bấm vào file. Android sẽ hỏi **cho phép cài từ nguồn này** (trình duyệt / trình quản lý file) — hãy bật lên (Cài đặt → *Ứng dụng* → *Truy cập đặc biệt* → *Cài ứng dụng không xác định*).
+3. Chấp nhận cảnh báo "không từ Play Store" và cài. Vẫn là app y hệt bản web/desktop, chỉ là do mình ký thay vì Google.
+
+Lưu ý: **chỉ arm64-v8a** (mọi điện thoại từ ~2017 — không hỗ trợ máy 32-bit), và Android **7.0+** (API 24). Cách tự build có trong mục Android của [`webapp/TAURI.md`](webapp/TAURI.md).
 
 ## Cách hoạt động
 
@@ -86,6 +97,7 @@ Xem [`README.md`](README.md#project-structure) phiên bản tiếng Anh để c�
 | Log deleted games | Sau check workflows | Xuất log gỡ ra `deleted_games.txt` |
 | Deploy webapp | Khi push vào main | Build `webapp/` → GitHub Pages (`docs/app/`) |
 | Release desktop | Khi push tag `v*` | Build installer Tauri (Win/macOS/Linux) → draft Release |
+| Release Android | Khi push tag `v*` | Build APK đã ký (arm64-v8a) → draft Release |
 
 Tất cả workflow có rate-limit (delay ngẫu nhiên, batch pause) để tránh bị itch.io block. Lỗi mạng được coi là tạm thời — game chỉ bị gỡ khi xác nhận 404/410 hoặc xác nhận trả phí.
 

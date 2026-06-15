@@ -108,10 +108,13 @@ jobs:
             exit 0
           fi
           VERSION=$(node -p "require('${{ github.workspace }}/webapp/src-tauri/tauri.conf.json').version")
+          # Read the identifier from config so it never drifts from the app's
+          # real bundle ID (changed to a hyphen-free, Android-valid value).
+          IDENTIFIER=$(node -p "require('${{ github.workspace }}/webapp/src-tauri/tauri.conf.json').identifier")
           PKG_NAME="$(basename "$APP" .app)_${VERSION}_${{ matrix.arch_label }}.pkg"
           pkgbuild \
             --component "$APP" \
-            --identifier com.poli0981.free-games-itchio-webapp \
+            --identifier "$IDENTIFIER" \
             --version "$VERSION" \
             --install-location /Applications \
             "$PKG_NAME"
