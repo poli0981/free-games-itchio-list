@@ -24,6 +24,7 @@ import { SyncButton } from '@/components/sync-button'
 import { useAuth } from '@/stores/auth'
 import { usePrefs } from '@/stores/prefs'
 import { isTauri } from '@/lib/runtime'
+import { useIsMobile } from '@/lib/use-is-mobile'
 import { useT, type MessageKey } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
@@ -142,6 +143,7 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
   const t = useT()
   const user = useAuth((s) => s.user)
   const hasStoredPat = useAuth((s) => s.hasStoredPat)
+  const isMobile = useIsMobile()
   const isCompact = variant === 'desktop' && collapsed
   return (
     <div
@@ -152,7 +154,7 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
     >
       {isTauri() && !isCompact && (
         <div className="rounded-md bg-secondary px-2 py-1 text-xs text-secondary-foreground">
-          {t('sidebar.desktopMode')}
+          {t(isMobile ? 'sidebar.mobileApp' : 'sidebar.desktopApp')}
         </div>
       )}
       {isCompact ? (
@@ -244,14 +246,14 @@ export function MobileTopBar() {
     setOpen(false)
   }, [location.pathname, location.hash])
   return (
-    <header className="flex h-12 items-center justify-between gap-2 border-b bg-card px-2 md:hidden">
+    <header className="flex h-12 items-center justify-between gap-2 border-b bg-card px-2 pt-[env(safe-area-inset-top)] md:hidden">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" aria-label={t('sidebar.openNav')} className="h-10 w-10">
             <Menu className="h-5 w-5" />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="w-64 p-0">
+        <SheetContent side="left" className="w-64 p-0 pt-[env(safe-area-inset-top)]">
           <SheetTitle className="sr-only">{t('sidebar.navigation')}</SheetTitle>
           <SheetDescription className="sr-only">
             {t('sidebar.navDescription')}

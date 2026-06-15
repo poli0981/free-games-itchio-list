@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Itch.io Free Games DB',
-  version: '3.7.1',
+  version: '3.8.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'MIT',
   buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
@@ -159,8 +159,9 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: '@octokit/rest', version: '22.0', license: 'MIT', url: 'https://github.com/octokit/octokit.js', category: 'data' },
   { name: 'OpenPGP.js', version: '6.3', license: 'LGPL-3.0', url: 'https://openpgpjs.org', category: 'data' },
 
-  // Desktop
+  // Desktop / mobile (Tauri)
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },
+  { name: '@tauri-apps/api', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://github.com/tauri-apps/tauri/tree/dev/packages/api', category: 'desktop' },
   { name: 'tauri-plugin-opener', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener', category: 'desktop' },
   { name: 'tauri-plugin-single-instance', version: '2', license: 'Apache-2.0 OR MIT', url: 'https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/single-instance', category: 'desktop' },
 ]

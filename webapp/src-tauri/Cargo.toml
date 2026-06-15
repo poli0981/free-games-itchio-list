@@ -1,6 +1,6 @@
 [package]
 name = "free-games-itchio-webapp"
-version = "0.1.1"
+version = "3.8.0"
 description = "Itch.io free games catalog browser & editor"
 authors = ["poli0981"]
 license = "MIT"

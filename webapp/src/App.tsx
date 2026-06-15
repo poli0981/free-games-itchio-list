@@ -7,6 +7,7 @@ import { RouteErrorBoundary } from '@/components/error-boundary'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import { useDensityEffect } from '@/hooks/useDensityEffect'
+import { useBackButton } from '@/hooks/useBackButton'
 import Dashboard from '@/routes/dashboard'
 import Games from '@/routes/games'
 import Deleted from '@/routes/deleted'
@@ -49,15 +50,16 @@ function ScrollToHash() {
 export default function App() {
   useThemeEffect()
   useDensityEffect()
+  useBackButton()
   const mainRef = useRef<HTMLElement>(null)
   return (
     <LegalGate>
-      <div className="flex h-[100dvh] overflow-hidden">
+      <div className="flex h-[100dvh] overflow-hidden pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
         <ScrollToHash />
         <Sidebar />
         <div className="flex min-w-0 flex-1 flex-col">
           <MobileTopBar />
-          <main ref={mainRef} className="flex-1 overflow-y-auto">
+          <main ref={mainRef} className="flex-1 overflow-y-auto pb-[env(safe-area-inset-bottom)]">
             <RouteErrorBoundary>
               <Suspense fallback={<RouteFallback />}>
                 <Routes>
