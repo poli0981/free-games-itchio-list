@@ -40,7 +40,10 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-          cache: gradle
+          # No `cache: gradle` — the Gradle project lives in gen/android, which
+          # is gitignored and only created later by `tauri android init`, so
+          # there are no gradle files at checkout for setup-java to key on
+          # (it hard-errors otherwise). rust-cache + npm cache still apply.
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
