@@ -61,7 +61,7 @@ Không lên Play Store — chỉ cần tải `.apk` về và cài tay (Android c
 2. Bấm vào file. Android sẽ hỏi **cho phép cài từ nguồn này** (trình duyệt / trình quản lý file) — hãy bật lên (Cài đặt → *Ứng dụng* → *Truy cập đặc biệt* → *Cài ứng dụng không xác định*).
 3. Chấp nhận cảnh báo "không từ Play Store" và cài. Vẫn là app y hệt bản web/desktop, chỉ là do mình ký thay vì Google.
 
-Lưu ý: **chỉ arm64-v8a** (mọi điện thoại từ ~2017 — không hỗ trợ máy 32-bit), và Android **7.0+** (API 24). Cách tự build có trong mục Android của [`webapp/TAURI.md`](webapp/TAURI.md).
+Lưu ý: **chỉ arm64-v8a** (mọi điện thoại từ ~2017 — không hỗ trợ máy 32-bit), và Android **11+** (API 30). Bản cũ hơn sẽ không cài được — đây là cố ý: giữ sàn ở phiên bản còn được vá bảo mật và là phiên bản mình thật sự test (≈87% thiết bị đang hoạt động; [lý do](webapp/TAURI.md#why-android-11-api-30)). Cách tự build có trong mục Android của [`webapp/TAURI.md`](webapp/TAURI.md).
 
 ## Cách hoạt động
 

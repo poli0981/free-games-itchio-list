@@ -85,8 +85,10 @@ asks nicely first):
    build, just signed by me instead of Google.
 
 Notes: **arm64-v8a only** (every phone since ~2017 — 32-bit-only devices aren't supported), and
-Android **7.0+** (API 24). Building it yourself is in the Android section of
-[`webapp/TAURI.md`](webapp/TAURI.md).
+Android **11+** (API 30). Older versions can't install it — that's deliberate: it keeps the floor
+at a release that still gets security hardening and that we actually test on (≈87% of active
+devices; [why](webapp/TAURI.md#why-android-11-api-30)). Building it yourself is in the Android
+section of [`webapp/TAURI.md`](webapp/TAURI.md).
 
 ## How it works
 

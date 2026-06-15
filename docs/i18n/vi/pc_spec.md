@@ -33,6 +33,20 @@ mobile emulation không thay thế được sign-off):
 Nếu có bug layout xuất hiện trên các máy này, vui lòng kèm tên thiết bị
 + iOS version + browser khi báo issue.
 
+### Android APK (Tauri)
+
+File `.apk` cài tay (`minSdkVersion` 30 / Android 11) được test trên:
+
+| Thiết bị | Android | Ghi chú |
+|---------|---------|--------|
+| Máy ảo (AVD) | 11 → mới nhất | system image arm64-v8a |
+| vivo 1907 | 12 | sign-off máy thật |
+
+`minSdkVersion` 30 nghĩa là chính hệ điều hành từ chối cài trên Android < 11, nên
+sàn đã test cũng là phiên bản thấp nhất được ship. Lý do (bảo mật + phạm vi test,
+không phải sàn tính năng JS) nằm trong
+[`webapp/TAURI.md`](../../../webapp/TAURI.md#why-android-11-api-30).
+
 ## Xem thêm
 
 - [`dev_env.md`](dev_env.md) — IDE, toolchain ngôn ngữ, dev workflow.
