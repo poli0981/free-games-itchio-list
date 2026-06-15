@@ -30,6 +30,20 @@ mobile emulation is not a sign-off substitute):
 If a layout bug ships, it likely also reproduces on these devices — please
 include the device + iOS version + browser when filing a mobile-only issue.
 
+### Android APK (Tauri)
+
+The sideloadable `.apk` (`minSdkVersion` 30 / Android 11) is signed off on:
+
+| Device | Android | Notes |
+|--------|---------|-------|
+| Emulator (AVD) | 11 → latest | arm64-v8a system images |
+| vivo 1907 | 12 | real-phone sign-off |
+
+`minSdkVersion` 30 means the OS itself refuses to install on Android < 11, so the
+tested floor is also the lowest version we ship to. Rationale (security + tested
+range, not a JS-feature floor) is in
+[`webapp/TAURI.md`](../webapp/TAURI.md#why-android-11-api-30).
+
 ## See also
 
 - [`dev_env.md`](dev_env.md) — IDE, language toolchains, and dev workflow.

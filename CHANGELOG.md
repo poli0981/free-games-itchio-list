@@ -2,6 +2,73 @@
 
 All notable changes to this project will be documented here.
 
+## [3.9.0] - 2026-06-15 (Android minSdk → 11 / API 30)
+
+### Changed
+
+- **Android APK floor raised from API 24 (Android 7.0) to API 30 (Android 11).**
+  `minSdkVersion` in [`webapp/src-tauri/tauri.conf.json`](webapp/src-tauri/tauri.conf.json)
+  `bundle.android` is now `30`. Because Android's package installer refuses any APK whose
+  `minSdkVersion` exceeds the device API level, this **is** the install block — the app simply
+  can't install on Android < 11 ("app not installed / incompatible"); no runtime check by design.
+  Rationale, stated honestly:
+  - **Not a JS-feature floor** — the System WebView is independently updatable down to API 24, so
+    SubtleCrypto / OpenPGP.js / IndexedDB / ES2020 already work on older OSes. That's not the
+    binding constraint.
+  - **Security + patch availability** — Android 11 added scoped-storage enforcement, one-time /
+    auto-reset permissions, and a tighter sandbox; pre-11 releases are also off Google's AOSP
+    monthly Security Bulletins (Android 10 ended 2023-03-06, Android 11 ended 2024-02-05; only
+    14 / 15 / 16 remain as of mid-2026).
+  - **Tested range** — we validate only on Android 11+ (emulator 11 → latest; real phone
+    vivo 1907 / Android 12 — see [`docs/pc_spec.md`](docs/pc_spec.md)). Shipping an untested floor
+    was the real risk.
+  - **Reach cost is small** — API 30+ ≈ 86.9% of active devices (was 96.6% at API 24); only the
+    pre-2020 long tail is dropped.
+
+  Data sources: [endoflife.date/android](https://endoflife.date/android),
+  [Android Security Bulletins](https://source.android.com/docs/security/bulletin),
+  [StatCounter version share](https://gs.statcounter.com/android-version-market-share/mobile/worldwide/) (May 2026),
+  [apilevels.com](https://apilevels.com/) (StatCounter cumulative distribution, Apr 2026).
+
+### Notes
+
+- `versionCode` re-derives to `3009000` (gotcha #18). The web and desktop builds are unaffected by
+  the Android floor. The `about.ts` version bump busts the IndexedDB catalog cache (harmless).
+
+## [3.8.0] - 2026-06-15 (Android APK target 📱)
+
+### Added
+
+- **Android APK build & packaging via Tauri mobile.** The same React + Tauri app now ships as a
+  sideloadable **arm64-v8a `.apk`** (no Play Store), built and **post-signed** (`zipalign` →
+  `apksigner`) by [`.github/workflows/release_android.yml`](.github/workflows/release_android.yml)
+  and attached to the same draft Release as the desktop installers (manual `workflow_dispatch`
+  uploads it as a downloadable workflow artifact instead). `gen/android` stays gitignored — signing
+  is a post-build step, not a Gradle edit. New repo secrets: `ANDROID_KEYSTORE_BASE64` /
+  `ANDROID_KEYSTORE_PASSWORD` / `ANDROID_KEY_ALIAS`. Full build/signing docs in
+  [`webapp/TAURI.md`](webapp/TAURI.md).
+- **Mobile UX** — the Android hardware / gesture back button is wired to in-app router history
+  (`useBackButton`), safe-area insets are respected, and the sidebar shows a platform-aware badge
+  ("Mobile app" / "Desktop app").
+- Added dependency: `@tauri-apps/api`.
+
+### Changed
+
+- **Bundle `identifier` is now alphanumeric** — `com.poli0981.freegamesitchio` (was the hyphenated
+  `com.poli0981.free-games-itchio-webapp`). Android rejects hyphens in the app id (`android init`
+  panics) and Tauri's validator rejects underscores, so alphanumeric is the only form valid on
+  both. Tauri uses one identifier across all platforms, so this also changed the **desktop** bundle
+  ID (a one-time OS-level reinstall).
+- **Realigned versions** — `tauri.conf.json` / `Cargo.toml` / `about.ts` set to `3.8.0` (was a
+  long-standing `0.1.1` vs `3.x` drift), so `versionCode` / `versionName` are sensible and
+  monotonic.
+
+### Notes
+
+- CI: the Android JDK setup must **not** use `cache: gradle` — `gen/android` is gitignored and
+  generated mid-job, so there are no gradle files at checkout to key on (it hard-fails). rust-cache
+  + npm cache still apply.
+
 ## [3.7.1] - 2026-06-14 (Hotfix — desktop build vs invalid Tauri NSIS license key)
 
 ### Fixed

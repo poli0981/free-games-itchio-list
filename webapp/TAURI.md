@@ -124,9 +124,36 @@ npm run tauri -- android build --apk --target aarch64        # release (unsigned
 ```
 
 We ship **arm64-v8a only** (every phone since ~2017; smaller download). `minSdkVersion`
-is **24** (Android 7.0 — the floor for SubtleCrypto / OpenPGP.js / IndexedDB, set in
-`tauri.conf.json` `bundle.android`). `versionName`/`versionCode` derive from the
-`tauri.conf.json` version (`versionCode = major*1e6 + minor*1e3 + patch`).
+is **30** (Android 11), set in `tauri.conf.json` `bundle.android`. `versionName`/`versionCode`
+derive from the `tauri.conf.json` version (`versionCode = major*1e6 + minor*1e3 + patch`).
+
+#### Why Android 11 (API 30)?
+
+The floor was **24** (Android 7.0) through v3.8.0; v3.9.0 raised it to **30**. The reasoning,
+stated honestly so it's defensible:
+
+- **It's not a JS-feature floor.** The Android System WebView is independently updatable from
+  the Play Store down to API 24, so SubtleCrypto / OpenPGP.js / IndexedDB / ES2020 work fine on
+  older OSes too. That is *not* the binding constraint.
+- **Security + patch availability is the constraint.** Android 11 brought scoped-storage
+  enforcement, one-time and auto-reset permissions, and a tighter sandbox. Older releases are
+  also off Google's AOSP monthly Security Bulletins (Android 10 ended 2023-03-06, Android 11
+  itself ended 2024-02-05; only Android 14/15/16 are still on the bulletins as of mid-2026).
+- **Tested range is the other constraint.** We only validate on Android 11+ (see
+  [`docs/pc_spec.md`](../docs/pc_spec.md)); shipping a floor we haven't tested is the real risk.
+- **Reach cost is small.** API 30+ ≈ 86.9% of active devices (was 96.6% at API 24) — we drop
+  only the pre-2020 long tail.
+
+`minSdkVersion` is *also* the install block: Android's package installer refuses an APK whose
+`minSdkVersion` exceeds the device's API level ("app not installed / incompatible"), so there's
+no runtime version check by design.
+
+Data sources: [endoflife.date/android](https://endoflife.date/android),
+[Android Security Bulletins](https://source.android.com/docs/security/bulletin),
+[StatCounter version share](https://gs.statcounter.com/android-version-market-share/mobile/worldwide/),
+[apilevels.com](https://apilevels.com/) (StatCounter cumulative distribution).
+
+**Tested on:** emulator Android 11 → latest; real phone vivo 1907 / Android 12.
 
 ### Signing for distribution
 

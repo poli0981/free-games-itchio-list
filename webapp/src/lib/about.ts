@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Itch.io Free Games DB',
-  version: '3.8.0',
+  version: '3.9.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'MIT',
   buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
