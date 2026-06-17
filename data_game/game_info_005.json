@@ -4287,5 +4287,2849 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://fear-mongrel.itch.io/ham-hole",
+        "name": "HAM HOLE",
+        "dev": "𝕸𝖔𝖓𝖌𝖗𝖊𝖑, Hellohi",
+        "description": ".",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "24",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3ODMxMDI4LnBuZw==/original/kL8oFl.png",
+        "tags": [
+            "3D",
+            "Creepy",
+            "Horror",
+            "meat",
+            "Short",
+            "Singleplayer",
+            "Spooky",
+            "Story Rich",
+            "Surreal",
+            "weird"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://studio-laaya.itch.io/foghorns-drown",
+        "name": "Foghorns Drown - DEMO",
+        "dev": "Studio Laaya",
+        "description": "The chain is stubborn.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3ODk3MDQ5LmdpZg==/original/UkpfAU.gif",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Horror",
+            "Low-poly",
+            "Mystery",
+            "Narrative",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Story Rich",
+            "Thriller"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://spagato.itch.io/revenant-run",
+        "name": "Elden Ring Revenant Run",
+        "dev": "Spagato, KeithGarces",
+        "description": "This is a fan-made parody project and is not affiliated with FromSoftware or Bandai Namco Entertainment.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "45",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3ODcwMjM0LmdpZg==/original/nx2KFV.gif",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Runner"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://crrn.itch.io/freaky-nights-at-fairys",
+        "name": "Freaky Night At Fairy's",
+        "dev": "CRRN",
+        "description": "\"Do you like Fairy? Do you love Fairy? Do you want to.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "17",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NTQyMjYwLnBuZw==/original/E4Fxso.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "joke",
+            "Otome",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Eye tracker"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://echonoahh.itch.io/my-dear-friend",
+        "name": "My Dear Friend",
+        "dev": "Kris ❤︎",
+        "description": "Kris has been spending their weeks staying inside their home and neglecting their duties.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "22",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0OTQ5NjgzLnBuZw==/original/0AAy0B.png",
+        "tags": [
+            "Fangame",
+            "No AI",
+            "Short",
+            "Simple",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tokimekiwaku.itch.io/liar-liar-2",
+        "name": "Liar Liar 2",
+        "dev": "tokimekiwaku",
+        "description": "The sequel to my first game Liar Liar : Liar Liar 2: Pants on Fire Continues one year after the game left off, Yukari and Miho are now high schoolers, who are now dating and spend their leisure tim...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "626",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvODE1NzMvMzg0MDY4LnBuZw==/original/ciLBzC.png",
+        "tags": [
+            "Gore",
+            "liar-liar"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://larkylabs.itch.io/oathbreaker",
+        "name": "Oathbreaker",
+        "dev": "LarkyLabs",
+        "description": "Season 2 can be downloaded here.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "893",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MDE2NDAuanBn/original/DQBooH.jpg",
+        "tags": [
+            "Amare",
+            "Dating Sim",
+            "Fantasy",
+            "Female Protagonist",
+            "LGBT",
+            "Otome",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://honeybunny-of.itch.io/worldsdoom",
+        "name": "World's Doom: Mission Salvation",
+        "dev": "Honey Bunny",
+        "description": "The game is available in English and Portuguese (PT-BR).",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "36",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzgzODU4NTYuZ2lm/original/cwcecK.gif",
+        "tags": [
+            "Comedy",
+            "Cute",
+            "Fantasy",
+            "Otome",
+            "Pixel Art",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://teamscallywag.itch.io/joestar-struck",
+        "name": "Joestar ☆ Struck",
+        "dev": "TeamScallywag",
+        "description": "Welcome to Gyuuniku Academy! As the story often goes, you’re the new kid on the block and are nervous for your first day--luckily the school has a cast of colorful characters to help guide you through...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "146",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNjk4NTAucG5n/original/UIAuEx.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Dating Sim",
+            "Multiple Endings",
+            "Otome",
+            "relationship",
+            "Ren'Py",
+            "Sprites",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://realkeythefox.itch.io/dont-say-yes",
+        "name": "DON'T SAY YES",
+        "dev": "realkey",
+        "description": "LANGUAGE:日本語 and ENGLISH UPDATE: I'm currently developing an omnibus-style game with new features, including localization! DON’T SAY YESも収録したオムニバス・アドベンチャー『ショートショートフィクションズ』開発中です。 DON'T SAY \"YES\" no ...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 December 2022 @ 15:00 UTC",
+        "rating": "4.6",
+        "rating_count": "176",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExMDU0OTQ4LnBuZw==/original/WTxBAq.png",
+        "tags": [
+            "2D",
+            "gbstudio",
+            "Pixel Art",
+            "Retro",
+            "Sci-fi",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Japanese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)",
+            "Smartphone"
+        ],
+        "made_with": [
+            "GB Studio"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bam-jammy.itch.io/and-now-the-grand-prize",
+        "name": "And Now... The Grand Prize!",
+        "dev": "BAM! Jammy",
+        "description": "You met Mr.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "13",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1Mjg1NzQxLnBuZw==/original/aAm7rL.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Fangame",
+            "Indie",
+            "LGBT",
+            "Multiple Endings",
+            "No AI",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://coffeedripstudios.itch.io/soul-union",
+        "name": "Soul Union",
+        "dev": "coffeedripstudios, Kerry",
+        "description": "Explore the soul labyrinth, develop a friendship or romance, and collect clues in this fantasy adventure visual novel.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "80",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzY0MjA0NDgucG5n/original/XRHfJc.png",
+        "tags": [
+            "Fantasy",
+            "josei",
+            "LGBTQIA",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Mystery",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://turborenegade.itch.io/soldier-of-love",
+        "name": "Soldier Of Love",
+        "dev": "TurboRenegade",
+        "description": "Let's not beat around the bush.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "25",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNTI1MzAxLnBuZw==/original/rzMGlb.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "Funny",
+            "Multiple Endings",
+            "Narrative",
+            "Ren'Py",
+            "Romance",
+            "Short",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://digital-poppy.itch.io/lesbian-winter",
+        "name": "Three Lesbians in a Winter Special",
+        "dev": "Digital Poppy",
+        "description": "It's Snowmas tomorrow, and Trixie is excited to spend it with her best friend Tabby and her best friend / greatest rival Nikita! Still, all is not well, for at the stroke of midnight Snowmas tradit...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "86",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQ5MDI0OTYucG5n/original/0yC34X.png",
+        "tags": [
+            "Bitsy",
+            "Christmas",
+            "Comedy",
+            "Furry",
+            "Lesbian",
+            "LGBT",
+            "Queer",
+            "Romance",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "bitsy"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sdf0aabd.itch.io/milo-gets-silly-when-he-is-in-love",
+        "name": "Milo gets silly when he is in love!",
+        "dev": "sdf0aabd",
+        "description": "Premise of MGSWHIIL: Moka was just a chill girl, living her life like a regular person.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "59",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5OTg0ODc2LnBuZw==/original/FJGs6B.png",
+        "tags": [
+            "2D",
+            "Dark",
+            "Female Protagonist",
+            "male-yandere",
+            "Multiple Endings",
+            "Otome",
+            "Ren'Py",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://saguarofoo.itch.io/the-censor",
+        "name": "The Censor",
+        "dev": "saguaro.foo",
+        "description": "The Censor is a dystopian visual novel.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "19",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjgwNzcvMTE1NjUwLnBuZw==/original/Dyhpv3.png",
+        "tags": [
+            "Dystopian",
+            "lucky-special-games",
+            "Mystery",
+            "Ren'Py",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://shuttlefrog.itch.io/vfasfd",
+        "name": "Voxenfelle Academy: School Festival Diary",
+        "dev": "shuttlefrog, rickykuru, nelle, hinabeanie, fish_styx, patchworktail, turtlesnail, rookruff, automatica",
+        "description": "The kingdom of Astralena has been full of strife recently, what with age-old class divides and the political persecution of voidpacts.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "19",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNTQ1NzE1LmdpZg==/original/DFPoIx.gif",
+        "tags": [
+            "2D",
+            "Anime",
+            "LGBTQIA",
+            "minigames",
+            "Narrative",
+            "Slice Of Life",
+            "stat-raiser"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://fluffyblessing.itch.io/lilies-in-the-graveyard",
+        "name": "Lilies in The Graveyard",
+        "dev": "fluffyblessing",
+        "description": "(It is recommended to download the PC/Mac version if possible!) You are tasked with finding and eliminating an anomaly.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjQ3NDQ4LnBuZw==/original/SlCQcw.png",
+        "tags": [
+            "Multiple Endings",
+            "Psychological Horror",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bugsnkisses.itch.io/bugs-and-kisses-demo",
+        "name": "Bugs and Kisses: DEMO",
+        "dev": "Bugs & Kisses",
+        "description": "NOTE: If you can't get this version of the game to work, please try our in-browser version at https://bugsnkisses.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "22",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTE2ODM3LzU0MDE0MC5wbmc=/original/rVWFUN.png",
+        "tags": [
+            "Dating Sim"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://balsaminaxxx.itch.io/an-honest-hard-days-work-at-spudsys",
+        "name": "An Honest Hard Days Work At Spudsy's!",
+        "dev": "balsaminaxxx",
+        "description": "This is an RPG Maker visual novel fan game based on the content of Episode 4 of <Amazing Digital Circus>.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "19",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNjQyMDUzLnBuZw==/original/MXaes3.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "gangle",
+            "tadc"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://nthcircle.itch.io/of-the-devil",
+        "name": "of the Devil",
+        "dev": "Nth Circle",
+        "description": "ALWAYS BET ON RED.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "74",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMzA2OTA2LmdpZg==/original/2KzerX.gif",
+        "tags": [
+            "Cyberpunk",
+            "Female Protagonist",
+            "Mystery",
+            "Point & Click",
+            "Sci-fi",
+            "Story Rich",
+            "Thriller"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://gg8473.itch.io/walk-in-the-sun",
+        "name": "walk in the sun",
+        "dev": "gg8473",
+        "description": "Claire's got one goal - to spend time with her best friend Jamie after school.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "126",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExNzI5MjQxLmdpZg==/original/hY6rRb.gif",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Dark",
+            "Gay",
+            "Lesbian",
+            "LGBT",
+            "Ren'Py",
+            "Short",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://loxrain.itch.io/shadows",
+        "name": "The Shadows That Run Alongside Our Car",
+        "dev": "Lox Rain, Auro-Cyanide, Laiska, Lore",
+        "description": "The road is long.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "1017",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvODA1ODQvMzc4Nzg1LmdpZg==/original/%2Bwf0i5.gif",
+        "tags": [
+            "Zombies"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://2pgames.itch.io/cyber-paranoia-demo",
+        "name": "Cyber Paranoia 囚生症 [Demo]",
+        "dev": "2PGames",
+        "description": "中文 囚生症官方社媒 推特>>> 小红书>>> 官方Q群 ：715026848（1）625951216（2） 如果喜欢这个试玩版，欢迎在Steam上 添加愿望单 ###预警### 本游戏包含强烈刺激的内容。 部分路线含有剖解、内脏、虐待、虐杀、身体裸露等血腥画面以及描写。 **本游戏仍然存在 纯爱路线 。请谨慎做出每一项选择。 这是一款女性向多结局养成游戏：记忆缺失的“你”在封闭的病房醒来，...",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNzA5ODQ2LmpwZw==/original/VaXeEw.jpg",
+        "tags": [
+            "Anime",
+            "Dating Sim",
+            "Gore",
+            "Immersive",
+            "Mystery",
+            "Otome",
+            "Story Rich",
+            "Thriller"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://visager.itch.io/flirting",
+        "name": "Flirting",
+        "dev": "Visager",
+        "description": "* Two enbies in flirting in the afternoon.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "205",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4NDA5MTQuZ2lm/original/CLBkfR.gif",
+        "tags": [
+            "Bitsy",
+            "Gay",
+            "kaiju",
+            "Mechs",
+            "non-binary",
+            "Queer",
+            "Romance",
+            "Short",
+            "Transgender"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://himebee.itch.io/a-bouquet-of-magic",
+        "name": "A Bouquet of Magic",
+        "dev": "HimeBee",
+        "description": "Story Description: You are a well-respected princess, and though you are not the heir to the throne, your family expects much from you.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "100",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyNjk2NTQ2LnBuZw==/original/CZcxjV.png",
+        "tags": [
+            "Cute",
+            "Fantasy",
+            "Female Protagonist",
+            "josei",
+            "Music",
+            "Otome",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://pacchistudio.itch.io/birthday-date",
+        "name": "BIRTHDAY DATE",
+        "dev": "PACCHI STUDIO",
+        "description": "SUMMARY Yuuta signs up for cursed patrolling on his birthday, and Toge is not too thrilled.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "35",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1Mjg3MDgzLnBuZw==/original/cUHtt7.png",
+        "tags": [
+            "Anime",
+            "Boys' Love",
+            "Dating Sim",
+            "Fangame",
+            "jjk",
+            "jujutsu-kaisen",
+            "Romance",
+            "Yaoi"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kazehita.itch.io/spacesona",
+        "name": "SPACESONA",
+        "dev": "Kazehita",
+        "description": "Tumblr Bsky Twitter The universe is ending, where will you go now? Journey to the edge of the universe to escape the end, find meaning of life, and find friends! Or, maybe die.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2024 @ 17:00 UTC",
+        "rating": "4.9",
+        "rating_count": "26",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4NTA2ODE3LnBuZw==/original/ZGjc%2BX.png",
+        "tags": [
+            "Art Book",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Space"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://porpentine.itch.io/sticky-zeitgeist-s1ep2",
+        "name": "Sticky Zeitgeist: Episode 2: Aperitif",
+        "dev": "xrafstar, Ada Rook",
+        "description": "Episode 2: Aperitif Controls = WASD/arrow keys + mouse.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "36",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTU2ODA5Lzk5ODQzNy5wbmc=/original/AQqlHT.png",
+        "tags": [
+            "Atmospheric",
+            "Cute",
+            "Dark",
+            "Female Protagonist",
+            "Furry",
+            "Horror",
+            "Robots",
+            "Story Rich",
+            "Surreal"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sukebangames.itch.io/valhallakids",
+        "name": "VA-11 Hall-A KIDS!",
+        "dev": "SUKEBAN GAMES",
+        "description": "What would happen if all of your favorite VA-11 Hall-A characters went to the same high school? VA-11 Hall-A KIDS ™ is an official spin-off of VA-11 Hall-A: Cyberpunk Bartender Action where Dana Za...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "164",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExMDkwMDgwLnBuZw==/original/VeI5y%2F.png",
+        "tags": [
+            "aprils-fool",
+            "Comedy",
+            "Ren'Py",
+            "Slice Of Life",
+            "va-11-hall-a"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lowpolyangel.itch.io/date-fucking-omori-chars",
+        "name": "DATE FUCKING OMORI CHARS",
+        "dev": "angel (low poly)",
+        "description": "--------------------------------------------------- Have you ever wanted to DATE FUCKING OMORI CHARS? Well, bad news! This game isn't for you.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "29",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NDI0MTA5LmdpZg==/original/ggbuJU.gif",
+        "tags": [
+            "Dating Sim",
+            "omori",
+            "Otome",
+            "Parody"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://foolish-mortals.itch.io/mmm",
+        "name": "MMM: Murder Most Misfortunate",
+        "dev": "Foolish Mortals",
+        "description": "A gruesome murder interrupts an evening party at a secluded mansion and you are the prime suspect! Explore the mansion, search for clues, and interrogate the other guests as you strive to unmask th...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 May 2017 @ 06:00 UTC",
+        "rating": "4.2",
+        "rating_count": "92",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvNzM5MTQvNTEyMjIxLnBuZw==/original/DcAM3m.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "mmm",
+            "murder-mystery",
+            "phoenix-wright",
+            "Point & Click",
+            "Text based",
+            "Visualization"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Italian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://alexisroyce.itch.io/the-jig-is-up",
+        "name": "The Jig is Up!",
+        "dev": "AlexisRoyce, Tsushi",
+        "description": "From the fans that brought you Is Lupin Still Flirting , comes another tale of master thief Lupin the Third, as he sets his sights on cool gunman Jigen Daisuke.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "80",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzkzMzA0ODQucG5n/original/%2Bzd4RG.png",
+        "tags": [
+            "Anime",
+            "Bara",
+            "Casual",
+            "Dating Sim",
+            "Gay",
+            "LGBT",
+            "lupin",
+            "Romance",
+            "Yaoi"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://totally-real200.itch.io/fundamentals-in-dating",
+        "name": "Fundamentals In Dating",
+        "dev": "Totally_Real200",
+        "description": "Fundamentals In Dating is a Dating sim with the Teachers from Fundamental Paper Education! You play as Y/N, the new geography teacher! -NEW UPDATE BEING DEVELOPED-",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyMjIxMDcwLmpwZw==/original/1YOX7w.jpg",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lyria-ghostkitty.itch.io/my-path",
+        "name": "My Path",
+        "dev": "Lirya",
+        "description": "My Path brings you the story of a world facing a crisis! You will play as a young and skilled researcher called Anna, who has to decide how she is going to help in the fight against a mysterious de...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "74",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg1ODc2OTguanBn/original/oC3Pi3.jpg",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "Female Protagonist",
+            "Otome",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://cantusmori.itch.io/froggy-pot",
+        "name": "Froggy Pot",
+        "dev": "Cantusmori",
+        "description": "Overview: A short cozy game with a small side of existential crisis.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "510",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc3NDIxMjIucG5n/original/TcCHr4.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Casual",
+            "Cozy",
+            "Cute",
+            "Dark",
+            "Kinetic Novel",
+            "Relaxing",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://eternal-night-studios.itch.io/trick-and-treat",
+        "name": "Trick & Treat - Visual Novel",
+        "dev": "Eternal Night Studios",
+        "description": "Synopsis: One of the legends of the town of Abingdon is that Oakwood forest is cursed.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "54",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvNjk4OTkvNzc4MjQ2LnBuZw==/original/IUPdbL.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Halloween",
+            "Multiple Endings",
+            "Mystery",
+            "novela-visual",
+            "Ren'Py",
+            "Romance",
+            "spanish"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://darkchibishadow.itch.io/its-sanjis-birthday",
+        "name": "It's Sanji's Birthday!",
+        "dev": "DarkChibiShadow",
+        "description": "The crew gets together to throw a surprise birthday party for Sanji! This is a direct sequel to 'It's Zoro's Birthday', so I'd recommend playing that first! 💛 About the Game 💛 I made this game in a...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "18",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTI0MTI5LzU3MTc0OS5wbmc=/original/ymGYw3.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Fangame",
+            "Mouse only",
+            "one-piece",
+            "Ren'Py",
+            "Romance",
+            "Short",
+            "zosan"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop",
+            "Paint Tool SAI"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jameshillten.itch.io/fan-game-silent-hill-metamorphoses",
+        "name": "Fan game Silent Hill Metamorphoses",
+        "dev": "JamesHillten",
+        "description": "The main character of the game, Eve Coulman, goes to Silent Hill looking for her missing brother.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQ4NjkzMjYucG5n/original/CxhfAY.png",
+        "tags": [
+            "Horror",
+            "Psychological Horror",
+            "silenthill",
+            "Survival Horror"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://softercode.itch.io/the-breakfast-chub",
+        "name": "The Breakfast Chub",
+        "dev": "SofterCode",
+        "description": "WARNING: THIS GAME CONTAINS WEIGHT GAIN FETISH CONTENT --------------------------------------------------------- Welcome to your new job at the Sweet Spot Cafe! You’ll work alongside a young waitre...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 July 2019 @ 03:57 UTC",
+        "rating": "4.4",
+        "rating_count": "81",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQxNzQ1OTAucG5n/original/oIbGVl.png",
+        "tags": [
+            "bbw",
+            "fat",
+            "feederism",
+            "feeding",
+            "weight-gain",
+            "weightgain"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://madogames.itch.io/darian-dress-up",
+        "name": "Darian Dress up Love story",
+        "dev": "Kawaii mado",
+        "description": "༺♥༻ Features ༺♥༻ (ES/EN) — This game is in both English and Spanish — ♡ Dressup + Otome game ♡ 5 original illustrations ♡ Clothing color customization ♡ 2,000 words of dialogue and story ♡ 4 differ...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "29",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxODcwMjI2LnBuZw==/original/bQ2pJk.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "Dress Up",
+            "LÖVE",
+            "Otome",
+            "Romance",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sakevisual.itch.io/re-alistair",
+        "name": "RE: Alistair++",
+        "dev": "sakevisual",
+        "description": "RE: Alistair++ is a free visual novel/otome sim game by sakevisual.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "529",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvNDgwMjQvMjE0MjUxLmpwZw==/original/8m9knu.jpg",
+        "tags": [
+            "2D",
+            "Anime",
+            "Dating Sim",
+            "Female Protagonist",
+            "Multiple Endings",
+            "Otome",
+            "otome-game",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jellicube.itch.io/stuckathome",
+        "name": "Stuck @ Home",
+        "dev": "jellicube",
+        "description": "a short visual novel i made in a week, using ren'py.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "95",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvNzIxMTEvMzMxMzEyLnBuZw==/original/ONhmY8.png",
+        "tags": [
+            "feelings",
+            "Funny",
+            "Pixel Art",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Aseprite"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://frozen-iris.itch.io/pasthope",
+        "name": "不治之药",
+        "dev": "Frozen iris",
+        "description": "—— 现在有 英文版本 了，特别感谢 @ t0rtlet0rtle 的英文翻译。:) — Now available in English , special thanks to @t0rtlet0rtle for the English translation.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "127",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwNTY0NTQ4LnBuZw==/original/VTyY37.png",
+        "tags": [
+            "chinese",
+            "Dating Sim",
+            "Otome",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://wildquill.itch.io/my-demonic-jungle-quest-demo",
+        "name": "18+ Demo - My Demonic Jungle Quest",
+        "dev": "Wildquill",
+        "description": "Breed your own harem of a cute healer, a taciturn hunter, and a devious demon girl, all while you go on a quest to save your world.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.7",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NjY5ODc4LnBuZw==/original/MOV8pl.png",
+        "tags": [
+            "2D",
+            "demons",
+            "Fantasy",
+            "Monster Girls",
+            "tribal"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://deconreconstruction.itch.io/snowbound-blood",
+        "name": "Snowbound Blood",
+        "dev": "DECONRECONSTRUCTION",
+        "description": "Your name is SECILY IOPARA.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 March 2019 @ 18:00 UTC",
+        "rating": "4.8",
+        "rating_count": "96",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5MzUzMTEucG5n/original/%2FPWRJm.png",
+        "tags": [
+            "2D",
+            "Female Protagonist",
+            "Mystery",
+            "Noir",
+            "Ren'Py",
+            "Singleplayer",
+            "Story Rich",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tanaw.itch.io/thelaststar",
+        "name": "The Last Star",
+        "dev": "tanaw",
+        "description": "On top of a mountain lies a tower of mysterious origin.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "106",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzkwMjg3NDgucG5n/original/1Kvbmz.png",
+        "tags": [
+            "Fantasy",
+            "LGBT",
+            "Mystery",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://khywae.itch.io/chasing-control",
+        "name": "Chasing Control",
+        "dev": "khywae",
+        "description": "♡ ABOUT ♡ You’ve been assigned mandatory training — tactical influence, behavioral control, all the things they say you’re lacking in the field.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "196",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMzAwNTMwLnBuZw==/original/jDN9o4.png",
+        "tags": [
+            "Dating Sim",
+            "Fangame",
+            "Female Protagonist",
+            "Otome",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://neo-artist-aurora.itch.io/to-the-edge-of-the-sky-1",
+        "name": "To the Edge of the Sky 1: Operation Phoenix",
+        "dev": "Neo Artist Aurora",
+        "description": "Extra Content/DLC: To the Edge of the Sky Book 1: Premium Edition Through His Eyes: Four To the Edge of the Sky, Book 1: Operation Phoenix Enter the year 2077 and become Seven , the newest addition...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "315",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTM1MDIuanBn/original/QKQzOr.jpg",
+        "tags": [
+            "Action-Adventure",
+            "Cyberpunk",
+            "No AI",
+            "Sci-fi",
+            "Thriller"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://vnstudioelan.itch.io/on-wings-bringing-sleep",
+        "name": "On Wings Bringing Sleep",
+        "dev": "Studio Élan",
+        "description": "A dark lesbian fairytale, On Wings Bringing Sleep is the story of Morgaine, an outcast among the fae as her people's power is ever-dwindled by the advance of human technology.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "43",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3OTY1NzcxLnBuZw==/original/RuHOVF.png",
+        "tags": [
+            "Anime",
+            "Atmospheric",
+            "Dark",
+            "Dark Fantasy",
+            "Fantasy",
+            "Gay",
+            "Lesbian",
+            "LGBT",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sanguine1038.itch.io/jackleg-participants",
+        "name": "Your Turn to Die: -Jackleg Participants-",
+        "dev": "sanguine1038",
+        "description": "Summary High-schooler Ranmaru Kageyama wakes up in an unknown location, unable to remember how they got there, and is forced to do fatal tasks.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "26",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzkzNTE2NTEucG5n/original/rumeiM.png",
+        "tags": [
+            "2D",
+            "Creepy",
+            "Pixel Art",
+            "RPG Maker",
+            "Singleplayer",
+            "your-turn-to-die",
+            "yttd"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://moon-moth-games.itch.io/exitcorners",
+        "name": "Exit/Corners",
+        "dev": "Moon Moth Games",
+        "description": "Five strangers find themselves trapped in an abandoned hotel that’s set to collapse in 24 hours.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "138",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTUxNTQ1LzcxMjQzOC5wbmc=/original/XwFf5S.png",
+        "tags": [
+            "Episodic",
+            "Escape Game",
+            "Hand-drawn",
+            "Mystery",
+            "secrets",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sunlabyrinth.itch.io/asher",
+        "name": "Asher",
+        "dev": "Sun Labyrinth",
+        "description": "You play as Tetrine Reish.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 March 2018 @ 07:00 UTC",
+        "rating": "4.5",
+        "rating_count": "45",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzYxMjM3MzguanBn/original/K1D31b.jpg",
+        "tags": [
+            "1920s",
+            "Female Protagonist",
+            "Meaningful Choices",
+            "Otome",
+            "Psychological Horror",
+            "Romance",
+            "Twine",
+            "Vampire",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Twine"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://viv8k.itch.io/this-game-is-not-real-demo",
+        "name": "※This Game Is Not Real. [Demo]",
+        "dev": "びぶ / viv",
+        "description": "3 days until the deadline.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 May 2026 @ 15:00 UTC",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTIzMjQxLnBuZw==/original/EGFjeL.png",
+        "tags": [
+            "Cute",
+            "Gore",
+            "Horror",
+            "Indie",
+            "LGBT",
+            "Retro",
+            "Romance",
+            "Yaoi"
+        ],
+        "platforms": [],
+        "languages": [
+            "Spanish; Latin America",
+            "Japanese",
+            "Korean",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lisadikaprio.itch.io/fourearedfox",
+        "name": "What to do with a four-eared fox",
+        "dev": "LisadiKaprio",
+        "description": "After your regular visit to the park, you find a strange fox-girl.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "50",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzY4MjQyMzYucG5n/original/qPkY5r.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Cute",
+            "Female Protagonist",
+            "Ren'Py",
+            "Short",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jellyfishparade.itch.io/war-of-roses",
+        "name": "War of Roses [RELEASED]",
+        "dev": "owl.",
+        "description": "Rose [renameable] is ready to inherit her family's five generation owned flower shop.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "209",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzU4MDY1OTYucG5n/original/zaEpbU.png",
+        "tags": [
+            "Amare",
+            "Cute",
+            "Dress Up",
+            "Female Protagonist",
+            "Multiple Endings",
+            "Otome",
+            "Ren'Py",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sky-artdesigns.itch.io/a-trolls-fairy-tale",
+        "name": "A Troll's Fairy Tale",
+        "dev": "S-Morishita",
+        "description": "Will Acacia be able to break out of her shell and find her true love? A fairy tale love story for a troll is a very strange thing indeed, because who could ever truly love a troll? This is just a l...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "74",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5Nzk2OTcucG5n/original/JgGUPD.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://chanimk.itch.io/comfwee-cafe",
+        "name": "Comfwee Café",
+        "dev": "ChaniMK",
+        "description": "Welcome to Comfwee Café! Here, you can receive comfort from three gentle waiters.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "96",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExNjUzMzI3LnBuZw==/original/AhdX%2Fh.png",
+        "tags": [
+            "Anime",
+            "Bara",
+            "Boys' Love",
+            "Cute",
+            "Dating Sim",
+            "Gay",
+            "LGBT",
+            "Slice Of Life",
+            "Yaoi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://madogames.itch.io/my-adorable-ghost-story",
+        "name": "My Adorable Ghost Story",
+        "dev": "Kawaii mado",
+        "description": "⊹ ₊ ˚‧︵‿₊୨ ᰔ ୧₊‿︵‧ ˚ ₊ ⊹ My Adorable Demon Story ⊹ ₊ ˚‧︵‿₊୨ ᰔ ୧₊‿︵‧ ˚ ₊ ⊹ My Adorable Demon Story is a short, romance, story-driven adventure.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 May 2029 @ 22:07 UTC",
+        "rating": "4.5",
+        "rating_count": "33",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1MDk3ODkzLnBuZw==/original/LkG3Og.png",
+        "tags": [
+            "Cozy",
+            "Dating Sim",
+            "Otome",
+            "Pixel Art",
+            "Romance",
+            "Story Rich",
+            "Top Down Adventure",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://eternal-night-studios.itch.io/connected-hearts",
+        "name": "Connected Hearts - Visual Novel",
+        "dev": "Eternal Night Studios",
+        "description": "Synopsis: Shortly after moving out Gary has a strange dream where he meets a woman who responds to the name of Alice, who tells him he left a promise unfulfilled.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "23",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTIwNTg2Lzc3ODI2MC5wbmc=/original/RWfzUG.png",
+        "tags": [
+            "novela-visual",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://harveyraks.itch.io/hyuns-dojo-sakura-love",
+        "name": "Hyun's Dojo Sakura Love🌸",
+        "dev": "Harveyraks",
+        "description": "Art by: Sotomi NEW UPDATE OUT!!! This is a minor update to the game, fixing bugs and errors that were present in the previous version.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 February 2025 @ 17:00 UTC",
+        "rating": "4.8",
+        "rating_count": "29",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE2NjM1NTk1LnBuZw==/original/XQCLwj.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "hyuns-dojo",
+            "Romance",
+            "sakura-love",
+            "stickman",
+            "visual-novel-maker"
+        ],
+        "platforms": [],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://fervent.itch.io/whoismike",
+        "name": "Who Is Mike?",
+        "dev": "FERVENT",
+        "description": "HOME | STEAM | TUMBLR | PRESSKIT | DEVBLOG Story & Features You wake up with an aching head and the world out of focus.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "153",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjI4NDAvOTA1MDYucG5n/original/WvWTw7.png",
+        "tags": [
+            "Anime",
+            "Dark",
+            "Horror",
+            "Multiple Endings",
+            "Mystery",
+            "Ren'Py",
+            "suspense"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bloomdevs.itch.io/how-i-bloomed",
+        "name": "How I Bloomed",
+        "dev": "bloomdevs",
+        "description": "\"Anyone can g row into something beautiful with the Beau Tea treatment plan.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NzYxMTY5LnBuZw==/original/onWfmq.png",
+        "tags": [
+            "Horror",
+            "Kinetic Novel",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://cryptiddog.itch.io/ryt",
+        "name": "Roads Yet Traveled",
+        "dev": "CryptidDog",
+        "description": "Do you think you can change the world? No matter who you are, you can only do so much, you have so little time to make a difference.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "220",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyMzAwMzI4LnBuZw==/original/phQatA.png",
+        "tags": [
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://brummelliana.itch.io/paulgame",
+        "name": "PaulGame",
+        "dev": "Brummelliana",
+        "description": "A very brief demo of what a Paul McCartney visual novel can be.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3MDkyNjM5LnBuZw==/original/gxH234.png",
+        "tags": [
+            "paul-mccartney",
+            "Pixel Art",
+            "the-beatles"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://spark180.itch.io/the-jester-and-the-prince",
+        "name": "Mysteries of the House: The Jester & the Prince",
+        "dev": "Spark",
+        "description": "NOTICE: Please head over to Steam for the definitive version! The Steam DEMO includes the entirety of this specific game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "69",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5NjAxOTUzLnBuZw==/original/43eO3p.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Indie",
+            "Male protagonist",
+            "Multiple Endings",
+            "Mystery",
+            "Ren'Py",
+            "Singleplayer",
+            "Thriller"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://silverhyena.itch.io/essence-hunt",
+        "name": "Essence Hunt",
+        "dev": "SilverHyena",
+        "description": "Essence Hunt is a BxB (meaning, romance between males) visual novel.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "65",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTUwMzE1LzY4ODI2Ny5wbmc=/original/1SI9Y9.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Fantasy",
+            "LGBT",
+            "Multiple Endings",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://chegovia.itch.io/tkot",
+        "name": "The Knife of the Traitor",
+        "dev": "Chegovia",
+        "description": "Bones and guts, bones and guts.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "166",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMjE3NjEvMzAwODc5LnBuZw==/original/dPgkN7.png",
+        "tags": [
+            "Comedy",
+            "Mystery",
+            "Otome",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://mokadevs.itch.io/the-moon-looks-beautiful-tonight",
+        "name": "The Moon Looks Beautiful Tonight",
+        "dev": "mokadevs, kirvia, cain, 12THHOUSE, Qveiis",
+        "description": "A year ago, the Moon was sent violently flying off course by a catastrophic explosion, depriving Earth of its steady stream of resources.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "117",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyODU0NzE4LnBuZw==/original/TWoYbv.png",
+        "tags": [
+            "2D",
+            "Lesbian",
+            "LGBT",
+            "Pixel Art",
+            "Queer",
+            "Space",
+            "Transgender",
+            "vn-cup",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://raazberry.itch.io/coffee-after-death",
+        "name": "coffee after death?",
+        "dev": "raazberry",
+        "description": "short dating sim where you meet the embodiment of death on your way to the afterlife (and maybe take it out for some coffee - all that paperwork gets tiring sometimes, after all.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "40",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMjY4OTcyLnBuZw==/original/34EWDi.png",
+        "tags": [
+            "Cute",
+            "Dating Sim",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://dottoren0k.itch.io/dottore-and-xxii-shadow-of-the-experiment",
+        "name": "Dottore and XXII Shadow of the Experiment",
+        "dev": "dottoren0k",
+        "description": "As a Fatui operative and close aide to Il Dottore, you will face a trial: to follow his ideals or carve your own path.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "12",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMDUwMzgxLmpwZw==/original/Y1Vs7K.jpg",
+        "tags": [
+            "2D",
+            "Fangame",
+            "Female Protagonist",
+            "genshin-impact",
+            "Indie",
+            "Psychological Horror",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://dewott2501.itch.io/best-at-freddys",
+        "name": "Best at Freddy's",
+        "dev": "DewottDev",
+        "description": "-------------------------------------------------------- STORY -------------------------------------------------------- Welp, life can be awful, but it can be worse.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "22",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NTQ3OTU2LnBuZw==/original/AArCY%2B.png",
+        "tags": [
+            "2D",
+            "Female Protagonist",
+            "Five Nights at Freddy's",
+            "Godot",
+            "Horror",
+            "Indie",
+            "Multiple Endings",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://draven-suazo.itch.io/fnafhs-fgfd",
+        "name": "FNAFHS Fan Game Fan Demo",
+        "dev": "Draven Suazo",
+        "description": "El 27 de junio 2016 el canal de youtube Adri Universe subió Este video , en el cual se presenta la idea de una novela visual basada en la serie Five Nights at Freddy's HighSchool creada por Edd00ch...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "8",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg2NTcxOTMucG5n/original/C705%2FE.png",
+        "tags": [
+            "demo",
+            "Fangame",
+            "fnafhs",
+            "Otome",
+            "unfinished"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bunnyden-studios.itch.io/kaiju-girlfriend",
+        "name": "Kaiju Girlfriend: That time I started dating a monster girl",
+        "dev": "BunnyDen Studios, ZipperQwerty",
+        "description": "Tonight is the night! That's right! Tonight is the night you've been waiting for all this time! You'll meet your date at her house and you have your suspicions that she's a monster! Play as a namel...",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "20",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzg5MjUzNzYucG5n/original/%2FdWc8K.png",
+        "tags": [
+            "Dating Sim",
+            "investigation",
+            "Monster Girls",
+            "Monsters",
+            "Pixel Art",
+            "Singleplayer",
+            "wolf-rpg-editor"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://almondlion.itch.io/the-number-above",
+        "name": "The Number Above 头顶上的数字",
+        "dev": "Almondlion",
+        "description": "One day, an ordinary high school student suddenly sees a number floating above everyone's head.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NzY2Nzc4LnBuZw==/original/zpeH1R.png",
+        "tags": [
+            "Boys' Love",
+            "Furry",
+            "LGBT",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://meant-to-bee-studios.itch.io/crabs-cocktails",
+        "name": "Crabs & Cocktails",
+        "dev": "Meant to Bee Studios, FlowersforJoy",
+        "description": "Special Note from the Meant to Bee Studios Team! We will not be taking donations for our games, but if you feel so inclined please consider donating to the Maui Strong Fund in relation to the wildf...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "42",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzMzQ2Mzg4LnBuZw==/original/S7Il%2FX.png",
+        "tags": [
+            "Bara",
+            "Boys' Love",
+            "Comedy",
+            "Gay",
+            "Kinetic Novel",
+            "LGBT",
+            "Romance",
+            "sfw",
+            "Slice Of Life",
+            "Yaoi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://fiiiif.itch.io/black-box-lss-the-shining-immortal",
+        "name": "BLACK BOX LSS - The Shining Immortal",
+        "dev": "Fif",
+        "description": "❤ Game Overview ❤ Immerse yourself in a heart-pounding, romantic visual novel where you play the role of a new recruit, just a month into your job, pursuing your female boss.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "60",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1NjMzMzA0LnBuZw==/original/jPjACC.png",
+        "tags": [
+            "Anime",
+            "black-box-lss",
+            "Creepy",
+            "Horror",
+            "josei",
+            "Pixel Art",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://littlerat.itch.io/parcels-and-pollen",
+        "name": "Parcels And Pollen",
+        "dev": "littlerat",
+        "description": "Languages: English, Español (Latino), Français (France), Türkçe --- Your name is Mr.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "58",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQyMTkwMDcucG5n/original/IuHVg%2F.png",
+        "tags": [
+            "2D",
+            "Animals",
+            "Cute",
+            "Fantasy",
+            "Gay",
+            "Lesbian",
+            "LGBT",
+            "Multiple Endings"
+        ],
+        "platforms": [
+            "macOS"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America",
+            "French",
+            "Turkish"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Clip Studio Paint"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
