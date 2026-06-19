@@ -1,37 +1,5 @@
 [
     {
-        "url": "https://daggoot.itch.io/summer-os-recovery",
-        "name": "Airis: Summer OS",
-        "dev": "Daggoot, Unize, ResNeedle",
-        "description": "\"The system is failing.",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2ODcyNjg4LnBuZw==/original/rmLIU6.png",
-        "tags": [
-            "2D",
-            "os",
-            "Pixel Art",
-            "Point & Click"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://imnotjame.itch.io/bluetal-jam",
         "name": "BLUETAL",
         "dev": "ImNotJame, Lattechino",
@@ -18150,6 +18118,35 @@
             "Pyxel Edit",
             "GB Studio"
         ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tokipetal.itch.io/clockwatching",
+        "name": "CLOCKWATCHING",
+        "dev": "TOKIPETAL",
+        "description": "As an employee of an unremarkable supermarket chain.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "75",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMzU2MjM5LnBuZw==/original/G3OfRT.png",
+        "tags": [
+            "Horror",
+            "RPG Maker",
+            "Short",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     }

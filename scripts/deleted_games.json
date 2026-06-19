@@ -280,5 +280,11 @@
         "name": "WINDDRAWN A Solo Adventure Game",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-06-15T09:47:13Z"
+    },
+    {
+        "url": "https://firebluemonster.itch.io/scapesir-first-edition",
+        "name": "ScapeSir - First Edition",
+        "reason": "Game became paid",
+        "deleted_at": "2026-06-19T06:29:38Z"
     }
 ]

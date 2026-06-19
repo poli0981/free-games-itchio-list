@@ -1,34 +1,5 @@
 [
     {
-        "url": "https://rafaelstc.itch.io/geometrysaga",
-        "name": "GeometrySaga",
-        "dev": "RafaelSTC",
-        "description": "N/A",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzc3Mzc2LnBuZw==/original/12X07G.png",
-        "tags": [
-            "2D",
-            "Pixel Art"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://jacobshankland.itch.io/technobabel",
         "name": "TECHNOBABEL",
         "dev": "JacobShankland",
@@ -17711,6 +17682,40 @@
         "made_with": [
             "Ren'Py",
             "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kripkode.itch.io/rubysvittenparty",
+        "name": "Ruby's Vitten Party [VTuber Game]",
+        "dev": "KripKode",
+        "description": "Hey there, it's Ruby! 🐾 Welcome to my party! It’s been a while since we’ve had a new Vitten stop by the house, so I’ve been waiting for you.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "86",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE2Mzc2MDA5LnBuZw==/original/OytKR1.png",
+        "tags": [
+            "Anime",
+            "Horror",
+            "Low-poly",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
         ],
         "safe_virus": "?",
         "notes": ""

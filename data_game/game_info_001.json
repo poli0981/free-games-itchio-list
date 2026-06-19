@@ -16702,43 +16702,6 @@
         "notes": ""
     },
     {
-        "url": "https://firebluemonster.itch.io/scapesir-first-edition",
-        "name": "ScapeSir - First Edition",
-        "dev": "Fire Blue Monster",
-        "description": "Hello, little creature.",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MjQ5MzM2LnBuZw==/original/wDTIhM.png",
-        "tags": [
-            "2D",
-            "Arcade",
-            "Atmospheric",
-            "Difficult",
-            "free",
-            "Horror",
-            "Minimalist",
-            "RPG Maker",
-            "Survival Horror",
-            "Top-Down"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "RPG Maker"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://lamortenrose.itch.io/pause",
         "name": "You Said 'PAUSE' But He Wants to Keep Going",
         "dev": "lamortenrose",
@@ -17598,6 +17561,38 @@
         "inputs": [],
         "made_with": [
             "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://daggoot.itch.io/summer-os-recovery",
+        "name": "Airis: Summer OS",
+        "dev": "Daggoot, Unize, ResNeedle",
+        "description": "\"The system is failing.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODcyNjg4LnBuZw==/original/rmLIU6.png",
+        "tags": [
+            "2D",
+            "os",
+            "Pixel Art",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
         ],
         "safe_virus": "?",
         "notes": ""
