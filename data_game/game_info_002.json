@@ -1,29 +1,5 @@
 [
     {
-        "url": "https://imnotjame.itch.io/bluetal-jam",
-        "name": "BLUETAL",
-        "dev": "ImNotJame, Lattechino",
-        "description": "N/A",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2ODYzOTY4LnBuZw==/original/jY1Tgf.png",
-        "tags": [],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://mattyli.itch.io/vr-escape-room",
         "name": "Secret Agent VR Escape",
         "dev": "sneepsnoop",
@@ -18147,6 +18123,44 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://starcutter.itch.io/among-us-arena",
+        "name": "Among Us Arena Ultimate",
+        "dev": "starcutter",
+        "description": "This is a fan game and not affiliated with Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC.",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "108",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMDAxMTg0LnBuZw==/original/8rf5Al.png",
+        "tags": [
+            "Arcade",
+            "Local multiplayer",
+            "Multiplayer",
+            "social-deduction",
+            "Space"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Unity"
+        ],
         "safe_virus": "?",
         "notes": ""
     }

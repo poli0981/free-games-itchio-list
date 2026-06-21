@@ -286,5 +286,17 @@
         "name": "ScapeSir - First Edition",
         "reason": "Game became paid",
         "deleted_at": "2026-06-19T06:29:38Z"
+    },
+    {
+        "url": "https://goat-shaped-chair.itch.io/inside-the-mind-of-irene-moroz",
+        "name": "Inside The Mind Of Irene Moroz",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-21T08:45:33Z"
+    },
+    {
+        "url": "https://offthemholder2.itch.io/off-them",
+        "name": "'Off them' (ORIGINAL)",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-21T10:02:42Z"
     }
 ]

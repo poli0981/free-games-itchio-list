@@ -9404,41 +9404,6 @@
         "notes": ""
     },
     {
-        "url": "https://goat-shaped-chair.itch.io/inside-the-mind-of-irene-moroz",
-        "name": "Inside The Mind Of Irene Moroz",
-        "dev": "Goat Shaped Chair",
-        "description": "I promise there is a way to break the loop.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.4",
-        "rating_count": "5",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MjcwMjc1LnBuZw==/original/YQznOA.png",
-        "tags": [
-            "Atmospheric",
-            "First-Person",
-            "Horror",
-            "Liminal space",
-            "No AI",
-            "Psychological Horror",
-            "Retro",
-            "Short"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "GDevelop"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://eliglitch67.itch.io/five-nights-of-a-transformee",
         "name": "Five Nights Of A Transformee",
         "dev": "EliGlitch67",
@@ -17594,6 +17559,30 @@
         "made_with": [
             "Unity"
         ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://imnotjame.itch.io/bluetal-jam",
+        "name": "BLUETAL",
+        "dev": "ImNotJame, Lattechino",
+        "description": "N/A",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2ODYzOTY4LnBuZw==/original/jY1Tgf.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     }

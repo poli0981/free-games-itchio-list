@@ -1,34 +1,5 @@
 [
     {
-        "url": "https://jacobshankland.itch.io/technobabel",
-        "name": "TECHNOBABEL",
-        "dev": "JacobShankland",
-        "description": "A lone operative must ascend an incomprehensibly huge tower to take out the rogue OS at the top.",
-        "genre": "Shooter",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA0NTE1LnBuZw==/original/DYg6U4.png",
-        "tags": [
-            "gadgets",
-            "Robots",
-            "Sci-fi",
-            "Third-Person Shooter"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://jjdadvrgt.itch.io/e-taggers-v12",
         "name": "E taggers v12",
         "dev": "jjdadvrgt",
@@ -9274,32 +9245,6 @@
         "notes": ""
     },
     {
-        "url": "https://offthemholder2.itch.io/off-them",
-        "name": "'Off them' (ORIGINAL)",
-        "dev": "OffthemHolder2",
-        "description": "The ORIGINAL game of off them (We do indeed have a telegram but its somewhere in the server, DO not come looking for it and i suggest telling an admin to give you the link to the telegram group .",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "6",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0MDQ3NzkwLnBuZw==/original/LNPbgQ.png",
-        "tags": [],
-        "platforms": [
-            "Windows",
-            "Linux",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://final-girl-games.itch.io/vile",
         "name": "VILE",
         "dev": "Final Girl Games",
@@ -17717,6 +17662,84 @@
         "made_with": [
             "Unity"
         ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sole-rift.itch.io/crawl",
+        "name": "Crawl (Horror Game)",
+        "dev": "Sole Rift",
+        "description": "Game contains sensitive content, such as pixelated blood and low-poly corpses.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "310",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1MTE5MDI5LmdpZg==/original/MkgTv9.gif",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "Aseprite",
+            "Audacity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://papercookies.itch.io/spookware-watch-party",
+        "name": "SPOOKWARE: WATCH PARTY",
+        "dev": "adam pype, Tibau vdb, ViktorRKraus, DreadXP",
+        "description": "N/A",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "92",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzcyOTg1MzguZ2lm/original/5elBak.gif",
+        "tags": [
+            "Arcade",
+            "Horror",
+            "minigames",
+            "Retro",
+            "Survival Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     }
