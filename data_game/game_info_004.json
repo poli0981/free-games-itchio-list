@@ -1,27 +1,5 @@
 [
     {
-        "url": "https://jjdadvrgt.itch.io/e-taggers-v12",
-        "name": "E taggers v12",
-        "dev": "jjdadvrgt",
-        "description": "N/A",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk2Mjk4LnBuZw==/original/hJ8w4v.png",
-        "tags": [],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://lumbric-studios.itch.io/ultimate-tic-tac-toe",
         "name": "Ultimate Tic Tac Toe",
         "dev": "Lumbric Studios",
@@ -17739,6 +17717,39 @@
             "Keyboard",
             "Mouse"
         ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ghostydreams.itch.io/the-remnants-of-tubby-land",
+        "name": "The Remnants of Tubby-Land",
+        "dev": "GhostyDreams 💝👻🏳️‍⚧️",
+        "description": "There's an old building on the outskirts of town, the old daycare that everyone talks about.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "41",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMDQ4ODg5LnBuZw==/original/a80H5D.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "Five Nights at Freddy's",
+            "Horror",
+            "Point & Click",
+            "Survival Horror",
+            "teletubbies",
+            "tubbyland"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
         "made_with": [],
         "safe_virus": "?",
         "notes": ""

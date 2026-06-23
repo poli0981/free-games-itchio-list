@@ -298,5 +298,11 @@
         "name": "'Off them' (ORIGINAL)",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-06-21T10:02:42Z"
+    },
+    {
+        "url": "https://furkanakkurt.itch.io/desert-rally",
+        "name": "Desert Rally",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-23T09:13:57Z"
     }
 ]

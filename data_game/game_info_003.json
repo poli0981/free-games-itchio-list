@@ -8163,46 +8163,6 @@
         "notes": ""
     },
     {
-        "url": "https://furkanakkurt.itch.io/desert-rally",
-        "name": "Desert Rally",
-        "dev": "furkanakkurt",
-        "description": "a remake It’s a bit chunky on purpose, just like the old days! Key BindingKey Binding 2ControlA←BrakeD→GasEHide Mobile Hud If you are the original creator of this game — I tried to find you, but yo...",
-        "genre": "Racing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.0",
-        "rating_count": "5",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI1OTMwODE0LnBuZw==/original/97fa1I.png",
-        "tags": [
-            "2D",
-            "Arcade",
-            "Driving",
-            "Pixel Art",
-            "rally",
-            "Short"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "Android"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Touchscreen"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://parsenoire.itch.io/rocketpult",
         "name": "ROCKETPULT Classic",
         "dev": "parse",
@@ -18494,6 +18454,28 @@
         "platforms": [
             "Windows"
         ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://jjdadvrgt.itch.io/e-taggers-v12",
+        "name": "E taggers v12",
+        "dev": "jjdadvrgt",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk2Mjk4LnBuZw==/original/hJ8w4v.png",
+        "tags": [],
+        "platforms": [],
         "languages": [],
         "inputs": [],
         "made_with": [],
