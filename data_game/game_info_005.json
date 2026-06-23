@@ -12405,5 +12405,228 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://twistandscream.itch.io/wet-candy",
+        "name": "Wet Candy",
+        "dev": "Twist And Scream",
+        "description": "There are candy under the pool.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "26",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTMzOTQyLnBuZw==/original/Xn1rb7.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Dark",
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://garkimasera.itch.io/gaia-maker",
+        "name": "Gaia Maker",
+        "dev": "garkimasera",
+        "description": "Gaia Maker is a planet-wide simulation game of terraforming.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "17",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwODI0ODA3LnBuZw==/original/xjyzJf.png",
+        "tags": [
+            "2D",
+            "bevy",
+            "god-game",
+            "Life Simulation",
+            "Open Source",
+            "Pixel Art",
+            "Sandbox",
+            "Sci-fi",
+            "Singleplayer",
+            "Tilemap"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Japanese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Bevy Engine"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://oldmanraisinbrand.itch.io/run-for-your-life",
+        "name": "Run for your life",
+        "dev": "Oldmanraisinbrand",
+        "description": "Try my first person horror runner.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDE2NTEwLnBuZw==/original/1M26Hh.png",
+        "tags": [
+            "First-Person",
+            "Horror"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://codara.itch.io/questify",
+        "name": "Questify",
+        "dev": "codara",
+        "description": "Welcome to Questify! Embark on an exciting adventure with our little boy detective through an ancient jungle temple.",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDA5Nzk5LnBuZw==/original/J0S4nc.png",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://samurainyak.itch.io/the-lost-palette",
+        "name": "The Lost Palette",
+        "dev": "samurainyak",
+        "description": "Game submission for the Cookie Jam 4# (UI bugs out when played on Full screen) Team members: Programmers: Monica Juarez Jorge Horta @samurainyak Artists: Jabnel Bobadilla @Jabnel__lara Esteban Romer U...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDE1ODE3LnBuZw==/original/k%2FJCT6.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://rankethedev.itch.io/spiderman-no-air-to-breathe",
+        "name": "Spiderman: No Air To Breathe",
+        "dev": "RankeTheDev",
+        "description": "¿De que trata el juego? Fangame Beat-em'up sobre Spider-Man luchando contra Fisk, que está contaminando la ciudad sin importarle las consecuencias con tal de obtener beneficios económicos.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDA5MDYwLnBuZw==/original/rdsiJy.png",
+        "tags": [
+            "2D",
+            "Beat 'em up",
+            "Pixel Art",
+            "Retro",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://thesplix.itch.io/the-modification",
+        "name": "The Modification",
+        "dev": "TheSplix",
+        "description": "Game Created for Mini Jam 213: Genetic A little game inspired by Suika Game, with a focus on modification—because, to me, genetics is first and foremost about changing things.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDAyNjYwLnBuZw==/original/qTN4LW.png",
+        "tags": [
+            "2D",
+            "Singleplayer",
+            "Unreal Engine"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
