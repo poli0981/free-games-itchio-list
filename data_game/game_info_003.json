@@ -8097,42 +8097,6 @@
         "notes": ""
     },
     {
-        "url": "https://escapism-studios.itch.io/siren-head-remastered",
-        "name": "Siren Head : Remastered SouthPoint",
-        "dev": "Escapism Studios",
-        "description": "Who is Siren Head? Siren Head, who is sometimes called Lamp Head (occasionally written as Sirenhead or Siren-Head and Lamphead or Lamp-Head) and by many other names, is a hostile cryptid and urban ...",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.2",
-        "rating_count": "17",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzUzMTA1NzUucG5n/original/V52xJS.png",
-        "tags": [
-            "Action-Adventure",
-            "horror-sirenhead",
-            "new-horror-game",
-            "new-siren-head-game",
-            "scary-game",
-            "Shoot 'Em Up",
-            "sirenhead",
-            "siren-head-remastered",
-            "sirenhead-southpoint",
-            "Survival Horror"
-        ],
-        "platforms": [
-            "Windows",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://syfty0.itch.io/vrm-fatal-ext-3d",
         "name": "fattening game",
         "dev": "vtuber",
@@ -18479,6 +18443,45 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lumbric-studios.itch.io/ultimate-tic-tac-toe",
+        "name": "Ultimate Tic Tac Toe",
+        "dev": "Lumbric Studios",
+        "description": "Ultimate Tic Tac Toe Think you know Tic Tac Toe? Think again.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 May 2026 @ 12:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzkwOTE3LnBuZw==/original/%2F5WhyZ.png",
+        "tags": [
+            "2D",
+            "Abstract",
+            "Local multiplayer",
+            "PvP",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
         "safe_virus": "?",
         "notes": ""
     }

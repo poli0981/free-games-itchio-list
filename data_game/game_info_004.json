@@ -1,44 +1,5 @@
 [
     {
-        "url": "https://lumbric-studios.itch.io/ultimate-tic-tac-toe",
-        "name": "Ultimate Tic Tac Toe",
-        "dev": "Lumbric Studios",
-        "description": "Ultimate Tic Tac Toe Think you know Tic Tac Toe? Think again.",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "21 May 2026 @ 12:30 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzkwOTE3LnBuZw==/original/%2F5WhyZ.png",
-        "tags": [
-            "2D",
-            "Abstract",
-            "Local multiplayer",
-            "PvP",
-            "Turn-based"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse",
-            "Touchscreen"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://forestier.itch.io/crypto-empire-epic-idle-clicker",
         "name": "Crypto Empire: Epic Idle Clicker",
         "dev": "Forestier",
@@ -2429,40 +2390,6 @@
             "Singleplayer"
         ],
         "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://strange-robot.itch.io/oblique-shot",
-        "name": "Oblique Shot",
-        "dev": "Strange Robot",
-        "description": "Oto moja gra zrobiona w 4 dni.",
-        "genre": "Shooter",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAxNTY3LnBuZw==/original/4Czg1b.png",
-        "tags": [
-            "3D",
-            "Endless",
-            "No AI",
-            "Singleplayer",
-            "Top-Down",
-            "Top down shooter",
-            "Unity"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
         "languages": [],
         "inputs": [],
         "made_with": [],
@@ -17744,6 +17671,74 @@
             "Survival Horror",
             "teletubbies",
             "tubbyland"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://teamari.itch.io/mario-the-music-box",
+        "name": "(Mario) The Music Box Classic Edition",
+        "dev": "Team Ari",
+        "description": "A better version called (Mario) The Music Box Remastered , is available! This classic version is available for those that want to play for nostalgia.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "9",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMzg0MDk2LnBuZw==/original/dZOQTk.png",
+        "tags": [
+            "2D",
+            "Dark Fantasy",
+            "Fangame",
+            "Gore",
+            "Horror",
+            "Multiple Endings",
+            "Pixel Art",
+            "Psychological Horror",
+            "RPG Maker",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kekkonsnow.itch.io/akahane-academy",
+        "name": "AKAHANE ACADEMY",
+        "dev": "KEKKONSNOW",
+        "description": "✱ STORY After the break, you return to Akahane Academy! A school that is quickly becoming infamous for its strange students.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "142",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyMzIzNDE2LnBuZw==/original/r%2BjA7T.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Creepy",
+            "Horror",
+            "Pixel Art",
+            "RPG Maker",
+            "Short",
+            "Yandere"
         ],
         "platforms": [
             "Windows"

@@ -304,5 +304,17 @@
         "name": "Desert Rally",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-06-23T09:13:57Z"
+    },
+    {
+        "url": "https://escapism-studios.itch.io/siren-head-remastered",
+        "name": "Siren Head : Remastered SouthPoint",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-27T08:59:21Z"
+    },
+    {
+        "url": "https://strange-robot.itch.io/oblique-shot",
+        "name": "Oblique Shot",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-06-27T09:17:41Z"
     }
 ]
