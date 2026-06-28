@@ -12527,5 +12527,955 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://lifecrises.itch.io/your-redacted-boyfriend",
+        "name": "your [REDACTED] boyfriend",
+        "dev": "life.crises",
+        "description": "He looks at you like you’ve already been part of his life longer than you have.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "20",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3ODgzNjk5LnBuZw==/original/EJVObb.png",
+        "tags": [
+            "Creepy",
+            "Dark Humor",
+            "Horror",
+            "Liminal space",
+            "Otome",
+            "Romance",
+            "weird",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://coffeedripstudios.itch.io/allele-dh",
+        "name": "Allele: Devil's Hand",
+        "dev": "coffeedripstudios",
+        "description": "A cozy little side game of cards where the loser must obey the winner.",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "11",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTQyMzg2LnBuZw==/original/dgIf%2BO.png",
+        "tags": [
+            "Amare",
+            "Dark Fantasy",
+            "Dating Sim",
+            "josei",
+            "Otome",
+            "poker",
+            "Ren'Py",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://vikintor.itch.io/valty-demo",
+        "name": "VAL'TY DEMO",
+        "dev": "vikintor",
+        "description": "[Inspired by Late 1990's and early 2000's videogames.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDEwODQ0LnBuZw==/original/xiek5P.png",
+        "tags": [
+            "3D",
+            "Aliens",
+            "First-Person",
+            "FPS",
+            "Horror",
+            "No AI",
+            "Retro",
+            "Singleplayer",
+            "Violent"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://kikinndev.itch.io/lost-in-the-store",
+        "name": "Lost In The Store",
+        "dev": "Kikinn",
+        "description": "Your mom left you alone at the register, what will you do? Playtime: 5-10 minutes Controller is supported but only in-game, not in the main menu.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDU1NzExLnBuZw==/original/rlzj5S.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Retro",
+            "Scary",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Blender",
+            "Aseprite",
+            "Godot",
+            "GIMP",
+            "Paint.net"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://pyramid-unpacker.itch.io/remnonremgame",
+        "name": "RemNonRem",
+        "dev": "Pyramid Unpacker",
+        "description": "Экспериментальная психоделическая визуальная новелла в стилистике классической формы ВН и видеоарта в жанрах русреал, сюрреализм и психологический хоррор.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 June 2026 @ 15:00 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MTEzMzU5LmpwZw==/original/e7Wkx9.jpg",
+        "tags": [
+            "artgame",
+            "Atmospheric",
+            "Experimental",
+            "Indie",
+            "Kinetic Novel",
+            "psychedelic",
+            "Psychological Horror",
+            "Surreal",
+            "video"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://bohne-228.itch.io/apartment-311",
+        "name": "Apartment 311",
+        "dev": "Evghenii Simonenco-Level designer",
+        "description": "Apartment 311 Apartment 311 is a short first-person psychological horror game.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDYwNjIwLnBuZw==/original/WcILHN.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://drmortalwombat.itch.io/comchinko",
+        "name": "Comchinko",
+        "dev": "drmortalwombat",
+        "description": "Too old to keep up with fast shooters? Too bored to replay the same type of reskinned flip screen platformer over and over again? Can’t be bothered to read a six page manual? Too AI degraded to sol...",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDAwNjUyLnBuZw==/original/V30cdw.png",
+        "tags": [
+            "Commodore 64",
+            "Idle"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://wizbitgames.itch.io/spiderblast",
+        "name": "SPIDER BLAST",
+        "dev": "Wizbit Games",
+        "description": "Wizbit Games SPIDER BLAST For the ZX Sinclair Spectrum 128K and 48K Available for digital download or tape cassette Welcome To Spider Blast Hey there, bug blaster! Our mission was simple: keep it p...",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MTM2NDQ4LnBuZw==/original/l6w3mw.png",
+        "tags": [
+            "Arcade",
+            "Homebrew",
+            "No AI",
+            "Retro",
+            "Shoot 'Em Up",
+            "Time Attack",
+            "Top down shooter",
+            "ZX Spectrum"
+        ],
+        "platforms": [],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Joystick"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://xvrz.itch.io/dont-look-at-the-moon",
+        "name": "Don't Look At The Moon",
+        "dev": "STILLPOINT",
+        "description": "One rule: do not look.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDE5NTU2LnBuZw==/original/9FHRuf.png",
+        "tags": [
+            "Creepy",
+            "creepypasta",
+            "Experimental",
+            "First-Person",
+            "Horror",
+            "Lovecraftian Horror",
+            "My First Game Jam",
+            "Psychological Horror",
+            "Short",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://studiohammergames.itch.io/silent-fogs-echoes-of-evil",
+        "name": "Silent Fogs: Echoes of Evil",
+        "dev": "Studiohammergames",
+        "description": "Silent Fogs: Echoes of Evil is a First-Person shooter Survival Horror game inspired by Silent Hill and Resident Evil series.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDU0OTU4LmpwZw==/original/y%2Bfxui.jpg",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "FPS",
+            "Horror",
+            "Singleplayer",
+            "Survival Horror",
+            "Zombies"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://dveroz.itch.io/the-missing-worker",
+        "name": "The Missing Worker",
+        "dev": "Dveroz",
+        "description": "An Indonesian horror game about working the night shift at a small coffee shop.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.8",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTg0Nzg3LmpwZw==/original/cJoQu9.jpg",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "First-Person",
+            "Horror",
+            "Mystery",
+            "Psychological Horror",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://unusbox.itch.io/charliesinfernoincredibox",
+        "name": "Excuse Me Sir (Incredibox)",
+        "dev": "Unus",
+        "description": "excuse me sir.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDQyNjQ1LnBuZw==/original/8ZjGBK.png",
+        "tags": [
+            "Incredibox"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://nairahs-productions.itch.io/and-hopes-for-all",
+        "name": "And Hopes For All",
+        "dev": "Nairah's Productions",
+        "description": "《 And Hopes For All 》 Eres una artista frustrada y sientes que la vida ha sido profundamente injusta contigo.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "23",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NzIwMjgyLnBuZw==/original/BKiq2t.png",
+        "tags": [
+            "Female Protagonist",
+            "Indie",
+            "Mystery",
+            "Psychological Horror",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://cauldroncatgames.itch.io/bus-stop-spirit",
+        "name": "BUS STOP SPIRIT",
+        "dev": "cauldron cat games",
+        "description": "Nighttime is falling, and you just missed the last bus.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDY0NTI3LnBuZw==/original/XWOcmg.png",
+        "tags": [
+            "Amare",
+            "Dating Sim",
+            "Female Protagonist",
+            "josei",
+            "Otome",
+            "Romance",
+            "supernatural"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://spratt.itch.io/spin-the-squid",
+        "name": "spin the squid",
+        "dev": "spratt",
+        "description": "The squid's name is spin! :) Controls: - Move: Arrow keys - Undo: Z - Reset level: X - Pause/options: Enter",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MTE0NzIzLnBuZw==/original/DrwcC4.png",
+        "tags": [
+            "PICO-8"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "PICO-8"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lunacero.itch.io/stardiver",
+        "name": "Star Diver",
+        "dev": "Lunacero",
+        "description": "STAR DIVER is a \"cozy\" shoot-'em-up where your goal is to reach the bottom of the hostile ocean.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 June 2026 @ 17:00 UTC",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Nzk5Mjc0LnBuZw==/original/TDfsmV.png",
+        "tags": [
+            "Boss battle",
+            "Bullet Hell",
+            "Cozy",
+            "Cute",
+            "Difficult",
+            "Fishing",
+            "Pixel Art",
+            "Retro",
+            "RPG Maker",
+            "Shoot 'Em Up"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://electric-dreams.itch.io/crackpots",
+        "name": "CrackPots",
+        "dev": "Electric Dreams",
+        "description": "CrackPots is a ColecoVision homebrew adaptation of the classic 1983 Activision title originally designed by Dan Kitchen for the Atari 2600.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Njc0NzcwLnBuZw==/original/z9aJLv.png",
+        "tags": [
+            "activision",
+            "Arcade",
+            "atari",
+            "colecovision",
+            "Cult Classic",
+            "cvbasic",
+            "Homebrew",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://timalote.itch.io/promised-death",
+        "name": "Promised Death",
+        "dev": "Timalote, Tizelio",
+        "description": "▶ About Promised Death Promised Death is a survival horror game inspired by the early classics of the genre — Silent Hill and Resident Evil — built to recapture that same sense of dread, tension, a...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MTQ1Njc3LnBuZw==/original/jx8BDz.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Retro",
+            "Singleplayer",
+            "Survival Horror"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://lyocell.itch.io/jolly-milk",
+        "name": "Jolly Milk",
+        "dev": "Lyocell",
+        "description": "Have you ever wanted to drink milk? Have you been prohibited from drinking milk by those who wish to control you? Have you ever wondered where milk comes from? Do you like milk? Are you not lactose...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "8",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTkyMTU3LnBuZw==/original/UZBbIW.png",
+        "tags": [
+            "Comedy",
+            "Experimental",
+            "Horror",
+            "milk",
+            "Psychological Horror",
+            "storygame",
+            "Surreal",
+            "weird"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://trilios.itch.io/yume-jumon",
+        "name": "Yume Jumon",
+        "dev": "trilios",
+        "description": "Yume Jumon Yume Jumon is a short Yume Nikki fangame created for Dream Diary Jam 10 You explore the dreams of Majotsuki, a girl who wanders her dreams with a magical wand There are 4 different effects,...",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDY4OTg2LnBuZw==/original/1B7Ler.png",
+        "tags": [
+            "RPG Maker",
+            "Surreal",
+            "Walking simulator",
+            "yume-nikki-fangame"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://duck-in-the-dark.itch.io/we-stand-at-the-door",
+        "name": "WE STAND AT THE DOOR",
+        "dev": "duck in the dark",
+        "description": "YOU WILL SEE SUCH SCARY THINGS.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDQ4ODgwLnBuZw==/original/iktSEx.png",
+        "tags": [
+            "3D",
+            "Aliens",
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Liminal space",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://vidas-salavejus.itch.io/vivere-retro-demo",
+        "name": "Vivere Retro demo",
+        "dev": "Vidas Games",
+        "description": "VIVERE RETRO DEMO The deep fear, the old tales, they started a long time ago.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "17",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NzY5NTg3LnBuZw==/original/xJpP7Y.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Horror",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer",
+            "Survival Horror",
+            "Third Person"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://ivanvelazquezz98.itch.io/trash-app-inc",
+        "name": "TrashApp Inc - Idle Dev Tycoon",
+        "dev": "IvanVelazquezz98",
+        "description": "Build apps.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 June 2026 @ 23:25 UTC",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDcxNTAwLnBuZw==/original/8UZMld.png",
+        "tags": [
+            "2D",
+            "Idle",
+            "Incremental",
+            "magnate",
+            "Management",
+            "mobile",
+            "Pixel Art",
+            "Tycoon"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://sebbyspoons.itch.io/treevolution",
+        "name": "TreeVolution - SebbySpoons Clicker Game",
+        "dev": "Sebbyspoons",
+        "description": "By SebbySpoons Tree'volution is an idle clicker where you chop trees to earn wood, spend wood on upgrades, and watch your little patch of wilderness slowly transform into a bustling pixel art city.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDgyMDE3LnBuZw==/original/nkUv1R.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Incremental",
+            "Indie",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://tukinem.itch.io/ramizes-amiga",
+        "name": "Ramizes (AMIGA)",
+        "dev": "tukinem",
+        "description": "AWESOME GAMES 2026 A.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTg1MzI3LnBuZw==/original/y%2FYaXX.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://morso-irl.itch.io/astral-kingdom",
+        "name": "Astral Kingdom",
+        "dev": "morso",
+        "description": "A Classic Fantasy Adventure Explore an open world inspired by Dragon Quest, Ultima and classic RPGs of the 1980s.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 June 2026 @ 21:00 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTcxMDUwLmdpZg==/original/0UUZGO.gif",
+        "tags": [
+            "8-Bit",
+            "Fantasy",
+            "NES (Nintendo Entertainment System)",
+            "Open World",
+            "Pixel Art",
+            "RPG Maker",
+            "Sci-fi",
+            "Turn-based"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Joystick",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": ""
+    },
+    {
+        "url": "https://devi4.itch.io/walk-home",
+        "name": "Walk Home",
+        "dev": "devi4",
+        "description": "A short horror game where you walk home.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDEwNDAwLnBuZw==/original/8sawQY.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Psychological Horror",
+            "Short",
+            "Spooky",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Adobe Photoshop",
+            "FL Studio"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
