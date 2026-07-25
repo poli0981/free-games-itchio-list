@@ -2250,5 +2250,48 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
+    },
+    {
+        "url": "https://e11ed0rad0.itch.io/eternal-frenemies-journey-to-eternity",
+        "name": "Eternal Frenemies: Journey to Eternity",
+        "dev": "e11ed0rad0",
+        "description": "So here we are with \"Chapter Zero\" of the Eternal Frenemies webcomic! OVERVIEW: This game is basically a way to respect the \"game pages are for games\" rule so I could host the comic newsletter on G...",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzU5NDUzLnBuZw==/original/hVyHum.png",
+        "tags": [
+            "Action-Adventure",
+            "Fantasy",
+            "High Score",
+            "Real-Time",
+            "Score Attack",
+            "Short",
+            "Touch-Friendly",
+            "Webcomic"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "pygame"
+        ],
+        "safe_virus": "?",
+        "notes": ""
     }
 ]
