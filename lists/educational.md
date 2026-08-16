@@ -1,4 +1,4 @@
-# Educational Games (17 games)
+# Educational Games (18 games)
 
 | No | Thumb | Name | Dev | Short Desc | Genre | Tags | Status | Platforms | Publisher | Release Date | Made With | Rating | Session | Languages | Inputs | Link | Safe | Notes | NSFW |
 |----|-------|------|-----|------------|-------|------|--------|-----------|-----------|--------------|----------|--------|---------|-----------|--------|------|------|-------|------|
@@ -19,4 +19,5 @@
 | 15 | ![thumb](https://img.itch.zone/aW1nLzI3MjY0MTIyLnBuZw==/original/9HiQsL.png) | Serbian Letter Hunt (RUS-SRB) | Artemy Zen | L etter Hunt Serbian – это небольшая игра для изучения сербских слов в формате поиска букв. | Educational | N/A | Released | HTML5 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://artemyzen.itch.io/serbian-letter-hunt-russrb) | ? |  | No |
 | 16 | ![thumb](https://img.itch.zone/aW1nLzI2MzUxNzY5LmpwZWc=/original/dag9e2.jpeg) | STEMMATHVR | Akimzakri | EcoSpark: STEM VR Math World is an educational VR game that combines environmental awareness with basic mathematics learning. | Educational | 3D | Released | Windows | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [Link](https://akimzakri.itch.io/stemmathvr) | ? |  | No |
 | 17 | ![thumb](https://img.itch.zone/aW1nLzI3NDA1MzU2LnBuZw==/original/HKpKLm.png) | Unschool Battle Fan-Made | JPYann | Ini adalah game yang saya buat sebagai viewer Marapthon, mengambil salah satu aktivitasnya, yaitu Unschool Battle . | Educational | Fangame, Quiz, streamer | Released | HTML5 | N/A | N/A | Godot | N/A | N/A | N/A | N/A | [Link](https://jpyann.itch.io/unschool-battle-fanmade) | ? |  | No |
+| 18 | ![thumb](https://img.itch.zone/aW1nLzI4NzA1ODk2LnBuZw==/original/ymqcDs.png) | 立方体チャレンジ / Cube Challenge | daromeon | 🧊 立方体チャレンジ / Cube Challenge 表示された「1つの面」だけをヒントに、立方体の残りを予測して描くパース練習ゲームです。 A perspective-drawing game: you see one face of a cube — draw the rest! 🎮 モード / Modes ・ノーマル / Normal：練習2ラウンド＋30秒の本番6ラウンド ・れんし... | Educational | art, Cute, Drawing, japanese, Perspective, practice, Score Attack | Released | HTML5 | N/A | N/A | N/A | 4.7 (49) | N/A | N/A | N/A | [Link](https://daromeon.itch.io/cube) | ? |  | No |
 
