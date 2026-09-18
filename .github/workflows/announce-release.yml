@@ -17,8 +17,10 @@ jobs:
     # The reusable workflow fetches release metadata with the gh CLI.
     permissions:
       contents: read
-    # Pinned to a commit of poli0981/.github; bump deliberately (Dependabot
-    # github-actions updates it). Only the secrets it needs are passed.
+    # Pinned to a commit of poli0981/.github and only the needed secrets are
+    # passed. NOTE: the pin freezes the workflow YAML only — at this commit it
+    # still checks out its notifier script from poli0981/.github@main. Bump
+    # the pin once that repo runs the script from the same commit.
     uses: poli0981/.github/.github/workflows/announce-release.yml@c3e118a01d40e95b36b2c3466dc206638c11eb5a
     with:
       tag_override: ${{ inputs.tag || '' }}

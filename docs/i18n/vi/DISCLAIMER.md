@@ -22,7 +22,7 @@ Người duy trì không bảo đảm cho bất kỳ game nào về:
 - **Tính an toàn, toàn vẹn hoặc không có mã độc** — trường `safe_virus` mặc định là `?` vì các bản tải về không được quét từng cái. Hãy coi mọi bản tải về là không đáng tin cho đến khi bạn tự xác minh bằng phần mềm anti-malware uy tín.
 - **Phân loại NSFW** — cờ `nsfw` được tự dò từ tag / cảnh báo / mô tả của itch.io và chỉ là best-effort. Hãy tự kiểm tra trang game nếu nội dung NSFW có ý nghĩa với bạn (theo cả hai chiều).
 - **Độ chính xác của metadata** — tên, mô tả, thể loại, đánh giá, nền tảng và các trường khác được cào (scrape) từ itch.io và phản ánh trạng thái trang tại thời điểm scrape gần nhất. Các thay đổi (đổi tên, gỡ, thêm phí) sẽ được cập nhật ở lần cleanup tiếp theo nhưng có thể trễ.
-- **Trạng thái free-to-play** — được xác minh tại thời điểm scrape; một game có thể chuyển sang trả phí sau đó. Job refresh hằng ngày kiểm tra lại mỗi game khoảng một lần mỗi tuần và gỡ game khi thấy nó trả phí ở hai ngày khác nhau, nên có thể có một khoảng trễ dữ liệu.
+- **Trạng thái free-to-play** — được xác minh tại thời điểm scrape; một game có thể chuyển sang trả phí sau đó. Job refresh hằng ngày kiểm tra lại mỗi game khoảng một lần mỗi tuần và gỡ game khi lại thấy nó trả phí sau lần đầu ít nhất 20 giờ, nên có thể có một khoảng trễ dữ liệu.
 
 ## 3. Không chịu trách nhiệm pháp lý
 

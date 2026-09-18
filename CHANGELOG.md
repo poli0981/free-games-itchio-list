@@ -28,15 +28,24 @@ All notable changes to this project will be documented here.
   (`refresh.yml`, daily) checks one seventh of the catalog with **one request per game**, so every
   game is re-checked weekly (~86% fewer requests to itch.io), and updates alive / paid / rating /
   status (+ backfills release date, thumbnail, `updated_at`) from that single page.
-- **Safer removals:** a game is removed only when the same 404/410 or paid status is seen on two
-  different days (single flaky responses no longer delete games).
+- **Safer removals:** a game is removed only when the same 404/410 or paid status is seen again at
+  least 20 hours after it was first seen (single flaky responses no longer delete games). A
+  mass-change guard withholds removals — and alerts — when a run would remove or newly strike more
+  than max(10, 10%) of the games it checked (the signature of an itch.io markup change rather than
+  a real wave of paid games); withheld games stay withheld in later runs until a healthy check or
+  an explicit `allow_mass_removal` dispatch, checkpoints of an interrupted scan never remove games,
+  and `apply_patch.py` re-checks the limits. Overlapping scans can no longer undo each other's
+  newer checks.
 - **Scan → patch → apply:** scanners emit a URL-keyed patch; [`apply_patch.py`](scripts/apply_patch.py)
   applies it to the latest `main`, validates, and [`bash/commit_push.sh`](bash/commit_push.sh)
   retries on push races. Concurrent writers (extension, workflows, future admin) no longer clobber
   each other; checkpoints + an in-script deadline keep partial work.
 - **Ingest** (`update.yml`, now runs as soon as the queue changes): canonical URLs, skips games in
-  the deleted log (the removed-then-re-added bug), retries transient failures up to 3 runs instead of
-  dropping them, stamps `added_at`, and never wipes links queued meanwhile.
+  the deleted log (the removed-then-re-added bug), retries transient failures (3 attempts at least
+  6 hours apart; rate limiting never counts) instead of dropping them, stamps `added_at`, and never
+  wipes links queued meanwhile. A dispatched `url` is processed first and kept in the queue until it
+  reaches a final outcome, and queued runs wait in FIFO order (`queue: max`) instead of replacing
+  each other.
 - `force_update.yml` runs `refresh.py --full` in rotating batches (a full re-scrape no longer times out).
 - Honest `FreeItchGamesBot` User-Agent, explicit 429 / Retry-After handling (capped), unbuffered
   logs, run summaries, Discord alerts on failure / cancel / rate limit.
@@ -62,8 +71,11 @@ All notable changes to this project will be documented here.
 - Release: one `create-release` job makes the draft that desktop (tauri-action v1, `releaseId`) and
   Android upload into; release builds use no dependency caches. Publish with
   `gh release edit vX --draft=false`.
-- `.github/dependabot.yml` (npm / pip / actions / cargo), Python and web-app PR checks, and a relay
-  of failed Cloudflare builds to Discord.
+- `.github/dependabot.yml` (npm / pip / actions / cargo), Python and web-app PR checks, and an
+  hourly check of main's latest Cloudflare Workers Build that posts a failure to Discord (a
+  `check_run` relay would miss the pipeline's own data commits).
+- Cancelling a refresh / force-update or a desktop release run now really stops it (`!cancelled()`
+  instead of `always()` on the push / build jobs).
 
 ### Changed
 

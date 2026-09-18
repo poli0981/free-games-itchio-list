@@ -77,3 +77,12 @@ def test_removing_last_game_of_a_chunk_drops_the_file(repo, monkeypatch):
         "game_info_001.json",
         "index.json",
     ]
+
+
+def test_corrupt_count_history_fails_instead_of_being_truncated(repo):
+    seed_catalog([make_game("a")])
+    broken = '\ufeff[{"date": "2026-01-01", "total": 1}'
+    (repo / "data_game" / "count_history.json").write_text(broken, encoding="utf-8")
+    with pytest.raises(ValueError):
+        data_store.save_all_games([make_game("a"), make_game("b")])
+    assert (repo / "data_game" / "count_history.json").read_text(encoding="utf-8") == broken

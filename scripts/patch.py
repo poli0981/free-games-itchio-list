@@ -16,6 +16,7 @@ Patch v1:
   "removals":      [{"url", "name", "reason", "deleted_at"}],
   "refresh_state": {"<url>": {...} | null},            # null = drop entry
   "ingest_state":  {"<url>": {...} | null},
+  "queue_add":     ["<url>", ...],                     # append to temp_link.json if absent
   "queue_remove":  ["<url>", ...],                     # drop from temp_link.json
   "stats":         {...}                               # informational
 }
@@ -37,6 +38,7 @@ def new_patch(kind: str) -> dict:
         "removals": [],
         "refresh_state": {},
         "ingest_state": {},
+        "queue_add": [],
         "queue_remove": [],
         "stats": {},
     }
@@ -63,6 +65,7 @@ def is_empty(patch: dict) -> bool:
             "removals",
             "refresh_state",
             "ingest_state",
+            "queue_add",
             "queue_remove",
         )
     )

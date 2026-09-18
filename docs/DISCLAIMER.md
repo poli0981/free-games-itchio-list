@@ -20,7 +20,7 @@ The maintainer makes no warranty regarding any game's:
 - **Safety, integrity, or freedom from malware** — the `safe_virus` field defaults to `?` because individual downloads are not scanned. Treat every download as untrusted until you verify it yourself with reputable anti-malware tools.
 - **NSFW classification** — the `nsfw` flag is auto-detected from itch.io tags / warnings / description text and is best-effort. Confirm the game page yourself before downloading if NSFW content matters to you (in either direction).
 - **Accuracy of metadata** — names, descriptions, genres, ratings, platforms, and other fields are scraped from itch.io and reflect the page state at the time of the last scrape. itch.io page changes (renames, removals, paywall additions) propagate on the next scheduled cleanup but may lag.
-- **Free-to-play status** — verified at scrape time; a game can become paid afterwards. The daily refresh job re-checks every game about once a week and removes a game once it is seen as paid on two different days, so a window of staleness is possible.
+- **Free-to-play status** — verified at scrape time; a game can become paid afterwards. The daily refresh job re-checks every game about once a week and removes a game once it is seen as paid again at least 20 hours after it was first seen as paid, so a window of staleness is possible.
 
 ## 3. No liability
 

@@ -21,6 +21,7 @@ for attempt in $(seq 1 "$MAX_ATTEMPTS"); do
   git fetch --no-tags --depth=1 origin main
   git reset --hard origin/main
   python scripts/apply_patch.py "$PATCH"
+  mkdir -p scripts/state # git add fails on a pathspec that matches nothing
   git add -A data_game scripts/deleted_games.json scripts/temp_link.json scripts/state
   if git diff --cached --quiet; then
     echo "No data changes — nothing to commit."

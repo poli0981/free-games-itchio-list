@@ -9,7 +9,15 @@ Flow:
   3. Fetch each page → keep only free games (with an `added_at` stamp)
   4. Emit a patch (see patch.py). URLs that finished (added / paid / dead /
      skipped) are dropped from the queue; transient failures stay queued and
-     are retried up to MAX_ATTEMPTS runs (tracked in scripts/state/ingest_state.json).
+     are retried; a link is given up after MAX_ATTEMPTS failures at least
+     RETRY_GAP apart (tracked in scripts/state/ingest_state.json), so a burst
+     of back-to-back runs during a short itch.io outage cannot use them all up.
+     A page still throttled (429) after the retry is not the link's fault and
+     counts as no attempt.
+     A dispatched INPUT_URL is processed first and also written to the queue
+     (`queue_add`), so it survives a retry, a deadline or a rate-limit stop.
+     A second spelling of a queued game is left alone: the first copy's
+     outcome removes every spelling (apply_patch compares canonical forms).
 
 apply_patch.py then applies the patch to the latest `main`, so links queued
 while this ran (extension, admin) are never overwritten.
@@ -21,6 +29,7 @@ import argparse
 import os
 import sys
 import time
+from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
 from canonical import canonicalize
@@ -34,7 +43,26 @@ TEMP_LINK = "scripts/temp_link.json"
 DELETED_LOG = "scripts/deleted_games.json"
 INGEST_STATE = "scripts/state/ingest_state.json"
 MAX_ATTEMPTS = 3
+RETRY_GAP = timedelta(hours=6)
 DEAD_CODES = {404, 410}
+
+
+def _ts(iso: str) -> datetime:
+    return datetime.fromisoformat(iso.replace("Z", "+00:00"))
+
+
+def failed_attempt(previous: dict, outcome: str, now: str) -> dict:
+    """The ingest_state entry after a failed fetch at `now`.
+
+    Only failures at least RETRY_GAP after the last counted one add an
+    attempt; a link queued again after we gave up starts a fresh round.
+    """
+    if previous.get("gave_up") or not previous.get("attempts"):
+        return {"attempts": 1, "last_attempt": now, "last_error": outcome}
+    last = previous.get("last_attempt")
+    if last and _ts(now) - _ts(last) < RETRY_GAP:
+        return {**previous, "last_error": outcome}
+    return {"attempts": previous["attempts"] + 1, "last_attempt": now, "last_error": outcome}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -44,12 +72,16 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     queue: list = load_json(TEMP_LINK)
+    if not isinstance(queue, list):
+        queue = []
+    patch = new_patch("ingest")
     input_url = os.environ.get("INPUT_URL", "").strip()
     if input_url:
-        queue = [*queue, input_url]
+        # First, so a backlog can't starve it; queued, so it outlives this run.
+        queue = [input_url, *queue]
+        patch["queue_add"].append(canonicalize(input_url) or input_url)
         print(f"Added from workflow input: {input_url}")
 
-    patch = new_patch("ingest")
     stats = dict.fromkeys(
         ("queued", "added", "paid", "dead", "duplicate", "deleted", "invalid", "retry", "gave_up"),
         0,
@@ -72,11 +104,11 @@ def main(argv: list[str] | None = None) -> int:
         if url is None:
             print(f"Skip invalid: {raw!r}")
             stats["invalid"] += 1
-            patch["queue_remove"].append(raw if isinstance(raw, str) else str(raw))
+            if isinstance(raw, str):  # non-strings are dropped by apply_patch itself
+                patch["queue_remove"].append(raw)
             continue
         if url in seen:
-            patch["queue_remove"].append(raw)
-            continue
+            continue  # the first copy's final outcome drops every spelling
         seen.add(url)
         if url in catalog_urls:
             print(f"Skip duplicate: {url}")
@@ -101,6 +133,10 @@ def main(argv: list[str] | None = None) -> int:
         if page is None:
             print("::warning::itch.io rate limit — the rest stays queued for the next run.")
             break
+        if page.status == 429:
+            print("  → throttled; stays queued, no attempt counted.")
+            stats["retry"] += 1
+            continue
 
         outcome = ""
         if page.status == 200 and page.soup is not None:
@@ -119,21 +155,15 @@ def main(argv: list[str] | None = None) -> int:
             outcome = f"error: HTTP {page.status or page.error}"
 
         if outcome.startswith("error"):
-            previous = ingest_state.get(url, {})
-            # A link queued again after we gave up starts a fresh round of attempts.
-            attempts = (0 if previous.get("gave_up") else previous.get("attempts", 0)) + 1
-            if attempts >= MAX_ATTEMPTS:
-                print(f"  → {outcome}; giving up after {attempts} attempts.")
+            entry = failed_attempt(ingest_state.get(url, {}), outcome, now_iso())
+            if entry["attempts"] >= MAX_ATTEMPTS:
+                print(f"  → {outcome}; giving up after {entry['attempts']} attempts.")
                 patch["queue_remove"].append(url)
-                patch["ingest_state"][url] = {
-                    "attempts": attempts,
-                    "gave_up": now_iso(),
-                    "last_error": outcome,
-                }
+                patch["ingest_state"][url] = {**entry, "gave_up": entry["last_attempt"]}
                 stats["gave_up"] += 1
             else:
-                print(f"  → {outcome}; will retry next run ({attempts}/{MAX_ATTEMPTS}).")
-                patch["ingest_state"][url] = {"attempts": attempts, "last_error": outcome}
+                print(f"  → {outcome}; stays queued ({entry['attempts']}/{MAX_ATTEMPTS} attempts).")
+                patch["ingest_state"][url] = entry
                 stats["retry"] += 1
             continue
 

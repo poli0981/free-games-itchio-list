@@ -153,14 +153,14 @@ def _append_count_history(total: int) -> bool:
 
     Date-keyed upsert: each UTC day holds one row, last write wins. A day whose
     total equals the latest recorded total adds no row (keeps the series and
-    the git history free of no-op points). A corrupt or unreadable file falls
-    back to an empty history rather than aborting the save.
+    the git history free of no-op points). A corrupt file raises (like a
+    corrupt index or chunk) instead of being replaced by a one-row history;
+    restore it from git history.
     """
     today = _utc_now().strftime("%Y-%m-%d")
-    try:
-        history: list[dict] = load_json(_count_history_file())
-    except ValueError, OSError:
-        history = []
+    history: list[dict] = load_json(_count_history_file())
+    if not isinstance(history, list):
+        raise ValueError(f"{_count_history_file()} must be a JSON array")
     history.sort(key=lambda r: r.get("date", ""))
     for row in history:
         if row.get("date") == today:

@@ -54,7 +54,7 @@ jobs:
   build-tauri:
     needs: create-release
     # Tag builds need the draft; manual dispatch builds without one.
-    if: always() && (needs.create-release.result == 'success' || needs.create-release.result == 'skipped')
+    if: ${{ !cancelled() && (needs.create-release.result == 'success' || needs.create-release.result == 'skipped') }}
     permissions:
       contents: write
     timeout-minutes: 60
@@ -138,7 +138,7 @@ jobs:
       # above failed, as long as the .app bundle was produced — which it always
       # is, the failure is at the DMG packaging stage.
       - name: Build .pkg installer (macOS)
-        if: always() && startsWith(matrix.platform, 'macos') && startsWith(github.ref, 'refs/tags/')
+        if: ${{ !cancelled() && startsWith(matrix.platform, 'macos') && startsWith(github.ref, 'refs/tags/') }}
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

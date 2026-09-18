@@ -5,7 +5,9 @@
 #           read-only, and uploads a patch (checkpointed, deadline-bound).
 #   apply — applies the patch to the latest main and pushes (bash/commit_push.sh
 #           re-applies on a fresh main if the push races another writer).
-#   notify — Discord on failure / cancel / itch.io rate limit.
+#   notify — Discord on failure / cancel / itch.io rate limit / mass change
+#           (a run that would remove or strike an implausible share of games
+#           — usually itch.io markup changes — withholds the removals).
 #
 # Also called by force_update.yml with `full: true` (re-scrape every field).
 name: Refresh catalog
@@ -23,6 +25,10 @@ on:
         description: 'Only this game URL (optional)'
         type: string
         required: false
+      allow_mass_removal:
+        description: 'Apply removals even if the mass-change guard trips (confirm on itch.io first)'
+        type: boolean
+        default: false
   workflow_call:
     inputs:
       budget:
@@ -32,6 +38,9 @@ on:
         type: string
         required: false
       full:
+        type: boolean
+        default: false
+      allow_mass_removal:
         type: boolean
         default: false
     secrets:
@@ -52,6 +61,7 @@ jobs:
       contents: read
     outputs:
       rate_limited: ${{ steps.refresh.outputs.rate_limited }}
+      mass_change: ${{ steps.refresh.outputs.mass_change }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -75,9 +85,11 @@ jobs:
           BUDGET: ${{ inputs.budget || 0 }}
           URL: ${{ inputs.url }}
           FULL: ${{ inputs.full && 'true' || 'false' }}
+          ALLOW_MASS_REMOVAL: ${{ inputs.allow_mass_removal && 'true' || 'false' }}
         run: |
           args=(--out "$RUNNER_TEMP/patch.json" --budget "$BUDGET" --deadline-min 45)
           if [ "$FULL" = "true" ]; then args+=(--full); fi
+          if [ "$ALLOW_MASS_REMOVAL" = "true" ]; then args+=(--allow-mass-removal); fi
           if [ -n "$URL" ]; then args+=(--url "$URL"); fi
           python scripts/refresh.py "${args[@]}"
 
@@ -92,15 +104,19 @@ jobs:
 
   apply:
     needs: scan
-    # Also apply the checkpointed patch of a scan that failed or timed out.
-    if: always() && needs.scan.result != 'skipped'
+    # Also apply the checkpointed patch of a scan that failed or timed out
+    # (a timed-out step fails, it does not cancel) — but not of a cancelled run.
+    if: ${{ !cancelled() && needs.scan.result != 'skipped' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
+    # FIFO: with the default queue a newer pending apply would replace (and
+    # discard) an older pending one.
     concurrency:
       group: refresh-apply
       cancel-in-progress: false
+      queue: max
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 # zizmor: ignore[artipacked] — commit_push.sh pushes with this token
@@ -126,18 +142,21 @@ jobs:
       - name: Apply, validate and push
         env:
           KIND: ${{ inputs.full && 'Force update' || 'Refresh catalog' }}
+          ALLOW_MASS_REMOVAL: ${{ inputs.allow_mass_removal && '1' || '0' }}
         run: bash bash/commit_push.sh "$RUNNER_TEMP/patch.json" "$KIND [$(date -u +%F)]"
 
   notify:
     needs: [scan, apply]
     if: >-
       always() && (contains(needs.*.result, 'failure') ||
-      contains(needs.*.result, 'cancelled') || needs.scan.outputs.rate_limited == 'true')
+      contains(needs.*.result, 'cancelled') || needs.scan.outputs.rate_limited == 'true' ||
+      needs.scan.outputs.mass_change == 'true')
     permissions: {}
     uses: ./.github/workflows/notify-failure.yml
     with:
       summary: >-
         scan=${{ needs.scan.result }}, apply=${{ needs.apply.result }},
-        rate_limited=${{ needs.scan.outputs.rate_limited || 'false' }}
+        rate_limited=${{ needs.scan.outputs.rate_limited || 'false' }},
+        mass_change=${{ needs.scan.outputs.mass_change || 'false' }}
     secrets:
       DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}

@@ -1,32 +1,49 @@
 # Not a deploy workflow: Cloudflare Workers Builds deploys main on its own.
-# This only relays a FAILED Workers Build (reported back to GitHub as a check
-# run / commit status by the Cloudflare GitHub App) to Discord, so a broken
-# build — e.g. invalid catalog JSON — doesn't leave the site silently stale.
-# Also enable Cloudflare's own build-failure notification as a fallback.
+# This watches the result: every hour it checks the latest finished
+# "Workers Builds: free-games-itchio-list" check run on main and posts a new
+# failure to Discord, so a broken build doesn't leave the site silently stale
+# (bash/cf_build_status.sh). A schedule is used because GitHub never starts
+# check_run-triggered workflows for commits pushed with GITHUB_TOKEN — the
+# refresh / ingest data commits. Cloudflare's own build-failure notification
+# is the independent fallback.
 name: Cloudflare build status
 
 on:
-  check_run:
-    types: [completed]
-  status:
+  schedule:
+    - cron: '41 * * * *'
+  workflow_dispatch:
 
 permissions: {}
 
+concurrency:
+  group: cf-build-status
+  cancel-in-progress: true
+
 jobs:
-  relay-failure:
-    if: >-
-      (github.event_name == 'check_run' &&
-        github.event.check_run.conclusion == 'failure' &&
-        (contains(github.event.check_run.app.slug, 'cloudflare') ||
-         contains(github.event.check_run.name, 'Workers Builds'))) ||
-      (github.event_name == 'status' &&
-        (github.event.state == 'failure' || github.event.state == 'error') &&
-        contains(github.event.context, 'Cloudflare'))
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      checks: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: bash
+
+      - name: Check the latest Cloudflare build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash bash/cf_build_status.sh
+
+  notify:
+    needs: [check]
+    if: always() && needs.check.result == 'failure'
+    permissions: {}
     uses: ./.github/workflows/notify-failure.yml
     with:
-      summary: >-
-        Cloudflare build failed for
-        ${{ github.event.check_run.head_sha || github.event.sha }}
-        (${{ github.event.check_run.name || github.event.context }})
+      summary: The latest Cloudflare Workers Build of main failed — see the run log for the build link.
     secrets:
       DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}

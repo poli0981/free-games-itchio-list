@@ -7,16 +7,26 @@ always works on the latest data. Idempotent: applying the same patch twice
 
   - additions:  appended when the URL is not already in the catalog
   - updates:    applied to existing games; editable fields are never touched
-  - removals:   game removed + logged in scripts/deleted_games.json
-  - *_state:    merged into scripts/state/*.json (null drops an entry)
-  - queue_remove: those URLs are dropped from scripts/temp_link.json, which is
-                  re-read here so URLs queued meanwhile survive
+  - removals:   game removed + logged in scripts/deleted_games.json, unless a
+                newer check of that game (another run) has landed since
+  - *_state:    merged into scripts/state/*.json (null drops an entry); for
+                refresh_state the newer `checked` wins and the newest `full`
+                stamp from either side is kept
+  - queue_add / queue_remove: appended to / dropped from scripts/temp_link.json,
+                which is re-read here so URLs queued meanwhile survive. Entries
+                that are not URL strings are dropped on every apply.
+
+Safety: unless ALLOW_MASS_REMOVAL=1, a refresh patch may remove at most
+max(10, 10%) of the games it checked (refresh.py's own limit, re-checked here
+in case a scan never reached its guard), and any patch at most max(25, 5%) of
+the catalog.
 
 Validation (validate.py) runs last; any error exits 1 so nothing is pushed.
 
 Usage: python scripts/apply_patch.py PATCH.json
 """
 
+import math
 import os
 import sys
 
@@ -25,6 +35,7 @@ from canonical import canonicalize
 from data_store import load_all_games, save_all_games
 from json_io import dedup_deleted, load_json, save_json, save_state_map
 from patch import is_empty, load_patch
+from refresh import mass_limit
 from validate import validate
 
 PRESERVE_FIELDS = ("safe_virus", "notes", "nsfw")
@@ -32,13 +43,57 @@ DELETED_LOG = "scripts/deleted_games.json"
 TEMP_LINK = "scripts/temp_link.json"
 REFRESH_STATE = "scripts/state/refresh_state.json"
 INGEST_STATE = "scripts/state/ingest_state.json"
+MASS_REMOVAL_FLOOR = 25
+MASS_REMOVAL_SHARE = 0.05
+
+
+def mass_removal_limit(patch: dict, total: int) -> int:
+    limit = max(MASS_REMOVAL_FLOOR, math.ceil(MASS_REMOVAL_SHARE * total))
+    checked = patch.get("stats", {}).get("checked")
+    if patch.get("kind") in ("refresh", "full") and isinstance(checked, int):
+        limit = min(limit, mass_limit(checked))
+    return limit
+
+
+def _queue_key(url: str) -> str:
+    return canonicalize(url) or url
+
+
+def clean_queue(raw) -> list[str]:
+    """temp_link.json as a list of strings ({"url": ...} objects are unwrapped)."""
+    if not isinstance(raw, list):
+        print("::warning::temp_link.json is not a JSON array — resetting it")
+        return []
+    queue: list[str] = []
+    for item in raw:
+        if isinstance(item, dict) and isinstance(item.get("url"), str):
+            item = item["url"]
+        if isinstance(item, str):
+            queue.append(item)
+        else:
+            print(f"::warning::dropping a queue entry that is not a URL: {item!r}")
+    return queue
+
+
+def _merge_refresh_entry(current: dict | None, entry: dict) -> dict:
+    """Newest check wins; the newest `full` stamp is kept from either side.
+
+    Overlapping scans start from the same state, so an older observation (an
+    error snapshot with a stale strike, say) must never undo a newer one, in
+    whichever order their applies land.
+    """
+    current = current or {}
+    base = current if current.get("checked", "") > entry.get("checked", "") else entry
+    full = max(current.get("full", ""), entry.get("full", ""))
+    return {**base, "full": full} if full else base
 
 
 def apply(patch: dict) -> dict:
     """Apply `patch` to the files under the current directory; returns counts."""
     games = load_all_games()
     by_url = {g["url"]: g for g in games}
-    counts = dict.fromkeys(("added", "updated", "removed", "unqueued"), 0)
+    refresh_state = load_json(REFRESH_STATE, default={})
+    counts = dict.fromkeys(("added", "updated", "removed", "stale", "queued", "unqueued"), 0)
 
     for record in patch.get("additions", []):
         url = record.get("url")
@@ -60,7 +115,16 @@ def apply(patch: dict) -> dict:
                 changed = True
         counts["updated"] += changed
 
-    removals = patch.get("removals", [])
+    # A removal decided by a scan is dropped when another run has checked the
+    # game since (overlapping scans read the same starting state).
+    removals, stale = [], set()
+    for removal in patch.get("removals", []):
+        checked = refresh_state.get(removal["url"], {}).get("checked", "")
+        if checked > removal["deleted_at"]:
+            stale.add(removal["url"])
+        else:
+            removals.append(removal)
+    counts["stale"] = len(stale)
     removed_urls = {r["url"] for r in removals}
     if removed_urls:
         kept = [g for g in games if g["url"] not in removed_urls]
@@ -72,28 +136,41 @@ def apply(patch: dict) -> dict:
     save_all_games(games)
     live_urls = {g["url"] for g in games}
 
-    for path, key, keep_only_live in (
-        (REFRESH_STATE, "refresh_state", True),
-        (INGEST_STATE, "ingest_state", False),
+    for path, key, state in (
+        (REFRESH_STATE, "refresh_state", refresh_state),
+        (INGEST_STATE, "ingest_state", None),
     ):
         delta = patch.get(key, {})
         if not delta:
             continue
-        state = load_json(path, default={})
+        if state is None:
+            state = load_json(path, default={})
         for url, entry in delta.items():
             if entry is None:
-                state.pop(url, None)
+                if url not in stale:
+                    state.pop(url, None)
+            elif key == "refresh_state":
+                state[url] = _merge_refresh_entry(state.get(url), entry)
             else:
                 state[url] = entry
-        if keep_only_live:
+        if key == "refresh_state":
             state = {u: e for u, e in state.items() if u in live_urls}
         save_state_map(path, state)
 
-    drop = {canonicalize(u) or u for u in patch.get("queue_remove", [])}
-    if drop and os.path.exists(TEMP_LINK):
-        queue = load_json(TEMP_LINK)
-        remaining = [u for u in queue if (canonicalize(u) or u) not in drop]
-        counts["unqueued"] = len(queue) - len(remaining)
+    raw_queue = load_json(TEMP_LINK)
+    queue = clean_queue(raw_queue)
+    present = {_queue_key(u) for u in queue}
+    appended = []
+    for url in patch.get("queue_add", []):
+        if isinstance(url, str) and _queue_key(url) not in present:
+            queue.append(url)
+            appended.append(url)
+            present.add(_queue_key(url))
+    drop = {_queue_key(u) for u in patch.get("queue_remove", []) if isinstance(u, str)}
+    remaining = [u for u in queue if _queue_key(u) not in drop]
+    counts["unqueued"] = len(queue) - len(remaining)
+    counts["queued"] = sum(1 for u in appended if u in remaining)
+    if remaining != raw_queue:
         save_json(TEMP_LINK, remaining)
 
     return counts
@@ -108,10 +185,22 @@ def main(argv: list[str] | None = None) -> int:
     if is_empty(patch):
         print("Patch is empty — nothing to apply.")
         return 0
+    removals = patch.get("removals", [])
+    if removals and os.environ.get("ALLOW_MASS_REMOVAL") != "1":
+        total = len(load_all_games())
+        limit = mass_removal_limit(patch, total)
+        if len(removals) > limit:
+            print(
+                f"::error::The patch removes {len(removals)} of {total} games "
+                f"(limit {limit}) — refusing. This usually means itch.io changed "
+                "its page markup. Set ALLOW_MASS_REMOVAL=1 to apply it."
+            )
+            return 1
     counts = apply(patch)
     print(
         f"apply_patch ({patch.get('kind')}): {counts['added']} added, "
-        f"{counts['updated']} updated, {counts['removed']} removed, "
+        f"{counts['updated']} updated, {counts['removed']} removed "
+        f"({counts['stale']} stale removals skipped), {counts['queued']} queued, "
         f"{counts['unqueued']} dropped from the queue."
     )
     errors, warnings = validate()

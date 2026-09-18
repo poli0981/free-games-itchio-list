@@ -1,7 +1,8 @@
 # Reusable: post a data-pipeline problem to Discord.
-# Called from refresh.yml / update.yml when a job fails, is cancelled (timeouts
-# end as "cancelled", which the old workflow_run notifier never caught) or when
-# itch.io rate-limited the run.
+# Called from refresh.yml / update.yml when a job fails, is cancelled (job-level
+# timeouts end as "cancelled", which the old workflow_run notifier never
+# caught), when itch.io rate-limited the run or the mass-change guard tripped,
+# and from deploy-status.yml when a Cloudflare build failed.
 name: Notify pipeline failure
 
 on:

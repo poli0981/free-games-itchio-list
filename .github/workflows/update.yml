@@ -23,10 +23,14 @@ on:
 
 permissions: {}
 
-# Queued runs coalesce: the newest run reads the whole queue anyway.
+# One ingest at a time, FIFO. `queue: max` matters: with the default queue a
+# newer pending run replaces an older pending one, which would silently drop
+# that run's dispatched `url` (it is only in the run's input until the run
+# writes it to temp_link.json).
 concurrency:
   group: ingest
   cancel-in-progress: false
+  queue: max
 
 env:
   PYTHONUNBUFFERED: '1'

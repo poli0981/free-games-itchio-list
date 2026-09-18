@@ -97,7 +97,8 @@ data_game/     ─→ refresh.py    ──┘   (URL-keyed)    (validate + push)
    removed games are skipped. Transient failures stay queued and are retried (up to 3 runs).
 3. **Refresh** — `refresh.yml` checks one seventh of the catalog every day (one request per game), so every
    game is re-checked weekly: dead links (404/410), games that became paid, rating and status. A game is only
-   removed when the same problem is seen on two different days; removals are logged with a reason.
+   removed when the same problem is seen again at least 20 hours later; removals are logged with a reason,
+   and a run that would remove an implausible number of games holds them back and alerts instead.
 4. **Commit safely** — both steps emit a URL-keyed patch; `apply_patch.py` applies it to the latest `main`,
    validates every data file (`validate.py`) and only then pushes, retrying if another writer got there first.
 
@@ -156,7 +157,8 @@ webapp/                 # React + TS SPA + Tauri desktop & Android wrapper
 
 Scrapers identify themselves (`FreeItchGamesBot`), pace requests (random delays, batch pauses) and back off on
 HTTP 429. Network errors are treated as transient; a game is removed only after the same 404/410 or paid status is
-seen on two different days. Failures, cancellations and rate limits are reported to Discord.
+seen again at least 20 hours after the first sighting. Failures, cancellations, rate limits and
+suspicious mass changes are reported to Discord.
 
 ## Data fields
 

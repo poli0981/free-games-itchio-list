@@ -64,7 +64,7 @@ data_game/     ─→ refresh.py    ──┘   (theo URL)     (validate + push)
 
 1. **Thêm link** — URL itch.io được đưa vào hàng chờ `scripts/temp_link.json` (qua extension trình duyệt đi kèm, hoặc thủ công / PR).
 2. **Ingest** — `update.yml` chạy `update_info.py` ngay khi hàng chờ thay đổi (và mỗi ngày một lần để dự phòng). Mỗi link được chuẩn hoá, fetch, kiểm tra free rồi cào metadata; game trả phí, đã chết, trùng hoặc từng bị gỡ sẽ bị bỏ qua. Lỗi tạm thời được giữ lại để thử lại (tối đa 3 lần chạy).
-3. **Refresh** — `refresh.yml` mỗi ngày kiểm tra 1/7 danh mục (mỗi game một request), nên mọi game được kiểm tra lại hằng tuần: link chết (404/410), game chuyển sang trả phí, rating và trạng thái. Game chỉ bị gỡ khi cùng một vấn đề xuất hiện ở hai ngày khác nhau; việc gỡ được log kèm lý do.
+3. **Refresh** — `refresh.yml` mỗi ngày kiểm tra 1/7 danh mục (mỗi game một request), nên mọi game được kiểm tra lại hằng tuần: link chết (404/410), game chuyển sang trả phí, rating và trạng thái. Game chỉ bị gỡ khi cùng một vấn đề được thấy lại sau lần đầu ít nhất 20 giờ; việc gỡ được log kèm lý do, và một lượt chạy định gỡ số game bất thường sẽ giữ lại và cảnh báo thay vì gỡ.
 4. **Commit an toàn** — cả hai bước xuất ra một patch theo URL; `apply_patch.py` áp nó lên `main` mới nhất, validate mọi file dữ liệu (`validate.py`) rồi mới push, và thử lại nếu có writer khác push trước.
 
 ## Cấu trúc dự án
@@ -83,7 +83,7 @@ Xem [`README.md`](README.md#project-structure) phiên bản tiếng Anh để c�
 | Release desktop | Khi push tag `v*` | Build installer Tauri (Win/macOS/Linux) → draft Release |
 | Release Android | Khi push tag `v*` | Build APK đã ký (arm64-v8a) → draft Release |
 
-Scraper tự xưng danh tính (`FreeItchGamesBot`), giãn nhịp request (delay ngẫu nhiên, batch pause) và lùi lại khi gặp HTTP 429. Lỗi mạng được coi là tạm thời; game chỉ bị gỡ khi cùng lỗi 404/410 hoặc trạng thái trả phí được thấy ở hai ngày khác nhau. Lỗi, bị huỷ hoặc bị giới hạn tốc độ đều được báo về Discord.
+Scraper tự xưng danh tính (`FreeItchGamesBot`), giãn nhịp request (delay ngẫu nhiên, batch pause) và lùi lại khi gặp HTTP 429. Lỗi mạng được coi là tạm thời; game chỉ bị gỡ khi cùng lỗi 404/410 hoặc trạng thái trả phí được thấy lại sau lần đầu ít nhất 20 giờ. Lỗi, bị huỷ, bị giới hạn tốc độ hoặc thay đổi hàng loạt bất thường đều được báo về Discord.
 
 ## Đóng góp
 
