@@ -319,6 +319,14 @@ export async function serveAdminApp(request: Request, url: URL, env: WorkerEnv):
       headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store', ...SECURITY_HEADERS },
     })
   if (request.method !== 'GET' && request.method !== 'HEAD') return text(405, 'Method not allowed')
+  // The Access application covers /admin/* — send the bare path there so the
+  // visitor gets the login page instead of a 403. Nothing is served here.
+  if (url.pathname === '/admin') {
+    return new Response(null, {
+      status: 308,
+      headers: { Location: `/admin/${url.search}`, 'Cache-Control': 'no-store', ...SECURITY_HEADERS },
+    })
+  }
   if (/\.[a-z0-9]+$/i.test(url.pathname) && url.pathname !== '/admin/index.html') return text(404, 'Not found')
   try {
     await maintainer(request, env)

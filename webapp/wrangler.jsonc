@@ -58,13 +58,14 @@
     "SITE_ORIGIN": "https://freeitchgames.win",
     "GITHUB_REPO": "poli0981/free-games-itchio-list",
     "BOT_UA": "FreeItchGamesBot/4.0 (+https://freeitchgames.win/about)",
-    // Filled in during setup (none of these are secret):
-    "GH_APP_ID": "",
-    "GH_APP_INSTALLATION_ID": "",
-    "ACCESS_TEAM_DOMAIN": "", // https://<team>.cloudflareaccess.com
-    "ACCESS_AUD_ADMIN": "", // AUD tag of the "Admin" Access application
-    "ACCESS_AUD_INGEST": "", // AUD tag of the "Ingest" Access application
-    "TURNSTILE_SITEKEY": ""
+    // None of these are secret. Keep them here, not only in the dashboard: every
+    // deploy replaces the Worker's plain-text variables with this file's values.
+    "GH_APP_ID": "4988105",
+    "GH_APP_INSTALLATION_ID": "162777505",
+    "ACCESS_TEAM_DOMAIN": "https://polished-hall-48fd.cloudflareaccess.com", // no trailing slash
+    "ACCESS_AUD_ADMIN": "fc4d79904ffb90f7405cabb0135e15940c7bad48ba344309adc085d71622f482", // "Admin" Access app
+    "ACCESS_AUD_INGEST": "85662a9f2112d3c5912699f10a59ad9702ef44c05f4e186eb4f550bf1b163ff6", // "Ingest" Access app
+    "TURNSTILE_SITEKEY": "0x4AAAAAAE7oBxYiQZ_lVEBW"
   },
   "observability": { "enabled": true, "head_sampling_rate": 0.1 },
   "upload_source_maps": false,

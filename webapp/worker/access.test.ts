@@ -66,6 +66,12 @@ describe('requireMaintainer', () => {
     await expect(requireMaintainer(request(wrongIss), env)).rejects.toThrow('invalid')
   })
 
+  it('accepts a team domain written with a trailing slash', async () => {
+    const jwt = await token({ email: 'owner@example.com' }, 'aud-admin')
+    const slashed = { ...env, ACCESS_TEAM_DOMAIN: `${TEAM}/` }
+    await expect(requireMaintainer(request(jwt), slashed)).resolves.toMatchObject({ id: 'owner@example.com' })
+  })
+
   it('rejects emails that are not maintainers', async () => {
     const jwt = await token({ email: 'someone@example.com' }, 'aud-admin')
     await expect(requireMaintainer(request(jwt), env)).rejects.toThrow('not a maintainer')

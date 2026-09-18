@@ -53,9 +53,11 @@ Do these once (and again with the `-staging` names for the staging Worker).
    - Staging: one self-hosted app covering all of `staging.freeitchgames.win`.
 7. **Turnstile**: add a widget (Managed) for `freeitchgames.win` and `staging.freeitchgames.win`.
 8. **Fill in `wrangler.jsonc` vars** (not secret) and commit: `ACCESS_TEAM_DOMAIN`
-   (`https://<team>.cloudflareaccess.com`), `ACCESS_AUD_ADMIN`, `ACCESS_AUD_INGEST`, `GH_APP_ID`,
-   `GH_APP_INSTALLATION_ID`, `TURNSTILE_SITEKEY` — in both the top level and `env.staging`. Then
-   `npm run cf:types`.
+   (`https://<team>.cloudflareaccess.com`, no trailing slash), `ACCESS_AUD_ADMIN`, `ACCESS_AUD_INGEST`,
+   `GH_APP_ID`, `GH_APP_INSTALLATION_ID`, `TURNSTILE_SITEKEY` — in both the top level and
+   `env.staging`. Then `npm run cf:types`. The production values are filled in (2026-09-18). Change
+   them in the file, not only in the dashboard: every deploy — so every data commit — replaces the
+   Worker's plain-text variables with the file's values. Secrets are not affected.
 9. **Secrets** (`cd webapp`; add `--env staging` for staging):
    ```sh
    openssl pkcs8 -topk8 -nocrypt -in app.private-key.pem -out app.pk8.pem   # GitHub App key → PKCS#8

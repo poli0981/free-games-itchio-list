@@ -40,11 +40,10 @@ function jwks(teamDomain: string) {
 async function verify(request: Request, env: AccessEnv, audience: string): Promise<JWTPayload> {
   const token = request.headers.get('cf-access-jwt-assertion')
   if (!token) throw new AccessError('missing Access token')
+  // The issuer is the bare origin; tolerate a trailing slash pasted from the dashboard.
+  const team = env.ACCESS_TEAM_DOMAIN.trim().replace(/\/+$/, '')
   try {
-    const { payload } = await jwtVerify(token, jwks(env.ACCESS_TEAM_DOMAIN), {
-      issuer: env.ACCESS_TEAM_DOMAIN,
-      audience,
-    })
+    const { payload } = await jwtVerify(token, jwks(team), { issuer: team, audience })
     return payload
   } catch {
     throw new AccessError('invalid Access token')

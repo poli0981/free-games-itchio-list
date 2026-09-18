@@ -62,8 +62,15 @@ describe('admin authentication', () => {
     ['someone else', 'stranger@example.com'],
   ])('refuses %s', async (_name, email) => {
     const token = email ? await jwt(email) : undefined
-    expect((await get('/admin', token)).status).toBe(403)
+    expect((await get('/admin/', token)).status).toBe(403)
     expect((await get('/api/admin/me', token)).status).toBe(403)
+  })
+
+  it('sends the bare /admin to /admin/ (the path Access protects) without serving anything', async () => {
+    const res = await get('/admin?x=1')
+    expect(res.status).toBe(308)
+    expect(res.headers.get('location')).toBe('/admin/?x=1')
+    expect(await res.text()).toBe('')
   })
 
   it('refuses a token minted for the ingest application', async () => {
