@@ -9,6 +9,8 @@ interface Secrets {
   GH_APP_PRIVATE_KEY?: string // PKCS#8 PEM of the GitHub App
   ADMIN_EMAILS?: string // comma-separated maintainer emails
   TURNSTILE_SECRET?: string
+  /** Local `wrangler dev` only (admin without Access); ignored off localhost. */
+  DEV_ADMIN_EMAIL?: string
 }
 
 export type WorkerEnv = Env & Secrets

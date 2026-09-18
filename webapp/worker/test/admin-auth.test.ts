@@ -80,3 +80,19 @@ describe('admin authentication', () => {
     expect((await get('/admin/secrets.json', await jwt('owner@example.com'))).status).toBe(404)
   })
 })
+
+describe('local development bypass', () => {
+  const dev = { ...env, DEV_ADMIN_EMAIL: 'dev@localhost', ACCESS_AUD_ADMIN: '' } as WorkerEnv
+
+  it('lets wrangler dev on localhost in without Access', async () => {
+    const url = new URL('http://localhost:8787/admin/')
+    const res = await serveAdminApp(new Request(url), url, dev)
+    expect(res.status).toBe(200)
+  })
+
+  it('is ignored on any other host', async () => {
+    expect((await get('/admin/', undefined, dev)).status).toBe(503)
+    const withAccess = { ...env, DEV_ADMIN_EMAIL: 'dev@localhost' } as WorkerEnv
+    expect((await get('/admin/', undefined, withAccess)).status).toBe(403)
+  })
+})

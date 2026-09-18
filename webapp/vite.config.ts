@@ -24,6 +24,14 @@ export default defineConfig({
     target: isTauri ? 'baseline-widely-available' : ['chrome111', 'edge111', 'firefox114', 'safari15.4', 'ios15.4'],
     chunkSizeWarningLimit: 600,
     rolldownOptions: {
+      // Web: the public app + the maintainer-only admin (/admin/, served by
+      // the Worker after the Access check). The Tauri apps ship the public app only.
+      input: isTauri
+        ? undefined
+        : {
+            main: path.resolve(import.meta.dirname, 'index.html'),
+            admin: path.resolve(import.meta.dirname, 'admin/index.html'),
+          },
       output: {
         codeSplitting: {
           // Higher priority wins when a module matches several groups. Groups

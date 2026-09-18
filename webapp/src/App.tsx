@@ -18,6 +18,7 @@ const GameDetail = lazy(() => import('@/routes/game-detail'))
 const Charts = lazy(() => import('@/routes/charts'))
 const Settings = lazy(() => import('@/routes/settings'))
 const About = lazy(() => import('@/routes/about'))
+const Suggest = lazy(() => import('@/routes/suggest'))
 const ErrorPreview = lazy(() => import('@/routes/error-preview'))
 
 function RouteFallback() {
@@ -70,6 +71,7 @@ export default function App() {
                   <Route path="/deleted" element={<Deleted />} />
                   <Route path="/settings" element={<Settings />} />
                   <Route path="/about" element={<About />} />
+                  <Route path="/suggest" element={<Suggest />} />
                   <Route path="/errors/:code" element={<ErrorPreview />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>

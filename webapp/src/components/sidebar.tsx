@@ -12,6 +12,7 @@ import {
   PanelLeft,
   Menu,
   Heart,
+  Lightbulb,
   type LucideIcon,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -37,6 +38,7 @@ const NAV_ITEMS: NavItem[] = [
   { to: '/games', label: 'nav.games', icon: Gamepad2 },
   { to: '/charts', label: 'nav.charts', icon: BarChart3 },
   { to: '/deleted', label: 'nav.deleted', icon: Trash2 },
+  { to: '/suggest', label: 'nav.suggest', icon: Lightbulb },
   { to: '/settings', label: 'nav.settings', icon: Settings },
   { to: '/about', label: 'nav.about', icon: Info },
 ]
