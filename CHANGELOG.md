@@ -72,8 +72,10 @@ All notable changes to this project will be documented here.
   Android upload into; release builds use no dependency caches. Publish with
   `gh release edit vX --draft=false`.
 - `.github/dependabot.yml` (npm / pip / actions / cargo), Python and web-app PR checks, and an
-  hourly check of main's latest Cloudflare Workers Build that posts a failure to Discord (a
-  `check_run` relay would miss the pipeline's own data commits).
+  hourly check of main's latest Cloudflare Workers Build that posts each failed build to Discord
+  once (a `check_run` relay would miss the pipeline's own data commits).
+- One refresh pipeline (scan → apply) runs at a time, so overlapping refresh / force-update runs
+  can't undo each other.
 - Cancelling a refresh / force-update or a desktop release run now really stops it (`!cancelled()`
   instead of `always()` on the push / build jobs).
 

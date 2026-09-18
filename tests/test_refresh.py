@@ -326,3 +326,61 @@ def test_checkpoints_never_carry_removals(repo, monkeypatch):
     assert checkpoint["removals"] == [] and checkpoint["stats"]["stopped"] == "checkpoint"
     kept = checkpoint["refresh_state"][games[0]["url"]]
     assert kept["strike"] == "paid" and "withheld_at" not in kept
+
+
+def test_strikes_of_a_spike_run_are_not_removed_by_a_later_short_run(repo, monkeypatch):
+    from conftest import read_json
+    from json_io import save_state_map
+
+    games = [make_game(f"g{i:03d}") for i in range(40)]
+    paid = ok_page("game_paid.html")
+    day1, outputs = _run_guarded(repo, monkeypatch, games, {}, lambda _u: paid)
+    assert "mass_change=true" in outputs
+    assert all(e["withheld_at"] for e in day1["refresh_state"].values())
+
+    # A day later: a single-URL check (or any short run) must not remove it.
+    state = day1["refresh_state"]
+    for entry in state.values():
+        entry["strike_at"] = entry["checked"] = "2026-09-16T00:00:00Z"
+    save_state_map("scripts/state/refresh_state.json", state)
+    monkeypatch.setattr(refresh, "fetch_page", lambda _s, _u: paid)
+    assert refresh.main(["--out", "patch.json", "--url", games[0]["url"]]) == 0
+    assert read_json("patch.json")["removals"] == []
+
+
+def test_withheld_games_take_at_most_half_the_budget():
+    games = [make_game(f"g{i:03d}") for i in range(20)]
+    old = {"checked": "2026-09-01T00:00:00Z", "strike": "paid", "strike_at": "2026-09-01T00:00:00Z"}
+    state = {g["url"]: {**old, "withheld_at": "2026-09-02T00:00:00Z"} for g in games[:10]}
+    state[games[10]["url"]] = dict(old)  # a normal matured strike
+    picked = [g["url"][-3:] for g in refresh.select_targets(games, state, 6, NOW)]
+    assert picked[0] == "010" and sum(u < "010" for u in picked) == 3
+    confirm = refresh.select_targets(games, state, 6, NOW, allow_mass_removal=True)
+    assert [g["url"][-3:] for g in confirm][:5] == ["000", "001", "002", "003", "004"]
+
+
+def test_withheld_full_batch_moves_the_full_stamp(repo, monkeypatch):
+    games, state = _struck_catalog(30)
+    paid = ok_page("game_paid.html")
+    patch, _ = _run_guarded(repo, monkeypatch, games, state, lambda _u: paid, "--full")
+    entry = patch["refresh_state"][games[0]["url"]]
+    assert entry["withheld_at"] and entry["full"] == entry["checked"]
+
+
+def test_checkpoint_of_a_spiking_run_marks_its_strikes(repo, monkeypatch):
+    from conftest import read_json
+
+    games = [make_game(f"g{i:03d}") for i in range(60)]
+    paid = ok_page("game_paid.html")
+    calls = {"n": 0}
+
+    def pages(_url):
+        calls["n"] += 1
+        if calls["n"] > 55:
+            raise RuntimeError("runner lost")
+        return paid
+
+    with pytest.raises(RuntimeError):
+        _run_guarded(repo, monkeypatch, games, {}, pages)
+    checkpoint = read_json("patch.json")
+    assert all(e["withheld_at"] for e in checkpoint["refresh_state"].values())

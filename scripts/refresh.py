@@ -105,23 +105,42 @@ def mass_limit(checked: int) -> int:
 
 
 def select_targets(
-    games: list[dict], state: dict, budget: int, now: str, full: bool = False
+    games: list[dict],
+    state: dict,
+    budget: int,
+    now: str,
+    full: bool = False,
+    allow_mass_removal: bool = False,
 ) -> list[dict]:
     """Matured strikes first, then least recently checked.
 
     Never-checked games sort first; ties keep catalog order (stable sort).
     Full mode rotates on its own `full` timestamp and ignores strikes.
+
+    Games withheld by the mass-change guard (`withheld_at`) would otherwise
+    hold the front of the line until someone acts: without
+    `allow_mass_removal` (the run that confirms them) they take at most half
+    of the budget, so the rotation keeps moving while the alert repeats.
     """
     stamp = "full" if full else "checked"
-    pending: list[dict] = []
+    matured: list[dict] = []
+    withheld: list[dict] = []
     if not full:
-        pending = [g for g in games if strike_matured(state.get(g["url"], {}), now)]
-    pending_urls = {g["url"] for g in pending}
+        for g in games:
+            entry = state.get(g["url"], {})
+            if strike_matured(entry, now):
+                (withheld if entry.get("withheld_at") else matured).append(g)
+        if allow_mass_removal:
+            matured, withheld = withheld + matured, []
+        else:
+            withheld = withheld[: max(1, budget // 2)]
+    first = matured + withheld
+    first_urls = {g["url"] for g in first}
     rest = sorted(
-        (g for g in games if g["url"] not in pending_urls),
+        (g for g in games if g["url"] not in first_urls),
         key=lambda g: state.get(g["url"], {}).get(stamp, ""),
     )
-    return (pending + rest)[:budget]
+    return (first + rest)[:budget]
 
 
 # ---------------------------------------------------------------------------
@@ -269,24 +288,40 @@ def keep_struck(patch: dict, state: dict, removals: list[dict], stats: dict, mar
     """Turn `removals` back into state entries that keep their matured strike.
 
     The games stay first in line for the next run; `mark` records that the
-    removal was withheld by the mass-change guard.
+    removal was withheld by the mass-change guard. A full run also moves the
+    game's `full` stamp, like strike() does, so it doesn't head every batch.
     """
     urls = {r["url"] for r in removals}
     for removal in removals:
         entry = {**state.get(removal["url"], {}), "checked": removal["deleted_at"]}
         if mark:
             entry["withheld_at"] = removal["deleted_at"]
+        if patch.get("kind") == "full":
+            entry["full"] = removal["deleted_at"]
         patch["refresh_state"][removal["url"]] = entry
         stats["removed"] -= 1
         stats["removed_" + ("paid" if removal["reason"] == REASON_PAID else "dead")] -= 1
     patch["removals"] = [r for r in patch["removals"] if r["url"] not in urls]
 
 
+def mark_suspect_strikes(patch: dict) -> int:
+    """Mark every strike this run recorded as withheld (a spike run's strikes
+    are suspect), so no later run removes them without allow_mass_removal."""
+    marked = 0
+    for entry in patch["refresh_state"].values():
+        if entry and entry.get("strike") and not entry.get("withheld_at"):
+            entry["withheld_at"] = entry["checked"]
+            marked += 1
+    return marked
+
+
 def guard_mass_change(patch: dict, state: dict, stats: dict, allow_removal: bool) -> None:
     """Withhold removals that look like a parser fault (unless allow_removal).
 
-    - more removals or more strikes than mass_limit(checked) in this run: all
-      of the run's removals are withheld and the run is flagged;
+    - more strikes than mass_limit(checked) in this run (a spike): the run's
+      removals are withheld and all its strikes are marked, so their removal
+      also waits for an explicit allow_mass_removal run;
+    - more removals than mass_limit(checked): the run's removals are withheld;
     - a game already withheld by an earlier run stays withheld, whatever the
       size of this run (a short or single-URL run must not slip it through).
     """
@@ -298,6 +333,8 @@ def guard_mass_change(patch: dict, state: dict, stats: dict, allow_removal: bool
             f"::error::{stats['strikes']} strikes out of {stats['checked']} checked games "
             f"(limit {limit}) — check whether itch.io changed its page markup."
         )
+        if not allow_removal:
+            mark_suspect_strikes(patch)
     if allow_removal or not patch["removals"]:
         return
     if spike or stats["removed"] > limit:
@@ -317,11 +354,19 @@ def guard_mass_change(patch: dict, state: dict, stats: dict, allow_removal: bool
     keep_struck(patch, state, held, stats, mark=True)
 
 
-def checkpoint_copy(patch: dict, state: dict) -> dict:
-    """The patch as a partial run may apply it: progress, strikes, no removals."""
+def checkpoint_copy(patch: dict, state: dict, allow_removal: bool) -> dict:
+    """The patch as a partial run may apply it: progress, strikes, no removals.
+
+    If the run so far already looks like a spike, its strikes (and deferred
+    removals) are marked as withheld, as the final guard would do.
+    """
     snap = copy.deepcopy(patch)
-    keep_struck(snap, state, list(snap["removals"]), snap["stats"], mark=False)
-    snap["stats"]["stopped"] = snap["stats"]["stopped"] or "checkpoint"
+    stats = snap["stats"]
+    spike = not allow_removal and stats["strikes"] > mass_limit(stats["checked"])
+    if spike:
+        mark_suspect_strikes(snap)
+    keep_struck(snap, state, list(snap["removals"]), stats, mark=spike)
+    stats["stopped"] = stats["stopped"] or "checkpoint"
     return snap
 
 
@@ -352,7 +397,14 @@ def main(argv: list[str] | None = None) -> int:
             return 1
     else:
         budget = args.budget or default_budget(len(games))
-        targets = select_targets(games, state, budget, run_start, full=args.full)
+        targets = select_targets(
+            games,
+            state,
+            budget,
+            run_start,
+            full=args.full,
+            allow_mass_removal=args.allow_mass_removal,
+        )
 
     kind = "full" if args.full else "refresh"
     patch = new_patch(kind)
@@ -430,7 +482,7 @@ def main(argv: list[str] | None = None) -> int:
             rate = i / max(time.monotonic() - started, 1e-6)
             print(f"  … {i} checked, {rate * 60:.1f}/min, {counters['http_429']}x 429 — checkpoint")
             stats["duration_s"] = round(time.monotonic() - started)
-            write_patch(args.out, checkpoint_copy(patch, state))
+            write_patch(args.out, checkpoint_copy(patch, state, args.allow_mass_removal))
 
     guard_mass_change(patch, state, stats, allow_removal=args.allow_mass_removal)
     stats["duration_s"] = round(time.monotonic() - started)

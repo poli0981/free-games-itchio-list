@@ -49,6 +49,16 @@ on:
 
 permissions: {}
 
+# One refresh pipeline (scan → apply) at a time, FIFO — a scheduled refresh, a
+# manual one and a force-update batch never start from the same state, so an
+# older removal can't undo a newer healthy check. The name differs from
+# force_update.yml's own group on purpose: a called workflow asking for its
+# caller's group is cancelled as a deadlock.
+concurrency:
+  group: refresh-pipeline
+  cancel-in-progress: false
+  queue: max
+
 env:
   PYTHONUNBUFFERED: '1'
   PYTHONUTF8: '1'
