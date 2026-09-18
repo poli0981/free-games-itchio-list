@@ -13,6 +13,7 @@ import {
 import { NOTIFICATION_DURATION_OPTIONS, usePrefs } from '@/stores/prefs'
 import { useThemeStore, type Theme } from '@/stores/theme'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { enableNsfw } from '@/lib/nsfw'
 import { switchLanguage, useT, type MessageKey } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
@@ -101,6 +102,25 @@ export default function Settings() {
               id="sidebar-collapsed"
               checked={prefs.sidebarCollapsed}
               onCheckedChange={prefs.setSidebarCollapsed}
+            />
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">{t('settings.content.title')}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex items-center justify-between gap-3">
+            <div className="space-y-0.5">
+              <Label htmlFor="show-nsfw">{t('settings.content.nsfw')}</Label>
+              <p className="text-xs text-muted-foreground">{t('settings.content.nsfwDesc')}</p>
+            </div>
+            <Switch
+              id="show-nsfw"
+              checked={prefs.showNsfw}
+              onCheckedChange={(on) => (on ? enableNsfw() : prefs.setShowNsfw(false))}
             />
           </div>
         </CardContent>

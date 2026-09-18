@@ -64,3 +64,12 @@ describe('handleMiss', () => {
     expect((await miss('/games', { method: 'POST' })).status).toBe(405)
   })
 })
+
+describe('renamed routes', () => {
+  it('permanently redirects /deleted to /removed', async () => {
+    const res = await miss('/deleted?x=1')
+    expect(res.status).toBe(301)
+    expect(res.headers.get('location')).toBe(`${ORIGIN}/removed?x=1`)
+    expect((await miss('/removed')).status).toBe(200)
+  })
+})

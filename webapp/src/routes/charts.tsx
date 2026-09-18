@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { RouteError } from '@/components/route-error'
-import { useAllGames, useCountHistory, useDeletedGames } from '@/hooks/useGames'
+import { useVisibleGames, useCountHistory, useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useT } from '@/lib/i18n'
 
@@ -27,7 +27,7 @@ function ChartGridSkeleton({ count = 4 }: { count?: number }) {
 export default function Charts() {
   const t = useT()
   useDocumentTitle(t('titles.charts'))
-  const games = useAllGames()
+  const games = useVisibleGames()
   const deleted = useDeletedGames()
   const history = useCountHistory()
 

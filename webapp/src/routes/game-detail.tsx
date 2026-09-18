@@ -10,6 +10,8 @@ import { ErrorPage } from '@/components/error-page'
 import { RouteError } from '@/components/route-error'
 import { GameThumb } from '@/components/game-thumb'
 import { useGameBySlug } from '@/hooks/useGameBySlug'
+import { enableNsfw, isNsfw } from '@/lib/nsfw'
+import { usePrefs } from '@/stores/prefs'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
@@ -212,5 +214,24 @@ export default function GameDetail() {
     )
   }
 
-  return <GameDetailView game={game} />
+  return <NsfwGate game={game} />
+}
+
+/** An 18+ game stays behind this notice until the visitor opts in. */
+function NsfwGate({ game }: { game: Game }) {
+  const t = useT()
+  const showNsfw = usePrefs((s) => s.showNsfw)
+  if (!isNsfw(game) || showNsfw) return <GameDetailView game={game} />
+  return (
+    <div className="container mx-auto max-w-xl space-y-4 p-6">
+      <h1 className="text-2xl font-semibold">{t('nsfw.gate.title')}</h1>
+      <p className="text-muted-foreground">{t('nsfw.gate.desc')}</p>
+      <div className="flex flex-wrap gap-2">
+        <Button onClick={() => enableNsfw()}>{t('nsfw.gate.show')}</Button>
+        <Button variant="outline" asChild>
+          <Link to="/games">{t('detail.backToGames')}</Link>
+        </Button>
+      </div>
+    </div>
+  )
 }

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { RouteError } from '@/components/route-error'
-import { useAllGames, useDeletedGames } from '@/hooks/useGames'
+import { useVisibleGames, useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useT } from '@/lib/i18n'
 import { computeOverview } from '@/lib/analytics'
@@ -10,7 +10,7 @@ import { formatNumber } from '@/lib/utils'
 export default function Dashboard() {
   const t = useT()
   useDocumentTitle(t('titles.dashboard'))
-  const games = useAllGames()
+  const games = useVisibleGames()
   const deleted = useDeletedGames()
 
   if (games.isLoading) {

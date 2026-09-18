@@ -31,7 +31,7 @@ interface GameLike {
 }
 
 const SITE = 'https://freeitchgames.win'
-const STATIC_PAGES = ['/', '/games', '/charts', '/deleted', '/about']
+const STATIC_PAGES = ['/', '/games', '/charts', '/removed', '/about', '/suggest']
 
 // Keep in sync with slugify() in src/lib/utils.ts.
 function slugify(url: string): string {

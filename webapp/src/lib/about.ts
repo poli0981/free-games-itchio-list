@@ -8,9 +8,9 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Itch.io Free Games DB',
-  version: '3.9.0',
+  version: '4.0.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
-  license: 'MIT',
+  license: 'code MIT · data CC BY 4.0',
 } as const
 
 export const DEV = {
@@ -69,8 +69,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'discord-game', label: 'Discord — Game chat', handle: '#general', url: 'https://discord.gg/kDM9GMu5vm', group: 'community' },
 
   // Messaging — DM only; never post your Telegram numeric ID to public channels.
-  { platform: 'telegram-user', label: 'Telegram (DM for bot whitelist)', handle: '@SkullMute0011', url: 'https://t.me/SkullMute0011', group: 'messaging' },
-  { platform: 'telegram-bot',  label: 'Telegram bot (game submission)',  handle: '@my_skull_bot',  url: 'https://t.me/my_skull_bot',  group: 'messaging' },
+  { platform: 'telegram-user', label: 'Telegram (DM)', handle: '@SkullMute0011', url: 'https://t.me/SkullMute0011', group: 'messaging' },
 
   // Support — mirrors .github/FUNDING.yml (single source of truth on GitHub side).
   { platform: 'github-sponsors', label: 'GitHub Sponsors',  handle: 'poli0981',  url: 'https://github.com/sponsors/poli0981',  group: 'support' },
@@ -100,20 +99,26 @@ export interface LegalLink {
   description: string
   url: string
   group: LegalGroup
+  /** Listed in the first-visit legal gate (the documents being accepted). */
+  inGate?: boolean
+  /** Only relevant to the desktop / Android apps. */
+  appOnly?: boolean
 }
 
 export const LEGAL_LINKS: LegalLink[] = [
   // Policy
-  { name: 'Disclaimer',      description: 'No warranty, no liability, "as-is" basis.',                              url: `${REPO_BLOB}/docs/DISCLAIMER.md`,     group: 'policy' },
-  { name: 'EULA',            description: 'MIT-licensed; what the license does and does not cover.',                url: `${REPO_BLOB}/docs/EULA.md`,           group: 'policy' },
-  { name: 'Terms of Use',    description: 'Permitted uses, prohibited activities, contributor obligations, PAT.',   url: `${REPO_BLOB}/docs/ToS.md`,            group: 'policy' },
-  { name: 'Privacy Policy',  description: 'Zero server-side data collection. Local-only browser storage detailed.', url: `${REPO_BLOB}/docs/PrivacyPolicy.md`,  group: 'policy' },
-  { name: 'Code of Conduct', description: 'Be cool. The full version is on GitHub.',                                url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
-  { name: 'Security Policy', description: 'Reporting vulnerabilities + PAT handling overview.',                     url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
+  { name: 'Terms of Use',     description: 'Using the website and the public data; how to ask for a removal.',     url: `${REPO_BLOB}/docs/ToS.md`,            group: 'policy', inGate: true },
+  { name: 'Privacy Policy',   description: 'What the site and apps process, what stays in your browser, your rights.', url: `${REPO_BLOB}/docs/PrivacyPolicy.md`, group: 'policy', inGate: true },
+  { name: 'Disclaimer',       description: 'No warranty, no liability, "as-is" basis; not affiliated with itch.io.', url: `${REPO_BLOB}/docs/DISCLAIMER.md`,     group: 'policy', inGate: true },
+  { name: 'EULA',             description: 'License terms of the desktop and Android apps.',                        url: `${REPO_BLOB}/docs/EULA.md`,           group: 'policy', inGate: true, appOnly: true },
+  { name: 'Code of Conduct',  description: 'Be kind. Contributor Covenant 2.1, adapted.',                           url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
+  { name: 'Security Policy',  description: 'How to report a vulnerability privately.',                              url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
+  { name: 'Content removal',  description: 'Creators and rights holders: ask for a game to be removed or corrected.', url: `${REPO_BLOB}/.github/ISSUE_TEMPLATE/remove_game.yml`, group: 'policy' },
 
   // Meta
-  { name: 'License (MIT)',   description: 'The canonical license text.',                                            url: `${REPO_BLOB}/LICENSE`,                group: 'meta' },
-  { name: 'Changelog',       description: 'What changed when.',                                                     url: `${REPO_BLOB}/CHANGELOG.md`,           group: 'meta' },
+  { name: 'Licenses & notice', description: 'Code: MIT. Data and docs: CC BY 4.0. Not affiliated with itch.io.',    url: `${REPO_BLOB}/NOTICE.md`,              group: 'meta' },
+  { name: 'Data license',     description: 'What CC BY 4.0 covers in the catalog, and how to credit it.',           url: `${REPO_BLOB}/data_game/LICENSE.md`,   group: 'meta' },
+  { name: 'Changelog',        description: 'What changed when.',                                                     url: `${REPO_BLOB}/CHANGELOG.md`,           group: 'meta' },
 ]
 
 export const LEGAL_GROUP_LABELS: Record<LegalGroup, string> = {

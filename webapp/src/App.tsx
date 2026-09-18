@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useRef } from 'react'
-import { Routes, Route, useLocation } from 'react-router'
+import { Navigate, Routes, Route, useLocation } from 'react-router'
 import { Sidebar, MobileTopBar } from '@/components/sidebar'
 import { LegalGate } from '@/components/legal-gate'
 import ScrollToTop from '@/components/scroll-to-top'
@@ -68,7 +68,8 @@ export default function App() {
                   <Route path="/games" element={<Games />} />
                   <Route path="/games/:slug" element={<GameDetail />} />
                   <Route path="/charts" element={<Charts />} />
-                  <Route path="/deleted" element={<Deleted />} />
+                  <Route path="/removed" element={<Deleted />} />
+                  <Route path="/deleted" element={<Navigate to="/removed" replace />} />
                   <Route path="/settings" element={<Settings />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/suggest" element={<Suggest />} />

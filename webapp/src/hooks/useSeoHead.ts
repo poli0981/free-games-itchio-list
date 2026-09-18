@@ -5,7 +5,7 @@ import { isTauri } from '@/lib/runtime'
 
 // Pages worth indexing. Keep in sync with the <Routes> in App.tsx (and
 // worker/spa.ts, which answers unknown paths and game slugs with a 404).
-const INDEXED = ['/', '/games', '/games/:slug', '/charts', '/deleted', '/about', '/suggest'].map((path) => ({
+const INDEXED = ['/', '/games', '/games/:slug', '/charts', '/removed', '/about', '/suggest'].map((path) => ({
   path,
 }))
 

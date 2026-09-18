@@ -4,6 +4,7 @@ import { ExternalLink as ExternalLinkIcon } from 'lucide-react'
 import { usePrefs, LEGAL_VERSION } from '@/stores/prefs'
 import { useT } from '@/lib/i18n'
 import { LEGAL_LINKS, LEGAL_VI_INDEX_URL } from '@/lib/about'
+import { isTauri } from '@/lib/runtime'
 import { ExtLink } from '@/components/ext-link'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
@@ -19,10 +20,8 @@ import { Checkbox } from '@/components/ui/checkbox'
  * provides the focus trap and aria-modal labelling.
  */
 
-// Policy links + the canonical License — reuse about.ts, never hardcode URLs.
-const GATE_LINKS = LEGAL_LINKS.filter(
-  (l) => l.group === 'policy' || l.name === 'License (MIT)',
-)
+// The documents being accepted — reuse about.ts, never hardcode URLs.
+const GATE_LINKS = LEGAL_LINKS.filter((l) => l.inGate && (!l.appOnly || isTauri()))
 
 export function LegalGate({ children }: { children: ReactNode }) {
   const accepted = usePrefs((s) => s.acceptedLegalVersion)

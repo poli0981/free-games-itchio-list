@@ -13,7 +13,9 @@ import { catalogUrls, type DataSource } from './data'
 import { json } from './http'
 
 // Keep in sync with the <Routes> in src/App.tsx.
-const ROUTES = new Set(['/', '/games', '/charts', '/deleted', '/settings', '/about', '/suggest'])
+const ROUTES = new Set(['/', '/games', '/charts', '/removed', '/settings', '/about', '/suggest'])
+// Renamed routes: permanent redirects (the SPA would also redirect, but crawlers get a 301).
+const MOVED: Record<string, string> = { '/deleted': '/removed' }
 const GAME_ROUTE = /^\/games\/([a-z0-9-]+)$/
 const ERROR_PREVIEW_ROUTE = /^\/errors\/[a-z0-9-]+$/
 
@@ -61,6 +63,8 @@ export async function handleMiss(request: Request, url: URL, assets: Fetcher): P
     const cors = url.pathname.startsWith('/data/') ? { 'Access-Control-Allow-Origin': '*' } : undefined
     return json({ error: 'not_found' }, 404, cors)
   }
+  const moved = MOVED[url.pathname.replace(/\/+$/, '')]
+  if (moved) return Response.redirect(new URL(moved + url.search, url).toString(), 301)
   // "/" rather than "/index.html": auto-trailing-slash would redirect the latter.
   const shell = await assets.fetch(new Request(new URL('/', url), request))
   if (shell.status !== 200 || (await isAppRoute(url.pathname, { assets, origin: url.origin }))) {

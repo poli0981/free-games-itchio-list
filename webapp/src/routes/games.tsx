@@ -16,7 +16,7 @@ import { MobileCardList } from '@/components/data-table/mobile-card-list'
 import { gameColumns } from '@/components/data-table/columns'
 import type { FacetOption } from '@/components/data-table/faceted-filter'
 import { RouteError } from '@/components/route-error'
-import { useAllGames } from '@/hooks/useGames'
+import { useVisibleGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useT } from '@/lib/i18n'
 import { countBy, countByArray } from '@/lib/analytics'
@@ -37,7 +37,7 @@ function gameSearch(g: Game, q: string): boolean {
 export default function Games() {
   const t = useT()
   useDocumentTitle(t('titles.games'))
-  const games = useAllGames()
+  const games = useVisibleGames()
   const [globalFilter, setGlobalFilter] = useState('')
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [sorting, setSorting] = useState<SortingState>([{ id: 'name', desc: false }])

@@ -11,7 +11,7 @@ export const NOTIFICATION_DURATION_OPTIONS = [2_000, 4_000, 6_000, 10_000] as co
  * policy in docs/) to re-prompt every user once. Kept in sync with the
  * "Updated …" date in `about.legal.desc`. Stored value !== this → gate shows.
  */
-export const LEGAL_VERSION = '2026-06-14'
+export const LEGAL_VERSION = '2026-09-18'
 
 interface PrefsStore {
   sidebarCollapsed: boolean
@@ -20,6 +20,8 @@ interface PrefsStore {
   notificationsEnabled: boolean
   notificationDurationMs: number
   acceptedLegalVersion: string | null
+  /** 18+ games are hidden unless the visitor opted in (after confirming their age). */
+  showNsfw: boolean
   toggleSidebar: () => void
   setSidebarCollapsed: (v: boolean) => void
   setDensity: (d: Density) => void
@@ -27,6 +29,7 @@ interface PrefsStore {
   setNotificationsEnabled: (v: boolean) => void
   setNotificationDurationMs: (v: number) => void
   acceptLegal: () => void
+  setShowNsfw: (v: boolean) => void
 }
 
 export const usePrefs = create<PrefsStore>()(
@@ -38,6 +41,7 @@ export const usePrefs = create<PrefsStore>()(
       notificationsEnabled: true,
       notificationDurationMs: 4_000,
       acceptedLegalVersion: null,
+      showNsfw: false,
       toggleSidebar: () => set((s) => ({ sidebarCollapsed: !s.sidebarCollapsed })),
       setSidebarCollapsed: (v) => set({ sidebarCollapsed: v }),
       setDensity: (d) => set({ density: d }),
@@ -45,6 +49,7 @@ export const usePrefs = create<PrefsStore>()(
       setNotificationsEnabled: (v) => set({ notificationsEnabled: v }),
       setNotificationDurationMs: (v) => set({ notificationDurationMs: v }),
       acceptLegal: () => set({ acceptedLegalVersion: LEGAL_VERSION }),
+      setShowNsfw: (v) => set({ showNsfw: v }),
     }),
     { name: 'webapp.prefs' },
   ),
