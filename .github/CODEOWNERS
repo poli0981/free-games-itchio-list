@@ -1,0 +1,5 @@
+# Code owners: automatically requested as reviewers on pull requests.
+# Solo-maintained project, so the Maintainer owns everything.
+# Syntax: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @poli0981

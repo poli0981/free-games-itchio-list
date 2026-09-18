@@ -2,14 +2,74 @@
 
 All notable changes to this project will be documented here.
 
-## [Unreleased]
+## [4.0.0] - Unreleased (freeitchgames.win on Cloudflare: read-only site, review queue, new pipeline)
+
+Version 4 moves the website to **https://freeitchgames.win** on Cloudflare, makes it read-only for
+everyone (no sign-in), adds a maintainer-only admin with a review queue for new games, replaces the
+failing data crawls with a rotating refresh, and splits the licenses (code MIT, data and docs
+CC BY 4.0).
+
+### Upgrade notes
+
+- **The web app no longer signs in or edits.** The GitHub-token (PAT) sign-in, in-app editing, the
+  Add / Workflows pages and GPG commit signing are gone; on first load the app deletes the
+  encrypted token and key it stored before. Suggest games at https://freeitchgames.win/suggest.
+- **Old links keep working**: `…github.io/free-games-itchio-list/#/x` redirects to the new site,
+  and `#/x` links become `/x`.
+- **Desktop and Android apps** are read-only viewers too; they read the catalog from
+  freeitchgames.win. Install 4.0.0 over 3.x as usual.
+- **New legal terms** (ToS, Privacy Policy, EULA for the apps only, Disclaimer): the site asks you to
+  accept them again once.
+
+### Website & Worker
+
+- The site is served by a Cloudflare Worker with static assets ([`webapp/wrangler.jsonc`](webapp/wrangler.jsonc),
+  [`webapp/worker/`](webapp/worker)) and the catalog JSON is bundled into every build (`/data/*`,
+  plus a sitemap), so each data commit republishes the site; the desktop/Android apps read the same
+  files. Real URL paths instead of `#/` routes, per-page canonical URLs, and real 404s for unknown
+  pages and missing files (a stale script after a deploy can no longer be cached as HTML).
+- **Cover images** are resized once to small WebP copies (Cloudflare Image Transformations + R2)
+  and served from `/img/…` — about 4 KB instead of up to 3 MB per cover. Only catalog covers are
+  served.
+- **18+ games are hidden by default**; a visitor can show them in Settings after confirming they
+  are 18 or older (stored only in their browser). The removed-games page is now `/removed`
+  (`/deleted` redirects there). Aggregate, cookieless Cloudflare Web Analytics.
+- Enforced Content-Security-Policy and security headers; faster first load (~195 KB gzip, charts
+  load only when opened); browser floor Safari/iOS 15.4.
+- React Router 8, React 19.3, Vite 8 (rolldown), vitest; unused sign-in dependencies (Octokit,
+  OpenPGP.js) removed; Tauri drops its HTTP plugin and `Cargo.lock` is committed.
+
+### Adding games: review queue
+
+- **Suggest page** (`/suggest`): anyone can send an itch.io link (+ optional note); protected by
+  Cloudflare Turnstile and a rate limit.
+- **Browser extension API** (`POST /api/ingest`, Cloudflare Access service token, idempotent) —
+  the extension no longer needs a GitHub token.
+- **RSS discovery**: every 4 hours the Worker reads one itch.io "new & popular free" feed.
+- Everything lands in a **review queue** (Cloudflare D1). The maintainer approves or rejects it in
+  the new **admin** (`/admin`, Cloudflare Access), which also edits the three maintainer fields,
+  removes games with a public reason (deleting their resized covers) and restores removed games.
+  Approved games are committed by a GitHub App (verified commits) and scraped by the pipeline.
+
+### Licenses & legal
+
+- Code stays **MIT** (`LICENSE`, now "2025-2026 poli0981 (SkullMute)"); the catalog data
+  ([`data_game/LICENSE.md`](data_game/LICENSE.md)) and the documentation are **CC BY 4.0**
+  ([`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt)); creators' descriptions, cover images and
+  trademarks are excluded. [`NOTICE.md`](NOTICE.md) sums it up: not affiliated with itch.io.
+- Rewritten Terms of Use (with a content-removal process), Privacy Policy (Cloudflare as
+  processor, exact browser storage, retention, rights under Vietnam's Law No. 91/2025/QH15 and the
+  GDPR), Disclaimer, Security Policy and Code of Conduct, in English and Vietnamese. The EULA now
+  covers only the desktop and Android apps. Contact addresses: legal@, privacy@, security@ and
+  takedown@freeitchgames.win.
+- Issue templates: "Add games" points to the Suggest page, "Remove a game" gained a
+  rights-holder section; `CODEOWNERS` added.
 
 ### Fixed
 
 - **freeitchgames.win served the unbuilt `webapp/` source tree** (blank page; `/package.json`,
-  `/src/*` publicly readable). Added [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc) (Workers
-  static assets, SPA fallback, `workers_dev`/`preview_urls` off) and moved the Vite web build to
-  `webapp/dist` so Cloudflare Workers Builds deploys the real build.
+  `/src/*` publicly readable). The Vite web build now goes to `webapp/dist`, which
+  [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc) deploys (`workers_dev`/`preview_urls` off).
 - **All 15 Dependabot alerts / npm audit** — lockfile refreshed in-range (vite 8.3.0,
   react-router-dom 7.18.4, postcss 8.5.28, patched transitive deps); `npm audit` reports 0.
 - **Android release workflow** moved off Node 20 actions (setup-java v6, upload-artifact v7,
@@ -59,8 +119,10 @@ All notable changes to this project will be documented here.
 
 - `lists/*.md` genre tables, `generate_md.py`, `generate_table.yml`, `deleted_games.txt`,
   `log_deleted.*` — the catalog is web-only (freeitchgames.win).
-- Telegram bot ingest (`bot-ingest.yml`, `game_via_bot` issue template); the policies mark that
-  path as retired.
+- Telegram bot ingest (`bot-ingest.yml`, `game_via_bot` issue template) — retired.
+- The web app's sign-in, editing, Add and Workflows pages, GPG signing, and the GitHub Pages
+  deployment (`deploy_webapp.yml`, `notify-deploy.yml`, `pages-redirect/`; Pages keeps serving the
+  redirect stub it last published).
 - `notify-ci-failure.yml` (replaced by in-workflow notifications) and the old per-task bash wrappers.
 
 ### CI / security
@@ -81,16 +143,11 @@ All notable changes to this project will be documented here.
 
 ### Changed
 
-- GitHub Pages now only publishes a redirect stub ([`pages-redirect/`](pages-redirect)) that
-  forwards to freeitchgames.win (keeping `#/` routes) and deletes the old app's PAT/GPG keys from
-  that origin. `notify-deploy.yml` removed.
-- Static-asset security headers in [`webapp/public/_headers`](webapp/public/_headers)
-  (Referrer-Policy, frame denial, Permissions-Policy, COOP; CSP in report-only mode for now) and
-  immutable caching for hashed `/assets/*`.
-- Scraper workflows print unbuffered UTF-8 logs. The schedules of `check_paid`, `check_alive`,
-  `update_reviews` and `update_status` are paused (manual dispatch only): full passes over 2,600+
-  games exceed their timeouts and lose all work. A rotating refresh replaces them next.
-- Privacy Policy: interim Cloudflare hosting notice (§3a); dead `…/app/` links repointed.
+- The old GitHub Pages address serves a redirect stub that forwards to freeitchgames.win
+  (keeping `#/` routes) and deletes the old app's token and key storage on that origin.
+- Security headers in [`webapp/public/_headers`](webapp/public/_headers) (CSP, Referrer-Policy,
+  frame denial, Permissions-Policy, COOP) and immutable caching for hashed `/assets/*`.
+- Pipeline logs are unbuffered UTF-8.
 
 ## [3.9.0] - 2026-06-15 (Android minSdk → 11 / API 30)
 
@@ -271,7 +328,7 @@ All notable changes to this project will be documented here.
   - a route-level **ErrorBoundary** that detects stale-chunk failures after a
     redeploy and offers a one-click reload ("New version available"),
   - a hidden `/#/errors/:code` preview route,
-  - a static [`webapp/public/404.html`](webapp/public/404.html) served by
+  - a static `webapp/public/404.html` served by
     GitHub Pages for bad path URLs (bilingual, dark-mode aware, zero JS).
 
 ### Changed
@@ -360,7 +417,7 @@ All notable changes to this project will be documented here.
 ### Added
 
 - **Six new charts on `/charts`.**
-  - **Game count over time** — a `LineChart` of the catalog size by day, backed by a new `data_game/count_history.json` (date-keyed `{date, total}` series). [`scripts/data_store.py`](scripts/data_store.py) `_append_count_history()` upserts today's total on every catalog write (last-write-wins per UTC day). [`scripts/backfill_count_history.py`](scripts/backfill_count_history.py) is a one-time dev tool that reconstructs the series from git history (`data_game/index.json`, plus the pre-refactor `scripts/game_info.json`). The webapp loads it via `loadCountHistory` / `useCountHistory`.
+  - **Game count over time** — a `LineChart` of the catalog size by day, backed by a new `data_game/count_history.json` (date-keyed `{date, total}` series). [`scripts/data_store.py`](scripts/data_store.py) `_append_count_history()` upserts today's total on every catalog write (last-write-wins per UTC day). `scripts/backfill_count_history.py` is a one-time dev tool that reconstructs the series from git history (`data_game/index.json`, plus the pre-refactor `scripts/game_info.json`). The webapp loads it via `loadCountHistory` / `useCountHistory`.
   - **Genre treemap** — a Recharts `Treemap` with a custom cell renderer that hides labels on rectangles too small to fit them, so it stays legible on mobile.
   - **KPI summary cards** — total games / online / NSFW / deleted / average rating, above the Overview grid.
   - **Deletions over time** (bar, by month), **Deletion reasons** (pie: became-paid vs page-removed), and **Most rated games** (top 10 by `rating_count`).
@@ -407,14 +464,14 @@ All notable changes to this project will be documented here.
 
 ### Added
 
-- **Update reviews — bi-weekly workflow.** New [`scripts/update_reviews.py`](scripts/update_reviews.py), wrapper [`bash/update_reviews.sh`](bash/update_reviews.sh), and [`.github/workflows/update_reviews.yml`](.github/workflows/update_reviews.yml) re-scrape every existing game's itch.io page on the 1st and 15th of each month (05:00 UTC) and write fresh `rating` + `rating_count`. Network errors / 404 keep the old values. Touches only those two fields — everything else (annotations, metadata) is left alone.
-- **Update status — monthly workflow.** New [`scripts/update_status.py`](scripts/update_status.py), [`bash/update_status.sh`](bash/update_status.sh), and [`.github/workflows/update_status.yml`](.github/workflows/update_status.yml) refresh the `status` field on the 1st of each month (06:00 UTC). Same skip-on-error semantics.
-- **Force update — manual emergency button.** New [`scripts/force_update.py`](scripts/force_update.py), [`bash/force_update.sh`](bash/force_update.sh), and [`.github/workflows/force_update.yml`](.github/workflows/force_update.yml) accept an optional `url` input. Empty input re-scrapes every game; a single URL targets just that one. `workflow_dispatch` only — no schedule. Every run preserves the three user-editable annotations (`safe_virus`, `notes`, `nsfw`) per the read/write field convention in [CLAUDE.md](CLAUDE.md). Doubles as the canonical repair tool for mojibake left by older webapp commits — re-scrape pulls clean UTF-8 from itch.io.
+- **Update reviews — bi-weekly workflow.** New `scripts/update_reviews.py`, wrapper `bash/update_reviews.sh`, and `.github/workflows/update_reviews.yml` re-scrape every existing game's itch.io page on the 1st and 15th of each month (05:00 UTC) and write fresh `rating` + `rating_count`. Network errors / 404 keep the old values. Touches only those two fields — everything else (annotations, metadata) is left alone.
+- **Update status — monthly workflow.** New `scripts/update_status.py`, `bash/update_status.sh`, and `.github/workflows/update_status.yml` refresh the `status` field on the 1st of each month (06:00 UTC). Same skip-on-error semantics.
+- **Force update — manual emergency button.** New `scripts/force_update.py`, `bash/force_update.sh`, and [`.github/workflows/force_update.yml`](.github/workflows/force_update.yml) accept an optional `url` input. Empty input re-scrapes every game; a single URL targets just that one. `workflow_dispatch` only — no schedule. Every run preserves the three user-editable annotations (`safe_virus`, `notes`, `nsfw`) per the read/write field convention in [CLAUDE.md](CLAUDE.md). Doubles as the canonical repair tool for mojibake left by older webapp commits — re-scrape pulls clean UTF-8 from itch.io.
 - **`generate_table.yml` chained on the three new workflows** so `lists/*.md` stay in sync after any data mutation.
 
 ### Fixed
 
-- **UTF-8 mojibake on webapp commits.** [`webapp/src/lib/github/contents.ts`](webapp/src/lib/github/contents.ts) `readFileWithSha` and [`webapp/src/lib/github/git-data.ts`](webapp/src/lib/github/git-data.ts) `bulkDeleteGames` were decoding GitHub's base64 content with `atob` alone, producing a Latin-1 binary string. Multi-byte UTF-8 sequences (e.g. Vietnamese `ã` = `0xC3 0xA3`) became two Latin-1 code points (`Ã£`); the next write re-encoded them as UTF-8 bytes, double-corrupting on every edit. Confirmed live damage in `data_game/game_info_002.json` (`BotÃÂÃÂ£o Esquerdo` was originally `Botão Esquerdo`). Extracted a shared helper [`webapp/src/lib/github/encoding.ts`](webapp/src/lib/github/encoding.ts) (`base64ToUtf8` / `utf8ToBase64`) that uses `TextDecoder('utf-8')` / `TextEncoder` and routes both call sites through it. Write path was already correct.
+- **UTF-8 mojibake on webapp commits.** `webapp/src/lib/github/contents.ts` `readFileWithSha` and `webapp/src/lib/github/git-data.ts` `bulkDeleteGames` were decoding GitHub's base64 content with `atob` alone, producing a Latin-1 binary string. Multi-byte UTF-8 sequences (e.g. Vietnamese `ã` = `0xC3 0xA3`) became two Latin-1 code points (`Ã£`); the next write re-encoded them as UTF-8 bytes, double-corrupting on every edit. Confirmed live damage in `data_game/game_info_002.json` (`BotÃÂÃÂ£o Esquerdo` was originally `Botão Esquerdo`). Extracted a shared helper `webapp/src/lib/github/encoding.ts` (`base64ToUtf8` / `utf8ToBase64`) that uses `TextDecoder('utf-8')` / `TextEncoder` and routes both call sites through it. Write path was already correct.
 
 ### Notes
 
@@ -428,15 +485,15 @@ All notable changes to this project will be documented here.
 
 ### Added
 
-- **In-browser GPG commit signing.** Every write the webapp makes (single-file edits, bulk edit/delete, queueing URLs) can now be GPG-signed client-side. New `webapp/src/lib/gpg/` module: [`canonicalize.ts`](webapp/src/lib/gpg/canonicalize.ts) builds the exact byte string Git would hash, [`sign.ts`](webapp/src/lib/gpg/sign.ts) lazy-imports `openpgp` and exposes `loadPrivateKey` / `signCommit` / `verifyDetached`, [`storage.ts`](webapp/src/lib/gpg/storage.ts) wraps localStorage helpers. Verified byte-for-byte against `git cat-file commit <sha>` so the signed canonical exactly matches what GitHub will recompute (no trailing-newline drift). Private keys are decrypted once at import and re-encrypted with the webapp passphrase (AES-GCM, same scheme as the PAT) — `openpgp` is loaded only when the Commit Signing card is opened or a commit is being signed (`vendor-openpgp` chunk, ~129 KB gz, lazy).
-- **Settings → Commit signing card.** New [`webapp/src/components/settings/gpg-card.tsx`](webapp/src/components/settings/gpg-card.tsx) — three states (not configured / locked / unlocked) with Import (paste armored or upload `.asc`), Unlock, Test sign (round-trip verify), Copy public key, Lock, Remove. Shows the imported key's UIDs as badges and flags a clear mismatch warning if the configured commit-author email isn't in the key's UID list (the most common cause of GitHub's "Someone may be trying to trick you" warning). After import, primary UID email auto-populates Commit author so commits Verify on the first try.
-- **Settings Phase A — Appearance / Session / Commit author / Notifications cards.** [`webapp/src/routes/settings.tsx`](webapp/src/routes/settings.tsx) gained four new cards backed by extended preferences in [`webapp/src/stores/prefs.ts`](webapp/src/stores/prefs.ts): theme picker (Light / Dark / System), layout density (Normal / Compact), sidebar collapse mirror, idle-timeout slider (5 / 15 / 30 / 60 / 120 min — replaces the hard-coded 30-min constant in [`auth.ts`](webapp/src/stores/auth.ts)), commit-author name/email override, toast enable + duration. Density applies via `html[data-density='compact']` rules in [`index.css`](webapp/src/index.css); toasts are gated through a new [`AppToaster`](webapp/src/components/app-toaster.tsx) wrapper that reads prefs.
+- **In-browser GPG commit signing.** Every write the webapp makes (single-file edits, bulk edit/delete, queueing URLs) can now be GPG-signed client-side. New `webapp/src/lib/gpg/` module: `canonicalize.ts` builds the exact byte string Git would hash, `sign.ts` lazy-imports `openpgp` and exposes `loadPrivateKey` / `signCommit` / `verifyDetached`, `storage.ts` wraps localStorage helpers. Verified byte-for-byte against `git cat-file commit <sha>` so the signed canonical exactly matches what GitHub will recompute (no trailing-newline drift). Private keys are decrypted once at import and re-encrypted with the webapp passphrase (AES-GCM, same scheme as the PAT) — `openpgp` is loaded only when the Commit Signing card is opened or a commit is being signed (`vendor-openpgp` chunk, ~129 KB gz, lazy).
+- **Settings → Commit signing card.** New `webapp/src/components/settings/gpg-card.tsx` — three states (not configured / locked / unlocked) with Import (paste armored or upload `.asc`), Unlock, Test sign (round-trip verify), Copy public key, Lock, Remove. Shows the imported key's UIDs as badges and flags a clear mismatch warning if the configured commit-author email isn't in the key's UID list (the most common cause of GitHub's "Someone may be trying to trick you" warning). After import, primary UID email auto-populates Commit author so commits Verify on the first try.
+- **Settings Phase A — Appearance / Session / Commit author / Notifications cards.** [`webapp/src/routes/settings.tsx`](webapp/src/routes/settings.tsx) gained four new cards backed by extended preferences in [`webapp/src/stores/prefs.ts`](webapp/src/stores/prefs.ts): theme picker (Light / Dark / System), layout density (Normal / Compact), sidebar collapse mirror, idle-timeout slider (5 / 15 / 30 / 60 / 120 min — replaces the hard-coded 30-min constant in `auth.ts`), commit-author name/email override, toast enable + duration. Density applies via `html[data-density='compact']` rules in [`index.css`](webapp/src/index.css); toasts are gated through a new [`AppToaster`](webapp/src/components/app-toaster.tsx) wrapper that reads prefs.
 - **Mobile card view for the games table.** New [`webapp/src/lib/use-is-mobile.ts`](webapp/src/lib/use-is-mobile.ts) (`matchMedia('(max-width: 767px)')`) and [`webapp/src/components/data-table/mobile-card-list.tsx`](webapp/src/components/data-table/mobile-card-list.tsx). Below the `md` breakpoint, [`DataTable`](webapp/src/components/data-table/data-table.tsx) renders a stacked card list (thumbnail + name + dev + genre/status/NSFW/safe badges, tap-to-detail, selection checkbox) instead of the 9-column virtualized table that overflowed at 430 px. Pagination is shared between both views.
-- **Workflows route mobile fallback.** [`workflows.tsx`](webapp/src/routes/workflows.tsx) now dual-renders the action picker — a `<Select>` dropdown below `md`, the existing `TabsList` at `md` and above. Fixes the overflow from five `whitespace-nowrap` triggers in an `inline-flex` TabsList at 430 px viewport.
+- **Workflows route mobile fallback.** `workflows.tsx` now dual-renders the action picker — a `<Select>` dropdown below `md`, the existing `TabsList` at `md` and above. Fixes the overflow from five `whitespace-nowrap` triggers in an `inline-flex` TabsList at 430 px viewport.
 
 ### Changed
 
-- **All write paths route through the Git Data API.** [`webapp/src/lib/github/contents.ts`](webapp/src/lib/github/contents.ts) `putFile` (`PUT /repos/.../contents/{path}`) is gone — that endpoint authors commits as the PAT and never accepts a `signature` field. Replaced with `commitSingleFile` which delegates to [`atomicCommit`](webapp/src/lib/github/git-data.ts) so single-file edits (game annotations, `temp_link.json` queue) get the same signer plumbing as bulk operations. `atomicCommit` gained an optional `signer` parameter (defaulting to [`getSignerIfEnabled()`](webapp/src/lib/github/signer.ts)) that, when present, builds the canonical commit object, signs detached binary-mode via openpgp, and passes `author` / `committer` / `signature` to `git.createCommit`. Commit author identity falls back through prefs override → imported key's primary UID email → GitHub user.
+- **All write paths route through the Git Data API.** `webapp/src/lib/github/contents.ts` `putFile` (`PUT /repos/.../contents/{path}`) is gone — that endpoint authors commits as the PAT and never accepts a `signature` field. Replaced with `commitSingleFile` which delegates to `atomicCommit` so single-file edits (game annotations, `temp_link.json` queue) get the same signer plumbing as bulk operations. `atomicCommit` gained an optional `signer` parameter (defaulting to `getSignerIfEnabled()`) that, when present, builds the canonical commit object, signs detached binary-mode via openpgp, and passes `author` / `committer` / `signature` to `git.createCommit`. Commit author identity falls back through prefs override → imported key's primary UID email → GitHub user.
 - **About page** lists `OpenPGP.js` 6.3 under Data dependencies; the [`webapp/vite.config.ts`](webapp/vite.config.ts) `manualChunks` rule emits a dedicated `vendor-openpgp` chunk so the cost is only paid when a user opens the signing card.
 - **README + README.vi badges** bumped to `3.3.0`.
 
@@ -467,20 +524,20 @@ All notable changes to this project will be documented here.
 - **Mobile drawer navigation.** New [`webapp/src/components/ui/sheet.tsx`](webapp/src/components/ui/sheet.tsx) (shadcn pattern over the existing `@radix-ui/react-dialog`) and a `MobileTopBar` in [`webapp/src/components/sidebar.tsx`](webapp/src/components/sidebar.tsx). Below `md`, the sidebar collapses behind a hamburger; above, the desktop sidebar behaves as before. Touch targets in the nav now meet the 44pt iOS HIG minimum on small screens.
 - **DataTable column priorities.** Each column declares `meta.priority: 1 | 2 | 3` in [`columns.tsx`](webapp/src/components/data-table/columns.tsx). [`data-table.tsx`](webapp/src/components/data-table/data-table.tsx) hides priority 2 below `md` and priority 3 below `lg`, so the table is usable on a phone without horizontal scrolling through every column.
 - **PWA manifest + icons.** [`webapp/public/manifest.webmanifest`](webapp/public/manifest.webmanifest), [`icon-192.png`](webapp/public/icon-192.png), [`icon-512.png`](webapp/public/icon-512.png) — Add to Home Screen on iOS without a service worker. Generator script: [`webapp/scripts/gen_assets.py`](webapp/scripts/gen_assets.py).
-- **SEO infrastructure.** [`webapp/index.html`](webapp/index.html) now ships description, theme-color (per scheme), Open Graph (title/description/image/url/type/locale), Twitter card (`summary_large_image`), `canonical`, `apple-touch-icon`, `manifest`, and `preconnect` to `img.itch.zone` + `raw.githubusercontent.com`. [`robots.txt`](webapp/public/robots.txt) and [`sitemap.xml`](webapp/public/sitemap.xml) added under `webapp/public/`.
+- **SEO infrastructure.** [`webapp/index.html`](webapp/index.html) now ships description, theme-color (per scheme), Open Graph (title/description/image/url/type/locale), Twitter card (`summary_large_image`), `canonical`, `apple-touch-icon`, `manifest`, and `preconnect` to `img.itch.zone` + `raw.githubusercontent.com`. [`robots.txt`](webapp/public/robots.txt) and `sitemap.xml` added under `webapp/public/`.
 - **OG image.** [`webapp/public/og.png`](webapp/public/og.png) (1200×630) + [`og.webp`](webapp/public/og.webp) generated by `gen_assets.py`. Brand-coloured (`#863bff` purple, cyan accent) with project name, tagline, and URL.
 - **Per-route titles.** New [`useDocumentTitle`](webapp/src/hooks/useDocumentTitle.ts) hook (no `react-helmet-async` dependency). Each route now sets a contextual title (`Charts — Itch.io Free Games Database`, etc.); game-detail uses the game name.
 - **Hash-anchor scroll.** [`App.tsx`](webapp/src/App.tsx) now wires a `ScrollToHash` listener so links like `/about#support` scroll to the matching element under HashRouter.
 - **About page Telegram entries.** New `messaging` social group with **Telegram (DM)** and **Telegram bot (game submission)** plus a privacy reminder to never paste a numeric ID into public channels. About also surfaces all five FUNDING.yml destinations (GitHub Sponsors, Patreon, Ko-fi, Buy Me a Coffee, PayPal) with a footnote on PayPal explaining the legal-name receipt.
 - **Sidebar Support link.** Persistent heart-icon link from the sidebar (collapsed and expanded) to `/about#support`.
-- **Telegram bot contribution flow.** [`CONTRIBUTING.md §1b`](CONTRIBUTING.md#1b-add-games-via-telegram-bot-my_skull_bot--alternative-to-issues) describes the bot path (DM owner → numeric ID added to local whitelist → bot dispatches `bot-ingest.yml`). Cross-linked from [README.md](README.md), [README.vi.md](README.vi.md), and the new [issue template `game_via_bot.yml`](.github/ISSUE_TEMPLATE/game_via_bot.yml). Vietnamese mirror in [`docs/i18n/vi/CONTRIBUTING.md`](docs/i18n/vi/CONTRIBUTING.md).
+- **Telegram bot contribution flow.** `CONTRIBUTING.md §1b` describes the bot path (DM owner → numeric ID added to local whitelist → bot dispatches `bot-ingest.yml`). Cross-linked from [README.md](README.md), [README.vi.md](README.vi.md), and the new issue template `game_via_bot.yml`. Vietnamese mirror in [`docs/i18n/vi/CONTRIBUTING.md`](docs/i18n/vi/CONTRIBUTING.md).
 - **Privacy + ToS clauses for the bot path.** [`docs/ToS.md §14`](docs/ToS.md) and [`docs/PrivacyPolicy.md §15`](docs/PrivacyPolicy.md) (plus VI mirrors) document Telegram-ID handling: opt-in, operator-side whitelist only, never committed to this repo, removable on DM.
 - **`docs/pc_spec.md` + `docs/dev_env.md` (EN + VI).** Maintainer hardware spec, mobile test devices (iPhone 14 Pro / 13 Pro Max, iOS 26.x on Chrome + Brave), and dev-env toolchain (Python 3.12, Node ≥ 22, Rust stable, JetBrains 2026.x). Cross-linked from README and CONTRIBUTING.
 - **Auto-create GitHub Discussion workflow.** [`announce-discussion.yml`](.github/workflows/announce-discussion.yml) — on `release: published` posts to the **Announcements** category; on push to `docs/**` / `CHANGELOG.md` / `README*.md` posts to **General**, gated by `[skip-discuss]` in the head-commit message and a quiet skip on `bot-ingest:` commits. Uses `gh api graphql` directly (no third-party action). Setup: configure repo variables `DISCUSSION_REPO_ID`, `DISCUSSION_ANNOUNCEMENTS_CATEGORY_ID`, `DISCUSSION_GENERAL_CATEGORY_ID` (run the GraphQL pre-flight query in the workflow header to fetch them).
 
 ### Changed
 
-- **CI notify wrappers.** [`notify-ci-failure.yml`](.github/workflows/notify-ci-failure.yml), [`notify-deploy.yml`](.github/workflows/notify-deploy.yml), and [`notify-release-pipeline.yml`](.github/workflows/notify-release-pipeline.yml) replace `workflows: ["*"]` with explicit allowlists. Every workflow run no longer fans out to all three wrappers; the Actions tab is much quieter and the per-event reusable filtering is what it always should have been.
+- **CI notify wrappers.** `notify-ci-failure.yml`, `notify-deploy.yml`, and [`notify-release-pipeline.yml`](.github/workflows/notify-release-pipeline.yml) replace `workflows: ["*"]` with explicit allowlists. Every workflow run no longer fans out to all three wrappers; the Actions tab is much quieter and the per-event reusable filtering is what it always should have been.
 - **`bot-ingest.yml` cleanup.** Removed a dead final step that referenced a non-existent `${{ secrets.BOT_TOKEN }}` and a `result.txt` file. The Python `success`/`failure` Telegram callback steps above already handle both outcomes.
 - **Image hints.** Game thumbnails in [`columns.tsx`](webapp/src/components/data-table/columns.tsx) and the hero in [`game-detail.tsx`](webapp/src/routes/game-detail.tsx) now declare `width`/`height` (CLS), `decoding="async"`, and `fetchPriority` (high for hero, low for table rows). itch.io thumbnails remain external — full WebP recompression is intentionally deferred (would require an image proxy).
 - **About support card** mirrors `.github/FUNDING.yml` exactly: 5 entries (GitHub Sponsors, Patreon, Ko-fi, BMC, PayPal).
@@ -693,9 +750,9 @@ The Python pipeline from 2.0.0 is untouched and still drives the daily data upda
 Added 33 games. See [#22](https://github.com/poli0981/free-games-itchio-list/issues/22) and [#23](https://github.com/poli0981/free-games-itchio-list/issues/23).
 
 ### New Features
-- Delete game with correct link in [`delete_game.py`](/scripts/delete_game.py). See [#20](https://github.com/poli0981/free-games-itchio-list/issues/20).
-- Export JSON → `.csv`/`.xlsx` in [`export_csv.py`](/scripts/export_csv.py). See [#21](https://github.com/poli0981/free-games-itchio-list/issues/21).
-- Check duplicate data in JSON file in [`check_duplicate.py`](/scripts/check_duplicate.py). See [#19](https://github.com/poli0981/free-games-itchio-list/issues/19).
+- Delete game with correct link in `delete_game.py`. See [#20](https://github.com/poli0981/free-games-itchio-list/issues/20).
+- Export JSON → `.csv`/`.xlsx` in `export_csv.py`. See [#21](https://github.com/poli0981/free-games-itchio-list/issues/21).
+- Check duplicate data in JSON file in `check_duplicate.py`. See [#19](https://github.com/poli0981/free-games-itchio-list/issues/19).
 
 ## [1.0.3] - Date unknown (Improvements ⚙️)
 
@@ -718,7 +775,7 @@ Added 33 games. See [#22](https://github.com/poli0981/free-games-itchio-list/iss
 ### Added
 - Full curated list of free itch.io games with auto-daily updates via GitHub Actions.
 - Scraping script ([`update_info.py`](scripts/update_info.py)): add links → scrape title, dev, genre, description, NSFW flag, thumbnail.
-- MD table generator ([`generate_md.py`](scripts/generate_md.py)): split by genre, 300 max per file, in `/lists/`.
+- MD table generator (`generate_md.py`): split by genre, 300 max per file, in `/lists/`.
 - Columns: No | Thumb | Name | Dev | Short Desc | Link | Safe | Notes | NSFW.
 - [`temp_link.json`](/scripts/temp_link.json) for easy manual adds (Actions process daily).
 - Full docs: [DISCLAIMER](/docs/DISCLAIMER.md), [PRIVACY](/docs/PrivacyPolicy.md), [TERMS](/docs/ToS.md), [EULA](/docs/EULA.md), [SECURITY](SECURITY.md), [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md), [CONTRIBUTING](CONTRIBUTING.md), [ACKNOWLEDGEMENTS](/docs/ACKNOWLEDGEMENTS.md).

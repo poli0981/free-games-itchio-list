@@ -1,166 +1,175 @@
 # Terms of Use
 
-Last updated: 2026-05-10
+Last updated: 2026-09-18
 
-These Terms of Use ("Terms") govern Your use of the Repository, the Webapp, and the Desktop App. They are written in plain language with deliberate humor — but they apply.
+Applies from: the release of version 4.0.0.
 
-> **TL;DR**: Don't break things, don't spam, don't add malware, don't abuse the GitHub API or itch.io. Use the webapp's PAT feature responsibly. The Maintainer can remove anything for any reason.
+These Terms of Use ("Terms") govern your use of the website **https://freeitchgames.win**, the desktop and Android apps, and the public catalog data of `free-games-itchio-list`. They are written in plain language, but they are a real agreement. They replace the older Terms and also cover what the old web-app "EULA" used to say; the [EULA](EULA.md) now covers only the app installers and the Android APK.
+
+> **TL;DR**: Browse, share, fork the code (MIT) and reuse the data with credit (CC BY 4.0). Don't bulk-scrape the site (use the `/data` files), don't hotlink `/img`, don't spam the Suggest form, don't poke at `/admin`, and don't pretend to be itch.io or the Maintainer. Game creators can get a game removed or corrected. Adult content stays hidden unless you opt in.
 
 ## 1. Definitions
 
-The defined terms in [EULA §1](EULA.md#1-definitions) apply here as well: "The Repository", "The Webapp", "The Desktop App", "The Catalog", "The Maintainer", "You".
+- **"The Website"**: https://freeitchgames.win, including its pages and endpoints (such as `/data`, `/img`, `/suggest` and `/api/…`). The old address https://poli0981.github.io/free-games-itchio-list/ only redirects to it.
+- **"The Apps"**: the desktop apps (Windows, macOS, Linux) and the Android APK built from the same code and distributed on GitHub Releases. They are read-only viewers of the Catalog.
+- **"The Catalog"**: the list of games and their data: `data_game/`, `scripts/deleted_games.json`, and the files derived from them and served under https://freeitchgames.win/data.
+- **"The Repository"**: https://github.com/poli0981/free-games-itchio-list, including its code, data, documentation, issues and discussions.
+- **"The Project"**: the Website, the Apps, the Catalog and the Repository together.
+- **"Games"**: the games on itch.io that the Catalog lists and links to.
+- **"The Maintainer"**: poli0981 (SkullMute), an individual in Vietnam who runs the Project as a hobby.
+- **"You"**: any person, or any automated agent, that uses the Project.
 
-## 2. Acceptance
+## 2. Acceptance and age
 
-By viewing, cloning, forking, starring, contributing to, opening an issue against, deploying, running, or otherwise interacting with the Repository, the Webapp, or the Desktop App, You agree to these Terms. If You do not agree, do not use them.
+- By using the Website or the Apps, you agree to these Terms and to the policies they refer to: the [Privacy Policy](PrivacyPolicy.md), the [Disclaimer](DISCLAIMER.md) and, for the Apps, the [EULA](EULA.md).
+- On your first visit, the Website and the Apps show a legal gate that lists these documents. You accept them by ticking the box and choosing "Accept & continue". If you decline, the Website and the Apps stay locked; in that case, please don't use them.
+- You must be **at least 16 years old** to use the Website or the Apps; the legal gate asks you to confirm this. Adult content requires you to be **18 or older** (see section 8).
+- When you contribute through GitHub (issues, pull requests, comments, discussions), these Terms apply to your contribution alongside GitHub's own terms and the [Code of Conduct](../CODE_OF_CONDUCT.md).
 
-## 3. Permitted uses
+## 3. What the Project is (and is not)
 
-You are welcome to:
+- A curated, automatically updated catalog of free games on itch.io. Most of each game's data is copied from its public itch.io page and re-checked on a schedule; only three fields (`safe_virus`, `notes`, `nsfw`) are written by the Maintainer.
+- The Website is **read-only for everyone**: there are no accounts, no sign-in, no comments, no ads and no payments. The admin area is for the Maintainer only.
+- The Project does **not** host, sell or distribute any game. Every game link goes to itch.io, where downloading and playing are governed by itch.io's terms and each creator's own terms.
+- The Project is provided free of charge, as a hobby. There is no service-level agreement.
 
-- Browse the Catalog, on GitHub or via the Webapp / Desktop App.
-- Click through to itch.io pages and download games (subject to itch.io's terms and each developer's terms).
-- Submit new game URLs via the **[Add Games]** issue template.
-- Submit removal requests via **[Remove Games]**.
-- Report bugs, suggest features, give feedback via the corresponding templates.
-- Open Pull Requests with code, data, or documentation improvements.
-- Self-host the Webapp or build the Desktop App for personal, educational, or commercial use under the MIT License.
+## 4. What you may do
 
-## 4. Contributor obligations
+- Browse the Website and the Apps, and follow links to itch.io.
+- Share links to the Website and to game pages.
+- Download and reuse the Catalog data under **CC BY 4.0**, with credit (see section 11). For programmatic access, use the published JSON files under https://freeitchgames.win/data or the Repository; please cache them instead of downloading them again on every request.
+- Use, fork, modify and redistribute the code under the **MIT License**.
+- Suggest a free itch.io game on the Suggest page (see section 5).
+- Report bugs, give feedback and open pull requests through the Repository's templates.
+- Ask for a game to be removed or its data corrected (see section 7).
 
-If You contribute to the Repository (issues, PRs, edits via the Webapp), You represent that:
+## 5. Suggestions and contributions
 
-- The content You submit (code, text, game URLs) is either Your own work or properly attributed and licensed for inclusion.
-- Game URLs You submit point to genuinely **free-to-play** games on itch.io. Demos of paid games, "name your own price (minimum > 0)" titles, and timed-free promos do not qualify.
-- The submission contains no malware, no phishing, no doxxing, no copyright infringement, and nothing that would embarrass the Maintainer's poor mother.
-- You grant the Maintainer the right to incorporate Your contribution into the Repository under the MIT License.
+- **Suggest page** (https://freeitchgames.win/suggest): you can submit an itch.io game link and an optional note of up to 500 characters. The page uses Cloudflare Turnstile against spam and is rate limited.
+- The note is seen only by the Maintainer and is deleted after 180 days. **Do not put personal data in it.** See the [Privacy Policy](PrivacyPolicy.md).
+- Every suggestion goes into a **review queue**. Nothing enters the Catalog until the Maintainer approves it, and the Maintainer has no obligation to accept a suggestion or to reply. Approved links are then scraped by the pipeline, and games that turn out to be paid are dropped.
+- Only genuinely **free-to-play** games on itch.io qualify. Demos of paid games, "name your own price" titles with a minimum above zero, and time-limited free promotions do not.
+- By submitting anything to the Project (a suggestion, an issue, a pull request or a comment), you confirm that:
+  - it is your own work, or you have the right to share it;
+  - it contains no malware, phishing, scams, doxxing, copyright infringement or illegal content, and does not link to any;
+  - you are not using it to send someone else's personal data.
+- **Inbound = outbound**: contributions to the code are licensed under the MIT License, and contributions to the data and documentation under CC BY 4.0, the same licenses the Project uses.
+- Issues, pull requests and comments are public on GitHub under your account.
 
-## 5. Prohibited activities
+## 6. What you may not do
 
 You agree **not** to:
 
-### 5.1 Catalog & content
+1. **Bulk-scrape** the Website or its API beyond the published `/data` files. Use the `/data` JSON files or the Repository instead; it is cheaper for everyone.
+2. **Abuse the image proxy** (`/img`): it exists only to show cover images on the Website. Don't hotlink `/img` URLs from other sites or apps, and don't use it to fetch images in bulk.
+3. **Access restricted areas without authorization**: `/admin`, the admin API (`/api/admin/…`) and the ingest API (`/api/ingest`) are for the Maintainer only. Good-faith security research is welcome under the rules of the [Security Policy](../SECURITY.md).
+4. **Spam the Suggest form**, or circumvent Turnstile or the rate limits (for example with scripts or rotating IP addresses).
+5. **Submit links to malware**, scams, phishing, or illegal content, anywhere in the Project.
+6. **Misrepresent affiliation**: don't claim to be the Maintainer or the Project, don't present a fork or copy as the official Project, don't claim that the Project is run or endorsed by itch.io, and don't use the names "poli0981" or "SkullMute" to endorse your own work without prior written permission.
+7. **Disrupt the Project**: don't attempt to overload, break or impair the Website (for example by denial-of-service), and don't use the Project to put unreasonable load on itch.io. If you run the pipeline code yourself, you are responsible for complying with itch.io's terms and for keeping its request pacing.
+8. **Make false removal or copyright claims**, or claim to be a game's creator or rights holder when you are not.
+9. **Harass, threaten, dox or impersonate** anyone through any channel related to the Project (issues, pull requests, discussions, Discord, social media).
+10. Use the Project for any purpose that is unlawful where you are or in Vietnam.
 
-- Submit games that are not free, that are scams, that distribute malware, or that violate itch.io's terms.
-- Spam the issue tracker with low-effort, duplicate, or off-topic posts.
-- Submit removal requests for games You do not own (use **Bug Report** or **Feedback** templates instead).
-- Post personal information about the Maintainer or any contributor.
+## 7. Content removal and copyright
 
-### 5.2 Webapp
+Anyone can ask for a game to be removed from the Catalog or for its data to be corrected. Game creators and rights holders are especially welcome to do so.
 
-- Use the Webapp's PAT (Personal Access Token) feature with a token granting access to repositories You are not authorized to write to.
-- Attempt to extract another user's PAT from a shared device by exploiting browser-storage access (this is also a violation of GitHub's terms).
-- Bypass or attempt to bypass the AES-GCM encryption applied to PATs in `localStorage` to gain unauthorized access.
-- Use the Webapp as a relay to perform automated, large-scale GitHub API calls against repositories or organizations You are not authorized to interact with.
+**How to ask**
 
-### 5.3 itch.io and scraping
+- Email **takedown@freeitchgames.win**, or
+- open a ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) in the Repository (it includes a copyright-claim section). GitHub issues are public, so use email for anything you don't want published.
 
-- Repeatedly trigger the `update.yml` workflow against URLs in a way that produces unreasonable load on itch.io (the Webapp's Add page rate-limits client-side; do not script around it).
-- Fork the scraper, remove the rate-limiting (`scraper.py` already pauses 2.5–5 s between requests + 15–30 s every 20), and run it at high frequency. Itch.io's terms govern automated access; the Maintainer disclaims responsibility for forks that violate them.
+**Include**
 
-### 5.4 Desktop App
+- the game's itch.io URL (or its page on the Website);
+- who you are: the creator, the rights holder, or someone authorized to act for them;
+- the reason (for example: a copyright claim, you don't want the game listed, the data is wrong, or the game is no longer free). For a copyright claim, say which material (for example the description or the cover image) the claim is about.
 
-- Repackage the signed installers and redistribute them as if they were produced by a different vendor.
-- Strip the About page or attribution before redistributing the Desktop App publicly.
+**What happens**
 
-### 5.5 General
+- The Maintainer removes the record from the Catalog and logs the removal, with a reason, in the public list of removed games (https://freeitchgames.win/removed).
+- The resized copies of the cover image stored on Cloudflare R2 are deleted, and cached copies expire from Cloudflare's cache.
+- The Git history of the public Repository keeps past versions of the data. The Maintainer cannot rewrite public history, except where there is an exceptional legal necessity. Copies that others have already made (forks, downloaded data) are outside the Maintainer's control.
+- Target: within **7 days**; urgent legal requests are handled sooner. If a request is unclear, the Maintainer may ask follow-up questions.
 
-- Use the Repository, Webapp, or Desktop App for any unlawful purpose under the laws of Your jurisdiction or the Maintainer's (Vietnam).
-- Harass, threaten, or impersonate others through any channel related to this project (issues, PRs, Discord servers, social media).
+## 8. Adult (NSFW) content
 
-## 6. Personal Access Tokens (PAT) — Your responsibility
+- Games flagged `nsfw: Yes` are **hidden by default**, cover images included.
+- You can opt in to 18+ content in Settings (https://freeitchgames.win/settings) after confirming that you are **18 or older**. By opting in, you also confirm that viewing such content is lawful where you are. The choice is stored only in your browser (`webapp.prefs`), and you can switch it off at any time.
+- The `nsfw` flag is a best-effort label and may be wrong. Check the itch.io page yourself before downloading if this matters to you.
 
-The Webapp's optional write features require a GitHub fine-grained PAT. **You** are solely responsible for:
+## 9. Games, safety and third-party services
 
-- Choosing a PAT scope that is no broader than what You actually need (typically `Contents: Read & write` + `Actions: Read & write`, scoped to a single repository).
-- Choosing a strong passphrase for AES-GCM encryption at rest.
-- Locking the PAT (Settings → Lock) when stepping away from a shared device.
-- Removing the PAT (Settings → Remove saved PAT) when no longer needed.
-- Rotating the PAT if You suspect compromise.
+- The Games belong to their creators and are provided by them through itch.io. The Project has no control over them.
+- The Project does **not** scan downloads. The `safe_virus` field is a manual note, not a guarantee. Treat every download as untrusted until you have checked it yourself. See the [Disclaimer](DISCLAIMER.md).
+- The Project relies on third-party services such as itch.io, GitHub and Cloudflare, which have their own terms and policies. The [Privacy Policy](PrivacyPolicy.md) explains what each of them processes.
 
-The Maintainer never sees, transmits, or stores Your PAT. See [Privacy Policy](PrivacyPolicy.md) and [Security Policy](../SECURITY.md) for details on the PAT lifecycle.
+## 10. No affiliation with itch.io
 
-## 7. Intellectual property
+The Project is **not affiliated with, endorsed by, or sponsored by itch.io** or Leaf Corcoran / itch corp. "itch.io", game names, logos and other trademarks belong to their respective owners and are used only to identify the games and the platform. See [NOTICE.md](../NOTICE.md).
 
-- The code, data structures, scripts, generated tables, webapp source, and documentation are © the Maintainer (poli0981 / SkullMute), licensed under the [MIT License](../LICENSE).
-- Games and game metadata (names, descriptions, screenshots, tags) belong to their respective developers and itch.io. See [DISCLAIMER §4](DISCLAIMER.md#4-third-party-content).
-- Third-party open-source dependencies are governed by their own licenses; see the **Third-party software** section of the [About page](https://freeitchgames.win/#/about).
+## 11. Intellectual property and licenses
 
-## 8. Termination
+- **Code** (everything in the Repository not listed below, such as `scripts/`, `webapp/`, `bash/`, workflows and tests): **MIT License**, Copyright (c) 2025-2026 poli0981 (SkullMute). See [`LICENSE`](../LICENSE).
+- **Catalog data** (`data_game/`, `scripts/deleted_games.json`, and the derived files under https://freeitchgames.win/data): **CC BY 4.0** for the Maintainer's contribution, namely the selection and arrangement of the collection, the three Maintainer-written fields (`safe_virus`, `notes`, `nsfw`), the removal records, and the structure and derived statistics. See [`data_game/LICENSE.md`](../data_game/LICENSE.md) and the full legal code in [`LICENSES/CC-BY-4.0.txt`](../LICENSES/CC-BY-4.0.txt).
+  - Suggested attribution: `Free itch.io games catalog by poli0981 (SkullMute) — https://freeitchgames.win — CC BY 4.0`
+- **Not licensed by the Project** (owned by others): game descriptions and any other text written by game creators; cover images, thumbnails and other media; game names, logos and trademarks; and itch.io's trademarks. To reuse these, you need the owner's permission or a legal exception that applies to you. Facts such as URLs, prices and ratings are not protected by copyright anyway.
+- The cover images shown on the Website are resized copies served for display only; they remain the property of their creators.
+- **Documentation** (the `*.md` files in the repository root and in `docs/`, including the README and these policies): **CC BY 4.0**.
+- **Third-party components** keep their own licenses. See the About page (https://freeitchgames.win/about) and [`docs/THIRD_PARTY.md`](THIRD_PARTY.md).
+
+## 12. No warranty and limitation of liability
+
+- The Project is provided **"as is" and "as available"**, without warranties of any kind, including accuracy, completeness, availability, a game's free status, or safety. Details are in the [Disclaimer](DISCLAIMER.md).
+- To the extent permitted by law, the Maintainer and contributors are not liable for any damage arising from the use of the Project, from any Game or third-party site reached through it, from downtime, or from errors in the data.
+- Nothing in these Terms excludes or limits liability that cannot be excluded or limited under applicable law.
+
+## 13. Changes to the service, moderation and termination
 
 The Maintainer may, at any time and without notice:
 
-- Remove or modify any content (game entries, documentation, code).
-- Reject, close, or hide issues, PRs, or comments that violate these Terms.
-- Block users who repeatedly violate these Terms.
-- Take down or archive the Repository, the Webapp deployment, or the Desktop App releases.
+- change, suspend or discontinue the Website, the Apps or the published data;
+- remove or change any content (game entries, documentation, code);
+- reject suggestions, and close, lock or hide issues, pull requests or comments that break these Terms;
+- block people who repeatedly break these Terms, and limit or block traffic that abuses the Website.
 
-Tagged releases (`vX.Y.Z`) are intended to remain available, but no SLA is offered.
+If you break these Terms, your permission to use the Website and the Apps ends. Any rights you have received under the MIT License or CC BY 4.0 are governed by those licenses. Tagged releases (`vX.Y.Z`) are intended to remain available on GitHub Releases, but this is not guaranteed.
 
-## 9. Changes to these Terms
+## 14. Changes to these Terms
 
-The Maintainer may update these Terms. The `Last updated` date at the top reflects the most recent change. Continued use after a change constitutes acceptance. Material changes will additionally be noted in [CHANGELOG.md](../CHANGELOG.md).
+- The Maintainer may update these Terms. New versions are published in the Repository, with the `Last updated` date at the top, and material changes are noted in [CHANGELOG.md](../CHANGELOG.md).
+- When a change requires your acceptance again, the `LEGAL_VERSION` value in the Website and the Apps changes, and the legal gate asks you to accept the updated documents before you continue. If you don't accept them, please stop using the Website and the Apps.
 
-## 10. Governing law and disputes
+## 15. Governing law and disputes
 
-These Terms are governed by the laws of the **Socialist Republic of Vietnam**, without regard to conflict-of-law principles.
+- These Terms are governed by the laws of the **Socialist Republic of Vietnam**, without regard to conflict-of-law principles.
+- Disputes are handled in this order:
+  1. **Informally first**: email **legal@freeitchgames.win**, open an issue, or use a contact channel listed on the About page (https://freeitchgames.win/about). Most disagreements end here.
+  2. **Mediation**: if informal contact fails, the parties may try mediation by mutual agreement.
+  3. **Courts**: otherwise, the competent courts of Vietnam have jurisdiction.
+- **Consumer rights**: nothing in these Terms limits the mandatory consumer-protection rights you have under the law of your country of residence, including any right that law gives you to bring a claim in your local courts.
 
-Disputes are to be resolved as follows, in order:
+## 16. Severability and translations
 
-1. **Informal first**: open a `[Feedback]` or `[General]` issue or DM via any channel listed on the [About page](https://freeitchgames.win/#/about). Most disagreements end here.
-2. **Mediation**: if informal contact fails, the parties may attempt mediation by mutual agreement.
-3. **Court**: if all else fails, the competent courts of Vietnam have exclusive jurisdiction.
+- If any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force.
+- Translations (such as the Vietnamese version in [`docs/i18n/vi/`](i18n/vi/ToS.md)) are provided for convenience. If a translation differs from this English version, the English version prevails.
 
-## 11. Severability
+## 17. Contact
 
-If any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force.
+These addresses are forwarded to the Maintainer by Cloudflare Email Routing.
 
-## 12. Not legal advice
+- **legal@freeitchgames.win**: these Terms and anything else legal.
+- **takedown@freeitchgames.win**: content removal and copyright.
+- **privacy@freeitchgames.win**: privacy questions and requests.
+- **security@freeitchgames.win**: vulnerabilities (or GitHub's private vulnerability reporting; see the [Security Policy](../SECURITY.md)).
+
+## 18. Final vibes
+
+This is still a list of free games plus a website and a few apps, built by a tired dev with zero budget and two AI buddies. Be cool, don't break things, credit the data, and have fun hunting free games.
+
+Questions? Email legal@freeitchgames.win, open an issue, or use any channel on the About page. The Maintainer will try not to ghost.
+
+## 19. Not legal advice
 
 These Terms are a hobby-project document drafted by a non-lawyer with AI assistance. They are not a substitute for professional legal advice.
-
-## 13. Final vibes
-
-This is still a list of free games + a webapp + a desktop app, built by a tired dev and two LLMs. Be cool, don't break things, have fun, and we all get along.
-
-Questions? Open an issue. Or DM via any channel on the About page. The Maintainer will try not to ghost.
-
-## 14. Telegram bot — optional contribution path
-
-> **Retired (September 2026).** The Telegram bot path is discontinued and no longer accepts submissions; the `bot-ingest.yml` workflow was removed. This section is kept to describe how data was handled while it ran and will be dropped in the next full revision of this document.
-
-[`CONTRIBUTING.md`](../CONTRIBUTING.md) describes an optional flow for submitting
-games via the Telegram bot [@my_skull_bot](https://t.me/my_skull_bot). Using
-this path is purely opt-in. By choosing to use it:
-
-- You voluntarily share Your Telegram numeric ID with the Maintainer
-  (operator: poli0981) for the **sole purpose** of being added to the bot's
-  runtime whitelist.
-- The whitelist lives on the operator's local machine (or a Docker volume),
-  is **not** committed to this Repository, **not** synchronized to any
-  server controlled by the Maintainer, and **not** forwarded to any
-  third-party log aggregator, analytics service, or other repository.
-- The bot does not collect message contents beyond what is needed to parse
-  the itch.io URLs You submit. itch.io URLs You submit become public — they
-  are committed to this Repository under
-  [`scripts/temp_link.json`](../scripts/temp_link.json) by the
-  `bot-ingest.yml` workflow (since removed) and
-  rendered into the catalog by the daily scraper.
-- You may request removal at any time by DMing the Maintainer
-  ("remove me from whitelist"). Removal takes effect at the next bot start.
-- You agree **not** to share another contributor's Telegram ID without that
-  contributor's explicit permission. Doing so is a Code of Conduct violation
-  and grounds for removal under §8.
-- You agree **not** to post Your own (or anyone else's) Telegram numeric ID
-  to public channels associated with this project (Discord, X, GitHub
-  issues, GitHub comments). DM only.
-
-Bot behavior, source code, and operational guarantees live in the bot's own
-repo: [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
-([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
-
-The Telegram-ID lifecycle is also described in [Privacy Policy §15](PrivacyPolicy.md#15-telegram-bot-optional-contribution-path).
-
-## 15. Final final vibes
-
-Built with boredom, zero budget, and two AI buddies who actually read the EULA. 🚀

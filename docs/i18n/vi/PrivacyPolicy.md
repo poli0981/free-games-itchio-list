@@ -1,171 +1,241 @@
-# Chính sách bảo mật (Privacy Policy)
+# Chính sách quyền riêng tư (Privacy Policy)
 
 Cập nhật lần cuối: 2026-09-18
 
-> **Lưu ý**: Đây là bản dịch tiếng Việt mang tính tham khảo cho cộng đồng. **Bản tiếng Anh tại [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md) là bản chính thức** và sẽ được dùng để giải thích trong trường hợp có khác biệt giữa hai phiên bản.
+Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
-Chính sách Bảo mật này mô tả cách Repository, Webapp và Desktop App xử lý dữ liệu của Bạn. Bản ngắn: Người duy trì không thu thập gì trên bất kỳ server nào do mình kiểm soát. Mọi thứ được lưu lại đều được lưu cục bộ trên thiết bị của Bạn.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
 
-> **Tóm tắt**: Không backend, không analytics, không cookie, không tracking, không telemetry. Webapp giữ vài mục trong `localStorage` (theme, trạng thái sidebar, PAT đã mã hóa tùy chọn) và một cache IndexedDB của catalog công khai. Desktop App fetch trực tiếp tới itch.io và GitHub để vượt CORS. Đó là toàn bộ câu chuyện dữ liệu.
+Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-list` xử lý những dữ liệu cá nhân nào, vì sao, ai hỗ trợ xử lý, dữ liệu được lưu trong bao lâu và bạn có những quyền gì. Chính sách áp dụng cho website **https://freeitchgames.win**, các ứng dụng desktop và Android, dữ liệu danh mục công khai và repository. Nói ngắn gọn: không có tài khoản, không quảng cáo, không cookie theo dõi. Dự án giữ ít dữ liệu nhất có thể, và phần lớn những gì tồn tại chỉ nằm trong trình duyệt của chính bạn.
 
-## 1. Định nghĩa
+> **Tóm tắt (TL;DR)**
+>
+> - Không tài khoản, không đăng nhập, không quảng cáo, không bán dữ liệu, không lập hồ sơ (profiling). Các Ứng dụng không có telemetry.
+> - Website chạy trên Cloudflare. Cloudflare xử lý dữ liệu request tiêu chuẩn (địa chỉ IP, trình duyệt, URL, thời gian) để phân phối và bảo vệ trang, và để đếm lượt truy cập ở dạng tổng hợp, không dùng cookie. Mã nguồn của chính Dự án không bao giờ lưu địa chỉ IP của bạn.
+> - Cài đặt của bạn (giao diện sáng/tối, ngôn ngữ, lựa chọn 18+, phiên bản điều khoản đã chấp nhận) và bản cache của danh mục công khai nằm trong trình duyệt của bạn và không bao giờ được gửi về Dự án.
+> - Nếu bạn dùng trang Suggest, Người duy trì nhận được link game, ghi chú tùy chọn của bạn (bị xóa sau 180 ngày) và thời điểm gửi. Vui lòng không đưa dữ liệu cá nhân vào ghi chú.
+> - Câu hỏi hoặc yêu cầu: **privacy@freeitchgames.win**.
 
-Các thuật ngữ được định nghĩa trong [EULA §1](EULA.md#1-định-nghĩa) cũng áp dụng tại đây.
+## 1. Ai chịu trách nhiệm, và Chính sách này áp dụng cho những gì
 
-## 2. Thu thập dữ liệu phía Người duy trì
+### 1.1 Bên kiểm soát dữ liệu
 
-**Người duy trì thu thập, lưu trữ và xử lý dữ liệu cá nhân ở mức KHÔNG trên bất kỳ server nào do mình kiểm soát.** Không có backend, không có database, không có dịch vụ analytics, không có endpoint báo lỗi, không có telemetry, không có quảng cáo, không có fingerprinting.
+Bên kiểm soát dữ liệu cá nhân được mô tả trong Chính sách này là **Người duy trì**: poli0981 (SkullMute), một cá nhân tại Việt Nam, tự vận hành Dự án như một sở thích. Liên hệ: **privacy@freeitchgames.win** (xem mục 12).
 
-Repository chạy hoàn toàn trên:
+### 1.2 Định nghĩa
 
-- **GitHub** (host mã nguồn, Actions, raw file CDN, Pages cho Webapp).
-- **Thiết bị của Bạn** (Webapp trong trình duyệt, hoặc Desktop App trong webview Tauri 2).
-- **itch.io** (trang game, được fetch theo yêu cầu bởi scraper hoặc tính năng preview của Desktop App).
+- **"Website"**: https://freeitchgames.win, bao gồm các trang và endpoint của nó (như `/data`, `/img`, `/suggest`, `/admin` và `/api/…`). Địa chỉ cũ https://poli0981.github.io/free-games-itchio-list/ chỉ chuyển hướng về đây.
+- **"Các Ứng dụng"**: các ứng dụng desktop (Windows, macOS, Linux) và file APK Android, được build từ cùng mã nguồn với Website và phân phối trên GitHub Releases. Đây là các trình xem Danh mục chỉ đọc.
+- **"Danh mục"** (Catalog): danh sách game và dữ liệu của chúng, gồm `data_game/`, `scripts/deleted_games.json` và các file được tạo ra từ đó, phục vụ tại https://freeitchgames.win/data.
+- **"Repository"**: https://github.com/poli0981/free-games-itchio-list, bao gồm pipeline dữ liệu chạy trên GitHub Actions của repository này.
+- **"Dự án"**: Website, các Ứng dụng, Danh mục và Repository nói chung.
+- **"Người duy trì"**: poli0981 (SkullMute), như mô tả ở mục 1.1.
+- **"Dữ liệu cá nhân"**: mọi thông tin về một người đã được xác định hoặc có thể xác định được.
+- **"Bạn"**: bất kỳ ai sử dụng Dự án, kể cả các nhà sáng tạo có game nằm trong Danh mục.
 
-Người duy trì không có hạ tầng nào có thể thu thập dữ liệu của Bạn ngay cả khi muốn.
+### 1.3 Những gì Chính sách này không áp dụng
 
-## 3. GitHub
+Chính sách này không áp dụng cho các dịch vụ tự xử lý dữ liệu với tư cách của chính họ: itch.io (mọi link game và mọi lượt tải đều dẫn tới đó), GitHub đối với tài khoản GitHub và hoạt động của bạn trên github.com, việc Cloudflare dùng dữ liệu cho mục đích riêng của họ như mô tả trong chính sách quyền riêng tư của Cloudflare, bản thân các game, và tiện ích trình duyệt của Người duy trì (một dự án riêng, có tài liệu riêng). Chính sách của từng bên sẽ được áp dụng (link ở mục 4).
 
-Repository này, deployment Webapp (GitHub Pages) và artifact phát hành Desktop App được host trên GitHub. GitHub có thể log dữ liệu HTTP request tiêu chuẩn (địa chỉ IP, user agent, referrer) theo chính sách của họ. Người duy trì không có quyền truy cập các log đó ngoài insight cấp repository của GitHub (số clone / view tổng hợp).
+## 2. Dữ liệu nào được xử lý và vì sao
 
-Chính sách Bảo mật của GitHub: <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement>
+### 2.1 Khi truy cập Website
 
-Khi Bạn đóng góp (mở issue, comment, fork, gửi PR), Bạn xuất bản thông tin đó trên GitHub dưới tài khoản của mình. Người duy trì chỉ thấy phần GitHub công khai.
+- **Dữ liệu request.** Website được host trên Cloudflare. Khi trình duyệt của bạn tải một trang, một file hay một hình ảnh, Cloudflare xử lý dữ liệu request tiêu chuẩn: địa chỉ IP, user agent (loại trình duyệt và thiết bị), URL được yêu cầu, referrer và thời gian. Việc này cần thiết để phân phối trang, bảo vệ trang (TLS, tường lửa, chống bot và chống tấn công từ chối dịch vụ) và hạn chế lạm dụng.
+- **Thống kê tổng hợp.** Website dùng Cloudflare Web Analytics: một script nhỏ được tải từ Cloudflare để đếm lượt truy cập ở dạng tổng hợp, không dùng cookie và, theo Cloudflare, không dùng fingerprinting. Người duy trì chỉ thấy số liệu tổng (như số lượt xem trang), không thấy từng người truy cập. Dự án không chạy công cụ analytics nào khác.
+- **Log máy chủ.** Các request do mã máy chủ của Website (Cloudflare Workers) xử lý được Cloudflare Workers Logs ghi lại theo mẫu 10% và lưu khoảng 7 ngày, để tìm lỗi và điều tra hành vi lạm dụng.
+- **Báo cáo lỗi mạng.** Cloudflare có thể thêm header Network Error Logging (NEL), yêu cầu trình duyệt của bạn báo các lỗi kết nối về Cloudflare.
+- **Dự án không lưu địa chỉ IP.** Mã nguồn của chính Dự án không bao giờ ghi địa chỉ IP của bạn vào cơ sở dữ liệu, file hay Repository của Dự án.
+- **Ảnh bìa** do chính Website phục vụ (bản sao đã thu nhỏ, lưu trên Cloudflare R2), nên trình duyệt của bạn không liên lạc với itch.io trong lúc bạn duyệt web. itch.io chỉ nhận được thông tin từ bạn khi bạn bấm vào link game và chuyển sang đó; khi ấy Website chỉ gửi tối đa địa chỉ của chính nó (không phải trang bạn đang xem) làm referrer.
 
-### 3a. Cloudflare (thông báo tạm thời)
+### 2.2 Khi dùng các Ứng dụng
 
-Từ tháng 9/2026, Webapp được phục vụ tại **https://freeitchgames.win** trên Cloudflare (DNS, CDN và static assets của Workers); địa chỉ GitHub Pages cũ chỉ chuyển hướng sang đây. Để phân phối và bảo vệ trang, Cloudflare xử lý dữ liệu request tiêu chuẩn (địa chỉ IP, user agent, URL được yêu cầu) và có thể gửi báo cáo Network Error Logging hoặc đặt cookie bảo mật thiết yếu khi các cơ chế bảo vệ được kích hoạt. Xem [Chính sách quyền riêng tư của Cloudflare](https://www.cloudflare.com/privacypolicy/). Đây là ghi chú tạm thời; Chính sách sẽ được viết lại toàn bộ cho kiến trúc mới ở v4.0.0.
+- Các Ứng dụng là trình xem chỉ đọc, **không telemetry, không analytics và không tài khoản**.
+- Chúng tải JSON của Danh mục từ https://freeitchgames.win/data (Cloudflare xử lý dữ liệu request như mô tả ở mục 2.1) và tải ảnh bìa **trực tiếp từ máy chủ ảnh của itch.io (img.itch.zone)**, vì vậy itch.io nhận được địa chỉ IP và user agent của bạn khi ảnh bìa được tải.
+- Bấm vào một game sẽ mở trang itch.io của game đó trong trình duyệt của bạn.
+- Việc cập nhật là thủ công: các Ứng dụng không tự kiểm tra bản cập nhật. Khi bạn tải bộ cài hoặc file APK từ GitHub Releases, GitHub xử lý request đó.
+- Các Ứng dụng dùng cùng kiểu lưu trữ cục bộ như Website (mục 3.1), chỉ trên thiết bị của bạn. Gỡ cài đặt Ứng dụng sẽ xóa dữ liệu này.
 
-## 4. itch.io
+### 2.3 Khi đề xuất game
 
-Tất cả link game trong Catalog trỏ trực tiếp tới trang itch.io. Click vào link sẽ đưa Bạn tới itch.io; những gì xảy ra ở đó được điều chỉnh bởi điều khoản và chính sách của itch.io:
+Khi bạn dùng trang Suggest (https://freeitchgames.win/suggest):
 
-- Privacy Policy của itch.io: <https://itch.io/docs/legal/privacy-policy>
-- Terms of Service của itch.io: <https://itch.io/docs/legal/terms>
+- **Những gì được lưu**: URL game, ghi chú tùy chọn của bạn (tối đa 500 ký tự) và thời điểm gửi, trong hàng chờ duyệt (mục 2.4). Trang không yêu cầu và không lưu tên, địa chỉ email hay tài khoản nào.
+- **Chống spam**: Cloudflare Turnstile xử lý các tín hiệu về thiết bị và trình duyệt của bạn để phân biệt người thật với bot. Để kiểm tra kết quả, Website gửi token Turnstile và địa chỉ IP của bạn tới dịch vụ xác minh của Cloudflare.
+- **Giới hạn tần suất**: địa chỉ IP của bạn chỉ được dùng tạm thời để đếm số request. Dự án không lưu nó.
+- **Mục đích**: để xem xét đề xuất của bạn. Nếu được duyệt, URL game trở thành một phần của Danh mục công khai. Ghi chú của bạn không bao giờ được công bố và **tự động bị xóa sau 180 ngày**.
+- **Vui lòng không đưa dữ liệu cá nhân vào ghi chú**, dù là của bạn hay của người khác. Biểu mẫu này chỉ dành cho link game.
 
-GitHub Action `update.yml` của Repository cũng thực hiện request server-to-server tới itch.io để scrape metadata trang; những request đó đến từ dải IP của GitHub, không phải từ thiết bị của Bạn.
+### 2.4 Hàng chờ duyệt và khu vực quản trị
 
-## 5. Webapp lưu gì trong trình duyệt của Bạn
+- **Game đến từ đâu**: đề xuất từ trang Suggest; dữ liệu gửi từ tiện ích trình duyệt của Người duy trì qua một API có xác thực (URL game, tiêu đề và ghi chú tùy chọn, và ID service token của tiện ích; các bản ghi chống gửi trùng được giữ 7 ngày); và tự động phát hiện từ các RSS feed công khai của itch.io.
+- **Hàng chờ duyệt** (Cloudflare D1) chứa các URL game ứng viên cùng nguồn gửi, tiêu đề, URL ảnh bìa và gợi ý thể loại lấy từ itch.io, các cờ tự động, ghi chú, mốc thời gian và quyết định của Người duy trì. Không game nào được đưa vào Danh mục cho tới khi Người duy trì duyệt. Các URL bị từ chối được giữ vô thời hạn làm danh sách chặn; chỉ cần URL là đủ để không phải xét lại cùng một game.
+- **Khu vực quản trị** (https://freeitchgames.win/admin) chỉ dành cho Người duy trì. Khu vực này được bảo vệ bằng Cloudflare Access (đăng nhập bằng GitHub hoặc mã PIN dùng một lần gửi qua email); Cloudflare Access đặt cookie phiên `CF_Authorization` trong trình duyệt của Người duy trì. Các thao tác quản trị được ghi vào nhật ký kiểm tra (audit log) kèm địa chỉ email của Người duy trì. Nhật ký này không bao giờ được công bố.
 
-Webapp lưu các mục sau cục bộ và **không bao giờ** gửi chúng tới bất kỳ server nào do Người duy trì kiểm soát.
+### 2.5 Dữ liệu game công khai trong Danh mục
 
-| Lưu trữ | Khóa | Nội dung | Khi nào ghi |
+- Danh mục được xây dựng từ các trang game công khai trên itch.io: tên game, tên nhà phát triển và nhà phát hành, mô tả, thể loại, tag, nền tảng, đánh giá và các metadata tương tự, cùng URL ảnh bìa. Pipeline tự nhận diện là `FreeItchGamesBot/4.0 (+https://freeitchgames.win/about)` và giãn nhịp các request.
+- Tên nhà phát triển hoặc nhà phát hành, hay địa chỉ itch.io của nhà sáng tạo nằm trong URL game, có thể là tên hoặc biệt danh của một người, nên có thể là dữ liệu cá nhân. Thông tin này chỉ được dùng để nhận diện và ghi công cho game, và để giúp mọi người khám phá game.
+- Dữ liệu này được công bố trên Website, trong Repository và tại https://freeitchgames.win/data. Khi một game bị gỡ, URL, tên, lý do và ngày gỡ được ghi vào [`scripts/deleted_games.json`](../../../scripts/deleted_games.json); Website hiển thị danh sách này ở trang Removed (https://freeitchgames.win/removed).
+- Nhà sáng tạo có thể yêu cầu sửa hoặc gỡ bất kỳ lúc nào (mục 7).
+
+### 2.6 Khi liên hệ Người duy trì
+
+- Email gửi tới các địa chỉ của Dự án (mục 12) được Cloudflare Email Routing chuyển tiếp tới hộp thư của Người duy trì. Người duy trì nhận địa chỉ email của bạn, tên bạn dùng (nếu có) và nội dung thư, và chỉ dùng chúng để xử lý yêu cầu của bạn.
+- Thư từ về yêu cầu gỡ game và yêu cầu liên quan đến bản quyền được giữ trong thời gian cần thiết để xử lý yêu cầu.
+
+### 2.7 Đóng góp trên GitHub
+
+Issue, pull request, discussion và bình luận đều công khai trên GitHub dưới tài khoản GitHub của bạn, và tuyên bố quyền riêng tư của GitHub áp dụng cho chúng. Người duy trì chỉ thấy những gì GitHub hiển thị. Biểu mẫu issue "Remove a game" cũng công khai, nên hãy dùng email cho những gì bạn không muốn công bố.
+
+### 2.8 Những điều Dự án không làm
+
+- Không có tài khoản hay đăng nhập cho công chúng, không bình luận, không quảng cáo và không thanh toán.
+- Mã nguồn của chính Dự án không đặt cookie nào trên Website công khai.
+- Không bán hay chia sẻ dữ liệu cá nhân, dù cho quảng cáo hay bất kỳ mục đích nào khác.
+- Không lập hồ sơ (profiling) và không ra quyết định tự động gây hệ quả pháp lý hoặc ảnh hưởng đáng kể tương tự đối với bạn.
+- Không có telemetry trong các Ứng dụng, và không có analytics nào ngoài Cloudflare Web Analytics trên Website.
+
+## 3. Lưu trữ trên trình duyệt và cookie
+
+### 3.1 Website và các Ứng dụng lưu gì trên thiết bị của bạn
+
+Website và các Ứng dụng chỉ lưu các mục sau trên thiết bị của bạn. Không mục nào được gửi về Dự án.
+
+| Lưu trữ | Khóa | Nội dung | Giữ đến khi |
 |---|---|---|---|
-| `localStorage` | `webapp.pat.encrypted` | PAT GitHub của Bạn, mã hóa AES-GCM 256-bit. Khóa mã hóa được dẫn xuất từ passphrase qua PBKDF2-SHA256 (100.000 vòng) với salt ngẫu nhiên cho mỗi token. PAT plaintext **không bao giờ** được lưu xuống đĩa. | Khi Bạn bật quyền ghi trong Settings. |
-| `localStorage` | `webapp.theme` | Một trong `'light'`, `'dark'`, `'system'`. | Khi Bạn chuyển theme. |
-| `localStorage` | `webapp.prefs` | Tùy chỉnh UI (sidebar collapsed, mật độ, ngôn ngữ, cài đặt thông báo, ghi đè tác giả commit tùy chọn) và phiên bản điều khoản pháp lý Bạn đã chấp nhận (`acceptedLegalVersion`). | Khi Bạn thay đổi tùy chỉnh UI hoặc chấp nhận điều khoản pháp lý. |
-| `IndexedDB` (qua `idb-keyval`) | Khóa cache TanStack Query | Bản sao cache của catalog JSON công khai để tải nhanh và đọc offline có giới hạn. | Tự động, sau lần fetch đầu tiên. |
+| `localStorage` | `webapp.prefs` | Tùy chọn giao diện như ngôn ngữ và mật độ hiển thị, lựa chọn nội dung 18+ (NSFW) của bạn, và phiên bản các văn bản pháp lý bạn đã chấp nhận | Bạn xóa nó |
+| `localStorage` | `webapp.theme` | Giao diện: `light`, `dark` hoặc `system` | Bạn xóa nó |
+| IndexedDB (qua `idb-keyval`) | `webapp.query-cache` | Bản cache của JSON Danh mục công khai, để tải nhanh và dùng offline ở mức hạn chế | Tối đa 7 ngày, sau đó được làm mới hoặc bị bỏ đi |
+| `sessionStorage` | `reloaded-after-deploy` | Một mốc thời gian, để trang chỉ tự tải lại tối đa một lần sau khi site được cập nhật | Tab được đóng |
 
-Bạn có thể xóa toàn bộ những gì ở trên bất kỳ lúc nào bằng cách:
+Ở lần tải đầu tiên, Website và các Ứng dụng cũng xóa các mục mà ứng dụng v3 cũ để lại trong bộ nhớ trình duyệt (một GitHub access token đã mã hóa và dữ liệu khóa ký commit). v4 không dùng tới các mục này.
 
-- Click **Settings → Remove saved PAT** (chỉ xóa entry PAT).
-- Dùng "Clear site data" / "Clear cookies and storage" của trình duyệt cho `freeitchgames.win` (xóa hết). Địa chỉ cũ `poli0981.github.io` giờ chỉ chuyển hướng, và trang chuyển hướng đó sẽ xoá mọi dữ liệu PAT/GPG mà app cũ còn để lại.
-- Gỡ Desktop App và xóa thư mục profile WebView2 / WebKit (chỉ Desktop; vị trí khác nhau theo OS).
+Các mục trên là thật sự cần thiết cho những tính năng bạn dùng (giữ cài đặt, tải trang nhanh, phục hồi sau khi site cập nhật), nên không cần sự đồng ý theo các quy định ePrivacy của EU hay PECR của Vương quốc Anh. Bạn có thể xóa chúng bất kỳ lúc nào bằng tùy chọn "Clear site data" (xóa dữ liệu trang web) của trình duyệt cho `freeitchgames.win`, hoặc xem chúng trong công cụ dành cho nhà phát triển (developer tools) của trình duyệt. Với các Ứng dụng, gỡ cài đặt sẽ xóa chúng; nếu trình gỡ cài đặt trên desktop để sót lại thư mục dữ liệu của Ứng dụng (`com.poli0981.freegamesitchio`), bạn có thể tự xóa thư mục đó. Trên Android, bạn cũng có thể xóa bộ nhớ của ứng dụng trong phần cài đặt hệ thống.
 
-## 6. Xử lý PAT — chi tiết
+### 3.2 Cookie
 
-Tính năng ghi tùy chọn của Webapp (sửa annotation, dispatch workflow scraper, bulk delete) yêu cầu PAT fine-grained GitHub. Vòng đời PAT hoàn toàn ở phía client:
+- Mã nguồn của chính Dự án **không đặt cookie nào** trên Website công khai.
+- Cloudflare có thể đặt các cookie bảo mật thật sự cần thiết, như `__cf_bm` hoặc `cf_clearance`, khi cơ chế chống bot hoặc thử thách (challenge) của họ hoạt động. Các cookie này chỉ phục vụ mục đích bảo mật.
+- Trang Suggest dùng Cloudflare Turnstile (mục 2.3); xem phụ lục quyền riêng tư Turnstile của Cloudflare (mục 4).
+- Khu vực quản trị dùng cookie phiên `CF_Authorization` của Cloudflare Access, cookie này chỉ tồn tại trong trình duyệt của Người duy trì.
 
-1. **Tạo** — Bạn tạo PAT fine-grained trên github.com, giới hạn về `poli0981/free-games-itchio-list`, với `Contents: Read & write` và `Actions: Read & write`. Người duy trì không bao giờ thấy bước này.
-2. **Mã hóa** — Bạn dán PAT vào Settings + một passphrase. Webapp dẫn xuất khóa AES-GCM từ passphrase qua PBKDF2-SHA256 (100k vòng, salt ngẫu nhiên 16-byte). PAT được mã hóa; ciphertext + salt + IV được lưu vào `localStorage` ở khóa `webapp.pat.encrypted`. PAT plaintext và passphrase không bao giờ được ghi vào bất kỳ storage nào.
-3. **Mở khóa** — Ở session sau, Bạn nhập passphrase. Webapp dẫn xuất lại khóa và giải mã PAT vào store Zustand trong bộ nhớ. PAT đã giải mã chỉ tồn tại trong bộ nhớ JavaScript.
-4. **Sử dụng** — Lệnh gọi Octokit tới `api.github.com` bao gồm PAT dưới dạng `Authorization: Bearer <pat>` qua HTTPS. PAT chỉ được gửi tới `api.github.com` và không bao giờ tới host khác.
-5. **Khóa** — Click Lock (hoặc đóng tab) loại bỏ PAT trong bộ nhớ. Blob mã hóa vẫn còn trong `localStorage` cho lần mở khóa tiếp theo.
-6. **Xóa** — Click Remove saved PAT xóa entry `webapp.pat.encrypted` khỏi `localStorage`.
+## 4. Nhà cung cấp dịch vụ và các bên khác
 
-Nếu Bạn nghi ngờ PAT bị lộ:
+| Bên | Vai trò và công việc | Dữ liệu liên quan | Chính sách quyền riêng tư |
+|---|---|---|---|
+| **Cloudflare** | Bên xử lý dữ liệu cho Website: DNS, CDN, tường lửa và TLS; Workers (mã máy chủ của site) và static assets; R2 (ảnh bìa đã thu nhỏ); D1 (hàng chờ duyệt); Images (thu nhỏ ảnh); Turnstile (chỉ trang Suggest); Web Analytics; Workers Logs; Access (chỉ cho đăng nhập quản trị); Rate Limiting; Email Routing (chuyển tiếp các địa chỉ liên hệ của Dự án) | Dữ liệu request, đề xuất từ trang Suggest, hàng chờ duyệt, email được chuyển tiếp | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
+| **GitHub** | Host mã nguồn, dữ liệu Danh mục, issue và discussion, pipeline dữ liệu (GitHub Actions) và các bản phát hành để tải về. Là bên kiểm soát độc lập đối với tài khoản và hoạt động GitHub của bạn | Các đóng góp công khai của bạn; dữ liệu request khi bạn truy cập GitHub hoặc tải bản phát hành | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
+| **itch.io** | Nền tảng độc lập, không liên kết với Dự án. Là nguồn dữ liệu game; mọi link game và lượt tải đều dẫn tới đó; các Ứng dụng tải ảnh bìa từ img.itch.zone | Những gì trình duyệt của bạn hoặc các Ứng dụng gửi đi khi bạn truy cập itch.io hoặc tải ảnh bìa từ đó. Pipeline không gửi thông tin nào về bạn | <https://itch.io/docs/legal/privacy-policy> |
+| **Discord** | Nhận thông báo build và phát hành tự động từ GitHub Actions | Không có dữ liệu người truy cập | — |
 
-- Khóa hoặc xóa nó ngay lập tức.
-- Thu hồi nó trên github.com (Settings → Developer settings → Personal access tokens → Fine-grained tokens).
-- Tạo PAT mới với passphrase mới.
+Cloudflare có thể xử lý dữ liệu ở bất kỳ đâu trên mạng lưới toàn cầu của họ (xem mục 9). Người duy trì không cung cấp dữ liệu cá nhân cho bất kỳ ai khác, trừ khi pháp luật yêu cầu.
 
-Xem thêm: [SECURITY.md](SECURITY.md).
+## 5. Dữ liệu được lưu trong bao lâu
 
-## 7. Network request
+| Dữ liệu | Thời gian lưu |
+|---|---|
+| Dữ liệu request do Cloudflare xử lý để phân phối và bảo mật | Do Cloudflare lưu theo chính sách quyền riêng tư của họ; Dự án không lưu |
+| Workers Logs (mẫu 10% các request do mã máy chủ của Website xử lý) | Khoảng 7 ngày |
+| Web Analytics | Chỉ có thống kê tổng hợp; Người duy trì không thể thấy từng người truy cập |
+| Địa chỉ IP dùng cho giới hạn tần suất và Turnstile | Chỉ dùng tạm thời; Dự án không bao giờ lưu |
+| Ghi chú trên trang Suggest | Tự động xóa sau **180 ngày** |
+| URL game được đề xuất hoặc được phát hiện, kèm nguồn và mốc thời gian | Nằm trong hàng chờ duyệt chừng nào còn cần để không phải xét cùng một game hai lần. URL được duyệt trở thành một phần của Danh mục công khai; URL bị từ chối được giữ vô thời hạn làm danh sách chặn |
+| Bản ghi chống gửi trùng từ tiện ích trình duyệt | **7 ngày** |
+| Nhật ký kiểm tra quản trị (kèm địa chỉ email của Người duy trì) | Được giữ làm hồ sơ các thay đổi quản trị; không bao giờ công bố |
+| Mục trong Danh mục (bao gồm tên nhà phát triển và nhà phát hành) | Khi game còn được liệt kê. Bản ghi gỡ bỏ vẫn nằm trong danh sách game đã gỡ công khai, và lịch sử Git của Repository giữ các phiên bản trước (xem mục 7.3) |
+| Email, bao gồm yêu cầu gỡ game và yêu cầu liên quan đến bản quyền | Trong thời gian cần thiết để xử lý yêu cầu |
+| Đóng góp trên GitHub | Trên GitHub, cho tới khi bạn hoặc GitHub xóa |
+| Lưu trữ trên trình duyệt | Xem mục 3.1 |
+| Cookie `CF_Authorization` (chỉ Người duy trì) | Trong thời gian của phiên Cloudflare Access |
 
-Khi chạy, Webapp và Desktop App thực hiện request tới các endpoint sau — và chỉ những endpoint này:
+## 6. Cơ sở pháp lý
 
-| Endpoint | Mục đích | Auth |
-|---|---|---|
-| `raw.githubusercontent.com/poli0981/free-games-itchio-list/main/data_game/*.json` | Đọc dữ liệu catalog công khai. | Không. |
-| `api.github.com/repos/poli0981/free-games-itchio-list/...` | Thao tác ghi: sửa, xóa, dispatch workflow, list run. | PAT (chỉ khi đã mở khóa). |
-| `*.itch.io/*`, `img.itch.zone/*` | (Chỉ Desktop App) Fetch itch.io trực tiếp cho preview game trong app, vượt CORS trình duyệt. | Không. |
+### 6.1 Việt Nam
 
-Không có CDN bên thứ ba, không endpoint analytics, không telemetry collector, không font CDN. Tailwind, Radix, lucide-react, v.v. đều được bundle ở build time.
+Người duy trì xử lý dữ liệu cá nhân theo **Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15** của Việt Nam (được thông qua ngày 26/6/2025, có hiệu lực từ ngày 01/01/2026) và các văn bản hướng dẫn thi hành. Dự án xử lý ít dữ liệu cá nhân nhất có thể, và chỉ cho các mục đích nêu ở mục 2.
 
-## 8. Cookie
+Khi Luật này yêu cầu sự đồng ý của bạn, bạn thể hiện sự đồng ý bằng một hành động rõ ràng: chấp nhận Chính sách này tại màn hình xác nhận pháp lý (legal gate) ở lần truy cập đầu tiên, và, đối với những gì bạn tự nhập, gửi biểu mẫu Suggest hoặc gửi email. Bạn có thể rút lại sự đồng ý bất kỳ lúc nào (mục 7). Việc rút lại không ảnh hưởng tới việc xử lý đã được thực hiện trước đó.
 
-Webapp và Desktop App **không đặt bất kỳ cookie nào.** GitHub Pages có thể phát hành cookie như một phần của hành vi CDN; những cookie đó là của GitHub, không phải của Người duy trì.
+### 6.2 EU/EEA và Vương quốc Anh
 
-## 9. Quyền riêng tư của trẻ em
+Nếu bạn ở EU/EEA hoặc Vương quốc Anh, GDPR hoặc UK GDPR áp dụng cho việc xử lý dữ liệu cá nhân của bạn, trên các cơ sở pháp lý sau:
 
-Repository lập chỉ mục các game host trên itch.io, bao gồm cả nội dung người lớn. Cờ `nsfw` là best-effort (xem [DISCLAIMER §2](DISCLAIMER.md#2-không-bảo-đảm-về-các-game)). Webapp không gating truy cập theo tuổi. Nếu Bạn dưới tuổi thành niên ở khu vực của mình, vui lòng sử dụng Repository dưới sự giám sát của cha mẹ hoặc người giám hộ và tôn trọng age-gating của itch.io ở những nơi áp dụng.
+| Hoạt động xử lý | Cơ sở pháp lý |
+|---|---|
+| Phân phối và bảo mật Website cùng dữ liệu mà các Ứng dụng tải về (dữ liệu request, log máy chủ, giới hạn tần suất, Turnstile, cookie bảo mật) | Lợi ích hợp pháp (Điều 6(1)(f)): vận hành một dịch vụ hoạt động tốt, an toàn và ngăn chặn lạm dụng |
+| Thống kê truy cập tổng hợp | Lợi ích hợp pháp: hiểu cách trang được sử dụng nói chung, không theo dõi từng cá nhân |
+| Đề xuất và hàng chờ duyệt | Lợi ích hợp pháp: xử lý đề xuất mà bạn chọn gửi và chọn lọc Danh mục |
+| Dữ liệu game công khai về nhà sáng tạo | Lợi ích hợp pháp: giúp mọi người khám phá game miễn phí bằng thông tin mà nhà sáng tạo đã công bố trên itch.io. Bạn có thể phản đối bất kỳ lúc nào (mục 7) |
+| Email và yêu cầu gỡ game | Lợi ích hợp pháp: trả lời bạn và xử lý yêu cầu của bạn |
+| Lưu trữ trên trình duyệt (mục 3.1) | Thật sự cần thiết cho các tính năng bạn dùng; không cần sự đồng ý theo quy định ePrivacy hoặc PECR |
 
-Người duy trì không cố ý thu thập dữ liệu cá nhân từ trẻ em. (Người duy trì không thu thập dữ liệu cá nhân từ bất kỳ ai — xem §2.)
+## 7. Quyền của bạn và cách thực hiện
 
-## 10. Quyền của Bạn
+### 7.1 Quyền của bạn
 
-Vì Người duy trì không nắm dữ liệu cá nhân nào, các yêu cầu theo GDPR, CCPA, Nghị định 13/2023/NĐ-CP của Việt Nam, hoặc các chế định tương tự nhằm vào Người duy trì sẽ không có gì để thực hiện. Đối với dữ liệu trên thiết bị của Bạn:
+Tùy theo luật áp dụng cho bạn, bao gồm Luật số 91/2025/QH15 và, tại EU/EEA và Vương quốc Anh, GDPR hoặc UK GDPR, bạn có quyền:
 
-- **Quyền truy cập**: mở DevTools trình duyệt → Application → Storage → Local Storage / IndexedDB.
-- **Quyền xóa**: clear site data như mô tả ở §5.
-- **Quyền chuyển đổi**: export `localStorage` qua DevTools (là JSON thuần; PAT đã mã hóa).
+- được biết dữ liệu cá nhân của bạn được xử lý như thế nào (chính là Chính sách này);
+- truy cập dữ liệu cá nhân mà Dự án đang giữ về bạn;
+- chỉnh sửa dữ liệu nếu dữ liệu không chính xác;
+- yêu cầu xóa dữ liệu;
+- phản đối việc xử lý, bao gồm việc xử lý dựa trên lợi ích hợp pháp;
+- rút lại sự đồng ý khi việc xử lý dựa trên sự đồng ý;
+- khiếu nại tới cơ quan giám sát: cơ quan có thẩm quyền về bảo vệ dữ liệu cá nhân tại Việt Nam, hoặc cơ quan bảo vệ dữ liệu của quốc gia EU/EEA nơi bạn ở hoặc của Vương quốc Anh.
 
-Đối với dữ liệu mà GitHub hoặc itch.io nắm về tương tác của Bạn với nền tảng của họ, hãy liên hệ trực tiếp các nhà cung cấp đó qua đầu mối liên hệ về quyền riêng tư trong chính sách của họ.
+Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử lý, hoặc nhận bản sao dữ liệu ở định dạng có thể chuyển giao (portable), khi các quyền đó được áp dụng.
 
-## 11. Dịch vụ bên thứ ba
+### 7.2 Cách gửi yêu cầu
 
-| Dịch vụ | Dùng cho | Chính sách |
-|---|---|---|
-| GitHub | Repo, CI, Pages, Releases, API | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
-| itch.io | Trang game, nguồn scrape | <https://itch.io/docs/legal/privacy-policy> |
+- Gửi email tới **privacy@freeitchgames.win**. Hãy nói rõ bạn muốn gì và cung cấp đủ chi tiết để tìm được dữ liệu: ví dụ URL game bạn đã đề xuất và khoảng thời gian gửi, hoặc địa chỉ email bạn đã dùng để viết thư. Người duy trì có thể hỏi thêm để xác nhận yêu cầu đúng là của bạn.
+- Mục tiêu là trả lời trong vòng **30 ngày**; nhiều yêu cầu được xử lý sớm hơn nhiều. Việc gửi yêu cầu là miễn phí.
+- Nhà sáng tạo muốn gỡ game hoặc sửa dữ liệu game cũng có thể gửi email tới **takedown@freeitchgames.win** hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) (công khai). Mục tiêu cho việc gỡ là trong vòng 7 ngày. Quy trình gỡ được mô tả trong [Điều khoản sử dụng](ToS.md).
 
-Webapp **không** tích hợp bất kỳ nhà cung cấp analytics, mạng quảng cáo, dịch vụ báo lỗi (không Sentry, không Datadog), SDK mạng xã hội hay font CDN nào.
+### 7.3 Những giới hạn nên biết
 
-## 12. Thay đổi Chính sách này
+- Dự án không lưu địa chỉ IP và không có tài khoản, nên không thể liên kết các lượt truy cập Website với bạn. Dữ liệu bảo mật và log của Cloudflare chỉ được giữ trong thời gian ngắn (mục 5).
+- Lưu trữ trên trình duyệt nằm trong tầm kiểm soát của bạn: bạn có thể tự xem và xóa (mục 3.1).
+- Lịch sử Git của Repository công khai giữ các phiên bản trước của Danh mục. Người duy trì không thể viết lại lịch sử công khai, trừ trường hợp đặc biệt có yêu cầu pháp lý bắt buộc. Các bản sao mà người khác đã tạo (fork, dữ liệu đã tải về) nằm ngoài tầm kiểm soát của Người duy trì.
+- Nội dung trên GitHub (issue, bình luận) được quản lý qua GitHub; bạn có thể sửa hoặc xóa bình luận của mình tại đó.
 
-Người duy trì có thể cập nhật Chính sách này. Ngày `Cập nhật lần cuối` ở đầu phản ánh thay đổi mới nhất. Các thay đổi trọng yếu sẽ được ghi thêm trong [CHANGELOG.md](../../../CHANGELOG.md). Việc tiếp tục sử dụng sau khi thay đổi đồng nghĩa với chấp nhận.
+## 8. Trẻ em
 
-## 13. Liên hệ
+- Dự án không hướng tới trẻ em dưới 16 tuổi. Màn hình xác nhận pháp lý yêu cầu mọi người truy cập xác nhận mình đủ 16 tuổi trở lên.
+- Nội dung người lớn (18+) bị ẩn theo mặc định, kể cả ảnh bìa. Nội dung này chỉ hiện ra nếu người truy cập tự bật trong Settings sau khi xác nhận mình đủ 18 tuổi trở lên. Lựa chọn đó chỉ được lưu trong trình duyệt của họ (`webapp.prefs`). Cờ `nsfw` chỉ là nhãn được gắn ở mức cố gắng tốt nhất (xem [Tuyên bố miễn trừ trách nhiệm](DISCLAIMER.md)).
+- Người duy trì không cố ý thu thập dữ liệu cá nhân của trẻ em dưới 16 tuổi. Nếu bạn cho rằng một trẻ em đã gửi dữ liệu cá nhân (ví dụ trong ghi chú Suggest hoặc qua email), cha mẹ hoặc người giám hộ có thể viết tới **privacy@freeitchgames.win** và dữ liệu đó sẽ được xóa.
 
-Cho câu hỏi về Chính sách này:
+## 9. Chuyển dữ liệu ra nước ngoài
 
-- Mở issue `[General]` hoặc `[Feedback]`.
-- DM qua bất kỳ kênh nào liệt kê trên [trang About](https://freeitchgames.win/#/about).
+- Người duy trì ở Việt Nam. Email bạn gửi và dữ liệu trong hàng chờ duyệt được Người duy trì xử lý từ Việt Nam.
+- Cloudflare xử lý dữ liệu trên mạng lưới toàn cầu của họ, và GitHub hoạt động ở phạm vi quốc tế, nên dữ liệu của bạn có thể được xử lý bên ngoài quốc gia của bạn, kể cả ở những nước có luật bảo vệ dữ liệu khác với nơi bạn sống. Các nhà cung cấp này mô tả các biện pháp bảo vệ họ áp dụng cho việc chuyển dữ liệu quốc tế trong chính sách quyền riêng tư và điều khoản xử lý dữ liệu của họ (link ở mục 4).
 
-## 14. Lời cuối
+## 10. Bảo mật
 
-Không tracking, không analytics, không telemetry, không spying. Người duy trì quá lười và quá thất nghiệp để xây pipeline dữ liệu kể cả khi muốn. Cứ duyệt thoải mái.
+- Website chỉ được phục vụ qua HTTPS.
+- Tối thiểu hóa dữ liệu: không tài khoản, mã nguồn của Dự án không lưu địa chỉ IP, ghi chú Suggest bị xóa sau 180 ngày, bản ghi chống gửi trùng bị xóa sau 7 ngày.
+- Khu vực quản trị và API ingest được bảo vệ bằng Cloudflare Access, và mã máy chủ của Website tự xác minh token Access ở mọi request được bảo vệ.
+- Các thông tin bí mật (như private key của GitHub App) được giữ trong kho lưu trữ bí mật của Cloudflare, không bao giờ nằm trong Repository. Khu vực quản trị ghi vào Repository dưới danh nghĩa một GitHub App, với các commit đã được xác minh (verified).
+- Content Security Policy chặt chẽ chỉ cho phép script từ chính Website, cộng với Cloudflare Web Analytics và Turnstile.
+- Các GitHub Actions được ghim theo commit SHA cụ thể với quyền tối thiểu cần thiết, và Dependabot giữ cho các dependency luôn được cập nhật.
+- Không hệ thống nào an toàn tuyệt đối. Nếu bạn phát hiện lỗ hổng, vui lòng báo cáo riêng tư theo hướng dẫn trong [Chính sách bảo mật (Security Policy)](SECURITY.md) hoặc qua **security@freeitchgames.win**. Nếu xảy ra sự cố vi phạm dữ liệu cá nhân, Người duy trì sẽ thông báo cho những người bị ảnh hưởng và cơ quan chức năng theo yêu cầu của pháp luật.
 
-## 15. Telegram bot — đường đóng góp tùy chọn
+## 11. Thay đổi Chính sách này
 
-> **Đã ngừng (tháng 9/2026).** Đường đóng góp qua Telegram bot đã dừng và không còn nhận game; workflow `bot-ingest.yml` đã bị gỡ. Mục này được giữ lại để mô tả cách dữ liệu đã được xử lý khi bot còn chạy và sẽ bị bỏ ở lần sửa đổi toàn diện tiếp theo của văn bản.
+- Người duy trì có thể cập nhật Chính sách này. Các phiên bản mới được công bố trong Repository kèm ngày `Cập nhật lần cuối` ở đầu văn bản, và các thay đổi quan trọng được ghi trong [CHANGELOG.md](../../../CHANGELOG.md). Các phiên bản trước vẫn còn trong lịch sử của Repository.
+- Khi một thay đổi cần bạn chấp nhận lại, màn hình xác nhận pháp lý trên Website và trong các Ứng dụng sẽ yêu cầu bạn xem và chấp nhận các văn bản đã cập nhật trước khi tiếp tục.
 
-[`CONTRIBUTING.md`](CONTRIBUTING.md) mô tả một flow tùy chọn để gửi game qua
-[@my_skull_bot](https://t.me/my_skull_bot). Flow này bao gồm việc tự nguyện
-chia sẻ Telegram numeric ID với Người duy trì (operator: poli0981). Mục
-này giải thích cách ID đó được xử lý.
+## 12. Liên hệ
 
-| Mục | Lưu ở đâu | Thời gian sống | Đồng bộ ngoài thiết bị | Trong repo này |
-|---|---|---|---|---|
-| Telegram numeric ID của Bạn | Máy cục bộ của operator, trong Docker volume hoặc file cục bộ dùng cho whitelist của bot | Cho tới khi Bạn yêu cầu gỡ, hoặc operator rotate whitelist | Không | **Không** |
-| Tin nhắn Telegram Bạn gửi cho bot | Server Telegram (theo chính sách Telegram) + bộ nhớ tạm của process bot trong khi parse | Theo quy định lưu trữ của Telegram; bot không persist ngoài request đang xử lý | Không (bot không log message body xuống đĩa) | Không |
-| URL itch.io Bạn gửi qua bot | File [`scripts/temp_link.json`](../../../scripts/temp_link.json) trong repo, sau đó merge hàng ngày vào [`data_game/*.json`](../../../data_game/) | Vĩnh viễn (Git history); trở thành catalog công khai | Có — công khai qua GitHub | **Có (chỉ URL, không Telegram metadata)** |
-| Workflow run ID + commit message của batch bot-ingest | GitHub Actions log (theo retention của GitHub) và Git history (commit `bot-ingest: run NNN`) | Retention mặc định GitHub (90 ngày cho log); Git history vĩnh viễn | Có — GitHub | Có (chỉ commit message; không Telegram ID) |
+Cả bốn địa chỉ dưới đây đều được Cloudflare Email Routing chuyển tiếp tới Người duy trì.
 
-**Gỡ**: DM Người duy trì "remove me from whitelist". Lần khởi động bot kế
-tiếp sẽ drop ID của Bạn; các request đã được chấp nhận khi Bạn còn trong
-whitelist không bị revert ngược (URL Bạn đã gửi vẫn nằm trong catalog với
-tư cách dữ liệu công khai, giống y URL gửi qua GitHub Issue).
+- **privacy@freeitchgames.win**: câu hỏi về quyền riêng tư và yêu cầu liên quan đến dữ liệu của bạn (mục tiêu trả lời: trong vòng 30 ngày).
+- **takedown@freeitchgames.win**: gỡ game hoặc sửa dữ liệu game, bao gồm khiếu nại bản quyền.
+- **security@freeitchgames.win**: lỗ hổng bảo mật (hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub; xem [Chính sách bảo mật (Security Policy)](SECURITY.md)).
+- **legal@freeitchgames.win**: mọi vấn đề pháp lý khác.
 
-**Mã nguồn bot + ghi chú vận hành**:
-[poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
-([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
+Với những câu hỏi không cần riêng tư, bạn cũng có thể mở issue trong Repository; issue là công khai.
 
-Cơ sở pháp lý cho việc xử lý dữ liệu trong flow này là **sự đồng ý rõ ràng
-của Bạn** theo Nghị định 13/2023/NĐ-CP của Việt Nam và các quy định tương
-đương của GDPR / CCPA. Bạn có thể rút lại sự đồng ý bất kỳ lúc nào theo
-bước gỡ ở trên; việc rút lại không ảnh hưởng tới tính hợp pháp của xử lý
-trước thời điểm rút lại.
+## 13. Lời cuối
 
-Built with boredom and zero data harvesting. 🚀
+Một danh sách game miễn phí thì chẳng cần tới dữ liệu của bạn, nên Dự án gần như không đụng tới nó: không tài khoản, không quảng cáo, không cookie theo dõi, không bán gì cả. Chút dữ liệu ít ỏi còn lại được giữ ngắn nhất có thể và bị xóa khi không còn cần. Cứ thoải mái mà duyệt game.

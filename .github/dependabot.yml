@@ -11,10 +11,7 @@ updates:
       timezone: Asia/Ho_Chi_Minh
     cooldown:
       default-days: 3
-    # The v4 rewrite of webapp/ is in progress on its own branch: routine
-    # version bumps on main would only conflict with it. Security updates still
-    # arrive. After go-live, raise this limit again.
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     groups:
       react:
         patterns: ['react', 'react-dom', '@types/react*', 'react-router*']

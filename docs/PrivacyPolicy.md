@@ -2,168 +2,240 @@
 
 Last updated: 2026-09-18
 
-This Privacy Policy describes how the Repository, the Webapp, and the Desktop App handle Your data. The short version: the Maintainer collects nothing on any server he controls. Everything that persists, persists locally on Your device.
+Applies from: the release of version 4.0.0.
 
-> **TL;DR**: No backend, no analytics, no cookies, no tracking, no telemetry. The Webapp keeps a few items in `localStorage` (theme, sidebar state, optional encrypted PAT) and an IndexedDB cache of the public catalog. The Desktop App fetches itch.io and GitHub directly to bypass CORS. That's the entire data story.
+This Privacy Policy explains what personal data the `free-games-itchio-list` project processes, why, who helps process it, how long it is kept, and what rights you have. It covers the website **https://freeitchgames.win**, the desktop and Android apps, the public catalog data and the repository. The short version: there are no accounts, no ads and no tracking cookies. The Project keeps as little as it can, and most of what exists stays in your own browser.
 
-## 1. Definitions
+A Vietnamese translation is available at [`docs/i18n/vi/PrivacyPolicy.md`](i18n/vi/PrivacyPolicy.md). If the two differ, this English version prevails.
 
-The defined terms in [EULA §1](EULA.md#1-definitions) apply here as well.
+> **TL;DR**
+>
+> - No accounts, no sign-in, no ads, no selling of data, no profiling. The Apps have no telemetry.
+> - The Website runs on Cloudflare, which processes standard request data (IP address, browser, URL, time) to deliver and protect the site and to count visits in aggregate, without cookies. The Project's own code never saves your IP address.
+> - Your settings (theme, language, 18+ choice, accepted terms) and a cache of the public catalog stay in your browser and are never sent to the Project.
+> - If you use the Suggest page, the Maintainer receives the game link, your optional note (deleted after 180 days) and the time. Please don't put personal data in the note.
+> - Questions or requests: **privacy@freeitchgames.win**.
 
-## 2. Maintainer-side data collection
+## 1. Who is responsible, and what this Policy covers
 
-**The Maintainer collects, stores, and processes zero personal data on any server he controls.** There is no backend, no database, no analytics service, no error-reporting endpoint, no telemetry, no advertising, no fingerprinting.
+### 1.1 Controller
 
-The Repository runs entirely on:
+The controller of the personal data described in this Policy is **the Maintainer**: poli0981 (SkullMute), an individual in Vietnam who runs the Project as a solo hobby. Contact: **privacy@freeitchgames.win** (see section 12).
 
-- **GitHub** (source hosting, Actions, raw file CDN, Pages hosting for the Webapp).
-- **Your device** (the Webapp in Your browser, or the Desktop App in a Tauri 2 webview).
-- **itch.io** (game pages, fetched on demand by the scraper or the Desktop App's preview feature).
+### 1.2 Definitions
 
-The Maintainer has no infrastructure that could collect Your data even if he wanted to.
+- **"The Website"**: https://freeitchgames.win, including its pages and endpoints (such as `/data`, `/img`, `/suggest`, `/admin` and `/api/…`). The old address https://poli0981.github.io/free-games-itchio-list/ only redirects to it.
+- **"The Apps"**: the desktop apps (Windows, macOS, Linux) and the Android APK, built from the same code as the Website and distributed on GitHub Releases. They are read-only viewers of the Catalog.
+- **"The Catalog"**: the list of games and their data: `data_game/`, `scripts/deleted_games.json`, and the files derived from them and served under https://freeitchgames.win/data.
+- **"The Repository"**: https://github.com/poli0981/free-games-itchio-list, including the data pipeline that runs in its GitHub Actions.
+- **"The Project"**: the Website, the Apps, the Catalog and the Repository together.
+- **"The Maintainer"**: poli0981 (SkullMute), as described in section 1.1.
+- **"Personal data"**: any information about an identified or identifiable person.
+- **"You"**: anyone who uses the Project, including game creators whose games are listed in the Catalog.
 
-## 3. GitHub
+### 1.3 What this Policy does not cover
 
-This Repository, the Webapp deployment (GitHub Pages), and the Desktop App release artifacts are hosted on GitHub. GitHub may log standard HTTP request data (IP address, user agent, referrer) per their own policies. The Maintainer has no access to those logs beyond GitHub's repository insights (aggregate clone / view counts).
+This Policy does not cover services that handle data on their own account: itch.io (every game link and every download goes there), GitHub for your GitHub account and your activity on github.com, Cloudflare's use of data for its own purposes as described in its privacy policy, the games themselves, or the Maintainer's browser extension, which is a separate project with its own documentation. Their own policies apply (links in section 4).
 
-GitHub's privacy policy: <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement>
+## 2. What is processed and why
 
-When You contribute (open an issue, comment, fork, submit a PR), You publish that information on GitHub under Your account. The Maintainer sees only what GitHub makes public.
+### 2.1 Visiting the Website
 
-### 3a. Cloudflare (interim notice)
+- **Request data.** The Website is hosted on Cloudflare. When your browser loads a page, a file or an image, Cloudflare processes standard request data: your IP address, user agent (browser and device type), the requested URL, the referrer and the time. This is needed to deliver the site, to protect it (TLS, firewall, bot and denial-of-service protection) and to limit abuse.
+- **Aggregate statistics.** The Website uses Cloudflare Web Analytics, which loads a small script from Cloudflare and counts visits in aggregate, without cookies and, according to Cloudflare, without fingerprinting. The Maintainer sees only totals (such as page views), not individual visitors. The Project runs no other analytics.
+- **Server logs.** Requests handled by the Website's server code (Cloudflare Workers) are recorded by Cloudflare Workers Logs on a 10% sample and kept for about 7 days, to find bugs and investigate abuse.
+- **Network error reports.** Cloudflare may add Network Error Logging (NEL) headers, which ask your browser to report connection errors to Cloudflare.
+- **No IP addresses stored by the Project.** The Project's own code never writes your IP address to its database, its files or the Repository.
+- **Cover images** are served by the Website itself (resized copies stored on Cloudflare R2), so your browser does not contact itch.io while you browse. itch.io only hears from you when you click a game link and go there; the Website then passes at most its own address (not the page you were on) as the referrer.
 
-Since September 2026 the Webapp is served from **https://freeitchgames.win** on Cloudflare (DNS, CDN and Workers static assets); the old GitHub Pages address only redirects there. To deliver and protect the site, Cloudflare processes standard request data (IP address, user agent, requested URL) and may send Network Error Logging reports or set strictly-necessary security cookies when its protections are active. See [Cloudflare's Privacy Policy](https://www.cloudflare.com/privacypolicy/). This section is an interim note; the Policy will be fully rewritten for the new architecture in v4.0.0.
+### 2.2 Using the Apps
 
-## 4. itch.io
+- The Apps are read-only viewers with **no telemetry, no analytics and no accounts**.
+- They download the Catalog JSON from https://freeitchgames.win/data (Cloudflare processes the request data as described in section 2.1) and load cover images **directly from itch.io's image server (img.itch.zone)**, so itch.io receives your IP address and user agent when covers load.
+- Clicking a game opens its itch.io page in your browser.
+- Updates are manual: the Apps do not check for updates on their own. When you download an installer or the APK from GitHub Releases, GitHub processes that request.
+- The Apps keep the same local storage as the Website (section 3.1), on your device only. Uninstalling an App removes it.
 
-All game links in the Catalog point directly to itch.io pages. Clicking a link takes You to itch.io; what happens there is governed by itch.io's terms and privacy policy:
+### 2.3 Suggesting a game
 
-- itch.io Privacy Policy: <https://itch.io/docs/legal/privacy-policy>
-- itch.io Terms of Service: <https://itch.io/docs/legal/terms>
+When you use the Suggest page (https://freeitchgames.win/suggest):
 
-The Repository's `update.yml` GitHub Action also makes server-to-server requests to itch.io to scrape page metadata; those requests come from GitHub's IP ranges, not from Your device.
+- **What is stored**: the game URL, your optional note (up to 500 characters) and the time of submission, in the review queue (section 2.4). No name, email address or account is asked for or stored.
+- **Anti-spam**: Cloudflare Turnstile processes signals about your device and browser to tell people from bots. To check the result, the Website sends the Turnstile token and your IP address to Cloudflare's verification service.
+- **Rate limiting**: your IP address is used transiently to count requests. The Project does not store it.
+- **Purpose**: to review your suggestion. If it is approved, the game URL becomes part of the public Catalog. Your note is never published and is **deleted automatically after 180 days**.
+- **Please don't put personal data in the note**, yours or anyone else's. The form is for game links only.
 
-## 5. What the Webapp stores in Your browser
+### 2.4 The review queue and the admin area
 
-The Webapp persists the following items locally and never transmits them to any server controlled by the Maintainer.
+- **How games arrive**: suggestions from the Suggest page; submissions from the Maintainer's browser extension through an authenticated API (the game URL, an optional title and note, and the extension's service-token ID; the records that prevent duplicate submissions are kept for 7 days); and automatic discovery from itch.io's public RSS feeds.
+- **The review queue** (Cloudflare D1) holds candidate game URLs with their source, the title, cover-image URL and genre hint taken from itch.io, automatic flags, notes, timestamps and the Maintainer's decision. Nothing enters the Catalog until the Maintainer approves it. Rejected URLs are kept indefinitely as a blocklist; only the URL is needed to avoid reviewing the same game again.
+- **The admin area** (https://freeitchgames.win/admin) is for the Maintainer only. It is protected by Cloudflare Access (GitHub login or a one-time PIN sent by email), which sets a `CF_Authorization` session cookie in the Maintainer's browser. Admin actions are recorded in an audit log together with the Maintainer's email address. The audit log is never published.
 
-| Storage | Key | Contents | When written |
+### 2.5 Public game data in the Catalog
+
+- The Catalog is built from public itch.io game pages: the game's name, developer and publisher names, description, genre, tags, platforms, ratings and similar metadata, and the cover image URL. The pipeline identifies itself as `FreeItchGamesBot/4.0 (+https://freeitchgames.win/about)` and paces its requests.
+- A developer or publisher name, or the creator's itch.io address inside a game URL, can be a person's name or handle, so it can be personal data. It is used only to identify and credit the game and to help people discover it.
+- This data is published on the Website, in the Repository and under https://freeitchgames.win/data. When a game is removed, its URL, name, reason and removal date are logged in [`scripts/deleted_games.json`](../scripts/deleted_games.json), which the Website shows on its Removed page (https://freeitchgames.win/removed).
+- Creators can ask for a correction or a removal at any time (section 7).
+
+### 2.6 Contacting the Maintainer
+
+- Emails sent to the Project's addresses (section 12) are forwarded by Cloudflare Email Routing to the Maintainer's mailbox. The Maintainer receives your email address, any name you use and your message, and uses them only to handle your request.
+- Correspondence about removal and copyright requests is kept as long as needed to handle the request.
+
+### 2.7 GitHub contributions
+
+Issues, pull requests, discussions and comments are public on GitHub under your GitHub account, and GitHub's privacy statement applies to them. The Maintainer sees only what GitHub shows. The "Remove a game" issue form is public too, so use email for anything you don't want published.
+
+### 2.8 What the Project does not do
+
+- No accounts or sign-in for the public, no comments, no ads and no payments.
+- No cookies set by the Project's own code on the public Website.
+- No selling or sharing of personal data, for advertising or any other purpose.
+- No profiling and no automated decisions with legal or similarly significant effects on you.
+- No telemetry in the Apps, and no analytics other than Cloudflare Web Analytics on the Website.
+
+## 3. Browser storage and cookies
+
+### 3.1 What the Website and the Apps store on your device
+
+The Website and the Apps keep the following items on your device only. None of them is sent to the Project.
+
+| Storage | Key | Contents | Kept until |
 |---|---|---|---|
-| `localStorage` | `webapp.pat.encrypted` | Your GitHub PAT, encrypted with AES-GCM 256-bit. Encryption key is derived from Your passphrase via PBKDF2-SHA256 (100,000 iterations) with a per-token random salt. The plaintext PAT is **never** persisted to disk. | When You enable write access in Settings. |
-| `localStorage` | `webapp.theme` | One of `'light'`, `'dark'`, `'system'`. | When You toggle the theme. |
-| `localStorage` | `webapp.prefs` | UI preferences (sidebar collapsed, density, language, notification settings, optional commit-author override) and the version of the legal terms You accepted (`acceptedLegalVersion`). | When You change a UI preference or accept the legal terms. |
-| `IndexedDB` (via `idb-keyval`) | TanStack Query cache keys | Cached copies of the public catalog JSON for fast reload and limited offline reads. | Automatic, on first fetch. |
+| `localStorage` | `webapp.prefs` | Interface preferences such as language and layout density, your 18+ (NSFW) content choice, and the version of the legal documents you accepted | You clear it |
+| `localStorage` | `webapp.theme` | Theme: `light`, `dark` or `system` | You clear it |
+| IndexedDB (via `idb-keyval`) | `webapp.query-cache` | A cache of the public Catalog JSON, for fast loading and limited offline use | At most 7 days, then refreshed or discarded |
+| `sessionStorage` | `reloaded-after-deploy` | A timestamp, so the page reloads at most once after a site update | The tab is closed |
 
-You can erase all of the above at any time by:
+On first load, the Website and the Apps also delete the entries that the old v3 app left in browser storage (an encrypted GitHub access token and commit-signing key data). v4 does not use them.
 
-- Clicking **Settings → Remove saved PAT** (clears the PAT entry only).
-- Using Your browser's "Clear site data" / "Clear cookies and storage" for `freeitchgames.win` (clears everything). The old `poli0981.github.io` address now only redirects, and that redirect page deletes any PAT/GPG data the old app left there.
-- Uninstalling the Desktop App and removing its WebView2 / WebKit profile directory (Desktop only; locations vary by OS).
+These items are strictly necessary for features you use (keeping your settings, loading the site quickly, recovering after an update), so they don't need consent under the EU ePrivacy rules or the UK PECR. You can delete them at any time with your browser's "Clear site data" option for `freeitchgames.win`, or inspect them in your browser's developer tools. In the Apps, uninstalling removes them; if a desktop uninstaller leaves the App's data folder (`com.poli0981.freegamesitchio`) behind, you can delete that folder yourself. On Android you can also clear the app's storage in the system settings.
 
-## 6. PAT (Personal Access Token) handling — in depth
+### 3.2 Cookies
 
-The Webapp's optional write features (edit annotations, dispatch the scraper workflow, bulk delete) require a GitHub fine-grained PAT. The PAT lifecycle is entirely client-side:
+- The Project's own code sets **no cookies** on the public Website.
+- Cloudflare may set strictly necessary security cookies, such as `__cf_bm` or `cf_clearance`, when its bot or challenge protections run. They serve security only.
+- The Suggest page uses Cloudflare Turnstile (section 2.3); see Cloudflare's Turnstile privacy addendum (section 4).
+- The admin area uses the Cloudflare Access session cookie `CF_Authorization`, which exists only in the Maintainer's browser.
 
-1. **Creation** — You generate a fine-grained PAT on github.com, scoped to `poli0981/free-games-itchio-list` only, with `Contents: Read & write` and `Actions: Read & write`. The Maintainer never sees this step.
-2. **Encryption** — You paste the PAT into Settings + a passphrase. The Webapp derives an AES-GCM key from the passphrase via PBKDF2-SHA256 (100k rounds, 16-byte random salt). The PAT is encrypted; the resulting ciphertext + salt + IV is stored in `localStorage` under `webapp.pat.encrypted`. The plaintext PAT and the passphrase are never written to any storage.
-3. **Unlock** — On a later session, You enter the passphrase. The Webapp re-derives the key and decrypts the PAT into a Zustand in-memory store. The decrypted PAT exists only in JavaScript memory.
-4. **Use** — Octokit calls to `api.github.com` include the PAT as `Authorization: Bearer <pat>` over HTTPS. The PAT is sent only to `api.github.com` and never to any other host.
-5. **Lock** — Clicking Lock (or closing the tab) discards the in-memory PAT. The encrypted blob remains in `localStorage` for the next unlock.
-6. **Removal** — Clicking Remove saved PAT deletes the `webapp.pat.encrypted` entry from `localStorage`.
+## 4. Service providers and other parties
 
-If You suspect Your PAT is compromised:
+| Party | Role and what it does | Data involved | Privacy policy |
+|---|---|---|---|
+| **Cloudflare** | Processor for the Website: DNS, CDN, firewall and TLS; Workers (the site's server code) and static assets; R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (Suggest page only); Web Analytics; Workers Logs; Access (admin login only); Rate Limiting; Email Routing (forwards the Project's contact addresses) | Request data, Suggest submissions, the review queue, forwarded emails | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
+| **GitHub** | Hosts the code, the Catalog data, issues and discussions, the data pipeline (GitHub Actions) and the release downloads. Independent controller for your GitHub account and activity | Your public contributions; request data when you visit GitHub or download a release | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
+| **itch.io** | Independent platform, not affiliated with the Project. Source of the game data; every game link and download goes there; the Apps load covers from img.itch.zone | What your browser or the Apps send when you visit itch.io or load covers from it. The pipeline sends nothing about you | <https://itch.io/docs/legal/privacy-policy> |
+| **Discord** | Receives automated build and release notifications from GitHub Actions | No visitor data | — |
 
-- Lock or remove it immediately.
-- Revoke it on github.com (Settings → Developer settings → Personal access tokens → Fine-grained tokens).
-- Generate a new one with a fresh passphrase.
+Cloudflare may process data anywhere on its global network (see section 9). The Maintainer does not give personal data to anyone else, except where the law requires it.
 
-See also: [SECURITY.md](../SECURITY.md).
+## 5. How long data is kept
 
-## 7. Network requests
+| Data | Kept for |
+|---|---|
+| Request data processed by Cloudflare for delivery and security | By Cloudflare under its privacy policy; the Project does not store it |
+| Workers Logs (a 10% sample of requests handled by the Website's server code) | About 7 days |
+| Web Analytics | Aggregate statistics only; the Maintainer cannot see individual visitors |
+| IP address used for rate limiting and Turnstile | Used transiently; never stored by the Project |
+| Suggest note | Deleted automatically after **180 days** |
+| Suggested or discovered game URLs, with source and timestamps | In the review queue while needed to avoid reviewing the same game twice. Approved URLs become part of the public Catalog; rejected URLs are kept indefinitely as a blocklist |
+| Duplicate-submission records from the browser extension | **7 days** |
+| Admin audit log (with the Maintainer's email address) | Kept as the record of admin changes; never published |
+| Catalog entries (including developer and publisher names) | While the game is listed. Removal records stay in the public removed-games list, and the Repository's Git history keeps past versions (see section 7.3) |
+| Emails, including removal and copyright requests | As long as needed to handle the request |
+| GitHub contributions | On GitHub, until you or GitHub remove them |
+| Browser storage | See section 3.1 |
+| `CF_Authorization` cookie (Maintainer only) | For the duration of the Cloudflare Access session |
 
-When running, the Webapp and Desktop App make requests to the following endpoints — and only these:
+## 6. Legal bases
 
-| Endpoint | Purpose | Auth |
-|---|---|---|
-| `raw.githubusercontent.com/poli0981/free-games-itchio-list/main/data_game/*.json` | Read public catalog data. | None (public). |
-| `api.github.com/repos/poli0981/free-games-itchio-list/...` | Write operations: edit, delete, dispatch workflows, list runs. | PAT (only when unlocked). |
-| `*.itch.io/*`, `img.itch.zone/*` | (Desktop App only) Direct itch.io fetches for the in-app game preview, bypassing browser CORS. | None (public). |
+### 6.1 Vietnam
 
-No third-party CDN, no analytics endpoint, no telemetry collector, no font CDN. Tailwind, Radix, lucide-react, etc. are bundled at build time.
+The Maintainer processes personal data in accordance with Vietnam's **Law on Personal Data Protection No. 91/2025/QH15** (passed on 26 June 2025, in force since 1 January 2026) and its implementing regulations. The Project processes as little personal data as it can, and only for the purposes in section 2.
 
-## 8. Cookies
+Where that Law requires your consent, you give it by a clear action: by accepting this Policy at the legal gate on your first visit and, for what you type yourself, by submitting the Suggest form or sending an email. You can withdraw your consent at any time (section 7). Withdrawal does not affect processing carried out before it.
 
-The Webapp and Desktop App **do not set any cookies.** GitHub Pages may issue cookies as part of its CDN behavior; those are GitHub's, not the Maintainer's.
+### 6.2 EU/EEA and UK
 
-## 9. Children's privacy
+If you are in the EU/EEA or the UK, the GDPR or the UK GDPR applies to the processing of your personal data, on these legal bases:
 
-The Repository indexes games hosted on itch.io, which include adult content. The `nsfw` flag is best-effort (see [DISCLAIMER §2](DISCLAIMER.md#2-no-warranty-as-to-the-games)). The Webapp does not gate access by age. If You are under the age of majority in Your jurisdiction, please use the Repository under the supervision of a parent or guardian and respect itch.io's own age-gating where applicable.
+| Processing | Legal basis |
+|---|---|
+| Delivering and securing the Website and the data the Apps download (request data, server logs, rate limiting, Turnstile, security cookies) | Legitimate interests (Art. 6(1)(f)): running a working, secure service and preventing abuse |
+| Aggregate visit statistics | Legitimate interests: understanding how the site is used overall, without tracking individuals |
+| Suggestions and the review queue | Legitimate interests: handling the suggestion you chose to send and curating the Catalog |
+| Public game data about creators | Legitimate interests: helping people discover free games using information the creators published on itch.io. You can object at any time (section 7) |
+| Emails and removal requests | Legitimate interests: answering you and handling your request |
+| Browser storage (section 3.1) | Strictly necessary for features you use; no consent is needed under the ePrivacy rules or the PECR |
 
-The Maintainer does not knowingly collect personal data from children. (He doesn't collect personal data from anyone — see §2.)
+## 7. Your rights and how to use them
 
-## 10. Your rights
+### 7.1 Your rights
 
-Because the Maintainer holds no personal data, requests under GDPR, CCPA, Vietnam's PDPD (Decree 13/2023/ND-CP), or similar regimes that target the Maintainer have nothing to act on. For data on Your device:
+Depending on the law that applies to you, including Law No. 91/2025/QH15 and, in the EU/EEA and the UK, the GDPR or the UK GDPR, you have the right to:
 
-- **Right to access**: open Your browser's DevTools → Application → Storage → Local Storage / IndexedDB.
-- **Right to erasure**: clear site data as described in §5.
-- **Right to portability**: export `localStorage` via DevTools (it's plain JSON; the PAT is encrypted).
+- be informed about how your personal data is processed (this Policy);
+- access the personal data the Project holds about you;
+- correct it if it is inaccurate;
+- have it deleted;
+- object to its processing, including processing based on legitimate interests;
+- withdraw your consent where processing relies on it;
+- complain to a supervisory authority: the competent personal data protection authority in Vietnam, or the data protection authority of your EU/EEA country or of the UK.
 
-For data held by GitHub or itch.io about Your interactions with their platforms, contact those providers directly using the privacy contacts in their policies.
+Under the GDPR and the UK GDPR, you can also ask for processing to be restricted, or for a copy of your data in a portable format, where those rights apply.
 
-## 11. Third-party services
+### 7.2 How to make a request
 
-| Service | Used for | Policy |
-|---|---|---|
-| GitHub | Repo, CI, Pages, Releases, API | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
-| itch.io | Game pages, scrape source | <https://itch.io/docs/legal/privacy-policy> |
+- Email **privacy@freeitchgames.win**. Say what you want, and give enough detail to find the data: for example, the game URL you suggested and roughly when, or the email address you wrote from. The Maintainer may ask a follow-up question to confirm that the request is yours.
+- The target is to answer within **30 days**; many requests are handled much sooner. Requests are free of charge.
+- Game creators who want a game removed or its data corrected can also email **takedown@freeitchgames.win** or open a ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) (public). The target for removals is within 7 days. The removal process is described in the [Terms of Use](ToS.md).
 
-The webapp does **not** integrate any analytics provider, ad network, error-reporting service (no Sentry, no Datadog), social media SDK, or font CDN.
+### 7.3 Limits worth knowing
 
-## 12. Changes to this Policy
+- The Project stores no IP addresses and has no accounts, so it cannot link visits to the Website to you. Cloudflare's security and log data is kept only briefly (section 5).
+- Browser storage is under your control: you can view and delete it yourself (section 3.1).
+- The Git history of the public Repository keeps past versions of the Catalog. The Maintainer cannot rewrite public history, except where there is an exceptional legal necessity. Copies that others have already made (forks, downloaded data) are outside the Maintainer's control.
+- Content on GitHub (issues, comments) is managed through GitHub; you can edit or delete your own comments there.
 
-The Maintainer may update this Policy. The `Last updated` date at the top reflects the most recent change. Material changes will additionally be noted in [CHANGELOG.md](../CHANGELOG.md). Continued use after a change constitutes acceptance.
+## 8. Children
 
-## 13. Contact
+- The Project is not directed at children under 16. The legal gate asks every visitor to confirm that they are at least 16.
+- Adult (18+) content is hidden by default, cover images included. It appears only if a visitor opts in under Settings after confirming that they are 18 or older. That choice is stored only in their browser (`webapp.prefs`). The `nsfw` flag is a best-effort label (see the [Disclaimer](DISCLAIMER.md)).
+- The Maintainer does not knowingly collect personal data from children under 16. If you believe a child has sent personal data (for example in a Suggest note or an email), a parent or guardian can write to **privacy@freeitchgames.win** and it will be deleted.
 
-For questions about this Policy:
+## 9. International transfers
 
-- Open a `[General]` or `[Feedback]` issue.
-- DM via any channel listed on the [About page](https://freeitchgames.win/#/about).
+- The Maintainer is in Vietnam. Emails you send and the data in the review queue are handled by the Maintainer from Vietnam.
+- Cloudflare processes data on its global network, and GitHub operates internationally, so your data may be processed outside your country, including in countries whose data protection laws differ from yours. These providers describe the safeguards they use for international transfers in their privacy policies and data processing terms (links in section 4).
 
-## 14. Final vibes
+## 10. Security
 
-No tracking, no analytics, no telemetry, no spying. The Maintainer is too lazy and too unemployed to build a data pipeline even if he wanted one. Browse freely.
+- The Website is served only over HTTPS.
+- Data minimization: no accounts, no IP addresses stored by the Project's code, Suggest notes deleted after 180 days, duplicate-submission records after 7 days.
+- The admin area and the ingest API are protected by Cloudflare Access, and the Website's server code verifies the Access token itself on every protected request.
+- Secrets (such as the GitHub App's private key) are kept in Cloudflare's secret storage, never in the Repository. The admin area writes to the Repository as a GitHub App, with verified commits.
+- A strict Content Security Policy limits scripts to the Website itself plus Cloudflare Web Analytics and Turnstile.
+- GitHub Actions are pinned to exact commit SHAs with least-privilege permissions, and Dependabot keeps dependencies up to date.
+- No system is perfectly secure. If you find a vulnerability, please report it privately as described in the [Security Policy](../SECURITY.md) or at **security@freeitchgames.win**. If a personal data breach occurs, the Maintainer will notify the people affected and the authorities as the law requires.
 
-## 15. Telegram bot — optional contribution path
+## 11. Changes to this Policy
 
-> **Retired (September 2026).** The Telegram bot path is discontinued and no longer accepts submissions; the `bot-ingest.yml` workflow was removed. This section is kept to describe how data was handled while it ran and will be dropped in the next full revision of this document.
+- The Maintainer may update this Policy. New versions are published in the Repository with the `Last updated` date at the top, and material changes are noted in [CHANGELOG.md](../CHANGELOG.md). Earlier versions remain in the Repository's history.
+- When a change requires your acceptance again, the legal gate on the Website and in the Apps asks you to review and accept the updated documents before you continue.
 
-[`CONTRIBUTING.md`](../CONTRIBUTING.md) describes an optional flow for
-submitting games via [@my_skull_bot](https://t.me/my_skull_bot). The flow
-involves voluntarily sharing a Telegram numeric ID with the Maintainer
-(operator: poli0981). This section explains how that ID is handled.
+## 12. Contact
 
-| Item | Stored where | Lifetime | Synchronized off-device | In this repo |
-|---|---|---|---|---|
-| Your Telegram numeric ID | Operator's local machine, in a Docker volume or local file used by the bot's whitelist | Until You request removal, or the operator rotates the whitelist | No | **No** |
-| Telegram messages You send to the bot | Telegram's servers (per Telegram's policy) + transient memory of the bot process while parsing | Telegram's retention rules; bot does not persist beyond the in-flight request | No (bot does not log message bodies to disk) | No |
-| itch.io URLs You submit through the bot | Repository file [`scripts/temp_link.json`](../scripts/temp_link.json), then daily-merged into [`data_game/*.json`](../data_game/) | Permanent (Git history); becomes part of the public catalog | Yes — public via GitHub | **Yes (URL only, no Telegram metadata)** |
-| Workflow run ID + commit messages of bot-ingested batches | GitHub Actions logs (subject to GitHub's retention) and Git history (`bot-ingest: run NNN` commits) | GitHub default retention (90 days for logs); Git history is permanent | Yes — GitHub | Yes (commit messages only; no Telegram ID) |
+All four addresses are forwarded to the Maintainer by Cloudflare Email Routing.
 
-**Removal**: DM the Maintainer with "remove me from whitelist". The next
-bot start drops Your ID; in-flight requests already accepted are not
-retroactively reverted (the URLs You submitted remain in the catalog as
-public data, identical to URLs submitted via the GitHub Issue path).
+- **privacy@freeitchgames.win**: privacy questions and requests about your data (target answer: within 30 days).
+- **takedown@freeitchgames.win**: removing a game or correcting its data, including copyright claims.
+- **security@freeitchgames.win**: vulnerabilities (or GitHub's private vulnerability reporting; see the [Security Policy](../SECURITY.md)).
+- **legal@freeitchgames.win**: anything else legal.
 
-**Bot source code + operational notes**:
-[poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)
-([USER_GUIDE.md](https://github.com/poli0981/telegram-scraper-bot/blob/main/docs/USER_GUIDE.md)).
+For questions that aren't private, you can also open an issue in the Repository; issues are public.
 
-The legal basis for processing in this flow is **Your explicit consent**
-under Vietnam's PDPD (Decree 13/2023/ND-CP) and equivalent provisions of
-GDPR / CCPA. You may withdraw consent at any time per the removal step
-above; withdrawal does not affect the lawfulness of processing prior to
-withdrawal.
+## 13. Final vibes
 
-Built with boredom and zero data harvesting. 🚀
+A list of free games shouldn't need your data, so the Project barely touches it: no accounts, no ads, no tracking cookies, nothing sold. What little exists is kept short and deleted when it's no longer needed. Browse freely.

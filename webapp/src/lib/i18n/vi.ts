@@ -163,7 +163,7 @@ export const vi: Record<MessageKey, string> = {
   "dashboard.totalGames": "Tổng số game",
   "deleted.count": "{count} mục",
   "deleted.empty": "Chưa ghi nhận lượt xoá nào.",
-  "detail.annotationsDesc": "Ba trường này do người dùng chỉnh sửa được trong Phase 2 (safe_virus, notes, nsfw). Mọi thứ phía trên là dữ liệu từ scraper và chỉ đọc.",
+  "detail.annotationsDesc": "Ba trường này (safe_virus, notes, nsfw) do maintainer đặt. Mọi thứ phía trên lấy từ trang itch.io của game.",
   "detail.avgSession": "Phiên chơi trung bình",
   "detail.backToGames": "Quay lại danh sách game",
   "detail.byDev": "bởi {dev}",

@@ -1,12 +1,17 @@
-﻿name: 🎮 Add Games
-description: Suggest new free itch.io games (max 15 per issue pls)
+name: 🎮 Add Games (bulk list)
+description: Got a whole list of free itch.io games? Use this. For one game, the Suggest page is faster.
 title: "[Add Games] "
 labels: ["contribution", "games"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks bro! This repo lives on additions because I'm too lazy to hunt alone :D Only free-to-play itch.io games.
+        Thanks bro! This catalog lives on additions because I'm too lazy to hunt alone :D Only free-to-play itch.io games.
+
+        **Just one game? Use the Suggest page instead: https://freeitchgames.win/suggest** — no GitHub account needed, and it goes straight into the review queue.
+        This issue form is the fallback for **bulk lists** (several games at once).
+
+        How it works either way: every link lands in a review queue, and nothing enters the catalog until the Maintainer approves it. Approved links are scraped by the data pipeline; paid games and games already in the catalog are skipped.
 
   - type: dropdown
     id: count
@@ -25,7 +30,7 @@ body:
     attributes:
       label: Game Links (one per line!)
       description: |
-        I'll check (no guarantee perfect). One link per line — two on same line? Your loss :v
+        itch.io game page links only (like `https://creator.itch.io/game`). One link per line — two on the same line? Your loss :v
       placeholder: |
         https://example.itch.io/game1
         https://example.itch.io/game2
@@ -41,8 +46,16 @@ body:
   - type: textarea
     id: notes
     attributes:
-      label: Notes for table? (optional)
-      description: Personal rating, warnings, etc. — I'll add to "Notes" column
+      label: Anything the Maintainer should know? (optional)
+      description: Warnings (adult content, suspicious download, needs an account...), your personal take, etc. The Maintainer may use it for the game's `notes`, `nsfw` or `safe_virus` fields.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quick checks (optional)
+      options:
+        - label: I searched https://freeitchgames.win/games and these games aren't listed yet
+        - label: These games are free to play on itch.io (not paid)
 
   - type: checkboxes
     id: agreement

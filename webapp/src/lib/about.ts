@@ -38,8 +38,8 @@ export const AI_TOOLS: AiTool[] = [
   {
     name: 'Claude Code',
     vendor: 'Anthropic',
-    model: 'Claude Opus 4.8 (1M context)',
-    role: 'Newer recruit. Drove the v3.0.0 webapp + Tauri build, the v3.1.2 offline-link fix / About expansion / docs sweep, and the v3.7.0 legal-acceptance gate + per-tab chart lazy-loading. More cautious vibe — confirms before nuking anything.',
+    model: 'Claude Opus 5',
+    role: 'Newer recruit. Drove the v3.0.0 webapp + Tauri build, the v3.1.2 offline-link fix / About expansion / docs sweep, the v3.7.0 legal-acceptance gate + per-tab chart lazy-loading, and the v4.0.0 move to Cloudflare (Worker, admin + review queue, pipeline rewrite). More cautious vibe — confirms before nuking anything.',
     url: 'https://claude.com/claude-code',
   },
 ]

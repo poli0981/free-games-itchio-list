@@ -161,7 +161,7 @@ export const en = {
   "dashboard.totalGames": "Total Games",
   "deleted.count": "{count} entries",
   "deleted.empty": "No deletions logged.",
-  "detail.annotationsDesc": "These three fields are user-editable in Phase 2 (safe_virus, notes, nsfw). Everything above comes from the scraper and is read-only.",
+  "detail.annotationsDesc": "These three fields (safe_virus, notes, nsfw) are set by the maintainer. Everything above comes from the game's itch.io page.",
   "detail.avgSession": "Avg session",
   "detail.backToGames": "Back to games",
   "detail.byDev": "by {dev}",
