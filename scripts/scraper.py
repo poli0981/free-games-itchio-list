@@ -2,18 +2,22 @@
 scraper.py — Shared scraping utilities for itch.io game data.
 
 Provides:
-  - Session creation with retry + backoff
-  - Polite rate-limiting helpers
-  - Free/paid game detection
-  - Info table parsing (all fields → N/A on missing)
+  - Session creation (honest User-Agent, retries on 5xx only)
+  - fetch_page(): one GET with explicit 429 / Retry-After reporting
+  - Pacer: polite delays, batch pauses, back-off after a 429
+  - Free/paid detection, info table parsing (all fields → N/A on missing)
   - Description, thumbnail, NSFW extraction
-  - Full single-game scrape function
+  - parse_game(): full single-game record from a fetched page
 """
 
 import random
+import re
 import time
-from datetime import datetime, timezone
+from dataclasses import dataclass
+from datetime import UTC, datetime
+from email.utils import parsedate_to_datetime
 from html import unescape
+from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
@@ -25,43 +29,50 @@ from urllib3.util.retry import Retry
 # ---------------------------------------------------------------------------
 NA = "N/A"
 
+USER_AGENT = "FreeItchGamesBot/4.0 (+https://freeitchgames.win/about)"
+
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/131.0.0.0 Safari/537.36"
-    ),
+    "User-Agent": USER_AGENT,
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-# Polite delay range (seconds) between full page scrapes
-DELAY_MIN = 2.5
-DELAY_MAX = 5.0
+# (connect, read) timeouts in seconds
+TIMEOUT = (5, 15)
 
-# Lighter delay for HEAD / status-only checks
-DELAY_LIGHT_MIN = 1.0
-DELAY_LIGHT_MAX = 2.5
+# Polite delay range (seconds) between page requests
+DELAY_MIN = 2.0
+DELAY_MAX = 4.0
 
 # Batch processing: pause longer after N requests
 BATCH_SIZE = 20
 BATCH_PAUSE_MIN = 15.0
 BATCH_PAUSE_MAX = 30.0
 
+# Retry-After values from itch.io are honoured but capped at this many seconds.
+RETRY_AFTER_CAP = 300.0
+
 
 # ---------------------------------------------------------------------------
 # Session
 # ---------------------------------------------------------------------------
 def create_session() -> requests.Session:
-    """Create a requests.Session with automatic retry on transient errors."""
+    """requests.Session that retries connection errors and 5xx (not 429).
+
+    429 is surfaced to the caller (see fetch_page) so it can back off
+    globally instead of urllib3 sleeping for an uncapped Retry-After.
+    Backoff between the automatic retries: 0s, 4s.
+    """
     session = requests.Session()
     session.headers.update(HEADERS)
 
     retry = Retry(
-        total=3,
-        backoff_factor=2,  # 2s → 4s → 8s
-        status_forcelist=[429, 500, 502, 503, 504],
+        total=2,
+        backoff_factor=2,
+        status_forcelist=[500, 502, 503, 504],
         allowed_methods=["GET", "HEAD"],
+        respect_retry_after_header=False,
+        raise_on_status=False,
     )
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("https://", adapter)
@@ -72,26 +83,86 @@ def create_session() -> requests.Session:
 # ---------------------------------------------------------------------------
 # Rate-limiting helpers
 # ---------------------------------------------------------------------------
-def polite_delay() -> None:
-    """Sleep a random interval between full-page requests."""
-    time.sleep(random.uniform(DELAY_MIN, DELAY_MAX))
-
-
-def light_delay() -> None:
-    """Sleep a shorter interval for lightweight checks (HEAD, status)."""
-    time.sleep(random.uniform(DELAY_LIGHT_MIN, DELAY_LIGHT_MAX))
-
-
-def batch_pause() -> None:
-    """Longer pause between batches to avoid triggering rate limits."""
-    duration = random.uniform(BATCH_PAUSE_MIN, BATCH_PAUSE_MAX)
-    print(f"    ⏸  Batch pause {duration:.0f}s ...")
-    time.sleep(duration)
-
-
 def should_batch_pause(index: int) -> bool:
     """Return True when *index* (1-based) hits a batch boundary."""
     return index > 0 and index % BATCH_SIZE == 0
+
+
+class Pacer:
+    """Paces sequential requests to one host; slows down after a 429.
+
+    wait() goes before every request except the first: a random polite delay,
+    or a longer batch pause every BATCH_SIZE requests. back_off() sleeps for a
+    Retry-After and doubles the delay for the rest of the run (max 4x).
+    `sleep` is injectable so tests never really sleep.
+    """
+
+    def __init__(self, sleep=time.sleep, rng: random.Random | None = None):
+        self._sleep = sleep
+        self._rng = rng or random.Random()
+        self.factor = 1.0
+        self.requests = 0
+
+    def wait(self) -> None:
+        if self.requests > 0:
+            if should_batch_pause(self.requests):
+                seconds = self._rng.uniform(BATCH_PAUSE_MIN, BATCH_PAUSE_MAX)
+                print(f"    ⏸  Batch pause {seconds:.0f}s ...")
+            else:
+                seconds = self._rng.uniform(DELAY_MIN, DELAY_MAX) * self.factor
+            self._sleep(seconds)
+        self.requests += 1
+
+    def back_off(self, seconds: float) -> None:
+        self.factor = min(self.factor * 2, 4.0)
+        print(f"    ⏳ Rate limited — sleeping {seconds:.0f}s, delay x{self.factor:g} from now on")
+        self._sleep(seconds)
+
+
+def parse_retry_after(value: str | None, default: float) -> float:
+    """Seconds to wait from a Retry-After header (seconds or HTTP-date), capped."""
+    if not value:
+        return min(default, RETRY_AFTER_CAP)
+    value = value.strip()
+    try:
+        seconds = float(value)
+    except ValueError:
+        try:
+            when = parsedate_to_datetime(value)
+        except TypeError, ValueError:
+            return min(default, RETRY_AFTER_CAP)
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=UTC)
+        seconds = (when - datetime.now(UTC)).total_seconds()
+    return max(0.0, min(seconds, RETRY_AFTER_CAP))
+
+
+# ---------------------------------------------------------------------------
+# Fetch
+# ---------------------------------------------------------------------------
+@dataclass
+class Page:
+    """Result of one GET. `soup` is set only for HTTP 200."""
+
+    status: int | None  # None = network error
+    soup: BeautifulSoup | None = None
+    retry_after: float = 0.0
+    error: str = ""
+
+
+def fetch_page(session: requests.Session, url: str) -> Page:
+    try:
+        r = session.get(url, timeout=TIMEOUT, allow_redirects=True)
+    except requests.RequestException as e:
+        return Page(status=None, error=type(e).__name__)
+    page = Page(status=r.status_code)
+    if r.status_code in (429, 503):
+        page.retry_after = parse_retry_after(r.headers.get("Retry-After"), default=60.0)
+    elif r.status_code == 200:
+        # Parse bytes so BeautifulSoup honours the page's declared charset.
+        page.soup = BeautifulSoup(r.content, "html.parser")
+    r.close()
+    return page
 
 
 # ---------------------------------------------------------------------------
@@ -145,7 +216,17 @@ def _safe_text(tag, fallback: str = NA) -> str:
 
 def now_iso() -> str:
     """Current UTC timestamp in ISO-8601."""
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def find_title(soup: BeautifulSoup) -> str:
+    title_tag = soup.find("h1", class_="game_title") or soup.find("h1", attrs={"itemprop": "name"})
+    return _safe_text(title_tag)
+
+
+def has_info_panel(soup: BeautifulSoup) -> bool:
+    wrapper = soup.find("div", class_="info_panel_wrapper")
+    return bool(wrapper and wrapper.find("table"))
 
 
 # ---------------------------------------------------------------------------
@@ -155,15 +236,18 @@ def now_iso() -> str:
 # Fields where itch.io lists multiple <a> links → store as JSON array
 _LIST_FIELDS = {"Tags", "Platforms", "Languages", "Inputs", "Made with"}
 
+# Date rows: prefer abbr@title ("23 April 2021 @ 19:30 UTC") over the relative text
+_DATE_FIELDS = {"Release date", "Published", "Updated"}
 
-def parse_info_table(soup: BeautifulSoup) -> dict[str, any]:
+
+def parse_info_table(soup: BeautifulSoup) -> dict[str, Any]:
     """Parse the right-side info panel into a dict.
 
     Multi-value fields (Tags, Platforms, etc.) → list[str]
     Single-value fields (Genre, Status, etc.) → str
     Missing fields are NOT inserted — caller handles defaults.
     """
-    info: dict[str, any] = {}
+    info: dict[str, Any] = {}
     wrapper = soup.find("div", class_="info_panel_wrapper")
     if not wrapper:
         return info
@@ -180,8 +264,7 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, any]:
         key = tds[0].get_text(strip=True)
         value_td = tds[1]
 
-        # --- Release date: prefer abbr@title for full datetime ---
-        if key == "Release date":
+        if key in _DATE_FIELDS:
             abbr = value_td.find("abbr")
             if abbr and abbr.get("title"):
                 info[key] = abbr["title"]
@@ -232,6 +315,9 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, any]:
 # ---------------------------------------------------------------------------
 # Description
 # ---------------------------------------------------------------------------
+_SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'“(])")
+
+
 def extract_description(soup: BeautifulSoup) -> str:
     desc_tag = soup.find("div", class_="formatted_description")
     if not desc_tag:
@@ -242,11 +328,12 @@ def extract_description(soup: BeautifulSoup) -> str:
     if not full:
         return NA
 
-    # First sentence, capped at 200 chars
-    if "." in full:
-        first = full.split(".", 1)[0] + "."
-        return first if len(first) <= 200 else first[:197] + "..."
-    return full[:200] + ("..." if len(full) > 200 else "")
+    # First sentence (a terminator followed by whitespace + a capital), capped at 200 chars.
+    first = _SENTENCE_END.split(full, maxsplit=1)[0]
+    if len(first) <= 200:
+        return first
+    cut = first[:197].rsplit(" ", 1)[0] if " " in first[:197] else first[:197]
+    return cut + "..."
 
 
 # ---------------------------------------------------------------------------
@@ -254,13 +341,13 @@ def extract_description(soup: BeautifulSoup) -> str:
 # ---------------------------------------------------------------------------
 def extract_thumbnail(soup: BeautifulSoup) -> str:
     meta = soup.find("meta", property="og:image")
-    if meta and meta.get("content"):
+    if meta and str(meta.get("content", "")).startswith("http"):
         return meta["content"]
 
     ss = soup.find("div", class_="screenshot_list")
     if ss:
         img = ss.find("img")
-        if img and img.get("src"):
+        if img and str(img.get("src", "")).startswith("http"):
             return img["src"]
 
     return NA
@@ -269,20 +356,17 @@ def extract_thumbnail(soup: BeautifulSoup) -> str:
 # ---------------------------------------------------------------------------
 # NSFW detection
 # ---------------------------------------------------------------------------
-_NSFW_KEYWORDS = ["adult", "nsfw", "erotic", "hentai", "porn", "mature", "sexual"]
+_NSFW_RE = re.compile(
+    r"\b(adult|nsfw|18\+|erotic\w*|hentai|porn\w*|mature|sexual\w*)(?!\w)", re.IGNORECASE
+)
 
 
 def detect_nsfw(soup: BeautifulSoup, tags, description: str) -> str:
-    """Detect NSFW. `tags` can be list[str] or str."""
-    # Normalize tags to a single lowercase string for keyword search
-    if isinstance(tags, list):
-        tags_lower = " ".join(t.lower() for t in tags)
-    else:
-        tags_lower = tags.lower() if tags else ""
-
-    if any(kw in tags_lower for kw in _NSFW_KEYWORDS):
+    """Detect NSFW. `tags` can be list[str] or str. Matches whole words only."""
+    tags_text = " ".join(tags) if isinstance(tags, list) else (tags or "")
+    if _NSFW_RE.search(tags_text):
         return "Yes"
-    if description != NA and any(kw in description.lower() for kw in _NSFW_KEYWORDS):
+    if description != NA and _NSFW_RE.search(description):
         return "Yes"
     if soup.find("div", class_=["view_game_warning", "mature_content_notice"]):
         return "Yes"
@@ -290,116 +374,43 @@ def detect_nsfw(soup: BeautifulSoup, tags, description: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Full single-game scrape
+# Full single-game record
 # ---------------------------------------------------------------------------
-def scrape_game_info(session: requests.Session, url: str) -> dict | None:
+def parse_game(soup: BeautifulSoup, url: str) -> dict:
+    """Build the full record for a fetched game page (plus an `is_free` flag).
+
+    Field order matches the stored schema; `updated_at` is appended last and
+    only when itch.io shows an "Updated" row.
     """
-    Scrape a single itch.io game page.
+    info = parse_info_table(soup)
 
-    Returns None on network/parse error.
-    Returns dict with is_free=False if the game is paid (caller decides
-    whether to keep or skip).
-    """
-    try:
-        r = session.get(url, timeout=20)
-        r.raise_for_status()
-        r.encoding = "utf-8"
-        soup = BeautifulSoup(r.text, "html.parser")
+    tags = info.get("Tags", [])
+    description = extract_description(soup)
+    release_date = info.get("Release date") or info.get("Published") or NA
 
-        # --- Free check (early) ---
-        free = is_free_game(soup)
-
-        # --- Title ---
-        title_tag = (
-                soup.find("h1", class_="game_title")
-                or soup.find("h1", attrs={"itemprop": "name"})
-        )
-        name = _safe_text(title_tag)
-
-        # --- Info table ---
-        info = parse_info_table(soup)
-
-        dev          = info.get("Author") or info.get("Authors", NA)
-        genre        = info.get("Genre", NA)            # str (primary only)
-        tags         = info.get("Tags", [])              # list[str]
-        status       = info.get("Status", NA)            # str
-        platforms    = info.get("Platforms", [])          # list[str]
-        publisher    = info.get("Publisher", NA)          # str
-        release_date = info.get("Release date", NA)      # str
-        made_with    = info.get("Made with", [])          # list[str]
-        rating       = info.get("Rating", NA)            # str
-        rating_count = info.get("RatingCount", NA)       # str
-        avg_session  = info.get("Average session", NA)   # str
-        languages    = info.get("Languages", [])          # list[str]
-        inputs       = info.get("Inputs", [])             # list[str]
-
-        description = extract_description(soup)
-        thumbnail   = extract_thumbnail(soup)
-        nsfw        = detect_nsfw(soup, tags, description)
-
-        return {
-            "url": url,
-            "name": name,
-            "is_free": free,
-            "dev": dev,
-            "description": description,
-            "genre": genre,
-            "status": status,
-            "publisher": publisher,
-            "release_date": release_date,
-            "rating": rating,
-            "rating_count": rating_count,
-            "average_session": avg_session,
-            "nsfw": nsfw,
-            "thumbnail": thumbnail,
-            "tags": tags,
-            "platforms": platforms,
-            "languages": languages,
-            "inputs": inputs,
-            "made_with": made_with,
-            "safe_virus": "?",
-            "notes": "",
-        }
-
-    except requests.RequestException as e:
-        print(f"  [NET ERROR] {url}: {e}")
-    except Exception as e:
-        print(f"  [PARSE ERROR] {url}: {e}")
-
-    return None
-
-
-# ---------------------------------------------------------------------------
-# Lightweight page-alive check
-# ---------------------------------------------------------------------------
-def check_url_alive(session: requests.Session, url: str) -> int | None:
-    """
-    Return HTTP status code, or None on connection failure.
-    Uses GET with stream=True so we don't download the full body
-    (itch.io may not honour HEAD for game pages).
-    """
-    try:
-        r = session.get(url, timeout=15, stream=True, allow_redirects=True)
-        r.close()  # release connection immediately
-        return r.status_code
-    except requests.RequestException:
-        return None
-
-
-# ---------------------------------------------------------------------------
-# Lightweight free-only check (re-fetch page, return is_free bool)
-# ---------------------------------------------------------------------------
-def check_still_free(session: requests.Session, url: str) -> bool | None:
-    """
-    Re-fetch a game page and return True/False for free status,
-    or None on network error (caller should treat as 'keep').
-    """
-    try:
-        r = session.get(url, timeout=20)
-        r.raise_for_status()
-        r.encoding = "utf-8"
-        soup = BeautifulSoup(r.text, "html.parser")
-        return is_free_game(soup)
-    except requests.RequestException as e:
-        print(f"  [NET ERROR] {url}: {e}")
-        return None
+    record = {
+        "url": url,
+        "name": find_title(soup),
+        "is_free": is_free_game(soup),
+        "dev": info.get("Author") or info.get("Authors", NA),
+        "description": description,
+        "genre": info.get("Genre", NA),
+        "status": info.get("Status", NA),
+        "publisher": info.get("Publisher", NA),
+        "release_date": release_date,
+        "rating": info.get("Rating", NA),
+        "rating_count": info.get("RatingCount", NA),
+        "average_session": info.get("Average session", NA),
+        "nsfw": detect_nsfw(soup, tags, description),
+        "thumbnail": extract_thumbnail(soup),
+        "tags": tags,
+        "platforms": info.get("Platforms", []),
+        "languages": info.get("Languages", []),
+        "inputs": info.get("Inputs", []),
+        "made_with": info.get("Made with", []),
+        "safe_virus": "?",
+        "notes": "",
+    }
+    if info.get("Updated"):
+        record["updated_at"] = info["Updated"]
+    return record

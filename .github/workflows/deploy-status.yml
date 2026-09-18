@@ -1,0 +1,83 @@
+# Not a deploy workflow: Cloudflare Workers Builds deploys main on its own.
+# This watches the result: every hour it finds the latest finished
+# "Workers Builds: free-games-itchio-list" check run on main
+# (bash/cf_build_status.sh) and posts a failure to Discord once per failed
+# build (a cache entry keyed on the check-run id marks it as reported, only
+# after the post succeeded). A schedule is used because GitHub never starts
+# check_run-triggered workflows for commits pushed with GITHUB_TOKEN — the
+# refresh / ingest data commits. Cloudflare's own build-failure notification is
+# the independent fallback.
+name: Cloudflare build status
+
+on:
+  schedule:
+    - cron: '41 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: cf-build-status
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      checks: read
+    outputs:
+      failed_id: ${{ steps.status.outputs.failed_id }}
+      failed_url: ${{ steps.status.outputs.failed_url }}
+      failed_sha: ${{ steps.status.outputs.failed_sha }}
+      reported: ${{ steps.seen.outputs.cache-hit }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: bash
+
+      - name: Find the latest finished Cloudflare build
+        id: status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash bash/cf_build_status.sh
+
+      - name: Was this failure reported already?
+        id: seen
+        if: steps.status.outputs.failed_id != ''
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cf-alert
+          key: cf-alert-${{ steps.status.outputs.failed_id }}
+          lookup-only: true
+
+  notify:
+    needs: [check]
+    if: needs.check.outputs.failed_id != '' && needs.check.outputs.reported != 'true'
+    permissions: {}
+    uses: ./.github/workflows/notify-failure.yml
+    with:
+      summary: >-
+        The Cloudflare build of ${{ needs.check.outputs.failed_sha }} failed, so
+        freeitchgames.win is not up to date: ${{ needs.check.outputs.failed_url }}
+    secrets:
+      DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}
+
+  mark-reported:
+    needs: [check, notify]
+    if: needs.notify.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions: {}
+    steps:
+      - name: Remember the reported build
+        run: mkdir -p .cf-alert && date -u > .cf-alert/reported
+
+      - name: Save the marker
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cf-alert
+          key: cf-alert-${{ needs.check.outputs.failed_id }}

@@ -18,7 +18,7 @@ Explain the bug and how your fix works. Bonus points if you tested locally!
 Closes # (link issue number if any)
 
 ### Checklist
-- [ ] Tested locally (run update_games.py + generate_md.py)
+- [ ] Tested locally (`pytest`, `python scripts/validate.py`)
 - [ ] No new bugs introduced (hopefully)
 - [ ] Followed the vibe (chill, no drama)
 

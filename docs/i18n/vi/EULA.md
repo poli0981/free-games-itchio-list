@@ -13,7 +13,7 @@ EULA này áp dụng cho **mã nguồn và nội dung của `free-games-itchio-l
 - **"Repository"** — `free-games-itchio-list` trên GitHub tại <https://github.com/poli0981/free-games-itchio-list>, bao gồm toàn bộ mã nguồn, file dữ liệu, bảng markdown và tài liệu.
 - **"Webapp"** — ứng dụng React + TypeScript trong `webapp/`, deploy tại <https://freeitchgames.win/>.
 - **"Desktop App"** — bản build native Tauri 2 của Webapp, phân phối dưới dạng installer qua GitHub Releases.
-- **"Catalog"** — metadata game có cấu trúc trong `data_game/` và các bảng markdown được tạo trong `lists/`.
+- **"Catalog"** — metadata game có cấu trúc trong `data_game/` và phần hiển thị của nó trên website https://freeitchgames.win.
 - **"Người duy trì"** — GitHub user `poli0981` (alias: SkullMute), tác giả của Repository này.
 - **"Bạn"** — bất kỳ cá nhân, tổ chức hoặc tác nhân tự động nào truy cập, tải về, clone, fork, chạy, sửa, hoặc sử dụng Repository hoặc bất kỳ phần nào.
 

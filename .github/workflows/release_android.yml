@@ -52,24 +52,22 @@ jobs:
           # No `cache: gradle` — the Gradle project lives in gen/android, which
           # is gitignored and only created later by `tauri android init`, so
           # there are no gradle files at checkout for setup-java to key on
-          # (it hard-errors otherwise). rust-cache + npm cache still apply.
+          # (it hard-errors otherwise). Release builds use no caches at all.
 
       - name: Set up Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 24
-          cache: npm
-          cache-dependency-path: webapp/package-lock.json
+          node-version-file: webapp/.node-version
+          # No dependency cache in release builds: a poisoned cache could end
+          # up inside signed installers. Releases are rare; take the extra minutes.
+          package-manager-cache: false
 
       - name: Set up Rust
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@02cb101ec7c40f2c49e1d9714d64511d8e1b74de # master
         with:
+          toolchain: stable
           targets: aarch64-linux-android
 
-      - name: Cache cargo
-        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
-        with:
-          workspaces: webapp/src-tauri
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
@@ -146,7 +144,10 @@ jobs:
           APK_PATH: ${{ steps.sign.outputs.apk_path }}
         run: |
           set -euo pipefail
-          # Create the draft if the desktop workflow hasn't yet (ordering-safe).
+          # release_desktop.yml's create-release job normally made the draft
+          # minutes ago; create it only as a fallback (tolerating a race).
           gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1 \
-            || gh release create "$TAG" --repo "$REPO" --draft --notes "Pending installers."
+            || gh release create "$TAG" --repo "$REPO" --draft --verify-tag \
+                 --title "Free Itch Games $TAG" --generate-notes \
+            || gh release view "$TAG" --repo "$REPO" >/dev/null
           gh release upload "$TAG" "$APK_PATH" --repo "$REPO" --clobber

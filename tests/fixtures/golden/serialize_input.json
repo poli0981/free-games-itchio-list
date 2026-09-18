@@ -1,0 +1,16 @@
+{
+  "url": "https://dev.itch.io/game",
+  "name": "Jonut\ud83c\udf69 \"quoted\" back\\slash",
+  "control": "tab\there\u0001bell\nnewline",
+  "separators": "line\u2028para\u2029end",
+  "nested": {
+    "empty_list": [],
+    "empty_obj": {},
+    "list": [
+      "Windows",
+      "HTML5"
+    ],
+    "n": 2681
+  },
+  "vietnamese": "Tr\u00f2 ch\u01a1i mi\u1ec5n ph\u00ed"
+}

@@ -137,6 +137,8 @@ No tracking, no analytics, no telemetry, no spying. The Maintainer is too lazy a
 
 ## 15. Telegram bot — optional contribution path
 
+> **Retired (September 2026).** The Telegram bot path is discontinued and no longer accepts submissions; the `bot-ingest.yml` workflow was removed. This section is kept to describe how data was handled while it ran and will be dropped in the next full revision of this document.
+
 [`CONTRIBUTING.md`](../CONTRIBUTING.md) describes an optional flow for
 submitting games via [@my_skull_bot](https://t.me/my_skull_bot). The flow
 involves voluntarily sharing a Telegram numeric ID with the Maintainer

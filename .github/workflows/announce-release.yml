@@ -10,14 +10,21 @@ on:
         required: true
         type: string
 
-# Reusable announce-release.yml only needs `contents: read` to fetch
-# release metadata via the gh CLI.
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   announce:
-    uses: poli0981/.github/.github/workflows/announce-release.yml@main
+    # The reusable workflow fetches release metadata with the gh CLI.
+    permissions:
+      contents: read
+    # Pinned to a commit of poli0981/.github and only the needed secrets are
+    # passed. NOTE: the pin freezes the workflow YAML only — at this commit it
+    # still checks out its notifier script from poli0981/.github@main. Bump
+    # the pin once that repo runs the script from the same commit.
+    uses: poli0981/.github/.github/workflows/announce-release.yml@c3e118a01d40e95b36b2c3466dc206638c11eb5a
     with:
       tag_override: ${{ inputs.tag || '' }}
-    secrets: inherit
+    secrets:
+      DISCORD_RELEASES_WEBHOOK: ${{ secrets.DISCORD_RELEASES_WEBHOOK }}
+      DISCORD_REPO_WEBHOOK: ${{ secrets.DISCORD_REPO_WEBHOOK }}
+      DISCORD_PING_ROLE_ID: ${{ secrets.DISCORD_PING_ROLE_ID }}

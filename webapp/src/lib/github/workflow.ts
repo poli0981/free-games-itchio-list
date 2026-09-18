@@ -3,10 +3,8 @@ import { REPO } from '../config'
 
 export type WorkflowFile =
   | 'update.yml'
-  | 'check_paid.yml'
-  | 'check_alive.yml'
-  | 'generate_table.yml'
-  | 'log_deleted.yml'
+  | 'refresh.yml'
+  | 'force_update.yml'
 
 export interface WorkflowRunSummary {
   id: number

@@ -6,11 +6,11 @@
 
 > Đây là bản dịch tiếng Việt mang tính tham khảo cho cộng đồng. Bản tiếng Anh tại [`README.md`](README.md) là bản chính thức cho mọi điều khoản pháp lý / kỹ thuật.
 
-Một danh mục được duy trì tự động của các game miễn phí trên [itch.io](https://itch.io). Game được cào (scrape), xác thực và tổ chức thành các bảng markdown có thể duyệt — cập nhật hàng ngày qua GitHub Actions.
+Một danh mục được duy trì tự động của các game miễn phí trên [itch.io](https://itch.io). Game được cào (scrape), xác thực và hiển thị trên website có thể tìm kiếm, lọc — **<https://freeitchgames.win>** — cập nhật hàng ngày qua GitHub Actions.
 
 ## Mục lục
 
-- [Duyệt theo thể loại](#duyệt-theo-thể-loại)
+- [Duyệt danh mục](#duyệt-danh-mục)
 - [Webapp (duyệt + sửa + analytics)](#webapp-duyệt--sửa--analytics)
 - [Cách hoạt động](#cách-hoạt-động)
 - [Cấu trúc dự án](#cấu-trúc-dự-án)
@@ -19,25 +19,15 @@ Một danh mục được duy trì tự động của các game miễn phí trê
 - [Kết nối / hỗ trợ](#kết-nối--hỗ-trợ)
 - [Pháp lý](#pháp-lý)
 
-## Duyệt theo thể loại
+## Duyệt danh mục
 
-Các bảng được tự tạo và chia theo thể loại chính (tối đa 300 game / file). Thể loại mới sẽ tự xuất hiện khi có game được thêm vào.
-
-- [Action](lists/action.md)
-- [Adventure](lists/adventure.md)
-- [Puzzle](lists/puzzle.md)
-- [Horror](lists/horror.md)
-- [Visual Novel](lists/visual_novel.md)
-- [Simulation](lists/simulation.md)
-- [Platformer](lists/platformer.md)
-- [Other](lists/other.md)
-- *(các thể loại khác sẽ tự tạo khi cần)*
+Danh mục nằm trên website: **<https://freeitchgames.win>** — tìm kiếm, lọc theo thể loại / nền tảng / trạng thái, sắp xếp và mở game trên itch.io. (Các bảng markdown theo thể loại trong `lists/` đã được bỏ để dùng website.) Dữ liệu gốc là JSON trong [`data_game/`](data_game/).
 
 ## Webapp (duyệt + sửa + analytics)
 
-Một SPA React + TypeScript trong [`webapp/`](webapp/) cung cấp giao diện duyệt trên cùng catalog JSON: DataTable virtualized cho 500+ game, faceted filter (thể loại / trạng thái / nền tảng / NSFW), 16 chart (Recharts), bulk edit/delete qua GitHub Git Data API, và một flow "add" một-click dispatch workflow scraper với input URL.
+Một SPA React + TypeScript trong [`webapp/`](webapp/) cung cấp giao diện duyệt trên cùng catalog JSON: DataTable virtualized cho 2,600+ game, faceted filter (thể loại / trạng thái / nền tảng / NSFW), 16 chart (Recharts), bulk edit/delete qua GitHub Git Data API, và một flow "add" một-click dispatch workflow scraper với input URL.
 
-- **Bản web**: deploy lên GitHub Pages bởi [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml) — push vào `main` chạm `webapp/` sẽ tự ship. (Setup một lần: repo Settings → Pages → Source = "GitHub Actions".)
+- **Bản web**: deploy lên **<https://freeitchgames.win>** bởi Cloudflare Workers Builds từ [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc) — mỗi lần push vào `main` tự ship (không cần GitHub Actions deploy). Địa chỉ GitHub Pages cũ chỉ còn chuyển hướng sang đây.
 - **Bản desktop (tùy chọn)**: cùng code React đóng gói thành app native Tauri 2 cho Windows / macOS / Linux. Xem [`webapp/TAURI.md`](webapp/TAURI.md) để biết yêu cầu và `npm run tauri:dev`.
 - **Bản Android (tùy chọn)**: cùng app cũng xuất thành file `.apk` cài tay (arm64-v8a) qua Tauri mobile. APK đã ký được build bởi [`.github/workflows/release_android.yml`](.github/workflows/release_android.yml) và đính vào cùng draft Release. Xem [Android (tải & cài đặt)](#android-tải--cài-đặt) bên dưới và mục Android trong [`webapp/TAURI.md`](webapp/TAURI.md).
 - **Auth**: PAT fine-grained với `contents:write` + `actions:write` được mã hóa AES-GCM trong localStorage (PBKDF2-SHA256). Token đã giải mã chỉ tồn tại trong bộ nhớ.
@@ -66,21 +56,16 @@ Lưu ý: **chỉ arm64-v8a** (mọi điện thoại từ ~2017 — không hỗ t
 ## Cách hoạt động
 
 ```
-temp_link.json          →   update_info.py        →   data_game/
-(URL mới thêm vào đây)      (scrape + check free)     game_info_001.json
-                                                      game_info_002.json ...
-                                                          │
-                ┌─────────────────────────────────────────┘
-                ▼                                        ▼
-        generate_md.py                           check_paid.py
-        (bảng MD)                                check_alive.py
-                                                 (cleanup)
+temp_link.json ─→ update_info.py ─┐                     ┌─→ data_game/*.json ─→ freeitchgames.win
+(URL chờ xử lý)   (scrape, free?) ├─→ patch.json ─→ apply_patch.py
+data_game/     ─→ refresh.py    ──┘   (theo URL)     (validate + push)
+(1/7 mỗi ngày)    (còn sống / trả phí / rating / trạng thái)
 ```
 
-1. **Thêm link** — dán URL itch.io vào `scripts/temp_link.json` (thủ công, qua PR, hoặc qua extension trình duyệt đi kèm).
-2. **Scrape hàng ngày** — GitHub Actions chạy `update_info.py` lúc 03:00 UTC. Mỗi link được fetch, kiểm tra trạng thái free và cào metadata. Game trả phí tự bị bỏ qua.
-3. **Tạo bảng** — `generate_md.py` nhóm game theo thể loại chính và xuất các bảng markdown vào `/lists/`.
-4. **Cleanup định kỳ** — mỗi 2 ngày, `check_paid.py` kiểm tra lại game nào đã chuyển sang trả phí, và `check_alive.py` xác minh các trang game còn tồn tại. Game bị gỡ được log kèm lý do.
+1. **Thêm link** — URL itch.io được đưa vào hàng chờ `scripts/temp_link.json` (qua extension trình duyệt đi kèm, hoặc thủ công / PR).
+2. **Ingest** — `update.yml` chạy `update_info.py` ngay khi hàng chờ thay đổi (và mỗi ngày một lần để dự phòng). Mỗi link được chuẩn hoá, fetch, kiểm tra free rồi cào metadata; game trả phí, đã chết, trùng hoặc từng bị gỡ sẽ bị bỏ qua. Lỗi tạm thời được giữ lại để thử lại (tối đa 3 lần chạy).
+3. **Refresh** — `refresh.yml` mỗi ngày kiểm tra 1/7 danh mục (mỗi game một request), nên mọi game được kiểm tra lại hằng tuần: link chết (404/410), game chuyển sang trả phí, rating và trạng thái. Game chỉ bị gỡ khi cùng một vấn đề được thấy lại sau lần đầu ít nhất 20 giờ; việc gỡ được log kèm lý do, và một lượt chạy định gỡ số game bất thường sẽ giữ lại và cảnh báo thay vì gỡ.
+4. **Commit an toàn** — cả hai bước xuất ra một patch theo URL; `apply_patch.py` áp nó lên `main` mới nhất, validate mọi file dữ liệu (`validate.py`) rồi mới push, và thử lại nếu có writer khác push trước.
 
 ## Cấu trúc dự án
 
@@ -90,16 +75,15 @@ Xem [`README.md`](README.md#project-structure) phiên bản tiếng Anh để c�
 
 | Workflow | Lịch | Mục đích |
 |---|---|---|
-| Update game info | Hàng ngày 03:00 UTC | Scrape link mới từ `temp_link.json` (+ input `url` tùy chọn từ webapp), bỏ qua game trả phí |
-| Generate tables | Sau update/checks | Build lại các bảng markdown trong `/lists/` |
-| Check paid games | Mỗi 2 ngày 04:00 UTC | Gỡ game đã chuyển sang trả phí |
-| Check dead links | Mỗi 2 ngày 07:00 UTC | Gỡ trang game 404/410 |
-| Log deleted games | Sau check workflows | Xuất log gỡ ra `deleted_games.txt` |
+| Ingest queued games | Khi hàng chờ đổi + hàng ngày 01:23 UTC | Scrape link từ `temp_link.json` (+ input `url` tùy chọn), bỏ qua game trả phí / đã chết / từng bị gỡ |
+| Refresh catalog | Hàng ngày 02:47 UTC | Kiểm tra 1/7 danh mục: link chết, game chuyển trả phí, rating, trạng thái |
+| Force update | Thủ công | Scrape lại mọi trường (một URL hoặc lô tiếp theo); giữ `safe_virus` / `notes` / `nsfw` |
+| Python CI / Webapp CI | Pull request | Lint, test, validate dữ liệu / type-check và build |
 | Deploy webapp | Khi push vào main | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Release desktop | Khi push tag `v*` | Build installer Tauri (Win/macOS/Linux) → draft Release |
 | Release Android | Khi push tag `v*` | Build APK đã ký (arm64-v8a) → draft Release |
 
-Tất cả workflow có rate-limit (delay ngẫu nhiên, batch pause) để tránh bị itch.io block. Lỗi mạng được coi là tạm thời — game chỉ bị gỡ khi xác nhận 404/410 hoặc xác nhận trả phí.
+Scraper tự xưng danh tính (`FreeItchGamesBot`), giãn nhịp request (delay ngẫu nhiên, batch pause) và lùi lại khi gặp HTTP 429. Lỗi mạng được coi là tạm thời; game chỉ bị gỡ khi cùng lỗi 404/410 hoặc trạng thái trả phí được thấy lại sau lần đầu ít nhất 20 giờ. Lỗi, bị huỷ, bị giới hạn tốc độ hoặc thay đổi hàng loạt bất thường đều được báo về Discord.
 
 ## Đóng góp
 

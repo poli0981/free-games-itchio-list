@@ -8,7 +8,7 @@ This repository — `free-games-itchio-list` — is a hobby project: a curated i
 
 ## 1. "AS IS" basis
 
-The contents of this repository — including but not limited to the JSON catalog (`data_game/`), generated tables (`lists/`), Python pipeline (`scripts/`), webapp (`webapp/`), Tauri desktop wrapper (`webapp/src-tauri/`), and documentation — are provided **"AS IS"** and **"AS AVAILABLE"**, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, completeness, non-infringement, or uninterrupted operation.
+The contents of this repository — including but not limited to the JSON catalog (`data_game/`), Python pipeline (`scripts/`), webapp (`webapp/`), Tauri desktop wrapper (`webapp/src-tauri/`), and documentation — are provided **"AS IS"** and **"AS AVAILABLE"**, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, completeness, non-infringement, or uninterrupted operation.
 
 ## 2. No warranty as to the games
 
@@ -20,7 +20,7 @@ The maintainer makes no warranty regarding any game's:
 - **Safety, integrity, or freedom from malware** — the `safe_virus` field defaults to `?` because individual downloads are not scanned. Treat every download as untrusted until you verify it yourself with reputable anti-malware tools.
 - **NSFW classification** — the `nsfw` flag is auto-detected from itch.io tags / warnings / description text and is best-effort. Confirm the game page yourself before downloading if NSFW content matters to you (in either direction).
 - **Accuracy of metadata** — names, descriptions, genres, ratings, platforms, and other fields are scraped from itch.io and reflect the page state at the time of the last scrape. itch.io page changes (renames, removals, paywall additions) propagate on the next scheduled cleanup but may lag.
-- **Free-to-play status** — verified at scrape time; a game can become paid afterwards. The `check_paid.py` job re-verifies every two days and removes confirmed paid games, but a brief window of staleness is possible.
+- **Free-to-play status** — verified at scrape time; a game can become paid afterwards. The daily refresh job re-checks every game about once a week and removes a game once it is seen as paid again at least 20 hours after it was first seen as paid, so a window of staleness is possible.
 
 ## 3. No liability
 

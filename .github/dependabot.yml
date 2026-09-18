@@ -1,0 +1,83 @@
+# Dependabot version updates. Security updates are enabled separately in
+# Settings → Code security (they are not limited by open-pull-requests-limit).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /webapp
+    schedule:
+      interval: weekly
+      day: monday
+      time: '01:30'
+      timezone: Asia/Ho_Chi_Minh
+    cooldown:
+      default-days: 3
+    # The v4 rewrite of webapp/ is in progress on its own branch: routine
+    # version bumps on main would only conflict with it. Security updates still
+    # arrive. After go-live, raise this limit again.
+    open-pull-requests-limit: 0
+    groups:
+      react:
+        patterns: ['react', 'react-dom', '@types/react*', 'react-router*']
+      tanstack:
+        patterns: ['@tanstack/*']
+      radix:
+        patterns: ['@radix-ui/*', 'radix-ui']
+      tauri-js:
+        patterns: ['@tauri-apps/*']
+      build-tooling:
+        patterns:
+          - 'vite'
+          - '@vitejs/*'
+          - 'typescript'
+          - 'typescript-eslint'
+          - 'eslint*'
+          - '@eslint/*'
+          - 'knip'
+          - 'postcss'
+          - 'autoprefixer'
+          - 'tailwindcss*'
+          - 'wrangler'
+          - '@cloudflare/*'
+    ignore:
+      # typescript-eslint supports TypeScript < 6.1 only.
+      - dependency-name: 'typescript'
+        versions: ['>=6.1']
+      # Match the Node 24 runtime.
+      - dependency-name: '@types/node'
+        versions: ['>=25']
+      # v9 is a rewrite; migrate deliberately.
+      - dependency-name: '@tanstack/react-table'
+        versions: ['>=9']
+
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    cooldown:
+      default-days: 3
+    groups:
+      python:
+        patterns: ['*']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ['*']
+
+  - package-ecosystem: cargo
+    directory: /webapp/src-tauri
+    schedule:
+      interval: monthly
+    groups:
+      tauri-rs:
+        patterns: ['tauri*']
+      rust-other:
+        patterns: ['*']
+    ignore:
+      - dependency-name: 'tauri*'
+        versions: ['>=3.0.0-0']

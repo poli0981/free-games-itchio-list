@@ -10,11 +10,11 @@
 > 🇻🇳 Tiếng Việt: see [`README.vi.md`](README.vi.md). Vietnamese translations of the policy docs live in [`docs/i18n/vi/`](docs/i18n/vi/). The English versions in this repo remain controlling for legal interpretation.
 
 A curated, auto-updating catalog of free games on [itch.io](https://itch.io). Games are scraped, validated, and
-organized into browsable markdown tables — updated daily via GitHub Actions.
+published as a browsable, filterable website — **<https://freeitchgames.win>** — refreshed daily via GitHub Actions.
 
 ## Table of contents
 
-- [Browse by genre](#browse-by-genre)
+- [Browse the catalog](#browse-the-catalog)
 - [Webapp (browse + edit + analytics)](#webapp-browse--edit--analytics)
 - [How it works](#how-it-works)
 - [Project structure](#project-structure)
@@ -23,31 +23,22 @@ organized into browsable markdown tables — updated daily via GitHub Actions.
 - [Contributing](#contributing)
 - [Legal](#legal)
 
-## Browse by genre
+## Browse the catalog
 
-Tables are auto-generated and split by primary genre (max 300 games per file). New genres appear automatically as games
-are added.
-
-- [Action](lists/action.md)
-- [Adventure](lists/adventure.md)
-- [Puzzle](lists/puzzle.md)
-- [Horror](lists/horror.md)
-- [Visual Novel](lists/visual_novel.md)
-- [Simulation](lists/simulation.md)
-- [Platformer](lists/platformer.md)
-- [Other](lists/other.md)
-- *(more genres auto-create as needed)*
+The catalog lives on the website: **<https://freeitchgames.win>** — search, filter by genre / platform /
+status, sort, and open any game on itch.io. (The per-genre markdown tables under `lists/` were retired in
+favour of the site.) The raw data is plain JSON in [`data_game/`](data_game/).
 
 ## Webapp (browse + edit + analytics)
 
 A React + TypeScript SPA in [`webapp/`](webapp/) provides a browsable UI on top of the same JSON
-catalog: virtualized DataTable for all 500+ games, faceted filters (genre / status / platforms /
+catalog: virtualized DataTable for all 2,600+ games, faceted filters (genre / status / platforms /
 NSFW), 16 charts (Recharts), bulk edit/delete via the GitHub Git Data API, and a one-click "add"
 flow that dispatches the scraper workflow with a URL input.
 
-- **Web build**: deployed to GitHub Pages by [`.github/workflows/deploy_webapp.yml`](.github/workflows/deploy_webapp.yml)
-  — pushes to `main` that touch `webapp/` ship automatically. (One-time setup: repo
-  Settings → Pages → Source = "GitHub Actions".)
+- **Web build**: deployed to **<https://freeitchgames.win>** by Cloudflare Workers Builds from
+  [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc) — every push to `main` ships automatically (no
+  GitHub Actions deploy). The old GitHub Pages address only redirects there.
 - **Desktop build (optional)**: same React code wraps as a Tauri 2 native app for Windows / macOS
   / Linux. See [`webapp/TAURI.md`](webapp/TAURI.md) for prerequisites and `npm run tauri:dev`.
   Multi-platform installers are built by [`.github/workflows/release_desktop.yml`](.github/workflows/release_desktop.yml)
@@ -93,24 +84,23 @@ section of [`webapp/TAURI.md`](webapp/TAURI.md).
 ## How it works
 
 ```
-temp_link.json          →   update_info.py        →   data_game/
-(new URLs added here)       (scrape + free check)     game_info_001.json
-                                                      game_info_002.json ...
-                                                          │
-                ┌─────────────────────────────────────────┘
-                ▼                                        ▼
-        generate_md.py                           check_paid.py
-        (MD tables)                              check_alive.py
-                                                 (cleanup)
+temp_link.json ─→ update_info.py ─┐                     ┌─→ data_game/*.json ─→ freeitchgames.win
+(queued URLs)     (scrape, free?) ├─→ patch.json ─→ apply_patch.py
+data_game/     ─→ refresh.py    ──┘   (URL-keyed)    (validate + push)
+(1/7 per day)     (alive / paid / rating / status)
 ```
 
-1. **Add links** — paste itch.io URLs into `scripts/temp_link.json` (manually, via PR, or via the companion browser
-   extension).
-2. **Daily scrape** — GitHub Actions runs `update_info.py` at 03:00 UTC. Each link is fetched, checked for free status,
-   and scraped for metadata. Paid games are automatically skipped.
-3. **Generate tables** — `generate_md.py` groups games by primary genre and outputs markdown tables into `/lists/`.
-4. **Periodic cleanup** — every 2 days, `check_paid.py` re-checks if any game in the list became paid, and
-   `check_alive.py` verifies that game pages still exist. Removed games are logged with a reason.
+1. **Add links** — itch.io URLs are queued in `scripts/temp_link.json` (by the companion browser extension, or
+   manually / via PR).
+2. **Ingest** — `update.yml` runs `update_info.py` as soon as the queue changes (and daily as a fallback). Each
+   link is canonicalized, fetched, checked for free status and scraped; paid, dead, duplicate and previously
+   removed games are skipped. Transient failures stay queued and are retried (up to 3 runs).
+3. **Refresh** — `refresh.yml` checks one seventh of the catalog every day (one request per game), so every
+   game is re-checked weekly: dead links (404/410), games that became paid, rating and status. A game is only
+   removed when the same problem is seen again at least 20 hours later; removals are logged with a reason,
+   and a run that would remove an implausible number of games holds them back and alerts instead.
+4. **Commit safely** — both steps emit a URL-keyed patch; `apply_patch.py` applies it to the latest `main`,
+   validates every data file (`validate.py`) and only then pushes, retrying if another writer got there first.
 
 ## Project structure
 
@@ -121,33 +111,26 @@ data_game/              # Game database (chunked JSON, max 500 per file)
 └── ...
 
 scripts/
-├── scraper.py          # Shared module: session, rate-limiting, free detection, parsing
-├── data_store.py       # Shared module: multi-file load/save/rebalance
-├── update_info.py      # Scrape new games from temp_link.json → data_game/
-├── check_paid.py       # Re-check existing games for paid status
-├── check_alive.py      # Verify game URLs still exist (404/410 → remove)
-├── generate_md.py      # Generate per-genre markdown tables
-├── log_deleted.py      # Export deleted_games.json → deleted_games.txt
+├── scraper.py          # Shared: HTTP session, pacing / 429 back-off, free detection, parsing
+├── data_store.py       # Shared: chunked load/save (minimal diffs), index.json, count_history.json
+├── canonical.py        # One canonical form for itch.io game URLs
+├── update_info.py      # Queued URLs → patch (new games)
+├── refresh.py          # Rotating health check → patch (alive / paid / rating / status); --full re-scrape
+├── apply_patch.py      # Apply a patch to the latest main, then validate
+├── validate.py         # Schema + consistency checks for every data file
 ├── temp_link.json      # Input queue for new URLs
-└── deleted_games.json  # Log of removed games with reasons
+├── deleted_games.json  # Log of removed games with reasons
+└── state/              # Pipeline bookkeeping (last check, strikes, retries) — not published
 
-bash/
-├── test.sh             # Wrapper: scrape + reset temp_link
-├── table.sh            # Wrapper: generate MD tables
-├── check_paid.sh       # Wrapper: check paid status
-├── check_alive.sh      # Wrapper: check dead links
-└── log_deleted.sh      # Wrapper: export deletion log
-
-lists/                  # Auto-generated markdown tables (one per genre)
+bash/commit_push.sh     # fetch main → apply patch → validate → commit → push (with retries)
+tests/                  # pytest suite (no network) + fixtures shared with the web Worker
 
 .github/workflows/
-├── update.yml             # Daily 03:00 UTC — scrape new games
-│                          # (also accepts an optional `url` input from webapp)
-├── generate_table.yml     # Runs after update/check workflows
-├── check_paid.yml         # Every 2 days 04:00 UTC
-├── check_alive.yml        # Every 2 days 07:00 UTC
-├── log_deleted.yml        # Runs after check workflows
-├── deploy_webapp.yml      # Build webapp/ → GitHub Pages on push to main
+├── update.yml             # Ingest queued games (on queue change + daily)
+├── refresh.yml            # Daily rotating catalog check
+├── force_update.yml       # Manual full re-scrape (one URL or the next batch)
+├── python-ci.yml          # Lint, tests, data validation
+├── webapp-ci.yml          # Lint, type-check, build (no deploy)
 ├── release_desktop.yml    # Build Tauri installers (Win/macOS/Linux) on v* tag
 └── release_android.yml    # Build signed Android APK (arm64-v8a) on v* tag
 
@@ -164,17 +147,18 @@ webapp/                 # React + TS SPA + Tauri desktop & Android wrapper
 
 | Workflow           | Schedule               | Purpose                                                     |
 |--------------------|------------------------|-------------------------------------------------------------|
-| Update game info   | Daily 03:00 UTC        | Scrape new links from `temp_link.json` (+ optional `url` input from webapp), skip paid |
-| Generate tables    | After update/checks    | Rebuild markdown tables in `/lists/`                        |
-| Check paid games   | Every 2 days 04:00 UTC | Remove games that became paid                               |
-| Check dead links   | Every 2 days 07:00 UTC | Remove 404/410 game pages                                   |
-| Log deleted games  | After check workflows  | Export deletion log to `deleted_games.txt`                  |
+| Ingest queued games | On queue change + daily 01:23 UTC | Scrape links from `temp_link.json` (+ optional `url` input), skip paid / dead / removed |
+| Refresh catalog    | Daily 02:47 UTC        | Check 1/7 of the catalog: dead links, now-paid games, rating, status |
+| Force update       | Manual                 | Re-scrape every field (one URL or the next batch); keeps `safe_virus` / `notes` / `nsfw` |
+| Python CI / Webapp CI | Pull requests       | Lint, tests, data validation / type-check and build         |
 | Deploy webapp      | On push to main        | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Release desktop    | On `v*` tag push       | Build Tauri installers (Win/macOS/Linux) → draft Release    |
 | Release Android    | On `v*` tag push       | Build signed APK (arm64-v8a) → draft Release                |
 
-All workflows include rate-limiting (random delays, batch pauses) to avoid being blocked by itch.io. Network errors are
-treated as transient — games are only removed on confirmed 404/410 or confirmed paid status.
+Scrapers identify themselves (`FreeItchGamesBot`), pace requests (random delays, batch pauses) and back off on
+HTTP 429. Network errors are treated as transient; a game is removed only after the same 404/410 or paid status is
+seen again at least 20 hours after the first sighting. Failures, cancellations, rate limits and
+suspicious mass changes are reported to Discord.
 
 ## Data fields
 

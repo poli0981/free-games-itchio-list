@@ -15,6 +15,6 @@ How you added them (manual edit game_info.json? scraped yourself?). Keep format 
 - [ ] All links are free itch.io games
 - [ ] No duplicates (check existing)
 - [ ] Format correct (json valid, fields match)
-- [ ] Tested generate_md.py after
+- [ ] `python scripts/validate.py` passes
 
 You're making this boredom project bigger — legend status unlocked! 🚀
