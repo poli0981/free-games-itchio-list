@@ -20,7 +20,6 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
 import { ExtLink } from '@/components/ext-link'
 import { ERROR_TEMPLATE_URL } from '@/lib/about'
 import { useT, type MessageKey } from '@/lib/i18n'
@@ -60,7 +59,7 @@ export interface ErrorPageProps {
   /** Raw error message, shown collapsed under "Technical details". */
   details?: string
   onRetry?: () => void
-  /** Replaces the default "Back to dashboard" action. */
+  /** Replaces the default "Back to home" action. */
   actions?: ReactNode
 }
 
@@ -77,49 +76,45 @@ export function ErrorPage({
   const meta = META[variant ?? String(status ?? '')] ?? META.unknown
   const Icon = meta.icon
   return (
-    <div className="flex h-full min-h-[60vh] items-center justify-center p-6">
-      <Card className="w-full max-w-md">
-        <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
-          <Icon className="h-12 w-12 text-muted-foreground" aria-hidden="true" />
-          {!variant && status !== undefined && (
-            <p className="text-6xl font-bold tabular-nums tracking-tight">{status}</p>
-          )}
-          <h1 className="text-2xl font-semibold tracking-tight">{title ?? t(meta.title)}</h1>
-          <p className="text-sm text-muted-foreground">{description ?? t(meta.desc)}</p>
-          {details && (
-            <details className="w-full text-left">
-              <summary className="cursor-pointer text-xs text-muted-foreground">
-                {t('error.actions.details')}
-              </summary>
-              <pre className="mt-2 max-h-40 overflow-auto whitespace-pre-wrap rounded-md bg-muted p-3 font-mono text-xs">
-                {details}
-              </pre>
-            </details>
-          )}
-          <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
-            {onRetry && (
-              <Button onClick={onRetry}>
-                <RefreshCw className="h-4 w-4" />
-                {t('common.retry')}
-              </Button>
-            )}
-            {actions ?? (
-              <Button variant={onRetry ? 'outline' : 'default'} asChild>
-                <Link to="/">
-                  <Home className="h-4 w-4" />
-                  {t('error.actions.home')}
-                </Link>
-              </Button>
-            )}
-            <Button variant="ghost" size="sm" asChild>
-              <ExtLink href={ERROR_TEMPLATE_URL}>
-                <Bug className="h-4 w-4" />
-                {t('error.actions.report')}
-              </ExtLink>
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+    <div className="mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center gap-4 px-4 py-16 text-center">
+      <span className="flex size-12 items-center justify-center rounded-xl border bg-card text-muted-foreground">
+        <Icon className="size-6" aria-hidden="true" />
+      </span>
+      {!variant && status !== undefined && (
+        <p className="font-mono text-5xl font-semibold tracking-tight tabular-nums">{status}</p>
+      )}
+      <h1 className="text-2xl font-semibold tracking-tight">{title ?? t(meta.title)}</h1>
+      <p className="text-sm leading-relaxed text-muted-foreground">{description ?? t(meta.desc)}</p>
+      {details && (
+        <details className="w-full text-left">
+          <summary className="cursor-pointer text-xs text-muted-foreground">{t('error.actions.details')}</summary>
+          <pre className="mt-2 max-h-40 overflow-auto rounded-md bg-muted p-3 font-mono text-xs whitespace-pre-wrap">
+            {details}
+          </pre>
+        </details>
+      )}
+      <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+        {onRetry && (
+          <Button onClick={onRetry}>
+            <RefreshCw className="size-4" />
+            {t('common.retry')}
+          </Button>
+        )}
+        {actions ?? (
+          <Button variant={onRetry ? 'outline' : 'default'} asChild>
+            <Link to="/">
+              <Home className="size-4" />
+              {t('error.actions.home')}
+            </Link>
+          </Button>
+        )}
+        <Button variant="ghost" size="sm" asChild>
+          <ExtLink href={ERROR_TEMPLATE_URL}>
+            <Bug className="size-4" />
+            {t('error.actions.report')}
+          </ExtLink>
+        </Button>
+      </div>
     </div>
   )
 }

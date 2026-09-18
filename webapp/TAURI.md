@@ -109,9 +109,9 @@ if (isTauri()) {
 ```
 
 The app uses it for the data URL, cover URLs, external links, the router, the Suggest page and the
-app-only EULA link in the legal gate. The sidebar shows a small "Desktop app (Tauri)" /
-"Mobile app (Tauri)" badge (picked by `useIsMobile()`), and on Android the back button walks the
-router history (`src/hooks/useBackButton.ts`).
+app-only EULA link in the legal gate (which has no "Leave" button in the apps). The footer shows a
+small "Desktop app (Tauri)" / "Mobile app (Tauri)" badge (picked by `useIsMobile()`), and on Android
+the back button walks the router history (`src/hooks/useBackButton.ts`).
 
 ## Adding new Rust commands
 

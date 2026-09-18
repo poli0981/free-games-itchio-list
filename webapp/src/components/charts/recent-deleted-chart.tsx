@@ -1,12 +1,13 @@
 import { useMemo } from 'react'
 import { Badge } from '@/components/ui/badge'
+import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
-import { formatNumber } from '@/lib/utils'
 import type { DeletedGameEntry } from '@/types/game'
 import { ChartCard } from './chart-card'
 
 export function RecentDeletedChart({ deleted }: { deleted: DeletedGameEntry[] }) {
   const t = useT()
+  const fmt = useFormat()
   const recent = useMemo(
     () =>
       [...deleted]
@@ -17,7 +18,7 @@ export function RecentDeletedChart({ deleted }: { deleted: DeletedGameEntry[] })
   return (
     <ChartCard
       title={t('charts.recentDeleted.title')}
-      description={t('charts.recentDeleted.desc', { shown: recent.length, total: formatNumber(deleted.length) })}
+      description={t('charts.recentDeleted.desc', { shown: recent.length, total: fmt.number(deleted.length) })}
     >
       <div className="h-full overflow-y-auto pr-2">
         <ul className="space-y-1.5 text-sm">
@@ -30,7 +31,7 @@ export function RecentDeletedChart({ deleted }: { deleted: DeletedGameEntry[] })
                 className="flex items-center justify-between gap-2 border-b py-1 last:border-0"
               >
                 <span className="truncate font-medium">{d.name}</span>
-                <Badge variant="outline" className="flex-shrink-0 text-xs">
+                <Badge variant="outline" className="shrink-0 text-xs">
                   {d.reason}
                 </Badge>
               </li>

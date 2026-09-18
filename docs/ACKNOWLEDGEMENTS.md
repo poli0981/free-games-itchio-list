@@ -20,8 +20,8 @@ This repo wouldn't exist without a lot of help — mostly from tools and platfor
 The website, the Worker and the desktop / Android apps build on a stack of open-source libraries. The full list with licenses lives in [`THIRD_PARTY.md`](THIRD_PARTY.md), and the runtime libraries are also on the [About page](https://freeitchgames.win/about) (from the `THIRD_PARTY` array in [`webapp/src/lib/about.ts`](../webapp/src/lib/about.ts)). Highlights:
 
 - **Core**: React 19, TypeScript 6, Vite 8, React Router 8, Zustand 5
-- **UI**: Tailwind CSS, shadcn/ui (pattern), Radix UI primitives, lucide-react, sonner, class-variance-authority, tailwind-merge, clsx, Recharts
-- **Data**: TanStack Query / Table / Virtual, idb-keyval
+- **UI**: Tailwind CSS, tw-animate-css, shadcn/ui (pattern), Radix UI primitives, lucide-react, class-variance-authority, tailwind-merge, clsx, Recharts, the Geist and Geist Mono typefaces (via Fontsource)
+- **Data**: TanStack Query, idb-keyval
 - **Worker**: jose, Wrangler
 - **Desktop + Android**: Tauri 2, `tauri-plugin-opener`, `tauri-plugin-single-instance`
 

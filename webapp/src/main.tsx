@@ -6,12 +6,13 @@ import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client
 import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister'
 import { get, set, del } from 'idb-keyval'
 import App from './App'
-import { AppToaster } from './components/app-toaster'
 import { AppRouter } from './components/app-router'
 import { APP } from './lib/about'
 import { initI18n } from './lib/i18n'
 import { isTauri } from './lib/runtime'
 import { clearLegacyCredentials, redirectLegacyHashRoute } from './lib/legacy'
+import '@fontsource-variable/geist'
+import '@fontsource-variable/geist-mono'
 import './index.css'
 
 // Catalog data persisted to IndexedDB survives restarts for up to a week —
@@ -90,7 +91,6 @@ createRoot(rootEl).render(
       <AppRouter>
         <App />
       </AppRouter>
-      <AppToaster />
       {import.meta.env.DEV && <ReactQueryDevtools initialIsOpen={false} />}
     </PersistQueryClientProvider>
   </StrictMode>,

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 import { analyticsBeacon, buildInfo, catalogData } from './vite-plugins/catalog-data.ts'
 
@@ -13,6 +14,7 @@ export default defineConfig({
   // The Tauri apps read the catalog from the live site, so only the web build bundles it.
   plugins: [
     react(),
+    tailwindcss(),
     buildInfo(),
     ...(isTauri ? [] : [catalogData(repoRoot), analyticsBeacon(process.env.VITE_CF_BEACON_TOKEN)]),
   ],

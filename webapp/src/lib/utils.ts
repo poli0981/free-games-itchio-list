@@ -13,7 +13,3 @@ export function slugify(url: string): string {
     .replace(/^-|-$/g, '')
     .toLowerCase()
 }
-
-export function formatNumber(n: number): string {
-  return new Intl.NumberFormat('en-US').format(n)
-}

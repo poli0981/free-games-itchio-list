@@ -31,12 +31,15 @@ Do these once (and again with the `-staging` names for the staging Worker).
    `freeitchgames.win` and `www.freeitchgames.win`; delete any `*freeitchgames.win/*` route; a Redirect
    Rule sends `www` to the apex. `workers.dev` and preview URLs stay off (`wrangler.jsonc` sets them;
    those hostnames would bypass Access).
-3. **R2**: create buckets `freeitchgames-thumbs` and `freeitchgames-thumbs-staging`.
+3. **R2**: enable R2 for the account in the dashboard first (R2 Object Storage; the free tier still
+   asks for a payment method), then `cd webapp && npx wrangler r2 bucket create freeitchgames-thumbs`
+   (and `freeitchgames-thumbs-staging`). A deploy fails while its bucket is missing.
 4. **Images → Transformations**: enable for the zone; allowed source origins: `img.itch.zone` only.
-5. **D1**: `cd webapp && npx wrangler d1 create freeitchgames` (and `freeitchgames-staging`), then
-   `npx wrangler d1 migrations apply freeitchgames --remote` (staging:
-   `npx wrangler d1 migrations apply freeitchgames-staging --remote --env staging`). No database id is
-   needed in `wrangler.jsonc`: deploys bind the database by name. Apply every new migration by hand
+5. **D1**: production `freeitchgames` exists (created 2026-09-18 in APAC with
+   `npx wrangler d1 create freeitchgames`; its id is in `wrangler.jsonc`; `0001_init.sql` applied).
+   Staging: `cd webapp && npx wrangler d1 create freeitchgames-staging`, put the printed id in
+   `env.staging.d1_databases`, then `npx wrangler d1 migrations apply freeitchgames-staging --remote --env staging`.
+   Apply every new migration by hand (`npx wrangler d1 migrations apply freeitchgames --remote`)
    **before** deploying code that needs it.
 6. **Zero Trust** (free plan is enough):
    - Settings → Authentication: add **GitHub** (OAuth App callback

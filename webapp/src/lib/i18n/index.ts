@@ -60,14 +60,6 @@ function lookup(
   return format(template, params)
 }
 
-/**
- * Imperative translate for non-component contexts (toasts, handlers, column
- * render functions executing inside an already-subscribed tree).
- */
-export function t(key: MessageKey, params?: Record<string, string | number>): string {
-  return lookup(usePrefs.getState().language, useViDict.getState().dict, key, params)
-}
-
 /** Reactive translate hook — re-renders the component on language switch. */
 export function useT(): (key: MessageKey, params?: Record<string, string | number>) => string {
   const lang = usePrefs((s) => s.language)

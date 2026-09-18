@@ -95,7 +95,7 @@ function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
               {lib.name}
               <ExternalLinkIcon className="h-3 w-3 opacity-50" />
             </ExtLink>
-            <div className="flex flex-shrink-0 items-center gap-2 text-xs">
+            <div className="flex shrink-0 items-center gap-2 text-xs">
               <span className="text-muted-foreground">{lib.version}</span>
               <Badge variant="outline" className="font-mono text-xs">
                 {lib.license}
@@ -150,12 +150,12 @@ function SocialItem({ link }: { link: SocialLink }) {
         href={link.url}
         className="flex items-center gap-3 p-2 text-sm hover:bg-accent hover:text-accent-foreground"
       >
-        <Icon className="h-4 w-4 flex-shrink-0 opacity-70" />
+        <Icon className="h-4 w-4 shrink-0 opacity-70" />
         <span className="min-w-0 flex-1 truncate">
           <span className="font-medium">{link.label}</span>
           <span className="ml-2 text-xs text-muted-foreground">{link.handle}</span>
         </span>
-        <ExternalLinkIcon className="h-3 w-3 flex-shrink-0 opacity-50" />
+        <ExternalLinkIcon className="h-3 w-3 shrink-0 opacity-50" />
       </ExtLink>
       {noteKey && <p className="px-2 pb-1 text-[10px] text-muted-foreground">{t(noteKey)}</p>}
     </li>
@@ -167,8 +167,8 @@ export default function About() {
   useDocumentTitle(t('titles.about'))
   const build = useBuildInfo()
   return (
-    <div className="container mx-auto max-w-4xl p-6">
-      <h1 className="mb-6 text-3xl font-bold tracking-tight">{t('titles.about')}</h1>
+    <div className="mx-auto max-w-4xl px-4 pt-6 pb-12 sm:px-8 md:pt-7">
+      <h1 className="mb-6 text-[26px] font-semibold tracking-[-0.02em]">{t('titles.about')}</h1>
 
       <Card>
         <CardHeader>

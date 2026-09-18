@@ -7,7 +7,7 @@ export interface ThirdParty {
 }
 
 export const APP = {
-  name: 'Itch.io Free Games DB',
+  name: 'Free Itch Games',
   version: '4.0.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'code MIT · data CC BY 4.0',
@@ -116,7 +116,7 @@ export const LEGAL_LINKS: LegalLink[] = [
   { name: 'Content removal',  description: 'Creators and rights holders: ask for a game to be removed or corrected.', url: `${REPO_BLOB}/.github/ISSUE_TEMPLATE/remove_game.yml`, group: 'policy' },
 
   // Meta
-  { name: 'Licenses & notice', description: 'Code: MIT. Data and docs: CC BY 4.0. Not affiliated with itch.io.',    url: `${REPO_BLOB}/NOTICE.md`,              group: 'meta' },
+  { name: 'Licenses & notice', description: 'Code: MIT. Data and docs: CC BY 4.0. Not affiliated with itch.io.',    url: `${REPO_BLOB}/NOTICE.md`,              group: 'meta', inGate: true },
   { name: 'Data license',     description: 'What CC BY 4.0 covers in the catalog, and how to credit it.',           url: `${REPO_BLOB}/data_game/LICENSE.md`,   group: 'meta' },
   { name: 'Changelog',        description: 'What changed when.',                                                     url: `${REPO_BLOB}/CHANGELOG.md`,           group: 'meta' },
 ]
@@ -138,11 +138,12 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'Zustand', version: '5.0', license: 'MIT', url: 'https://github.com/pmndrs/zustand', category: 'core' },
 
   // UI
-  { name: 'Tailwind CSS', version: '3.4', license: 'MIT', url: 'https://tailwindcss.com', category: 'ui' },
+  { name: 'Tailwind CSS', version: '4.3', license: 'MIT', url: 'https://tailwindcss.com', category: 'ui' },
+  { name: 'tw-animate-css', version: '1.4', license: 'MIT', url: 'https://github.com/Wombosvideo/tw-animate-css', category: 'ui' },
+  { name: 'Geist / Geist Mono (Fontsource)', version: '5.3', license: 'OFL-1.1', url: 'https://vercel.com/font', category: 'ui' },
   { name: 'shadcn/ui', version: 'pattern', license: 'MIT', url: 'https://ui.shadcn.com', category: 'ui' },
   { name: 'Radix UI', version: '1.x / 2.x', license: 'MIT', url: 'https://www.radix-ui.com', category: 'ui' },
   { name: 'lucide-react', version: '1.47', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
-  { name: 'sonner', version: '2.0', license: 'MIT', url: 'https://sonner.emilkowal.ski', category: 'ui' },
   { name: 'class-variance-authority', version: '0.7', license: 'Apache-2.0', url: 'https://cva.style', category: 'ui' },
   { name: 'tailwind-merge', version: '3.7', license: 'MIT', url: 'https://github.com/dcastil/tailwind-merge', category: 'ui' },
   { name: 'clsx', version: '2.1', license: 'MIT', url: 'https://github.com/lukeed/clsx', category: 'ui' },
@@ -150,8 +151,6 @@ export const THIRD_PARTY: ThirdParty[] = [
 
   // Data
   { name: 'TanStack Query', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'TanStack Table', version: '8.21', license: 'MIT', url: 'https://tanstack.com/table', category: 'data' },
-  { name: 'TanStack Virtual', version: '3.14', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
   { name: 'TanStack Query Persist Client', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'TanStack Query Async Storage Persister', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'idb-keyval', version: '6.3', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },

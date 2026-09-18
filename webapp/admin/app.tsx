@@ -33,7 +33,7 @@ export function AdminApp() {
 
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur">
+      <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur-sm">
         <div className="mx-auto flex h-12 max-w-6xl items-center gap-6 px-4 text-sm">
           <span className="font-semibold">freeitchgames.win · admin</span>
           <nav className="flex gap-1">

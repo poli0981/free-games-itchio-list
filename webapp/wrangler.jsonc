@@ -35,12 +35,17 @@
   },
   // Resized cover images, written once per image + width by worker/img.ts.
   "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs" }],
-  // Review queue (worker/migrations). No database_id: `wrangler deploy` binds the
-  // database by name (and creates it on the first deploy if it does not exist).
+  // Review queue (worker/migrations). The database was created with
+  // `npx wrangler d1 create freeitchgames` (APAC); its id is not a secret.
   // Migrations are applied by hand, never by the build:
   //   npx wrangler d1 migrations apply freeitchgames --remote
   "d1_databases": [
-    { "binding": "DB", "database_name": "freeitchgames", "migrations_dir": "./worker/migrations" }
+    {
+      "binding": "DB",
+      "database_name": "freeitchgames",
+      "database_id": "5a2417f2-cfe6-4a42-ad9c-2f8bb7094a61",
+      "migrations_dir": "./worker/migrations"
+    }
   ],
   // Per-key limits (IP for the Suggest form, service-token id for ingest).
   "ratelimits": [

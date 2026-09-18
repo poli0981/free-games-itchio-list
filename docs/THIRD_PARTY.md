@@ -30,24 +30,23 @@ shared UI components).
 | [React Router](https://reactrouter.com) (`react-router`) | 8.4 | Routing | MIT |
 | [Zustand](https://github.com/pmndrs/zustand) | 5.0 | Preference and theme stores | MIT |
 | [TanStack Query](https://tanstack.com/query) (`@tanstack/react-query`, `react-query-persist-client`, `query-async-storage-persister`) | 5.103 | Data fetching and the local catalog cache | MIT |
-| [TanStack Table](https://tanstack.com/table) (`@tanstack/react-table`) | 8.21 | The games table | MIT |
-| [TanStack Virtual](https://tanstack.com/virtual) (`@tanstack/react-virtual`) | 3.14 | Virtualized long lists | MIT |
 | [idb-keyval](https://github.com/jakearchibald/idb-keyval) | 6.3 | IndexedDB storage for the catalog cache | Apache-2.0 |
 | [Recharts](https://recharts.org) | 3.10 | Charts | MIT |
-| [Radix UI](https://www.radix-ui.com) primitives (`@radix-ui/react-checkbox`, `-dialog`, `-label`, `-popover`, `-select`, `-separator`, `-slot`, `-switch`, `-tabs`) | 1.x / 2.x | Accessible UI building blocks | MIT |
+| [Radix UI](https://www.radix-ui.com) primitives (`@radix-ui/react-checkbox`, `-dialog`, `-label`, `-popover`, `-separator`, `-slot`, `-switch`, `-tabs`) | 1.x / 2.x | Accessible UI building blocks | MIT |
 | [shadcn/ui](https://ui.shadcn.com) | pattern | Component patterns copied into `webapp/src/components/ui/` | MIT |
 | [lucide-react](https://lucide.dev) | 1.47 | Icons | ISC |
-| [sonner](https://sonner.emilkowal.ski) | 2.0 | Toast notifications | MIT |
 | [class-variance-authority](https://cva.style) | 0.7 | Component variants | Apache-2.0 |
 | [clsx](https://github.com/lukeed/clsx) | 2.1 | Class-name helper | MIT |
 | [tailwind-merge](https://github.com/dcastil/tailwind-merge) | 3.7 | Class-name merging | MIT |
-| [Tailwind CSS](https://tailwindcss.com) | see `package.json` | Generates the site's CSS at build time | MIT |
+| [Tailwind CSS](https://tailwindcss.com) (`tailwindcss`, `@tailwindcss/vite`) and [tw-animate-css](https://github.com/Wombosvideo/tw-animate-css) | 4.3 / 1.4 | Generate the site's CSS at build time | MIT |
+| [Geist and Geist Mono](https://vercel.com/font) (`@fontsource-variable/geist`, `@fontsource-variable/geist-mono`) | 5.3 | The site's typefaces | OFL-1.1 (fonts), MIT (Fontsource packaging) |
 | [`@tauri-apps/api`](https://github.com/tauri-apps/tauri/tree/dev/packages/api) | 2.11 | App-only bridge to the native shell | Apache-2.0 OR MIT |
 | [`@tauri-apps/plugin-opener`](https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener) | 2.5 | App-only: opens itch.io links in the system browser | Apache-2.0 OR MIT |
 
 `@tanstack/react-query-devtools` (MIT) is listed as a dependency but only renders in development builds.
 
-The site uses the operating system's own fonts; no web fonts are bundled or downloaded.
+The Geist fonts are bundled into the site and served from it (never from a font CDN), so pages make no
+requests to third-party font services. The fonts are licensed under the SIL Open Font License 1.1.
 
 ## 2. Worker (server code on Cloudflare)
 
@@ -111,7 +110,6 @@ These tools never end up in a build, but they keep the code honest.
 | Tool | Used for | License |
 |---|---|---|
 | [Vite](https://vite.dev) 8 and `@vitejs/plugin-react` | Bundling the site, the admin app and the apps' front end | MIT |
-| [PostCSS](https://postcss.org), [Autoprefixer](https://github.com/postcss/autoprefixer), `tailwindcss-animate` | CSS pipeline | MIT |
 | [Vitest](https://vitest.dev) 5 | Tests (`npm test`) | MIT |
 | [Wrangler](https://developers.cloudflare.com/workers/wrangler/) 4 | Local Worker dev, D1 migrations, deploys | MIT OR Apache-2.0 |
 | [`@tauri-apps/cli`](https://tauri.app) 2 | Building the desktop and Android apps | Apache-2.0 OR MIT |

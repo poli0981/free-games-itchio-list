@@ -34,36 +34,6 @@ export function topN(entries: CountEntry[], n: number): CountEntry[] {
   return entries.slice(0, n)
 }
 
-export interface OverviewStats {
-  total: number
-  nsfwCount: number
-  nsfwPercent: number
-  htmlCount: number
-  onlinePercent: number
-  releasedCount: number
-  topGenre: string
-  topGenreCount: number
-}
-
-export function computeOverview(games: Game[]): OverviewStats {
-  const total = games.length
-  const nsfwCount = games.filter((g) => g.nsfw === 'Yes').length
-  const htmlCount = games.filter((g) => g.platforms?.includes('HTML5')).length
-  const releasedCount = games.filter((g) => g.status === 'Released').length
-  const genres = countBy(games, 'genre')
-  const top = genres[0] ?? { key: 'N/A', count: 0 }
-  return {
-    total,
-    nsfwCount,
-    nsfwPercent: total ? (nsfwCount / total) * 100 : 0,
-    htmlCount,
-    onlinePercent: total ? (htmlCount / total) * 100 : 0,
-    releasedCount,
-    topGenre: top.key,
-    topGenreCount: top.count,
-  }
-}
-
 function parseRating(rating: string): number | null {
   const n = parseFloat(rating)
   return isFinite(n) ? n : null
@@ -128,7 +98,6 @@ export interface KpiStats {
 }
 
 export function computeKpis(games: Game[], deleted: DeletedGameEntry[]): KpiStats {
-  const overview = computeOverview(games)
   let ratingSum = 0
   let ratingCount = 0
   for (const g of games) {
@@ -139,9 +108,9 @@ export function computeKpis(games: Game[], deleted: DeletedGameEntry[]): KpiStat
     }
   }
   return {
-    totalGames: overview.total,
-    onlineCount: overview.htmlCount,
-    nsfwCount: overview.nsfwCount,
+    totalGames: games.length,
+    onlineCount: games.filter((g) => g.platforms?.includes('HTML5')).length,
+    nsfwCount: games.filter((g) => g.nsfw === 'Yes').length,
     totalDeleted: deleted.length,
     avgRating: ratingCount ? ratingSum / ratingCount : 0,
   }

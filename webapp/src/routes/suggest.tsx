@@ -38,8 +38,8 @@ export default function Suggest() {
 
   if (isTauri()) {
     return (
-      <div className="container mx-auto max-w-xl space-y-3 p-6">
-        <h1 className="text-2xl font-semibold">{t('titles.suggest')}</h1>
+      <div className="mx-auto flex max-w-xl flex-col gap-3 px-4 pt-6 pb-12 sm:px-8 md:pt-7">
+        <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.suggest')}</h1>
         <p className="text-muted-foreground">{t('suggest.webOnly')}</p>
         <ExtLink href={`${SITE_ORIGIN}/suggest`} className="text-primary underline-offset-4 hover:underline">
           {t('suggest.openWebsite')}
@@ -129,9 +129,9 @@ function SuggestForm() {
   }
 
   return (
-    <div className="container mx-auto max-w-xl space-y-4 p-6">
-      <h1 className="text-2xl font-semibold">{t('titles.suggest')}</h1>
-      <p className="text-muted-foreground">{t('suggest.intro')}</p>
+    <div className="mx-auto flex max-w-xl flex-col gap-4 px-4 pt-6 pb-12 sm:px-8 md:pt-7">
+      <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.suggest')}</h1>
+      <p className="leading-relaxed text-muted-foreground">{t('suggest.intro')}</p>
 
       {config.isPending ? (
         <p className="text-sm text-muted-foreground">{t('common.loading')}</p>
@@ -147,7 +147,7 @@ function SuggestForm() {
       ) : (
         // noValidate: the page validates the link itself (a link without
         // https:// is fine; the server adds it), the browser's type=url check doesn't agree.
-        <form noValidate onSubmit={submit} className="space-y-4">
+        <form noValidate onSubmit={submit} className="space-y-4 rounded-xl border bg-card p-5">
           <div className="space-y-1.5">
             <Label htmlFor="suggest-url">{t('suggest.url')}</Label>
             <Input
@@ -174,7 +174,7 @@ function SuggestForm() {
               rows={3}
               onChange={(e) => setNote(e.target.value)}
               aria-describedby="suggest-note-hint"
-              className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+              className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:border-primary focus-visible:outline-hidden"
             />
             <p id="suggest-note-hint" className="text-xs text-muted-foreground">
               {t('suggest.notePrivacy')} ({note.length}/{MAX_NOTE})

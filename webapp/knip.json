@@ -13,5 +13,9 @@
   },
   "entry": [
     "admin/main.tsx"
+  ],
+  "ignoreDependencies": [
+    "tailwindcss",
+    "tw-animate-css"
   ]
 }

@@ -21,6 +21,23 @@ CC BY 4.0).
 - **New legal terms** (ToS, Privacy Policy, EULA for the apps only, Disclaimer): the site asks you to
   accept them again once.
 
+### New design
+
+- A clean, table-first interface under the name **Free Itch Games**: a top navigation bar with a
+  global search (press `/`) and a display menu (theme, language, density, 18+) replaces the
+  sidebar, and a **Welcome** page at `/` (catalog status, recently added games) replaces the
+  dashboard.
+- **Games**: search plus filters for genre, platform, status, tags, language, input, engine,
+  minimum rating and "plays in browser", each showing how many games it would match. The search,
+  filters, sort and page are kept in the URL, so a filtered list can be bookmarked or shared. Phones
+  get a list layout.
+- A new game page (cover, key facts, tags that open the matching list, "Report a problem"), a
+  searchable removed-games page and a simpler Settings page.
+- The first-visit legal gate is now a dialog over the page, so a shared link opens where it
+  pointed once the terms are accepted.
+- Tailwind CSS 4, the self-hosted Geist typefaces, new icons and social preview image; numbers and
+  dates follow the chosen language.
+
 ### Website & Worker
 
 - The site is served by a Cloudflare Worker with static assets ([`webapp/wrangler.jsonc`](webapp/wrangler.jsonc),
@@ -31,10 +48,10 @@ CC BY 4.0).
 - **Cover images** are resized once to small WebP copies (Cloudflare Image Transformations + R2)
   and served from `/img/…` — about 4 KB instead of up to 3 MB per cover. Only catalog covers are
   served.
-- **18+ games are hidden by default**; a visitor can show them in Settings after confirming they
-  are 18 or older (stored only in their browser). The removed-games page is now `/removed`
-  (`/deleted` redirects there). Aggregate, cookieless Cloudflare Web Analytics.
-- Enforced Content-Security-Policy and security headers; faster first load (~195 KB gzip, charts
+- **18+ games are hidden by default**; a visitor can show them (Settings or the display menu) after
+  confirming they are 18 or older (stored only in their browser). The removed-games page is now
+  `/removed` (`/deleted` redirects there). Aggregate, cookieless Cloudflare Web Analytics.
+- Enforced Content-Security-Policy and security headers; faster first load (~175 KB gzip, charts
   load only when opened); browser floor Safari/iOS 15.4.
 - React Router 8, React 19.3, Vite 8 (rolldown), vitest; unused sign-in dependencies (Octokit,
   OpenPGP.js) removed; Tauri drops its HTTP plugin and `Cargo.lock` is committed.

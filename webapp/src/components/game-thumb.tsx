@@ -18,7 +18,7 @@ interface GameThumbProps
 export function GameThumb({ src, size = 160, alt = '', className, ...rest }: GameThumbProps) {
   const [failedSrc, setFailedSrc] = useState<string | null>(null)
   if (!src || !/^https?:\/\//.test(src) || failedSrc === src) {
-    return <div aria-hidden="true" className={cn('bg-muted', className)} />
+    return <div aria-hidden="true" className={cn('bg-thumb', className)} />
   }
   return (
     <img

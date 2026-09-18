@@ -8,8 +8,9 @@ One codebase for everything people see of the catalog:
 - the **admin** app at `/admin/` — Maintainer only, behind Cloudflare Access;
 - the **desktop and Android apps** — the same public app wrapped with Tauri 2 (see [`TAURI.md`](TAURI.md)).
 
-Stack: React 19 + TypeScript 6 + Vite 8 (Rolldown) + Tailwind CSS + shadcn/ui (Radix), TanStack
-Query / Table / Virtual, React Router 8, Zustand. The Worker is plain TypeScript on Cloudflare Workers
+Stack: React 19 + TypeScript 6 + Vite 8 (Rolldown) + Tailwind CSS 4 (`@tailwindcss/vite`, tokens in
+[`src/index.css`](src/index.css)) + shadcn/ui (Radix), TanStack Query, React Router 8, Zustand, and the
+self-hosted Geist fonts. The Worker is plain TypeScript on Cloudflare Workers
 (R2, D1, Images, Turnstile, Rate Limiting, Access).
 
 The v3 features (GitHub PAT sign-in, in-app editing, the Add / Workflows pages, GPG commit signing)
@@ -88,13 +89,13 @@ local secrets can't leak into it. Secrets are typed by hand in [`worker/env.ts`]
 
 | Route | File | Purpose |
 |---|---|---|
-| `/` | [src/routes/dashboard.tsx](src/routes/dashboard.tsx) | KPI cards |
-| `/games` | [src/routes/games.tsx](src/routes/games.tsx) | Virtualized table (cards on mobile) + faceted filters |
+| `/` | [src/routes/welcome.tsx](src/routes/welcome.tsx) | Welcome: catalog status, what the site does, recently added games |
+| `/games` | [src/routes/games.tsx](src/routes/games.tsx) | Search, filters and sort kept in the URL ([src/lib/game-filters.ts](src/lib/game-filters.ts)); a table on desktop, a list on phones; 100 per page |
 | `/games/:slug` | [src/routes/game-detail.tsx](src/routes/game-detail.tsx) | Read-only detail view of one game |
 | `/charts` | [src/routes/charts.tsx](src/routes/charts.tsx) | Charts + KPI cards across 4 tabs |
 | `/removed` | [src/routes/deleted.tsx](src/routes/deleted.tsx) | Removed games, with reasons (`/deleted` redirects here) |
 | `/suggest` | [src/routes/suggest.tsx](src/routes/suggest.tsx) | Suggest a game (Turnstile, goes to the review queue) |
-| `/settings` | [src/routes/settings.tsx](src/routes/settings.tsx) | Language, theme, density, sidebar, 18+ content opt-in, notifications |
+| `/settings` | [src/routes/settings.tsx](src/routes/settings.tsx) | Theme, language, density, 18+ content opt-in (the header's display menu has the same) |
 | `/about` | [src/routes/about.tsx](src/routes/about.tsx) | Project info, legal links, third-party credits |
 | `/errors/:code` | [src/routes/error-preview.tsx](src/routes/error-preview.tsx) | Hidden error-page preview (not in the nav) |
 
@@ -170,7 +171,7 @@ persist `maxAge`, or restored queries are garbage-collected right after hydratio
 ## Code splitting and targets
 
 [`vite.config.ts`](vite.config.ts) `codeSplitting.groups` makes `vendor-react`, `vendor-query`
-(TanStack) and `vendor-ui` (Radix, lucide-react, sonner). There is deliberately **no** charts group:
+(TanStack) and `vendor-ui` (Radix, lucide-react, class helpers). There is deliberately **no** charts group:
 Recharts is only reached from the lazy chart tabs, and a group would pull it into the first load.
 The chart tabs (`src/components/charts/tabs/*`) import chart components directly (no barrel file), so
 each tab stays in its own chunk.
@@ -183,13 +184,15 @@ explicitly; the Tauri build keeps Vite's default (`baseline-widely-available`, S
 | Path | Purpose |
 |---|---|
 | `src/routes/*.tsx` | One file per route |
-| `src/components/data-table/*` | TanStack Table + Virtual, pagination, faceted filters, mobile card list |
+| `src/components/site/*` | Header (top nav, global search with `/` shortcut, display menu, phone menu) and footer |
+| `src/components/games/*` | Games page pieces: filter chips and menus, the desktop table / phone list, the pager |
 | `src/components/charts/*` | One file per chart; `tabs/*` are the lazy tab chunks |
 | `src/components/ui/*` | shadcn/ui primitives |
 | `src/components/legal-gate.tsx` | First-visit click-to-accept gate (`LEGAL_VERSION` in `src/stores/prefs.ts`) |
 | `src/components/ext-link.tsx` | Runtime-aware external link (web vs Tauri) |
 | `src/lib/data/*`, `src/lib/config.ts` | Catalog fetching, data base URL |
 | `src/lib/thumbnail.ts` | Cover URLs: `/img` on the web, `img.itch.zone` in the apps |
+| `src/lib/game-filters.ts`, `src/lib/format.ts`, `src/lib/platforms.ts` | The Games query (URL ⇄ filters, sorting, facet counts), locale-aware numbers and dates, platform labels |
 | `src/lib/turnstile.ts` | Loads Turnstile on demand (Suggest page only) |
 | `src/lib/i18n/*` | Typed i18n: `en.ts` is the source of truth; `vi.ts` is only ever lazy-imported |
 | `src/lib/runtime.ts`, `src/lib/external-link.ts` | `isTauri()`; `openExternal()` (opener plugin in the apps, `window.open` on the web) |

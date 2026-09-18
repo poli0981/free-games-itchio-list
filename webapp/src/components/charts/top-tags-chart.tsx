@@ -17,7 +17,7 @@ export function TopTagsChart({ games }: { games: Game[] }) {
               key={tag.key}
               style={{ fontSize: `${fontSize}px`, lineHeight: 1.1 }}
               className="font-medium text-foreground/80 hover:text-foreground"
-              title={t('charts.topTags.tagTitle', { count: tag.count })}
+              title={t(tag.count === 1 ? 'charts.topTags.tagTitle.one' : 'charts.topTags.tagTitle', { count: tag.count })}
             >
               {tag.key}
             </span>

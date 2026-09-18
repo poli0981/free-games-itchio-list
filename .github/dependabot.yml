@@ -30,9 +30,9 @@ updates:
           - 'eslint*'
           - '@eslint/*'
           - 'knip'
-          - 'postcss'
-          - 'autoprefixer'
-          - 'tailwindcss*'
+          - 'tailwindcss'
+          - '@tailwindcss/*'
+          - 'tw-animate-css'
           - 'wrangler'
           - '@cloudflare/*'
     ignore:
@@ -42,9 +42,6 @@ updates:
       # Match the Node 24 runtime.
       - dependency-name: '@types/node'
         versions: ['>=25']
-      # v9 is a rewrite; migrate deliberately.
-      - dependency-name: '@tanstack/react-table'
-        versions: ['>=9']
 
   - package-ecosystem: pip
     directory: /

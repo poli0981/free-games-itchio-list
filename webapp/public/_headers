@@ -4,7 +4,7 @@
 #
 # CSP: everything is same-origin (/data catalog, /img covers). The Cloudflare
 # Web Analytics beacon and Turnstile (Suggest form) are the only third parties.
-# style-src needs 'unsafe-inline' (sonner / Radix inject <style> at runtime).
+# style-src needs 'unsafe-inline' (Radix and Recharts set inline styles at runtime).
 /*
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
