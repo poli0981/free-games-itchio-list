@@ -51,10 +51,19 @@ clearLegacyCredentials()
 if (!isTauri()) redirectLegacyHashRoute()
 
 // A deploy replaces hashed chunk files; a tab opened before it would fail to
-// lazy-load a route. Reload once to pick up the new build.
+// lazy-load a route. Reload to pick up the new build — at most once per 30 s,
+// so a chunk that still fails after the reload shows the error page (with its
+// Reload button) instead of looping. Without storage there is no loop guard,
+// so no automatic reload either.
+const RELOAD_KEY = 'reloaded-after-deploy'
 window.addEventListener('vite:preloadError', (event) => {
-  if (sessionStorage.getItem('reloaded-after-deploy')) return
-  sessionStorage.setItem('reloaded-after-deploy', '1')
+  try {
+    const last = Number(sessionStorage.getItem(RELOAD_KEY)) || 0
+    if (Date.now() - last < 30_000) return
+    sessionStorage.setItem(RELOAD_KEY, String(Date.now()))
+  } catch {
+    return
+  }
   event.preventDefault()
   window.location.reload()
 })

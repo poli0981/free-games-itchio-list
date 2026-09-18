@@ -16,9 +16,14 @@
     // Vite build output (app + bundled catalog under /data). Never a source dir.
     "directory": "./dist",
     "binding": "ASSETS",
-    "not_found_handling": "single-page-application",
+    // Misses go to the Worker, not to an asset-layer SPA fallback: that would
+    // answer a stale hashed chunk (/assets/x-OLD.js after a deploy) with
+    // index.html + the year-long immutable cache of /assets/*. The Worker
+    // returns real 404s for files and serves the app shell for routes
+    // (worker/spa.ts).
+    "not_found_handling": "none",
     "html_handling": "auto-trailing-slash",
-    // Everything else is served straight from static assets (free, cached).
+    // Existing assets never invoke the Worker (free, cached); these paths always do.
     "run_worker_first": ["/img/*", "/api/*"]
   },
   // Resized cover images, written once per image + width by worker/img.ts.

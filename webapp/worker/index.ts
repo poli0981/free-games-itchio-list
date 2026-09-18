@@ -1,10 +1,12 @@
 /**
- * Worker for freeitchgames.win. Static assets (the app and /data/*) are served
- * by the assets layer without invoking this script; only the paths listed in
- * wrangler.jsonc `assets.run_worker_first` reach it.
+ * Worker for freeitchgames.win. Existing static assets (the app, /data/*) are
+ * served by the assets layer without invoking this script. It runs for the
+ * paths in wrangler.jsonc `assets.run_worker_first`, and for every request
+ * that matches no asset (`not_found_handling: "none"`, see spa.ts).
  */
 import { handleImg } from './img'
 import { json } from './http'
+import { handleMiss } from './spa'
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
@@ -23,6 +25,6 @@ export default {
     if (url.pathname === '/api/health') return json({ ok: true })
     if (url.pathname.startsWith('/api/')) return json({ error: 'not_found' }, 404)
 
-    return env.ASSETS.fetch(request)
+    return handleMiss(request, url, env.ASSETS)
   },
 } satisfies ExportedHandler<Env>

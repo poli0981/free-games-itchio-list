@@ -26,13 +26,37 @@ export function clearLegacyCredentials(): void {
 const RETIRED_ROUTES = new Set(['/add', '/workflows'])
 
 /**
+ * Where a v3 hash link (`#/games/x`) should land, or null for other hashes.
+ * A crafted hash that resolves to another origin (`#//host`, `#/\host`) or
+ * does not parse goes to the home page.
+ */
+export function legacyHashTarget(hash: string, origin: string): string | null {
+  if (!hash.startsWith('#/')) return null
+  let url: URL
+  try {
+    url = new URL(hash.slice(1), origin)
+  } catch {
+    return '/'
+  }
+  // '#/.//evil.com' normalizes to the pathname '//evil.com': same origin, but
+  // no page of ours, and replaceState would read it as another host.
+  if (url.origin !== origin || url.pathname.startsWith('//') || RETIRED_ROUTES.has(url.pathname)) {
+    return '/'
+  }
+  return url.href
+}
+
+/**
  * v3 used hash routing (`/#/games/x`). Rewrite such links to real paths
  * before the router mounts, so shared links and bookmarks keep working.
  */
 export function redirectLegacyHashRoute(): void {
-  const { hash } = window.location
-  if (!hash.startsWith('#/')) return
-  const target = hash.slice(1)
-  const pathname = target.split(/[?#]/)[0]
-  window.history.replaceState(null, '', RETIRED_ROUTES.has(pathname) ? '/' : target)
+  const target = legacyHashTarget(window.location.hash, window.location.origin)
+  if (target === null) return
+  try {
+    window.history.replaceState(null, '', target)
+  } catch {
+    // Never let a bad link keep the app from mounting.
+    window.history.replaceState(null, '', '/')
+  }
 }

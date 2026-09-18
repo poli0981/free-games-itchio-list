@@ -17,23 +17,31 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     sourcemap: false,
+    // Web floor: Safari/iOS 15.4 (iPhone 6s/7/SE1 stop at iOS 15.8). Vite 8's
+    // default (Safari 16.4) would ship Radix's class static blocks unlowered:
+    // a SyntaxError, i.e. a blank page, on older iOS. Tauri keeps the default
+    // (the macOS app documents Safari 16.4+).
+    target: isTauri ? 'baseline-widely-available' : ['chrome111', 'edge111', 'firefox114', 'safari15.4', 'ios15.4'],
     chunkSizeWarningLimit: 600,
     rolldownOptions: {
       output: {
         codeSplitting: {
-          // Higher priority wins when a module matches several groups.
+          // Higher priority wins when a module matches several groups. Groups
+          // also pull in their dependencies, so React must be claimed first.
+          // No vendor-charts group: it would capture shared deps (React, clsx)
+          // and put Recharts on the first load. Recharts is only reached from
+          // the lazy chart tabs, so default splitting keeps it lazy.
           groups: [
-            { name: 'vendor-charts', test: /node_modules[\\/](recharts|d3-|victory-vendor)/, priority: 50 },
+            {
+              name: 'vendor-react',
+              test: /node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/,
+              priority: 100,
+            },
             { name: 'vendor-query', test: /node_modules[\\/]@tanstack[\\/]/, priority: 40 },
             {
               name: 'vendor-ui',
               test: /node_modules[\\/](@radix-ui|lucide-react|sonner)[\\/]/,
               priority: 30,
-            },
-            {
-              name: 'vendor-react',
-              test: /node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/,
-              priority: 20,
             },
           ],
         },

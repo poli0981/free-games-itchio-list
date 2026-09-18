@@ -8,6 +8,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import { useDensityEffect } from '@/hooks/useDensityEffect'
 import { useBackButton } from '@/hooks/useBackButton'
+import { useSeoHead } from '@/hooks/useSeoHead'
 import Dashboard from '@/routes/dashboard'
 import Games from '@/routes/games'
 import Deleted from '@/routes/deleted'
@@ -49,6 +50,7 @@ export default function App() {
   useThemeEffect()
   useDensityEffect()
   useBackButton()
+  useSeoHead()
   const mainRef = useRef<HTMLElement>(null)
   return (
     <LegalGate>

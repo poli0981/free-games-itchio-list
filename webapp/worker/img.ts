@@ -12,6 +12,7 @@
  * widths exist. When a transform fails (quota error 9422, bad source) the
  * original is streamed through with a short cache instead of being stored.
  */
+import { catalogUrls } from './data'
 import { SECURITY_HEADERS } from './http'
 
 const ITCH_IMG = 'https://img.itch.zone/'
@@ -53,26 +54,15 @@ export async function r2Key(width: number, upstream: string): Promise<string> {
   return `w${width}/${hex}.webp`
 }
 
-// Catalog thumbnails, loaded once per isolate from the static assets.
-let allowList: Promise<Set<string>> | undefined
-
-export function resetAllowList(): void {
-  allowList = undefined
-}
-
-function loadAllowList(assets: ImgDeps['assets'], origin: string): Promise<Set<string>> {
-  allowList ??= assets
-    .fetch(new Request(`${origin}/data/urls.json`))
-    .then((res) => {
-      if (!res.ok) throw new Error(`urls.json: ${res.status}`)
-      return res.json() as Promise<Record<string, string>>
-    })
-    .then((urls) => new Set(Object.values(urls)))
-    .catch((e: unknown) => {
-      allowList = undefined // retry on the next request
-      throw e
-    })
-  return allowList
+// Set of catalog thumbnail URLs, derived once per loaded map.
+const thumbSets = new WeakMap<Map<string, string>, Set<string>>()
+function thumbnailSet(urls: Map<string, string>): Set<string> {
+  let set = thumbSets.get(urls)
+  if (!set) {
+    set = new Set(urls.values())
+    thumbSets.set(urls, set)
+  }
+  return set
 }
 
 function imageResponse(body: BodyInit | null, type: string, cacheControl: string): Response {
@@ -99,43 +89,58 @@ export async function handleImg(request: Request, url: URL, deps: ImgDeps): Prom
   if (!parsed) return plain(400)
   const { width, upstream } = parsed
 
-  let allowed: Set<string>
+  let thumbnails: Set<string>
   try {
-    allowed = await loadAllowList(deps.assets, url.origin)
+    const urls = await catalogUrls({ assets: deps.assets, origin: url.origin })
+    thumbnails = thumbnailSet(urls)
   } catch {
     return plain(503, 'no-store')
   }
-  if (!allowed.has(upstream)) return plain(404)
+  if (!thumbnails.has(upstream)) return plain(404)
 
   const cacheKey = new Request(`${url.origin}${url.pathname}`)
   const cached = await deps.cache?.match(cacheKey)
   if (cached) return cached
 
-  const key = await r2Key(width, upstream)
-  const stored = await deps.bucket.get(key)
-  if (stored) {
-    const res = imageResponse(stored.body, 'image/webp', YEAR)
-    if (deps.cache) deps.waitUntil(deps.cache.put(cacheKey, res.clone()))
-    return res
-  }
+  // Upstream resets and R2 errors reject: answer with a controlled 502, not
+  // an uncaught exception (Cloudflare error 1101).
+  try {
+    const key = await r2Key(width, upstream)
+    const stored = await deps.bucket.get(key)
+    if (stored) {
+      const res = imageResponse(stored.body, 'image/webp', YEAR)
+      if (deps.cache) deps.waitUntil(deps.cache.put(cacheKey, res.clone()))
+      return res
+    }
 
-  const transformed = await deps.fetch(upstream, {
-    cf: { image: { width, fit: 'scale-down', format: 'webp', quality: 78, anim: false } },
-  } as RequestInit)
-  if (transformed.ok && transformed.headers.get('content-type') === 'image/webp') {
-    const bytes = await transformed.arrayBuffer()
-    const res = imageResponse(bytes, 'image/webp', YEAR)
-    deps.waitUntil(deps.bucket.put(key, bytes, { httpMetadata: { contentType: 'image/webp' } }))
-    if (deps.cache) deps.waitUntil(deps.cache.put(cacheKey, res.clone()))
-    return res
-  }
+    const transformed = await deps.fetch(upstream, {
+      cf: { image: { width, fit: 'scale-down', format: 'webp', quality: 78, anim: false } },
+    } as RequestInit)
+    if (transformed.ok && transformed.headers.get('content-type') === 'image/webp') {
+      const bytes = await transformed.arrayBuffer()
+      const res = imageResponse(bytes, 'image/webp', YEAR)
+      deps.waitUntil(deps.bucket.put(key, bytes, { httpMetadata: { contentType: 'image/webp' } }))
+      if (deps.cache) deps.waitUntil(deps.cache.put(cacheKey, res.clone()))
+      return res
+    }
+    discard(transformed)
 
-  // Transformation unavailable (quota 9422, unsupported source…): stream the
-  // original, cache it briefly at the edge, do not store it.
-  const original = await deps.fetch(upstream, { cf: { cacheEverything: true, cacheTtl: 86400 } } as RequestInit)
-  // itch.zone answers 403 for some broken originals: treat like a missing image.
-  if ([403, 404, 410].includes(original.status)) return plain(404, DAY)
-  const type = original.headers.get('content-type') ?? ''
-  if (!original.ok || !type.startsWith('image/') || type.includes('svg')) return plain(502, 'no-store')
-  return imageResponse(request.method === 'HEAD' ? null : original.body, type, DAY)
+    // Transformation unavailable (quota 9422, unsupported source…): stream the
+    // original, cache it briefly at the edge, do not store it.
+    const original = await deps.fetch(upstream, { cf: { cacheEverything: true, cacheTtl: 86400 } } as RequestInit)
+    const type = original.headers.get('content-type') ?? ''
+    const usable = original.ok && type.startsWith('image/') && !type.includes('svg')
+    if (!usable || request.method === 'HEAD') discard(original)
+    // itch.zone answers 403 for some broken originals: treat like a missing image.
+    if ([403, 404, 410].includes(original.status)) return plain(404, DAY)
+    if (!usable) return plain(502, 'no-store')
+    return imageResponse(request.method === 'HEAD' ? null : original.body, type, DAY)
+  } catch {
+    return plain(502, 'no-store')
+  }
+}
+
+/** Release the connection of a response whose body is not used. */
+function discard(res: Response): void {
+  res.body?.cancel().catch(() => {})
 }

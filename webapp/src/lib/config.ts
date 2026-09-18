@@ -1,6 +1,6 @@
 import { isTauri } from './runtime'
 
-const SITE_ORIGIN = 'https://freeitchgames.win'
+export const SITE_ORIGIN = 'https://freeitchgames.win'
 
 // The catalog JSON is bundled into the site at build time (vite.config.ts →
 // catalogData → dist/data/). The web app reads it same-origin; the Tauri apps

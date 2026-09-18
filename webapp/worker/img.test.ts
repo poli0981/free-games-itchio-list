@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { handleImg, parseImgPath, r2Key, resetAllowList, type ImgDeps } from './img'
+import { resetDataCache } from './data'
+import { handleImg, parseImgPath, r2Key, type ImgDeps } from './img'
 
 const ORIGIN = 'https://freeitchgames.win'
 const PATH = 'aW1nLzI0OTQ3OTQzLnBuZw==/original/3wlrR0.png'
@@ -33,7 +34,7 @@ function get(path: string, headers: Record<string, string> = {}) {
   return { request: new Request(url, { headers }), url }
 }
 
-beforeEach(() => resetAllowList())
+beforeEach(() => resetDataCache())
 
 describe('parseImgPath', () => {
   it('accepts catalog-shaped paths and keeps encoding', () => {
@@ -137,6 +138,26 @@ describe('handleImg', () => {
       .mockResolvedValueOnce(new Response('<html>', { headers: { 'content-type': 'text/html' } }))
     const b = makeDeps({ fetch: html as unknown as typeof fetch })
     expect((await handleImg(req.request, req.url, b.deps)).status).toBe(502)
+  })
+
+  it('answers upstream network errors with a 502 instead of throwing', async () => {
+    const reset = vi.fn().mockRejectedValue(new TypeError('Network connection lost.'))
+    const { deps } = makeDeps({ fetch: reset as unknown as typeof fetch })
+    const req = get(`/img/160/${PATH}`)
+    const res = await handleImg(req.request, req.url, deps)
+    expect(res.status).toBe(502)
+    expect(res.headers.get('cache-control')).toBe('no-store')
+  })
+
+  it('does not let a stalled first request block the others', async () => {
+    const assetsFetch = vi
+      .fn()
+      .mockReturnValueOnce(new Promise(() => {})) // e.g. its request was cancelled
+      .mockResolvedValue(Response.json({ u: UPSTREAM }))
+    const { deps } = makeDeps({ assets: { fetch: assetsFetch } as unknown as ImgDeps['assets'] })
+    const req = get(`/img/160/${PATH}`)
+    void handleImg(req.request, req.url, deps)
+    expect((await handleImg(req.request, req.url, deps)).status).toBe(200)
   })
 
   it('returns 503 when the allow-list is unavailable and retries later', async () => {
