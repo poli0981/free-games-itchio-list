@@ -18,6 +18,10 @@ Patch v1:
   "ingest_state":  {"<url>": {...} | null},
   "queue_add":     ["<url>", ...],                     # append to temp_link.json if absent
   "queue_remove":  ["<url>", ...],                     # drop from temp_link.json
+  "unlog":         ["<url>", ...],                     # unblocked + re-added: drop from the
+                                                       #   deleted log and state/unblocked.json
+  "unblock_remove": ["<url>", ...],                    # unblocked, ended otherwise: drop from
+                                                       #   state/unblocked.json only
   "stats":         {...}                               # informational
 }
 """
@@ -40,6 +44,8 @@ def new_patch(kind: str) -> dict:
         "ingest_state": {},
         "queue_add": [],
         "queue_remove": [],
+        "unlog": [],
+        "unblock_remove": [],
         "stats": {},
     }
 
@@ -67,5 +73,7 @@ def is_empty(patch: dict) -> bool:
             "ingest_state",
             "queue_add",
             "queue_remove",
+            "unlog",
+            "unblock_remove",
         )
     )

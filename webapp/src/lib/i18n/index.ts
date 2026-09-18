@@ -34,6 +34,11 @@ export async function switchLanguage(lang: Language): Promise<void> {
 /** Call once at startup: preload VI if it was the persisted preference. */
 export function initI18n(): void {
   if (usePrefs.getState().language === 'vi') void ensureVi()
+  // <html lang> follows the preference (screen readers, hyphenation, translation prompts).
+  document.documentElement.lang = usePrefs.getState().language
+  usePrefs.subscribe((s) => {
+    document.documentElement.lang = s.language
+  })
 }
 
 function format(template: string, params?: Record<string, string | number>): string {
@@ -53,14 +58,6 @@ function lookup(
   // with a persisted 'vi' pref) — never show raw keys.
   const template = (lang === 'vi' && dict ? dict[key] : undefined) ?? en[key]
   return format(template, params)
-}
-
-/**
- * Imperative translate for non-component contexts (toasts, handlers, column
- * render functions executing inside an already-subscribed tree).
- */
-export function t(key: MessageKey, params?: Record<string, string | number>): string {
-  return lookup(usePrefs.getState().language, useViDict.getState().dict, key, params)
 }
 
 /** Reactive translate hook — re-renders the component on language switch. */

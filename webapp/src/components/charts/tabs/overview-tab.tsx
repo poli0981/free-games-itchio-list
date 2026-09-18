@@ -10,12 +10,13 @@ interface OverviewTabProps {
   games: Game[]
   deleted: DeletedGameEntry[]
   history: CountHistoryPoint[]
+  hiddenNsfw: number
 }
 
-export default function OverviewTab({ games, deleted, history }: OverviewTabProps) {
+export default function OverviewTab({ games, deleted, history, hiddenNsfw }: OverviewTabProps) {
   return (
     <div className="space-y-4">
-      <KpiCards games={games} deleted={deleted} />
+      <KpiCards games={games} deleted={deleted} hiddenNsfw={hiddenNsfw} />
       <div className="grid gap-4 md:grid-cols-2">
         <GenreChart games={games} />
         <StatusChart games={games} />

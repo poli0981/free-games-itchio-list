@@ -1,12 +1,46 @@
-﻿name: 🐛 Bug Report
-description: Report a bug in the list, tables, scripts, or anything broken
+name: 🐛 Bug Report
+description: Report a bug on the website, in the desktop/Android app, in the game data, or in the scripts
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! I'm a lazy unemployed dev, so bugs happen a lot :D Grok fixes most, but your help is gold.
+        Thanks for reporting! I'm a lazy unemployed dev, so bugs happen a lot :D My AI buddies fix most, but your help is gold.
+
+        **Found a security vulnerability?** Please don't file it here — report it privately via https://github.com/poli0981/free-games-itchio-list/security/advisories/new or security@freeitchgames.win.
+        Want a game removed (or you're its creator)? Use the "Remove a Game" template instead.
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      description: Pick all that apply.
+      multiple: true
+      options:
+        - Website (freeitchgames.win)
+        - Desktop app — Windows
+        - Desktop app — macOS
+        - Desktop app — Linux
+        - Android app
+        - Game data itself (wrong info, same everywhere)
+        - Data pipeline / GitHub Actions / scripts
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Shown on the About page (website and apps). For the desktop/Android app, the release you installed.
+      placeholder: e.g. 4.0.0
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / device / OS (if relevant)
+      placeholder: e.g. Firefox on Windows 11, Safari on macOS 15, Android 13 phone
 
   - type: checkboxes
     id: bug_types
@@ -14,13 +48,15 @@ body:
       label: What kind of bug(s)? (check all that apply)
       options:
         - label: Broken/dead link (game page 404 or not loading)
-        - label: Thumbnail not showing or wrong
-        - label: Table missing columns or broken format
-        - label: Wrong game name or dev name
-        - label: Wrong game count in tables
-        - label: Wrong genre classification
+        - label: Cover image not showing or wrong
+        - label: Wrong game name or developer name
+        - label: Wrong genre, tags, platforms or other game info
         - label: Wrong or outdated description
-        - label: NSFW/Safe flag wrong
+        - label: NSFW flag or safety note (safe_virus) wrong
+        - label: Game count or charts look wrong
+        - label: Page/app crashes, won't load, or layout broken
+        - label: Search, filters or sorting not working
+        - label: Suggest page not working
         - label: Other (must describe below)
 
   - type: textarea
@@ -28,7 +64,7 @@ body:
     attributes:
       label: Details (Game name(s)/URL(s), what happened?)
       description: |
-        If "Other" checked, or multiple games — explain here. The more specific, the faster I fix (or Grok does).
+        What did you do, what did you expect, what happened instead? If "Other" is checked, or multiple games — explain here. The more specific, the faster it gets fixed.
     validations:
       required: true
 
@@ -36,17 +72,17 @@ body:
     id: screenshots
     attributes:
       label: Screenshots/Proof (optional but super helpful)
-      description: Paste links or describe — I believe you, but visuals make me less lazy :D
+      description: Paste images or links, or describe — I believe you, but visuals make me less lazy :D Please hide any personal info.
 
-  - type: checkboxes
+  - type: dropdown
     id: urgency
     attributes:
       label: Urgency level?
       options:
-        - label: Low (annoying but not critical)
-        - label: Medium (affects some games)
-        - label: High (breaks tables or many games)
-        - label: Critical (whole repo broken)
+        - Low (annoying but not critical)
+        - Medium (affects some games or one page)
+        - High (breaks a whole page or many games)
+        - Critical (website or app unusable)
 
   - type: checkboxes
     id: agreement

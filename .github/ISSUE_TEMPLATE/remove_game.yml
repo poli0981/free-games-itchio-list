@@ -1,12 +1,17 @@
-name: 🚫 Remove Games
-description: Request to remove games from the list (max 10 per issue)
+name: 🚫 Remove a Game (or copyright request)
+description: Ask to remove games from the catalog or correct their data, including requests from creators and rights holders (max 10 per issue)
 title: "[Remove Games] "
 labels: ["removal"]
 body:
   - type: markdown
     attributes:
       value: |
-        Sad to see them go, but ok! Max 10 because I'm lazy :D
+        Sad to see them go, but ok! Max 10 per issue because I'm lazy :D
+
+        **This issue is public.** Don't post private contact details or anything confidential here.
+        Prefer to keep it private? Email **takedown@freeitchgames.win** instead, with the game URL, who you are (creator, rights holder, or someone authorized to act for them) and the reason.
+
+        What happens next (for a removal): the Maintainer removes the record from the catalog (the removal and its reason are logged in the public list of removed games at https://freeitchgames.win/removed), deletes the resized cover copies the website stores, and cached copies expire from Cloudflare's cache. Older versions stay in the public git history. Target: within 7 days; urgent legal requests sooner.
 
   - type: dropdown
     id: count
@@ -22,8 +27,11 @@ body:
   - type: textarea
     id: games
     attributes:
-      label: Game Name(s) or Link(s)
-      description: List them — one per line or clear
+      label: Game Link(s)
+      description: itch.io links work best (game names are ok too). One per line.
+      placeholder: |
+        https://example.itch.io/game1
+        https://example.itch.io/game2
     validations:
       required: true
 
@@ -38,6 +46,8 @@ body:
         - label: Don't like it anymore
         - label: Potential malware/virus
         - label: I'm the dev and don't want it listed
+        - label: I'm the dev and the data shown is wrong (please correct it instead of removing)
+        - label: Copyright / rights-holder request (fill in the section below)
         - label: Other (describe below)
     validations:
       required: true
@@ -45,7 +55,46 @@ body:
   - type: textarea
     id: other_reason
     attributes:
-      label: If "Other" — explain here
+      label: Details / if "Other" — explain here
+      description: For a correction, say which field is wrong and what it should be.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Copyright / rights-holder section (optional)
+        Fill this in only if you are the creator or rights holder of the listed game (or authorized to act for them), for example when your description text or cover image is shown here and you want it removed.
+        Game descriptions and cover images remain the property of their creators; the catalog only copies what is on the public itch.io page.
+
+  - type: input
+    id: rights_holder
+    attributes:
+      label: Your name, studio or itch.io account, and your role
+      description: e.g. "Creator, itch.io account example" or "Publisher, authorized by the developer". Public — no private contact details please.
+
+  - type: checkboxes
+    id: affected
+    attributes:
+      label: Which content is affected?
+      options:
+        - label: The whole listing
+        - label: Description text
+        - label: Cover image / thumbnail
+        - label: Game name, logo or trademark
+        - label: Something else (explain below)
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: Details of the request
+      description: Where the original work lives (e.g. your itch.io page) and what you want done.
+
+  - type: checkboxes
+    id: rights_confirmation
+    attributes:
+      label: Confirmation (copyright requests only)
+      options:
+        - label: I am the creator or rights holder of the content above, or authorized to act for them, and the information in this issue is accurate.
 
   - type: checkboxes
     id: agreement

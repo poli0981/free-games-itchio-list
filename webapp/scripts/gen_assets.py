@@ -1,6 +1,7 @@
-"""Generate PWA icons and OG image for the webapp.
+"""Generate the favicon, PWA icons and Open Graph image (v4 brand).
 
-Run from repo root:
+Run from repo root after `npm ci` in webapp/ (the Geist fonts come from
+node_modules/@fontsource-variable):
     python webapp/scripts/gen_assets.py
 
 Outputs to webapp/public/. Idempotent — re-run after tweaking colors/text.
@@ -10,95 +11,101 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-OUT = Path(__file__).resolve().parents[1] / "public"
-OUT.mkdir(parents=True, exist_ok=True)
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "public"
+FONTS = ROOT / "node_modules" / "@fontsource-variable"
+SANS = FONTS / "geist" / "files" / "geist-latin-wght-normal.woff2"
+MONO = FONTS / "geist-mono" / "files" / "geist-mono-latin-wght-normal.woff2"
 
-PURPLE = (134, 59, 255)        # primary brand purple, matches favicon.svg
-PURPLE_LIGHT = (237, 230, 255)  # halo / soft fill
-PURPLE_DEEP = (60, 16, 130)    # background bottom
-CYAN_HL = (71, 191, 255)       # accent
+# Same values as the dark theme tokens in src/index.css.
+ACCENT = (124, 92, 255)  # --primary #7c5cff
+BG = (11, 11, 12)  # --background #0b0b0c
+TEXT = (237, 237, 239)  # --foreground
+MUTED = (155, 155, 164)  # --muted-foreground
+BORDER = (35, 35, 40)  # --border
 WHITE = (255, 255, 255)
-DARK_BG = (10, 10, 15)
+
+# The header brand mark's bolt, on a 24-unit grid (SVG path "M13 2 4 14h7l-1 8 9-12h-7l1-8z").
+BOLT = [(13, 2), (4, 14), (11, 14), (10, 22), (19, 10), (12, 10)]
+BOLT_CENTER = (11.5, 12.0)  # middle of its bounding box (x 4–19, y 2–22)
+BOLT_HEIGHT = 20
+
+FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+<rect width="32" height="32" rx="8" fill="#7c5cff"/>\
+<path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" fill="#fff" transform="translate(7.375 7) scale(.75)"/>\
+</svg>
+"""
 
 
-def lightning_path(scale: float, ox: float, oy: float):
-    """A stylized lightning-bolt / Z-shape silhouette tracing the favicon.
+def font(path: Path, size: int, weight: int = 400) -> ImageFont.FreeTypeFont:
+    face = ImageFont.truetype(str(path), size)
+    face.set_variation_by_axes([weight])
+    return face
 
-    Returns a sequence of polygons (each polygon = list of (x, y) tuples).
-    """
-    pts = [
-        (8, 0), (38, 0), (28, 14), (44, 14), (16, 46), (24, 32), (4, 32),
-    ]
-    return [[(ox + x * scale, oy + y * scale) for (x, y) in pts]]
+
+def draw_bolt(draw: ImageDraw.ImageDraw, cx: float, cy: float, height: float, fill) -> None:
+    s = height / BOLT_HEIGHT
+    points = [(cx + (x - BOLT_CENTER[0]) * s, cy + (y - BOLT_CENTER[1]) * s) for x, y in BOLT]
+    draw.polygon(points, fill=fill)
+
+
+def brand_mark(size: int, radius_ratio: float = 7 / 26) -> Image.Image:
+    """Rounded accent square with the white bolt, drawn 4x and scaled down (anti-aliasing)."""
+    big = size * 4
+    img = Image.new("RGBA", (big, big), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle((0, 0, big - 1, big - 1), radius=round(big * radius_ratio), fill=ACCENT)
+    draw_bolt(draw, big / 2, big / 2, big * 0.45, WHITE)
+    return img.resize((size, size), Image.Resampling.LANCZOS)
 
 
 def make_icon(size: int) -> Image.Image:
-    img = Image.new("RGBA", (size, size), PURPLE)
-    draw = ImageDraw.Draw(img)
-    draw.rounded_rectangle((0, 0, size - 1, size - 1), radius=size // 6, fill=PURPLE)
-    s = size / 48 * 0.78
-    cx = size / 2 - 24 * s
-    cy = size / 2 - 23 * s
-    for poly in lightning_path(s, cx, cy):
-        draw.polygon(poly, fill=PURPLE_LIGHT)
-    return img
+    """Full-bleed square (the manifest marks it maskable; the bolt sits in the safe zone)."""
+    big = size * 4
+    img = Image.new("RGB", (big, big), ACCENT)
+    draw_bolt(ImageDraw.Draw(img), big / 2, big / 2, big * 0.46, WHITE)
+    return img.resize((size, size), Image.Resampling.LANCZOS)
 
 
 def make_og(width: int = 1200, height: int = 630) -> Image.Image:
-    img = Image.new("RGB", (width, height), DARK_BG)
+    img = Image.new("RGB", (width, height), BG)
+
+    # A soft accent glow in the top-left corner.
+    glow = Image.new("RGB", (width, height), BG)
+    ImageDraw.Draw(glow).ellipse((-260, -420, 700, 380), fill=(58, 44, 120))
+    img = Image.blend(img, glow.filter(ImageFilter.GaussianBlur(160)), 0.55)
     draw = ImageDraw.Draw(img)
-    for y in range(height):
-        t = y / height
-        r = int(DARK_BG[0] + (PURPLE_DEEP[0] - DARK_BG[0]) * t)
-        g = int(DARK_BG[1] + (PURPLE_DEEP[1] - DARK_BG[1]) * t)
-        b = int(DARK_BG[2] + (PURPLE_DEEP[2] - DARK_BG[2]) * t)
-        draw.line([(0, y), (width, y)], fill=(r, g, b))
-    glyph_scale = 7.0
-    for poly in lightning_path(glyph_scale, 88, 156):
-        draw.polygon(poly, fill=PURPLE)
-    for poly in lightning_path(glyph_scale * 0.96, 92, 160):
-        draw.polygon(poly, fill=PURPLE_LIGHT)
-    title = "Itch.io Free Games DB"
-    subtitle = "2,600+ free itch.io games  ·  auto-updated  ·  web + desktop + Android"
-    footer = "freeitchgames.win"
-    max_w = width - 460 - 48  # text column: x=460 to the right margin
 
-    def fit(face: str, size: int, text: str) -> ImageFont.ImageFont:
-        # Shrink until the line fits the text column (the title used to overflow).
-        try:
-            while size > 12:
-                font = ImageFont.truetype(face, size)
-                if draw.textlength(text, font=font) <= max_w:
-                    return font
-                size -= 2
-            return ImageFont.truetype(face, size)
-        except OSError:
-            return ImageFont.load_default()
+    x = 88
+    img.paste(brand_mark(60), (x, 84), brand_mark(60))
+    draw.text((x + 80, 96), "Free Itch Games", font=font(SANS, 34, 600), fill=TEXT)
 
-    title_font = fit("arial.ttf", 78, title)
-    subtitle_font = fit("arial.ttf", 32, subtitle)
-    footer_font = fit("arialbd.ttf", 24, footer)
-    draw.text((460, 200), title, font=title_font, fill=WHITE)
-    draw.text((460, 310), subtitle, font=subtitle_font, fill=PURPLE_LIGHT)
-    draw.rectangle((460, 420, 462 + 220, 422), fill=CYAN_HL)
-    draw.text((460, 440), footer, font=footer_font, fill=CYAN_HL)
+    headline = font(SANS, 78, 600)
+    draw.text((x, 212), "Free games on itch.io,", font=headline, fill=TEXT)
+    draw.text((x, 306), "sorted and kept fresh.", font=headline, fill=TEXT)
+
+    facts = "2,600+ games · re-checked weekly · open data (CC BY 4.0)"
+    draw.text((x, 440), facts, font=font(MONO, 26), fill=MUTED)
+    draw.line((x, 512, width - x, 512), fill=BORDER, width=2)
+    draw.text((x, 540), "freeitchgames.win", font=font(SANS, 28, 500), fill=ACCENT)
+    note = "Not affiliated with itch.io"
+    draw.text((width - x, 540), note, font=font(SANS, 22), fill=MUTED, anchor="ra")
     return img
 
 
 def main() -> None:
+    (OUT / "favicon.svg").write_text(FAVICON, encoding="utf-8", newline="\n")
+    print(f"wrote {OUT / 'favicon.svg'}")
     for size in (192, 512):
         path = OUT / f"icon-{size}.png"
         make_icon(size).save(path, format="PNG", optimize=True)
         print(f"wrote {path} ({size}x{size})")
     og = make_og()
-    og_png = OUT / "og.png"
-    og.save(og_png, format="PNG", optimize=True)
-    print(f"wrote {og_png}")
-    og_webp = OUT / "og.webp"
-    og.save(og_webp, format="WEBP", quality=85, method=6)
-    print(f"wrote {og_webp}")
+    og.save(OUT / "og.png", format="PNG", optimize=True)
+    og.save(OUT / "og.webp", format="WEBP", quality=85, method=6)
+    print(f"wrote {OUT / 'og.png'} and og.webp")
 
 
 if __name__ == "__main__":

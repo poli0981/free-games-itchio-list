@@ -39,14 +39,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Worker types are up to date
+        run: npm run cf:types -- --check
+
       - name: Lint
         run: npm run lint
 
       - name: Unused code (knip)
         run: npm run knip
 
+      - name: Unit tests (Worker, app; D1 tests run a local workerd)
+        run: npm test
+
       - name: Type-check and build
         run: npm run build
 
       - name: Validate Workers config (dry run)
-        run: npx wrangler deploy --dry-run
+        run: npx wrangler deploy --dry-run --env=""

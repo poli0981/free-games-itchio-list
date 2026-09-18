@@ -1,5 +1,10 @@
 ﻿# My Stuff
 
+> **Note:** This is a personal page, kept for history. It is **not** part of the project's policies or
+> documentation, and some details are out of date. The current hardware and dev setup are in
+> [`pc_spec.md`](pc_spec.md) and [`dev_env.md`](dev_env.md); the policies are listed in the
+> [README](../README.md).
+
 Just in case anyone wonders what kind of "setup" produced this half-decent repo. Spoiler: nothing impressive. I'm your typical unemployed, introvert Vietnamese dev scraping by on family support and way too much free time.
 
 ## Hardware (aka the screaming machines)

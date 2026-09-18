@@ -1,36 +1,29 @@
 import { useEffect, useState } from 'react'
 import { ArrowUp } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { useT } from '@/lib/i18n'
 
-interface ScrollToTopProps {
-  // The scroll container to watch — the app scrolls <main>, not window.
-  targetRef: React.RefObject<HTMLElement | null>
-}
-
-export default function ScrollToTop({ targetRef }: ScrollToTopProps) {
+/** Floating "back to top" button once the window has scrolled a screen or so. */
+export default function ScrollToTop() {
   const t = useT()
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const el = targetRef.current
-    if (!el) return
-    const onScroll = () => setVisible(el.scrollTop > 400)
+    const onScroll = () => setVisible(window.scrollY > 600)
     onScroll()
-    el.addEventListener('scroll', onScroll, { passive: true })
-    return () => el.removeEventListener('scroll', onScroll)
-  }, [targetRef])
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   if (!visible) return null
 
   return (
-    <Button
-      size="icon"
+    <button
+      type="button"
       aria-label={t('common.scrollToTop')}
-      onClick={() => targetRef.current?.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-6 right-6 z-50 h-11 w-11 rounded-full shadow-lg"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className="fixed right-5 bottom-[calc(1.25rem+env(safe-area-inset-bottom))] z-30 flex size-11 items-center justify-center rounded-full border bg-card text-foreground shadow-lg hover:bg-accent"
     >
-      <ArrowUp className="h-5 w-5" />
-    </Button>
+      <ArrowUp className="size-5" aria-hidden="true" />
+    </button>
   )
 }

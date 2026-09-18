@@ -7,17 +7,11 @@ export interface ThirdParty {
 }
 
 export const APP = {
-  name: 'Itch.io Free Games DB',
-  version: '3.9.0',
+  name: 'Free Itch Games',
+  version: '4.0.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
-  license: 'MIT',
-  buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
+  license: 'code MIT · data CC BY 4.0',
 } as const
-
-declare global {
-  // Injected by Vite (define option in vite.config.ts).
-  const __BUILD_DATE__: string
-}
 
 export const DEV = {
   name: 'SkullMute',
@@ -44,8 +38,8 @@ export const AI_TOOLS: AiTool[] = [
   {
     name: 'Claude Code',
     vendor: 'Anthropic',
-    model: 'Claude Opus 4.8 (1M context)',
-    role: 'Newer recruit. Drove the v3.0.0 webapp + Tauri build, the v3.1.2 offline-link fix / About expansion / docs sweep, and the v3.7.0 legal-acceptance gate + per-tab chart lazy-loading. More cautious vibe — confirms before nuking anything.',
+    model: 'Claude Opus 5',
+    role: 'Newer recruit. Drove the v3.0.0 webapp + Tauri build, the v3.1.2 offline-link fix / About expansion / docs sweep, the v3.7.0 legal-acceptance gate + per-tab chart lazy-loading, and the v4.0.0 move to Cloudflare (Worker, admin + review queue, pipeline rewrite). More cautious vibe — confirms before nuking anything.',
     url: 'https://claude.com/claude-code',
   },
 ]
@@ -75,8 +69,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'discord-game', label: 'Discord — Game chat', handle: '#general', url: 'https://discord.gg/kDM9GMu5vm', group: 'community' },
 
   // Messaging — DM only; never post your Telegram numeric ID to public channels.
-  { platform: 'telegram-user', label: 'Telegram (DM for bot whitelist)', handle: '@SkullMute0011', url: 'https://t.me/SkullMute0011', group: 'messaging' },
-  { platform: 'telegram-bot',  label: 'Telegram bot (game submission)',  handle: '@my_skull_bot',  url: 'https://t.me/my_skull_bot',  group: 'messaging' },
+  { platform: 'telegram-user', label: 'Telegram (DM)', handle: '@SkullMute0011', url: 'https://t.me/SkullMute0011', group: 'messaging' },
 
   // Support — mirrors .github/FUNDING.yml (single source of truth on GitHub side).
   { platform: 'github-sponsors', label: 'GitHub Sponsors',  handle: 'poli0981',  url: 'https://github.com/sponsors/poli0981',  group: 'support' },
@@ -106,20 +99,26 @@ export interface LegalLink {
   description: string
   url: string
   group: LegalGroup
+  /** Listed in the first-visit legal gate (the documents being accepted). */
+  inGate?: boolean
+  /** Only relevant to the desktop / Android apps. */
+  appOnly?: boolean
 }
 
 export const LEGAL_LINKS: LegalLink[] = [
   // Policy
-  { name: 'Disclaimer',      description: 'No warranty, no liability, "as-is" basis.',                              url: `${REPO_BLOB}/docs/DISCLAIMER.md`,     group: 'policy' },
-  { name: 'EULA',            description: 'MIT-licensed; what the license does and does not cover.',                url: `${REPO_BLOB}/docs/EULA.md`,           group: 'policy' },
-  { name: 'Terms of Use',    description: 'Permitted uses, prohibited activities, contributor obligations, PAT.',   url: `${REPO_BLOB}/docs/ToS.md`,            group: 'policy' },
-  { name: 'Privacy Policy',  description: 'Zero server-side data collection. Local-only browser storage detailed.', url: `${REPO_BLOB}/docs/PrivacyPolicy.md`,  group: 'policy' },
-  { name: 'Code of Conduct', description: 'Be cool. The full version is on GitHub.',                                url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
-  { name: 'Security Policy', description: 'Reporting vulnerabilities + PAT handling overview.',                     url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
+  { name: 'Terms of Use',     description: 'Using the website and the public data; how to ask for a removal.',     url: `${REPO_BLOB}/docs/ToS.md`,            group: 'policy', inGate: true },
+  { name: 'Privacy Policy',   description: 'What the site and apps process, what stays in your browser, your rights.', url: `${REPO_BLOB}/docs/PrivacyPolicy.md`, group: 'policy', inGate: true },
+  { name: 'Disclaimer',       description: 'No warranty, no liability, "as-is" basis; not affiliated with itch.io.', url: `${REPO_BLOB}/docs/DISCLAIMER.md`,     group: 'policy', inGate: true },
+  { name: 'EULA',             description: 'License terms of the desktop and Android apps.',                        url: `${REPO_BLOB}/docs/EULA.md`,           group: 'policy', inGate: true, appOnly: true },
+  { name: 'Code of Conduct',  description: 'Be kind. Contributor Covenant 2.1, adapted.',                           url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
+  { name: 'Security Policy',  description: 'How to report a vulnerability privately.',                              url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
+  { name: 'Content removal',  description: 'Creators and rights holders: ask for a game to be removed or corrected.', url: `${REPO_BLOB}/.github/ISSUE_TEMPLATE/remove_game.yml`, group: 'policy' },
 
   // Meta
-  { name: 'License (MIT)',   description: 'The canonical license text.',                                            url: `${REPO_BLOB}/LICENSE`,                group: 'meta' },
-  { name: 'Changelog',       description: 'What changed when.',                                                     url: `${REPO_BLOB}/CHANGELOG.md`,           group: 'meta' },
+  { name: 'Licenses & notice', description: 'Code: MIT. Data and docs: CC BY 4.0. Not affiliated with itch.io.',    url: `${REPO_BLOB}/NOTICE.md`,              group: 'meta', inGate: true },
+  { name: 'Data license',     description: 'What CC BY 4.0 covers in the catalog, and how to credit it.',           url: `${REPO_BLOB}/data_game/LICENSE.md`,   group: 'meta' },
+  { name: 'Changelog',        description: 'What changed when.',                                                     url: `${REPO_BLOB}/CHANGELOG.md`,           group: 'meta' },
 ]
 
 export const LEGAL_GROUP_LABELS: Record<LegalGroup, string> = {
@@ -132,32 +131,34 @@ export const LEGAL_VI_INDEX_URL =
 
 export const THIRD_PARTY: ThirdParty[] = [
   // Core
-  { name: 'React', version: '19.2', license: 'MIT', url: 'https://react.dev', category: 'core' },
+  { name: 'React', version: '19.3', license: 'MIT', url: 'https://react.dev', category: 'core' },
   { name: 'TypeScript', version: '6.0', license: 'Apache-2.0', url: 'https://www.typescriptlang.org', category: 'core' },
-  { name: 'Vite', version: '8.0', license: 'MIT', url: 'https://vite.dev', category: 'core' },
-  { name: 'React Router', version: '7.14', license: 'MIT', url: 'https://reactrouter.com', category: 'core' },
+  { name: 'Vite', version: '8.3', license: 'MIT', url: 'https://vite.dev', category: 'core' },
+  { name: 'React Router', version: '8.4', license: 'MIT', url: 'https://reactrouter.com', category: 'core' },
   { name: 'Zustand', version: '5.0', license: 'MIT', url: 'https://github.com/pmndrs/zustand', category: 'core' },
 
   // UI
-  { name: 'Tailwind CSS', version: '3.4', license: 'MIT', url: 'https://tailwindcss.com', category: 'ui' },
+  { name: 'Tailwind CSS', version: '4.3', license: 'MIT', url: 'https://tailwindcss.com', category: 'ui' },
+  { name: 'tw-animate-css', version: '1.4', license: 'MIT', url: 'https://github.com/Wombosvideo/tw-animate-css', category: 'ui' },
+  { name: 'Geist / Geist Mono (Fontsource)', version: '5.3', license: 'OFL-1.1', url: 'https://vercel.com/font', category: 'ui' },
   { name: 'shadcn/ui', version: 'pattern', license: 'MIT', url: 'https://ui.shadcn.com', category: 'ui' },
   { name: 'Radix UI', version: '1.x / 2.x', license: 'MIT', url: 'https://www.radix-ui.com', category: 'ui' },
-  { name: 'lucide-react', version: '1.14', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
-  { name: 'sonner', version: '2.0', license: 'MIT', url: 'https://sonner.emilkowal.ski', category: 'ui' },
+  { name: 'lucide-react', version: '1.47', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
   { name: 'class-variance-authority', version: '0.7', license: 'Apache-2.0', url: 'https://cva.style', category: 'ui' },
-  { name: 'tailwind-merge', version: '3.5', license: 'MIT', url: 'https://github.com/dcastil/tailwind-merge', category: 'ui' },
+  { name: 'tailwind-merge', version: '3.7', license: 'MIT', url: 'https://github.com/dcastil/tailwind-merge', category: 'ui' },
   { name: 'clsx', version: '2.1', license: 'MIT', url: 'https://github.com/lukeed/clsx', category: 'ui' },
-  { name: 'Recharts', version: '3.8', license: 'MIT', url: 'https://recharts.org', category: 'ui' },
+  { name: 'Recharts', version: '3.10', license: 'MIT', url: 'https://recharts.org', category: 'ui' },
 
   // Data
-  { name: 'TanStack Query', version: '5.100', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'TanStack Table', version: '8.21', license: 'MIT', url: 'https://tanstack.com/table', category: 'data' },
-  { name: 'TanStack Virtual', version: '3.13', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
-  { name: 'TanStack Query Persist Client', version: '5.101', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'TanStack Query Async Storage Persister', version: '5.101', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'idb-keyval', version: '6.2', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
-  { name: '@octokit/rest', version: '22.0', license: 'MIT', url: 'https://github.com/octokit/octokit.js', category: 'data' },
-  { name: 'OpenPGP.js', version: '6.3', license: 'LGPL-3.0', url: 'https://openpgpjs.org', category: 'data' },
+  { name: 'TanStack Query', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query Persist Client', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query Async Storage Persister', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'idb-keyval', version: '6.3', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
+
+  // Hosting / tooling (Cloudflare)
+  { name: 'jose', version: '6.2', license: 'MIT', url: 'https://github.com/panva/jose', category: 'dev' },
+  { name: 'Wrangler', version: '4.134', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
+  { name: 'Vitest', version: '5.0', license: 'MIT', url: 'https://vitest.dev', category: 'dev' },
 
   // Desktop / mobile (Tauri)
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },

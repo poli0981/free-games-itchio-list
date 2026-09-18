@@ -1,20 +1,103 @@
 // Cloudflare Workers Builds config for https://freeitchgames.win
 // Dashboard: Worker "free-games-itchio-list" → Settings → Build:
 //   Root directory: webapp · Build command: npm run build · Deploy command: npx wrangler deploy
-// Phase 0 = static assets only (no Worker script yet). The custom domain stays
-// attached in the dashboard; it is declared here once verified (see v4 plan, A2).
+// Custom Domains (freeitchgames.win, www) are attached in the dashboard and are
+// intentionally not declared here yet, so a deploy never touches them.
+//
+// Secrets are NOT in this file: `npx wrangler secret put <NAME>` (and
+// webapp/.dev.vars for `wrangler dev`) — GH_APP_PRIVATE_KEY, ADMIN_EMAILS,
+// TURNSTILE_SECRET. Until a feature's settings are filled in, its routes
+// answer 503 (see worker/env.ts); the public site works without any of them.
+// After editing this file run `npm run cf:types`.
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   // MUST match the Worker name in the dashboard or Workers Builds fails.
   "name": "free-games-itchio-list",
+  "main": "./worker/index.ts",
   "compatibility_date": "2026-09-15",
-  // workers.dev / preview URLs would bypass Cloudflare Access once /admin exists.
+  // workers.dev / preview URLs would bypass Cloudflare Access (admin, ingest).
   "workers_dev": false,
   "preview_urls": false,
   "assets": {
-    // Vite build output. Never point this at a source directory.
+    // Vite build output (app + admin + bundled catalog under /data). Never a source dir.
     "directory": "./dist",
-    "not_found_handling": "single-page-application",
-    "html_handling": "auto-trailing-slash"
+    "binding": "ASSETS",
+    // Misses go to the Worker, not to an asset-layer SPA fallback: that would
+    // answer a stale hashed chunk (/assets/x-OLD.js after a deploy) with
+    // index.html + the year-long immutable cache of /assets/*. The Worker
+    // returns real 404s for files and serves the app shell for routes
+    // (worker/spa.ts).
+    "not_found_handling": "none",
+    "html_handling": "auto-trailing-slash",
+    // Existing assets never invoke the Worker (free, cached); these paths always
+    // do — /admin so its shell is only ever served after the Access JWT check.
+    "run_worker_first": ["/img/*", "/api/*", "/admin", "/admin/*"]
+  },
+  // Resized cover images, written once per image + width by worker/img.ts.
+  "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs" }],
+  // Review queue (worker/migrations). The database was created with
+  // `npx wrangler d1 create freeitchgames` (APAC); its id is not a secret.
+  // Migrations are applied by hand, never by the build:
+  //   npx wrangler d1 migrations apply freeitchgames --remote
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "freeitchgames",
+      "database_id": "5a2417f2-cfe6-4a42-ad9c-2f8bb7094a61",
+      "migrations_dir": "./worker/migrations"
+    }
+  ],
+  // Per-key limits (IP for the Suggest form, service-token id for ingest).
+  "ratelimits": [
+    { "name": "RL_SUGGEST", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } },
+    { "name": "RL_INGEST", "namespace_id": "1002", "simple": { "limit": 20, "period": 60 } }
+  ],
+  // RSS discovery (one feed per run) + queue bookkeeping, worker/index.ts scheduled().
+  "triggers": { "crons": ["23 */4 * * *"] },
+  "vars": {
+    "SITE_ORIGIN": "https://freeitchgames.win",
+    "GITHUB_REPO": "poli0981/free-games-itchio-list",
+    "BOT_UA": "FreeItchGamesBot/4.0 (+https://freeitchgames.win/about)",
+    // Filled in during setup (none of these are secret):
+    "GH_APP_ID": "",
+    "GH_APP_INSTALLATION_ID": "",
+    "ACCESS_TEAM_DOMAIN": "", // https://<team>.cloudflareaccess.com
+    "ACCESS_AUD_ADMIN": "", // AUD tag of the "Admin" Access application
+    "ACCESS_AUD_INGEST": "", // AUD tag of the "Ingest" Access application
+    "TURNSTILE_SITEKEY": ""
+  },
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 },
+  "upload_source_maps": false,
+
+  "env": {
+    // Pre-release checks of the v4 branch: Worker "free-games-itchio-list-staging",
+    // deployed with `npx wrangler deploy --env staging`, whole host behind Access.
+    // Bindings and vars are not inherited, so every one is repeated here.
+    "staging": {
+      "workers_dev": false,
+      "preview_urls": false,
+      "routes": [{ "pattern": "staging.freeitchgames.win", "custom_domain": true }],
+      "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs-staging" }],
+      "d1_databases": [
+        { "binding": "DB", "database_name": "freeitchgames-staging", "migrations_dir": "./worker/migrations" }
+      ],
+      "ratelimits": [
+        { "name": "RL_SUGGEST", "namespace_id": "2001", "simple": { "limit": 5, "period": 60 } },
+        { "name": "RL_INGEST", "namespace_id": "2002", "simple": { "limit": 20, "period": 60 } }
+      ],
+      // No RSS polling from staging: production is the only itch.io client.
+      "triggers": { "crons": [] },
+      "vars": {
+        "SITE_ORIGIN": "https://staging.freeitchgames.win",
+        "GITHUB_REPO": "poli0981/free-games-itchio-list",
+        "BOT_UA": "FreeItchGamesBot/4.0 (+https://freeitchgames.win/about)",
+        "GH_APP_ID": "",
+        "GH_APP_INSTALLATION_ID": "",
+        "ACCESS_TEAM_DOMAIN": "",
+        "ACCESS_AUD_ADMIN": "",
+        "ACCESS_AUD_INGEST": "",
+        "TURNSTILE_SITEKEY": ""
+      }
+    }
   }
 }

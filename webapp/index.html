@@ -3,50 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#863bff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
     <meta name="color-scheme" content="dark light" />
 
-    <title>Itch.io Free Games Database</title>
-    <meta name="description" content="A curated, auto-updating catalog of 2,600+ free games on itch.io. Browse, filter, and analyze the dataset; dispatch the scraper from the browser." />
-    <meta name="application-name" content="Itch.io Free Games DB" />
+    <title>Free Itch Games — free games on itch.io, sorted and kept fresh</title>
+    <meta name="description" content="A curated, auto-updating catalog of 2,600+ free games on itch.io. Search, filter and explore the dataset." />
+    <meta name="application-name" content="Free Itch Games" />
     <meta name="author" content="poli0981 (SkullMute)" />
-    <meta name="keywords" content="itch.io, free games, indie games, itch.io catalog, free game database, open source, GitHub Pages, React, Tauri" />
+    <meta name="keywords" content="itch.io, free games, indie games, itch.io catalog, free game database, open source, Cloudflare, React, Tauri" />
     <meta name="robots" content="index,follow" />
 
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="apple-touch-icon" href="./icon-192.png" />
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="canonical" href="https://freeitchgames.win/" />
-
-    <link rel="preconnect" href="https://img.itch.zone" crossorigin />
-    <link rel="dns-prefetch" href="https://img.itch.zone" />
-    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
-    <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
-    <link rel="dns-prefetch" href="https://api.github.com" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="apple-touch-icon" href="%BASE_URL%icon-192.png" />
+    <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Itch.io Free Games DB" />
-    <meta property="og:title" content="Itch.io Free Games Database" />
+    <meta property="og:site_name" content="Free Itch Games" />
+    <meta property="og:title" content="Free Itch Games" />
     <meta property="og:description" content="A curated, auto-updating catalog of 2,600+ free games on itch.io. Browse, filter, and analyze." />
-    <meta property="og:url" content="https://freeitchgames.win/" />
     <meta property="og:image" content="https://freeitchgames.win/og.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Itch.io Free Games DB — 2,600+ free itch.io games, auto-updated" />
+    <meta property="og:image:alt" content="Free Itch Games — 2,600+ free itch.io games, kept fresh" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="vi_VN" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@SkullMute0011" />
     <meta name="twitter:creator" content="@SkullMute0011" />
-    <meta name="twitter:title" content="Itch.io Free Games Database" />
+    <meta name="twitter:title" content="Free Itch Games" />
     <meta name="twitter:description" content="A curated, auto-updating catalog of 2,600+ free games on itch.io." />
     <meta name="twitter:image" content="https://freeitchgames.win/og.png" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- For crawlers and visitors without JavaScript; React replaces it. index.css keeps it
+           invisible for the first 1.5 s so it doesn't flash before the app starts. -->
+      <main data-static-fallback style="max-width: 760px; margin: 88px auto; padding: 0 16px; font-family: system-ui, sans-serif">
+        <h1>Free games on itch.io, sorted and kept fresh.</h1>
+        <p>
+          A curated index of 2,600+ free itch.io games. Search it, filter by genre, platform or language, and jump
+          straight to the game page. Dead links and games that turned paid are pruned every week.
+        </p>
+        <p>
+          <a href="/games">Browse the games</a> · <a href="/charts">Charts</a> · <a href="/removed">Removed games</a> ·
+          <a href="/suggest">Suggest a game</a> · <a href="/about">About</a>
+        </p>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

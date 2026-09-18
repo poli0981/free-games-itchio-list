@@ -1,17 +1,14 @@
-export const REPO = {
-  owner: 'poli0981',
-  name: 'free-games-itchio-list',
-  branch: 'main',
+import { isTauri } from './runtime'
+
+export const SITE_ORIGIN = 'https://freeitchgames.win'
+
+// The catalog JSON is bundled into the site at build time (vite.config.ts →
+// catalogData → dist/data/). The web app reads it same-origin; the Tauri apps
+// read the live site (served with `Access-Control-Allow-Origin: *`).
+export const DATA_BASE = isTauri() ? `${SITE_ORIGIN}/data` : '/data'
+
+export const DATA_FILES = {
+  index: 'index.json',
+  countHistory: 'count_history.json',
+  deleted: 'deleted_games.json',
 } as const
-
-export const RAW_BASE = `https://raw.githubusercontent.com/${REPO.owner}/${REPO.name}/${REPO.branch}`
-
-export const PATHS = {
-  index: 'data_game/index.json',
-  chunk: (filename: string) => `data_game/${filename}`,
-  countHistory: 'data_game/count_history.json',
-  deletedJson: 'scripts/deleted_games.json',
-  tempLink: 'scripts/temp_link.json',
-} as const
-
-export const MAX_PER_FILE = 500

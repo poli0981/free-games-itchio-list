@@ -11,10 +11,7 @@ updates:
       timezone: Asia/Ho_Chi_Minh
     cooldown:
       default-days: 3
-    # The v4 rewrite of webapp/ is in progress on its own branch: routine
-    # version bumps on main would only conflict with it. Security updates still
-    # arrive. After go-live, raise this limit again.
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     groups:
       react:
         patterns: ['react', 'react-dom', '@types/react*', 'react-router*']
@@ -33,9 +30,9 @@ updates:
           - 'eslint*'
           - '@eslint/*'
           - 'knip'
-          - 'postcss'
-          - 'autoprefixer'
-          - 'tailwindcss*'
+          - 'tailwindcss'
+          - '@tailwindcss/*'
+          - 'tw-animate-css'
           - 'wrangler'
           - '@cloudflare/*'
     ignore:
@@ -45,9 +42,6 @@ updates:
       # Match the Node 24 runtime.
       - dependency-name: '@types/node'
         versions: ['>=25']
-      # v9 is a rewrite; migrate deliberately.
-      - dependency-name: '@tanstack/react-table'
-        versions: ['>=9']
 
   - package-ecosystem: pip
     directory: /

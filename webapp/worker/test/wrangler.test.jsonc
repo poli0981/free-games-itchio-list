@@ -1,0 +1,6 @@
+// Bindings for the D1 tests only (worker/test/d1.ts, in-memory, never deployed).
+{
+  "name": "freeitchgames-test",
+  "compatibility_date": "2026-09-15",
+  "d1_databases": [{ "binding": "DB", "database_name": "test", "database_id": "00000000-0000-0000-0000-000000000000" }]
+}

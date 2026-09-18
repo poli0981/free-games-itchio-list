@@ -19,6 +19,10 @@ export interface Game {
   made_with: string[]
   safe_virus: '?' | 'Yes' | 'No' | 'Caution' | string
   notes: string
+  /** Set by the pipeline when the game was added (ISO-8601, UTC). */
+  added_at?: string
+  /** itch.io "Updated" date as shown on the game page. */
+  updated_at?: string
 }
 
 export interface GameDbIndex {
@@ -41,9 +45,4 @@ export interface DeletedGameEntry {
 export interface CountHistoryPoint {
   date: string
   total: number
-}
-
-export interface ChunkPlan {
-  name: string
-  games: Game[]
 }

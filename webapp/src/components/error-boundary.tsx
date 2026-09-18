@@ -1,5 +1,5 @@
 import { Component, type ReactNode } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router'
 import { RotateCw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ErrorPage } from '@/components/error-page'

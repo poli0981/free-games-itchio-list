@@ -1,9 +1,10 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, type ReactNode } from 'react'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { RouteError } from '@/components/route-error'
-import { useAllGames, useCountHistory, useDeletedGames } from '@/hooks/useGames'
+import { useVisibleGames, useCountHistory, useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 
 // Per-tab lazy chunks: Recharts + each tab's charts download only when the tab
@@ -24,23 +25,37 @@ function ChartGridSkeleton({ count = 4 }: { count?: number }) {
   )
 }
 
+function Heading({ children }: { children?: ReactNode }) {
+  const t = useT()
+  return (
+    <div className="mb-5 flex flex-col gap-1">
+      <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.charts')}</h1>
+      {children}
+    </div>
+  )
+}
+
+const PAGE = 'mx-auto max-w-[1440px] px-4 pt-6 pb-12 sm:px-8 md:pt-7'
+
 export default function Charts() {
   const t = useT()
+  const fmt = useFormat()
   useDocumentTitle(t('titles.charts'))
-  const games = useAllGames()
+  const games = useVisibleGames()
   const deleted = useDeletedGames()
   const history = useCountHistory()
 
   if (games.isLoading) {
     return (
-      <div className="container mx-auto p-6 space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight">{t('titles.charts')}</h1>
+      <div className={PAGE}>
+        <Heading />
         <ChartGridSkeleton count={6} />
       </div>
     )
   }
 
-  if (games.isError) {
+  // A failed background refresh keeps the cached catalog on screen.
+  if (games.isError && !games.data) {
     return <RouteError error={games.error} onRetry={() => void games.refetch()} />
   }
 
@@ -49,8 +64,18 @@ export default function Charts() {
   const historyList = history.data ?? []
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight">{t('titles.charts')}</h1>
+    <div className={PAGE}>
+      <Heading>
+        <p className="font-mono text-xs text-muted-foreground">
+          {games.hiddenNsfw > 0
+            ? t('games.summary', {
+                shown: fmt.number(data.length),
+                total: fmt.number(data.length + games.hiddenNsfw),
+                date: fmt.date(games.data?.index.last_updated),
+              })
+            : t('games.summaryAll', { total: fmt.number(data.length), date: fmt.date(games.data?.index.last_updated) })}
+        </p>
+      </Heading>
 
       <Tabs defaultValue="overview">
         <TabsList className="flex-wrap">
@@ -62,7 +87,7 @@ export default function Charts() {
 
         <TabsContent value="overview" className="space-y-4">
           <Suspense fallback={<ChartGridSkeleton count={6} />}>
-            <OverviewTab games={data} deleted={deletedList} history={historyList} />
+            <OverviewTab games={data} deleted={deletedList} history={historyList} hiddenNsfw={games.hiddenNsfw} />
           </Suspense>
         </TabsContent>
 

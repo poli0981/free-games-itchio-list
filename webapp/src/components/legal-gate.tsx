@@ -1,102 +1,113 @@
 import { useState, type ReactNode } from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
-import { ExternalLink as ExternalLinkIcon } from 'lucide-react'
-import { usePrefs, LEGAL_VERSION } from '@/stores/prefs'
-import { useT } from '@/lib/i18n'
-import { LEGAL_LINKS, LEGAL_VI_INDEX_URL } from '@/lib/about'
+import { ArrowUpRight } from 'lucide-react'
 import { ExtLink } from '@/components/ext-link'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
+import { LEGAL_LINKS, LEGAL_VI_INDEX_URL } from '@/lib/about'
+import { useT, type MessageKey } from '@/lib/i18n'
+import { isTauri } from '@/lib/runtime'
+import { usePrefs, LEGAL_VERSION } from '@/stores/prefs'
 
 /**
- * Full-screen first-launch legal-acceptance gate. Renders INSTEAD of the app
- * shell until the user accepts the current `LEGAL_VERSION`; the sidebar and
- * routes never mount while it is up. Acceptance persists in the `webapp.prefs`
- * localStorage blob (synchronous Zustand hydration → no flash on reload).
- *
- * Built on the raw Radix Dialog primitives (not `ui/dialog.tsx`) so it has no
- * close "X" and cannot be dismissed via Esc / outside-click. Radix still
- * provides the focus trap and aria-modal labelling.
+ * First-visit legal gate: a non-dismissible overlay. On the website the page
+ * renders behind it (a deep link lands where it pointed once accepted; its
+ * data and covers come from this site). The apps load covers straight from
+ * itch.io, so there nothing behind the gate loads until it is accepted.
+ * Radix Dialog provides the focus trap, aria-modal and hides the rest of the
+ * page from assistive technology while it is open. It re-appears whenever
+ * `LEGAL_VERSION` changes.
  */
 
-// Policy links + the canonical License — reuse about.ts, never hardcode URLs.
-const GATE_LINKS = LEGAL_LINKS.filter(
-  (l) => l.group === 'policy' || l.name === 'License (MIT)',
-)
+// The documents being accepted — URLs come from about.ts, never hardcoded.
+const GATE_LINKS = LEGAL_LINKS.filter((l) => l.inGate && (!l.appOnly || isTauri()))
+
+// Translated title and one-line summary per document (about.ts keeps the English names).
+const DOC_TEXT: Record<string, { name: MessageKey; desc: MessageKey }> = {
+  'Terms of Use': { name: 'legal.doc.terms.name', desc: 'legal.doc.terms.desc' },
+  'Privacy Policy': { name: 'legal.doc.privacy.name', desc: 'legal.doc.privacy.desc' },
+  Disclaimer: { name: 'legal.doc.disclaimer.name', desc: 'legal.doc.disclaimer.desc' },
+  EULA: { name: 'legal.doc.eula.name', desc: 'legal.doc.eula.desc' },
+  'Licenses & notice': { name: 'legal.doc.licenses.name', desc: 'legal.doc.licenses.desc' },
+}
 
 export function LegalGate({ children }: { children: ReactNode }) {
   const accepted = usePrefs((s) => s.acceptedLegalVersion)
   if (accepted === LEGAL_VERSION) return <>{children}</>
-  return <LegalGateModal />
+  if (isTauri()) return <LegalGateDialog />
+  return (
+    <>
+      {children}
+      <LegalGateDialog />
+    </>
+  )
 }
 
-function LegalGateModal() {
+function LegalGateDialog() {
   const t = useT()
   const lang = usePrefs((s) => s.language)
   const acceptLegal = usePrefs((s) => s.acceptLegal)
   const [checked, setChecked] = useState(false)
-  const [declined, setDeclined] = useState(false)
 
   return (
     <DialogPrimitive.Root open>
       <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm" />
+        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/70 backdrop-blur-[2px]" />
         <DialogPrimitive.Content
           onEscapeKeyDown={(e) => e.preventDefault()}
           onPointerDownOutside={(e) => e.preventDefault()}
           onInteractOutside={(e) => e.preventDefault()}
-          className="fixed left-1/2 top-1/2 z-50 grid max-h-[90dvh] w-[calc(100%-2rem)] max-w-lg -translate-x-1/2 -translate-y-1/2 gap-4 overflow-y-auto border bg-background p-6 shadow-lg sm:rounded-lg"
+          className="fixed top-1/2 left-1/2 z-50 flex max-h-[92dvh] w-[calc(100%-2rem)] max-w-[540px] -translate-x-1/2 -translate-y-1/2 flex-col gap-[18px] overflow-y-auto rounded-2xl border bg-popover p-6 text-popover-foreground shadow-2xl sm:p-7"
         >
-          <DialogPrimitive.Title className="text-lg font-semibold leading-none tracking-tight">
-            {t('legal.gate.title')}
-          </DialogPrimitive.Title>
-          <DialogPrimitive.Description className="text-sm text-muted-foreground">
-            {t('legal.gate.intro')}
-          </DialogPrimitive.Description>
+          <div className="space-y-2">
+            <DialogPrimitive.Title className="text-[22px] font-semibold tracking-tight">
+              {t('legal.gate.title')}
+            </DialogPrimitive.Title>
+            <DialogPrimitive.Description className="text-sm leading-relaxed text-muted-foreground">
+              {t('legal.gate.intro')}
+            </DialogPrimitive.Description>
+          </div>
 
-          <ul className="space-y-1.5 text-sm">
-            {GATE_LINKS.map((link) => (
-              <li key={link.name}>
-                <ExtLink
-                  href={link.url}
-                  className="inline-flex items-center gap-1 font-medium hover:underline"
-                >
-                  {link.name}
-                  <ExternalLinkIcon className="h-3 w-3 opacity-50" />
-                </ExtLink>
-                <span className="text-muted-foreground"> — {link.description}</span>
-              </li>
-            ))}
+          <ul className="overflow-hidden rounded-xl border">
+            {GATE_LINKS.map((link) => {
+              const text = DOC_TEXT[link.name]
+              return (
+                <li key={link.name} className="border-b last:border-b-0">
+                  <ExtLink href={link.url} className="flex items-center gap-3 px-3.5 py-3 hover:bg-accent">
+                    <span className="flex min-w-0 flex-1 flex-col gap-0.5">
+                      <span className="text-sm font-medium">{text ? t(text.name) : link.name}</span>
+                      <span className="text-[13px] text-muted-foreground">
+                        {text ? t(text.desc) : link.description}
+                      </span>
+                    </span>
+                    <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
+                  </ExtLink>
+                </li>
+              )
+            })}
           </ul>
 
           {lang === 'vi' && (
             <p className="text-xs text-muted-foreground">
-              <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium hover:underline">
+              <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium underline-offset-4 hover:underline">
                 docs/i18n/vi/
               </ExtLink>{' '}
               — {t('legal.gate.viLink')}
             </p>
           )}
 
-          <label className="flex items-start gap-2 text-sm">
-            <Checkbox
-              checked={checked}
-              onCheckedChange={(v) => setChecked(v === true)}
-              className="mt-0.5"
-            />
+          <label className="flex items-start gap-2.5 text-sm leading-normal">
+            <Checkbox checked={checked} onCheckedChange={(v) => setChecked(v === true)} className="mt-0.5 size-[18px]" />
             <span>{t('legal.gate.checkboxLabel')}</span>
           </label>
 
-          {declined && (
-            <p className="text-sm text-destructive" role="alert">
-              {t('legal.gate.declinedMsg')}
-            </p>
-          )}
-
           <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
-            <Button variant="ghost" onClick={() => setDeclined(true)}>
-              {t('legal.gate.decline')}
-            </Button>
+            {/* In the apps a link would replace the app itself; closing it is the way out there. */}
+            {!isTauri() && (
+              <Button variant="ghost" asChild>
+                <a href="https://itch.io">{t('legal.gate.leave')}</a>
+              </Button>
+            )}
             <Button disabled={!checked} onClick={() => acceptLegal()}>
               {t('legal.gate.accept')}
             </Button>

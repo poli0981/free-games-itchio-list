@@ -12,6 +12,9 @@ always works on the latest data. Idempotent: applying the same patch twice
   - *_state:    merged into scripts/state/*.json (null drops an entry); for
                 refresh_state the newer `checked` wins and the newest `full`
                 stamp from either side is kept
+  - unlog / unblock_remove: an unblocked (restored) game that was re-added
+                leaves the deleted log and scripts/state/unblocked.json; one whose
+                ingest ended otherwise leaves only the allow-list
   - queue_add / queue_remove: appended to / dropped from scripts/temp_link.json,
                 which is re-read here so URLs queued meanwhile survive. Entries
                 that are not URL strings are dropped on every apply.
@@ -43,6 +46,7 @@ DELETED_LOG = "scripts/deleted_games.json"
 TEMP_LINK = "scripts/temp_link.json"
 REFRESH_STATE = "scripts/state/refresh_state.json"
 INGEST_STATE = "scripts/state/ingest_state.json"
+UNBLOCKED = "scripts/state/unblocked.json"
 MASS_REMOVAL_FLOOR = 25
 MASS_REMOVAL_SHARE = 0.05
 
@@ -156,6 +160,19 @@ def apply(patch: dict) -> dict:
         if key == "refresh_state":
             state = {u: e for u, e in state.items() if u in live_urls}
         save_state_map(path, state)
+
+    unlog = {u for u in patch.get("unlog", []) if isinstance(u, str)}
+    finished = unlog | {u for u in patch.get("unblock_remove", []) if isinstance(u, str)}
+    if unlog:
+        log = load_json(DELETED_LOG)
+        kept = [e for e in log if e.get("url") not in unlog]
+        if len(kept) != len(log):
+            save_json(DELETED_LOG, kept)
+    if finished and os.path.exists(UNBLOCKED):
+        allowed = load_json(UNBLOCKED)
+        remaining = sorted(u for u in allowed if u not in finished)
+        if remaining != allowed:
+            save_json(UNBLOCKED, remaining)
 
     raw_queue = load_json(TEMP_LINK)
     queue = clean_queue(raw_queue)

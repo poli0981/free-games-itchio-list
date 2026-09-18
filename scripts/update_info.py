@@ -42,6 +42,10 @@ from scraper import NA, Pacer, create_session, now_iso, parse_game
 TEMP_LINK = "scripts/temp_link.json"
 DELETED_LOG = "scripts/deleted_games.json"
 INGEST_STATE = "scripts/state/ingest_state.json"
+# Removed games the maintainer asked to bring back (admin Restore / approve with
+# override). They are scraped despite the deleted log; the log entry goes only
+# once the game is really re-added, so a still-paid game keeps its record.
+UNBLOCKED = "scripts/state/unblocked.json"
 MAX_ATTEMPTS = 3
 RETRY_GAP = timedelta(hours=6)
 DEAD_CODES = {404, 410}
@@ -95,6 +99,7 @@ def main(argv: list[str] | None = None) -> int:
 
     catalog_urls = get_all_urls(load_all_games())
     deleted_urls = {e.get("url") for e in load_json(DELETED_LOG)}
+    unblocked = set(load_json(UNBLOCKED, default=[]))
     ingest_state: dict = load_json(INGEST_STATE, default={})
 
     todo: list[str] = []
@@ -113,7 +118,9 @@ def main(argv: list[str] | None = None) -> int:
         if url in catalog_urls:
             print(f"Skip duplicate: {url}")
             stats["duplicate"] += 1
-        elif url in deleted_urls:
+            if url in unblocked:
+                patch["unlog"].append(url)
+        elif url in deleted_urls and url not in unblocked:
             print(f"Skip previously deleted: {url} (restore it from the admin page)")
             stats["deleted"] += 1
         else:
@@ -161,6 +168,8 @@ def main(argv: list[str] | None = None) -> int:
                 patch["queue_remove"].append(url)
                 patch["ingest_state"][url] = {**entry, "gave_up": entry["last_attempt"]}
                 stats["gave_up"] += 1
+                if url in unblocked:
+                    patch["unblock_remove"].append(url)
             else:
                 print(f"  → {outcome}; stays queued ({entry['attempts']}/{MAX_ATTEMPTS} attempts).")
                 patch["ingest_state"][url] = entry
@@ -171,6 +180,8 @@ def main(argv: list[str] | None = None) -> int:
         stats[outcome] += 1
         patch["queue_remove"].append(url)
         patch["ingest_state"][url] = None
+        if url in unblocked:
+            patch["unlog" if outcome == "added" else "unblock_remove"].append(url)
 
     write_patch(args.out, patch)
     print(
