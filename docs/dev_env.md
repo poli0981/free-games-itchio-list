@@ -45,7 +45,7 @@ for the data layer overview.
 cd webapp
 npm install
 npm run dev          # http://localhost:5173 with HMR
-npm run build        # writes to ../docs/app/ (NOT webapp/dist)
+npm run build        # writes to webapp/dist/ (web + Tauri)
 npm run lint
 ```
 

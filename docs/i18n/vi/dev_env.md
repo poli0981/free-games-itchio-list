@@ -47,7 +47,7 @@ và ghi vào `data_game/game_info_NNN.json`.
 cd webapp
 npm install
 npm run dev          # http://localhost:5173 với HMR
-npm run build        # output vào ../docs/app/ (KHÔNG phải webapp/dist)
+npm run build        # output vào webapp/dist/ (web + Tauri)
 npm run lint
 ```
 

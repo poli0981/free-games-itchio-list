@@ -42,7 +42,7 @@ Game pages, screenshots, descriptions, tags, ratings, and thumbnails are the pro
 If you are a game developer and want your title removed from the index:
 
 - File a **[Remove Games]** issue (`.github/ISSUE_TEMPLATE/remove_game.yml`) with the box "I'm the dev and don't want it listed" checked.
-- Or DM via any channel listed on the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- Or DM via any channel listed on the [About page](https://freeitchgames.win/#/about).
 
 Removals are processed manually. Expect a few days (unemployed schedule, but not weeks).
 

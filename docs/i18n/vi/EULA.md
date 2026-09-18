@@ -11,7 +11,7 @@ EULA này áp dụng cho **mã nguồn và nội dung của `free-games-itchio-l
 ## 1. Định nghĩa
 
 - **"Repository"** — `free-games-itchio-list` trên GitHub tại <https://github.com/poli0981/free-games-itchio-list>, bao gồm toàn bộ mã nguồn, file dữ liệu, bảng markdown và tài liệu.
-- **"Webapp"** — ứng dụng React + TypeScript trong `webapp/`, deploy tại <https://poli0981.github.io/free-games-itchio-list/app/>.
+- **"Webapp"** — ứng dụng React + TypeScript trong `webapp/`, deploy tại <https://freeitchgames.win/>.
 - **"Desktop App"** — bản build native Tauri 2 của Webapp, phân phối dưới dạng installer qua GitHub Releases.
 - **"Catalog"** — metadata game có cấu trúc trong `data_game/` và các bảng markdown được tạo trong `lists/`.
 - **"Người duy trì"** — GitHub user `poli0981` (alias: SkullMute), tác giả của Repository này.
@@ -35,7 +35,7 @@ Toàn bộ điều khoản MIT áp dụng. Hai nhắc nhở thực tế:
 EULA này không cấp quyền nào đối với:
 
 - **Các game được Catalog liệt kê.** Mỗi game là sở hữu trí tuệ của nhà phát triển tương ứng và được cấp phép bởi họ thông qua itch.io. Catalog chỉ cung cấp link và metadata; việc tải về, chơi, sửa, hoặc phân phối lại game được điều chỉnh bởi điều khoản của nhà phát triển và của itch.io.
-- **Thư viện bên thứ ba.** Webapp phụ thuộc vào nhiều package open-source (React, Tauri, shadcn/ui, v.v.), mỗi cái có giấy phép riêng — xem mục **Third-party software** trong [trang About](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- **Thư viện bên thứ ba.** Webapp phụ thuộc vào nhiều package open-source (React, Tauri, shadcn/ui, v.v.), mỗi cái có giấy phép riêng — xem mục **Third-party software** trong [trang About](https://freeitchgames.win/#/about).
 - **Nhãn hiệu, logo, hoặc dấu hiệu dịch vụ của itch.io.** Chúng thuộc itch corp và được tham chiếu chỉ để nhận diện.
 - **Thumbnail, ảnh chụp màn hình, mô tả, hoặc trailer** của các game được liệt kê. Chúng được sao chép theo nguyên tắc fair-use cho mục đích lập chỉ mục/khám phá và vẫn thuộc sở hữu của chủ sở hữu.
 

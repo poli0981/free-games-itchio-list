@@ -49,7 +49,7 @@ Dev cục bộ:
 cd webapp
 npm install
 npm run dev          # http://localhost:5173
-npm run build        # ghi vào docs/app/
+npm run build        # ghi vào webapp/dist/
 npm run tauri:dev    # native desktop (cần Rust)
 ```
 
@@ -95,7 +95,7 @@ Xem [`README.md`](README.md#project-structure) phiên bản tiếng Anh để c�
 | Check paid games | Mỗi 2 ngày 04:00 UTC | Gỡ game đã chuyển sang trả phí |
 | Check dead links | Mỗi 2 ngày 07:00 UTC | Gỡ trang game 404/410 |
 | Log deleted games | Sau check workflows | Xuất log gỡ ra `deleted_games.txt` |
-| Deploy webapp | Khi push vào main | Build `webapp/` → GitHub Pages (`docs/app/`) |
+| Deploy webapp | Khi push vào main | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Release desktop | Khi push tag `v*` | Build installer Tauri (Win/macOS/Linux) → draft Release |
 | Release Android | Khi push tag `v*` | Build APK đã ký (arm64-v8a) → draft Release |
 
@@ -127,7 +127,7 @@ Hai server Discord giờ đã tồn tại (câu "if I ever make one" chính th�
 - **Hỗ trợ** (hoàn toàn tùy chọn, mirror [`.github/FUNDING.yml`](.github/FUNDING.yml)): [GitHub Sponsors](https://github.com/sponsors/poli0981) · [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute) · [PayPal](https://paypal.me/DungDang212)
 - **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
 
-DM mở khắp nơi — trả lời chậm, introvert max level. Trang About trong [webapp](https://poli0981.github.io/free-games-itchio-list/app/#/about) có cùng danh sách dạng nút bấm.
+DM mở khắp nơi — trả lời chậm, introvert max level. Trang About trong [webapp](https://freeitchgames.win/#/about) có cùng danh sách dạng nút bấm.
 
 ## Pháp lý
 

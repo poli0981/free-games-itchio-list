@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 2026-05-10
+Last updated: 2026-09-18
 
 This Privacy Policy describes how the Repository, the Webapp, and the Desktop App handle Your data. The short version: the Maintainer collects nothing on any server he controls. Everything that persists, persists locally on Your device.
 
@@ -30,6 +30,10 @@ GitHub's privacy policy: <https://docs.github.com/en/site-policy/privacy-policie
 
 When You contribute (open an issue, comment, fork, submit a PR), You publish that information on GitHub under Your account. The Maintainer sees only what GitHub makes public.
 
+### 3a. Cloudflare (interim notice)
+
+Since September 2026 the Webapp is served from **https://freeitchgames.win** on Cloudflare (DNS, CDN and Workers static assets); the old GitHub Pages address only redirects there. To deliver and protect the site, Cloudflare processes standard request data (IP address, user agent, requested URL) and may send Network Error Logging reports or set strictly-necessary security cookies when its protections are active. See [Cloudflare's Privacy Policy](https://www.cloudflare.com/privacypolicy/). This section is an interim note; the Policy will be fully rewritten for the new architecture in v4.0.0.
+
 ## 4. itch.io
 
 All game links in the Catalog point directly to itch.io pages. Clicking a link takes You to itch.io; what happens there is governed by itch.io's terms and privacy policy:
@@ -53,7 +57,7 @@ The Webapp persists the following items locally and never transmits them to any 
 You can erase all of the above at any time by:
 
 - Clicking **Settings → Remove saved PAT** (clears the PAT entry only).
-- Using Your browser's "Clear site data" / "Clear cookies and storage" for `poli0981.github.io` (clears everything).
+- Using Your browser's "Clear site data" / "Clear cookies and storage" for `freeitchgames.win` (clears everything). The old `poli0981.github.io` address now only redirects, and that redirect page deletes any PAT/GPG data the old app left there.
 - Uninstalling the Desktop App and removing its WebView2 / WebKit profile directory (Desktop only; locations vary by OS).
 
 ## 6. PAT (Personal Access Token) handling — in depth
@@ -125,7 +129,7 @@ The Maintainer may update this Policy. The `Last updated` date at the top reflec
 For questions about this Policy:
 
 - Open a `[General]` or `[Feedback]` issue.
-- DM via any channel listed on the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- DM via any channel listed on the [About page](https://freeitchgames.win/#/about).
 
 ## 14. Final vibes
 

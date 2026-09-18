@@ -17,7 +17,7 @@ Please use the issue/PR templates — they make my life easier and reduce "wtf" 
 Faster batch path if you have many links and don't want to file an issue per
 batch. Privacy-conscious — your Telegram numeric ID never enters this repo.
 
-1. **Contact owner** privately on Telegram ([@SkullMute0011](https://t.me/SkullMute0011)) — or via any channel listed in [About](https://poli0981.github.io/free-games-itchio-list/app/#/about) → Find me elsewhere.
+1. **Contact owner** privately on Telegram ([@SkullMute0011](https://t.me/SkullMute0011)) — or via any channel listed in [About](https://freeitchgames.win/#/about) → Find me elsewhere.
 2. **Find your Telegram numeric ID** — e.g. send `/start` to [@userinfobot](https://t.me/userinfobot) and copy the ID it returns.
 3. **DM your ID to the owner.** **Never** post your numeric ID into Discord, X, GitHub comments, or any public channel.
 4. Owner adds your ID to the bot's local whitelist (operator-side, not committed to this repo).
@@ -73,7 +73,7 @@ The browse/edit UI lives in [`webapp/`](webapp/). Same MIT license, same PR temp
 cd webapp
 npm install
 npm run dev          # http://localhost:5173
-npm run build        # writes to docs/app/ (verify before pushing)
+npm run build        # writes to webapp/dist/ (verify before pushing)
 npm run lint         # eslint
 ```
 
@@ -85,7 +85,7 @@ npm run tauri:build  # produce installers in src-tauri/target/release/bundle/
 ```
 
 **House rules**:
-- Don't commit `webapp/dist/` or `docs/app/` — CI builds them on push to `main`.
+- Don't commit `webapp/dist/` — Cloudflare Workers Builds builds it on push to `main`.
 - Don't commit a real PAT into the repo (that's also a webapp Settings concern, not a CI concern).
 - Add new third-party deps? Update `webapp/src/lib/about.ts` so the About page lists them.
 

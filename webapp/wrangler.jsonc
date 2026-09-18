@@ -1,0 +1,20 @@
+// Cloudflare Workers Builds config for https://freeitchgames.win
+// Dashboard: Worker "free-games-itchio-list" → Settings → Build:
+//   Root directory: webapp · Build command: npm run build · Deploy command: npx wrangler deploy
+// Phase 0 = static assets only (no Worker script yet). The custom domain stays
+// attached in the dashboard; it is declared here once verified (see v4 plan, A2).
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // MUST match the Worker name in the dashboard or Workers Builds fails.
+  "name": "free-games-itchio-list",
+  "compatibility_date": "2026-09-15",
+  // workers.dev / preview URLs would bypass Cloudflare Access once /admin exists.
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    // Vite build output. Never point this at a source directory.
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash"
+  }
+}

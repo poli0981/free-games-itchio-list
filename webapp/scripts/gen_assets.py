@@ -61,16 +61,25 @@ def make_og(width: int = 1200, height: int = 630) -> Image.Image:
     for poly in lightning_path(glyph_scale * 0.96, 92, 160):
         draw.polygon(poly, fill=PURPLE_LIGHT)
     title = "Itch.io Free Games DB"
-    subtitle = "500+ free itch.io games  ·  auto-updated  ·  webapp + desktop"
-    footer = "poli0981.github.io/free-games-itchio-list"
-    try:
-        title_font = ImageFont.truetype("arial.ttf", 78)
-        subtitle_font = ImageFont.truetype("arial.ttf", 32)
-        footer_font = ImageFont.truetype("arialbd.ttf", 24)
-    except OSError:
-        title_font = ImageFont.load_default()
-        subtitle_font = ImageFont.load_default()
-        footer_font = ImageFont.load_default()
+    subtitle = "2,600+ free itch.io games  ·  auto-updated  ·  web + desktop + Android"
+    footer = "freeitchgames.win"
+    max_w = width - 460 - 48  # text column: x=460 to the right margin
+
+    def fit(face: str, size: int, text: str) -> ImageFont.ImageFont:
+        # Shrink until the line fits the text column (the title used to overflow).
+        try:
+            while size > 12:
+                font = ImageFont.truetype(face, size)
+                if draw.textlength(text, font=font) <= max_w:
+                    return font
+                size -= 2
+            return ImageFont.truetype(face, size)
+        except OSError:
+            return ImageFont.load_default()
+
+    title_font = fit("arial.ttf", 78, title)
+    subtitle_font = fit("arial.ttf", 32, subtitle)
+    footer_font = fit("arialbd.ttf", 24, footer)
     draw.text((460, 200), title, font=title_font, fill=WHITE)
     draw.text((460, 310), subtitle, font=subtitle_font, fill=PURPLE_LIGHT)
     draw.rectangle((460, 420, 462 + 220, 422), fill=CYAN_HL)

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/</loc>
+    <loc>https://freeitchgames.win/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/games</loc>
+    <loc>https://freeitchgames.win/#/games</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/charts</loc>
+    <loc>https://freeitchgames.win/#/charts</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/add</loc>
+    <loc>https://freeitchgames.win/#/add</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/workflows</loc>
+    <loc>https://freeitchgames.win/#/workflows</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/deleted</loc>
+    <loc>https://freeitchgames.win/#/deleted</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/settings</loc>
+    <loc>https://freeitchgames.win/#/settings</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://poli0981.github.io/free-games-itchio-list/app/#/about</loc>
+    <loc>https://freeitchgames.win/#/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

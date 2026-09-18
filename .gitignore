@@ -1,4 +1,18 @@
-/docs/app/
+# Local-only files (personal contacts, QR assets)
+/username.txt
+/assets/qr/
+
+# Cloudflare Wrangler local state / secrets
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+
+# Android signing material
+*.jks
+*.keystore
+
 /webapp/node_modules/
 /webapp/dist/
 /webapp/src-tauri/target/

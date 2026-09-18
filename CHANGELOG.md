@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented here.
 
+## [Unreleased]
+
+### Fixed
+
+- **freeitchgames.win served the unbuilt `webapp/` source tree** (blank page; `/package.json`,
+  `/src/*` publicly readable). Added [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc) (Workers
+  static assets, SPA fallback, `workers_dev`/`preview_urls` off) and moved the Vite web build to
+  `webapp/dist` so Cloudflare Workers Builds deploys the real build.
+- **All 15 Dependabot alerts / npm audit** — lockfile refreshed in-range (vite 8.3.0,
+  react-router-dom 7.18.4, postcss 8.5.28, patched transitive deps); `npm audit` reports 0.
+- **Android release workflow** moved off Node 20 actions (setup-java v6, upload-artifact v7,
+  setup-android v4, checkout/setup-node v7), SHA-pinned, with a timeout and the tag passed via env.
+- **`.gitattributes`** — `* text = auto` / `* eol = lf` were invalid (spaces around `=`); now
+  `* text=auto eol=lf` with binary rules, and legal/policy docs ship in source archives again.
+- OG image, manifest (`start_url`/`scope`/`id` = `/`), canonical/og URLs, sitemap and robots now
+  point at freeitchgames.win; OG title no longer overflows.
+
+### Changed
+
+- GitHub Pages now only publishes a redirect stub ([`pages-redirect/`](pages-redirect)) that
+  forwards to freeitchgames.win (keeping `#/` routes) and deletes the old app's PAT/GPG keys from
+  that origin. `notify-deploy.yml` removed.
+- Static-asset security headers in [`webapp/public/_headers`](webapp/public/_headers)
+  (Referrer-Policy, frame denial, Permissions-Policy, COOP; CSP in report-only mode for now) and
+  immutable caching for hashed `/assets/*`.
+- Scraper workflows print unbuffered UTF-8 logs. The schedules of `check_paid`, `check_alive`,
+  `update_reviews` and `update_status` are paused (manual dispatch only): full passes over 2,600+
+  games exceed their timeouts and lose all work. A rotating refresh replaces them next.
+- Privacy Policy: interim Cloudflare hosting notice (§3a); dead `…/app/` links repointed.
+
 ## [3.9.0] - 2026-06-15 (Android minSdk → 11 / API 30)
 
 ### Changed
