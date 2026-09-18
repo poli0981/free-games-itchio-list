@@ -136,3 +136,32 @@ export function buildInfo(): Plugin {
     },
   }
 }
+
+/**
+ * Cloudflare Web Analytics beacon (cookieless), web build only, and only when
+ * the build has a token (Workers Builds variable VITE_CF_BEACON_TOKEN; set up
+ * the site as "manual" with automatic injection off). Never on the admin page,
+ * whose CSP allows only its own scripts. The site CSP allows the beacon.
+ */
+export function analyticsBeacon(token: string | undefined): Plugin {
+  return {
+    name: 'analytics-beacon',
+    transformIndexHtml(html, ctx) {
+      if (!token || !/^[0-9a-f]{32}$/i.test(token) || ctx.path.startsWith('/admin/')) return html
+      return {
+        html,
+        tags: [
+          {
+            tag: 'script',
+            attrs: {
+              defer: true,
+              src: 'https://static.cloudflareinsights.com/beacon.min.js',
+              'data-cf-beacon': JSON.stringify({ token }),
+            },
+            injectTo: 'body',
+          },
+        ],
+      }
+    },
+  }
+}

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'node:path'
-import { buildInfo, catalogData } from './vite-plugins/catalog-data.ts'
+import { analyticsBeacon, buildInfo, catalogData } from './vite-plugins/catalog-data.ts'
 
 // Set by the Tauri CLI for `tauri dev` / `tauri build`.
 const isTauri = process.env.TAURI_ENV_PLATFORM !== undefined
@@ -11,7 +11,11 @@ export default defineConfig({
   // Web: absolute paths (BrowserRouter deep links). Tauri: relative (custom protocol).
   base: isTauri ? './' : '/',
   // The Tauri apps read the catalog from the live site, so only the web build bundles it.
-  plugins: [react(), buildInfo(), ...(isTauri ? [] : [catalogData(repoRoot)])],
+  plugins: [
+    react(),
+    buildInfo(),
+    ...(isTauri ? [] : [catalogData(repoRoot), analyticsBeacon(process.env.VITE_CF_BEACON_TOKEN)]),
+  ],
   build: {
     // Web (Cloudflare Workers Builds) and Tauri both build to webapp/dist.
     outDir: 'dist',
