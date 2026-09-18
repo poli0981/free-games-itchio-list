@@ -10,10 +10,17 @@ export interface DataSource {
   origin: string
 }
 
+interface DeletedInfo {
+  reason: string
+  deleted_at: string
+}
+
 let urlMap: Map<string, string> | undefined
+let deletedMap: Map<string, DeletedInfo> | undefined
 
 export function resetDataCache(): void {
   urlMap = undefined
+  deletedMap = undefined
 }
 
 async function fetchJson<T>(src: DataSource, file: string): Promise<T> {
@@ -46,3 +53,17 @@ export function catalogUrls(src: DataSource): Promise<Map<string, string>> {
   )
 }
 
+/** Removed game URL → why and when (scripts/deleted_games.json). */
+export function deletedGames(src: DataSource): Promise<Map<string, DeletedInfo>> {
+  return cachedLoad(
+    () => deletedMap,
+    (v) => (deletedMap = v),
+    async () =>
+      new Map(
+        (await fetchJson<(DeletedInfo & { url: string })[]>(src, 'deleted_games.json')).map((e) => [
+          e.url,
+          { reason: e.reason, deleted_at: e.deleted_at },
+        ]),
+      ),
+  )
+}
