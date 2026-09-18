@@ -9,7 +9,7 @@ This EULA applies to the **code and content of `free-games-itchio-list`** — th
 ## 1. Definitions
 
 - **"The Repository"** — `free-games-itchio-list` on GitHub at <https://github.com/poli0981/free-games-itchio-list>, including all source code, data files, markdown tables, and documentation.
-- **"The Webapp"** — the React + TypeScript application in `webapp/`, deployed at <https://poli0981.github.io/free-games-itchio-list/app/>.
+- **"The Webapp"** — the React + TypeScript application in `webapp/`, deployed at <https://freeitchgames.win/>.
 - **"The Desktop App"** — the Tauri 2 native build of the Webapp, distributed as installers via GitHub Releases.
 - **"The Catalog"** — the structured game metadata in `data_game/` and the rendered markdown tables in `lists/`.
 - **"The Maintainer"** — the GitHub user `poli0981` (a.k.a. SkullMute), the author of this Repository.
@@ -33,7 +33,7 @@ The MIT license terms apply in full. Two practical reminders:
 This EULA does not grant any rights to:
 
 - **The games indexed by the Catalog.** Each game is the intellectual property of its respective developer and is licensed by them via itch.io. The Catalog provides a link and metadata only; downloading, playing, modifying, or redistributing a game is governed by the developer's own terms and itch.io's terms.
-- **Third-party libraries.** The Webapp depends on numerous open-source packages (React, Tauri, shadcn/ui, etc.), each under its own license — see the **Third-party software** section of the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- **Third-party libraries.** The Webapp depends on numerous open-source packages (React, Tauri, shadcn/ui, etc.), each under its own license — see the **Third-party software** section of the [About page](https://freeitchgames.win/#/about).
 - **itch.io trademarks, logos, or service marks.** These belong to itch corp and are referenced for identification only.
 - **Thumbnails, screenshots, descriptions, or trailers** of indexed games. These are reproduced under fair-use principles for indexing/discovery and remain the property of their owners.
 

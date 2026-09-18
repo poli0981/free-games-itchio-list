@@ -5,4 +5,4 @@ Allow: /
 # behind a fine-grained PAT held in memory after passphrase unlock; nothing
 # crawler-accessible writes anything.
 
-Sitemap: https://poli0981.github.io/free-games-itchio-list/sitemap.xml
+Sitemap: https://freeitchgames.win/sitemap.xml

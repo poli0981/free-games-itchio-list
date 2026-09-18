@@ -84,7 +84,7 @@ The Maintainer never sees, transmits, or stores Your PAT. See [Privacy Policy](P
 
 - The code, data structures, scripts, generated tables, webapp source, and documentation are © the Maintainer (poli0981 / SkullMute), licensed under the [MIT License](../LICENSE).
 - Games and game metadata (names, descriptions, screenshots, tags) belong to their respective developers and itch.io. See [DISCLAIMER §4](DISCLAIMER.md#4-third-party-content).
-- Third-party open-source dependencies are governed by their own licenses; see the **Third-party software** section of the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- Third-party open-source dependencies are governed by their own licenses; see the **Third-party software** section of the [About page](https://freeitchgames.win/#/about).
 
 ## 8. Termination
 
@@ -107,7 +107,7 @@ These Terms are governed by the laws of the **Socialist Republic of Vietnam**, w
 
 Disputes are to be resolved as follows, in order:
 
-1. **Informal first**: open a `[Feedback]` or `[General]` issue or DM via any channel listed on the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about). Most disagreements end here.
+1. **Informal first**: open a `[Feedback]` or `[General]` issue or DM via any channel listed on the [About page](https://freeitchgames.win/#/about). Most disagreements end here.
 2. **Mediation**: if informal contact fails, the parties may attempt mediation by mutual agreement.
 3. **Court**: if all else fails, the competent courts of Vietnam have exclusive jurisdiction.
 

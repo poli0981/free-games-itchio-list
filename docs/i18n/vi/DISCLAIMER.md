@@ -44,7 +44,7 @@ Trang game, ảnh chụp màn hình, mô tả, tag, đánh giá và thumbnail th
 Nếu bạn là nhà phát triển và muốn game của mình bị gỡ khỏi danh mục:
 
 - Mở issue dạng **[Remove Games]** (`.github/ISSUE_TEMPLATE/remove_game.yml`) và tick ô "I'm the dev and don't want it listed".
-- Hoặc DM qua bất kỳ kênh nào liệt kê trên [trang About](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- Hoặc DM qua bất kỳ kênh nào liệt kê trên [trang About](https://freeitchgames.win/#/about).
 
 Việc gỡ được xử lý thủ công. Dự kiến vài ngày (lịch của một dev thất nghiệp, nhưng không phải vài tuần).
 

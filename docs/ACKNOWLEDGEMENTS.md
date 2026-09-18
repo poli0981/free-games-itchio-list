@@ -13,7 +13,7 @@ This repo wouldn't exist without a lot of help — mostly from tools and platfor
 
 ## Open-source libraries (webapp + desktop)
 
-The webapp + Tauri desktop build on a stack of open-source libraries — full versioned list with licenses lives on the [About page](https://poli0981.github.io/free-games-itchio-list/app/#/about) and in [`webapp/src/lib/about.ts`](../webapp/src/lib/about.ts) (the `THIRD_PARTY` array). Highlights:
+The webapp + Tauri desktop build on a stack of open-source libraries — full versioned list with licenses lives on the [About page](https://freeitchgames.win/#/about) and in [`webapp/src/lib/about.ts`](../webapp/src/lib/about.ts) (the `THIRD_PARTY` array). Highlights:
 
 - **Core**: React 19, TypeScript 6, Vite 8, React Router 7, Zustand 5
 - **UI**: Tailwind CSS 3, shadcn/ui (pattern), Radix UI primitives, lucide-react, sonner, class-variance-authority, tailwind-merge, clsx, Recharts

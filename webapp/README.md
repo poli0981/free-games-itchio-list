@@ -15,7 +15,7 @@ Requires Node 22+ and npm.
 ```sh
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # writes ../docs/app/  (NOT ./dist — that path is Tauri-only)
+npm run build    # writes ./dist/ (web → Cloudflare Workers Builds; Tauri uses it too)
 npm run lint     # ESLint
 npm run preview  # serve the production build
 ```
@@ -81,10 +81,13 @@ explicit Lock or tab close. See [`../SECURITY.md`](../SECURITY.md).
 
 ## Deploy (web)
 
-[`.github/workflows/deploy_webapp.yml`](../.github/workflows/deploy_webapp.yml)
-builds on push to `main` that touches `webapp/` and publishes to GitHub Pages.
-**One-time setup**: repo Settings → Pages → Source = "GitHub Actions". Live at
-<https://poli0981.github.io/free-games-itchio-list/app/>.
+Cloudflare **Workers Builds** deploys every push to `main`, driven by
+[`wrangler.jsonc`](wrangler.jsonc) (no GitHub Actions deploy). Dashboard settings
+for the Worker `free-games-itchio-list`: Root directory `webapp`, Build command
+`npm run build`, Deploy command `npx wrangler deploy`. Static-asset headers live in
+[`public/_headers`](public/_headers). Live at <https://freeitchgames.win/>.
+
+The old GitHub Pages URL only serves a redirect stub (`../pages-redirect/`).
 
 ## Desktop (Tauri)
 
@@ -96,7 +99,7 @@ on `v*` tag push.
 
 ## House rules
 
-- Don't commit `dist/`, `../docs/app/`, `src-tauri/target/`, `Cargo.lock`, or
+- Don't commit `dist/`, `src-tauri/target/`, `Cargo.lock`, or
   `src-tauri/icon-source.png`.
 - Never commit a real PAT.
 - New npm dep? Add it to [`src/lib/about.ts`](src/lib/about.ts) `THIRD_PARTY` so

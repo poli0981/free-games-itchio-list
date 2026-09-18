@@ -1,7 +1,7 @@
 # Third-party development tooling
 
 Runtime libraries the webapp + desktop app ship with are listed on the
-[About page](https://poli0981.github.io/free-games-itchio-list/app/#/about)
+[About page](https://freeitchgames.win/#/about)
 and in [`webapp/src/lib/about.ts`](../webapp/src/lib/about.ts) (the
 `THIRD_PARTY` array). This file covers the **dev-only** tooling — stuff that
 never lands in a build but keeps the code honest.

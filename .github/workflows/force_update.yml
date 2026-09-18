@@ -7,6 +7,11 @@ on:
         required: false
         type: string
 
+# Unbuffered UTF-8 output so progress survives a timeout/cancel.
+env:
+  PYTHONUNBUFFERED: '1'
+  PYTHONUTF8: '1'
+
 permissions:
   contents: write
 

@@ -26,17 +26,26 @@ on:
 env:
   NDK_VERSION: '27.3.13750724'
 
+permissions: {}
+
+concurrency:
+  group: release-android-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build-android:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up JDK
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
         with:
           distribution: temurin
           java-version: '17'
@@ -46,9 +55,9 @@ jobs:
           # (it hard-errors otherwise). rust-cache + npm cache still apply.
 
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: webapp/package-lock.json
 
@@ -58,12 +67,12 @@ jobs:
           targets: aarch64-linux-android
 
       - name: Cache cargo
-        uses: Swatinem/rust-cache@v2
+        uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
         with:
           workspaces: webapp/src-tauri
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
 
       - name: Install NDK + build-tools + platform
         # Tauri 2.11 generates compileSdk/targetSdk = 36, so provision android-36
@@ -122,7 +131,7 @@ jobs:
           echo "apk_name=$OUT" >> "$GITHUB_OUTPUT"
 
       - name: Upload APK as workflow artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: ${{ steps.sign.outputs.apk_name }}
           path: ${{ steps.sign.outputs.apk_path }}
@@ -132,11 +141,12 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+          REPO: ${{ github.repository }}
+          APK_PATH: ${{ steps.sign.outputs.apk_path }}
         run: |
           set -euo pipefail
-          TAG="${{ github.ref_name }}"
-          REPO="${{ github.repository }}"
           # Create the draft if the desktop workflow hasn't yet (ordering-safe).
           gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1 \
             || gh release create "$TAG" --repo "$REPO" --draft --notes "Pending installers."
-          gh release upload "$TAG" "${{ steps.sign.outputs.apk_path }}" --repo "$REPO" --clobber
+          gh release upload "$TAG" "$APK_PATH" --repo "$REPO" --clobber

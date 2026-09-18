@@ -11,7 +11,8 @@ export default defineConfig({
     __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10)),
   },
   build: {
-    outDir: isTauri ? 'dist' : '../docs/app',
+    // Web (Cloudflare Workers Builds) and Tauri both build to webapp/dist.
+    outDir: 'dist',
     emptyOutDir: true,
     sourcemap: false,
     target: isTauri ? 'es2022' : 'es2020',

@@ -1,6 +1,6 @@
 # Chính sách bảo mật (Privacy Policy)
 
-Cập nhật lần cuối: 2026-05-10
+Cập nhật lần cuối: 2026-09-18
 
 > **Lưu ý**: Đây là bản dịch tiếng Việt mang tính tham khảo cho cộng đồng. **Bản tiếng Anh tại [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md) là bản chính thức** và sẽ được dùng để giải thích trong trường hợp có khác biệt giữa hai phiên bản.
 
@@ -32,6 +32,10 @@ Chính sách Bảo mật của GitHub: <https://docs.github.com/en/site-policy/p
 
 Khi Bạn đóng góp (mở issue, comment, fork, gửi PR), Bạn xuất bản thông tin đó trên GitHub dưới tài khoản của mình. Người duy trì chỉ thấy phần GitHub công khai.
 
+### 3a. Cloudflare (thông báo tạm thời)
+
+Từ tháng 9/2026, Webapp được phục vụ tại **https://freeitchgames.win** trên Cloudflare (DNS, CDN và static assets của Workers); địa chỉ GitHub Pages cũ chỉ chuyển hướng sang đây. Để phân phối và bảo vệ trang, Cloudflare xử lý dữ liệu request tiêu chuẩn (địa chỉ IP, user agent, URL được yêu cầu) và có thể gửi báo cáo Network Error Logging hoặc đặt cookie bảo mật thiết yếu khi các cơ chế bảo vệ được kích hoạt. Xem [Chính sách quyền riêng tư của Cloudflare](https://www.cloudflare.com/privacypolicy/). Đây là ghi chú tạm thời; Chính sách sẽ được viết lại toàn bộ cho kiến trúc mới ở v4.0.0.
+
 ## 4. itch.io
 
 Tất cả link game trong Catalog trỏ trực tiếp tới trang itch.io. Click vào link sẽ đưa Bạn tới itch.io; những gì xảy ra ở đó được điều chỉnh bởi điều khoản và chính sách của itch.io:
@@ -55,7 +59,7 @@ Webapp lưu các mục sau cục bộ và **không bao giờ** gửi chúng tớ
 Bạn có thể xóa toàn bộ những gì ở trên bất kỳ lúc nào bằng cách:
 
 - Click **Settings → Remove saved PAT** (chỉ xóa entry PAT).
-- Dùng "Clear site data" / "Clear cookies and storage" của trình duyệt cho `poli0981.github.io` (xóa hết).
+- Dùng "Clear site data" / "Clear cookies and storage" của trình duyệt cho `freeitchgames.win` (xóa hết). Địa chỉ cũ `poli0981.github.io` giờ chỉ chuyển hướng, và trang chuyển hướng đó sẽ xoá mọi dữ liệu PAT/GPG mà app cũ còn để lại.
 - Gỡ Desktop App và xóa thư mục profile WebView2 / WebKit (chỉ Desktop; vị trí khác nhau theo OS).
 
 ## 6. Xử lý PAT — chi tiết
@@ -127,7 +131,7 @@ Người duy trì có thể cập nhật Chính sách này. Ngày `Cập nhật 
 Cho câu hỏi về Chính sách này:
 
 - Mở issue `[General]` hoặc `[Feedback]`.
-- DM qua bất kỳ kênh nào liệt kê trên [trang About](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- DM qua bất kỳ kênh nào liệt kê trên [trang About](https://freeitchgames.win/#/about).
 
 ## 14. Lời cuối
 

@@ -19,7 +19,7 @@ Vui lòng dùng các template issue/PR — chúng làm cuộc đời tôi dễ h
 Đường nhanh hơn cho batch nhiều link mà không muốn mở issue cho từng đợt.
 Riêng tư — Telegram ID dạng số của bạn không bao giờ vào repo này.
 
-1. **Liên hệ owner** riêng tư qua Telegram ([@SkullMute0011](https://t.me/SkullMute0011)) — hoặc bất kỳ kênh nào liệt kê trong trang [About](https://poli0981.github.io/free-games-itchio-list/app/#/about) → Find me elsewhere.
+1. **Liên hệ owner** riêng tư qua Telegram ([@SkullMute0011](https://t.me/SkullMute0011)) — hoặc bất kỳ kênh nào liệt kê trong trang [About](https://freeitchgames.win/#/about) → Find me elsewhere.
 2. **Tìm Telegram numeric ID của bạn** — VD gửi `/start` cho [@userinfobot](https://t.me/userinfobot) và copy ID nó trả về.
 3. **DM ID đó cho owner.** **Tuyệt đối không** đăng numeric ID vào Discord, X, GitHub comment, hay bất kỳ kênh chung nào.
 4. Owner add ID của bạn vào whitelist cục bộ của bot (phía operator, không commit vào repo).
@@ -75,7 +75,7 @@ UI duyệt/sửa nằm trong [`webapp/`](../../../webapp/). Cùng MIT, cùng PR 
 cd webapp
 npm install
 npm run dev          # http://localhost:5173
-npm run build        # ghi vào docs/app/ (kiểm tra trước khi push)
+npm run build        # ghi vào webapp/dist/ (kiểm tra trước khi push)
 npm run lint         # eslint
 ```
 
@@ -87,7 +87,7 @@ npm run tauri:build  # tạo installer trong src-tauri/target/release/bundle/
 ```
 
 **Quy tắc nhà**:
-- Không commit `webapp/dist/` hoặc `docs/app/` — CI build chúng khi push vào `main`.
+- Không commit `webapp/dist/` — Cloudflare Workers Builds build nó khi push vào `main`.
 - Không commit PAT thật vào repo.
 - Thêm npm dep mới? Cập nhật `webapp/src/lib/about.ts` để trang About liệt kê.
 - Link external mới? Dùng `<ExtLink href="…">` từ `webapp/src/components/ext-link.tsx` — đừng dùng `<a href="…" target="_blank">` thuần. Anchor thuần hoạt động trên web nhưng im lặng vỡ trên Tauri desktop.

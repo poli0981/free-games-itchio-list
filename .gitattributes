@@ -1,7 +1,21 @@
-* text = auto
-* eol = lf
+* text=auto eol=lf
 
-/tests/ export-ignore
+# Binary assets (never normalize)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.icns binary
+*.tiff binary
+*.jks binary
+*.keystore binary
+*.rtf -text
+
+# Generated catalog data: collapse in GitHub diffs / language stats
+data_game/*.json linguist-generated=true
+
 /.github/* export-ignore
 .gitignore export-ignore
 .gitattributes export-ignore
@@ -9,13 +23,7 @@
 .idea/ export-ignore
 .vscode/ export-ignore
 
-CODE_OF_CONDUCT.md export-ignore
-CONTRIBUTING.md export-ignore
-SECURITY.md export-ignore
 /docs/My_Stuff.md export-ignore
-/docs/PrivacyPolicy.md export-ignore
-CHANGELOG.md export-ignore
-README.md export-ignore
 
 *.csv export-ignore
 *.log export-ignore

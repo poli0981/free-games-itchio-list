@@ -86,7 +86,7 @@ Người duy trì không bao giờ thấy, truyền, hoặc lưu PAT của Bạn
 
 - Code, cấu trúc dữ liệu, script, các bảng được tạo, mã nguồn webapp và tài liệu là © Người duy trì (poli0981 / SkullMute), được cấp phép theo [Giấy phép MIT](../../../LICENSE).
 - Game và metadata game (tên, mô tả, screenshot, tag) thuộc các nhà phát triển tương ứng và itch.io. Xem [DISCLAIMER §4](DISCLAIMER.md#4-nội-dung-của-bên-thứ-ba).
-- Các thư viện open-source bên thứ ba được điều chỉnh bởi giấy phép riêng; xem mục **Third-party software** trong [trang About](https://poli0981.github.io/free-games-itchio-list/app/#/about).
+- Các thư viện open-source bên thứ ba được điều chỉnh bởi giấy phép riêng; xem mục **Third-party software** trong [trang About](https://freeitchgames.win/#/about).
 
 ## 8. Chấm dứt
 
@@ -109,7 +109,7 @@ Các Điều khoản này được điều chỉnh bởi pháp luật của **C�
 
 Tranh chấp được giải quyết theo thứ tự sau:
 
-1. **Không chính thức trước**: mở issue `[Feedback]` hoặc `[General]`, hoặc DM qua bất kỳ kênh nào liệt kê trên [trang About](https://poli0981.github.io/free-games-itchio-list/app/#/about). Hầu hết bất đồng dừng ở đây.
+1. **Không chính thức trước**: mở issue `[Feedback]` hoặc `[General]`, hoặc DM qua bất kỳ kênh nào liệt kê trên [trang About](https://freeitchgames.win/#/about). Hầu hết bất đồng dừng ở đây.
 2. **Hòa giải**: nếu liên hệ không chính thức không thành, các bên có thể thử hòa giải theo thỏa thuận chung.
 3. **Tòa án**: nếu mọi cách đều thất bại, tòa án có thẩm quyền của Việt Nam có thẩm quyền độc quyền.
 

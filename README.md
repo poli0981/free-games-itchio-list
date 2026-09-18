@@ -68,7 +68,7 @@ Local dev:
 cd webapp
 npm install
 npm run dev          # http://localhost:5173
-npm run build        # writes to docs/app/
+npm run build        # writes to webapp/dist/
 npm run tauri:dev    # native desktop (requires Rust)
 ```
 
@@ -169,7 +169,7 @@ webapp/                 # React + TS SPA + Tauri desktop & Android wrapper
 | Check paid games   | Every 2 days 04:00 UTC | Remove games that became paid                               |
 | Check dead links   | Every 2 days 07:00 UTC | Remove 404/410 game pages                                   |
 | Log deleted games  | After check workflows  | Export deletion log to `deleted_games.txt`                  |
-| Deploy webapp      | On push to main        | Build `webapp/` → GitHub Pages (`docs/app/`)                |
+| Deploy webapp      | On push to main        | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Release desktop    | On `v*` tag push       | Build Tauri installers (Win/macOS/Linux) → draft Release    |
 | Release Android    | On `v*` tag push       | Build signed APK (arm64-v8a) → draft Release                |
 
@@ -231,7 +231,7 @@ Two Discord servers exist now (the "if I ever make one" disclaimer is officially
 - **Support** (totally optional, mirrors [`.github/FUNDING.yml`](.github/FUNDING.yml)): [GitHub Sponsors](https://github.com/sponsors/poli0981) · [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute) · [PayPal](https://paypal.me/DungDang212)
 - **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
 
-DMs are open everywhere — replies slow, introvert max level. The About page in the [webapp](https://poli0981.github.io/free-games-itchio-list/app/#/about) has the same list with one-click buttons.
+DMs are open everywhere — replies slow, introvert max level. The About page in the [webapp](https://freeitchgames.win/#/about) has the same list with one-click buttons.
 
 ## Legal
 
