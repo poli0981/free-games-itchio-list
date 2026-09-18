@@ -1,20 +1,39 @@
 // Cloudflare Workers Builds config for https://freeitchgames.win
 // Dashboard: Worker "free-games-itchio-list" → Settings → Build:
 //   Root directory: webapp · Build command: npm run build · Deploy command: npx wrangler deploy
-// Phase 0 = static assets only (no Worker script yet). The custom domain stays
-// attached in the dashboard; it is declared here once verified (see v4 plan, A2).
+// Custom Domains (freeitchgames.win, www) are attached in the dashboard and are
+// intentionally not declared here yet, so a deploy never touches them.
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   // MUST match the Worker name in the dashboard or Workers Builds fails.
   "name": "free-games-itchio-list",
+  "main": "./worker/index.ts",
   "compatibility_date": "2026-09-15",
-  // workers.dev / preview URLs would bypass Cloudflare Access once /admin exists.
+  // workers.dev / preview URLs would bypass Cloudflare Access (admin, Phase 4).
   "workers_dev": false,
   "preview_urls": false,
   "assets": {
-    // Vite build output. Never point this at a source directory.
+    // Vite build output (app + bundled catalog under /data). Never a source dir.
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "single-page-application",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    // Everything else is served straight from static assets (free, cached).
+    "run_worker_first": ["/img/*", "/api/*"]
+  },
+  // Resized cover images, written once per image + width by worker/img.ts.
+  "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs" }],
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 },
+  "upload_source_maps": false,
+
+  "env": {
+    // Pre-release checks of the v4 branch: Worker "free-games-itchio-list-staging",
+    // deployed with `npx wrangler deploy --env staging`, whole host behind Access.
+    "staging": {
+      "workers_dev": false,
+      "preview_urls": false,
+      "routes": [{ "pattern": "staging.freeitchgames.win", "custom_domain": true }],
+      "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs-staging" }]
+    }
   }
 }

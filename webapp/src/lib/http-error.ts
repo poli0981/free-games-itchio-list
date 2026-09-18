@@ -1,6 +1,6 @@
 /**
  * Typed HTTP error so UI layers can map a real status code to an error page.
- * `fetchRaw` throws this; Octokit's RequestError already carries `.status`.
+ * `fetchData` (lib/data/fetch-json.ts) throws this.
  */
 export class HttpError extends Error {
   readonly status: number

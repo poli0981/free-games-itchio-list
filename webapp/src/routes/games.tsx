@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react'
 import {
   type ColumnFiltersState,
   type PaginationState,
-  type RowSelectionState,
   type SortingState,
   getCoreRowModel,
   getFilteredRowModel,
@@ -10,21 +9,15 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table'
-import { Pencil, Trash2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { DataTable } from '@/components/data-table/data-table'
 import { DataTableToolbar } from '@/components/data-table/data-table-toolbar'
 import { MobileCardList } from '@/components/data-table/mobile-card-list'
 import { gameColumns } from '@/components/data-table/columns'
 import type { FacetOption } from '@/components/data-table/faceted-filter'
-import { BulkEditDialog } from '@/components/bulk-edit-dialog'
-import { BulkDeleteDialog } from '@/components/bulk-delete-dialog'
 import { RouteError } from '@/components/route-error'
-import { UndoTray } from '@/components/undo-tray'
 import { useAllGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
-import { useAuth } from '@/stores/auth'
 import { useT } from '@/lib/i18n'
 import { countBy, countByArray } from '@/lib/analytics'
 import { formatNumber } from '@/lib/utils'
@@ -45,14 +38,10 @@ export default function Games() {
   const t = useT()
   useDocumentTitle(t('titles.games'))
   const games = useAllGames()
-  const pat = useAuth((s) => s.pat)
   const [globalFilter, setGlobalFilter] = useState('')
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [sorting, setSorting] = useState<SortingState>([{ id: 'name', desc: false }])
-  const [rowSelection, setRowSelection] = useState<RowSelectionState>({})
   const [pagination, setPagination] = useState<PaginationState>({ pageIndex: 0, pageSize: 100 })
-  const [editOpen, setEditOpen] = useState(false)
-  const [deleteOpen, setDeleteOpen] = useState(false)
 
   const data = useMemo(() => games.data?.games ?? [], [games.data])
 
@@ -83,13 +72,11 @@ export default function Games() {
   const tableForToolbar = useReactTable({
     data,
     columns: gameColumns,
-    state: { columnFilters, sorting, globalFilter, rowSelection, pagination },
+    state: { columnFilters, sorting, globalFilter, pagination },
     onColumnFiltersChange: setColumnFilters,
     onSortingChange: setSorting,
     onGlobalFilterChange: setGlobalFilter,
-    onRowSelectionChange: setRowSelection,
     onPaginationChange: setPagination,
-    enableRowSelection: true,
     getRowId: (g) => g.url,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
@@ -100,11 +87,6 @@ export default function Games() {
   })
 
   const filteredCount = tableForToolbar.getFilteredRowModel().rows.length
-  const selectedUrls = useMemo(() => Object.keys(rowSelection).filter((k) => rowSelection[k]), [rowSelection])
-  const selectedGames = useMemo(
-    () => data.filter((g) => selectedUrls.includes(g.url)),
-    [data, selectedUrls],
-  )
 
   if (games.isLoading) {
     return (
@@ -126,7 +108,6 @@ export default function Games() {
         <h1 className="text-3xl font-bold tracking-tight">{t('nav.games')}</h1>
         <p className="text-sm text-muted-foreground">
           {t('games.count', { shown: formatNumber(filteredCount), total: formatNumber(data.length) })}
-          {selectedUrls.length > 0 && ` — ${t('games.selected', { count: selectedUrls.length })}`}
         </p>
       </div>
 
@@ -137,37 +118,6 @@ export default function Games() {
           onGlobalFilterChange={setGlobalFilter}
           facets={facets}
         />
-
-        {selectedUrls.length > 0 && (
-          <div className="flex flex-wrap items-center gap-2 rounded-md border bg-accent/40 p-2">
-            <span className="px-1 text-sm font-medium">{t('games.selected', { count: selectedUrls.length })}</span>
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={() => setEditOpen(true)}
-              disabled={!pat}
-              title={pat ? t('games.bulkEditTitle') : t('games.unlockPatFirst')}
-            >
-              <Pencil className="h-3.5 w-3.5" />
-              {t('common.edit')}
-            </Button>
-            <Button
-              size="sm"
-              variant="destructive"
-              onClick={() => setDeleteOpen(true)}
-              disabled={!pat}
-              title={pat ? t('games.bulkDeleteTitle') : t('games.unlockPatFirst')}
-            >
-              <Trash2 className="h-3.5 w-3.5" />
-              {t('common.delete')}
-            </Button>
-            <Button size="sm" variant="ghost" onClick={() => setRowSelection({})}>
-              {t('games.clearSelection')}
-            </Button>
-          </div>
-        )}
-
-        <UndoTray />
       </div>
 
       <DataTable
@@ -179,32 +129,17 @@ export default function Games() {
         onColumnFiltersChange={setColumnFilters}
         sorting={sorting}
         onSortingChange={setSorting}
-        rowSelection={rowSelection}
-        onRowSelectionChange={setRowSelection}
         pagination={pagination}
         onPaginationChange={setPagination}
         globalFilterFn={gameSearch}
         rowKey={(g) => g.url}
         getRowId={(g) => g.url}
-        renderMobileList={(rows) => <MobileCardList rows={rows} selectable />}
+        renderMobileList={(rows) => <MobileCardList rows={rows} />}
       />
 
       <p className="mt-3 text-xs text-muted-foreground">
         {t('games.tip')}
       </p>
-
-      <BulkEditDialog
-        open={editOpen}
-        onOpenChange={setEditOpen}
-        selected={selectedGames}
-        onComplete={() => setRowSelection({})}
-      />
-      <BulkDeleteDialog
-        open={deleteOpen}
-        onOpenChange={setDeleteOpen}
-        selected={selectedGames}
-        onComplete={() => setRowSelection({})}
-      />
     </div>
   )
 }

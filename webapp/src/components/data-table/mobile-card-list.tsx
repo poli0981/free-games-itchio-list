@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import type { Row } from '@tanstack/react-table'
 import { Badge } from '@/components/ui/badge'
-import { Checkbox } from '@/components/ui/checkbox'
 import { GameThumb } from '@/components/game-thumb'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
@@ -9,10 +8,9 @@ import { useT } from '@/lib/i18n'
 
 interface MobileCardListProps {
   rows: Row<Game>[]
-  selectable?: boolean
 }
 
-export function MobileCardList({ rows, selectable }: MobileCardListProps) {
+export function MobileCardList({ rows }: MobileCardListProps) {
   const t = useT()
   if (rows.length === 0) {
     return (
@@ -30,15 +28,6 @@ export function MobileCardList({ rows, selectable }: MobileCardListProps) {
         return (
           <li key={g.url}>
             <article className="flex gap-3 rounded-md border bg-card p-3 hover:bg-accent/40">
-              {selectable && (
-                <div className="flex shrink-0 items-start pt-1">
-                  <Checkbox
-                    checked={row.getIsSelected()}
-                    onCheckedChange={(v) => row.toggleSelected(!!v)}
-                    aria-label={t('table.selectGame', { name: g.name })}
-                  />
-                </div>
-              )}
               <Link
                 to={`/games/${encodeURIComponent(slug)}`}
                 className="flex min-w-0 flex-1 gap-3"

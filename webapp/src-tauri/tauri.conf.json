@@ -23,7 +23,7 @@
       }
     ],
     "security": {
-      "csp": null
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.itch.zone; connect-src 'self' ipc: http://ipc.localhost https://freeitchgames.win; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
     }
   },
   "bundle": {
@@ -40,8 +40,8 @@
       "icons/icon.ico"
     ],
     "category": "Utility",
-    "shortDescription": "Browse and edit the free Itch.io games catalog",
-    "longDescription": "Desktop wrapper for the free-games-itchio-list webapp. Adds local-network scrape (no CORS) and works offline-first.",
+    "shortDescription": "Browse the free itch.io games catalog",
+    "longDescription": "Desktop and Android viewer for the Free Itch Games catalog (freeitchgames.win): search, filter and explore free itch.io games. Read-only; the catalog is refreshed daily.",
     "licenseFile": "installer/EULA.rtf"
   }
 }

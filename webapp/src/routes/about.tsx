@@ -24,6 +24,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { ExtLink } from '@/components/ext-link'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useBuildInfo } from '@/hooks/useBuildInfo'
 import { useT, type MessageKey } from '@/lib/i18n'
 import {
   AI_TOOLS,
@@ -164,6 +165,7 @@ function SocialItem({ link }: { link: SocialLink }) {
 export default function About() {
   const t = useT()
   useDocumentTitle(t('titles.about'))
+  const build = useBuildInfo()
   return (
     <div className="container mx-auto max-w-4xl p-6">
       <h1 className="mb-6 text-3xl font-bold tracking-tight">{t('titles.about')}</h1>
@@ -174,7 +176,7 @@ export default function About() {
           <p className="text-xs text-muted-foreground">
             {t('about.app.meta', {
               version: APP.version,
-              buildDate: APP.buildDate,
+              buildDate: build.data?.builtAt.slice(0, 10) ?? 'dev',
               license: APP.license,
             })}
           </p>

@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router'
 import {
   LayoutDashboard,
   Gamepad2,
-  Plus,
   BarChart3,
-  Workflow,
   Trash2,
   Settings,
   Info,
@@ -21,7 +19,6 @@ import { ExtLink } from '@/components/ext-link'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { SyncButton } from '@/components/sync-button'
-import { useAuth } from '@/stores/auth'
 import { usePrefs } from '@/stores/prefs'
 import { isTauri } from '@/lib/runtime'
 import { useIsMobile } from '@/lib/use-is-mobile'
@@ -38,9 +35,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { to: '/', label: 'nav.dashboard', icon: LayoutDashboard, end: true },
   { to: '/games', label: 'nav.games', icon: Gamepad2 },
-  { to: '/add', label: 'nav.addGame', icon: Plus },
   { to: '/charts', label: 'nav.charts', icon: BarChart3 },
-  { to: '/workflows', label: 'nav.workflows', icon: Workflow },
   { to: '/deleted', label: 'nav.deleted', icon: Trash2 },
   { to: '/settings', label: 'nav.settings', icon: Settings },
   { to: '/about', label: 'nav.about', icon: Info },
@@ -59,8 +54,6 @@ function SidebarHeader({
   onToggleCollapsed,
 }: Pick<SidebarBodyProps, 'collapsed' | 'variant' | 'onToggleCollapsed'>) {
   const t = useT()
-  const user = useAuth((s) => s.user)
-  const hasStoredPat = useAuth((s) => s.hasStoredPat)
   return (
     <div
       className={cn(
@@ -74,22 +67,6 @@ function SidebarHeader({
           <span className="font-semibold">Itch.io DB</span>
           <div className="ml-auto flex items-center gap-1.5">
             <SyncButton />
-            {user ? (
-              <img
-                src={user.avatar_url}
-                alt={user.login}
-                title={t('sidebar.signedInAs', { login: user.login })}
-                width={24}
-                height={24}
-                loading="lazy"
-                decoding="async"
-                className="h-6 w-6 rounded-full"
-              />
-            ) : hasStoredPat ? (
-              <span title={t('sidebar.patLocked')} className="h-2 w-2 rounded-full bg-yellow-500" />
-            ) : (
-              <span title={t('sidebar.noPat')} className="h-2 w-2 rounded-full bg-muted-foreground/40" />
-            )}
           </div>
         </>
       )}
@@ -141,8 +118,6 @@ function SidebarNav({ collapsed, variant, onNavigate }: SidebarBodyProps) {
 
 function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
   const t = useT()
-  const user = useAuth((s) => s.user)
-  const hasStoredPat = useAuth((s) => s.hasStoredPat)
   const isMobile = useIsMobile()
   const isCompact = variant === 'desktop' && collapsed
   return (
@@ -170,22 +145,6 @@ function SidebarFooter({ collapsed, variant, onNavigate }: SidebarBodyProps) {
           >
             <Heart className="h-4 w-4" />
           </NavLink>
-          {user ? (
-            <img
-              src={user.avatar_url}
-              alt={user.login}
-              title={t('sidebar.signedInAs', { login: user.login })}
-              width={24}
-              height={24}
-              loading="lazy"
-              decoding="async"
-              className="h-6 w-6 rounded-full"
-            />
-          ) : hasStoredPat ? (
-            <span title={t('sidebar.patLocked')} className="h-2 w-2 rounded-full bg-yellow-500" />
-          ) : (
-            <span title={t('sidebar.noPat')} className="h-2 w-2 rounded-full bg-muted-foreground/40" />
-          )}
         </>
       ) : (
         <>

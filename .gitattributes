@@ -35,3 +35,4 @@ Thumbs.db export-ignore
 /node_modules/ export-ignore
 /vendor/ export-ignore
 /.env export-ignore
+webapp/worker-configuration.d.ts linguist-generated=true

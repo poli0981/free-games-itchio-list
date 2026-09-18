@@ -3,7 +3,7 @@ import {
   loadAllGames,
   loadDeletedLog,
   loadCountHistory,
-} from '@/lib/github/data-store'
+} from '@/lib/data/catalog'
 
 export function useAllGames() {
   return useQuery({

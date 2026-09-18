@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
-# Reads of the catalog are public. The webapp's write features all live
-# behind a fine-grained PAT held in memory after passphrase unlock; nothing
-# crawler-accessible writes anything.
+# The catalog is public and read-only. Please fetch the data from /data/*.json
+# (or the GitHub repo) instead of crawling every page.
 
 Sitemap: https://freeitchgames.win/sitemap.xml

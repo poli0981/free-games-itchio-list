@@ -1,49 +1,58 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'node:path'
+import { buildInfo, catalogData } from './vite-plugins/catalog-data.ts'
 
+// Set by the Tauri CLI for `tauri dev` / `tauri build`.
 const isTauri = process.env.TAURI_ENV_PLATFORM !== undefined
+const repoRoot = path.resolve(import.meta.dirname, '..')
 
 export default defineConfig({
-  plugins: [react()],
-  base: './',
-  define: {
-    __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10)),
-  },
+  // Web: absolute paths (BrowserRouter deep links). Tauri: relative (custom protocol).
+  base: isTauri ? './' : '/',
+  // The Tauri apps read the catalog from the live site, so only the web build bundles it.
+  plugins: [react(), buildInfo(), ...(isTauri ? [] : [catalogData(repoRoot)])],
   build: {
     // Web (Cloudflare Workers Builds) and Tauri both build to webapp/dist.
     outDir: 'dist',
     emptyOutDir: true,
     sourcemap: false,
-    target: isTauri ? 'es2022' : 'es2020',
     chunkSizeWarningLimit: 600,
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('openpgp')) return 'vendor-openpgp'
-            if (id.includes('recharts') || id.includes('d3-')) return 'vendor-charts'
-            if (id.includes('@octokit')) return 'vendor-github'
-            if (id.includes('@tanstack')) return 'vendor-query'
-            if (id.includes('@radix-ui') || id.includes('lucide-react') || id.includes('sonner')) {
-              return 'vendor-ui'
-            }
-            if (id.includes('react-router') || id.includes('react-dom') || id.includes('/react/')) {
-              return 'vendor-react'
-            }
-          }
+        codeSplitting: {
+          // Higher priority wins when a module matches several groups.
+          groups: [
+            { name: 'vendor-charts', test: /node_modules[\\/](recharts|d3-|victory-vendor)/, priority: 50 },
+            { name: 'vendor-query', test: /node_modules[\\/]@tanstack[\\/]/, priority: 40 },
+            {
+              name: 'vendor-ui',
+              test: /node_modules[\\/](@radix-ui|lucide-react|sonner)[\\/]/,
+              priority: 30,
+            },
+            {
+              name: 'vendor-react',
+              test: /node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/,
+              priority: 20,
+            },
+          ],
         },
       },
     },
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(import.meta.dirname, './src'),
     },
   },
   server: {
     port: 5173,
     strictPort: true,
+    // `npx wrangler dev` (port 8787) serves the Worker routes during development.
+    proxy: {
+      '/api': 'http://localhost:8787',
+      '/img': 'http://localhost:8787',
+    },
   },
   clearScreen: false,
 })

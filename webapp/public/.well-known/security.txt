@@ -1,0 +1,6 @@
+Contact: https://github.com/poli0981/free-games-itchio-list/security/advisories/new
+Contact: mailto:security@freeitchgames.win
+Expires: 2027-09-30T00:00:00.000Z
+Policy: https://github.com/poli0981/free-games-itchio-list/blob/main/SECURITY.md
+Preferred-Languages: en, vi
+Canonical: https://freeitchgames.win/.well-known/security.txt

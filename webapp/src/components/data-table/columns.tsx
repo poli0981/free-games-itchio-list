@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import type { ColumnDef, FilterFn, RowData } from '@tanstack/react-table'
 import { Badge } from '@/components/ui/badge'
-import { Checkbox } from '@/components/ui/checkbox'
 import { GameThumb } from '@/components/game-thumb'
 import type { Game } from '@/types/game'
 import { slugify } from '@/lib/utils'
@@ -26,30 +25,6 @@ const arrayIncludesAny: FilterFn<Game> = (row, columnId, filterValue) => {
 }
 
 export const gameColumns: ColumnDef<Game>[] = [
-  {
-    id: 'select',
-    enableSorting: false,
-    enableColumnFilter: false,
-    size: 40,
-    meta: { priority: 1 },
-    header: ({ table }) => (
-      <Checkbox
-        checked={
-          table.getIsAllPageRowsSelected() ||
-          (table.getIsSomePageRowsSelected() && 'indeterminate')
-        }
-        onCheckedChange={(v) => table.toggleAllRowsSelected(!!v)}
-        aria-label={t('table.selectAll')}
-      />
-    ),
-    cell: ({ row }) => (
-      <Checkbox
-        checked={row.getIsSelected()}
-        onCheckedChange={(v) => row.toggleSelected(!!v)}
-        aria-label={t('table.selectRow')}
-      />
-    ),
-  },
   {
     id: 'thumbnail',
     accessorKey: 'thumbnail',

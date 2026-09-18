@@ -11,13 +11,7 @@ export const APP = {
   version: '3.9.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'MIT',
-  buildDate: typeof __BUILD_DATE__ !== 'undefined' ? __BUILD_DATE__ : 'dev',
 } as const
-
-declare global {
-  // Injected by Vite (define option in vite.config.ts).
-  const __BUILD_DATE__: string
-}
 
 export const DEV = {
   name: 'SkullMute',
@@ -132,32 +126,34 @@ export const LEGAL_VI_INDEX_URL =
 
 export const THIRD_PARTY: ThirdParty[] = [
   // Core
-  { name: 'React', version: '19.2', license: 'MIT', url: 'https://react.dev', category: 'core' },
+  { name: 'React', version: '19.3', license: 'MIT', url: 'https://react.dev', category: 'core' },
   { name: 'TypeScript', version: '6.0', license: 'Apache-2.0', url: 'https://www.typescriptlang.org', category: 'core' },
-  { name: 'Vite', version: '8.0', license: 'MIT', url: 'https://vite.dev', category: 'core' },
-  { name: 'React Router', version: '7.14', license: 'MIT', url: 'https://reactrouter.com', category: 'core' },
+  { name: 'Vite', version: '8.3', license: 'MIT', url: 'https://vite.dev', category: 'core' },
+  { name: 'React Router', version: '8.4', license: 'MIT', url: 'https://reactrouter.com', category: 'core' },
   { name: 'Zustand', version: '5.0', license: 'MIT', url: 'https://github.com/pmndrs/zustand', category: 'core' },
 
   // UI
   { name: 'Tailwind CSS', version: '3.4', license: 'MIT', url: 'https://tailwindcss.com', category: 'ui' },
   { name: 'shadcn/ui', version: 'pattern', license: 'MIT', url: 'https://ui.shadcn.com', category: 'ui' },
   { name: 'Radix UI', version: '1.x / 2.x', license: 'MIT', url: 'https://www.radix-ui.com', category: 'ui' },
-  { name: 'lucide-react', version: '1.14', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
+  { name: 'lucide-react', version: '1.47', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
   { name: 'sonner', version: '2.0', license: 'MIT', url: 'https://sonner.emilkowal.ski', category: 'ui' },
   { name: 'class-variance-authority', version: '0.7', license: 'Apache-2.0', url: 'https://cva.style', category: 'ui' },
-  { name: 'tailwind-merge', version: '3.5', license: 'MIT', url: 'https://github.com/dcastil/tailwind-merge', category: 'ui' },
+  { name: 'tailwind-merge', version: '3.7', license: 'MIT', url: 'https://github.com/dcastil/tailwind-merge', category: 'ui' },
   { name: 'clsx', version: '2.1', license: 'MIT', url: 'https://github.com/lukeed/clsx', category: 'ui' },
-  { name: 'Recharts', version: '3.8', license: 'MIT', url: 'https://recharts.org', category: 'ui' },
+  { name: 'Recharts', version: '3.10', license: 'MIT', url: 'https://recharts.org', category: 'ui' },
 
   // Data
-  { name: 'TanStack Query', version: '5.100', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'TanStack Table', version: '8.21', license: 'MIT', url: 'https://tanstack.com/table', category: 'data' },
-  { name: 'TanStack Virtual', version: '3.13', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
-  { name: 'TanStack Query Persist Client', version: '5.101', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'TanStack Query Async Storage Persister', version: '5.101', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'idb-keyval', version: '6.2', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
-  { name: '@octokit/rest', version: '22.0', license: 'MIT', url: 'https://github.com/octokit/octokit.js', category: 'data' },
-  { name: 'OpenPGP.js', version: '6.3', license: 'LGPL-3.0', url: 'https://openpgpjs.org', category: 'data' },
+  { name: 'TanStack Virtual', version: '3.14', license: 'MIT', url: 'https://tanstack.com/virtual', category: 'data' },
+  { name: 'TanStack Query Persist Client', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query Async Storage Persister', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'idb-keyval', version: '6.3', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
+
+  // Hosting / tooling (Cloudflare)
+  { name: 'Wrangler', version: '4.134', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
+  { name: 'Vitest', version: '5.0', license: 'MIT', url: 'https://vitest.dev', category: 'dev' },
 
   // Desktop / mobile (Tauri)
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },

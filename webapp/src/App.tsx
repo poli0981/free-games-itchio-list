@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useRef } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router'
 import { Sidebar, MobileTopBar } from '@/components/sidebar'
 import { LegalGate } from '@/components/legal-gate'
 import ScrollToTop from '@/components/scroll-to-top'
@@ -14,9 +14,7 @@ import Deleted from '@/routes/deleted'
 import NotFound from '@/routes/not-found'
 
 const GameDetail = lazy(() => import('@/routes/game-detail'))
-const Add = lazy(() => import('@/routes/add'))
 const Charts = lazy(() => import('@/routes/charts'))
-const Workflows = lazy(() => import('@/routes/workflows'))
 const Settings = lazy(() => import('@/routes/settings'))
 const About = lazy(() => import('@/routes/about'))
 const ErrorPreview = lazy(() => import('@/routes/error-preview'))
@@ -66,9 +64,7 @@ export default function App() {
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/games" element={<Games />} />
                   <Route path="/games/:slug" element={<GameDetail />} />
-                  <Route path="/add" element={<Add />} />
                   <Route path="/charts" element={<Charts />} />
-                  <Route path="/workflows" element={<Workflows />} />
                   <Route path="/deleted" element={<Deleted />} />
                   <Route path="/settings" element={<Settings />} />
                   <Route path="/about" element={<About />} />

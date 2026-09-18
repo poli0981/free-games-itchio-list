@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router'
 import { ErrorPage } from '@/components/error-page'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useT } from '@/lib/i18n'

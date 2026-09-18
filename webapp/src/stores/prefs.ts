@@ -4,8 +4,6 @@ import { persist } from 'zustand/middleware'
 type Density = 'compact' | 'normal'
 type Language = 'en' | 'vi'
 
-export const IDLE_TIMEOUT_OPTIONS = [5, 15, 30, 60, 120] as const
-
 export const NOTIFICATION_DURATION_OPTIONS = [2_000, 4_000, 6_000, 10_000] as const
 
 /**
@@ -21,9 +19,6 @@ interface PrefsStore {
   language: Language
   notificationsEnabled: boolean
   notificationDurationMs: number
-  idleTimeoutMs: number
-  authorName: string
-  authorEmail: string
   acceptedLegalVersion: string | null
   toggleSidebar: () => void
   setSidebarCollapsed: (v: boolean) => void
@@ -31,13 +26,8 @@ interface PrefsStore {
   setLanguage: (l: Language) => void
   setNotificationsEnabled: (v: boolean) => void
   setNotificationDurationMs: (v: number) => void
-  setIdleTimeoutMs: (v: number) => void
-  setAuthorName: (v: string) => void
-  setAuthorEmail: (v: string) => void
   acceptLegal: () => void
 }
-
-const DEFAULT_IDLE_MS = 30 * 60 * 1000
 
 export const usePrefs = create<PrefsStore>()(
   persist(
@@ -47,9 +37,6 @@ export const usePrefs = create<PrefsStore>()(
       language: 'en',
       notificationsEnabled: true,
       notificationDurationMs: 4_000,
-      idleTimeoutMs: DEFAULT_IDLE_MS,
-      authorName: '',
-      authorEmail: '',
       acceptedLegalVersion: null,
       toggleSidebar: () => set((s) => ({ sidebarCollapsed: !s.sidebarCollapsed })),
       setSidebarCollapsed: (v) => set({ sidebarCollapsed: v }),
@@ -57,9 +44,6 @@ export const usePrefs = create<PrefsStore>()(
       setLanguage: (l) => set({ language: l }),
       setNotificationsEnabled: (v) => set({ notificationsEnabled: v }),
       setNotificationDurationMs: (v) => set({ notificationDurationMs: v }),
-      setIdleTimeoutMs: (v) => set({ idleTimeoutMs: v }),
-      setAuthorName: (v) => set({ authorName: v }),
-      setAuthorEmail: (v) => set({ authorEmail: v }),
       acceptLegal: () => set({ acceptedLegalVersion: LEGAL_VERSION }),
     }),
     { name: 'webapp.prefs' },
