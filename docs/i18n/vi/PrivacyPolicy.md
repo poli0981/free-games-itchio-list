@@ -139,6 +139,8 @@ Không tracking, không analytics, không telemetry, không spying. Người duy
 
 ## 15. Telegram bot — đường đóng góp tùy chọn
 
+> **Đã ngừng (tháng 9/2026).** Đường đóng góp qua Telegram bot đã dừng và không còn nhận game; workflow `bot-ingest.yml` đã bị gỡ. Mục này được giữ lại để mô tả cách dữ liệu đã được xử lý khi bot còn chạy và sẽ bị bỏ ở lần sửa đổi toàn diện tiếp theo của văn bản.
+
 [`CONTRIBUTING.md`](CONTRIBUTING.md) mô tả một flow tùy chọn để gửi game qua
 [@my_skull_bot](https://t.me/my_skull_bot). Flow này bao gồm việc tự nguyện
 chia sẻ Telegram numeric ID với Người duy trì (operator: poli0981). Mục

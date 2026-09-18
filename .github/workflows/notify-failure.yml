@@ -1,0 +1,40 @@
+# Reusable: post a data-pipeline problem to Discord.
+# Called from refresh.yml / update.yml when a job fails, is cancelled (timeouts
+# end as "cancelled", which the old workflow_run notifier never caught) or when
+# itch.io rate-limited the run.
+name: Notify pipeline failure
+
+on:
+  workflow_call:
+    inputs:
+      summary:
+        description: Short status line (job results)
+        required: true
+        type: string
+    secrets:
+      DISCORD_CI_WEBHOOK:
+        required: false
+
+permissions: {}
+
+jobs:
+  discord:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Post to Discord
+        env:
+          HOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}
+          WORKFLOW: ${{ github.workflow }}
+          SUMMARY: ${{ inputs.summary }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          RUN_NUMBER: ${{ github.run_number }}
+        run: |
+          set -euo pipefail
+          if [ -z "$HOOK" ]; then
+            echo "::warning::DISCORD_CI_WEBHOOK is not set — nothing posted."
+            exit 0
+          fi
+          MSG="⚠️ **${WORKFLOW}** #${RUN_NUMBER}: ${SUMMARY}"$'\n'"${RUN_URL}"
+          jq -n --arg c "$MSG" '{content: $c}' \
+            | curl -fsS --retry 3 -H 'Content-Type: application/json' -d @- "$HOOK"

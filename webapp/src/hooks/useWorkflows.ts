@@ -6,10 +6,8 @@ import type { MessageKey } from '@/lib/i18n'
 
 export const WORKFLOWS: { file: WorkflowFile; labelKey: MessageKey; descriptionKey: MessageKey }[] = [
   { file: 'update.yml', labelKey: 'workflows.update.label', descriptionKey: 'workflows.update.desc' },
-  { file: 'check_paid.yml', labelKey: 'workflows.checkPaid.label', descriptionKey: 'workflows.checkPaid.desc' },
-  { file: 'check_alive.yml', labelKey: 'workflows.checkAlive.label', descriptionKey: 'workflows.checkAlive.desc' },
-  { file: 'generate_table.yml', labelKey: 'workflows.generateTables.label', descriptionKey: 'workflows.generateTables.desc' },
-  { file: 'log_deleted.yml', labelKey: 'workflows.logDeleted.label', descriptionKey: 'workflows.logDeleted.desc' },
+  { file: 'refresh.yml', labelKey: 'workflows.refresh.label', descriptionKey: 'workflows.refresh.desc' },
+  { file: 'force_update.yml', labelKey: 'workflows.forceUpdate.label', descriptionKey: 'workflows.forceUpdate.desc' },
 ]
 
 export function useWorkflowRuns(workflow: WorkflowFile, enabled = true) {

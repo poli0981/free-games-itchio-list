@@ -7,14 +7,18 @@
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py314"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "W", "UP", "B"]
+select = ["E", "F", "I", "W", "UP", "B", "BLE", "S113"]
 
 [tool.vulture]
-paths = ["scripts", "webapp/scripts"]
+paths = ["scripts", "webapp/scripts", "tests"]
 min_confidence = 60
-# requests.Response.encoding is assigned to force UTF-8 decoding but is read
-# internally by requests, so vulture flags the assignment as an unused attribute.
-ignore_names = ["encoding"]
+# Autouse pytest fixtures are used by pytest itself, not called by name.
+ignore_names = ["no_network"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# tests/conftest.py blocks all network access; parser tests use saved fixtures.
+addopts = "-q"

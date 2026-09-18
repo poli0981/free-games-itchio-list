@@ -19,6 +19,52 @@ All notable changes to this project will be documented here.
 - OG image, manifest (`start_url`/`scope`/`id` = `/`), canonical/og URLs, sitemap and robots now
   point at freeitchgames.win; OG title no longer overflows.
 
+### Data pipeline (rewrite)
+
+- **One rotating refresh replaces four failing crawls.** `check_paid` / `check_alive` /
+  `update_reviews` / `update_status` each fetched all 2,600+ pages sequentially, overran their
+  job timeouts and — saving only at the end — lost every run since late June (with no alert,
+  because a timeout ends as *cancelled*). The new [`scripts/refresh.py`](scripts/refresh.py)
+  (`refresh.yml`, daily) checks one seventh of the catalog with **one request per game**, so every
+  game is re-checked weekly (~86% fewer requests to itch.io), and updates alive / paid / rating /
+  status (+ backfills release date, thumbnail, `updated_at`) from that single page.
+- **Safer removals:** a game is removed only when the same 404/410 or paid status is seen on two
+  different days (single flaky responses no longer delete games).
+- **Scan → patch → apply:** scanners emit a URL-keyed patch; [`apply_patch.py`](scripts/apply_patch.py)
+  applies it to the latest `main`, validates, and [`bash/commit_push.sh`](bash/commit_push.sh)
+  retries on push races. Concurrent writers (extension, workflows, future admin) no longer clobber
+  each other; checkpoints + an in-script deadline keep partial work.
+- **Ingest** (`update.yml`, now runs as soon as the queue changes): canonical URLs, skips games in
+  the deleted log (the removed-then-re-added bug), retries transient failures up to 3 runs instead of
+  dropping them, stamps `added_at`, and never wipes links queued meanwhile.
+- `force_update.yml` runs `refresh.py --full` in rotating batches (a full re-scrape no longer times out).
+- Honest `FreeItchGamesBot` User-Agent, explicit 429 / Retry-After handling (capped), unbuffered
+  logs, run summaries, Discord alerts on failure / cancel / rate limit.
+- `data_store.py` keeps games in their chunk and only writes changed bytes; `index.json` /
+  `count_history.json` change only when data does — no more no-op commits.
+- New [`validate.py`](scripts/validate.py) (schema, canonical URLs, duplicates, index consistency)
+  gates every pipeline commit and runs in the new Python CI with a network-free pytest suite.
+  Normalized one invalid `safe_virus` value (`"y"` → `"Yes"`).
+
+### Removed
+
+- `lists/*.md` genre tables, `generate_md.py`, `generate_table.yml`, `deleted_games.txt`,
+  `log_deleted.*` — the catalog is web-only (freeitchgames.win).
+- Telegram bot ingest (`bot-ingest.yml`, `game_via_bot` issue template); the policies mark that
+  path as retired.
+- `notify-ci-failure.yml` (replaced by in-workflow notifications) and the old per-task bash wrappers.
+
+### CI / security
+
+- All actions SHA-pinned at current majors; `permissions: {}` by default with per-job grants;
+  reusable workflows pinned by SHA with only the secrets they need; script-injection patterns in
+  `announce-discussion.yml` fixed (and it now posts only for `CHANGELOG.md` changes).
+- Release: one `create-release` job makes the draft that desktop (tauri-action v1, `releaseId`) and
+  Android upload into; release builds use no dependency caches. Publish with
+  `gh release edit vX --draft=false`.
+- `.github/dependabot.yml` (npm / pip / actions / cargo), Python and web-app PR checks, and a relay
+  of failed Cloudflare builds to Discord.
+
 ### Changed
 
 - GitHub Pages now only publishes a redirect stub ([`pages-redirect/`](pages-redirect)) that

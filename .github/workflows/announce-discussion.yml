@@ -2,9 +2,9 @@ name: Announce to Discussion
 
 # Two triggers, two destinations:
 #   1. release:published       → Announcements category
-#   2. push (paths: docs/**, CHANGELOG.md, README.md, README.vi.md) → General
-# The push job is gated by a `[skip-discuss]` token in the head-commit message
-# so dev can opt out for typo-only commits.
+#   2. push touching CHANGELOG.md → General (docs-only edits no longer post;
+#      put user-facing changes in the changelog). Add `[skip-discuss]` to the
+#      head-commit message to opt out.
 #
 # No pre-flight needed — repo ID and category IDs are auto-discovered at
 # runtime via GraphQL (by category slug: "announcements" / "general").
@@ -16,10 +16,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/**'
       - 'CHANGELOG.md'
-      - 'README.md'
-      - 'README.vi.md'
   workflow_dispatch:
     inputs:
       mode:
@@ -33,9 +30,7 @@ on:
         type: string
         required: false
 
-permissions:
-  contents: read
-  discussions: write
+permissions: {}
 
 concurrency:
   group: announce-discussion-${{ github.ref }}
@@ -48,6 +43,9 @@ jobs:
       (github.event_name == 'workflow_dispatch' && inputs.mode == 'announce-release')
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: read
+      discussions: write
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -104,22 +102,28 @@ jobs:
           echo "title=Release ${TAG}" >> "$GITHUB_OUTPUT"
 
       - name: Create Announcements discussion
+        env:
+          REPO_ID: ${{ steps.ids.outputs.repo_id }}
+          CATEGORY_ID: ${{ steps.ids.outputs.category_id }}
+          TITLE: ${{ steps.rel.outputs.title }}
         run: |
           set -euo pipefail
           gh api graphql \
             -f query='mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}' \
-            -f r="${{ steps.ids.outputs.repo_id }}" \
-            -f c="${{ steps.ids.outputs.category_id }}" \
-            -f t="${{ steps.rel.outputs.title }}" \
+            -f r="$REPO_ID" \
+            -f c="$CATEGORY_ID" \
+            -f t="$TITLE" \
             -F b=@body.md
 
   announce-docs:
     if: >
       github.event_name == 'push' &&
-      !contains(github.event.head_commit.message, '[skip-discuss]') &&
-      !startsWith(github.event.head_commit.message, 'bot-ingest:')
+      !contains(github.event.head_commit.message, '[skip-discuss]')
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: read
+      discussions: write
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -150,15 +154,16 @@ jobs:
           echo "category_id=$CAT_ID" >> "$GITHUB_OUTPUT"
 
       - name: Checkout (last 2 commits for diff)
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 2
+          persist-credentials: false
 
       - name: List changed docs
         id: changes
         run: |
           set -euo pipefail
-          git diff --name-only HEAD^ HEAD -- docs/ CHANGELOG.md README.md README.vi.md > changed.txt || true
+          git diff --name-only HEAD^ HEAD -- CHANGELOG.md > changed.txt || true
           if [ ! -s changed.txt ]; then
             echo "no-docs-changed=true" >> "$GITHUB_OUTPUT"
           fi
@@ -185,11 +190,15 @@ jobs:
 
       - name: Create General discussion
         if: steps.changes.outputs.no-docs-changed != 'true'
+        env:
+          REPO_ID: ${{ steps.ids.outputs.repo_id }}
+          CATEGORY_ID: ${{ steps.ids.outputs.category_id }}
+          TITLE: ${{ steps.body.outputs.title }}
         run: |
           set -euo pipefail
           gh api graphql \
             -f query='mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}' \
-            -f r="${{ steps.ids.outputs.repo_id }}" \
-            -f c="${{ steps.ids.outputs.category_id }}" \
-            -f t="${{ steps.body.outputs.title }}" \
+            -f r="$REPO_ID" \
+            -f c="$CATEGORY_ID" \
+            -f t="$TITLE" \
             -F b=@body.md

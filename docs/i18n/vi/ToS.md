@@ -129,6 +129,8 @@ Câu hỏi? Mở issue. Hoặc DM qua bất kỳ kênh nào trên trang About. N
 
 ## 14. Telegram bot — đường đóng góp tùy chọn
 
+> **Đã ngừng (tháng 9/2026).** Đường đóng góp qua Telegram bot đã dừng và không còn nhận game; workflow `bot-ingest.yml` đã bị gỡ. Mục này được giữ lại để mô tả cách dữ liệu đã được xử lý khi bot còn chạy và sẽ bị bỏ ở lần sửa đổi toàn diện tiếp theo của văn bản.
+
 [`CONTRIBUTING.md`](CONTRIBUTING.md) mô tả một flow tùy chọn để gửi game qua
 Telegram bot [@my_skull_bot](https://t.me/my_skull_bot). Sử dụng đường này
 hoàn toàn tự nguyện. Bằng cách chọn dùng nó:
@@ -144,7 +146,7 @@ hoàn toàn tự nguyện. Bằng cách chọn dùng nó:
   itch.io Bạn gửi. URL itch.io Bạn gửi sẽ trở thành công khai — chúng được
   commit vào Repository này tại
   [`scripts/temp_link.json`](../../../scripts/temp_link.json) bởi workflow
-  [`bot-ingest.yml`](../../../.github/workflows/bot-ingest.yml) và được
+  `bot-ingest.yml` (đã gỡ) và được
   render vào catalog bởi scraper hàng ngày.
 - Bạn có thể yêu cầu gỡ bất kỳ lúc nào bằng cách DM Người duy trì
   ("remove me from whitelist"). Việc gỡ có hiệu lực ở lần khởi động bot kế

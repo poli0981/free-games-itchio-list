@@ -1,0 +1,52 @@
+# Checks the web app on pull requests. Deployment is NOT done here —
+# Cloudflare Workers Builds deploys main from webapp/wrangler.jsonc.
+name: Webapp CI
+
+on:
+  pull_request:
+    paths:
+      - 'webapp/**'
+      - '.github/workflows/webapp-ci.yml'
+
+permissions: {}
+
+concurrency:
+  group: webapp-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: webapp
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: webapp/.node-version
+          cache: npm
+          cache-dependency-path: webapp/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unused code (knip)
+        run: npm run knip
+
+      - name: Type-check and build
+        run: npm run build
+
+      - name: Validate Workers config (dry run)
+        run: npx wrangler deploy --dry-run

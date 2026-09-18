@@ -1,0 +1,65 @@
+[
+    {
+        "name": "no change keeps layout",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [["a", "b", "c"], ["d"]],
+        "games": ["a", "b", "c", "d"],
+        "expected": [["a", "b", "c"], ["d"]]
+    },
+    {
+        "name": "removal stays in place",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [["a", "b", "c"], ["d", "e", "f"], ["g"]],
+        "games": ["a", "c", "d", "e", "f", "g"],
+        "expected": [["a", "c"], ["d", "e", "f"], ["g"]]
+    },
+    {
+        "name": "new games go to the last chunk",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [["a", "b", "c"], ["d"]],
+        "games": ["a", "b", "c", "d", "e"],
+        "expected": [["a", "b", "c"], ["d", "e"]]
+    },
+    {
+        "name": "overflow re-slices everything",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [["a", "b", "c"], ["d", "e"]],
+        "games": ["a", "b", "c", "d", "e", "f", "g"],
+        "expected": [["a", "b", "c"], ["d", "e", "f"], ["g"]]
+    },
+    {
+        "name": "under-filled middle chunk re-slices",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [["a", "b", "c"], ["d", "e", "f"], ["g"]],
+        "games": ["a", "b", "c", "f", "g"],
+        "expected": [["a", "b", "c"], ["f", "g"]]
+    },
+    {
+        "name": "last chunk may be under-filled",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [["a", "b", "c"], ["d", "e"]],
+        "games": ["a", "b", "c", "e"],
+        "expected": [["a", "b", "c"], ["e"]]
+    },
+    {
+        "name": "empty chunk disappears",
+        "chunk_size": 3, "min_fill": 1,
+        "old": [["a", "b", "c"], ["d"]],
+        "games": ["a", "b", "c"],
+        "expected": [["a", "b", "c"]]
+    },
+    {
+        "name": "first save from nothing",
+        "chunk_size": 3, "min_fill": 2,
+        "old": [],
+        "games": ["a", "b", "c", "d"],
+        "expected": [["a", "b", "c"], ["d"]]
+    },
+    {
+        "name": "duplicate urls keep the first record",
+        "chunk_size": 3, "min_fill": 1,
+        "old": [["a", "b"]],
+        "games": ["a", "b", "a"],
+        "expected": [["a", "b"]]
+    }
+]

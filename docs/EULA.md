@@ -11,7 +11,7 @@ This EULA applies to the **code and content of `free-games-itchio-list`** — th
 - **"The Repository"** — `free-games-itchio-list` on GitHub at <https://github.com/poli0981/free-games-itchio-list>, including all source code, data files, markdown tables, and documentation.
 - **"The Webapp"** — the React + TypeScript application in `webapp/`, deployed at <https://freeitchgames.win/>.
 - **"The Desktop App"** — the Tauri 2 native build of the Webapp, distributed as installers via GitHub Releases.
-- **"The Catalog"** — the structured game metadata in `data_game/` and the rendered markdown tables in `lists/`.
+- **"The Catalog"** — the structured game metadata in `data_game/` and its presentation on the website https://freeitchgames.win.
 - **"The Maintainer"** — the GitHub user `poli0981` (a.k.a. SkullMute), the author of this Repository.
 - **"You"** — any natural person, organization, or automated agent that accesses, downloads, clones, forks, runs, modifies, or otherwise uses the Repository or any part thereof.
 

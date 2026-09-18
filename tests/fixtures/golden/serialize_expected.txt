@@ -1,0 +1,16 @@
+{
+    "url": "https://dev.itch.io/game",
+    "name": "Jonut🍩 \"quoted\" back\\slash",
+    "control": "tab\there\u0001bell\nnewline",
+    "separators": "line para end",
+    "nested": {
+        "empty_list": [],
+        "empty_obj": {},
+        "list": [
+            "Windows",
+            "HTML5"
+        ],
+        "n": 2681
+    },
+    "vietnamese": "Trò chơi miễn phí"
+}

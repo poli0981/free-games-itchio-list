@@ -1,7 +1,19 @@
-name: Update JSON file game information
+# Ingest queued links from scripts/temp_link.json (written by the browser
+# extension, and later the admin Worker) plus an optional dispatched URL.
+#
+# Runs right away when temp_link.json changes on main (pushes made by GitHub
+# Apps trigger it; this workflow's own GITHUB_TOKEN push does not, so no loop),
+# and once a day as a safety net. Keep the filename: released apps and
+# external tools dispatch `update.yml` by name.
+name: Ingest queued games
+
 on:
   schedule:
-    - cron: '0 3 * * *'  # Runs daily at 03:00 UTC
+    - cron: '23 1 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/temp_link.json'
   workflow_dispatch:
     inputs:
       url:
@@ -9,34 +21,55 @@ on:
         required: false
         type: string
 
-# Unbuffered UTF-8 output so progress survives a timeout/cancel.
+permissions: {}
+
+# Queued runs coalesce: the newest run reads the whole queue anyway.
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
 env:
   PYTHONUNBUFFERED: '1'
   PYTHONUTF8: '1'
 
-permissions:
-    contents: write
-
 jobs:
-  update-game-info:
+  ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
-
+    timeout-minutes: 60
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 # zizmor: ignore[artipacked] — commit_push.sh pushes with this token; no artifacts are uploaded from this job
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          ref: main
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: 3.14
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: requirements.txt
 
-      - name: Run bash script to update game info
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape queued links
+        timeout-minutes: 50
         env:
           INPUT_URL: ${{ inputs.url }}
-        run: |
-            chmod +x ./bash/test.sh
-            ./bash/test.sh
-        shell: bash
+        run: python scripts/update_info.py --out "$RUNNER_TEMP/patch.json" --deadline-min 45
+
+      - name: Apply, validate and push
+        if: ${{ !cancelled() }}
+        run: bash bash/commit_push.sh "$RUNNER_TEMP/patch.json" "Ingest queued games [$(date -u +%F)]"
+
+  notify:
+    needs: [ingest]
+    if: always() && (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
+    permissions: {}
+    uses: ./.github/workflows/notify-failure.yml
+    with:
+      summary: ingest=${{ needs.ingest.result }}
+    secrets:
+      DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}

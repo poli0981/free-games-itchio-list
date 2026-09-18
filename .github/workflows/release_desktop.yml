@@ -1,14 +1,63 @@
 name: Release desktop installers (Tauri)
 
+# Release process (draft-first):
+#   1. push a signed tag vX.Y.Z from main
+#   2. `create-release` makes ONE draft release (generated notes); every build
+#      job — here and in release_android.yml — uploads into that draft
+#   3. check the assets, edit the notes, then publish:
+#        gh release edit vX.Y.Z --draft=false
+#      Publishing fires the Discord / Discussions announcements, so they only
+#      go out once installers exist. Never create the release by hand first:
+#      tauri-action v1 refuses to upload into a non-draft release.
+# Manual dispatch builds without a release and uploads workflow artifacts.
+
 on:
   push:
     tags: ['v*']
   workflow_dispatch:
 
+permissions: {}
+
+concurrency:
+  group: release-desktop-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  build-tauri:
+  create-release:
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
+    outputs:
+      release_id: ${{ steps.draft.outputs.release_id }}
+    steps:
+      - name: Create (or reuse) the draft release
+        id: draft
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1 \
+            || gh release create "$TAG" --repo "$REPO" --draft --verify-tag \
+                 --title "Free Itch Games $TAG" --generate-notes \
+            || true   # release_android.yml may have created it a moment earlier
+          IS_DRAFT=$(gh release view "$TAG" --repo "$REPO" --json isDraft -q .isDraft)
+          if [ "$IS_DRAFT" != "true" ]; then
+            echo "::error::Release $TAG is already published — tauri-action only uploads into drafts."
+            exit 1
+          fi
+          echo "release_id=$(gh release view "$TAG" --repo "$REPO" --json databaseId -q .databaseId)" >> "$GITHUB_OUTPUT"
+
+  build-tauri:
+    needs: create-release
+    # Tag builds need the draft; manual dispatch builds without one.
+    if: always() && (needs.create-release.result == 'success' || needs.create-release.result == 'skipped')
+    permissions:
+      contents: write
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
@@ -26,6 +75,8 @@ jobs:
             tauri_target: 'x86_64-apple-darwin'
             arch_label: 'x86_64'
             args: '--target x86_64-apple-darwin'
+          # Kept on 22.04 on purpose: .deb/AppImage built here run on glibc 2.35+
+          # (24.04 would raise the floor to 2.39). 22.04 retires 2027-04.
           - platform: 'ubuntu-22.04'
             tauri_target: ''
             arch_label: ''
@@ -38,24 +89,23 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: webapp/package-lock.json
+          node-version-file: webapp/.node-version
+          # No dependency cache in release builds: a poisoned cache could end
+          # up inside signed installers. Releases are rare; take the extra minutes.
+          package-manager-cache: false
 
       - name: Set up Rust
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@02cb101ec7c40f2c49e1d9714d64511d8e1b74de # master
         with:
+          toolchain: stable
           targets: ${{ matrix.tauri_target }}
-
-      - name: Cache cargo
-        uses: Swatinem/rust-cache@v2
-        with:
-          workspaces: webapp/src-tauri
 
       - name: Install Linux deps
         if: matrix.platform == 'ubuntu-22.04'
@@ -74,15 +124,13 @@ jobs:
         run: npm ci
 
       - name: Build Tauri app
-        uses: tauri-apps/tauri-action@v0
+        uses: tauri-apps/tauri-action@1deb371b0cd8bd54025b384f1cd735e725c4060f # action-v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           projectPath: webapp
-          tagName: ${{ github.ref_name }}
-          releaseName: 'Itch.io Free Games DB ${{ github.ref_name }}'
-          releaseDraft: true
-          prerelease: false
+          releaseId: ${{ needs.create-release.outputs.release_id }}
+          uploadWorkflowArtifacts: ${{ !startsWith(github.ref, 'refs/tags/') }}
           args: ${{ matrix.args }}
 
       # Tauri's bundler doesn't ship .pkg natively, so build it ourselves with
@@ -94,9 +142,14 @@ jobs:
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+          REPO: ${{ github.repository }}
+          TAURI_TARGET: ${{ matrix.tauri_target }}
+          ARCH_LABEL: ${{ matrix.arch_label }}
         run: |
           set -e
-          BUNDLE_DIR="webapp/src-tauri/target/${{ matrix.tauri_target }}/release/bundle/macos"
+          CONF="$GITHUB_WORKSPACE/webapp/src-tauri/tauri.conf.json"
+          BUNDLE_DIR="webapp/src-tauri/target/$TAURI_TARGET/release/bundle/macos"
           if [ ! -d "$BUNDLE_DIR" ]; then
             echo "::warning::No macOS bundle directory at $BUNDLE_DIR — skipping pkgbuild."
             exit 0
@@ -107,11 +160,11 @@ jobs:
             echo "::warning::No .app bundle found — skipping pkgbuild."
             exit 0
           fi
-          VERSION=$(node -p "require('${{ github.workspace }}/webapp/src-tauri/tauri.conf.json').version")
+          VERSION=$(node -p "require('$CONF').version")
           # Read the identifier from config so it never drifts from the app's
           # real bundle ID (changed to a hyphen-free, Android-valid value).
-          IDENTIFIER=$(node -p "require('${{ github.workspace }}/webapp/src-tauri/tauri.conf.json').identifier")
-          PKG_NAME="$(basename "$APP" .app)_${VERSION}_${{ matrix.arch_label }}.pkg"
+          IDENTIFIER=$(node -p "require('$CONF').identifier")
+          PKG_NAME="$(basename "$APP" .app)_${VERSION}_${ARCH_LABEL}.pkg"
           pkgbuild \
             --component "$APP" \
             --identifier "$IDENTIFIER" \
@@ -119,7 +172,4 @@ jobs:
             --install-location /Applications \
             "$PKG_NAME"
           ls -la "$PKG_NAME"
-          # Make sure the (draft) release exists so upload doesn't 404.
-          gh release view "${{ github.ref_name }}" --repo "${{ github.repository }}" >/dev/null 2>&1 \
-            || gh release create "${{ github.ref_name }}" --repo "${{ github.repository }}" --draft --notes "Pending desktop installers."
-          gh release upload "${{ github.ref_name }}" "$PKG_NAME" --repo "${{ github.repository }}" --clobber
+          gh release upload "$TAG" "$PKG_NAME" --repo "$REPO" --clobber

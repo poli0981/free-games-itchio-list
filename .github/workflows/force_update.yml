@@ -1,39 +1,35 @@
+# Manual re-scrape of every scraper-owned field (repairs mojibake, backfills
+# fields after a scraper upgrade). Always preserves safe_virus / notes / nsfw.
+# Runs through refresh.yml in full mode: one URL, or a rotating batch of the
+# games whose last full re-scrape is oldest — dispatch again to continue.
 name: Force update
+
 on:
   workflow_dispatch:
     inputs:
       url:
-        description: 'itch.io URL to re-scrape (optional; empty = re-scrape ALL games)'
+        description: 'itch.io URL to re-scrape (optional; empty = next batch of the catalog)'
         required: false
         type: string
+      budget:
+        description: 'Batch size when no URL is given (0 = 1/7 of the catalog)'
+        type: number
+        default: 0
 
-# Unbuffered UTF-8 output so progress survives a timeout/cancel.
-env:
-  PYTHONUNBUFFERED: '1'
-  PYTHONUTF8: '1'
+permissions: {}
 
-permissions:
-  contents: write
+concurrency:
+  group: force-update
+  cancel-in-progress: false
 
 jobs:
-  force-update:
-    runs-on: ubuntu-latest
-    timeout-minutes: 180
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.14'
-
-      - name: Force re-scrape (preserve safe_virus / notes / nsfw)
-        env:
-          INPUT_URL: ${{ inputs.url }}
-        run: |
-          chmod +x ./bash/force_update.sh
-          ./bash/force_update.sh
-        shell: bash
+  rescrape:
+    permissions:
+      contents: write
+    uses: ./.github/workflows/refresh.yml
+    with:
+      full: true
+      url: ${{ inputs.url }}
+      budget: ${{ inputs.budget }}
+    secrets:
+      DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}

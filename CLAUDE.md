@@ -7,11 +7,10 @@ Quick context so future Claude sessions don't have to re-derive it.
 Two layers stacked on the same JSON catalog of free itch.io games:
 
 1. **Python pipeline** — the data layer.
-   - `data_game/game_info_NNN.json` — chunked records, max 500 per file, ~1,470 games as of v3.5.0.
+   - `data_game/game_info_NNN.json` — chunked records, max 500 per file, 2,681 games as of Sept 2026. Serialization is fixed: `json.dumps(..., ensure_ascii=False, indent=4)`, no trailing newline (`json_io.dumps`) — the Worker port must emit identical bytes (`tests/fixtures/golden/`).
    - `data_game/index.json` — chunk manifest (total + per-file counts). `data_game/count_history.json` — date-keyed `{date,total}` series powering the "games over time" chart.
-   - `scripts/` — `scraper.py` (shared session + parsing), `data_store.py` (chunk load/save/rebalance, writes `index.json` + `count_history.json`), `json_io.py` (shared `load_json`/`save_json` + `dedup_deleted`), `update_info.py`, `check_paid.py`, `check_alive.py`, `check_duplicate.py`, `update_reviews.py`, `update_status.py`, `force_update.py`, `generate_md.py`, `log_deleted.py`, `backfill_count_history.py` (one-time count-history seed). Lint: `ruff check scripts/` (config in root `pyproject.toml`).
-   - `lists/{genre}.md` — auto-generated, **never edit by hand**.
-   - `bash/` — wrappers used by the GitHub Actions workflows.
+   - `scripts/` — scanners never write the catalog: `update_info.py` (queued URLs) and `refresh.py` (rotating 1/7-per-day check; `--full` re-scrape) emit a URL-keyed **patch** (`patch.py`); `apply_patch.py` applies it to the latest `main` and runs `validate.py`; `bash/commit_push.sh` does fetch → reset → apply → commit → push with retries. Shared: `scraper.py` (session, `Pacer` + 429 back-off, parsing), `data_store.py` (chunks stay in place, rebalance only past thresholds, write-if-changed), `json_io.py`, `canonical.py` (canonical itch.io URL; vectors in `tests/fixtures/url_vectors.json`). Pipeline bookkeeping lives in `scripts/state/` (not published). Tests: `pytest` (network blocked). Lint: `ruff check scripts tests webapp/scripts`, `ruff format`, `vulture` (config in root `pyproject.toml`). Local env: `python -m venv .venv && .venv/Scripts/pip install -r requirements-dev.txt`.
+   - The per-genre `lists/*.md` tables and `deleted_games.txt` were removed (Sept 2026): the catalog is web-only.
 2. **Webapp** — `webapp/` (React 19 + TypeScript 6 + Vite 8 + Tailwind v3 + shadcn/ui, Tauri 2 desktop **and Android** wrapper in `webapp/src-tauri/`). Reads from `raw.githubusercontent.com`; writes via GitHub API with an encrypted PAT.
 
 ## How to work in webapp/
@@ -56,22 +55,20 @@ Path alias: `@/*` → `webapp/src/*`. Vite `define`s `__BUILD_DATE__` so About p
 
 ## Editable vs read-only fields
 
-Of the 23 fields per game, only **3** are user-editable: `safe_virus`, `notes`, `nsfw`. The other 17 are scraper output and rendered as read-only badges.
+Each game has **20** fields (plus optional `added_at` / `updated_at`, appended by the pipeline — schema changes are additive only, installed v3 apps still read the raw JSON). Only **3** are user-editable: `safe_virus`, `notes`, `nsfw`. The other 17 are scraper output; no scrape (not even `--full`) overwrites the 3 editable fields.
 
 ## GitHub Actions
 
 | Workflow | Trigger | Notes |
 |---|---|---|
-| `update.yml` | Daily 03:00 UTC + `workflow_dispatch` (with optional `url` input) | Reads `INPUT_URL` env var; falls back to `scripts/temp_link.json`. |
-| `check_paid.yml` | Every 2 days 04:00 UTC | |
-| `update_reviews.yml` | 1st + 15th of each month, 05:00 UTC + `workflow_dispatch` | Refresh `rating` + `rating_count`. Skip-on-error keeps old values. |
-| `update_status.yml` | 1st of each month, 06:00 UTC + `workflow_dispatch` | Refresh `status` only. Same skip semantics. |
-| `check_alive.yml` | Every 2 days 07:00 UTC | |
-| `force_update.yml` | `workflow_dispatch` ONLY (optional `url` input) | Emergency re-scrape. Empty input = re-scrape all. Always preserves `safe_virus` / `notes` / `nsfw`. Canonical tool for repairing mojibake. |
-| `generate_table.yml` | After update / check / refresh workflows succeed | Rebuilds `lists/*.md`. Chain list lives in this file under `workflow_run.workflows` — keep in sync when adding scrape workflows. |
-| `log_deleted.yml` | After check workflows | Exports `deleted_games.txt`. |
-| `deploy_webapp.yml` | Push to `main` touching `pages-redirect/`, or manual | **Legacy.** Publishes only the `pages-redirect/` stub to GitHub Pages (github.io → freeitchgames.win). The real site deploys via Cloudflare Workers Builds from `webapp/wrangler.jsonc`. To be deleted in v4 Phase 1. |
-| `release_desktop.yml` | Tag `v*` push, or manual | Tauri build for Win + macOS aarch64 + macOS x86_64 (cross-compile) + Linux. Uploads `.dmg` / `.app.tar.gz` / `.pkg` (macOS), `.msi` / `.exe` (Windows), `.deb` / `.AppImage` (Linux). macOS `.pkg` `--identifier` reads `tauri.conf.json` so it never drifts from the bundle ID. |
+| `update.yml` | Push to `main` touching `scripts/temp_link.json` + daily 01:23 UTC + `workflow_dispatch` (`url`) | Ingest queue → patch → `commit_push.sh`. Workflow-level `concurrency: ingest`. GitHub-App pushes (extension, admin Worker) trigger it; its own `GITHUB_TOKEN` push does not (no loop). Keep the filename: apps dispatch it by name. |
+| `refresh.yml` | Daily 02:47 UTC + `workflow_dispatch` (`budget`, `url`) + `workflow_call` | scan (read-only, 55-min step timeout, patch artifact uploaded `if: always()`) → apply (`concurrency: refresh-apply`) → notify. Removal needs the same 404/410 or paid strike on two different UTC days. |
+| `force_update.yml` | `workflow_dispatch` ONLY (`url`, `budget`) | Calls `refresh.yml` with `full: true`: re-scrapes every scraper field for one URL or the next batch (rotates on `full` timestamps). Always preserves `safe_virus` / `notes` / `nsfw`. Canonical tool for repairing mojibake. |
+| `notify-failure.yml` | `workflow_call` | Discord (`DISCORD_CI_WEBHOOK`) on failure / **cancelled** (timeouts end as cancelled) / rate-limited. |
+| `python-ci.yml` / `webapp-ci.yml` | PRs (+ pushes for Python) | ruff + format + vulture + pytest + `validate.py` / lint + knip + build + `wrangler deploy --dry-run`. |
+| `deploy-status.yml` | `check_run` / `status` | Relays a failed Cloudflare Workers Build to Discord. Not a deploy. |
+| `deploy_webapp.yml` | Push to `main` touching `pages-redirect/`, or manual | **Legacy.** Publishes only the `pages-redirect/` stub to GitHub Pages (github.io → freeitchgames.win). The real site deploys via Cloudflare Workers Builds from `webapp/wrangler.jsonc`. Delete once the stub is live (v4). |
+| `release_desktop.yml` | Tag `v*` push, or manual | `create-release` makes the single draft (id passed to tauri-action v1 `releaseId`); release builds use **no** npm/cargo caches (cache-poisoning). Tauri build for Win + macOS aarch64 + macOS x86_64 (cross-compile) + Linux. Uploads `.dmg` / `.app.tar.gz` / `.pkg` (macOS), `.msi` / `.exe` (Windows), `.deb` / `.AppImage` (Linux). macOS `.pkg` `--identifier` reads `tauri.conf.json` so it never drifts from the bundle ID. |
 | `release_android.yml` | Tag `v*` push, or manual | Tauri **Android** build → arm64-v8a APK, **post-signed** with `zipalign`+`apksigner` (gen/ stays gitignored). Tag → attaches to the same draft Release; manual dispatch → uploads as a workflow artifact. Secrets: `ANDROID_KEYSTORE_BASE64` / `ANDROID_KEYSTORE_PASSWORD` / `ANDROID_KEY_ALIAS`. |
 
 ## Release / tag process
@@ -80,10 +77,12 @@ Of the 23 fields per game, only **3** are user-editable: `safe_virus`, `notes`, 
 git fetch origin
 git tag -s vX.Y.Z origin/main -m "summary"
 git push origin vX.Y.Z
-gh release create vX.Y.Z --title "..." --notes "..." --verify-tag
+# release_desktop.yml's create-release job opens ONE draft; desktop + Android jobs upload into it.
+# When every asset is there, edit the notes and publish (this fires the announcements):
+gh release edit vX.Y.Z --draft=false
 ```
 
-Tag from `main` only (forking from a feature branch and force-moving on rebase makes a mess). GPG signing is wired through gpg-agent; user's signing key is `03F965C2E2DB5C6B` (EDDSA) and `commit.gpgsign=true` is on, so `git tag -s` and `git commit` both sign.
+Draft-first: **never** `gh release create` by hand before CI — tauri-action v1 refuses to upload into a published release, and announcements would go out before installers exist. Tag from `main` only (forking from a feature branch and force-moving on rebase makes a mess). GPG signing is wired through gpg-agent (`commit.gpgsign=true`, so `git tag -s` and `git commit` both sign; the pinentry must be answered — in unattended sessions commits fail rather than going unsigned). The historical key `03F965C2E2DB5C6B` was exposed in the browser extension's storage (Sept 2026) and is being replaced — use the maintainer's current key.
 
 ## Required PAT permissions for the webapp
 
@@ -118,9 +117,9 @@ Fine-grained PAT scoped to **only this repo** with:
 
 ## Safe-edit rules
 
-- Don't edit `lists/*.md` directly — they're regenerated by `generate_md.py`.
+- Don't write `data_game/` from new code paths directly — go through a patch + `apply_patch.py` (or the Worker port), so concurrent writers never clobber each other and `validate.py` gates every commit.
 - Don't commit `webapp/dist/`, `webapp/src-tauri/target/`, `webapp/src-tauri/gen/` (the generated Android/iOS projects — regenerated by `tauri android init`; Android signing is post-build, not a Gradle edit), `Cargo.lock`, or `webapp/src-tauri/icon-source.png`.
-- Don't commit a real PAT, ever. Settings page handles it client-side; CI uses `secrets.GH_TOKEN`.
+- Don't commit a real PAT, ever. Settings page handles it client-side; data workflows push with the job's `GITHUB_TOKEN` (the old `GH_TOKEN` PAT secret is no longer used).
 - When adding an npm dep, also add it to `webapp/src/lib/about.ts` so the About page lists it.
 
 ## Current state (as of v3.9.0)

@@ -127,6 +127,8 @@ Questions? Open an issue. Or DM via any channel on the About page. The Maintaine
 
 ## 14. Telegram bot — optional contribution path
 
+> **Retired (September 2026).** The Telegram bot path is discontinued and no longer accepts submissions; the `bot-ingest.yml` workflow was removed. This section is kept to describe how data was handled while it ran and will be dropped in the next full revision of this document.
+
 [`CONTRIBUTING.md`](../CONTRIBUTING.md) describes an optional flow for submitting
 games via the Telegram bot [@my_skull_bot](https://t.me/my_skull_bot). Using
 this path is purely opt-in. By choosing to use it:
@@ -142,7 +144,7 @@ this path is purely opt-in. By choosing to use it:
   the itch.io URLs You submit. itch.io URLs You submit become public — they
   are committed to this Repository under
   [`scripts/temp_link.json`](../scripts/temp_link.json) by the
-  [`bot-ingest.yml`](../.github/workflows/bot-ingest.yml) workflow and
+  `bot-ingest.yml` workflow (since removed) and
   rendered into the catalog by the daily scraper.
 - You may request removal at any time by DMing the Maintainer
   ("remove me from whitelist"). Removal takes effect at the next bot start.

@@ -1,0 +1,70 @@
+# Lint + tests for the data pipeline, and schema validation of the catalog.
+# Pushes by GitHub Apps (browser extension, admin Worker) also trigger this,
+# so every externally written data change is validated.
+name: Python CI
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'data_game/**'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - '.python-version'
+      - '.github/workflows/python-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'data_game/**'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - '.python-version'
+      - '.github/workflows/python-ci.yml'
+
+permissions: {}
+
+concurrency:
+  group: python-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONUTF8: '1'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Ruff
+        run: |
+          ruff check scripts tests webapp/scripts
+          ruff format --check scripts tests
+
+      - name: Vulture (dead code)
+        run: vulture
+
+      - name: Pytest (no network)
+        run: pytest
+
+      - name: Validate catalog data
+        run: python scripts/validate.py

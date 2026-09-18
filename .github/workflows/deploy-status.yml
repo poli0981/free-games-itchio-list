@@ -1,0 +1,32 @@
+# Not a deploy workflow: Cloudflare Workers Builds deploys main on its own.
+# This only relays a FAILED Workers Build (reported back to GitHub as a check
+# run / commit status by the Cloudflare GitHub App) to Discord, so a broken
+# build — e.g. invalid catalog JSON — doesn't leave the site silently stale.
+# Also enable Cloudflare's own build-failure notification as a fallback.
+name: Cloudflare build status
+
+on:
+  check_run:
+    types: [completed]
+  status:
+
+permissions: {}
+
+jobs:
+  relay-failure:
+    if: >-
+      (github.event_name == 'check_run' &&
+        github.event.check_run.conclusion == 'failure' &&
+        (contains(github.event.check_run.app.slug, 'cloudflare') ||
+         contains(github.event.check_run.name, 'Workers Builds'))) ||
+      (github.event_name == 'status' &&
+        (github.event.state == 'failure' || github.event.state == 'error') &&
+        contains(github.event.context, 'Cloudflare'))
+    uses: ./.github/workflows/notify-failure.yml
+    with:
+      summary: >-
+        Cloudflare build failed for
+        ${{ github.event.check_run.head_sha || github.event.sha }}
+        (${{ github.event.check_run.name || github.event.context }})
+    secrets:
+      DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}

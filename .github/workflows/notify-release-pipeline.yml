@@ -1,17 +1,23 @@
 name: Notify Release Pipeline
 
+# The watched workflows only run on tags /
+# manual dispatch (trusted refs); this job reads run metadata, never artifacts or code.
 on:
-  workflow_run:
+  workflow_run: # zizmor: ignore[dangerous-triggers]
     workflows:
       - "Release desktop installers (Tauri)"
+      - "Release Android APK (Tauri)"
       - "Announce Release to Discord"
     types: [completed]
 
-permissions:
-  contents: read
-  actions: read
+permissions: {}
 
 jobs:
   notify:
-    uses: poli0981/.github/.github/workflows/notify-release-pipeline.yml@main
-    secrets: inherit
+    permissions:
+      contents: read
+      actions: read
+    # Pinned to a commit of poli0981/.github; only the needed secret is passed.
+    uses: poli0981/.github/.github/workflows/notify-release-pipeline.yml@c3e118a01d40e95b36b2c3466dc206638c11eb5a
+    secrets:
+      DISCORD_RELEASE_PIPELINE_WEBHOOK: ${{ secrets.DISCORD_RELEASE_PIPELINE_WEBHOOK }}
