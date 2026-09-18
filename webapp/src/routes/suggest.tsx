@@ -54,11 +54,14 @@ function SuggestForm() {
   const t = useT()
   const config = useQuery({
     queryKey: ['suggest-config'],
+    // The Worker always answers 200 when suggestions are deliberately off, so
+    // any other status is a failure to retry, not "closed".
     queryFn: async (): Promise<SuggestConfig> => {
       const res = await fetch('/api/suggest')
-      return res.ok ? ((await res.json()) as SuggestConfig) : { enabled: false, sitekey: null }
+      if (!res.ok) throw new Error(`suggest config: HTTP ${res.status}`)
+      return (await res.json()) as SuggestConfig
     },
-    staleTime: 5 * 60_000,
+    staleTime: 60_000,
   })
   const [url, setUrl] = useState('')
   const [note, setNote] = useState('')
@@ -130,10 +133,21 @@ function SuggestForm() {
       <h1 className="text-2xl font-semibold">{t('titles.suggest')}</h1>
       <p className="text-muted-foreground">{t('suggest.intro')}</p>
 
-      {config.data && !config.data.enabled ? (
+      {config.isPending ? (
+        <p className="text-sm text-muted-foreground">{t('common.loading')}</p>
+      ) : config.isError ? (
+        <div role="alert" className="space-y-2 rounded-md border p-3 text-sm">
+          <p className="text-destructive">{t('suggest.error.config')}</p>
+          <Button size="sm" variant="outline" onClick={() => void config.refetch()}>
+            {t('common.retry')}
+          </Button>
+        </div>
+      ) : !config.data.enabled ? (
         <p className="rounded-md border p-3 text-sm">{t('suggest.closed')}</p>
       ) : (
-        <form onSubmit={submit} className="space-y-4">
+        // noValidate: the page validates the link itself (a link without
+        // https:// is fine; the server adds it), the browser's type=url check doesn't agree.
+        <form noValidate onSubmit={submit} className="space-y-4">
           <div className="space-y-1.5">
             <Label htmlFor="suggest-url">{t('suggest.url')}</Label>
             <Input

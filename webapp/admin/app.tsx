@@ -1,7 +1,8 @@
+import { useSyncExternalStore } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { NavLink, Navigate, Route, Routes } from 'react-router'
 import { cn } from '@/lib/utils'
-import { SessionExpired, adminApi, errorText } from './api'
+import { SessionExpired, adminApi, errorText, isSessionExpired, subscribeSession } from './api'
 import { AddPage } from './add'
 import { CatalogPage } from './catalog'
 import { QueuePage } from './queue'
@@ -14,6 +15,7 @@ const NAV = [
 
 export function AdminApp() {
   const me = useQuery({ queryKey: ['me'], queryFn: adminApi.me })
+  const expired = useSyncExternalStore(subscribeSession, isSessionExpired)
 
   if (me.error) {
     return (
@@ -56,6 +58,19 @@ export function AdminApp() {
           </a>
         </div>
       </header>
+      {expired && (
+        <div role="alert" className="border-b border-destructive/40 bg-destructive/10 px-4 py-2 text-sm">
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-3">
+            <span>Your admin session has expired. Sign in again, then retry — nothing on this page is lost.</span>
+            <a className="font-medium underline" href="/admin/" target="_blank" rel="noopener">
+              Sign in (new tab)
+            </a>
+            <button className="underline" onClick={() => window.location.reload()}>
+              Reload this page
+            </button>
+          </div>
+        </div>
+      )}
       <main className="mx-auto max-w-6xl p-4">
         <Routes>
           <Route path="/queue" element={<QueuePage />} />

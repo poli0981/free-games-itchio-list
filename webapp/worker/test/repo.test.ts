@@ -114,7 +114,7 @@ describe('editCatalog', () => {
 })
 
 describe('queueForIngest', () => {
-  it('appends to temp_link.json and, when unblocking, prunes the deleted log', async () => {
+  it('appends to temp_link.json and, when unblocking, allow-lists the game (the log entry stays)', async () => {
     const commits = fakeGitHub({
       'scripts/temp_link.json': dumps(['https://dev.itch.io/queued']),
       'scripts/deleted_games.json': dumps([{ url: 'https://dev.itch.io/b', name: 'b', reason: 'r', deleted_at: 't' }]),
@@ -123,7 +123,8 @@ describe('queueForIngest', () => {
     expect(sha).toBe('new-sha')
     expect(added).toEqual(['https://dev.itch.io/b'])
     expect(JSON.parse(commits[0].additions['scripts/temp_link.json'])).toEqual(['https://dev.itch.io/queued', 'https://dev.itch.io/b'])
-    expect(JSON.parse(commits[0].additions['scripts/deleted_games.json'])).toEqual([])
+    expect(JSON.parse(commits[0].additions['scripts/state/unblocked.json'])).toEqual(['https://dev.itch.io/b'])
+    expect(commits[0].additions['scripts/deleted_games.json']).toBeUndefined()
   })
 
   it('makes no commit when everything is already queued', async () => {

@@ -118,7 +118,7 @@ export function buildIndex(
 /** Date-keyed upsert; a day whose total equals the last recorded one adds no row. */
 export function upsertCountHistory(history: CountPoint[], total: number, now: Date): CountPoint[] {
   const today = now.toISOString().slice(0, 10)
-  const rows = [...history].sort((a, b) => a.date.localeCompare(b.date))
+  const rows = history.map((r) => ({ ...r })).sort((a, b) => a.date.localeCompare(b.date))
   const existing = rows.find((r) => r.date === today)
   if (existing) {
     existing.total = total

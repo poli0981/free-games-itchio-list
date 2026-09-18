@@ -38,15 +38,45 @@ export function errorResponse(e: unknown): Response {
   return json({ error: 'internal_error' }, 500)
 }
 
-/** Parse a JSON request body of at most `maxBytes`. */
-export async function readJson(request: Request, maxBytes: number): Promise<unknown> {
-  if (!(request.headers.get('content-type') ?? '').includes('application/json')) {
-    throw new HttpError(415, 'unsupported_media_type', 'Send application/json')
+/**
+ * The request body, refusing more than `maxBytes` while it streams in: a body
+ * sent without Content-Length (chunked) is never buffered past the limit.
+ */
+export async function readBodyCapped(request: Request, maxBytes: number): Promise<Uint8Array> {
+  const declared = request.headers.get('content-length')
+  if (declared !== null && !(Number(declared) <= maxBytes)) throw new HttpError(413, 'payload_too_large')
+  if (!request.body) return new Uint8Array()
+  const reader = request.body.getReader()
+  const chunks: Uint8Array[] = []
+  let total = 0
+  for (;;) {
+    const { done, value } = await reader.read()
+    if (done) break
+    total += value.byteLength
+    if (total > maxBytes) {
+      reader.cancel().catch(() => {})
+      throw new HttpError(413, 'payload_too_large')
+    }
+    chunks.push(value)
   }
-  const declared = Number(request.headers.get('content-length') ?? '0')
-  if (declared > maxBytes) throw new HttpError(413, 'payload_too_large')
-  const bytes = new Uint8Array(await request.arrayBuffer())
-  if (bytes.byteLength > maxBytes) throw new HttpError(413, 'payload_too_large')
+  const out = new Uint8Array(total)
+  let offset = 0
+  for (const chunk of chunks) {
+    out.set(chunk, offset)
+    offset += chunk.byteLength
+  }
+  return out
+}
+
+/**
+ * Parse a JSON request body of at most `maxBytes`. The media type must be
+ * exactly application/json: anything else (e.g. `text/plain; application/json`,
+ * which browsers send cross-site without a preflight) is refused.
+ */
+export async function readJson(request: Request, maxBytes: number): Promise<unknown> {
+  const type = (request.headers.get('content-type') ?? '').split(';')[0].trim().toLowerCase()
+  if (type !== 'application/json') throw new HttpError(415, 'unsupported_media_type', 'Send application/json')
+  const bytes = await readBodyCapped(request, maxBytes)
   try {
     return JSON.parse(new TextDecoder().decode(bytes))
   } catch {

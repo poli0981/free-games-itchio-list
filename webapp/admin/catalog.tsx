@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useMutation } from '@tanstack/react-query'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useAllGames, useDeletedGames } from '@/hooks/useGames'
@@ -21,6 +21,9 @@ export function CatalogPage() {
   const [query, setQuery] = useState('')
   const [selected, setSelected] = useState<Game | null>(null)
   const [tab, setTab] = useState<'catalog' | 'removed'>('catalog')
+  // Values saved in this session, per game: the published /data lags behind
+  // the repository until the next build, so it can't be the baseline.
+  const [saved] = useState(() => new Map<string, EditableValues>())
 
   const found = useMemo(
     () => (games.data?.games ?? []).filter((g) => matches(query, g.name, g.url, g.dev)).slice(0, MAX_RESULTS),
@@ -77,30 +80,56 @@ export function CatalogPage() {
           <RemovedList entries={removed} />
         )}
       </div>
-      <div>{selected && tab === 'catalog' && <GameEditor key={selected.url} game={selected} />}</div>
+      <div>
+        {selected && tab === 'catalog' && (
+          <GameEditor
+            key={selected.url}
+            game={selected}
+            known={saved.get(selected.url) ?? published(selected)}
+            onSaved={(values) => saved.set(selected.url, values)}
+          />
+        )}
+      </div>
     </section>
   )
 }
 
-function GameEditor({ game }: { game: Game }) {
-  const [edit, setEdit] = useState<Required<GameEdit>>({
-    safe_virus: game.safe_virus,
-    nsfw: game.nsfw,
-    notes: game.notes ?? '',
-  })
+type EditableValues = Required<GameEdit>
+const EDITABLE = ['safe_virus', 'nsfw', 'notes'] as const
+
+function published(game: Game): EditableValues {
+  return { safe_virus: game.safe_virus, nsfw: game.nsfw, notes: game.notes ?? '' }
+}
+
+/**
+ * `known` is what the repository holds as far as this page knows: the
+ * published data, or what was saved in this session. Changes are computed
+ * against it, so a saved edit can be reverted and never silently dropped.
+ */
+function GameEditor({ game, known, onSaved }: { game: Game; known: EditableValues; onSaved: (v: EditableValues) => void }) {
+  const [baseline, setBaseline] = useState<EditableValues>(known)
+  const [edit, setEdit] = useState<EditableValues>(known)
   const [reason, setReason] = useState('')
   const [notice, setNotice] = useState<{ text: string; tone: 'info' | 'error' } | null>(null)
 
-  const changed = (Object.keys(edit) as (keyof GameEdit)[]).filter((k) => edit[k] !== (game[k] ?? ''))
+  const changed = EDITABLE.filter((k) => edit[k] !== baseline[k])
   const save = useMutation({
-    mutationFn: () => adminApi.edit(game.url, Object.fromEntries(changed.map((k) => [k, edit[k]]))),
-    onSuccess: (r) =>
+    mutationFn: (sent: GameEdit) => adminApi.edit(game.url, sent),
+    onSuccess: (r, sent) => {
+      const next = { ...baseline, ...sent }
+      setBaseline(next)
+      onSaved(next)
       setNotice({
         tone: 'info',
         text: r.edited ? `Saved (${shortSha(r.sha)}). ${PUBLISH_NOTE}` : 'Nothing changed in the repository.',
-      }),
+      })
+    },
     onError: (e) => setNotice({ tone: 'error', text: errorText(e) }),
   })
+  const change = (next: EditableValues) => {
+    setEdit(next)
+    if (notice?.tone === 'info') setNotice(null)
+  }
   const remove = useMutation({
     mutationFn: () => adminApi.remove(game.url, reason.trim()),
     onSuccess: (r) => setNotice({ tone: 'info', text: `Removed (${shortSha(r.sha)}); its resized covers were deleted. ${PUBLISH_NOTE}` }),
@@ -120,7 +149,7 @@ function GameEditor({ game }: { game: Game }) {
           <span className="text-xs text-muted-foreground">Virus check</span>
           <select
             value={edit.safe_virus}
-            onChange={(e) => setEdit({ ...edit, safe_virus: e.target.value })}
+            onChange={(e) => change({ ...edit, safe_virus: e.target.value })}
             className="h-9 rounded-md border bg-background px-2"
           >
             {['?', 'Yes', 'No', 'Caution'].map((v) => (
@@ -134,7 +163,7 @@ function GameEditor({ game }: { game: Game }) {
           <span className="text-xs text-muted-foreground">NSFW (18+)</span>
           <select
             value={edit.nsfw}
-            onChange={(e) => setEdit({ ...edit, nsfw: e.target.value })}
+            onChange={(e) => change({ ...edit, nsfw: e.target.value })}
             className="h-9 rounded-md border bg-background px-2"
           >
             <option value="No">No</option>
@@ -148,11 +177,15 @@ function GameEditor({ game }: { game: Game }) {
           value={edit.notes}
           maxLength={2000}
           rows={3}
-          onChange={(e) => setEdit({ ...edit, notes: e.target.value })}
+          onChange={(e) => change({ ...edit, notes: e.target.value })}
           className="rounded-md border bg-background p-2"
         />
       </label>
-      <Button className="mt-3" disabled={!changed.length || save.isPending} onClick={() => save.mutate()}>
+      <Button
+        className="mt-3"
+        disabled={!changed.length || save.isPending}
+        onClick={() => save.mutate(Object.fromEntries(changed.map((k) => [k, edit[k]])))}
+      >
         {save.isPending ? 'Saving…' : 'Save'}
       </Button>
 
@@ -180,13 +213,16 @@ function GameEditor({ game }: { game: Game }) {
 
 function RemovedList({ entries }: { entries: { url: string; name: string; reason: string; deleted_at: string }[] }) {
   const [notice, setNotice] = useState<{ text: string; tone: 'info' | 'error' } | null>(null)
+  const client = useQueryClient()
   const restore = useMutation({
     mutationFn: (url: string) => adminApi.restore(url),
-    onSuccess: (r) =>
+    onSuccess: (r) => {
       setNotice({
         tone: 'info',
         text: r.queued ? `Queued for re-ingest (${shortSha(r.sha)}). ${PUBLISH_NOTE}` : 'Already queued.',
-      }),
+      })
+      void client.invalidateQueries({ queryKey: ['queue'] })
+    },
     onError: (e) => setNotice({ tone: 'error', text: errorText(e) }),
   })
   return (
@@ -206,7 +242,7 @@ function RemovedList({ entries }: { entries: { url: string; name: string; reason
               variant="outline"
               disabled={restore.isPending}
               onClick={() => {
-                if (window.confirm(`Bring "${d.name}" back? It is re-scraped; a paid game is dropped again.`)) {
+                if (window.confirm(`Bring "${d.name}" back? It is re-scraped; if it is still paid or gone, it stays on the removed list.`)) {
                   restore.mutate(d.url)
                 }
               }}

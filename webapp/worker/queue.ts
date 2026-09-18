@@ -46,7 +46,12 @@ export function classify(inputs: string[], ctx: ClassifyContext): Classified[] {
     if (ctx.catalog.has(canonical)) return { input, canonical, outcome: 'duplicate_catalog', store: false }
     const status = ctx.known.get(canonical)
     if (status === 'rejected') return { input, canonical, outcome: 'rejected', store: false }
-    if (status && status !== 'failed') return { input, canonical, outcome: 'duplicate_pending', store: false }
+    // 'ingested' rows whose game has since been removed (it is in the deleted
+    // log) are reviewed again, flagged, like any previously deleted game.
+    const cameBack = status === 'ingested' && ctx.deleted.has(canonical)
+    if (status && status !== 'failed' && !cameBack) {
+      return { input, canonical, outcome: 'duplicate_pending', store: false }
+    }
     const deleted = ctx.deleted.get(canonical)
     if (deleted) {
       return {
@@ -141,7 +146,7 @@ export class QueueStore {
     return out
   }
 
-  /** Insert new candidates; an existing `failed` row is reopened as pending. */
+  /** Insert new candidates; an existing `failed` or `ingested` row is reopened as pending. */
   async insert(items: NewCandidate[], now = new Date()): Promise<void> {
     if (items.length === 0) return
     const stmt = this.db.prepare(
@@ -152,7 +157,7 @@ export class QueueStore {
          image_url = coalesce(excluded.image_url, candidates.image_url),
          flags = excluded.flags, note = excluded.note, submitter = excluded.submitter,
          discovered_at = excluded.discovered_at, decided_at = NULL, decided_by = NULL
-       WHERE candidates.status = 'failed'`,
+       WHERE candidates.status IN ('failed', 'ingested')`,
     )
     await this.db.batch(
       items.map((c) =>

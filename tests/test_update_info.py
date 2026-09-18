@@ -201,3 +201,47 @@ def test_throttled_page_is_not_an_attempt(repo, monkeypatch):
         patch = _run(monkeypatch, {url: Page(status=429)}, [], INPUT_URL=url)
         assert url not in patch["ingest_state"] and url not in patch["queue_remove"]
         assert patch["queue_add"] == [url]
+
+
+def _deleted(slug):
+    return {
+        "url": f"https://dev.itch.io/{slug}",
+        "name": slug,
+        "reason": "Game became paid",
+        "deleted_at": "2026-03-13T00:00:00Z",
+    }
+
+
+def test_unblocked_game_that_is_free_again_leaves_the_deleted_log(repo, monkeypatch):
+    seed_catalog([make_game("known")])
+    url = "https://dev.itch.io/free"
+    save_json("scripts/deleted_games.json", [_deleted("free"), _deleted("other")])
+    save_json("scripts/state/unblocked.json", [url])
+    pages = {url: Page(status=200, soup=load_fixture_soup("game_free_full.html"))}
+    patch = _run(monkeypatch, pages, [url])
+    assert [a["url"] for a in patch["additions"]] == [url] and patch["unlog"] == [url]
+    _apply(patch)
+    assert [e["url"] for e in read_json("scripts/deleted_games.json")] == [
+        "https://dev.itch.io/other"
+    ]
+    assert read_json("scripts/state/unblocked.json") == []
+
+
+def test_unblocked_game_that_is_still_paid_keeps_its_removal_record(repo, monkeypatch):
+    seed_catalog([make_game("known")])
+    url = "https://dev.itch.io/paid"
+    save_json("scripts/deleted_games.json", [_deleted("paid")])
+    save_json("scripts/state/unblocked.json", [url])
+    pages = {url: Page(status=200, soup=load_fixture_soup("game_paid.html"))}
+    patch = _run(monkeypatch, pages, [url])
+    assert patch["additions"] == [] and patch["unblock_remove"] == [url]
+    _apply(patch)
+    assert [e["url"] for e in read_json("scripts/deleted_games.json")] == [url]
+    assert read_json("scripts/state/unblocked.json") == []
+
+
+def test_deleted_game_without_unblock_is_still_skipped(repo, monkeypatch):
+    seed_catalog([make_game("known")])
+    save_json("scripts/deleted_games.json", [_deleted("paid")])
+    patch = _run(monkeypatch, {}, ["https://dev.itch.io/paid"])
+    assert patch["stats"]["deleted"] == 1 and patch["unlog"] == []

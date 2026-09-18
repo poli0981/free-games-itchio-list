@@ -16,7 +16,7 @@ import { AccessError, requireService, type AccessEnv } from './access'
 import { canonicalize } from './canonical'
 import { catalogUrls, deletedGames, type DataSource } from './data'
 import { ACCESS_CONFIG, missingConfig, type WorkerEnv } from './env'
-import { HttpError, errorResponse, isObject, json, sha256Hex } from './http'
+import { HttpError, errorResponse, isObject, json, readBodyCapped, sha256Hex } from './http'
 import { autoFlags, classify, type QueueStore } from './queue'
 
 const MAX_BYTES = 64 * 1024
@@ -80,9 +80,7 @@ export async function handleIngest(request: Request, deps: IngestDeps): Promise<
     const key = request.headers.get('idempotency-key') ?? ''
     if (!KEY.test(key)) throw new HttpError(400, 'idempotency_key_required')
 
-    if (Number(request.headers.get('content-length') ?? '0') > MAX_BYTES) throw new HttpError(413, 'payload_too_large')
-    const raw = await request.text()
-    if (new TextEncoder().encode(raw).byteLength > MAX_BYTES) throw new HttpError(413, 'payload_too_large')
+    const raw = new TextDecoder().decode(await readBodyCapped(request, MAX_BYTES))
     const bodyHash = await sha256Hex(raw)
 
     const previous = await deps.store.idempotent(client, key)

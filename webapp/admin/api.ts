@@ -11,7 +11,7 @@ export class SessionExpired extends Error {
   }
 }
 
-export class ApiError extends Error {
+class ApiError extends Error {
   readonly status: number
   readonly code: string
 
@@ -20,6 +20,25 @@ export class ApiError extends Error {
     this.status = status
     this.code = code
   }
+}
+
+// Set once any request finds the Access session gone; the app shows a sign-in banner.
+let expired = false
+const listeners = new Set<() => void>()
+
+export function markSessionExpired(): void {
+  if (expired) return
+  expired = true
+  for (const listener of listeners) listener()
+}
+
+export function subscribeSession(listener: () => void): () => void {
+  listeners.add(listener)
+  return () => listeners.delete(listener)
+}
+
+export function isSessionExpired(): boolean {
+  return expired
 }
 
 async function api<T>(method: string, path: string, body?: unknown): Promise<T> {

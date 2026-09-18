@@ -290,4 +290,5 @@ export const vi: Record<MessageKey, string> = {
   "settings.content.title": "Nội dung",
   "settings.content.nsfw": "Hiện game 18+",
   "settings.content.nsfwDesc": "Mặc định tắt. Khi bật, bạn sẽ được yêu cầu xác nhận đủ 18 tuổi; lựa chọn chỉ lưu trong trình duyệt này.",
+  "suggest.error.config": "Không kết nối được tới trang để tải biểu mẫu. Hãy kiểm tra kết nối hoặc trình chặn nội dung rồi thử lại.",
 }

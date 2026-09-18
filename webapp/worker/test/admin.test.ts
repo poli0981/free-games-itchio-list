@@ -3,7 +3,7 @@ import { adminApi, type AdminContext, type RepoOps } from '../admin'
 import { resetDataCache } from '../data'
 import { r2Key } from '../img'
 import { QueueStore } from '../queue'
-import { withoutDeleted, withQueued } from '../repo'
+import { withQueued, withUnblocked } from '../repo'
 import { testDb } from './d1'
 import { fakeData, ORIGIN } from './fakes'
 
@@ -183,13 +183,10 @@ describe('repo builders', () => {
     expect(withQueued(null, ['https://dev.itch.io/x']).text).toBe('[\n    "https://dev.itch.io/x"\n]')
   })
 
-  it('drops unblocked URLs from the deleted log', () => {
-    const log = JSON.stringify([
-      { url: 'https://dev.itch.io/a', name: 'A', reason: 'r', deleted_at: 't' },
-      { url: 'https://dev.itch.io/b', name: 'B', reason: 'r', deleted_at: 't' },
-    ])
-    const { text, removed } = withoutDeleted(log, new Set(['https://dev.itch.io/a']))
-    expect(removed).toBe(1)
-    expect(JSON.parse(text).map((e: { url: string }) => e.url)).toEqual(['https://dev.itch.io/b'])
+  it('adds unblocked URLs to the sorted allow-list once', () => {
+    const { text, added } = withUnblocked('["https://dev.itch.io/b"]', ['https://dev.itch.io/a', 'https://dev.itch.io/b'])
+    expect(added).toBe(1)
+    expect(JSON.parse(text)).toEqual(['https://dev.itch.io/a', 'https://dev.itch.io/b'])
+    expect(withUnblocked(null, ['https://dev.itch.io/x']).text).toBe('[\n    "https://dev.itch.io/x"\n]')
   })
 })

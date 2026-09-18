@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { HashRouter } from 'react-router'
 import '@/index.css'
 import { AdminApp } from './app'
-import { SessionExpired } from './api'
+import { SessionExpired, markSessionExpired } from './api'
 
 // Follow the system theme (the admin has no settings of its own).
 const dark = window.matchMedia('(prefers-color-scheme: dark)')
@@ -12,7 +12,13 @@ const applyTheme = () => document.documentElement.classList.toggle('dark', dark.
 applyTheme()
 dark.addEventListener('change', applyTheme)
 
+const onError = (error: unknown) => {
+  if (error instanceof SessionExpired) markSessionExpired()
+}
+
 const queryClient = new QueryClient({
+  queryCache: new QueryCache({ onError }),
+  mutationCache: new MutationCache({ onError }),
   defaultOptions: {
     queries: {
       staleTime: 30_000,

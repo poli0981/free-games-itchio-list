@@ -20,6 +20,7 @@ import { commitWithRetry, listDir, readFile, type CommitInput, type GitHubEnv } 
 
 const TEMP_LINK = 'scripts/temp_link.json'
 const DELETED_LOG = 'scripts/deleted_games.json'
+const UNBLOCKED = 'scripts/state/unblocked.json'
 const CHUNK_FILE = /^game_info_\d+\.json$/
 
 type Change = Omit<CommitInput, 'expectedHeadOid'>
@@ -58,17 +59,23 @@ export function withQueued(queueText: string | null, urls: string[]): { text: st
   return { text: dumps([...queue, ...added]), added }
 }
 
-/** deleted_games.json without `urls` (a game the maintainer allows back in). */
-export function withoutDeleted(deletedText: string | null, urls: Set<string>): { text: string; removed: number } {
-  const log = deletedText === null ? [] : (JSON.parse(deletedText) as DeletedEntry[])
-  const kept = log.filter((e) => !urls.has(e.url))
-  return { text: dumps(kept), removed: log.length - kept.length }
+/**
+ * scripts/state/unblocked.json with `urls` added: removed games the maintainer
+ * allows back in. update_info.py scrapes them despite the deleted log and drops
+ * the log entry only when the game is really re-added (a still-paid or dead
+ * game keeps its public removal record).
+ */
+export function withUnblocked(currentText: string | null, urls: string[]): { text: string; added: number } {
+  const parsed: unknown = currentText === null ? [] : JSON.parse(currentText)
+  const current = Array.isArray(parsed) ? parsed.filter((u): u is string => typeof u === 'string') : []
+  const next = [...new Set([...current, ...urls])].sort()
+  return { text: dumps(next), added: next.length - current.length }
 }
 
 /**
  * Queue `urls` for the ingest workflow (the push to temp_link.json triggers
- * update.yml). With `unblock`, also drop those URLs from the deleted log,
- * which update_info.py otherwise refuses to re-add.
+ * update.yml). With `unblock`, also let those previously removed games
+ * through the ingest (see withUnblocked).
  */
 export async function queueForIngest(
   env: GitHubEnv,
@@ -82,8 +89,8 @@ export async function queueForIngest(
     added = queued.added
     if (queued.added.length > 0) writes.set(TEMP_LINK, queued.text)
     if (unblock.length > 0) {
-      const log = withoutDeleted(await readFile(env, DELETED_LOG, head), new Set(unblock))
-      if (log.removed > 0) writes.set(DELETED_LOG, log.text)
+      const allowed = withUnblocked(await readFile(env, UNBLOCKED, head), unblock)
+      if (allowed.added > 0) writes.set(UNBLOCKED, allowed.text)
     }
     if (writes.size === 0) return null
     return {

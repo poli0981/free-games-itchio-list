@@ -76,7 +76,15 @@ const LOCAL_HOSTS = new Set(['localhost', '127.0.0.1', '[::1]'])
 async function maintainer(request: Request, env: WorkerEnv): Promise<string> {
   // `wrangler dev` only: Access does not run on localhost. Set DEV_ADMIN_EMAIL
   // in .dev.vars; it is ignored for every other host.
-  if (env.DEV_ADMIN_EMAIL && LOCAL_HOSTS.has(new URL(request.url).hostname)) return env.DEV_ADMIN_EMAIL
+  const url = new URL(request.url)
+  if (env.DEV_ADMIN_EMAIL && LOCAL_HOSTS.has(url.hostname)) {
+    // Same cross-site-request guard as requireMaintainer: another site open in
+    // the browser must not be able to drive a local admin.
+    if (!['GET', 'HEAD', 'OPTIONS'].includes(request.method) && request.headers.get('origin') !== url.origin) {
+      throw new HttpError(403, 'forbidden')
+    }
+    return env.DEV_ADMIN_EMAIL
+  }
   const missing = missingConfig(env, [...ACCESS_CONFIG, 'ACCESS_AUD_ADMIN', 'ADMIN_EMAILS'])
   if (missing.length > 0) {
     console.error(`admin: not configured (${missing.join(', ')})`)

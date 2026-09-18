@@ -288,6 +288,7 @@ export const en = {
   "settings.content.title": "Content",
   "settings.content.nsfw": "Show 18+ games",
   "settings.content.nsfwDesc": "Off by default. Turning it on asks you to confirm you are 18 or older; the choice stays in this browser.",
+  "suggest.error.config": "Couldn't reach the site to load the form. Check your connection or content blocker, then try again.",
 } as const
 
 export type MessageKey = keyof typeof en
