@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented here.
 
-## [4.0.0] - Unreleased (freeitchgames.win on Cloudflare: read-only site, review queue, new pipeline)
+## [4.0.0] - 2026-09-18 (freeitchgames.win on Cloudflare: read-only site, review queue, new design)
 
 Version 4 moves the website to **https://freeitchgames.win** on Cloudflare, makes it read-only for
 everyone (no sign-in), adds a maintainer-only admin with a review queue for new games, replaces the
