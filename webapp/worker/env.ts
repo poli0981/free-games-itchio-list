@@ -6,7 +6,7 @@
  * runtime: a route whose configuration is incomplete answers 503.
  */
 interface Secrets {
-  GH_APP_PRIVATE_KEY?: string // PKCS#8 PEM of the GitHub App
+  GH_APP_PRIVATE_KEY?: string // GitHub App PEM (PKCS#1 as downloaded, or PKCS#8)
   ADMIN_EMAILS?: string // comma-separated maintainer emails
   TURNSTILE_SECRET?: string
   /** Local `wrangler dev` only (admin without Access); ignored off localhost. */

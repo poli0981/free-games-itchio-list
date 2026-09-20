@@ -1,4 +1,5 @@
-import { exportPKCS8, generateKeyPair, jwtVerify } from 'jose'
+import { createPrivateKey, generateKeyPairSync } from 'node:crypto'
+import { SignJWT, exportPKCS8, generateKeyPair, importPKCS8, importSPKI, jwtVerify } from 'jose'
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   ConflictError,
@@ -6,6 +7,7 @@ import {
   commitWithRetry,
   readFile,
   resetTokenCache,
+  toPkcs8,
   utf8ToBase64,
   type GitHubEnv,
 } from './github'
@@ -125,5 +127,34 @@ describe('commit', () => {
       commitWithRetry(env, async () => ({ headline: 'x', writes: new Map([['a', 'b']]) }), 2),
     ).rejects.toBeInstanceOf(ConflictError)
     expect(await commitWithRetry(env, async () => null)).toBeNull()
+  })
+})
+
+describe('toPkcs8', () => {
+  // GitHub downloads App keys as PKCS#1; WebCrypto only imports PKCS#8.
+  it('wraps PKCS#1, unescapes one-line keys and leaves PKCS#8 alone', () => {
+    const { privateKey } = generateKeyPairSync('rsa', {
+      modulusLength: 2048,
+      privateKeyEncoding: { type: 'pkcs1', format: 'pem' },
+      publicKeyEncoding: { type: 'spki', format: 'pem' },
+    })
+    const pkcs8 = createPrivateKey(privateKey).export({ type: 'pkcs8', format: 'pem' }).toString().trim()
+    const bare = (pem: string) => pem.replace(/\s+/g, '')
+    expect(bare(toPkcs8(privateKey))).toBe(bare(pkcs8))
+    const oneLine = privateKey.split('\n').join(String.raw`\n`)
+    expect(bare(toPkcs8(oneLine))).toBe(bare(pkcs8))
+    expect(toPkcs8(pkcs8)).toBe(pkcs8)
+  })
+
+  it('produces a key jose can sign an App JWT with', async () => {
+    const { privateKey, publicKey } = generateKeyPairSync('rsa', {
+      modulusLength: 2048,
+      privateKeyEncoding: { type: 'pkcs1', format: 'pem' },
+      publicKeyEncoding: { type: 'spki', format: 'pem' },
+    })
+    const key = await importPKCS8(toPkcs8(privateKey), 'RS256')
+    const jwt = await new SignJWT({}).setProtectedHeader({ alg: 'RS256' }).setIssuer('app-id').sign(key)
+    const verified = await jwtVerify(jwt, await importSPKI(publicKey, 'RS256'))
+    expect(verified.payload.iss).toBe('app-id')
   })
 })

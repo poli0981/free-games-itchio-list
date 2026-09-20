@@ -60,8 +60,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
    Worker's plain-text variables with the file's values. Secrets are not affected.
 9. **Secrets** (`cd webapp`; add `--env staging` for staging):
    ```sh
-   openssl pkcs8 -topk8 -nocrypt -in app.private-key.pem -out app.pk8.pem   # GitHub App key → PKCS#8
-   npx wrangler secret put GH_APP_PRIVATE_KEY < app.pk8.pem
+   # The Worker converts GitHub's PKCS#1 key itself, so the downloaded .pem works as is:
+   npx wrangler secret put GH_APP_PRIVATE_KEY < app.private-key.pem
    npx wrangler secret put ADMIN_EMAILS        # comma-separated
    npx wrangler secret put TURNSTILE_SECRET
    ```

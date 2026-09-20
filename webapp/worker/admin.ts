@@ -21,6 +21,7 @@ import { canonicalize } from './canonical'
 import { validateEdit, type FieldEdit } from './catalog'
 import { catalogUrls, deletedGames, type DataSource } from './data'
 import { ACCESS_CONFIG, GITHUB_CONFIG, missingConfig, type WorkerEnv } from './env'
+import { GitHubError } from './github'
 import type { GitHubEnv } from './github'
 import { HttpError, SECURITY_HEADERS, errorResponse, isObject, json, readJson } from './http'
 import { r2Key } from './img'
@@ -35,10 +36,12 @@ const THUMB_WIDTHS = [160, 640]
 // itch.io (candidates are not in the catalog yet, so /img won't serve them).
 export const ADMIN_CSP = [
   "default-src 'self'",
-  "script-src 'self'",
+  // The zone's Web Analytics setting injects the beacon into every HTML
+  // response, this page included; without these it only logs a CSP error.
+  "script-src 'self' https://static.cloudflareinsights.com",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https://img.itch.zone",
-  "connect-src 'self'",
+  "connect-src 'self' https://cloudflareinsights.com",
   "font-src 'self'",
   "object-src 'none'",
   "base-uri 'self'",
@@ -307,6 +310,9 @@ export async function handleAdminApi(
       now: new Date(),
     })
   } catch (e) {
+    // GitHub refused the write (bad App key, missing permission, API down):
+    // say so in the admin instead of a bare "internal error".
+    if (e instanceof GitHubError) return errorResponse(new HttpError(502, 'github_error', e.message))
     return errorResponse(e)
   }
 }
