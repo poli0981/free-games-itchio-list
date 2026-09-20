@@ -9537,5 +9537,104 @@
         "notes": "",
         "updated_at": "06 September 2026 @ 16:25 UTC",
         "added_at": "2026-09-20T08:49:04Z"
+    },
+    {
+        "url": "https://banapple1.itch.io/stray-cookie",
+        "name": "Stray Cookie",
+        "dev": "banapple.1",
+        "description": "Find who did it.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 08:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTE2MjUwLnBuZw==/original/wDGQ0E.png",
+        "tags": [
+            "8-Bit",
+            "Pixel Art",
+            "Point & Click",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-20T14:25:32Z"
+    },
+    {
+        "url": "https://cosmonomicon.itch.io/wwi-surgeon-simulator",
+        "name": "WWI Surgeon Simulator",
+        "dev": "cosmonomicon",
+        "description": "War consumed the world.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 09:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMDkyNTQ1LnBuZw==/original/IvbBJI.png",
+        "tags": [
+            "Horror",
+            "Life Simulation",
+            "War"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-20T14:25:36Z"
+    },
+    {
+        "url": "https://rose-likeoficial.itch.io/roses-adventures-ninah-no-im-not-a-humanoid",
+        "name": "Rose's adventures: NINAH / No, i'm not a humanoid",
+        "dev": "rose_likeoficial",
+        "description": "No music for atmosphere (I just forgot) Parody and fangame referencing no im not a human (NINAH) but in my AU :DD There's some endings to find out, be sure to trust right people..",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 08:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTE2NDU5LnBuZw==/original/CIIgWp.png",
+        "tags": [
+            "2D",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "ninah",
+            "No AI",
+            "Ren'Py",
+            "rosesadventures",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-20T14:25:40Z"
     }
 ]
