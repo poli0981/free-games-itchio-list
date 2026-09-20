@@ -316,5 +316,59 @@
         "name": "Oblique Shot",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-06-27T09:17:41Z"
+    },
+    {
+        "url": "https://douzi0026.itch.io/2",
+        "name": "Rule of Tactics",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-20T07:55:41Z"
+    },
+    {
+        "url": "https://reichiv.itch.io/clown",
+        "name": "Clown",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-20T07:55:46Z"
+    },
+    {
+        "url": "https://concreteparasite.itch.io/binarystarhero",
+        "name": "Binary Star Hero",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-20T07:55:49Z"
+    },
+    {
+        "url": "https://zabubek-ugabuga.itch.io/pursued",
+        "name": "Pursued",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-20T07:55:52Z"
+    },
+    {
+        "url": "https://ayamestudios.itch.io/ayame-hidden-love",
+        "name": "ayame hidden love",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-20T07:55:55Z"
+    },
+    {
+        "url": "https://not-jj638.itch.io/project-neon",
+        "name": "Project neon",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-20T07:55:59Z"
+    },
+    {
+        "url": "https://linglongarchiver.itch.io/scary-baboon-first-version-no-servers",
+        "name": "Scary Baboon First Version (NO SERVERS)",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-20T07:56:02Z"
+    },
+    {
+        "url": "https://null-pointer-studio.itch.io/the-reset",
+        "name": "The Reset",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-20T07:56:05Z"
+    },
+    {
+        "url": "https://duckmemeticsgames.itch.io/mind-the-gap",
+        "name": "Mind the Gap — Don’t Miss Your Chance",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-20T07:56:09Z"
     }
 ]
