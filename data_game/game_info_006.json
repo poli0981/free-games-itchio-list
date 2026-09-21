@@ -9737,5 +9737,293 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-09-21T03:45:46Z"
+    },
+    {
+        "url": "https://allien-m.itch.io/sector-zero",
+        "name": "Сектор Нуль",
+        "dev": "Allien M",
+        "description": "«Сектор Нуль»... Здається межа між порятунком і небезпекою стирається з кожним новим кроком. Що відбувається, коли звичний світ раптово розсипається на уламки, а замість нього лишається лише...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 20:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTMyNjE2LmpwZw==/original/OtTHJz.jpg",
+        "tags": [
+            "Dark Fantasy",
+            "Fantasy",
+            "Horror",
+            "Mystery",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:38Z"
+    },
+    {
+        "url": "https://asdfgi.itch.io/mile-14",
+        "name": "Mile-14",
+        "dev": "asdfgi",
+        "description": "This is a ~10 minute first-person horror story. [Spoilers] and Content Warning It contains: • Car crash • Death • A deliberate murder-suicide.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 22:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTM5Mzk3LnBuZw==/original/afk03M.png",
+        "tags": [
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:42Z"
+    },
+    {
+        "url": "https://elinzeiart-z.itch.io/salvation-of-the-righteous",
+        "name": "Salvation of the Righteous",
+        "dev": "Elinz",
+        "description": "Yume, an orphan who went through a catastrophic fire accident, attempts to change the outcome by reliving the day before it happened.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 19:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTMxNDczLnBuZw==/original/YzOsWw.png",
+        "tags": [
+            "Horror",
+            "Pixel Art",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:45Z"
+    },
+    {
+        "url": "https://gordlet.itch.io/dont-yield-to-love",
+        "name": "Don't Yield to Love!",
+        "dev": "gordlet",
+        "description": "It's your first day at Traffic School!",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 15:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTIzMTY5LnBuZw==/original/vcNFNb.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:48Z"
+    },
+    {
+        "url": "https://n8ptune.itch.io/playlet-derailed",
+        "name": "Miss Jean and the Playlet Derailed",
+        "dev": "N8ptune",
+        "description": "N/A",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 15:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2OTcxNjk1LnBuZw==/original/uYVIiN.png",
+        "tags": [
+            "Detective",
+            "Female Protagonist",
+            "Godot",
+            "Mystery",
+            "No AI",
+            "Point & Click",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Blender",
+            "Godot",
+            "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:52Z"
+    },
+    {
+        "url": "https://nathannofunny.itch.io/areyousureisthisvisualnovel",
+        "name": "Are you sure this is a visual novel!? - มั่นใจว่านี่คือวิชวลโนเวล!?",
+        "dev": "NathanNoFUNNY",
+        "description": "ในวันหยุดสุดสัปดาห์นาธานกับเคลลี่ได้ขับรถขึ้นเหนือไปรัฐวอชินตันเพื่อที่จะไปเดตกันที่สวนสนุกที่ Corny ที่สุดในประเทศ...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 16:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTE3MTc3LnBuZw==/original/J86sJR.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Funny",
+            "Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:54Z"
+    },
+    {
+        "url": "https://ni-ko-mi.itch.io/my-dear-angel",
+        "name": "My Dear Angel",
+        "dev": "ni_ko_mi",
+        "description": "\"Моїм домом був небосхил. Моїм обов'язком було виконувати накази батька. Моїм бажанням було втекти куди подалі. Але я впала на Землю прямо в його руки.\" Після падіння з небес, Енджел опиняється...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 18:35 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTI2NDAwLnBuZw==/original/WxPBkC.png",
+        "tags": [
+            "Amare",
+            "Dark Fantasy",
+            "Meaningful Choices",
+            "No AI",
+            "Psychological Horror",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:30:58Z"
+    },
+    {
+        "url": "https://sicki-games.itch.io/a-long-night",
+        "name": "A Long Night",
+        "dev": "Sicki Games",
+        "description": "Go on a lovely and lifesaving date with the person of your dreams...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 22:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTM4NDM3LnBuZw==/original/LbCfKF.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Fantasy",
+            "Pixel Art",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:31:01Z"
+    },
+    {
+        "url": "https://thebuncult.itch.io/ipsopacto",
+        "name": "IpsoPacto",
+        "dev": "The Bun Cult",
+        "description": "Adventure in the depths of Cyclossia to fulfill your goddess's whim!",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 13:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMDgzMjEzLmdpZg==/original/tyGdWw.gif",
+        "tags": [
+            "Dungeon Crawler",
+            "First-Person",
+            "Godot",
+            "No AI",
+            "Procedural Generation",
+            "Roguelike",
+            "Roguelite",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-21T05:31:05Z"
     }
 ]
