@@ -370,5 +370,47 @@
         "name": "Mind the Gap — Don’t Miss Your Chance",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-09-20T07:56:09Z"
+    },
+    {
+        "url": "https://scribbles-2004.itch.io/luis-quest",
+        "name": "Luis's Quest",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-21T08:12:43Z"
+    },
+    {
+        "url": "https://3xiled4ever.itch.io/beneath-europa",
+        "name": "Beneath Europa",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-21T08:12:46Z"
+    },
+    {
+        "url": "https://duck-in-the-dark.itch.io/box-is-my-best-friend",
+        "name": "BOX IS MY BEST FRIEND",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-21T08:12:50Z"
+    },
+    {
+        "url": "https://mikerayitagames.itch.io/washywashy",
+        "name": "WashyWashy",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-21T08:12:54Z"
+    },
+    {
+        "url": "https://weirdbrothers.itch.io/baatlo",
+        "name": "Baatlo",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-21T08:12:56Z"
+    },
+    {
+        "url": "https://michal-jenco.itch.io/nyx-arg",
+        "name": "NYX:ARG",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-21T08:13:00Z"
+    },
+    {
+        "url": "https://basiltaztic.itch.io/island-scavenger-hunt",
+        "name": "Island: SCAVENGER HUNT",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-21T08:13:04Z"
     }
 ]
