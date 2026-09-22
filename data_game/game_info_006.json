@@ -11608,5 +11608,114 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-09-22T08:52:16Z"
+    },
+    {
+        "url": "https://polyakovin.itch.io/locksmith",
+        "name": "Locksmith",
+        "dev": "Igor Polyakov",
+        "description": "Tactile incremental lockpicking noir for Playdate.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5Mjk4OTIyLnBuZw==/original/nKtukk.png",
+        "tags": [
+            "crank",
+            "Incremental",
+            "Indie",
+            "lock-picking",
+            "monochrome",
+            "Noir",
+            "Playdate",
+            "Steampunk"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Aseprite",
+            "Sublime Text",
+            "Playdate"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "25 August 2026 @ 18:47 UTC",
+        "added_at": "2026-09-22T16:49:46Z"
+    },
+    {
+        "url": "https://psychosage.itch.io/the-rooftop-driver",
+        "name": "The rooftop driver!",
+        "dev": "PsychoSage",
+        "description": "The driver is on the roof. ‌ The car goes in reverse. ‌ And there’s no steering wheel. ...Hah???",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 September 2026 @ 15:40 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NzQxNzk0LnBuZw==/original/S4hZmV.png",
+        "tags": [
+            "3D",
+            "android",
+            "Arcade",
+            "Casual",
+            "Comedy",
+            "Driving",
+            "Endless",
+            "Funny",
+            "High Score",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-22T16:49:50Z"
+    },
+    {
+        "url": "https://pufferfishman202.itch.io/drake-platfomer",
+        "name": "drake platfomer",
+        "dev": "pufferfishman202",
+        "description": "pres wasd to move around and jumpe on drake blocks in order to reach trophy congratuatons win",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 September 2026 @ 02:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTY5NzYwLnBuZw==/original/7Dxq%2FA.png",
+        "tags": [
+            "2dplatformer",
+            "drake",
+            "Horror",
+            "No AI",
+            "Puzzle-Platformer",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-22T16:49:53Z"
     }
 ]
