@@ -10232,33 +10232,6 @@
         "updated_at": "15 September 2026 @ 06:43 UTC"
     },
     {
-        "url": "https://allhailthequeenuwu.itch.io/theamazingdigitalfangame",
-        "name": "TADC VN 1ST DAY",
-        "dev": "allhailthequeenuwu",
-        "description": "Welcome to The Amazing Digital Circus Visual Novel Fangame This game is based on the pilot where you play as Pomni.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "81",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE2MzI0ODg0LnBuZw==/original/DhWvQG.png",
-        "tags": [
-            "2D",
-            "Fangame",
-            "Ren'Py",
-            "Singleplayer"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://cattrigger.itch.io/bad-faith-the-game",
         "name": "Bad Faith (The Game)",
         "dev": "CatTrigger",
@@ -11738,34 +11711,6 @@
         "safe_virus": "?",
         "notes": "",
         "updated_at": "16 September 2026 @ 11:19 UTC"
-    },
-    {
-        "url": "https://offthemholder.itch.io/off-them",
-        "name": "Off Them",
-        "dev": "offthemholder",
-        "description": "OFF THEM OFF THEM is a FICTIONAL mass shooting game set in a completely made up world, country and city.",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.4",
-        "rating_count": "14",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0MjczODExLmpwZw==/original/q6M%2BqP.jpg",
-        "tags": [
-            "3D",
-            "killer"
-        ],
-        "platforms": [
-            "Windows",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
     },
     {
         "url": "https://donotrunwithpixels.itch.io/theres-nothing-to-do-in-this-town",
@@ -16440,38 +16385,6 @@
             "Aseprite",
             "Paint Tool SAI"
         ],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://brummelliana.itch.io/cbml",
-        "name": "Can't Buy Me Love! (Beatles VN)",
-        "dev": "Brummelliana",
-        "description": "November 1963, a turbulent time for the United Kingdom and the world itself.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "74",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE3MTkwNzk4LnBuZw==/original/qWJf5j.png",
-        "tags": [
-            "1960s",
-            "beatles",
-            "Comedy",
-            "Female Protagonist",
-            "Historical",
-            "Pixel Art",
-            "Sprites"
-        ],
-        "platforms": [],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [],
         "safe_virus": "?",
         "notes": ""
     },

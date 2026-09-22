@@ -412,5 +412,29 @@
         "name": "Island: SCAVENGER HUNT",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-09-21T08:13:04Z"
+    },
+    {
+        "url": "https://allhailthequeenuwu.itch.io/theamazingdigitalfangame",
+        "name": "TADC VN 1ST DAY",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-22T07:57:19Z"
+    },
+    {
+        "url": "https://offthemholder.itch.io/off-them",
+        "name": "Off Them",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-22T07:57:23Z"
+    },
+    {
+        "url": "https://brummelliana.itch.io/cbml",
+        "name": "Can't Buy Me Love! (Beatles VN)",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-22T07:57:26Z"
+    },
+    {
+        "url": "https://thatnerdpunk-games.itch.io/lights-out",
+        "name": "Lights Out",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-22T07:57:29Z"
     }
 ]
