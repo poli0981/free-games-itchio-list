@@ -436,5 +436,23 @@
         "name": "Lights Out",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-09-22T07:57:29Z"
+    },
+    {
+        "url": "https://torfi.itch.io/a-firm-handshake",
+        "name": "A Firm Handshake",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-23T07:58:32Z"
+    },
+    {
+        "url": "https://retroteamgames.itch.io/chrome-horizon",
+        "name": "Chrome-Horizon C64",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-23T07:58:35Z"
+    },
+    {
+        "url": "https://crtdev.itch.io/screensaver-war",
+        "name": "Screensaver War",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-23T07:58:38Z"
     }
 ]

@@ -16423,43 +16423,6 @@
         "updated_at": "16 September 2026 @ 10:01 UTC"
     },
     {
-        "url": "https://torfi.itch.io/a-firm-handshake",
-        "name": "A Firm Handshake",
-        "dev": "Torfi",
-        "description": "N/A",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "332",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzU4MDMxMDIucG5n/original/4iizM9.png",
-        "tags": [
-            "artgame",
-            "Atmospheric",
-            "Funny",
-            "Low-poly",
-            "Physics",
-            "Short",
-            "Singleplayer",
-            "Surreal",
-            "Top-Down",
-            "weird"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
         "url": "https://toncho.itch.io/nuclear-throne-mobile",
         "name": "Nuclear Throne Mobile",
         "dev": "toncho_",
@@ -17232,40 +17195,6 @@
         "platforms": [],
         "languages": [],
         "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": ""
-    },
-    {
-        "url": "https://retroteamgames.itch.io/chrome-horizon",
-        "name": "Chrome-Horizon C64",
-        "dev": "retroteamgames",
-        "description": "Classic Shoot'em up Action Meets Modern Engineering Chrome Horizon is a fast-paced horizontal scrolling shoot 'em up for the Commodore 64 .",
-        "genre": "Shooter",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "2",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Mzk1MzAzLnBuZw==/original/VBzUAS.png",
-        "tags": [
-            "8-Bit",
-            "Commodore 64",
-            "Retro",
-            "Sci-fi",
-            "Shoot 'Em Up",
-            "Side Scroller"
-        ],
-        "platforms": [],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Joystick"
-        ],
         "made_with": [],
         "safe_virus": "?",
         "notes": ""
