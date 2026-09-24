@@ -454,5 +454,71 @@
         "name": "Screensaver War",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-09-23T07:58:38Z"
+    },
+    {
+        "url": "https://mounirx77cs.itch.io/speed-racing",
+        "name": "Speed racing",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:49:33Z"
+    },
+    {
+        "url": "https://tac777.itch.io/the-night-of-rain-and-nemu",
+        "name": "The Night of Rain and Nemu",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:49:37Z"
+    },
+    {
+        "url": "https://camel101.itch.io/dead-stop-no-vacancy",
+        "name": "Dead Stop - No Vacancy",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-24T07:49:40Z"
+    },
+    {
+        "url": "https://baobungames.itch.io/truck-race",
+        "name": "Truck Race",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:49:43Z"
+    },
+    {
+        "url": "https://fragmentventures.itch.io/pegfinity-demo",
+        "name": "Pegfinity - A colorful physics-based incremental",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:49:46Z"
+    },
+    {
+        "url": "https://pantaloon-io.itch.io/offbeat",
+        "name": "OFFBEAT",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-24T07:49:49Z"
+    },
+    {
+        "url": "https://onionstudios.itch.io/gold-bank",
+        "name": "Gold Bank",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-24T07:49:51Z"
+    },
+    {
+        "url": "https://nochistudios.itch.io/lovebyte-demo",
+        "name": "lovebyte.exe Demo",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:49:54Z"
+    },
+    {
+        "url": "https://allhailthequeenuwu.itch.io/tadc-vn-candy-chaos",
+        "name": "TADC VN CANDY CHAOS",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:49:58Z"
+    },
+    {
+        "url": "https://orb-star.itch.io/the-summer-i-met-you",
+        "name": "The Summer I Met You",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:50:01Z"
+    },
+    {
+        "url": "https://gdarchives.itch.io/2-206a",
+        "name": "GD 2.206a",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-24T07:50:04Z"
     }
 ]
