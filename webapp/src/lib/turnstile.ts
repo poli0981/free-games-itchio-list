@@ -1,5 +1,5 @@
 /**
- * Cloudflare Turnstile, loaded on demand (only the Suggest page needs it; the
+ * Cloudflare Turnstile, loaded on demand (in the app only the Suggest page needs it; the
  * site CSP allows its script and frame). Explicit rendering, so the widget
  * mounts and unmounts with the React component.
  */

@@ -138,10 +138,12 @@ export function buildInfo(): Plugin {
 }
 
 /**
- * Cloudflare Web Analytics beacon (cookieless), web build only, and only when
- * the build has a token (Workers Builds variable VITE_CF_BEACON_TOKEN; set up
- * the site as "manual" with automatic injection off). Never on the admin page,
- * whose CSP allows only its own scripts. The site CSP allows the beacon.
+ * Cloudflare Web Analytics beacon (cookieless) for a *manual* Web Analytics
+ * setup: web build only, only when the build has a token (Workers Builds
+ * variable VITE_CF_BEACON_TOKEN), never on the admin page. freeitchgames.win
+ * uses the automatic setup instead — the zone injects the beacon into every
+ * HTML response — so the token stays unset; setting it too would count every
+ * page view twice. The site CSP allows the beacon either way.
  */
 export function analyticsBeacon(token: string | undefined): Plugin {
   return {

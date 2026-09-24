@@ -9,7 +9,7 @@
 [![Data & docs: CC BY 4.0](https://img.shields.io/badge/data%20%26%20docs-CC%20BY%204.0-lightgrey.svg)](data_game/LICENSE.md)
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 >
 > Bản tiếng Anh tại [`README.md`](README.md) là bản chính thức. Bản dịch tiếng Việt của các tài liệu chính sách nằm trong [`docs/i18n/vi/`](docs/i18n/vi/).
 
@@ -34,9 +34,10 @@ Một danh mục được tuyển chọn và tự động cập nhật gồm **h
 
 Mọi thứ nằm trên website **<https://freeitchgames.win>**:
 
-- **Danh sách game**: toàn bộ danh mục trong một bảng chạy nhanh (dạng thẻ trên điện thoại), lọc theo thể loại, nền tảng, trạng thái và nhiều thứ khác, cùng một trang chi tiết cho từng game.
+- **Danh sách game**: toàn bộ danh mục trong một bảng chạy nhanh (dạng danh sách gọn trên điện thoại), lọc theo thể loại, nền tảng, trạng thái và nhiều thứ khác, cùng một trang chi tiết cho từng game.
 - **Biểu đồ**: danh mục được chia ra sao, và đã lớn lên thế nào theo thời gian.
 - **Đã gỡ** (Removed): mọi game bị loại khỏi danh mục, kèm lý do (<https://freeitchgames.win/removed>).
+- **Kiểm tra nhanh trước.** Lần đầu vào, rồi khoảng mỗi 48 giờ, trang sẽ chạy một bước kiểm tra Cloudflare Turnstile ngắn để chặn bot. Thường nó tự qua rồi mở đúng trang bạn cần. Dữ liệu trong `/data` và các ứng dụng không cần bước này.
 - **Nội dung 18+ bị ẩn theo mặc định.** Game được đánh dấu `nsfw: Yes` sẽ bị ẩn (kể cả ảnh bìa) trừ khi bạn tự bật trong Settings sau khi xác nhận mình đủ 18 tuổi. Lựa chọn đó chỉ được lưu trong trình duyệt của bạn.
 
 Mọi link đều dẫn tới trang riêng của game trên itch.io. Ảnh bìa trên website là bản thu nhỏ do freeitchgames.win phục vụ, nên trình duyệt của bạn không kết nối tới itch.io cho tới khi bạn bấm vào một link.
@@ -53,7 +54,7 @@ Cùng một app cũng được phát hành dưới dạng **ứng dụng native 
 |---|---|
 | Windows | Trình cài đặt `.msi` hoặc `.exe` |
 | macOS | `.dmg`, `.pkg` hoặc `.app.tar.gz` (cần Safari/WebKit 16.4 trở lên) |
-| Linux | `.deb` hoặc `.AppImage` |
+| Linux | `.deb`, `.rpm` hoặc `.AppImage` |
 | Android 11+ (arm64-v8a) | `.apk` (cài tay, xem bên dưới) |
 
 Các app tải JSON danh mục từ <https://freeitchgames.win/data> và tải ảnh bìa trực tiếp từ CDN ảnh của itch.io (`img.itch.zone`); bấm vào một game sẽ mở itch.io trong trình duyệt của bạn. Không có telemetry. Cập nhật thủ công: khi có bản mới thì tải bản mới về. Cài app đồng nghĩa với việc chấp nhận [EULA](docs/i18n/vi/EULA.md) ([EN](docs/EULA.md)).
@@ -106,8 +107,8 @@ Pipeline cư xử lịch sự với itch.io: nó tự xưng danh là `FreeItchGa
 
 ## Bên trong dự án
 
-- **Web app** ([`webapp/src/`](webapp/src/)): React + TypeScript + Vite + Tailwind CSS, TanStack Query / Table / Virtual, React Router, Zustand. Giao diện tiếng Anh và tiếng Việt.
-- **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): phục vụ website và `/data`, proxy ảnh (`/img`, ảnh bìa WebP đã thu nhỏ lưu trên Cloudflare R2), API Suggest và ingest, hàng chờ duyệt (Cloudflare D1), API quản trị và lịch phát hiện qua RSS. Cấu hình: [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
+- **Web app** ([`webapp/src/`](webapp/src/)): React + TypeScript + Vite + Tailwind CSS, TanStack Query, React Router, Zustand. Giao diện tiếng Anh và tiếng Việt.
+- **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): phục vụ website và `/data`, cổng xác minh (Cloudflare Turnstile), proxy ảnh (`/img`, ảnh bìa WebP đã thu nhỏ lưu trên Cloudflare R2), API Suggest và ingest, hàng chờ duyệt (Cloudflare D1), API quản trị và lịch phát hiện qua RSS. Cấu hình: [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
 - **App quản trị** ([`webapp/admin/`](webapp/admin/)): màn hình duyệt chỉ dành cho Maintainer tại `/admin`, đứng sau Cloudflare Access. Nó ghi vào repo này dưới danh nghĩa một GitHub App.
 - **Vỏ native** ([`webapp/src-tauri/`](webapp/src-tauri/)): Tauri 2 cho Windows, macOS, Linux và Android. Xem [`webapp/TAURI.md`](webapp/TAURI.md).
 - **Pipeline dữ liệu** ([`scripts/`](scripts/), Python 3.14): scraper, refresh, patch/apply và validate, chạy bằng GitHub Actions.
@@ -147,6 +148,7 @@ scripts/
 └── state/              # Sổ sách của pipeline (lần kiểm tra cuối, strike, lần thử lại), không công khai
 
 bash/commit_push.sh     # fetch main → áp patch → validate → commit → push (có thử lại)
+bash/cf_build_status.sh # Workers Build mới nhất của main → báo Discord khi lỗi (deploy-status.yml)
 tests/                  # Bộ test pytest (không dùng mạng) + fixture dùng chung với Worker
 
 webapp/
@@ -171,8 +173,9 @@ docs/                   # Chính sách, môi trường dev, danh sách bên th�
 | Refresh (`refresh.yml`) | Hằng ngày 02:47 UTC | Kiểm tra lại 1/7 danh mục: link chết, game chuyển sang trả phí, rating, trạng thái |
 | Force update (`force_update.yml`) | Thủ công | Cào lại mọi trường (một URL hoặc lô tiếp theo); giữ nguyên `safe_virus` / `notes` / `nsfw` |
 | Phát hiện qua RSS (Cloudflare Worker) | Mỗi 4 giờ | Đọc một feed itch.io mỗi lượt; game mới vào hàng chờ duyệt |
-| Python CI / Webapp CI | Pull request | Lint, test, validate dữ liệu / type-check, test, build |
+| Python CI / Webapp CI | Pull request (Python CI còn chạy khi push vào `main` chạm tới phần Python) | Lint, test, validate dữ liệu / type-check, test, build |
 | Deploy website | Khi push vào `main` | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
+| Theo dõi build (`deploy-status.yml`) | Mỗi giờ | Báo mỗi Workers Build lỗi của `main` lên Discord, một lần |
 | Release desktop / Android | Khi push tag `v*` | Trình cài đặt Tauri (Win/macOS/Linux) và APK đã ký → draft Release |
 
 Lỗi mạng được coi là tạm thời; game chỉ bị gỡ khi cùng lỗi 404/410 hoặc trạng thái trả phí được thấy lại ít nhất 20 giờ sau lần đầu. Lỗi, lượt bị hủy, bị giới hạn tốc độ và thay đổi hàng loạt đáng ngờ được báo về Discord của dự án dưới dạng thông báo tự động.

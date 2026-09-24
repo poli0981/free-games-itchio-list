@@ -112,15 +112,19 @@ DEV_ADMIN_EMAIL=you@example.com
 SITE_ORIGIN=http://localhost:5173
 TURNSTILE_SITEKEY=1x00000000000000000000AA
 TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+# Only to try the verification gate under `npx wrangler dev` (http://localhost:8787):
+# GATE_SECRET=<32+ random characters, e.g. `openssl rand -hex 32`>
 ```
 
 | Key | Kind | What it does |
 |---|---|---|
 | `DEV_ADMIN_EMAIL` | local only, optional | Lets you into the admin without Cloudflare Access. Honoured only when the host is `localhost`, `127.0.0.1` or `[::1]`; ignored everywhere else |
 | `ADMIN_EMAILS` | secret | Comma-separated admin allow-list, checked behind Access. Not needed locally with `DEV_ADMIN_EMAIL` |
-| `TURNSTILE_SECRET` | secret | Suggest form, together with the `TURNSTILE_SITEKEY` var |
-| `GH_APP_PRIVATE_KEY` | secret | GitHub App private key (PKCS#8 PEM) for admin writes, together with the `GH_APP_ID` and `GH_APP_INSTALLATION_ID` vars |
-| `SITE_ORIGIN` | var override | The Suggest form only accepts POSTs whose `Origin` equals it |
+| `TURNSTILE_SECRET` | secret | Suggest form and verification gate, together with the `TURNSTILE_SITEKEY` var |
+| `GATE_SECRET` | secret | Signs the verification-gate cookie (32+ characters). Without it the gate stays off. Locally, set `SITE_ORIGIN=http://localhost:8787` and open the site through `wrangler dev`; the cookie is `fig_gate` there (no `Secure`) |
+| `GATE_BOT_TOKEN` | secret | The value the zone's Transform Rule sends for verified bots (32+ characters). Required in production, not on localhost |
+| `GH_APP_PRIVATE_KEY` | secret | GitHub App private key for admin writes — the PEM as GitHub downloads it (PKCS#1) or PKCS#8, together with the `GH_APP_ID` and `GH_APP_INSTALLATION_ID` vars |
+| `SITE_ORIGIN` | var override | The Suggest form and the verification gate only accept POSTs whose `Origin` equals it |
 
 A feature whose settings are missing answers `503`; the public site needs none of them. The two
 Turnstile values above are Cloudflare's always-pass test keys

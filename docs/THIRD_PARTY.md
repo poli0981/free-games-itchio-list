@@ -13,8 +13,9 @@ change them.
   [`webapp/src-tauri/Cargo.toml`](../webapp/src-tauri/Cargo.toml),
   [`requirements.txt`](../requirements.txt) and [`requirements-dev.txt`](../requirements-dev.txt).
   Exact versions, including dependencies of dependencies, are pinned in
-  [`webapp/package-lock.json`](../webapp/package-lock.json) (npm) and resolved at build time for Rust and
-  Python (`npm ls`, `cargo tree` and `pip list` show the full trees).
+  [`webapp/package-lock.json`](../webapp/package-lock.json) (npm) and
+  [`webapp/src-tauri/Cargo.lock`](../webapp/src-tauri/Cargo.lock) (Rust); Python dependencies are
+  resolved at install time (`npm ls`, `cargo tree` and `pip list` show the full trees).
 - The runtime libraries are also listed on the [About page](https://freeitchgames.win/about), which reads
   the `THIRD_PARTY` array in [`webapp/src/lib/about.ts`](../webapp/src/lib/about.ts).
 
@@ -56,8 +57,8 @@ requests to third-party font services. The fonts are licensed under the SIL Open
 
 The Worker runs on Cloudflare's Workers runtime and uses Cloudflare services (R2, D1, Images, Rate
 Limiting, Access). Two scripts come from Cloudflare instead of the site's own bundle: the Web Analytics
-beacon (`static.cloudflareinsights.com`) and, on the Suggest page only, the Turnstile widget
-(`challenges.cloudflare.com`). These are Cloudflare services under Cloudflare's own terms, not open-source
+beacon (`static.cloudflareinsights.com`) and, on the verification page and the Suggest page, the
+Turnstile widget (`challenges.cloudflare.com`). These are Cloudflare services under Cloudflare's own terms, not open-source
 components. Section 7 lists every service the project uses.
 
 ## 3. Desktop and Android apps (Rust crates)
@@ -130,7 +131,7 @@ distributed with the project; each one is under the license in its own repositor
 
 | Service | What it does for the project |
 |---|---|
-| **Cloudflare** | DNS, CDN, WAF, TLS; Workers and static assets (the website); R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (Suggest page); Web Analytics (cookieless, aggregate); Workers Logs; Access (admin login); Rate Limiting; Email Routing (the project's contact addresses) |
+| **Cloudflare** | DNS, CDN, WAF, TLS; Workers and static assets (the website); R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification page and the Suggest page); Web Analytics (cookieless, aggregate); Workers Logs; Access (admin login); Rate Limiting; Email Routing (the project's contact addresses) |
 | **GitHub** | Code, catalog data, issues and discussions, Actions (the pipeline), release downloads |
 | **itch.io** | Where the games live; the pipeline and RSS discovery read public itch.io pages and feeds |
 | **Discord** | Receives automated CI and release notifications only |

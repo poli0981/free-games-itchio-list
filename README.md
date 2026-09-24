@@ -34,11 +34,14 @@ read-only for everyone: no accounts, no sign-in, no comments, no ads, no payment
 
 Everything lives on the website, **<https://freeitchgames.win>**:
 
-- **Games**: the whole catalog in one fast table (cards on phones), with filters for genre, platform,
+- **Games**: the whole catalog in one fast table (a compact list on phones), with filters for genre, platform,
   status and more, plus a detail page for every game.
 - **Charts**: how the catalog breaks down, and how it has grown over time.
 - **Removed**: every game dropped from the catalog, with the reason
   (<https://freeitchgames.win/removed>).
+- **A quick check first.** Your first visit, then about once every 48 hours, starts with a short
+  Cloudflare Turnstile check that keeps bots out. It usually passes by itself and then opens the page
+  you asked for. The catalog data under `/data` and the apps don't need it.
 - **18+ content is hidden by default.** Games flagged `nsfw: Yes` stay hidden (covers included) unless
   you opt in under Settings after confirming you are 18 or older. That choice is stored only in your
   browser.
@@ -62,7 +65,7 @@ from the latest [GitHub Release](https://github.com/poli0981/free-games-itchio-l
 |---|---|
 | Windows | `.msi` or `.exe` installer |
 | macOS | `.dmg`, `.pkg` or `.app.tar.gz` (needs Safari/WebKit 16.4 or newer) |
-| Linux | `.deb` or `.AppImage` |
+| Linux | `.deb`, `.rpm` or `.AppImage` |
 | Android 11+ (arm64-v8a) | `.apk` (sideloaded, see below) |
 
 The apps download the catalog JSON from <https://freeitchgames.win/data> and load cover images directly
@@ -150,9 +153,9 @@ The pipeline is polite to itch.io: it identifies itself as
 ## Under the hood
 
 - **Web app** ([`webapp/src/`](webapp/src/)): React + TypeScript + Vite + Tailwind CSS, TanStack
-  Query / Table / Virtual, React Router, Zustand. English and Vietnamese UI.
-- **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): serves the site and `/data`, the image proxy
-  (`/img`, resized WebP covers stored on Cloudflare R2), the Suggest and ingest APIs, the review queue
+  Query, React Router, Zustand. English and Vietnamese UI.
+- **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): serves the site and `/data`, the verification gate
+  (Cloudflare Turnstile), the image proxy (`/img`, resized WebP covers stored on Cloudflare R2), the Suggest and ingest APIs, the review queue
   (Cloudflare D1), the admin API and the RSS discovery schedule. Config:
   [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
 - **Admin app** ([`webapp/admin/`](webapp/admin/)): the Maintainer-only review screen at `/admin`, behind
@@ -199,6 +202,7 @@ scripts/
 └── state/              # Pipeline bookkeeping (last check, strikes, retries), not published
 
 bash/commit_push.sh     # fetch main → apply patch → validate → commit → push (with retries)
+bash/cf_build_status.sh # main's latest Cloudflare Workers Build → Discord on failure (deploy-status.yml)
 tests/                  # pytest suite (no network) + fixtures shared with the Worker
 
 webapp/
@@ -223,8 +227,9 @@ docs/                   # Policies, dev environment, third-party list (+ Vietnam
 | Refresh (`refresh.yml`) | Daily 02:47 UTC | Re-check 1/7 of the catalog: dead links, now-paid games, rating, status |
 | Force update (`force_update.yml`) | Manual | Re-scrape every field (one URL or the next batch); keeps `safe_virus` / `notes` / `nsfw` |
 | RSS discovery (Cloudflare Worker) | Every 4 hours | Poll one itch.io feed per run; new games go to the review queue |
-| Python CI / Webapp CI | Pull requests | Lint, tests, data validation / type-check, tests, build |
+| Python CI / Webapp CI | Pull requests (Python CI also on pushes to `main` that touch it) | Lint, tests, data validation / type-check, tests, build |
 | Deploy website | On push to `main` | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
+| Build monitor (`deploy-status.yml`) | Hourly | Posts each failed Workers Build of `main` to Discord, once |
 | Release desktop / Android | On `v*` tag push | Tauri installers (Win/macOS/Linux) and signed APK → draft Release |
 
 Network errors are treated as transient; a game is removed only after the same 404/410 or paid status is
