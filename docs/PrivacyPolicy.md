@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: 2026-09-18
+Last updated: 2026-09-24
 
-Applies from: the release of version 4.0.0.
+Applies from: the release of version 4.1.0.
 
 This Privacy Policy explains what personal data the `free-games-itchio-list` project processes, why, who helps process it, how long it is kept, and what rights you have. It covers the website **https://freeitchgames.win**, the desktop and Android apps, the public catalog data and the repository. The short version: there are no accounts, no ads and no tracking cookies. The Project keeps as little as it can, and most of what exists stays in your own browser.
 
@@ -12,6 +12,7 @@ A Vietnamese translation is available at [`docs/i18n/vi/PrivacyPolicy.md`](i18n/
 >
 > - No accounts, no sign-in, no ads, no selling of data, no profiling. The Apps have no telemetry.
 > - The Website runs on Cloudflare, which processes standard request data (IP address, browser, URL, time) to deliver and protect the site and to count visits in aggregate, without cookies. The Project's own code never saves your IP address.
+> - To keep bots out, your browser passes a quick Cloudflare Turnstile check before the Website loads, about once every 48 hours; one strictly necessary cookie remembers that you passed.
 > - Your settings (theme, language, 18+ choice, accepted terms) and a cache of the public catalog stay in your browser and are never sent to the Project.
 > - If you use the Suggest page, the Maintainer receives the game link, your optional note (deleted after 180 days) and the time. Please don't put personal data in the note.
 > - Questions or requests: **privacy@freeitchgames.win**.
@@ -42,6 +43,7 @@ This Policy does not cover services that handle data on their own account: itch.
 ### 2.1 Visiting the Website
 
 - **Request data.** The Website is hosted on Cloudflare. When your browser loads a page, a file or an image, Cloudflare processes standard request data: your IP address, user agent (browser and device type), the requested URL, the referrer and the time. This is needed to deliver the site, to protect it (TLS, firewall, bot and denial-of-service protection) and to limit abuse.
+- **Verification check.** Before the Website's pages and cover images load, your browser passes a Cloudflare Turnstile check, which processes signals about your device and browser to tell people from bots; it usually completes without any action from you. To check the result, the Website sends the Turnstile token and your IP address to Cloudflare's verification service, then sets the `__Host-fig_gate` cookie (section 3.2) so that the check is not repeated for 48 hours. Search-engine and link-preview bots that Cloudflare has verified skip the check. The catalog data under `/data` stays available without it.
 - **Aggregate statistics.** The Website uses Cloudflare Web Analytics, which loads a small script from Cloudflare and counts visits in aggregate, without cookies and, according to Cloudflare, without fingerprinting. The Maintainer sees only totals (such as page views), not individual visitors. The Project runs no other analytics.
 - **Server logs.** Requests handled by the Website's server code (Cloudflare Workers) are recorded by Cloudflare Workers Logs on a 10% sample and kept for about 7 days, to find bugs and investigate abuse.
 - **Network error reports.** Cloudflare may add Network Error Logging (NEL) headers, which ask your browser to report connection errors to Cloudflare.
@@ -91,7 +93,7 @@ Issues, pull requests, discussions and comments are public on GitHub under your 
 ### 2.8 What the Project does not do
 
 - No accounts or sign-in for the public, no comments, no ads and no payments.
-- No cookies set by the Project's own code on the public Website.
+- No cookies set by the Project's own code on the public Website, except the verification cookie, which identifies no one (section 3.2).
 - No selling or sharing of personal data, for advertising or any other purpose.
 - No profiling and no automated decisions with legal or similarly significant effects on you.
 - No telemetry in the Apps, and no analytics other than Cloudflare Web Analytics on the Website.
@@ -106,25 +108,26 @@ The Website and the Apps keep the following items on your device only. None of t
 |---|---|---|---|
 | `localStorage` | `webapp.prefs` | Interface preferences such as language and layout density, your 18+ (NSFW) content choice, and the version of the legal documents you accepted | You clear it |
 | `localStorage` | `webapp.theme` | Theme: `light`, `dark` or `system` | You clear it |
+| `localStorage` | `webapp.gate` | When your current verification pass (section 3.2) runs out, so an open tab can check again in time | Replaced by the next check; you can clear it |
 | IndexedDB (via `idb-keyval`) | `webapp.query-cache` | A cache of the public Catalog JSON, for fast loading and limited offline use | At most 7 days, then refreshed or discarded |
 | `sessionStorage` | `reloaded-after-deploy` | A timestamp, so the page reloads at most once after a site update | The tab is closed |
 
 On first load, the Website and the Apps also delete the entries that the old v3 app left in browser storage (an encrypted GitHub access token and commit-signing key data). v4 does not use them.
 
-These items are strictly necessary for features you use (keeping your settings, loading the site quickly, recovering after an update), so they don't need consent under the EU ePrivacy rules or the UK PECR. You can delete them at any time with your browser's "Clear site data" option for `freeitchgames.win`, or inspect them in your browser's developer tools. In the Apps, uninstalling removes them; if a desktop uninstaller leaves the App's data folder (`com.poli0981.freegamesitchio`) behind, you can delete that folder yourself. On Android you can also clear the app's storage in the system settings.
+These items are strictly necessary for features you use (keeping your settings, loading the site quickly, recovering after an update, not repeating the verification check), so they don't need consent under the EU ePrivacy rules or the UK PECR. You can delete them at any time with your browser's "Clear site data" option for `freeitchgames.win`, or inspect them in your browser's developer tools. In the Apps, uninstalling removes them; if a desktop uninstaller leaves the App's data folder (`com.poli0981.freegamesitchio`) behind, you can delete that folder yourself. On Android you can also clear the app's storage in the system settings.
 
 ### 3.2 Cookies
 
-- The Project's own code sets **no cookies** on the public Website.
+- The Project's own code sets **one cookie** on the public Website: `__Host-fig_gate`, after you pass the verification check (section 2.1). It holds only the time it was issued and a signature, identifies no one, lasts **48 hours**, and is sent only to freeitchgames.win (`HttpOnly`, `Secure`, `SameSite=Lax`). It is strictly necessary to keep automated traffic out, so it needs no consent under the EU ePrivacy rules or the UK PECR. If you block it, the check runs again on every visit.
 - Cloudflare may set strictly necessary security cookies, such as `__cf_bm` or `cf_clearance`, when its bot or challenge protections run. They serve security only.
-- The Suggest page uses Cloudflare Turnstile (section 2.3); see Cloudflare's Turnstile privacy addendum (section 4).
+- The verification check and the Suggest page use Cloudflare Turnstile (sections 2.1 and 2.3); see Cloudflare's Turnstile privacy addendum (section 4).
 - The admin area uses the Cloudflare Access session cookie `CF_Authorization`, which exists only in the Maintainer's browser.
 
 ## 4. Service providers and other parties
 
 | Party | Role and what it does | Data involved | Privacy policy |
 |---|---|---|---|
-| **Cloudflare** | Processor for the Website: DNS, CDN, firewall and TLS; Workers (the site's server code) and static assets; R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (Suggest page only); Web Analytics; Workers Logs; Access (admin login only); Rate Limiting; Email Routing (forwards the Project's contact addresses) | Request data, Suggest submissions, the review queue, forwarded emails | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
+| **Cloudflare** | Processor for the Website: DNS, CDN, firewall and TLS; Workers (the site's server code) and static assets; R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification check and the Suggest page); Web Analytics; Workers Logs; Access (admin login only); Rate Limiting; Email Routing (forwards the Project's contact addresses) | Request data, Suggest submissions, the review queue, forwarded emails | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
 | **GitHub** | Hosts the code, the Catalog data, issues and discussions, the data pipeline (GitHub Actions) and the release downloads. Independent controller for your GitHub account and activity | Your public contributions; request data when you visit GitHub or download a release | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
 | **itch.io** | Independent platform, not affiliated with the Project. Source of the game data; every game link and download goes there; the Apps load covers from img.itch.zone | What your browser or the Apps send when you visit itch.io or load covers from it. The pipeline sends nothing about you | <https://itch.io/docs/legal/privacy-policy> |
 | **Discord** | Receives automated build and release notifications from GitHub Actions | No visitor data | — |
@@ -147,6 +150,7 @@ Cloudflare may process data anywhere on its global network (see section 9). The 
 | Emails, including removal and copyright requests | As long as needed to handle the request |
 | GitHub contributions | On GitHub, until you or GitHub remove them |
 | Browser storage | See section 3.1 |
+| `__Host-fig_gate` verification cookie | **48 hours** (section 3.2) |
 | `CF_Authorization` cookie (Maintainer only) | For the duration of the Cloudflare Access session |
 
 ## 6. Legal bases
@@ -213,6 +217,7 @@ Under the GDPR and the UK GDPR, you can also ask for processing to be restricted
 ## 10. Security
 
 - The Website is served only over HTTPS.
+- Automated traffic has to pass a Cloudflare Turnstile check before the Website's pages and cover images load (section 2.1).
 - Data minimization: no accounts, no IP addresses stored by the Project's code, Suggest notes deleted after 180 days, duplicate-submission records after 7 days.
 - The admin area and the ingest API are protected by Cloudflare Access, and the Website's server code verifies the Access token itself on every protected request.
 - Secrets (such as the GitHub App's private key) are kept in Cloudflare's secret storage, never in the Repository. The admin area writes to the Repository as a GitHub App, with verified commits.

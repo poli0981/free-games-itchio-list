@@ -1,10 +1,10 @@
 # Điều khoản sử dụng (Terms of Use)
 
-Cập nhật lần cuối: 2026-09-18
+Cập nhật lần cuối: 2026-09-24
 
-Áp dụng từ: khi phát hành phiên bản 4.0.0.
+Áp dụng từ: khi phát hành phiên bản 4.1.0.
 
-Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
 Bản tiếng Anh: [`docs/ToS.md`](../../ToS.md).
 
@@ -67,7 +67,7 @@ Bạn đồng ý **không**:
 1. **Scrape hàng loạt** Website hoặc API của nó, ngoài các file `/data` đã được công bố. Hãy dùng các file JSON trong `/data` hoặc Repository; cách đó tốn ít tài nguyên hơn cho tất cả mọi người.
 2. **Lạm dụng image proxy** (`/img`): proxy này chỉ để hiển thị ảnh bìa trên Website. Đừng hotlink các URL `/img` từ website hay ứng dụng khác, và đừng dùng nó để tải ảnh hàng loạt.
 3. **Truy cập trái phép các khu vực bị hạn chế**: `/admin`, API quản trị (`/api/admin/…`) và API ingest (`/api/ingest`) chỉ dành cho Người duy trì. Nghiên cứu bảo mật thiện chí luôn được hoan nghênh, theo các quy tắc trong [Security Policy](SECURITY.md).
-4. **Spam form Suggest**, hoặc tìm cách vượt qua Turnstile hay giới hạn tần suất (ví dụ bằng script hoặc xoay vòng địa chỉ IP).
+4. **Spam form Suggest**, hoặc tìm cách vượt qua bước xác minh của Website, Turnstile hay giới hạn tần suất (ví dụ bằng script, dùng chung cookie xác minh hoặc xoay vòng địa chỉ IP).
 5. **Gửi liên kết tới malware**, lừa đảo, phishing hoặc nội dung bất hợp pháp, ở bất kỳ đâu trong Dự án.
 6. **Mạo nhận liên kết**: đừng tự nhận là Người duy trì hay là Dự án, đừng giới thiệu một bản fork hay bản sao như thể đó là Dự án chính thức, đừng nói rằng Dự án do itch.io vận hành hoặc bảo trợ, và đừng dùng tên "poli0981" hay "SkullMute" để quảng bá sản phẩm của bạn khi chưa có sự cho phép trước bằng văn bản.
 7. **Gây gián đoạn Dự án**: đừng tìm cách làm quá tải, phá hỏng hoặc làm suy giảm hoạt động của Website (ví dụ bằng tấn công từ chối dịch vụ), và đừng dùng Dự án để tạo tải bất hợp lý lên itch.io. Nếu bạn tự chạy code pipeline, bạn tự chịu trách nhiệm tuân thủ điều khoản của itch.io và giữ nguyên nhịp giãn cách request của nó.

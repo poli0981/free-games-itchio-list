@@ -71,7 +71,7 @@ export const en = {
   "about.bug.openTemplate": "Open bug report template",
   "about.bug.title": "Found a bug?",
   "about.developer.title": "Developer",
-  "about.legal.desc": "All policies are Markdown files in the repository — plain language, full terms. Updated 2026-09-18.",
+  "about.legal.desc": "All policies are Markdown files in the repository — plain language, full terms. Updated 2026-09-24.",
   "about.legal.title": "Legal & policies",
   "about.legal.viNote": "— Vietnamese translations of the policies above (community-readable, English remains the controlling version for legal interpretation).",
   "about.social.desc": "DMs open on most. Replies slow (introvert max level). Pick whichever channel fits.",

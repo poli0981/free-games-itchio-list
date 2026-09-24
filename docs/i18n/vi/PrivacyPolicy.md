@@ -1,10 +1,10 @@
 # Chính sách quyền riêng tư (Privacy Policy)
 
-Cập nhật lần cuối: 2026-09-18
+Cập nhật lần cuối: 2026-09-24
 
-Áp dụng từ: khi phát hành phiên bản 4.0.0.
+Áp dụng từ: khi phát hành phiên bản 4.1.0.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
 
 Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-list` xử lý những dữ liệu cá nhân nào, vì sao, ai hỗ trợ xử lý, dữ liệu được lưu trong bao lâu và bạn có những quyền gì. Chính sách áp dụng cho website **https://freeitchgames.win**, các ứng dụng desktop và Android, dữ liệu danh mục công khai và repository. Nói ngắn gọn: không có tài khoản, không quảng cáo, không cookie theo dõi. Dự án giữ ít dữ liệu nhất có thể, và phần lớn những gì tồn tại chỉ nằm trong trình duyệt của chính bạn.
 
@@ -12,6 +12,7 @@ Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-l
 >
 > - Không tài khoản, không đăng nhập, không quảng cáo, không bán dữ liệu, không lập hồ sơ (profiling). Các Ứng dụng không có telemetry.
 > - Website chạy trên Cloudflare. Cloudflare xử lý dữ liệu request tiêu chuẩn (địa chỉ IP, trình duyệt, URL, thời gian) để phân phối và bảo vệ trang, và để đếm lượt truy cập ở dạng tổng hợp, không dùng cookie. Mã nguồn của chính Dự án không bao giờ lưu địa chỉ IP của bạn.
+> - Để chặn bot, trình duyệt của bạn qua một bước kiểm tra nhanh của Cloudflare Turnstile trước khi Website tải, khoảng 48 giờ một lần; một cookie thật sự cần thiết ghi nhớ rằng bạn đã qua.
 > - Cài đặt của bạn (giao diện sáng/tối, ngôn ngữ, lựa chọn 18+, phiên bản điều khoản đã chấp nhận) và bản cache của danh mục công khai nằm trong trình duyệt của bạn và không bao giờ được gửi về Dự án.
 > - Nếu bạn dùng trang Suggest, Người duy trì nhận được link game, ghi chú tùy chọn của bạn (bị xóa sau 180 ngày) và thời điểm gửi. Vui lòng không đưa dữ liệu cá nhân vào ghi chú.
 > - Câu hỏi hoặc yêu cầu: **privacy@freeitchgames.win**.
@@ -42,6 +43,7 @@ Chính sách này không áp dụng cho các dịch vụ tự xử lý dữ li�
 ### 2.1 Khi truy cập Website
 
 - **Dữ liệu request.** Website được host trên Cloudflare. Khi trình duyệt của bạn tải một trang, một file hay một hình ảnh, Cloudflare xử lý dữ liệu request tiêu chuẩn: địa chỉ IP, user agent (loại trình duyệt và thiết bị), URL được yêu cầu, referrer và thời gian. Việc này cần thiết để phân phối trang, bảo vệ trang (TLS, tường lửa, chống bot và chống tấn công từ chối dịch vụ) và hạn chế lạm dụng.
+- **Bước xác minh.** Trước khi các trang và ảnh bìa của Website được tải, trình duyệt của bạn qua một bước kiểm tra của Cloudflare Turnstile. Turnstile xử lý các tín hiệu về thiết bị và trình duyệt để phân biệt người thật với bot; thường bước này tự hoàn tất mà bạn không phải làm gì. Để kiểm tra kết quả, Website gửi token Turnstile và địa chỉ IP của bạn tới dịch vụ xác minh của Cloudflare, rồi đặt cookie `__Host-fig_gate` (mục 3.2) để không phải kiểm tra lại trong 48 giờ. Bot của công cụ tìm kiếm và bot tạo bản xem trước link đã được Cloudflare xác minh thì bỏ qua bước này. Dữ liệu danh mục trong `/data` vẫn truy cập được mà không cần bước này.
 - **Thống kê tổng hợp.** Website dùng Cloudflare Web Analytics: một script nhỏ được tải từ Cloudflare để đếm lượt truy cập ở dạng tổng hợp, không dùng cookie và, theo Cloudflare, không dùng fingerprinting. Người duy trì chỉ thấy số liệu tổng (như số lượt xem trang), không thấy từng người truy cập. Dự án không chạy công cụ analytics nào khác.
 - **Log máy chủ.** Các request do mã máy chủ của Website (Cloudflare Workers) xử lý được Cloudflare Workers Logs ghi lại theo mẫu 10% và lưu khoảng 7 ngày, để tìm lỗi và điều tra hành vi lạm dụng.
 - **Báo cáo lỗi mạng.** Cloudflare có thể thêm header Network Error Logging (NEL), yêu cầu trình duyệt của bạn báo các lỗi kết nối về Cloudflare.
@@ -91,7 +93,7 @@ Issue, pull request, discussion và bình luận đều công khai trên GitHub 
 ### 2.8 Những điều Dự án không làm
 
 - Không có tài khoản hay đăng nhập cho công chúng, không bình luận, không quảng cáo và không thanh toán.
-- Mã nguồn của chính Dự án không đặt cookie nào trên Website công khai.
+- Mã nguồn của chính Dự án không đặt cookie nào trên Website công khai, ngoại trừ cookie xác minh, vốn không nhận diện bất kỳ ai (mục 3.2).
 - Không bán hay chia sẻ dữ liệu cá nhân, dù cho quảng cáo hay bất kỳ mục đích nào khác.
 - Không lập hồ sơ (profiling) và không ra quyết định tự động gây hệ quả pháp lý hoặc ảnh hưởng đáng kể tương tự đối với bạn.
 - Không có telemetry trong các Ứng dụng, và không có analytics nào ngoài Cloudflare Web Analytics trên Website.
@@ -106,25 +108,26 @@ Website và các Ứng dụng chỉ lưu các mục sau trên thiết bị của
 |---|---|---|---|
 | `localStorage` | `webapp.prefs` | Tùy chọn giao diện như ngôn ngữ và mật độ hiển thị, lựa chọn nội dung 18+ (NSFW) của bạn, và phiên bản các văn bản pháp lý bạn đã chấp nhận | Bạn xóa nó |
 | `localStorage` | `webapp.theme` | Giao diện: `light`, `dark` hoặc `system` | Bạn xóa nó |
+| `localStorage` | `webapp.gate` | Thời điểm lượt xác minh hiện tại (mục 3.2) hết hạn, để tab đang mở kịp kiểm tra lại | Bị thay bởi lần kiểm tra sau; bạn có thể xóa nó |
 | IndexedDB (qua `idb-keyval`) | `webapp.query-cache` | Bản cache của JSON Danh mục công khai, để tải nhanh và dùng offline ở mức hạn chế | Tối đa 7 ngày, sau đó được làm mới hoặc bị bỏ đi |
 | `sessionStorage` | `reloaded-after-deploy` | Một mốc thời gian, để trang chỉ tự tải lại tối đa một lần sau khi site được cập nhật | Tab được đóng |
 
 Ở lần tải đầu tiên, Website và các Ứng dụng cũng xóa các mục mà ứng dụng v3 cũ để lại trong bộ nhớ trình duyệt (một GitHub access token đã mã hóa và dữ liệu khóa ký commit). v4 không dùng tới các mục này.
 
-Các mục trên là thật sự cần thiết cho những tính năng bạn dùng (giữ cài đặt, tải trang nhanh, phục hồi sau khi site cập nhật), nên không cần sự đồng ý theo các quy định ePrivacy của EU hay PECR của Vương quốc Anh. Bạn có thể xóa chúng bất kỳ lúc nào bằng tùy chọn "Clear site data" (xóa dữ liệu trang web) của trình duyệt cho `freeitchgames.win`, hoặc xem chúng trong công cụ dành cho nhà phát triển (developer tools) của trình duyệt. Với các Ứng dụng, gỡ cài đặt sẽ xóa chúng; nếu trình gỡ cài đặt trên desktop để sót lại thư mục dữ liệu của Ứng dụng (`com.poli0981.freegamesitchio`), bạn có thể tự xóa thư mục đó. Trên Android, bạn cũng có thể xóa bộ nhớ của ứng dụng trong phần cài đặt hệ thống.
+Các mục trên là thật sự cần thiết cho những tính năng bạn dùng (giữ cài đặt, tải trang nhanh, phục hồi sau khi site cập nhật, không phải xác minh lặp lại), nên không cần sự đồng ý theo các quy định ePrivacy của EU hay PECR của Vương quốc Anh. Bạn có thể xóa chúng bất kỳ lúc nào bằng tùy chọn "Clear site data" (xóa dữ liệu trang web) của trình duyệt cho `freeitchgames.win`, hoặc xem chúng trong công cụ dành cho nhà phát triển (developer tools) của trình duyệt. Với các Ứng dụng, gỡ cài đặt sẽ xóa chúng; nếu trình gỡ cài đặt trên desktop để sót lại thư mục dữ liệu của Ứng dụng (`com.poli0981.freegamesitchio`), bạn có thể tự xóa thư mục đó. Trên Android, bạn cũng có thể xóa bộ nhớ của ứng dụng trong phần cài đặt hệ thống.
 
 ### 3.2 Cookie
 
-- Mã nguồn của chính Dự án **không đặt cookie nào** trên Website công khai.
+- Mã nguồn của chính Dự án đặt **một cookie** trên Website công khai: `__Host-fig_gate`, sau khi bạn qua bước xác minh (mục 2.1). Cookie này chỉ chứa thời điểm cấp và một chữ ký, không nhận diện ai, tồn tại **48 giờ** và chỉ được gửi tới freeitchgames.win (`HttpOnly`, `Secure`, `SameSite=Lax`). Cookie này thật sự cần thiết để chặn truy cập tự động, nên không cần sự đồng ý theo các quy định ePrivacy của EU hay PECR của Vương quốc Anh. Nếu bạn chặn nó, bước kiểm tra sẽ chạy lại ở mỗi lần truy cập.
 - Cloudflare có thể đặt các cookie bảo mật thật sự cần thiết, như `__cf_bm` hoặc `cf_clearance`, khi cơ chế chống bot hoặc thử thách (challenge) của họ hoạt động. Các cookie này chỉ phục vụ mục đích bảo mật.
-- Trang Suggest dùng Cloudflare Turnstile (mục 2.3); xem phụ lục quyền riêng tư Turnstile của Cloudflare (mục 4).
+- Bước xác minh và trang Suggest dùng Cloudflare Turnstile (mục 2.1 và 2.3); xem phụ lục quyền riêng tư Turnstile của Cloudflare (mục 4).
 - Khu vực quản trị dùng cookie phiên `CF_Authorization` của Cloudflare Access, cookie này chỉ tồn tại trong trình duyệt của Người duy trì.
 
 ## 4. Nhà cung cấp dịch vụ và các bên khác
 
 | Bên | Vai trò và công việc | Dữ liệu liên quan | Chính sách quyền riêng tư |
 |---|---|---|---|
-| **Cloudflare** | Bên xử lý dữ liệu cho Website: DNS, CDN, tường lửa và TLS; Workers (mã máy chủ của site) và static assets; R2 (ảnh bìa đã thu nhỏ); D1 (hàng chờ duyệt); Images (thu nhỏ ảnh); Turnstile (chỉ trang Suggest); Web Analytics; Workers Logs; Access (chỉ cho đăng nhập quản trị); Rate Limiting; Email Routing (chuyển tiếp các địa chỉ liên hệ của Dự án) | Dữ liệu request, đề xuất từ trang Suggest, hàng chờ duyệt, email được chuyển tiếp | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
+| **Cloudflare** | Bên xử lý dữ liệu cho Website: DNS, CDN, tường lửa và TLS; Workers (mã máy chủ của site) và static assets; R2 (ảnh bìa đã thu nhỏ); D1 (hàng chờ duyệt); Images (thu nhỏ ảnh); Turnstile (bước xác minh và trang Suggest); Web Analytics; Workers Logs; Access (chỉ cho đăng nhập quản trị); Rate Limiting; Email Routing (chuyển tiếp các địa chỉ liên hệ của Dự án) | Dữ liệu request, đề xuất từ trang Suggest, hàng chờ duyệt, email được chuyển tiếp | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
 | **GitHub** | Host mã nguồn, dữ liệu Danh mục, issue và discussion, pipeline dữ liệu (GitHub Actions) và các bản phát hành để tải về. Là bên kiểm soát độc lập đối với tài khoản và hoạt động GitHub của bạn | Các đóng góp công khai của bạn; dữ liệu request khi bạn truy cập GitHub hoặc tải bản phát hành | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
 | **itch.io** | Nền tảng độc lập, không liên kết với Dự án. Là nguồn dữ liệu game; mọi link game và lượt tải đều dẫn tới đó; các Ứng dụng tải ảnh bìa từ img.itch.zone | Những gì trình duyệt của bạn hoặc các Ứng dụng gửi đi khi bạn truy cập itch.io hoặc tải ảnh bìa từ đó. Pipeline không gửi thông tin nào về bạn | <https://itch.io/docs/legal/privacy-policy> |
 | **Discord** | Nhận thông báo build và phát hành tự động từ GitHub Actions | Không có dữ liệu người truy cập | — |
@@ -147,6 +150,7 @@ Cloudflare có thể xử lý dữ liệu ở bất kỳ đâu trên mạng lư�
 | Email, bao gồm yêu cầu gỡ game và yêu cầu liên quan đến bản quyền | Trong thời gian cần thiết để xử lý yêu cầu |
 | Đóng góp trên GitHub | Trên GitHub, cho tới khi bạn hoặc GitHub xóa |
 | Lưu trữ trên trình duyệt | Xem mục 3.1 |
+| Cookie xác minh `__Host-fig_gate` | **48 giờ** (mục 3.2) |
 | Cookie `CF_Authorization` (chỉ Người duy trì) | Trong thời gian của phiên Cloudflare Access |
 
 ## 6. Cơ sở pháp lý
@@ -213,6 +217,7 @@ Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử 
 ## 10. Bảo mật
 
 - Website chỉ được phục vụ qua HTTPS.
+- Truy cập tự động phải qua bước kiểm tra Cloudflare Turnstile trước khi các trang và ảnh bìa của Website được tải (mục 2.1).
 - Tối thiểu hóa dữ liệu: không tài khoản, mã nguồn của Dự án không lưu địa chỉ IP, ghi chú Suggest bị xóa sau 180 ngày, bản ghi chống gửi trùng bị xóa sau 7 ngày.
 - Khu vực quản trị và API ingest được bảo vệ bằng Cloudflare Access, và mã máy chủ của Website tự xác minh token Access ở mọi request được bảo vệ.
 - Các thông tin bí mật (như private key của GitHub App) được giữ trong kho lưu trữ bí mật của Cloudflare, không bao giờ nằm trong Repository. Khu vực quản trị ghi vào Repository dưới danh nghĩa một GitHub App, với các commit đã được xác minh (verified).

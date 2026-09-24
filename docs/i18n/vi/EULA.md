@@ -1,14 +1,14 @@
 # Thỏa thuận cấp phép cho người dùng cuối (EULA)
 
-Cập nhật lần cuối: 2026-09-18
+Cập nhật lần cuối: 2026-09-24
 
-Áp dụng từ: khi phát hành phiên bản 4.0.0.
+Áp dụng từ: khi phát hành phiên bản 4.1.0.
 
-Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
 > Bản tiếng Anh: [`docs/EULA.md`](../../EULA.md).
 
-EULA này **chỉ áp dụng cho ứng dụng desktop và ứng dụng Android** của Itch.io Free Games DB: các bộ cài (`.msi`, `.exe`, `.dmg`, `.pkg`, `.app.tar.gz`, `.deb`, `.AppImage`) và file `.apk` Android được phát hành trên GitHub Releases. EULA này **không** áp dụng cho:
+EULA này **chỉ áp dụng cho ứng dụng desktop và ứng dụng Android** của Itch.io Free Games DB: các bộ cài (`.msi`, `.exe`, `.dmg`, `.pkg`, `.app.tar.gz`, `.deb`, `.rpm`, `.AppImage`) và file `.apk` Android được phát hành trên GitHub Releases. EULA này **không** áp dụng cho:
 
 - website <https://freeitchgames.win>, được điều chỉnh bởi [Điều khoản sử dụng](ToS.md);
 - mã nguồn, theo [Giấy phép MIT](../../../LICENSE);

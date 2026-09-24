@@ -9,7 +9,7 @@ type Language = 'en' | 'vi'
  * policy in docs/) to re-prompt every user once. Kept in sync with the
  * "Updated …" date in `about.legal.desc`. Stored value !== this → gate shows.
  */
-export const LEGAL_VERSION = '2026-09-18'
+export const LEGAL_VERSION = '2026-09-24'
 
 interface PrefsStore {
   density: Density

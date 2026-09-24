@@ -73,7 +73,7 @@ export const vi: Record<MessageKey, string> = {
   "about.bug.openTemplate": "Mở mẫu báo cáo bug",
   "about.bug.title": "Phát hiện bug?",
   "about.developer.title": "Nhà phát triển",
-  "about.legal.desc": "Tất cả chính sách là file Markdown trong repo — dễ hiểu, đầy đủ điều khoản. Cập nhật 2026-09-18.",
+  "about.legal.desc": "Tất cả chính sách là file Markdown trong repo — dễ hiểu, đầy đủ điều khoản. Cập nhật 2026-09-24.",
   "about.legal.title": "Pháp lý & chính sách",
   "about.legal.viNote": "— bản dịch tiếng Việt của các chính sách trên (để cộng đồng dễ đọc; bản tiếng Anh vẫn là bản có hiệu lực khi diễn giải pháp lý).",
   "about.social.desc": "DM mở trên hầu hết các kênh. Trả lời chậm (hướng nội cấp tối đa). Chọn kênh nào tiện cho bạn.",
