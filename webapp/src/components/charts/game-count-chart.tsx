@@ -1,11 +1,15 @@
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { CountHistoryPoint } from '@/types/game'
 import { ChartCard } from './chart-card'
+import { LINE_CURSOR, TOOLTIP_BASE } from './chart-theme'
+import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
 export function GameCountChart({ history }: { history: CountHistoryPoint[] }) {
   const t = useT()
+  const fmt = useFormat()
   return (
     <ChartCard title={t('charts.gameCount.title')} description={t('charts.gameCount.desc')}>
       {history.length === 0 ? (
@@ -19,10 +23,18 @@ export function GameCountChart({ history }: { history: CountHistoryPoint[] }) {
             <XAxis dataKey="date" tick={{ fontSize: 10 }} minTickGap={24} />
             <YAxis tick={{ fontSize: 11 }} width={48} allowDecimals={false} domain={['auto', 'auto']} />
             <Tooltip
-              cursor={{ stroke: 'hsl(var(--accent))' }}
-              contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))' }}
+              {...TOOLTIP_BASE}
+              cursor={LINE_CURSOR}
+              content={<ChartTooltipContent labelFormat={fmt.date} />}
             />
-            <Line type="monotone" dataKey="total" stroke={PALETTE[0]} strokeWidth={2} dot={false} />
+            <Line
+              type="monotone"
+              dataKey="total"
+              name={t('charts.series.games')}
+              stroke={PALETTE[0]}
+              strokeWidth={2}
+              dot={false}
+            />
           </LineChart>
         </ResponsiveContainer>
       )}

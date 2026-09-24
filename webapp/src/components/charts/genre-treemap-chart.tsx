@@ -1,9 +1,11 @@
 import { useMemo } from 'react'
-import { ResponsiveContainer, Tooltip, Treemap } from 'recharts'
+import { ResponsiveContainer, Tooltip, Treemap, type TooltipPayloadEntry } from 'recharts'
 import { genreTreemapData } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
+import { TOOLTIP_BASE } from './chart-theme'
+import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
 interface TreemapCellProps {
@@ -29,16 +31,22 @@ function TreemapCell(props: TreemapCellProps) {
         width={width}
         height={height}
         fill={PALETTE[index % PALETTE.length]}
-        stroke="hsl(var(--background))"
+        stroke="var(--background)"
         strokeWidth={2}
       />
       {width > 56 && height > 24 && (
-        <text x={x + 6} y={y + 18} fill="hsl(var(--background))" fontSize={12} fontWeight={600}>
+        <text x={x + 6} y={y + 18} fill="var(--background)" fontSize={12} fontWeight={600}>
           {name}
         </text>
       )}
     </g>
   )
+}
+
+// Tooltip entries carry no colour of their own here: use the cell's.
+function cellColor(entry: TooltipPayloadEntry): string {
+  const index = (entry.payload as { index?: number } | undefined)?.index ?? 0
+  return PALETTE[index % PALETTE.length]
 }
 
 export function GenreTreemapChart({ games }: { games: Game[] }) {
@@ -51,9 +59,7 @@ export function GenreTreemapChart({ games }: { games: Game[] }) {
     <ChartCard title={t('charts.genreTreemap.title')} description={t('charts.genreTreemap.desc')}>
       <ResponsiveContainer width="100%" height="100%">
         <Treemap data={treemapData} dataKey="size" nameKey="name" content={<TreemapCell />}>
-          <Tooltip
-            contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))' }}
-          />
+          <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent colorOf={cellColor} />} />
         </Treemap>
       </ResponsiveContainer>
     </ChartCard>
