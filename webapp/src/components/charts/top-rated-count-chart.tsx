@@ -4,6 +4,8 @@ import { topByRatingCount } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
+import { BAR_CURSOR, TOOLTIP_BASE } from './chart-theme'
+import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
 export function TopRatedCountChart({ games }: { games: Game[] }) {
@@ -22,11 +24,8 @@ export function TopRatedCountChart({ games }: { games: Game[] }) {
             tick={{ fontSize: 11 }}
             tickFormatter={(v: string) => (v.length > 20 ? `${v.slice(0, 19)}…` : v)}
           />
-          <Tooltip
-            cursor={{ fill: 'hsl(var(--accent))' }}
-            contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))' }}
-          />
-          <Bar dataKey="count" fill={PALETTE[3]} radius={[0, 4, 4, 0]} />
+          <Tooltip {...TOOLTIP_BASE} cursor={BAR_CURSOR} content={<ChartTooltipContent />} />
+          <Bar dataKey="count" name={t('charts.series.ratings')} fill={PALETTE[3]} radius={[0, 4, 4, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </ChartCard>

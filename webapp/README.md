@@ -104,7 +104,12 @@ Tauri apps use hash routes (`HashRouter`) on their custom protocol
 ([`src/components/app-router.tsx`](src/components/app-router.tsx)). The Worker serves the app shell
 with `200` for known routes, `404` for anything else and a `301` for renamed routes
 (`/deleted` → `/removed`), so [`worker/spa.ts`](worker/spa.ts) must be kept in sync with `App.tsx`.
-Every route except `/`, `/games`, `/removed` and the Not Found page is `React.lazy`.
+Every route except `/`, `/games` and the Not Found page is `React.lazy`.
+
+With the verification gate on, a visitor who has not passed the Turnstile check gets the
+verification page instead of the shell on every app route (and `403` on `/img`); see
+[`worker/gate.ts`](worker/gate.ts) and the setup in
+[`docs/operations.md`](../docs/operations.md) (section 1, step 14).
 
 ## Admin (`/admin/`)
 

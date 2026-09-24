@@ -2,9 +2,9 @@ name: Announce to Discussion
 
 # Two triggers, two destinations:
 #   1. release:published       → Announcements category
-#   2. push touching CHANGELOG.md → General (docs-only edits no longer post;
-#      put user-facing changes in the changelog). Add `[skip-discuss]` to the
-#      head-commit message to opt out.
+#   2. push touching the changelog (CHANGELOG.md index or changelog/**) →
+#      General (docs-only edits don't post; put user-facing changes in the
+#      changelog). Add `[skip-discuss]` to the head-commit message to opt out.
 #
 # No pre-flight needed — repo ID and category IDs are auto-discovered at
 # runtime via GraphQL (by category slug: "announcements" / "general").
@@ -17,6 +17,7 @@ on:
     branches: [main]
     paths:
       - 'CHANGELOG.md'
+      - 'changelog/**'
   workflow_dispatch:
     inputs:
       mode:
@@ -163,7 +164,7 @@ jobs:
         id: changes
         run: |
           set -euo pipefail
-          git diff --name-only HEAD^ HEAD -- CHANGELOG.md > changed.txt || true
+          git diff --name-only HEAD^ HEAD -- CHANGELOG.md changelog/ > changed.txt || true
           if [ ! -s changed.txt ]; then
             echo "no-docs-changed=true" >> "$GITHUB_OUTPUT"
           fi

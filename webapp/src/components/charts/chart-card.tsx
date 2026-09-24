@@ -15,7 +15,12 @@ export function ChartCard({ title, description, children }: ChartCardProps) {
           <p className="text-xs text-muted-foreground">{description}</p>
         )}
       </CardHeader>
-      <CardContent className="h-72">{children}</CardContent>
+      {/* Recharts 3 makes the chart focusable (keyboard navigation). A mouse
+          click would focus it too, drawing the browser's focus ring and
+          pinning the tooltip on the first item; keep clicks from moving focus. */}
+      <CardContent className="h-72" onMouseDown={(e) => e.preventDefault()}>
+        {children}
+      </CardContent>
     </Card>
   )
 }

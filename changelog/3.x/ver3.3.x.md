@@ -1,0 +1,24 @@
+# Changelog — 3.3.x
+
+Release notes for 3.3.0, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [3.3.0] - 2026-05-16 (Mobile polish + Settings + in-browser GPG commit signing)
+
+### Added
+
+- **In-browser GPG commit signing.** Every write the webapp makes (single-file edits, bulk edit/delete, queueing URLs) can now be GPG-signed client-side. New `webapp/src/lib/gpg/` module: `canonicalize.ts` builds the exact byte string Git would hash, `sign.ts` lazy-imports `openpgp` and exposes `loadPrivateKey` / `signCommit` / `verifyDetached`, `storage.ts` wraps localStorage helpers. Verified byte-for-byte against `git cat-file commit <sha>` so the signed canonical exactly matches what GitHub will recompute (no trailing-newline drift). Private keys are decrypted once at import and re-encrypted with the webapp passphrase (AES-GCM, same scheme as the PAT) — `openpgp` is loaded only when the Commit Signing card is opened or a commit is being signed (`vendor-openpgp` chunk, ~129 KB gz, lazy).
+- **Settings → Commit signing card.** New `webapp/src/components/settings/gpg-card.tsx` — three states (not configured / locked / unlocked) with Import (paste armored or upload `.asc`), Unlock, Test sign (round-trip verify), Copy public key, Lock, Remove. Shows the imported key's UIDs as badges and flags a clear mismatch warning if the configured commit-author email isn't in the key's UID list (the most common cause of GitHub's "Someone may be trying to trick you" warning). After import, primary UID email auto-populates Commit author so commits Verify on the first try.
+- **Settings Phase A — Appearance / Session / Commit author / Notifications cards.** [`webapp/src/routes/settings.tsx`](../../webapp/src/routes/settings.tsx) gained four new cards backed by extended preferences in [`webapp/src/stores/prefs.ts`](../../webapp/src/stores/prefs.ts): theme picker (Light / Dark / System), layout density (Normal / Compact), sidebar collapse mirror, idle-timeout slider (5 / 15 / 30 / 60 / 120 min — replaces the hard-coded 30-min constant in `auth.ts`), commit-author name/email override, toast enable + duration. Density applies via `html[data-density='compact']` rules in [`index.css`](../../webapp/src/index.css); toasts are gated through a new [`AppToaster`](https://github.com/poli0981/free-games-itchio-list/blob/v3.3.0/webapp/src/components/app-toaster.tsx) wrapper that reads prefs.
+- **Mobile card view for the games table.** New [`webapp/src/lib/use-is-mobile.ts`](../../webapp/src/lib/use-is-mobile.ts) (`matchMedia('(max-width: 767px)')`) and [`webapp/src/components/data-table/mobile-card-list.tsx`](https://github.com/poli0981/free-games-itchio-list/blob/v3.3.0/webapp/src/components/data-table/mobile-card-list.tsx). Below the `md` breakpoint, [`DataTable`](https://github.com/poli0981/free-games-itchio-list/blob/v3.3.0/webapp/src/components/data-table/data-table.tsx) renders a stacked card list (thumbnail + name + dev + genre/status/NSFW/safe badges, tap-to-detail, selection checkbox) instead of the 9-column virtualized table that overflowed at 430 px. Pagination is shared between both views.
+- **Workflows route mobile fallback.** `workflows.tsx` now dual-renders the action picker — a `<Select>` dropdown below `md`, the existing `TabsList` at `md` and above. Fixes the overflow from five `whitespace-nowrap` triggers in an `inline-flex` TabsList at 430 px viewport.
+
+### Changed
+
+- **All write paths route through the Git Data API.** `webapp/src/lib/github/contents.ts` `putFile` (`PUT /repos/.../contents/{path}`) is gone — that endpoint authors commits as the PAT and never accepts a `signature` field. Replaced with `commitSingleFile` which delegates to `atomicCommit` so single-file edits (game annotations, `temp_link.json` queue) get the same signer plumbing as bulk operations. `atomicCommit` gained an optional `signer` parameter (defaulting to `getSignerIfEnabled()`) that, when present, builds the canonical commit object, signs detached binary-mode via openpgp, and passes `author` / `committer` / `signature` to `git.createCommit`. Commit author identity falls back through prefs override → imported key's primary UID email → GitHub user.
+- **About page** lists `OpenPGP.js` 6.3 under Data dependencies; the [`webapp/vite.config.ts`](../../webapp/vite.config.ts) `manualChunks` rule emits a dedicated `vendor-openpgp` chunk so the cost is only paid when a user opens the signing card.
+- **README + README.vi badges** bumped to `3.3.0`.
+
+### Fixed
+
+- **Workflows `/workflows` tabs no longer overflow on mobile.** Pre-fix: five `whitespace-nowrap` triggers in an `inline-flex` TabsList blew past a 430 px viewport.
+- **DataTable no longer overflows on mobile.** Pre-fix: nine fixed-width columns minus three responsive-hidden ones still exceeded 430 px.

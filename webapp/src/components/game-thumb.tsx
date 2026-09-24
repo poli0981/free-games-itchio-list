@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import type { ImgHTMLAttributes } from 'react'
+import { recheckGate } from '@/lib/gate'
+import { isTauri } from '@/lib/runtime'
 import { thumbUrl, type ThumbWidth } from '@/lib/thumbnail'
 import { cn } from '@/lib/utils'
 
@@ -26,7 +28,11 @@ export function GameThumb({ src, size = 160, alt = '', className, ...rest }: Gam
       alt={alt}
       className={className}
       referrerPolicy="no-referrer"
-      onError={() => setFailedSrc(src)}
+      onError={() => {
+        setFailedSrc(src)
+        // Covers answer 403 once the verification pass ran out (lib/gate.ts).
+        if (!isTauri()) void recheckGate()
+      }}
       {...rest}
     />
   )

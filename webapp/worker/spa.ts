@@ -8,6 +8,8 @@
  * - App routes get the shell (index.html) with 200; unknown paths and game
  *   slugs that are not in the catalog get the same shell with 404, so the SPA
  *   still renders its Not Found page but crawlers see a real 404.
+ * - With the verification gate on, a visitor who has not passed gets the
+ *   verification page instead of the shell (gate.ts).
  */
 import { catalogUrls, type DataSource } from './data'
 import { json } from './http'
@@ -53,7 +55,10 @@ async function isAppRoute(pathname: string, src: DataSource): Promise<boolean> {
   return game !== null && (await isGameSlug(game[1], src))
 }
 
-export async function handleMiss(request: Request, url: URL, assets: Fetcher): Promise<Response> {
+/** Answers an app page request that may not see the shell yet; null lets it through (gate.ts). */
+export type PageGate = (request: Request) => Promise<Response | null>
+
+export async function handleMiss(request: Request, url: URL, assets: Fetcher, gate?: PageGate): Promise<Response> {
   if (request.method !== 'GET' && request.method !== 'HEAD') {
     return json({ error: 'method_not_allowed' }, 405, { Allow: 'GET, HEAD' })
   }
@@ -65,6 +70,10 @@ export async function handleMiss(request: Request, url: URL, assets: Fetcher): P
   }
   const moved = MOVED[url.pathname.replace(/\/+$/, '')]
   if (moved) return Response.redirect(new URL(moved + url.search, url).toString(), 301)
+  // Before the shell is fetched, so a conditional request (If-None-Match)
+  // without a pass gets the verification page, never a 304 for a cached shell.
+  const blocked = await gate?.(request)
+  if (blocked) return blocked
   // "/" rather than "/index.html": auto-trailing-slash would redirect the latter.
   const shell = await assets.fetch(new Request(new URL('/', url), request))
   if (shell.status !== 200 || (await isAppRoute(url.pathname, { assets, origin: url.origin }))) {

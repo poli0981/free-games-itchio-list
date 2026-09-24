@@ -1,6 +1,6 @@
 # Môi trường phát triển
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 > Bản gốc: [`dev_env.md`](../../dev_env.md).
 
 Bộ công cụ Maintainer dùng để viết và kiểm thử code trong repo này, và cách chạy từng phần trên máy.
@@ -115,15 +115,19 @@ DEV_ADMIN_EMAIL=you@example.com
 SITE_ORIGIN=http://localhost:5173
 TURNSTILE_SITEKEY=1x00000000000000000000AA
 TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+# Chỉ khi muốn thử cổng xác minh qua `npx wrangler dev` (http://localhost:8787):
+# GATE_SECRET=<32+ ký tự ngẫu nhiên, ví dụ `openssl rand -hex 32`>
 ```
 
 | Key | Loại | Tác dụng |
 |---|---|---|
 | `DEV_ADMIN_EMAIL` | chỉ local, tùy chọn | Vào admin mà không cần Cloudflare Access. Chỉ có hiệu lực khi host là `localhost`, `127.0.0.1` hoặc `[::1]`; bị bỏ qua ở mọi nơi khác |
 | `ADMIN_EMAILS` | secret | Danh sách email admin (phân cách bằng dấu phẩy), được kiểm tra sau Access. Không cần khi chạy local với `DEV_ADMIN_EMAIL` |
-| `TURNSTILE_SECRET` | secret | Form Suggest, đi cùng var `TURNSTILE_SITEKEY` |
-| `GH_APP_PRIVATE_KEY` | secret | Private key của GitHub App (PEM PKCS#8) cho các thao tác ghi của admin, đi cùng var `GH_APP_ID` và `GH_APP_INSTALLATION_ID` |
-| `SITE_ORIGIN` | ghi đè var | Form Suggest chỉ nhận POST có `Origin` trùng với giá trị này |
+| `TURNSTILE_SECRET` | secret | Form Suggest và cổng xác minh, đi cùng var `TURNSTILE_SITEKEY` |
+| `GATE_SECRET` | secret | Ký cookie của cổng xác minh (32+ ký tự). Thiếu nó thì cổng tắt. Khi chạy local, đặt `SITE_ORIGIN=http://localhost:8787` và mở site qua `wrangler dev`; ở đó cookie tên `fig_gate` (không có `Secure`) |
+| `GATE_BOT_TOKEN` | secret | Giá trị mà Transform Rule của zone gửi kèm cho bot đã xác minh (32+ ký tự). Bắt buộc trên production, không cần trên localhost |
+| `GH_APP_PRIVATE_KEY` | secret | Private key của GitHub App cho các thao tác ghi của admin — file PEM đúng như GitHub tải về (PKCS#1) hoặc PKCS#8, đi cùng var `GH_APP_ID` và `GH_APP_INSTALLATION_ID` |
+| `SITE_ORIGIN` | ghi đè var | Form Suggest và cổng xác minh chỉ nhận POST có `Origin` trùng với giá trị này |
 
 Tính năng nào thiếu cấu hình sẽ trả về `503`; trang công khai không cần cấu hình nào trong số này.
 Hai giá trị Turnstile ở trên là test key luôn-thành-công của Cloudflare

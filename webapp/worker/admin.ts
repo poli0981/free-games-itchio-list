@@ -23,7 +23,7 @@ import { catalogUrls, deletedGames, type DataSource } from './data'
 import { ACCESS_CONFIG, GITHUB_CONFIG, missingConfig, type WorkerEnv } from './env'
 import { GitHubError } from './github'
 import type { GitHubEnv } from './github'
-import { HttpError, SECURITY_HEADERS, errorResponse, isObject, json, readJson } from './http'
+import { HttpError, LOCAL_HOSTS, SECURITY_HEADERS, errorResponse, isObject, json, readJson } from './http'
 import { r2Key } from './img'
 import { autoFlags, classify, type CandidateRow, type CandidateStatus, type QueueStore } from './queue'
 import { editCatalog, queueForIngest, type CatalogEditResult } from './repo'
@@ -73,8 +73,6 @@ function githubRepo(env: WorkerEnv): RepoOps | null {
     editCatalog: (edits, removals) => editCatalog(gh, edits, removals),
   }
 }
-
-const LOCAL_HOSTS = new Set(['localhost', '127.0.0.1', '[::1]'])
 
 async function maintainer(request: Request, env: WorkerEnv): Promise<string> {
   // `wrangler dev` only: Access does not run on localhost. Set DEV_ADMIN_EMAIL

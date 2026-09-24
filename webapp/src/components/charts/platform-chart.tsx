@@ -4,6 +4,8 @@ import { countByArray } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
+import { SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
 export function PlatformChart({ games }: { games: Game[] }) {
@@ -20,17 +22,13 @@ export function PlatformChart({ games }: { games: Game[] }) {
             innerRadius="50%"
             outerRadius="80%"
             paddingAngle={2}
+            stroke={SLICE_STROKE}
           >
             {data.map((_, i) => (
               <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
             ))}
           </Pie>
-          <Tooltip
-            contentStyle={{
-              background: 'hsl(var(--popover))',
-              border: '1px solid hsl(var(--border))',
-            }}
-          />
+          <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent />} />
           <Legend />
         </PieChart>
       </ResponsiveContainer>

@@ -1,10 +1,10 @@
 # End-User License Agreement (EULA)
 
-Last updated: 2026-09-18
+Last updated: 2026-09-24
 
-Applies from: the release of version 4.0.0.
+Applies from: the release of version 4.1.0.
 
-This EULA applies **only to the desktop and Android apps** of Itch.io Free Games DB: the installers (`.msi`, `.exe`, `.dmg`, `.pkg`, `.app.tar.gz`, `.deb`, `.AppImage`) and the Android `.apk` published on GitHub Releases. It does **not** cover:
+This EULA applies **only to the desktop and Android apps** of Itch.io Free Games DB: the installers (`.msi`, `.exe`, `.dmg`, `.pkg`, `.app.tar.gz`, `.deb`, `.rpm`, `.AppImage`) and the Android `.apk` published on GitHub Releases. It does **not** cover:
 
 - the website <https://freeitchgames.win>, which is covered by the [Terms of Use](ToS.md);
 - the source code, which is under the [MIT License](../LICENSE);

@@ -1,9 +1,12 @@
-# Cloudflare Workers static-asset headers (files in dist/ only — responses the
-# Worker builds itself set their own, see worker/http.ts).
+# Cloudflare Workers static-asset headers: files in dist/, served directly or
+# fetched by the Worker through env.ASSETS (the app shell). Responses the Worker
+# builds itself set their own — JSON and /img in worker/http.ts, the
+# verification page (its own CSP with a nonce) in worker/gate-page.ts.
 # HSTS and X-Content-Type-Options are already sent by the zone.
 #
-# CSP: everything is same-origin (/data catalog, /img covers). The Cloudflare
-# Web Analytics beacon and Turnstile (Suggest form) are the only third parties.
+# CSP: everything is same-origin (/data catalog, /img covers). The only third
+# parties are the Cloudflare Web Analytics beacon, which the zone injects into
+# every HTML response, and Turnstile (the Suggest form).
 # style-src needs 'unsafe-inline' (Radix and Recharts set inline styles at runtime).
 /*
   Referrer-Policy: strict-origin-when-cross-origin
@@ -27,6 +30,12 @@
 
 /icon-*
   Cache-Control: public, max-age=604800
+
+/favicon.svg
+  Cache-Control: public, max-age=604800
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=86400
 
 /.well-known/security.txt
   Cache-Control: public, max-age=86400

@@ -1,8 +1,8 @@
 # Terms of Use
 
-Last updated: 2026-09-18
+Last updated: 2026-09-24
 
-Applies from: the release of version 4.0.0.
+Applies from: the release of version 4.1.0.
 
 These Terms of Use ("Terms") govern your use of the website **https://freeitchgames.win**, the desktop and Android apps, and the public catalog data of `free-games-itchio-list`. They are written in plain language, but they are a real agreement. They replace the older Terms and also cover what the old web-app "EULA" used to say; the [EULA](EULA.md) now covers only the app installers and the Android APK.
 
@@ -63,7 +63,7 @@ You agree **not** to:
 1. **Bulk-scrape** the Website or its API beyond the published `/data` files. Use the `/data` JSON files or the Repository instead; it is cheaper for everyone.
 2. **Abuse the image proxy** (`/img`): it exists only to show cover images on the Website. Don't hotlink `/img` URLs from other sites or apps, and don't use it to fetch images in bulk.
 3. **Access restricted areas without authorization**: `/admin`, the admin API (`/api/admin/…`) and the ingest API (`/api/ingest`) are for the Maintainer only. Good-faith security research is welcome under the rules of the [Security Policy](../SECURITY.md).
-4. **Spam the Suggest form**, or circumvent Turnstile or the rate limits (for example with scripts or rotating IP addresses).
+4. **Spam the Suggest form**, or circumvent the Website's verification check, Turnstile or the rate limits (for example with scripts, shared verification cookies or rotating IP addresses).
 5. **Submit links to malware**, scams, phishing, or illegal content, anywhere in the Project.
 6. **Misrepresent affiliation**: don't claim to be the Maintainer or the Project, don't present a fork or copy as the official Project, don't claim that the Project is run or endorsed by itch.io, and don't use the names "poli0981" or "SkullMute" to endorse your own work without prior written permission.
 7. **Disrupt the Project**: don't attempt to overload, break or impair the Website (for example by denial-of-service), and don't use the Project to put unreasonable load on itch.io. If you run the pipeline code yourself, you are responsible for complying with itch.io's terms and for keeping its request pacing.

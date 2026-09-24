@@ -153,6 +153,12 @@
   }
 }
 
+/* Charts: Chromium's SVG stylesheet outlines any focused element, mouse focus
+   included. Keep the ring for keyboard focus only (the :focus-visible rule above). */
+.recharts-wrapper :focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* index.html's static fallback shows only if the app hasn't started after a moment. */
 [data-static-fallback] {
   animation: static-fallback 0s 1.5s both;

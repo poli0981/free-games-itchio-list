@@ -9,6 +9,10 @@ interface Secrets {
   GH_APP_PRIVATE_KEY?: string // GitHub App PEM (PKCS#1 as downloaded, or PKCS#8)
   ADMIN_EMAILS?: string // comma-separated maintainer emails
   TURNSTILE_SECRET?: string
+  /** 32+ random characters: signs the verification-gate cookie (gate.ts). */
+  GATE_SECRET?: string
+  /** 32+ random characters: the value the zone's Transform Rule sends for verified bots (gate.ts). */
+  GATE_BOT_TOKEN?: string
   /** Local `wrangler dev` only (admin without Access); ignored off localhost. */
   DEV_ADMIN_EMAIL?: string
 }

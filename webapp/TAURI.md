@@ -73,7 +73,7 @@ npm run tauri:build
 
 - Windows: `webapp/src-tauri/target/release/bundle/msi/*.msi` and `nsis/*.exe`
 - macOS: `webapp/src-tauri/target/release/bundle/dmg/*.dmg` and `macos/*.app`
-- Linux: `webapp/src-tauri/target/release/bundle/{appimage,deb}/*`
+- Linux: `webapp/src-tauri/target/release/bundle/{appimage,deb,rpm}/*`
 
 ### Installer license page
 
@@ -89,7 +89,7 @@ only the desktop and Android apps.
 push (or `workflow_dispatch`). Its `create-release` job opens **one draft** GitHub Release; the build
 jobs (Windows, macOS aarch64 + x86_64 cross-compiled from an Apple Silicon runner, Linux) upload into
 it: `.msi` / `.exe`, `.dmg` / `.app.tar.gz` / `.pkg` (built with `pkgbuild`, identifier read from
-`tauri.conf.json`), `.deb` / `.AppImage`. Release builds use no npm / cargo caches. The Android job
+`tauri.conf.json`), `.deb` / `.rpm` / `.AppImage`. Release builds use no npm / cargo caches. The Android job
 ([below](#ci)) attaches the APK to the same draft; the Maintainer publishes it once every asset is
 there (release steps: [`CLAUDE.md`](../CLAUDE.md#release--tag-process)).
 

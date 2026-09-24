@@ -6,6 +6,37 @@ export const SECURITY_HEADERS: Record<string, string> = {
   'Cross-Origin-Resource-Policy': 'same-site',
 }
 
+// HTML pages the Worker builds (the verification page): the rest of what
+// public/_headers gives the app's pages.
+export const PAGE_HEADERS: Record<string, string> = {
+  ...SECURITY_HEADERS,
+  'X-Frame-Options': 'DENY',
+  'Cross-Origin-Opener-Policy': 'same-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=()',
+}
+
+/** Hosts of `wrangler dev`, where Access does not run and cookies can't be Secure. */
+export const LOCAL_HOSTS = new Set(['localhost', '127.0.0.1', '[::1]'])
+
+/**
+ * Rate-limit key for the client: its IPv4 address, or the /64 of an IPv6 one
+ * (a single host can rotate through its whole /64).
+ */
+export function rateKey(request: Request): string {
+  const ip = (request.headers.get('cf-connecting-ip') ?? '').trim().toLowerCase()
+  if (!ip) return 'unknown'
+  const v4 = /(\d{1,3}(?:\.\d{1,3}){3})$/.exec(ip)
+  if (v4) return v4[1] // IPv4, also IPv4-mapped IPv6
+  const [head, tail] = ip.split('::')
+  const left = head ? head.split(':') : []
+  const right = tail === undefined ? [] : tail ? tail.split(':') : []
+  const groups = tail === undefined ? left : [...left, ...Array(Math.max(8 - left.length - right.length, 0)).fill('0'), ...right]
+  return `${groups
+    .slice(0, 4)
+    .map((g) => g.replace(/^0+(?=.)/, ''))
+    .join(':')}::/64`
+}
+
 export function json(body: unknown, status = 200, headers: Record<string, string> = {}): Response {
   return new Response(JSON.stringify(body), {
     status,
