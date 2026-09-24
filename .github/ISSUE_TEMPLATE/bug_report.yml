@@ -34,7 +34,7 @@ body:
     attributes:
       label: Version
       description: Shown on the About page (website and apps). For the desktop/Android app, the release you installed.
-      placeholder: e.g. 4.0.0
+      placeholder: e.g. 4.1.0
 
   - type: input
     id: environment
