@@ -28,8 +28,8 @@ const env = {
   TURNSTILE_SECRET: 'secret',
 } as unknown as WorkerEnv
 
-function siteverify(success: boolean, hostname = 'freeitchgames.win') {
-  return vi.fn(async () => Response.json({ success, hostname }))
+function siteverify(success: boolean, hostname = 'freeitchgames.win', action = 'suggest') {
+  return vi.fn(async () => Response.json({ success, hostname, action }))
 }
 
 function suggestRequest(body: unknown, headers: Record<string, string> = {}) {
@@ -84,6 +84,8 @@ describe('POST /api/suggest', () => {
   it.each([
     ['a failed challenge', suggestRequest({ url: 'https://dev.itch.io/x', token: 't' }), { fetch: siteverify(false) }, 403],
     ['a token for another site', suggestRequest({ url: 'https://dev.itch.io/x', token: 't' }), { fetch: siteverify(true, 'evil.example') }, 403],
+    ['a token minted by the verification gate', suggestRequest({ url: 'https://dev.itch.io/x', token: 't' }), { fetch: siteverify(true, 'freeitchgames.win', 'gate') }, 403],
+    ['an unreachable siteverify', suggestRequest({ url: 'https://dev.itch.io/x', token: 't' }), { fetch: vi.fn(async () => new Response(null, { status: 502 })) }, 503],
     ['a cross-site post', suggestRequest({ url: 'https://dev.itch.io/x', token: 't' }, { origin: 'https://evil.example' }), {}, 403],
     ['a non-itch URL', suggestRequest({ url: 'https://example.com/game', token: 't' }), {}, 400],
     ['an over-long note', suggestRequest({ url: 'https://dev.itch.io/x', note: 'x'.repeat(501), token: 't' }), {}, 400],

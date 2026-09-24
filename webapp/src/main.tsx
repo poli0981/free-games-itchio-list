@@ -8,9 +8,11 @@ import { get, set, del } from 'idb-keyval'
 import App from './App'
 import { AppRouter } from './components/app-router'
 import { APP } from './lib/about'
+import { watchGate } from './lib/gate'
 import { initI18n } from './lib/i18n'
 import { isTauri } from './lib/runtime'
 import { clearLegacyCredentials, redirectLegacyHashRoute } from './lib/legacy'
+import { guardedReload } from './lib/reload'
 import '@fontsource-variable/geist'
 import '@fontsource-variable/geist-mono'
 import './index.css'
@@ -49,24 +51,17 @@ const PERSISTED_KEYS = new Set(['db', 'deleted', 'count-history'])
 const CACHE_BUSTER = `${APP.version}:data-v1`
 
 clearLegacyCredentials()
-if (!isTauri()) redirectLegacyHashRoute()
+if (!isTauri()) {
+  redirectLegacyHashRoute()
+  watchGate()
+}
 
 // A deploy replaces hashed chunk files; a tab opened before it would fail to
 // lazy-load a route. Reload to pick up the new build — at most once per 30 s,
 // so a chunk that still fails after the reload shows the error page (with its
-// Reload button) instead of looping. Without storage there is no loop guard,
-// so no automatic reload either.
-const RELOAD_KEY = 'reloaded-after-deploy'
+// Reload button) instead of looping.
 window.addEventListener('vite:preloadError', (event) => {
-  try {
-    const last = Number(sessionStorage.getItem(RELOAD_KEY)) || 0
-    if (Date.now() - last < 30_000) return
-    sessionStorage.setItem(RELOAD_KEY, String(Date.now()))
-  } catch {
-    return
-  }
-  event.preventDefault()
-  window.location.reload()
+  if (guardedReload()) event.preventDefault()
 })
 
 initI18n()

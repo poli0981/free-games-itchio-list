@@ -1,10 +1,13 @@
 /**
- * Worker for freeitchgames.win. Existing static assets (the app, /data/*) are
- * served by the assets layer without invoking this script. It runs for the
- * paths in wrangler.jsonc `assets.run_worker_first`, and for every request
- * that matches no asset (`not_found_handling: "none"`, see spa.ts).
+ * Worker for freeitchgames.win. Existing static assets (the app bundles,
+ * /data/*) are served by the assets layer without invoking this script. It
+ * runs for the paths in wrangler.jsonc `assets.run_worker_first` ("/" among
+ * them), and for every request that matches no asset (`not_found_handling:
+ * "none"`, see spa.ts).
  *
- *   /img/*          resized covers (img.ts)
+ *   app pages       the shell, once the visitor has passed the gate (spa.ts, gate.ts)
+ *   /img/*          resized covers, gated too (img.ts)
+ *   /api/verify     verification gate status + Turnstile check (gate.ts)
  *   /api/suggest    public suggestion form (suggest.ts)
  *   /api/ingest     browser extension, Access service token (ingest.ts)
  *   /api/admin/*    maintainer API, Access + JWT check (admin.ts)
@@ -16,6 +19,7 @@ import { handleAdminApi, serveAdminApp } from './admin'
 import { catalogUrls } from './data'
 import { discover } from './discover'
 import type { WorkerEnv } from './env'
+import { checkPass, gateConfig, gateNavigation, gateRequired, handleVerify } from './gate'
 import { json } from './http'
 import { handleImg } from './img'
 import { accessService, handleIngest } from './ingest'
@@ -32,8 +36,11 @@ export default {
     const url = new URL(request.url)
     const path = url.pathname
     const data = { assets: env.ASSETS, origin: url.origin }
+    const gate = gateConfig(env, url)
 
     if (path.startsWith('/img/')) {
+      // Before the edge cache and R2: a visitor without a pass costs nothing.
+      if (gate && !(await checkPass(request, gate)).via) return gateRequired()
       return handleImg(request, url, {
         assets: env.ASSETS,
         bucket: env.THUMBS,
@@ -43,6 +50,9 @@ export default {
       })
     }
     if (path === '/api/health') return json({ ok: true })
+    if (path === '/api/verify') {
+      return handleVerify(request, url, env, { fetch: (input, init) => fetch(input, init), limiter: env.RL_GATE })
+    }
     if (path === '/api/suggest') {
       return handleSuggest(request, env, {
         store: queueStore(env),
@@ -63,7 +73,7 @@ export default {
     if (path.startsWith('/api/')) return json({ error: 'not_found' }, 404)
     if (path === '/admin' || path.startsWith('/admin/')) return serveAdminApp(request, url, env)
 
-    return handleMiss(request, url, env.ASSETS)
+    return handleMiss(request, url, env.ASSETS, gate ? (r) => gateNavigation(r, gate) : undefined)
   },
 
   async scheduled(_controller, env: WorkerEnv): Promise<void> {

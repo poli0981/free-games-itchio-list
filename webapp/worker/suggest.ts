@@ -10,10 +10,10 @@
 import { canonicalize } from './canonical'
 import { catalogUrls, deletedGames, type DataSource } from './data'
 import { missingConfig, type WorkerEnv } from './env'
-import { HttpError, errorResponse, isObject, json, readJson } from './http'
+import { HttpError, errorResponse, isObject, json, rateKey, readJson } from './http'
 import { autoFlags, classify, type Outcome, type QueueStore } from './queue'
+import { siteverify } from './turnstile'
 
-const SITEVERIFY = 'https://challenges.cloudflare.com/turnstile/v0/siteverify'
 const MAX_NOTE = 500
 
 type SuggestStatus = 'received' | 'already_listed' | 'already_suggested' | 'not_accepted'
@@ -37,23 +37,6 @@ function enabled(env: WorkerEnv, deps: SuggestDeps): boolean {
   return missingConfig(env, ['TURNSTILE_SECRET', 'TURNSTILE_SITEKEY', 'SITE_ORIGIN']).length === 0 && deps.store !== null
 }
 
-async function verifyTurnstile(env: WorkerEnv, deps: SuggestDeps, token: string, ip: string): Promise<boolean> {
-  const form = new FormData()
-  form.set('secret', env.TURNSTILE_SECRET ?? '')
-  form.set('response', token)
-  if (ip) form.set('remoteip', ip)
-  try {
-    const res = await deps.fetch(SITEVERIFY, { method: 'POST', body: form })
-    const outcome = (await res.json()) as { success?: boolean; hostname?: string }
-    if (!outcome.success) return false
-    const expected = new URL(env.SITE_ORIGIN).hostname
-    // Turnstile's test keys answer with a placeholder hostname; only local dev uses them.
-    return !outcome.hostname || outcome.hostname === expected || expected === 'localhost'
-  } catch {
-    return false
-  }
-}
-
 export async function handleSuggest(request: Request, env: WorkerEnv, deps: SuggestDeps): Promise<Response> {
   try {
     if (request.method === 'GET') {
@@ -64,8 +47,7 @@ export async function handleSuggest(request: Request, env: WorkerEnv, deps: Sugg
     if (!enabled(env, deps) || !deps.store) throw new HttpError(503, 'unavailable')
     if (request.headers.get('origin') !== env.SITE_ORIGIN) throw new HttpError(403, 'bad_origin')
 
-    const ip = request.headers.get('cf-connecting-ip') ?? ''
-    if (deps.limiter && !(await deps.limiter.limit({ key: ip || 'unknown' })).success) {
+    if (deps.limiter && !(await deps.limiter.limit({ key: rateKey(request) })).success) {
       throw new HttpError(429, 'rate_limited')
     }
     const body = await readJson(request, 4096)
@@ -76,7 +58,18 @@ export async function handleSuggest(request: Request, env: WorkerEnv, deps: Sugg
     if (note.length > MAX_NOTE) throw new HttpError(400, 'note_too_long')
     const url = canonicalize(body.url)
     if (!url) throw new HttpError(400, 'invalid_url')
-    if (!(await verifyTurnstile(env, deps, body.token, ip))) throw new HttpError(403, 'challenge_failed')
+    const verdict = await siteverify(
+      {
+        secret: env.TURNSTILE_SECRET ?? '',
+        token: body.token,
+        ip: request.headers.get('cf-connecting-ip') ?? '',
+        action: 'suggest',
+        hostname: new URL(env.SITE_ORIGIN).hostname,
+      },
+      deps.fetch,
+    )
+    if (verdict === 'unavailable') throw new HttpError(503, 'challenge_unavailable')
+    if (verdict === 'rejected') throw new HttpError(403, 'challenge_failed')
 
     const [catalog, deleted, known] = await Promise.all([
       catalogUrls(deps.data),

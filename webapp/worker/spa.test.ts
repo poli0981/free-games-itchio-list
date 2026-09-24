@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { resetDataCache } from './data'
-import { handleMiss } from './spa'
+import { handleMiss, type PageGate } from './spa'
 
 const ORIGIN = 'https://freeitchgames.win'
 const SHELL = '<!doctype html><div id="root"></div>'
@@ -18,9 +18,9 @@ function assets(urls: Record<string, string> | 'down' = { 'https://dev.itch.io/c
   } as unknown as Fetcher
 }
 
-async function miss(path: string, init: RequestInit = {}, binding = assets()) {
+async function miss(path: string, init: RequestInit = {}, binding = assets(), gate?: PageGate) {
   const url = new URL(path, ORIGIN)
-  return handleMiss(new Request(url, init), url, binding)
+  return handleMiss(new Request(url, init), url, binding, gate)
 }
 
 beforeEach(() => resetDataCache())
@@ -71,5 +71,35 @@ describe('renamed routes', () => {
     expect(res.status).toBe(301)
     expect(res.headers.get('location')).toBe(`${ORIGIN}/removed?x=1`)
     expect((await miss('/removed')).status).toBe(200)
+  })
+})
+
+describe('with the verification gate', () => {
+  const VERIFY_PAGE = '<!doctype html><title>verify</title>'
+  const blocking = () => vi.fn<PageGate>(async () => new Response(VERIFY_PAGE, { headers: { 'cache-control': 'no-store' } }))
+  const passing = () => vi.fn<PageGate>(async () => null)
+
+  it('answers app pages with the verification page, without fetching the shell', async () => {
+    const binding = assets()
+    const res = await miss('/games', { headers: { 'if-none-match': '"shell-etag"' } }, binding, blocking())
+    expect(res.status).toBe(200) // never a 304 for a cached shell
+    expect(await res.text()).toBe(VERIFY_PAGE)
+    expect(binding.fetch).not.toHaveBeenCalled()
+  })
+
+  it('does not consult it for missing files, /data (CORS kept), renamed routes or other methods', async () => {
+    const gate = blocking()
+    expect((await miss('/assets/x-OLD.js', {}, assets(), gate)).status).toBe(404)
+    const data = await miss('/data/nope.json', {}, assets(), gate)
+    expect([data.status, data.headers.get('access-control-allow-origin')]).toEqual([404, '*'])
+    expect((await miss('/deleted', {}, assets(), gate)).status).toBe(301)
+    expect((await miss('/games', { method: 'POST' }, assets(), gate)).status).toBe(405)
+    expect(gate).not.toHaveBeenCalled()
+  })
+
+  it('serves the shell (or the 404 shell) once the request has passed', async () => {
+    expect(await (await miss('/charts', {}, assets(), passing())).text()).toBe(SHELL)
+    const unknown = await miss('/unknown', {}, assets(), passing())
+    expect([unknown.status, await unknown.text()]).toEqual([404, SHELL])
   })
 })
