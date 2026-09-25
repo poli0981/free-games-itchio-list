@@ -520,5 +520,29 @@
         "name": "GD 2.206a",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-09-24T07:50:04Z"
+    },
+    {
+        "url": "https://puldarrb.itch.io/liminal-memory",
+        "name": "Liminal Memory",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-25T08:11:39Z"
+    },
+    {
+        "url": "https://pierre-vandermaesen.itch.io/slime-soup",
+        "name": "SLIME SOUP",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-25T08:11:43Z"
+    },
+    {
+        "url": "https://reichiv.itch.io/redactvhs",
+        "name": "REDACT.vhs",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-25T08:11:46Z"
+    },
+    {
+        "url": "https://shatterglassgames.itch.io/tender",
+        "name": "Tender",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-25T08:11:50Z"
     }
 ]
