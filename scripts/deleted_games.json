@@ -544,5 +544,71 @@
         "name": "Tender",
         "reason": "Game became paid",
         "deleted_at": "2026-09-25T08:11:50Z"
+    },
+    {
+        "url": "https://duck-in-the-dark.itch.io/we-stand-at-the-door",
+        "name": "WE STAND AT THE DOOR",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:05Z"
+    },
+    {
+        "url": "https://itsthetalia.itch.io/crawling-angels-demo",
+        "name": "Crawling Angels Demo...",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-26T08:00:09Z"
+    },
+    {
+        "url": "https://lowkey-dev-123.itch.io/null-net",
+        "name": "Social_Incinerator",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-26T08:00:12Z"
+    },
+    {
+        "url": "https://thunkytank.itch.io/buttz-galaxy",
+        "name": "Buttz Galaxy",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:14Z"
+    },
+    {
+        "url": "https://kadecraft.itch.io/the-horror-game",
+        "name": "THE horror game",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:16Z"
+    },
+    {
+        "url": "https://reenny.itch.io/pathetic-gamer",
+        "name": "pathetic gamer",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:19Z"
+    },
+    {
+        "url": "https://pankapy.itch.io/heartbeat-impact",
+        "name": "Heartbeat Impact",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:23Z"
+    },
+    {
+        "url": "https://kollegi51.itch.io/the-architect-of-nowhere",
+        "name": "The Architect of Nowhere",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-26T08:00:26Z"
+    },
+    {
+        "url": "https://somni-144.itch.io/murasame",
+        "name": "Murasame",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:30Z"
+    },
+    {
+        "url": "https://nincy12.itch.io/clown",
+        "name": "Clown",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-26T08:00:33Z"
+    },
+    {
+        "url": "https://patchwork-penguin.itch.io/florp-engine",
+        "name": "Florp Engine",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-26T08:00:37Z"
     }
 ]
