@@ -11384,45 +11384,6 @@
         "updated_at": "24 September 2026 @ 22:24 UTC"
     },
     {
-        "url": "https://polyakovin.itch.io/locksmith",
-        "name": "Locksmith",
-        "dev": "Igor Polyakov",
-        "description": "Tactile incremental lockpicking noir for Playdate.",
-        "genre": "Simulation",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5Mjk4OTIyLnBuZw==/original/nKtukk.png",
-        "tags": [
-            "crank",
-            "Incremental",
-            "Indie",
-            "lock-picking",
-            "monochrome",
-            "Noir",
-            "Playdate",
-            "Steampunk"
-        ],
-        "platforms": [],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Aseprite",
-            "Sublime Text",
-            "Playdate"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "25 August 2026 @ 18:47 UTC",
-        "added_at": "2026-09-22T16:49:46Z"
-    },
-    {
         "url": "https://psychosage.itch.io/the-rooftop-driver",
         "name": "The rooftop driver!",
         "dev": "PsychoSage",
@@ -14634,7 +14595,7 @@
         "publisher": "N/A",
         "release_date": "26 September 2026 @ 15:59 UTC",
         "rating": "5.0",
-        "rating_count": "6",
+        "rating_count": "10",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMDgzMzUwLnBuZw==/original/PE9h89.png",
@@ -14698,7 +14659,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "26 September 2026 @ 21:17 UTC",
+        "updated_at": "27 September 2026 @ 08:24 UTC",
         "added_at": "2026-09-27T03:01:24Z"
     },
     {
@@ -14799,7 +14760,7 @@
         "publisher": "N/A",
         "release_date": "26 September 2026 @ 08:17 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMjM5NzUxLnBuZw==/original/6qziKY.png",
@@ -14855,7 +14816,7 @@
         "publisher": "N/A",
         "release_date": "25 September 2026 @ 22:31 UTC",
         "rating": "4.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMjU5MTMzLnBuZw==/original/FkZmJg.png",
@@ -15322,7 +15283,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "26 September 2026 @ 19:14 UTC",
+        "updated_at": "27 September 2026 @ 05:28 UTC",
         "added_at": "2026-09-27T03:02:30Z"
     },
     {
@@ -15684,7 +15645,7 @@
         "publisher": "N/A",
         "release_date": "26 September 2026 @ 00:01 UTC",
         "rating": "4.9",
-        "rating_count": "21",
+        "rating_count": "23",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMjU5NzI2LnBuZw==/original/5bwKzs.png",
@@ -15941,7 +15902,8 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-09-27T03:03:53Z"
+        "added_at": "2026-09-27T03:03:53Z",
+        "updated_at": "27 September 2026 @ 06:41 UTC"
     },
     {
         "url": "https://alejandroir.itch.io/meadowcomb",
@@ -15983,7 +15945,7 @@
         "publisher": "N/A",
         "release_date": "25 September 2026 @ 14:09 UTC",
         "rating": "4.1",
-        "rating_count": "14",
+        "rating_count": "16",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMjQ3NTA2LnBuZw==/original/XhLfnz.png",
@@ -16046,7 +16008,7 @@
         "publisher": "N/A",
         "release_date": "25 September 2026 @ 20:18 UTC",
         "rating": "4.7",
-        "rating_count": "18",
+        "rating_count": "19",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIzMzAwNzY3LnBuZw==/original/fVaHGz.png",
@@ -16123,7 +16085,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.3",
-        "rating_count": "96",
+        "rating_count": "99",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMjUyMzI3LnBuZw==/original/ykYj5w.png",

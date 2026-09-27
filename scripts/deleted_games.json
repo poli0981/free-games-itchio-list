@@ -610,5 +610,11 @@
         "name": "Florp Engine",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-09-26T08:00:37Z"
+    },
+    {
+        "url": "https://polyakovin.itch.io/locksmith",
+        "name": "Locksmith",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-27T08:34:34Z"
     }
 ]
