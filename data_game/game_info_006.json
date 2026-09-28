@@ -16809,5 +16809,36 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-09-27T15:41:25Z"
+    },
+    {
+        "url": "https://mor10th.itch.io/stop-at-the-gas-station",
+        "name": "Stop at the Gas Station",
+        "dev": "Mor10",
+        "description": "Two girls chat at a gas station",
+        "genre": "Visual Novel",
+        "status": "On hold",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 17:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjc5NzMyLnBuZw==/original/ZMSjpo.png",
+        "tags": [
+            "2D",
+            "3D",
+            "AI Generated",
+            "Funny",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:58:54Z"
     }
 ]
