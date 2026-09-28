@@ -16840,5 +16840,731 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-09-28T05:58:54Z"
+    },
+    {
+        "url": "https://cyber-enka.itch.io/kobugin",
+        "name": "サイバー演歌アドベンチャー こぶし銀座3丁目 電脳芸能事務所",
+        "dev": "cyber_enka",
+        "description": "無料／ブラウザで遊べる／第一話 昭和100年代の東京下町・祭馬町。 商店街「こぶし銀座3丁目」の片隅にある弱小電脳芸能事務所「引火帝国」へ、アルバイト面接にやってきた青年・土門ハヤト。 ところが事務所には誰もいない。 そこへ一本の電話が鳴る。 「大事なmyマイクを事務所に忘れちゃった！」 電話の主は、引火帝国を代表するサイバー演歌歌手・雷音こずえ。...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 15:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTE3ODA5LnBuZw==/original/PO1IwG.png",
+        "tags": [
+            "Comedy",
+            "cyber-enka",
+            "Cyberpunk",
+            "Indie",
+            "japanese",
+            "Music",
+            "Retro",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:14Z"
+    },
+    {
+        "url": "https://lockedon.itch.io/nightmare-neighborhood",
+        "name": "Nightmare Neighborhood",
+        "dev": "LockedOn",
+        "description": "Nightmare Neighborhood is a trick-or-treating roguelike visual novel where you must manage your resources, wear different costumes to double dip houses, all to collect as much candy as you can...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 09:23 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjUwNzUyLnBuZw==/original/%2FmIq0f.png",
+        "tags": [
+            "Halloween",
+            "Monsters",
+            "Roguelike"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop",
+            "Logic Pro"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:16Z"
+    },
+    {
+        "url": "https://mirmir-squad.itch.io/sesja-poprawkowa",
+        "name": "Sesja Poprawkowa (That time we got isekaied as ĄGH students on a quest to pass ultra hard subjects (...))",
+        "dev": "MirMir Squad",
+        "description": "Sesja Poprawkowa (That time me and my squad got isekaied as ĄGH students on an epic quest to pass ultra hard subjects with the help of our teachers and the power of friendship) Potato Jam 2026,...",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 21:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzIxMTE3LnBuZw==/original/gMuLg7.png",
+        "tags": [
+            "2D",
+            "crossover",
+            "No AI",
+            "Pixel Art",
+            "shitpost",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:20Z"
+    },
+    {
+        "url": "https://pepolon2.itch.io/win-her-over-with-curry",
+        "name": "Win Her Over with Curry",
+        "dev": "pepolon2",
+        "description": "Win Her Over with Curry is a short yuri romantic comedy visual novel with a curry-crafting system, multiple endings, and a slightly unsettling yandere twist.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 08:51 UTC",
+        "rating": "1.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjk4MzA2LnBuZw==/original/5HD0Ue.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Cooking",
+            "Romance",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:23Z"
+    },
+    {
+        "url": "https://pikon.itch.io/spiritbound",
+        "name": "Spiritbound",
+        "dev": "Pikon",
+        "description": "Spend Halloween with Hazel and her friends in this short, choice-driven visual novel where friendship and horror collide.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 08:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjk1Njc5LmpwZw==/original/1w0YU6.jpg",
+        "tags": [
+            "choices-matter",
+            "Dark",
+            "friendship",
+            "Halloween",
+            "Horror",
+            "Indie",
+            "Meaningful Choices",
+            "Psychological Horror",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:27Z"
+    },
+    {
+        "url": "https://theswisshui.itch.io/who-the-hell-is-gustavo",
+        "name": "Who the hell is Gustavo?",
+        "dev": "TheSwissHui, Shirizuna, lilith.mary, Niki.kiwi",
+        "description": "Have you ever wanted to go on a blind date with a Gustavo?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 21:48 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzA0OTUwLmdpZg==/original/E5RrV7.gif",
+        "tags": [
+            "2D",
+            "Casual",
+            "Comedy",
+            "No AI",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:30Z"
+    },
+    {
+        "url": "https://warasibe1192.itch.io/test",
+        "name": "Ms. Bell's Rally-X MD",
+        "dev": "NK Soft",
+        "description": "Overview This is the eighth game in the “Or Maybe This Is the Perfect Life” series.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 13:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTgxMTA3LnBuZw==/original/VfNsIB.png",
+        "tags": [
+            "16-bit",
+            "Mega Drive",
+            "Retro",
+            "Sega Genesis"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:34Z"
+    },
+    {
+        "url": "https://beautales.itch.io/tcof",
+        "name": "The Cost of Freedom",
+        "dev": "beautales",
+        "description": "Last Update: September 27th, 2026 Wordcount : ~21k There are dangers in these here waters.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 12:01 UTC",
+        "rating": "4.7",
+        "rating_count": "9",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NjE5MzE3LnBuZw==/original/N3EbTo.png",
+        "tags": [
+            "LGBT",
+            "Meaningful Choices",
+            "Narrative",
+            "No AI",
+            "Pirates",
+            "Story Rich",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:37Z"
+    },
+    {
+        "url": "https://lighttriadgames.itch.io/break-the-pinatas",
+        "name": "Break the Piñatas",
+        "dev": "LightTriadGames",
+        "description": "🪅 🍬 🪅 Try the demo of an incremental game about smashing piñatas, upgrading power and abilities!",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 04:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjQxNDgxLnBuZw==/original/gB3Av6.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Economy",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "Indie",
+            "No AI",
+            "Pixel Art",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:40Z"
+    },
+    {
+        "url": "https://mauricioghy.itch.io/minecraft-caverns",
+        "name": "Minecraft Caverns",
+        "dev": "Mauricio",
+        "description": "NO JUEGEN EN EL APK Minecraft Caverns Fangame 100% gratuito y será actualizado para siempre Por ahora no hay APK, puedes jugar en este link: https://gd.games/maurisio/minecraft-fangame Discord ‎...",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 18:01 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjYwMTY5LnBuZw==/original/5KaoIv.png",
+        "tags": [
+            "Fangame",
+            "Minecraft",
+            "Pixel Art",
+            "Roguelike",
+            "Singleplayer",
+            "Top-Down"
+        ],
+        "platforms": [
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "28 September 2026 @ 01:19 UTC",
+        "added_at": "2026-09-28T05:59:43Z"
+    },
+    {
+        "url": "https://ryan4237.itch.io/dont-panic-defend",
+        "name": "Don't Panic, Defend!",
+        "dev": "ryan4237",
+        "description": "Free browser demo of Don't Panic, Defend! — the full game is coming to Steam.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 08:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjk2MTIzLnBuZw==/original/HdIL8U.png",
+        "tags": [
+            "Auto Battler",
+            "Casual",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Medieval",
+            "Singleplayer",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:45Z"
+    },
+    {
+        "url": "https://sovium.itch.io/the-garden-of-wonders",
+        "name": "The Garden of Wonders",
+        "dev": "sovium",
+        "description": "Build a thriving root network in this cozy incremental game.",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 12:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjk5MjM1LnBuZw==/original/BFtK6K.png",
+        "tags": [
+            "Cozy",
+            "Cute",
+            "Hand-drawn",
+            "Incremental",
+            "nature"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:49Z"
+    },
+    {
+        "url": "https://xlaucifer.itch.io/remember",
+        "name": "Remember",
+        "dev": "Laucifer",
+        "description": "(IMPORTANTE: Aun estoy investigando como exportar el juego a MACOS, lo siento :( Intentare solucionarlo lo antes posible!!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 11:55 UTC",
+        "rating": "5.0",
+        "rating_count": "18",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NzE2MzMzLmdpZg==/original/CAEZBR.gif",
+        "tags": [
+            "Comedy",
+            "Creepy",
+            "creepypasta",
+            "Dating Sim",
+            "Horror",
+            "Indie",
+            "Narrative",
+            "Psychological Horror",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "Catalan; Valencian",
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:52Z"
+    },
+    {
+        "url": "https://giii3-game.itch.io/tscave",
+        "name": "テイエス洞窟 3D ― 戦士ビルと紋様の呪い",
+        "dev": "Giii3 game",
+        "description": "平和な観光地だったテイエス洞窟から、魔物があふれ出した。 討伐に向かった王国一の戦士ビルの胸に、謎の少女が刻んだ赤い「紋様」。奥へ進むほど、体も、声も、心も――自分ではなくなっていく。 Claude 5.5のテストとして、Pixivに投稿していた小説をそのままツクール風のゲームにしてもらった、シンプルな作品です。5-10分で終わりのゲームブック的なものです。...",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 01:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjc2NzY4LnBuZw==/original/YNiSfs.png",
+        "tags": [
+            "3D",
+            "AI Generated",
+            "Dungeon Crawler",
+            "First-Person",
+            "gender-bender",
+            "japanese",
+            "Short",
+            "transformation"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:55Z"
+    },
+    {
+        "url": "https://giii3-game.itch.io/tscaveen",
+        "name": "TSF CAVE — Bill the Warrior and the Crest Curse",
+        "dev": "Giii3 game",
+        "description": "Story： pixiv Monsters are pouring out of TS(Teies) Cavern, once a peaceful tourist spot.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 01:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjc3MzA2LnBuZw==/original/XbkyFm.png",
+        "tags": [
+            "3D",
+            "AI Generated",
+            "Dungeon Crawler",
+            "Fantasy",
+            "First-Person",
+            "gender-bender",
+            "japanese",
+            "Short",
+            "transformation"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T05:59:59Z"
+    },
+    {
+        "url": "https://kukitothecoloredclover.itch.io/menos3-reupload-phases-1-3-android-port",
+        "name": "-3 Reupload (Phases 1-3) Android Port",
+        "dev": "KukitoTheColoredClover",
+        "description": ":3 reupload next i promise",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 04:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjkxODMwLnBuZw==/original/bf1zvI.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T06:00:03Z"
+    },
+    {
+        "url": "https://lauiss.itch.io/chad-aura-farmer",
+        "name": "Aura Farmer",
+        "dev": "Lauiss",
+        "description": "Your brother floored you in front of everyone and took the succession.",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 13:29 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzA0NjkwLnBuZw==/original/4c%2FdAY.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Low-poly",
+            "Meme",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T06:00:07Z"
+    },
+    {
+        "url": "https://ryanwlow.itch.io/endosymbiont",
+        "name": "Endosymbiont",
+        "dev": "ryanwlow",
+        "description": "About 3.8 billion years ago, near a hot vent on the sea floor, a single cell drifts.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 18:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjgwNTEyLnBuZw==/original/CP9Mwp.png",
+        "tags": [
+            "Automation",
+            "biology",
+            "evolution",
+            "factory",
+            "Idle",
+            "Incremental",
+            "Relaxing",
+            "science",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T06:00:09Z"
+    },
+    {
+        "url": "https://sheetterror.itch.io/nation-towers",
+        "name": "Nation Towers",
+        "dev": "SheetTerror",
+        "description": "Every click lays one brick on the tower of the country you are connecting from.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 18:05 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjgwMDEzLnBuZw==/original/I4HwWs.png",
+        "tags": [
+            "browser",
+            "Casual",
+            "Clicker",
+            "community",
+            "countries",
+            "Incremental",
+            "Multiplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Arabic",
+            "Bulgarian",
+            "Czech",
+            "Danish",
+            "German",
+            "Greek Modern",
+            "English",
+            "Spanish; Castilian",
+            "Estonian",
+            "Finnish",
+            "French",
+            "Hebrew (modern)",
+            "Hindi",
+            "Croatian",
+            "Hungarian",
+            "Indonesian",
+            "Icelandic",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Lithuanian",
+            "Latvian",
+            "Norwegian Bokmål",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Romanian Moldavian Moldovan",
+            "Slovak",
+            "Slovene",
+            "Albanian",
+            "Serbian",
+            "Swedish",
+            "Thai",
+            "Tagalog",
+            "Turkish",
+            "Ukrainian",
+            "Urdu",
+            "Vietnamese",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-28T06:00:13Z"
+    },
+    {
+        "url": "https://yotogi-chan.itch.io/yuzu-othello",
+        "name": "ゆず様のお貢ぎオセロ♡",
+        "dev": "yotogi_chan",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 09:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjY4NDMwLnBuZw==/original/XSKbc1.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "27 September 2026 @ 13:50 UTC",
+        "added_at": "2026-09-28T06:00:15Z"
     }
 ]
