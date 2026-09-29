@@ -1,6 +1,6 @@
 # Tuyên bố miễn trừ trách nhiệm (Disclaimer)
 
-Cập nhật lần cuối: 2026-09-18
+Cập nhật lần cuối: 2026-09-29
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
@@ -8,7 +8,7 @@ Cập nhật lần cuối: 2026-09-18
 
 Dự án này — repository `free-games-itchio-list` và website **[freeitchgames.win](https://freeitchgames.win)** — là một dự án sở thích: một danh mục được tuyển chọn và tự động cập nhật gồm các game miễn phí trên [itch.io](https://itch.io). Dự án do một dev người Việt đang thất nghiệp, poli0981 (SkullMute), vận hành — dưới đây gọi là "Người duy trì" — với các trợ lý AI gánh phần lớn việc nặng. Làm ra vì vibes, để khám phá game indie và giải khuây. Không hứa hẹn gì lớn lao — nhưng các điều khoản mang tính pháp lý dưới đây là thật.
 
-> **Tóm tắt**: Website, các ứng dụng và dữ liệu được cung cấp theo nguyên trạng. Dự án chỉ liên kết tới game; Dự án không làm, không lưu trữ và không quét game, và không liên kết với itch.io. Game người lớn bị ẩn trừ khi bạn tự bật. Hãy quét mọi thứ bạn tải về. Nếu bạn là người làm game và muốn gỡ game của mình, hãy email **takedown@freeitchgames.win**.
+> **Tóm tắt**: Website, các ứng dụng và dữ liệu được cung cấp theo nguyên trạng. Dự án chỉ liên kết tới game; Dự án không làm, không lưu trữ và không quét game, và không liên kết với itch.io. Game người lớn bị ẩn trừ khi bạn tự bật. Hãy quét mọi thứ bạn tải về. Nếu bạn là người làm game và muốn gỡ game của mình, hãy email **takedown@poli0981.dev**.
 
 ## 1. Phạm vi áp dụng
 
@@ -64,7 +64,7 @@ Nếu bạn là người làm game hoặc chủ sở hữu quyền và không mu
 
 Bất kỳ ai — đặc biệt là người làm game và chủ sở hữu quyền — đều có thể yêu cầu gỡ một game hoặc sửa dữ liệu của game đó:
 
-- gửi email tới **takedown@freeitchgames.win**, hoặc
+- gửi email tới **takedown@poli0981.dev**, hoặc
 - mở một [issue "Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) trên GitHub (biểu mẫu này cũng dùng cho khiếu nại bản quyền). Issue trên GitHub là công khai, nên hãy dùng email cho những gì bạn muốn giữ riêng tư.
 
 Vui lòng ghi rõ URL itch.io của game, bạn là ai (người làm game hoặc chủ sở hữu quyền, hoặc người được họ ủy quyền), và lý do yêu cầu.
@@ -99,9 +99,9 @@ Tuyên bố này được điều chỉnh bởi pháp luật của **Cộng hòa
 
 ## 12. Liên hệ
 
-- Yêu cầu gỡ, sửa thông tin và khiếu nại bản quyền: **takedown@freeitchgames.win**
-- Câu hỏi và yêu cầu về quyền riêng tư: **privacy@freeitchgames.win**
-- Các vấn đề pháp lý khác: **legal@freeitchgames.win**
+- Yêu cầu gỡ, sửa thông tin và khiếu nại bản quyền: **takedown@poli0981.dev**
+- Câu hỏi và yêu cầu về quyền riêng tư: **privacy@poli0981.dev**
+- Các vấn đề pháp lý khác: **legal@poli0981.dev**
 
 Các địa chỉ này được chuyển tiếp tới Người duy trì.
 

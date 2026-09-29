@@ -5,4 +5,4 @@ contact_links:
     about: Suggest one free itch.io game right on the website, no GitHub account needed. Every suggestion is reviewed by the Maintainer before it enters the catalog.
   - name: 🔒 Report a security vulnerability (private)
     url: https://github.com/poli0981/free-games-itchio-list/security/advisories/new
-    about: Please report vulnerabilities privately here (or email security@freeitchgames.win), never in a public issue.
+    about: Please report vulnerabilities privately here (or email security@poli0981.dev), never in a public issue.

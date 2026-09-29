@@ -1,6 +1,6 @@
 # Third-party components
 
-Last updated: 2026-09-18
+Last updated: 2026-09-29
 
 Applies from: the release of version 4.0.0.
 
@@ -131,7 +131,8 @@ distributed with the project; each one is under the license in its own repositor
 
 | Service | What it does for the project |
 |---|---|
-| **Cloudflare** | DNS, CDN, WAF, TLS; Workers and static assets (the website); R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification page and the Suggest page); Web Analytics (cookieless, aggregate); Workers Logs; Access (admin login); Rate Limiting; Email Routing (the project's contact addresses) |
+| **Cloudflare** | DNS, CDN, WAF, TLS; Workers and static assets (the website); R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification page and the Suggest page); Web Analytics (cookieless, aggregate); Workers Logs; Access (admin login); Rate Limiting |
+| **Google Workspace** | The Maintainer's mailbox on poli0981.dev, which receives the project's contact addresses |
 | **GitHub** | Code, catalog data, issues and discussions, Actions (the pipeline), release downloads |
 | **itch.io** | Where the games live; the pipeline and RSS discovery read public itch.io pages and feeds |
 | **Discord** | Receives automated CI and release notifications only |

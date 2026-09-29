@@ -12,6 +12,7 @@ import {
   Globe,
   Hash,
   Heart,
+  Mail,
   MessagesSquare,
   ScrollText,
   Send,
@@ -68,6 +69,12 @@ const SOCIAL_ICON: Record<string, LucideIcon> = {
   paypal: CircleDollarSign,
   steam: Gamepad2,
 }
+
+const DEV_LINKS: { href: string; label: string; icon: LucideIcon }[] = [
+  { href: DEV.website, label: DEV.website.replace(/^https:\/\/|\/$/g, ''), icon: Globe },
+  { href: DEV.githubUrl, label: DEV.githubUrl.replace('https://', ''), icon: Library },
+  { href: `mailto:${DEV.email}`, label: DEV.email, icon: Mail },
+]
 
 const SOCIAL_GROUP_ORDER: SocialGroup[] = ['social', 'community', 'messaging', 'support', 'gaming']
 const LEGAL_GROUP_ORDER: LegalGroup[] = ['policy', 'meta']
@@ -205,14 +212,20 @@ export default function About() {
             </Badge>
           </div>
           <p className="text-muted-foreground">{DEV.blurb}</p>
-          <ExtLink
-            href={DEV.githubUrl}
-            className="inline-flex items-center gap-1.5 text-sm font-medium hover:underline"
-          >
-            <Library className="h-4 w-4" />
-            {DEV.githubUrl.replace('https://', '')}
-            <ExternalLinkIcon className="h-3 w-3 opacity-50" />
-          </ExtLink>
+          <ul className="space-y-1.5">
+            {DEV_LINKS.map(({ href, label, icon: Icon }) => (
+              <li key={href}>
+                <ExtLink
+                  href={href}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium hover:underline"
+                >
+                  <Icon className="h-4 w-4" />
+                  {label}
+                  {!href.startsWith('mailto:') && <ExternalLinkIcon className="h-3 w-3 opacity-50" />}
+                </ExtLink>
+              </li>
+            ))}
+          </ul>
         </CardContent>
       </Card>
 
@@ -260,6 +273,12 @@ export default function About() {
         <CardHeader>
           <CardTitle className="text-base">{t('about.social.title')}</CardTitle>
           <p className="text-xs text-muted-foreground">{t('about.social.desc')}</p>
+          <p className="text-xs text-muted-foreground">
+            {t('about.social.allLinks')}{' '}
+            <ExtLink href={DEV.linksUrl} className="font-medium text-foreground hover:underline">
+              {DEV.linksUrl.replace(/^https:\/\/|\/$/g, '')}
+            </ExtLink>
+          </p>
         </CardHeader>
         <CardContent className="space-y-5">
           {SOCIAL_GROUP_ORDER.map((group, i) => (

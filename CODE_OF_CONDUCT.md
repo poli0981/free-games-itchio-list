@@ -1,6 +1,6 @@
 # Code of Conduct
 
-Last updated: 2026-09-18
+Last updated: 2026-09-29
 
 Applies from: the release of version 4.0.0.
 
@@ -47,7 +47,7 @@ This Code of Conduct applies in all project spaces: the GitHub repository (issue
 
 If you experience or witness abusive, harassing or otherwise unacceptable behavior, report it **privately** to the Maintainer:
 
-- email **legal@freeitchgames.win**, or
+- email **legal@poli0981.dev**, or
 - send the Maintainer a direct message through one of the contact channels listed on the [About page](https://freeitchgames.win/about).
 
 Please don't report conduct problems in a public issue. Every report will be reviewed and handled promptly and fairly, and the Maintainer will respect the privacy and security of the person who reports.

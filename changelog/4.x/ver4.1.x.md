@@ -1,6 +1,27 @@
 # Changelog — 4.1.x
 
-Release notes for 4.1.0, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+Release notes for 4.1.0 and 4.1.1, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [4.1.1] - 2026-09-29 (New contact addresses)
+
+The project's contact addresses move to the maintainer's own domain, poli0981.dev.
+
+### Upgrade notes
+
+- **Updated Privacy Policy, Terms of Use and EULA** (new contact addresses; Google Workspace handles
+  the email): the site and the apps ask you to accept them again once.
+- **Desktop and Android apps**: install 4.1.1 over 4.1.0 as usual.
+
+### Changed
+
+- **Contact addresses** moved to the maintainer's own domain: `contact@`, `legal@`, `privacy@`,
+  `security@` and `takedown@poli0981.dev` (Google Workspace) replace the `@freeitchgames.win`
+  addresses in the policies, READMEs, issue templates, `security.txt` and the installer EULA.
+- **Privacy Policy, Terms of Use and EULA** (2026-09-29): Google Workspace replaces Cloudflare
+  Email Routing as the email processor, and `contact@poli0981.dev` is listed for general questions.
+- **About page**: the Developer card links the maintainer's website (poli0981.dev) and
+  `contact@poli0981.dev`; "Find me elsewhere" points to https://poli0981.dev/links/. `mailto:` links
+  open the mail client without a blank tab, and the apps may now open them.
 
 ## [4.1.0] - 2026-09-24 (Verification check, readable charts, changelog folder)
 

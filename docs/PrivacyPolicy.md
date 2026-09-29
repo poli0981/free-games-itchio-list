@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: 2026-09-24
+Last updated: 2026-09-29
 
-Applies from: the release of version 4.1.0.
+Applies from: 2026-09-29 on the Website, and from version 4.1.1 of the Apps.
 
 This Privacy Policy explains what personal data the `free-games-itchio-list` project processes, why, who helps process it, how long it is kept, and what rights you have. It covers the website **https://freeitchgames.win**, the desktop and Android apps, the public catalog data and the repository. The short version: there are no accounts, no ads and no tracking cookies. The Project keeps as little as it can, and most of what exists stays in your own browser.
 
@@ -15,13 +15,13 @@ A Vietnamese translation is available at [`docs/i18n/vi/PrivacyPolicy.md`](i18n/
 > - To keep bots out, your browser passes a quick Cloudflare Turnstile check before the Website loads, about once every 48 hours; one strictly necessary cookie remembers that you passed.
 > - Your settings (theme, language, 18+ choice, accepted terms) and a cache of the public catalog stay in your browser and are never sent to the Project.
 > - If you use the Suggest page, the Maintainer receives the game link, your optional note (deleted after 180 days) and the time. Please don't put personal data in the note.
-> - Questions or requests: **privacy@freeitchgames.win**.
+> - Questions or requests: **privacy@poli0981.dev**.
 
 ## 1. Who is responsible, and what this Policy covers
 
 ### 1.1 Controller
 
-The controller of the personal data described in this Policy is **the Maintainer**: poli0981 (SkullMute), an individual in Vietnam who runs the Project as a solo hobby. Contact: **privacy@freeitchgames.win** (see section 12).
+The controller of the personal data described in this Policy is **the Maintainer**: poli0981 (SkullMute), an individual in Vietnam who runs the Project as a solo hobby. Contact: **privacy@poli0981.dev** (see section 12).
 
 ### 1.2 Definitions
 
@@ -83,7 +83,7 @@ When you use the Suggest page (https://freeitchgames.win/suggest):
 
 ### 2.6 Contacting the Maintainer
 
-- Emails sent to the Project's addresses (section 12) are forwarded by Cloudflare Email Routing to the Maintainer's mailbox. The Maintainer receives your email address, any name you use and your message, and uses them only to handle your request.
+- Emails sent to the Project's addresses (section 12) are delivered to the Maintainer's mailbox, which is hosted by Google Workspace on the Maintainer's own domain, poli0981.dev. The Maintainer receives your email address, any name you use and your message, and uses them only to handle your request.
 - Correspondence about removal and copyright requests is kept as long as needed to handle the request.
 
 ### 2.7 GitHub contributions
@@ -127,12 +127,13 @@ These items are strictly necessary for features you use (keeping your settings, 
 
 | Party | Role and what it does | Data involved | Privacy policy |
 |---|---|---|---|
-| **Cloudflare** | Processor for the Website: DNS, CDN, firewall and TLS; Workers (the site's server code) and static assets; R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification check and the Suggest page); Web Analytics; Workers Logs; Access (admin login only); Rate Limiting; Email Routing (forwards the Project's contact addresses) | Request data, Suggest submissions, the review queue, forwarded emails | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
+| **Cloudflare** | Processor for the Website: DNS, CDN, firewall and TLS; Workers (the site's server code) and static assets; R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification check and the Suggest page); Web Analytics; Workers Logs; Access (admin login only); Rate Limiting | Request data, Suggest submissions, the review queue | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
 | **GitHub** | Hosts the code, the Catalog data, issues and discussions, the data pipeline (GitHub Actions) and the release downloads. Independent controller for your GitHub account and activity | Your public contributions; request data when you visit GitHub or download a release | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
+| **Google** | Processor for email: Google Workspace hosts the Maintainer's mailbox, which receives the Project's contact addresses (section 12) | Emails you send to those addresses (your address, name and message) | <https://policies.google.com/privacy> |
 | **itch.io** | Independent platform, not affiliated with the Project. Source of the game data; every game link and download goes there; the Apps load covers from img.itch.zone | What your browser or the Apps send when you visit itch.io or load covers from it. The pipeline sends nothing about you | <https://itch.io/docs/legal/privacy-policy> |
 | **Discord** | Receives automated build and release notifications from GitHub Actions | No visitor data | — |
 
-Cloudflare may process data anywhere on its global network (see section 9). The Maintainer does not give personal data to anyone else, except where the law requires it.
+Cloudflare and Google may process data anywhere on their global networks (see section 9). The Maintainer does not give personal data to anyone else, except where the law requires it.
 
 ## 5. How long data is kept
 
@@ -192,9 +193,9 @@ Under the GDPR and the UK GDPR, you can also ask for processing to be restricted
 
 ### 7.2 How to make a request
 
-- Email **privacy@freeitchgames.win**. Say what you want, and give enough detail to find the data: for example, the game URL you suggested and roughly when, or the email address you wrote from. The Maintainer may ask a follow-up question to confirm that the request is yours.
+- Email **privacy@poli0981.dev**. Say what you want, and give enough detail to find the data: for example, the game URL you suggested and roughly when, or the email address you wrote from. The Maintainer may ask a follow-up question to confirm that the request is yours.
 - The target is to answer within **30 days**; many requests are handled much sooner. Requests are free of charge.
-- Game creators who want a game removed or its data corrected can also email **takedown@freeitchgames.win** or open a ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) (public). The target for removals is within 7 days. The removal process is described in the [Terms of Use](ToS.md).
+- Game creators who want a game removed or its data corrected can also email **takedown@poli0981.dev** or open a ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) (public). The target for removals is within 7 days. The removal process is described in the [Terms of Use](ToS.md).
 
 ### 7.3 Limits worth knowing
 
@@ -207,12 +208,12 @@ Under the GDPR and the UK GDPR, you can also ask for processing to be restricted
 
 - The Project is not directed at children under 16. The legal gate asks every visitor to confirm that they are at least 16.
 - Adult (18+) content is hidden by default, cover images included. It appears only if a visitor opts in under Settings after confirming that they are 18 or older. That choice is stored only in their browser (`webapp.prefs`). The `nsfw` flag is a best-effort label (see the [Disclaimer](DISCLAIMER.md)).
-- The Maintainer does not knowingly collect personal data from children under 16. If you believe a child has sent personal data (for example in a Suggest note or an email), a parent or guardian can write to **privacy@freeitchgames.win** and it will be deleted.
+- The Maintainer does not knowingly collect personal data from children under 16. If you believe a child has sent personal data (for example in a Suggest note or an email), a parent or guardian can write to **privacy@poli0981.dev** and it will be deleted.
 
 ## 9. International transfers
 
 - The Maintainer is in Vietnam. Emails you send and the data in the review queue are handled by the Maintainer from Vietnam.
-- Cloudflare processes data on its global network, and GitHub operates internationally, so your data may be processed outside your country, including in countries whose data protection laws differ from yours. These providers describe the safeguards they use for international transfers in their privacy policies and data processing terms (links in section 4).
+- Cloudflare processes data on its global network, Google stores the Maintainer's email in its data centres, and GitHub operates internationally, so your data may be processed outside your country, including in countries whose data protection laws differ from yours. These providers describe the safeguards they use for international transfers in their privacy policies and data processing terms (links in section 4).
 
 ## 10. Security
 
@@ -223,7 +224,7 @@ Under the GDPR and the UK GDPR, you can also ask for processing to be restricted
 - Secrets (such as the GitHub App's private key) are kept in Cloudflare's secret storage, never in the Repository. The admin area writes to the Repository as a GitHub App, with verified commits.
 - A strict Content Security Policy limits scripts to the Website itself plus Cloudflare Web Analytics and Turnstile.
 - GitHub Actions are pinned to exact commit SHAs with least-privilege permissions, and Dependabot keeps dependencies up to date.
-- No system is perfectly secure. If you find a vulnerability, please report it privately as described in the [Security Policy](../SECURITY.md) or at **security@freeitchgames.win**. If a personal data breach occurs, the Maintainer will notify the people affected and the authorities as the law requires.
+- No system is perfectly secure. If you find a vulnerability, please report it privately as described in the [Security Policy](../SECURITY.md) or at **security@poli0981.dev**. If a personal data breach occurs, the Maintainer will notify the people affected and the authorities as the law requires.
 
 ## 11. Changes to this Policy
 
@@ -232,14 +233,15 @@ Under the GDPR and the UK GDPR, you can also ask for processing to be restricted
 
 ## 12. Contact
 
-All four addresses are forwarded to the Maintainer by Cloudflare Email Routing.
+All five addresses reach the Maintainer's own mailbox (Google Workspace, domain poli0981.dev).
 
-- **privacy@freeitchgames.win**: privacy questions and requests about your data (target answer: within 30 days).
-- **takedown@freeitchgames.win**: removing a game or correcting its data, including copyright claims.
-- **security@freeitchgames.win**: vulnerabilities (or GitHub's private vulnerability reporting; see the [Security Policy](../SECURITY.md)).
-- **legal@freeitchgames.win**: anything else legal.
+- **privacy@poli0981.dev**: privacy questions and requests about your data (target answer: within 30 days).
+- **takedown@poli0981.dev**: removing a game or correcting its data, including copyright claims.
+- **security@poli0981.dev**: vulnerabilities (or GitHub's private vulnerability reporting; see the [Security Policy](../SECURITY.md)).
+- **legal@poli0981.dev**: anything else legal.
+- **contact@poli0981.dev**: general questions that fit none of the above.
 
-For questions that aren't private, you can also open an issue in the Repository; issues are public.
+For questions that aren't private, you can also open an issue in the Repository; issues are public. The Maintainer's other channels are listed at <https://poli0981.dev/links/>.
 
 ## 13. Final vibes
 

@@ -31,7 +31,7 @@ Cả hai đều vào cùng hàng chờ duyệt với trang Suggest. (Đường t
 
 Đặc biệt với người làm game: nếu bạn muốn game của mình bị gỡ khỏi danh sách, hoặc muốn sửa dữ liệu của nó, lúc nào cũng được.
 
-- Gửi email tới **takedown@freeitchgames.win**, hoặc mở issue template **["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml)** (có cả mục dành cho khiếu nại bản quyền).
+- Gửi email tới **takedown@poli0981.dev**, hoặc mở issue template **["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml)** (có cả mục dành cho khiếu nại bản quyền).
 - Ghi rõ URL game, bạn là ai (người tạo / chủ sở hữu quyền, hoặc người được họ ủy quyền) và lý do.
 - Maintainer sẽ gỡ bản ghi khỏi danh mục (ghi kèm lý do trên [trang game đã gỡ](https://freeitchgames.win/removed) công khai) và xóa các bản ảnh bìa thu nhỏ mà site lưu trữ; các bản trong cache sẽ tự hết hạn. Mục tiêu: trong vòng 7 ngày, yêu cầu pháp lý khẩn cấp thì sớm hơn.
 - Lưu ý: đây là một repo git công khai, nên các phiên bản cũ vẫn còn trong lịch sử. Việc viết lại lịch sử công khai chỉ được làm trong trường hợp ngoại lệ vì bắt buộc về pháp lý.
@@ -74,7 +74,7 @@ Chi tiết có trong [Điều khoản sử dụng](ToS.md) và [Tuyên bố mi�
 - **CI phải pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) và Webapp CI (kiểm tra type sinh ra, lint, knip, test, build, `wrangler deploy --dry-run`) đều chạy trên PR. CI đỏ = không merge.
 - **PR được merge bằng squash** (một PR thành một commit trên `main`) **hoặc merge commit, không bao giờ fast-forward**, nên hãy đặt tiêu đề PR như một commit message tốt (repo dùng kiểu `type(scope): tóm tắt`, ví dụ `fix(web): …`).
 - **Giấy phép theo nguyên tắc inbound = outbound.** Khi mở PR, bạn đồng ý rằng đóng góp của mình được cấp phép theo cùng giấy phép với phần mà nó thay đổi: **MIT** cho mã nguồn, **CC BY 4.0** cho dữ liệu danh mục và tài liệu (xem [README → Giấy phép](../../../README.vi.md#giấy-phép)). Chỉ gửi những gì bạn có quyền gửi.
-- **Không bao giờ commit secret**: không token, API key, file `.dev.vars` / `.env`, private key (chẳng hạn khóa của GitHub App) hay keystore dùng để ký. Nếu lỡ push một cái, hãy báo riêng (security@freeitchgames.win) và thay mới (rotate) nó; chỉ xóa commit là không đủ.
+- **Không bao giờ commit secret**: không token, API key, file `.dev.vars` / `.env`, private key (chẳng hạn khóa của GitHub App) hay keystore dùng để ký. Nếu lỡ push một cái, hãy báo riêng (security@poli0981.dev) và thay mới (rotate) nó; chỉ xóa commit là không đủ.
 - **Không sửa tay `data_game/`.** Thay đổi dữ liệu phải đi qua pipeline (một patch + `apply_patch.py`, có chạy `validate.py`), để các tiến trình ghi đồng thời không đè lên nhau.
 - Không commit output build hay file sinh ra: `webapp/dist/`, `webapp/.wrangler/`, `webapp/src-tauri/target/`, `webapp/src-tauri/gen/`. (`webapp/src-tauri/Cargo.lock` **có** được commit; hãy cập nhật nó khi bạn sửa `Cargo.toml`.)
 - Thêm dependency npm? Thêm luôn vào danh sách `THIRD_PARTY` trong `webapp/src/lib/about.ts` để trang About ghi công.

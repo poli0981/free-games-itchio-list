@@ -1,8 +1,8 @@
 # End-User License Agreement (EULA)
 
-Last updated: 2026-09-24
+Last updated: 2026-09-29
 
-Applies from: the release of version 4.1.0.
+Applies from: the release of version 4.1.1.
 
 This EULA applies **only to the desktop and Android apps** of Itch.io Free Games DB: the installers (`.msi`, `.exe`, `.dmg`, `.pkg`, `.app.tar.gz`, `.deb`, `.rpm`, `.AppImage`) and the Android `.apk` published on GitHub Releases. It does **not** cover:
 
@@ -67,7 +67,7 @@ The App keeps Your preferences (language, theme, layout density, the 18+ choice,
 This EULA does not grant any rights to:
 
 - **The games listed in the Catalog.** Each game belongs to its developer and is licensed by them via itch.io. The App shows a link and metadata only. Downloading, playing, modifying or redistributing a game is governed by the developer's own terms and by itch.io's terms.
-- **Content created by others**: game names, descriptions and other text written by game creators, cover images and other media, logos and trademarks. They are shown so You can find and identify the games, and they remain the property of their owners. Game creators can ask for removal (see the [Terms of Use](ToS.md) or email takedown@freeitchgames.win).
+- **Content created by others**: game names, descriptions and other text written by game creators, cover images and other media, logos and trademarks. They are shown so You can find and identify the games, and they remain the property of their owners. Game creators can ask for removal (see the [Terms of Use](ToS.md) or email takedown@poli0981.dev).
 - **itch.io's trademarks, logos or service marks.** The project is not affiliated with, endorsed by or sponsored by itch.io. The itch.io name is used for identification only.
 - **Third-party libraries** bundled in the App, which keep their own licenses.
 - **The Website, the Catalog data and the source code**, which are covered by the Terms of Use, CC BY 4.0 and the MIT License respectively.
@@ -115,10 +115,11 @@ If any provision of this EULA is held invalid or unenforceable in a jurisdiction
 
 ## 13. Contact
 
-- Questions about this EULA, or anything else legal: legal@freeitchgames.win
-- Privacy requests: privacy@freeitchgames.win
-- Content removal and copyright: takedown@freeitchgames.win
-- Security vulnerabilities in the App: security@freeitchgames.win or GitHub private vulnerability reporting (see [SECURITY.md](../SECURITY.md)). Please don't open public issues for vulnerabilities.
+- Questions about this EULA, or anything else legal: legal@poli0981.dev
+- Privacy requests: privacy@poli0981.dev
+- Content removal and copyright: takedown@poli0981.dev
+- Security vulnerabilities in the App: security@poli0981.dev or GitHub private vulnerability reporting (see [SECURITY.md](../SECURITY.md)). Please don't open public issues for vulnerabilities.
+- Anything else: contact@poli0981.dev, or any channel listed at https://poli0981.dev/links/
 
 ## 14. Not legal advice
 

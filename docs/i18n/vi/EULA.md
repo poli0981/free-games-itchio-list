@@ -1,8 +1,8 @@
 # Thỏa thuận cấp phép cho người dùng cuối (EULA)
 
-Cập nhật lần cuối: 2026-09-24
+Cập nhật lần cuối: 2026-09-29
 
-Áp dụng từ: khi phát hành phiên bản 4.1.0.
+Áp dụng từ: khi phát hành phiên bản 4.1.1.
 
 Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
@@ -71,7 +71,7 @@ Khi Bạn bấm vào một game hoặc một link bên ngoài khác, link đó s
 EULA này không cấp quyền nào đối với:
 
 - **Các game được liệt kê trong Catalog.** Mỗi game thuộc về nhà phát triển của nó và được họ cấp phép thông qua itch.io. Ứng dụng chỉ hiển thị link và metadata. Việc tải về, chơi, sửa đổi hoặc phân phối lại một game được điều chỉnh bởi điều khoản riêng của nhà phát triển và điều khoản của itch.io.
-- **Nội dung do người khác tạo ra**: tên game, mô tả và các văn bản khác do nhà sáng tạo game viết, ảnh bìa và các nội dung đa phương tiện khác, logo và nhãn hiệu. Chúng được hiển thị để Bạn tìm và nhận diện game, và vẫn thuộc sở hữu của chủ sở hữu. Nhà sáng tạo game có thể yêu cầu gỡ bỏ (xem [Điều khoản sử dụng](ToS.md) hoặc gửi email tới takedown@freeitchgames.win).
+- **Nội dung do người khác tạo ra**: tên game, mô tả và các văn bản khác do nhà sáng tạo game viết, ảnh bìa và các nội dung đa phương tiện khác, logo và nhãn hiệu. Chúng được hiển thị để Bạn tìm và nhận diện game, và vẫn thuộc sở hữu của chủ sở hữu. Nhà sáng tạo game có thể yêu cầu gỡ bỏ (xem [Điều khoản sử dụng](ToS.md) hoặc gửi email tới takedown@poli0981.dev).
 - **Nhãn hiệu, logo hoặc nhãn hiệu dịch vụ của itch.io.** Dự án không liên kết với itch.io, cũng không được itch.io chứng thực hay tài trợ. Tên itch.io chỉ được dùng để nhận diện.
 - **Thư viện bên thứ ba** đi kèm trong Ứng dụng, vốn vẫn theo giấy phép riêng của chúng.
 - **Website, dữ liệu Catalog và mã nguồn**, lần lượt được điều chỉnh bởi Điều khoản sử dụng, CC BY 4.0 và Giấy phép MIT.
@@ -119,10 +119,11 @@ Nếu bất kỳ điều khoản nào của EULA này bị coi là vô hiệu ho
 
 ## 13. Liên hệ
 
-- Câu hỏi về EULA này, hoặc bất kỳ vấn đề pháp lý nào khác: legal@freeitchgames.win
-- Yêu cầu về quyền riêng tư: privacy@freeitchgames.win
-- Gỡ bỏ nội dung và bản quyền: takedown@freeitchgames.win
-- Lỗ hổng bảo mật trong Ứng dụng: security@freeitchgames.win hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub (xem [SECURITY.md](SECURITY.md)). Vui lòng không mở issue công khai cho lỗ hổng bảo mật.
+- Câu hỏi về EULA này, hoặc bất kỳ vấn đề pháp lý nào khác: legal@poli0981.dev
+- Yêu cầu về quyền riêng tư: privacy@poli0981.dev
+- Gỡ bỏ nội dung và bản quyền: takedown@poli0981.dev
+- Lỗ hổng bảo mật trong Ứng dụng: security@poli0981.dev hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub (xem [SECURITY.md](SECURITY.md)). Vui lòng không mở issue công khai cho lỗ hổng bảo mật.
+- Các vấn đề khác: contact@poli0981.dev, hoặc bất kỳ kênh nào được liệt kê tại https://poli0981.dev/links/
 
 ## 14. Không phải tư vấn pháp lý
 

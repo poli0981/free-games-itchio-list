@@ -1,6 +1,6 @@
 # Security Policy
 
-Last updated: 2026-09-18
+Last updated: 2026-09-29
 
 Applies from: the release of version 4.0.0.
 
@@ -11,7 +11,7 @@ Yo — this is a hobby project run by one person, poli0981 (SkullMute), called "
 Please **don't** report vulnerabilities in public issues, discussions, pull requests or Discord. Report them privately instead:
 
 - **GitHub private vulnerability reporting**: the repository's **Security** tab → **Report a vulnerability** ([direct link](https://github.com/poli0981/free-games-itchio-list/security/advisories/new)), or
-- email **security@freeitchgames.win**.
+- email **security@poli0981.dev**.
 
 A good report includes:
 
@@ -33,7 +33,7 @@ A good report includes:
 
 - itch.io itself — report to itch.io.
 - Platform issues in Cloudflare or GitHub — report to them through their own programs.
-- The games linked from the catalog. A game that contains malware is not a vulnerability in this project, but please still tell the Maintainer at **takedown@freeitchgames.win** so it can be flagged or removed.
+- The games linked from the catalog. A game that contains malware is not a vulnerability in this project, but please still tell the Maintainer at **takedown@poli0981.dev** so it can be flagged or removed.
 - Volumetric denial-of-service (DoS/DDoS) and load testing.
 - Reports from automated scanners without a working proof of concept.
 
@@ -67,7 +67,7 @@ If you research security in good faith and follow this policy, the Maintainer wi
 - **No social engineering, phishing or physical attacks** against the Maintainer or anyone else, and no attacks on anyone's Cloudflare, GitHub or itch.io accounts.
 - **Give the Maintainer reasonable time** to fix the issue before you disclose it publicly.
 
-This safe harbor covers only the Maintainer's own claims. It cannot authorize testing of Cloudflare, GitHub or itch.io; their own policies apply. If you are unsure whether something is OK, ask first at **security@freeitchgames.win**.
+This safe harbor covers only the Maintainer's own claims. It cannot authorize testing of Cloudflare, GitHub or itch.io; their own policies apply. If you are unsure whether something is OK, ask first at **security@poli0981.dev**.
 
 ## 6. Dependency and supply-chain security
 
@@ -83,7 +83,7 @@ If a known vulnerability in a dependency actually affects a deployed component (
 
 ## 7. Scams and impersonation
 
-The project has no accounts and takes no payments, so nobody from the project will ever ask for your password, a token or payment details. The only official website is https://freeitchgames.win (the old github.io address only redirects there), and the only official downloads are on GitHub Releases. If you see something pretending to be this project, please tell the Maintainer at **security@freeitchgames.win**.
+The project has no accounts and takes no payments, so nobody from the project will ever ask for your password, a token or payment details. The only official website is https://freeitchgames.win (the old github.io address only redirects there), and the only official downloads are on GitHub Releases. If you see something pretending to be this project, please tell the Maintainer at **security@poli0981.dev**.
 
 ## 8. Final vibes
 

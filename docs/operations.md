@@ -77,8 +77,9 @@ Do these once (and again with the `-staging` names for the staging Worker).
     HTML response (checked on 2026-09-24), so the build needs no token. Don't also set
     `VITE_CF_BEACON_TOKEN`: every page view would count twice. The CSPs of the app, the admin page and
     the verification page allow the beacon.
-11. **Email Routing**: create `legal@`, `privacy@`, `security@`, `takedown@freeitchgames.win` and forward
-    them to your mailbox (the policies publish these addresses).
+11. **Contact email**: the policies publish `contact@`, `legal@`, `privacy@`, `security@` and
+    `takedown@poli0981.dev` — aliases of the maintainer's Google Workspace mailbox (MX / SPF / DKIM /
+    DMARC for poli0981.dev live in that zone's Cloudflare DNS). freeitchgames.win needs no mail setup.
 12. **Zone settings**: SSL/TLS Full (strict), Always Use HTTPS, minimum TLS 1.2, TLS 1.3 on; Smart
     Tiered Cache; Browser Cache TTL "Respect existing headers"; Rocket Loader and Email Obfuscation
     **off** (they rewrite HTML and break the CSP); WAF managed rules on; one rate-limiting rule for

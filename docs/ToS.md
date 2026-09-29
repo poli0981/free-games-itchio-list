@@ -1,8 +1,8 @@
 # Terms of Use
 
-Last updated: 2026-09-24
+Last updated: 2026-09-29
 
-Applies from: the release of version 4.1.0.
+Applies from: 2026-09-29 on the Website, and from version 4.1.1 of the Apps.
 
 These Terms of Use ("Terms") govern your use of the website **https://freeitchgames.win**, the desktop and Android apps, and the public catalog data of `free-games-itchio-list`. They are written in plain language, but they are a real agreement. They replace the older Terms and also cover what the old web-app "EULA" used to say; the [EULA](EULA.md) now covers only the app installers and the Android APK.
 
@@ -77,7 +77,7 @@ Anyone can ask for a game to be removed from the Catalog or for its data to be c
 
 **How to ask**
 
-- Email **takedown@freeitchgames.win**, or
+- Email **takedown@poli0981.dev**, or
 - open a ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) in the Repository (it includes a copyright-claim section). GitHub issues are public, so use email for anything you don't want published.
 
 **Include**
@@ -145,7 +145,7 @@ If you break these Terms, your permission to use the Website and the Apps ends. 
 
 - These Terms are governed by the laws of the **Socialist Republic of Vietnam**, without regard to conflict-of-law principles.
 - Disputes are handled in this order:
-  1. **Informally first**: email **legal@freeitchgames.win**, open an issue, or use a contact channel listed on the About page (https://freeitchgames.win/about). Most disagreements end here.
+  1. **Informally first**: email **legal@poli0981.dev**, open an issue, or use a contact channel listed on the About page (https://freeitchgames.win/about) or at https://poli0981.dev/links/. Most disagreements end here.
   2. **Mediation**: if informal contact fails, the parties may try mediation by mutual agreement.
   3. **Courts**: otherwise, the competent courts of Vietnam have jurisdiction.
 - **Consumer rights**: nothing in these Terms limits the mandatory consumer-protection rights you have under the law of your country of residence, including any right that law gives you to bring a claim in your local courts.
@@ -157,18 +157,21 @@ If you break these Terms, your permission to use the Website and the Apps ends. 
 
 ## 17. Contact
 
-These addresses are forwarded to the Maintainer by Cloudflare Email Routing.
+These addresses reach the Maintainer's own mailbox (Google Workspace, domain poli0981.dev).
 
-- **legal@freeitchgames.win**: these Terms and anything else legal.
-- **takedown@freeitchgames.win**: content removal and copyright.
-- **privacy@freeitchgames.win**: privacy questions and requests.
-- **security@freeitchgames.win**: vulnerabilities (or GitHub's private vulnerability reporting; see the [Security Policy](../SECURITY.md)).
+- **legal@poli0981.dev**: these Terms and anything else legal.
+- **takedown@poli0981.dev**: content removal and copyright.
+- **privacy@poli0981.dev**: privacy questions and requests.
+- **security@poli0981.dev**: vulnerabilities (or GitHub's private vulnerability reporting; see the [Security Policy](../SECURITY.md)).
+- **contact@poli0981.dev**: general questions that fit none of the above.
+
+The Maintainer's other channels are listed at <https://poli0981.dev/links/>.
 
 ## 18. Final vibes
 
 This is still a list of free games plus a website and a few apps, built by a tired dev with zero budget and two AI buddies. Be cool, don't break things, credit the data, and have fun hunting free games.
 
-Questions? Email legal@freeitchgames.win, open an issue, or use any channel on the About page. The Maintainer will try not to ghost.
+Questions? Email legal@poli0981.dev, open an issue, or use any channel on the About page. The Maintainer will try not to ghost.
 
 ## 19. Not legal advice
 

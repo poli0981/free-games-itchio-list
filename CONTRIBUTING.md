@@ -27,7 +27,7 @@ Both land in the same review queue as the Suggest page. (The old Telegram bot pa
 
 Game creators especially: if you want your game off the list, or its data corrected, that's always fine.
 
-- Email **takedown@freeitchgames.win**, or open the **["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml)** issue template (it also has a section for copyright claims).
+- Email **takedown@poli0981.dev**, or open the **["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml)** issue template (it also has a section for copyright claims).
 - Include the game URL, who you are (the creator / rights holder, or someone authorized by them) and the reason.
 - The Maintainer removes the record from the catalog (logged with a reason on the public [removed-games page](https://freeitchgames.win/removed)) and deletes the resized cover copies the site stores; cached copies expire on their own. Target: within 7 days, urgent legal requests sooner.
 - Heads-up: this is a public git repo, so past versions stay in its history. Rewriting public history is only done in exceptional cases of legal necessity.
@@ -70,7 +70,7 @@ Details live in the [Terms of Use](docs/ToS.md) and the [Disclaimer](docs/DISCLA
 - **CI must pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) and Webapp CI (type generation check, lint, knip, tests, build, `wrangler deploy --dry-run`) both run on PRs. Red CI = no merge.
 - **PRs are merged with squash** (one PR becomes one commit on `main`) **or a merge commit, never by fast-forward**, so make the PR title a good commit message (the repo uses the `type(scope): summary` style, e.g. `fix(web): …`).
 - **Licensing is inbound = outbound.** By opening a PR you agree that your contribution is licensed under the same license as the part it changes: **MIT** for code, **CC BY 4.0** for catalog data and documentation (see [README → License](README.md#license)). Only submit work you have the right to submit.
-- **Never commit secrets**: no tokens, API keys, `.dev.vars` / `.env` files, private keys (such as the GitHub App key) or signing keystores. If you pushed one by accident, report it privately (security@freeitchgames.win) and rotate it; deleting the commit is not enough.
+- **Never commit secrets**: no tokens, API keys, `.dev.vars` / `.env` files, private keys (such as the GitHub App key) or signing keystores. If you pushed one by accident, report it privately (security@poli0981.dev) and rotate it; deleting the commit is not enough.
 - **Don't edit `data_game/` by hand.** Data changes go through the pipeline (a patch + `apply_patch.py`, which runs `validate.py`), so concurrent writers never clobber each other.
 - Don't commit build output or generated files: `webapp/dist/`, `webapp/.wrangler/`, `webapp/src-tauri/target/`, `webapp/src-tauri/gen/`. (`webapp/src-tauri/Cargo.lock` **is** committed; keep it in sync when you change `Cargo.toml`.)
 - Adding an npm dependency? Also add it to the `THIRD_PARTY` list in `webapp/src/lib/about.ts` so the About page credits it.

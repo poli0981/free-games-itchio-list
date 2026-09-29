@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-4.1.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.1.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -111,7 +111,7 @@ Prefer GitHub, or have a long list? The "Add Games (bulk list)" issue template w
 through the same review. See [CONTRIBUTING.md](CONTRIBUTING.md#1-suggest-new-games-most-welcome).
 
 Want a game **removed**, or its data corrected (game creators especially)? Email
-**takedown@freeitchgames.win** or open a
+**takedown@poli0981.dev** or open a
 ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 Include the game URL, who you are (creator / rights holder, or authorized by them) and the reason.
 Details: [Terms of Use](docs/ToS.md) and [Disclaimer](docs/DISCLAIMER.md).
@@ -272,12 +272,12 @@ Scraped fields default to `N/A` when not available on the game page.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 - **Add games**: use the [Suggest page](https://freeitchgames.win/suggest).
-- **Remove a game / fix its data**: email takedown@freeitchgames.win or open a
+- **Remove a game / fix its data**: email takedown@poli0981.dev or open a
   ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 - **Report bugs**: use the "Bug Report" issue template.
 - **Request features**: use the "Feature Request / Improvement" template, or send a PR.
 - **Security issues**: report them privately, never in a public issue. See [SECURITY.md](SECURITY.md).
-- **Privacy questions**: see the [Privacy Policy](docs/PrivacyPolicy.md) or email privacy@freeitchgames.win.
+- **Privacy questions**: see the [Privacy Policy](docs/PrivacyPolicy.md) or email privacy@poli0981.dev.
 - Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Contributors are credited in [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
@@ -292,6 +292,8 @@ Two Discord servers exist now (the "if I ever make one" disclaimer is officially
 - **Messaging**: [Telegram (DM)](https://t.me/SkullMute0011)
 - **Support** (totally optional, mirrors [`.github/FUNDING.yml`](.github/FUNDING.yml)): [GitHub Sponsors](https://github.com/sponsors/poli0981) · [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute) · [PayPal](https://paypal.me/DungDang212)
 - **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
+- **Website**: [poli0981.dev](https://poli0981.dev/) · every channel in one place: [poli0981.dev/links](https://poli0981.dev/links/)
+- **Email**: **contact@poli0981.dev**
 
 DMs are open everywhere; replies are slow (introvert max level). The site's
 [About page](https://freeitchgames.win/about) has the same list with one-click buttons.
@@ -338,9 +340,10 @@ belong to their respective owners.
 - [Security Policy](SECURITY.md)
 - [NOTICE](NOTICE.md)
 
-Contact (forwarded to the Maintainer):
+Contact (the Maintainer's own mailbox on poli0981.dev):
 
-- Privacy: **privacy@freeitchgames.win**
-- Content removal / copyright: **takedown@freeitchgames.win**
-- Security vulnerabilities: **security@freeitchgames.win** (or GitHub private vulnerability reporting)
-- Anything else legal: **legal@freeitchgames.win**
+- Privacy: **privacy@poli0981.dev**
+- Content removal / copyright: **takedown@poli0981.dev**
+- Security vulnerabilities: **security@poli0981.dev** (or GitHub private vulnerability reporting)
+- Anything else legal: **legal@poli0981.dev**
+- Everything else: **contact@poli0981.dev**, or any channel at [poli0981.dev/links](https://poli0981.dev/links/)

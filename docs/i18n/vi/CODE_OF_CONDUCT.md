@@ -1,6 +1,6 @@
 # Quy tắc ứng xử
 
-Cập nhật lần cuối: 2026-09-18
+Cập nhật lần cuối: 2026-09-29
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
@@ -49,7 +49,7 @@ Quy tắc ứng xử này áp dụng ở mọi không gian của dự án: repos
 
 Nếu bạn gặp phải hoặc chứng kiến hành vi lạm dụng, quấy rối hay các hành vi không thể chấp nhận khác, hãy báo cáo **riêng tư** cho Người duy trì:
 
-- email tới **legal@freeitchgames.win**, hoặc
+- email tới **legal@poli0981.dev**, hoặc
 - nhắn tin riêng cho Người duy trì qua một kênh liên hệ có trên [trang About](https://freeitchgames.win/about).
 
 Vui lòng đừng báo cáo vấn đề ứng xử qua issue công khai. Mọi báo cáo sẽ được xem xét và xử lý kịp thời, công bằng, và Người duy trì sẽ tôn trọng quyền riêng tư và sự an toàn của người báo cáo.
