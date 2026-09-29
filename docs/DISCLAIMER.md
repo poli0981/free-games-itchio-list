@@ -1,12 +1,12 @@
 # Disclaimer
 
-Last updated: 2026-09-18
+Last updated: 2026-09-29
 
 Applies from: the release of version 4.0.0.
 
 This project — the `free-games-itchio-list` repository and the website **[freeitchgames.win](https://freeitchgames.win)** — is a hobby project: a curated, auto-updating catalog of free games hosted on [itch.io](https://itch.io). It is run by one unemployed Vietnamese dev, poli0981 (SkullMute), called "the Maintainer" below, with AI buddies doing a lot of the heavy lifting. Built for vibes, indie discovery and boredom relief. No grand promises — but the legal-shaped wording below is real.
 
-> **TL;DR**: The website, the apps and the data are provided as-is. The project only links to games; it does not make, host or scan them, and it is not affiliated with itch.io. Adult games are hidden unless you turn them on. Scan everything you download. If you made a game and want it gone, email **takedown@freeitchgames.win**.
+> **TL;DR**: The website, the apps and the data are provided as-is. The project only links to games; it does not make, host or scan them, and it is not affiliated with itch.io. Adult games are hidden unless you turn them on. Scan everything you download. If you made a game and want it gone, email **takedown@poli0981.dev**.
 
 ## 1. What this Disclaimer covers
 
@@ -62,7 +62,7 @@ If you are a creator or rights holder and do not want your content shown, see [�
 
 Anyone — game creators and rights holders especially — can ask for a game to be removed or for its data to be corrected:
 
-- email **takedown@freeitchgames.win**, or
+- email **takedown@poli0981.dev**, or
 - open a ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) on GitHub (it also covers copyright claims). GitHub issues are public, so use email for anything you would rather keep private.
 
 Please include the game's itch.io URL, who you are (the creator or rights holder, or someone authorized to act for them), and the reason for the request.
@@ -97,9 +97,9 @@ This Disclaimer is governed by the laws of the **Socialist Republic of Vietnam**
 
 ## 12. Contact
 
-- Removal, correction and copyright requests: **takedown@freeitchgames.win**
-- Privacy questions and requests: **privacy@freeitchgames.win**
-- Anything else legal: **legal@freeitchgames.win**
+- Removal, correction and copyright requests: **takedown@poli0981.dev**
+- Privacy questions and requests: **privacy@poli0981.dev**
+- Anything else legal: **legal@poli0981.dev**
 
 These addresses are forwarded to the Maintainer.
 

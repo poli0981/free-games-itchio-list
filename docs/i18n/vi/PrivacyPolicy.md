@@ -1,8 +1,8 @@
 # Chính sách quyền riêng tư (Privacy Policy)
 
-Cập nhật lần cuối: 2026-09-24
+Cập nhật lần cuối: 2026-09-29
 
-Áp dụng từ: khi phát hành phiên bản 4.1.0.
+Áp dụng từ: ngày 2026-09-29 đối với Website, và từ phiên bản 4.1.1 đối với các Ứng dụng.
 
 > Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
 
@@ -15,13 +15,13 @@ Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-l
 > - Để chặn bot, trình duyệt của bạn qua một bước kiểm tra nhanh của Cloudflare Turnstile trước khi Website tải, khoảng 48 giờ một lần; một cookie thật sự cần thiết ghi nhớ rằng bạn đã qua.
 > - Cài đặt của bạn (giao diện sáng/tối, ngôn ngữ, lựa chọn 18+, phiên bản điều khoản đã chấp nhận) và bản cache của danh mục công khai nằm trong trình duyệt của bạn và không bao giờ được gửi về Dự án.
 > - Nếu bạn dùng trang Suggest, Người duy trì nhận được link game, ghi chú tùy chọn của bạn (bị xóa sau 180 ngày) và thời điểm gửi. Vui lòng không đưa dữ liệu cá nhân vào ghi chú.
-> - Câu hỏi hoặc yêu cầu: **privacy@freeitchgames.win**.
+> - Câu hỏi hoặc yêu cầu: **privacy@poli0981.dev**.
 
 ## 1. Ai chịu trách nhiệm, và Chính sách này áp dụng cho những gì
 
 ### 1.1 Bên kiểm soát dữ liệu
 
-Bên kiểm soát dữ liệu cá nhân được mô tả trong Chính sách này là **Người duy trì**: poli0981 (SkullMute), một cá nhân tại Việt Nam, tự vận hành Dự án như một sở thích. Liên hệ: **privacy@freeitchgames.win** (xem mục 12).
+Bên kiểm soát dữ liệu cá nhân được mô tả trong Chính sách này là **Người duy trì**: poli0981 (SkullMute), một cá nhân tại Việt Nam, tự vận hành Dự án như một sở thích. Liên hệ: **privacy@poli0981.dev** (xem mục 12).
 
 ### 1.2 Định nghĩa
 
@@ -83,7 +83,7 @@ Khi bạn dùng trang Suggest (https://freeitchgames.win/suggest):
 
 ### 2.6 Khi liên hệ Người duy trì
 
-- Email gửi tới các địa chỉ của Dự án (mục 12) được Cloudflare Email Routing chuyển tiếp tới hộp thư của Người duy trì. Người duy trì nhận địa chỉ email của bạn, tên bạn dùng (nếu có) và nội dung thư, và chỉ dùng chúng để xử lý yêu cầu của bạn.
+- Email gửi tới các địa chỉ của Dự án (mục 12) được gửi tới hộp thư của Người duy trì, do Google Workspace lưu trữ trên tên miền riêng của Người duy trì, poli0981.dev. Người duy trì nhận địa chỉ email của bạn, tên bạn dùng (nếu có) và nội dung thư, và chỉ dùng chúng để xử lý yêu cầu của bạn.
 - Thư từ về yêu cầu gỡ game và yêu cầu liên quan đến bản quyền được giữ trong thời gian cần thiết để xử lý yêu cầu.
 
 ### 2.7 Đóng góp trên GitHub
@@ -127,12 +127,13 @@ Các mục trên là thật sự cần thiết cho những tính năng bạn dù
 
 | Bên | Vai trò và công việc | Dữ liệu liên quan | Chính sách quyền riêng tư |
 |---|---|---|---|
-| **Cloudflare** | Bên xử lý dữ liệu cho Website: DNS, CDN, tường lửa và TLS; Workers (mã máy chủ của site) và static assets; R2 (ảnh bìa đã thu nhỏ); D1 (hàng chờ duyệt); Images (thu nhỏ ảnh); Turnstile (bước xác minh và trang Suggest); Web Analytics; Workers Logs; Access (chỉ cho đăng nhập quản trị); Rate Limiting; Email Routing (chuyển tiếp các địa chỉ liên hệ của Dự án) | Dữ liệu request, đề xuất từ trang Suggest, hàng chờ duyệt, email được chuyển tiếp | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
+| **Cloudflare** | Bên xử lý dữ liệu cho Website: DNS, CDN, tường lửa và TLS; Workers (mã máy chủ của site) và static assets; R2 (ảnh bìa đã thu nhỏ); D1 (hàng chờ duyệt); Images (thu nhỏ ảnh); Turnstile (bước xác minh và trang Suggest); Web Analytics; Workers Logs; Access (chỉ cho đăng nhập quản trị); Rate Limiting | Dữ liệu request, đề xuất từ trang Suggest, hàng chờ duyệt | <https://www.cloudflare.com/privacypolicy/> · Turnstile: <https://www.cloudflare.com/turnstile-privacy-policy/> |
 | **GitHub** | Host mã nguồn, dữ liệu Danh mục, issue và discussion, pipeline dữ liệu (GitHub Actions) và các bản phát hành để tải về. Là bên kiểm soát độc lập đối với tài khoản và hoạt động GitHub của bạn | Các đóng góp công khai của bạn; dữ liệu request khi bạn truy cập GitHub hoặc tải bản phát hành | <https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement> |
+| **Google** | Bên xử lý dữ liệu cho email: Google Workspace lưu trữ hộp thư của Người duy trì, nơi nhận thư gửi tới các địa chỉ liên hệ của Dự án (mục 12) | Email bạn gửi tới các địa chỉ đó (địa chỉ, tên và nội dung thư của bạn) | <https://policies.google.com/privacy> |
 | **itch.io** | Nền tảng độc lập, không liên kết với Dự án. Là nguồn dữ liệu game; mọi link game và lượt tải đều dẫn tới đó; các Ứng dụng tải ảnh bìa từ img.itch.zone | Những gì trình duyệt của bạn hoặc các Ứng dụng gửi đi khi bạn truy cập itch.io hoặc tải ảnh bìa từ đó. Pipeline không gửi thông tin nào về bạn | <https://itch.io/docs/legal/privacy-policy> |
 | **Discord** | Nhận thông báo build và phát hành tự động từ GitHub Actions | Không có dữ liệu người truy cập | — |
 
-Cloudflare có thể xử lý dữ liệu ở bất kỳ đâu trên mạng lưới toàn cầu của họ (xem mục 9). Người duy trì không cung cấp dữ liệu cá nhân cho bất kỳ ai khác, trừ khi pháp luật yêu cầu.
+Cloudflare và Google có thể xử lý dữ liệu ở bất kỳ đâu trên mạng lưới toàn cầu của họ (xem mục 9). Người duy trì không cung cấp dữ liệu cá nhân cho bất kỳ ai khác, trừ khi pháp luật yêu cầu.
 
 ## 5. Dữ liệu được lưu trong bao lâu
 
@@ -192,9 +193,9 @@ Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử 
 
 ### 7.2 Cách gửi yêu cầu
 
-- Gửi email tới **privacy@freeitchgames.win**. Hãy nói rõ bạn muốn gì và cung cấp đủ chi tiết để tìm được dữ liệu: ví dụ URL game bạn đã đề xuất và khoảng thời gian gửi, hoặc địa chỉ email bạn đã dùng để viết thư. Người duy trì có thể hỏi thêm để xác nhận yêu cầu đúng là của bạn.
+- Gửi email tới **privacy@poli0981.dev**. Hãy nói rõ bạn muốn gì và cung cấp đủ chi tiết để tìm được dữ liệu: ví dụ URL game bạn đã đề xuất và khoảng thời gian gửi, hoặc địa chỉ email bạn đã dùng để viết thư. Người duy trì có thể hỏi thêm để xác nhận yêu cầu đúng là của bạn.
 - Mục tiêu là trả lời trong vòng **30 ngày**; nhiều yêu cầu được xử lý sớm hơn nhiều. Việc gửi yêu cầu là miễn phí.
-- Nhà sáng tạo muốn gỡ game hoặc sửa dữ liệu game cũng có thể gửi email tới **takedown@freeitchgames.win** hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) (công khai). Mục tiêu cho việc gỡ là trong vòng 7 ngày. Quy trình gỡ được mô tả trong [Điều khoản sử dụng](ToS.md).
+- Nhà sáng tạo muốn gỡ game hoặc sửa dữ liệu game cũng có thể gửi email tới **takedown@poli0981.dev** hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) (công khai). Mục tiêu cho việc gỡ là trong vòng 7 ngày. Quy trình gỡ được mô tả trong [Điều khoản sử dụng](ToS.md).
 
 ### 7.3 Những giới hạn nên biết
 
@@ -207,12 +208,12 @@ Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử 
 
 - Dự án không hướng tới trẻ em dưới 16 tuổi. Màn hình xác nhận pháp lý yêu cầu mọi người truy cập xác nhận mình đủ 16 tuổi trở lên.
 - Nội dung người lớn (18+) bị ẩn theo mặc định, kể cả ảnh bìa. Nội dung này chỉ hiện ra nếu người truy cập tự bật trong Settings sau khi xác nhận mình đủ 18 tuổi trở lên. Lựa chọn đó chỉ được lưu trong trình duyệt của họ (`webapp.prefs`). Cờ `nsfw` chỉ là nhãn được gắn ở mức cố gắng tốt nhất (xem [Tuyên bố miễn trừ trách nhiệm](DISCLAIMER.md)).
-- Người duy trì không cố ý thu thập dữ liệu cá nhân của trẻ em dưới 16 tuổi. Nếu bạn cho rằng một trẻ em đã gửi dữ liệu cá nhân (ví dụ trong ghi chú Suggest hoặc qua email), cha mẹ hoặc người giám hộ có thể viết tới **privacy@freeitchgames.win** và dữ liệu đó sẽ được xóa.
+- Người duy trì không cố ý thu thập dữ liệu cá nhân của trẻ em dưới 16 tuổi. Nếu bạn cho rằng một trẻ em đã gửi dữ liệu cá nhân (ví dụ trong ghi chú Suggest hoặc qua email), cha mẹ hoặc người giám hộ có thể viết tới **privacy@poli0981.dev** và dữ liệu đó sẽ được xóa.
 
 ## 9. Chuyển dữ liệu ra nước ngoài
 
 - Người duy trì ở Việt Nam. Email bạn gửi và dữ liệu trong hàng chờ duyệt được Người duy trì xử lý từ Việt Nam.
-- Cloudflare xử lý dữ liệu trên mạng lưới toàn cầu của họ, và GitHub hoạt động ở phạm vi quốc tế, nên dữ liệu của bạn có thể được xử lý bên ngoài quốc gia của bạn, kể cả ở những nước có luật bảo vệ dữ liệu khác với nơi bạn sống. Các nhà cung cấp này mô tả các biện pháp bảo vệ họ áp dụng cho việc chuyển dữ liệu quốc tế trong chính sách quyền riêng tư và điều khoản xử lý dữ liệu của họ (link ở mục 4).
+- Cloudflare xử lý dữ liệu trên mạng lưới toàn cầu của họ, Google lưu email của Người duy trì trong các trung tâm dữ liệu của họ, và GitHub hoạt động ở phạm vi quốc tế, nên dữ liệu của bạn có thể được xử lý bên ngoài quốc gia của bạn, kể cả ở những nước có luật bảo vệ dữ liệu khác với nơi bạn sống. Các nhà cung cấp này mô tả các biện pháp bảo vệ họ áp dụng cho việc chuyển dữ liệu quốc tế trong chính sách quyền riêng tư và điều khoản xử lý dữ liệu của họ (link ở mục 4).
 
 ## 10. Bảo mật
 
@@ -223,7 +224,7 @@ Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử 
 - Các thông tin bí mật (như private key của GitHub App) được giữ trong kho lưu trữ bí mật của Cloudflare, không bao giờ nằm trong Repository. Khu vực quản trị ghi vào Repository dưới danh nghĩa một GitHub App, với các commit đã được xác minh (verified).
 - Content Security Policy chặt chẽ chỉ cho phép script từ chính Website, cộng với Cloudflare Web Analytics và Turnstile.
 - Các GitHub Actions được ghim theo commit SHA cụ thể với quyền tối thiểu cần thiết, và Dependabot giữ cho các dependency luôn được cập nhật.
-- Không hệ thống nào an toàn tuyệt đối. Nếu bạn phát hiện lỗ hổng, vui lòng báo cáo riêng tư theo hướng dẫn trong [Chính sách bảo mật (Security Policy)](SECURITY.md) hoặc qua **security@freeitchgames.win**. Nếu xảy ra sự cố vi phạm dữ liệu cá nhân, Người duy trì sẽ thông báo cho những người bị ảnh hưởng và cơ quan chức năng theo yêu cầu của pháp luật.
+- Không hệ thống nào an toàn tuyệt đối. Nếu bạn phát hiện lỗ hổng, vui lòng báo cáo riêng tư theo hướng dẫn trong [Chính sách bảo mật (Security Policy)](SECURITY.md) hoặc qua **security@poli0981.dev**. Nếu xảy ra sự cố vi phạm dữ liệu cá nhân, Người duy trì sẽ thông báo cho những người bị ảnh hưởng và cơ quan chức năng theo yêu cầu của pháp luật.
 
 ## 11. Thay đổi Chính sách này
 
@@ -232,14 +233,15 @@ Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử 
 
 ## 12. Liên hệ
 
-Cả bốn địa chỉ dưới đây đều được Cloudflare Email Routing chuyển tiếp tới Người duy trì.
+Cả năm địa chỉ dưới đây đều tới hộp thư riêng của Người duy trì (Google Workspace, tên miền poli0981.dev).
 
-- **privacy@freeitchgames.win**: câu hỏi về quyền riêng tư và yêu cầu liên quan đến dữ liệu của bạn (mục tiêu trả lời: trong vòng 30 ngày).
-- **takedown@freeitchgames.win**: gỡ game hoặc sửa dữ liệu game, bao gồm khiếu nại bản quyền.
-- **security@freeitchgames.win**: lỗ hổng bảo mật (hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub; xem [Chính sách bảo mật (Security Policy)](SECURITY.md)).
-- **legal@freeitchgames.win**: mọi vấn đề pháp lý khác.
+- **privacy@poli0981.dev**: câu hỏi về quyền riêng tư và yêu cầu liên quan đến dữ liệu của bạn (mục tiêu trả lời: trong vòng 30 ngày).
+- **takedown@poli0981.dev**: gỡ game hoặc sửa dữ liệu game, bao gồm khiếu nại bản quyền.
+- **security@poli0981.dev**: lỗ hổng bảo mật (hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub; xem [Chính sách bảo mật (Security Policy)](SECURITY.md)).
+- **legal@poli0981.dev**: mọi vấn đề pháp lý khác.
+- **contact@poli0981.dev**: câu hỏi chung không thuộc các mục trên.
 
-Với những câu hỏi không cần riêng tư, bạn cũng có thể mở issue trong Repository; issue là công khai.
+Với những câu hỏi không cần riêng tư, bạn cũng có thể mở issue trong Repository; issue là công khai. Các kênh liên lạc khác của Người duy trì có tại <https://poli0981.dev/links/>.
 
 ## 13. Lời cuối
 

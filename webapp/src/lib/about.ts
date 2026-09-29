@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Free Itch Games',
-  version: '4.1.0',
+  version: '4.1.1',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'code MIT · data CC BY 4.0',
 } as const
@@ -18,6 +18,10 @@ export const DEV = {
   role: 'Solo maintainer',
   blurb: 'Unemployed introvert Vietnamese dev. Two non-judgmental AI buddies do most of the heavy lifting — see below.',
   githubUrl: 'https://github.com/poli0981',
+  website: 'https://poli0981.dev/',
+  /** Every channel in one place (the maintainer's own link page). */
+  linksUrl: 'https://poli0981.dev/links/',
+  email: 'contact@poli0981.dev',
 } as const
 
 export interface AiTool {

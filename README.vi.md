@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.1.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.1.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -81,7 +81,7 @@ Maintainer duyệt hàng chờ trong một khu vực quản trị riêng (đư�
 
 Thích dùng GitHub hơn, hoặc có cả một danh sách dài? Issue template "Add Games (bulk list)" cũng dùng được; các link đó đi qua cùng quy trình duyệt. Xem [CONTRIBUTING](docs/i18n/vi/CONTRIBUTING.md#1-đề-xuất-game-mới-hoan-nghênh-nhất).
 
-Muốn **gỡ** một game, hoặc sửa dữ liệu của nó (nhất là các nhà phát triển game)? Gửi email tới **takedown@freeitchgames.win** hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml). Ghi rõ URL game, bạn là ai (người tạo / chủ sở hữu quyền, hoặc người được họ ủy quyền) và lý do. Chi tiết: [Điều khoản sử dụng](docs/i18n/vi/ToS.md) và [Tuyên bố miễn trừ](docs/i18n/vi/DISCLAIMER.md).
+Muốn **gỡ** một game, hoặc sửa dữ liệu của nó (nhất là các nhà phát triển game)? Gửi email tới **takedown@poli0981.dev** hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml). Ghi rõ URL game, bạn là ai (người tạo / chủ sở hữu quyền, hoặc người được họ ủy quyền) và lý do. Chi tiết: [Điều khoản sử dụng](docs/i18n/vi/ToS.md) và [Tuyên bố miễn trừ](docs/i18n/vi/DISCLAIMER.md).
 
 ## Dữ liệu được cập nhật thế nào
 
@@ -214,11 +214,11 @@ Các trường được cào mặc định là `N/A` khi trang game không có t
 Xem [CONTRIBUTING (tiếng Việt)](docs/i18n/vi/CONTRIBUTING.md) để có hướng dẫn đầy đủ (bản chính thức: [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 - **Thêm game**: dùng [trang Suggest](https://freeitchgames.win/suggest).
-- **Gỡ game / sửa dữ liệu**: gửi email tới takedown@freeitchgames.win hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
+- **Gỡ game / sửa dữ liệu**: gửi email tới takedown@poli0981.dev hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 - **Báo lỗi**: dùng issue template "Bug Report".
 - **Đề xuất tính năng**: dùng template "Feature Request / Improvement", hoặc gửi PR.
 - **Vấn đề bảo mật**: báo cáo riêng tư, đừng bao giờ mở issue công khai. Xem [SECURITY](docs/i18n/vi/SECURITY.md) ([EN](SECURITY.md)).
-- **Câu hỏi về quyền riêng tư**: xem [Chính sách quyền riêng tư](docs/i18n/vi/PrivacyPolicy.md) ([EN](docs/PrivacyPolicy.md)) hoặc gửi email tới privacy@freeitchgames.win.
+- **Câu hỏi về quyền riêng tư**: xem [Chính sách quyền riêng tư](docs/i18n/vi/PrivacyPolicy.md) ([EN](docs/PrivacyPolicy.md)) hoặc gửi email tới privacy@poli0981.dev.
 - Vui lòng tuân thủ [Quy tắc ứng xử](docs/i18n/vi/CODE_OF_CONDUCT.md) ([EN](CODE_OF_CONDUCT.md)).
 
 Người đóng góp được ghi nhận trong [ACKNOWLEDGEMENTS.md](docs/ACKNOWLEDGEMENTS.md).
@@ -233,6 +233,8 @@ Hai server Discord giờ đã tồn tại (câu "if I ever make one" chính th�
 - **Nhắn tin**: [Telegram (DM)](https://t.me/SkullMute0011)
 - **Ủng hộ** (hoàn toàn tùy chọn, giống [`.github/FUNDING.yml`](.github/FUNDING.yml)): [GitHub Sponsors](https://github.com/sponsors/poli0981) · [Patreon](https://patreon.com/skullmute) · [Ko-fi](https://ko-fi.com/skullmute) · [Buy Me a Coffee](https://buymeacoffee.com/skullmute) · [PayPal](https://paypal.me/DungDang212)
 - **Gaming**: [Steam profile](https://steamcommunity.com/profiles/76561199544666292/)
+- **Website**: [poli0981.dev](https://poli0981.dev/) · mọi kênh ở một chỗ: [poli0981.dev/links](https://poli0981.dev/links/)
+- **Email**: **contact@poli0981.dev**
 
 DM mở ở mọi nơi; trả lời chậm (hướng nội max level). [Trang About](https://freeitchgames.win/about) của website có cùng danh sách dưới dạng nút bấm.
 
@@ -272,9 +274,10 @@ Bản tiếng Việt nằm trong [`docs/i18n/vi/`](docs/i18n/vi/); bản tiếng
 - [Chính sách bảo mật (Security Policy)](docs/i18n/vi/SECURITY.md) ([EN](SECURITY.md))
 - [NOTICE](NOTICE.md)
 
-Liên hệ (được chuyển tiếp tới Maintainer):
+Liên hệ (hộp thư riêng của Maintainer trên poli0981.dev):
 
-- Quyền riêng tư: **privacy@freeitchgames.win**
-- Gỡ nội dung / bản quyền: **takedown@freeitchgames.win**
-- Lỗ hổng bảo mật: **security@freeitchgames.win** (hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub)
-- Mọi vấn đề pháp lý khác: **legal@freeitchgames.win**
+- Quyền riêng tư: **privacy@poli0981.dev**
+- Gỡ nội dung / bản quyền: **takedown@poli0981.dev**
+- Lỗ hổng bảo mật: **security@poli0981.dev** (hoặc tính năng báo cáo lỗ hổng riêng tư của GitHub)
+- Mọi vấn đề pháp lý khác: **legal@poli0981.dev**
+- Các việc khác: **contact@poli0981.dev**, hoặc bất kỳ kênh nào tại [poli0981.dev/links](https://poli0981.dev/links/)

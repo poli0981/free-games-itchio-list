@@ -1,8 +1,8 @@
 # Điều khoản sử dụng (Terms of Use)
 
-Cập nhật lần cuối: 2026-09-24
+Cập nhật lần cuối: 2026-09-29
 
-Áp dụng từ: khi phát hành phiên bản 4.1.0.
+Áp dụng từ: ngày 2026-09-29 đối với Website, và từ phiên bản 4.1.1 đối với các Ứng dụng.
 
 Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
@@ -81,7 +81,7 @@ Bất kỳ ai cũng có thể yêu cầu gỡ một game khỏi Danh mục hoặ
 
 **Cách yêu cầu**
 
-- Gửi email tới **takedown@freeitchgames.win**, hoặc
+- Gửi email tới **takedown@poli0981.dev**, hoặc
 - mở một [issue "Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml) trong Repository (có sẵn phần khiếu nại bản quyền). Issue trên GitHub là công khai, nên hãy dùng email cho những gì bạn không muốn bị công bố.
 
 **Cần cung cấp**
@@ -149,7 +149,7 @@ Nếu bạn vi phạm các Điều khoản này, quyền sử dụng Website và
 
 - Các Điều khoản này được điều chỉnh bởi pháp luật của **Cộng hòa Xã hội Chủ nghĩa Việt Nam**, không xét đến các nguyên tắc xung đột pháp luật.
 - Tranh chấp được giải quyết theo thứ tự sau:
-  1. **Trao đổi không chính thức trước**: gửi email tới **legal@freeitchgames.win**, mở một issue, hoặc dùng một kênh liên hệ được liệt kê trên trang About (https://freeitchgames.win/about). Hầu hết bất đồng đều dừng ở đây.
+  1. **Trao đổi không chính thức trước**: gửi email tới **legal@poli0981.dev**, mở một issue, hoặc dùng một kênh liên hệ được liệt kê trên trang About (https://freeitchgames.win/about) hoặc tại https://poli0981.dev/links/. Hầu hết bất đồng đều dừng ở đây.
   2. **Hòa giải**: nếu trao đổi không chính thức không thành, các bên có thể thử hòa giải theo thỏa thuận chung.
   3. **Tòa án**: nếu vẫn không được, tòa án có thẩm quyền của Việt Nam sẽ giải quyết.
 - **Quyền của người tiêu dùng**: không điều nào trong các Điều khoản này giới hạn các quyền bảo vệ người tiêu dùng mang tính bắt buộc mà bạn có theo pháp luật của quốc gia nơi bạn cư trú, bao gồm mọi quyền mà pháp luật đó cho phép bạn khởi kiện tại tòa án địa phương.
@@ -161,18 +161,21 @@ Nếu bạn vi phạm các Điều khoản này, quyền sử dụng Website và
 
 ## 17. Liên hệ
 
-Các địa chỉ này được Cloudflare Email Routing chuyển tiếp tới Người duy trì.
+Các địa chỉ này tới hộp thư riêng của Người duy trì (Google Workspace, tên miền poli0981.dev).
 
-- **legal@freeitchgames.win**: các Điều khoản này và mọi vấn đề pháp lý khác.
-- **takedown@freeitchgames.win**: gỡ nội dung và bản quyền.
-- **privacy@freeitchgames.win**: câu hỏi và yêu cầu về quyền riêng tư.
-- **security@freeitchgames.win**: lỗ hổng bảo mật (hoặc dùng tính năng báo cáo lỗ hổng riêng tư của GitHub; xem [Security Policy](SECURITY.md)).
+- **legal@poli0981.dev**: các Điều khoản này và mọi vấn đề pháp lý khác.
+- **takedown@poli0981.dev**: gỡ nội dung và bản quyền.
+- **privacy@poli0981.dev**: câu hỏi và yêu cầu về quyền riêng tư.
+- **security@poli0981.dev**: lỗ hổng bảo mật (hoặc dùng tính năng báo cáo lỗ hổng riêng tư của GitHub; xem [Security Policy](SECURITY.md)).
+- **contact@poli0981.dev**: câu hỏi chung không thuộc các mục trên.
+
+Các kênh liên lạc khác của Người duy trì có tại <https://poli0981.dev/links/>.
 
 ## 18. Lời cuối
 
 Đây vẫn chỉ là một danh sách game miễn phí, cộng thêm một website và vài ứng dụng, được làm bởi một dev mệt mỏi với ngân sách bằng 0 và hai người bạn AI. Cứ "be cool", đừng phá đồ, nhớ ghi nguồn dữ liệu, và vui vẻ săn game miễn phí nhé.
 
-Có câu hỏi? Gửi email tới legal@freeitchgames.win, mở một issue, hoặc dùng bất kỳ kênh nào trên trang About. Người duy trì sẽ cố gắng không "ghost".
+Có câu hỏi? Gửi email tới legal@poli0981.dev, mở một issue, hoặc dùng bất kỳ kênh nào trên trang About. Người duy trì sẽ cố gắng không "ghost".
 
 ## 19. Không phải tư vấn pháp lý
 

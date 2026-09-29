@@ -16,12 +16,14 @@ export const ExtLink = forwardRef<HTMLAnchorElement, ExtLinkProps>(
       e.preventDefault()
       void openExternal(href)
     }
+    // mailto: hands off to the mail client; a new tab would just stay blank.
+    const newTab = !href.startsWith('mailto:')
     return (
       <a
         ref={ref}
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target={newTab ? '_blank' : undefined}
+        rel={newTab ? 'noopener noreferrer' : undefined}
         onClick={handleClick}
         {...rest}
       >

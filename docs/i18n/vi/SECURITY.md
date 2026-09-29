@@ -1,6 +1,6 @@
 # Chính sách bảo mật (Security Policy)
 
-Cập nhật lần cuối: 2026-09-18
+Cập nhật lần cuối: 2026-09-29
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
@@ -13,7 +13,7 @@ Chào bạn — đây là một dự án sở thích do một người vận hà
 Vui lòng **đừng** báo cáo lỗ hổng qua issue, discussion, pull request công khai hay trên Discord. Thay vào đó, hãy báo cáo riêng tư:
 
 - **Báo cáo lỗ hổng riêng tư trên GitHub** (private vulnerability reporting): tab **Security** của repository → **Report a vulnerability** ([liên kết trực tiếp](https://github.com/poli0981/free-games-itchio-list/security/advisories/new)), hoặc
-- email tới **security@freeitchgames.win**.
+- email tới **security@poli0981.dev**.
 
 Một báo cáo tốt nên có:
 
@@ -35,7 +35,7 @@ Một báo cáo tốt nên có:
 
 - Bản thân itch.io — hãy báo cho itch.io.
 - Lỗi nền tảng của Cloudflare hoặc GitHub — hãy báo cho họ qua chương trình riêng của họ.
-- Các game được liên kết trong catalog. Một game chứa mã độc không phải là lỗ hổng của dự án này, nhưng vẫn xin hãy báo cho Người duy trì qua **takedown@freeitchgames.win** để game đó được gắn cờ hoặc gỡ bỏ.
+- Các game được liên kết trong catalog. Một game chứa mã độc không phải là lỗ hổng của dự án này, nhưng vẫn xin hãy báo cho Người duy trì qua **takedown@poli0981.dev** để game đó được gắn cờ hoặc gỡ bỏ.
 - Tấn công từ chối dịch vụ theo lưu lượng (DoS/DDoS) và kiểm thử tải.
 - Báo cáo từ công cụ quét tự động mà không có proof of concept chạy được.
 
@@ -69,7 +69,7 @@ Nếu bạn nghiên cứu bảo mật một cách thiện chí và tuân thủ c
 - **Không dùng social engineering, phishing hay tấn công vật lý** nhắm vào Người duy trì hoặc bất kỳ ai khác, và không tấn công tài khoản Cloudflare, GitHub hay itch.io của bất kỳ ai.
 - **Cho Người duy trì thời gian hợp lý** để sửa lỗi trước khi bạn công bố công khai.
 
-Sự bảo vệ này chỉ bao gồm các khiếu nại của chính Người duy trì. Nó không thể cho phép bạn kiểm thử Cloudflare, GitHub hay itch.io; chính sách riêng của các bên đó sẽ được áp dụng. Nếu không chắc một việc có được phép không, hãy hỏi trước qua **security@freeitchgames.win**.
+Sự bảo vệ này chỉ bao gồm các khiếu nại của chính Người duy trì. Nó không thể cho phép bạn kiểm thử Cloudflare, GitHub hay itch.io; chính sách riêng của các bên đó sẽ được áp dụng. Nếu không chắc một việc có được phép không, hãy hỏi trước qua **security@poli0981.dev**.
 
 ## 6. Bảo mật dependency và chuỗi cung ứng
 
@@ -85,7 +85,7 @@ Nếu một lỗ hổng đã biết trong dependency thực sự ảnh hưởng 
 
 ## 7. Lừa đảo và mạo danh
 
-Dự án không có tài khoản và không nhận thanh toán, nên sẽ không ai từ dự án yêu cầu mật khẩu, token hay thông tin thanh toán của bạn. Website chính thức duy nhất là https://freeitchgames.win (địa chỉ github.io cũ chỉ chuyển hướng về đó), và nơi tải chính thức duy nhất là GitHub Releases. Nếu bạn thấy thứ gì đó mạo danh dự án này, vui lòng báo cho Người duy trì qua **security@freeitchgames.win**.
+Dự án không có tài khoản và không nhận thanh toán, nên sẽ không ai từ dự án yêu cầu mật khẩu, token hay thông tin thanh toán của bạn. Website chính thức duy nhất là https://freeitchgames.win (địa chỉ github.io cũ chỉ chuyển hướng về đó), và nơi tải chính thức duy nhất là GitHub Releases. Nếu bạn thấy thứ gì đó mạo danh dự án này, vui lòng báo cho Người duy trì qua **security@poli0981.dev**.
 
 ## 8. Lời cuối
 

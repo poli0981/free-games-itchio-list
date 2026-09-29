@@ -1,6 +1,6 @@
 # Notice
 
-Last updated: 2026-09-18
+Last updated: 2026-09-29
 
 Applies from: the release of version 4.0.0.
 
@@ -33,7 +33,7 @@ remain the property of their creators.** The project does not license them to an
 (see [`data_game/LICENSE.md`](data_game/LICENSE.md), section 3).
 
 Creators and rights holders can ask for a game to be removed or corrected. Email
-**takedown@freeitchgames.win** or open the
+**takedown@poli0981.dev** or open the
 ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 The process is described in the [Terms of Use](docs/ToS.md).
 
@@ -80,8 +80,8 @@ Only contribute material you have the right to share under those terms.
 
 ## 8. Contact
 
-- Content removal and copyright: **takedown@freeitchgames.win**
-- Anything else legal: **legal@freeitchgames.win**
+- Content removal and copyright: **takedown@poli0981.dev**
+- Anything else legal: **legal@poli0981.dev**
 
 ---
 
