@@ -334,5 +334,319 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-09-30T02:35:53Z"
+    },
+    {
+        "url": "https://belsgames.itch.io/parasomnia-no-rem",
+        "name": "Parasomnia: No REM",
+        "dev": "BELS Games",
+        "description": "THE NEW DEMO IS OUT NOW Download it here, or play it on Steam if you would rather keep it in your library.",
+        "genre": "Survival",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "59",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMxMjE0LnBuZw==/original/FEmDd3.png",
+        "tags": [
+            "3D",
+            "Creepy",
+            "Dark",
+            "Exploration",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "Psychological Horror",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "Czech",
+            "German",
+            "English",
+            "Spanish; Latin America",
+            "French",
+            "Hungarian",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Romanian Moldavian Moldovan",
+            "Russian",
+            "Turkish",
+            "Ukrainian",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 22:42 UTC",
+        "added_at": "2026-09-30T08:27:20Z"
+    },
+    {
+        "url": "https://furkanfs.itch.io/atom-by-atom",
+        "name": "Atom By Atom",
+        "dev": "Inner Core Studios",
+        "description": "Atom By Atom is a space-factory automation game built around molecular chemistry.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 September 2026 @ 15:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5ODk3MjA1LnBuZw==/original/5Thpe3.png",
+        "tags": [
+            "Automation",
+            "Management",
+            "Minimalist",
+            "Procedural Generation",
+            "Sandbox",
+            "Sci-fi",
+            "Singleplayer",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 September 2026 @ 20:11 UTC",
+        "added_at": "2026-09-30T08:27:23Z"
+    },
+    {
+        "url": "https://minari-kr.itch.io/zzuk-zzuk-nyang",
+        "name": "Zzuk_Zzuk_Nyang",
+        "dev": "Minari-KR",
+        "description": "[v1 - 첫 번째 빌드] - 한붓 그리기 퍼즐 25개 - 이렘을 늘려 생선에 감고 푸는 줄 퍼즐 조작 - 견본 카드와 진행 표시(연어 요리 아이콘) - 이렘을 늘려 연결하는 타이틀 화면(게임 시작 / 게임 종료) - 설정: 효과음 볼륨, 음소거, 고양이 귀 켜기/끄기 - 클리어 연출: 도장, 색종이, 레벨별 이렘 대사 - 누른 방향으로 넘어가는...",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 16:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzgxMzk5LnBuZw==/original/bv3wEo.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T08:27:26Z"
+    },
+    {
+        "url": "https://moranthug.itch.io/ttfe",
+        "name": "To the Far East",
+        "dev": "MoranThug",
+        "description": "Hello everyone!",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzcyMzU0LmpwZw==/original/wzGvfK.jpg",
+        "tags": [
+            "2D",
+            "Board Game",
+            "Deck Building",
+            "Roguelike",
+            "Roguelite"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 22:54 UTC",
+        "added_at": "2026-09-30T08:27:29Z"
+    },
+    {
+        "url": "https://oribiyo.itch.io/omanekokunmofukkin",
+        "name": "おまねこ君にモフっ筋を触らせてもらうゲーム",
+        "dev": "Oribiyo",
+        "description": "このゲームはおまねこ君（ミリケモ）の二次創作ゲームになります。 おまねこ原作者：ぴここ(@tirpitz_bis)さん。 【内容】 おまねこ君に腹筋を20秒だけ触らせてもらうミニゲームです。 いい感じの速度で触るとスコアが上がります。 スコア30000以上で少しほめてくれます！ ※右下のボタンで画面全体を表示できます。 ※腹筋だけ触らせてもらってください。 This is a...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 13:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzY3NzQzLnBuZw==/original/twD2JF.png",
+        "tags": [
+            "Furry"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T08:27:31Z"
+    },
+    {
+        "url": "https://shibaki-dev.itch.io/ninefold",
+        "name": "Ninefold",
+        "dev": "shibaki_dev",
+        "description": "Nine realms stand between a mortal and the sky.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 13:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzczNjU5LnBuZw==/original/xutXsj.png",
+        "tags": [
+            "chinese",
+            "cultivation",
+            "Fantasy",
+            "Hand-drawn",
+            "Idle",
+            "Incremental",
+            "mobile",
+            "Relaxing",
+            "Singleplayer",
+            "xianxia"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T08:27:34Z"
+    },
+    {
+        "url": "https://spacelizardgames.itch.io/gamblin-geezers",
+        "name": "Gamblin' Geezers",
+        "dev": "Space Lizard Games",
+        "description": "A rummy roguelike adventure set in a nursing home.",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 September 2026 @ 02:35 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjY2MDM2LnBuZw==/original/fxqASG.png",
+        "tags": [
+            "Atmospheric",
+            "Comedy",
+            "Controller",
+            "Godot",
+            "Retro",
+            "Roguelike",
+            "Roguelite",
+            "Singleplayer",
+            "weird"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Xbox controller",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot",
+            "Inkscape",
+            "Krita"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T08:27:38Z"
+    },
+    {
+        "url": "https://spiritusmaximus.itch.io/archeology-idle-prototype",
+        "name": "Archeology Idle Prototype",
+        "dev": "Spiritus Maximus",
+        "description": "Archaeology Idle Become an archaeologist, explore ancient sites, uncover lost artefacts, and build your own museum.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 19:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzgxMDQ2LmdpZg==/original/xTk9EF.gif",
+        "tags": [
+            "2D",
+            "Cute",
+            "Economy",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Prototype",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T08:27:41Z"
     }
 ]
