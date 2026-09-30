@@ -1,31 +1,31 @@
 {
-    "total_games": 2952,
+    "total_games": 2988,
     "max_per_file": 500,
-    "last_updated": "2026-09-29T03:26:31Z",
+    "last_updated": "2026-09-30T01:49:54Z",
     "files": [
         {
             "name": "game_info_001.json",
-            "count": 490
+            "count": 500
         },
         {
             "name": "game_info_002.json",
-            "count": 491
+            "count": 500
         },
         {
             "name": "game_info_003.json",
-            "count": 497
+            "count": 500
         },
         {
             "name": "game_info_004.json",
-            "count": 488
+            "count": 500
         },
         {
             "name": "game_info_005.json",
-            "count": 495
+            "count": 500
         },
         {
             "name": "game_info_006.json",
-            "count": 491
+            "count": 488
         }
     ]
 }
