@@ -17477,5 +17477,453 @@
         "notes": "",
         "updated_at": "29 September 2026 @ 22:07 UTC",
         "added_at": "2026-09-30T01:49:53Z"
+    },
+    {
+        "url": "https://ga-games.itch.io/traks",
+        "name": "Traks",
+        "dev": "GA Games",
+        "description": "In Traks you can build your own races and share them with your friends.",
+        "genre": "Racing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.3",
+        "rating_count": "6",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzc1NDA3LnBuZw==/original/zhKS6N.png",
+        "tags": [
+            "Arcade",
+            "drift",
+            "editor",
+            "Low-poly",
+            "Multiplayer",
+            "trackeditor",
+            "traks",
+            "Virtual Reality (VR)"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "Adobe Photoshop",
+            "Adobe After Effects"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 14:18 UTC",
+        "added_at": "2026-09-30T02:34:19Z"
+    },
+    {
+        "url": "https://justinbritch.itch.io/deephaul-idle-fishing",
+        "name": "Deephaul: Idle Fishing",
+        "dev": "justinbritch",
+        "description": "Controls: Mouse only.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 14:42 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzU4NDI4LnBuZw==/original/YKxv9W.png",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Cozy",
+            "Fishing",
+            "Idle",
+            "Incremental",
+            "Minimalist",
+            "Relaxing",
+            "screensaver",
+            "underwater"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:23Z"
+    },
+    {
+        "url": "https://lost-rabbit-digital.itch.io/xerophobia",
+        "name": "Xerophobia",
+        "dev": "Lost Rabbit Digital",
+        "description": "Something under the sand can hear you.",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "28 November 2021 @ 05:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc1NjA5MzgucG5n/original/9RKFV2.png",
+        "tags": [
+            "Dark",
+            "flat-shading",
+            "Horror",
+            "Oculus Quest",
+            "Psychological Horror",
+            "Singleplayer",
+            "Survival Horror",
+            "suspense",
+            "Virtual Reality (VR)"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [
+            "Oculus Quest"
+        ],
+        "made_with": [
+            "Unity",
+            "Paint.net"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 15:49 UTC",
+        "added_at": "2026-09-30T02:34:26Z"
+    },
+    {
+        "url": "https://orvexion.itch.io/the-black-box-prototype",
+        "name": "The Black Box",
+        "dev": "ORVEXION STUDIO",
+        "description": "The Black Box The Black Box is a 2D pixel-art horror game developed by Orvexion Studio using the Godot Engine .",
+        "genre": "Adventure",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3ODcwOTEzLnBuZw==/original/6xIJF1.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Godot",
+            "Horror",
+            "Indie",
+            "Mystery",
+            "Pixel Art",
+            "Prototype",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 20:56 UTC",
+        "added_at": "2026-09-30T02:34:29Z"
+    },
+    {
+        "url": "https://pepper2.itch.io/be-a-pro",
+        "name": "Be A Pro",
+        "dev": "Pepper2",
+        "description": "Be A Pro(비어프로)는 이름 없는 아마추어에서 LCK 무대까지. 당신이 직접 한 명의 프로게이머가 되어, 커리어의 모든 순간을 만들어 가는 이스포츠 선수 육성 게임입니다. ▶ 나만의 선수를 만들고, 육성시켜라 포지션과 시그니처 챔피언, 성향을 고르고 주사위로 재능을 정합니다. 솔랭, 챔피언 훈련, 대회 시청, 휴식까지 한 주의 일정을 직접 짜서...",
+        "genre": "Sports",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 14:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzczMzM1LnBuZw==/original/oNfqPu.png",
+        "tags": [
+            "lck"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:32Z"
+    },
+    {
+        "url": "https://postmarked.itch.io/postmarked",
+        "name": "Postmarked",
+        "dev": "Postmarked",
+        "description": "Postmarked is a cozy incremental game about a tiny post office.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 09:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzY4NzA3LnBuZw==/original/yw3BRh.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Clicker",
+            "Colorful",
+            "Cozy",
+            "Cute",
+            "Idle",
+            "Incremental",
+            "Relaxing",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:34Z"
+    },
+    {
+        "url": "https://tommusrhodus.itch.io/legally-distinct-planetary-based-suika-game-clone-for-playdate",
+        "name": "Legally Distinct, Planetary Based, Suika Game Clone for Playdate",
+        "dev": "Tom Rhodes",
+        "description": "It's the addictive suika game, for Playdate!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1NDE0MzA3LnBuZw==/original/1G%2F3O6.png",
+        "tags": [
+            "1-bit",
+            "Pixel Art",
+            "Playdate",
+            "Suika Game"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Playdate"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 19:31 UTC",
+        "added_at": "2026-09-30T02:34:38Z"
+    },
+    {
+        "url": "https://amaty.itch.io/a-mirrors-curse-sfw",
+        "name": "A Mirror's Curse SFW",
+        "dev": "amaty",
+        "description": "You are Ethan Yoon, and your senior year was supposed to be normal.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "119",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0MTU3MjE3LnBuZw==/original/xOK8Ay.png",
+        "tags": [
+            "Anime",
+            "Cute",
+            "Gender",
+            "LGBT",
+            "LGBTQIA",
+            "Queer",
+            "Romance",
+            "transformation",
+            "Transgender",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Twine"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 13:17 UTC",
+        "added_at": "2026-09-30T02:34:41Z"
+    },
+    {
+        "url": "https://featurekreep.itch.io/baphomet",
+        "name": "Baphomet",
+        "dev": "FeatureKreep",
+        "description": "😈 😈 😈 Stay awhile and listen...",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 06:45 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzY2NTM5LnBuZw==/original/7Ga4G7.png",
+        "tags": [
+            "Action RPG",
+            "Beginner Friendly",
+            "Casual",
+            "Cozy",
+            "Cute",
+            "Dark Fantasy",
+            "Incremental",
+            "No AI",
+            "Pixel Art",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Construct"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:45Z"
+    },
+    {
+        "url": "https://porohart12.itch.io/data-center-tycoon",
+        "name": "🏢 Data Center Tycoon — Build Your IT Empire",
+        "dev": "PorohArt12",
+        "description": "🏢 Data Center Tycoon Build.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "11 August 2026 @ 05:00 UTC",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5MTgwMjE3LnBuZw==/original/Xi3OP4.png",
+        "tags": [
+            "artificial-intelligence",
+            "datacenter",
+            "datacentertycoon",
+            "Endless",
+            "Moddable",
+            "Non violent",
+            "Sandbox",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 September 2026 @ 04:50 UTC",
+        "added_at": "2026-09-30T02:34:48Z"
+    },
+    {
+        "url": "https://zyn505.itch.io/pixie-game-prototype-thing",
+        "name": "Pixie Game Prototype Thing",
+        "dev": "Zy",
+        "description": "I've often thought about making a game where you play as a belly-minded pixie that keeps looking for ways to blimp herself up- Here's a prototype I quickly threw together.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 08:14 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzY2Njg2LnBuZw==/original/OtuFYr.png",
+        "tags": [
+            "belly",
+            "inflation"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:51Z"
+    },
+    {
+        "url": "https://andrealphus.itch.io/that-time-i-got-reincarnated-as-a-barbarian",
+        "name": "That Time I Got Reincarnated As A Barbarian",
+        "dev": "Andrealphus",
+        "description": "Archibald was a nice guy.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 09:03 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMzMjE4LnBuZw==/original/8X3y1s.png",
+        "tags": [
+            "Dating Sim",
+            "Fantasy",
+            "Meaningful Choices",
+            "Romance",
+            "Turn-Based Combat",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:54Z"
     }
 ]

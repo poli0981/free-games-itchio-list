@@ -1,0 +1,338 @@
+[
+    {
+        "url": "https://ayaah.itch.io/clean-page",
+        "name": "Clean Page",
+        "dev": "aya",
+        "description": "Weeks after waking from a coma caused by a near-fatal car accident, you wake to a life you no longer remember.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 20:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzUxNTQ0LnBuZw==/original/%2BhGbWZ.png",
+        "tags": [
+            "No AI",
+            "self"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:34:56Z"
+    },
+    {
+        "url": "https://azurextwilight.itch.io/praise-be-evangeline",
+        "name": "Praise Be Evangeline",
+        "dev": "azureXtwilight, Naoimh \"Storm\" Murchan, OTOJANG Games, CyborgNekoSica, puyoo, ratifuu_, S.B.Hunter / Eggy Sebby, Rebecca Mondry-Zanaglio, Jason Hall, Sophie Nyx, Thread-theocracy, mistershins",
+        "description": "Once upon a time, in a kingdom weary of war and hunger, there was a little girl who dreamed of becoming a Saintess.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 07:24 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzUwMjE3LmdpZg==/original/yJC7xJ.gif",
+        "tags": [
+            "Fairy Tale",
+            "Female Protagonist",
+            "Horror",
+            "Multiple Endings",
+            "No AI",
+            "Romance",
+            "Voice Acting",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:00Z"
+    },
+    {
+        "url": "https://c-hizzle.itch.io/headspace",
+        "name": "Headspace",
+        "dev": "C_Hizzle",
+        "description": "An experimental platformer where you explore a surreal world and help those you encounter.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 22:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzU0OTMyLnBuZw==/original/lhRfnI.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Narrative",
+            "No AI",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:04Z"
+    },
+    {
+        "url": "https://cabindraws.itch.io/10-seconds-to-die",
+        "name": "10 Seconds to Die!",
+        "dev": "CabinDraws",
+        "description": "In 10 seconds, your murderer is going to enter, and kill you.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 23:09 UTC",
+        "rating": "2.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzU1NTU5LnBuZw==/original/UiZEEu.png",
+        "tags": [
+            "Anime",
+            "Female Protagonist",
+            "Horror",
+            "Multiple Endings"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:07Z"
+    },
+    {
+        "url": "https://helloworld261.itch.io/cursed",
+        "name": "Cursed: a tale between 2 worlds (WIP)",
+        "dev": "HelloWorld261",
+        "description": "Synopsis: Catherine is dying girl.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 06:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzQxNzAxLnBuZw==/original/z%2FKvIK.png",
+        "tags": [
+            "Fantasy",
+            "Female Protagonist",
+            "Horror",
+            "Mystery",
+            "No AI",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:10Z"
+    },
+    {
+        "url": "https://kapei.itch.io/eclipse-child",
+        "name": "Eclipse Child",
+        "dev": "kapei, mershontrev, plutoniuhm, Lutile12",
+        "description": "Made for Colorado Game Jam - Sept.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 04:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzYxMDI4LnBuZw==/original/8hEgBp.png",
+        "tags": [
+            "Atmospheric",
+            "Fantasy",
+            "First-Person",
+            "Multiple Endings",
+            "Narrative",
+            "Pixel Art",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:12Z"
+    },
+    {
+        "url": "https://narathin.itch.io/starlancers",
+        "name": "Star Lancers",
+        "dev": "Narathin",
+        "description": "A racing roguelike with visual novel elements.",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 05:16 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzYzODUzLnBuZw==/original/J1gUCV.png",
+        "tags": [
+            "Roguelike",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:15Z"
+    },
+    {
+        "url": "https://raveglitch.itch.io/izzy-and-dizzys-forest-day-busy",
+        "name": "Izzy and Dizzys Forest Day Busy",
+        "dev": "raveglitch",
+        "description": "while this game does not contain any explicit nsfw content, it is planned to have content with erotic elements, and features usage of substances with what may be considered dubious consent. you...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 14:07 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzM4ODUxLnBuZw==/original/v6PYXK.png",
+        "tags": [
+            "2D",
+            "Furry",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:19Z"
+    },
+    {
+        "url": "https://theironwill1014.itch.io/the-roche-limit",
+        "name": "The Roche Limit",
+        "dev": "theironwill1014",
+        "description": "When the Sun and Moon are murdered, it's up to you to figure out which of their 9 kids, the planets of the solar system, did the crime.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 September 2026 @ 02:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzYwMzY5LnBuZw==/original/C%2BtAX8.png",
+        "tags": [
+            "Casual",
+            "Horror",
+            "Indie",
+            "Narrative",
+            "No AI",
+            "Story Rich"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:49Z"
+    },
+    {
+        "url": "https://urban1098.itch.io/healthy-family-simulator",
+        "name": "Healthy Family Simulator",
+        "dev": "urban1098",
+        "description": "You spill your milk at breakfast.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 17:00 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzQ1OTY1LnBuZw==/original/eQFJWb.png",
+        "tags": [
+            "Casual",
+            "Cozy",
+            "Cute",
+            "emotional",
+            "family",
+            "healing",
+            "Relaxing",
+            "Short",
+            "Wholesome"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-09-30T02:35:53Z"
+    }
+]
