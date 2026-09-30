@@ -616,5 +616,17 @@
         "name": "Locksmith",
         "reason": "Game became paid",
         "deleted_at": "2026-09-27T08:34:34Z"
+    },
+    {
+        "url": "https://g0refreak.itch.io/yume-tenshi",
+        "name": "Yume Tenshi 夢天使",
+        "reason": "Game became paid",
+        "deleted_at": "2026-09-30T02:58:58Z"
+    },
+    {
+        "url": "https://mor10th.itch.io/stop-at-the-gas-station",
+        "name": "Stop at the Gas Station",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-09-30T02:59:02Z"
     }
 ]
