@@ -1,8 +1,11 @@
+/**
+ * One catalog entry as the app holds it. The description is not part of it: it
+ * lives in separate packs, loaded on demand (hooks/useDescriptions.ts).
+ */
 export interface Game {
   url: string
   name: string
   dev: string
-  description: string
   genre: string
   status: string
   publisher: string
@@ -25,14 +28,9 @@ export interface Game {
   updated_at?: string
 }
 
-export interface GameDbIndex {
+export interface CatalogIndex {
   total_games: number
-  max_per_file: number
   last_updated: string
-  files: Array<{
-    name: string
-    count: number
-  }>
 }
 
 export interface DeletedGameEntry {

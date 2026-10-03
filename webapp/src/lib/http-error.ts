@@ -1,6 +1,6 @@
 /**
  * Typed HTTP error so UI layers can map a real status code to an error page.
- * `fetchData` (lib/data/fetch-json.ts) throws this.
+ * The catalog loader (lib/data/catalog.ts) throws this.
  */
 export class HttpError extends Error {
   readonly status: number

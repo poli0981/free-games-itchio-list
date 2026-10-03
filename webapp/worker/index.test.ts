@@ -13,6 +13,7 @@ function env(over: Record<string, unknown> = {}) {
       const { pathname } = new URL(req.url)
       if (pathname === '/') return new Response(SHELL, { headers: { 'content-type': 'text/html' } })
       if (pathname === '/data/urls.json') return Response.json({})
+      if (pathname === '/data/index.json') return Response.json({ total_games: 0 })
       return new Response(null, { status: 404 })
     }),
   }
@@ -32,7 +33,7 @@ function env(over: Record<string, unknown> = {}) {
 }
 
 const ctx = { waitUntil: () => {}, passThroughOnException: () => {} } as unknown as ExecutionContext
-const cache = { match: vi.fn(), put: vi.fn() }
+const cache = { match: vi.fn(), put: vi.fn(async () => {}) }
 
 function run(path: string, headers: Record<string, string> = {}, e: WorkerEnv = env()) {
   const request = new Request(new URL(path, ORIGIN), { headers }) as Parameters<NonNullable<typeof worker.fetch>>[0]
@@ -80,8 +81,20 @@ describe('router, gate on', () => {
     expect(await (await run('/api/verify')).json()).toMatchObject({ enabled: true, valid: false })
     const admin = await run('/admin/')
     expect([admin.status, admin.headers.get('content-type')]).toEqual([503, 'text/plain; charset=utf-8'])
-    const data = await run('/data/nope.json')
-    expect([data.status, data.headers.get('access-control-allow-origin')]).toEqual([404, '*'])
+    // A missing pack: the Worker's 404 (no-store), with CORS for the apps.
+    const pack = await run('/data/pack/0123456789abcdef.bin')
+    expect([pack.status, pack.headers.get('access-control-allow-origin')]).toEqual([404, '*'])
+    expect(pack.headers.get('cache-control')).toBe('no-store')
+  })
+
+  it('serves the readable catalog JSON to the old apps only, never the verification page', async () => {
+    vi.spyOn(console, 'info').mockImplementation(() => {})
+    const browser = await run('/data/index.json')
+    expect([browser.status, browser.headers.get('access-control-allow-origin')]).toEqual([410, '*'])
+    expect(await browser.json()).toMatchObject({ error: 'gone' })
+    const app = await run('/data/index.json', { origin: 'tauri://localhost' })
+    expect(app.status).toBe(200)
+    expect(await app.json()).toEqual({ total_games: 0 })
   })
 })
 

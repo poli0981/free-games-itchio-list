@@ -9,6 +9,7 @@ import { SiteHeader } from '@/components/site/site-header'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useThemeEffect } from '@/hooks/useThemeEffect'
 import { useDensityEffect } from '@/hooks/useDensityEffect'
+import { useScrollbarsEffect } from '@/hooks/useScrollbarsEffect'
 import { useBackButton } from '@/hooks/useBackButton'
 import { useSeoHead } from '@/hooks/useSeoHead'
 import { useT } from '@/lib/i18n'
@@ -89,6 +90,7 @@ function SkipToContent() {
 export default function App() {
   useThemeEffect()
   useDensityEffect()
+  useScrollbarsEffect()
   useBackButton()
   useSeoHead()
   return (

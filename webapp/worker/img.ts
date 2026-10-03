@@ -10,13 +10,21 @@
  * Safety: the upstream host is fixed (no open proxy / SSRF), the path must
  * match a thumbnail that is in the catalog (/data/urls.json), and only two
  * widths exist. When a transform fails (quota error 9422, bad source) the
- * original is streamed through with a short cache instead of being stored.
+ * original is streamed through with a short cache instead of being stored in
+ * R2; it and a missing upstream image are kept in the edge cache for a day, so
+ * repeat requests don't redo the whole chain.
  */
 import { catalogUrls } from './data'
 import { SECURITY_HEADERS } from './http'
 
 const ITCH_IMG = 'https://img.itch.zone/'
-const WIDTHS = new Set([160, 640])
+// Exact spellings only: Number() would also take "0160", "160.0" or "0xa0" and
+// give the same image several edge-cache keys. A Map, not an object: no
+// "constructor" from the prototype.
+const WIDTHS = new Map([
+  ['160', 160],
+  ['640', 640],
+])
 const SEGMENT = /^[A-Za-z0-9%+=_.-]{1,200}$/
 const YEAR = 'public, max-age=31536000, immutable'
 const DAY = 'public, max-age=86400'
@@ -40,9 +48,9 @@ export interface ParsedImgPath {
 export function parseImgPath(pathname: string): ParsedImgPath | null {
   const parts = pathname.split('/').slice(2) // ['', 'img', w, ...rest]
   if (parts.length < 2) return null
-  const width = Number(parts[0])
+  const width = WIDTHS.get(parts[0])
   const rest = parts.slice(1)
-  if (!WIDTHS.has(width)) return null
+  if (width === undefined) return null
   if (rest.length < 2 || rest.length > 4) return null
   if (!rest.every((s) => SEGMENT.test(s) && s !== '.' && s !== '..')) return null
   return { width, upstream: ITCH_IMG + rest.join('/') }
@@ -80,6 +88,12 @@ function plain(status: number, cacheControl = 'public, max-age=300'): Response {
   return new Response(null, { status, headers: { 'Cache-Control': cacheControl, ...SECURITY_HEADERS } })
 }
 
+/** Keeps a copy at the edge in the background; its Cache-Control decides for how long. */
+function remember(deps: ImgDeps, key: Request, res: Response): void {
+  if (!deps.cache) return
+  deps.waitUntil(deps.cache.put(key, res.clone()).catch((e) => console.warn('img: edge cache put failed', e)))
+}
+
 export async function handleImg(request: Request, url: URL, deps: ImgDeps): Promise<Response> {
   if (request.method !== 'GET' && request.method !== 'HEAD') return plain(405, 'no-store')
   // Cheap hotlink protection: other sites can't embed our resized copies.
@@ -109,7 +123,7 @@ export async function handleImg(request: Request, url: URL, deps: ImgDeps): Prom
     const stored = await deps.bucket.get(key)
     if (stored) {
       const res = imageResponse(stored.body, 'image/webp', YEAR)
-      if (deps.cache) deps.waitUntil(deps.cache.put(cacheKey, res.clone()))
+      remember(deps, cacheKey, res)
       return res
     }
 
@@ -119,22 +133,34 @@ export async function handleImg(request: Request, url: URL, deps: ImgDeps): Prom
     if (transformed.ok && transformed.headers.get('content-type') === 'image/webp') {
       const bytes = await transformed.arrayBuffer()
       const res = imageResponse(bytes, 'image/webp', YEAR)
-      deps.waitUntil(deps.bucket.put(key, bytes, { httpMetadata: { contentType: 'image/webp' } }))
-      if (deps.cache) deps.waitUntil(deps.cache.put(cacheKey, res.clone()))
+      deps.waitUntil(
+        deps.bucket
+          .put(key, bytes, { httpMetadata: { contentType: 'image/webp' } })
+          .catch((e) => console.warn('img: R2 put failed', e)),
+      )
+      remember(deps, cacheKey, res)
       return res
     }
     discard(transformed)
 
     // Transformation unavailable (quota 9422, unsupported source…): stream the
-    // original, cache it briefly at the edge, do not store it.
+    // original, keep it at the edge for a day, do not store it in R2.
     const original = await deps.fetch(upstream, { cf: { cacheEverything: true, cacheTtl: 86400 } } as RequestInit)
     const type = original.headers.get('content-type') ?? ''
     const usable = original.ok && type.startsWith('image/') && !type.includes('svg')
     if (!usable || request.method === 'HEAD') discard(original)
     // itch.zone answers 403 for some broken originals: treat like a missing image.
-    if ([403, 404, 410].includes(original.status)) return plain(404, DAY)
+    if ([403, 404, 410].includes(original.status)) {
+      const missing = plain(404, DAY)
+      remember(deps, cacheKey, missing)
+      return missing
+    }
     if (!usable) return plain(502, 'no-store')
-    return imageResponse(request.method === 'HEAD' ? null : original.body, type, DAY)
+    if (request.method === 'HEAD') return imageResponse(null, type, DAY)
+    const res = imageResponse(original.body, type, DAY)
+    // GET only: a HEAD answer has no body to keep.
+    remember(deps, cacheKey, res)
+    return res
   } catch {
     return plain(502, 'no-store')
   }

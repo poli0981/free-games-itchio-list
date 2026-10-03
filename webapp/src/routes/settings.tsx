@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { Switch } from '@/components/ui/switch'
-import { DensityChoice, LanguageChoice, ThemeChoice } from '@/components/site/preference-controls'
+import { DensityChoice, LanguageChoice, ScrollbarsToggle, ThemeChoice } from '@/components/site/preference-controls'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { requestNsfw } from '@/lib/nsfw'
 import { useT } from '@/lib/i18n'
@@ -33,6 +33,7 @@ export default function Settings() {
         <ThemeChoice />
         <LanguageChoice />
         <DensityChoice />
+        <ScrollbarsToggle id="hide-scrollbars" describe />
       </Section>
 
       <Section title={t('settings.content.title')}>

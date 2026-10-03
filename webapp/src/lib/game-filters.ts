@@ -103,23 +103,31 @@ export function playsInBrowser(game: Game): boolean {
   return game.platforms?.includes('HTML5') ?? false
 }
 
-// Folded search text per game object; catalog objects are immutable once loaded.
-const haystacks = new WeakMap<Game, string>()
+// Folded search text per game object (catalog objects are immutable once loaded),
+// rebuilt when the game's description arrives: descriptions load separately.
+const haystacks = new WeakMap<Game, { description: string | undefined; text: string }>()
 
-function haystackOf(game: Game): string {
-  let text = haystacks.get(game)
-  if (text === undefined) {
-    text = fold([game.name, game.dev, game.description, ...(game.tags ?? [])].join(' '))
-    haystacks.set(game, text)
-  }
+function haystackOf(game: Game, description: string | undefined): string {
+  const cached = haystacks.get(game)
+  if (cached && cached.description === description) return cached.text
+  const text = fold([game.name, game.dev, description ?? '', ...(game.tags ?? [])].join(' '))
+  haystacks.set(game, { description, text })
   return text
 }
 
-/** Games matching every active filter except `skip` (used for facet counts). */
-export function filterGames(games: Game[], query: GameQuery, skip?: ListFilter): Game[] {
+/**
+ * Games matching every active filter except `skip` (used for facet counts).
+ * The search also matches the descriptions in `descriptions` (those loaded so far).
+ */
+export function filterGames(
+  games: Game[],
+  query: GameQuery,
+  skip?: ListFilter,
+  descriptions?: ReadonlyMap<Game, string>,
+): Game[] {
   const needle = fold(query.q)
   return games.filter((game) => {
-    if (needle && !haystackOf(game).includes(needle)) return false
+    if (needle && !haystackOf(game, descriptions?.get(game)).includes(needle)) return false
     for (const key of Object.keys(LIST_FILTERS) as ListFilter[]) {
       if (key === skip) continue
       const wanted = query.lists[key]

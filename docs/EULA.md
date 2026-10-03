@@ -1,8 +1,8 @@
 # End-User License Agreement (EULA)
 
-Last updated: 2026-09-29
+Last updated: 2026-10-03
 
-Applies from: the release of version 4.1.1.
+Applies from: the release of version 4.2.0.
 
 This EULA applies **only to the desktop and Android apps** of Itch.io Free Games DB: the installers (`.msi`, `.exe`, `.dmg`, `.pkg`, `.app.tar.gz`, `.deb`, `.rpm`, `.AppImage`) and the Android `.apk` published on GitHub Releases. It does **not** cover:
 
@@ -46,12 +46,12 @@ Nothing in this EULA takes away a permission the MIT License gives You over the 
 
 The App has **no telemetry**: no analytics, no crash reporting, no tracking. It connects to only two places:
 
-- **freeitchgames.win**, to download the Catalog JSON from <https://freeitchgames.win/data>. The Website runs on Cloudflare, which processes ordinary request data (such as Your IP address and user agent) to deliver it, as described in the [Privacy Policy](PrivacyPolicy.md).
+- **freeitchgames.win**, to download the Catalog data from <https://freeitchgames.win/data>. The Website runs on Cloudflare, which processes ordinary request data (such as Your IP address and user agent) to deliver it, as described in the [Privacy Policy](PrivacyPolicy.md).
 - **img.itch.zone**, itch.io's image server, to load cover images directly. itch.io receives ordinary request data for those images, as with any image loaded from the web (see the [itch.io privacy policy](https://itch.io/docs/legal/privacy-policy)).
 
 When You click a game or another outside link, it opens in Your default browser (itch.io, GitHub or the Website). From then on, that site's own terms and privacy policy apply.
 
-The App keeps Your preferences (language, theme, layout density, the 18+ choice, and which version of the legal terms You accepted) and a cached copy of the Catalog (kept up to 7 days) on Your device only. None of it is sent to the Maintainer.
+The App keeps Your preferences (language, theme, layout density, whether scrollbars are hidden, the 18+ choice, and which version of the legal terms You accepted) and a compressed cached copy of the Catalog (kept up to 7 days) on Your device only. None of it is sent to the Maintainer.
 
 ## 5. Installation, updates and removal
 
@@ -82,7 +82,7 @@ You agree not to:
 
 - Present a modified build as an official release, for example by distributing it under the project's name and icon, or with the official app identifier `com.poli0981.freegamesitchio`, without clearly marking it as unofficial. Forks are welcome under the MIT License; just make it obvious they are Yours.
 - Use the Maintainer's name, the GitHub handle `poli0981`, or the alias "SkullMute" to endorse or promote derivative works without prior written permission.
-- Use the App, or a modified version of it, in a way that breaks the Website's [Terms of Use](ToS.md), for example automated bulk requests beyond the published `/data` files, or attempts to reach the admin area or the ingest API without authorization.
+- Use the App, or a modified version of it, in a way that breaks the Website's [Terms of Use](ToS.md), for example automated bulk requests to the Website (the data is in the Repository), or attempts to reach the admin area or the ingest API without authorization.
 - Use the App or its installers to host, distribute or facilitate malware, phishing, or content that violates applicable law.
 
 These rules are about how You use the App and the project's name and services. They sit alongside the MIT License and do not limit the rights it grants over the source code.

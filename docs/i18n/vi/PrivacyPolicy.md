@@ -1,10 +1,10 @@
 # Chính sách quyền riêng tư (Privacy Policy)
 
-Cập nhật lần cuối: 2026-09-29
+Cập nhật lần cuối: 2026-10-03
 
-Áp dụng từ: ngày 2026-09-29 đối với Website, và từ phiên bản 4.1.1 đối với các Ứng dụng.
+Áp dụng từ: ngày 2026-10-03 đối với Website, và từ phiên bản 4.2.0 đối với các Ứng dụng.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-03 (English source revision 2026-10-03). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
 
 Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-list` xử lý những dữ liệu cá nhân nào, vì sao, ai hỗ trợ xử lý, dữ liệu được lưu trong bao lâu và bạn có những quyền gì. Chính sách áp dụng cho website **https://freeitchgames.win**, các ứng dụng desktop và Android, dữ liệu danh mục công khai và repository. Nói ngắn gọn: không có tài khoản, không quảng cáo, không cookie theo dõi. Dự án giữ ít dữ liệu nhất có thể, và phần lớn những gì tồn tại chỉ nằm trong trình duyệt của chính bạn.
 
@@ -53,7 +53,7 @@ Chính sách này không áp dụng cho các dịch vụ tự xử lý dữ li�
 ### 2.2 Khi dùng các Ứng dụng
 
 - Các Ứng dụng là trình xem chỉ đọc, **không telemetry, không analytics và không tài khoản**.
-- Chúng tải JSON của Danh mục từ https://freeitchgames.win/data (Cloudflare xử lý dữ liệu request như mô tả ở mục 2.1) và tải ảnh bìa **trực tiếp từ máy chủ ảnh của itch.io (img.itch.zone)**, vì vậy itch.io nhận được địa chỉ IP và user agent của bạn khi ảnh bìa được tải.
+- Chúng tải dữ liệu Danh mục từ https://freeitchgames.win/data (Cloudflare xử lý dữ liệu request như mô tả ở mục 2.1; các phiên bản 4.0–4.1.1 vẫn nhận các file JSON cũ, được nhận biết qua header `Origin` mà cửa sổ ứng dụng gửi kèm) và tải ảnh bìa **trực tiếp từ máy chủ ảnh của itch.io (img.itch.zone)**, vì vậy itch.io nhận được địa chỉ IP và user agent của bạn khi ảnh bìa được tải.
 - Bấm vào một game sẽ mở trang itch.io của game đó trong trình duyệt của bạn.
 - Việc cập nhật là thủ công: các Ứng dụng không tự kiểm tra bản cập nhật. Khi bạn tải bộ cài hoặc file APK từ GitHub Releases, GitHub xử lý request đó.
 - Các Ứng dụng dùng cùng kiểu lưu trữ cục bộ như Website (mục 3.1), chỉ trên thiết bị của bạn. Gỡ cài đặt Ứng dụng sẽ xóa dữ liệu này.
@@ -106,10 +106,10 @@ Website và các Ứng dụng chỉ lưu các mục sau trên thiết bị của
 
 | Lưu trữ | Khóa | Nội dung | Giữ đến khi |
 |---|---|---|---|
-| `localStorage` | `webapp.prefs` | Tùy chọn giao diện như ngôn ngữ và mật độ hiển thị, lựa chọn nội dung 18+ (NSFW) của bạn, và phiên bản các văn bản pháp lý bạn đã chấp nhận | Bạn xóa nó |
+| `localStorage` | `webapp.prefs` | Tùy chọn giao diện như ngôn ngữ, mật độ hiển thị và việc ẩn thanh cuộn, lựa chọn nội dung 18+ (NSFW) của bạn, và phiên bản các văn bản pháp lý bạn đã chấp nhận | Bạn xóa nó |
 | `localStorage` | `webapp.theme` | Giao diện: `light`, `dark` hoặc `system` | Bạn xóa nó |
 | `localStorage` | `webapp.gate` | Thời điểm lượt xác minh hiện tại (mục 3.2) hết hạn, để tab đang mở kịp kiểm tra lại | Bị thay bởi lần kiểm tra sau; bạn có thể xóa nó |
-| IndexedDB (qua `idb-keyval`) | `webapp.query-cache` | Bản cache của JSON Danh mục công khai, để tải nhanh và dùng offline ở mức hạn chế | Tối đa 7 ngày, sau đó được làm mới hoặc bị bỏ đi |
+| IndexedDB (qua `idb-keyval`) | `webapp.query-cache` | Bản sao đã nén của dữ liệu Danh mục công khai (danh sách game, nhật ký game bị gỡ, chuỗi số lượng game theo thời gian và mô tả của những game bạn đã mở hoặc tìm), để tải nhanh và dùng offline ở mức hạn chế | Tối đa 7 ngày, sau đó được làm mới hoặc bị bỏ đi |
 | `sessionStorage` | `reloaded-after-deploy` | Một mốc thời gian, để trang chỉ tự tải lại tối đa một lần sau khi site được cập nhật | Tab được đóng |
 
 Ở lần tải đầu tiên, Website và các Ứng dụng cũng xóa các mục mà ứng dụng v3 cũ để lại trong bộ nhớ trình duyệt (một GitHub access token đã mã hóa và dữ liệu khóa ký commit). v4 không dùng tới các mục này.

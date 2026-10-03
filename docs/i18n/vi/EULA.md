@@ -1,10 +1,10 @@
 # Thỏa thuận cấp phép cho người dùng cuối (EULA)
 
-Cập nhật lần cuối: 2026-09-29
+Cập nhật lần cuối: 2026-10-03
 
-Áp dụng từ: khi phát hành phiên bản 4.1.1.
+Áp dụng từ: khi phát hành phiên bản 4.2.0.
 
-Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-03 (English source revision 2026-10-03). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
 > Bản tiếng Anh: [`docs/EULA.md`](../../EULA.md).
 
@@ -50,12 +50,12 @@ Không điều gì trong EULA này lấy đi quyền mà Giấy phép MIT trao c
 
 Ứng dụng **không có telemetry**: không analytics, không báo cáo lỗi (crash reporting), không theo dõi. Ứng dụng chỉ kết nối tới hai nơi:
 
-- **freeitchgames.win**, để tải file JSON của Catalog từ <https://freeitchgames.win/data>. Website chạy trên Cloudflare; Cloudflare xử lý dữ liệu yêu cầu thông thường (như địa chỉ IP và user agent của Bạn) để phân phối nội dung, như mô tả trong [Chính sách quyền riêng tư (Privacy Policy)](PrivacyPolicy.md).
+- **freeitchgames.win**, để tải dữ liệu Catalog từ <https://freeitchgames.win/data>. Website chạy trên Cloudflare; Cloudflare xử lý dữ liệu yêu cầu thông thường (như địa chỉ IP và user agent của Bạn) để phân phối nội dung, như mô tả trong [Chính sách quyền riêng tư (Privacy Policy)](PrivacyPolicy.md).
 - **img.itch.zone**, máy chủ ảnh của itch.io, để tải trực tiếp ảnh bìa. itch.io nhận dữ liệu yêu cầu thông thường cho các ảnh đó, như với bất kỳ ảnh nào được tải từ web (xem [chính sách quyền riêng tư của itch.io](https://itch.io/docs/legal/privacy-policy)).
 
 Khi Bạn bấm vào một game hoặc một link bên ngoài khác, link đó sẽ mở trong trình duyệt mặc định của Bạn (itch.io, GitHub hoặc Website). Từ lúc đó, điều khoản và chính sách quyền riêng tư của chính trang đó được áp dụng.
 
-Ứng dụng lưu các tùy chọn của Bạn (ngôn ngữ, giao diện sáng/tối, mật độ bố cục, lựa chọn 18+, và phiên bản điều khoản pháp lý Bạn đã chấp nhận) cùng một bản sao lưu đệm (cache) của Catalog (giữ tối đa 7 ngày) chỉ trên thiết bị của Bạn. Không dữ liệu nào trong số đó được gửi cho Người duy trì.
+Ứng dụng lưu các tùy chọn của Bạn (ngôn ngữ, giao diện sáng/tối, mật độ bố cục, việc ẩn thanh cuộn, lựa chọn 18+, và phiên bản điều khoản pháp lý Bạn đã chấp nhận) cùng một bản sao lưu đệm (cache) đã nén của Catalog (giữ tối đa 7 ngày) chỉ trên thiết bị của Bạn. Không dữ liệu nào trong số đó được gửi cho Người duy trì.
 
 ## 5. Cài đặt ứng dụng, cập nhật và gỡ bỏ
 
@@ -86,7 +86,7 @@ Bạn đồng ý không:
 
 - Trình bày một bản build đã sửa đổi như một bản phát hành chính thức, ví dụ phân phối nó dưới tên và biểu tượng của dự án, hoặc với app identifier chính thức `com.poli0981.freegamesitchio`, mà không ghi rõ đó là bản không chính thức. Fork luôn được chào đón theo Giấy phép MIT; chỉ cần làm rõ rằng đó là bản của Bạn.
 - Sử dụng tên Người duy trì, GitHub handle `poli0981`, hoặc alias "SkullMute" để chứng thực hoặc quảng bá tác phẩm phái sinh mà không có sự cho phép trước bằng văn bản.
-- Sử dụng Ứng dụng, hoặc một phiên bản đã sửa đổi của nó, theo cách vi phạm [Điều khoản sử dụng](ToS.md) của Website, ví dụ gửi yêu cầu tự động hàng loạt vượt ngoài các file `/data` đã công bố, hoặc cố truy cập khu vực quản trị (admin) hay ingest API khi không được phép.
+- Sử dụng Ứng dụng, hoặc một phiên bản đã sửa đổi của nó, theo cách vi phạm [Điều khoản sử dụng](ToS.md) của Website, ví dụ gửi yêu cầu tự động hàng loạt tới Website (dữ liệu có sẵn trong Repository), hoặc cố truy cập khu vực quản trị (admin) hay ingest API khi không được phép.
 - Sử dụng Ứng dụng hoặc các bộ cài của nó để lưu trữ, phân phối hoặc tạo điều kiện phân phối malware, trang phishing, hoặc nội dung vi phạm pháp luật hiện hành.
 
 Các quy tắc này là về cách Bạn sử dụng Ứng dụng cũng như tên và dịch vụ của dự án. Chúng tồn tại song song với Giấy phép MIT và không hạn chế các quyền mà giấy phép đó trao đối với mã nguồn.

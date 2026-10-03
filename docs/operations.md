@@ -8,7 +8,7 @@ secret: secrets are only ever typed into Cloudflare (`wrangler secret put`) or a
 
 | Piece | Where | What it does |
 |---|---|---|
-| Worker `free-games-itchio-list` | Cloudflare Workers, custom domain `freeitchgames.win` | Serves the built app + `/data` (static assets), `/img` (resized covers), the verification gate (`/api/verify`), `/api/suggest`, `/api/ingest`, `/api/admin/*`, `/admin`, and runs the RSS cron. Config: [`webapp/wrangler.jsonc`](../webapp/wrangler.jsonc). |
+| Worker `free-games-itchio-list` | Cloudflare Workers, custom domain `freeitchgames.win` | Serves the built app + the catalog packs `/data/pack/*` (static assets), the readable `/data/*.json` to apps 4.0–4.1.1 only ([`legacy-data.ts`](../webapp/worker/legacy-data.ts)), `/img` (resized covers), the verification gate (`/api/verify`), `/api/suggest`, `/api/ingest`, `/api/admin/*`, `/admin`, and runs the RSS cron. Config: [`webapp/wrangler.jsonc`](../webapp/wrangler.jsonc). |
 | Workers Builds | Cloudflare dashboard → the Worker → Settings → Build | Builds and deploys `main` on every push (data commits included). |
 | R2 `freeitchgames-thumbs` | Cloudflare R2 | Resized WebP covers (`w160/…`, `w640/…`). |
 | D1 `freeitchgames` | Cloudflare D1 | Review queue, feed state, audit log, idempotency keys ([`webapp/worker/migrations/`](../webapp/worker/migrations)). |
@@ -86,6 +86,22 @@ Do these once (and again with the `-staging` names for the staging Worker).
     `/api/*`; Bot Fight Mode **off** (it can't be skipped for the extension or the apps; the
     verification gate covers the web app instead). Keep HSTS
     `preload` only if every subdomain (including `staging`) will always be HTTPS.
+    - Measured 2026-10-03: TLS 1.0/1.1 are refused, TLS 1.3 and HTTP/3 answer, `http://` redirects
+      (301), and the zone sends `Strict-Transport-Security: max-age=31536000; includeSubDomains;
+      preload`. The domain is **not** on the browsers' HSTS preload list (hstspreload.org); submitting
+      it is optional and slow to undo.
+    - **Smart Tiered Cache** is free, so leave it on, but it barely matters here: static assets (the
+      app and `/data/pack/*`) have Cloudflare's own tiered asset cache, and `/img` uses the Worker's
+      Cache API (per data centre, never tiered) plus R2. Only cacheable Worker `fetch()` subrequests
+      use it — in practice the img.itch.zone fallback fetch. No Region Hint is needed for
+      `api.github.com` (it shows up as an "origin" because the Worker calls it; those calls aren't
+      cacheable).
+    - Don't turn on **Workers Cache** (`cache.enabled` in `wrangler.jsonc`): it bills every
+      static-asset request as a Worker request and would serve cached `/img` responses without running
+      the verification gate.
+    - Compression is automatic (zstd / Brotli / gzip, picked per browser) for JSON and the app files.
+      The `.bin` packs are deflated at build time and served as `application/octet-stream`, which
+      Cloudflare does not compress again.
 13. **Notifications**: enable the Workers Builds failure notification (independent of
     `deploy-status.yml`).
 14. **Verification gate** ([`webapp/worker/gate.ts`](../webapp/worker/gate.ts)). A visitor must pass a
@@ -107,7 +123,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
     5. `openssl rand -base64 48 | npx wrangler secret put GATE_SECRET` — the gate is on.
     6. Smoke test: `curl -sI https://freeitchgames.win/` shows `x-robots-tag: noindex, nofollow` and
        `cache-control: no-store` (the verification page); `/img/160/x` answers 403;
-       `/data/index.json` answers 200 with `access-control-allow-origin: *`;
+       `/data/pack/manifest-v1.json` answers 200 with `access-control-allow-origin: *` (the catalog
+       checks in section 4 cover the rest);
        `curl -sI -A 'Googlebot/2.1' https://freeitchgames.win/` answers 503 (only verified bots, via
        the rule, get through); a real browser passes and lands on the page it opened; Search Console →
        URL Inspection → *Test live URL* renders the real app. Watch Security → Events and Search
@@ -166,6 +183,18 @@ Do these once (and again with the `-staging` names for the staging Worker).
   site keeps serving the previous deployment meanwhile.
 - **New D1 migration**: add `webapp/worker/migrations/000N_*.sql` (never edit applied ones), apply it
   to staging and production by hand, then deploy.
+- **Catalog delivery** (after a release that touches it, or when the site shows no games):
+  ```sh
+  B=https://freeitchgames.win/data
+  curl -sI $B/pack/manifest-v1.json                    # 200, application/json, max-age=60, ACAO *
+  H=$(curl -s $B/pack/manifest-v1.json | node -p "JSON.parse(require('fs').readFileSync(0)).chunks[0].main")
+  curl -sI -H 'Accept-Encoding: br, gzip' $B/pack/$H   # 200, octet-stream, no content-encoding, immutable
+  curl -sI $B/pack/0000000000000000.bin                # 404, no-store (answered by the Worker)
+  curl -sI $B/index.json                               # 410, vary: Origin (browsers and scripts)
+  curl -sI -H 'Origin: tauri://localhost' $B/index.json   # 200 (apps 4.0–4.1.1)
+  ```
+  `npx wrangler tail` shows the `legacy-data: 410` lines with the requesting `Origin`: an installed
+  app that sends an unexpected one would show up there.
 - **Verification gate misbehaving** (visitors stuck on the check, crawl errors in Search Console):
   `npx wrangler secret delete GATE_SECRET` turns it off at once; then look at `npx wrangler tail` and
   `curl -s https://freeitchgames.win/api/verify`.

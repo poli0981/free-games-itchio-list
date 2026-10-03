@@ -1,12 +1,12 @@
 # Terms of Use
 
-Last updated: 2026-09-29
+Last updated: 2026-10-03
 
-Applies from: 2026-09-29 on the Website, and from version 4.1.1 of the Apps.
+Applies from: 2026-10-03 on the Website, and from version 4.2.0 of the Apps.
 
 These Terms of Use ("Terms") govern your use of the website **https://freeitchgames.win**, the desktop and Android apps, and the public catalog data of `free-games-itchio-list`. They are written in plain language, but they are a real agreement. They replace the older Terms and also cover what the old web-app "EULA" used to say; the [EULA](EULA.md) now covers only the app installers and the Android APK.
 
-> **TL;DR**: Browse, share, fork the code (MIT) and reuse the data with credit (CC BY 4.0). Don't bulk-scrape the site (use the `/data` files), don't hotlink `/img`, don't spam the Suggest form, don't poke at `/admin`, and don't pretend to be itch.io or the Maintainer. Game creators can get a game removed or corrected. Adult content stays hidden unless you opt in.
+> **TL;DR**: Browse, share, fork the code (MIT) and reuse the data with credit (CC BY 4.0). Don't bulk-scrape the site (the data is in the GitHub repo), don't hotlink `/img`, don't spam the Suggest form, don't poke at `/admin`, and don't pretend to be itch.io or the Maintainer. Game creators can get a game removed or corrected. Adult content stays hidden unless you opt in.
 
 ## 1. Definitions
 
@@ -37,7 +37,7 @@ These Terms of Use ("Terms") govern your use of the website **https://freeitchga
 
 - Browse the Website and the Apps, and follow links to itch.io.
 - Share links to the Website and to game pages.
-- Download and reuse the Catalog data under **CC BY 4.0**, with credit (see section 11). For programmatic access, use the published JSON files under https://freeitchgames.win/data or the Repository; please cache them instead of downloading them again on every request.
+- Download and reuse the Catalog data under **CC BY 4.0**, with credit (see section 11). Get it from the Repository (`data_game/` and `scripts/deleted_games.json`, also as raw files), and please cache it instead of downloading it again on every request. The files under https://freeitchgames.win/data are the Website's and the Apps' own compact format, not a public interface; the readable JSON there is served only to older versions of the Apps.
 - Use, fork, modify and redistribute the code under the **MIT License**.
 - Suggest a free itch.io game on the Suggest page (see section 5).
 - Report bugs, give feedback and open pull requests through the Repository's templates.
@@ -60,7 +60,7 @@ These Terms of Use ("Terms") govern your use of the website **https://freeitchga
 
 You agree **not** to:
 
-1. **Bulk-scrape** the Website or its API beyond the published `/data` files. Use the `/data` JSON files or the Repository instead; it is cheaper for everyone.
+1. **Bulk-scrape** the Website or its API, including the files under `/data`. Get the data from the Repository instead; it is cheaper for everyone.
 2. **Abuse the image proxy** (`/img`): it exists only to show cover images on the Website. Don't hotlink `/img` URLs from other sites or apps, and don't use it to fetch images in bulk.
 3. **Access restricted areas without authorization**: `/admin`, the admin API (`/api/admin/…`) and the ingest API (`/api/ingest`) are for the Maintainer only. Good-faith security research is welcome under the rules of the [Security Policy](../SECURITY.md).
 4. **Spam the Suggest form**, or circumvent the Website's verification check, Turnstile or the rate limits (for example with scripts, shared verification cookies or rotating IP addresses).

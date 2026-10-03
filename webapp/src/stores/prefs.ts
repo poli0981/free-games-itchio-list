@@ -9,7 +9,7 @@ type Language = 'en' | 'vi'
  * policy in docs/) to re-prompt every user once. Kept in sync with the
  * "Updated …" date in `about.legal.desc`. Stored value !== this → gate shows.
  */
-export const LEGAL_VERSION = '2026-09-29'
+export const LEGAL_VERSION = '2026-10-03'
 
 interface PrefsStore {
   density: Density
@@ -17,10 +17,13 @@ interface PrefsStore {
   acceptedLegalVersion: string | null
   /** 18+ games are hidden unless the visitor opted in (after confirming their age). */
   showNsfw: boolean
+  /** Hides every scrollbar (html[data-scrollbars], useScrollbarsEffect); scrolling still works. */
+  hideScrollbars: boolean
   setDensity: (d: Density) => void
   setLanguage: (l: Language) => void
   acceptLegal: () => void
   setShowNsfw: (v: boolean) => void
+  setHideScrollbars: (v: boolean) => void
 }
 
 export const usePrefs = create<PrefsStore>()(
@@ -30,10 +33,12 @@ export const usePrefs = create<PrefsStore>()(
       language: 'en',
       acceptedLegalVersion: null,
       showNsfw: false,
+      hideScrollbars: false,
       setDensity: (d) => set({ density: d }),
       setLanguage: (l) => set({ language: l }),
       acceptLegal: () => set({ acceptedLegalVersion: LEGAL_VERSION }),
       setShowNsfw: (v) => set({ showNsfw: v }),
+      setHideScrollbars: (v) => set({ hideScrollbars: v }),
     }),
     {
       name: 'webapp.prefs',
@@ -43,6 +48,7 @@ export const usePrefs = create<PrefsStore>()(
         language: s.language,
         acceptedLegalVersion: s.acceptedLegalVersion,
         showNsfw: s.showNsfw,
+        hideScrollbars: s.hideScrollbars,
       }),
     },
   ),

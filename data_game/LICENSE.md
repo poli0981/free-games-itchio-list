@@ -1,6 +1,6 @@
 # Catalog data license
 
-Last updated: 2026-09-18
+Last updated: 2026-10-03
 
 Applies from: the release of version 4.0.0.
 
@@ -18,8 +18,8 @@ Applies from: the release of version 4.0.0.
   `index.json` (the chunk manifest) and `count_history.json` (the games-over-time series);
 - [`scripts/deleted_games.json`](../scripts/deleted_games.json), the public log of removed games and the
   reason each one was removed;
-- the files built from them and published under <https://freeitchgames.win/data> (for example
-  `https://freeitchgames.win/data/index.json`).
+- the files built from them and published under <https://freeitchgames.win/data> (the compact packs the
+  website and the apps read).
 
 "The Maintainer" means poli0981 (SkullMute), the author of this collection and the licensor.
 
@@ -94,10 +94,11 @@ to the game's itch.io page.
 
 ## 5. Where to get the Data
 
-- **The published JSON**: <https://freeitchgames.win/data> (`index.json` lists the `game_info_NNN.json`
-  chunks).
-- **This repository**: clone or download [`data_game/`](./) and
-  [`scripts/deleted_games.json`](../scripts/deleted_games.json). Git history holds past versions.
+- **This repository**: clone or download [`data_game/`](./) (`index.json` lists the `game_info_NNN.json`
+  chunks) and [`scripts/deleted_games.json`](../scripts/deleted_games.json), or read the raw files. Git
+  history holds past versions.
+- The files under <https://freeitchgames.win/data> are the website's own compact format, not an interface
+  for reuse (the readable JSON there is served only to older versions of the apps).
 
 Please use these files rather than scraping the website page by page. The [Terms of Use](../docs/ToS.md)
 do not allow automated bulk scraping of the website, and the files are cheaper for everyone.

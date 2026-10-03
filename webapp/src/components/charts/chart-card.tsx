@@ -17,8 +17,15 @@ export function ChartCard({ title, description, children }: ChartCardProps) {
       </CardHeader>
       {/* Recharts 3 makes the chart focusable (keyboard navigation). A mouse
           click would focus it too, drawing the browser's focus ring and
-          pinning the tooltip on the first item; keep clicks from moving focus. */}
-      <CardContent className="h-72" onMouseDown={(e) => e.preventDefault()}>
+          pinning the tooltip on the first item; keep clicks on the chart from
+          moving focus. Only on the chart: the list cards (recently removed,
+          tag cloud) keep their scrollbar drag and text selection. */}
+      <CardContent
+        className="h-72"
+        onMouseDown={(e) => {
+          if ((e.target as Element).closest('.recharts-wrapper')) e.preventDefault()
+        }}
+      >
         {children}
       </CardContent>
     </Card>

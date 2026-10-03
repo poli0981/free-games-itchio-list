@@ -79,8 +79,8 @@ nắm tổng quan tầng dữ liệu.
 ```sh
 cd webapp
 npm ci
-npm run dev          # app công khai ở http://localhost:5173 có HMR; /data lấy từ ../data_game
-npm run build        # tsc -b + vite build → webapp/dist/ (app, /admin/, /data, sitemap.xml)
+npm run dev          # app công khai ở http://localhost:5173 có HMR; /data (gói + JSON) dựng từ ../data_game
+npm run build        # tsc -b + vite build → webapp/dist/ (app, /admin/, /data/pack + JSON cũ, sitemap.xml)
 npm run preview      # chạy bản build production (không có Worker)
 ```
 
@@ -182,8 +182,9 @@ npm run tauri:dev    # cửa sổ native + HMR
 npm run tauri:build  # bộ cài native
 ```
 
-Các app đọc catalog trực tiếp từ https://freeitchgames.win/data và tải ảnh bìa từ `img.itch.zone`,
-nên cần internet nhưng không cần Worker local. Yêu cầu theo nền tảng (WebView2 trên Windows 10, Xcode
+Các app đọc các gói catalog trực tiếp từ https://freeitchgames.win/data/pack và tải ảnh bìa từ
+`img.itch.zone`, nên cần internet nhưng không cần Worker local (code đổi định dạng gói chỉ chạy được trong
+`tauri:dev` khi website có định dạng đó đã được deploy). Yêu cầu theo nền tảng (WebView2 trên Windows 10, Xcode
 CLT trên macOS, `libwebkit2gtk-4.1-dev` trên Debian/Ubuntu) và cách build Android có trong
 [`webapp/TAURI.md`](../../../webapp/TAURI.md).
 

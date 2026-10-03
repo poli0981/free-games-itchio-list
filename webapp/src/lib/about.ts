@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Free Itch Games',
-  version: '4.1.1',
+  version: '4.2.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'code MIT · data CC BY 4.0',
 } as const
@@ -156,8 +156,8 @@ export const THIRD_PARTY: ThirdParty[] = [
   // Data
   { name: 'TanStack Query', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'TanStack Query Persist Client', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'TanStack Query Async Storage Persister', version: '5.103', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'idb-keyval', version: '6.3', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
+  { name: 'fflate', version: '0.8', license: 'MIT', url: 'https://github.com/101arrowz/fflate', category: 'data' },
 
   // Hosting / tooling (Cloudflare)
   { name: 'jose', version: '6.2', license: 'MIT', url: 'https://github.com/panva/jose', category: 'dev' },
