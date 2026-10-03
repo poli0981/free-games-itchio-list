@@ -634,5 +634,11 @@
         "name": "Milo gets silly when he is in love!",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-02T02:57:50Z"
+    },
+    {
+        "url": "https://abmanstudio.itch.io/dont-leave-chapter1",
+        "name": "DON'T LEAVE — Chapter 1",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-03T03:07:42Z"
     }
 ]
