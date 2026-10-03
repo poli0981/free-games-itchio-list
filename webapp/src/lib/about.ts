@@ -161,7 +161,7 @@ export const THIRD_PARTY: ThirdParty[] = [
 
   // Hosting / tooling (Cloudflare)
   { name: 'jose', version: '6.2', license: 'MIT', url: 'https://github.com/panva/jose', category: 'dev' },
-  { name: 'Wrangler', version: '4.134', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
+  { name: 'Wrangler', version: '4.147', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
   { name: 'Vitest', version: '5.0', license: 'MIT', url: 'https://vitest.dev', category: 'dev' },
 
   // Desktop / mobile (Tauri)
