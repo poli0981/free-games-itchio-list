@@ -145,7 +145,7 @@ Code **MIT** (`LICENSE`); catalog data **CC BY 4.0** for the maintainer's contri
 
 ## Current state (Oct 2026)
 
-**v4.2.0** (prepared 2026-10-03, not tagged yet): catalog packs + lazy descriptions (first visit ≈ 264 KB instead of ≈ 520 KB), compressed IndexedDB cache, `/data/*.json` only for apps 4.0–4.1.1 (410 + repository links for everyone else), `/img` cache fixes, themed scrollbars + "Hide scrollbars", policies (`LEGAL_VERSION` 2026-10-03: data reuse goes through the repository). Checked on the live site the same day: TLS 1.2/1.3 only, HSTS preload header (domain not on the preload list), Cloudflare compression already on (zstd/br), Smart Tiered Cache on but irrelevant here (`docs/operations.md` §1 step 12).
+**v4.2.0** (2026-10-03, PR #103): catalog packs + lazy descriptions (first visit ≈ 264 KB instead of ≈ 520 KB), compressed IndexedDB cache, `/data/*.json` only for apps 4.0–4.1.1 (410 + repository links for everyone else), `/img` cache fixes, themed scrollbars + "Hide scrollbars", policies (`LEGAL_VERSION` 2026-10-03: data reuse goes through the repository). Checked on the live site the same day: TLS 1.2/1.3 only, HSTS preload header (domain not on the preload list), Cloudflare compression already on (zstd/br), Smart Tiered Cache on but irrelevant here (`docs/operations.md` §1 step 12).
 
 **v4.1.1** (2026-09-29): contact addresses moved to `@poli0981.dev` (Google Workspace), About page links poli0981.dev + /links/, `LEGAL_VERSION` 2026-09-29.
 
