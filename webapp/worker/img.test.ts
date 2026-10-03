@@ -29,6 +29,22 @@ function makeDeps(overrides: Partial<ImgDeps> = {}) {
   return { deps, store, settle: () => Promise.all(waits) }
 }
 
+/** An edge cache that keeps what it is given (status, headers, body). */
+function memoryCache() {
+  const entries = new Map<string, { status: number; headers: [string, string][]; body: ArrayBuffer }>()
+  const cache = {
+    match: vi.fn(async (req: Request) => {
+      const hit = entries.get(req.url)
+      if (!hit) return undefined
+      return new Response(hit.body.byteLength ? hit.body : null, { status: hit.status, headers: hit.headers })
+    }),
+    put: vi.fn(async (req: Request, res: Response) => {
+      entries.set(req.url, { status: res.status, headers: [...res.headers], body: await res.arrayBuffer() })
+    }),
+  }
+  return cache as typeof cache & ImgDeps['cache']
+}
+
 function get(path: string, headers: Record<string, string> = {}) {
   const url = new URL(path, ORIGIN)
   return { request: new Request(url, { headers }), url }
@@ -51,6 +67,13 @@ describe('parseImgPath', () => {
     '/img/160/a/original/b.png?x',
     '/img/160/a/orig inal/b.png',
     '/img/160/a/b/c/d/e.png', // too many segments
+    // Other spellings of an offered width would be separate edge-cache entries.
+    '/img/0160/a/original/b.png',
+    '/img/160.0/a/original/b.png',
+    '/img/0xa0/a/original/b.png',
+    '/img/1.6e2/a/original/b.png',
+    '/img/+160/a/original/b.png',
+    '/img/constructor/a/original/b.png',
   ])('rejects %s', (path) => {
     expect(parseImgPath(path)).toBeNull()
   })
@@ -138,6 +161,79 @@ describe('handleImg', () => {
       .mockResolvedValueOnce(new Response('<html>', { headers: { 'content-type': 'text/html' } }))
     const b = makeDeps({ fetch: html as unknown as typeof fetch })
     expect((await handleImg(req.request, req.url, b.deps)).status).toBe(502)
+  })
+
+  it('serves later requests from the edge cache', async () => {
+    const cache = memoryCache()
+    const { deps, settle } = makeDeps({ cache })
+    const req = get(`/img/160/${PATH}`)
+    await handleImg(req.request, req.url, deps)
+    await settle()
+    const again = await handleImg(req.request, req.url, deps)
+    expect(again.status).toBe(200)
+    expect(again.headers.get('cache-control')).toContain('immutable')
+    expect(deps.bucket.get).toHaveBeenCalledTimes(1)
+  })
+
+  it('keeps a fallback original at the edge for a day instead of redoing the chain', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('quota', { status: 403 }))
+      .mockResolvedValueOnce(new Response('gif', { headers: { 'content-type': 'image/gif' } }))
+    const cache = memoryCache()
+    const { deps, settle } = makeDeps({ fetch: fetchMock as unknown as typeof fetch, cache })
+    const req = get(`/img/640/${PATH}`)
+    expect(await (await handleImg(req.request, req.url, deps)).text()).toBe('gif')
+    await settle()
+    const again = await handleImg(req.request, req.url, deps)
+    expect(await again.text()).toBe('gif')
+    expect(again.headers.get('cache-control')).toBe('public, max-age=86400')
+    expect(fetchMock).toHaveBeenCalledTimes(2)
+    expect(deps.bucket.get).toHaveBeenCalledTimes(1)
+  })
+
+  it('remembers a missing upstream image for a day', async () => {
+    const missing = vi.fn().mockResolvedValue(new Response(null, { status: 404 }))
+    const cache = memoryCache()
+    const { deps, settle } = makeDeps({ fetch: missing as unknown as typeof fetch, cache })
+    const req = get(`/img/160/${PATH}`)
+    expect((await handleImg(req.request, req.url, deps)).status).toBe(404)
+    await settle()
+    expect((await handleImg(req.request, req.url, deps)).status).toBe(404)
+    expect(missing).toHaveBeenCalledTimes(2) // the transform and the original, once
+  })
+
+  it('never keeps a bodiless HEAD answer under the cache key', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('quota', { status: 403 }))
+      .mockResolvedValueOnce(new Response('gif', { headers: { 'content-type': 'image/gif' } }))
+    const cache = memoryCache()
+    const { deps, settle } = makeDeps({ fetch: fetchMock as unknown as typeof fetch, cache })
+    const url = new URL(`/img/640/${PATH}`, ORIGIN)
+    const res = await handleImg(new Request(url, { method: 'HEAD' }), url, deps)
+    expect(res.status).toBe(200)
+    await settle()
+    expect(cache.put).not.toHaveBeenCalled()
+  })
+
+  it('logs failed background writes instead of failing', async () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {})
+    const cache = {
+      match: vi.fn(async () => undefined),
+      put: vi.fn(async () => {
+        throw new Error('cache full')
+      }),
+    } as unknown as ImgDeps['cache']
+    const { deps, settle } = makeDeps({ cache })
+    deps.bucket.put = vi.fn(async () => {
+      throw new Error('R2 down')
+    }) as unknown as ImgDeps['bucket']['put']
+    const req = get(`/img/160/${PATH}`)
+    expect((await handleImg(req.request, req.url, deps)).status).toBe(200)
+    await settle()
+    expect(warn).toHaveBeenCalledTimes(2)
+    warn.mockRestore()
   })
 
   it('answers upstream network errors with a 502 instead of throwing', async () => {

@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.1.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -42,7 +42,7 @@ Mọi thứ nằm trên website **<https://freeitchgames.win>**:
 
 Mọi link đều dẫn tới trang riêng của game trên itch.io. Ảnh bìa trên website là bản thu nhỏ do freeitchgames.win phục vụ, nên trình duyệt của bạn không kết nối tới itch.io cho tới khi bạn bấm vào một link.
 
-Muốn lấy dữ liệu gốc? Đó là JSON thuần, nằm trong [`data_game/`](data_game/) của repo này và tại <https://freeitchgames.win/data/index.json> (cùng các file mà nó liệt kê). Vui lòng dùng các file đó thay vì cào (scrape) website; xem [Giấy phép](#giấy-phép) để biết bạn được tái sử dụng chúng thế nào.
+Muốn lấy dữ liệu gốc? Đó là JSON thuần, nằm trong [`data_game/`](data_game/) (cùng [`scripts/deleted_games.json`](scripts/deleted_games.json)) của repo này: clone, tải về hoặc đọc file raw. Vui lòng dùng các file đó thay vì cào (scrape) website, vốn chỉ phục vụ định dạng thu gọn riêng của nó; xem [Giấy phép](#giấy-phép) để biết bạn được tái sử dụng chúng thế nào.
 
 (Địa chỉ cũ `poli0981.github.io/free-games-itchio-list` giờ chỉ chuyển hướng sang website mới. Các bảng markdown theo thể loại trong `lists/` và file `deleted_games.txt` đã bị bỏ: danh mục giờ chỉ có trên web.)
 
@@ -57,7 +57,7 @@ Cùng một app cũng được phát hành dưới dạng **ứng dụng native 
 | Linux | `.deb`, `.rpm` hoặc `.AppImage` |
 | Android 11+ (arm64-v8a) | `.apk` (cài tay, xem bên dưới) |
 
-Các app tải JSON danh mục từ <https://freeitchgames.win/data> và tải ảnh bìa trực tiếp từ CDN ảnh của itch.io (`img.itch.zone`); bấm vào một game sẽ mở itch.io trong trình duyệt của bạn. Không có telemetry. Cập nhật thủ công: khi có bản mới thì tải bản mới về. Cài app đồng nghĩa với việc chấp nhận [EULA](docs/i18n/vi/EULA.md) ([EN](docs/EULA.md)).
+Các app tải dữ liệu danh mục từ <https://freeitchgames.win/data> và tải ảnh bìa trực tiếp từ CDN ảnh của itch.io (`img.itch.zone`); bấm vào một game sẽ mở itch.io trong trình duyệt của bạn. Không có telemetry. Cập nhật thủ công: khi có bản mới thì tải bản mới về. Cài app đồng nghĩa với việc chấp nhận [EULA](docs/i18n/vi/EULA.md) ([EN](docs/EULA.md)).
 
 ### Android (tải & cài đặt)
 

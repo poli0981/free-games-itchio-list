@@ -2,16 +2,13 @@ import { useMemo } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { isNsfw } from '@/lib/nsfw'
 import { usePrefs } from '@/stores/prefs'
-import {
-  loadAllGames,
-  loadDeletedLog,
-  loadCountHistory,
-} from '@/lib/data/catalog'
+import { CATALOG_KEY, loadCatalog, loadDeleted, loadHistory, type Catalog } from '@/lib/data/catalog'
 
 export function useAllGames() {
   return useQuery({
-    queryKey: ['db', 'all'],
-    queryFn: loadAllGames,
+    queryKey: CATALOG_KEY,
+    // The previous result lets an unchanged catalog skip decoding on a refetch.
+    queryFn: ({ client }) => loadCatalog(client.getQueryData<Catalog>(CATALOG_KEY)),
   })
 }
 
@@ -34,13 +31,13 @@ export function useVisibleGames() {
 export function useDeletedGames() {
   return useQuery({
     queryKey: ['deleted'],
-    queryFn: loadDeletedLog,
+    queryFn: loadDeleted,
   })
 }
 
 export function useCountHistory() {
   return useQuery({
     queryKey: ['count-history'],
-    queryFn: loadCountHistory,
+    queryFn: loadHistory,
   })
 }

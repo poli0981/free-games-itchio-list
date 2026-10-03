@@ -1,9 +1,9 @@
 /**
  * Worker for freeitchgames.win. Existing static assets (the app bundles,
- * /data/*) are served by the assets layer without invoking this script. It
- * runs for the paths in wrangler.jsonc `assets.run_worker_first` ("/" among
- * them), and for every request that matches no asset (`not_found_handling:
- * "none"`, see spa.ts).
+ * /data/pack/*) are served by the assets layer without invoking this script.
+ * It runs for the paths in wrangler.jsonc `assets.run_worker_first` ("/" and
+ * the readable /data JSON among them), and for every request that matches no
+ * asset (`not_found_handling: "none"`, see spa.ts).
  *
  *   app pages       the shell, once the visitor has passed the gate (spa.ts, gate.ts)
  *   /img/*          resized covers, gated too (img.ts)
@@ -12,6 +12,7 @@
  *   /api/ingest     browser extension, Access service token (ingest.ts)
  *   /api/admin/*    maintainer API, Access + JWT check (admin.ts)
  *   /admin, /admin/* admin app shell, maintainer only (admin.ts)
+ *   /data/*.json    readable catalog JSON, for apps 4.0–4.1.1 only (legacy-data.ts)
  *
  * Cron: one RSS feed per run into the review queue, then queue bookkeeping.
  */
@@ -23,6 +24,7 @@ import { checkPass, gateConfig, gateNavigation, gateRequired, handleVerify } fro
 import { json } from './http'
 import { handleImg } from './img'
 import { accessService, handleIngest } from './ingest'
+import { handleLegacyData } from './legacy-data'
 import { QueueStore } from './queue'
 import { handleMiss } from './spa'
 import { handleSuggest } from './suggest'
@@ -72,6 +74,8 @@ export default {
     if (path.startsWith('/api/admin/')) return handleAdminApi(request, url, env, queueStore(env))
     if (path.startsWith('/api/')) return json({ error: 'not_found' }, 404)
     if (path === '/admin' || path.startsWith('/admin/')) return serveAdminApp(request, url, env)
+    // Not gated. Packs (/data/pack/*) are plain assets; a missing one ends up in handleMiss.
+    if (path.startsWith('/data/') && !path.startsWith('/data/pack/')) return handleLegacyData(request, env.ASSETS)
 
     return handleMiss(request, url, env.ASSETS, gate ? (r) => gateNavigation(r, gate) : undefined)
   },

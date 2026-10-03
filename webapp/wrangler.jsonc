@@ -33,8 +33,22 @@
     // Existing assets never invoke the Worker (free, cached); these paths always
     // do — "/" (served from dist/index.html otherwise) so the verification gate
     // sees it like every other app page, /admin so its shell is only ever served
-    // after the Access JWT check.
-    "run_worker_first": ["/", "/img/*", "/api/*", "/admin", "/admin/*"]
+    // after the Access JWT check, and the readable catalog JSON, which only
+    // apps 4.0–4.1.1 still get (worker/legacy-data.ts). Listed one by one on
+    // purpose: a negative pattern ("!/data/pack/*") would send a missing pack to
+    // the asset layer, whose 404 carries the year-long immutable header.
+    "run_worker_first": [
+      "/",
+      "/img/*",
+      "/api/*",
+      "/admin",
+      "/admin/*",
+      "/data/index.json",
+      "/data/count_history.json",
+      "/data/deleted_games.json",
+      "/data/urls.json",
+      "/data/game_info_*"
+    ]
   },
   // Resized cover images, written once per image + width by worker/img.ts.
   "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs" }],

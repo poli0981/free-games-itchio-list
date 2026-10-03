@@ -6,9 +6,9 @@ import { useT } from '@/lib/i18n'
 import { requestNsfw } from '@/lib/nsfw'
 import { cn } from '@/lib/utils'
 import { usePrefs } from '@/stores/prefs'
-import { DensityChoice, LanguageChoice, ThemeChoice } from './preference-controls'
+import { DensityChoice, LanguageChoice, ScrollbarsToggle, ThemeChoice } from './preference-controls'
 
-/** Theme, language, density and 18+ — the settings people change often. */
+/** Theme, language, density, scrollbars and 18+ — the settings people change often. */
 export function DisplayMenu({ className }: { className?: string }) {
   const t = useT()
   const showNsfw = usePrefs((s) => s.showNsfw)
@@ -29,6 +29,7 @@ export function DisplayMenu({ className }: { className?: string }) {
         <ThemeChoice />
         <LanguageChoice />
         <DensityChoice />
+        <ScrollbarsToggle id="menu-scrollbars" />
         <div className="flex items-center justify-between gap-3">
           <label htmlFor="menu-nsfw" className="text-sm">
             {t('settings.content.nsfw')}

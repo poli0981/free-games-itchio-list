@@ -3,7 +3,8 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-# The catalog is public and read-only. Please fetch the data from /data/*.json
-# (or the GitHub repo) instead of crawling every page.
+# The catalog is public and read-only. Please get the data from the GitHub repo
+# (https://github.com/poli0981/free-games-itchio-list/tree/main/data_game)
+# instead of crawling every page.
 
 Sitemap: https://freeitchgames.win/sitemap.xml

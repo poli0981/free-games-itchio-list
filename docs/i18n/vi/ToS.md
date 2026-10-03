@@ -1,16 +1,16 @@
 # Điều khoản sử dụng (Terms of Use)
 
-Cập nhật lần cuối: 2026-09-29
+Cập nhật lần cuối: 2026-10-03
 
-Áp dụng từ: ngày 2026-09-29 đối với Website, và từ phiên bản 4.1.1 đối với các Ứng dụng.
+Áp dụng từ: ngày 2026-10-03 đối với Website, và từ phiên bản 4.2.0 đối với các Ứng dụng.
 
-Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-03 (English source revision 2026-10-03). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
 Bản tiếng Anh: [`docs/ToS.md`](../../ToS.md).
 
 Các Điều khoản sử dụng này ("Điều khoản") điều chỉnh việc bạn sử dụng website **https://freeitchgames.win**, các ứng dụng desktop và Android, và dữ liệu catalog công khai của `free-games-itchio-list`. Văn bản được viết bằng ngôn ngữ dễ hiểu, nhưng đây là một thỏa thuận thực sự. Điều khoản này thay thế bản Điều khoản cũ và bao gồm cả những gì trước đây nằm trong "EULA" của web app cũ; [EULA](EULA.md) giờ chỉ áp dụng cho các bộ cài ứng dụng và file APK Android.
 
-> **Tóm tắt**: Cứ thoải mái duyệt, chia sẻ, fork code (MIT) và dùng lại dữ liệu kèm ghi nguồn (CC BY 4.0). Đừng scrape hàng loạt website (hãy dùng các file `/data`), đừng hotlink `/img`, đừng spam form Suggest, đừng mò vào `/admin`, và đừng giả danh itch.io hay Người duy trì. Người làm game có thể yêu cầu gỡ hoặc sửa thông tin game của mình. Nội dung người lớn luôn bị ẩn trừ khi bạn chủ động bật.
+> **Tóm tắt**: Cứ thoải mái duyệt, chia sẻ, fork code (MIT) và dùng lại dữ liệu kèm ghi nguồn (CC BY 4.0). Đừng scrape hàng loạt website (dữ liệu có sẵn trong repo GitHub), đừng hotlink `/img`, đừng spam form Suggest, đừng mò vào `/admin`, và đừng giả danh itch.io hay Người duy trì. Người làm game có thể yêu cầu gỡ hoặc sửa thông tin game của mình. Nội dung người lớn luôn bị ẩn trừ khi bạn chủ động bật.
 
 ## 1. Định nghĩa
 
@@ -41,7 +41,7 @@ Các Điều khoản sử dụng này ("Điều khoản") điều chỉnh việc
 
 - Duyệt Website và Ứng dụng, và mở các liên kết tới itch.io.
 - Chia sẻ liên kết tới Website và tới trang game.
-- Tải về và dùng lại dữ liệu Danh mục theo **CC BY 4.0**, kèm ghi nguồn (xem mục 11). Nếu truy cập bằng chương trình, hãy dùng các file JSON được công bố tại https://freeitchgames.win/data hoặc Repository; vui lòng cache chúng thay vì tải lại mỗi lần có request.
+- Tải về và dùng lại dữ liệu Danh mục theo **CC BY 4.0**, kèm ghi nguồn (xem mục 11). Hãy lấy dữ liệu từ Repository (`data_game/` và `scripts/deleted_games.json`, kể cả dạng file raw), và vui lòng cache lại thay vì tải lại mỗi lần có request. Các file tại https://freeitchgames.win/data là định dạng thu gọn riêng của Website và các Ứng dụng, không phải một giao diện công khai; bản JSON đọc được ở đó chỉ được trả cho các phiên bản Ứng dụng cũ.
 - Sử dụng, fork, sửa đổi và phân phối lại code theo **Giấy phép MIT**.
 - Đề xuất một game itch.io miễn phí trên trang Suggest (xem mục 5).
 - Báo bug, gửi góp ý và mở pull request qua các template của Repository.
@@ -64,7 +64,7 @@ Các Điều khoản sử dụng này ("Điều khoản") điều chỉnh việc
 
 Bạn đồng ý **không**:
 
-1. **Scrape hàng loạt** Website hoặc API của nó, ngoài các file `/data` đã được công bố. Hãy dùng các file JSON trong `/data` hoặc Repository; cách đó tốn ít tài nguyên hơn cho tất cả mọi người.
+1. **Scrape hàng loạt** Website hoặc API của nó, kể cả các file trong `/data`. Hãy lấy dữ liệu từ Repository; cách đó tốn ít tài nguyên hơn cho tất cả mọi người.
 2. **Lạm dụng image proxy** (`/img`): proxy này chỉ để hiển thị ảnh bìa trên Website. Đừng hotlink các URL `/img` từ website hay ứng dụng khác, và đừng dùng nó để tải ảnh hàng loạt.
 3. **Truy cập trái phép các khu vực bị hạn chế**: `/admin`, API quản trị (`/api/admin/…`) và API ingest (`/api/ingest`) chỉ dành cho Người duy trì. Nghiên cứu bảo mật thiện chí luôn được hoan nghênh, theo các quy tắc trong [Security Policy](SECURITY.md).
 4. **Spam form Suggest**, hoặc tìm cách vượt qua bước xác minh của Website, Turnstile hay giới hạn tần suất (ví dụ bằng script, dùng chung cookie xác minh hoặc xoay vòng địa chỉ IP).

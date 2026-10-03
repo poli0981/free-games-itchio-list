@@ -3,12 +3,13 @@
 All notable changes to this project, newest first. The notes of each release live in
 [`changelog/`](changelog/), one file per minor version: `changelog/<major>.x/ver<major>.<minor>.x.md`.
 
-**Latest release: [4.1.1](changelog/4.x/ver4.1.x.md#411---2026-09-29-new-contact-addresses) (2026-09-29) — New contact addresses.**
+**Latest release: [4.2.0](changelog/4.x/ver4.2.x.md#420---2026-10-03-compact-catalog-data-themed-scrollbars) (2026-10-03) — Compact catalog data, themed scrollbars.**
 
 ## 4.x
 
 | Version | Date | Highlights |
 |---|---|---|
+| [4.2.0](changelog/4.x/ver4.2.x.md#420---2026-10-03-compact-catalog-data-themed-scrollbars) | 2026-10-03 | Compact catalog data, themed scrollbars |
 | [4.1.1](changelog/4.x/ver4.1.x.md#411---2026-09-29-new-contact-addresses) | 2026-09-29 | New contact addresses (@poli0981.dev) |
 | [4.1.0](changelog/4.x/ver4.1.x.md#410---2026-09-24-verification-check-readable-charts-changelog-folder) | 2026-09-24 | Verification check, readable charts, changelog folder |
 | <a name="400---2026-09-18-freeitchgameswin-on-cloudflare-read-only-site-review-queue-new-design"></a>[4.0.0](changelog/4.x/ver4.0.x.md#400---2026-09-18-freeitchgameswin-on-cloudflare-read-only-site-review-queue-new-design) | 2026-09-18 | freeitchgames.win on Cloudflare: read-only site, review queue, new design |

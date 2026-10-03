@@ -5,8 +5,8 @@
  * that is good for BOT_GATE_TTL_HOURS (default 48).
  *
  * Not gated: /assets, /data and the other static files (the desktop/Android
- * apps and CC BY reuse read /data; a browser only finds the bundles through
- * the gated app shell), /api/* and /admin* (Access).
+ * apps read /data — the packs, and the readable JSON for 4.0–4.1.1; a browser
+ * only finds the bundles through the gated app shell), /api/* and /admin* (Access).
  *
  * Verified bots (Cloudflare's `cf.client.bot`) pass: a zone Request Header
  * Transform Rule sends `x-fig-known-bot: <GATE_BOT_TOKEN>` for them.

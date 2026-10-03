@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation, useSearchParams } from 'react-router'
-import { Search, X } from 'lucide-react'
+import { LoaderCircle, Search, X } from 'lucide-react'
 import {
   ActiveFilters,
   FilterMenu,
@@ -14,6 +14,7 @@ import { GamesList, GamesTable } from '@/components/games/game-rows'
 import { Pager } from '@/components/games/pager'
 import { RouteError } from '@/components/route-error'
 import { Skeleton } from '@/components/ui/skeleton'
+import { useSearchDescriptions } from '@/hooks/useDescriptions'
 import { useVisibleGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { useFormat } from '@/lib/format'
@@ -119,7 +120,14 @@ export default function Games() {
   }, [text, query.q, update])
 
   const all = games.data?.games
-  const results = useMemo(() => (all ? sortGames(filterGames(all, query), query.sort) : []), [all, query])
+  // Descriptions load only while a search is typed (hooks/useDescriptions.ts);
+  // until they arrive, the search covers names, developers and tags.
+  const descs = useSearchDescriptions(query.q !== '')
+  const descriptions = descs.lookup
+  const results = useMemo(
+    () => (all ? sortGames(filterGames(all, query, undefined, descriptions), query.sort) : []),
+    [all, query, descriptions],
+  )
 
   // Counts for a filter ignore that filter's own choices, so picking a second
   // genre still shows how many games it would add.
@@ -134,13 +142,13 @@ export default function Games() {
   const optionGetters = useMemo(() => {
     const getter = (key: ListFilter) => (): FilterOption[] => {
       if (!all) return []
-      const counts = facetCounts(filterGames(all, query, key), key)
+      const counts = facetCounts(filterGames(all, query, key, descriptions), key)
       const listed = new Set(counts.map((c) => c.value))
       for (const value of query.lists[key]) if (!listed.has(value)) counts.push({ value, count: 0 })
       return counts.map((c) => ({ ...c, label: optionLabel(key, c.value) }))
     }
     return Object.fromEntries(ALL_FILTERS.map((key) => [key, getter(key)])) as Record<ListFilter, () => FilterOption[]>
-  }, [all, query])
+  }, [all, query, descriptions])
 
   // A failed background refresh (offline, deploy in flight) keeps the cached catalog on screen.
   if (games.isError && !games.data) return <RouteError error={games.error} onRetry={() => void games.refetch()} />
@@ -252,8 +260,18 @@ export default function Games() {
     </label>
   )
 
+  // Shown next to the counts while descriptions are still on their way.
+  const descPending = descs.pending && (
+    <span className="inline-flex items-center gap-1.5 font-sans">
+      {' · '}
+      <LoaderCircle className="size-3 animate-spin" aria-hidden="true" />
+      <span className="max-md:sr-only">{t('games.search.descPending')}</span>
+    </span>
+  )
+
   let content
-  if (games.isPending) {
+  if (games.isPending || (results.length === 0 && descs.pending)) {
+    // No "nothing matches" until the descriptions have been searched too.
     content = <ListSkeleton />
   } else if (results.length === 0) {
     content = (
@@ -300,6 +318,7 @@ export default function Games() {
                 n: fmt.number(results.length),
               })}
               {!showNsfw && games.hiddenNsfw > 0 && ` · ${t('games.nsfw.hidden')}`}
+              {descPending}
             </p>
             {sortSelect}
           </div>
@@ -311,6 +330,7 @@ export default function Games() {
               <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.games')}</h1>
               <p role="status" className="font-mono text-xs text-muted-foreground">
                 {summary}
+                {descPending}
               </p>
             </div>
             {sortSelect}
@@ -322,6 +342,14 @@ export default function Games() {
         </>
       )}
       <ActiveFilters pills={pills} onClearAll={clearFilters} />
+      {query.q && descs.failed && (
+        <p className="text-sm text-muted-foreground">
+          {t('games.search.descFailed')}{' '}
+          <button type="button" onClick={descs.retry} className="underline underline-offset-4 hover:text-foreground">
+            {t('common.retry')}
+          </button>
+        </p>
+      )}
       {content}
     </div>
   )

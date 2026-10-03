@@ -25,7 +25,7 @@ key entries) and rewrites old `#/…` links to real paths ([`src/lib/legacy.ts`]
 | [`admin/`](admin/) | Admin app, built to `dist/admin/` (web only) |
 | [`worker/`](worker/) | Cloudflare Worker ([`worker/index.ts`](worker/index.ts) lists the routes) |
 | [`worker/migrations/`](worker/migrations/) | D1 schema for the review queue |
-| [`vite-plugins/catalog-data.ts`](vite-plugins/catalog-data.ts) | Bundles the catalog into `dist/data/` + `sitemap.xml` |
+| [`vite-plugins/catalog-data.ts`](vite-plugins/catalog-data.ts) | Bundles the catalog into `dist/data/` (packs + legacy JSON) + `sitemap.xml` |
 | [`public/`](public/) | Static files; [`public/_headers`](public/_headers) sets headers + CSP for them |
 | [`src-tauri/`](src-tauri/) | Tauri 2 shell for the desktop and Android apps |
 | [`scripts/`](scripts/) | `gen_assets.py` (PWA icons + OG image), `i18n-edit.mjs` (edit `en`/`vi` keys together) |
@@ -126,9 +126,9 @@ Maintainer's email is kept only in the D1 audit log, never in commits.
 
 ## Worker
 
-Existing static files (the app, `/data/*`) are served by the assets layer without running the
-Worker. It runs for `wrangler.jsonc` `assets.run_worker_first` (`/img/*`, `/api/*`, `/admin`,
-`/admin/*`) and for every request that matches no file.
+Existing static files (the app, `/data/pack/*`) are served by the assets layer without running the
+Worker. It runs for `wrangler.jsonc` `assets.run_worker_first` (`/`, `/img/*`, `/api/*`, `/admin`,
+`/admin/*`, and the five readable catalog files under `/data`) and for every request that matches no file.
 
 | Path | File | Purpose |
 |---|---|---|
@@ -138,7 +138,8 @@ Worker. It runs for `wrangler.jsonc` `assets.run_worker_first` (`/img/*`, `/api/
 | `/api/ingest` | [worker/ingest.ts](worker/ingest.ts) | Browser extension: Access service token, `Idempotency-Key`, rate limit per token |
 | `/api/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin API (queue, add, edit, remove, restore) |
 | `/admin`, `/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin app shell, after the Access check |
-| anything else | [worker/spa.ts](worker/spa.ts) | App shell for routes, real 404 for missing files |
+| `/data/*.json` (not `/data/pack/`) | [worker/legacy-data.ts](worker/legacy-data.ts) | The readable catalog JSON, passed only to apps 4.0–4.1.1 (Tauri `Origin`); everyone else gets 410 + the repository links |
+| anything else | [worker/spa.ts](worker/spa.ts) | App shell for routes, real 404 for missing files (a missing pack too: `no-store`) |
 
 **Cron** (`23 */4 * * *`, [`worker/discover.ts`](worker/discover.ts)): polls **one** itch.io RSS feed
 per run into the review queue, then does queue bookkeeping (queued → ingested / failed) and retention
@@ -146,7 +147,7 @@ per run into the review queue, then does queue bookkeeping (queued → ingested 
 Maintainer's approval.
 
 **Bindings**: `ASSETS`, `THUMBS` (R2 `freeitchgames-thumbs`), `DB` (D1 `freeitchgames`),
-`RL_SUGGEST` / `RL_INGEST` (rate limits). **Vars**: `SITE_ORIGIN`, `GITHUB_REPO`, `BOT_UA`, `GH_APP_ID`,
+`RL_SUGGEST` / `RL_INGEST` / `RL_GATE` (rate limits). **Vars**: `SITE_ORIGIN`, `GITHUB_REPO`, `BOT_UA`, `GH_APP_ID`,
 `GH_APP_INSTALLATION_ID`, `ACCESS_TEAM_DOMAIN`, `ACCESS_AUD_ADMIN`, `ACCESS_AUD_INGEST`,
 `TURNSTILE_SITEKEY`. **Secrets**: `GH_APP_PRIVATE_KEY`, `ADMIN_EMAILS`, `TURNSTILE_SECRET`
 (`DEV_ADMIN_EMAIL` is for local runs only). Logs: Workers Observability, 10% head sampling.
@@ -158,20 +159,46 @@ Maintainer's approval.
 ## Catalog data
 
 [`vite-plugins/catalog-data.ts`](vite-plugins/catalog-data.ts) reads `../data_game/` and
-`../scripts/deleted_games.json` at build time and emits `dist/data/` (`index.json`,
-`game_info_NNN.json`, `count_history.json`, `deleted_games.json`, `urls.json`) plus `sitemap.xml`.
-The build **fails** on invalid JSON or an index/chunk mismatch, so a broken data commit never replaces
-a working deployment. In dev, a middleware serves the same files.
+`../scripts/deleted_games.json` at build time and emits:
 
-- **Web**: reads same-origin `/data/*`; covers go through `/img`, so the visitor's browser never
+- **`dist/data/pack/`** — what the site and the apps read. `manifest-v1.json` names, per chunk, a
+  **main** pack (every field but `description`) and a **desc** pack, plus the removal-log and history
+  packs. A pack is the records stored by column (dictionaries for repeated strings and every tag-like
+  list; [`src/lib/data/pack-format.ts`](src/lib/data/pack-format.ts), shared with the plugin), deflated
+  at level 9 and named `<sha256 prefix>.bin`: a name changes exactly when the bytes do, so packs are
+  served `immutable` and a returning visitor fetches only the ones that changed. About 264 KB on a
+  first visit for ~3,100 games (descriptions, ~170 KB, load on demand).
+- **The readable JSON**, byte-for-byte as before (`index.json`, `game_info_NNN.json`,
+  `count_history.json`, `deleted_games.json`) and `urls.json`: the Worker reads `urls.json` and
+  `deleted_games.json` through `env.ASSETS`, and passes the files to apps 4.0–4.1.1 only.
+- `sitemap.xml`.
+
+The build **fails** on invalid JSON or an index/chunk mismatch, so a broken data commit never replaces
+a working deployment. Nothing from the catalog may reach the JS bundle (a data-only rebuild keeps the JS
+byte-identical). In dev, a middleware serves the same files (rebuilt when a source file changes).
+
+- **Web**: reads same-origin `/data/pack/*`; covers go through `/img`, so the visitor's browser never
   contacts itch.io until they click a link.
-- **Tauri apps**: read `https://freeitchgames.win/data/*` (served with
+- **Tauri apps**: read `https://freeitchgames.win/data/pack/*` (served with
   `Access-Control-Allow-Origin: *`) and load covers straight from `img.itch.zone`
   ([`src/lib/config.ts`](src/lib/config.ts), [`src/lib/thumbnail.ts`](src/lib/thumbnail.ts)).
 
-The public catalog queries (`db`, `deleted`, `count-history`) are persisted to IndexedDB
-(`webapp.query-cache`, up to 7 days) in [`src/main.tsx`](src/main.tsx). `gcTime` must stay ≥ the
-persist `maxAge`, or restored queries are garbage-collected right after hydration.
+Loading ([`src/lib/data/catalog.ts`](src/lib/data/catalog.ts)): the manifest is revalidated on every
+load (`cache: 'no-cache'`, shared for 10 s by the catalog, removal-log and history queries); packs use
+the normal HTTP cache. A 404 on a main pack means the manifest predates a deploy: it is fetched again
+(`cache: 'reload'`) and the load retried once. Packs are inflated with `DecompressionStream`, or with
+`fflate` (a lazy chunk) where the browser lacks it ([`src/lib/data/compression.ts`](src/lib/data/compression.ts)).
+Descriptions ([`src/hooks/useDescriptions.ts`](src/hooks/useDescriptions.ts)) are queries
+`['desc', <file>]`: a game page loads its chunk's, a search all of them. They match their games by
+row, so only the desc file named in the same catalog is ever loaded; a 404 reloads the catalog instead.
+
+The public catalog queries (`db`, `deleted`, `count-history`, and the `desc` packs the current catalog
+names) are persisted to IndexedDB (`webapp.query-cache`, up to 7 days) by a small binary persister
+([`src/lib/data/persister.ts`](src/lib/data/persister.ts)): one byte of format, then the deflated JSON,
+so DevTools shows bytes, not readable data. Writes are throttled (1 s) and skipped when no data object
+changed. `gcTime` must stay ≥ the persist `maxAge`, or restored queries are garbage-collected right
+after hydration; bump the `data-vN` part of `CACHE_BUSTER` in [`src/main.tsx`](src/main.tsx) when the
+cached shape changes.
 
 ## Code splitting and targets
 
@@ -195,7 +222,7 @@ explicitly; the Tauri build keeps Vite's default (`baseline-widely-available`, S
 | `src/components/ui/*` | shadcn/ui primitives |
 | `src/components/legal-gate.tsx` | First-visit click-to-accept gate (`LEGAL_VERSION` in `src/stores/prefs.ts`) |
 | `src/components/ext-link.tsx` | Runtime-aware external link (web vs Tauri) |
-| `src/lib/data/*`, `src/lib/config.ts` | Catalog fetching, data base URL |
+| `src/lib/data/*`, `src/lib/config.ts` | Pack format, loader, compression, the binary IndexedDB persister; the pack base URL |
 | `src/lib/thumbnail.ts` | Cover URLs: `/img` on the web, `img.itch.zone` in the apps |
 | `src/lib/game-filters.ts`, `src/lib/format.ts`, `src/lib/platforms.ts` | The Games query (URL ⇄ filters, sorting, facet counts), locale-aware numbers and dates, platform labels |
 | `src/lib/turnstile.ts` | Loads Turnstile on demand (Suggest page only) |
@@ -204,7 +231,7 @@ explicitly; the Tauri build keeps Vite's default (`baseline-widely-available`, S
 | `src/lib/legacy.ts` | One-time cleanup of v3 storage and routes |
 | `src/lib/about.ts` | App / social / third-party constants for the About page |
 | `src/stores/*` | Zustand: `prefs` (`webapp.prefs`), `theme` (`webapp.theme`) |
-| `src/hooks/*` | Data hooks, SEO head, theme / density effects, Android back button |
+| `src/hooks/*` | Data hooks (catalog, lazy descriptions), SEO head, theme / density / scrollbar effects, Android back button |
 
 ## Deploy (web)
 

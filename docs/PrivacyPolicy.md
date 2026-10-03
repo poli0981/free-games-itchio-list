@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: 2026-09-29
+Last updated: 2026-10-03
 
-Applies from: 2026-09-29 on the Website, and from version 4.1.1 of the Apps.
+Applies from: 2026-10-03 on the Website, and from version 4.2.0 of the Apps.
 
 This Privacy Policy explains what personal data the `free-games-itchio-list` project processes, why, who helps process it, how long it is kept, and what rights you have. It covers the website **https://freeitchgames.win**, the desktop and Android apps, the public catalog data and the repository. The short version: there are no accounts, no ads and no tracking cookies. The Project keeps as little as it can, and most of what exists stays in your own browser.
 
@@ -53,7 +53,7 @@ This Policy does not cover services that handle data on their own account: itch.
 ### 2.2 Using the Apps
 
 - The Apps are read-only viewers with **no telemetry, no analytics and no accounts**.
-- They download the Catalog JSON from https://freeitchgames.win/data (Cloudflare processes the request data as described in section 2.1) and load cover images **directly from itch.io's image server (img.itch.zone)**, so itch.io receives your IP address and user agent when covers load.
+- They download the Catalog data from https://freeitchgames.win/data (Cloudflare processes the request data as described in section 2.1; versions 4.0–4.1.1 still get the older JSON files, recognised by the `Origin` header their window sends) and load cover images **directly from itch.io's image server (img.itch.zone)**, so itch.io receives your IP address and user agent when covers load.
 - Clicking a game opens its itch.io page in your browser.
 - Updates are manual: the Apps do not check for updates on their own. When you download an installer or the APK from GitHub Releases, GitHub processes that request.
 - The Apps keep the same local storage as the Website (section 3.1), on your device only. Uninstalling an App removes it.
@@ -106,10 +106,10 @@ The Website and the Apps keep the following items on your device only. None of t
 
 | Storage | Key | Contents | Kept until |
 |---|---|---|---|
-| `localStorage` | `webapp.prefs` | Interface preferences such as language and layout density, your 18+ (NSFW) content choice, and the version of the legal documents you accepted | You clear it |
+| `localStorage` | `webapp.prefs` | Interface preferences such as language, layout density and whether scrollbars are hidden, your 18+ (NSFW) content choice, and the version of the legal documents you accepted | You clear it |
 | `localStorage` | `webapp.theme` | Theme: `light`, `dark` or `system` | You clear it |
 | `localStorage` | `webapp.gate` | When your current verification pass (section 3.2) runs out, so an open tab can check again in time | Replaced by the next check; you can clear it |
-| IndexedDB (via `idb-keyval`) | `webapp.query-cache` | A cache of the public Catalog JSON, for fast loading and limited offline use | At most 7 days, then refreshed or discarded |
+| IndexedDB (via `idb-keyval`) | `webapp.query-cache` | A compressed copy of the public Catalog data (the game list, the removal log, the games-over-time series and the descriptions you opened or searched), for fast loading and limited offline use | At most 7 days, then refreshed or discarded |
 | `sessionStorage` | `reloaded-after-deploy` | A timestamp, so the page reloads at most once after a site update | The tab is closed |
 
 On first load, the Website and the Apps also delete the entries that the old v3 app left in browser storage (an encrypted GitHub access token and commit-signing key data). v4 does not use them.

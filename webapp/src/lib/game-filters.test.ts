@@ -7,7 +7,6 @@ function game(name: string, over: Partial<Game> = {}): Game {
     url: `https://dev.itch.io/${name.toLowerCase().replace(/\W+/g, '-')}`,
     name,
     dev: 'Dev',
-    description: 'N/A',
     genre: 'Puzzle',
     status: 'Released',
     publisher: 'N/A',
@@ -48,9 +47,20 @@ describe('URL round trip', () => {
 })
 
 describe('filterGames', () => {
-  it('searches name, developer, description and tags without accents or case', () => {
+  it('searches name, developer and tags without accents or case', () => {
     expect(filterGames(GAMES, { ...emptyQuery(), q: 'CAFE' }).map((g) => g.name)).toEqual(['Café Dreams'])
     expect(filterGames(GAMES, { ...emptyQuery(), q: 'cozy' })).toHaveLength(1)
+    expect(filterGames(GAMES, { ...emptyQuery(), q: 'dev' })).toHaveLength(4)
+  })
+
+  it('also searches the descriptions loaded so far, once they arrive', () => {
+    const q = { ...emptyQuery(), q: 'NEON' }
+    expect(filterGames(GAMES, q)).toHaveLength(0)
+    expect(filterGames(GAMES, q, undefined, new Map())).toHaveLength(0)
+    const descriptions = new Map([[GAMES[2], 'A drive through néon streets']])
+    expect(filterGames(GAMES, q, undefined, descriptions).map((g) => g.name)).toEqual(['Night Drive'])
+    // Cached per game: a later lookup without it searches without it again.
+    expect(filterGames(GAMES, q)).toHaveLength(0)
   })
 
   it('combines list filters, rating and browser-only', () => {

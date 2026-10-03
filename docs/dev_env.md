@@ -76,8 +76,8 @@ catalog. See [`CLAUDE.md`](../CLAUDE.md) for the data-layer overview.
 ```sh
 cd webapp
 npm ci
-npm run dev          # public app on http://localhost:5173 with HMR; /data is served from ../data_game
-npm run build        # tsc -b + vite build → webapp/dist/ (app, /admin/, /data, sitemap.xml)
+npm run dev          # public app on http://localhost:5173 with HMR; /data (packs + JSON) is built from ../data_game
+npm run build        # tsc -b + vite build → webapp/dist/ (app, /admin/, /data/pack + legacy JSON, sitemap.xml)
 npm run preview      # serve the production build (without the Worker)
 ```
 
@@ -180,8 +180,9 @@ npm run tauri:dev    # native window + HMR
 npm run tauri:build  # native installers
 ```
 
-The apps read the live catalog from https://freeitchgames.win/data and load covers from
-`img.itch.zone`, so they need internet access but not the local Worker. Platform prerequisites
+The apps read the live catalog packs from https://freeitchgames.win/data/pack and load covers from
+`img.itch.zone`, so they need internet access but not the local Worker (and code that changes the pack
+format only works in `tauri:dev` once the site with that format is deployed). Platform prerequisites
 (WebView2 on Windows 10, Xcode CLT on macOS, `libwebkit2gtk-4.1-dev` on Debian/Ubuntu) and the
 Android build are documented in [`webapp/TAURI.md`](../webapp/TAURI.md).
 

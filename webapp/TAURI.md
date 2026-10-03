@@ -8,10 +8,13 @@ the same React app as the website <https://freeitchgames.win>. Desktop instructi
 
 **Read-only viewers** of the public catalog: no sign-in, no editing, no telemetry.
 
-- **Catalog data** is downloaded from **<https://freeitchgames.win/data>** (served with
-  `Access-Control-Allow-Origin: *`). The Tauri build does not bundle the catalog (`vite.config.ts`
-  only adds the `catalogData` plugin to the web build), so the apps always show the current catalog.
-  The last downloaded copy is cached in IndexedDB for up to 7 days.
+- **Catalog data** is downloaded from **<https://freeitchgames.win/data/pack>** (`manifest-v1.json`
+  + compact `.bin` packs, served with `Access-Control-Allow-Origin: *`; descriptions load on demand).
+  The Tauri build does not bundle the catalog (`vite.config.ts` only adds the `catalogData` plugin to
+  the web build), so the apps always show the current catalog. The last downloaded copy is cached,
+  compressed, in IndexedDB for up to 7 days. Apps 4.0–4.1.1 read the older readable JSON under `/data`,
+  which the Worker serves only to the apps' webview origins (`tauri://localhost`,
+  `http(s)://tauri.localhost`; [`worker/legacy-data.ts`](worker/legacy-data.ts)).
 - **Cover images** load **directly from itch.io's image CDN (`img.itch.zone`)**. The website's `/img`
   proxy is not used by the apps ([`src/lib/thumbnail.ts`](src/lib/thumbnail.ts)).
 - **Links** open in the system browser through `tauri-plugin-opener` (capability scope: `https://*`
@@ -59,7 +62,8 @@ npm run tauri:dev
 
 This runs `npm run dev` (Vite on port 5173, `beforeDevCommand`) and opens a native window pointing at
 it; HMR works as in web dev. The dev app, like the release app, reads the catalog from the live site,
-so it needs internet access. The Worker (`wrangler dev`) is not needed.
+so it needs internet access, and a change to the pack format works there only once the site that
+serves it is deployed. The Worker (`wrangler dev`) is not needed.
 
 ## Build native installers
 
@@ -110,7 +114,7 @@ if (isTauri()) {
 
 The app uses it for the data URL, cover URLs, external links, the router, the Suggest page and the
 app-only EULA link in the legal gate (which has no "Leave" button in the apps). The footer shows a
-small "Desktop app (Tauri)" / "Mobile app (Tauri)" badge (picked by `useIsMobile()`), and on Android
+small "Desktop app (Tauri)" / "Mobile app (Tauri)" badge (picked by `isAndroid()`), and on Android
 the back button walks the router history (`src/hooks/useBackButton.ts`).
 
 ## Adding new Rust commands

@@ -1,6 +1,6 @@
 # Third-party components
 
-Last updated: 2026-09-29
+Last updated: 2026-10-03
 
 Applies from: the release of version 4.0.0.
 
@@ -30,8 +30,9 @@ shared UI components).
 | [React](https://react.dev) (`react`, `react-dom`) | 19.3 | UI framework | MIT |
 | [React Router](https://reactrouter.com) (`react-router`) | 8.4 | Routing | MIT |
 | [Zustand](https://github.com/pmndrs/zustand) | 5.0 | Preference and theme stores | MIT |
-| [TanStack Query](https://tanstack.com/query) (`@tanstack/react-query`, `react-query-persist-client`, `query-async-storage-persister`) | 5.103 | Data fetching and the local catalog cache | MIT |
-| [idb-keyval](https://github.com/jakearchibald/idb-keyval) | 6.3 | IndexedDB storage for the catalog cache | Apache-2.0 |
+| [TanStack Query](https://tanstack.com/query) (`@tanstack/react-query`, `react-query-persist-client`) | 5.103 | Data fetching and the local catalog cache | MIT |
+| [idb-keyval](https://github.com/jakearchibald/idb-keyval) | 6.3 | IndexedDB storage for the compressed catalog cache | Apache-2.0 |
+| [fflate](https://github.com/101arrowz/fflate) | 0.8 | Decompressing the catalog where the browser has no Compression Streams (older Safari / iOS) | MIT |
 | [Recharts](https://recharts.org) | 3.10 | Charts | MIT |
 | [Radix UI](https://www.radix-ui.com) primitives (`@radix-ui/react-checkbox`, `-dialog`, `-label`, `-popover`, `-separator`, `-slot`, `-switch`, `-tabs`) | 1.x / 2.x | Accessible UI building blocks | MIT |
 | [shadcn/ui](https://ui.shadcn.com) | pattern | Component patterns copied into `webapp/src/components/ui/` | MIT |

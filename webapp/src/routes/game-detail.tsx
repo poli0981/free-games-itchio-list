@@ -9,6 +9,7 @@ import { RouteError } from '@/components/route-error'
 import { GameThumb } from '@/components/game-thumb'
 import type { BackState } from '@/components/games/game-rows'
 import { useGameBySlug } from '@/hooks/useGameBySlug'
+import { useGameDescription } from '@/hooks/useDescriptions'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { APP } from '@/lib/about'
 import { useFormat } from '@/lib/format'
@@ -33,6 +34,33 @@ function text(value: string | undefined): string {
 
 function list(values: string[] | undefined): string {
   return (values ?? []).filter((v) => v && v !== NA).join(', ')
+}
+
+/** Descriptions load on their own (a small pack per chunk), after the rest of the page. */
+function Description({ game }: { game: Game }) {
+  const t = useT()
+  const { description, loading, failed, retry } = useGameDescription(game)
+  if (loading) {
+    return (
+      <div aria-busy="true" className="flex flex-col gap-2 py-1">
+        <span className="sr-only">{t('detail.descLoading')}</span>
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-4 w-3/4" />
+      </div>
+    )
+  }
+  if (failed) {
+    return (
+      <p className="text-sm text-muted-foreground">
+        {t('detail.descFailed')}{' '}
+        <button type="button" onClick={retry} className="underline underline-offset-4 hover:text-foreground">
+          {t('common.retry')}
+        </button>
+      </p>
+    )
+  }
+  const value = text(description)
+  return value ? <p className="text-base leading-relaxed wrap-break-word">{value}</p> : null
 }
 
 /** Link to the removal / correction issue form with this game filled in. */
@@ -99,7 +127,6 @@ function GameDetailView({ game }: { game: Game }) {
   const count = ratingCountOf(game)
   const genre = text(game.genre)
   const status = text(game.status)
-  const description = text(game.description)
   const tags = (game.tags ?? []).filter((tag) => tag && tag !== NA)
   const safety = SAFETY[game.safe_virus]
 
@@ -179,7 +206,7 @@ function GameDetailView({ game }: { game: Game }) {
               <span className="rounded-full border border-destructive/40 px-2.5 py-1 text-destructive">18+</span>
             )}
           </div>
-          {description && <p className="text-base leading-relaxed wrap-break-word">{description}</p>}
+          <Description game={game} />
           <div className="flex flex-wrap gap-2.5">
             <ExtLink
               href={game.url}

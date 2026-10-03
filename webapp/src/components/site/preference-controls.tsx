@@ -1,4 +1,5 @@
 import { Monitor, Moon, Sun } from 'lucide-react'
+import { Switch } from '@/components/ui/switch'
 import { switchLanguage, useT, type Language, type MessageKey } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 import { usePrefs } from '@/stores/prefs'
@@ -90,5 +91,23 @@ export function DensityChoice() {
         { value: 'compact', label: t('display.density.compact') },
       ]}
     />
+  )
+}
+
+/** The "Hide scrollbars" switch row; `describe` adds the longer explanation (Settings). */
+export function ScrollbarsToggle({ id, describe = false }: { id: string; describe?: boolean }) {
+  const t = useT()
+  const hide = usePrefs((s) => s.hideScrollbars)
+  const setHide = usePrefs((s) => s.setHideScrollbars)
+  return (
+    <div className="flex items-center justify-between gap-4">
+      <div className="space-y-0.5">
+        <label htmlFor={id} className={cn('text-sm', describe && 'font-medium')}>
+          {t('settings.appearance.scrollbars')}
+        </label>
+        {describe && <p className="text-sm text-muted-foreground">{t('settings.appearance.scrollbarsDesc')}</p>}
+      </div>
+      <Switch id={id} checked={hide} onCheckedChange={setHide} />
+    </div>
   )
 }

@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-4.1.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -49,9 +49,10 @@ Everything lives on the website, **<https://freeitchgames.win>**:
 Every link goes to the game's own page on itch.io. Cover images on the website are resized copies served
 by freeitchgames.win, so your browser does not contact itch.io until you click a link.
 
-Want the raw data? It is plain JSON, in [`data_game/`](data_game/) in this repo and at
-<https://freeitchgames.win/data/index.json> (plus the files it lists). Please use those files instead of
-scraping the website; see [License](#license) for how you may reuse them.
+Want the raw data? It is plain JSON in [`data_game/`](data_game/) (plus
+[`scripts/deleted_games.json`](scripts/deleted_games.json)) in this repo: clone it, download it, or read the
+raw files. Please use those instead of scraping the website, which serves its own compact format; see
+[License](#license) for how you may reuse them.
 
 (The old address, `poli0981.github.io/free-games-itchio-list`, only redirects to the new site. The
 per-genre markdown tables under `lists/` and `deleted_games.txt` are gone: the catalog is web-only.)
@@ -68,7 +69,7 @@ from the latest [GitHub Release](https://github.com/poli0981/free-games-itchio-l
 | Linux | `.deb`, `.rpm` or `.AppImage` |
 | Android 11+ (arm64-v8a) | `.apk` (sideloaded, see below) |
 
-The apps download the catalog JSON from <https://freeitchgames.win/data> and load cover images directly
+The apps download the catalog data from <https://freeitchgames.win/data> and load cover images directly
 from itch.io's image CDN (`img.itch.zone`); clicking a game opens itch.io in your browser. No telemetry.
 Updates are manual: download a new release when one comes out. Installing an app means accepting the
 [EULA](docs/EULA.md).

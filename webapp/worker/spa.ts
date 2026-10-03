@@ -4,7 +4,10 @@
  *
  * - Anything that looks like a file (under /assets/ or /data/, or with an
  *   extension) is a real 404 — never the app shell, which the browser would
- *   otherwise cache under a hashed chunk URL or try to parse as JSON.
+ *   otherwise cache under a hashed chunk URL or try to parse as JSON. A
+ *   missing pack (/data/pack/<hash>.bin from an older deploy) lands here: the
+ *   client then reloads the manifest. (The readable /data JSON never does: the
+ *   Worker answers it first, legacy-data.ts.)
  * - App routes get the shell (index.html) with 200; unknown paths and game
  *   slugs that are not in the catalog get the same shell with 404, so the SPA
  *   still renders its Not Found page but crawlers see a real 404.
@@ -64,7 +67,8 @@ export async function handleMiss(request: Request, url: URL, assets: Fetcher, ga
   }
   const last = url.pathname.slice(url.pathname.lastIndexOf('/') + 1)
   if (/^\/(assets|data)\//.test(url.pathname) || last.includes('.')) {
-    // CORS on /data misses too, so the desktop/Android apps see a 404, not a CORS error.
+    // CORS on /data misses too, so the desktop/Android apps see a 404, not a CORS error;
+    // no-store, so a pack name that comes back later (a rollback) isn't stuck as a 404.
     const cors = url.pathname.startsWith('/data/') ? { 'Access-Control-Allow-Origin': '*' } : undefined
     return json({ error: 'not_found' }, 404, cors)
   }
