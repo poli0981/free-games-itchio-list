@@ -97,10 +97,9 @@
   "env": {
     // Pre-release checks: Worker "free-games-itchio-list-staging", deployed by hand
     // from any branch with `npx wrangler deploy --env staging`, whole host behind
-    // Access. Bindings and vars are not inherited, so every one is repeated here.
+    // Access. workers_dev / preview_urls (false) and triggers are inherited from
+    // the top level; bindings and vars are not, so every one is repeated here.
     "staging": {
-      "workers_dev": false,
-      "preview_urls": false,
       "routes": [{ "pattern": "staging.freeitchgames.win", "custom_domain": true }],
       "r2_buckets": [{ "binding": "THUMBS", "bucket_name": "freeitchgames-thumbs-staging" }],
       "d1_databases": [
