@@ -5360,5 +5360,435 @@
         "notes": "",
         "updated_at": "01 October 2026 @ 16:22 UTC",
         "added_at": "2026-10-05T16:52:13Z"
+    },
+    {
+        "url": "https://cammymoop.itch.io/grid-game-maker-preview",
+        "name": "Grid Game Maker Preview",
+        "dev": "Cammymoop",
+        "description": "Grid Game Maker is a free tool for easily turning your grid-based ideas into games quickly and with pretty visuals.",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 October 2026 @ 23:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4OTExMzYzLnBuZw==/original/a0nlkN.png",
+        "tags": [
+            "2D",
+            "maker",
+            "Sokoban",
+            "tool"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:24Z"
+    },
+    {
+        "url": "https://flefgames.itch.io/maketimepastfaster",
+        "name": "MakeTimePastFaster",
+        "dev": "Flefgames",
+        "description": "I had a loss this month in my family, and the only thing that seems to clear the futur and what would that be the impact of this loss, seems to be time.",
+        "genre": "Strategy",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 00:52 UTC",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTUzNjIxLnBuZw==/original/hW5RVm.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "French"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:26Z"
+    },
+    {
+        "url": "https://angelparedesh20.itch.io/through-the-graveyard",
+        "name": "Through the Graveyard (A través del Cementerio)",
+        "dev": "AngelParedesH20",
+        "description": "**Algunas excepciones no se pueden ignorar.** Víspera de Todos Santos.",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 01:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTM2NjU0LmpwZw==/original/gaxY4N.jpg",
+        "tags": [
+            "2D",
+            "3D",
+            "Female Protagonist",
+            "Halloween",
+            "Low-poly",
+            "Mystery",
+            "Third Person"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:29Z"
+    },
+    {
+        "url": "https://armiyashi86.itch.io/spiritual-root",
+        "name": "測靈根｜青雲仙緣",
+        "dev": "armiyashi86",
+        "description": "這是一款東方玩家專用的修仙靈根測試遊戲，以漢字姓名的康熙筆畫與出生年月日時辰，推演命格與五行靈根。 青雲宗十年一度下山收徒。今年，仙師來到了青禾村；當你的掌心落上石盤，屬於你的仙緣就此展開。 玩法：選擇姓名格式，輸入每一字的康熙筆畫、西元出生日期及24小時制時間（GMT+8），觀看靈根判定、三才五格、五行屬性與靈契天成，並依靈根踏上不同劇情。",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 03:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTU1MTE1LnBuZw==/original/a9zXQd.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:33Z"
+    },
+    {
+        "url": "https://colectivo-anhelo.itch.io/iberia-ignota-alboleta",
+        "name": "Iberia Ignota: Alboleta",
+        "dev": "Colectivo Anhelo",
+        "description": "Iberia Ignota: Alboleta Corre el año 1650.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 October 2026 @ 18:06 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDEyOTA3LnBuZw==/original/ml2ZzV.png",
+        "tags": [
+            "Characters",
+            "Folklore",
+            "Historical",
+            "Narrative"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:36Z"
+    },
+    {
+        "url": "https://dominoclub.itch.io/at-a-distance",
+        "name": "At A Distance",
+        "dev": "DOMINO CLUB",
+        "description": "AT A DISTANCE by LOVE KULESHOV A love story, an experiment, a set of conversations, a significant amount of introspection, a monologue on performance and audiences.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 10:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMDc4MzAxLmdpZg==/original/6jchtx.gif",
+        "tags": [
+            "Indie",
+            "introspective",
+            "LGBT",
+            "metanarrative",
+            "two-people-talking",
+            "videotome"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:40Z"
+    },
+    {
+        "url": "https://hiddenwriter.itch.io/secret-of-sizon",
+        "name": "Secret of Sizon",
+        "dev": "hiddenwriter",
+        "description": "Eons ago, the titan Minus rebelled against the other goddesses, and to this day, her tiny descendants feel the effects...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 October 2026 @ 22:37 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDQyMTM0LmpwZw==/original/EyCJfG.jpg",
+        "tags": [
+            "Fantasy",
+            "giant",
+            "giantess",
+            "macro",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:43Z"
+    },
+    {
+        "url": "https://ruizukun-dev.itch.io/malfoid-dating-sim",
+        "name": "MALFOID DATING SIM",
+        "dev": "COCOLEMON",
+        "description": "PURE BLOOD & PREJUDICE (SFW) NEW: DREAM SEQUENCE - Year 1 Chapter 2 💚 - Huge shoutout to Galnormous for voice acting the scene, thank you!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 October 2026 @ 12:12 UTC",
+        "rating": "4.6",
+        "rating_count": "25",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDMyODYxLnBuZw==/original/IcPA%2Bz.png",
+        "tags": [
+            "Anime",
+            "choices-matter",
+            "dark-academia",
+            "Dating Sim",
+            "enemies-to-lovers",
+            "Fangame",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America",
+            "Indonesian",
+            "Japanese",
+            "Korean",
+            "Portuguese (Portugal)",
+            "Russian",
+            "Thai",
+            "Vietnamese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 October 2026 @ 00:37 UTC",
+        "added_at": "2026-10-06T01:18:47Z"
+    },
+    {
+        "url": "https://seraten04.itch.io/harbingers",
+        "name": "Harbingers",
+        "dev": "seraten04",
+        "description": "Nick, a social media influencer, has discovered a forbidden meeting in the ruins of an ancient Abbey, an international meeting of death-bringers.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 October 2026 @ 20:03 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDcyOTAzLmpwZw==/original/7CDiWa.jpg",
+        "tags": [
+            "Atmospheric",
+            "Dark",
+            "Fantasy",
+            "Horror",
+            "Indie",
+            "Short",
+            "Story Rich",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:50Z"
+    },
+    {
+        "url": "https://soupsarah.itch.io/doki-doki-diagnostics",
+        "name": "Doki Doki Diagnostics",
+        "dev": "SarahDragon Software",
+        "description": "Doki Doki Diagnostics A haunted repair shop.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 00:46 UTC",
+        "rating": "1.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTUzMzcxLnBuZw==/original/F%2Fo67T.png",
+        "tags": [
+            "Dating Sim",
+            "Female Protagonist",
+            "Furry",
+            "LGBTQIA",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Mystery",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:54Z"
+    },
+    {
+        "url": "https://starotyu.itch.io/love-after-sunset-preview",
+        "name": "Love After Sunset - Preview",
+        "dev": "starotyu",
+        "description": "《我们在日落后恋爱》的游戏原型，包含一个可以游玩的短篇番外，会持续更新。 *项目仍处于早期开发阶段，不代表最终质量。",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 13:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTY3MzUxLnBuZw==/original/8T0skp.png",
+        "tags": [
+            "AI Generated",
+            "Anime",
+            "Comedy",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:18:57Z"
+    },
+    {
+        "url": "https://v-ual.itch.io/silver-witch-princess-vai",
+        "name": "Silver Witch Princess Vai",
+        "dev": "v_ual",
+        "description": "The year is 1976.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 04:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTM5MTQ2LnBuZw==/original/%2F%2F5zum.png",
+        "tags": [
+            "Lesbian",
+            "LGBT",
+            "Magic"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-06T01:19:00Z"
     }
 ]
