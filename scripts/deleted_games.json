@@ -640,5 +640,23 @@
         "name": "DON'T LEAVE — Chapter 1",
         "reason": "Game became paid",
         "deleted_at": "2026-10-03T03:07:42Z"
+    },
+    {
+        "url": "https://sdf0aabd.itch.io/my-personal-hater",
+        "name": "my personal hater",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-06T02:59:07Z"
+    },
+    {
+        "url": "https://lighttriadgames.itch.io/break-the-pinatas",
+        "name": "Break the Piñatas",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-06T02:59:10Z"
+    },
+    {
+        "url": "https://mauricioghy.itch.io/minecraft-caverns",
+        "name": "Minecraft Caverns",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-06T02:59:13Z"
     }
 ]
