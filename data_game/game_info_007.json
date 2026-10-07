@@ -36,8 +36,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "29 September 2026 @ 07:24 UTC",
-        "rating": "5.0",
-        "rating_count": "5",
+        "rating": "4.9",
+        "rating_count": "16",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMzUwMjE3LmdpZg==/original/yJC7xJ.gif",
@@ -68,7 +68,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-09-30T02:35:00Z"
+        "added_at": "2026-09-30T02:35:00Z",
+        "updated_at": "02 October 2026 @ 11:53 UTC"
     },
     {
         "url": "https://c-hizzle.itch.io/headspace",
@@ -99,7 +100,8 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-09-30T02:35:04Z"
+        "added_at": "2026-09-30T02:35:04Z",
+        "updated_at": "01 October 2026 @ 06:41 UTC"
     },
     {
         "url": "https://cabindraws.itch.io/10-seconds-to-die",
@@ -110,8 +112,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "28 September 2026 @ 23:09 UTC",
-        "rating": "2.0",
-        "rating_count": "1",
+        "rating": "3.5",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMzU1NTU5LnBuZw==/original/UiZEEu.png",
@@ -171,7 +173,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-09-30T02:35:10Z"
+        "added_at": "2026-09-30T02:35:10Z",
+        "updated_at": "30 September 2026 @ 18:40 UTC"
     },
     {
         "url": "https://kapei.itch.io/eclipse-child",
@@ -268,7 +271,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-09-30T02:35:19Z"
+        "added_at": "2026-09-30T02:35:19Z",
+        "updated_at": "04 October 2026 @ 19:33 UTC"
     },
     {
         "url": "https://theironwill1014.itch.io/the-roche-limit",
