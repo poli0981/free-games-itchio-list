@@ -6609,5 +6609,593 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-07T08:51:22Z"
+    },
+    {
+        "url": "https://hugimugi7.itch.io/yes-comrade",
+        "name": "Yes, Comrade.",
+        "dev": "Hugimugi",
+        "description": "Hello, Operator?",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "46",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMTk3MzI5LnBuZw==/original/xgsi2A.png",
+        "tags": [
+            "2D",
+            "GameMaker",
+            "Ludum Dare 51",
+            "Multiple Endings",
+            "No AI",
+            "Pixel Art",
+            "Point & Click",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "GameMaker",
+            "Aseprite",
+            "Audacity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 15:09 UTC",
+        "added_at": "2026-10-08T06:33:53Z"
+    },
+    {
+        "url": "https://selene3.itch.io/carol-penultimate",
+        "name": "DELTARUNE - Alternate Ending - Chapter 7A Penultimate Carol boss",
+        "dev": "Selene",
+        "description": "Hypothetical Deltarune Ch7A Penultimate boss PLANNED CHANGES TO COME SOON: Try to fix Asriel sprite lines (every time I add lines it looks bad, if I manage to make a better version I'll update it)...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "06 October 2026 @ 17:38 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjAzNjQyLnBuZw==/original/PAX9FA.png",
+        "tags": [
+            "2D",
+            "deltarune",
+            "Fangame",
+            "no",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 23:52 UTC",
+        "added_at": "2026-10-08T06:33:56Z"
+    },
+    {
+        "url": "https://alegia.itch.io/chaojiandai",
+        "name": "[ch\\en]潮间带（The Tidal Zone）",
+        "dev": "Alegia",
+        "description": "八月，外婆离岛查病，留下你一个人守在海边的老屋。 退潮那天，你在海滩上捡到一条搁浅的人鱼。你把它抱回家，养进浴缸。 规则很简单：喂它，教它说话，别让人看见。八周后潮水回来，到时候送它走。 镇上的眼睛多，在尘埃落定前保守住秘密。 七张CG ——多周目体验可全部解锁； 八周养成 ——侧栏的浴室面板里，随剧情进展角色有不同体型拆分； 九个结局 （含一个隐藏结局）； 多语言适配...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 06:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTU3NDM2LnBuZw==/original/lCa9hc.png",
+        "tags": [
+            "2D",
+            "Female Protagonist",
+            "Horror",
+            "Monsters",
+            "Multiple Endings",
+            "Otome",
+            "Pixel Art",
+            "Short",
+            "Twine"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:00Z"
+    },
+    {
+        "url": "https://bai-skull.itch.io/zombie-dream-hide-in-dark",
+        "name": "Zombie Dream: Hide in Dark",
+        "dev": "BAI-S.K.U.L.L",
+        "description": "Late at night in the office, Ryen finally finished organizing the last document.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 16:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjMxOTMzLnBuZw==/original/K8WmIC.png",
+        "tags": [
+            "2D",
+            "jump-scare",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:03Z"
+    },
+    {
+        "url": "https://bonaqua37.itch.io/snort-white-and-the-seven-dwarfs-final-edition",
+        "name": "Snort white and the seven dwarfs, Final edition",
+        "dev": "Bonaqua37",
+        "description": "A game made for gits and giggles!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 14:41 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjI5MTc4LmdpZg==/original/W38ZHq.gif",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:07Z"
+    },
+    {
+        "url": "https://goshtyyae.itch.io/curse-general",
+        "name": "Cursed General- ALFA",
+        "dev": "goshty.yae",
+        "description": "Cursed General ¿Hasta dónde llegarías para encontrar a alguien que amas?",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 10:16 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjExNDA5LnBuZw==/original/3CzKt5.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "Fantasy",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:11Z"
+    },
+    {
+        "url": "https://kiteneon-games.itch.io/trial-in-eos-chasma",
+        "name": "Trial in Eos Chasma",
+        "dev": "kiteneon_games",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 11:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjI1MTQ1LnBuZw==/original/EmnqlM.png",
+        "tags": [
+            "Mystery",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:14Z"
+    },
+    {
+        "url": "https://lynntrassh.itch.io/in-return",
+        "name": "回礼 | In Return: A Gift for the Living",
+        "dev": "Lingyan Jiang",
+        "description": "In Return is a first-person narrative game rooted in Chinese family life, and a gift for those who live on, remembering.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 08:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTY0MTg3LnBuZw==/original/LATUL4.png",
+        "tags": [
+            "3D",
+            "First-Person",
+            "Horror",
+            "Relaxing",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:16Z"
+    },
+    {
+        "url": "https://exodus-indiedev.itch.io/the-bureau",
+        "name": "REDACTED: Bureau Protocol",
+        "dev": "Exodus-Indiedev, stuxed",
+        "description": "[ACCESSING BUREAU MAINFRAME]_ [SYSTEM CHECK....OK] [LOADING ASSET INDEX....]_ [DECRYPTING FILES ████████████████ 100%] [BOOTING INTERFACE...]_ [WELCOME AGENT.",
+        "genre": "Shooter",
+        "status": "Prototype",
+        "publisher": "GameLabs",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxNjM2Nzc4LnBuZw==/original/JlKnkb.png",
+        "tags": [
+            "3D",
+            "Alternate History",
+            "First-Person",
+            "FPS",
+            "High Score",
+            "Unreal Engine",
+            "Zombies"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Playstation controller"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:20Z"
+    },
+    {
+        "url": "https://pepsica.itch.io/forget-me-not",
+        "name": "FORGET ME NOT",
+        "dev": "Pepsica",
+        "description": "You arrived to this nowhere town with empty pockets and no idea what happens next.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "252",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MTQ4MjcyLnBuZw==/original/3zZzfV.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "Horror",
+            "Otome",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 22:50 UTC",
+        "added_at": "2026-10-08T06:34:22Z"
+    },
+    {
+        "url": "https://ravenous-den.itch.io/toss-office",
+        "name": "Toss Office",
+        "dev": "Ravenous Den",
+        "description": "Wishlist our game on Steam !",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "67",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NDM0Mzk4LnBuZw==/original/uGT8%2F0.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "toss-office",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot",
+            "Adobe Photoshop"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 17:28 UTC",
+        "added_at": "2026-10-08T06:34:26Z"
+    },
+    {
+        "url": "https://rionix.itch.io/eternal-mist",
+        "name": "Eternal Mist",
+        "dev": "rionix",
+        "description": "A real-time tactical game about making the right decisions with incomplete information.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MTgwOTg5LnBuZw==/original/aC8gb3.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Indie",
+            "No AI",
+            "Pixel Art",
+            "Real-Time",
+            "Singleplayer",
+            "Tactical",
+            "Tactical RPG"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "Aseprite",
+            "Audacity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 16:28 UTC",
+        "added_at": "2026-10-08T06:34:30Z"
+    },
+    {
+        "url": "https://stelexsoftware.itch.io/king-4-a-day",
+        "name": "KING 4 A DAY",
+        "dev": "Stelex Software",
+        "description": "Hear ye, hear ye!",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 22:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTA0MjU5LnBuZw==/original/92LXut.png",
+        "tags": [
+            "1-bit",
+            "Casual",
+            "Chess",
+            "Indie",
+            "Pixel Art",
+            "Retro",
+            "Roguelike",
+            "Roguelite",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Italian"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 22:51 UTC",
+        "added_at": "2026-10-08T06:34:33Z"
+    },
+    {
+        "url": "https://alekirser.itch.io/hivemind-monster-profits",
+        "name": "Hivemind: Monster Profits",
+        "dev": "alekirser",
+        "description": "Congratulations!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 03:20 UTC",
+        "rating": "5.0",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjA3NTY2LnBuZw==/original/tsnd7n.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Cute",
+            "Dating Sim",
+            "Monster Girls",
+            "No AI",
+            "Ren'Py",
+            "Romance",
+            "Short",
+            "Voice Acting"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:36Z"
+    },
+    {
+        "url": "https://lguidolin.itch.io/one-more-saturday",
+        "name": "One More Saturday",
+        "dev": "Leonardo Guidolin",
+        "description": "She has lived this Saturday 87 times.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "06 October 2026 @ 19:57 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjA4MTI5LnBuZw==/original/xVF7LN.png",
+        "tags": [
+            "Anime",
+            "Dating Sim",
+            "DRM Free",
+            "emotional",
+            "Multiple Endings",
+            "Mystery",
+            "portuguese",
+            "Romance",
+            "Story Rich",
+            "Time Travel"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:38Z"
+    },
+    {
+        "url": "https://magllama.itch.io/tazunas-secret",
+        "name": "Tazuna's Secret",
+        "dev": "Magllama",
+        "description": "Tazuna is a horse.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 October 2026 @ 04:08 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjE3NTI4LnBuZw==/original/XXnA9i.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-08T06:34:41Z"
     }
 ]
