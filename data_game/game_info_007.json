@@ -8660,5 +8660,123 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-09T10:44:00Z"
+    },
+    {
+        "url": "https://coldember.itch.io/two-literal-pink-square",
+        "name": "Two Literal Pink Squares",
+        "dev": "ColdEmber",
+        "description": "A 3 minute read.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 08:19 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjAxMDQ2LnBuZw==/original/s%2FYJbX.png",
+        "tags": [
+            "LGBT",
+            "LGBTQIA",
+            "Queer",
+            "Romance",
+            "Singleplayer",
+            "Text based",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-09T15:38:28Z"
+    },
+    {
+        "url": "https://funtimefreddie.itch.io/occultics",
+        "name": "Occultics | Weridcore speed date",
+        "dev": "funtimefreddie",
+        "description": "This is a universe full of magic, mysticism, things you only imagine in your dreams.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 02:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjc3MDE5LnBuZw==/original/45AD03.png",
+        "tags": [
+            "Dating Sim",
+            "dreamcore",
+            "LGBT",
+            "LGBTQIA",
+            "Liminal space",
+            "Queer",
+            "Romance",
+            "weird",
+            "weirdcore"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-09T15:38:31Z"
+    },
+    {
+        "url": "https://thecrimsondm-vanillia.itch.io/pony-cuddle-castle",
+        "name": "Pony Cuddle Castle",
+        "dev": "TheCrimsonDM Vanillia",
+        "description": "Rated PG 16 for 'lesbian horses' Twilight Starseed moves to a castle after failing to become a goddess, however her mentor isn't done with her yet.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 00:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjc1NzQ3LnBuZw==/original/vplxVB.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "Furry",
+            "harem",
+            "Lesbian",
+            "mlp",
+            "Point & Click",
+            "pony",
+            "Romance",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-09T15:38:35Z"
     }
 ]
