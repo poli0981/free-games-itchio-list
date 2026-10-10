@@ -1,7 +1,12 @@
 # Manual re-scrape of every scraper-owned field (repairs mojibake, backfills
 # fields after a scraper upgrade). Always preserves safe_virus / notes / nsfw.
-# Runs through refresh.yml in full mode: one URL, or a rotating batch of the
-# games whose last full re-scrape is oldest — dispatch again to continue.
+# Queues refresh.yml in full mode: one URL, or a rotating batch of the games
+# whose last full re-scrape is oldest. Dispatch again to continue: the runs
+# wait FIFO in refresh.yml's concurrency group and each batch starts from the
+# latest main, so several dispatches in a row cover consecutive batches.
+#
+# A dispatch rather than a reusable-workflow call: called through `uses:`,
+# refresh.yml failed at startup ("workflow file issue", no annotation).
 name: Force update
 
 on:
@@ -22,22 +27,24 @@ on:
 
 permissions: {}
 
-# FIFO (`queue: max`): with the default queue a newer pending dispatch would
-# replace an older pending one and silently drop its `url`.
-concurrency:
-  group: force-update
-  cancel-in-progress: false
-  queue: max
-
 jobs:
-  rescrape:
+  queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
-      contents: write
-    uses: ./.github/workflows/refresh.yml
-    with:
-      full: true
-      url: ${{ inputs.url }}
-      budget: ${{ inputs.budget }}
-      allow_mass_removal: ${{ inputs.allow_mass_removal }}
-    secrets:
-      DISCORD_CI_WEBHOOK: ${{ secrets.DISCORD_CI_WEBHOOK }}
+      actions: write # dispatch refresh.yml (a workflow_dispatch from GITHUB_TOKEN does start a run)
+    steps:
+      - name: Queue a full refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          REF: ${{ github.ref_name }}
+          URL: ${{ inputs.url }}
+          BUDGET: ${{ inputs.budget }}
+          ALLOW_MASS_REMOVAL: ${{ inputs.allow_mass_removal }}
+        run: |
+          set -euo pipefail
+          gh workflow run refresh.yml --ref "$REF" \
+            -f full=true -f budget="$BUDGET" -f url="$URL" -f allow_mass_removal="$ALLOW_MASS_REMOVAL"
+          echo "Queued a full refresh on \`$REF\` (budget $BUDGET${URL:+, $URL}) — see the Refresh catalog runs." \
+            >> "$GITHUB_STEP_SUMMARY"

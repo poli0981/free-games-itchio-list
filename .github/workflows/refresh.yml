@@ -9,7 +9,8 @@
 #           (a run that would remove or strike an implausible share of games
 #           — usually itch.io markup changes — withholds the removals).
 #
-# Also called by force_update.yml with `full: true` (re-scrape every field).
+# Also dispatched with `full: true` (by force_update.yml, or by hand): re-scrape
+# every scraper-owned field of one URL or of the next batch.
 name: Refresh catalog
 
 on:
@@ -29,31 +30,17 @@ on:
         description: 'Apply removals even if the mass-change guard trips (confirm on itch.io first)'
         type: boolean
         default: false
-  workflow_call:
-    inputs:
-      budget:
-        type: number
-        default: 0
-      url:
-        type: string
-        required: false
       full:
+        description: 'Re-scrape every scraper-owned field (rotates on the last full re-scrape)'
         type: boolean
         default: false
-      allow_mass_removal:
-        type: boolean
-        default: false
-    secrets:
-      DISCORD_CI_WEBHOOK:
-        required: false
 
 permissions: {}
 
 # One refresh pipeline (scan → apply) at a time, FIFO — a scheduled refresh, a
-# manual one and a force-update batch never start from the same state, so an
-# older removal can't undo a newer healthy check. The name differs from
-# force_update.yml's own group on purpose: a called workflow asking for its
-# caller's group is cancelled as a deadlock.
+# manual one and a force-update batch never start from the same state (the scan
+# checks out the branch as it is when the run starts), so an older removal can't
+# undo a newer healthy check, and queued full batches move on through the catalog.
 concurrency:
   group: refresh-pipeline
   cancel-in-progress: false
@@ -73,9 +60,12 @@ jobs:
       rate_limited: ${{ steps.refresh.outputs.rate_limited }}
       mass_change: ${{ steps.refresh.outputs.mass_change }}
     steps:
+      # The branch's latest commit, not the one it had when the run was queued:
+      # a run waiting behind another must see that run's refresh state.
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: ${{ github.ref }}
           persist-credentials: false
 
       - name: Set up Python
