@@ -1205,7 +1205,7 @@
         "url": "https://enesturaldev.itch.io/photomaly",
         "name": "Photomaly (Demo)",
         "dev": "Enes A. Tural",
-        "description": "FULL VERSION RELEASED ON STEAM Information Demo playtime Around 30 minutes (first 2 days) Translations Languages without a volunteer translator are AI-translated.",
+        "description": "PSX-style horror game where you manage a photo studio.",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -1230,7 +1230,13 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 11:24 UTC"
+        "updated_at": "16 September 2026 @ 11:24 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://ghostcase001.itch.io/hariti",
