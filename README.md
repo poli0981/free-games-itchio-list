@@ -225,7 +225,7 @@ docs/                   # Policies, dev environment, third-party list (+ Vietnam
 | Job | Schedule | Purpose |
 |---|---|---|
 | Ingest (`update.yml`) | On queue change + daily 01:23 UTC | Scrape approved links from `temp_link.json`, skip paid / dead / removed |
-| Refresh (`refresh.yml`) | Daily 02:47 UTC | Re-check 1/7 of the catalog: dead links, now-paid games, rating, status |
+| Refresh (`refresh.yml`) | Daily 02:47 UTC | Re-check 1/7 of the catalog: dead links, now-paid or password-protected games, rating, status |
 | Force update (`force_update.yml`) | Manual | Re-scrape every field (one URL or the next batch); keeps `safe_virus` / `notes` / `nsfw` |
 | RSS discovery (Cloudflare Worker) | Every 4 hours | Poll one itch.io feed per run; new games go to the review queue |
 | Python CI / Webapp CI | Pull requests (Python CI also on pushes to `main` that touch it) | Lint, tests, data validation / type-check, tests, build |

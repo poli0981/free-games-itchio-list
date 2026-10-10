@@ -236,6 +236,14 @@ def has_info_panel(soup: BeautifulSoup) -> bool:
     return bool(wrapper and wrapper.find("table"))
 
 
+def is_password_protected(soup: BeautifulSoup) -> bool:
+    """itch.io's "A password is required to view this page" form instead of the game (HTTP 200)."""
+    return bool(
+        soup.find("div", class_="game_password_page")
+        or soup.find("input", attrs={"name": "game_password"})
+    )
+
+
 # ---------------------------------------------------------------------------
 # Info-table parsing
 # ---------------------------------------------------------------------------

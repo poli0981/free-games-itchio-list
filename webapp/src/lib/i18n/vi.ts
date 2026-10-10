@@ -353,4 +353,5 @@ export const vi: Record<MessageKey, string> = {
   "charts.accessibility.title": "Tính năng hỗ trợ tiếp cận",
   "charts.accessibility.desc": "Đếm theo từng game (một game có thể có nhiều tính năng)",
   "charts.empty": "Chưa có dữ liệu.",
+  "deleted.reason.private": "Trang đã bị đặt mật khẩu",
 }

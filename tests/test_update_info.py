@@ -33,12 +33,16 @@ def test_ingest_outcomes(repo, monkeypatch):
         "https://dev.itch.io/free": Page(status=200, soup=load_fixture_soup("game_free_full.html")),
         "https://dev.itch.io/paid": Page(status=200, soup=load_fixture_soup("game_paid.html")),
         "https://dev.itch.io/dead": Page(status=404),
+        "https://dev.itch.io/locked": Page(
+            status=200, soup=load_fixture_soup("game_password.html")
+        ),
     }
     queue = [
         "https://DEV.itch.io/free/",  # canonicalized
         "https://dev.itch.io/free",  # duplicate within the queue
         "https://dev.itch.io/paid",
         "https://dev.itch.io/dead",
+        "https://dev.itch.io/locked",  # password-protected: final, not retried
         "https://dev.itch.io/known",
         "https://dev.itch.io/removed",
         "https://dev.itch.io/flaky",  # 500 → retry later
@@ -54,6 +58,8 @@ def test_ingest_outcomes(repo, monkeypatch):
     assert flaky["attempts"] == 1 and flaky["last_error"] == "error: HTTP 500"
     stats = patch["stats"]
     assert (stats["added"], stats["paid"], stats["dead"], stats["duplicate"]) == (1, 1, 1, 1)
+    # A password-protected page is final: dropped from the queue, no attempt kept.
+    assert stats["private"] == 1 and patch["ingest_state"]["https://dev.itch.io/locked"] is None
     assert (stats["deleted"], stats["invalid"], stats["retry"]) == (1, 1, 1)
     # apply_patch compares canonical forms, so each processed link is covered once.
     removed = {canonicalize(u) or u for u in patch["queue_remove"]}
@@ -61,6 +67,7 @@ def test_ingest_outcomes(repo, monkeypatch):
         "https://dev.itch.io/free",
         "https://dev.itch.io/paid",
         "https://dev.itch.io/dead",
+        "https://dev.itch.io/locked",
         "https://dev.itch.io/known",
         "https://dev.itch.io/removed",
         "not a url",

@@ -140,6 +140,7 @@ export function deletionsByMonth(deleted: DeletedGameEntry[]): CountEntry[] {
 export function deletionReasonCounts(deleted: DeletedGameEntry[]): CountEntry[] {
   let paid = 0
   let removed = 0
+  let locked = 0
   let other = 0
   for (const d of deleted) {
     const reason = (d.reason ?? '').toLowerCase()
@@ -147,6 +148,8 @@ export function deletionReasonCounts(deleted: DeletedGameEntry[]): CountEntry[] 
       paid += 1
     } else if (reason.includes('no longer exists')) {
       removed += 1
+    } else if (reason.includes('password-protected')) {
+      locked += 1
     } else {
       other += 1
     }
@@ -154,6 +157,7 @@ export function deletionReasonCounts(deleted: DeletedGameEntry[]): CountEntry[] 
   const out: CountEntry[] = []
   if (paid) out.push({ key: 'Became paid', count: paid })
   if (removed) out.push({ key: 'Page removed', count: removed })
+  if (locked) out.push({ key: 'Password-protected', count: locked })
   if (other) out.push({ key: 'Other', count: other })
   return out
 }

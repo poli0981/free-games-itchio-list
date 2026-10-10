@@ -170,7 +170,7 @@ docs/                   # Chính sách, môi trường dev, danh sách bên th�
 | Tác vụ | Lịch | Mục đích |
 |---|---|---|
 | Ingest (`update.yml`) | Khi hàng chờ đổi + hằng ngày 01:23 UTC | Cào link đã duyệt từ `temp_link.json`, bỏ qua game trả phí / đã chết / từng bị gỡ |
-| Refresh (`refresh.yml`) | Hằng ngày 02:47 UTC | Kiểm tra lại 1/7 danh mục: link chết, game chuyển sang trả phí, rating, trạng thái |
+| Refresh (`refresh.yml`) | Hằng ngày 02:47 UTC | Kiểm tra lại 1/7 danh mục: link chết, game chuyển sang trả phí hoặc bị đặt mật khẩu, rating, trạng thái |
 | Force update (`force_update.yml`) | Thủ công | Cào lại mọi trường (một URL hoặc lô tiếp theo); giữ nguyên `safe_virus` / `notes` / `nsfw` |
 | Phát hiện qua RSS (Cloudflare Worker) | Mỗi 4 giờ | Đọc một feed itch.io mỗi lượt; game mới vào hàng chờ duyệt |
 | Python CI / Webapp CI | Pull request (Python CI còn chạy khi push vào `main` chạm tới phần Python) | Lint, test, validate dữ liệu / type-check, test, build |

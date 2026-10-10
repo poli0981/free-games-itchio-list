@@ -351,6 +351,7 @@ export const en = {
   "charts.accessibility.title": "Accessibility Features",
   "charts.accessibility.desc": "Counted per game (a game may list several)",
   "charts.empty": "No data yet.",
+  "deleted.reason.private": "Page is password-protected",
 } as const
 
 export type MessageKey = keyof typeof en
