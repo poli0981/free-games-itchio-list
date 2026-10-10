@@ -4808,7 +4808,7 @@
         "url": "https://pep.itch.io/itazura-madness",
         "name": "ITAZURA MADNESS",
         "dev": "Zizou",
-        "description": "Welcome to ITAZURA MADNESS, a Cutepop facepunching roguelike about climbing a mysterious tower.",
+        "description": "Cutepop facepunching roguelike ^_^",
         "genre": "Fighting",
         "status": "Released",
         "publisher": "N/A",
@@ -4838,13 +4838,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 22:19 UTC"
+        "updated_at": "15 September 2026 @ 22:19 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://embair.itch.io/konkr",
         "name": "Konkr.io",
         "dev": "embair",
-        "description": "Play for free also on www.",
+        "description": "Expand your kingdom, build up your economy, crush your enemies, then crush your allies too!",
         "genre": "Strategy",
         "status": "Released",
         "publisher": "N/A",
@@ -4879,13 +4882,18 @@
             "Phaser"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Interactive tutorial"
+        ]
     },
     {
         "url": "https://bilalaika.itch.io/pumpkin-panic",
         "name": "Pumpkin Panic",
         "dev": "Bilalaika",
-        "description": "COME TO THIS COZY FARM! Explore this little farm in the middle of the forest, plant crops, take care of the plants, go fishing, or whatever you prefer, but have a good time! But be carefull, they s...",
+        "description": "Try to survive in this cute farm. Farming/SurvivalHorror",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -4921,13 +4929,19 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 13:05 UTC"
+        "updated_at": "16 September 2026 @ 13:05 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Interactive tutorial"
+        ]
     },
     {
         "url": "https://keinart.itch.io/one-thousand-lies",
         "name": "One Thousand Lies",
         "dev": "Keinart",
-        "description": "N/A",
+        "description": "Visual Novel｜English｜Español",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -4966,7 +4980,12 @@
             "Ren'Py"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ]
     },
     {
         "url": "https://scottts.itch.io/10-second-mixtape",
@@ -18445,7 +18464,7 @@
         "url": "https://piro775.itch.io/fnaf-secret-of-the-mimic-fangame",
         "name": "FNAF Secret of the mimic fangame",
         "dev": "PIRO775",
-        "description": "V1.",
+        "description": "V1.0 out now Added main menu Added Gameplay of section 1 Added intro cutscene",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -18463,13 +18482,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://keddyy.itch.io/rainy-cafe",
         "name": "Rainy Cafe",
         "dev": "keddyy",
-        "description": "Rainy Cafe is a cafe management game that has a pixel graphics, there are 24 levels and total 1 hour of gameplay time, at advanced levels new drinks and cakes are unlocked and customer count increa...",
+        "description": "EN: Rainy Cafe is a cafe management game that has a pixel graphics, there are 24 levels and total 1 hour of gameplay time, at advanced levels new drinks and cakes are unlocked and customer count...",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -18496,13 +18518,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://elteras.itch.io/agis",
         "name": "Agis",
         "dev": "Elteras",
-        "description": "My first proper learner project, made in Godot.",
+        "description": "Godot Learner Project",
         "genre": "Card Game",
         "status": "Released",
         "publisher": "N/A",
@@ -18526,11 +18551,14 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://quarantineweightgain.itch.io/primitive-saiyans-browser",
-        "name": "Primitive Saiyans Browser Version",
+        "name": "Primitive Saiyans Browser Version 1.0.0.2",
         "dev": "Quarantine Weight Gain Funnies",
         "description": "PC controls-------------------------------------------------------- SPACE - To Attack WASD or arrow keys to move around Pressing Exit Game may freeze the game.",
         "genre": "N/A",
@@ -18541,7 +18569,7 @@
         "rating_count": "N/A",
         "average_session": "N/A",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgwMjMyLnBuZw==/original/dokVnN.png",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDE4MTk0LnBuZw==/original/tdV2Eg.png",
         "tags": [],
         "platforms": [
             "HTML5"
@@ -18552,13 +18580,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://requiem-games-xoxo.itch.io/requiem-a-new-world",
         "name": "REQUIEM: A New World",
         "dev": "Requiem Games",
-        "description": "\"In a world beyond the outer realm, beings of legend remain unknown.",
+        "description": "Fast paced co-op magic fighting!",
         "genre": "Fighting",
         "status": "Released",
         "publisher": "N/A",
@@ -18567,7 +18598,7 @@
         "rating_count": "12",
         "average_session": "A few minutes",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2NTY0NzU3LnBuZw==/original/7ersyD.png",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MDc3MzE1LmpwZw==/original/SCrwsr.jpg",
         "tags": [
             "Boss battle",
             "Fantasy",
@@ -18595,13 +18626,16 @@
             "GDevelop"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://luparc.itch.io/a-part-of-the-whole",
         "name": "A Part of the Whole",
         "dev": "Luparc Games",
-        "description": "A Part of the Whole is a quiet, atmospheric narrative experience about a boy searching through impossible worlds to find his missing sister.",
+        "description": "The story of a boy who crosses beyond the veils to find his sister, only to face the depths within himself.",
         "genre": "Interactive Fiction",
         "status": "Released",
         "publisher": "N/A",
@@ -18636,13 +18670,18 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://xvibit.itch.io/xvibit",
         "name": "xvibit",
         "dev": "xvibit",
-        "description": "DESCRIPTION: \"We fight.",
+        "description": "a SNES-inspired demake of the beginning of FFXVI.",
         "genre": "Role Playing",
         "status": "Released",
         "publisher": "N/A",
@@ -18685,13 +18724,19 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 08:17 UTC"
+        "updated_at": "15 September 2026 @ 08:17 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "High-contrast"
+        ]
     },
     {
         "url": "https://putuk.itch.io/zippis-ad-dodge",
         "name": "Zippi's Ad-Dodge",
         "dev": "Putuk",
-        "description": "Dodge ads and see how long you can go! Collect the data sphere for an additional 100 points! Maybe leave your high-score in the comments.",
+        "description": "A small auto-runner I made to learn gamedev.",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
@@ -18716,13 +18761,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://rinucomics.itch.io/god-is-dead-im-starving",
         "name": "God is Dead & I'm Starving",
         "dev": "rinucomics",
-        "description": "ABOUT GAME - Submission is the core thread of society.",
+        "description": "It's starving and will kill anything...",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -18754,13 +18802,18 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://hit2key.itch.io/fun-fish-facts",
         "name": "FUN FISH FACTS",
         "dev": "hit2key",
-        "description": "There are creatures alive in the ocean.",
+        "description": "Fisherman Dave shares his wisdom.",
         "genre": "Interactive Fiction",
         "status": "Released",
         "publisher": "N/A",
@@ -18788,13 +18841,16 @@
             "bitsy"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://aktham.itch.io/silkyroad",
-        "name": "SilkyRoad",
+        "name": "Silky Road",
         "dev": "aktham",
-        "description": "A roguelike train-builder auto-battler.",
+        "description": "a roguelike train-builder defense game.",
         "genre": "Strategy",
         "status": "Released",
         "publisher": "N/A",
@@ -18808,6 +18864,7 @@
             "2D",
             "Auto Battler",
             "Deck Building",
+            "idler",
             "Pixel Art",
             "Roguelike",
             "Singleplayer",
@@ -18815,7 +18872,8 @@
             "Trains"
         ],
         "platforms": [
-            "HTML5"
+            "HTML5",
+            "Windows"
         ],
         "languages": [],
         "inputs": [],
@@ -18823,13 +18881,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://madlab-games.itch.io/diannascrazyaddiction",
         "name": "DIANNA'S CRAZY ADDICTION",
         "dev": "Madlab Games",
-        "description": "A year has passed, but the reunion isn't what you expected💔.",
+        "description": "You went back to your crazy addicted ex girlfriend, is she okay?",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -18858,13 +18919,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://eyes-a.itch.io/shovel-merge-dig-and-mine",
         "name": "Shovel Merge Dig and Mine",
         "dev": "EYES_A+",
-        "description": "Start with a simple shovel and build your way up by merging stronger ones to dig deeper and earn more cash.",
+        "description": "Combine shovels, dig deeper, and uncover endless treasure!",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -18890,13 +18954,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://thechunkypenguin.itch.io/keeper",
         "name": "Keeper",
         "dev": "thechunkypenguin",
-        "description": "Try to block as many goals as you can! A goalie mini game I made originally for a game jam but never turned in.",
+        "description": "Endless Goalkeeping Fun!",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
@@ -18926,13 +18993,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://killgorack.itch.io/sledge",
         "name": "Sledge",
         "dev": "KillGorack",
-        "description": "Sledge is a home built FPS tank shooter where everything is designed to go a little off the rails.",
+        "description": "Belligerent Tank Warfare",
         "genre": "Shooter",
         "status": "Released",
         "publisher": "N/A",
@@ -18952,7 +19022,6 @@
         ],
         "platforms": [
             "Windows",
-            "macOS",
             "Linux"
         ],
         "languages": [
@@ -18965,13 +19034,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://tap3r.itch.io/glow-of-dungeon",
         "name": "Glow of Dungeon",
         "dev": "tap3r",
-        "description": "Glow of Dungeon English Have you ever dreamed of killing mobs and just testing your skills? In Glow of Dungeon, it's possible.",
+        "description": "Glow of Dungeon English Have you ever dreamed of killing mobs and just testing your skills?",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -18999,13 +19071,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://biggie-modding.itch.io/bucket-pack-for-fs22",
         "name": "FS22 Attachment Pack",
         "dev": "BIGGIE Modding",
-        "description": "I now have a discord! Join here: https://discord.",
+        "description": "I now have a discord!",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -19022,13 +19097,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "23 September 2026 @ 23:42 UTC"
+        "updated_at": "23 September 2026 @ 23:42 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ferghas.itch.io/the-adventures-of-ferghas-the-coo-curse-of-the-fae",
         "name": "The Adventures of Ferghas the Coo Curse of the Fae",
         "dev": "Ferghas",
-        "description": "The Adventures of Ferghas the Coo: The Curse of the Fae Become Ferghas, a loyal, big hearted Highland coo who refuses to let his homeland fall to darkness.",
+        "description": "The Curse of the Fae has been let loose on Scotland. With Ferghas and Friends save everyone",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -19066,13 +19144,21 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "04 October 2026 @ 14:19 UTC"
+        "updated_at": "04 October 2026 @ 14:19 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://jpyann.itch.io/unschool-battle-fanmade",
         "name": "Unschool Battle Fan-Made",
         "dev": "JPYann",
-        "description": "Ini adalah game yang saya buat sebagai viewer Marapthon, mengambil salah satu aktivitasnya, yaitu Unschool Battle .",
+        "description": "#AAAClan #Marapthon #Fan-Made #UnschoolBattle",
         "genre": "Educational",
         "status": "Released",
         "publisher": "N/A",
@@ -19096,13 +19182,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://killgorack.itch.io/galactic-drift",
         "name": "Galactic Drift",
         "dev": "KillGorack",
-        "description": "Navigate a colorful 2D world in this fast‑paced top‑down scroller.",
+        "description": "Fast paced 2D destruction",
         "genre": "Shooter",
         "status": "Released",
         "publisher": "N/A",
@@ -19133,13 +19222,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://antiquegeargames.itch.io/letter-dragon",
-        "name": "Letter Dragon",
+        "name": "Letter Dragon Classic",
         "dev": "AntiqueGearGames",
-        "description": "You're a dragon bee who has a delivery service.",
+        "description": "You're a dragon delivering mail in this chill racing game.",
         "genre": "Racing",
         "status": "Released",
         "publisher": "N/A",
@@ -19171,7 +19263,10 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "26 August 2026 @ 16:11 UTC"
+        "updated_at": "26 August 2026 @ 16:11 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://rotemeshet.itch.io/veptaleta",
@@ -19197,13 +19292,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://carlossss111.itch.io/timebeat",
         "name": "Timebeat 32",
         "dev": "Dan R",
-        "description": "Feel the rhythm in JUST 32 kilobytes! Hot new game for the Nintendo Gameboy! ------------------------- [ How to play ] Timebeat is a rhythm game for the 1989 Nintendo Gameboy programmed to fit on t...",
+        "description": "Feel the rhythm in JUST 32 kilobytes!",
         "genre": "Rhythm",
         "status": "Released",
         "publisher": "N/A",
@@ -19231,40 +19329,57 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ghanimationpro.itch.io/doki-doki-arakisou",
-        "name": "Doki Doki 心跳荒木莊",
+        "name": "Doki Doki Arakisou",
         "dev": "Gentleman Hat Animation Production",
-        "description": "(遊戲可以正常玩了，有bug請通知我😭。) 簡介 吉良陷入一個十分奇妙的夢境。夢中的他和荒木莊各人也在同一所高中上學，並在一個名為荒木莊的文學部一起活躍。 傲嬌任性的後輩Dio、聰明過人的文靜科學家卡兹、青梅竹馬的多比歐、最喜歡Dio的普奇、文學部的部長瓦倫泰、有點野性的迪亞哥和神秘的文藝書生透龍。 劇情走向逐漸瞹眛（失控），吉良能逃出這夢境嗎？ (我有點事要幹，暫時隨便掉上來。) Visu...",
+        "description": "Doki Doki 心跳荒木莊",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "5.0",
         "rating_count": "1",
-        "average_session": "N/A",
+        "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3NDA1MzUwLnBuZw==/original/hmfAky.png",
         "tags": [
             "2D",
+            "dokidoki",
             "Fangame",
             "Horror",
+            "jjba",
+            "jojo",
             "Psychological Horror",
             "Singleplayer"
         ],
         "platforms": [
             "HTML5"
         ],
-        "languages": [],
-        "inputs": [],
+        "languages": [
+            "English",
+            "Chinese",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
         "made_with": [
             "Twine"
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "30 September 2026 @ 17:57 UTC"
+        "updated_at": "30 September 2026 @ 17:57 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://rafaelstc.itch.io/geometrysaga",
@@ -19293,13 +19408,19 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://jacobshankland.itch.io/technobabel",
         "name": "TECHNOBABEL",
         "dev": "JacobShankland",
-        "description": "A lone operative must ascend an incomprehensibly huge tower to take out the rogue OS at the top.",
+        "description": "\"Welcome, Number 93. And good luck.\"",
         "genre": "Shooter",
         "status": "Released",
         "publisher": "N/A",
@@ -19322,13 +19443,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://jjdadvrgt.itch.io/e-taggers-v12",
-        "name": "E taggers v12",
+        "name": "E taggers v13",
         "dev": "jjdadvrgt",
-        "description": "N/A",
+        "description": "There doesn't appear to be anything here…",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -19344,13 +19468,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://lumbric-studios.itch.io/ultimate-tic-tac-toe",
         "name": "Ultimate Tic Tac Toe",
         "dev": "Lumbric Studios",
-        "description": "Ultimate Tic Tac Toe Think you know Tic Tac Toe? Think again.",
+        "description": "Ultimate Tic Tac Toe Think you know Tic Tac Toe?",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -19384,13 +19511,18 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "13 September 2026 @ 06:58 UTC"
+        "updated_at": "13 September 2026 @ 06:58 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://forestier.itch.io/crypto-empire-epic-idle-clicker",
         "name": "Crypto Empire: Epic Idle Clicker",
         "dev": "Forestier",
-        "description": "Welcome to the ultimate crypto mining experience! Start from the bottom with just your trusty mouse and click your way to becoming a billionaire crypto tycoon.",
+        "description": "Tap to mine crypto, upgrade your rig, and become a billionaire tycoon in this epic idle clicker game!",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -19421,14 +19553,19 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://ira.itch.io/encore",
         "name": "ENCORE",
         "dev": "Ira",
-        "description": "Score-attack platformer-shooter elevator-action game about climbing a building and defuse bombs before time runs out.",
-        "genre": "Platformer",
+        "description": "score-attack platformer-shooter elevator-action game",
+        "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
@@ -19453,7 +19590,10 @@
             "PICO-8"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://hakizawa.itch.io/the-hole",
@@ -19488,13 +19628,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://infinite-hack.itch.io/going-up-isnt-that-hard",
         "name": "Going Up Isn't THAT Hard...",
         "dev": "Infinite Hack",
-        "description": "Master Platformification to Climb the Tower in Search of the Treasure! Don't Platformisize too much or you will have to reset your Platformification Count! Confused about this Platformification gim...",
+        "description": "Master Platformification to Climb the Tower in Search of the Treasure!",
         "genre": "Platformer",
         "status": "Released",
         "publisher": "N/A",
@@ -19517,7 +19660,10 @@
             "GDevelop"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://paburogames.itch.io/the-hidden-gallery",
@@ -19548,7 +19694,13 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://isaacdinn0.itch.io/ursina-parkour-game1",
@@ -19579,13 +19731,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://goldennone10.itch.io/secrets-of-the-memories",
         "name": "Secrets of the memories",
         "dev": "GoldenNone10",
-        "description": "Secrets of the memories History: After a devastating car accident on a desolate highway, 16-year-old Lilith Violet awakens in a strange, empty hospital.",
+        "description": "Wake up in a hospital of living memories. Flee from merciless shadows and uncover Lilith’s tragic secret.",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -19614,13 +19769,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://greencube7.itch.io/cancelledmod2",
         "name": "sprunki phase EVIL!!!!!!!!!!!!! (Cancelled Incredibox Mod)",
         "dev": "Turd Muncher Supreme",
-        "description": "Long before Nyanko made Sprunki's cancel'd remaster, I made this mod to try and get the Sprunki fans that still remain'd to just accept that it's gone and let Sprunki fade into obscurity.",
+        "description": "Another cancel'd Incredibox mod. This one was a subtle message to Sprunki fans to just let it die.",
         "genre": "Rhythm",
         "status": "Released",
         "publisher": "N/A",
@@ -19647,13 +19805,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://lerdn.itch.io/minesense",
         "name": "MINESENSE",
         "dev": "Lerdn",
-        "description": "This is the minesweeper version with new cell type s , they are described in more detail in the training, in short - the red cell works within a radius of 2 cells, and the purple one shows the zone...",
+        "description": "This is the minesweeper version with new cell type s , they are described in more detail in the training, in short - the red cell works within a radius of 2 cells, and the purple one shows the...",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -19679,7 +19840,10 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://tiagogames456.itch.io/the-greedy-balloon",
@@ -19703,7 +19867,10 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://gutiq.itch.io/fire-line",
@@ -19718,7 +19885,7 @@
         "rating_count": "N/A",
         "average_session": "N/A",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA1Nzc2LmpwZw==/original/7Wr%2FLV.jpg",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5ODEzMjgzLmpwZWc=/original/8Pp8V2.jpeg",
         "tags": [
             "2D",
             "Sprites"
@@ -19731,13 +19898,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "19 September 2026 @ 07:19 UTC"
+        "updated_at": "19 September 2026 @ 07:19 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://coldplungegames.itch.io/the-flood-is-imminent",
         "name": "The flood is imminent",
         "dev": "Cold Plunge Games",
-        "description": "The flood is imminent prototype An incremental strategy game about surviving the flood.",
+        "description": "Incremental strategy game about surviving the flood",
         "genre": "Strategy",
         "status": "Released",
         "publisher": "N/A",
@@ -19752,7 +19922,8 @@
             "Incremental"
         ],
         "platforms": [
-            "HTML5"
+            "HTML5",
+            "Windows"
         ],
         "languages": [],
         "inputs": [],
@@ -19760,13 +19931,18 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://beansteamuser.itch.io/ragdoll-fun-4-old",
         "name": "Ragdoll fun 4 (OLD)",
         "dev": "-_-",
-        "description": "All the credits to ragdolldude, read the README.",
+        "description": "All the credits to ragdolldude, read the README.txt archive https://discord.gg/EHXatspmVR discord server of ragdolldude",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -19788,13 +19964,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://beekie.itch.io/randomly-generated-sokoban",
         "name": "randomly generated sokoban",
         "dev": "tess (beekie)",
-        "description": "Press [action] to save your state! This is the first in a series of five unrelated games I made and never published.",
+        "description": "what it says on the tin!",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -19816,13 +19995,16 @@
             "PuzzleScript"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://pdh1216.itch.io/chameleon-chess",
         "name": "Chameleon Chess",
         "dev": "pdh1216",
-        "description": "# EVERY CAPTURE CHANGES YOU.",
+        "description": "Every capture evolves your pieces.",
         "genre": "Strategy",
         "status": "Released",
         "publisher": "N/A",
@@ -19848,7 +20030,14 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://haseyuu38.itch.io/ryz4",
@@ -19874,13 +20063,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ytchained.itch.io/flood-of-olympusbeta",
         "name": "Flood-Of-Olympus",
         "dev": "Yt:Chained",
-        "description": "Hi Flood of Olympus is a strategic puzzle game where you harness the power of the gods to conquer the grid.",
+        "description": "puzzle game made with ai :D",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -19900,13 +20092,21 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://diogopipas.itch.io/spell-crafter",
         "name": "Spell Crafter",
         "dev": "diogopipas",
-        "description": "You can craft spells and shoot them at enemies! what more do you want? Maybe new bosses and spells? If so please donate in order to support the continuous development of the game!",
+        "description": "Combine 5 elements, 5 forms, and 5 modifiers into 125 spells. Chain elemental reactions. Survive a procedural dungeon.",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
@@ -19930,13 +20130,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://buas.itch.io/trample",
-        "name": "TRAMPLE_Eldritch Eatery: table for two",
+        "name": "Team Trample - Eldritch Eatery: Table for Two",
         "dev": "Breda University of Applied Sciences",
-        "description": "Serve the Eldritch couple by completing tasks around the restaurant that slowly lower your Sanity.",
+        "description": "A chaos management job as a waitress in an unfamiliar restaurant.",
         "genre": "Strategy",
         "status": "Released",
         "publisher": "N/A",
@@ -19945,7 +20148,7 @@
         "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MjM4MDI2LnBuZw==/original/%2B7qlER.png",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3ODI2NTM5LmpwZw==/original/zB00Ki.jpg",
         "tags": [
             "Management",
             "Singleplayer"
@@ -19955,13 +20158,18 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://spoonzard.itch.io/blind-beats",
         "name": "Blind Beats",
         "dev": "Spoonzard",
-        "description": "VIDEO: Use the arrow keys to sing when you hear the cue! ok that's all bubye",
+        "description": "A rhythm game with NO GRAPHICS",
         "genre": "Rhythm",
         "status": "Released",
         "publisher": "N/A",
@@ -19986,13 +20194,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://shinkujo-think.itch.io/lovedryad",
         "name": "LOVE♥ドライアド 体験版",
         "dev": "深紅城(shinkujo)",
-        "description": "「金の花を咲かせるのに必要なもの！それは！愛情なのですわ～！」 愛してくれなきゃ萎れちゃう！ 三つのワードをドラッグ&ドロップ！可愛くてちょっぴり面倒くさい彼女へ、かける言葉を組み合わせよう！ キュートで美麗なドット絵ラブコメADV！ ゲームダンジョン10で公開した LOVE♥ドライアド の体験版＆おまけシナリオです。 Win版 はページ下のダウンロードリンクから落とせます。 ★ 本編を遊びたい方...",
+        "description": "短編ドット絵ラブコメディ！",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -20013,13 +20224,16 @@
             "TyranoBuilder"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://machinebreaker.itch.io/torchbound",
         "name": "Torchbound",
         "dev": "Machine Breaker",
-        "description": "You are alone in a cursed village that reshapes itself with the darkness.",
+        "description": "A cursed village that changes with darkness. Survive using only your torch and uncover what hunts you.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -20055,6 +20269,11 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": []
     }
 ]
