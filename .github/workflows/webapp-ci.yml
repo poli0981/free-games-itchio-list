@@ -39,6 +39,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # The web build never runs `tauri build`, which refuses mismatched
+      # crate / npm versions; without this a Dependabot bump on one side
+      # surfaces only when the release workflows run on a tag.
+      - name: Tauri crates match their npm packages
+        run: npm run check:tauri
+
       - name: Worker types are up to date
         run: npm run cf:types -- --check
 

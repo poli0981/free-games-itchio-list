@@ -63,10 +63,14 @@ updates:
       actions:
         patterns: ['*']
 
+  # Weekly on Mondays like npm, so tauri-rs and tauri-js bumps land together:
+  # `tauri build` (release workflows only) refuses crate / npm versions on a
+  # different major.minor; Webapp CI's check:tauri step catches a one-sided bump.
   - package-ecosystem: cargo
     directory: /webapp/src-tauri
     schedule:
-      interval: monthly
+      interval: weekly
+      day: monday
     groups:
       tauri-rs:
         patterns: ['tauri*']
