@@ -10,6 +10,7 @@ then the least recently checked — about 1/7 of the catalog by default, so
 every game is re-checked weekly. From that single page it derives:
   - alive:  404/410  → "dead" strike
   - price:  paid     → "paid" strike
+  - access: itch.io's password form instead of the game → "private" strike
   - rating, rating_count, status, ai_disclosure / ai_content / accessibility
     (+ backfills release_date / thumbnail / updated_at when missing)
 A game is removed only when the same strike is seen again at least
@@ -58,6 +59,7 @@ from scraper import (
     find_title,
     has_info_panel,
     is_free_game,
+    is_password_protected,
     now_iso,
     parse_game,
     parse_info_table,
@@ -80,10 +82,16 @@ MASS_FLOOR = 10
 MASS_SHARE = 0.10
 
 REASON_PAID = "Game became paid"
+REASON_PRIVATE = "Game page is password-protected"
 
 
 def reason_dead(code: int) -> str:
     return f"Game page no longer exists (HTTP {code})"
+
+
+def removal_kind(reason: str) -> str:
+    """The strike kind ("dead", "paid", "private") a removal reason was written for."""
+    return {REASON_PAID: "paid", REASON_PRIVATE: "private"}.get(reason, "dead")
 
 
 # ---------------------------------------------------------------------------
@@ -227,6 +235,8 @@ def check_game(
         return strike("dead", reason_dead(page.status))
 
     soup = page.soup
+    if soup is not None and is_password_protected(soup):
+        return strike("private", REASON_PRIVATE)
     if soup is None or find_title(soup) == NA:
         entry["fails"] = entry.get("fails", 0) + 1
         return "parse_fail", {}, None, entry
@@ -281,7 +291,10 @@ def _write_outputs(stats: dict) -> None:
             ("Checked", stats["checked"]),
             ("Fields changed (games)", stats["changed"]),
             ("New strikes", stats["strikes"]),
-            ("Removed (dead / paid)", f"{stats['removed_dead']} / {stats['removed_paid']}"),
+            (
+                "Removed (dead / paid / private)",
+                f"{stats['removed_dead']} / {stats['removed_paid']} / {stats['removed_private']}",
+            ),
             ("Removals withheld (mass-change guard)", stats["withheld"]),
             ("Errors / parse failures", f"{stats['errors']} / {stats['parse_fail']}"),
             ("HTTP 429/503", stats["http_429"]),
@@ -309,7 +322,7 @@ def keep_struck(patch: dict, state: dict, removals: list[dict], stats: dict, mar
             entry["full"] = removal["deleted_at"]
         patch["refresh_state"][removal["url"]] = entry
         stats["removed"] -= 1
-        stats["removed_" + ("paid" if removal["reason"] == REASON_PAID else "dead")] -= 1
+        stats["removed_" + removal_kind(removal["reason"])] -= 1
     patch["removals"] = [r for r in patch["removals"] if r["url"] not in urls]
 
 
@@ -425,6 +438,7 @@ def main(argv: list[str] | None = None) -> int:
             "removed",
             "removed_dead",
             "removed_paid",
+            "removed_private",
             "errors",
             "parse_fail",
             "http_429",

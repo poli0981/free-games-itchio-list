@@ -11,6 +11,7 @@ from scraper import (
     detect_nsfw,
     extract_description,
     extract_tagline,
+    is_password_protected,
     parse_game,
     parse_retry_after,
 )
@@ -113,6 +114,12 @@ def test_page_without_info_panel():
     record = parse_game(load_fixture_soup("game_no_info.html"), "https://x.itch.io/y")
     assert record["name"] == "Mystery Page"
     assert record["genre"] == NA and record["tags"] == []
+
+
+def test_password_page_is_recognised():
+    assert is_password_protected(load_fixture_soup("game_password.html"))
+    assert not is_password_protected(load_fixture_soup("game_free_full.html"))
+    assert not is_password_protected(load_fixture_soup("game_no_info.html"))
 
 
 def test_mature_notice_marks_nsfw():

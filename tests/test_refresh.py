@@ -83,6 +83,23 @@ def test_paid_page_strike_then_removal():
     assert outcome == "removed_paid" and removal["reason"] == "Game became paid"
 
 
+def test_password_protected_page_strike_then_removal():
+    game = make_game("a")
+    outcome, updates, removal, entry = refresh.check_game(
+        game, ok_page("game_password.html"), {"fails": 3}, NOW
+    )
+    assert outcome == "strike_private" and removal is None and not updates
+    assert entry["strike"] == "private" and "fails" in entry
+    outcome, _, removal, _ = refresh.check_game(
+        game, ok_page("game_password.html"), entry, TOMORROW_NOW
+    )
+    assert outcome == "removed_private"
+    assert removal["reason"] == "Game page is password-protected"
+    assert refresh.removal_kind(removal["reason"]) == "private"
+    assert refresh.removal_kind("Game became paid") == "paid"
+    assert refresh.removal_kind("Game page no longer exists (HTTP 404)") == "dead"
+
+
 def test_different_strike_kind_restarts_the_count():
     game = make_game("a")
     entry = {"strike": "paid", "strike_at": "2026-09-10T03:00:00Z"}

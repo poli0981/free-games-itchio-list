@@ -13,6 +13,7 @@ import { useT, type MessageKey } from '@/lib/i18n'
 function reasonKey(reason: string): MessageKey | null {
   if (/no longer exists|HTTP 4(?:04|10)/i.test(reason)) return 'deleted.reason.gone'
   if (/became paid/i.test(reason)) return 'deleted.reason.paid'
+  if (/password-protected/i.test(reason)) return 'deleted.reason.private'
   return null
 }
 

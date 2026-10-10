@@ -6,7 +6,8 @@ Flow:
   2. Canonicalize; drop invalid URLs, duplicates, games already in the catalog
      and games in scripts/deleted_games.json (the admin restores a deleted
      game by removing its log entry when approving it again)
-  3. Fetch each page → keep only free games (with an `added_at` stamp)
+  3. Fetch each page → keep only free games (with an `added_at` stamp); a
+     password-protected page ends the link like a dead one
   4. Emit a patch (see patch.py). URLs that finished (added / paid / dead /
      skipped) are dropped from the queue; transient failures stay queued and
      are retried; a link is given up after MAX_ATTEMPTS failures at least
@@ -37,7 +38,7 @@ from data_store import get_all_urls, load_all_games
 from json_io import load_json
 from patch import new_patch, write_patch
 from refresh import fetch_with_backoff
-from scraper import NA, Pacer, create_session, now_iso, parse_game
+from scraper import NA, Pacer, create_session, is_password_protected, now_iso, parse_game
 
 TEMP_LINK = "scripts/temp_link.json"
 DELETED_LOG = "scripts/deleted_games.json"
@@ -87,7 +88,18 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Added from workflow input: {input_url}")
 
     stats = dict.fromkeys(
-        ("queued", "added", "paid", "dead", "duplicate", "deleted", "invalid", "retry", "gave_up"),
+        (
+            "queued",
+            "added",
+            "paid",
+            "dead",
+            "private",
+            "duplicate",
+            "deleted",
+            "invalid",
+            "retry",
+            "gave_up",
+        ),
         0,
     )
     stats["queued"] = len(queue)
@@ -146,7 +158,9 @@ def main(argv: list[str] | None = None) -> int:
             continue
 
         outcome = ""
-        if page.status == 200 and page.soup is not None:
+        if page.status == 200 and page.soup is not None and is_password_protected(page.soup):
+            outcome = "private"  # final: nobody can open it, so retrying won't help
+        elif page.status == 200 and page.soup is not None:
             record = parse_game(page.soup, url)
             if record["name"] == NA:
                 outcome = "error: no title"
@@ -186,6 +200,7 @@ def main(argv: list[str] | None = None) -> int:
     write_patch(args.out, patch)
     print(
         f"\nDone — {stats['added']} added, {stats['paid']} paid, {stats['dead']} dead, "
+        f"{stats['private']} password-protected, "
         f"{stats['duplicate']} duplicates, {stats['deleted']} previously deleted, "
         f"{stats['invalid']} invalid, {stats['retry']} to retry, {stats['gave_up']} given up."
     )
