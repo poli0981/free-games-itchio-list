@@ -3,7 +3,7 @@
         "url": "https://bubu07.itch.io/late-pizza-delivery",
         "name": "Late Pizza Delivery",
         "dev": "BubuWorks",
-        "description": "The Job You work as a pizza delivery driver in a local pizzeria.",
+        "description": "Deliver the pizza. Survive. What can go wrong?",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -35,7 +35,11 @@
             "Spanish; Castilian",
             "Spanish; Latin America",
             "French",
-            "Italian"
+            "Italian",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)"
         ],
         "inputs": [
             "Keyboard",
@@ -49,13 +53,20 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "21 August 2026 @ 13:10 UTC"
+        "updated_at": "21 August 2026 @ 13:10 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://mourners.itch.io/yes-im-alone",
         "name": "Yes, I'm alone.",
         "dev": "Mourner",
-        "description": "YES, I'M ALONE.",
+        "description": "You didn’t let anyone in… now how will you escape from HIM?",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -84,13 +95,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 14:39 UTC"
+        "updated_at": "16 September 2026 @ 14:39 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://polypaw.itch.io/small-mouse-big-house",
         "name": "Small Mouse Big House",
         "dev": "Polypaw",
-        "description": "Small Mouse Big House ! Small Mouse, Big House is a first-person short horror experience developed by Polypaw , with a playtime of around 20 to 30 minutes .",
+        "description": "A tiny mouse, a huge house, and terrifying dangers in every corner.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -119,19 +133,22 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "02 September 2026 @ 21:40 UTC"
+        "updated_at": "02 September 2026 @ 21:40 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://bigmamafatcat.itch.io/sweet-valentine-chocolatier",
         "name": "Sweet Valentine Chocolatier (COMPLETE)",
         "dev": "bigmamafatcat",
-        "description": "✨ Play SVC on Steam ! ✨ Spring is knocking at your shop's door -- so are your potential love interests! As a chocolatier, can you balance work, romance, and mini games during the Spring Festival se...",
+        "description": "Spring is knocking at your door. So are your love interests!",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "232",
+        "rating_count": "233",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI1NTc5MDgxLnBuZw==/original/nu%2BA4B.png",
@@ -159,13 +176,16 @@
             "Ren'Py"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://polypaw.itch.io/smiley-dusty",
         "name": "Smiley Dusty",
         "dev": "Polypaw",
-        "description": "Smiley Dusty is a short story horror experience with a focus on exploration and dialogues to tell its story \"Average playtime 30min to 1 Hour\" \"Working on Windows 64 & 32 bit \" March 10th, 2000.",
+        "description": "Something smiles from Outside, learning what hunts in the night.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -201,13 +221,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "02 September 2026 @ 21:39 UTC"
+        "updated_at": "02 September 2026 @ 21:39 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://abho.itch.io/cobb-can-move",
         "name": "COBB CAN MOVE",
-        "dev": "abho",
-        "description": "COBB CAN MOVE is a survival horror game where the rules change.",
+        "dev": "abho, Vystel",
+        "description": "A horror game where the rules change.",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -246,13 +269,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 09:34 UTC"
+        "updated_at": "16 September 2026 @ 09:34 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ookii-tsuki.itch.io/teke-teke-moonlit-dread",
         "name": "Teke Teke: Moonlit Dread",
         "dev": "Medo",
-        "description": "This game is inspired by the Japanese urban legend Teke Teke After a disturbing online article, you set out for a late-night grocery run, only to find yourself trapped in a convenience store near a...",
+        "description": "Game based on a Japanese urban legend",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -294,13 +320,18 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 05:49 UTC"
+        "updated_at": "16 September 2026 @ 05:49 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://haraiva.itch.io/dawn-chorus-demo",
         "name": "DAWN CHORUS [DEMO]",
         "dev": "haraiva, isyourguy",
-        "description": "a time capsule from the future; a chronicle of a dying city; a story about two friends (and everyone else); a looming cosmic phenomenon; a record of a band named Dawn Chorus; → a browser-based inte...",
+        "description": "tales of the pre-apocalypse",
         "genre": "Interactive Fiction",
         "status": "Released",
         "publisher": "N/A",
@@ -331,19 +362,22 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://biogenesis.itch.io/carfishing",
         "name": "MY SUMMER DAYS: CARFISHING",
         "dev": "biogenesis, Birdlay",
-        "description": "MY SUMMER DAYS: CARFISHING - In Another World I Got Trapped In My Gravity Manipulating Car And Was Forced Into A Life Catching & Selling Fish In Order To Afford The Huge Door Repair Fee is a first ...",
+        "description": "Fish from your car!",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.4",
-        "rating_count": "14",
+        "rating": "4.5",
+        "rating_count": "15",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE5NjkyNjMyLmpwZw==/original/WE3K%2Fm.jpg",
@@ -358,37 +392,39 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://mookichuu.itch.io/overdose",
-        "name": "OVERD0SE [demo]",
+        "name": "OVERD0SE",
         "dev": "Mooki !!",
-        "description": "“After surviving a suspicious car accident, you wake up in a hospital under the care of a doctor who seems to know far too much about you.",
+        "description": "Side effects may vary.",
         "genre": "Visual Novel",
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "472",
-        "average_session": "A few seconds",
+        "rating_count": "497",
+        "average_session": "A few hours",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MDc4Mzk4LnBuZw==/original/gC9EfW.png",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDk4NTYzLmdpZg==/original/L7HFbh.gif",
         "tags": [
             "Anime",
-            "Atmospheric",
             "Dating Sim",
             "Horror",
             "Mystery",
             "Psychological Horror",
             "Romance",
-            "Sprites"
+            "Sprites",
+            "Yandere"
         ],
         "platforms": [
             "HTML5",
             "Windows",
-            "macOS",
-            "Linux"
+            "macOS"
         ],
         "languages": [
             "English"
@@ -399,19 +435,24 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "04 October 2026 @ 17:23 UTC"
+        "updated_at": "04 October 2026 @ 17:23 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://hahadit.itch.io/creepydates",
         "name": "CreepyDates",
         "dev": "Hahadit",
-        "description": "Hello, welcome to this creepypasta dating simulator fangame i made called CREEPYDATES (very original, heh), CHAPTER 1 AND 2 AVAILABLE NOW You will be able to customize yourself and meet your favorite ...",
+        "description": "A creepypasta dating simulator fangame",
         "genre": "Visual Novel",
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "1978",
+        "rating_count": "1994",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2Mzk3ODg5LnBuZw==/original/H42ZSJ.png",
@@ -437,19 +478,22 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 11:19 UTC"
+        "updated_at": "16 September 2026 @ 11:19 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://noelcody.itch.io/moss-moss",
         "name": "Moss Moss",
         "dev": "Noel Cody",
-        "description": "Play Moss Moss to moss the world and find secrets.",
+        "description": "Moss the world and find secrets (PICO-8).",
         "genre": "Platformer",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "1573",
+        "rating_count": "1582",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2MTExNDM4LmdpZg==/original/zf17cf.gif",
@@ -464,7 +508,10 @@
             "Singleplayer"
         ],
         "platforms": [
-            "HTML5"
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
         ],
         "languages": [],
         "inputs": [],
@@ -473,19 +520,22 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 10:27 UTC"
+        "updated_at": "15 September 2026 @ 10:27 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://paranoidhawk.itch.io/lookouts",
         "name": "Lookouts",
         "dev": "paranoidhawk, coldoggo",
-        "description": "Two lookouts meet in a desert, far from the sight of their gangs.",
+        "description": "A fateful meeting of queer outlaws in the desert.",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "01 April 2022 @ 02:45 UTC",
         "rating": "4.9",
-        "rating_count": "2548",
+        "rating_count": "2552",
         "average_session": "A few hours",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzg1NDkwNjEucG5n/original/h4A40i.png",
@@ -498,7 +548,8 @@
             "Queer",
             "Romance",
             "Transgender",
-            "Western"
+            "Western",
+            "Wild West"
         ],
         "platforms": [
             "HTML5",
@@ -524,19 +575,25 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "05 September 2026 @ 22:30 UTC"
+        "updated_at": "05 September 2026 @ 22:30 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button",
+            "Blind friendly"
+        ]
     },
     {
         "url": "https://graebor.itch.io/sort-the-court",
         "name": "Sort the Court!",
         "dev": "Graeme Borland",
-        "description": "To play on mobile devices, or in other languages, check out the updated version exclusive to Poki .",
+        "description": "Give your decree in simple yes or no answers, and help the kingdom grow!",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "11055",
+        "rating_count": "11067",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvNDczNjcvMjA1ODcxLnBuZw==/original/VFJ3Yl.png",
@@ -562,13 +619,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 08:30 UTC"
+        "updated_at": "16 September 2026 @ 08:30 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://moi0210.itch.io/nocturnal-visit",
         "name": "Nocturnal Visit",
         "dev": "MoiDev",
-        "description": "Game time: around 10 minutes.",
+        "description": "Short horror game set in an abandoned house.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -609,13 +669,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 06:41 UTC"
+        "updated_at": "16 September 2026 @ 06:41 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://monamenagerie.itch.io/barista-hero-wheel-edition",
         "name": "Barista Hero (Wheel edition)",
         "dev": "MonaMenagerie",
-        "description": "Ran out of time to fix the mess of my original attempt.",
+        "description": "Barista Hero - featuring Wheel from the Wheel Jam",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -635,13 +698,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://big-shield-games.itch.io/tiny-towers-playtest",
-        "name": "Tiny Towers (v0.3.5)",
+        "name": "Tiny Towers",
         "dev": "David Elliot, romeo2487",
-        "description": "Tiny Towers is an active incremental game where you defend your tiny fortress from hordes of tiny mobs.",
+        "description": "Incremental tower defense",
         "genre": "Strategy",
         "status": "In development",
         "publisher": "N/A",
@@ -650,7 +716,7 @@
         "rating_count": "249",
         "average_session": "N/A",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2OTM4Mjk5LmdpZg==/original/fdrNe%2B.gif",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NjIyMzM4LmdpZg==/original/BTXmS7.gif",
         "tags": [
             "2D",
             "Clicker",
@@ -673,19 +739,22 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ctmatthews.itch.io/hyper-bun-buster-demo",
         "name": "Hyper Bun Buster: Rocket Hammer Action (demo)",
         "dev": "C.T. Matthews",
-        "description": "CONTROLS WASD/Arrows (hold): Move and attack (by bumping into enemies) Space: Bomb (uses 1 carrot) Take control of Tess, a bunny girl who uses her huge hammer to send enemies flying into other enem...",
+        "description": "Top-down bump combat arcade action!",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "44",
+        "rating_count": "45",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2NzU4ODc4LmdpZg==/original/jSs1Mg.gif",
@@ -705,13 +774,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "30 September 2026 @ 10:54 UTC"
+        "updated_at": "30 September 2026 @ 10:54 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://innervisionstudio.itch.io/eod",
         "name": "Echoes Of Delivery",
         "dev": "INNERVISION.Studio",
-        "description": "Survive.",
+        "description": "Deliver packages in a restricted zone where something is watching you. The job must be done.",
         "genre": "Simulation",
         "status": "In development",
         "publisher": "N/A",
@@ -752,13 +824,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "07 September 2026 @ 19:57 UTC"
+        "updated_at": "07 September 2026 @ 19:57 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://frienziedelf-5929.itch.io/horror-game",
         "name": "Paranoia",
         "dev": "Frienziedelf",
-        "description": "Paranoia is a first person low-poly phycological mascot horror game where a child enters an abandoned hospital from the 1950s in his dreams and explores it 15 years after it was abandoned.",
+        "description": "A terrible horror game made for a game jam",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -788,7 +863,10 @@
             "Blender"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://s-xavier-uy.itch.io/math-with-kyoukei-chan",
@@ -823,13 +901,16 @@
             "RPG Maker"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://fourseasons.itch.io/vicrex",
         "name": "VIC=REX",
         "dev": "Fourseasons",
-        "description": "VIC=REX is a retro game written (badly) by Alberto (BCO) Sgaggero in BASIC V2 for the glorious Commodore VIC-20 .",
+        "description": "A PETSCII reinterpretation of Chrome Dino written in BASIC V2 for the VIC-20.",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -855,13 +936,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://muppetsg2.itch.io/dog-of-war",
         "name": "Dog Of War",
         "dev": "Muppetsg2, MAIPA01, Westesc, karvovski",
-        "description": "A dog cursed to endless suffering seeks hope in a wishing star to free himself from his torment.",
+        "description": "Help me get to dog heaven.",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -897,7 +981,10 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://beppe93.itch.io/the-sentinel",
@@ -910,7 +997,7 @@
         "release_date": "N/A",
         "rating": "N/A",
         "rating_count": "N/A",
-        "average_session": "N/A",
+        "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3MTgxMjQzLnBuZw==/original/jNFThM.png",
         "tags": [
@@ -918,17 +1005,27 @@
             "Sci-fi"
         ],
         "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://luoxing77.itch.io/filecusersvandedownloadsa-fast-jrpg203201html",
         "name": "a fast jrpg",
         "dev": "luoxing77",
-        "description": "a fast jrpg made by bitsy",
+        "description": "hello happy world",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -948,13 +1045,16 @@
             "bitsy"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://azarashibainu.itch.io/escape-game-miyagi-souvenir-shop",
         "name": "Escape game ~Miyagi Souvenir Shop~",
         "dev": "azarashibainu",
-        "description": "Escape from Miyagi’s Souvenir Shop! Click around and search for useful items.",
+        "description": "Discover the secrets hidden inside a Miyagi souvenir shop.",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -978,7 +1078,10 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://kuojuian.itch.io/ghostroom-0510",
@@ -1005,13 +1108,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://miketendev.itch.io/the-hambagu-shop",
         "name": "The Hambagu Shop",
         "dev": "Mike Ten",
-        "description": "Demo play time: 20 - 30 minutes --- The Hambagu Shop is a cozy horror simulator where you work in a Japanese Hamburg Steak Shop.",
+        "description": "Cozy Horror Game where you work in a Japanese Hamburg Restaurant",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -1059,13 +1165,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://escapebox.itch.io/the-broken-vow",
         "name": "The Broken Vow - Extended Version",
         "dev": "Escapebox",
-        "description": "After Clark's death, John visits his grandmother Emma, but soon realizes something is wrong — and that she’s no longer the same.",
+        "description": "Short Horror Game",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -1103,19 +1212,24 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "10 September 2026 @ 13:50 UTC"
+        "updated_at": "10 September 2026 @ 13:50 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://nyewks.itch.io/cryptid-coffeehouse",
         "name": "Cryptid Coffeehouse",
         "dev": "nukes",
-        "description": "everyone's heard of mothman– the big, scary, feathery moth creature that haunts around the outskirts of point pleasant, west virginia– but no one's ever heard of it like this! in some random idylli...",
+        "description": "the (moth)man, the myth, the legend: now in sexy dateable human form",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "14 January 2022 @ 05:00 UTC",
         "rating": "4.9",
-        "rating_count": "754",
+        "rating_count": "753",
         "average_session": "A few hours",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE4NTg5NTM4LnBuZw==/original/%2FoUt2c.png",
@@ -1147,13 +1261,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 10:25 UTC"
+        "updated_at": "15 September 2026 @ 10:25 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://banya.itch.io/deep-inside",
         "name": "Deep Inside",
         "dev": "Banya",
-        "description": "Nobody talks about the fire incident at Estmour mansion.",
+        "description": "Nobody talks about the fire incident at Estmour mansion. As the new servant, you're bound to keep silence... will you?",
         "genre": "Role Playing",
         "status": "Released",
         "publisher": "N/A",
@@ -1200,13 +1317,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 11:08 UTC"
+        "updated_at": "15 September 2026 @ 11:08 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://hamdanakmal.itch.io/a-level-below",
         "name": "A Level Below",
         "dev": "HamdanAkmal",
-        "description": "🎮 About the Game A Level Below is a short anomaly-spotting exploration game where you descend through a series of 7 identical floors.",
+        "description": "Descend through repeating floors. Spot subtle changes and decide carefully—one mistake can cost everything.",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
@@ -1242,13 +1362,16 @@
             "Audacity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://stefano-cagnani-3.itch.io/apollo-18",
         "name": "APOLLO 18",
         "dev": "Stefano Cagnani V3",
-        "description": "IMPORTANT CONTROLS: WASD - Move + Mouse camera L.",
+        "description": "Apollo 18, secret mission to stop the end of the world!",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -1266,13 +1389,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://yeswhat.itch.io/where",
         "name": "Where the Visual Novel",
         "dev": "Yeswhat",
-        "description": "\"Where” is a surreal horror visual novel with point-and-click elements.",
+        "description": "Surreal visual novell with point and click elements. Will you figure out the mystery?",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -1306,13 +1432,19 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 09:41 UTC"
+        "updated_at": "15 September 2026 @ 09:41 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://love-elizabeth.itch.io/actual-magical",
         "name": "An Actual Magical Real-Life Girl",
-        "dev": "phantom thief elizabeth, Dreamarauder, DreamByte, Andi Harper, Irohenrii, yosharoos, cygniius, Leahs-attic",
-        "description": "-`♡´- Magical Girl versus Princess! Play as Rin, an actual magical real-life girl solving mysteries around town! -`♡´- A visual novel with 5k+ words and two endings! -`♡´- Stay tuned for additional up...",
+        "dev": "elizabeth @ sugarxxholic",
+        "description": "Don't try to act cute!",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -1348,13 +1480,16 @@
             "Ren'Py"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://terraformingtitans.itch.io/terraforming-titans",
-        "name": "Terraforming Titans",
+        "name": "Terraforming Titans Classic",
         "dev": "terraforming.titans",
-        "description": "This is an incremental game about terraforming.",
+        "description": "An incremental game about terraforming",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -1389,13 +1524,22 @@
             "Three.js"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://onlyonepen.itch.io/toilet-dweller",
         "name": "Toilet dweller",
         "dev": "onlyonepen",
-        "description": "Crawling through rusty pipe to your precious golden turd that only come on full moon.",
+        "description": "Crawling through rusty pipe to your precious golden turd. But you might not be the only one there",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
@@ -1415,13 +1559,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://brainlessdev.itch.io/be-one-with-the-fish",
         "name": "Be One With the Fish",
         "dev": "Brainless.",
-        "description": "Be One With the Fish 🐟 A unique Brainless.",
+        "description": "A Short Brainless. Adventure!",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
@@ -1450,13 +1597,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://bessamu.itch.io/coordinates-unknown",
         "name": "Coordinates Unknown",
         "dev": "Bessamu",
-        "description": "⚠️ The browser version may have contrast issues and hasn't been fully tested.",
+        "description": "A psychological horror game about navigating an endless ocean alone.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -1496,19 +1646,24 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://mario-dev.itch.io/the-one-who-wouldnt-leave",
         "name": "The ONE Who Wouldn't Leave",
         "dev": "Mario_dev",
-        "description": "If you enjoyed the game, I’d really appreciate your support.",
+        "description": "Move to a new city… only to discover that your apartment hides deadly secrets and a dangerous stalker.",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "3.6",
-        "rating_count": "16",
+        "rating_count": "17",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI1ODIzMTU1LnBuZw==/original/AIxcAi.png",
@@ -1530,13 +1685,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://das-kunstkollektiv.itch.io/hungerwinter",
         "name": "HUNGERWINTER",
         "dev": "Das Kunstkollektiv, Mia Cain, Digital Poppy",
-        "description": "IT IS THE WORST WINTER ON RECORD.",
+        "description": "The hunger. The hunger...",
         "genre": "Interactive Fiction",
         "status": "Released",
         "publisher": "N/A",
@@ -1571,13 +1729,19 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ]
     },
     {
         "url": "https://canslp.itch.io/petrichor-gardens",
         "name": "petrichor gardens",
         "dev": "Canslp",
-        "description": "petrichor gardens the cold begets the spring as a river carves through stone as time carves through space as people carve through place as rain falls on snow a game by cole nugteren with music by mitc...",
+        "description": "explore a rainy brutalist urban garden",
         "genre": "Platformer",
         "status": "Released",
         "publisher": "N/A",
@@ -1619,13 +1783,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "02 October 2026 @ 22:05 UTC"
+        "updated_at": "02 October 2026 @ 22:05 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://oahda.itch.io/samband",
         "name": "Samband",
         "dev": "oahda",
-        "description": "Is there anybody out there? ℹ️ About Tune in with the slider to find something in the noise.",
+        "description": "[72hLD] Is there anybody out there? 📻",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -1652,13 +1819,16 @@
             "Godot"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://kwonsouvenir.itch.io/digimon-prototype",
         "name": "Digimon RPG Fan Game with Online PvP",
         "dev": "kwonsouvenir",
-        "description": "HOW TO PLAY :: Z or E - select and interect X or Q - back or cancel, menu → ← ↑ ↓ or W A S D - move .",
+        "description": "How to Play Keyboard Z / E - Select / Interact X / Q - Back / Cancel / Menu Arrow Keys / WASD - Move Controller D-Pad - Move A - Select / Interact B - Back / Cancel X / Y - Storage Page About This...",
         "genre": "Role Playing",
         "status": "Prototype",
         "publisher": "N/A",
@@ -1683,13 +1853,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://kwoqop.itch.io/bouquet-of-sins",
         "name": "Bouquet of Sins",
         "dev": "kar, t0bu, asriela-q, espectral55, haozhe01, ineees17",
-        "description": "Description Bouquet Of Sins is a top-down stealth game set during humanity’s final three days.",
+        "description": "Not all flowers are harmless",
         "genre": "Survival",
         "status": "In development",
         "publisher": "N/A",
@@ -1717,13 +1890,16 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://theeniebeanie.itch.io/the-shining-star-of-losers-everywhere",
         "name": "The Shining Star of Losers Everywhere",
         "dev": "theenie beanie 🫛",
-        "description": "a short game made in tribute to the late Haru Urara.",
+        "description": "A tribute to the late Haru Urara.",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
@@ -1749,13 +1925,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://alimsmgfan.itch.io/again",
         "name": "Again",
         "dev": "alimsmgfan",
-        "description": "STORY: Quiet night, dark road.",
+        "description": "A Nice gas station but what is this place hiding.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -1784,13 +1963,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://luckeater.itch.io/ex-libris",
         "name": "EX-LIBRIS",
         "dev": "Luckeater, Talking Box",
-        "description": "Ex libris são um tipo de carimbo que garante a posse de um livro É comum que livros que passaram por vários donos sejam marcados por vários ex libris As vezes eles cobrem o antigo As vezes.",
+        "description": "Ex libris são um tipo de carimbo que garante a posse de um livro É comum que livros que passaram por vários donos sejam marcados por vários ex libris As vezes eles cobrem o antigo As vezes...",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -1803,28 +1985,33 @@
         "tags": [
             "2D",
             "Fantasy",
+            "felpojam",
             "Godot",
             "Indie",
             "Multiple Endings",
-            "No AI",
             "Point & Click"
         ],
         "platforms": [
-            "Windows",
+            "HTML5",
             "Linux",
             "Android"
         ],
         "languages": [],
         "inputs": [],
-        "made_with": [],
+        "made_with": [
+            "Godot"
+        ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://windblown-vagrant.itch.io/playing-the-void",
         "name": "Playing in the Void",
         "dev": "Windblown Vagrant",
-        "description": "“The universe ended long ago… but don’t worry about that - there is still a profit to be made!” Playing the Void is a quick start guide and rules reference for Hex Crawling the void - a spaceship h...",
+        "description": "\"You don't want to become unproductive, do you?”",
         "genre": "Role Playing",
         "status": "Released",
         "publisher": "N/A",
@@ -1849,7 +2036,10 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "04 September 2026 @ 19:21 UTC"
+        "updated_at": "04 September 2026 @ 19:21 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://anikogames.itch.io/anchored-alone",
@@ -1890,13 +2080,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://santiago-garcia.itch.io/the-one-behind-you",
         "name": "The One Behind You",
         "dev": "Santiago Garcia",
-        "description": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ THE ONE BEHIND YOU A short psychological horror experience about a day in the life of a psychopath ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ REVIEWS \" The One Behind You...",
+        "description": "Psychopath wanted play. Part 3",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -1926,19 +2119,22 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 09:58 UTC"
+        "updated_at": "15 September 2026 @ 09:58 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://steven-miller.itch.io/pull-chain",
         "name": "Pull Chain",
         "dev": "Steven Miller",
-        "description": "Carry a light source with you Attract moths, weigh down buttons, and more WASD / Arrow Keys - Move Z / Y / Backspace - Undo R - Reset Space / Enter / X - Continue Escape - Pause",
+        "description": "Manipulate moths using a light source attached to your body",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "38",
+        "rating_count": "39",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3MDQ0MzYzLnBuZw==/original/yy%2BjNm.png",
@@ -1964,13 +2160,16 @@
             "Audacity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://meant-to-bee-studios.itch.io/ducky",
         "name": "Ducky",
         "dev": "Meant to Bee Studios, Skywrite Studios",
-        "description": "A small town fairy, Ducky, dreams of leaving the only place they've ever known, all possible with the generous help of an elder monster hunter named Gerrit.",
+        "description": "A love story between a fairy and the monster hunter they hire to escort them.",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -2001,13 +2200,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://daivuk.itch.io/quod",
         "name": "QUOD",
         "dev": "Daivuk",
-        "description": "See the video that comes with this explaning how this was achieved: This entire game fits into a 64 KB executable - including all textures, levels, models, animations, sounds, music, and code.",
+        "description": "64 KB retro shooter",
         "genre": "Shooter",
         "status": "Released",
         "publisher": "N/A",
@@ -2032,13 +2234,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://dominoclub.itch.io/lovely-lodgings-autumn-edition",
         "name": "Lovely Lodgings: Autumn Edition",
         "dev": "DOMINO CLUB, Sean",
-        "description": "By The Adventurous Editor-In-Chief It all started with a singular vision: To chart The Grand Outdoors.",
+        "description": "Review Playing Game",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -2067,19 +2272,22 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://waxwing0.itch.io/fbc",
         "name": "Flesh, Blood, & Concrete",
         "dev": "io",
-        "description": "controls: open/close menu: esc move: arrow keys Content warnings: (highlight for potential spoilers) meat and disembodied gore, general horror elements (unsettling images and sounds), an allusion t...",
+        "description": "RPG Maker Horror/Apartment Building Exploration Simulator",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "3050",
+        "rating_count": "3060",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzcxMDUyNjUucG5n/original/804RML.png",
@@ -2093,6 +2301,8 @@
             "Windows"
         ],
         "languages": [
+            "Czech",
+            "German",
             "English",
             "Spanish; Latin America",
             "French",
@@ -2104,7 +2314,9 @@
             "Romanian Moldavian Moldovan",
             "Russian",
             "Thai",
+            "Turkish",
             "Ukrainian",
+            "Vietnamese",
             "Chinese"
         ],
         "inputs": [],
@@ -2113,19 +2325,22 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 10:55 UTC"
+        "updated_at": "16 September 2026 @ 10:55 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://banana-jeff.itch.io/dniostatnie",
         "name": "Funeralopolis | Last Days",
         "dev": "BananaDevJeff",
-        "description": "------ The city of Huta-Grobno hasn't seen sunlight in months after strange clouds enveloped the skies above it.",
+        "description": "Last days before the skies of Huta-Grobno city turned red",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "22 September 2024 @ 16:00 UTC",
         "rating": "4.9",
-        "rating_count": "535",
+        "rating_count": "538",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE3NzU5Nzk1LmpwZw==/original/9m6v56.jpg",
@@ -2152,13 +2367,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 08:02 UTC"
+        "updated_at": "16 September 2026 @ 08:02 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://troj4nblazing.itch.io/sermon",
         "name": "SERMON",
         "dev": "Vinil, Arcadian XP",
-        "description": "Story Please download new updated files(fixed collider issues) You're broke.",
+        "description": "You need to survive one night for the money",
         "genre": "Survival",
         "status": "Released",
         "publisher": "N/A",
@@ -2191,19 +2409,22 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://momomoring.itch.io/escapeline",
-        "name": "Escape Line FULL-VERSION RELEASED",
+        "name": "Escape Line[Eclipse Companion Interface Function Manual] UPDATED!",
         "dev": "MoRing",
-        "description": "You were shipwrecked and woke up from an uninhabited island.",
+        "description": "'Odyssey', but Calypso is Yandere Sirens",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "225",
+        "rating_count": "229",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3MjU0OTQzLmdpZg==/original/N4c9zA.gif",
@@ -2228,19 +2449,22 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 09:16 UTC"
+        "updated_at": "15 September 2026 @ 09:16 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://frengoestudios.itch.io/nightbound",
         "name": "Nightbound",
         "dev": "FrengoEstudios",
-        "description": "Cansado de una vida monótona como cajero de supermercado, tus días se repiten sin sentido, los mismos rostros, las mismas conversaciones vacías y el mismo silencio al volver a casa.",
+        "description": "Cansado de tu vida como cajero, te acercas a un extraño al salir del trabajo... ¿Mala idea? VN yandere de terror",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "168",
+        "rating_count": "171",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIzODE3OTgxLmdpZg==/original/4Y13Ff.gif",
@@ -2270,13 +2494,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 07:07 UTC"
+        "updated_at": "16 September 2026 @ 07:07 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://twitwi.itch.io/risingup",
         "name": "Rising Up",
         "dev": "Eva Jørgensen, Laurent Gehin, Nikolaj de Haan, hakhakhak",
-        "description": "( Chrome browser recommended for mobile devices ) Climb the Corporate Ladder.",
+        "description": "Climb the Corporate Ladder... with Your Fists!",
         "genre": "Fighting",
         "status": "Released",
         "publisher": "N/A",
@@ -2310,13 +2537,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://teamavia.itch.io/resident-lover",
         "name": "Resident Lover",
         "dev": "teamavia",
-        "description": "Attend the prestigious Miranda's All Girls' University, hidden away in Romania.",
+        "description": "Resident Lover - a sapphic, modern rendition of Resident Evil Village",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -2348,19 +2578,22 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 12:04 UTC"
+        "updated_at": "16 September 2026 @ 12:04 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://karmic-punishment.itch.io/dont-toy-with-me",
         "name": "Don't Toy With Me",
         "dev": "Karmic Punishment",
-        "description": "This is a horror visual novel! It deals with dark themes and features the following: Emotional abuse and manipulation Body horror imagery of non-human characters Murder / Violence For a long time n...",
+        "description": "A short horror visual novel set in a dollhouse",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "346",
+        "rating_count": "347",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzg3NjgzMjkucG5n/original/fohbyH.png",
@@ -2384,7 +2617,10 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://rg-crew.itch.io/rot",
@@ -2415,19 +2651,22 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 16:36 UTC"
+        "updated_at": "16 September 2026 @ 16:36 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://bigmamafatcat.itch.io/abo-speed-dating",
         "name": "A/B/O Speed Dating",
         "dev": "bigmamafatcat",
-        "description": "⬇️⬇️⬇️✨ Jogue em português brasileiro! ✨⬇️⬇️⬇️ Birth rates are declining in the Omegaverse -- so the government sponsors speed dating events to get more people coupled up.",
+        "description": "Speed Dating in the Omegaverse [BL]",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "292",
+        "rating_count": "294",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIzMTMyOTQ5LmdpZg==/original/K7tRHw.gif",
@@ -2458,22 +2697,25 @@
             "Ren'Py"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://spicaze.itch.io/silver-thread",
-        "name": "Silver Thread",
+        "name": "Silver Thread : Episode I",
         "dev": "Spica",
-        "description": "Do ghosts actually exist? An exorcist that doubts the existence of ghost might sound contradictory but to Alicia Wilkershire, this is the right way to get closer to the truth.",
+        "description": "A skeptical exorcist and an odd encounter.",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "1009",
+        "rating_count": "1011",
         "average_session": "About a half-hour",
         "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzcxMDY5NzYucG5n/original/%2FBozR1.png",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5Njk3NTU1LnBuZw==/original/uCNqtB.png",
         "tags": [
             "2D",
             "eufree",
@@ -2483,7 +2725,8 @@
             "RPG Maker"
         ],
         "platforms": [
-            "HTML5"
+            "HTML5",
+            "Windows"
         ],
         "languages": [
             "English"
@@ -2497,19 +2740,22 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "02 September 2026 @ 01:03 UTC"
+        "updated_at": "02 September 2026 @ 01:03 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://william-rous.itch.io/type-help",
         "name": "Type Help",
         "dev": "William Rous",
-        "description": "A puzzle-mystery game inspired by Return of the Obra Dinn, Her Story, Unheard and The Roottrees are Dead.",
+        "description": "The Unsolvable Mystery",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "1246",
+        "rating_count": "1256",
         "average_session": "Days or more",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE5NTExNzk0LnBuZw==/original/uZYMJO.png",
@@ -2525,6 +2771,7 @@
             "Arabic",
             "German",
             "English",
+            "French",
             "Italian",
             "Japanese",
             "Korean",
@@ -2536,39 +2783,43 @@
         ],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://fluuen.itch.io/the-wolf-wears-red",
         "name": "The Wolf Wears Red",
         "dev": "fluuen",
-        "description": "A serial killer , nicknamed \"The Wolf\" by townsfolk, has been ravaging the woods, claiming multiple young male victims over the past few months.",
+        "description": "In these woods, only the hungriest survive...",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "199",
+        "rating_count": "204",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIyODEyNDgyLnBuZw==/original/Z%2FQu6I.png",
         "tags": [
             "Amare",
+            "Dark",
             "Dating Sim",
-            "Female Protagonist",
             "Horror",
             "josei",
             "Multiple Endings",
-            "Otome",
             "Psychological Horror",
             "Romance",
+            "Short",
             "Yandere"
         ],
         "platforms": [
             "HTML5",
             "Windows",
             "macOS",
-            "Linux"
+            "Linux",
+            "Android"
         ],
         "languages": [
             "English"
@@ -2583,13 +2834,18 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 09:47 UTC"
+        "updated_at": "15 September 2026 @ 09:47 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://dreamonstudios.itch.io/gladihoppers",
         "name": "Gladihoppers",
         "dev": "Dreamon Studios",
-        "description": "Hop into the sandals of a gladiator and fight for glory in epic arena battles! Now with cross-platform realtime online multiplayer 1vs1 battles! Supported inputs: XBOX controllers (strongly recomme...",
+        "description": "2D physics-based gladiator fighting game!",
         "genre": "Fighting",
         "status": "Released",
         "publisher": "N/A",
@@ -2626,19 +2882,22 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 11:17 UTC"
+        "updated_at": "16 September 2026 @ 11:17 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://nachogames.itch.io/thats-not-my-neighbor",
         "name": "That's not my Neighbor",
         "dev": "Nacho Sama",
-        "description": "************* PLEASE READ !!!!!! ************* The free game is an older version of the game .",
+        "description": "Work as a doorman in a building infested with doppelgangers.",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "1618",
+        "rating_count": "1620",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE1MDAzMjAyLnBuZw==/original/rTXFaC.png",
@@ -2670,19 +2929,25 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 14:13 UTC"
+        "updated_at": "16 September 2026 @ 14:13 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "Subtitles"
+        ]
     },
     {
         "url": "https://lydiabluebell.itch.io/arias-story",
         "name": "Aria's Story",
         "dev": "Lydia",
-        "description": "Aria’s Story is a horror RPG game made using RPG Maker VX Ace.",
+        "description": "Aria falls asleep at the library and wakes up locked in. This library has a secret just for her to discover.",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "20 January 2018 @ 17:00 UTC",
         "rating": "4.8",
-        "rating_count": "863",
+        "rating_count": "868",
         "average_session": "A few hours",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvMjE0MjQ0LzEwMTAxMjAucG5n/original/XGl3ED.png",
@@ -2706,7 +2971,10 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 11:37 UTC"
+        "updated_at": "16 September 2026 @ 11:37 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://karbonic.itch.io/psychopomp",
@@ -2737,19 +3005,22 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ome6a1717.itch.io/potion-master",
         "name": "Potion Master",
         "dev": "ome6a1717",
-        "description": "Potion Master is a cozy, pixel-art game about harvesting materials and brewing magical potions.",
+        "description": "A bite-sized cozy incremental game where you harvest materials and craft potions!",
         "genre": "N/A",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.5",
-        "rating_count": "163",
+        "rating_count": "165",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI0NTc1NjgyLnBuZw==/original/9Q4pPH.png",
@@ -2777,19 +3048,22 @@
             "Aseprite"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://joykeratif.itch.io/pikabuu-smile",
         "name": "Pikabuu: Smile",
         "dev": "Joykeratif",
-        "description": "\"Don't get spoiler for the best experience\" A short story about a little girl who can't sleep at night Control : Mouse, E, and Space Please support me: 1.",
+        "description": "This is happening now",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "63",
+        "rating_count": "65",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE4Mzg4MDI3LnBuZw==/original/2yUg4J.png",
@@ -2823,13 +3097,18 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly"
+        ]
     },
     {
         "url": "https://madnessway.itch.io/corpse-party-bloodcovered-visual-novel",
         "name": "Corpse Party: BloodCovered (Visual Novel)",
         "dev": "MadnessWay",
-        "description": "Now Available The Devil's Whisper on Steam! CORPSE PARTY RETURNS This is a fanmade remake of the PSP game Corpse Party: BloodCovered , in visual novel style.",
+        "description": "The nightmare returns...",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -2862,13 +3141,18 @@
             "Audacity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://missingseven.itch.io/theia",
         "name": "Theia: The Crimson Eclipse",
         "dev": "MissingSeven",
-        "description": "⚠ Theia - The Crimson Eclipse is a non-commercial game, freely distributed.",
+        "description": "A 100% free game made by a JRPG fan for JRPG fans. Technofantasy game inspired by the 90's classics",
         "genre": "Role Playing",
         "status": "Released",
         "publisher": "N/A",
@@ -2904,13 +3188,16 @@
             "RPG Maker"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://bagenzo.itch.io/paper-girl-chain",
         "name": "Paper-Girl-Chain",
         "dev": "Bagenzo, Middle Sea Software",
-        "description": "Sara is a timid, sensitive girl, getting by in the big city with the help of Miriam, her best friend? favorite person queerplatonic partner Let's call it a.",
+        "description": "playing favorites",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -2951,13 +3238,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 09:26 UTC"
+        "updated_at": "15 September 2026 @ 09:26 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
         "name": "Tobu Tobu Girl Deluxe",
         "dev": "Tangram Games",
-        "description": "Your cat is floating into the atmosphere and you are the only one who can save it.",
+        "description": "Game Boy Color homebrew arcade platformer",
         "genre": "Platformer",
         "status": "Released",
         "publisher": "N/A",
@@ -2996,13 +3286,18 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 14:36 UTC"
+        "updated_at": "16 September 2026 @ 14:36 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Textless"
+        ]
     },
     {
         "url": "https://kultisti.itch.io/curseball",
         "name": "Curseball",
         "dev": "Kultisti",
-        "description": "Welcome To Curseball! your goal: hit the ball before time runs out simple, right? inside you'll find: > 14 different curses & worlds! > many colour palettes to unlock > overuse of amen break secret ti...",
+        "description": "cursed curses!",
         "genre": "Action",
         "status": "Released",
         "publisher": "N/A",
@@ -3034,19 +3329,22 @@
             "GameMaker"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://picogram.itch.io/pe-noire",
         "name": "P.E. Noire",
         "dev": "Picogram",
-        "description": "P.",
+        "description": "Point and Click Softboiled Detective Story",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "1645",
+        "rating_count": "1647",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvMjk3ODU0LzE0NTczMzkucG5n/original/Ds3FO9.png",
@@ -3067,13 +3365,16 @@
             "GameMaker"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://maple0.itch.io/oto-hime",
         "name": "Oto-hime",
-        "dev": "Maple, Natsumen.Caps, Phen, barkkish, SmallBunny, Ess, Trumpetguy1.0, Arkd3v, Justin Bender, saren, cup_doodle",
-        "description": "Story Shimako, a socially anxious office worker, escapes the pressures of her company's beach retreat by fishing alone, only to stumble upon a trapped turtle by the shore.",
+        "dev": "Maple, Natsumen.Caps, Phen, barkkish, SmallBunny, Ess, Trumpetguy1.0, Arkd3v, Justin Bender, cup_doodle",
+        "description": "Alone with a princess deep underwater! What will she do?",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3103,13 +3404,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 08:53 UTC"
+        "updated_at": "15 September 2026 @ 08:53 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://konayachi.itch.io/pippa-and-your-phantasmal-problem",
         "name": "Pippa and Your Phantasmal Problem",
         "dev": "Konayachi",
-        "description": "★ Story Ms Ester's beautiful and neat house has been mysteriously wrecked in the past few weeks and nobody knows why.",
+        "description": "Find out who's been messing up your home with this troublesome witch!",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3150,13 +3454,16 @@
             "Krita"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://hereisremina.itch.io/crush",
         "name": "CRUSH!!!",
         "dev": "Remina",
-        "description": "ＣＲＵＳＨ！！！ ¡¡¡HS∩ᴚƆ (っ◔◡◔)っ ♥ CRUSH!!! ♥ 💻💕CRUSH!!!💕💻 \"This weird girl came up to me and says she loves me, but I don't think I've ever seen her before?\" A love that knows no boundaries.",
+        "description": "yandere monster girl dating sim",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3185,19 +3492,22 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ronyaib.itch.io/the-children-of-clay",
         "name": "The Children of Clay",
         "dev": "messier",
-        "description": "The Children of Clay The Children of Clay is a short stop motion archeology horror game, where you have to study an ancient artefact and discover its dark secret.",
+        "description": "Stop-motion archeology horror game",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "365",
+        "rating_count": "364",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE4Mjc2MTQ3LnBuZw==/original/PnwJGA.png",
@@ -3227,13 +3537,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 11:46 UTC"
+        "updated_at": "16 September 2026 @ 11:46 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://hatoge.itch.io/line-88",
         "name": "Line 88",
         "dev": "Hatoge",
-        "description": "To offer the best playing experience, it is advised to download the game rather than playing it in browser.",
+        "description": "A bus ride that overstays its welcome",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3264,7 +3577,10 @@
             "RPG Maker"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://kennyguillaume.itch.io/maries-room",
@@ -3305,19 +3621,24 @@
             "Unreal Engine"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
     },
     {
         "url": "https://kenforest.itch.io/signal-garden",
         "name": "Signal Garden",
         "dev": "kenforest",
-        "description": "A small dark incremental game set in a deep underground garden within a megastructure.",
+        "description": "Dark incremental game about signal harvesting",
         "genre": "Simulation",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.5",
-        "rating_count": "112",
+        "rating_count": "113",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2ODIwNjY3LnBuZw==/original/vuczFz.png",
@@ -3340,13 +3661,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://nomnomnami.itch.io/drowning-drowning",
         "name": "drowning, drowning",
         "dev": "NomnomNami",
-        "description": "DROWNING, DROWNING is the story of a young girl who dives into the sea.",
+        "description": "a girl dives into the sea and makes new friends",
         "genre": "Role Playing",
         "status": "Released",
         "publisher": "N/A",
@@ -3399,19 +3723,22 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 13:17 UTC"
+        "updated_at": "16 September 2026 @ 13:17 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://kertisjones.itch.io/tetrisweeper",
         "name": "Tetrisweeper",
         "dev": "Kertis Jones",
-        "description": "Can't decide whether to play Minesweeper or Tetris ? Why not play both? Tetrisweeper is an addictive and mind-bending fusion of two classic puzzle games, offering a refreshing twist that challenges...",
+        "description": "The world's only game of Tetris... that's also Minesweeper",
         "genre": "Puzzle",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "24 December 2020 @ 05:00 UTC",
         "rating": "4.8",
-        "rating_count": "220",
+        "rating_count": "223",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE1ODk5MDQ3LnBuZw==/original/R450N6.png",
@@ -3445,19 +3772,29 @@
             "Piskel"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [
+            "Color-blind friendly",
+            "Subtitles",
+            "Configurable controls",
+            "High-contrast"
+        ]
     },
     {
         "url": "https://crystalgameworks.itch.io/dahlia",
         "name": "Dahlia",
         "dev": "Crystal Game Works",
-        "description": "(please play the browser version fullscreen!) a vampire has snuck into your room while you were sleeping.",
+        "description": "try to not become a vampire's next meal",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.5",
-        "rating_count": "96",
+        "rating_count": "97",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE1ODQ5NTg2LnBuZw==/original/%2BBrMvL.png",
@@ -3486,13 +3823,16 @@
             "Ren'Py"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://delunado.itch.io/groundbreaker",
         "name": "GroundBreaker",
         "dev": "Delunado, aviss, PacoDiago",
-        "description": "If you liked the game, check out Astro Prospector on Steam ! It's made by 2 devs from Groundbreaker.",
+        "description": "Collect resources, buy upgrades and take care of your oxygen. Reach the end of the dark mine!",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -3524,13 +3864,16 @@
             "Unity"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://hwilson.itch.io/poh",
         "name": "POCKET OF HORROR",
         "dev": "CURSED BOOTLEG INC",
-        "description": "What if WORLD OF HORROR was released on the Game Boy Color? Four MYSTERIES, and the old LIGHTHOUSE Many PALETTES to choose from CHARACTERS with different stats A rough approximation of combat, events,...",
+        "description": "GBC Demake of World of Horror",
         "genre": "Role Playing",
         "status": "Released",
         "publisher": "N/A",
@@ -3564,16 +3907,21 @@
             "GB Studio"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "High-contrast"
+        ]
     },
     {
         "url": "https://a-corsican-frog.itch.io/hex-of-steel",
         "name": "Hex of Steel",
-        "dev": "A Corsican Frog",
-        "description": "Official Discord server: Join the community at https://discord.",
+        "dev": "Corsican Frog",
+        "description": "Hex of Steel is a refreshing WWII wargame covering all fronts featuring a certain amount of original mechanics.",
         "genre": "Strategy",
         "status": "Released",
-        "publisher": "N/A",
+        "publisher": "Valentin Lievre",
         "release_date": "04 March 2020 @ 23:00 UTC",
         "rating": "4.7",
         "rating_count": "23",
@@ -3610,13 +3958,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 14:27 UTC"
+        "updated_at": "09 October 2026 @ 14:41 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://visualmemoryunit.itch.io/virtual-death",
         "name": "Virtual Death",
         "dev": "vmu_",
-        "description": "Virtual Death may contain disturbing imagery and content, play at your own risks.",
+        "description": "What will you make out of this world?",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -3644,13 +3995,16 @@
         "inputs": [],
         "made_with": [],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://hatoge.itch.io/sofia",
         "name": "Sofia?",
         "dev": "Hatoge",
-        "description": "!!! Do NOT click on any links in the comments (unless it's a youtube let's play, those are fine.",
+        "description": "A queer rpgmaker mystery adventure game where you spent a nice evening with your boyfriend... or do you?",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -3672,9 +4026,7 @@
         ],
         "platforms": [
             "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
+            "Windows"
         ],
         "languages": [],
         "inputs": [],
@@ -3683,13 +4035,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 22:41 UTC"
+        "updated_at": "16 September 2026 @ 22:41 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://emlise.itch.io/tile",
         "name": "Oneli",
         "dev": "Emlise( formerly faxdoc )",
-        "description": "Your vessel invaded by a stranger.",
+        "description": "Haunted vessel clipping trough the world.",
         "genre": "Platformer",
         "status": "Released",
         "publisher": "N/A",
@@ -3719,13 +4074,18 @@
             "Aseprite"
         ],
         "safe_virus": "?",
-        "notes": ""
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Textless"
+        ]
     },
     {
         "url": "https://teamanpim.itch.io/i-cant-believe-the-most-popular-girl-in-school-is-a-lesbian-just-like-me",
         "name": "I Can't Believe the Most Popular Girl in School is a Lesbian, Just Like Me!",
         "dev": "TeamANPIM",
-        "description": "\"I'M JUST A USELESS LESBIAN ON THE INSIDE!\" クラスで一番モテる女の子が私と同じレズだって信じられない Mizutani Hinata is known as the \"Silent Beauty\" among her classmates, but little do they know, she's just a semi-perverted l...",
+        "description": "A lesbian? Just like me?",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3754,13 +4114,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 September 2026 @ 06:33 UTC"
+        "updated_at": "15 September 2026 @ 06:33 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://warrrkus.itch.io/harvest-festival-64",
         "name": "Harvest Festival 64",
         "dev": "Warkus",
-        "description": "Welcome to the town! Luckily for you just in time for the HARVEST FESTIVAL ! Help your new friends with their preparations and ẽ̸͓͙̤͓͋̊̉n̶̥̝̈́̈̕j̶͕͖̔̉̀͝o̶̞̙͊̚y̴̻̗͜͝ͅ life! With music by MODUS INTERACT...",
+        "description": "Lost N64 Cartridge (ḥ̸̛͑̉a̷͊̾͜u̵͓͕͛n̶̟͐t̴̡̘͐̕e̴̜̘̼̒d̸̛͈̤?̶̢̬̏͌)",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -3799,13 +4162,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 09:13 UTC"
+        "updated_at": "16 September 2026 @ 09:13 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://danieloschepkov.itch.io/introvert",
         "name": "INTROVERT",
         "dev": "SeriousDaniel",
-        "description": "What is it? This is a very short game, where you will live a few days in the life of a person who finds himself far from his only friend.",
+        "description": "Just stay at your home",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3833,13 +4199,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 September 2026 @ 14:59 UTC"
+        "updated_at": "16 September 2026 @ 14:59 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://miraongchua.itch.io/galaxy-ballerina",
         "name": "galaxy ballerina",
-        "dev": "MOC (they/them)",
-        "description": "✰ If the game is lagging in your browser, please use the download option.",
+        "dev": "MOC",
+        "description": "A one-minute story about sharing the stage.",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -3864,7 +4233,13 @@
         ],
         "languages": [
             "English",
+            "Spanish; Latin America",
+            "French",
+            "Italian",
+            "Japanese",
             "Korean",
+            "Portuguese (Brazil)",
+            "Romanian Moldavian Moldovan",
             "Chinese (Simplified)"
         ],
         "inputs": [
@@ -3877,7 +4252,10 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "04 October 2026 @ 20:59 UTC"
+        "updated_at": "04 October 2026 @ 20:59 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://csbrannan.itch.io/disco-elysium-game-boy-edition",
