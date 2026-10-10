@@ -10738,5 +10738,93 @@
             "Text"
         ],
         "accessibility": []
+    },
+    {
+        "url": "https://ithealth.itch.io/galaxy-refactor",
+        "name": "Galaxy Refactor",
+        "dev": "ITHealth",
+        "description": "Control system without fear",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "2.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4OTQ0ODg2LnBuZw==/original/2WFEsw.png",
+        "tags": [
+            "Incremental",
+            "Management",
+            "Procedural Generation",
+            "Sandbox",
+            "Sci-fi",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 October 2026 @ 00:45 UTC",
+        "added_at": "2026-10-10T11:42:28Z"
+    },
+    {
+        "url": "https://stinkysunstep.itch.io/box3d-godot",
+        "name": "Box3D - Godot",
+        "dev": "Stinkysunstep",
+        "description": "New Box3D physics engine inside Godot.",
+        "genre": "N/A",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4ODc5MDU2LnBuZw==/original/A10ip%2B.png",
+        "tags": [
+            "demo",
+            "Game engine",
+            "Godot",
+            "Physics",
+            "tech"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "09 October 2026 @ 01:35 UTC",
+        "added_at": "2026-10-10T11:42:32Z"
     }
 ]
