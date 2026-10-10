@@ -10444,13 +10444,16 @@
         "safe_virus": "?",
         "notes": "",
         "updated_at": "18 September 2026 @ 11:35 UTC",
-        "added_at": "2026-10-10T01:52:46Z"
+        "added_at": "2026-10-10T01:52:46Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://theqproyect.itch.io/isaacmarama",
         "name": "IsaacMaRaMa",
         "dev": "TheQproyect",
-        "description": "SELECCIONA TU IDIOMA / SELECT YOUR LANGUAGE /CHOISISSEZ VOTRE LANGUE/ WÄHLEN SIE IHRE SPRACHE ESPAÑOL ENGLISH FRANÇAIS DEUTSCH E mbárcate en un viaje legendario junto a Isaac Peral en una aventura...",
+        "description": "Travel to the heart of innovation alongside Isaac Peral in an adventure designed for Amstrad",
         "genre": "Adventure",
         "status": "In development",
         "publisher": "N/A",
@@ -10470,7 +10473,12 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:52:49Z"
+        "added_at": "2026-10-10T01:52:49Z",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": []
     },
     {
         "url": "https://0yourstruely0.itch.io/puzzle-world-online",
@@ -10497,19 +10505,22 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:52:51Z"
+        "added_at": "2026-10-10T01:52:51Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://astaysdev.itch.io/afterlight-stays",
         "name": "Afterlight Stays",
         "dev": "AStaysDev",
-        "description": "You and your dearest friend, Damon, are together when an apocalypse brings the world to an abrupt stop.",
+        "description": "Is an infection enough to stop the two of you from staying together?",
         "genre": "Visual Novel",
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "217",
+        "rating": "5.0",
+        "rating_count": "220",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3Nzk2MTQyLnBuZw==/original/tYyRFE.png",
@@ -10538,13 +10549,16 @@
         "safe_virus": "?",
         "notes": "",
         "updated_at": "15 September 2026 @ 08:58 UTC",
-        "added_at": "2026-10-10T01:52:55Z"
+        "added_at": "2026-10-10T01:52:55Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://happy-ferret.itch.io/cheshire-4-console-demo",
         "name": "Cheshire 4 Console (Demo)",
         "dev": "Happy-Ferret",
-        "description": "First of all, beware!",
+        "description": "A short demo (Neo Geo, Mega Drive, Atari Jaguar, SNES, N64) showing off my DAAD console conversion framework",
         "genre": "Adventure",
         "status": "Released",
         "publisher": "N/A",
@@ -10570,13 +10584,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:52:58Z"
+        "added_at": "2026-10-10T01:52:58Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://methodox.itch.io/character-customizer-2d",
         "name": "Character Customizer (2D)",
         "dev": "Methodox Technologies, Inc.",
-        "description": "Character Customizer (2D) In the age of AI-generated \"fast visuals\", human-created art still has an unparalleled charm.",
+        "description": "Experiment with 2D character customizations.",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -10600,13 +10617,16 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:53:01Z"
+        "added_at": "2026-10-10T01:53:01Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://myr5.itch.io/the-last-time-i-went-to-the-forest",
         "name": "The last time I went to the forest",
         "dev": "Myr5",
-        "description": "Guys, merci d'être ici car sa veut dire que tu veux vraimentt jouer a mon jeu",
+        "description": "Je suis très fier de mon jeu",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -10627,7 +10647,10 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:53:03Z"
+        "added_at": "2026-10-10T01:53:03Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://ubaepeach.itch.io/diagnosis-lovesick",
@@ -10639,7 +10662,7 @@
         "publisher": "N/A",
         "release_date": "09 October 2026 @ 16:02 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNjMzOTE3LnBuZw==/original/5%2F3Gwz.png",
@@ -10663,13 +10686,16 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:53:07Z"
+        "added_at": "2026-10-10T01:53:07Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     },
     {
         "url": "https://yassdev.itch.io/take-my-skin",
         "name": "Take My Skin",
         "dev": "yassdev",
-        "description": "Haimori, rural Japan.",
+        "description": "Japan, 2006. A night-shift cop in a village lost in the woods. Something there has learned to wear people.",
         "genre": "Visual Novel",
         "status": "Released",
         "publisher": "N/A",
@@ -10703,6 +10729,14 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-10T01:53:31Z"
+        "added_at": "2026-10-10T01:53:31Z",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": []
     }
 ]
