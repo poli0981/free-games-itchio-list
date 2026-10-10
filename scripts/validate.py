@@ -8,7 +8,9 @@ print.
 Checks:
   - chunk files game_info_001..N are contiguous, ≤ CHUNK_SIZE, lists of records
   - every record has the 20 schema fields with the right types, a canonical
-    URL, valid enums; URLs are unique across chunks
+    URL, valid enums; URLs are unique across chunks; the optional fields
+    (added_at, updated_at, ai_disclosure, ai_content, accessibility) have the
+    right types when present
   - index.json agrees with the chunk files
   - count_history.json: one {date, total} row per day, sorted
   - deleted_games.json entries are complete; temp_link.json is a list of strings
@@ -44,7 +46,9 @@ STRING_FIELDS = (
     "notes",
 )
 LIST_FIELDS = ("tags", "platforms", "languages", "inputs", "made_with")
-OPTIONAL_STRING_FIELDS = ("added_at", "updated_at")
+# Optional: older records lack them until a refresh adds them (schema changes stay additive).
+OPTIONAL_STRING_FIELDS = ("added_at", "updated_at", "ai_disclosure")
+OPTIONAL_LIST_FIELDS = ("ai_content", "accessibility")
 
 SAFE_VIRUS = {"?", "Yes", "No", "Caution"}
 NSFW = {"Yes", "No"}
@@ -66,10 +70,11 @@ def check_record(game, where: str) -> tuple[list[str], list[str]]:
             errors.append(f"{where}: missing field '{field}'")
         elif not isinstance(game[field], str):
             errors.append(f"{where}: '{field}' must be a string")
-    for field in LIST_FIELDS:
+    for field in LIST_FIELDS + OPTIONAL_LIST_FIELDS:
         value = game.get(field)
         if field not in game:
-            errors.append(f"{where}: missing field '{field}'")
+            if field in LIST_FIELDS:
+                errors.append(f"{where}: missing field '{field}'")
         elif not isinstance(value, list) or not all(isinstance(v, str) for v in value):
             errors.append(f"{where}: '{field}' must be a list of strings")
     for field in OPTIONAL_STRING_FIELDS:
@@ -82,7 +87,12 @@ def check_record(game, where: str) -> tuple[list[str], list[str]]:
         errors.append(f"{where}: safe_virus {game.get('safe_virus')!r} not in {sorted(SAFE_VIRUS)}")
     if game.get("nsfw") not in NSFW and "nsfw" in game:
         errors.append(f"{where}: nsfw {game.get('nsfw')!r} not in {sorted(NSFW)}")
-    known = set(STRING_FIELDS) | set(LIST_FIELDS) | set(OPTIONAL_STRING_FIELDS)
+    known = (
+        set(STRING_FIELDS)
+        | set(LIST_FIELDS)
+        | set(OPTIONAL_STRING_FIELDS)
+        | set(OPTIONAL_LIST_FIELDS)
+    )
     extra = sorted(set(game) - known)
     if extra:
         warnings.append(f"{where}: unknown field(s) {extra}")

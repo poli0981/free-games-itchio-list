@@ -12,3 +12,6 @@ export const PALETTE = [
   'hsl(280 65% 60%)',
   'hsl(160 60% 45%)',
 ]
+
+/** "Unknown / not disclosed" slices: a mid gray that reads on both themes' cards. */
+export const NEUTRAL = '#6b6b74'

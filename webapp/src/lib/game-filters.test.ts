@@ -84,6 +84,37 @@ describe('filterGames', () => {
       { value: 'Visual Novel', count: 1 },
     ])
   })
+
+  it('filters on the AI disclosure, with "not disclosed" as a value of its own', () => {
+    const games = [
+      game('Hand Made', { ai_disclosure: 'No AI', ai_content: [] }),
+      game('Helper', { ai_disclosure: 'AI Assisted', ai_content: ['Graphics'] }),
+      game('Quiet', { ai_disclosure: 'N/A', ai_content: [] }),
+      game('Not Rechecked'), // a record from before 4.3
+    ]
+    // A fixed order, not by count.
+    expect(facetCounts(games, 'ai')).toEqual([
+      { value: 'No AI', count: 1 },
+      { value: 'AI Assisted', count: 1 },
+      { value: 'N/A', count: 2 },
+    ])
+    const q = parseQuery(new URLSearchParams('ai=No+AI&ai=N%2FA'))
+    expect(q.lists.ai).toEqual(['No AI', 'N/A'])
+    expect(filterGames(games, q).map((g) => g.name)).toEqual(['Hand Made', 'Quiet', 'Not Rechecked'])
+    expect(toParams(q).toString()).toBe('ai=No+AI&ai=N%2FA')
+  })
+
+  it('filters on accessibility features', () => {
+    const games = [
+      game('Captioned', { accessibility: ['Subtitles', 'High-contrast'] }),
+      game('Remappable', { accessibility: ['Configurable controls'] }),
+      game('Plain'),
+    ]
+    const q = emptyQuery()
+    q.lists.access = ['Subtitles', 'Configurable controls']
+    expect(filterGames(games, q).map((g) => g.name)).toEqual(['Captioned', 'Remappable'])
+    expect(facetCounts(games, 'access').map((c) => c.value)).toEqual(['Configurable controls', 'High-contrast', 'Subtitles'])
+  })
 })
 
 describe('sortGames', () => {

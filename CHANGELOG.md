@@ -3,12 +3,13 @@
 All notable changes to this project, newest first. The notes of each release live in
 [`changelog/`](changelog/), one file per minor version: `changelog/<major>.x/ver<major>.<minor>.x.md`.
 
-**Latest release: [4.2.0](changelog/4.x/ver4.2.x.md#420---2026-10-03-compact-catalog-data-themed-scrollbars) (2026-10-03) — Compact catalog data, themed scrollbars.**
+**Latest release: [4.3.0](changelog/4.x/ver4.3.x.md#430---2026-10-10-ai-disclosure-accessibility-refreshed-catalog) (2026-10-10) — AI disclosure, accessibility, refreshed catalog.**
 
 ## 4.x
 
 | Version | Date | Highlights |
 |---|---|---|
+| [4.3.0](changelog/4.x/ver4.3.x.md#430---2026-10-10-ai-disclosure-accessibility-refreshed-catalog) | 2026-10-10 | AI disclosure, accessibility, refreshed catalog |
 | [4.2.0](changelog/4.x/ver4.2.x.md#420---2026-10-03-compact-catalog-data-themed-scrollbars) | 2026-10-03 | Compact catalog data, themed scrollbars |
 | [4.1.1](changelog/4.x/ver4.1.x.md#411---2026-09-29-new-contact-addresses) | 2026-09-29 | New contact addresses (@poli0981.dev) |
 | [4.1.0](changelog/4.x/ver4.1.x.md#410---2026-09-24-verification-check-readable-charts-changelog-folder) | 2026-09-24 | Verification check, readable charts, changelog folder |

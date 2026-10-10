@@ -336,6 +336,21 @@ export const en = {
   "settings.appearance.desc": "Theme, language, row density and scrollbars. Saved in this browser only.",
   "welcome.feature.open.text": "The whole catalog is open data under CC BY 4.0, in the GitHub repository. Reuse it, chart it, build on it.",
   "about.legal.desc": "All policies are Markdown files in the repository — plain language, full terms. Updated 2026-10-03.",
+  "games.filter.ai": "Generative AI",
+  "games.filter.access": "Accessibility",
+  "ai.none": "No AI used",
+  "ai.assisted": "AI-assisted",
+  "ai.undisclosed": "Not disclosed",
+  "detail.ai": "Generative AI",
+  "detail.aiAssisted": "AI-assisted: {uses}",
+  "detail.accessibility": "Accessibility",
+  "charts.ai.title": "Generative AI",
+  "charts.ai.desc": "As disclosed by each game's creator on itch.io",
+  "charts.aiContent.title": "What AI Was Used For",
+  "charts.aiContent.desc": "AI-assisted games by what they used it for (a game may list several)",
+  "charts.accessibility.title": "Accessibility Features",
+  "charts.accessibility.desc": "Counted per game (a game may list several)",
+  "charts.empty": "No data yet.",
 } as const
 
 export type MessageKey = keyof typeof en

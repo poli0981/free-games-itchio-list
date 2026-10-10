@@ -34,7 +34,7 @@ Một danh mục được tuyển chọn và tự động cập nhật gồm **h
 
 Mọi thứ nằm trên website **<https://freeitchgames.win>**:
 
-- **Danh sách game**: toàn bộ danh mục trong một bảng chạy nhanh (dạng danh sách gọn trên điện thoại), lọc theo thể loại, nền tảng, trạng thái và nhiều thứ khác, cùng một trang chi tiết cho từng game.
+- **Danh sách game**: toàn bộ danh mục trong một bảng chạy nhanh (dạng danh sách gọn trên điện thoại), lọc theo thể loại, nền tảng, trạng thái, công bố của tác giả về AI tạo sinh, hỗ trợ tiếp cận và nhiều thứ khác, cùng một trang chi tiết cho từng game.
 - **Biểu đồ**: danh mục được chia ra sao, và đã lớn lên thế nào theo thời gian.
 - **Đã gỡ** (Removed): mọi game bị loại khỏi danh mục, kèm lý do (<https://freeitchgames.win/removed>).
 - **Kiểm tra nhanh trước.** Lần đầu vào, rồi khoảng mỗi 48 giờ, trang sẽ chạy một bước kiểm tra Cloudflare Turnstile ngắn để chặn bot. Thường nó tự qua rồi mở đúng trang bạn cần. Dữ liệu trong `/data` và các ứng dụng không cần bước này.
@@ -182,14 +182,14 @@ Lỗi mạng được coi là tạm thời; game chỉ bị gỡ khi cùng lỗi
 
 ## Các trường dữ liệu
 
-Mỗi game trong `data_game/game_info_NNN.json` có 20 trường sau (cộng thêm dấu thời gian tùy chọn `added_at` / `updated_at` do pipeline thêm vào). Chỉ `safe_virus`, `notes` và `nsfw` do Maintainer quản lý; mọi thứ khác được cào từ trang itch.io công khai của game, và không lần cào lại nào ghi đè ba trường đó.
+Mỗi game trong `data_game/game_info_NNN.json` có 20 trường sau, cộng thêm dấu thời gian tùy chọn `added_at` / `updated_at` do pipeline thêm vào và, từ bản 4.3, các trường tùy chọn `ai_disclosure` / `ai_content` / `accessibility` (được điền dần khi từng game được kiểm tra lại). Chỉ `safe_virus`, `notes` và `nsfw` do Maintainer quản lý; mọi thứ khác được cào từ trang itch.io công khai của game, và không lần cào lại nào ghi đè ba trường đó.
 
 | Trường            | Mô tả                                                      |
 |-------------------|------------------------------------------------------------|
 | `url`             | URL trang game                                             |
 | `name`            | Tên game                                                   |
 | `dev`             | Tên nhà phát triển / tác giả                               |
-| `description`     | Mô tả ngắn (câu đầu tiên, tối đa 200 ký tự)                |
+| `description`     | Tagline của tác giả trên itch.io, nếu không có thì là câu đầu tiên của phần mô tả (tối đa 200 ký tự) |
 | `genre`           | Thể loại theo itch.io                                      |
 | `tags`            | Tất cả tag                                                 |
 | `status`          | Trạng thái phát hành                                       |
@@ -206,6 +206,9 @@ Mỗi game trong `data_game/game_info_NNN.json` có 20 trường sau (cộng th�
 | `safe_virus`      | Ghi chú an toàn thủ công: `?` (mặc định), `Yes`, `No`, `Caution`. Chỉ là ghi chú, không phải bảo đảm: file tải về không được quét |
 | `notes`           | Ghi chú thủ công                                           |
 | `thumbnail`       | URL ảnh bìa (trên itch.io)                                 |
+| `ai_disclosure`   | Công bố của tác giả về AI tạo sinh: `No AI`, `AI Assisted` (cách ghi của itch.io) hoặc `N/A` (chưa công bố) |
+| `ai_content`      | Phần dùng AI khi có dùng AI hỗ trợ (`Graphics`, `Text`, `Code`, `Sounds`) |
+| `accessibility`   | Tính năng hỗ trợ tiếp cận (`Subtitles`, `Configurable controls`, `Color-blind friendly`, …) |
 
 Các trường được cào mặc định là `N/A` khi trang game không có thông tin.
 

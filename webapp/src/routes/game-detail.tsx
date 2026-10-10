@@ -12,8 +12,9 @@ import { useGameBySlug } from '@/hooks/useGameBySlug'
 import { useGameDescription } from '@/hooks/useDescriptions'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { APP } from '@/lib/about'
+import { aiLabel } from '@/lib/ai-disclosure'
 import { useFormat } from '@/lib/format'
-import { playsInBrowser, ratingCountOf, ratingOf } from '@/lib/game-filters'
+import { AI_ASSISTED, aiDisclosureOf, playsInBrowser, ratingCountOf, ratingOf } from '@/lib/game-filters'
 import { useT, type MessageKey } from '@/lib/i18n'
 import { isNsfw, requestNsfw } from '@/lib/nsfw'
 import { orderPlatforms, platformLabel } from '@/lib/platforms'
@@ -34,6 +35,14 @@ function text(value: string | undefined): string {
 
 function list(values: string[] | undefined): string {
   return (values ?? []).filter((v) => v && v !== NA).join(', ')
+}
+
+/** "No AI used", "AI-assisted: Graphics, Text", "Not disclosed"; nothing before the pipeline has checked. */
+function aiFact(game: Game, t: ReturnType<typeof useT>): string {
+  if (game.ai_disclosure === undefined) return ''
+  const value = aiDisclosureOf(game)
+  const uses = list(game.ai_content)
+  return value === AI_ASSISTED && uses ? t('detail.aiAssisted', { uses }) : aiLabel(value, t)
 }
 
 /** Descriptions load on their own (a small pack per chunk), after the rest of the page. */
@@ -147,7 +156,9 @@ function GameDetailView({ game }: { game: Game }) {
     { label: t('detail.avgSession'), value: text(game.average_session) },
     { label: t('detail.languages'), value: list(game.languages) },
     { label: t('detail.inputs'), value: list(game.inputs) },
+    { label: t('detail.accessibility'), value: list(game.accessibility) },
     { label: t('detail.madeWith'), value: list(game.made_with) },
+    { label: t('detail.ai'), value: aiFact(game, t) },
     { label: t('detail.genre'), value: genre },
     { label: t('detail.status'), value: status },
     { label: t('detail.publisher'), value: text(game.publisher) },

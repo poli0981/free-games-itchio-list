@@ -10,6 +10,7 @@ from scraper import (
     Pacer,
     detect_nsfw,
     extract_description,
+    extract_tagline,
     parse_game,
     parse_retry_after,
 )
@@ -31,8 +32,61 @@ def test_free_game_full_record():
     assert record["thumbnail"].startswith("https://img.itch.zone/")
     assert record["safe_virus"] == "?" and record["notes"] == ""
     assert "updated_at" not in record
+    # No AI or accessibility rows: the creator has not said.
+    assert record["ai_disclosure"] == NA
+    assert record["ai_content"] == [] and record["accessibility"] == []
     # Schema order: the 20 stored fields (+ is_free flag) in a fixed order.
     assert list(record)[:4] == ["url", "name", "is_free", "dev"]
+
+
+def test_ai_assisted_game_with_accessibility():
+    record = parse_game(load_fixture_soup("game_ai_assisted.html"), "https://x.itch.io/y")
+    assert record["is_free"] is True
+    assert record["ai_disclosure"] == "AI Assisted"
+    assert record["ai_content"] == ["Graphics", "Text"]
+    assert record["accessibility"] == ["Subtitles", "Configurable controls"]
+    assert record["release_date"] == "01 October 2026 @ 11:11 UTC"  # "Published"
+    # The creator's tagline (og:description), whitespace collapsed, wins over the first sentence.
+    assert record["description"] == "Keep the lighthouse burning through one long night."
+
+
+def test_no_ai_game_from_reformatted_markup():
+    record = parse_game(load_fixture_soup("game_no_ai.html"), "https://x.itch.io/y")
+    assert record["ai_disclosure"] == "No AI"
+    assert record["ai_content"] == [] and record["accessibility"] == []
+    # Line breaks inside titles and links collapse to single spaces.
+    assert record["name"] == "Quiet Orchard [Demo]"
+    assert record["genre"] == "Visual Novel"
+    assert record["made_with"] == ["Ren'Py", "Adobe Photoshop"]
+    assert record["tags"] == ["Meaningful Choices", "Cozy"]
+    assert record["status"] == "In development"
+    assert record["updated_at"] == "03 October 2026 @ 11:28 UTC"
+    # No tagline: the first sentence of the description.
+    assert record["description"] == "A gentle story about growing back."
+
+
+def test_tagline_is_capped_on_a_word():
+    from bs4 import BeautifulSoup
+
+    long = "tagline " * 40
+    soup = BeautifulSoup(f'<meta property="og:description" content="{long}">', "html.parser")
+    tagline = extract_tagline(soup)
+    assert len(tagline) <= 200 and tagline.endswith("...")
+    blank = BeautifulSoup('<meta property="og:description" content=" ">', "html.parser")
+    assert extract_tagline(blank) == NA
+
+
+def test_nsfw_checks_the_first_sentence_behind_a_tagline():
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(
+        '<meta property="og:description" content="A love story.">'
+        '<div class="formatted_description"><p>An erotic visual novel. Enjoy.</p></div>',
+        "html.parser",
+    )
+    record = parse_game(soup, "https://x.itch.io/y")
+    assert record["description"] == "A love story."
+    assert record["nsfw"] == "Yes"
 
 
 def test_description_first_sentence_keeps_version_numbers():

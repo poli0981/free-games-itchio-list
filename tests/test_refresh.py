@@ -121,6 +121,36 @@ def test_full_mode_rescrapes_but_preserves_annotations():
     assert entry["full"] == NOW
 
 
+def test_daily_refresh_keeps_ai_and_accessibility_current():
+    # An older record without the fields gets them; a changed disclosure is updated.
+    _, updates, _, _ = refresh.check_game(make_game("a"), ok_page("game_ai_assisted.html"), {}, NOW)
+    assert updates["ai_disclosure"] == "AI Assisted"
+    assert updates["ai_content"] == ["Graphics", "Text"]
+    assert updates["accessibility"] == ["Subtitles", "Configurable controls"]
+
+    game = make_game("b", ai_disclosure="AI Assisted", ai_content=["Code"], accessibility=[])
+    _, updates, _, _ = refresh.check_game(game, ok_page("game_no_ai.html"), {}, NOW)
+    assert updates["ai_disclosure"] == "No AI" and updates["ai_content"] == []
+    assert "accessibility" not in updates
+
+    # Not disclosed on the page: stored as N/A / empty lists.
+    _, updates, _, _ = refresh.check_game(make_game("c"), ok_page(), {}, NOW)
+    assert (updates["ai_disclosure"], updates["ai_content"]) == ("N/A", [])
+    assert updates["accessibility"] == []
+
+
+def test_full_mode_keeps_a_known_release_date_and_thumbnail():
+    # The "Published" row is gone a few weeks after publishing; no og:image / screenshots.
+    game = make_game("a", release_date="02 September 2026 @ 10:00 UTC")
+    _, updates, _, _ = refresh.check_game(game, ok_page("game_no_ai.html"), {}, NOW, full=True)
+    assert "release_date" not in updates and "thumbnail" not in updates
+    assert updates["ai_disclosure"] == "No AI"
+
+    # An unknown date is still filled in from the page.
+    _, updates, _, _ = refresh.check_game(make_game("b"), ok_page(), {}, NOW, full=True)
+    assert updates["release_date"] == "23 April 2021 @ 19:30 UTC"
+
+
 def test_errors_and_parse_failures_keep_the_game():
     game = make_game("a")
     for page, expected in (

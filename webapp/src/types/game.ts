@@ -26,6 +26,16 @@ export interface Game {
   added_at?: string
   /** itch.io "Updated" date as shown on the game page. */
   updated_at?: string
+  /**
+   * The creator's generative-AI disclosure on itch.io: "No AI", "AI Assisted"
+   * or "N/A" (not disclosed). Absent on records the pipeline has not re-checked
+   * since 4.3 (the same as "N/A" for display).
+   */
+  ai_disclosure?: string
+  /** What AI was used for when assisted ("Graphics", "Text", "Code", "Sounds"). */
+  ai_content?: string[]
+  /** itch.io accessibility features ("Subtitles", "Configurable controls", …). */
+  accessibility?: string[]
 }
 
 export interface CatalogIndex {
