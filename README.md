@@ -35,7 +35,7 @@ read-only for everyone: no accounts, no sign-in, no comments, no ads, no payment
 Everything lives on the website, **<https://freeitchgames.win>**:
 
 - **Games**: the whole catalog in one fast table (a compact list on phones), with filters for genre, platform,
-  status and more, plus a detail page for every game.
+  status, the creator's generative-AI disclosure, accessibility and more, plus a detail page for every game.
 - **Charts**: how the catalog breaks down, and how it has grown over time.
 - **Removed**: every game dropped from the catalog, with the reason
   (<https://freeitchgames.win/removed>).
@@ -239,8 +239,9 @@ mass changes are reported to the project's Discord as automated notifications.
 
 ## Data fields
 
-Each game in `data_game/game_info_NNN.json` has these 20 fields (plus optional `added_at` / `updated_at`
-timestamps added by the pipeline). Only `safe_virus`, `notes` and `nsfw` are maintained by the Maintainer;
+Each game in `data_game/game_info_NNN.json` has these 20 fields, plus optional `added_at` / `updated_at`
+timestamps added by the pipeline and, since 4.3, the optional `ai_disclosure` / `ai_content` /
+`accessibility` fields (filled in as each game is re-checked). Only `safe_virus`, `notes` and `nsfw` are maintained by the Maintainer;
 everything else is scraped from the game's public itch.io page, and no re-scrape ever overwrites those three.
 
 | Field             | Description                                                |
@@ -248,7 +249,7 @@ everything else is scraped from the game's public itch.io page, and no re-scrape
 | `url`             | Game page URL                                              |
 | `name`            | Game title                                                 |
 | `dev`             | Developer / author name(s)                                 |
-| `description`     | Short description (first sentence, max 200 chars)          |
+| `description`     | The creator's tagline on itch.io, else the description's first sentence (max 200 chars) |
 | `genre`           | Genre(s) from itch.io                                      |
 | `tags`            | All tags                                                   |
 | `status`          | Release status                                             |
@@ -265,6 +266,9 @@ everything else is scraped from the game's public itch.io page, and no re-scrape
 | `safe_virus`      | Manual safety note: `?` (default), `Yes`, `No`, `Caution`. A note, not a guarantee: downloads are not scanned |
 | `notes`           | Manual notes                                               |
 | `thumbnail`       | Cover image URL (on itch.io)                               |
+| `ai_disclosure`   | The creator's generative-AI disclosure: `No AI`, `AI Assisted` (itch.io's wording) or `N/A` (not disclosed) |
+| `ai_content`      | What AI was used for when assisted (`Graphics`, `Text`, `Code`, `Sounds`) |
+| `accessibility`   | Accessibility features (`Subtitles`, `Configurable controls`, `Color-blind friendly`, …) |
 
 Scraped fields default to `N/A` when not available on the game page.
 

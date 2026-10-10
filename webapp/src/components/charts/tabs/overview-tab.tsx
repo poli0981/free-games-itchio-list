@@ -1,4 +1,5 @@
 import type { CountHistoryPoint, DeletedGameEntry, Game } from '@/types/game'
+import { AiDisclosureChart } from '@/components/charts/ai-disclosure-chart'
 import { GameCountChart } from '@/components/charts/game-count-chart'
 import { GenreChart } from '@/components/charts/genre-chart'
 import { KpiCards } from '@/components/charts/kpi-cards'
@@ -23,6 +24,7 @@ export default function OverviewTab({ games, deleted, history, hiddenNsfw }: Ove
         <OnlineOfflineChart games={games} />
         <MadeWithChart games={games} />
         <GameCountChart history={history} />
+        <AiDisclosureChart games={games} />
       </div>
     </div>
   )

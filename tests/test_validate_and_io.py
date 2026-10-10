@@ -30,6 +30,23 @@ def test_detects_schema_and_consistency_errors(repo):
     assert any("unknown field" in w for w in warnings)
 
 
+def test_optional_fields_are_typed_when_present(repo):
+    seed_catalog(
+        [
+            make_game("a", ai_disclosure="No AI", ai_content=[], accessibility=["Subtitles"]),
+            make_game("b"),  # older record without them
+        ]
+    )
+    assert validate.validate() == ([], [])
+    chunk = read_json("data_game/game_info_001.json")
+    chunk[0]["ai_content"] = "Graphics"
+    chunk[1]["ai_disclosure"] = ["No AI"]
+    save_json("data_game/game_info_001.json", chunk)
+    errors, _ = validate.validate()
+    assert any("'ai_content' must be a list of strings" in e for e in errors)
+    assert any("'ai_disclosure' must be a string" in e for e in errors)
+
+
 def test_fix_normalizes_enums(repo):
     seed_catalog([make_game("a", safe_virus="y"), make_game("b", nsfw="yes")])
     assert validate.fix() == 2

@@ -16,6 +16,8 @@ export const LIST_FILTERS = {
   lang: 'languages',
   input: 'inputs',
   engine: 'made_with',
+  ai: 'ai_disclosure',
+  access: 'accessibility',
 } as const satisfies Record<string, keyof Game>
 
 export type ListFilter = keyof typeof LIST_FILTERS
@@ -37,10 +39,28 @@ export const RATING_STEPS = [4.5, 4, 3.5, 3] as const
 
 const NA = 'N/A'
 
+/** `ai_disclosure` values the pipeline writes; anything else is shown as itch.io wrote it. */
+export const AI_NONE = 'No AI'
+export const AI_ASSISTED = 'AI Assisted'
+/** The AI filter's value for games whose creator has not said (or not re-checked yet). */
+export const AI_UNDISCLOSED = NA
+
+export function aiDisclosureOf(game: Game): string {
+  const value = game.ai_disclosure
+  return value && value !== NA ? value : AI_UNDISCLOSED
+}
+
+/** One order wherever the disclosures are listed: no AI, AI-assisted, any newer value, not disclosed. */
+export function aiRank(value: string): number {
+  if (value === AI_NONE) return 0
+  if (value === AI_ASSISTED) return 1
+  return value === AI_UNDISCLOSED ? 3 : 2
+}
+
 export function emptyQuery(): GameQuery {
   return {
     q: '',
-    lists: { genre: [], platform: [], status: [], tag: [], lang: [], input: [], engine: [] },
+    lists: { genre: [], platform: [], status: [], tag: [], lang: [], input: [], engine: [], ai: [], access: [] },
     minRating: null,
     browser: false,
     sort: 'rated',
@@ -83,8 +103,10 @@ export function fold(text: string): string {
   return text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
 }
 
-function values(game: Game, field: (typeof LIST_FILTERS)[ListFilter]): string[] {
-  const value = game[field]
+function values(game: Game, key: ListFilter): string[] {
+  // "Not disclosed" is a choice of its own: hiding AI-assisted games keeps those.
+  if (key === 'ai') return [aiDisclosureOf(game)]
+  const value = game[LIST_FILTERS[key]]
   if (Array.isArray(value)) return value
   return typeof value === 'string' && value && value !== NA ? [value] : []
 }
@@ -132,9 +154,9 @@ export function filterGames(
       if (key === skip) continue
       const wanted = query.lists[key]
       if (wanted.length === 0) continue
-      const have = values(game, LIST_FILTERS[key])
-      // Genre, status: any of the chosen values. Platforms, tags, languages,
-      // inputs, engines: any of them too (a game rarely has all).
+      const have = values(game, key)
+      // Genre, status, AI: any of the chosen values. Platforms, tags, languages,
+      // inputs, engines, accessibility: any of them too (a game rarely has all).
       if (!wanted.some((v) => have.includes(v))) return false
     }
     if (query.minRating !== null && (ratingOf(game) ?? -1) < query.minRating) return false
@@ -177,9 +199,10 @@ export function sortGames(games: Game[], sort: SortKey): Game[] {
 export function facetCounts(games: Game[], key: ListFilter): { value: string; count: number }[] {
   const counts = new Map<string, number>()
   for (const game of games) {
-    for (const value of values(game, LIST_FILTERS[key])) counts.set(value, (counts.get(value) ?? 0) + 1)
+    for (const value of values(game, key)) counts.set(value, (counts.get(value) ?? 0) + 1)
   }
+  const rank = key === 'ai' ? aiRank : () => 0
   return [...counts]
     .map(([value, count]) => ({ value, count }))
-    .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
+    .sort((a, b) => rank(a.value) - rank(b.value) || b.count - a.count || a.value.localeCompare(b.value))
 }

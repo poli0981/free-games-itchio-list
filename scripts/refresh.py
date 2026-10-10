@@ -10,8 +10,8 @@ then the least recently checked — about 1/7 of the catalog by default, so
 every game is re-checked weekly. From that single page it derives:
   - alive:  404/410  → "dead" strike
   - price:  paid     → "paid" strike
-  - rating, rating_count, status (+ backfills release_date / thumbnail /
-    updated_at when missing)
+  - rating, rating_count, status, ai_disclosure / ai_content / accessibility
+    (+ backfills release_date / thumbnail / updated_at when missing)
 A game is removed only when the same strike is seen again at least
 MIN_STRIKE_GAP after it was first seen (a single 404 or a flaky price widget
 no longer deletes a game). If a run would remove, or newly strike, more than
@@ -51,6 +51,7 @@ from scraper import (
     NA,
     Pacer,
     Page,
+    ai_and_accessibility,
     create_session,
     extract_thumbnail,
     fetch_page,
@@ -66,6 +67,9 @@ STATE_FILE = "scripts/state/refresh_state.json"
 
 # User-editable annotations: never overwritten by any scrape.
 PRESERVE_FIELDS = ("safe_virus", "notes", "nsfw")
+# A full re-scrape keeps these when the page no longer shows them: itch.io shows
+# the "Published" row only for a few weeks, and a game's cover doesn't go away.
+KEEP_KNOWN_FIELDS = ("release_date", "thumbnail")
 
 DEAD_CODES = {404, 410}
 CHECKPOINT_EVERY = 50
@@ -152,11 +156,13 @@ def refresh_updates(game: dict, soup) -> dict:
     if not has_info_panel(soup):
         return updates
     info = parse_info_table(soup)
-    for field, value in (
-        ("status", info.get("Status", NA)),
-        ("rating", info.get("Rating", NA)),
-        ("rating_count", info.get("RatingCount", NA)),
-    ):
+    current = {
+        "status": info.get("Status", NA),
+        "rating": info.get("Rating", NA),
+        "rating_count": info.get("RatingCount", NA),
+        **ai_and_accessibility(info),
+    }
+    for field, value in current.items():
         if game.get(field) != value:
             updates[field] = value
     if game.get("release_date", NA) == NA:
@@ -176,6 +182,9 @@ def full_updates(game: dict, soup) -> dict:
     """Every scraper-owned field that differs from a fresh scrape."""
     fresh = parse_game(soup, game["url"])
     fresh.pop("is_free", None)
+    for field in KEEP_KNOWN_FIELDS:
+        if fresh.get(field) == NA and game.get(field, NA) != NA:
+            fresh[field] = game[field]
     return {
         k: v
         for k, v in fresh.items()

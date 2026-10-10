@@ -1,4 +1,5 @@
 import type { Game, DeletedGameEntry } from '@/types/game'
+import { aiDisclosureOf, aiRank } from './game-filters'
 
 export interface CountEntry {
   key: string
@@ -16,7 +17,7 @@ export function countBy(games: Game[], key: 'genre' | 'status' | 'average_sessio
 
 export function countByArray(
   games: Game[],
-  key: 'tags' | 'platforms' | 'languages' | 'inputs' | 'made_with',
+  key: 'tags' | 'platforms' | 'languages' | 'inputs' | 'made_with' | 'ai_content' | 'accessibility',
 ): CountEntry[] {
   const m = new Map<string, number>()
   for (const g of games) {
@@ -32,6 +33,16 @@ export function countByArray(
 
 export function topN(entries: CountEntry[], n: number): CountEntry[] {
   return entries.slice(0, n)
+}
+
+/** Games per AI disclosure: "No AI", "AI Assisted", any newer itch.io value, then not disclosed. */
+export function aiDisclosureCounts(games: Game[]): CountEntry[] {
+  const m = new Map<string, number>()
+  for (const g of games) {
+    const v = aiDisclosureOf(g)
+    m.set(v, (m.get(v) ?? 0) + 1)
+  }
+  return Array.from(m, ([key, count]) => ({ key, count })).sort((a, b) => aiRank(a.key) - aiRank(b.key) || b.count - a.count)
 }
 
 function parseRating(rating: string): number | null {

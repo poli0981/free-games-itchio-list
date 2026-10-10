@@ -17,6 +17,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { useSearchDescriptions } from '@/hooks/useDescriptions'
 import { useVisibleGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { aiLabel } from '@/lib/ai-disclosure'
 import { useFormat } from '@/lib/format'
 import {
   emptyQuery,
@@ -46,6 +47,8 @@ const FILTER_LABEL: Record<ListFilter, MessageKey> = {
   lang: 'games.filter.lang',
   input: 'games.filter.input',
   engine: 'games.filter.engine',
+  ai: 'games.filter.ai',
+  access: 'games.filter.access',
 }
 
 const SORT_LABEL: Record<SortKey, MessageKey> = {
@@ -57,10 +60,13 @@ const SORT_LABEL: Record<SortKey, MessageKey> = {
 
 // Chip order: the common filters first, the long-tail ones after rating/browser.
 const MAIN_FILTERS: ListFilter[] = ['genre', 'platform', 'status', 'tag']
-const MORE_FILTERS: ListFilter[] = ['lang', 'input', 'engine']
+const MORE_FILTERS: ListFilter[] = ['ai', 'lang', 'input', 'engine', 'access']
 const ALL_FILTERS = Object.keys(LIST_FILTERS) as ListFilter[]
 
-const optionLabel = (key: ListFilter, value: string) => (key === 'platform' ? platformLabel(value) : value)
+function optionLabel(key: ListFilter, value: string, t: (key: MessageKey) => string): string {
+  if (key === 'platform') return platformLabel(value)
+  return key === 'ai' ? aiLabel(value, t) : value
+}
 
 function ListSkeleton() {
   return (
@@ -145,10 +151,10 @@ export default function Games() {
       const counts = facetCounts(filterGames(all, query, key, descriptions), key)
       const listed = new Set(counts.map((c) => c.value))
       for (const value of query.lists[key]) if (!listed.has(value)) counts.push({ value, count: 0 })
-      return counts.map((c) => ({ ...c, label: optionLabel(key, c.value) }))
+      return counts.map((c) => ({ ...c, label: optionLabel(key, c.value, t) }))
     }
     return Object.fromEntries(ALL_FILTERS.map((key) => [key, getter(key)])) as Record<ListFilter, () => FilterOption[]>
-  }, [all, query, descriptions])
+  }, [all, query, descriptions, t])
 
   // A failed background refresh (offline, deploy in flight) keeps the cached catalog on screen.
   if (games.isError && !games.data) return <RouteError error={games.error} onRetry={() => void games.refetch()} />
@@ -158,7 +164,7 @@ export default function Games() {
     ...ALL_FILTERS.flatMap((key) =>
       query.lists[key].map((value) => ({
         key: `${key}:${value}`,
-        label: optionLabel(key, value),
+        label: optionLabel(key, value, t),
         onRemove: () => setList(key, query.lists[key].filter((v) => v !== value)),
       })),
     ),

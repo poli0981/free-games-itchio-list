@@ -104,7 +104,7 @@ export default function Charts() {
         </TabsContent>
 
         <TabsContent value="discovery">
-          <Suspense fallback={<ChartGridSkeleton count={2} />}>
+          <Suspense fallback={<ChartGridSkeleton count={4} />}>
             <DiscoveryTab games={data} />
           </Suspense>
         </TabsContent>

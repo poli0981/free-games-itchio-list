@@ -5,8 +5,10 @@ Provides:
   - Session creation (honest User-Agent, retries on 5xx only)
   - fetch_page(): one GET with explicit 429 / Retry-After reporting
   - Pacer: polite delays, batch pauses, back-off after a 429
-  - Free/paid detection, info table parsing (all fields → N/A on missing)
-  - Description, thumbnail, NSFW extraction
+  - Free/paid detection, info table parsing (all fields → N/A on missing),
+    including the AI-disclosure and accessibility rows itch.io added in 2025–26
+  - Description (the creator's tagline, else the first sentence), thumbnail,
+    NSFW extraction
   - parse_game(): full single-game record from a fetched page
 """
 
@@ -207,10 +209,15 @@ def is_free_game(soup: BeautifulSoup) -> bool:
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+def _text(tag) -> str:
+    """Visible text with whitespace runs collapsed (a page may break lines inside a link)."""
+    return " ".join(tag.get_text().split())
+
+
 def _safe_text(tag, fallback: str = NA) -> str:
     if tag is None:
         return fallback
-    text = tag.get_text(strip=True)
+    text = _text(tag)
     return text if text else fallback
 
 
@@ -234,10 +241,17 @@ def has_info_panel(soup: BeautifulSoup) -> bool:
 # ---------------------------------------------------------------------------
 
 # Fields where itch.io lists multiple <a> links → store as JSON array
-_LIST_FIELDS = {"Tags", "Platforms", "Languages", "Inputs", "Made with"}
+_LIST_FIELDS = {"Tags", "Platforms", "Languages", "Inputs", "Made with", "Accessibility"}
 
 # Date rows: prefer abbr@title ("23 April 2021 @ 19:30 UTC") over the relative text
 _DATE_FIELDS = {"Release date", "Published", "Updated"}
+
+# Stored when the "Content" row says "No generative AI was used" (/games/tag-no-ai).
+AI_NONE = "No AI"
+
+
+def _links_to(a, slug: str) -> bool:
+    return str(a.get("href", "")).split("?", 1)[0].rstrip("/").endswith(f"/games/{slug}")
 
 
 def parse_info_table(soup: BeautifulSoup) -> dict[str, Any]:
@@ -245,6 +259,9 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, Any]:
 
     Multi-value fields (Tags, Platforms, etc.) → list[str]
     Single-value fields (Genre, Status, etc.) → str
+    "AI Disclosure" ("AI Assisted, Graphics, Text") → the classification as
+    "AI Disclosure", what AI was used for as "AI content" (list); a "Content"
+    row linking to /games/tag-no-ai also sets "No AI" = True.
     Missing fields are NOT inserted — caller handles defaults.
     """
     info: dict[str, Any] = {}
@@ -261,7 +278,7 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, Any]:
         if len(tds) < 2:
             continue
 
-        key = tds[0].get_text(strip=True)
+        key = _text(tds[0])
         value_td = tds[1]
 
         if key in _DATE_FIELDS:
@@ -269,8 +286,7 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, Any]:
             if abbr and abbr.get("title"):
                 info[key] = abbr["title"]
             else:
-                text = value_td.get_text(strip=True)
-                info[key] = text if text else NA
+                info[key] = _safe_text(value_td)
             continue
 
         # --- Rating: extract from itemprop attributes ---
@@ -288,37 +304,69 @@ def parse_info_table(soup: BeautifulSoup) -> dict[str, Any]:
 
         # --- Multi-value fields → list of strings ---
         links = value_td.find_all("a")
+        texts = [_text(a) for a in links]
         if key in _LIST_FIELDS:
-            info[key] = [a.get_text(strip=True) for a in links] if links else []
+            info[key] = texts
             continue
+
+        # --- AI Disclosure: the classification first, then what AI was used for ---
+        if key == "AI Disclosure":
+            info[key] = texts[0] if texts else _safe_text(value_td)
+            info["AI content"] = texts[1:]
+            continue
+
+        if key == "Content" and any(_links_to(a, "tag-no-ai") for a in links):
+            info["No AI"] = True
 
         # --- Genre: use only the FIRST value (primary genre) ---
         if key == "Genre":
-            if links:
-                info[key] = links[0].get_text(strip=True)
-            else:
-                text = value_td.get_text(strip=True)
-                info[key] = text if text else NA
+            info[key] = texts[0] if texts else _safe_text(value_td)
             continue
 
         # --- Generic single-value: prefer link texts joined, fallback plain ---
-        if links:
-            value = ", ".join(a.get_text(strip=True) for a in links)
-        else:
-            value = value_td.get_text(strip=True)
-
+        value = ", ".join(texts) if links else _text(value_td)
         info[key] = value if value else NA
 
     return info
+
+
+def ai_and_accessibility(info: dict[str, Any]) -> dict[str, Any]:
+    """The stored fields from itch.io's newer rows (the daily refresh keeps them current).
+
+    ai_disclosure: "AI Assisted" (the "AI Disclosure" row), "No AI" (the
+    "Content" row's /games/tag-no-ai) or N/A — the creator has not said.
+    ai_content: what AI was used for ("Graphics", "Text", "Code", "Sounds").
+    """
+    return {
+        "ai_disclosure": info.get("AI Disclosure") or (AI_NONE if info.get("No AI") else NA),
+        "ai_content": info.get("AI content", []),
+        "accessibility": info.get("Accessibility", []),
+    }
 
 
 # ---------------------------------------------------------------------------
 # Description
 # ---------------------------------------------------------------------------
 _SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'“(])")
+DESCRIPTION_MAX = 200
 
 
-def extract_description(soup: BeautifulSoup) -> str:
+def _cap(text: str) -> str:
+    """`text`, cut on a word and marked with "..." when longer than DESCRIPTION_MAX."""
+    if len(text) <= DESCRIPTION_MAX:
+        return text
+    cut = text[: DESCRIPTION_MAX - 3]
+    return (cut.rsplit(" ", 1)[0] if " " in cut else cut) + "..."
+
+
+def extract_tagline(soup: BeautifulSoup) -> str:
+    """The creator's "short description or tagline" (itch.io puts it in og:description)."""
+    meta = soup.find("meta", property="og:description")
+    text = " ".join(str(meta.get("content", "")).split()) if meta else ""
+    return _cap(text) if text else NA
+
+
+def extract_first_sentence(soup: BeautifulSoup) -> str:
     desc_tag = soup.find("div", class_="formatted_description")
     if not desc_tag:
         return NA
@@ -329,11 +377,13 @@ def extract_description(soup: BeautifulSoup) -> str:
         return NA
 
     # First sentence (a terminator followed by whitespace + a capital), capped at 200 chars.
-    first = _SENTENCE_END.split(full, maxsplit=1)[0]
-    if len(first) <= 200:
-        return first
-    cut = first[:197].rsplit(" ", 1)[0] if " " in first[:197] else first[:197]
-    return cut + "..."
+    return _cap(_SENTENCE_END.split(full, maxsplit=1)[0])
+
+
+def extract_description(soup: BeautifulSoup) -> str:
+    """The tagline, or the description's first sentence when the creator wrote none."""
+    tagline = extract_tagline(soup)
+    return tagline if tagline != NA else extract_first_sentence(soup)
 
 
 # ---------------------------------------------------------------------------
@@ -361,12 +411,15 @@ _NSFW_RE = re.compile(
 )
 
 
-def detect_nsfw(soup: BeautifulSoup, tags, description: str) -> str:
-    """Detect NSFW. `tags` can be list[str] or str. Matches whole words only."""
+def detect_nsfw(soup: BeautifulSoup, tags, *texts: str) -> str:
+    """Detect NSFW from tags, short texts (tagline, first sentence) and itch.io's warning.
+
+    `tags` can be list[str] or str. Matches whole words only.
+    """
     tags_text = " ".join(tags) if isinstance(tags, list) else (tags or "")
     if _NSFW_RE.search(tags_text):
         return "Yes"
-    if description != NA and _NSFW_RE.search(description):
+    if any(text != NA and _NSFW_RE.search(text) for text in texts):
         return "Yes"
     if soup.find("div", class_=["view_game_warning", "mature_content_notice"]):
         return "Yes"
@@ -387,6 +440,8 @@ def parse_game(soup: BeautifulSoup, url: str) -> dict:
     tags = info.get("Tags", [])
     description = extract_description(soup)
     release_date = info.get("Release date") or info.get("Published") or NA
+    # The first sentence too: a tagline rarely says what the description does.
+    nsfw = detect_nsfw(soup, tags, description, extract_first_sentence(soup))
 
     record = {
         "url": url,
@@ -401,13 +456,14 @@ def parse_game(soup: BeautifulSoup, url: str) -> dict:
         "rating": info.get("Rating", NA),
         "rating_count": info.get("RatingCount", NA),
         "average_session": info.get("Average session", NA),
-        "nsfw": detect_nsfw(soup, tags, description),
+        "nsfw": nsfw,
         "thumbnail": extract_thumbnail(soup),
         "tags": tags,
         "platforms": info.get("Platforms", []),
         "languages": info.get("Languages", []),
         "inputs": info.get("Inputs", []),
         "made_with": info.get("Made with", []),
+        **ai_and_accessibility(info),
         "safe_virus": "?",
         "notes": "",
     }
