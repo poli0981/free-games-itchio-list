@@ -10826,5 +10826,370 @@
         "notes": "",
         "updated_at": "09 October 2026 @ 01:35 UTC",
         "added_at": "2026-10-10T11:42:32Z"
+    },
+    {
+        "url": "https://beegfloppa15.itch.io/you-know-them-really-well-actually-a-rejection-sim",
+        "name": "You Know Them Really Well, Actually - A Rejection Sim",
+        "dev": "Brody, rreegs, antiv3nom",
+        "description": "Rejecting your friend isn't fun, but you have to try.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 08:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjgzMzQzLnBuZw==/original/JnAGtF.png",
+        "tags": [
+            "2D",
+            "breakup",
+            "Casual",
+            "Dating Sim",
+            "Indie",
+            "Multiple Endings",
+            "Narrative",
+            "one-button",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:18Z"
+    },
+    {
+        "url": "https://cccrimsonmakesgames.itch.io/death-spiral",
+        "name": "Death Spiral",
+        "dev": "ccCrimson",
+        "description": "What happens when the character you play as becomes self aware?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 19:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzAwNDY0LnBuZw==/original/DPyC25.png",
+        "tags": [
+            "Horror",
+            "Indie",
+            "LGBTQIA",
+            "My First Game Jam",
+            "Pixel Art",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:22Z"
+    },
+    {
+        "url": "https://delender1100.itch.io/cybartender",
+        "name": "cyBar:tender",
+        "dev": "Delender1100",
+        "description": "A Game By Delender1100 Created for the 2026 49er Kickoff Jam with the UNC Charlotte Game Developers Club",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 22:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzA5MzE3LnBuZw==/original/jqWrpW.png",
+        "tags": [
+            "2D",
+            "Furry",
+            "No AI",
+            "Retro",
+            "Working Simulator"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:24Z"
+    },
+    {
+        "url": "https://dollhousing.itch.io/ego-birth",
+        "name": "Ego Birth",
+        "dev": "dollhousing",
+        "description": "break the loop of player control",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyNzQwNjI2LmdpZg==/original/K1q0I2.gif",
+        "tags": [
+            "2D",
+            "Game Maker's Toolkit Jam",
+            "Horror"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Aseprite",
+            "FL Studio"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "22 September 2026 @ 18:00 UTC",
+        "added_at": "2026-10-10T15:38:28Z"
+    },
+    {
+        "url": "https://kritzinger.itch.io/ristys-monster-vocational-rehabilitation",
+        "name": "Risty's Monster Vocational Rehabilitation",
+        "dev": "kritzinger",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 15:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTgxMDY2LnBuZw==/original/TS3RuO.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:32Z"
+    },
+    {
+        "url": "https://miyoshi-shizuka.itch.io/patricide",
+        "name": "PATRICIDE",
+        "dev": "Miyoshi Shizuka",
+        "description": "\"PATRICIDE\" is an adventure RPG about girls who killed their father. Use the Emotion System to survive a ruthless world.",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "5",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NDgzMzkxLmpwZw==/original/gjqln0.jpg",
+        "tags": [
+            "3D",
+            "Anime",
+            "Cute",
+            "Dark",
+            "Female Protagonist",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Japanese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Configurable controls",
+            "High-contrast"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 October 2026 @ 09:39 UTC",
+        "added_at": "2026-10-10T15:38:35Z"
+    },
+    {
+        "url": "https://nhungtt2804.itch.io/abyssal-drift",
+        "name": "Abyssal drift",
+        "dev": "nhungtt",
+        "description": "A meditative ocean exploration game about a lonely Sun Jellyfish searching for its lost family.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NTI0NjQ0LnBuZw==/original/gn3zqE.png",
+        "tags": [
+            "2D",
+            "AI Generated",
+            "Colorful",
+            "Family Friendly",
+            "Fantasy",
+            "Top-Down",
+            "vietnamese"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:37Z"
+    },
+    {
+        "url": "https://northboundstudio.itch.io/howls-of-hearths",
+        "name": "Howl's of hearth's",
+        "dev": "Northbound Studio",
+        "description": "A visual novel about lost memories, unexpected connections, and a past that refuses to stay buried.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 02:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzA5NzExLnBuZw==/original/%2BgZ7pP.png",
+        "tags": [
+            "Furry",
+            "Indie",
+            "Mystery",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:40Z"
+    },
+    {
+        "url": "https://setthank.itch.io/sakuragaoka-days",
+        "name": "Sakuragaoka days",
+        "dev": "Setthank",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 06:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzE0Mjc4LmpwZw==/original/rmMVOG.jpg",
+        "tags": [
+            "2D",
+            "Anime",
+            "Horror",
+            "Multiple Endings",
+            "Mystery",
+            "No AI",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-10T15:38:44Z"
     }
 ]
