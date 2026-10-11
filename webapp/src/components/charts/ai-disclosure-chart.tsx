@@ -6,7 +6,7 @@ import { AI_ASSISTED, AI_NONE, AI_UNDISCLOSED } from '@/lib/game-filters'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { LEGEND_BASE, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { NEUTRAL, PALETTE } from './palette'
 
@@ -42,8 +42,8 @@ export function AiDisclosureChart({ games }: { games: Game[] }) {
             ))}
           </Pie>
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={total} />} />
-          {/* The data's order (no AI, AI-assisted, not disclosed), not Recharts' alphabetical default. */}
-          <Legend itemSorter={(item) => data.findIndex((d) => d.label === item.value)} />
+          {/* In the data's order: no AI, AI-assisted, not disclosed. */}
+          <Legend {...LEGEND_BASE} />
         </PieChart>
       </ResponsiveContainer>
     </ChartCard>

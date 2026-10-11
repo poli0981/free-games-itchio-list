@@ -4,7 +4,7 @@ import { classifyOnline } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { LEGEND_BASE, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -24,7 +24,7 @@ export function OnlineOfflineChart({ games }: { games: Game[] }) {
             <Cell fill={PALETTE[3]} />
           </Pie>
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={split.online + split.offline} />} />
-          <Legend />
+          <Legend {...LEGEND_BASE} />
         </PieChart>
       </ResponsiveContainer>
     </ChartCard>

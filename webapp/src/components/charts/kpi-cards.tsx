@@ -25,8 +25,9 @@ export function KpiCards({ games, deleted, hiddenNsfw }: KpiCardsProps) {
   ]
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
-      {items.map((item) => (
-        <Card key={item.label}>
+      {/* Phones: the total spans the row, so the other four fill two rows with no gap. */}
+      {items.map((item, i) => (
+        <Card key={item.label} className={i === 0 ? 'max-md:col-span-2' : undefined}>
           <CardContent className="p-4">
             <p className="text-xs text-muted-foreground">{item.label}</p>
             <p className="mt-1 font-mono text-2xl font-semibold tracking-tight">{item.value}</p>

@@ -4,7 +4,7 @@ import { genreTreemapData } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { TOOLTIP_BASE } from './chart-theme'
+import { TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -18,11 +18,17 @@ interface TreemapCellProps {
   name?: string
 }
 
-// Custom cell renderer: hides the label on rectangles too small to fit it,
-// so the treemap stays legible on narrow (mobile) viewports.
+/** Width of a 12px semibold Geist character, rounded up. */
+const LABEL_CHAR_PX = 7
+
+// Custom cell renderer: shortens the label to the rectangle's width ("Simul…")
+// and hides it where not even three letters fit, so the treemap stays legible
+// on narrow (mobile) viewports.
 function TreemapCell(props: TreemapCellProps) {
   const { x = 0, y = 0, width = 0, height = 0, index = 0, depth = 1, name = '' } = props
   if (depth !== 1 || width <= 0 || height <= 0) return null
+  const fits = Math.floor((width - 12) / LABEL_CHAR_PX)
+  const label = name.length <= fits || fits >= 4 ? truncateLabel(fits)(name) : null
   return (
     <g>
       <rect
@@ -34,9 +40,9 @@ function TreemapCell(props: TreemapCellProps) {
         stroke="var(--background)"
         strokeWidth={2}
       />
-      {width > 56 && height > 24 && (
+      {label && height > 24 && (
         <text x={x + 6} y={y + 18} fill="var(--background)" fontSize={12} fontWeight={600}>
-          {name}
+          {label}
         </text>
       )}
     </g>

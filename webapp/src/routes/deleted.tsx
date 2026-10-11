@@ -5,17 +5,10 @@ import { RouteError } from '@/components/route-error'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useDeletedGames } from '@/hooks/useGames'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { reasonKey } from '@/lib/deleted-reason'
 import { useFormat } from '@/lib/format'
 import { fold } from '@/lib/game-filters'
-import { useT, type MessageKey } from '@/lib/i18n'
-
-/** The pipeline's standard reasons get a translated label; anything else is shown as written. */
-function reasonKey(reason: string): MessageKey | null {
-  if (/no longer exists|HTTP 4(?:04|10)/i.test(reason)) return 'deleted.reason.gone'
-  if (/became paid/i.test(reason)) return 'deleted.reason.paid'
-  if (/password-protected/i.test(reason)) return 'deleted.reason.private'
-  return null
-}
+import { useT } from '@/lib/i18n'
 
 export default function Removed() {
   const t = useT()

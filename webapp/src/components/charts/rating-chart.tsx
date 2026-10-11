@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { ratingHistogram } from '@/lib/analytics'
+import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
@@ -10,6 +11,7 @@ import { PALETTE } from './palette'
 
 export function RatingChart({ games }: { games: Game[] }) {
   const t = useT()
+  const fmt = useFormat()
   const data = useMemo(() => ratingHistogram(games, 10), [games])
   return (
     <ChartCard title={t('charts.rating.title')} description={t('charts.rating.desc')}>
@@ -17,7 +19,7 @@ export function RatingChart({ games }: { games: Game[] }) {
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="key" tick={{ fontSize: 10 }} />
-          <YAxis />
+          <YAxis tickFormatter={fmt.number} />
           <Tooltip {...TOOLTIP_BASE} cursor={BAR_CURSOR} content={<ChartTooltipContent />} />
           <Bar dataKey="count" name={t('charts.series.games')} fill={PALETTE[5]} radius={[4, 4, 0, 0]} />
         </BarChart>
