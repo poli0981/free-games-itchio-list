@@ -6545,41 +6545,6 @@
         "accessibility": []
     },
     {
-        "url": "https://sekarsarasu1981.itch.io/my-raising-diary",
-        "name": "My Raising Diary",
-        "dev": "sekarsarasu1981",
-        "description": "This is a fan translation of the free game My Raising Diary (Ikusei Nikki) by Water colors -games- .",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "18 September 2026 @ 12:55 UTC",
-        "rating": "1.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMDcyMDc1LnBuZw==/original/3gQtJI.png",
-        "tags": [
-            "Anime",
-            "Comedy",
-            "Female Protagonist",
-            "Life Simulation",
-            "Management",
-            "Multiple Endings",
-            "Otome",
-            "raising-sim",
-            "stat-raiser"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-20T08:45:19Z"
-    },
-    {
         "url": "https://shogunyaru.itch.io/the-perfect-piece",
         "name": "The Perfect Piece (Demo)",
         "dev": "shogunyaru",
@@ -6740,42 +6705,6 @@
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
-    },
-    {
-        "url": "https://sreejithnm78.itch.io/unquiet-grey",
-        "name": "Unquiet Grey",
-        "dev": "sreejithnm78",
-        "description": "You wake up by the side of the road with a headache and a stranger's jacket.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "18 September 2026 @ 13:30 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMDcyNTg0LnBuZw==/original/vg63x%2F.png",
-        "tags": [
-            "2D",
-            "Anime",
-            "Atmospheric",
-            "Dating Sim",
-            "Female Protagonist",
-            "Mystery",
-            "Otome",
-            "Psychological Horror",
-            "Romance",
-            "timeloop"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-20T08:45:52Z"
     },
     {
         "url": "https://svenchen.itch.io/unexpectedly-yours",
@@ -9067,39 +8996,6 @@
         "accessibility": []
     },
     {
-        "url": "https://elinzeiart-z.itch.io/salvation-of-the-righteous",
-        "name": "Salvation of the Righteous",
-        "dev": "Elinz",
-        "description": "Yume, an orphan who went through a catastrophic fire accident, attempts to change the outcome by reliving the day before it happened.",
-        "genre": "Role Playing",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "20 September 2026 @ 19:44 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMTMxNDczLnBuZw==/original/YzOsWw.png",
-        "tags": [
-            "Horror",
-            "Pixel Art",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "RPG Maker"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-21T05:30:45Z",
-        "updated_at": "26 September 2026 @ 20:24 UTC"
-    },
-    {
         "url": "https://gordlet.itch.io/dont-yield-to-love",
         "name": "Don't Yield to Love!",
         "dev": "gordlet",
@@ -11360,41 +11256,6 @@
         "accessibility": []
     },
     {
-        "url": "https://esgeetha5.itch.io/enter-furry-world",
-        "name": "Enter Furry World",
-        "dev": "esgeetha5",
-        "description": "Enter Furry World ----- ENGLISH AND FRENCH VERSION AVAILABLE IN THE OPTIONS ----- After a heavy storm and rough crash, you wake up on a beach.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "22 September 2026 @ 11:52 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMTc1ODM4LnBuZw==/original/NkmQSY.png",
-        "tags": [
-            "Animals",
-            "Atmospheric",
-            "Fantasy",
-            "Furry",
-            "Mystery",
-            "relationship",
-            "Ren'Py",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-23T10:41:02Z",
-        "updated_at": "23 September 2026 @ 14:22 UTC"
-    },
-    {
         "url": "https://hellotomyfriends3.itch.io/phallic-shaped-balloons",
         "name": "phallic shaped balloons",
         "dev": "hellotomyfriends3",
@@ -11469,41 +11330,6 @@
             "Text"
         ],
         "accessibility": []
-    },
-    {
-        "url": "https://kanagarajv021.itch.io/endless-labyrinth-of-night-roads",
-        "name": "Endless Labyrinth of Night Roads",
-        "dev": "kanagarajv021",
-        "description": "Join the slice of life, coming of age story about the wolf travelling across the world of impressionistic landscapes ELoNR is a short, visual-heavy VN with each of its current 2 chapters being...",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "22 September 2026 @ 12:25 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMTc2NjcxLnBuZw==/original/9B%2BGmO.png",
-        "tags": [
-            "Atmospheric",
-            "Comics",
-            "Furry",
-            "Hand-drawn",
-            "Narrative",
-            "Relaxing",
-            "Ren'Py",
-            "Sci-fi",
-            "Slice Of Life"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-23T10:41:11Z"
     },
     {
         "url": "https://themoongoblin.itch.io/dagon",
@@ -12031,41 +11857,6 @@
             "Text"
         ],
         "accessibility": []
-    },
-    {
-        "url": "https://coren-baili.itch.io/six-rules-the-visual-novel",
-        "name": "Six Rules: The Visual Novel",
-        "dev": "Coren Baili",
-        "description": "STORY Hung on a piece on thread in the foyer, a bamboo scroll read: Rules 1) You must not let any strangers into the house.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "23 September 2026 @ 12:03 UTC",
-        "rating": "5.0",
-        "rating_count": "39",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMTk4NjM1LnBuZw==/original/bOwyjT.png",
-        "tags": [
-            "Alternate History",
-            "Anime",
-            "artgame",
-            "Dark",
-            "Horror",
-            "Medieval",
-            "Ren'Py",
-            "Romance",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-24T13:37:22Z"
     },
     {
         "url": "https://finn25.itch.io/you-arent-really-there",

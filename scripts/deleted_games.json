@@ -664,5 +664,53 @@
         "name": "SWALLOWED",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-09T03:01:17Z"
+    },
+    {
+        "url": "https://v0id2.itch.io/burrow",
+        "name": "Burrow",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:17Z"
+    },
+    {
+        "url": "https://wolf-hal.itch.io/sprunki",
+        "name": "Sprunki",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:19Z"
+    },
+    {
+        "url": "https://sekarsarasu1981.itch.io/my-raising-diary",
+        "name": "My Raising Diary",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:23Z"
+    },
+    {
+        "url": "https://sreejithnm78.itch.io/unquiet-grey",
+        "name": "Unquiet Grey",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:27Z"
+    },
+    {
+        "url": "https://elinzeiart-z.itch.io/salvation-of-the-righteous",
+        "name": "Salvation of the Righteous",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:31Z"
+    },
+    {
+        "url": "https://esgeetha5.itch.io/enter-furry-world",
+        "name": "Enter Furry World",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:34Z"
+    },
+    {
+        "url": "https://kanagarajv021.itch.io/endless-labyrinth-of-night-roads",
+        "name": "Endless Labyrinth of Night Roads",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:38Z"
+    },
+    {
+        "url": "https://coren-baili.itch.io/six-rules-the-visual-novel",
+        "name": "Six Rules: The Visual Novel",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-11T03:02:40Z"
     }
 ]
