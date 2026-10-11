@@ -106,7 +106,7 @@ export const en = {
   "charts.kpi.online": "Online (HTML5)",
   "charts.kpi.totalGames": "Total games",
   "charts.languages.title": "Top 10 Languages",
-  "charts.madeWith.desc": "Primary engine per game (made_with[0])",
+  "charts.madeWith.desc": "Primary engine per game",
   "charts.madeWith.title": "Game Engines",
   "charts.onlineOffline.desc": "HTML5 means playable in the browser",
   "charts.onlineOffline.offline": "Offline only",

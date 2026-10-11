@@ -21,7 +21,13 @@ export function GameCountChart({ history }: { history: CountHistoryPoint[] }) {
           <LineChart data={history} margin={{ left: 4, right: 8 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" tick={{ fontSize: 10 }} minTickGap={24} />
-            <YAxis tick={{ fontSize: 11 }} width={48} allowDecimals={false} domain={['auto', 'auto']} />
+            <YAxis
+              tick={{ fontSize: 11 }}
+              width={48}
+              allowDecimals={false}
+              domain={['auto', 'auto']}
+              tickFormatter={fmt.number}
+            />
             <Tooltip
               {...TOOLTIP_BASE}
               cursor={LINE_CURSOR}

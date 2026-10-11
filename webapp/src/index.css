@@ -203,6 +203,24 @@
   outline: none;
 }
 
+/* Phones: chart text at caption size. Legends otherwise take the 16px body size
+   (three rows under a pie) and axes their 10–16px props. Recharts reads both
+   sizes back from the DOM (legend box, getComputedStyle on a tick), so the
+   layout follows these rules. */
+@media (width < 48rem) {
+  .recharts-legend-wrapper {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .recharts-legend-item .recharts-surface {
+    width: 10px;
+    height: 10px;
+  }
+  .recharts-cartesian-axis-tick-value {
+    font-size: 11px;
+  }
+}
+
 /* index.html's static fallback shows only if the app hasn't started after a moment. */
 [data-static-fallback] {
   animation: static-fallback 0s 1.5s both;

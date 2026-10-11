@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { deletionsByMonth } from '@/lib/analytics'
+import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { DeletedGameEntry } from '@/types/game'
 import { ChartCard } from './chart-card'
@@ -10,6 +11,7 @@ import { PALETTE } from './palette'
 
 export function DeletionsOverTimeChart({ deleted }: { deleted: DeletedGameEntry[] }) {
   const t = useT()
+  const fmt = useFormat()
   const data = useMemo(() => deletionsByMonth(deleted), [deleted])
   return (
     <ChartCard title={t('charts.deletionsOverTime.title')} description={t('charts.deletionsOverTime.desc')}>
@@ -17,7 +19,7 @@ export function DeletionsOverTimeChart({ deleted }: { deleted: DeletedGameEntry[
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="key" tick={{ fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
-          <YAxis allowDecimals={false} />
+          <YAxis allowDecimals={false} tickFormatter={fmt.number} />
           <Tooltip {...TOOLTIP_BASE} cursor={BAR_CURSOR} content={<ChartTooltipContent />} />
           <Bar dataKey="count" name={t('charts.series.removed')} fill={PALETTE[1]} radius={[4, 4, 0, 0]} />
         </BarChart>

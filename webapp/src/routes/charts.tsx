@@ -37,6 +37,12 @@ function Heading({ children }: { children?: ReactNode }) {
 
 const PAGE = 'mx-auto max-w-[1440px] px-4 pt-6 pb-12 sm:px-8 md:pt-7'
 
+// Phones: one full-width row of equal tabs. A wrapping row overflowed the
+// fixed-height bar with the Vietnamese labels; the labels never shrink below
+// their text, and on the narrowest screens the bar scrolls instead.
+const TABS_LIST = 'max-md:flex max-md:h-11 max-md:w-full max-md:overflow-x-auto max-md:scrollbar-hide'
+const TAB = 'max-md:h-full max-md:flex-1 max-md:px-1 max-md:text-[13px]'
+
 export default function Charts() {
   const t = useT()
   const fmt = useFormat()
@@ -78,11 +84,19 @@ export default function Charts() {
       </Heading>
 
       <Tabs defaultValue="overview">
-        <TabsList className="flex-wrap">
-          <TabsTrigger value="overview">{t('charts.tabs.overview')}</TabsTrigger>
-          <TabsTrigger value="reach">{t('charts.tabs.reach')}</TabsTrigger>
-          <TabsTrigger value="quality">{t('charts.tabs.quality')}</TabsTrigger>
-          <TabsTrigger value="discovery">{t('charts.tabs.discovery')}</TabsTrigger>
+        <TabsList className={TABS_LIST}>
+          <TabsTrigger value="overview" className={TAB}>
+            {t('charts.tabs.overview')}
+          </TabsTrigger>
+          <TabsTrigger value="reach" className={TAB}>
+            {t('charts.tabs.reach')}
+          </TabsTrigger>
+          <TabsTrigger value="quality" className={TAB}>
+            {t('charts.tabs.quality')}
+          </TabsTrigger>
+          <TabsTrigger value="discovery" className={TAB}>
+            {t('charts.tabs.discovery')}
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="overview" className="space-y-4">

@@ -108,7 +108,7 @@ export const vi: Record<MessageKey, string> = {
   "charts.kpi.online": "Online (HTML5)",
   "charts.kpi.totalGames": "Tổng số game",
   "charts.languages.title": "Top 10 ngôn ngữ",
-  "charts.madeWith.desc": "Engine chính của mỗi game (made_with[0])",
+  "charts.madeWith.desc": "Engine chính của mỗi game",
   "charts.madeWith.title": "Game engine",
   "charts.onlineOffline.desc": "HTML5 nghĩa là chơi được ngay trên trình duyệt",
   "charts.onlineOffline.offline": "Chỉ offline",
