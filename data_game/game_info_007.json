@@ -11191,5 +11191,1076 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-10T15:38:44Z"
+    },
+    {
+        "url": "https://blindhermit.itch.io/one-way-down",
+        "name": "One Way Down",
+        "dev": "BlindHermit",
+        "description": "Dig down with your crew, battle bosses, and build a base camp that makes every run faster.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 12:42 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzU2ODUzLnBuZw==/original/OIR%2Fo9.png",
+        "tags": [
+            "Boss battle",
+            "Casual",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Isometric",
+            "mining",
+            "Open Source",
+            "Singleplayer",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:27:54Z"
+    },
+    {
+        "url": "https://csaf.itch.io/kaiju-disposal",
+        "name": "KAIJU DISPOSAL",
+        "dev": "CSAF — Core Systems Asset Factory",
+        "description": "The heroes won. Now somebody has to move it. Cut up a dead kaiju before it rots, swells or glows.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 08:21 UTC",
+        "rating": "2.5",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzQ0NzEwLnBuZw==/original/6q09Lj.png",
+        "tags": [
+            "Incremental",
+            "kaiju",
+            "Management",
+            "Monsters",
+            "Pixel Art",
+            "Procedural Generation",
+            "Singleplayer",
+            "time-management"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:27:59Z"
+    },
+    {
+        "url": "https://jpter78.itch.io/pokesurvivor",
+        "name": "PokéSurvivor",
+        "dev": "jpter78",
+        "description": "Survive endless hordes with all 966 Pokémon. A free Vampire Survivors-style fan game with online co-op.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 00:38 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzE4MzU5LnBuZw==/original/j7Kaf3.png",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "pokemon",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:01Z"
+    },
+    {
+        "url": "https://menyiques.itch.io/das-boot",
+        "name": "DAS BOOT Black Tiphoon Operation",
+        "dev": "Menyiques",
+        "description": "Juego conversacional basado en la Segunda Guerra Mundial",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 19:08 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzU0OTg2LmpwZw==/original/IlgGNw.jpg",
+        "tags": [
+            "Amstrad CPC",
+            "enigma",
+            "msx2",
+            "pcw",
+            "text-adventure",
+            "uboat",
+            "windows",
+            "wwii",
+            "ZX Spectrum",
+            "zx-spectrum-next"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:05Z"
+    },
+    {
+        "url": "https://snailsalad.itch.io/ntrtopia",
+        "name": "NTRtopia",
+        "dev": "snailsalad",
+        "description": "Netorare phone simulator",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 11:45 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzU1MTEyLmpwZw==/original/P9f9QX.jpg",
+        "tags": [
+            "Adult",
+            "Anime",
+            "chat",
+            "Erotic",
+            "Femdom",
+            "netorare",
+            "NSFW",
+            "ntr",
+            "phone",
+            "Porn"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "French",
+            "Hindi",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Turkish",
+            "Chinese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:08Z"
+    },
+    {
+        "url": "https://twgrow.itch.io/lab-accident",
+        "name": "Lab accident",
+        "dev": "TWgrow",
+        "description": "In a genetic research lab, you work to unlock the secrets of human potential.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 15:18 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzYyNTIwLnBuZw==/original/SJCaVj.png",
+        "tags": [
+            "breast-expansion",
+            "butt-expansion",
+            "growth",
+            "height-increase",
+            "hourglass-expansion",
+            "muscle-growth",
+            "transformation",
+            "weight-gain"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:11Z"
+    },
+    {
+        "url": "https://omniscye.itch.io/empress-pokemon-2d-arena",
+        "name": "Empress: Pokemon 2D Arena",
+        "dev": "Omniscye",
+        "description": "2D Real-time Pokémon battles. Over 1,000 Pokémon. Welcome to Empress: Pokémon 2D Arena.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 01:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzA4NzEzLnBuZw==/original/RE%2FpAm.png",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "pokemon",
+            "pokemon-2d-arena",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 20:53 UTC",
+        "added_at": "2026-10-12T01:28:14Z"
+    },
+    {
+        "url": "https://withered-soul.itch.io/can-you-escape",
+        "name": "Can You Escape?",
+        "dev": "Soren",
+        "description": "You're stuck in a house, can you escape the house?",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 00:08 UTC",
+        "rating": "4.3",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzM4OTY0LnBuZw==/original/MpVWuV.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Escape Game",
+            "Godot",
+            "Indie",
+            "No AI",
+            "Short",
+            "Simple",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:18Z"
+    },
+    {
+        "url": "https://xotox1337.itch.io/riftmancer",
+        "name": "Riftmancer",
+        "dev": "XotoX1337",
+        "description": "Open rifts. Reap essence. Grow stronger.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 20:07 UTC",
+        "rating": "3.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzM0MDA0LnBuZw==/original/v5Aq6F.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Magic",
+            "Pixel Art",
+            "Singleplayer",
+            "Wizards"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:21Z"
+    },
+    {
+        "url": "https://akaris512.itch.io/broken-saints",
+        "name": "Broken Saints",
+        "dev": "Akari",
+        "description": "El amor también tiene su propio ritmo",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 22:14 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDg1MDMzLmpwZw==/original/L9H5NT.jpg",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:25Z"
+    },
+    {
+        "url": "https://daniel-fernandes-dev.itch.io/sanmd",
+        "name": "Sim, Acredite nas Mentiras Dele — SANMD",
+        "dev": "Daniel-Fernandes-Dev",
+        "description": "Investigue cenas em São Paulo, reúna pistas e descubra os segredos de um celular misterioso.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 17:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzI5OTk1LnBuZw==/original/52uNFO.png",
+        "tags": [
+            "Atmospheric",
+            "Detective",
+            "Exploration",
+            "Female Protagonist",
+            "Mystery",
+            "Point & Click",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Android"
+        ],
+        "languages": [
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:29Z"
+    },
+    {
+        "url": "https://darklordgames.itch.io/monmon-high-demo",
+        "name": "MonMon High - Demo",
+        "dev": "DarkLordGames",
+        "description": "MonMon High Demo",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 22:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzM3OTQ3LmpwZw==/original/A1KPtG.jpg",
+        "tags": [
+            "2D",
+            "Indie",
+            "Mystery",
+            "Romance",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:32Z"
+    },
+    {
+        "url": "https://egot1stical.itch.io/who-killed-markiplier-vn",
+        "name": "WHO KILLED MARKIPLIER? A VISUAL NOVEL",
+        "dev": "Ego",
+        "description": "A fanmade VN adaptation of Who Killed Markiplier",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 18:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzMwOTA1LnBuZw==/original/BI8D6o.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "markiplier",
+            "Mystery"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:35Z"
+    },
+    {
+        "url": "https://nanaroba.itch.io/the-intruder",
+        "name": "The Intruder (DEMO)",
+        "dev": "Nanaroba",
+        "description": "Você vive uma vida tranquila com seu trabalho, até que na volta pra casa encontre um artefato antigo e de aparência interessante, você decide levá-lo pra casa..e daí as coisas ficam diferentes.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 14:55 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjQ5MzExLmdpZg==/original/k%2Blrjd.gif",
+        "tags": [
+            "Horror",
+            "No AI",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:39Z"
+    },
+    {
+        "url": "https://nynyandtotoh.itch.io/nadie-te-eligi-demo",
+        "name": "NADIE TE ELIGIÓ - DEMO",
+        "dev": "nynyandtotoh",
+        "description": "03:12 a. m.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 19:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzMzNzc0LnBuZw==/original/%2FFxv5d.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:42Z"
+    },
+    {
+        "url": "https://riekay.itch.io/slices-of-life",
+        "name": "Slices of Life",
+        "dev": "Henni",
+        "description": "Chapter I: Missing what you never had. It’s basically a walk in the park.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 16:55 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzA3OTc0LmpwZw==/original/S%2FjoLF.jpg",
+        "tags": [
+            "3D",
+            "No AI",
+            "PSX (PlayStation)",
+            "Queer",
+            "Singleplayer",
+            "Transgender",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:45Z"
+    },
+    {
+        "url": "https://scrufflesdev.itch.io/the-light-i-saw",
+        "name": "The Light I Saw",
+        "dev": "Scruffles",
+        "description": "A girl walks home from her therapist thinking about God.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 04:51 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzQ3NTgxLnBuZw==/original/BAZliD.png",
+        "tags": [
+            "2D",
+            "faith",
+            "Horror",
+            "Mental Health",
+            "Psychological Horror",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:49Z"
+    },
+    {
+        "url": "https://sofiaromao.itch.io/starless-night-of-the-console-diver",
+        "name": "Starless Night of the Console Diver",
+        "dev": "sofiaromao",
+        "description": "existential horror visual novel",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 21:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzM2MTYwLnBuZw==/original/eJkYtq.png",
+        "tags": [
+            "Atmospheric",
+            "Cyberpunk",
+            "Dark",
+            "Hand-drawn",
+            "Horror",
+            "Psychological Horror",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:52Z"
+    },
+    {
+        "url": "https://zherreus.itch.io/quoryc-demo",
+        "name": "Quoryc (Demo)",
+        "dev": "Zherreus",
+        "description": "Alien dating sim or something but I havn't made the dating part yet.",
+        "genre": "Interactive Fiction",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 07:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzQ5NTY2LnBuZw==/original/wbjjmt.png",
+        "tags": [
+            "Dating Sim",
+            "Fantasy",
+            "Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:28:55Z"
+    },
+    {
+        "url": "https://jorotyn.itch.io/the-circle",
+        "name": "The Circle",
+        "dev": "jorotyn",
+        "description": "An incremental idler about a Circle",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 03:26 UTC",
+        "rating": "3.2",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTk1ODMxLnBuZw==/original/kMTlgv.png",
+        "tags": [
+            "Abstract",
+            "Clicker",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Minimalist",
+            "Pixel Art",
+            "Relaxing",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 10:20 UTC",
+        "added_at": "2026-10-12T01:28:59Z"
+    },
+    {
+        "url": "https://josephopossum.itch.io/under-the-bridge",
+        "name": "Under The Bridge",
+        "dev": "JosephOPossum",
+        "description": "Meet and date junkyard friends in Bridge City.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "305",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4MjY0NTYzLmdpZg==/original/9EQLGf.gif",
+        "tags": [
+            "Cute",
+            "Dating Sim",
+            "Furry",
+            "Gay",
+            "Lesbian",
+            "LGBT",
+            "Otome",
+            "Romance",
+            "Yaoi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 October 2026 @ 00:59 UTC",
+        "added_at": "2026-10-12T01:29:19Z"
+    },
+    {
+        "url": "https://cursedpierro.itch.io/dreams-of-entropy",
+        "name": "Dreams Of Entropy",
+        "dev": "cursedpierro",
+        "description": "VN about trying to wake up from a dream, and having to choose between a sweet lie or a bitter truth",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 14:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzIzNDU4LnBuZw==/original/5psUHk.png",
+        "tags": [
+            "Dreams",
+            "Female Protagonist",
+            "Indie",
+            "meta",
+            "Narrative",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:29:22Z"
+    },
+    {
+        "url": "https://dena70.itch.io/retro-chat",
+        "name": "Retro Chat",
+        "dev": "Dena70",
+        "description": "You play as a middle-aged man who discovers an old laptop in his attic.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 13:59 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzIyMDk5LnBuZw==/original/82q1Pm.png",
+        "tags": [
+            "2D",
+            "AI Generated",
+            "Atmospheric",
+            "Creepy",
+            "Horror",
+            "Mystery"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:29:25Z"
+    },
+    {
+        "url": "https://disit-il.itch.io/capacite-de-destruction-massive",
+        "name": "CAPACITÉ DE DESTRUCTION MASSIVE",
+        "dev": "Disit-il",
+        "description": "« CAPACITÉ DE DESTRUCTION MASSIVE » est un jeu vidéo narratif qui s’inspire du style des forums.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 13:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTYwNDg1LnBuZw==/original/M8lIme.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "French"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:29:28Z"
+    },
+    {
+        "url": "https://goncalo-a.itch.io/lazy-johnny",
+        "name": "Lazy Johnny",
+        "dev": "Goncalo_A",
+        "description": "You can't be that lazy...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 14:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzAwMzUyLnBuZw==/original/kufkZc.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-12T01:29:30Z"
+    },
+    {
+        "url": "https://almost-there-games.itch.io/azimuth",
+        "name": "Azimuth",
+        "dev": "Almost There Games",
+        "description": "Because 2014 deserves a second chance",
+        "genre": "Racing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 12:42 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTMzODMwLnBuZw==/original/SACvSh.png",
+        "tags": [
+            "3D",
+            "Arcade",
+            "Exploration",
+            "Open World",
+            "Relaxing",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Xbox controller"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 15:03 UTC",
+        "added_at": "2026-10-12T01:29:32Z"
+    },
+    {
+        "url": "https://interloko.itch.io/mk-trilogy-hd",
+        "name": "MK Trilogy HD",
+        "dev": "interloko",
+        "description": "Remaster of the 90's klassic fighting game",
+        "genre": "Fighting",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 10:18 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzA5ODU0LnBuZw==/original/tPpyac.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Cult Classic"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 21:07 UTC",
+        "added_at": "2026-10-12T01:29:36Z"
     }
 ]
