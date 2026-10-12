@@ -12125,5 +12125,109 @@
         "notes": "",
         "updated_at": "11 October 2026 @ 21:07 UTC",
         "added_at": "2026-10-12T01:29:36Z"
+    },
+    {
+        "url": "https://green-frisbee.itch.io/makerking",
+        "name": "MakerKing",
+        "dev": "Green Frisbee Games, izzyira, Winter",
+        "description": "Creation meets competition! Make levels and play them online",
+        "genre": "Platformer",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "22",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzU0Mjc5MTMuZ2lm/original/lw6lEP.gif",
+        "tags": [
+            "2D",
+            "Exploration",
+            "Level Editor",
+            "libGDX",
+            "Massively multiplayer",
+            "parallax",
+            "Puzzle-Platformer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "Greek Modern",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "French",
+            "Japanese",
+            "Portuguese (Brazil)",
+            "Romanian Moldavian Moldovan",
+            "Russian",
+            "Turkish",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Joystick",
+            "Touchscreen",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "libGDX",
+            "Lightweight Java Game Library"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 October 2026 @ 02:50 UTC",
+        "added_at": "2026-10-12T15:11:48Z"
+    },
+    {
+        "url": "https://smughyenastudios.itch.io/specimen29sfw",
+        "name": "Specimen 29 sfw",
+        "dev": "SmugHyenaStudios",
+        "description": "Hey there, this is the backup page for 29, created in light of recent events on Itch.io.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "54",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0ODYxMzQyLnBuZw==/original/SqH6pw.png",
+        "tags": [
+            "Furry",
+            "Gay",
+            "LGBT",
+            "Romance",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 23:17 UTC",
+        "added_at": "2026-10-12T15:11:51Z"
     }
 ]
