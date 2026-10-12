@@ -18717,39 +18717,6 @@
         "accessibility": []
     },
     {
-        "url": "https://ronhelleredfn-boop.itch.io/bb-blackwood",
-        "name": "B&B Blackwood",
-        "dev": "ronhelleredfn-boop",
-        "description": "B&B Blackwood is a short visual novel with psychological horror elements that explores the interface between reality and fiction.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 05:32 UTC",
-        "rating": "5.0",
-        "rating_count": "29",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMxMDkxLnBuZw==/original/uj3FIn.png",
-        "tags": [
-            "2D",
-            "Atmospheric",
-            "Horror",
-            "Indie",
-            "Multiple Endings",
-            "Psychological Horror",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T01:49:08Z"
-    },
-    {
         "url": "https://tiramisiu.itch.io/thinkingaboutyou",
         "name": "#thinkingaboutyou",
         "dev": "TIRAMISIU",
@@ -18785,40 +18752,6 @@
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
-    },
-    {
-        "url": "https://toro-comicss.itch.io/emergency-monster-team-chapter-0",
-        "name": "EMERGENCY! Monster Team Chapter 0",
-        "dev": "Toro Comics",
-        "description": "You wake up not knowing who you are and hearing disturbing sounds.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 06:21 UTC",
-        "rating": "5.0",
-        "rating_count": "29",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMyNDg5LnBuZw==/original/CSlPRP.png",
-        "tags": [
-            "blood",
-            "creatorsofcolor",
-            "Hand-drawn",
-            "Horror",
-            "Monster Girls",
-            "original-characters",
-            "paramedics",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T01:49:15Z"
     },
     {
         "url": "https://yarheeguy.itch.io/immolate",

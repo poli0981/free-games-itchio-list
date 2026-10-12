@@ -712,5 +712,47 @@
         "name": "Six Rules: The Visual Novel",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-11T03:02:40Z"
+    },
+    {
+        "url": "https://everium.itch.io/underthethorns",
+        "name": "Under the Thorns",
+        "reason": "Game page is password-protected",
+        "deleted_at": "2026-10-12T03:08:14Z"
+    },
+    {
+        "url": "https://ronhelleredfn-boop.itch.io/bb-blackwood",
+        "name": "B&B Blackwood",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-12T03:08:17Z"
+    },
+    {
+        "url": "https://toro-comicss.itch.io/emergency-monster-team-chapter-0",
+        "name": "EMERGENCY! Monster Team Chapter 0",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-12T03:08:20Z"
+    },
+    {
+        "url": "https://life-crises.itch.io/your-redacted-boyfriend",
+        "name": "your [REDACTED] boyfriend",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-12T03:08:22Z"
+    },
+    {
+        "url": "https://antoine-aubin.itch.io/a-wave-that-i-a-furry-visual-novel",
+        "name": "A wave that I . . . ( A furry visual novel)",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-12T03:08:25Z"
+    },
+    {
+        "url": "https://imrank-seo.itch.io/stranded-with-you",
+        "name": "Stranded with You",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-12T03:08:28Z"
+    },
+    {
+        "url": "https://akaerocore.itch.io/raising-a-happy-neet",
+        "name": "Raising a Happy NEET",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-12T03:08:31Z"
     }
 ]
