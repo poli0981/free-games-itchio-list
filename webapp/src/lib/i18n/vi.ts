@@ -354,4 +354,9 @@ export const vi: Record<MessageKey, string> = {
   "charts.accessibility.desc": "Đếm theo từng game (một game có thể có nhiều tính năng)",
   "charts.empty": "Chưa có dữ liệu.",
   "deleted.reason.private": "Trang đã bị đặt mật khẩu",
+  "deleted.reason.request": "Gỡ theo yêu cầu của tác giả",
+  "deleted.reason.duplicate": "Trùng với một mục khác",
+  "deleted.reason.notGame": "Không phải game",
+  "deleted.reason.broken": "Lỗi, không chơi được",
+  "deleted.reason.malware": "Bị báo cáo chứa mã độc",
 }

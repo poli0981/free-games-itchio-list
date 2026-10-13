@@ -1,10 +1,14 @@
 import { useState } from 'react'
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
-import { adminApi, errorText, shortSha, type Candidate, type CandidateStatus } from './api'
-import { Notice, PUBLISH_NOTE } from './app'
+import { MAX_URLS } from '../worker/limits'
+import { adminApi, shortSha, type Candidate, type CandidateStatus, type Decision } from './api'
+import { chunk, runBatches } from './batch'
+import { confirm } from './confirm'
+import { INGEST_TEXT, PUBLISH_NOTE, SKIP_TEXT, errorText, plural } from './texts'
+import { useTracking } from './tracking'
+import { BatchProgress, Notice, TabBar, type NoticeState } from './ui'
 
 const STATUSES: { id: CandidateStatus; label: string }[] = [
   { id: 'pending', label: 'Pending' },
@@ -22,41 +26,78 @@ const FLAG: Record<string, { label: string; variant: 'destructive' | 'secondary'
   demo: { label: 'demo', variant: 'outline' },
 }
 
+function source(c: Candidate): string {
+  const collection = /^collection:(\d+)$/.exec(c.submitter ?? '')
+  if (collection) return `Collection #${collection[1]}`
+  return SOURCE[c.source]
+}
+
 export function QueuePage() {
   const [status, setStatus] = useState<CandidateStatus>('pending')
   const [selected, setSelected] = useState<Set<string>>(new Set())
-  const [notice, setNotice] = useState<{ text: string; tone: 'info' | 'error' } | null>(null)
+  const [notice, setNotice] = useState<NoticeState>(null)
+  const [progress, setProgress] = useState<{ label: string; done: number; total: number } | null>(null)
   const client = useQueryClient()
+  const track = useTracking((s) => s.track)
   const queue = useQuery({ queryKey: ['queue', status], queryFn: () => adminApi.queue(status) })
 
-  const done = () => {
+  const finish = () => {
     setSelected(new Set())
+    setProgress(null)
     void client.invalidateQueries({ queryKey: ['queue'] })
   }
-  const approve = useMutation({
-    mutationFn: ({ urls, override }: { urls: string[]; override: boolean }) => adminApi.approve(urls, override),
-    onSuccess: (d) => {
-      const skipped = d.skipped.map((s) => `  ${s.url} — ${s.reason.replace(/_/g, ' ')}`).join('\n')
-      setNotice({
-        tone: 'info',
-        text:
-          `Queued ${d.approved.length} for ingest (${shortSha(d.sha)}). ${PUBLISH_NOTE}` +
-          (skipped ? `\nSkipped:\n${skipped}` : ''),
+
+  /** Approve in batches of 200 (one commit each); stops at the first error. */
+  const approve = async (override: boolean) => {
+    const urls = [...selected]
+    if (override) {
+      const ok = await confirm({
+        title: `Approve ${plural(urls.length, 'game')} with override?`,
+        body: 'Previously removed games are let through the ingest again. A game that is still paid or gone stays on the removed list.',
+        action: 'Approve with override',
       })
-      done()
-    },
-    onError: (e) => setNotice({ tone: 'error', text: errorText(e) }),
-  })
-  const reject = useMutation({
-    mutationFn: (urls: string[]) => adminApi.reject(urls),
-    onSuccess: (d) => {
-      setNotice({ tone: 'info', text: `Rejected ${d.rejected.length} (they stay blocked from every source).` })
-      done()
-    },
-    onError: (e) => setNotice({ tone: 'error', text: errorText(e) }),
-  })
+      if (!ok) return
+    }
+    setNotice(null)
+    const run = await runBatches(
+      chunk(urls, MAX_URLS),
+      (batch) => adminApi.approve(batch, override),
+      (done, total) => setProgress({ label: 'Approving', done, total }),
+    )
+    const decisions: Decision[] = run.results
+    const approved = decisions.flatMap((d) => d.approved)
+    const skipped = decisions.flatMap((d) => d.skipped)
+    if (approved.length > 0 && decisions[0]) track(`Queue: approved ${plural(approved.length, 'game')}`, decisions[0].at, approved)
+    const lines = [
+      `Queued ${plural(approved.length, 'game')} for ingest (${decisions.map((d) => shortSha(d.sha)).join(', ') || 'no commit'}). ${PUBLISH_NOTE}`,
+      ...(skipped.length > 0 ? ['Skipped:', ...skipped.map((s) => `  ${s.url} — ${SKIP_TEXT[s.reason] ?? s.reason}`)] : []),
+      ...(run.failed ? [`Stopped: ${errorText(run.failed.error)}`, `${plural(run.remaining.flat().length, 'game')} not sent — select them again to retry.`] : []),
+    ]
+    setNotice({ tone: run.failed ? 'error' : 'info', text: lines.join('\n') })
+    finish()
+  }
+
+  const reject = async () => {
+    const urls = [...selected]
+    setNotice(null)
+    const run = await runBatches(
+      chunk(urls, MAX_URLS),
+      (batch) => adminApi.reject(batch),
+      (done, total) => setProgress({ label: 'Rejecting', done, total }),
+    )
+    const rejected = run.results.flatMap((r) => r.rejected)
+    setNotice({
+      tone: run.failed ? 'error' : 'info',
+      text: [
+        `Rejected ${plural(rejected.length, 'game')} (they stay blocked from every source).`,
+        ...(run.failed ? [`Stopped: ${errorText(run.failed.error)}`] : []),
+      ].join('\n'),
+    })
+    finish()
+  }
 
   const items = queue.data?.items ?? []
+  const total = queue.data?.counts[status] ?? 0
   const allSelected = items.length > 0 && items.every((c) => selected.has(c.url))
   const toggle = (url: string) =>
     setSelected((prev) => {
@@ -65,39 +106,36 @@ export function QueuePage() {
       else next.add(url)
       return next
     })
-  const urls = [...selected]
-  const busy = approve.isPending || reject.isPending
+  const busy = progress !== null
   const canApprove = status !== 'queued' && status !== 'ingested'
 
   return (
     <section>
-      <div className="mb-4 flex flex-wrap items-center gap-1" role="tablist" aria-label="Queue status">
-        {STATUSES.map((s) => (
-          <button
-            key={s.id}
-            role="tab"
-            aria-selected={status === s.id}
-            onClick={() => {
-              setStatus(s.id)
-              setSelected(new Set())
-            }}
-            className={cn(
-              'rounded-md px-3 py-1.5 text-sm hover:bg-accent',
-              status === s.id && 'bg-accent font-medium',
-            )}
-          >
-            {s.label}
-            <span className="ml-1.5 tabular-nums text-muted-foreground">{queue.data?.counts[s.id] ?? ''}</span>
-          </button>
-        ))}
-      </div>
+      <TabBar
+        label="Queue status"
+        value={status}
+        onChange={(s) => {
+          setStatus(s)
+          setSelected(new Set())
+        }}
+        options={STATUSES.map((s) => ({
+          id: s.id,
+          label: (
+            <>
+              {s.label}
+              <span className="ml-1.5 tabular-nums text-muted-foreground">{queue.data?.counts[s.id] ?? ''}</span>
+            </>
+          ),
+        }))}
+      />
 
       {notice && <Notice text={notice.text} tone={notice.tone} onClose={() => setNotice(null)} />}
+      {progress && <BatchProgress label={progress.label} done={progress.done} total={progress.total} />}
 
       {canApprove && (
         <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
           <span className="text-muted-foreground">{selected.size} selected</span>
-          <Button size="sm" disabled={!selected.size || busy} onClick={() => approve.mutate({ urls, override: false })}>
+          <Button size="sm" disabled={!selected.size || busy} onClick={() => void approve(false)}>
             Approve
           </Button>
           <Button
@@ -105,16 +143,12 @@ export function QueuePage() {
             variant="outline"
             disabled={!selected.size || busy}
             title="Also brings back games that were removed from the catalog before"
-            onClick={() => {
-              if (window.confirm(`Approve ${urls.length} game(s), including previously removed ones?`)) {
-                approve.mutate({ urls, override: true })
-              }
-            }}
+            onClick={() => void approve(true)}
           >
             Approve with override
           </Button>
           {status !== 'rejected' && (
-            <Button size="sm" variant="destructive" disabled={!selected.size || busy} onClick={() => reject.mutate(urls)}>
+            <Button size="sm" variant="destructive" disabled={!selected.size || busy} onClick={() => void reject()}>
               Reject
             </Button>
           )}
@@ -124,6 +158,11 @@ export function QueuePage() {
       {queue.isPending && <p className="text-sm text-muted-foreground">Loading…</p>}
       {queue.error && <Notice text={errorText(queue.error)} tone="error" onClose={() => void queue.refetch()} />}
       {queue.data && items.length === 0 && <p className="text-sm text-muted-foreground">Nothing here.</p>}
+      {items.length > 0 && total > items.length && (
+        <p className="mb-2 text-xs text-muted-foreground">
+          Showing the newest {items.length.toLocaleString('en-GB')} of {total.toLocaleString('en-GB')}.
+        </p>
+      )}
 
       {items.length > 0 && (
         <table className="w-full text-sm">
@@ -177,12 +216,18 @@ export function QueuePage() {
                         {FLAG[f]?.label ?? f}
                       </Badge>
                     ))}
+                    {c.outcome && (
+                      <Badge variant={c.outcome === 'added' || c.outcome === 'duplicate' ? 'outline' : 'secondary'}>
+                        last ingest: {INGEST_TEXT[c.outcome] ?? c.outcome}
+                      </Badge>
+                    )}
                   </div>
                   {c.note && <p className="mt-1 whitespace-pre-line text-xs">“{c.note}”</p>}
                 </td>
                 <td className="py-2 text-xs text-muted-foreground">
-                  {SOURCE[c.source]}
+                  {source(c)}
                   {c.submitter && c.source !== 'form' && c.source !== 'admin' && <div>{c.submitter}</div>}
+                  {c.decided_by === 'auto' && <div>approved automatically</div>}
                 </td>
                 <td className="py-2 text-xs tabular-nums text-muted-foreground">{c.discovered_at.slice(0, 10)}</td>
               </tr>

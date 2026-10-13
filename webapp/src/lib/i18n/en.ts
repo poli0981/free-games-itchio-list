@@ -352,6 +352,11 @@ export const en = {
   "charts.accessibility.desc": "Counted per game (a game may list several)",
   "charts.empty": "No data yet.",
   "deleted.reason.private": "Page is password-protected",
+  "deleted.reason.request": "Removed at the creator's request",
+  "deleted.reason.duplicate": "Duplicate of another entry",
+  "deleted.reason.notGame": "Not a game",
+  "deleted.reason.broken": "Broken or unplayable",
+  "deleted.reason.malware": "Reported as malware",
 } as const
 
 export type MessageKey = keyof typeof en
