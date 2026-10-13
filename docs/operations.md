@@ -37,7 +37,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
    (and `freeitchgames-thumbs-staging`). A deploy fails while its bucket is missing.
 4. **Images → Transformations**: enable for the zone; allowed source origins: `img.itch.zone` only.
 5. **D1**: production `freeitchgames` exists (created 2026-09-18 in APAC with
-   `npx wrangler d1 create freeitchgames`; its id is in `wrangler.jsonc`; `0001_init.sql` applied).
+   `npx wrangler d1 create freeitchgames`; its id is in `wrangler.jsonc`; `0001_init.sql` applied,
+   `0002_automation.sql` (4.4: ingest outcomes, settings, followed collections) applied before the 4.4.0 merge).
    Staging: `cd webapp && npx wrangler d1 create freeitchgames-staging`, put the printed id in
    `env.staging.d1_databases`, then `npx wrangler d1 migrations apply freeitchgames-staging --remote --env staging`.
    Apply every new migration by hand (`npx wrangler d1 migrations apply freeitchgames --remote`)
@@ -175,10 +176,26 @@ Do these once (and again with the `-staging` names for the staging Worker).
 - **Mass-change alert** (Discord, "mass_change=true"): itch.io probably changed its page markup. Look at
   a few flagged games on itch.io. If the parser is wrong, fix `scripts/scraper.py`; if the removals
   are real, dispatch **Refresh catalog** with `allow_mass_removal`.
-- **Removal / takedown request**: `/admin` → Catalog → the game → Remove (the reason is public). A
-  wrongly removed game: Catalog → Removed → Restore.
+- **Removal / takedown request**: `/admin` → Catalog → the game → Remove… (the reason is public; the
+  presets get a translated label on the Removed page). Several games: tick up to 100 search results, or
+  paste their URLs under **Remove by list** — one commit either way. A wrongly removed game: Catalog →
+  Removed → Restore.
 - **Review queue**: `/admin` → Review queue. "Approve with override" is needed for games that were
-  removed before.
+  removed before. Selections of any size go out in batches of 200 (one commit each).
+- **Adding a list of games**: `/admin` → Add games. Paste any text (or load a file, or read an itch.io
+  collection), press **Check** to see what Add would do, then **Add**. **Recent batches** follows each
+  game through the ingest (added / waiting / dropped with the reason); the ingest runs right after each
+  commit and handles about 650 games per 45-minute run, the rest waits in the queue.
+- **Automatic rules**: `/admin` → Settings. Auto-approve (on by default for RSS and Suggest, after 24 h)
+  queues pending items without a flag that nobody rejected; it only considers items found after the
+  moment it was switched on ("Include older pending items" lifts that), at most 100 per cron run.
+  **Followed collections** are read in turn (≤ 30 pages per run, one a second); their new free games
+  are queued directly, removed or flagged ones go to the review queue. Settings also shows what the
+  last cron run did (Workers logs are sampled), and a collection whose page could not be read (status
+  422: itch.io changed its markup) adds nothing until `worker/collections.ts` is fixed.
+- **Reviewing new games**: `/admin` → New games (added in the last 7 / 30 days): set 18+ and the virus
+  check for up to 100 games at once. **Activity** lists every admin action and automatic run with its
+  commit.
 - **Build failed** (Discord from `deploy-status.yml`): open the build log linked in the message; the
   site keeps serving the previous deployment meanwhile.
 - **New D1 migration**: add `webapp/worker/migrations/000N_*.sql` (never edit applied ones), apply it

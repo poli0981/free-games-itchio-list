@@ -166,7 +166,7 @@ export const en = {
   // ---- suggest ----
   "nav.suggest": "Suggest a game",
   "titles.suggest": "Suggest a game",
-  "suggest.intro": "Know a free itch.io game that is missing here? Send its link. Suggestions go into a review queue, and the maintainer checks each one before it is added.",
+  "suggest.intro": "Know a free itch.io game that is missing here? Send its link. Suggestions go into a review queue: the maintainer approves or rejects them, and one without a warning flag that nobody rejected within about a day may be approved automatically.",
   "suggest.url": "Game link",
   "suggest.urlHint": "The game's itch.io page, like https://creator.itch.io/game.",
   "suggest.note": "Note (optional)",
@@ -335,7 +335,7 @@ export const en = {
   "settings.appearance.scrollbarsDesc": "Scrolling still works with the mouse wheel, touchpad, touch and keyboard.",
   "settings.appearance.desc": "Theme, language, row density and scrollbars. Saved in this browser only.",
   "welcome.feature.open.text": "The whole catalog is open data under CC BY 4.0, in the GitHub repository. Reuse it, chart it, build on it.",
-  "about.legal.desc": "All policies are Markdown files in the repository — plain language, full terms. Updated 2026-10-03.",
+  "about.legal.desc": "All policies are Markdown files in the repository — plain language, full terms. Updated 2026-10-13.",
   "games.filter.ai": "Generative AI",
   "games.filter.access": "Accessibility",
   "ai.none": "No AI used",
@@ -352,6 +352,11 @@ export const en = {
   "charts.accessibility.desc": "Counted per game (a game may list several)",
   "charts.empty": "No data yet.",
   "deleted.reason.private": "Page is password-protected",
+  "deleted.reason.request": "Removed at the creator's request",
+  "deleted.reason.duplicate": "Duplicate of another entry",
+  "deleted.reason.notGame": "Not a game",
+  "deleted.reason.broken": "Broken or unplayable",
+  "deleted.reason.malware": "Reported as malware",
 } as const
 
 export type MessageKey = keyof typeof en

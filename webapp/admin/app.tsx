@@ -1,19 +1,29 @@
 import { useSyncExternalStore } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { NavLink, Navigate, Route, Routes } from 'react-router'
+import { useThemeEffect } from '@/hooks/useThemeEffect'
 import { cn } from '@/lib/utils'
-import { SessionExpired, adminApi, errorText, isSessionExpired, subscribeSession } from './api'
+import { SessionExpired, adminApi, isSessionExpired, subscribeSession } from './api'
+import { ActivityPage } from './activity'
 import { AddPage } from './add'
 import { CatalogPage } from './catalog'
+import { NewGamesPage } from './new-games'
 import { QueuePage } from './queue'
+import { SettingsPage } from './settings'
+import { errorText } from './texts'
+import { ConfirmDialog, ThemeToggle } from './ui'
 
 const NAV = [
   { to: '/queue', label: 'Review queue' },
   { to: '/add', label: 'Add games' },
   { to: '/catalog', label: 'Catalog' },
+  { to: '/new', label: 'New games' },
+  { to: '/activity', label: 'Activity' },
+  { to: '/settings', label: 'Settings' },
 ]
 
 export function AdminApp() {
+  useThemeEffect()
   const me = useQuery({ queryKey: ['me'], queryFn: adminApi.me })
   const expired = useSyncExternalStore(subscribeSession, isSessionExpired)
 
@@ -21,7 +31,7 @@ export function AdminApp() {
     return (
       <div className="mx-auto max-w-lg p-8 text-sm">
         <h1 className="mb-2 text-lg font-semibold">Admin unavailable</h1>
-        <p className="mb-4 text-muted-foreground">{errorText(me.error)}</p>
+        <p className="mb-4 whitespace-pre-line text-muted-foreground">{errorText(me.error)}</p>
         {me.error instanceof SessionExpired && (
           <button className="underline" onClick={() => window.location.reload()}>
             Sign in again
@@ -34,28 +44,36 @@ export function AdminApp() {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur-sm">
-        <div className="mx-auto flex h-12 max-w-6xl items-center gap-6 px-4 text-sm">
-          <span className="font-semibold">freeitchgames.win · admin</span>
-          <nav className="flex gap-1">
+        <div className="mx-auto flex h-12 max-w-6xl items-center gap-4 px-4 text-sm">
+          <span className="shrink-0 font-semibold">freeitchgames.win · admin</span>
+          <nav className="scrollbar-hide flex min-w-0 gap-1 overflow-x-auto">
             {NAV.map((n) => (
               <NavLink
                 key={n.to}
                 to={n.to}
                 className={({ isActive }) =>
-                  cn('rounded-md px-3 py-1.5 hover:bg-accent', isActive && 'bg-accent font-medium')
+                  cn('shrink-0 rounded-md px-3 py-1.5 hover:bg-accent', isActive && 'bg-accent font-medium')
                 }
               >
                 {n.label}
               </NavLink>
             ))}
           </nav>
-          <span className="ml-auto truncate text-muted-foreground">
-            {me.data ? me.data.email : '…'}
-            {me.data && !me.data.writes && ' · read-only (GitHub App not configured)'}
-          </span>
-          <a className="text-muted-foreground hover:text-foreground" href="/" target="_blank" rel="noreferrer">
-            Site ↗
-          </a>
+          <div className="ml-auto flex min-w-0 items-center gap-3">
+            <span className="hidden truncate text-muted-foreground xl:inline">{me.data ? me.data.email : '…'}</span>
+            {me.data && !me.data.writes && (
+              <span
+                className="shrink-0 rounded-md border border-destructive/40 px-2 py-0.5 text-xs text-destructive"
+                title="The GitHub App is not configured: nothing can be written."
+              >
+                read-only
+              </span>
+            )}
+            <ThemeToggle />
+            <a className="shrink-0 text-muted-foreground hover:text-foreground" href="/" target="_blank" rel="noreferrer">
+              Site ↗
+            </a>
+          </div>
         </div>
       </header>
       {expired && (
@@ -76,29 +94,13 @@ export function AdminApp() {
           <Route path="/queue" element={<QueuePage />} />
           <Route path="/add" element={<AddPage />} />
           <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/new" element={<NewGamesPage />} />
+          <Route path="/activity" element={<ActivityPage repo={me.data?.repo ?? null} />} />
+          <Route path="/settings" element={<SettingsPage />} />
           <Route path="*" element={<Navigate to="/queue" replace />} />
         </Routes>
       </main>
+      <ConfirmDialog />
     </div>
   )
 }
-
-/** A dismissible line reporting what the last action did. */
-export function Notice({ text, tone = 'info', onClose }: { text: string; tone?: 'info' | 'error'; onClose: () => void }) {
-  return (
-    <div
-      role={tone === 'error' ? 'alert' : 'status'}
-      className={cn(
-        'mb-4 flex items-start gap-3 rounded-md border px-3 py-2 text-sm',
-        tone === 'error' ? 'border-destructive/50 text-destructive' : 'bg-muted/50',
-      )}
-    >
-      <span className="flex-1 whitespace-pre-line">{text}</span>
-      <button aria-label="Dismiss" className="text-muted-foreground hover:text-foreground" onClick={onClose}>
-        ×
-      </button>
-    </div>
-  )
-}
-
-export const PUBLISH_NOTE = 'The public site shows it after the next build (a few minutes).'

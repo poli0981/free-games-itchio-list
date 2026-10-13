@@ -8,6 +8,19 @@ export const TOOLTIP_BASE = {
   wrapperStyle: { outline: 'none', zIndex: 10 },
 } as const
 
+/**
+ * Every series (Bar, Pie, Line, Treemap): a short entrance that starts at once,
+ * instead of Recharts' 400 ms wait and 1.5 s sweep. The Charts page keeps a tab's
+ * charts mounted once shown, so this plays only the first time. 'auto' keeps
+ * Recharts' own check of the reduced-motion setting.
+ */
+export const SERIES_ANIMATION = {
+  isAnimationActive: 'auto',
+  animationBegin: 0,
+  animationDuration: 300,
+  animationEasing: 'ease-out',
+} as const
+
 /** Hover band behind the active bar. */
 export const BAR_CURSOR = { fill: 'var(--accent)' }
 

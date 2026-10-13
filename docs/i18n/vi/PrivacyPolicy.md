@@ -1,10 +1,10 @@
 # Chính sách quyền riêng tư (Privacy Policy)
 
-Cập nhật lần cuối: 2026-10-03
+Cập nhật lần cuối: 2026-10-13
 
-Áp dụng từ: ngày 2026-10-03 đối với Website, và từ phiên bản 4.2.0 đối với các Ứng dụng.
+Áp dụng từ: ngày 2026-10-13 đối với Website, và từ phiên bản 4.4.0 đối với các Ứng dụng.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-03 (English source revision 2026-10-03). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-13 (English source revision 2026-10-13). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
 
 Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-list` xử lý những dữ liệu cá nhân nào, vì sao, ai hỗ trợ xử lý, dữ liệu được lưu trong bao lâu và bạn có những quyền gì. Chính sách áp dụng cho website **https://freeitchgames.win**, các ứng dụng desktop và Android, dữ liệu danh mục công khai và repository. Nói ngắn gọn: không có tài khoản, không quảng cáo, không cookie theo dõi. Dự án giữ ít dữ liệu nhất có thể, và phần lớn những gì tồn tại chỉ nằm trong trình duyệt của chính bạn.
 
@@ -65,14 +65,14 @@ Khi bạn dùng trang Suggest (https://freeitchgames.win/suggest):
 - **Những gì được lưu**: URL game, ghi chú tùy chọn của bạn (tối đa 500 ký tự) và thời điểm gửi, trong hàng chờ duyệt (mục 2.4). Trang không yêu cầu và không lưu tên, địa chỉ email hay tài khoản nào.
 - **Chống spam**: Cloudflare Turnstile xử lý các tín hiệu về thiết bị và trình duyệt của bạn để phân biệt người thật với bot. Để kiểm tra kết quả, Website gửi token Turnstile và địa chỉ IP của bạn tới dịch vụ xác minh của Cloudflare.
 - **Giới hạn tần suất**: địa chỉ IP của bạn chỉ được dùng tạm thời để đếm số request. Dự án không lưu nó.
-- **Mục đích**: để xem xét đề xuất của bạn. Nếu được duyệt, URL game trở thành một phần của Danh mục công khai. Ghi chú của bạn không bao giờ được công bố và **tự động bị xóa sau 180 ngày**.
+- **Mục đích**: để xem xét đề xuất của bạn, do Người duy trì hoặc các quy tắc tự động do Người duy trì đặt ra (mục 2.4). Nếu được duyệt, URL game trở thành một phần của Danh mục công khai. Ghi chú của bạn không bao giờ được công bố và **tự động bị xóa sau 180 ngày**.
 - **Vui lòng không đưa dữ liệu cá nhân vào ghi chú**, dù là của bạn hay của người khác. Biểu mẫu này chỉ dành cho link game.
 
 ### 2.4 Hàng chờ duyệt và khu vực quản trị
 
-- **Game đến từ đâu**: đề xuất từ trang Suggest; dữ liệu gửi từ tiện ích trình duyệt của Người duy trì qua một API có xác thực (URL game, tiêu đề và ghi chú tùy chọn, và ID service token của tiện ích; các bản ghi chống gửi trùng được giữ 7 ngày); và tự động phát hiện từ các RSS feed công khai của itch.io.
-- **Hàng chờ duyệt** (Cloudflare D1) chứa các URL game ứng viên cùng nguồn gửi, tiêu đề, URL ảnh bìa và gợi ý thể loại lấy từ itch.io, các cờ tự động, ghi chú, mốc thời gian và quyết định của Người duy trì. Không game nào được đưa vào Danh mục cho tới khi Người duy trì duyệt. Các URL bị từ chối được giữ vô thời hạn làm danh sách chặn; chỉ cần URL là đủ để không phải xét lại cùng một game.
-- **Khu vực quản trị** (https://freeitchgames.win/admin) chỉ dành cho Người duy trì. Khu vực này được bảo vệ bằng Cloudflare Access (đăng nhập bằng GitHub hoặc mã PIN dùng một lần gửi qua email); Cloudflare Access đặt cookie phiên `CF_Authorization` trong trình duyệt của Người duy trì. Các thao tác quản trị được ghi vào nhật ký kiểm tra (audit log) kèm địa chỉ email của Người duy trì. Nhật ký này không bao giờ được công bố.
+- **Game đến từ đâu**: đề xuất từ trang Suggest; dữ liệu gửi từ tiện ích trình duyệt của Người duy trì qua một API có xác thực (URL game, tiêu đề và ghi chú tùy chọn, và ID service token của tiện ích; các bản ghi chống gửi trùng được giữ 7 ngày); tự động phát hiện từ các RSS feed công khai của itch.io; và game miễn phí mới trong các collection công khai trên itch.io mà Người duy trì theo dõi (Website đọc các trang công khai đó; không liên quan gì tới dữ liệu của bạn).
+- **Hàng chờ duyệt** (Cloudflare D1) chứa các URL game ứng viên cùng nguồn gửi, tiêu đề, URL ảnh bìa và gợi ý thể loại lấy từ itch.io, các cờ tự động, ghi chú, mốc thời gian và quyết định của Người duy trì. Game được đưa vào Danh mục khi Người duy trì duyệt: từng game một, hoặc qua các quy tắc tự động do Người duy trì đặt ra và có thể thay đổi bất cứ lúc nào (mục không có cờ cảnh báo mà không ai từ chối trong thời gian chờ; game miễn phí mới trong các collection Người duy trì theo dõi). Các lượt duyệt tự động được ghi vào nhật ký kiểm tra như thao tác của chính Người duy trì. Các URL bị từ chối được giữ vô thời hạn làm danh sách chặn; chỉ cần URL là đủ để không phải xét lại cùng một game.
+- **Khu vực quản trị** (https://freeitchgames.win/admin) chỉ dành cho Người duy trì. Khu vực này được bảo vệ bằng Cloudflare Access (đăng nhập bằng GitHub hoặc mã PIN dùng một lần gửi qua email); Cloudflare Access đặt cookie phiên `CF_Authorization` trong trình duyệt của Người duy trì. Các thao tác quản trị, kể cả thay đổi quy tắc tự động, được ghi vào nhật ký kiểm tra (audit log) kèm địa chỉ email của Người duy trì. Nhật ký này không bao giờ được công bố.
 
 ### 2.5 Dữ liệu game công khai trong Danh mục
 

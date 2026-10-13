@@ -1,6 +1,6 @@
 # Hướng dẫn đóng góp
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-13 (English source revision 2026-10-13). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 >
 > Bản tiếng Anh tại [`CONTRIBUTING.md`](../../../CONTRIBUTING.md) là bản chính thức.
 
@@ -16,7 +16,7 @@ Game thì gửi qua website; mọi thứ khác thì qua các template issue/PR t
 - Tùy chọn: một ghi chú ngắn (vì sao game hay, cảnh báo nội dung…), tối đa 500 ký tự. Ghi chú bị xóa sau 180 ngày. Vui lòng đừng ghi dữ liệu cá nhân vào đó.
 - Một bước kiểm tra Cloudflare Turnstile và giới hạn tần suất giúp chặn bot; nếu bị chặn, đợi một lúc rồi thử lại.
 - Chỉ game itch.io **miễn phí**. Game trả phí sẽ tự động bị loại khi trang game được cào.
-- Không có gì lên site ngay lập tức: mọi đề xuất đều vào **hàng chờ duyệt**, và không có gì vào danh mục cho tới khi Maintainer duyệt. Link được duyệt sau đó được pipeline dữ liệu cào và xuất hiện trên site sau lần deploy kế tiếp.
+- Không có gì lên site ngay lập tức: mọi đề xuất đều vào **hàng chờ duyệt**, nơi Maintainer duyệt hoặc từ chối, bằng tay hoặc qua quy tắc tự động (một đề xuất không có cờ cảnh báo mà không ai từ chối trong khoảng một ngày có thể được duyệt tự động). Link được duyệt sau đó được pipeline dữ liệu cào và xuất hiện trên site sau lần deploy kế tiếp.
 
 Có cả một danh sách? Issue template **[Add Games (bulk list)]** nhận tối đa 15 link một lần, và một PR thêm URL itch.io vào `scripts/temp_link.json` cũng được (dùng PR template [Add Games]). Cả hai đều đi qua cùng quy trình duyệt: Maintainer kiểm tra từng link trước khi đưa vào hàng chờ, và việc merge một PR như vậy chính là sự phê duyệt. Vui lòng đừng sửa tay `data_game/`: các file đó do pipeline quản lý (xem [mục 7](#7-gửi-thay-đổi-code-pr)).
 
@@ -24,8 +24,9 @@ Có cả một danh sách? Issue template **[Add Games (bulk list)]** nhận t�
 
 - Extension trình duyệt đi kèm của Maintainer ([itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), repo riêng, GPL-3.0) gửi link qua một API có xác thực trong lúc duyệt itch.io. Đây là công cụ riêng của Maintainer, không phải kênh gửi công khai.
 - Website đọc các RSS feed công khai của itch.io về game miễn phí mới và phổ biến mỗi 4 giờ (mỗi lượt một feed) và đưa những gì tìm được vào hàng chờ.
+- Website cũng đọc các collection công khai trên itch.io mà Maintainer theo dõi và đưa thẳng game miễn phí mới của chúng vào hàng chờ ingest (game từng bị gỡ, hoặc có cờ cảnh báo, thì vào hàng chờ duyệt).
 
-Cả hai đều vào cùng hàng chờ duyệt với trang Suggest. (Đường thêm game qua Telegram bot cũ đã ngừng hoạt động.)
+Extension và RSS feed đều vào cùng hàng chờ duyệt với trang Suggest. (Đường thêm game qua Telegram bot cũ đã ngừng hoạt động.)
 
 ### 2. Gỡ game hoặc sửa dữ liệu game
 

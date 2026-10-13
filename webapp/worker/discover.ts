@@ -8,6 +8,7 @@
 import { canonicalize } from './canonical'
 import { catalogUrls, deletedGames, type DataSource } from './data'
 import { autoFlags, classify, isoSeconds, type FeedState, type QueueStore } from './queue'
+import { decodeEntities } from './text'
 
 interface Feed {
   id: string
@@ -39,16 +40,7 @@ export interface FeedItem {
 const NOT_GENRE = new Set(['free', 'windows', 'macos', 'linux', 'android', 'ios', 'html5', 'web', 'browser'])
 
 function decode(text: string): string {
-  return text
-    .replace(/^<!\[CDATA\[([\s\S]*)\]\]>$/, '$1')
-    .replace(/&#(\d+);/g, (_, n: string) => String.fromCodePoint(Number(n)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, n: string) => String.fromCodePoint(parseInt(n, 16)))
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .trim()
+  return decodeEntities(text.replace(/^<!\[CDATA\[([\s\S]*)\]\]>$/, '$1'))
 }
 
 function tag(block: string, name: string): string | null {

@@ -123,7 +123,8 @@ async function gh(env: GitHubEnv, path: string, init: RequestInit = {}): Promise
   })
 }
 
-async function headOid(env: GitHubEnv): Promise<string> {
+/** The commit main points at now. */
+export async function headOid(env: GitHubEnv): Promise<string> {
   const res = await gh(env, `/repos/${env.GITHUB_REPO}/git/ref/heads/${BRANCH}`)
   if (!res.ok) throw new GitHubError(`read ref: HTTP ${res.status}`)
   return ((await res.json()) as { object: { sha: string } }).object.sha

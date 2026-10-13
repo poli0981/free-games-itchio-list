@@ -6,7 +6,7 @@ import { AI_ASSISTED, AI_NONE, AI_UNDISCLOSED } from '@/lib/game-filters'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LEGEND_BASE, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { NEUTRAL, PALETTE } from './palette'
 
@@ -29,6 +29,7 @@ export function AiDisclosureChart({ games }: { games: Game[] }) {
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
+            {...SERIES_ANIMATION}
             data={data}
             dataKey="count"
             nameKey="label"

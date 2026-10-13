@@ -194,6 +194,16 @@
         scrollbar-width: thin;
       }
     }
+    /* The page's scrollbar takes room here: keep that room reserved, so the
+       layout does not jump sideways when a page (or a Charts tab) gets taller
+       or shorter than the window. While a dialog locks scrolling the gutter is
+       released: Radix pads <body> by the scrollbar's width then, as before,
+       and the dimmed backdrop still covers the whole window. */
+    @supports (scrollbar-gutter: stable) {
+      html:not(:has(> body[data-scroll-locked])) {
+        scrollbar-gutter: stable;
+      }
+    }
   }
 }
 
@@ -253,4 +263,7 @@ html[data-scrollbars='hidden'] * {
 html[data-scrollbars='hidden']::-webkit-scrollbar,
 html[data-scrollbars='hidden'] *::-webkit-scrollbar {
   display: none;
+}
+html[data-scrollbars='hidden'] {
+  scrollbar-gutter: auto;
 }

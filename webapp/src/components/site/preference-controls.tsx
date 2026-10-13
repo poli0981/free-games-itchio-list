@@ -1,14 +1,15 @@
-import { Monitor, Moon, Sun } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import { Switch } from '@/components/ui/switch'
 import { switchLanguage, useT, type Language, type MessageKey } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 import { usePrefs } from '@/stores/prefs'
 import { useThemeStore, type Theme } from '@/stores/theme'
+import { THEME_ICON } from '@/components/theme-icon'
 
-const THEMES: { value: Theme; key: MessageKey; icon: typeof Sun }[] = [
-  { value: 'light', key: 'theme.light', icon: Sun },
-  { value: 'dark', key: 'theme.dark', icon: Moon },
-  { value: 'system', key: 'theme.system', icon: Monitor },
+const THEMES: { value: Theme; key: MessageKey }[] = [
+  { value: 'light', key: 'theme.light' },
+  { value: 'dark', key: 'theme.dark' },
+  { value: 'system', key: 'theme.system' },
 ]
 
 /** A small single-choice button row. */
@@ -20,7 +21,7 @@ function Segmented<T extends string>({
 }: {
   label: string
   value: T
-  options: { value: T; label: string; icon?: typeof Sun }[]
+  options: { value: T; label: string; icon?: LucideIcon }[]
   onChange: (v: T) => void
 }) {
   return (
@@ -56,7 +57,7 @@ export function ThemeChoice() {
       label={t('settings.appearance.theme')}
       value={theme}
       onChange={setTheme}
-      options={THEMES.map((o) => ({ value: o.value, label: t(o.key), icon: o.icon }))}
+      options={THEMES.map((o) => ({ value: o.value, label: t(o.key), icon: THEME_ICON[o.value] }))}
     />
   )
 }

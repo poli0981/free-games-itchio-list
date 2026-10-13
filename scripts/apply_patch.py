@@ -12,6 +12,9 @@ always works on the latest data. Idempotent: applying the same patch twice
   - *_state:    merged into scripts/state/*.json (null drops an entry); for
                 refresh_state the newer `checked` wins and the newest `full`
                 stamp from either side is kept
+  - ingest_outcomes: merged into scripts/state/ingest_outcomes.json (the newer
+                `at` wins; entries more than 90 days older than the newest one,
+                and all but the newest 5,000, are dropped)
   - unlog / unblock_remove: an unblocked (restored) game that was re-added
                 leaves the deleted log and scripts/state/unblocked.json; one whose
                 ingest ended otherwise leaves only the allow-list
@@ -32,6 +35,7 @@ Usage: python scripts/apply_patch.py PATCH.json
 import math
 import os
 import sys
+from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
 from canonical import canonicalize
@@ -46,9 +50,12 @@ DELETED_LOG = "scripts/deleted_games.json"
 TEMP_LINK = "scripts/temp_link.json"
 REFRESH_STATE = "scripts/state/refresh_state.json"
 INGEST_STATE = "scripts/state/ingest_state.json"
+INGEST_OUTCOMES = "scripts/state/ingest_outcomes.json"
 UNBLOCKED = "scripts/state/unblocked.json"
 MASS_REMOVAL_FLOOR = 25
 MASS_REMOVAL_SHARE = 0.05
+OUTCOMES_DAYS = 90
+OUTCOMES_KEEP = 5000
 
 
 def mass_removal_limit(patch: dict, total: int) -> int:
@@ -57,6 +64,31 @@ def mass_removal_limit(patch: dict, total: int) -> int:
     if patch.get("kind") in ("refresh", "full") and isinstance(checked, int):
         limit = min(limit, mass_limit(checked))
     return limit
+
+
+def merge_outcomes(current: dict, delta: dict) -> dict:
+    """ingest_outcomes.json after a patch: per URL the newer `at` wins.
+
+    Pruned relative to the newest entry, not the clock, so applying the same
+    patch twice gives the same file.
+    """
+    merged = {
+        url: e for url, e in current.items() if isinstance(e, dict) and isinstance(e.get("at"), str)
+    }
+    for url, entry in delta.items():
+        if not isinstance(entry, dict) or not isinstance(entry.get("at"), str):
+            continue
+        old = merged.get(url)
+        if old is None or entry["at"] >= old["at"]:
+            merged[url] = entry
+    if not merged:
+        return {}
+    newest = datetime.fromisoformat(max(e["at"] for e in merged.values()).replace("Z", "+00:00"))
+    cutoff = (newest - timedelta(days=OUTCOMES_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    recent = sorted(
+        ((e["at"], url) for url, e in merged.items() if e["at"] >= cutoff), reverse=True
+    )[:OUTCOMES_KEEP]
+    return {url: merged[url] for _, url in recent}
 
 
 def _queue_key(url: str) -> str:
@@ -160,6 +192,11 @@ def apply(patch: dict) -> dict:
         if key == "refresh_state":
             state = {u: e for u, e in state.items() if u in live_urls}
         save_state_map(path, state)
+
+    outcomes = patch.get("ingest_outcomes", {})
+    if outcomes:
+        current = load_json(INGEST_OUTCOMES, default={})
+        save_state_map(INGEST_OUTCOMES, merge_outcomes(current, outcomes))
 
     unlog = {u for u in patch.get("unlog", []) if isinstance(u, str)}
     finished = unlog | {u for u in patch.get("unblock_remove", []) if isinstance(u, str)}

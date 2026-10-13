@@ -6,6 +6,9 @@
     <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
     <meta name="color-scheme" content="dark light" />
+    <!-- Before the first paint: the saved theme (webapp.theme), so a dark page never flashes light.
+         Its sha256 is in the CSP of public/_headers, src-tauri/tauri.conf.json and worker/admin.ts. -->
+    <script>try{var t=JSON.parse(localStorage.getItem('webapp.theme')||'null');t=t&&t.state&&t.state.theme;if(t==='dark'||t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.classList.add('dark')}catch(e){}</script>
 
     <title>Free Itch Games — free games on itch.io, sorted and kept fresh</title>
     <meta name="description" content="A curated, auto-updating catalog of 2,600+ free games on itch.io. Search, filter and explore the dataset." />

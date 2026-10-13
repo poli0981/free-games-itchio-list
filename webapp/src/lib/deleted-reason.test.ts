@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { reasonKey } from './deleted-reason'
+import { REMOVAL_REASONS, reasonKey } from './deleted-reason'
 
 describe('reasonKey', () => {
   it('maps the pipeline reasons (scripts/refresh.py) to their labels', () => {
@@ -9,7 +9,14 @@ describe('reasonKey', () => {
     expect(reasonKey('Game page is password-protected')).toBe('deleted.reason.private')
   })
 
+  it('gives every reason the admin offers a label of its own', () => {
+    const keys = REMOVAL_REASONS.map(reasonKey)
+    expect(keys).not.toContain(null)
+    expect(new Set(keys).size).toBe(REMOVAL_REASONS.length)
+    expect(reasonKey('Removed at the creator’s request')).toBe('deleted.reason.request')
+  })
+
   it('leaves any other reason to be shown as written', () => {
-    expect(reasonKey('Removed at the creator’s request')).toBeNull()
+    expect(reasonKey('Spam from a bot account')).toBeNull()
   })
 })

@@ -87,3 +87,22 @@ def test_state_map_one_line_per_url(tmp_path):
     assert json.loads(path.read_text(encoding="utf-8"))["https://b.itch.io/x"]["fails"] == 1
     save_state_map(str(path), {})
     assert json.loads(path.read_text(encoding="utf-8")) == {}
+
+
+def test_ingest_outcomes_file_is_checked_when_present(repo):
+    seed_catalog([make_game("a")])
+    good = {"https://dev.itch.io/a": {"outcome": "added", "at": "2026-10-01T00:00:00Z"}}
+    save_state_map("scripts/state/ingest_outcomes.json", good)
+    assert validate.validate() == ([], [])
+    save_json(
+        "scripts/state/ingest_outcomes.json",
+        {
+            "https://DEV.itch.io/a/": {"outcome": "added", "at": "2026-10-01T00:00:00Z"},
+            "https://dev.itch.io/b": {"outcome": "maybe", "at": "2026-10-01T00:00:00Z"},
+            "https://dev.itch.io/c": {"outcome": "paid", "at": "yesterday"},
+        },
+    )
+    text = "\n".join(validate.validate()[0])
+    assert "not a canonical game URL" in text
+    assert "unknown outcome" in text
+    assert "'at' must be" in text

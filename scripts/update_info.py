@@ -4,8 +4,8 @@ update_info.py — Scrape queued game links into a pipeline patch.
 Flow:
   1. Read URLs from scripts/temp_link.json (+ INPUT_URL from workflow_dispatch)
   2. Canonicalize; drop invalid URLs, duplicates, games already in the catalog
-     and games in scripts/deleted_games.json (the admin restores a deleted
-     game by removing its log entry when approving it again)
+     and games in scripts/deleted_games.json (unless the admin restored them:
+     scripts/state/unblocked.json)
   3. Fetch each page → keep only free games (with an `added_at` stamp); a
      password-protected page ends the link like a dead one
   4. Emit a patch (see patch.py). URLs that finished (added / paid / dead /
@@ -19,6 +19,9 @@ Flow:
      (`queue_add`), so it survives a retry, a deadline or a rate-limit stop.
      A second spelling of a queued game is left alone: the first copy's
      outcome removes every spelling (apply_patch compares canonical forms).
+  5. How each link ended (added, paid, dead, private, duplicate, deleted,
+     gave_up) goes to `ingest_outcomes` → scripts/state/ingest_outcomes.json,
+     which the admin page reads to follow a batch it queued.
 
 apply_patch.py then applies the patch to the latest `main`, so links queued
 while this ran (extension, admin) are never overwritten.
@@ -68,6 +71,11 @@ def failed_attempt(previous: dict, outcome: str, now: str) -> dict:
     if last and _ts(now) - _ts(last) < RETRY_GAP:
         return {**previous, "last_error": outcome}
     return {"attempts": previous["attempts"] + 1, "last_attempt": now, "last_error": outcome}
+
+
+def record_outcome(patch: dict, url: str, outcome: str) -> None:
+    """How a queued link ended, for the admin page's tracking of the batches it queued."""
+    patch["ingest_outcomes"][url] = {"outcome": outcome, "at": now_iso()}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -130,11 +138,13 @@ def main(argv: list[str] | None = None) -> int:
         if url in catalog_urls:
             print(f"Skip duplicate: {url}")
             stats["duplicate"] += 1
+            record_outcome(patch, url, "duplicate")
             if url in unblocked:
                 patch["unlog"].append(url)
         elif url in deleted_urls and url not in unblocked:
             print(f"Skip previously deleted: {url} (restore it from the admin page)")
             stats["deleted"] += 1
+            record_outcome(patch, url, "deleted")
         else:
             todo.append(url)
             continue
@@ -182,6 +192,7 @@ def main(argv: list[str] | None = None) -> int:
                 patch["queue_remove"].append(url)
                 patch["ingest_state"][url] = {**entry, "gave_up": entry["last_attempt"]}
                 stats["gave_up"] += 1
+                record_outcome(patch, url, "gave_up")
                 if url in unblocked:
                     patch["unblock_remove"].append(url)
             else:
@@ -192,6 +203,7 @@ def main(argv: list[str] | None = None) -> int:
 
         print(f"  → {outcome}")
         stats[outcome] += 1
+        record_outcome(patch, url, outcome)
         patch["queue_remove"].append(url)
         patch["ingest_state"][url] = None
         if url in unblocked:

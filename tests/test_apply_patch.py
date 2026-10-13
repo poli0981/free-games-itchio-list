@@ -220,3 +220,68 @@ def test_refresh_patch_removals_are_capped_by_games_checked(repo):
     patch["removals"] = patch["removals"][:12]
     write_patch("patch.json", patch)
     assert apply_patch.main(["patch.json"]) == 0
+
+
+def _outcome(outcome, at):
+    return {"outcome": outcome, "at": at}
+
+
+def test_ingest_outcomes_merge_newest_wins_and_reapply_is_a_noop(repo):
+    seed_catalog([make_game("a")])
+    save_json(
+        _state_file("ingest_outcomes"),
+        {
+            "https://dev.itch.io/a": _outcome("added", "2026-10-01T00:00:00Z"),
+            "https://dev.itch.io/b": _outcome("paid", "2026-10-05T00:00:00Z"),
+        },
+    )
+    patch = new_patch("ingest")
+    patch["ingest_outcomes"] = {
+        "https://dev.itch.io/b": _outcome("added", "2026-10-04T00:00:00Z"),  # older: ignored
+        "https://dev.itch.io/c": _outcome("dead", "2026-10-06T00:00:00Z"),
+    }
+    write_patch("patch.json", patch)
+    assert apply_patch.main(["patch.json"]) == 0
+    expected = {
+        "https://dev.itch.io/a": _outcome("added", "2026-10-01T00:00:00Z"),
+        "https://dev.itch.io/b": _outcome("paid", "2026-10-05T00:00:00Z"),
+        "https://dev.itch.io/c": _outcome("dead", "2026-10-06T00:00:00Z"),
+    }
+    assert read_json(_state_file("ingest_outcomes")) == expected
+    before = (repo / _state_file("ingest_outcomes")).read_bytes()
+    assert apply_patch.main(["patch.json"]) == 0
+    assert (repo / _state_file("ingest_outcomes")).read_bytes() == before
+
+
+def test_a_patch_with_only_outcomes_is_applied(repo):
+    seed_catalog([make_game("a")])
+    patch = new_patch("ingest")
+    patch["ingest_outcomes"] = {
+        "https://dev.itch.io/a": _outcome("duplicate", "2026-10-06T00:00:00Z")
+    }
+    write_patch("patch.json", patch)
+    assert apply_patch.main(["patch.json"]) == 0
+    assert (
+        read_json(_state_file("ingest_outcomes"))["https://dev.itch.io/a"]["outcome"] == "duplicate"
+    )
+
+
+def test_ingest_outcomes_are_pruned_by_age_and_count(monkeypatch):
+    current = {
+        "https://dev.itch.io/old": _outcome("paid", "2026-06-01T00:00:00Z"),  # > 90 days before
+        "https://dev.itch.io/kept": _outcome("added", "2026-07-10T00:00:00Z"),
+        "not a dict": "x",
+    }
+    delta = {"https://dev.itch.io/new": _outcome("dead", "2026-10-01T00:00:00Z")}
+    merged = apply_patch.merge_outcomes(current, delta)
+    assert set(merged) == {"https://dev.itch.io/kept", "https://dev.itch.io/new"}
+
+    monkeypatch.setattr(apply_patch, "OUTCOMES_KEEP", 2)
+    many = {
+        f"https://dev.itch.io/g{i}": _outcome("added", f"2026-10-0{i}T00:00:00Z")
+        for i in range(1, 5)
+    }
+    assert set(apply_patch.merge_outcomes(many, {})) == {
+        "https://dev.itch.io/g4",
+        "https://dev.itch.io/g3",
+    }

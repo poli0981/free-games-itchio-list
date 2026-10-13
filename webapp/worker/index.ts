@@ -14,9 +14,12 @@
  *   /admin, /admin/* admin app shell, maintainer only (admin.ts)
  *   /data/*.json    readable catalog JSON, for apps 4.0–4.1.1 only (legacy-data.ts)
  *
- * Cron: one RSS feed per run into the review queue, then queue bookkeeping.
+ * Cron: one RSS feed per run into the review queue, queue bookkeeping (with
+ * the pipeline's ingest outcomes), the admin's automatic rules (auto-approve,
+ * watched itch.io collections — automation.ts), then retention.
  */
 import { handleAdminApi, serveAdminApp } from './admin'
+import { runAutomation } from './automation'
 import { catalogUrls } from './data'
 import { discover } from './discover'
 import type { WorkerEnv } from './env'
@@ -26,6 +29,7 @@ import { handleImg } from './img'
 import { accessService, handleIngest } from './ingest'
 import { handleLegacyData } from './legacy-data'
 import { QueueStore } from './queue'
+import { repoOps } from './repo'
 import { handleMiss } from './spa'
 import { handleSuggest } from './suggest'
 
@@ -85,20 +89,43 @@ export default {
     if (!store) return
     const data = { assets: env.ASSETS, origin: env.SITE_ORIGIN }
     const now = new Date()
+    const repo = repoOps(env)
+    const itch = {
+      fetch: (input: RequestInfo | URL, init?: RequestInit) => fetch(input, init),
+      userAgent: env.BOT_UA,
+      sleep: (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms)),
+    }
+    // Each step on its own: one failing must not skip the others.
     try {
-      const found = await discover({
-        store,
-        data,
-        fetch: (input, init) => fetch(input, init),
-        userAgent: env.BOT_UA,
-        now,
-      })
-      console.log('discover', found)
+      console.log('discover', await discover({ store, data, fetch: itch.fetch, userAgent: env.BOT_UA, now }))
     } catch (e) {
       console.error('discover failed', e)
     }
-    const catalog = new Set((await catalogUrls(data)).keys())
-    console.log('reconcile', await store.reconcile(catalog, now))
-    await store.purge(now)
+    try {
+      const catalog = new Set((await catalogUrls(data)).keys())
+      let outcomes = new Map<string, { outcome: string; at: string }>()
+      if (repo) {
+        try {
+          outcomes = (await repo.ingestView()).outcomes
+        } catch (e) {
+          console.error('reading ingest outcomes failed', e)
+        }
+      }
+      console.log('reconcile', await store.reconcile(catalog, outcomes, now))
+    } catch (e) {
+      console.error('reconcile failed', e)
+    }
+    if (repo) {
+      try {
+        console.log('automation', await runAutomation({ store, data, repo, itch, now }))
+      } catch (e) {
+        console.error('automation failed', e)
+      }
+    }
+    try {
+      await store.purge(now)
+    } catch (e) {
+      console.error('purge failed', e)
+    }
   },
 } satisfies ExportedHandler<WorkerEnv>

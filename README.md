@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.4.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -93,8 +93,8 @@ still gets security hardening and that we actually test on (≈87% of active dev
 
 ## Add a game
 
-There are three ways a game gets into the catalog. **All three go through a review queue**: nothing is
-added until the Maintainer approves it.
+There are four ways a game gets into the catalog. Each is approved by the Maintainer, one by one in the
+review queue or through automatic rules the Maintainer sets.
 
 1. **Suggest page**: <https://freeitchgames.win/suggest>. Paste an itch.io game link and, if you like, a
    short note (up to 500 characters; notes are deleted after 180 days). A Cloudflare Turnstile check and a
@@ -104,9 +104,14 @@ added until the Maintainer approves it.
    links through an authenticated API while browsing itch.io.
 3. **Automatic discovery**: every 4 hours the site reads one of itch.io's public RSS feeds of new and
    popular free games (one feed per run) and queues what it finds.
+4. **Followed collections**: the site also reads the public itch.io collections the Maintainer follows and
+   queues their new free games directly (one removed before, or with a warning flag, goes to the review
+   queue instead).
 
-The Maintainer reviews the queue in a private admin area (protected by Cloudflare Access). Approved links
-are handed to the data pipeline, which scrapes each game page; paid games are dropped.
+The Maintainer reviews the queue in a private admin area (protected by Cloudflare Access); an item
+without a warning flag that nobody rejected within a waiting time (24 hours by default) is approved
+automatically. Approved links are handed to the data pipeline, which scrapes each game page; paid games
+are dropped.
 
 Prefer GitHub, or have a long list? The "Add Games (bulk list)" issue template works too; those links go
 through the same review. See [CONTRIBUTING.md](CONTRIBUTING.md#1-suggest-new-games-most-welcome).
@@ -122,7 +127,8 @@ Details: [Terms of Use](docs/ToS.md) and [Disclaimer](docs/DISCLAIMER.md).
 ```
 Suggest page ──┐
 Extension    ──┼─→ review queue ─→ Maintainer approves ─→ scripts/temp_link.json
-RSS feeds    ──┘                     (admin)                  │
+RSS feeds    ──┘               (admin, or auto rules)         │
+Followed collections ─────────────────────────────────────────┤
                                                               ▼
                          update.yml → update_info.py (new games) ──┐
                          refresh.yml → refresh.py (1/7 per day)  ──┴─→ patch ─→ apply_patch.py
@@ -227,7 +233,7 @@ docs/                   # Policies, dev environment, third-party list (+ Vietnam
 | Ingest (`update.yml`) | On queue change + daily 01:23 UTC | Scrape approved links from `temp_link.json`, skip paid / dead / removed |
 | Refresh (`refresh.yml`) | Daily 02:47 UTC | Re-check 1/7 of the catalog: dead links, now-paid or password-protected games, rating, status |
 | Force update (`force_update.yml`) | Manual | Re-scrape every field (one URL or the next batch); keeps `safe_virus` / `notes` / `nsfw` |
-| RSS discovery (Cloudflare Worker) | Every 4 hours | Poll one itch.io feed per run; new games go to the review queue |
+| RSS discovery and automatic rules (Cloudflare Worker) | Every 4 hours | Poll one itch.io feed per run into the review queue; auto-approve unflagged items after the waiting time; queue new free games of followed collections |
 | Python CI / Webapp CI | Pull requests (Python CI also on pushes to `main` that touch it) | Lint, tests, data validation / type-check, tests, build |
 | Deploy website | On push to `main` | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Build monitor (`deploy-status.yml`) | Hourly | Posts each failed Workers Build of `main` to Discord, once |

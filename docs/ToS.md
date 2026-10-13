@@ -1,8 +1,8 @@
 # Terms of Use
 
-Last updated: 2026-10-03
+Last updated: 2026-10-13
 
-Applies from: 2026-10-03 on the Website, and from version 4.2.0 of the Apps.
+Applies from: 2026-10-13 on the Website, and from version 4.4.0 of the Apps.
 
 These Terms of Use ("Terms") govern your use of the website **https://freeitchgames.win**, the desktop and Android apps, and the public catalog data of `free-games-itchio-list`. They are written in plain language, but they are a real agreement. They replace the older Terms and also cover what the old web-app "EULA" used to say; the [EULA](EULA.md) now covers only the app installers and the Android APK.
 
@@ -47,7 +47,7 @@ These Terms of Use ("Terms") govern your use of the website **https://freeitchga
 
 - **Suggest page** (https://freeitchgames.win/suggest): you can submit an itch.io game link and an optional note of up to 500 characters. The page uses Cloudflare Turnstile against spam and is rate limited.
 - The note is seen only by the Maintainer and is deleted after 180 days. **Do not put personal data in it.** See the [Privacy Policy](PrivacyPolicy.md).
-- Every suggestion goes into a **review queue**. Nothing enters the Catalog until the Maintainer approves it, and the Maintainer has no obligation to accept a suggestion or to reply. Approved links are then scraped by the pipeline, and games that turn out to be paid are dropped.
+- Every suggestion goes into a **review queue**. The Maintainer approves or rejects it there, one by one or through automatic rules the Maintainer sets: a suggestion that raises no warning flag and that nobody rejected within the waiting time the Maintainer chose (currently about a day) may be approved automatically. The Maintainer has no obligation to accept a suggestion or to reply. Approved links are then scraped by the pipeline, and games that turn out to be paid are dropped.
 - Only genuinely **free-to-play** games on itch.io qualify. Demos of paid games, "name your own price" titles with a minimum above zero, and time-limited free promotions do not.
 - By submitting anything to the Project (a suggestion, an issue, a pull request or a comment), you confirm that:
   - it is your own work, or you have the right to share it;

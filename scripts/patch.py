@@ -16,6 +16,8 @@ Patch v1:
   "removals":      [{"url", "name", "reason", "deleted_at"}],
   "refresh_state": {"<url>": {...} | null},            # null = drop entry
   "ingest_state":  {"<url>": {...} | null},
+  "ingest_outcomes": {"<url>": {"outcome", "at"}},   # how a queued link ended (added, paid,
+                                                     #   dead, private, duplicate, deleted, gave_up)
   "queue_add":     ["<url>", ...],                     # append to temp_link.json if absent
   "queue_remove":  ["<url>", ...],                     # drop from temp_link.json
   "unlog":         ["<url>", ...],                     # unblocked + re-added: drop from the
@@ -42,6 +44,7 @@ def new_patch(kind: str) -> dict:
         "removals": [],
         "refresh_state": {},
         "ingest_state": {},
+        "ingest_outcomes": {},
         "queue_add": [],
         "queue_remove": [],
         "unlog": [],
@@ -71,6 +74,7 @@ def is_empty(patch: dict) -> bool:
             "removals",
             "refresh_state",
             "ingest_state",
+            "ingest_outcomes",
             "queue_add",
             "queue_remove",
             "unlog",

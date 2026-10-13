@@ -4,7 +4,7 @@ import { genreTreemapData } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { TOOLTIP_BASE, truncateLabel } from './chart-theme'
+import { SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -64,7 +64,7 @@ export function GenreTreemapChart({ games }: { games: Game[] }) {
   return (
     <ChartCard title={t('charts.genreTreemap.title')} description={t('charts.genreTreemap.desc')}>
       <ResponsiveContainer width="100%" height="100%">
-        <Treemap data={treemapData} dataKey="size" nameKey="name" content={<TreemapCell />}>
+        <Treemap {...SERIES_ANIMATION} data={treemapData} dataKey="size" nameKey="name" content={<TreemapCell />}>
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent colorOf={cellColor} />} />
         </Treemap>
       </ResponsiveContainer>

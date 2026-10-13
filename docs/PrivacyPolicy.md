@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: 2026-10-03
+Last updated: 2026-10-13
 
-Applies from: 2026-10-03 on the Website, and from version 4.2.0 of the Apps.
+Applies from: 2026-10-13 on the Website, and from version 4.4.0 of the Apps.
 
 This Privacy Policy explains what personal data the `free-games-itchio-list` project processes, why, who helps process it, how long it is kept, and what rights you have. It covers the website **https://freeitchgames.win**, the desktop and Android apps, the public catalog data and the repository. The short version: there are no accounts, no ads and no tracking cookies. The Project keeps as little as it can, and most of what exists stays in your own browser.
 
@@ -65,14 +65,14 @@ When you use the Suggest page (https://freeitchgames.win/suggest):
 - **What is stored**: the game URL, your optional note (up to 500 characters) and the time of submission, in the review queue (section 2.4). No name, email address or account is asked for or stored.
 - **Anti-spam**: Cloudflare Turnstile processes signals about your device and browser to tell people from bots. To check the result, the Website sends the Turnstile token and your IP address to Cloudflare's verification service.
 - **Rate limiting**: your IP address is used transiently to count requests. The Project does not store it.
-- **Purpose**: to review your suggestion. If it is approved, the game URL becomes part of the public Catalog. Your note is never published and is **deleted automatically after 180 days**.
+- **Purpose**: to review your suggestion, by the Maintainer or by the automatic rules the Maintainer sets (section 2.4). If it is approved, the game URL becomes part of the public Catalog. Your note is never published and is **deleted automatically after 180 days**.
 - **Please don't put personal data in the note**, yours or anyone else's. The form is for game links only.
 
 ### 2.4 The review queue and the admin area
 
-- **How games arrive**: suggestions from the Suggest page; submissions from the Maintainer's browser extension through an authenticated API (the game URL, an optional title and note, and the extension's service-token ID; the records that prevent duplicate submissions are kept for 7 days); and automatic discovery from itch.io's public RSS feeds.
-- **The review queue** (Cloudflare D1) holds candidate game URLs with their source, the title, cover-image URL and genre hint taken from itch.io, automatic flags, notes, timestamps and the Maintainer's decision. Nothing enters the Catalog until the Maintainer approves it. Rejected URLs are kept indefinitely as a blocklist; only the URL is needed to avoid reviewing the same game again.
-- **The admin area** (https://freeitchgames.win/admin) is for the Maintainer only. It is protected by Cloudflare Access (GitHub login or a one-time PIN sent by email), which sets a `CF_Authorization` session cookie in the Maintainer's browser. Admin actions are recorded in an audit log together with the Maintainer's email address. The audit log is never published.
+- **How games arrive**: suggestions from the Suggest page; submissions from the Maintainer's browser extension through an authenticated API (the game URL, an optional title and note, and the extension's service-token ID; the records that prevent duplicate submissions are kept for 7 days); automatic discovery from itch.io's public RSS feeds; and new free games in public itch.io collections the Maintainer follows (the Website reads those public pages; nothing about you is involved).
+- **The review queue** (Cloudflare D1) holds candidate game URLs with their source, the title, cover-image URL and genre hint taken from itch.io, automatic flags, notes, timestamps and the Maintainer's decision. Games enter the Catalog when the Maintainer approves them: one by one, or through automatic rules the Maintainer sets and can change at any time (items without a warning flag that nobody rejected within a waiting time; new free games in collections the Maintainer follows). Automatic approvals are recorded in the audit log like the Maintainer's own. Rejected URLs are kept indefinitely as a blocklist; only the URL is needed to avoid reviewing the same game again.
+- **The admin area** (https://freeitchgames.win/admin) is for the Maintainer only. It is protected by Cloudflare Access (GitHub login or a one-time PIN sent by email), which sets a `CF_Authorization` session cookie in the Maintainer's browser. Admin actions, including changes to the automatic rules, are recorded in an audit log together with the Maintainer's email address. The audit log is never published.
 
 ### 2.5 Public game data in the Catalog
 
