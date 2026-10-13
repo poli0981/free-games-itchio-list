@@ -112,5 +112,30 @@ describe('applyAdminChange', () => {
     const change = applyAdminChange(files(), new Map([['https://dev.itch.io/a', { safe_virus: '?' }]]), [], NOW, SMALL)
     expect(change.writes.size).toBe(0)
     expect(change.deletes).toEqual([])
+    expect(change.urls).toEqual({ edited: [], unchanged: ['https://dev.itch.io/a'], removed: [], missing: [] })
+  })
+
+  it('reports per URL what was edited, already so, removed or not in the catalog', () => {
+    const change = applyAdminChange(
+      files(),
+      new Map([
+        ['https://dev.itch.io/a', { nsfw: 'Yes' }],
+        ['https://dev.itch.io/b', { nsfw: 'No' }],
+        ['https://dev.itch.io/x', { nsfw: 'Yes' }],
+      ]),
+      [
+        { url: 'https://dev.itch.io/c', reason: 'Not a game' },
+        { url: 'https://dev.itch.io/y', reason: 'Not a game' },
+      ],
+      NOW,
+      SMALL,
+    )
+    expect(change.urls).toEqual({
+      edited: ['https://dev.itch.io/a'],
+      unchanged: ['https://dev.itch.io/b'],
+      removed: ['https://dev.itch.io/c'],
+      missing: ['https://dev.itch.io/x', 'https://dev.itch.io/y'],
+    })
+    expect(change.summary).toEqual({ edited: 1, removed: 1 })
   })
 })

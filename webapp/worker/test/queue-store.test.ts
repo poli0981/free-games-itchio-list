@@ -11,7 +11,11 @@ beforeAll(async () => {
 }, 60_000)
 afterAll(() => dispose())
 beforeEach(async () => {
-  await db.batch(['candidates', 'feed_state', 'audit_log', 'idempotency'].map((t) => db.prepare(`DELETE FROM ${t}`)))
+  await db.batch(
+    ['candidates', 'feed_state', 'audit_log', 'idempotency', 'settings', 'watched_collections'].map((t) =>
+      db.prepare(`DELETE FROM ${t}`),
+    ),
+  )
   store = new QueueStore(db)
 })
 
@@ -64,7 +68,7 @@ describe('QueueStore', () => {
     await store.insert([url('in'), url('slow'), url('fresh')].map((u) => ({ url: u, source: 'admin' as const })), T0)
     await store.setStatus([url('in'), url('slow')], 'queued', 'me', T0)
     await store.setStatus([url('fresh')], 'queued', 'me', hours(70))
-    expect(await store.reconcile(new Set([url('in')]), hours(73))).toEqual({ ingested: 1, failed: 1 })
+    expect(await store.reconcile(new Set([url('in')]), new Map(), hours(73))).toEqual({ ingested: 1, failed: 1 })
     expect(await store.statuses([url('in'), url('slow'), url('fresh')])).toEqual(
       new Map([
         [url('in'), 'ingested'],
@@ -72,6 +76,106 @@ describe('QueueStore', () => {
         [url('fresh'), 'queued'],
       ]),
     )
+    const outcomes = new Map((await store.get([url('in'), url('slow')])).map((r) => [r.url, r.outcome]))
+    expect(outcomes).toEqual(new Map([[url('in'), 'added'], [url('slow'), 'timeout']]))
+  })
+
+  it("settles queued rows with the pipeline's outcome, if newer than the decision", async () => {
+    const urls = ['paid', 'added', 'old', 'dup'].map(url)
+    await store.insert(urls.map((u) => ({ url: u, source: 'admin' as const })), T0)
+    await store.setStatus(urls, 'queued', 'me', hours(10))
+    const outcomes = new Map([
+      [url('paid'), { outcome: 'paid', at: '2026-09-18T11:00:00Z' }],
+      [url('added'), { outcome: 'added', at: '2026-09-18T11:00:00Z' }],
+      [url('old'), { outcome: 'dead', at: '2026-09-17T00:00:00Z' }], // an earlier ingest of the same URL
+      [url('dup'), { outcome: 'duplicate', at: '2026-09-18T11:00:00Z' }],
+    ])
+    expect(await store.reconcile(new Set(), outcomes, hours(12))).toEqual({ ingested: 2, failed: 1 })
+    const rows = new Map((await store.get(urls)).map((r) => [r.url, [r.status, r.outcome]]))
+    expect(rows).toEqual(
+      new Map([
+        [url('paid'), ['failed', 'paid']],
+        [url('added'), ['ingested', 'added']],
+        [url('old'), ['queued', null]],
+        [url('dup'), ['ingested', 'duplicate']],
+      ]),
+    )
+  })
+
+  it('sets the status of more URLs than one statement can bind', async () => {
+    const urls = Array.from({ length: 250 }, (_, i) => url(`s${i}`))
+    await store.insert(urls.map((u) => ({ url: u, source: 'rss' as const })), T0)
+    await store.setStatus(urls, 'queued', 'auto', T0)
+    expect((await store.counts()).queued).toBe(250)
+    await store.markIngested(urls.slice(0, 120), 'duplicate', T0)
+    expect((await store.counts()).ingested).toBe(120)
+  })
+
+  it('lists auto-approvable rows: source, waited long enough, after the baseline, unflagged, no bad outcome', async () => {
+    await store.insert(
+      [
+        { url: url('ok'), source: 'rss' },
+        { url: url('form'), source: 'form' },
+        { url: url('ext'), source: 'ext' },
+        { url: url('flagged'), source: 'rss', flags: ['demo'] },
+      ],
+      hours(1),
+    )
+    await store.insert([{ url: url('young'), source: 'rss' }], hours(30))
+    await store.insert([{ url: url('backlog'), source: 'rss' }], hours(-5))
+    await store.insert([{ url: url('failed-before'), source: 'rss' }], hours(1))
+    await db.prepare("UPDATE candidates SET outcome = 'paid' WHERE url = ?").bind(url('failed-before')).run()
+    const rows = await store.autoApprovable({
+      sources: ['rss', 'form'],
+      before: '2026-09-18T08:00:00Z',
+      since: '2026-09-18T00:00:00Z',
+      limit: 10,
+    })
+    expect(rows.map((r) => r.url)).toEqual([url('form'), url('ok')])
+    expect(await store.autoApprovable({ sources: [], before: 'z', since: '', limit: 10 })).toEqual([])
+  })
+
+  it('creates the automation settings on first read, with the baseline at that moment', async () => {
+    const first = await store.automation(T0)
+    expect(first).toEqual({ enabled: true, sources: ['rss', 'form'], hours: 24, since: '2026-09-18T00:00:00Z' })
+    expect(await store.automation(hours(5))).toEqual(first) // not reset by later reads
+    await store.putAutomation({ ...first, enabled: false, hours: 48 }, 'me', hours(6))
+    expect(await store.automation(hours(7))).toMatchObject({ enabled: false, hours: 48 })
+    expect(await store.lastRun()).toBeNull()
+    await store.putLastRun({ approved: 3 }, hours(8))
+    expect(await store.lastRun()).toEqual({ approved: 3 })
+  })
+
+  it('keeps watched collections and picks the due ones, longest-unread first', async () => {
+    await store.watch('1', 'one', 'me', T0)
+    await store.watch('2', 'two', 'me', hours(1))
+    await store.watch('3', 'three', 'me', hours(2))
+    await store.saveCollectionPoll({
+      id: '1', slug: 'one', last_polled_at: '2026-09-18T05:00:00Z', last_status: 200,
+      backoff_until: null, next_page: 3, last_found: 60, last_added: 2,
+    })
+    await store.saveCollectionPoll({
+      id: '2', slug: 'two-renamed', last_polled_at: '2026-09-18T04:00:00Z', last_status: 429,
+      backoff_until: '2026-09-18T12:00:00Z', next_page: 1, last_found: 0, last_added: 0,
+    })
+    expect((await store.collectionsDue(hours(6))).map((c) => c.id)).toEqual(['3', '1'])
+    expect((await store.collectionsDue(hours(13))).map((c) => c.id)).toEqual(['3', '2', '1'])
+    expect(await store.setWatched('3', false)).toBe(true)
+    expect((await store.collectionsDue(hours(13))).map((c) => c.id)).toEqual(['2', '1'])
+    expect((await store.collection('2'))?.slug).toBe('two-renamed')
+    expect(await store.unwatch('1')).toBe(true)
+    expect(await store.unwatch('1')).toBe(false)
+    expect((await store.watched()).map((c) => c.id)).toEqual(['2', '3'])
+  })
+
+  it('pages through the audit log, newest first, by action', async () => {
+    for (const action of ['approve', 'delete', 'approve', 'edit', 'approve']) await store.audit('me', action, 'x', null)
+    const all = await store.activity({ before: null, limit: 10, actions: [] })
+    expect(all.map((r) => r.action)).toEqual(['approve', 'edit', 'approve', 'delete', 'approve'])
+    const approvals = await store.activity({ before: null, limit: 2, actions: ['approve'] })
+    expect(approvals).toHaveLength(2)
+    const older = await store.activity({ before: approvals[1].id, limit: 2, actions: ['approve'] })
+    expect(older.map((r) => r.id)).toEqual([all[4].id])
   })
 
   it('purges old idempotency records and old Suggest-form notes', async () => {

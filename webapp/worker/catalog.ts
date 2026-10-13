@@ -168,6 +168,8 @@ export interface CatalogChange {
   /** paths to delete (chunks that disappeared). */
   deletes: string[]
   summary: { edited: number; removed: number }
+  /** Per URL: edited, asked to edit but already so, removed, or not in the catalog. */
+  urls: { edited: string[]; unchanged: string[]; removed: string[]; missing: string[] }
 }
 
 /**
@@ -182,7 +184,8 @@ export function applyAdminChange(
   sizes: { chunkSize: number; minFill: number } = { chunkSize: CHUNK_SIZE, minFill: MIN_FILL },
 ): CatalogChange {
   const games = files.chunks.flat().map((g) => ({ ...g }))
-  let edited = 0
+  const editedUrls: string[] = []
+  const unchanged: string[] = []
   for (const g of games) {
     const edit = edits.get(g.url)
     if (!edit) continue
@@ -193,8 +196,11 @@ export function applyAdminChange(
         changed = true
       }
     }
-    if (changed) edited++
+    if (changed) editedUrls.push(g.url)
+    else unchanged.push(g.url)
   }
+  const present = new Set(games.map((g) => g.url))
+  const missing = [...new Set([...edits.keys(), ...removals.map((r) => r.url)])].filter((u) => !present.has(u))
 
   const removeUrls = new Map(removals.map((r) => [r.url, r.reason]))
   const stamp = now.toISOString().replace(/\.\d{3}Z$/, 'Z')
@@ -230,5 +236,10 @@ export function applyAdminChange(
   if (deletedEntries.length > 0) {
     writes.set('scripts/deleted_games.json', dumps(dedupDeleted([...files.deleted, ...deletedEntries])))
   }
-  return { writes, deletes, summary: { edited, removed: deletedEntries.length } }
+  return {
+    writes,
+    deletes,
+    summary: { edited: editedUrls.length, removed: deletedEntries.length },
+    urls: { edited: editedUrls, unchanged, removed: deletedEntries.map((e) => e.url), missing },
+  }
 }
