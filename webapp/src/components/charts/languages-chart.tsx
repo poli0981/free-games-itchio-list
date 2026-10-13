@@ -6,7 +6,7 @@ import { useT } from '@/lib/i18n'
 import { useIsMobile } from '@/lib/use-is-mobile'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, singleLineTick, TOOLTIP_BASE, truncateLabel } from './chart-theme'
+import { BAR_CURSOR, SERIES_ANIMATION, singleLineTick, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -40,6 +40,7 @@ export function LanguagesChart({ games }: { games: Game[] }) {
           )}
           <Tooltip {...TOOLTIP_BASE} cursor={BAR_CURSOR} content={<ChartTooltipContent />} />
           <Bar
+            {...SERIES_ANIMATION}
             dataKey="count"
             name={t('charts.series.games')}
             fill={PALETTE[4]}

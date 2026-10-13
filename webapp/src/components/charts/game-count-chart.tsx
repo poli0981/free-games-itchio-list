@@ -3,7 +3,7 @@ import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { CountHistoryPoint } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LINE_CURSOR, TOOLTIP_BASE } from './chart-theme'
+import { LINE_CURSOR, SERIES_ANIMATION, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -34,6 +34,7 @@ export function GameCountChart({ history }: { history: CountHistoryPoint[] }) {
               content={<ChartTooltipContent labelFormat={fmt.date} />}
             />
             <Line
+              {...SERIES_ANIMATION}
               type="monotone"
               dataKey="total"
               name={t('charts.series.games')}

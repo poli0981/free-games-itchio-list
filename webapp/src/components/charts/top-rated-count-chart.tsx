@@ -5,7 +5,7 @@ import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, TOOLTIP_BASE, truncateLabel } from './chart-theme'
+import { BAR_CURSOR, SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -28,7 +28,7 @@ export function TopRatedCountChart({ games }: { games: Game[] }) {
             tickFormatter={truncateLabel(20)}
           />
           <Tooltip {...TOOLTIP_BASE} cursor={BAR_CURSOR} content={<ChartTooltipContent />} />
-          <Bar dataKey="count" name={t('charts.series.ratings')} fill={PALETTE[3]} radius={[0, 4, 4, 0]} />
+          <Bar {...SERIES_ANIMATION} dataKey="count" name={t('charts.series.ratings')} fill={PALETTE[3]} radius={[0, 4, 4, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </ChartCard>

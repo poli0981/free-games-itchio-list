@@ -26,10 +26,12 @@ const game = (slug: string) => `https://dev.itch.io/${slug}`
 
 function fakeRepo(fail = false) {
   return {
-    queueForIngest: vi.fn(async (urls: string[], _unblock: string[], _tag?: string) => {
-      if (fail) throw new Error('GitHub is down')
-      return { sha: 'sha-auto', added: urls }
-    }),
+    queueForIngest: vi.fn<(urls: string[], unblock: string[], tag?: string) => Promise<{ sha: string; added: string[] }>>(
+      async (urls) => {
+        if (fail) throw new Error('GitHub is down')
+        return { sha: 'sha-auto', added: urls }
+      },
+    ),
     editCatalog: vi.fn(),
     ingestView: vi.fn(async () => parseIngestView('h', '[]', '{}', '{}')),
   } satisfies RepoOps

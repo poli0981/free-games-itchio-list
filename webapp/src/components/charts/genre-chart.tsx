@@ -5,7 +5,7 @@ import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, singleLineTick, TOOLTIP_BASE } from './chart-theme'
+import { BAR_CURSOR, SERIES_ANIMATION, singleLineTick, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -24,7 +24,7 @@ export function GenreChart({ games }: { games: Game[] }) {
               fit the row, which hid every other genre, the largest two included. */}
           <YAxis dataKey="key" type="category" width={120} interval={0} tick={singleLineTick(12)} />
           <Tooltip {...TOOLTIP_BASE} cursor={BAR_CURSOR} content={<ChartTooltipContent />} />
-          <Bar dataKey="count" name={t('charts.series.games')} fill={PALETTE[0]} radius={[0, 4, 4, 0]} />
+          <Bar {...SERIES_ANIMATION} dataKey="count" name={t('charts.series.games')} fill={PALETTE[0]} radius={[0, 4, 4, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </ChartCard>

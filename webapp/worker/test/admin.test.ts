@@ -28,7 +28,9 @@ const LISTED = ['https://dev.itch.io/listed', 'https://dev.itch.io/second']
 
 function fakeRepo(view: IngestView = parseIngestView('head1', '[]', '{}', '{}')) {
   const repo = {
-    queueForIngest: vi.fn(async (urls: string[], _unblock: string[], _tag?: string) => ({ sha: 'sha-queue', added: urls })),
+    queueForIngest: vi.fn<(urls: string[], unblock: string[], tag?: string) => Promise<{ sha: string; added: string[] }>>(
+      async (urls) => ({ sha: 'sha-queue', added: urls }),
+    ),
     editCatalog: vi.fn(async (edits: Map<string, unknown>, removals: { url: string }[]) => {
       const present = (u: string) => LISTED.includes(u)
       const removed = removals.map((r) => r.url).filter(present)
@@ -57,7 +59,7 @@ function fakeItch(pages: Record<string, () => Response> = {}) {
 }
 
 function context(over: Partial<AdminContext> = {}) {
-  const thumbs = { delete: vi.fn(async (_keys: string[]) => undefined) }
+  const thumbs = { delete: vi.fn<(keys: string[]) => Promise<undefined>>(async () => undefined) }
   const ctx: AdminContext = {
     actor: 'owner@example.com',
     store,

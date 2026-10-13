@@ -1,11 +1,12 @@
 import { Link } from 'react-router'
-import { SunMoon } from 'lucide-react'
 import { Popover, PopoverClose, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { Switch } from '@/components/ui/switch'
 import { useT } from '@/lib/i18n'
 import { requestNsfw } from '@/lib/nsfw'
 import { cn } from '@/lib/utils'
 import { usePrefs } from '@/stores/prefs'
+import { useThemeStore } from '@/stores/theme'
+import { THEME_ICON } from '@/components/theme-icon'
 import { DensityChoice, LanguageChoice, ScrollbarsToggle, ThemeChoice } from './preference-controls'
 
 /** Theme, language, density, scrollbars and 18+ — the settings people change often. */
@@ -13,6 +14,8 @@ export function DisplayMenu({ className }: { className?: string }) {
   const t = useT()
   const showNsfw = usePrefs((s) => s.showNsfw)
   const setShowNsfw = usePrefs((s) => s.setShowNsfw)
+  // The button shows the theme in use: light, dark or following the system.
+  const ThemeIcon = THEME_ICON[useThemeStore((s) => s.theme)]
 
   return (
     <Popover>
@@ -23,7 +26,7 @@ export function DisplayMenu({ className }: { className?: string }) {
           className,
         )}
       >
-        <SunMoon className="size-4" aria-hidden="true" />
+        <ThemeIcon className="size-4" aria-hidden="true" />
       </PopoverTrigger>
       <PopoverContent align="end" aria-label={t('header.display')} className="w-72 space-y-4">
         <ThemeChoice />

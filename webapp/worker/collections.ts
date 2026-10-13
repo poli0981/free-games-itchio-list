@@ -191,7 +191,7 @@ export async function readCollection(ref: CollectionRef, opts: ReadOptions): Pro
       res.body?.cancel().catch(() => {})
       return done(page, { kind: 'error', status: res.status })
     }
-    let parsed: CollectionPage | null = null
+    let parsed: CollectionPage | null
     try {
       parsed = parseCollectionPage(await res.json())
     } catch {

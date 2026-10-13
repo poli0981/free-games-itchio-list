@@ -4,7 +4,7 @@ import { deletionReasonCounts } from '@/lib/analytics'
 import { useT } from '@/lib/i18n'
 import type { DeletedGameEntry } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LEGEND_BASE, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -17,6 +17,7 @@ export function DeletionReasonsChart({ deleted }: { deleted: DeletedGameEntry[] 
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
+            {...SERIES_ANIMATION}
             data={data}
             dataKey="count"
             nameKey="key"

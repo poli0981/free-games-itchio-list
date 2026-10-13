@@ -269,11 +269,9 @@ async function add(body: Record<string, unknown>, ctx: AdminContext): Promise<Re
   })
 }
 
-export type TrackState = 'waiting' | 'added' | 'dropped' | 'unknown'
-
 export interface TrackItem {
   url: string
-  state: TrackState
+  state: 'waiting' | 'added' | 'dropped' | 'unknown'
   outcome?: string
   at?: string
   attempts?: number

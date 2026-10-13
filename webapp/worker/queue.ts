@@ -133,7 +133,7 @@ export interface AutomationSettings {
   since: string
 }
 
-export const DEFAULT_AUTOMATION: Omit<AutomationSettings, 'since'> = { enabled: true, sources: ['rss', 'form'], hours: 24 }
+const DEFAULT_AUTOMATION: Omit<AutomationSettings, 'since'> = { enabled: true, sources: ['rss', 'form'], hours: 24 }
 
 export interface WatchedCollection {
   id: string
@@ -191,7 +191,7 @@ function safeJson(text: string): unknown {
 export const AUTOMATION_SOURCES: readonly CandidateSource[] = ['rss', 'form', 'ext']
 
 /** Stored settings with every field checked; anything unusable falls back to `fallback`. */
-export function normalizeAutomation(value: unknown, fallback: AutomationSettings): AutomationSettings {
+function normalizeAutomation(value: unknown, fallback: AutomationSettings): AutomationSettings {
   const v = (typeof value === 'object' && value !== null ? value : {}) as Record<string, unknown>
   const sources = Array.isArray(v.sources)
     ? AUTOMATION_SOURCES.filter((s) => (v.sources as unknown[]).includes(s))
