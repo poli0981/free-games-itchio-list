@@ -61,6 +61,18 @@ def test_ingest_outcomes(repo, monkeypatch):
     # A password-protected page is final: dropped from the queue, no attempt kept.
     assert stats["private"] == 1 and patch["ingest_state"]["https://dev.itch.io/locked"] is None
     assert (stats["deleted"], stats["invalid"], stats["retry"]) == (1, 1, 1)
+    # How each finished link ended, for the admin's batch tracking: retries, invalid
+    # entries and second spellings leave no outcome.
+    outcomes = {url: e["outcome"] for url, e in patch["ingest_outcomes"].items()}
+    assert outcomes == {
+        "https://dev.itch.io/free": "added",
+        "https://dev.itch.io/paid": "paid",
+        "https://dev.itch.io/dead": "dead",
+        "https://dev.itch.io/locked": "private",
+        "https://dev.itch.io/known": "duplicate",
+        "https://dev.itch.io/removed": "deleted",
+    }
+    assert all(e["at"].endswith("Z") for e in patch["ingest_outcomes"].values())
     # apply_patch compares canonical forms, so each processed link is covered once.
     removed = {canonicalize(u) or u for u in patch["queue_remove"]}
     assert removed == {
@@ -81,6 +93,7 @@ def test_gives_up_after_three_attempts_and_resets_on_requeue(repo, monkeypatch):
     patch = _run(monkeypatch, {}, [url])
     assert url in patch["queue_remove"]
     assert patch["ingest_state"][url]["attempts"] == 3 and "gave_up" in patch["ingest_state"][url]
+    assert patch["ingest_outcomes"][url]["outcome"] == "gave_up"
 
     save_json("scripts/state/ingest_state.json", {url: patch["ingest_state"][url]})
     patch = _run(monkeypatch, {}, [url])

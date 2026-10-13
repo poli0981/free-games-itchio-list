@@ -14,6 +14,7 @@ Checks:
   - index.json agrees with the chunk files
   - count_history.json: one {date, total} row per day, sorted
   - deleted_games.json entries are complete; temp_link.json is a list of strings
+  - state/ingest_outcomes.json (when present): canonical URL → {outcome, at}
 
 `--fix` applies safe normalizations (safe_virus / nsfw spelling) and saves.
 """
@@ -55,9 +56,27 @@ NSFW = {"Yes", "No"}
 _SAFE_VIRUS_ALIASES = {"y": "Yes", "yes": "Yes", "n": "No", "no": "No", "caution": "Caution"}
 _NSFW_ALIASES = {"y": "Yes", "yes": "Yes", "n": "No", "no": "No"}
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+_STAMP_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
+INGEST_OUTCOMES_VALUES = {"added", "duplicate", "paid", "dead", "private", "deleted", "gave_up"}
 
 DELETED_LOG = "scripts/deleted_games.json"
 TEMP_LINK = "scripts/temp_link.json"
+INGEST_OUTCOMES = "scripts/state/ingest_outcomes.json"
+
+
+def check_outcomes(outcomes) -> list[str]:
+    """scripts/state/ingest_outcomes.json: canonical URL → {outcome, at}."""
+    if not isinstance(outcomes, dict):
+        return ["ingest_outcomes.json: top level must be an object"]
+    errors = []
+    for url, entry in outcomes.items():
+        if not is_canonical(url):
+            errors.append(f"ingest_outcomes.json: {url!r} is not a canonical game URL")
+        elif not isinstance(entry, dict) or entry.get("outcome") not in INGEST_OUTCOMES_VALUES:
+            errors.append(f"ingest_outcomes.json[{url}]: unknown outcome")
+        elif not isinstance(entry.get("at"), str) or not _STAMP_RE.match(entry["at"]):
+            errors.append(f"ingest_outcomes.json[{url}]: 'at' must be YYYY-MM-DDTHH:MM:SSZ")
+    return errors
 
 
 def check_record(game, where: str) -> tuple[list[str], list[str]]:
@@ -160,6 +179,9 @@ def validate() -> tuple[list[str], list[str]]:
     queue = load_json(TEMP_LINK)
     if not isinstance(queue, list) or not all(isinstance(u, str) for u in queue):
         errors.append("temp_link.json must be a JSON array of URL strings")
+
+    if os.path.exists(INGEST_OUTCOMES):
+        errors += check_outcomes(load_json(INGEST_OUTCOMES))
 
     return errors, warnings
 
