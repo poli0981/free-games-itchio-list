@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.4.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -71,13 +71,14 @@ Lưu ý: **chỉ arm64-v8a** (mọi điện thoại từ ~2017; không hỗ tr�
 
 ## Thêm game
 
-Có ba cách để một game vào danh mục. **Cả ba đều đi qua hàng chờ duyệt**: không có gì được thêm cho tới khi Maintainer duyệt.
+Có bốn cách để một game vào danh mục. Mỗi game đều được Maintainer duyệt, từng game một trong hàng chờ duyệt hoặc qua các quy tắc tự động do Maintainer đặt ra.
 
 1. **Trang Suggest**: <https://freeitchgames.win/suggest>. Dán link game itch.io và, nếu muốn, một ghi chú ngắn (tối đa 500 ký tự; ghi chú bị xóa sau 180 ngày). Một bước kiểm tra Cloudflare Turnstile và giới hạn tần suất giúp chặn spam. Vui lòng không ghi dữ liệu cá nhân vào ghi chú.
 2. **Extension trình duyệt**: [itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) của chính Maintainer (repo riêng, GPL-3.0) gửi link qua một API có xác thực trong lúc duyệt itch.io.
 3. **Tự động phát hiện**: cứ 4 giờ một lần, website đọc một trong các RSS feed công khai của itch.io về game miễn phí mới và phổ biến (mỗi lượt một feed) rồi đưa những gì tìm được vào hàng chờ.
+4. **Collection được theo dõi**: website cũng đọc các collection công khai trên itch.io mà Maintainer theo dõi và đưa thẳng game miễn phí mới của chúng vào hàng chờ ingest (game từng bị gỡ, hoặc có cờ cảnh báo, thì vào hàng chờ duyệt).
 
-Maintainer duyệt hàng chờ trong một khu vực quản trị riêng (được bảo vệ bởi Cloudflare Access). Link được duyệt sẽ được chuyển cho pipeline dữ liệu, pipeline này cào từng trang game; game trả phí bị loại.
+Maintainer duyệt hàng chờ trong một khu vực quản trị riêng (được bảo vệ bởi Cloudflare Access); mục không có cờ cảnh báo mà không ai từ chối trong thời gian chờ (mặc định 24 giờ) được duyệt tự động. Link được duyệt sẽ được chuyển cho pipeline dữ liệu, pipeline này cào từng trang game; game trả phí bị loại.
 
 Thích dùng GitHub hơn, hoặc có cả một danh sách dài? Issue template "Add Games (bulk list)" cũng dùng được; các link đó đi qua cùng quy trình duyệt. Xem [CONTRIBUTING](docs/i18n/vi/CONTRIBUTING.md#1-đề-xuất-game-mới-hoan-nghênh-nhất).
 
@@ -88,7 +89,8 @@ Muốn **gỡ** một game, hoặc sửa dữ liệu của nó (nhất là các 
 ```
 Trang Suggest ─┐
 Extension     ─┼─→ hàng chờ duyệt ─→ Maintainer duyệt ─→ scripts/temp_link.json
-RSS feed      ─┘                       (admin)                │
+RSS feed      ─┘                (admin, hoặc quy tắc tự động) │
+Collection theo dõi ──────────────────────────────────────────┤
                                                               ▼
                          update.yml → update_info.py (game mới)    ──┐
                          refresh.yml → refresh.py (1/7 mỗi ngày)   ──┴─→ patch ─→ apply_patch.py
@@ -172,7 +174,7 @@ docs/                   # Chính sách, môi trường dev, danh sách bên th�
 | Ingest (`update.yml`) | Khi hàng chờ đổi + hằng ngày 01:23 UTC | Cào link đã duyệt từ `temp_link.json`, bỏ qua game trả phí / đã chết / từng bị gỡ |
 | Refresh (`refresh.yml`) | Hằng ngày 02:47 UTC | Kiểm tra lại 1/7 danh mục: link chết, game chuyển sang trả phí hoặc bị đặt mật khẩu, rating, trạng thái |
 | Force update (`force_update.yml`) | Thủ công | Cào lại mọi trường (một URL hoặc lô tiếp theo); giữ nguyên `safe_virus` / `notes` / `nsfw` |
-| Phát hiện qua RSS (Cloudflare Worker) | Mỗi 4 giờ | Đọc một feed itch.io mỗi lượt; game mới vào hàng chờ duyệt |
+| Phát hiện qua RSS và quy tắc tự động (Cloudflare Worker) | Mỗi 4 giờ | Đọc một feed itch.io mỗi lượt vào hàng chờ duyệt; tự duyệt mục không có cờ sau thời gian chờ; đưa game miễn phí mới của collection được theo dõi vào hàng chờ ingest |
 | Python CI / Webapp CI | Pull request (Python CI còn chạy khi push vào `main` chạm tới phần Python) | Lint, test, validate dữ liệu / type-check, test, build |
 | Deploy website | Khi push vào `main` | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Theo dõi build (`deploy-status.yml`) | Mỗi giờ | Báo mỗi Workers Build lỗi của `main` lên Discord, một lần |

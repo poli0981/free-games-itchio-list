@@ -1,6 +1,6 @@
 # Disclaimer
 
-Last updated: 2026-09-29
+Last updated: 2026-10-13
 
 Applies from: the release of version 4.0.0.
 
@@ -31,7 +31,7 @@ The Project is independent. It is **not affiliated with, endorsed by, or sponsor
 
 The Project **does not make, host, distribute, sell or endorse** the games it lists. Every game links to its own page on itch.io, and any download happens there, under itch.io's terms and the creator's own terms or license.
 
-Games reach the catalog through the public Suggest page, the Maintainer's browser extension, or itch.io's public RSS feeds, and nothing is added until the Maintainer approves it. That approval is **not** a security audit, a quality check or an endorsement.
+Games reach the catalog through the public Suggest page, the Maintainer's browser extension, itch.io's public RSS feeds, or public itch.io collections the Maintainer follows. Each one is approved by the Maintainer, one by one or through automatic rules the Maintainer sets. That approval is **not** a security audit, a quality check or an endorsement.
 
 ## 5. No warranty as to the games
 

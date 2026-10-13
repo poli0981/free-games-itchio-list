@@ -116,8 +116,18 @@ verification page instead of the shell on every app route (and `403` on `/img`);
 Maintainer only. Cloudflare Access (the "Admin" application) guards `/admin` and `/api/admin/*`, and
 the Worker re-verifies the Access JWT and the `ADMIN_EMAILS` allow-list on every request
 ([`worker/access.ts`](worker/access.ts), [`worker/admin.ts`](worker/admin.ts)). The app shell is only
-served after that check. Pages (hash routes): **Review queue**, **Add games**, **Catalog** (edit
-`safe_virus` / `notes` / `nsfw`, remove or restore a game).
+served after that check. Pages (hash routes):
+
+- **Review queue**: approve (with override for removed games) or reject, in batches of 200.
+- **Add games**: paste any text or load a file, or read an itch.io collection; **Check** shows what Add
+  would do with each URL before anything is written; Add queues the list in batches of 200 and then
+  follows each game through the ingest (added / waiting / dropped and why, from
+  `scripts/state/ingest_outcomes.json`).
+- **Catalog**: search, edit one game, or select up to 100 for a bulk edit (`nsfw` / `safe_virus` /
+  `notes`) or a removal with a public reason (one commit); remove by list; restore removed games.
+- **New games** (added in the last 7 / 30 days, to review 18+ and virus checks in bulk), **Activity**
+  (the D1 audit log) and **Settings** (auto-approve rules, followed itch.io collections, the last
+  automatic run).
 
 Writes go to the repo as a **GitHub App** (GraphQL `createCommitOnBranch`, so commits are
 "Verified"; [`worker/github.ts`](worker/github.ts), [`worker/repo.ts`](worker/repo.ts)). Approving a
@@ -136,15 +146,18 @@ Worker. It runs for `wrangler.jsonc` `assets.run_worker_first` (`/`, `/img/*`, `
 | `/api/health` | [worker/index.ts](worker/index.ts) | Health check |
 | `/api/suggest` | [worker/suggest.ts](worker/suggest.ts) | Suggest form: same-origin POST, per-IP rate limit, Turnstile, canonical itch.io URL, note ≤ 500 chars |
 | `/api/ingest` | [worker/ingest.ts](worker/ingest.ts) | Browser extension: Access service token, `Idempotency-Key`, rate limit per token |
-| `/api/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin API (queue, add, edit, remove, restore) |
+| `/api/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin API (queue, check, add, track, edit and remove one or up to 100 games, restore, activity, settings, itch.io collections) |
 | `/admin`, `/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin app shell, after the Access check |
 | `/data/*.json` (not `/data/pack/`) | [worker/legacy-data.ts](worker/legacy-data.ts) | The readable catalog JSON, passed only to apps 4.0–4.1.1 (Tauri `Origin`); everyone else gets 410 + the repository links |
 | anything else | [worker/spa.ts](worker/spa.ts) | App shell for routes, real 404 for missing files (a missing pack too: `no-store`) |
 
-**Cron** (`23 */4 * * *`, [`worker/discover.ts`](worker/discover.ts)): polls **one** itch.io RSS feed
-per run into the review queue, then does queue bookkeeping (queued → ingested / failed) and retention
-(idempotency records after 7 days, Suggest notes after 180). Nothing enters the catalog without the
-Maintainer's approval.
+**Cron** (`23 */4 * * *`, [`worker/index.ts`](worker/index.ts)), four steps that fail independently:
+[`discover.ts`](worker/discover.ts) polls **one** itch.io RSS feed into the review queue; queue
+bookkeeping settles queued rows with the pipeline's ingest outcomes (queued → ingested / failed);
+[`automation.ts`](worker/automation.ts) applies the Maintainer's automatic rules (auto-approve of
+unflagged items after the waiting time, new free games of followed collections, read with
+[`collections.ts`](worker/collections.ts)) in **one** commit; then retention (idempotency records after
+7 days, Suggest notes after 180).
 
 **Bindings**: `ASSETS`, `THUMBS` (R2 `freeitchgames-thumbs`), `DB` (D1 `freeitchgames`),
 `RL_SUGGEST` / `RL_INGEST` / `RL_GATE` (rate limits). **Vars**: `SITE_ORIGIN`, `GITHUB_REPO`, `BOT_UA`, `GH_APP_ID`,

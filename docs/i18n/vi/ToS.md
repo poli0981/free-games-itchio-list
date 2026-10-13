@@ -1,10 +1,10 @@
 # Điều khoản sử dụng (Terms of Use)
 
-Cập nhật lần cuối: 2026-10-03
+Cập nhật lần cuối: 2026-10-13
 
-Áp dụng từ: ngày 2026-10-03 đối với Website, và từ phiên bản 4.2.0 đối với các Ứng dụng.
+Áp dụng từ: ngày 2026-10-13 đối với Website, và từ phiên bản 4.4.0 đối với các Ứng dụng.
 
-Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-03 (English source revision 2026-10-03). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-13 (English source revision 2026-10-13). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
 Bản tiếng Anh: [`docs/ToS.md`](../../ToS.md).
 
@@ -51,7 +51,7 @@ Các Điều khoản sử dụng này ("Điều khoản") điều chỉnh việc
 
 - **Trang Suggest** (https://freeitchgames.win/suggest): bạn có thể gửi một liên kết game itch.io và một ghi chú tùy chọn dài tối đa 500 ký tự. Trang này dùng Cloudflare Turnstile để chống spam và có giới hạn tần suất (rate limit).
 - Ghi chú chỉ Người duy trì xem được và sẽ bị xóa sau 180 ngày. **Đừng đưa dữ liệu cá nhân vào ghi chú.** Xem [Chính sách quyền riêng tư](PrivacyPolicy.md).
-- Mọi đề xuất đều vào một **hàng đợi duyệt**. Không có gì được đưa vào Danh mục cho tới khi Người duy trì phê duyệt, và Người duy trì không có nghĩa vụ phải chấp nhận hay phản hồi một đề xuất. Sau khi được duyệt, liên kết sẽ được pipeline scrape, và game nào hóa ra là game trả phí sẽ bị loại.
+- Mọi đề xuất đều vào một **hàng đợi duyệt**. Người duy trì duyệt hoặc từ chối đề xuất tại đó, từng cái một hoặc qua các quy tắc tự động do Người duy trì đặt ra: một đề xuất không có cờ cảnh báo và không bị ai từ chối trong thời gian chờ mà Người duy trì chọn (hiện khoảng một ngày) có thể được duyệt tự động. Người duy trì không có nghĩa vụ phải chấp nhận hay phản hồi một đề xuất. Sau khi được duyệt, liên kết sẽ được pipeline scrape, và game nào hóa ra là game trả phí sẽ bị loại.
 - Chỉ những game **thực sự miễn phí** trên itch.io mới đủ điều kiện. Bản demo của game trả phí, game "name your own price" có mức giá tối thiểu lớn hơn 0, và game chỉ miễn phí trong thời gian khuyến mãi thì không.
 - Khi gửi bất cứ thứ gì cho Dự án (đề xuất, issue, pull request hay comment), bạn xác nhận rằng:
   - đó là sản phẩm của chính bạn, hoặc bạn có quyền chia sẻ nó;

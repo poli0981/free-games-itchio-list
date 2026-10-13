@@ -168,7 +168,7 @@ export const vi: Record<MessageKey, string> = {
   // ---- suggest ----
   "nav.suggest": "Đề xuất game",
   "titles.suggest": "Đề xuất game",
-  "suggest.intro": "Bạn biết một game miễn phí trên itch.io mà chưa có ở đây? Gửi link cho chúng tôi. Đề xuất sẽ vào hàng chờ duyệt, và maintainer kiểm tra từng game trước khi thêm.",
+  "suggest.intro": "Bạn biết một game miễn phí trên itch.io mà chưa có ở đây? Gửi link cho chúng tôi. Đề xuất sẽ vào hàng chờ duyệt: maintainer duyệt hoặc từ chối, và đề xuất không có cờ cảnh báo mà không ai từ chối trong khoảng một ngày có thể được duyệt tự động.",
   "suggest.url": "Link game",
   "suggest.urlHint": "Trang itch.io của game, dạng https://creator.itch.io/game.",
   "suggest.note": "Ghi chú (không bắt buộc)",
@@ -337,7 +337,7 @@ export const vi: Record<MessageKey, string> = {
   "settings.appearance.scrollbarsDesc": "Vẫn cuộn được bằng con lăn chuột, touchpad, cảm ứng và bàn phím.",
   "settings.appearance.desc": "Giao diện, ngôn ngữ, độ dày dòng và thanh cuộn. Chỉ lưu trong trình duyệt này.",
   "welcome.feature.open.text": "Toàn bộ danh mục là dữ liệu mở theo giấy phép CC BY 4.0, nằm trong repo GitHub. Bạn cứ dùng lại, vẽ biểu đồ hay xây dựng tiếp trên đó.",
-  "about.legal.desc": "Tất cả chính sách là file Markdown trong repo — dễ hiểu, đầy đủ điều khoản. Cập nhật 2026-10-03.",
+  "about.legal.desc": "Tất cả chính sách là file Markdown trong repo — dễ hiểu, đầy đủ điều khoản. Cập nhật 2026-10-13.",
   "games.filter.ai": "AI tạo sinh",
   "games.filter.access": "Hỗ trợ tiếp cận",
   "ai.none": "Không dùng AI",

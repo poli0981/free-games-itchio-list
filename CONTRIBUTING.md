@@ -12,7 +12,7 @@ Games go through the website; everything else goes through the GitHub issue/PR t
 - Optional: a short note (why it's good, content warnings…), up to 500 characters. Notes are deleted after 180 days. Please don't put personal data in it.
 - A Cloudflare Turnstile check and a rate limit keep bots out; if you get blocked, wait a bit and try again.
 - Only **free** itch.io games. Paid games are dropped automatically when the game page is scraped.
-- Nothing goes live instantly: every suggestion lands in a **review queue**, and nothing enters the catalog until the Maintainer approves it. Approved links are then scraped by the data pipeline and show up on the site after the next deploy.
+- Nothing goes live instantly: every suggestion lands in a **review queue**, where the Maintainer approves or rejects it, by hand or through automatic rules (a suggestion without a warning flag that nobody rejected within about a day may be approved automatically). Approved links are then scraped by the data pipeline and show up on the site after the next deploy.
 
 Got a whole list? The **[Add Games (bulk list)]** issue template takes up to 15 links at once, and a PR that adds itch.io URLs to `scripts/temp_link.json` works too (use the [Add Games] PR template). Both go through the same review: the Maintainer checks every link before it is queued, and merging such a PR is the approval. Please don't edit `data_game/` by hand: the pipeline owns those files (see [section 7](#7-submit-code-changes-pr)).
 
@@ -20,8 +20,9 @@ Got a whole list? The **[Add Games (bulk list)]** issue template takes up to 15 
 
 - The Maintainer's companion browser extension ([itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), separate repo, GPL-3.0) sends links through an authenticated API while browsing itch.io. It is the Maintainer's own tool, not a public submission channel.
 - The site reads itch.io's public RSS feeds of new and popular free games every 4 hours (one feed per run) and queues what it finds.
+- The site also reads the public itch.io collections the Maintainer follows and queues their new free games directly (one removed before, or with a warning flag, goes to the review queue instead).
 
-Both land in the same review queue as the Suggest page. (The old Telegram bot path is retired.)
+The extension and the RSS feeds land in the same review queue as the Suggest page. (The old Telegram bot path is retired.)
 
 ### 2. Remove Games or Fix Their Data
 
