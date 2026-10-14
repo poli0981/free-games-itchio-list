@@ -15010,5 +15010,542 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-14T20:24:55Z"
+    },
+    {
+        "url": "https://kazehita.itch.io/heartfall-a-tale-in-three-lives",
+        "name": "Heartfall — A Tale in Three Lives",
+        "dev": "Kazehita",
+        "description": "Change the way your fate unfolds and uncover unique retellings, secrets, and new, shocking twists.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 October 2026 @ 23:54 UTC",
+        "rating": "5.0",
+        "rating_count": "22",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjE5ODQ1LnBuZw==/original/9qCvQx.png",
+        "tags": [
+            "Casual",
+            "Characters",
+            "Fangame",
+            "Fantasy",
+            "Indie",
+            "Multiple Endings",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 October 2026 @ 20:18 UTC",
+        "added_at": "2026-10-14T23:45:13Z"
+    },
+    {
+        "url": "https://lil-beastman.itch.io/himbo-hymns",
+        "name": "Himbo Hymns",
+        "dev": "Lil' Beastman",
+        "description": "Have you ever wanted a himbo for Christmas?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "17",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0Njc5MjM4LnBuZw==/original/4AbJ%2Fn.png",
+        "tags": [
+            "Bara",
+            "Christmas",
+            "Cute",
+            "Funny",
+            "Furry",
+            "LGBT",
+            "Mental Health",
+            "No AI",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "LMMS"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 October 2026 @ 22:51 UTC",
+        "added_at": "2026-10-14T23:45:15Z"
+    },
+    {
+        "url": "https://lucaju.itch.io/gyra",
+        "name": "Gyra - Top Fighting",
+        "dev": "lucaju",
+        "description": "Choose your pieces. Assemble your GYRA. Spyn to win.",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "13",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyNzQ1OTg4LnBuZw==/original/9kXuKl.png",
+        "tags": [
+            "3D",
+            "beyblade",
+            "Godot",
+            "Local multiplayer",
+            "Multiplayer",
+            "party-game",
+            "Physics",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Joystick",
+            "Touchscreen",
+            "Smartphone",
+            "Playstation controller",
+            "Joy-Con"
+        ],
+        "made_with": [
+            "Blender",
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "09 October 2026 @ 12:10 UTC",
+        "added_at": "2026-10-14T23:45:19Z"
+    },
+    {
+        "url": "https://mawsters.itch.io/mawster",
+        "name": "Mawster",
+        "dev": "Mawsters",
+        "description": "An idle game about a hungry chest.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 01:09 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODUzODg2LnBuZw==/original/klHx%2Fa.png",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Dark Fantasy",
+            "Fantasy",
+            "goblins",
+            "Idle",
+            "Incremental",
+            "mimic",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T23:45:23Z"
+    },
+    {
+        "url": "https://mongoumery.itch.io/magicnumbers",
+        "name": "魔法の数字",
+        "dev": "紋甲メリー",
+        "description": "右へ左へ、好きな数字を直感スワイプ！特別な人だけが遊べる究極のニッチゲーム！",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 11:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODY5NTgzLnBuZw==/original/YX190E.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T23:45:27Z"
+    },
+    {
+        "url": "https://mrormsbee.itch.io/wings-of-time-the-salem-witch-trials",
+        "name": "Wings of Time: The Salem Witch Trials",
+        "dev": "Mr. Ormsbee",
+        "description": "​Join Mr. Ormsbee, Okosan, and the rest of the class as they learn about the Salem Witch Trials.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 14:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3ODU2OTA2LnBuZw==/original/QzGMd%2B.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T23:45:29Z"
+    },
+    {
+        "url": "https://natsu-madao.itch.io/erwin-smith-run",
+        "name": "Erwin Smith Run",
+        "dev": "Natsu-madao",
+        "description": "Happy birthday Erwin Smith",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 05:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODU5MDQ2LnBuZw==/original/WWMtJo.png",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T23:45:32Z"
+    },
+    {
+        "url": "https://nightmareweaverz.itch.io/captive",
+        "name": "Captive",
+        "dev": "NightmareWeaverz",
+        "description": "The man stalking you is now your hostage. What will you do with him?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 15:17 UTC",
+        "rating": "4.9",
+        "rating_count": "19",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzcxMTI2LnBuZw==/original/53%2F3WV.png",
+        "tags": [
+            "Clicker",
+            "Creepy",
+            "Dating Sim",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T23:45:35Z"
+    },
+    {
+        "url": "https://ostsergey.itch.io/plaguebound",
+        "name": "Plaguebound",
+        "dev": "ostsergey, Keedjie",
+        "description": "Incremental auto-battle game about the Rat King",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "122",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzI5ODI1LnBuZw==/original/gIjfY8.png",
+        "tags": [
+            "Atmospheric",
+            "Auto Battler",
+            "Dark Fantasy",
+            "Horror",
+            "Idle",
+            "Incremental",
+            "Mystery",
+            "Roguelike",
+            "Story Rich",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 October 2026 @ 12:01 UTC",
+        "added_at": "2026-10-14T23:45:37Z"
+    },
+    {
+        "url": "https://soliles.itch.io/trust-the-system",
+        "name": "Trust the System",
+        "dev": "tabouret",
+        "description": "A narrative incremental game about stamping papers, until you leave your desk...",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 September 2026 @ 09:23 UTC",
+        "rating": "4.8",
+        "rating_count": "61",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NzM2MzExLmdpZg==/original/czqJsg.gif",
+        "tags": [
+            "Atmospheric",
+            "Casual",
+            "Dystopian",
+            "Incremental",
+            "Indie",
+            "Mystery",
+            "Pixel Art",
+            "Short",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Aseprite"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 October 2026 @ 19:33 UTC",
+        "added_at": "2026-10-14T23:45:40Z"
+    },
+    {
+        "url": "https://tabbiedearest.itch.io/cloistered-crown",
+        "name": "The Tale of the Cloistered Crown",
+        "dev": "TabbieDearest, blazemalefica",
+        "description": "Do you mean to cry for this one?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "24",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1MTYyNTg1LnBuZw==/original/8saF8L.png",
+        "tags": [
+            "agender",
+            "aromantic",
+            "asexual",
+            "knight",
+            "LGBTQIA",
+            "No AI",
+            "ouatvnjam",
+            "prince",
+            "Queer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "13 October 2026 @ 03:01 UTC",
+        "added_at": "2026-10-14T23:45:43Z"
+    },
+    {
+        "url": "https://vector5games.itch.io/splatch",
+        "name": "Splatch! (C64)",
+        "dev": "Vector5 Games",
+        "description": "INTRODUCTION You are a little, white rabbit; lost and hungry.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3MDgxNDk1LnBuZw==/original/eRWNoC.png",
+        "tags": [
+            "8-Bit",
+            "Commodore 64"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "09 October 2026 @ 16:55 UTC",
+        "added_at": "2026-10-14T23:45:47Z"
+    },
+    {
+        "url": "https://writer31.itch.io/say-that-you-love-me",
+        "name": "Say That You Love Me",
+        "dev": "Writer",
+        "description": "Imprisoned by your knight?!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "57",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NjMwMzg5LnBuZw==/original/fvSuzF.png",
+        "tags": [
+            "Dark",
+            "Dark Fantasy",
+            "Fantasy",
+            "Horror",
+            "Indie",
+            "Medieval",
+            "Psychological Horror",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 October 2026 @ 20:37 UTC",
+        "added_at": "2026-10-14T23:45:49Z"
     }
 ]
