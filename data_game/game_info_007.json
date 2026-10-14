@@ -12229,5 +12229,170 @@
         "notes": "",
         "updated_at": "11 October 2026 @ 23:17 UTC",
         "added_at": "2026-10-12T15:11:51Z"
+    },
+    {
+        "url": "https://potit-bob.itch.io/dungeon-swap-r",
+        "name": "Dungeon Swap-R",
+        "dev": "Potit Bob",
+        "description": "Swap dungeon's rooms, find your way out!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzU1MjIwMzcucG5n/original/h%2BKG35.png",
+        "tags": [
+            "2D",
+            "Dungeon Crawler",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot",
+            "Audacity",
+            "Krita"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 October 2026 @ 08:08 UTC",
+        "added_at": "2026-10-14T00:23:41Z"
+    },
+    {
+        "url": "https://reeecook.itch.io/leaf-by-leaf-jam",
+        "name": "Leaf by Leaf",
+        "dev": "Reeecook",
+        "description": "A leaf-blowing incremental: feed the fire, grow it, and warm the world one day at a time.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "12 October 2026 @ 03:07 UTC",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzgyMDcxLnBuZw==/original/i8%2F0zQ.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Cozy",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Relaxing",
+            "Short",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T00:23:47Z"
+    },
+    {
+        "url": "https://studio-spagunkel.itch.io/fake-news-detective-in-space",
+        "name": "Fake News Detective (In Space)",
+        "dev": "Studio_Spagunkel",
+        "description": "You, the Fake News Detective, must help the Shrimians to expose fake news by using various tools.",
+        "genre": "Educational",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NTg5NjM4LnBuZw==/original/NOUVTI.png",
+        "tags": [
+            "2D",
+            "Detective",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "German",
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Krita",
+            "Adobe Illustrator"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T00:23:51Z"
+    },
+    {
+        "url": "https://tjlazer.itch.io/lifeforce-aga-for-amiga-12004000",
+        "name": "Lifeforce AGA for Amiga 1200/4000",
+        "dev": "TjLaZer",
+        "description": "Lifeforce for Amiga AGA computers",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 October 2026 @ 08:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODA2NzEwLmpwZw==/original/lG1s2f.jpg",
+        "tags": [
+            "Amiga",
+            "Arcade",
+            "Cult Classic",
+            "Retro"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "13 October 2026 @ 23:36 UTC",
+        "added_at": "2026-10-14T00:23:54Z"
     }
 ]
