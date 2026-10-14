@@ -14655,5 +14655,360 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-14T12:24:31Z"
+    },
+    {
+        "url": "https://3dgoblindev.itch.io/finishing-the-hat",
+        "name": "Finishing the Hat",
+        "dev": "3DGoblinDev",
+        "description": "look I made a hat",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 16:24 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTA0NTQ1LnBuZw==/original/um%2B60o.png",
+        "tags": [
+            "artgame",
+            "broadway",
+            "Experimental",
+            "game-poem",
+            "Hand-drawn",
+            "Indie",
+            "mixed-media",
+            "Narrative",
+            "poem"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:24Z"
+    },
+    {
+        "url": "https://8man-hikigaya.itch.io/artificial-affection",
+        "name": "Artificial Affection",
+        "dev": "8man_hikigaya",
+        "description": "A short, psychological visual novel about a high school loner whose emotional walls are put to the test.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 16:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzQ4NDQ2LnBuZw==/original/6mjSO5.png",
+        "tags": [
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:28Z"
+    },
+    {
+        "url": "https://arisaogi.itch.io/natsu-ga-owaranai",
+        "name": "夏が終わらない",
+        "dev": "arisaogi",
+        "description": "チェキで写真を撮りながら進む、夏休み最後の日の短編ノベル。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 18:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODQzMzU4LnBuZw==/original/f%2FTYWP.png",
+        "tags": [
+            "emotional",
+            "family",
+            "Fantasy",
+            "japanese",
+            "Short",
+            "summer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:31Z"
+    },
+    {
+        "url": "https://bloopyloopygoop.itch.io/wailant",
+        "name": "WAiLANT",
+        "dev": "Bloopyloopygoop",
+        "description": "a fun time in the manor with friends :3",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 05:10 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODIxNTg4LnBuZw==/original/lpMPgD.png",
+        "tags": [
+            "body-horror",
+            "Gore",
+            "Horror",
+            "Slice Of Life"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 October 2026 @ 06:23 UTC",
+        "added_at": "2026-10-14T20:24:34Z"
+    },
+    {
+        "url": "https://kiwimsy.itch.io/mewmewstruck",
+        "name": "MewMewStruck",
+        "dev": "kiwimsy, omitrinkets",
+        "description": "highschool deltarune mew4mew yuri",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 10:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzkxODc2LnBuZw==/original/6Anmij.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:37Z"
+    },
+    {
+        "url": "https://lennychip.itch.io/corpus-callosum",
+        "name": "corpus callosum",
+        "dev": "lennychip",
+        "description": "Two halves of a whole.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 15:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODAzNDAxLnBuZw==/original/VmyN1T.png",
+        "tags": [
+            "Fangame",
+            "Yaoi"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:40Z"
+    },
+    {
+        "url": "https://moochbear.itch.io/cyberpawn-2099",
+        "name": "Cyberpawn $20.99",
+        "dev": "moochbear",
+        "description": "Working at a pawn shop in the near, dystopian future.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 13:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODE4OTM1LnBuZw==/original/F88t0y.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Cyberpunk",
+            "Open Source",
+            "Pixel Art",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:44Z"
+    },
+    {
+        "url": "https://nosleep2jull.itch.io/quiet-where-you-stand",
+        "name": "Quiet Where You Stand",
+        "dev": "NoSleep2Jull, Shu",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 18:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NjEwMjM1LnBuZw==/original/H35zec.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:47Z"
+    },
+    {
+        "url": "https://onyyyxxxxxxx.itch.io/the-last-trailexe",
+        "name": "The last trail",
+        "dev": "ONYX!☆",
+        "description": "You're a stalker but somethings wrong with your victim...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 00:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODEyNzEyLnBuZw==/original/vPsCwM.png",
+        "tags": [
+            "2D",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:51Z"
+    },
+    {
+        "url": "https://theobalm-strawberry.itch.io/vampire-therapy",
+        "name": "Vampire Therapy",
+        "dev": "Theobalm_strawberry",
+        "description": "IWTV game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 20:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODQzMTQzLnBuZw==/original/CGEzwB.png",
+        "tags": [
+            "Atmospheric",
+            "Characters",
+            "Comedy",
+            "Indie",
+            "LGBT",
+            "Pixel Art",
+            "Ren'Py",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T20:24:55Z"
     }
 ]
