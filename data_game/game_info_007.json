@@ -14499,5 +14499,161 @@
         "notes": "",
         "updated_at": "13 October 2026 @ 05:57 UTC",
         "added_at": "2026-10-14T01:05:19Z"
+    },
+    {
+        "url": "https://armouredboar.itch.io/risen-kingdoms",
+        "name": "Risen Kingdoms",
+        "dev": "Armouredboar",
+        "description": "4X Strategy Game With Strong RPG Elements!",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc5MTExODYucG5n/original/mQiJSz.png",
+        "tags": [
+            "4X",
+            "hero",
+            "kingdom",
+            "Strategy RPG",
+            "Turn-based",
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "13 October 2026 @ 22:04 UTC",
+        "added_at": "2026-10-14T12:24:21Z"
+    },
+    {
+        "url": "https://surrtasm.itch.io/the-art-shop",
+        "name": "The Art Shop: DAY 2",
+        "dev": "Surrtasm",
+        "description": "\"Welcome to your new Job.\"",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "334",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5Nzg1NDUzLnBuZw==/original/LS2da2.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "Psychological Horror",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 October 2026 @ 01:49 UTC",
+        "added_at": "2026-10-14T12:24:25Z"
+    },
+    {
+        "url": "https://te-eg.itch.io/lamplighter",
+        "name": "Lamplighter",
+        "dev": "te-eg",
+        "description": "Relight a sky that went dark, one ember at a time.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 14:43 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODM2NTc3LnBuZw==/original/WvMTko.png",
+        "tags": [
+            "Atmospheric",
+            "Clicker",
+            "Cozy",
+            "Idle",
+            "Incremental",
+            "Relaxing",
+            "Short",
+            "Singleplayer",
+            "Space",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T12:24:28Z"
+    },
+    {
+        "url": "https://tjlazer.itch.io/salamander-aga-for-amiga",
+        "name": "Salamander AGA for Amiga 1200/4000",
+        "dev": "TjLaZer",
+        "description": "Salamander port for Amiga AGA computers",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 07:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODIzODA3LmpwZw==/original/Lc%2FvVx.jpg",
+        "tags": [
+            "Amiga",
+            "Arcade",
+            "Cult Classic",
+            "Retro",
+            "Shoot 'Em Up"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-14T12:24:31Z"
     }
 ]
