@@ -15547,5 +15547,308 @@
         "notes": "",
         "updated_at": "03 October 2026 @ 20:37 UTC",
         "added_at": "2026-10-14T23:45:49Z"
+    },
+    {
+        "url": "https://2tonmucho.itch.io/suburb2065",
+        "name": "Suburb2065-PC/Japanese-",
+        "dev": "2TonMucho",
+        "description": "-PC Version-Japanese-",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 11:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODY4NjI5LnBuZw==/original/5arNbU.png",
+        "tags": [
+            "Godot",
+            "No AI",
+            "Pixel Art",
+            "Retro",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:37Z"
+    },
+    {
+        "url": "https://c-mastered-studio.itch.io/play-with-your-girlfriend",
+        "name": "Play with your Girlfriend",
+        "dev": "C-mastered studio",
+        "description": "A teasing girlfriend, a game of rock-paper-scissors, and a little blackmail. What could possibly go wrong?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 07:21 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODM4MDQzLnBuZw==/original/zT4ZBv.png",
+        "tags": [
+            "Casual",
+            "Comedy",
+            "Dark Humor",
+            "Female Protagonist",
+            "girlfriend",
+            "Psychological Horror",
+            "rock-paper-scissors",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Blender",
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 October 2026 @ 07:41 UTC",
+        "added_at": "2026-10-15T08:23:40Z"
+    },
+    {
+        "url": "https://gabriellj.itch.io/dreamer",
+        "name": "Dreamer",
+        "dev": "Gabriel Jimenez, Melody Randolph, Piperidine, BrainlessFigure",
+        "description": "How much escapism will you allow yourself for your own comfort?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 13:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODg5NDc3LnBuZw==/original/NY782f.png",
+        "tags": [
+            "Atmospheric",
+            "Creative",
+            "Dreams",
+            "Multiple Endings",
+            "No AI",
+            "Point & Click",
+            "Retro",
+            "Short"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:43Z"
+    },
+    {
+        "url": "https://lex-voca.itch.io/lex-voca-section-1",
+        "name": "Lex Voca: The Great Mist Tree [Section I]",
+        "dev": "Lex Voca",
+        "description": "The forest beckons to have its core seen.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 15:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5ODE3Mjc0LnBuZw==/original/17WXQD.png",
+        "tags": [
+            "Fantasy",
+            "Furry",
+            "RPG Maker",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:47Z"
+    },
+    {
+        "url": "https://missooni.itch.io/nothing-of-value-lost",
+        "name": "Nothing Of Value Lost",
+        "dev": "Missooni",
+        "description": "Micro VN about losing everything.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 19:50 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODg1OTIzLnBuZw==/original/Z%2BssAf.png",
+        "tags": [
+            "Decker",
+            "No AI",
+            "one-button",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:50Z"
+    },
+    {
+        "url": "https://nataly-torrijos.itch.io/nuestra-casa-compartida",
+        "name": "Cali frente a los desastres naturales",
+        "dev": "Nataly Torrijos",
+        "description": "\"Cali frente a los desastres naturales\" es una novela gráfica interactiva y educativa que te pone en los zapatos de Alex, un joven estudiante caleño.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 16:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODgxMzk2LnBuZw==/original/vx82xL.png",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:53Z"
+    },
+    {
+        "url": "https://rainmutt.itch.io/wish-bone",
+        "name": "Wish Bone",
+        "dev": "Rain Mutt Games",
+        "description": "Solve mysteries. Make wishes. Cause problems.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 20:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjQxNTE3LnBuZw==/original/yL0Btl.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Indie",
+            "Mystery",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:55Z"
+    },
+    {
+        "url": "https://salamanderpress.itch.io/the-cottage-visitor",
+        "name": "The Cottage Visitor",
+        "dev": "SalamanderPress",
+        "description": "A very short and cosy narrative game - 2 endings, 2 minute play time",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 15:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODc3NzM2LmpwZw==/original/S9smdz.jpg",
+        "tags": [
+            "Casual",
+            "cosy",
+            "cottagecore",
+            "Cozy",
+            "Cute",
+            "Farming",
+            "Narrative",
+            "nature",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-15T08:23:58Z"
     }
 ]
