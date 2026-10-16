@@ -17493,5 +17493,75 @@
         "notes": "",
         "updated_at": "16 October 2026 @ 11:40 UTC",
         "added_at": "2026-10-16T12:24:24Z"
+    },
+    {
+        "url": "https://eden505.itch.io/outofframe",
+        "name": "Marble Hornets Out of Frame",
+        "dev": "Eden Way",
+        "description": "An unofficial Marble Hornets fan game about memory, missing footage, and what the camera left out.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 12:34 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTQ2NTc0LmpwZWc=/original/zIIEt0.jpeg",
+        "tags": [
+            "Mystery"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T18:42:57Z"
+    },
+    {
+        "url": "https://churnveil.itch.io/scarlett-awakening",
+        "name": "Scarlett's Awakening",
+        "dev": "Churnveil",
+        "description": "Turn Scarlett into the world's biggest pred!",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 04:05 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTM0ODkzLnBuZw==/original/fgU9WL.png",
+        "tags": [
+            "belly",
+            "vore"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T18:43:01Z"
     }
 ]
