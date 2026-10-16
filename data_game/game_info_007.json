@@ -16647,5 +16647,718 @@
         "notes": "",
         "updated_at": "15 October 2026 @ 05:52 UTC",
         "added_at": "2026-10-16T04:26:00Z"
+    },
+    {
+        "url": "https://21acad.itch.io/ts-malfoy-ep1",
+        "name": "TS 말포이 미연시 EP.1",
+        "dev": "21acad",
+        "description": "TS 말포이와의 첫 만남을 다룬 비공식 무료 팬메이드 비주얼노벨",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 13:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTY3MzIxLnBuZw==/original/2iH8dH.png",
+        "tags": [
+            "Anime",
+            "browser",
+            "Fangame",
+            "Romance",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:25:01Z"
+    },
+    {
+        "url": "https://bedstespiliverden.itch.io/two-shades-of-pink",
+        "name": "Two shades of pink",
+        "dev": "BedsteSpiliVerden",
+        "description": "Best yuri game ever!!!1111!!!!!!!1!11!!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 September 2026 @ 15:26 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "No AI",
+            "Pixel Art",
+            "Romance",
+            "school"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:25:07Z"
+    },
+    {
+        "url": "https://blanklake.itch.io/the-scrawled-book",
+        "name": "The Scrawled Book",
+        "dev": "Blanklake",
+        "description": "A Clan-Cat Visual Novel",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 October 2026 @ 19:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NDY1MTYwLnBuZw==/original/OyxibR.png",
+        "tags": [
+            "2D",
+            "Cats",
+            "Fangame",
+            "Singleplayer",
+            "Story Rich",
+            "warrior",
+            "warriors"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:25:11Z"
+    },
+    {
+        "url": "https://changsikpassingby.itch.io/dracina-malfoy-project",
+        "name": "Look at Me, Harry Potter - Dracina Malfoy and the Stolen Scarf - A fan game of malfoid memes",
+        "dev": "Changsikpassingby",
+        "description": "#malfoid #harrypotter #fangame",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 14:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTM4NTI5LnBuZw==/original/zXWW8a.png",
+        "tags": [
+            "Dating Sim",
+            "Fangame",
+            "Godot",
+            "malfoid"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 06:52 UTC",
+        "added_at": "2026-10-16T08:25:19Z"
+    },
+    {
+        "url": "https://croissmouse.itch.io/malpoid",
+        "name": "Villainess Lady Malfoy",
+        "dev": "croissmouse",
+        "description": "Harry × fem! Malfoy fan visual novel.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 October 2026 @ 00:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODE1MTcwLmpwZw==/original/rFYRTx.jpg",
+        "tags": [
+            "2D",
+            "Indie",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:25:24Z"
+    },
+    {
+        "url": "https://daisuki-yui-kon.itch.io/yuiazu",
+        "name": "유이와 아즈사의 연애기록",
+        "dev": "daisuki_yui_kon",
+        "description": "케이온! 유이×아즈사 팬메이드 비주얼 노벨 · K-On! Yui×Azusa fan VN",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 October 2026 @ 12:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzI0MDQyLnBuZw==/original/lmzXY9.png",
+        "tags": [
+            "Anime",
+            "Cute",
+            "Fangame",
+            "girls-love",
+            "Kinetic Novel",
+            "k-on",
+            "Romance",
+            "Slice Of Life",
+            "Wholesome",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "Japanese",
+            "Korean"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 13:41 UTC",
+        "added_at": "2026-10-16T08:25:30Z"
+    },
+    {
+        "url": "https://fatass-orange.itch.io/ghost-onsen-festival",
+        "name": "Ghost Onsen Festival",
+        "dev": "Maha",
+        "description": "At a festival of forgetting, a boy wishes to be remembered.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 September 2026 @ 11:32 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDAyMDEwLnBuZw==/original/XdUQ2t.png",
+        "tags": [
+            "Cozy",
+            "Funny",
+            "Indie",
+            "Mystery",
+            "Narrative",
+            "Story Rich",
+            "supernatural"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 October 2026 @ 11:46 UTC",
+        "added_at": "2026-10-16T08:25:36Z"
+    },
+    {
+        "url": "https://kronusgenovius.itch.io/a-shields-journey",
+        "name": "A Shield's Journey!",
+        "dev": "Kronus Genovius",
+        "description": "Let's help Kronus to get 1 million subscribers!",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 October 2026 @ 06:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjgwMzI4LnBuZw==/original/0VUgO4.png",
+        "tags": [
+            "2D",
+            "Life Simulation",
+            "rmmzgame",
+            "RPG Maker",
+            "vtuber"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Vietnamese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 16:38 UTC",
+        "added_at": "2026-10-16T08:25:43Z"
+    },
+    {
+        "url": "https://mocomo892.itch.io/offchat",
+        "name": "offchat",
+        "dev": "mocomo892",
+        "description": "nikke local ai chat",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 03:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [
+            "2D",
+            "AI Generated",
+            "Characters",
+            "goddess-of-victory",
+            "nikke"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 October 2026 @ 15:12 UTC",
+        "added_at": "2026-10-16T08:25:49Z"
+    },
+    {
+        "url": "https://monoon-games.itch.io/lady-malfoy",
+        "name": "Lady Malfoy Wants to Hold Hands",
+        "dev": "모눈 · mo_noon",
+        "description": "The Malfoid has decided Harry is hers. Now she's crossing out the books, line by line.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 18:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzYyMzE3LmdpZg==/original/LNaWdu.gif",
+        "tags": [
+            "Dating Sim",
+            "draco-malfoy",
+            "Fangame",
+            "harry-potter",
+            "malfoid",
+            "Multiple Endings",
+            "Romance",
+            "tsundere",
+            "villainess"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:25:54Z"
+    },
+    {
+        "url": "https://muscle-cat-s.itch.io/surrounded-by-muscle-girls",
+        "name": "Surrounded By Muscle Girls",
+        "dev": "Muscle Cat-S",
+        "description": "A muscle girl visual novel where powerful girls compete for your affection!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 October 2026 @ 00:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjc1NDM2LnBuZw==/original/nGQYcG.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Dating Sim",
+            "muscle-girl",
+            "muscle-growth",
+            "Romance",
+            "size-different",
+            "tall-girl"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:26:01Z"
+    },
+    {
+        "url": "https://orangesounds.itch.io/the-angels-devil-tail",
+        "name": "The Angel's Devil Tail (Yuri)",
+        "dev": "OrangeSounds_Yahu",
+        "description": "A horror-meets-cute solo lateral thinking puzzle game (with Bishoujo ADV).",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1NTYxNTk3LmpwZw==/original/o%2Bfmt3.jpg",
+        "tags": [
+            "Anime",
+            "Cute",
+            "Female Protagonist",
+            "Funny",
+            "Horror",
+            "moe",
+            "Mystery",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Chinese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 September 2026 @ 05:23 UTC",
+        "added_at": "2026-10-16T08:26:07Z"
+    },
+    {
+        "url": "https://retracegames.itch.io/youngforty",
+        "name": "영포티 체험 시뮬레이터",
+        "dev": "retracegames",
+        "description": "영포티 체험 시뮬레이터 마흔. 하지만 본인은 아직 젊다고 생각한다. 동네로 이사 온 40세 김성훈의 일상을 따라가며 반찬가게, 부동산, 책방, 사진관을 오가고 대화와 선택을 통해 네 사람과 관계를 만들어가는 GBA 스타일 생활 시뮬레이터입니다. 문제는 성훈이 생각하는 자기 모습과 주변 사람들이 보는 성훈의 모습이 조금 다르다는 것. 선택에 따라...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 October 2026 @ 04:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDg3OTkxLnBuZw==/original/r8Sw7K.png",
+        "tags": [
+            "Comedy",
+            "Game Boy Advance",
+            "korean",
+            "Pixel Art",
+            "Retro",
+            "satire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:26:14Z"
+    },
+    {
+        "url": "https://seah0rsegg.itch.io/liminal",
+        "name": "晨昏之间",
+        "dev": "seah0rsegg",
+        "description": "🫧在关系的缝隙里，疯长的野草。 🖤同人作品，讲述了来自82MAJOR的朴晳浚、黄成斌、南成模的situationship，三人行排列组合的一切结局，将由玩家您来决定！ ⚠️本游戏情节也如同现实世界中的此三人一样低智商，如有被蠢到淫到无厘头到，一切过错皆在我，与三人及他们所属团体无关 🔺记得开声音但也不要开太大声...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 October 2026 @ 11:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDYyMjU2LmpwZw==/original/ik5Y4W.jpg",
+        "tags": [
+            "Queer",
+            "smut"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 October 2026 @ 08:26 UTC",
+        "added_at": "2026-10-16T08:26:20Z"
+    },
+    {
+        "url": "https://soulofkazak.itch.io/spooks-spook-y-halloween-party",
+        "name": "Spook's Spook-y Halloween Party",
+        "dev": "soulofkazak, gogocalypso, Atlas, rocket176",
+        "description": "A tale of spooky critters!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 September 2026 @ 18:41 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDEyODE1LnBuZw==/original/ETI2V2.png",
+        "tags": [
+            "Animals",
+            "Cozy",
+            "Cute",
+            "GameMaker",
+            "Halloween",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "02 October 2026 @ 15:42 UTC",
+        "added_at": "2026-10-16T08:26:27Z"
+    },
+    {
+        "url": "https://superwuper.itch.io/royalconsumption",
+        "name": "RoyalConsumption",
+        "dev": "SuperWuper",
+        "description": "This is my first project!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 22:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjIzNjMzLnBuZw==/original/4V82Kb.png",
+        "tags": [
+            "AI Generated",
+            "Anime",
+            "fat",
+            "weight-gain"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 October 2026 @ 10:20 UTC",
+        "added_at": "2026-10-16T08:26:33Z"
+    },
+    {
+        "url": "https://waitingtreesproductions.itch.io/yesod-dating-sim",
+        "name": "Yesod Dating Sim",
+        "dev": "WaitingTreesProductions",
+        "description": "Date Yesod!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 00:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjkwOTAxLnBuZw==/original/WrFuqO.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "Horror",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Ren'Py",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T08:26:41Z"
     }
 ]
