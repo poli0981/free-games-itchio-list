@@ -17360,5 +17360,138 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-16T08:26:41Z"
+    },
+    {
+        "url": "https://cicidigital.itch.io/retromine",
+        "name": "Retromine (NEW UPDATE OUT NOW)",
+        "dev": "ccdg",
+        "description": "Deep incremental roguelike deckbuilding",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "222",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTI4MzM3LnBuZw==/original/ip0Ln0.png",
+        "tags": [
+            "2D",
+            "8-Bit",
+            "Arcade",
+            "Deck Building",
+            "Idle",
+            "Incremental",
+            "Relaxing",
+            "Roguelike"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "High-contrast",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 00:07 UTC",
+        "added_at": "2026-10-16T12:24:18Z"
+    },
+    {
+        "url": "https://doorwatchers.itch.io/cycle-of-the-first-dawn",
+        "name": "Cycle of the First Dawn",
+        "dev": "DoorWatchers",
+        "description": "A deliberately slow cultivation incremental where every life brings real progress.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "56",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4ODQwODA0LnBuZw==/original/CC0zr%2F.png",
+        "tags": [
+            "cultivation",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "reincarnation",
+            "resource-manager",
+            "Singleplayer",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 01:39 UTC",
+        "added_at": "2026-10-16T12:24:20Z"
+    },
+    {
+        "url": "https://thatwalshguy.itch.io/stclzine",
+        "name": "Star Trek Adventures Captain's Log Zine",
+        "dev": "thatwalshguy",
+        "description": "A complete character sheet in zine format for your starship captain's in the new Star Trek Adventures Solo game!",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzODE0MjkxLnBuZw==/original/%2Fps%2BeZ.png",
+        "tags": [
+            "captains-log",
+            "character-sheet",
+            "Print & Play",
+            "star-trek-adventures",
+            "zine"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 11:40 UTC",
+        "added_at": "2026-10-16T12:24:24Z"
     }
 ]
