@@ -3,8 +3,8 @@ patch.py — The hand-off format between pipeline scans and the commit step.
 
 Scanners (refresh.py, update_info.py) never write the catalog directly. They
 emit a patch; apply_patch.py applies it idempotently to whatever `main` looks
-like at push time, so concurrent writers (other workflows, the admin Worker,
-the browser extension) never overwrite each other.
+like at push time, so concurrent writers (other workflows, the admin Worker
+and its cron) never overwrite each other.
 
 Patch v1:
 {

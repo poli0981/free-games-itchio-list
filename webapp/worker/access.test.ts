@@ -1,12 +1,11 @@
 import { SignJWT, exportJWK, generateKeyPair } from 'jose'
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
-import { AccessError, requireMaintainer, requireService, type AccessEnv } from './access'
+import { AccessError, requireMaintainer, type AccessEnv } from './access'
 
 const TEAM = 'https://example.cloudflareaccess.com'
 const env: AccessEnv = {
   ACCESS_TEAM_DOMAIN: TEAM,
   ACCESS_AUD_ADMIN: 'aud-admin',
-  ACCESS_AUD_INGEST: 'aud-ingest',
   ADMIN_EMAILS: 'Owner@Example.com, second@example.com',
   SITE_ORIGIN: 'https://freeitchgames.win',
 }
@@ -60,7 +59,7 @@ describe('requireMaintainer', () => {
       .setExpirationTime('5m')
       .sign(other.privateKey)
     await expect(requireMaintainer(request(forged), env)).rejects.toThrow('invalid')
-    const wrongAud = await token({ email: 'owner@example.com' }, 'aud-ingest')
+    const wrongAud = await token({ email: 'owner@example.com' }, 'aud-other')
     await expect(requireMaintainer(request(wrongAud), env)).rejects.toThrow('invalid')
     const wrongIss = await token({ email: 'owner@example.com' }, 'aud-admin', 'https://evil.example')
     await expect(requireMaintainer(request(wrongIss), env)).rejects.toThrow('invalid')
@@ -82,22 +81,5 @@ describe('requireMaintainer', () => {
     await expect(requireMaintainer(request(jwt, 'POST'), env)).rejects.toThrow('bad origin')
     await expect(requireMaintainer(request(jwt, 'POST', 'https://evil.example'), env)).rejects.toThrow('bad origin')
     await expect(requireMaintainer(request(jwt, 'POST', env.SITE_ORIGIN), env)).resolves.toBeTruthy()
-  })
-})
-
-describe('requireService', () => {
-  it('accepts a service token and names it by client id', async () => {
-    const jwt = await token({ common_name: 'client-123.access' }, 'aud-ingest')
-    await expect(requireService(request(jwt, 'POST'), env)).resolves.toEqual({
-      kind: 'service',
-      id: 'client-123.access',
-    })
-  })
-
-  it('rejects user tokens and admin-audience tokens', async () => {
-    const user = await token({ email: 'owner@example.com', common_name: 'x' }, 'aud-ingest')
-    await expect(requireService(request(user), env)).rejects.toThrow('not a service token')
-    const adminAud = await token({ common_name: 'client-123.access' }, 'aud-admin')
-    await expect(requireService(request(adminAud), env)).rejects.toThrow('invalid')
   })
 })

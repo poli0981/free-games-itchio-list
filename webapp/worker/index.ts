@@ -9,7 +9,6 @@
  *   /img/*          resized covers, gated too (img.ts)
  *   /api/verify     verification gate status + Turnstile check (gate.ts)
  *   /api/suggest    public suggestion form (suggest.ts)
- *   /api/ingest     browser extension, Access service token (ingest.ts)
  *   /api/admin/*    maintainer API, Access + JWT check (admin.ts)
  *   /admin, /admin/* admin app shell, maintainer only (admin.ts)
  *   /data/*.json    readable catalog JSON, for apps 4.0–4.1.1 only (legacy-data.ts)
@@ -26,7 +25,6 @@ import type { WorkerEnv } from './env'
 import { checkPass, gateConfig, gateNavigation, gateRequired, handleVerify } from './gate'
 import { json } from './http'
 import { handleImg } from './img'
-import { accessService, handleIngest } from './ingest'
 import { handleLegacyData } from './legacy-data'
 import { QueueStore } from './queue'
 import { repoOps } from './repo'
@@ -65,14 +63,6 @@ export default {
         data,
         fetch: (input, init) => fetch(input, init),
         limiter: env.RL_SUGGEST,
-      })
-    }
-    if (path === '/api/ingest') {
-      return handleIngest(request, {
-        store: queueStore(env),
-        data,
-        limiter: env.RL_INGEST,
-        authenticate: accessService(env),
       })
     }
     if (path.startsWith('/api/admin/')) return handleAdminApi(request, url, env, queueStore(env))

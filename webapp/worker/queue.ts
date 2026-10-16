@@ -8,7 +8,8 @@
  */
 import { canonicalize } from './canonical'
 
-export type CandidateSource = 'rss' | 'form' | 'ext' | 'admin'
+/** The table's CHECK still allows 'ext' (the browser extension, retired in 4.4.1); nothing writes it. */
+export type CandidateSource = 'rss' | 'form' | 'admin'
 export type CandidateStatus = 'pending' | 'rejected' | 'queued' | 'ingested' | 'failed'
 
 /**
@@ -167,7 +168,6 @@ export interface AuditRow {
 /** D1 binds at most 100 parameters per statement. */
 const PARAM_SLICE = 90
 const QUEUED_TIMEOUT_MS = 3 * 86_400_000
-const IDEMPOTENCY_TTL_MS = 7 * 86_400_000
 const FORM_NOTE_TTL_MS = 180 * 86_400_000
 
 export function isoSeconds(date: Date): string {
@@ -188,7 +188,7 @@ function safeJson(text: string): unknown {
   }
 }
 
-export const AUTOMATION_SOURCES: readonly CandidateSource[] = ['rss', 'form', 'ext']
+export const AUTOMATION_SOURCES: readonly CandidateSource[] = ['rss', 'form']
 
 /** Stored settings with every field checked; anything unusable falls back to `fallback`. */
 function normalizeAutomation(value: unknown, fallback: AutomationSettings): AutomationSettings {
@@ -487,29 +487,11 @@ export class QueueStore {
     return results
   }
 
-  /** Retention: idempotency records after 7 days, Suggest-form notes after 180. */
+  /** Retention: Suggest-form notes after 180 days. */
   async purge(now = new Date()): Promise<void> {
-    await this.db.batch([
-      this.db
-        .prepare('DELETE FROM idempotency WHERE created_at < ?')
-        .bind(isoSeconds(new Date(now.getTime() - IDEMPOTENCY_TTL_MS))),
-      this.db
-        .prepare("UPDATE candidates SET note = NULL WHERE source = 'form' AND note IS NOT NULL AND discovered_at < ?")
-        .bind(isoSeconds(new Date(now.getTime() - FORM_NOTE_TTL_MS))),
-    ])
-  }
-
-  async idempotent(client: string, key: string): Promise<{ body_hash: string; response: string } | null> {
-    return this.db
-      .prepare('SELECT body_hash, response FROM idempotency WHERE client = ? AND key = ?')
-      .bind(client, key)
-      .first<{ body_hash: string; response: string }>()
-  }
-
-  async remember(client: string, key: string, bodyHash: string, response: string, now = new Date()): Promise<void> {
     await this.db
-      .prepare('INSERT OR IGNORE INTO idempotency (client, key, body_hash, response, created_at) VALUES (?, ?, ?, ?, ?)')
-      .bind(client, key, bodyHash, response, isoSeconds(now))
+      .prepare("UPDATE candidates SET note = NULL WHERE source = 'form' AND note IS NOT NULL AND discovered_at < ?")
+      .bind(isoSeconds(new Date(now.getTime() - FORM_NOTE_TTL_MS)))
       .run()
   }
 

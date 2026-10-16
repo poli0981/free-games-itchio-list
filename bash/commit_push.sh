@@ -3,7 +3,7 @@
 #
 # Usage: bash bash/commit_push.sh PATCH.json "commit message"
 #
-# Every data writer (refresh, ingest, admin Worker, browser extension) pushes
+# Every data writer (refresh, ingest, the admin Worker and its cron) pushes
 # to main. Instead of rebasing whole-file JSON rewrites (which conflict), each
 # attempt starts from a fresh origin/main and re-applies the URL-keyed patch;
 # apply_patch.py is idempotent and validates before anything is committed.

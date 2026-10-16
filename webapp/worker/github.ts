@@ -8,7 +8,7 @@
  * - Writes: GraphQL `createCommitOnBranch` with `expectedHeadOid`. Commits made
  *   by an app through the API are signed by GitHub ("Verified"), and the
  *   expected head makes a write fail instead of silently overwriting a commit
- *   another writer (pipeline, extension) pushed in between; callers retry.
+ *   another writer (the data workflows) pushed in between; callers retry.
  */
 import { SignJWT, importPKCS8 } from 'jose'
 

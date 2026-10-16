@@ -12,7 +12,7 @@ beforeAll(async () => {
 afterAll(() => dispose())
 beforeEach(async () => {
   await db.batch(
-    ['candidates', 'feed_state', 'audit_log', 'idempotency', 'settings', 'watched_collections'].map((t) =>
+    ['candidates', 'feed_state', 'audit_log', 'settings', 'watched_collections'].map((t) =>
       db.prepare(`DELETE FROM ${t}`),
     ),
   )
@@ -46,10 +46,10 @@ describe('QueueStore', () => {
     expect((await store.get([url('a')]))[0]).toMatchObject({ status: 'rejected', source: 'rss', title: 'Old' })
 
     await store.setStatus([url('a')], 'failed', 'reconcile', hours(2))
-    await store.insert([{ url: url('a'), source: 'ext', note: 'again' }], hours(3))
+    await store.insert([{ url: url('a'), source: 'admin', note: 'again' }], hours(3))
     expect((await store.get([url('a')]))[0]).toMatchObject({
       status: 'pending',
-      source: 'ext',
+      source: 'admin',
       title: 'Old', // kept when the new submission has none
       note: 'again',
       decided_at: null,
@@ -116,7 +116,7 @@ describe('QueueStore', () => {
       [
         { url: url('ok'), source: 'rss' },
         { url: url('form'), source: 'form' },
-        { url: url('ext'), source: 'ext' },
+        { url: url('admin'), source: 'admin' },
         { url: url('flagged'), source: 'rss', flags: ['demo'] },
       ],
       hours(1),
@@ -144,6 +144,15 @@ describe('QueueStore', () => {
     expect(await store.lastRun()).toBeNull()
     await store.putLastRun({ approved: 3 }, hours(8))
     expect(await store.lastRun()).toEqual({ approved: 3 })
+  })
+
+  it('drops sources it no longer knows from stored settings (the retired extension)', async () => {
+    const stored = { enabled: true, sources: ['rss', 'ext'], hours: 8, since: '2026-09-18T00:00:00Z' }
+    await db
+      .prepare("INSERT INTO settings (key, value, updated_at) VALUES ('automation', ?, ?)")
+      .bind(JSON.stringify(stored), '2026-09-18T00:00:00Z')
+      .run()
+    expect(await store.automation(hours(1))).toEqual({ ...stored, sources: ['rss'] })
   })
 
   it('keeps watched collections and picks the due ones, longest-unread first', async () => {
@@ -178,25 +187,15 @@ describe('QueueStore', () => {
     expect(older.map((r) => r.id)).toEqual([all[4].id])
   })
 
-  it('purges old idempotency records and old Suggest-form notes', async () => {
-    await store.remember('ext', 'key-old-0001', 'h', '{}', T0)
-    await store.remember('ext', 'key-new-0001', 'h', '{}', hours(24 * 6))
+  it('purges Suggest-form notes after 180 days, and only those', async () => {
     await store.insert([{ url: url('form'), source: 'form', note: 'contact me' }], T0)
-    await store.insert([{ url: url('ext'), source: 'ext', note: 'kept' }], T0)
+    await store.insert([{ url: url('recent'), source: 'form', note: 'still here' }], hours(24 * 2))
+    await store.insert([{ url: url('admin'), source: 'admin', note: 'kept' }], T0)
     await store.purge(hours(24 * 181))
-    expect(await store.idempotent('ext', 'key-old-0001')).toBeNull()
-    expect(await store.idempotent('ext', 'key-new-0001')).toBeNull() // 175 days old by then
-    const notes = new Map((await store.get([url('form'), url('ext')])).map((r) => [r.url, r.note]))
+    const notes = new Map((await store.get([url('form'), url('recent'), url('admin')])).map((r) => [r.url, r.note]))
     expect(notes.get(url('form'))).toBeNull()
-    expect(notes.get(url('ext'))).toBe('kept')
-  })
-
-  it('keeps idempotency records per client and ignores a duplicate insert', async () => {
-    await store.remember('ext-a', 'same-key-01', 'h1', '{"n":1}', T0)
-    await store.remember('ext-a', 'same-key-01', 'h2', '{"n":2}', T0)
-    await store.remember('ext-b', 'same-key-01', 'h3', '{"n":3}', T0)
-    expect(await store.idempotent('ext-a', 'same-key-01')).toEqual({ body_hash: 'h1', response: '{"n":1}' })
-    expect(await store.idempotent('ext-b', 'same-key-01')).toEqual({ body_hash: 'h3', response: '{"n":3}' })
+    expect(notes.get(url('recent'))).toBe('still here')
+    expect(notes.get(url('admin'))).toBe('kept')
   })
 
   it('upserts feed state and writes the audit log', async () => {

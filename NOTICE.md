@@ -45,7 +45,7 @@ The process is described in the [Terms of Use](docs/ToS.md).
 | **Catalog data** | `data_game/`, `scripts/deleted_games.json`, and the files built from them under <https://freeitchgames.win/data> | CC BY 4.0, for the Maintainer's contribution only. Creator descriptions, cover images, game names and trademarks are **excluded** | [`data_game/LICENSE.md`](data_game/LICENSE.md), [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt) |
 | **Documentation** | `*.md` files in the repository root and in `docs/` (README, policies, guides and their Vietnamese translations) | CC BY 4.0 | [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt) |
 | **Third-party components** | Libraries, frameworks and tools the project uses | Their own licenses | [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md) and the [About page](https://freeitchgames.win/about) |
-| **Browser extension** | [poli0981/itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), a separate repository | GPL-3.0 | That repository |
+| **Browser extension** (archived) | [poli0981/itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), a separate repository, archived and no longer used | GPL-3.0 | That repository |
 
 When you reuse the documentation, credit poli0981 (SkullMute), link to this repository and to CC BY 4.0,
 and say if you changed it. For the data, use the credit line in

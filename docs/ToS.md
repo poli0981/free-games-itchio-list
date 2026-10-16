@@ -1,6 +1,6 @@
 # Terms of Use
 
-Last updated: 2026-10-13
+Last updated: 2026-10-16
 
 Applies from: 2026-10-13 on the Website, and from version 4.4.0 of the Apps.
 
@@ -62,7 +62,7 @@ You agree **not** to:
 
 1. **Bulk-scrape** the Website or its API, including the files under `/data`. Get the data from the Repository instead; it is cheaper for everyone.
 2. **Abuse the image proxy** (`/img`): it exists only to show cover images on the Website. Don't hotlink `/img` URLs from other sites or apps, and don't use it to fetch images in bulk.
-3. **Access restricted areas without authorization**: `/admin`, the admin API (`/api/admin/…`) and the ingest API (`/api/ingest`) are for the Maintainer only. Good-faith security research is welcome under the rules of the [Security Policy](../SECURITY.md).
+3. **Access restricted areas without authorization**: `/admin` and the admin API (`/api/admin/…`) are for the Maintainer only. Good-faith security research is welcome under the rules of the [Security Policy](../SECURITY.md).
 4. **Spam the Suggest form**, or circumvent the Website's verification check, Turnstile or the rate limits (for example with scripts, shared verification cookies or rotating IP addresses).
 5. **Submit links to malware**, scams, phishing, or illegal content, anywhere in the Project.
 6. **Misrepresent affiliation**: don't claim to be the Maintainer or the Project, don't present a fork or copy as the official Project, don't claim that the Project is run or endorsed by itch.io, and don't use the names "poli0981" or "SkullMute" to endorse your own work without prior written permission.

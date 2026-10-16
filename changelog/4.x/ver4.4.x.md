@@ -1,6 +1,48 @@
 # Changelog — 4.4.x
 
-Release notes for 4.4.0. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+Release notes for 4.4.0 and 4.4.1, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [4.4.1] - 2026-10-16 (Extension and bot retired)
+
+The maintainer's browser extension and the old Telegram bot were hardly used, and both repositories
+are now public archives (read-only):
+[itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) and
+[telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot). This version removes what was
+left of them here. Games still come in through the Suggest page, itch.io's RSS feeds and the itch.io
+collections the maintainer follows.
+
+### Upgrade notes
+
+- **Nothing to accept again.** The Privacy Policy, Terms of Use, EULA, Disclaimer and Security Policy
+  (EN + VI) only lose their mentions of the extension and its API; nothing new is collected, so the
+  legal check does not ask again.
+- **Desktop and Android apps**: install 4.4.1 over 4.4.0 as usual.
+- **Running your own copy of the Worker?** The `RL_INGEST` rate limit and the `ACCESS_AUD_INGEST`
+  variable are gone from `wrangler.jsonc`; delete the Access application that protected
+  `/api/ingest` and its service token. No D1 migration: the `idempotency` table stays and is no longer
+  used.
+
+### Removed
+
+- **The ingest API** (`POST /api/ingest`), which the browser extension used to send links to the review
+  queue with an Access service token. It never received a game since 4.0; the address now answers 404
+  like any unknown API path.
+- **Admin:** the "Browser extension" choice in the auto-approve settings and the "Extension" source in
+  the review queue.
+- **About page:** the old note asking to send a Telegram numeric ID privately (that was for the bot).
+  The Telegram link stays as a way to reach the maintainer.
+
+### Changed
+
+- **Policies** (2026-10-16, EN + VI): the Privacy Policy no longer lists the extension as a source of
+  games or its duplicate-submission records (7 days); the Terms of Use, the EULA (also in the
+  installers) and the Security Policy no longer name the ingest API; the Disclaimer lists the three
+  remaining ways games arrive. The extension and the bot are out of the Security Policy's scope.
+- **Docs**: the READMEs, contributing guide, notices, acknowledgements and operations guide describe
+  three ways games get in, and mark the extension and the bot as archived.
+- **Dependencies**: Vite 8.3.4 (#131); Tauri 2.12.2 with `tauri-build` 2.7.2, `tauri-plugin-opener`
+  2.7.1 and `tauri-plugin-single-instance` 2.5.3 (#135); `serde_json` 1.0.154 (#136); Ruff 0.17 for
+  the pipeline's lint (#137).
 
 ## [4.4.0] - 2026-10-13 (Admin automation, bulk actions, smoother charts)
 

@@ -1,7 +1,7 @@
 """
 canonical.py — One canonical form for itch.io game URLs.
 
-Every ingest channel (extension, admin, Suggest form, RSS, workflow input) and
+Every ingest channel (admin, Suggest form, RSS, collections, workflow input) and
 the pipeline itself compare URLs through canonicalize(), so the same game can
 never be queued twice under two spellings. The Worker ports this function; both
 implementations are tested against tests/fixtures/url_vectors.json.

@@ -18,11 +18,10 @@ Got a whole list? The **[Add Games (bulk list)]** issue template takes up to 15 
 
 #### 1b. Other ways games get in
 
-- The Maintainer's companion browser extension ([itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), separate repo, GPL-3.0) sends links through an authenticated API while browsing itch.io. It is the Maintainer's own tool, not a public submission channel.
 - The site reads itch.io's public RSS feeds of new and popular free games every 4 hours (one feed per run) and queues what it finds.
 - The site also reads the public itch.io collections the Maintainer follows and queues their new free games directly (one removed before, or with a warning flag, goes to the review queue instead).
 
-The extension and the RSS feeds land in the same review queue as the Suggest page. (The old Telegram bot path is retired.)
+The RSS feeds land in the same review queue as the Suggest page. (The Maintainer's browser extension and the old Telegram bot are retired; their repositories, [itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) and [telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot), are archived.)
 
 ### 2. Remove Games or Fix Their Data
 

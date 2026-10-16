@@ -1,5 +1,4 @@
 import {
-  Bot,
   Bug,
   CircleDollarSign,
   Cloud,
@@ -61,7 +60,6 @@ const SOCIAL_ICON: Record<string, LucideIcon> = {
   'discord-repo': MessagesSquare,
   'discord-game': MessagesSquare,
   'telegram-user': Send,
-  'telegram-bot': Bot,
   'github-sponsors': HeartHandshake,
   patreon: Heart,
   kofi: Coffee,
@@ -116,7 +114,6 @@ function ThirdPartySection({ category }: { category: ThirdParty['category'] }) {
 }
 
 const GROUP_NOTE: Partial<Record<SocialGroup, MessageKey>> = {
-  messaging: 'about.social.messagingNote',
   support: 'about.social.supportNote',
 }
 

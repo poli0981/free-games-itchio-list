@@ -1,6 +1,6 @@
 # Điều khoản sử dụng (Terms of Use)
 
-Cập nhật lần cuối: 2026-10-13
+Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: ngày 2026-10-13 đối với Website, và từ phiên bản 4.4.0 đối với các Ứng dụng.
 
@@ -66,7 +66,7 @@ Bạn đồng ý **không**:
 
 1. **Scrape hàng loạt** Website hoặc API của nó, kể cả các file trong `/data`. Hãy lấy dữ liệu từ Repository; cách đó tốn ít tài nguyên hơn cho tất cả mọi người.
 2. **Lạm dụng image proxy** (`/img`): proxy này chỉ để hiển thị ảnh bìa trên Website. Đừng hotlink các URL `/img` từ website hay ứng dụng khác, và đừng dùng nó để tải ảnh hàng loạt.
-3. **Truy cập trái phép các khu vực bị hạn chế**: `/admin`, API quản trị (`/api/admin/…`) và API ingest (`/api/ingest`) chỉ dành cho Người duy trì. Nghiên cứu bảo mật thiện chí luôn được hoan nghênh, theo các quy tắc trong [Security Policy](SECURITY.md).
+3. **Truy cập trái phép các khu vực bị hạn chế**: `/admin` và API quản trị (`/api/admin/…`) chỉ dành cho Người duy trì. Nghiên cứu bảo mật thiện chí luôn được hoan nghênh, theo các quy tắc trong [Security Policy](SECURITY.md).
 4. **Spam form Suggest**, hoặc tìm cách vượt qua bước xác minh của Website, Turnstile hay giới hạn tần suất (ví dụ bằng script, dùng chung cookie xác minh hoặc xoay vòng địa chỉ IP).
 5. **Gửi liên kết tới malware**, lừa đảo, phishing hoặc nội dung bất hợp pháp, ở bất kỳ đâu trong Dự án.
 6. **Mạo nhận liên kết**: đừng tự nhận là Người duy trì hay là Dự án, đừng giới thiệu một bản fork hay bản sao như thể đó là Dự án chính thức, đừng nói rằng Dự án do itch.io vận hành hoặc bảo trợ, và đừng dùng tên "poli0981" hay "SkullMute" để quảng bá sản phẩm của bạn khi chưa có sự cho phép trước bằng văn bản.

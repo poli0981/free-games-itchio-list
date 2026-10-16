@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 2026-10-13
+Last updated: 2026-10-16
 
 Applies from: 2026-10-13 on the Website, and from version 4.4.0 of the Apps.
 
@@ -36,7 +36,7 @@ The controller of the personal data described in this Policy is **the Maintainer
 
 ### 1.3 What this Policy does not cover
 
-This Policy does not cover services that handle data on their own account: itch.io (every game link and every download goes there), GitHub for your GitHub account and your activity on github.com, Cloudflare's use of data for its own purposes as described in its privacy policy, the games themselves, or the Maintainer's browser extension, which is a separate project with its own documentation. Their own policies apply (links in section 4).
+This Policy does not cover services that handle data on their own account: itch.io (every game link and every download goes there), GitHub for your GitHub account and your activity on github.com, Cloudflare's use of data for its own purposes as described in its privacy policy, or the games themselves. Their own policies apply (links in section 4).
 
 ## 2. What is processed and why
 
@@ -70,7 +70,7 @@ When you use the Suggest page (https://freeitchgames.win/suggest):
 
 ### 2.4 The review queue and the admin area
 
-- **How games arrive**: suggestions from the Suggest page; submissions from the Maintainer's browser extension through an authenticated API (the game URL, an optional title and note, and the extension's service-token ID; the records that prevent duplicate submissions are kept for 7 days); automatic discovery from itch.io's public RSS feeds; and new free games in public itch.io collections the Maintainer follows (the Website reads those public pages; nothing about you is involved).
+- **How games arrive**: suggestions from the Suggest page; automatic discovery from itch.io's public RSS feeds; and new free games in public itch.io collections the Maintainer follows (the Website reads those public pages; nothing about you is involved).
 - **The review queue** (Cloudflare D1) holds candidate game URLs with their source, the title, cover-image URL and genre hint taken from itch.io, automatic flags, notes, timestamps and the Maintainer's decision. Games enter the Catalog when the Maintainer approves them: one by one, or through automatic rules the Maintainer sets and can change at any time (items without a warning flag that nobody rejected within a waiting time; new free games in collections the Maintainer follows). Automatic approvals are recorded in the audit log like the Maintainer's own. Rejected URLs are kept indefinitely as a blocklist; only the URL is needed to avoid reviewing the same game again.
 - **The admin area** (https://freeitchgames.win/admin) is for the Maintainer only. It is protected by Cloudflare Access (GitHub login or a one-time PIN sent by email), which sets a `CF_Authorization` session cookie in the Maintainer's browser. Admin actions, including changes to the automatic rules, are recorded in an audit log together with the Maintainer's email address. The audit log is never published.
 
@@ -145,7 +145,6 @@ Cloudflare and Google may process data anywhere on their global networks (see se
 | IP address used for rate limiting and Turnstile | Used transiently; never stored by the Project |
 | Suggest note | Deleted automatically after **180 days** |
 | Suggested or discovered game URLs, with source and timestamps | In the review queue while needed to avoid reviewing the same game twice. Approved URLs become part of the public Catalog; rejected URLs are kept indefinitely as a blocklist |
-| Duplicate-submission records from the browser extension | **7 days** |
 | Admin audit log (with the Maintainer's email address) | Kept as the record of admin changes; never published |
 | Catalog entries (including developer and publisher names) | While the game is listed. Removal records stay in the public removed-games list, and the Repository's Git history keeps past versions (see section 7.3) |
 | Emails, including removal and copyright requests | As long as needed to handle the request |
@@ -219,8 +218,8 @@ Under the GDPR and the UK GDPR, you can also ask for processing to be restricted
 
 - The Website is served only over HTTPS.
 - Automated traffic has to pass a Cloudflare Turnstile check before the Website's pages and cover images load (section 2.1).
-- Data minimization: no accounts, no IP addresses stored by the Project's code, Suggest notes deleted after 180 days, duplicate-submission records after 7 days.
-- The admin area and the ingest API are protected by Cloudflare Access, and the Website's server code verifies the Access token itself on every protected request.
+- Data minimization: no accounts, no IP addresses stored by the Project's code, Suggest notes deleted after 180 days.
+- The admin area is protected by Cloudflare Access, and the Website's server code verifies the Access token itself on every protected request.
 - Secrets (such as the GitHub App's private key) are kept in Cloudflare's secret storage, never in the Repository. The admin area writes to the Repository as a GitHub App, with verified commits.
 - A strict Content Security Policy limits scripts to the Website itself plus Cloudflare Web Analytics and Turnstile.
 - GitHub Actions are pinned to exact commit SHAs with least-privilege permissions, and Dependabot keeps dependencies up to date.

@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Free Itch Games',
-  version: '4.4.0',
+  version: '4.4.1',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'code MIT · data CC BY 4.0',
 } as const
@@ -72,7 +72,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'discord-repo', label: 'Discord — Repo discussion', handle: '#general', url: 'https://discord.gg/2aNR3aVt', group: 'community' },
   { platform: 'discord-game', label: 'Discord — Game chat', handle: '#general', url: 'https://discord.gg/kDM9GMu5vm', group: 'community' },
 
-  // Messaging — DM only; never post your Telegram numeric ID to public channels.
+  // Messaging
   { platform: 'telegram-user', label: 'Telegram (DM)', handle: '@SkullMute0011', url: 'https://t.me/SkullMute0011', group: 'messaging' },
 
   // Support — mirrors .github/FUNDING.yml (single source of truth on GitHub side).

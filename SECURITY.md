@@ -1,6 +1,6 @@
 # Security Policy
 
-Last updated: 2026-09-29
+Last updated: 2026-10-16
 
 Applies from: the release of version 4.0.0.
 
@@ -24,7 +24,7 @@ A good report includes:
 
 **In scope**
 
-- The website https://freeitchgames.win and its Cloudflare Worker, including the image proxy (`/img`), the Suggest API (`/api/suggest`), the ingest API used by the Maintainer's browser extension (`/api/ingest`), and the admin app and API (`/admin`, `/api/admin`).
+- The website https://freeitchgames.win and its Cloudflare Worker, including the image proxy (`/img`), the Suggest API (`/api/suggest`), and the admin app and API (`/admin`, `/api/admin`).
 - The data pipeline (`scripts/`) and the GitHub Actions workflows (`.github/workflows/`).
 - The desktop apps and the Android APK published on [GitHub Releases](https://github.com/poli0981/free-games-itchio-list/releases).
 - The published data (`data_game/`, `scripts/deleted_games.json`, and https://freeitchgames.win/data) — for example, a way to get content into the catalog without the Maintainer's approval.
@@ -37,7 +37,7 @@ A good report includes:
 - Volumetric denial-of-service (DoS/DDoS) and load testing.
 - Reports from automated scanners without a working proof of concept.
 
-The browser extension (poli0981/itch-f2p-extension) lives in its own repository; report issues in the extension itself there. Issues in the ingest API it talks to are in scope here.
+The browser extension (poli0981/itch-f2p-extension) and the Telegram bot (poli0981/telegram-scraper-bot) are archived and no longer supported, so they are out of scope.
 
 ## 3. Supported versions
 

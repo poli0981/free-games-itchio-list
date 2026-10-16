@@ -342,6 +342,7 @@ describe('admin API', () => {
     for (const bad of [
       { enabled: 'yes', sources: [], hours: 1 },
       { enabled: true, sources: ['admin'], hours: 1 },
+      { enabled: true, sources: ['ext'], hours: 1 }, // the retired browser extension
       { enabled: true, sources: ['rss', 'rss'], hours: 1 },
       { enabled: true, sources: [], hours: 0 },
       { enabled: true, sources: [], hours: 1.5 },

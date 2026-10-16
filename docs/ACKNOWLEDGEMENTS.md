@@ -27,9 +27,9 @@ The website, the Worker and the desktop / Android apps build on a stack of open-
 
 When you add a new dep to `webapp/package.json`, also add it to the `THIRD_PARTY` array so the About page lists it, and to [`THIRD_PARTY.md`](THIRD_PARTY.md). House rules are in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
-## Browser extension — the other way in
+## Retired helpers
 
-[poli0981/itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) (GPL-3.0, separate repo) lets me queue itch.io games straight from the browser. It sends them through an authenticated API into the same review queue as the public [Suggest page](https://freeitchgames.win/suggest) and the RSS discovery. Nothing goes live until I approve it. (The old Telegram bot did this job in v3 and is now retired.)
+Two side projects used to feed the catalog: the browser extension [poli0981/itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) (GPL-3.0) and, in v3, the Telegram bot [poli0981/telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot) (MIT). Both were hardly used, so they are archived now (October 2026). Games come in through the public [Suggest page](https://freeitchgames.win/suggest), the RSS discovery and the itch.io collections I follow, and nothing goes live until it is approved.
 
 ## Find me / Support me
 Real channels exist now (still introvert max level, replies slow):

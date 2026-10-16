@@ -22,11 +22,10 @@ Có cả một danh sách? Issue template **[Add Games (bulk list)]** nhận t�
 
 #### 1b. Những cách khác để game được thêm vào
 
-- Extension trình duyệt đi kèm của Maintainer ([itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), repo riêng, GPL-3.0) gửi link qua một API có xác thực trong lúc duyệt itch.io. Đây là công cụ riêng của Maintainer, không phải kênh gửi công khai.
 - Website đọc các RSS feed công khai của itch.io về game miễn phí mới và phổ biến mỗi 4 giờ (mỗi lượt một feed) và đưa những gì tìm được vào hàng chờ.
 - Website cũng đọc các collection công khai trên itch.io mà Maintainer theo dõi và đưa thẳng game miễn phí mới của chúng vào hàng chờ ingest (game từng bị gỡ, hoặc có cờ cảnh báo, thì vào hàng chờ duyệt).
 
-Extension và RSS feed đều vào cùng hàng chờ duyệt với trang Suggest. (Đường thêm game qua Telegram bot cũ đã ngừng hoạt động.)
+RSS feed vào cùng hàng chờ duyệt với trang Suggest. (Extension trình duyệt của Maintainer và Telegram bot cũ đã ngừng hoạt động; repo của chúng, [itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) và [telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot), đã được lưu trữ (archive).)
 
 ### 2. Gỡ game hoặc sửa dữ liệu game
 

@@ -1,5 +1,5 @@
 # Lint + tests for the data pipeline, and schema validation of the catalog.
-# Pushes by GitHub Apps (browser extension, admin Worker) also trigger this,
+# Pushes by the admin Worker's GitHub App also trigger this,
 # so every externally written data change is validated.
 name: Python CI
 
