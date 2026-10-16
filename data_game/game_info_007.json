@@ -16011,5 +16011,131 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-15T12:24:18Z"
+    },
+    {
+        "url": "https://pantaloon-io.itch.io/lemonade-apocalypse",
+        "name": "Lemonade Apocalypse",
+        "dev": "pantaloon",
+        "description": "When life gives you lemons...",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 October 2026 @ 14:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDA3NjQ5LnBuZw==/original/2nCiTf.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T00:23:47Z"
+    },
+    {
+        "url": "https://sashify.itch.io/popcorn-idle",
+        "name": "Popcorn Idle - Prototype",
+        "dev": "Sashify",
+        "description": "A cozy idle automation game about the simple joy of popping corn.",
+        "genre": "N/A",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 14:51 UTC",
+        "rating": "3.9",
+        "rating_count": "8",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTAxMTk5LnBuZw==/original/TywXqe.png",
+        "tags": [
+            "Casual",
+            "Colorful",
+            "Cozy",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Indie",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Japanese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T00:23:51Z"
+    },
+    {
+        "url": "https://tattershallstudios.itch.io/gravewell",
+        "name": "Gravewell",
+        "dev": "TattershallStudios",
+        "description": "An old arcade machine. It still pays out.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 18:20 UTC",
+        "rating": "2.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODg0MzYxLnBuZw==/original/ilnN0M.png",
+        "tags": [
+            "Clicker",
+            "Horror",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "plinko",
+            "Psychological Horror",
+            "Retro",
+            "Short",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 October 2026 @ 18:47 UTC",
+        "added_at": "2026-10-16T00:23:54Z"
     }
 ]
