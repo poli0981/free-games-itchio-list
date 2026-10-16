@@ -16138,5 +16138,514 @@
         "notes": "",
         "updated_at": "15 October 2026 @ 18:47 UTC",
         "added_at": "2026-10-16T00:23:54Z"
+    },
+    {
+        "url": "https://activedev.itch.io/legend-of-idle-playtest-demo",
+        "name": "Legend of Idle",
+        "dev": "ActiveDev",
+        "description": "SNES Incremental Kingdom",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "111",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjM5MDE2LnBuZw==/original/yLYzlL.png",
+        "tags": [
+            "building",
+            "Cozy",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Super Nintendo",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Turkish",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot",
+            "MagicaVoxel"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 October 2026 @ 14:14 UTC",
+        "added_at": "2026-10-16T04:24:52Z"
+    },
+    {
+        "url": "https://aiainaine.itch.io/better-on-paper",
+        "name": "Better on Paper!",
+        "dev": "aine, LemonadeMochi, Mich, Indie Starz ₊⊹, Rosia, checky, CuteShadow",
+        "description": "Can you beat procrastination with art forgery?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjM4MzI2LnBuZw==/original/pMJT6u.png",
+        "tags": [
+            "Cozy",
+            "Cute",
+            "Female Protagonist",
+            "LGBTQIA",
+            "Painting",
+            "Queer",
+            "Voice Acting",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "27 September 2026 @ 23:24 UTC",
+        "added_at": "2026-10-16T04:24:59Z"
+    },
+    {
+        "url": "https://auguste-eden.itch.io/amber-forest",
+        "name": "Amber Forest",
+        "dev": "Auguste_Eden",
+        "description": "Deckbuilder roguelike with manga aesthetics. Demo available.",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 September 2026 @ 15:44 UTC",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjk5MTQ5LnBuZw==/original/PnOxJD.png",
+        "tags": [
+            "Animals",
+            "Anime",
+            "Auto Battler",
+            "Black and White",
+            "Deck Building",
+            "Manga",
+            "No AI",
+            "Roguelike",
+            "Roguelite"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T04:25:05Z"
+    },
+    {
+        "url": "https://blackjet.itch.io/labbaye-des-morts",
+        "name": "L'Abbaye Des Morts",
+        "dev": "Blackjet games",
+        "description": "Fun but challenging puzzle platformer",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5MTQ0MjQ0LnBuZw==/original/T0Wtq6.png",
+        "tags": [
+            "2D",
+            "abbaey-des-morts",
+            "coupe",
+            "sam"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "08 October 2026 @ 22:12 UTC",
+        "added_at": "2026-10-16T04:25:13Z"
+    },
+    {
+        "url": "https://kickyfunkfresh.itch.io/freestyletalesofitch",
+        "name": "Freestyle - Tales Of Itch Amiga OUT NOW!",
+        "dev": "Mute.Ink",
+        "description": "Not chess. Not pickleball. Not even a sport! It's Freestyle!",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzEwMTI2LnBuZw==/original/Nz4xef.png",
+        "tags": [
+            "2D",
+            "Amiga",
+            "freestyle",
+            "muteink",
+            "Retro",
+            "scorpion-engine",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 October 2026 @ 09:45 UTC",
+        "added_at": "2026-10-16T04:25:18Z"
+    },
+    {
+        "url": "https://lambdaforge.itch.io/kenzu",
+        "name": "Kenzu: Shadow and Light",
+        "dev": "lambdaforge, Boldojones, fcarrone, Nico-Sanchez, Manuel Camejo",
+        "description": "Fast, weighty combat and exploration in a hand-drawn world of light and shadow. Boss-heavy 10-hour campaign.",
+        "genre": "Platformer",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "120",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0Mjk1NDA0LnBuZw==/original/5fpUUi.png",
+        "tags": [
+            "2D",
+            "Action-Adventure",
+            "Atmospheric",
+            "Controller",
+            "Exploration",
+            "Metroidvania",
+            "Singleplayer",
+            "Souls-like",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Joystick"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 04:21 UTC",
+        "added_at": "2026-10-16T04:25:24Z"
+    },
+    {
+        "url": "https://madocactus.itch.io/interviolence",
+        "name": "interViolence",
+        "dev": "Mado",
+        "description": "Help a teen supervillain move out of his only home. An RPGMaker visual novel about nostalgia and grief.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1MTc1NDk1LmdpZg==/original/E7JDKr.gif",
+        "tags": [
+            "2D",
+            "Female Protagonist",
+            "Hand-drawn",
+            "Pixel Art",
+            "RPG Maker",
+            "Sci-fi",
+            "Singleplayer",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "13 October 2026 @ 22:07 UTC",
+        "added_at": "2026-10-16T04:25:31Z"
+    },
+    {
+        "url": "https://mors-games.itch.io/midas-crutch",
+        "name": "Midas Crutch",
+        "dev": "mors, batfeula, olive, Tetraminose, datagoblin",
+        "description": "Borrow King Midas's crutch, and turn your obstacles into gold!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 September 2026 @ 10:26 UTC",
+        "rating": "4.4",
+        "rating_count": "5",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTU2NjAzLnBuZw==/original/9UXcSn.png",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller"
+        ],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 October 2026 @ 16:46 UTC",
+        "added_at": "2026-10-16T04:25:37Z"
+    },
+    {
+        "url": "https://olipool.itch.io/boeckhams-football-manager",
+        "name": "Boeckham's Football Manager",
+        "dev": "olipool",
+        "description": "An old-school football manager with simplified yet deep gameplay",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1MDE1OTUzLnBuZw==/original/IH7t2j.png",
+        "tags": [
+            "2D",
+            "Football",
+            "Management",
+            "Pixel Art",
+            "Retro",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Aseprite"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 14:44 UTC",
+        "added_at": "2026-10-16T04:25:43Z"
+    },
+    {
+        "url": "https://placeholders.itch.io/007",
+        "name": "0:07",
+        "dev": "Placeholders",
+        "description": "Set your timer, call your own countdown, then wipe out the entire floor. On time. Exactly.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "19",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjUxNzAyLnBuZw==/original/R%2F4Qz%2F.png",
+        "tags": [
+            "clock",
+            "hotlinemiami"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 October 2026 @ 10:31 UTC",
+        "added_at": "2026-10-16T04:25:48Z"
+    },
+    {
+        "url": "https://waldorf.itch.io/bombermaid",
+        "name": "Bombermaid",
+        "dev": "Waldorf",
+        "description": "An action puzzle game where you chain 10 seconds of explosions",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4ODI2NDkyLnBuZw==/original/tXdT1t.png",
+        "tags": [
+            "Anime",
+            "Cute",
+            "Explosions",
+            "Female Protagonist",
+            "maid",
+            "Pixel Art",
+            "Retro",
+            "RPG Maker",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-16T04:25:54Z"
+    },
+    {
+        "url": "https://zanipixels.itch.io/the-chimera-gameboy",
+        "name": "The Chimera Gameboy",
+        "dev": "Zani.Pixels ಠ_ಠ",
+        "description": "The Chimera is a gameboy retro game that runs in the original hardware!",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NDQ3MzQ0LmdpZg==/original/63tWwH.gif",
+        "tags": [
+            "Cyberpunk",
+            "Game Boy",
+            "gbstudio",
+            "No AI",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 October 2026 @ 05:52 UTC",
+        "added_at": "2026-10-16T04:26:00Z"
     }
 ]
