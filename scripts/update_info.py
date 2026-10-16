@@ -24,7 +24,7 @@ Flow:
      which the admin page reads to follow a batch it queued.
 
 apply_patch.py then applies the patch to the latest `main`, so links queued
-while this ran (extension, admin) are never overwritten.
+while this ran (admin, cron) are never overwritten.
 
 Usage: python scripts/update_info.py --out patch.json [--deadline-min 50]
 """

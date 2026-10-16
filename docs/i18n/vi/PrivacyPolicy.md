@@ -1,6 +1,6 @@
 # Chính sách quyền riêng tư (Privacy Policy)
 
-Cập nhật lần cuối: 2026-10-13
+Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: ngày 2026-10-13 đối với Website, và từ phiên bản 4.4.0 đối với các Ứng dụng.
 
@@ -36,7 +36,7 @@ Bên kiểm soát dữ liệu cá nhân được mô tả trong Chính sách nà
 
 ### 1.3 Những gì Chính sách này không áp dụng
 
-Chính sách này không áp dụng cho các dịch vụ tự xử lý dữ liệu với tư cách của chính họ: itch.io (mọi link game và mọi lượt tải đều dẫn tới đó), GitHub đối với tài khoản GitHub và hoạt động của bạn trên github.com, việc Cloudflare dùng dữ liệu cho mục đích riêng của họ như mô tả trong chính sách quyền riêng tư của Cloudflare, bản thân các game, và tiện ích trình duyệt của Người duy trì (một dự án riêng, có tài liệu riêng). Chính sách của từng bên sẽ được áp dụng (link ở mục 4).
+Chính sách này không áp dụng cho các dịch vụ tự xử lý dữ liệu với tư cách của chính họ: itch.io (mọi link game và mọi lượt tải đều dẫn tới đó), GitHub đối với tài khoản GitHub và hoạt động của bạn trên github.com, việc Cloudflare dùng dữ liệu cho mục đích riêng của họ như mô tả trong chính sách quyền riêng tư của Cloudflare, và bản thân các game. Chính sách của từng bên sẽ được áp dụng (link ở mục 4).
 
 ## 2. Dữ liệu nào được xử lý và vì sao
 
@@ -70,7 +70,7 @@ Khi bạn dùng trang Suggest (https://freeitchgames.win/suggest):
 
 ### 2.4 Hàng chờ duyệt và khu vực quản trị
 
-- **Game đến từ đâu**: đề xuất từ trang Suggest; dữ liệu gửi từ tiện ích trình duyệt của Người duy trì qua một API có xác thực (URL game, tiêu đề và ghi chú tùy chọn, và ID service token của tiện ích; các bản ghi chống gửi trùng được giữ 7 ngày); tự động phát hiện từ các RSS feed công khai của itch.io; và game miễn phí mới trong các collection công khai trên itch.io mà Người duy trì theo dõi (Website đọc các trang công khai đó; không liên quan gì tới dữ liệu của bạn).
+- **Game đến từ đâu**: đề xuất từ trang Suggest; tự động phát hiện từ các RSS feed công khai của itch.io; và game miễn phí mới trong các collection công khai trên itch.io mà Người duy trì theo dõi (Website đọc các trang công khai đó; không liên quan gì tới dữ liệu của bạn).
 - **Hàng chờ duyệt** (Cloudflare D1) chứa các URL game ứng viên cùng nguồn gửi, tiêu đề, URL ảnh bìa và gợi ý thể loại lấy từ itch.io, các cờ tự động, ghi chú, mốc thời gian và quyết định của Người duy trì. Game được đưa vào Danh mục khi Người duy trì duyệt: từng game một, hoặc qua các quy tắc tự động do Người duy trì đặt ra và có thể thay đổi bất cứ lúc nào (mục không có cờ cảnh báo mà không ai từ chối trong thời gian chờ; game miễn phí mới trong các collection Người duy trì theo dõi). Các lượt duyệt tự động được ghi vào nhật ký kiểm tra như thao tác của chính Người duy trì. Các URL bị từ chối được giữ vô thời hạn làm danh sách chặn; chỉ cần URL là đủ để không phải xét lại cùng một game.
 - **Khu vực quản trị** (https://freeitchgames.win/admin) chỉ dành cho Người duy trì. Khu vực này được bảo vệ bằng Cloudflare Access (đăng nhập bằng GitHub hoặc mã PIN dùng một lần gửi qua email); Cloudflare Access đặt cookie phiên `CF_Authorization` trong trình duyệt của Người duy trì. Các thao tác quản trị, kể cả thay đổi quy tắc tự động, được ghi vào nhật ký kiểm tra (audit log) kèm địa chỉ email của Người duy trì. Nhật ký này không bao giờ được công bố.
 
@@ -145,7 +145,6 @@ Cloudflare và Google có thể xử lý dữ liệu ở bất kỳ đâu trên 
 | Địa chỉ IP dùng cho giới hạn tần suất và Turnstile | Chỉ dùng tạm thời; Dự án không bao giờ lưu |
 | Ghi chú trên trang Suggest | Tự động xóa sau **180 ngày** |
 | URL game được đề xuất hoặc được phát hiện, kèm nguồn và mốc thời gian | Nằm trong hàng chờ duyệt chừng nào còn cần để không phải xét cùng một game hai lần. URL được duyệt trở thành một phần của Danh mục công khai; URL bị từ chối được giữ vô thời hạn làm danh sách chặn |
-| Bản ghi chống gửi trùng từ tiện ích trình duyệt | **7 ngày** |
 | Nhật ký kiểm tra quản trị (kèm địa chỉ email của Người duy trì) | Được giữ làm hồ sơ các thay đổi quản trị; không bao giờ công bố |
 | Mục trong Danh mục (bao gồm tên nhà phát triển và nhà phát hành) | Khi game còn được liệt kê. Bản ghi gỡ bỏ vẫn nằm trong danh sách game đã gỡ công khai, và lịch sử Git của Repository giữ các phiên bản trước (xem mục 7.3) |
 | Email, bao gồm yêu cầu gỡ game và yêu cầu liên quan đến bản quyền | Trong thời gian cần thiết để xử lý yêu cầu |
@@ -219,8 +218,8 @@ Theo GDPR và UK GDPR, bạn cũng có thể yêu cầu hạn chế việc xử 
 
 - Website chỉ được phục vụ qua HTTPS.
 - Truy cập tự động phải qua bước kiểm tra Cloudflare Turnstile trước khi các trang và ảnh bìa của Website được tải (mục 2.1).
-- Tối thiểu hóa dữ liệu: không tài khoản, mã nguồn của Dự án không lưu địa chỉ IP, ghi chú Suggest bị xóa sau 180 ngày, bản ghi chống gửi trùng bị xóa sau 7 ngày.
-- Khu vực quản trị và API ingest được bảo vệ bằng Cloudflare Access, và mã máy chủ của Website tự xác minh token Access ở mọi request được bảo vệ.
+- Tối thiểu hóa dữ liệu: không tài khoản, mã nguồn của Dự án không lưu địa chỉ IP, ghi chú Suggest bị xóa sau 180 ngày.
+- Khu vực quản trị được bảo vệ bằng Cloudflare Access, và mã máy chủ của Website tự xác minh token Access ở mọi request được bảo vệ.
 - Các thông tin bí mật (như private key của GitHub App) được giữ trong kho lưu trữ bí mật của Cloudflare, không bao giờ nằm trong Repository. Khu vực quản trị ghi vào Repository dưới danh nghĩa một GitHub App, với các commit đã được xác minh (verified).
 - Content Security Policy chặt chẽ chỉ cho phép script từ chính Website, cộng với Cloudflare Web Analytics và Turnstile.
 - Các GitHub Actions được ghim theo commit SHA cụ thể với quyền tối thiểu cần thiết, và Dependabot giữ cho các dependency luôn được cập nhật.

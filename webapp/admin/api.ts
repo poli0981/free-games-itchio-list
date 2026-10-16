@@ -61,7 +61,7 @@ async function api<T>(method: string, path: string, body?: unknown): Promise<T> 
 }
 
 export type CandidateStatus = 'pending' | 'rejected' | 'queued' | 'ingested' | 'failed'
-export type CandidateSource = 'rss' | 'form' | 'ext' | 'admin'
+export type CandidateSource = 'rss' | 'form' | 'admin'
 
 export interface Candidate {
   url: string

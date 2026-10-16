@@ -1,6 +1,6 @@
 # Thỏa thuận cấp phép cho người dùng cuối (EULA)
 
-Cập nhật lần cuối: 2026-10-03
+Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: khi phát hành phiên bản 4.2.0.
 
@@ -86,7 +86,7 @@ Bạn đồng ý không:
 
 - Trình bày một bản build đã sửa đổi như một bản phát hành chính thức, ví dụ phân phối nó dưới tên và biểu tượng của dự án, hoặc với app identifier chính thức `com.poli0981.freegamesitchio`, mà không ghi rõ đó là bản không chính thức. Fork luôn được chào đón theo Giấy phép MIT; chỉ cần làm rõ rằng đó là bản của Bạn.
 - Sử dụng tên Người duy trì, GitHub handle `poli0981`, hoặc alias "SkullMute" để chứng thực hoặc quảng bá tác phẩm phái sinh mà không có sự cho phép trước bằng văn bản.
-- Sử dụng Ứng dụng, hoặc một phiên bản đã sửa đổi của nó, theo cách vi phạm [Điều khoản sử dụng](ToS.md) của Website, ví dụ gửi yêu cầu tự động hàng loạt tới Website (dữ liệu có sẵn trong Repository), hoặc cố truy cập khu vực quản trị (admin) hay ingest API khi không được phép.
+- Sử dụng Ứng dụng, hoặc một phiên bản đã sửa đổi của nó, theo cách vi phạm [Điều khoản sử dụng](ToS.md) của Website, ví dụ gửi yêu cầu tự động hàng loạt tới Website (dữ liệu có sẵn trong Repository), hoặc cố truy cập khu vực quản trị (admin) khi không được phép.
 - Sử dụng Ứng dụng hoặc các bộ cài của nó để lưu trữ, phân phối hoặc tạo điều kiện phân phối malware, trang phishing, hoặc nội dung vi phạm pháp luật hiện hành.
 
 Các quy tắc này là về cách Bạn sử dụng Ứng dụng cũng như tên và dịch vụ của dự án. Chúng tồn tại song song với Giấy phép MIT và không hạn chế các quyền mà giấy phép đó trao đối với mã nguồn.

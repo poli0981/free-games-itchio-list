@@ -71,12 +71,13 @@ Lưu ý: **chỉ arm64-v8a** (mọi điện thoại từ ~2017; không hỗ tr�
 
 ## Thêm game
 
-Có bốn cách để một game vào danh mục. Mỗi game đều được Maintainer duyệt, từng game một trong hàng chờ duyệt hoặc qua các quy tắc tự động do Maintainer đặt ra.
+Có ba cách để một game vào danh mục. Mỗi game đều được Maintainer duyệt, từng game một trong hàng chờ duyệt hoặc qua các quy tắc tự động do Maintainer đặt ra.
 
 1. **Trang Suggest**: <https://freeitchgames.win/suggest>. Dán link game itch.io và, nếu muốn, một ghi chú ngắn (tối đa 500 ký tự; ghi chú bị xóa sau 180 ngày). Một bước kiểm tra Cloudflare Turnstile và giới hạn tần suất giúp chặn spam. Vui lòng không ghi dữ liệu cá nhân vào ghi chú.
-2. **Extension trình duyệt**: [itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) của chính Maintainer (repo riêng, GPL-3.0) gửi link qua một API có xác thực trong lúc duyệt itch.io.
-3. **Tự động phát hiện**: cứ 4 giờ một lần, website đọc một trong các RSS feed công khai của itch.io về game miễn phí mới và phổ biến (mỗi lượt một feed) rồi đưa những gì tìm được vào hàng chờ.
-4. **Collection được theo dõi**: website cũng đọc các collection công khai trên itch.io mà Maintainer theo dõi và đưa thẳng game miễn phí mới của chúng vào hàng chờ ingest (game từng bị gỡ, hoặc có cờ cảnh báo, thì vào hàng chờ duyệt).
+2. **Tự động phát hiện**: cứ 4 giờ một lần, website đọc một trong các RSS feed công khai của itch.io về game miễn phí mới và phổ biến (mỗi lượt một feed) rồi đưa những gì tìm được vào hàng chờ.
+3. **Collection được theo dõi**: website cũng đọc các collection công khai trên itch.io mà Maintainer theo dõi và đưa thẳng game miễn phí mới của chúng vào hàng chờ ingest (game từng bị gỡ, hoặc có cờ cảnh báo, thì vào hàng chờ duyệt).
+
+Extension trình duyệt của Maintainer và Telegram bot cũ đã ngừng hoạt động; repo của chúng ([itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension), [telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)) đã được lưu trữ (archive).
 
 Maintainer duyệt hàng chờ trong một khu vực quản trị riêng (được bảo vệ bởi Cloudflare Access); mục không có cờ cảnh báo mà không ai từ chối trong thời gian chờ (mặc định 24 giờ) được duyệt tự động. Link được duyệt sẽ được chuyển cho pipeline dữ liệu, pipeline này cào từng trang game; game trả phí bị loại.
 
@@ -87,8 +88,7 @@ Muốn **gỡ** một game, hoặc sửa dữ liệu của nó (nhất là các 
 ## Dữ liệu được cập nhật thế nào
 
 ```
-Trang Suggest ─┐
-Extension     ─┼─→ hàng chờ duyệt ─→ Maintainer duyệt ─→ scripts/temp_link.json
+Trang Suggest ─┬─→ hàng chờ duyệt ─→ Maintainer duyệt ─→ scripts/temp_link.json
 RSS feed      ─┘                (admin, hoặc quy tắc tự động) │
 Collection theo dõi ──────────────────────────────────────────┤
                                                               ▼
@@ -110,7 +110,7 @@ Pipeline cư xử lịch sự với itch.io: nó tự xưng danh là `FreeItchGa
 ## Bên trong dự án
 
 - **Web app** ([`webapp/src/`](webapp/src/)): React + TypeScript + Vite + Tailwind CSS, TanStack Query, React Router, Zustand. Giao diện tiếng Anh và tiếng Việt.
-- **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): phục vụ website và `/data`, cổng xác minh (Cloudflare Turnstile), proxy ảnh (`/img`, ảnh bìa WebP đã thu nhỏ lưu trên Cloudflare R2), API Suggest và ingest, hàng chờ duyệt (Cloudflare D1), API quản trị và lịch phát hiện qua RSS. Cấu hình: [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
+- **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): phục vụ website và `/data`, cổng xác minh (Cloudflare Turnstile), proxy ảnh (`/img`, ảnh bìa WebP đã thu nhỏ lưu trên Cloudflare R2), API Suggest, hàng chờ duyệt (Cloudflare D1), API quản trị và lịch phát hiện qua RSS. Cấu hình: [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
 - **App quản trị** ([`webapp/admin/`](webapp/admin/)): màn hình duyệt chỉ dành cho Maintainer tại `/admin`, đứng sau Cloudflare Access. Nó ghi vào repo này dưới danh nghĩa một GitHub App.
 - **Vỏ native** ([`webapp/src-tauri/`](webapp/src-tauri/)): Tauri 2 cho Windows, macOS, Linux và Android. Xem [`webapp/TAURI.md`](webapp/TAURI.md).
 - **Pipeline dữ liệu** ([`scripts/`](scripts/), Python 3.14): scraper, refresh, patch/apply và validate, chạy bằng GitHub Actions.
@@ -263,7 +263,7 @@ Khi tái sử dụng dữ liệu, vui lòng ghi công như sau:
 Free itch.io games catalog by poli0981 (SkullMute) — https://freeitchgames.win — CC BY 4.0
 ```
 
-Các thành phần bên thứ ba giữ giấy phép riêng của chúng: xem [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md) và trang About của website. Extension trình duyệt là một repo riêng theo GPL-3.0. Đóng góp được nhận theo cùng giấy phép với phần mà nó thay đổi (inbound = outbound): MIT cho mã nguồn, CC BY 4.0 cho dữ liệu và tài liệu.
+Các thành phần bên thứ ba giữ giấy phép riêng của chúng: xem [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md) và trang About của website. Extension trình duyệt (đã archive) là một repo riêng theo GPL-3.0. Đóng góp được nhận theo cùng giấy phép với phần mà nó thay đổi (inbound = outbound): MIT cho mã nguồn, CC BY 4.0 cho dữ liệu và tài liệu.
 
 **Không liên kết với itch.io.** Đây là một dự án độc lập do người hâm mộ làm. Dự án không liên kết với, không được chứng thực hay tài trợ bởi itch.io, Leaf Corcoran hoặc itch corp. "itch.io" cùng mọi tên game, logo và nhãn hiệu thuộc về chủ sở hữu tương ứng.
 

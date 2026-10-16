@@ -1,5 +1,5 @@
-# Ingest queued links from scripts/temp_link.json (written by the browser
-# extension, and later the admin Worker) plus an optional dispatched URL.
+# Ingest queued links from scripts/temp_link.json (written by the admin
+# Worker and its cron) plus an optional dispatched URL.
 #
 # Runs right away when temp_link.json changes on main (pushes made by GitHub
 # Apps trigger it; this workflow's own GITHUB_TOKEN push does not, so no loop),

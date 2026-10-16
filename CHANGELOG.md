@@ -3,12 +3,13 @@
 All notable changes to this project, newest first. The notes of each release live in
 [`changelog/`](changelog/), one file per minor version: `changelog/<major>.x/ver<major>.<minor>.x.md`.
 
-**Latest release: [4.4.0](changelog/4.x/ver4.4.x.md#440---2026-10-13-admin-automation-bulk-actions-smoother-charts) (2026-10-13) — Admin automation, bulk actions, smoother charts.**
+**Latest release: [4.4.1](changelog/4.x/ver4.4.x.md#441---2026-10-16-extension-and-bot-retired) (2026-10-16) — Extension and bot retired.**
 
 ## 4.x
 
 | Version | Date | Highlights |
 |---|---|---|
+| [4.4.1](changelog/4.x/ver4.4.x.md#441---2026-10-16-extension-and-bot-retired) | 2026-10-16 | Extension and bot retired (archived repos), ingest API removed |
 | [4.4.0](changelog/4.x/ver4.4.x.md#440---2026-10-13-admin-automation-bulk-actions-smoother-charts) | 2026-10-13 | Admin automation, bulk actions, smoother charts |
 | [4.3.0](changelog/4.x/ver4.3.x.md#430---2026-10-10-ai-disclosure-accessibility-refreshed-catalog) | 2026-10-10 | AI disclosure, accessibility, refreshed catalog |
 | [4.2.0](changelog/4.x/ver4.2.x.md#420---2026-10-03-compact-catalog-data-themed-scrollbars) | 2026-10-03 | Compact catalog data, themed scrollbars |

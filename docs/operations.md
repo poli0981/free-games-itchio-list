@@ -8,11 +8,11 @@ secret: secrets are only ever typed into Cloudflare (`wrangler secret put`) or a
 
 | Piece | Where | What it does |
 |---|---|---|
-| Worker `free-games-itchio-list` | Cloudflare Workers, custom domain `freeitchgames.win` | Serves the built app + the catalog packs `/data/pack/*` (static assets), the readable `/data/*.json` to apps 4.0–4.1.1 only ([`legacy-data.ts`](../webapp/worker/legacy-data.ts)), `/img` (resized covers), the verification gate (`/api/verify`), `/api/suggest`, `/api/ingest`, `/api/admin/*`, `/admin`, and runs the RSS cron. Config: [`webapp/wrangler.jsonc`](../webapp/wrangler.jsonc). |
+| Worker `free-games-itchio-list` | Cloudflare Workers, custom domain `freeitchgames.win` | Serves the built app + the catalog packs `/data/pack/*` (static assets), the readable `/data/*.json` to apps 4.0–4.1.1 only ([`legacy-data.ts`](../webapp/worker/legacy-data.ts)), `/img` (resized covers), the verification gate (`/api/verify`), `/api/suggest`, `/api/admin/*`, `/admin`, and runs the RSS cron. Config: [`webapp/wrangler.jsonc`](../webapp/wrangler.jsonc). |
 | Workers Builds | Cloudflare dashboard → the Worker → Settings → Build | Builds and deploys `main` on every push (data commits included). |
 | R2 `freeitchgames-thumbs` | Cloudflare R2 | Resized WebP covers (`w160/…`, `w640/…`). |
-| D1 `freeitchgames` | Cloudflare D1 | Review queue, feed state, audit log, idempotency keys ([`webapp/worker/migrations/`](../webapp/worker/migrations)). |
-| Access apps "Admin" / "Ingest" | Cloudflare Zero Trust | Login for `/admin` + `/api/admin/*`; service token for `/api/ingest` (browser extension). |
+| D1 `freeitchgames` | Cloudflare D1 | Review queue, feed state, audit log, automation settings, followed collections ([`webapp/worker/migrations/`](../webapp/worker/migrations); the `idempotency` table of the retired ingest API stays, empty). |
+| Access app "Admin" | Cloudflare Zero Trust | Login for `/admin` + `/api/admin/*`. |
 | Turnstile widget | Cloudflare Turnstile | The verification gate in front of the web app (action `gate`) and anti-spam on `/suggest` (action `suggest`). |
 | Transform Rule "Verified bots skip the gate" | Cloudflare → Rules → Transform Rules | Adds `x-fig-known-bot: <GATE_BOT_TOKEN>` to requests from Cloudflare-verified bots, so search engines and link previews skip the gate (section 1, step 14). |
 | GitHub App | GitHub → Settings → Developer settings | The Worker's identity for commits (queue approvals, edits, removals). |
@@ -49,17 +49,15 @@ Do these once (and again with the `-staging` names for the staging Worker).
    - Access → Applications → Self-hosted **"Admin"**: `freeitchgames.win/admin`,
      `freeitchgames.win/admin/*`, `freeitchgames.win/api/admin/*`; policy *Allow* → your email(s);
      session 24 h. Copy its **AUD** tag.
-   - Self-hosted **"Ingest"**: `freeitchgames.win/api/ingest`; policy *Service Auth* → a service token
-     (Access → Service credentials) named e.g. `itch-f2p-extension`, with an expiry; copy the AUD tag.
-     The extension sends `CF-Access-Client-Id` / `CF-Access-Client-Secret`.
+   - 4.4.1 removed the browser extension's ingest API: delete the old self-hosted **"Ingest"** app
+     (`freeitchgames.win/api/ingest`) and its service token (Access → Service credentials) if they still exist.
    - Staging: one self-hosted app covering all of `staging.freeitchgames.win`.
 7. **Turnstile**: add a widget (Managed) for `freeitchgames.win` and `staging.freeitchgames.win`. The
    same widget serves the verification gate (action `gate`) and the Suggest form (action `suggest`);
    the Worker checks the token, the hostname and the action, so a token from one can't be used for
    the other.
 8. **Fill in `wrangler.jsonc` vars** (not secret) and commit: `ACCESS_TEAM_DOMAIN`
-   (`https://<team>.cloudflareaccess.com`, no trailing slash), `ACCESS_AUD_ADMIN`, `ACCESS_AUD_INGEST`,
-   `GH_APP_ID`, `GH_APP_INSTALLATION_ID`, `TURNSTILE_SITEKEY` — in both the top level and
+   (`https://<team>.cloudflareaccess.com`, no trailing slash), `ACCESS_AUD_ADMIN`, `GH_APP_ID`, `GH_APP_INSTALLATION_ID`, `TURNSTILE_SITEKEY` — in both the top level and
    `env.staging`. Then `npm run cf:types`. The production values are filled in (2026-09-18). Change
    them in the file, not only in the dashboard: every deploy — so every data commit — replaces the
    Worker's plain-text variables with the file's values. Secrets are not affected.
@@ -84,7 +82,7 @@ Do these once (and again with the `-staging` names for the staging Worker).
 12. **Zone settings**: SSL/TLS Full (strict), Always Use HTTPS, minimum TLS 1.2, TLS 1.3 on; Smart
     Tiered Cache; Browser Cache TTL "Respect existing headers"; Rocket Loader and Email Obfuscation
     **off** (they rewrite HTML and break the CSP); WAF managed rules on; one rate-limiting rule for
-    `/api/*`; Bot Fight Mode **off** (it can't be skipped for the extension or the apps; the
+    `/api/*`; Bot Fight Mode **off** (it can't be skipped for the apps; the
     verification gate covers the web app instead). Keep HSTS
     `preload` only if every subdomain (including `staging`) will always be HTTPS.
     - Measured 2026-10-03: TLS 1.0/1.1 are refused, TLS 1.3 and HTTP/3 answer, `http://` redirects
@@ -150,8 +148,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
    policies don't claim them). Rulesets: target the default branch (block deletion and force
    pushes); protect tags `v*`. Merge PRs with squash or a merge commit — never fast-forward.
 3. **Secrets**: keep `DISCORD_CI_WEBHOOK`, the release webhooks and the Android keystore secrets.
-   `GH_TOKEN`, `TELEGRAM_BOT_TOKEN` and the three `DISCUSSION_*` secrets are still set but no workflow
-   uses them any more (checked 2026-09-24): delete them.
+   `GH_TOKEN`, `TELEGRAM_BOT_TOKEN` and the three `DISCUSSION_*` secrets, which no workflow used any
+   more, were deleted on 2026-10-16.
 4. **Signing key**: the old key `03F965C2E2DB5C6B` was exposed; sign with the replacement key.
 
 ## 3. Releasing a version

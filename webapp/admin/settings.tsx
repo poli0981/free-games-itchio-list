@@ -11,7 +11,6 @@ import { Notice, type NoticeState } from './ui'
 const SOURCES: { id: CandidateSource; label: string }[] = [
   { id: 'rss', label: 'RSS discovery' },
   { id: 'form', label: 'Suggest form' },
-  { id: 'ext', label: 'Browser extension' },
 ]
 
 export function SettingsPage() {

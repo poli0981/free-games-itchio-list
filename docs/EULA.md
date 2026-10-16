@@ -1,6 +1,6 @@
 # End-User License Agreement (EULA)
 
-Last updated: 2026-10-03
+Last updated: 2026-10-16
 
 Applies from: the release of version 4.2.0.
 
@@ -82,7 +82,7 @@ You agree not to:
 
 - Present a modified build as an official release, for example by distributing it under the project's name and icon, or with the official app identifier `com.poli0981.freegamesitchio`, without clearly marking it as unofficial. Forks are welcome under the MIT License; just make it obvious they are Yours.
 - Use the Maintainer's name, the GitHub handle `poli0981`, or the alias "SkullMute" to endorse or promote derivative works without prior written permission.
-- Use the App, or a modified version of it, in a way that breaks the Website's [Terms of Use](ToS.md), for example automated bulk requests to the Website (the data is in the Repository), or attempts to reach the admin area or the ingest API without authorization.
+- Use the App, or a modified version of it, in a way that breaks the Website's [Terms of Use](ToS.md), for example automated bulk requests to the Website (the data is in the Repository), or attempts to reach the admin area without authorization.
 - Use the App or its installers to host, distribute or facilitate malware, phishing, or content that violates applicable law.
 
 These rules are about how You use the App and the project's name and services. They sit alongside the MIT License and do not limit the rights it grants over the source code.

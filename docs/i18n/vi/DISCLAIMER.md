@@ -1,6 +1,6 @@
 # Tuyên bố miễn trừ trách nhiệm (Disclaimer)
 
-Cập nhật lần cuối: 2026-10-13
+Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
@@ -33,7 +33,7 @@ Dự án hoạt động độc lập. Dự án **không liên kết với, khôn
 
 Dự án **không làm, không lưu trữ, không phân phối, không bán và không chứng thực** các game được liệt kê. Mỗi game liên kết tới trang riêng của nó trên itch.io, và mọi lượt tải về đều diễn ra tại đó, theo điều khoản của itch.io và điều khoản hoặc giấy phép riêng của người làm game.
 
-Game được đưa vào catalog qua trang Suggest công khai, tiện ích trình duyệt của Người duy trì, các RSS feed công khai của itch.io, hoặc các collection công khai trên itch.io mà Người duy trì theo dõi. Mỗi game đều được Người duy trì duyệt, từng game một hoặc qua các quy tắc tự động do Người duy trì đặt ra. Việc duyệt đó **không phải** là kiểm tra bảo mật, đánh giá chất lượng hay sự chứng thực.
+Game được đưa vào catalog qua trang Suggest công khai, các RSS feed công khai của itch.io, hoặc các collection công khai trên itch.io mà Người duy trì theo dõi. Mỗi game đều được Người duy trì duyệt, từng game một hoặc qua các quy tắc tự động do Người duy trì đặt ra. Việc duyệt đó **không phải** là kiểm tra bảo mật, đánh giá chất lượng hay sự chứng thực.
 
 ## 5. Không bảo đảm về các game
 

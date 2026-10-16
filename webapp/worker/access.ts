@@ -1,6 +1,5 @@
 /**
- * Cloudflare Access verification for /admin and /api/admin/* (maintainer) and
- * /api/ingest (service tokens, e.g. the browser extension).
+ * Cloudflare Access verification for /admin and /api/admin/* (maintainer).
  *
  * Access sits in front of those paths, but a Worker with static assets does
  * not receive `ctx.access`, and requests that bypass the zone (workers.dev,
@@ -13,14 +12,13 @@ import { createRemoteJWKSet, jwtVerify, type JWTPayload } from 'jose'
 export interface AccessEnv {
   ACCESS_TEAM_DOMAIN: string // https://<team>.cloudflareaccess.com
   ACCESS_AUD_ADMIN: string
-  ACCESS_AUD_INGEST: string
   ADMIN_EMAILS: string // comma-separated; a secret, not in the repo
   SITE_ORIGIN: string
 }
 
 export interface Identity {
-  kind: 'maintainer' | 'service'
-  /** Email for people, service-token client id (common_name) for services. */
+  kind: 'maintainer'
+  /** The maintainer's email. */
   id: string
 }
 
@@ -67,13 +65,4 @@ export async function requireMaintainer(request: Request, env: AccessEnv): Promi
     throw new AccessError('bad origin')
   }
   return { kind: 'maintainer', id: email }
-}
-
-/** A service token of the "Ingest" Access application (Service Auth policy). */
-export async function requireService(request: Request, env: AccessEnv): Promise<Identity> {
-  const payload = await verify(request, env, env.ACCESS_AUD_INGEST)
-  // Service-token JWTs carry the client id as common_name and no email.
-  const id = String(payload.common_name ?? '')
-  if (!id || payload.email) throw new AccessError('not a service token')
-  return { kind: 'service', id }
 }

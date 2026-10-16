@@ -12,7 +12,6 @@ const env = {
   SITE_ORIGIN: ORIGIN,
   ACCESS_TEAM_DOMAIN: TEAM,
   ACCESS_AUD_ADMIN: 'aud-admin',
-  ACCESS_AUD_INGEST: 'aud-ingest',
   ADMIN_EMAILS: 'owner@example.com',
   ASSETS: {
     fetch: async (req: Request) =>
@@ -73,8 +72,8 @@ describe('admin authentication', () => {
     expect(await res.text()).toBe('')
   })
 
-  it('refuses a token minted for the ingest application', async () => {
-    expect((await get('/admin/', await jwt('owner@example.com', 'aud-ingest'))).status).toBe(403)
+  it('refuses a token minted for another Access application', async () => {
+    expect((await get('/admin/', await jwt('owner@example.com', 'aud-other'))).status).toBe(403)
   })
 
   it('answers 503 until Access is configured, never serving the shell', async () => {

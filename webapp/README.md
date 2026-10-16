@@ -3,8 +3,8 @@
 One codebase for everything people see of the catalog:
 
 - the website **<https://freeitchgames.win>** — read-only for everyone (no accounts, no sign-in);
-- its **Cloudflare Worker** — image proxy, the public Suggest form, the browser-extension ingest API,
-  the admin API and the scheduled RSS discovery;
+- its **Cloudflare Worker** — image proxy, the public Suggest form, the admin API and the scheduled RSS
+  discovery;
 - the **admin** app at `/admin/` — Maintainer only, behind Cloudflare Access;
 - the **desktop and Android apps** — the same public app wrapped with Tauri 2 (see [`TAURI.md`](TAURI.md)).
 
@@ -145,7 +145,6 @@ Worker. It runs for `wrangler.jsonc` `assets.run_worker_first` (`/`, `/img/*`, `
 | `/img/<160\|640>/<path>` | [worker/img.ts](worker/img.ts) | Resized WebP covers, stored in R2; only thumbnails that are in the catalog (`/data/urls.json`), upstream fixed to `img.itch.zone` |
 | `/api/health` | [worker/index.ts](worker/index.ts) | Health check |
 | `/api/suggest` | [worker/suggest.ts](worker/suggest.ts) | Suggest form: same-origin POST, per-IP rate limit, Turnstile, canonical itch.io URL, note ≤ 500 chars |
-| `/api/ingest` | [worker/ingest.ts](worker/ingest.ts) | Browser extension: Access service token, `Idempotency-Key`, rate limit per token |
 | `/api/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin API (queue, check, add, track, edit and remove one or up to 100 games, restore, activity, settings, itch.io collections) |
 | `/admin`, `/admin/*` | [worker/admin.ts](worker/admin.ts) | Admin app shell, after the Access check |
 | `/data/*.json` (not `/data/pack/`) | [worker/legacy-data.ts](worker/legacy-data.ts) | The readable catalog JSON, passed only to apps 4.0–4.1.1 (Tauri `Origin`); everyone else gets 410 + the repository links |
@@ -156,13 +155,12 @@ Worker. It runs for `wrangler.jsonc` `assets.run_worker_first` (`/`, `/img/*`, `
 bookkeeping settles queued rows with the pipeline's ingest outcomes (queued → ingested / failed);
 [`automation.ts`](worker/automation.ts) applies the Maintainer's automatic rules (auto-approve of
 unflagged items after the waiting time, new free games of followed collections, read with
-[`collections.ts`](worker/collections.ts)) in **one** commit; then retention (idempotency records after
-7 days, Suggest notes after 180).
+[`collections.ts`](worker/collections.ts)) in **one** commit; then retention (Suggest notes after 180
+days).
 
 **Bindings**: `ASSETS`, `THUMBS` (R2 `freeitchgames-thumbs`), `DB` (D1 `freeitchgames`),
-`RL_SUGGEST` / `RL_INGEST` / `RL_GATE` (rate limits). **Vars**: `SITE_ORIGIN`, `GITHUB_REPO`, `BOT_UA`, `GH_APP_ID`,
-`GH_APP_INSTALLATION_ID`, `ACCESS_TEAM_DOMAIN`, `ACCESS_AUD_ADMIN`, `ACCESS_AUD_INGEST`,
-`TURNSTILE_SITEKEY`. **Secrets**: `GH_APP_PRIVATE_KEY`, `ADMIN_EMAILS`, `TURNSTILE_SECRET`
+`RL_SUGGEST` / `RL_GATE` (rate limits). **Vars**: `SITE_ORIGIN`, `GITHUB_REPO`, `BOT_UA`, `GH_APP_ID`,
+`GH_APP_INSTALLATION_ID`, `ACCESS_TEAM_DOMAIN`, `ACCESS_AUD_ADMIN`, `TURNSTILE_SITEKEY`. **Secrets**: `GH_APP_PRIVATE_KEY`, `ADMIN_EMAILS`, `TURNSTILE_SECRET`
 (`DEV_ADMIN_EMAIL` is for local runs only). Logs: Workers Observability, 10% head sampling.
 
 `canonical.ts` and `catalog.ts` are ports of `scripts/canonical.py` and `scripts/data_store.py` +

@@ -93,20 +93,21 @@ still gets security hardening and that we actually test on (≈87% of active dev
 
 ## Add a game
 
-There are four ways a game gets into the catalog. Each is approved by the Maintainer, one by one in the
+There are three ways a game gets into the catalog. Each is approved by the Maintainer, one by one in the
 review queue or through automatic rules the Maintainer sets.
 
 1. **Suggest page**: <https://freeitchgames.win/suggest>. Paste an itch.io game link and, if you like, a
    short note (up to 500 characters; notes are deleted after 180 days). A Cloudflare Turnstile check and a
    rate limit keep spam out. Please don't put personal data in the note.
-2. **Browser extension**: the Maintainer's own
-   [itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension) (separate repo, GPL-3.0) sends
-   links through an authenticated API while browsing itch.io.
-3. **Automatic discovery**: every 4 hours the site reads one of itch.io's public RSS feeds of new and
+2. **Automatic discovery**: every 4 hours the site reads one of itch.io's public RSS feeds of new and
    popular free games (one feed per run) and queues what it finds.
-4. **Followed collections**: the site also reads the public itch.io collections the Maintainer follows and
+3. **Followed collections**: the site also reads the public itch.io collections the Maintainer follows and
    queues their new free games directly (one removed before, or with a warning flag, goes to the review
    queue instead).
+
+The Maintainer's browser extension and the old Telegram bot are retired; their repositories
+([itch-f2p-extension](https://github.com/poli0981/itch-f2p-extension),
+[telegram-scraper-bot](https://github.com/poli0981/telegram-scraper-bot)) are archived.
 
 The Maintainer reviews the queue in a private admin area (protected by Cloudflare Access); an item
 without a warning flag that nobody rejected within a waiting time (24 hours by default) is approved
@@ -125,8 +126,7 @@ Details: [Terms of Use](docs/ToS.md) and [Disclaimer](docs/DISCLAIMER.md).
 ## How the data stays fresh
 
 ```
-Suggest page ──┐
-Extension    ──┼─→ review queue ─→ Maintainer approves ─→ scripts/temp_link.json
+Suggest page ──┬─→ review queue ─→ Maintainer approves ─→ scripts/temp_link.json
 RSS feeds    ──┘               (admin, or auto rules)         │
 Followed collections ─────────────────────────────────────────┤
                                                               ▼
@@ -162,7 +162,7 @@ The pipeline is polite to itch.io: it identifies itself as
 - **Web app** ([`webapp/src/`](webapp/src/)): React + TypeScript + Vite + Tailwind CSS, TanStack
   Query, React Router, Zustand. English and Vietnamese UI.
 - **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): serves the site and `/data`, the verification gate
-  (Cloudflare Turnstile), the image proxy (`/img`, resized WebP covers stored on Cloudflare R2), the Suggest and ingest APIs, the review queue
+  (Cloudflare Turnstile), the image proxy (`/img`, resized WebP covers stored on Cloudflare R2), the Suggest API, the review queue
   (Cloudflare D1), the admin API and the RSS discovery schedule. Config:
   [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
 - **Admin app** ([`webapp/admin/`](webapp/admin/)): the Maintainer-only review screen at `/admin`, behind
@@ -334,8 +334,9 @@ Free itch.io games catalog by poli0981 (SkullMute) — https://freeitchgames.win
 ```
 
 Third-party components keep their own licenses: see [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md) and the
-site's About page. The browser extension is a separate repo under GPL-3.0. Contributions are accepted under
-the same license as the part they change (inbound = outbound): MIT for code, CC BY 4.0 for data and docs.
+site's About page. The archived browser extension is a separate repo under GPL-3.0. Contributions are
+accepted under the same license as the part they change (inbound = outbound): MIT for code, CC BY 4.0 for
+data and docs.
 
 **Not affiliated with itch.io.** This is an independent fan project. It is not affiliated with, endorsed by,
 or sponsored by itch.io, Leaf Corcoran or itch corp. "itch.io" and all game names, logos and trademarks

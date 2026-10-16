@@ -1,8 +1,6 @@
 import { afterAll, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 import { resetDataCache } from '../data'
 import type { WorkerEnv } from '../env'
-import { HttpError } from '../http'
-import { handleIngest } from '../ingest'
 import { QueueStore } from '../queue'
 import { handleSuggest } from '../suggest'
 import { testDb } from './d1'
@@ -18,7 +16,7 @@ beforeAll(async () => {
 afterAll(() => dispose())
 beforeEach(async () => {
   resetDataCache()
-  await db.batch(['candidates', 'idempotency'].map((t) => db.prepare(`DELETE FROM ${t}`)))
+  await db.prepare('DELETE FROM candidates').run()
   store = new QueueStore(db)
 })
 
@@ -99,80 +97,5 @@ describe('POST /api/suggest', () => {
   it('is unavailable until configured', async () => {
     const res = await handleSuggest(suggestRequest({ url: 'https://dev.itch.io/x', token: 't' }), env, deps({ store: null }))
     expect(res.status).toBe(503)
-  })
-})
-
-describe('POST /api/ingest', () => {
-  const deps = (over: Partial<Parameters<typeof handleIngest>[1]> = {}) => ({
-    store,
-    data: fakeData(['https://dev.itch.io/listed']),
-    limiter: fakeLimiter(),
-    authenticate: async () => 'ext-client.access',
-    ...over,
-  })
-  const ingestRequest = (body: unknown, key = 'key-0000-0001') =>
-    new Request(`${ORIGIN}/api/ingest`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'idempotency-key': key },
-      body: typeof body === 'string' ? body : JSON.stringify(body),
-    })
-
-  it('queues items and reports each outcome, attributed to the token', async () => {
-    const res = await handleIngest(
-      ingestRequest({
-        items: [
-          { url: 'https://dev.itch.io/fresh', title: 'Fresh Demo', note: 'from a jam' },
-          { url: 'https://dev.itch.io/listed' },
-          'https://DEV.itch.io/fresh/',
-          'nope',
-        ],
-      }),
-      deps(),
-    )
-    expect(res.status).toBe(200)
-    expect(await res.json()).toEqual({
-      received: 1,
-      results: [
-        { url: 'https://dev.itch.io/fresh', canonical: 'https://dev.itch.io/fresh', outcome: 'queued' },
-        { url: 'https://dev.itch.io/listed', canonical: 'https://dev.itch.io/listed', outcome: 'duplicate_catalog' },
-        { url: 'https://DEV.itch.io/fresh/', canonical: 'https://dev.itch.io/fresh', outcome: 'duplicate_in_request' },
-        { url: 'nope', canonical: null, outcome: 'invalid_url' },
-      ],
-    })
-    const [row] = await store.get(['https://dev.itch.io/fresh'])
-    expect(row).toMatchObject({ source: 'ext', submitter: 'ext-client.access', title: 'Fresh Demo', note: 'from a jam' })
-    expect(JSON.parse(row.flags)).toEqual(['demo'])
-  })
-
-  it('replays a retry with the same key and refuses the key with another body', async () => {
-    const first = await handleIngest(ingestRequest({ urls: ['https://dev.itch.io/a'] }), deps())
-    const again = await handleIngest(ingestRequest({ urls: ['https://dev.itch.io/a'] }), deps())
-    expect(again.headers.get('idempotent-replayed')).toBe('true')
-    expect(await again.json()).toEqual(await first.json())
-    const other = await handleIngest(ingestRequest({ urls: ['https://dev.itch.io/b'] }), deps())
-    expect(other.status).toBe(422)
-  })
-
-  it.each([
-    ['no idempotency key', ingestRequest({ urls: ['https://dev.itch.io/a'] }, ''), {}, 400],
-    ['too many items', ingestRequest({ urls: Array.from({ length: 151 }, (_, i) => `https://dev.itch.io/g${i}`) }), {}, 413],
-    ['a body over 64 KB', ingestRequest({ urls: ['https://dev.itch.io/a'], pad: 'x'.repeat(70_000) }), {}, 413],
-    ['invalid JSON', ingestRequest('{nope'), {}, 400],
-    ['an empty list', ingestRequest({ items: [] }), {}, 400],
-    ['the rate limit', ingestRequest({ urls: ['https://dev.itch.io/a'] }), { limiter: fakeLimiter(0) }, 429],
-    [
-      'a failed Access check',
-      ingestRequest({ urls: ['https://dev.itch.io/a'] }),
-      {
-        authenticate: async () => {
-          throw new HttpError(403, 'forbidden')
-        },
-      },
-      403,
-    ],
-  ])('refuses %s', async (_name, request, over, status) => {
-    const res = await handleIngest(request, deps(over as Parameters<typeof deps>[0]))
-    expect(res.status).toBe(status)
-    expect(await store.counts()).toMatchObject({ pending: 0 })
   })
 })

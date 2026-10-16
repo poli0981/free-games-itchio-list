@@ -18,7 +18,7 @@ const STATUSES: { id: CandidateStatus; label: string }[] = [
   { id: 'ingested', label: 'Ingested' },
 ]
 
-const SOURCE: Record<Candidate['source'], string> = { rss: 'RSS', form: 'Suggest form', ext: 'Extension', admin: 'Admin' }
+const SOURCE: Record<Candidate['source'], string> = { rss: 'RSS', form: 'Suggest form', admin: 'Admin' }
 
 const FLAG: Record<string, { label: string; variant: 'destructive' | 'secondary' | 'outline' }> = {
   previously_deleted: { label: 'previously removed', variant: 'destructive' },
@@ -226,7 +226,7 @@ export function QueuePage() {
                 </td>
                 <td className="py-2 text-xs text-muted-foreground">
                   {source(c)}
-                  {c.submitter && c.source !== 'form' && c.source !== 'admin' && <div>{c.submitter}</div>}
+                  {c.submitter && c.source === 'rss' && <div>{c.submitter}</div>}
                   {c.decided_by === 'auto' && <div>approved automatically</div>}
                 </td>
                 <td className="py-2 text-xs tabular-nums text-muted-foreground">{c.discovered_at.slice(0, 10)}</td>

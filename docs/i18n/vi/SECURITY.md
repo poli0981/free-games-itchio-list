@@ -1,6 +1,6 @@
 # Chính sách bảo mật (Security Policy)
 
-Cập nhật lần cuối: 2026-09-29
+Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
@@ -26,7 +26,7 @@ Một báo cáo tốt nên có:
 
 **Trong phạm vi**
 
-- Website https://freeitchgames.win và Cloudflare Worker của nó, bao gồm proxy ảnh (`/img`), API Suggest (`/api/suggest`), API ingest mà tiện ích trình duyệt của Người duy trì sử dụng (`/api/ingest`), cùng ứng dụng và API quản trị (`/admin`, `/api/admin`).
+- Website https://freeitchgames.win và Cloudflare Worker của nó, bao gồm proxy ảnh (`/img`), API Suggest (`/api/suggest`), cùng ứng dụng và API quản trị (`/admin`, `/api/admin`).
 - Pipeline dữ liệu (`scripts/`) và các workflow GitHub Actions (`.github/workflows/`).
 - Các ứng dụng desktop và file APK Android được phát hành trên [GitHub Releases](https://github.com/poli0981/free-games-itchio-list/releases).
 - Dữ liệu được công bố (`data_game/`, `scripts/deleted_games.json` và https://freeitchgames.win/data) — ví dụ: một cách đưa nội dung vào catalog mà không cần Người duy trì phê duyệt.
@@ -39,7 +39,7 @@ Một báo cáo tốt nên có:
 - Tấn công từ chối dịch vụ theo lưu lượng (DoS/DDoS) và kiểm thử tải.
 - Báo cáo từ công cụ quét tự động mà không có proof of concept chạy được.
 
-Tiện ích trình duyệt (poli0981/itch-f2p-extension) nằm trong repository riêng; lỗi của chính tiện ích xin báo ở đó. Lỗi trong API ingest mà tiện ích kết nối tới thì thuộc phạm vi ở đây.
+Tiện ích trình duyệt (poli0981/itch-f2p-extension) và Telegram bot (poli0981/telegram-scraper-bot) đã được lưu trữ (archive) và không còn được hỗ trợ, nên nằm ngoài phạm vi.
 
 ## 3. Phiên bản được hỗ trợ
 
