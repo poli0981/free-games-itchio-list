@@ -17825,5 +17825,39 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-17T08:23:53Z"
+    },
+    {
+        "url": "https://eyelessx.itch.io/until-the-stars-forget-you",
+        "name": "✦Until The Stars Forget You✦",
+        "dev": "~Eyeless",
+        "description": "“Even after the stars have forgotten your name, I never will.” You spent your entire life believing that death was the end.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 17:27 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTU2NzgzLmdpZg==/original/vn%2FvsP.gif",
+        "tags": [
+            "Psychological Horror",
+            "stalker",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-17T12:23:44Z"
     }
 ]
