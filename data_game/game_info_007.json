@@ -17859,5 +17859,95 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-17T12:23:44Z"
+    },
+    {
+        "url": "https://thiagodv.itch.io/stick-fight-arena-pre-alpha",
+        "name": "Stick Fight Arena Pre-Alpha",
+        "dev": "Thiago.dv",
+        "description": "Survive deadly hordes, unlock powerful weapons, build insane synergies, and fight to become the ultimate survivor!",
+        "genre": "Action",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 00:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTY5NzIyLmpwZw==/original/TrLVkv.jpg",
+        "tags": [
+            "Arcade",
+            "Arena Shooter",
+            "Bullet Hell",
+            "Roguelike",
+            "Singleplayer",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Touchscreen",
+            "Playstation controller"
+        ],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-17T16:24:46Z"
+    },
+    {
+        "url": "https://vectorinox.itch.io/imperium-host",
+        "name": "Imperium Host",
+        "dev": "Vectorinox",
+        "description": "Idle RPG with character collecting, stat raising, PoE style map grind.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.9",
+        "rating_count": "27",
+        "average_session": "Days or more",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzk4MzYzNDYucG5n/original/syzJHz.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Characters",
+            "Endless",
+            "Gacha",
+            "Idle",
+            "Incremental",
+            "Mouse only"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 October 2026 @ 01:40 UTC",
+        "added_at": "2026-10-17T16:24:52Z"
     }
 ]
