@@ -17566,5 +17566,110 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-16T18:43:01Z"
+    },
+    {
+        "url": "https://eliasguyd.itch.io/rooklite",
+        "name": "Rooklite",
+        "dev": "Elias Guyd",
+        "description": "Free demo of a chess roguelite: every battle is a small board inside a map that is a chessboard too.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 October 2026 @ 05:06 UTC",
+        "rating": "3.5",
+        "rating_count": "4",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTgzODE5LmdpZg==/original/grZ%2BbY.gif",
+        "tags": [
+            "Board Game",
+            "Chess",
+            "Deck Building",
+            "Minimalist",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite",
+            "Singleplayer",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Chinese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Joystick",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 October 2026 @ 03:40 UTC",
+        "added_at": "2026-10-17T04:23:44Z"
+    },
+    {
+        "url": "https://frajdagames.itch.io/fireworks-incremental",
+        "name": "Fireworks Incremental",
+        "dev": "Frajda Games",
+        "description": "Bad Wizard covered the land with a Magical Dome and the only way to destroy it is with fireworks!",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "30",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5OTg1MTk3LnBuZw==/original/NjJoF3.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Casual",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Pixel Art",
+            "Retro",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 10:06 UTC",
+        "added_at": "2026-10-17T04:23:47Z"
     }
 ]
