@@ -17671,5 +17671,159 @@
         "notes": "",
         "updated_at": "16 October 2026 @ 10:06 UTC",
         "added_at": "2026-10-17T04:23:47Z"
+    },
+    {
+        "url": "https://arcadekitten.itch.io/mit-juste",
+        "name": "Mit Juste",
+        "dev": "arcadekitten",
+        "description": "You always know just what to say",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 19:19 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjY0OTU2LnBuZw==/original/pSTclH.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Black and White",
+            "Female Protagonist",
+            "Horror",
+            "Multiple Endings",
+            "RPG Maker",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "High-contrast"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-17T08:23:43Z"
+    },
+    {
+        "url": "https://fiorane.itch.io/nadameru",
+        "name": "Nadameru",
+        "dev": "fiorane",
+        "description": "Nadameru / (Mirall_must_die) -----==+==----- Mirall is back!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 20:31 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTYwNjYyLmpwZw==/original/SWmGM8.jpg",
+        "tags": [
+            "2D",
+            "Anime",
+            "Cute",
+            "Mystery",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-17T08:23:46Z"
+    },
+    {
+        "url": "https://gi-joe424.itch.io/sinister-mister",
+        "name": "SINISTER MISTER",
+        "dev": "GI JOE424",
+        "description": "Tip: Press E to open your inventory and change your face!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 07:31 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTQwMDYxLnBuZw==/original/wsilGX.png",
+        "tags": [
+            "Creepy",
+            "Horror",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-17T08:23:50Z"
+    },
+    {
+        "url": "https://kripkode.itch.io/the-last-boba-shop",
+        "name": "the last boba tea",
+        "dev": "KripKode",
+        "description": "a game where you serve your cat customers tea",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 20:45 UTC",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwNjgxNTg1LnBuZw==/original/0ADoKb.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Indie",
+            "No AI",
+            "Romance",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-17T08:23:53Z"
     }
 ]

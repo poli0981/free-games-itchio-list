@@ -1,7 +1,7 @@
 {
-    "total_games": 3408,
+    "total_games": 3412,
     "max_per_file": 500,
-    "last_updated": "2026-10-17T04:23:47Z",
+    "last_updated": "2026-10-17T08:23:53Z",
     "files": [
         {
             "name": "game_info_001.json",
@@ -29,7 +29,7 @@
         },
         {
             "name": "game_info_007.json",
-            "count": 427
+            "count": 431
         }
     ]
 }
