@@ -18167,5 +18167,236 @@
         "notes": "",
         "updated_at": "17 October 2026 @ 16:16 UTC",
         "added_at": "2026-10-18T04:24:54Z"
+    },
+    {
+        "url": "https://cardio-pulmo.itch.io/loa-night-shift",
+        "name": "Loa - Night Shift",
+        "dev": "cardio_pulmo",
+        "description": "夜の動物病院で、何を先に診る？ 現役獣医師監修の診察アドベンチャー。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 14:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTg5MzI5LnBuZw==/original/e6lC%2F0.png",
+        "tags": [
+            "animal",
+            "Furry",
+            "japanese",
+            "medical",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T08:23:33Z"
+    },
+    {
+        "url": "https://kirinkoumori.itch.io/essays",
+        "name": "AN ESSAYS ON ESSAYS: METHODS OF INDIVIDUALISM",
+        "dev": "麒麟蝙蝠",
+        "description": "I like seeing the self.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 11:00 UTC",
+        "rating": "5.0",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTgzMTY5LmpwZw==/original/Wh3Iyw.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T08:23:35Z"
+    },
+    {
+        "url": "https://lonelynode.itch.io/killa",
+        "name": "Killa",
+        "dev": "lonelynode",
+        "description": "El quechua no está en un museo. Está en la calle de al lado, y un loro te está gritando.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 20:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTc2MTk1LnBuZw==/original/sGLQ24.png",
+        "tags": [
+            "2D",
+            "indigenous-languages",
+            "language-learning",
+            "Narrative",
+            "peru",
+            "quechua",
+            "Singleplayer",
+            "spanish"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "Spanish; Latin America",
+            "Quechua"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T08:23:39Z"
+    },
+    {
+        "url": "https://misstullie.itch.io/made-with-nostalgia",
+        "name": "Made with Nostalgia",
+        "dev": "miss tullie, cher_reii",
+        "description": "A game about making pies and reuniting with familiar faces.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 13:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTcyNDY1LmdpZg==/original/cm6npX.gif",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "baking",
+            "Cooking"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T08:23:43Z"
+    },
+    {
+        "url": "https://v-shr1.itch.io/dragon",
+        "name": "和装龍人さんの家に遊びに行こう！",
+        "dev": "SHR1",
+        "description": "3分程度の短編ノベルゲーム 「ケモゲー1week #1」参加作品",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 12:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTg1Nzc2LnBuZw==/original/ul5%2BwZ.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Fantasy",
+            "Furry",
+            "Indie",
+            "Narrative",
+            "Relaxing",
+            "Short",
+            "Singleplayer",
+            "TyranoBuilder"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T08:23:46Z"
+    },
+    {
+        "url": "https://writer31.itch.io/say-that-you-hate-me",
+        "name": "Say That You Hate Me",
+        "dev": "Writer",
+        "description": "Confronted by your fiancé who wants you to hate him?!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 06:56 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDAwMTIwLnBuZw==/original/mNEZZA.png",
+        "tags": [
+            "Fantasy",
+            "Halloween",
+            "Horror",
+            "Mystery",
+            "Psychological Horror",
+            "Romance",
+            "Short",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T08:23:50Z"
     }
 ]
