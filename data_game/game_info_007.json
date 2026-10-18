@@ -18398,5 +18398,45 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-18T08:23:50Z"
+    },
+    {
+        "url": "https://polypaw.itch.io/the-no-jumpscare-show",
+        "name": "The No Jumpscare Show",
+        "dev": "Polypaw",
+        "description": "A 100% jumpscare-free experience :)",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "216",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NzExNDkxLnBuZw==/original/VpU2ot.png",
+        "tags": [
+            "3D",
+            "Comedy",
+            "Female Protagonist",
+            "Horror",
+            "Narrative",
+            "Psychological Horror",
+            "Retro",
+            "Story Rich",
+            "Third Person"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 October 2026 @ 20:01 UTC",
+        "added_at": "2026-10-18T12:23:32Z"
     }
 ]
