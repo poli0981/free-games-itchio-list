@@ -18438,5 +18438,220 @@
         "notes": "",
         "updated_at": "17 October 2026 @ 20:01 UTC",
         "added_at": "2026-10-18T12:23:32Z"
+    },
+    {
+        "url": "https://d3emo.itch.io/patantan",
+        "name": "Patantan",
+        "dev": "D3EMO, willdionio, teannhi",
+        "description": "Find out the adorable truth behind the mysterious happenings in your home!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 20:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTg0NzMzLnBuZw==/original/Rh1mW%2F.png",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Cute",
+            "Hand-drawn",
+            "Hidden Object",
+            "Indie",
+            "No AI",
+            "Point & Click",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "GameMaker",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T16:23:30Z"
+    },
+    {
+        "url": "https://enoki-nohito.itch.io/kiminisika-dekinai",
+        "name": "きみにしかできない\"仕事\"",
+        "dev": "Enoki_nohito",
+        "description": "辱めクイズゲームです。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 17:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTk0Njc4LnBuZw==/original/VdLCq%2F.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T16:23:33Z"
+    },
+    {
+        "url": "https://husbandogoddess.itch.io/a-little-inconvenience",
+        "name": "A Little Inconvenience",
+        "dev": "HusbandoGoddess",
+        "description": "Every roadblock to you is just a little inconvenience...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "209",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMDQ4MzYxLmpwZw==/original/TIeF4m.jpg",
+        "tags": [
+            "Amare",
+            "Dating Sim",
+            "Horror",
+            "Otome",
+            "Romance",
+            "Thriller",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 13:43 UTC",
+        "added_at": "2026-10-18T16:23:36Z"
+    },
+    {
+        "url": "https://mdawg74.itch.io/unit-112",
+        "name": "Unit 112",
+        "dev": "M Dawg",
+        "description": "More than you bargained for.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 00:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDA4Nzg3LnBuZw==/original/O%2BYzHw.png",
+        "tags": [
+            "Atmospheric",
+            "Characters",
+            "Comics",
+            "Life Simulation",
+            "Management",
+            "Multiple Endings",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T16:23:38Z"
+    },
+    {
+        "url": "https://shadowflamedragn.itch.io/smoke-mirrors",
+        "name": "Smoke & Mirrors",
+        "dev": "ShadowFlameDragn, Reyfly, tdcarroll, xcl2002-png, Themoonables, Alex, arrowtothejess",
+        "description": "A diner, a detective, and a missing girl. Can you solve the case before it's too late?",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 21:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTc2Njg2LnBuZw==/original/S3GUBh.png",
+        "tags": [
+            "3D",
+            "Detective",
+            "Mystery",
+            "No AI",
+            "Noir",
+            "Pixel Art",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T16:23:40Z"
     }
 ]
