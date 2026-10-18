@@ -754,5 +754,17 @@
         "name": "Raising a Happy NEET",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-12T03:08:31Z"
+    },
+    {
+        "url": "https://chandhira2604.itch.io/sun-stars",
+        "name": "Sun & Stars",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-18T02:53:39Z"
+    },
+    {
+        "url": "https://ronnafemto.itch.io/recipe-frenzy",
+        "name": "Recipe Frenzy",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-18T02:53:43Z"
     }
 ]

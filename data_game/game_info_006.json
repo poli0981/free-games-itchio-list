@@ -1388,7 +1388,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "167",
+        "rating_count": "168",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI1MTkzNDAxLnBuZw==/original/ebgfJk.png",
@@ -5988,44 +5988,6 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-09-20T08:44:35Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://chandhira2604.itch.io/sun-stars",
-        "name": "Sun & Stars",
-        "dev": "chandhira2604",
-        "description": "Sun & Stars is a gay romance visual novel with characters and settings set in the Philippines.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "18 September 2026 @ 13:42 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMDcyNjkzLnBuZw==/original/BumvFf.png",
-        "tags": [
-            "Atmospheric",
-            "Fantasy",
-            "Furry",
-            "Gay",
-            "LGBT",
-            "Romance",
-            "Singleplayer",
-            "Slice Of Life"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-20T08:44:38Z",
-        "updated_at": "21 September 2026 @ 09:06 UTC",
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
@@ -16597,58 +16559,6 @@
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
-    },
-    {
-        "url": "https://ronnafemto.itch.io/recipe-frenzy",
-        "name": "Recipe Frenzy",
-        "dev": "Ronna Femto, Belle Rivers, Senna",
-        "description": "Prepare a meal for unexpected guests!",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "03 September 2026 @ 14:39 UTC",
-        "rating": "3.4",
-        "rating_count": "5",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzM5MTY1LnBuZw==/original/8%2Bi4KL.png",
-        "tags": [
-            "Cooking",
-            "Cozy",
-            "Cute",
-            "Food",
-            "memory",
-            "Mouse only",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "09 October 2026 @ 11:56 UTC",
-        "added_at": "2026-09-27T15:40:52Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics",
-            "Sounds"
-        ],
-        "accessibility": [
-            "Subtitles",
-            "Interactive tutorial"
-        ]
     },
     {
         "url": "https://the-blue-hatted.itch.io/fnaftheflipside",
