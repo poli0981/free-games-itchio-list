@@ -18010,5 +18010,162 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-18T00:23:36Z"
+    },
+    {
+        "url": "https://akirakani-kani.itch.io/hayasuginovel",
+        "name": "早すぎて何にも読めないノベルゲーム",
+        "dev": "AKIRAKANI_KANI",
+        "description": "ノベルゲームからノベルを引き算してみました",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 12:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTg0ODgwLnBuZw==/original/OGIHCX.png",
+        "tags": [
+            "Furry",
+            "kemono",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T04:24:35Z"
+    },
+    {
+        "url": "https://ruizukun-dev.itch.io/dictator-dating-sim",
+        "name": "DICTATOR DATING SIM",
+        "dev": "COCOLEMON",
+        "description": "Six dictators. Seven days. One interpreter.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 04:08 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzgyOTQ0LnBuZw==/original/zWnon%2F.png",
+        "tags": [
+            "Comedy",
+            "Dark Humor",
+            "Dating Sim",
+            "Otome",
+            "Parody",
+            "political",
+            "Romance",
+            "satire",
+            "Voice Acting"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T04:24:42Z"
+    },
+    {
+        "url": "https://jproductions2.itch.io/30-times-table",
+        "name": "Numberblocks - 30 Times Table",
+        "dev": "Javen Productions",
+        "description": "How well do you know your 30 times table?",
+        "genre": "Educational",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 13:02 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODE4OTgyLnBuZw==/original/QlZLcv.png",
+        "tags": [
+            "2D",
+            "Animation",
+            "jumping",
+            "Math",
+            "No AI",
+            "Non violent",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T04:24:50Z"
+    },
+    {
+        "url": "https://poprise.itch.io/drag-race-simulator",
+        "name": "Drag Race Simulator",
+        "dev": "LOVMXO",
+        "description": "Fan made",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "1.5",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTUwMzY4LnBuZw==/original/WneD4h.png",
+        "tags": [
+            "Comedy",
+            "fashion",
+            "LGBTQIA",
+            "Life Simulation",
+            "Meaningful Choices",
+            "Queer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 October 2026 @ 16:16 UTC",
+        "added_at": "2026-10-18T04:24:54Z"
     }
 ]
