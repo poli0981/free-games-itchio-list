@@ -17949,5 +17949,45 @@
         "notes": "",
         "updated_at": "17 October 2026 @ 01:40 UTC",
         "added_at": "2026-10-17T16:24:52Z"
+    },
+    {
+        "url": "https://superkuo.itch.io/dont-touch-that-chest",
+        "name": "Don't touch that chest!",
+        "dev": "Cuong Nguyen",
+        "description": "A stubborn dwarf, a sarcastic sorcerer, and a chest best left untouched.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 03:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTU0ODU1LmpwZw==/original/gaRDCQ.jpg",
+        "tags": [
+            "Comedy",
+            "Fantasy",
+            "Short",
+            "Story Rich",
+            "Twine"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-18T00:23:36Z"
     }
 ]
