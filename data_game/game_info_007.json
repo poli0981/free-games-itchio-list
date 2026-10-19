@@ -19048,5 +19048,92 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-19T08:24:03Z"
+    },
+    {
+        "url": "https://baldigaming99.itch.io/geometry-dash-220922091-apkandpc",
+        "name": "Geometry Dash 2.209/2.2091 (APK and PC).",
+        "dev": "baldigaming99",
+        "description": "geometry dash",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 16:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDM5MzkwLnBuZw==/original/pcidUn.png",
+        "tags": [
+            "2D",
+            "gd",
+            "geometry-dash",
+            "geometrydash",
+            "newest",
+            "No AI",
+            "Singleplayer",
+            "viral"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T12:23:36Z"
+    },
+    {
+        "url": "https://lifeofboris.itch.io/boristan",
+        "name": "Boristan (playtest)",
+        "dev": "lifeofboris",
+        "description": "Free playtest until Tue 20 Oct, 20:00. The build stops working after that.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 17:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [
+            "Comedy",
+            "Co-op",
+            "Driving",
+            "First-Person",
+            "Funny",
+            "Low-poly",
+            "Multiplayer",
+            "Open World",
+            "Retro",
+            "soviet"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T12:23:40Z"
     }
 ]
