@@ -18591,5 +18591,462 @@
         "notes": "",
         "updated_at": "18 October 2026 @ 17:33 UTC",
         "added_at": "2026-10-19T04:23:32Z"
+    },
+    {
+        "url": "https://bombacatdev.itch.io/yandere-sim",
+        "name": "¡Mi compañero de trabajo terminó siendo mi extorsionador!",
+        "dev": "BombaCat Games",
+        "description": "​Visual novel propuesta para la WGJ 2026",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 20:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ0MjA1LnBuZw==/original/xshN5d.png",
+        "tags": [
+            "Female Protagonist",
+            "Short",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:31Z"
+    },
+    {
+        "url": "https://demo0606.itch.io/aholeinmywall",
+        "name": "A Hole In My Wall",
+        "dev": "Demo",
+        "description": "A very short visual novel about having a hole in your wall and trying to ignore the hole in your wall.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 14:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTQxNjY1LnBuZw==/original/EwWVUM.png",
+        "tags": [
+            "Horror",
+            "Multiple Endings",
+            "No AI",
+            "Short",
+            "weird"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:34Z"
+    },
+    {
+        "url": "https://eturnalove.itch.io/villainess-malfoy",
+        "name": "The Villainess Malfoy : Malfoid dating sim",
+        "dev": "Eturnalove",
+        "description": "** Only the prologue and Episode 1 are currently available.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 15:22 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDIzMDk5LnBuZw==/original/SnLTtW.png",
+        "tags": [
+            "Anime",
+            "choices-matter",
+            "Dating Sim",
+            "Fangame",
+            "Fantasy",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Korean"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:38Z"
+    },
+    {
+        "url": "https://jiufoduck.itch.io/recycle-yourself",
+        "name": "Recycle Yourself",
+        "dev": "Jiufoduck",
+        "description": "RECYCLE YOURSELF An unfinished game character gets thrown into the Recycle Bin.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 15:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDMwMzAwLnBuZw==/original/WkFjao.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Cute",
+            "Godot"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:40Z"
+    },
+    {
+        "url": "https://junkfoode0.itch.io/synthesis",
+        "name": "Synthesis汉化版",
+        "dev": "丘脑网状核",
+        "description": "《女神异闻录5》JOKER×CROW的同人视觉小说。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 13:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDI0MjQ4LnBuZw==/original/RqvqUC.png",
+        "tags": [
+            "Fangame",
+            "persona",
+            "persona-5"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:43Z"
+    },
+    {
+        "url": "https://kelebeksiron.itch.io/paperweight",
+        "name": "Paperweight",
+        "dev": "Kelebek, RoderOne, MagpieWing",
+        "description": "A manipulative internal voice in a world that won't stop asking. Feel the physical weight of 'No' in a 2D-in-3D world.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 12:54 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDI3MDIyLnBuZw==/original/1gVZ2n.png",
+        "tags": [
+            "Indie",
+            "women"
+        ],
+        "platforms": [
+            "HTML5",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:46Z"
+    },
+    {
+        "url": "https://micpp.itch.io/loss-and-freedom",
+        "name": "Loss And Freedom",
+        "dev": "Millie Squilly",
+        "description": "a visual novel about a breakup and the subsequent events",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 10:13 UTC",
+        "rating": "4.9",
+        "rating_count": "8",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDIyMjE2LnBuZw==/original/M2s46I.png",
+        "tags": [
+            "Decker",
+            "Lesbian"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:48Z"
+    },
+    {
+        "url": "https://pamkat444.itch.io/no-se-habla-de-los-cuerpitos",
+        "name": "¡No Se Habla de los Cuerpitos!",
+        "dev": "Pamela Lanfranco, Nato.flr, SoupTonic",
+        "description": "Una estudiante de secundario enfrenta las reglas de su nueva escuela",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 18:06 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDM5NTM2LnBuZw==/original/c3ToqD.png",
+        "tags": [
+            "2D",
+            "Dark",
+            "Female Protagonist",
+            "Godot",
+            "Narrative",
+            "No AI",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "Spanish; Castilian",
+            "Spanish; Latin America"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:51Z"
+    },
+    {
+        "url": "https://queencontract.itch.io/purple-pleasure",
+        "name": "Purple Pleasure",
+        "dev": "Queen Contract",
+        "description": "A hypnotic experience about finding your favorite color",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 18:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ0MDY1LnBuZw==/original/4R35tc.png",
+        "tags": [
+            "2D",
+            "AI Generated",
+            "Atmospheric",
+            "Casual",
+            "Cozy",
+            "hypnotic",
+            "Mouse only",
+            "Short",
+            "Simple"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:54Z"
+    },
+    {
+        "url": "https://r3v3rsecze.itch.io/john-door-the-amazing-adventure-about-openning-doors",
+        "name": "John Door: The amazing adventure about openning doors.",
+        "dev": "R3V3RSEcze",
+        "description": "In this game you get to play as a depresive alcoholic.",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 12:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDM0NjQ5LnBuZw==/original/OBeBIx.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "Horror",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:23:57Z"
+    },
+    {
+        "url": "https://rhidel.itch.io/malfoid-sim",
+        "name": "Malfoid Sim",
+        "dev": "rhidel",
+        "description": "Live seven years at Hogwarts through eight branching paths, shifting loyalties, and an optional romance with Harry.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 10:06 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTkzOTI5LnBuZw==/original/YkA%2FXb.png",
+        "tags": [
+            "academy",
+            "Anime",
+            "Dating Sim",
+            "Fangame",
+            "Multiple Endings",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:24:01Z"
+    },
+    {
+        "url": "https://slemkatt.itch.io/a-sandwich-adventure",
+        "name": "A Sandwich Adventure",
+        "dev": "SLEM, Ivy Cannonheart, Savkar06, snorkfrokenmoomin",
+        "description": "Girl shall eat sandwich",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 14:19 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDMxODMxLnBuZw==/original/iasLWG.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Fantasy",
+            "Queer",
+            "Retro",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T08:24:03Z"
     }
 ]
