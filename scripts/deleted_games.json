@@ -766,5 +766,23 @@
         "name": "Recipe Frenzy",
         "reason": "Game became paid",
         "deleted_at": "2026-10-18T02:53:43Z"
+    },
+    {
+        "url": "https://bluedragondreaming.itch.io/elemental-harmony",
+        "name": "Elemental Harmony",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-19T02:57:14Z"
+    },
+    {
+        "url": "https://writer31.itch.io/say-youll-forgive-me",
+        "name": "Say You'll Forgive Me",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-19T02:57:18Z"
+    },
+    {
+        "url": "https://lguidolin.itch.io/one-more-saturday",
+        "name": "One More Saturday",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-19T02:57:22Z"
     }
 ]

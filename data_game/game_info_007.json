@@ -5204,50 +5204,6 @@
         "updated_at": "10 October 2026 @ 16:07 UTC"
     },
     {
-        "url": "https://bluedragondreaming.itch.io/elemental-harmony",
-        "name": "Elemental Harmony",
-        "dev": "Blue Dragon AI Gaming Corner",
-        "description": "When the Cult of the Black Phoenix rises, a hero will rise to stop them...right?",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "03 October 2026 @ 16:05 UTC",
-        "rating": "4.0",
-        "rating_count": "4",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNDk2NDM4LnBuZw==/original/lJ3aQN.png",
-        "tags": [
-            "Anime",
-            "Casual",
-            "Fantasy",
-            "Indie",
-            "LGBTQIA",
-            "Pixel Art",
-            "Romance",
-            "Survivor-like"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "05 October 2026 @ 11:28 UTC",
-        "added_at": "2026-10-05T12:29:52Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Graphics",
-            "Sounds"
-        ],
-        "accessibility": []
-    },
-    {
         "url": "https://himikurokawa.itch.io/kawaii-yume-senpai",
         "name": "Kawaii Yume Senpai",
         "dev": "himikurokawa",
@@ -6783,41 +6739,6 @@
         "accessibility": []
     },
     {
-        "url": "https://writer31.itch.io/say-youll-forgive-me",
-        "name": "Say You'll Forgive Me",
-        "dev": "Writer",
-        "description": "Your Jester made a mistake. You know it. But will you have what it takes to forgive him...?",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "06 October 2026 @ 05:17 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNTcyMzA2LnBuZw==/original/DBjb7L.png",
-        "tags": [
-            "Fantasy",
-            "Horror",
-            "Psychological Horror",
-            "Romance",
-            "Yandere"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-07T08:50:27Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": [],
-        "updated_at": "09 October 2026 @ 04:23 UTC"
-    },
-    {
         "url": "https://zliiizll.itch.io/osaff",
         "name": "我们的秘密 那时花开",
         "dev": "zliiizll",
@@ -7856,49 +7777,6 @@
         "notes": "",
         "added_at": "2026-10-08T06:34:36Z",
         "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://lguidolin.itch.io/one-more-saturday",
-        "name": "One More Saturday",
-        "dev": "Leonardo Guidolin",
-        "description": "She has lived this Saturday 87 times. Every one ends with you dying. A free time-loop romance VN, 6 endings, EN/PT-BR.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "06 October 2026 @ 19:57 UTC",
-        "rating": "1.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNjA4MTI5LnBuZw==/original/xVF7LN.png",
-        "tags": [
-            "Anime",
-            "Dating Sim",
-            "DRM Free",
-            "emotional",
-            "Multiple Endings",
-            "Mystery",
-            "portuguese",
-            "Romance",
-            "Story Rich",
-            "Time Travel"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-08T06:34:38Z",
-        "ai_disclosure": "AI Assisted",
         "ai_content": [],
         "accessibility": []
     },
@@ -11088,8 +10966,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 October 2026 @ 12:42 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "4.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzU2ODUzLnBuZw==/original/OIR%2Fo9.png",
@@ -11122,7 +11000,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:27:54Z"
+        "added_at": "2026-10-12T01:27:54Z",
+        "updated_at": "13 October 2026 @ 00:21 UTC"
     },
     {
         "url": "https://csaf.itch.io/kaiju-disposal",
@@ -11133,8 +11012,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 October 2026 @ 08:21 UTC",
-        "rating": "2.7",
-        "rating_count": "3",
+        "rating": "3.5",
+        "rating_count": "12",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzQ0NzEwLnBuZw==/original/6q09Lj.png",
@@ -11180,8 +11059,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 October 2026 @ 00:38 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.9",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzE4MzU5LnBuZw==/original/j7Kaf3.png",
@@ -11216,8 +11095,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 October 2026 @ 19:08 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzU0OTg2LmpwZw==/original/IlgGNw.jpg",
@@ -11305,7 +11184,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:08Z"
+        "added_at": "2026-10-12T01:28:08Z",
+        "updated_at": "12 October 2026 @ 22:43 UTC"
     },
     {
         "url": "https://twgrow.itch.io/lab-accident",
@@ -11316,8 +11196,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 October 2026 @ 15:18 UTC",
-        "rating": "5.0",
-        "rating_count": "4",
+        "rating": "4.5",
+        "rating_count": "10",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzYyNTIwLnBuZw==/original/SJCaVj.png",
@@ -11357,8 +11237,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 01:30 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "4.5",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzA4NzEzLnBuZw==/original/RE%2FpAm.png",
@@ -11385,7 +11265,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "12 October 2026 @ 01:55 UTC",
+        "updated_at": "19 October 2026 @ 01:04 UTC",
         "added_at": "2026-10-12T01:28:14Z"
     },
     {
@@ -11397,8 +11277,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 October 2026 @ 00:08 UTC",
-        "rating": "4.3",
-        "rating_count": "3",
+        "rating": "3.8",
+        "rating_count": "9",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzM4OTY0LnBuZw==/original/MpVWuV.png",
@@ -11430,7 +11310,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:18Z"
+        "added_at": "2026-10-12T01:28:18Z",
+        "updated_at": "12 October 2026 @ 05:19 UTC"
     },
     {
         "url": "https://xotox1337.itch.io/riftmancer",
@@ -11441,8 +11322,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 20:07 UTC",
-        "rating": "3.5",
-        "rating_count": "2",
+        "rating": "4.0",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzM0MDA0LnBuZw==/original/v5Aq6F.png",
@@ -11487,7 +11368,7 @@
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 22:14 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNDg1MDMzLmpwZw==/original/L9H5NT.jpg",
@@ -11561,8 +11442,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 22:13 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzM3OTQ3LmpwZw==/original/A1KPtG.jpg",
@@ -11587,7 +11468,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:32Z"
+        "added_at": "2026-10-12T01:28:32Z",
+        "updated_at": "13 October 2026 @ 22:20 UTC"
     },
     {
         "url": "https://egot1stical.itch.io/who-killed-markiplier-vn",
@@ -11622,7 +11504,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:35Z"
+        "added_at": "2026-10-12T01:28:35Z",
+        "updated_at": "18 October 2026 @ 00:19 UTC"
     },
     {
         "url": "https://nanaroba.itch.io/the-intruder",
@@ -11665,8 +11548,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 19:44 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzMzNzc0LnBuZw==/original/%2FFxv5d.png",
@@ -11698,7 +11581,7 @@
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 16:55 UTC",
         "rating": "5.0",
-        "rating_count": "3",
+        "rating_count": "4",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzA3OTc0LmpwZw==/original/S%2FjoLF.jpg",
@@ -11733,7 +11616,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:45Z"
+        "added_at": "2026-10-12T01:28:45Z",
+        "updated_at": "14 October 2026 @ 19:37 UTC"
     },
     {
         "url": "https://scrufflesdev.itch.io/the-light-i-saw",
@@ -11810,7 +11694,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:52Z"
+        "added_at": "2026-10-12T01:28:52Z",
+        "updated_at": "15 October 2026 @ 20:23 UTC"
     },
     {
         "url": "https://zherreus.itch.io/quoryc-demo",
@@ -11842,7 +11727,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-12T01:28:55Z"
+        "added_at": "2026-10-12T01:28:55Z",
+        "updated_at": "16 October 2026 @ 07:01 UTC"
     },
     {
         "url": "https://jorotyn.itch.io/the-circle",
@@ -11853,8 +11739,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 03:26 UTC",
-        "rating": "3.2",
-        "rating_count": "5",
+        "rating": "4.1",
+        "rating_count": "18",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNTk1ODMxLnBuZw==/original/kMTlgv.png",
@@ -12082,8 +11968,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 12:42 UTC",
-        "rating": "5.0",
-        "rating_count": "3",
+        "rating": "4.9",
+        "rating_count": "46",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNTMzODMwLnBuZw==/original/SACvSh.png",
@@ -12110,7 +11996,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "11 October 2026 @ 15:03 UTC",
+        "updated_at": "18 October 2026 @ 10:26 UTC",
         "added_at": "2026-10-12T01:29:32Z"
     },
     {
@@ -12123,7 +12009,7 @@
         "publisher": "N/A",
         "release_date": "10 October 2026 @ 10:18 UTC",
         "rating": "5.0",
-        "rating_count": "4",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzA5ODU0LnBuZw==/original/tPpyac.png",
@@ -12147,7 +12033,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "11 October 2026 @ 21:07 UTC",
+        "updated_at": "18 October 2026 @ 05:01 UTC",
         "added_at": "2026-10-12T01:29:36Z"
     },
     {
@@ -18128,7 +18014,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-18T04:24:50Z"
+        "added_at": "2026-10-18T04:24:50Z",
+        "updated_at": "18 October 2026 @ 16:18 UTC"
     },
     {
         "url": "https://poprise.itch.io/drag-race-simulator",
@@ -18139,8 +18026,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "1.5",
-        "rating_count": "4",
+        "rating": "2.2",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTUwMzY4LnBuZw==/original/WneD4h.png",
@@ -18216,7 +18103,7 @@
         "publisher": "N/A",
         "release_date": "17 October 2026 @ 11:00 UTC",
         "rating": "5.0",
-        "rating_count": "13",
+        "rating_count": "15",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTgzMTY5LmpwZw==/original/Wh3Iyw.jpg",
@@ -18232,7 +18119,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-18T08:23:35Z"
+        "added_at": "2026-10-18T08:23:35Z",
+        "updated_at": "18 October 2026 @ 22:39 UTC"
     },
     {
         "url": "https://lonelynode.itch.io/killa",
@@ -18370,7 +18258,7 @@
         "publisher": "N/A",
         "release_date": "17 October 2026 @ 06:56 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDAwMTIwLnBuZw==/original/mNEZZA.png",
@@ -18409,7 +18297,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "216",
+        "rating_count": "218",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5NzExNDkxLnBuZw==/original/VpU2ot.png",
@@ -18561,7 +18449,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "18 October 2026 @ 13:43 UTC",
+        "updated_at": "19 October 2026 @ 01:40 UTC",
         "added_at": "2026-10-18T16:23:36Z"
     },
     {
@@ -18613,7 +18501,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-18T16:23:38Z"
+        "added_at": "2026-10-18T16:23:38Z",
+        "updated_at": "19 October 2026 @ 02:36 UTC"
     },
     {
         "url": "https://shadowflamedragn.itch.io/smoke-mirrors",
