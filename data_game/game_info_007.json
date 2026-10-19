@@ -19325,5 +19325,154 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-19T16:23:49Z"
+    },
+    {
+        "url": "https://ackleyrc.itch.io/bridgemancer",
+        "name": "The BridgeMancer",
+        "dev": "Robert Ackley, Soreiany Khong, Andrew Hermus, R0nnie, HoningStoneArt, Acedio, Erink, InKahootsMS",
+        "description": "A wholesome puzzle adventure in Bridgemancy",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDQzMTgxLnBuZw==/original/ZVLam%2F.png",
+        "tags": [
+            "3D",
+            "Casual",
+            "Cute",
+            "Fantasy",
+            "Female Protagonist",
+            "Low-poly",
+            "Magic",
+            "No AI",
+            "Non violent",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Touchscreen",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 October 2026 @ 04:46 UTC",
+        "added_at": "2026-10-19T20:23:34Z"
+    },
+    {
+        "url": "https://ceiravarageplayer.itch.io/other-random-games-fkfgfjjnjgndsngbnap",
+        "name": "All Of My Games!",
+        "dev": "ceiravarageplayer",
+        "description": "Random Games I Was Finna Post On My Youtube Channel, So If You Came From There, Download The Game Your Looking For.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 02:09 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 15:54 UTC",
+        "added_at": "2026-10-19T20:23:38Z"
+    },
+    {
+        "url": "https://just-look-ing.itch.io/burst-blackjack",
+        "name": "Burst Blackjack",
+        "dev": "Just_look_ing",
+        "description": "Blackjack where every point gives weight.",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 19:37 UTC",
+        "rating": "4.5",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ2MTczLnBuZw==/original/%2BMrFg6.png",
+        "tags": [
+            "bbw",
+            "weight-gain"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T20:23:41Z"
+    },
+    {
+        "url": "https://kaaexperienced.itch.io/hypnosnake-simulator",
+        "name": "Hypnosnake Simulator",
+        "dev": "kaaexperienced",
+        "description": "Simulator game for hypnosnakes",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 16:56 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T20:23:45Z"
     }
 ]
