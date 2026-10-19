@@ -18542,5 +18542,54 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-18T16:23:40Z"
+    },
+    {
+        "url": "https://drevengames.itch.io/idle-fantasy-shop",
+        "name": "Idle Fantasy Shop",
+        "dev": "Dreven Games",
+        "description": "A cozy idle shop in Latchford: gather, craft and watch who buys. About an hour of progression, offline progress, EN/RU.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "2.5",
+        "rating_count": "4",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5ODM1OTg2LnBuZw==/original/96VJnR.png",
+        "tags": [
+            "Cozy",
+            "Crafting",
+            "Economy",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Management",
+            "resource-management",
+            "Trading",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 17:33 UTC",
+        "added_at": "2026-10-19T04:23:32Z"
     }
 ]
