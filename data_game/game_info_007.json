@@ -19135,5 +19135,195 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-19T12:23:40Z"
+    },
+    {
+        "url": "https://antpunch.itch.io/memloss",
+        "name": "MEM:LOSS",
+        "dev": "antpunch, cailey, Yanhao_Pei, JoaquinC, jpiamrik",
+        "description": "Can you recover what was once familiar?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 00:59 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDYwMzUwLnBuZw==/original/2F%2FAg0.png",
+        "tags": [
+            "2D",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T16:23:36Z"
+    },
+    {
+        "url": "https://littledibble.itch.io/seas-the-day",
+        "name": "Seas the Day",
+        "dev": "littledibble, Maura Placeres Rubio, bluebengall, SysaldSound",
+        "description": "Help Em Ploughy try not to drown in work aboard the Great Dette!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 00:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDUxMDY0LnBuZw==/original/b9WRbC.png",
+        "tags": [
+            "Cute",
+            "Female Protagonist",
+            "Game Jam",
+            "Indie",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "No AI",
+            "Short",
+            "Twine"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T16:23:40Z"
+    },
+    {
+        "url": "https://mediocrisis.itch.io/geeneses-game",
+        "name": "Geeneses",
+        "dev": "mediocrisis",
+        "description": "You get kidnapped by geese and must learn how to communicate Made by: Liana (medio.crisis) Tae (dnfls_d) John (agent_jam.) Sasha ( fumkle im so sorry the gui is jank :sob: :sob: :sob:",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 00:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDU5NDk3LmpwZw==/original/qdd%2Bgb.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T16:23:44Z"
+    },
+    {
+        "url": "https://melomell.itch.io/encaprichada",
+        "name": "Encaprichada",
+        "dev": "MeloMell, MG Monsivais, Maboroshi_san, pretzty, Cassandra Mei",
+        "description": "Juego creado para la WGJ 2026 En el continente de San Mexicruz, donde la magia aún habita en cada rincón, las hadas madrinas tienen la misión de ayudar a las dulces princesas a transformarse en...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 17:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDU4MTk0LnBuZw==/original/vxHZFl.png",
+        "tags": [
+            "Fantasy",
+            "wgj2026"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T16:23:46Z"
+    },
+    {
+        "url": "https://n4hobino.itch.io/into-the-dragonrealm",
+        "name": "Into The Dragonrealm",
+        "dev": "Aeron Vale",
+        "description": "Running away was an easy part",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 18:55 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQxMjA3LnBuZw==/original/bwR49J.png",
+        "tags": [
+            "Atmospheric",
+            "Coming Of Age",
+            "Cozy",
+            "Dragons",
+            "Fantasy",
+            "Furry",
+            "Gay",
+            "LGBT",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-19T16:23:49Z"
     }
 ]
