@@ -1,212 +1,5 @@
 [
     {
-        "url": "https://evertides.itch.io/when-twilight-strikes",
-        "name": "When Twilight Strikes",
-        "dev": "evertides",
-        "description": "What happens when your boss goes missing in a supernatural world? You go and find him, of course.",
-        "genre": "Interactive Fiction",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "1576",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNDQ5MzQxLnBuZw==/original/QS4rjl.png",
-        "tags": [
-            "Character Customization",
-            "Dating Sim",
-            "LGBTQIA",
-            "No AI",
-            "Romance",
-            "Story Rich",
-            "Twine"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Twine"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "05 October 2026 @ 15:50 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://qeresi.itch.io/a-tale-of-crowns",
-        "name": "A Tale of Crowns",
-        "dev": "qeresî",
-        "description": "A Middle Eastern fantasy/romance story.",
-        "genre": "Interactive Fiction",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "2968",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzQxMjQ3MDcucG5n/original/999GRB.png",
-        "tags": [
-            "Fantasy",
-            "Female Protagonist",
-            "Indie",
-            "LGBT",
-            "Narrative",
-            "Romance",
-            "Story Rich",
-            "Text based",
-            "Twine"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [
-            "Mouse",
-            "Smartphone"
-        ],
-        "made_with": [
-            "Twine"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "19 October 2026 @ 19:53 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://purplemosscollectors.itch.io/dndg",
-        "name": "Dungeons & Degenerate Gamblers",
-        "dev": "Purple Moss Collectors",
-        "description": "You've never played blackjack with cards like these!",
-        "genre": "Card Game",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "1223",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE2Mjc3NjU5LnBuZw==/original/iMrhNk.png",
-        "tags": [
-            "blackjack",
-            "Deck Building",
-            "gambling",
-            "Godot",
-            "made-in-new-zealand",
-            "Pixel Art",
-            "Roguelike",
-            "Roguelite",
-            "satire",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Aseprite",
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [
-            "One button"
-        ]
-    },
-    {
-        "url": "https://houkanshan.itch.io/nainais-recipe",
-        "name": "Nainai’s Recipe",
-        "dev": "Mai Hou, FannF",
-        "description": "A game that captures the cooking feeling in stylized visuals. A family story about how we lived together during 2020.",
-        "genre": "Simulation",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "20 May 2021 @ 04:00 UTC",
-        "rating": "4.7",
-        "rating_count": "325",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzYwMjg0NjMucG5n/original/VvHJnK.png",
-        "tags": [
-            "3D",
-            "Casual",
-            "Cooking",
-            "family",
-            "Female Protagonist",
-            "Food",
-            "Singleplayer",
-            "Story Rich"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse",
-            "Xbox controller"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 September 2026 @ 13:04 UTC",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://merthurlin.itch.io/slay-the-demon-king",
-        "name": "Slay the Demon King (ORV fangame)",
-        "dev": "Maayan, ever",
-        "description": "Fangame for Omniscient Reader's Viewpoint",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "36",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MDY5NTA3LnBuZw==/original/bgmezK.png",
-        "tags": [
-            "Fangame",
-            "Multiple Endings",
-            "Ren'Py",
-            "Romance"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "02 October 2026 @ 21:39 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://trueworldstudios.itch.io/alteredblood",
         "name": "ALTEREDBLOOD+ [DEMO]",
         "dev": "TRUEWORLD STUDIOS, scarf_",
@@ -20274,6 +20067,216 @@
         "ai_content": [
             "Graphics"
         ],
+        "accessibility": []
+    },
+    {
+        "url": "https://taveshi.itch.io/open-the-safe",
+        "name": "Open the Safe",
+        "dev": "taveshi",
+        "description": "For the Heckma Make Literally Anything Jam! Help Beth open the safe!",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA1MzI2LnBuZw==/original/RVBJDz.png",
+        "tags": [
+            "Funny",
+            "No AI",
+            "RPG Maker"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://digitalwaste.itch.io/moroz",
+        "name": "MOROZ",
+        "dev": "DigitalWaste",
+        "description": "MOROZ gonna be inside you.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyNjU1OTE5LmpwZw==/original/NM0NSe.jpg",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "First-Person",
+            "Music",
+            "Narrative",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://britishgobstopper.itch.io/i-todd",
+        "name": "I-Todd",
+        "dev": "britishgobstopper",
+        "description": "the big T is back at it again in this new installment",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAzODEyLnBuZw==/original/dvh7sJ.png",
+        "tags": [
+            "satire",
+            "scizophrenic",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://razuth.itch.io/day-xv-your-prince-is-in-another-castle",
+        "name": "Day XV : The Prince is in Another Castle",
+        "dev": "Razuth",
+        "description": "Well then...",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzkyMTQ0LnBuZw==/original/ZygoJc.png",
+        "tags": [
+            "Female Protagonist",
+            "rm2k",
+            "rpg-maker-2000"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "EasyRPG"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://gordonshamway23.itch.io/tents-at-trees",
+        "name": "Tents at Trees",
+        "dev": "gordonshamway23, WTBasil",
+        "description": "A classic tents and trees puzzle game",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjgyMzEyLnBuZw==/original/vUo%2B2L.png",
+        "tags": [
+            "2D",
+            "Colorful",
+            "Cozy",
+            "Cute",
+            "nature",
+            "No AI",
+            "Pixel Art",
+            "Relaxing",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "raylib"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://wittymods.itch.io/fs25-montreal-canadian-flag",
+        "name": "Montreal Canadian Flag",
+        "dev": "WittyMods",
+        "description": "Montreal Canadian Hockey flag PC only",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgzNjE0LnBuZw==/original/Q%2BU%2F1i.png",
+        "tags": [
+            "Farming Simulator 25"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
         "accessibility": []
     }
 ]

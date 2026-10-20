@@ -19572,5 +19572,144 @@
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
+    },
+    {
+        "url": "https://bubu07.itch.io/late-pizza-delivery",
+        "name": "Late Pizza Delivery",
+        "dev": "BubuWorks",
+        "description": "Deliver the pizza. Survive. What can go wrong?",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "218",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDMxNjg0LmpwZw==/original/juDcAW.jpg",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "Open World",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Scary",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "Czech",
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "French",
+            "Italian",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "Audacity",
+            "Paint.net"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 August 2026 @ 13:10 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ]
+    },
+    {
+        "url": "https://mourners.itch.io/yes-im-alone",
+        "name": "Yes, I'm alone.",
+        "dev": "Mourner",
+        "description": "You didn’t let anyone in… now how will you escape from HIM?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "179",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2OTYzODY5LnBuZw==/original/00CCys.png",
+        "tags": [
+            "Creepy",
+            "Fangame",
+            "No AI"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Russian"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 September 2026 @ 14:39 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://polypaw.itch.io/small-mouse-big-house",
+        "name": "Small Mouse Big House",
+        "dev": "Polypaw",
+        "description": "A tiny mouse, a huge house, and terrifying dangers in every corner.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "88",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1ODUyMTIzLmpwZw==/original/H1KAhA.jpg",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "02 September 2026 @ 21:40 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
     }
 ]

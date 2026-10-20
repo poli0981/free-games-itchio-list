@@ -1,305 +1,5 @@
 [
     {
-        "url": "https://azagamestudio.itch.io/perdita",
-        "name": "Perdita",
-        "dev": "AzaGameStudio",
-        "description": "Atmospheric story rich urban legend horror based on a true story",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.1",
-        "rating_count": "23",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIwMjg1NDUucG5n/original/uhSIRB.png",
-        "tags": [
-            "3D",
-            "First-Person",
-            "Horror",
-            "horror-games",
-            "psychological",
-            "Survival Horror"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles",
-            "Configurable controls"
-        ]
-    },
-    {
-        "url": "https://gemezl.itch.io/driving-home",
-        "name": "Driving Home",
-        "dev": "Gemezl",
-        "description": "You want to drive home, but your car is out of gas",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.1",
-        "rating_count": "135",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEwNzMzNzAwLmpwZw==/original/B6qR1o.jpg",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "Creepy",
-            "Dark",
-            "First-Person",
-            "Horror",
-            "Monsters",
-            "Retro",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 September 2026 @ 10:41 UTC",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles"
-        ]
-    },
-    {
-        "url": "https://marisa0704.itch.io/brother-hais-pho-restaurant",
-        "name": "Brother Hai's Pho Restaurant - Tiệm Phở Của Anh Hai",
-        "dev": "marisa0704",
-        "description": "Running a Vietnamese Pho restaurant is not easy",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "241",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIzNzUxOTgwLnBuZw==/original/1tpGTN.png",
-        "tags": [
-            "3D",
-            "First-Person",
-            "Godot",
-            "Horror",
-            "Multiple Endings",
-            "Retro",
-            "Story Rich"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 September 2026 @ 15:17 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://warrrkus.itch.io/stargazing-64",
-        "name": "Stargazing 64",
-        "dev": "Warkus",
-        "description": "Short Cosmic Horror Experience",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "25 October 2021 @ 16:59 UTC",
-        "rating": "4.4",
-        "rating_count": "193",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzcyODA5NjkucG5n/original/wf8zFB.png",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "First-Person",
-            "Horror",
-            "Low-poly",
-            "n64",
-            "Retro"
-        ],
-        "platforms": [
-            "Windows",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Blender",
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles"
-        ]
-    },
-    {
-        "url": "https://nannings.itch.io/terminal-flesh",
-        "name": "Terminal Flesh",
-        "dev": "Nannings",
-        "description": "Terminal Flesh is a first-person horror game that blends exploration, combat, and surreal body horror.",
-        "genre": "Survival",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.2",
-        "rating_count": "19",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Njc1MjAzLnBuZw==/original/Cuibq8.png",
-        "tags": [
-            "Atmospheric",
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "PSX (PlayStation)",
-            "Retro",
-            "Short",
-            "Singleplayer",
-            "Survival Horror",
-            "Walking simulator"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://varunramesh.itch.io/feedvid-live",
-        "name": "FeedVid Live",
-        "dev": "Varun R.",
-        "description": "You stumble upon a strange livestream.",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "1402",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyMzY2NjA0LnBuZw==/original/MqkA0l.png",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "Creepy",
-            "Escape Game",
-            "Horror",
-            "meta",
-            "Mystery",
-            "Parody",
-            "parser",
-            "Short"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux",
-            "Android"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Touchscreen"
-        ],
-        "made_with": [
-            "Blender",
-            "Three.js"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 September 2026 @ 16:08 UTC",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://tayodevgames.itch.io/revenge-janethekiller",
-        "name": "Revenge: Jane The Killer",
-        "dev": "tayoDEV",
-        "description": "Jane The Killer Game",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "33",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEzNjY0ODUwLnBuZw==/original/6P%2BODV.png",
-        "tags": [
-            "3D",
-            "creepypasta",
-            "Horror",
-            "jane-the-killer",
-            "jeff-the-killer",
-            "Unity"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://red-rabbit-games.itch.io/bonniegameletsgo",
         "name": "Five Nights at Bonnies Remastered",
         "dev": "Red Rabbit Games",
@@ -20026,6 +19726,299 @@
         "notes": "",
         "ai_disclosure": "N/A",
         "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://yoi-machi-studio.itch.io/hana-neon-petals",
+        "name": "HANA: Neon Petals",
+        "dev": "Yoi-machi Studio",
+        "description": "This is a visual novel game based on the traditional Japanese card game, Hanafuda.",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTUyMjg0LnBuZw==/original/Vb0YmH.png",
+        "tags": [
+            "Atmospheric",
+            "Cute",
+            "Cyberpunk",
+            "Godot",
+            "hanafuda",
+            "japanese",
+            "Neon",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://dofugames.itch.io/dig-dan-dig",
+        "name": "Dig Dan Dig!",
+        "dev": "Dofu Games",
+        "description": "Incremental mining game. Transform yourself beyond human limits to escape the underground!",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "242",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NDY0MTU5LnBuZw==/original/Q%2FVnMK.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Casual",
+            "Incremental",
+            "Minimalist",
+            "mining",
+            "Pixel Art",
+            "Relaxing",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Chinese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 September 2026 @ 16:29 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://scythevr.itch.io/project-onyx",
+        "name": "Project Onyx Reborn",
+        "dev": "scythevr",
+        "description": "Project Onyx Reborn is a modded gtag copy with long arms, and more to come!",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4ODk1NjEwLnBuZw==/original/aRWvZ0.png",
+        "tags": [
+            "Gorilla Tag",
+            "Virtual Reality (VR)"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://newbiegamer.itch.io/no-answer",
+        "name": "No Answer",
+        "dev": "NewbieGamer",
+        "description": "An endless hallway with no answer.",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzU2Nzc2LnBuZw==/original/18IgwY.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Psychological Horror",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://wiud.itch.io/the-beans-theif",
+        "name": "The Beans Theif",
+        "dev": "wiud",
+        "description": "Reclaim your stolen beans.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzU2MjExLnBuZw==/original/ojjD%2FI.png",
+        "tags": [
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Low-poly",
+            "Parody",
+            "Pixel Art",
+            "PSX (PlayStation)",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://fireeeacceee.itch.io/sunbreaker",
+        "name": "SunBreaker",
+        "dev": "Fireeeacceee",
+        "description": "WASD- to move Left mouse- to shoot spacebar- to jump left shift- to dash",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzYzNDI0LnBuZw==/original/VOiCpo.png",
+        "tags": [
+            "3D",
+            "First-Person"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://nurathirahnorhisam.itch.io/csc-530-app-learning",
+        "name": "CSC 530 App Learning",
+        "dev": "NURATHIRAHNORHISAM",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzYzMzY5LnBuZw==/original/aEmwFR.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://steveomatic.itch.io/thornwood-acres",
+        "name": "Thornwood Acres",
+        "dev": "Steveomatic",
+        "description": "The land remembers. So do they.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzU5NzM0LnBuZw==/original/0VCj8E.png",
+        "tags": [
+            "Atmospheric",
+            "Dark",
+            "Farming",
+            "Gothic",
+            "Multiple Endings",
+            "Mystery",
+            "Otome",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Text"
+        ],
         "accessibility": []
     }
 ]

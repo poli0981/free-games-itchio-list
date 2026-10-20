@@ -1,215 +1,5 @@
 [
     {
-        "url": "https://taveshi.itch.io/open-the-safe",
-        "name": "Open the Safe",
-        "dev": "taveshi",
-        "description": "For the Heckma Make Literally Anything Jam! Help Beth open the safe!",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "6",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDA1MzI2LnBuZw==/original/RVBJDz.png",
-        "tags": [
-            "Funny",
-            "No AI",
-            "RPG Maker"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://digitalwaste.itch.io/moroz",
-        "name": "MOROZ",
-        "dev": "DigitalWaste",
-        "description": "MOROZ gonna be inside you.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIyNjU1OTE5LmpwZw==/original/NM0NSe.jpg",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "First-Person",
-            "Music",
-            "Narrative",
-            "PSX (PlayStation)",
-            "Psychological Horror",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://britishgobstopper.itch.io/i-todd",
-        "name": "I-Todd",
-        "dev": "britishgobstopper",
-        "description": "the big T is back at it again in this new installment",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAzODEyLnBuZw==/original/dvh7sJ.png",
-        "tags": [
-            "satire",
-            "scizophrenic",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://razuth.itch.io/day-xv-your-prince-is-in-another-castle",
-        "name": "Day XV : The Prince is in Another Castle",
-        "dev": "Razuth",
-        "description": "Well then...",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "3",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzkyMTQ0LnBuZw==/original/ZygoJc.png",
-        "tags": [
-            "Female Protagonist",
-            "rm2k",
-            "rpg-maker-2000"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "EasyRPG"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://gordonshamway23.itch.io/tents-at-trees",
-        "name": "Tents at Trees",
-        "dev": "gordonshamway23, WTBasil",
-        "description": "A classic tents and trees puzzle game",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "3",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MjgyMzEyLnBuZw==/original/vUo%2B2L.png",
-        "tags": [
-            "2D",
-            "Colorful",
-            "Cozy",
-            "Cute",
-            "nature",
-            "No AI",
-            "Pixel Art",
-            "Relaxing",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Gamepad (any)"
-        ],
-        "made_with": [
-            "raylib"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://wittymods.itch.io/fs25-montreal-canadian-flag",
-        "name": "Montreal Canadian Flag",
-        "dev": "WittyMods",
-        "description": "Montreal Canadian Hockey flag PC only",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzgzNjE0LnBuZw==/original/Q%2BU%2F1i.png",
-        "tags": [
-            "Farming Simulator 25"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://s-xavier-uy.itch.io/hero-society",
         "name": "Hero Society",
         "dev": "S Xavier Uy",
@@ -19891,6 +19681,306 @@
             "Adobe After Effects",
             "FL Studio"
         ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://azagamestudio.itch.io/perdita",
+        "name": "Perdita",
+        "dev": "AzaGameStudio",
+        "description": "Atmospheric story rich urban legend horror based on a true story",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.1",
+        "rating_count": "23",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMjg1NDUucG5n/original/uhSIRB.png",
+        "tags": [
+            "3D",
+            "First-Person",
+            "Horror",
+            "horror-games",
+            "psychological",
+            "Survival Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Configurable controls"
+        ]
+    },
+    {
+        "url": "https://gemezl.itch.io/driving-home",
+        "name": "Driving Home",
+        "dev": "Gemezl",
+        "description": "You want to drive home, but your car is out of gas",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.1",
+        "rating_count": "135",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwNzMzNzAwLmpwZw==/original/B6qR1o.jpg",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "First-Person",
+            "Horror",
+            "Monsters",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 September 2026 @ 10:41 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
+    },
+    {
+        "url": "https://marisa0704.itch.io/brother-hais-pho-restaurant",
+        "name": "Brother Hai's Pho Restaurant - Tiệm Phở Của Anh Hai",
+        "dev": "marisa0704",
+        "description": "Running a Vietnamese Pho restaurant is not easy",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "241",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNzUxOTgwLnBuZw==/original/1tpGTN.png",
+        "tags": [
+            "3D",
+            "First-Person",
+            "Godot",
+            "Horror",
+            "Multiple Endings",
+            "Retro",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 September 2026 @ 15:17 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://warrrkus.itch.io/stargazing-64",
+        "name": "Stargazing 64",
+        "dev": "Warkus",
+        "description": "Short Cosmic Horror Experience",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2021 @ 16:59 UTC",
+        "rating": "4.4",
+        "rating_count": "193",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzcyODA5NjkucG5n/original/wf8zFB.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "First-Person",
+            "Horror",
+            "Low-poly",
+            "n64",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Blender",
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ]
+    },
+    {
+        "url": "https://nannings.itch.io/terminal-flesh",
+        "name": "Terminal Flesh",
+        "dev": "Nannings",
+        "description": "Terminal Flesh is a first-person horror game that blends exploration, combat, and surreal body horror.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "19",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Njc1MjAzLnBuZw==/original/Cuibq8.png",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "Survival Horror",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://varunramesh.itch.io/feedvid-live",
+        "name": "FeedVid Live",
+        "dev": "Varun R.",
+        "description": "You stumble upon a strange livestream.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "1402",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyMzY2NjA0LnBuZw==/original/MqkA0l.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Escape Game",
+            "Horror",
+            "meta",
+            "Mystery",
+            "Parody",
+            "parser",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Blender",
+            "Three.js"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 September 2026 @ 16:08 UTC",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://tayodevgames.itch.io/revenge-janethekiller",
+        "name": "Revenge: Jane The Killer",
+        "dev": "tayoDEV",
+        "description": "Jane The Killer Game",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "33",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzNjY0ODUwLnBuZw==/original/6P%2BODV.png",
+        "tags": [
+            "3D",
+            "creepypasta",
+            "Horror",
+            "jane-the-killer",
+            "jeff-the-killer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
         "safe_virus": "?",
         "notes": "",
         "ai_disclosure": "N/A",

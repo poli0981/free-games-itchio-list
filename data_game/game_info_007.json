@@ -1,932 +1,5 @@
 [
     {
-        "url": "https://ayaah.itch.io/clean-page",
-        "name": "Clean Page",
-        "dev": "aya",
-        "description": "You can always start anew. You will always have another chapter—a clean page.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 20:22 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzUxNTQ0LnBuZw==/original/%2BhGbWZ.png",
-        "tags": [
-            "No AI",
-            "self"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:34:56Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://azurextwilight.itch.io/praise-be-evangeline",
-        "name": "Praise Be Evangeline",
-        "dev": "azureXtwilight, Naoimh \"Storm\" Murchan, OTOJANG Games, CyborgNekoSica, Jay Cards, puyoo, ratifuu_, S.B.Hunter / Eggy Sebby, Jason Hall, Sophie Nyx, Thread-theocracy, mistershins",
-        "description": "Praise be the Saintess, long may she reign. Leaving eternal smiles in place of our pain.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 07:24 UTC",
-        "rating": "4.9",
-        "rating_count": "19",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzUwMjE3LmdpZg==/original/yJC7xJ.gif",
-        "tags": [
-            "Fairy Tale",
-            "Female Protagonist",
-            "Horror",
-            "Multiple Endings",
-            "No AI",
-            "Romance",
-            "Voice Acting",
-            "Yandere"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:00Z",
-        "updated_at": "02 October 2026 @ 11:53 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://c-hizzle.itch.io/headspace",
-        "name": "Headspace",
-        "dev": "C_Hizzle",
-        "description": "A bizzare narrative platformer...thing",
-        "genre": "Platformer",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 22:29 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzU0OTMyLnBuZw==/original/lhRfnI.png",
-        "tags": [
-            "2D",
-            "Comedy",
-            "Narrative",
-            "No AI",
-            "Short"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:04Z",
-        "updated_at": "01 October 2026 @ 06:41 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://cabindraws.itch.io/10-seconds-to-die",
-        "name": "10 Seconds to Die!",
-        "dev": "CabinDraws",
-        "description": "a game of bad endings",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 23:09 UTC",
-        "rating": "3.3",
-        "rating_count": "3",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzU1NTU5LnBuZw==/original/UiZEEu.png",
-        "tags": [
-            "Anime",
-            "Female Protagonist",
-            "Horror",
-            "Multiple Endings",
-            "Point & Click",
-            "Short"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:07Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://helloworld261.itch.io/cursed",
-        "name": "Cursed: a tale between 2 worlds",
-        "dev": "HelloWorld261, Kuboid, 4nr1ck, MiiJack, RohyfuturBillionaire, Dramsyyyyy, Antalia, Kantohasina, Heninkaja, Tsiky",
-        "description": "A wicked story between a sick girl and a cursed monster.",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "30 September 2026 @ 18:26 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNDAyMzgyLnBuZw==/original/GraX63.png",
-        "tags": [
-            "Fantasy",
-            "Female Protagonist",
-            "Horror",
-            "Mystery",
-            "No AI",
-            "Romance"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:10Z",
-        "updated_at": "30 September 2026 @ 18:40 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://kapei.itch.io/eclipse-child",
-        "name": "Eclipse Child",
-        "dev": "kapei, mershontrev, plutoniuhm, Lutile12",
-        "description": "If a god child crashes through your roof do NOT go back to sleep!",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 04:15 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzYxMDI4LnBuZw==/original/8hEgBp.png",
-        "tags": [
-            "Atmospheric",
-            "Fantasy",
-            "First-Person",
-            "Multiple Endings",
-            "Narrative",
-            "Pixel Art",
-            "Short"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:12Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://narathin.itch.io/starlancers",
-        "name": "Star Lancers",
-        "dev": "Narathin",
-        "description": "a racing roguelike visual novel",
-        "genre": "Racing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 05:16 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzYzODUzLnBuZw==/original/J1gUCV.png",
-        "tags": [
-            "Roguelike",
-            "Singleplayer"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:15Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "updated_at": "12 October 2026 @ 00:38 UTC"
-    },
-    {
-        "url": "https://raveglitch.itch.io/izzy-and-dizzys-forest-day-busy",
-        "name": "Izzy and Dizzys Forest Day Busy",
-        "dev": "raveglitch",
-        "description": "berry simulator?",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 14:07 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "A few minutes",
-        "nsfw": "Yes",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzM4ODUxLnBuZw==/original/v6PYXK.png",
-        "tags": [
-            "2D",
-            "Furry",
-            "Ren'Py"
-        ],
-        "platforms": [
-            "Windows",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:19Z",
-        "updated_at": "04 October 2026 @ 19:33 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://theironwill1014.itch.io/the-roche-limit",
-        "name": "The Roche Limit",
-        "dev": "theironwill1014",
-        "description": "A Murder Mystery of Galactic Proportions",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 02:19 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzYwMzY5LnBuZw==/original/C%2BtAX8.png",
-        "tags": [
-            "Casual",
-            "Horror",
-            "Indie",
-            "Narrative",
-            "No AI",
-            "Story Rich"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:49Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://urban1098.itch.io/healthy-family-simulator",
-        "name": "Healthy Family Simulator",
-        "dev": "urban1098",
-        "description": "A tiny healing game about being loved. Spill the milk. Nobody yells.",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 17:00 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzQ1OTY1LnBuZw==/original/eQFJWb.png",
-        "tags": [
-            "Casual",
-            "Cozy",
-            "Cute",
-            "emotional",
-            "family",
-            "healing",
-            "Relaxing",
-            "Short",
-            "Wholesome"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T02:35:53Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics",
-            "Sounds",
-            "Text"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://belsgames.itch.io/parasomnia-no-rem",
-        "name": "Parasomnia: No REM",
-        "dev": "BELS Games",
-        "description": "First-Person psychological horror game",
-        "genre": "Survival",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "72",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMxMjE0LnBuZw==/original/FEmDd3.png",
-        "tags": [
-            "3D",
-            "Creepy",
-            "Dark",
-            "Exploration",
-            "First-Person",
-            "Horror",
-            "Indie",
-            "Psychological Horror",
-            "Unity"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "Czech",
-            "German",
-            "English",
-            "Spanish; Latin America",
-            "French",
-            "Hungarian",
-            "Japanese",
-            "Korean",
-            "Polish",
-            "Portuguese (Brazil)",
-            "Romanian Moldavian Moldovan",
-            "Russian",
-            "Turkish",
-            "Ukrainian",
-            "Chinese (Simplified)",
-            "Chinese (Traditional)"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "14 October 2026 @ 14:46 UTC",
-        "added_at": "2026-09-30T08:27:20Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles"
-        ]
-    },
-    {
-        "url": "https://furkanfs.itch.io/atom-by-atom",
-        "name": "Atom By Atom",
-        "dev": "Inner Core Studios",
-        "description": "Build a chemistry factory in space: extract elements, route matter, bond molecules, and feed a hungry black hole.",
-        "genre": "Simulation",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "10 September 2026 @ 15:04 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5ODk3MjA1LnBuZw==/original/5Thpe3.png",
-        "tags": [
-            "Automation",
-            "Management",
-            "Minimalist",
-            "Procedural Generation",
-            "Sandbox",
-            "Sci-fi",
-            "Singleplayer",
-            "Space"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Godot"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "20 September 2026 @ 20:11 UTC",
-        "added_at": "2026-09-30T08:27:23Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://minari-kr.itch.io/zzuk-zzuk-nyang",
-        "name": "Zzuk_Zzuk_Nyang",
-        "dev": "Minari-KR",
-        "description": "[v1 - 첫 번째 빌드] 한붓 그리기 퍼즐 25개 냥이를 늘려 생선에 감고 푸는 줄 퍼즐 조작 견본 카드와 진행 표시(연어 요리 아이콘) 냥이를 늘려 연결하는 타이틀 화면(게임 시작 / 게임 종료) 설정: 효과음 볼륨, 음소거, 고양이 귀 켜기/끄기 클리어 연출: 도장, 색종이, 레벨별 냥이 대사 누른 방향으로 넘어가는 화면 전환 [v2 - 두...",
-        "genre": "Puzzle",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 16:14 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNDcyODU1LnBuZw==/original/UWjHfd.png",
-        "tags": [],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T08:27:26Z",
-        "updated_at": "02 October 2026 @ 17:11 UTC",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics",
-            "Sounds",
-            "Text"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://moranthug.itch.io/ttfe",
-        "name": "To the Far East",
-        "dev": "MoranThug",
-        "description": "Complete the expedition and survive.",
-        "genre": "Card Game",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "9",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNDkxNTI5LmpwZw==/original/TDh%2FpV.jpg",
-        "tags": [
-            "2D",
-            "Board Game",
-            "Deck Building",
-            "Roguelike",
-            "Roguelite"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English",
-            "Russian"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "03 October 2026 @ 09:28 UTC",
-        "added_at": "2026-09-30T08:27:29Z",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://oribiyo.itch.io/omanekokunmofukkin",
-        "name": "おまねこ君にモフっ筋を触らせてもらうゲーム",
-        "dev": "Oribiyo",
-        "description": "このゲームはおまねこ君（ミリケモ）の二次創作ゲームになります。 おまねこ原作者：ぴここ(@tirpitz_bis)さん。 【内容】 おまねこ君に腹筋を20秒だけ触らせてもらうミニゲームです。 いい感じの速度で触るとスコアが上がります。 スコア30000以上で少しほめてくれます！ ※右下のボタンで画面全体を表示できます。 ※腹筋だけ触らせてもらってください。 This is a...",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 13:51 UTC",
-        "rating": "3.0",
-        "rating_count": "2",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzY3NzQzLnBuZw==/original/twD2JF.png",
-        "tags": [
-            "Furry"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T08:27:31Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://shibaki-dev.itch.io/ninefold",
-        "name": "Ninefold",
-        "dev": "shibaki_dev",
-        "description": "An idle cultivation game, painted in ink. Nothing is ever taken away for being away.",
-        "genre": "Simulation",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 13:21 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzczNjU5LnBuZw==/original/xutXsj.png",
-        "tags": [
-            "chinese",
-            "cultivation",
-            "Fantasy",
-            "Hand-drawn",
-            "Idle",
-            "Incremental",
-            "mobile",
-            "Relaxing",
-            "Singleplayer",
-            "xianxia"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T08:27:34Z",
-        "updated_at": "01 October 2026 @ 16:45 UTC",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Graphics",
-            "Sounds"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://spacelizardgames.itch.io/gamblin-geezers",
-        "name": "Gamblin' Geezers",
-        "dev": "Space Lizard Games",
-        "description": "Rummy roguelike in a wacky retirement home",
-        "genre": "Card Game",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "30 September 2026 @ 02:35 UTC",
-        "rating": "4.3",
-        "rating_count": "3",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMjY2MDM2LnBuZw==/original/fxqASG.png",
-        "tags": [
-            "3D",
-            "Comedy",
-            "fresh",
-            "Godot",
-            "Roguelike",
-            "Roguelite",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse",
-            "Xbox controller",
-            "Playstation controller"
-        ],
-        "made_with": [
-            "Aseprite",
-            "Godot",
-            "Inkscape",
-            "Krita"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T08:27:38Z",
-        "updated_at": "12 October 2026 @ 18:38 UTC",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": [
-            "Interactive tutorial"
-        ]
-    },
-    {
-        "url": "https://spiritusmaximus.itch.io/archeology-idle-prototype",
-        "name": "Archeology Idle Prototype",
-        "dev": "Spiritus Maximus",
-        "description": "Become an archaeologist. Explore. Dig. Discover. Research. Collect. Build your museum.",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 19:35 UTC",
-        "rating": "4.7",
-        "rating_count": "3",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzgxMDQ2LmdpZg==/original/xTk9EF.gif",
-        "tags": [
-            "2D",
-            "Cute",
-            "Economy",
-            "Idle",
-            "Incremental",
-            "Pixel Art",
-            "Prototype",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T08:27:41Z",
-        "updated_at": "01 October 2026 @ 17:34 UTC",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Sounds"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://absor4.itch.io/sensha-breakpoint",
-        "name": "Sensha Breakpoint",
-        "dev": "Oshizu",
-        "description": "A stylized tank combat game that pairs anime inspired visuals with a simulated armor and damages model.",
-        "genre": "Action",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "3",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5NTk5NDE2LnBuZw==/original/0uMtkM.png",
-        "tags": [
-            "3D",
-            "Anime",
-            "First-Person",
-            "Indie",
-            "Low-poly",
-            "Singleplayer",
-            "Tanks",
-            "Unity",
-            "Vehicles"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "13 October 2026 @ 13:36 UTC",
-        "added_at": "2026-10-01T01:08:45Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://bimicerika.itch.io/1001-vies",
-        "name": "1001 Lives",
-        "dev": "Bimi Cerika",
-        "description": "Your choices matter and change their destiny.",
-        "genre": "Interactive Fiction",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "14",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4NDQzODgwLnBuZw==/original/O0UvT5.png",
-        "tags": [
-            "Anime",
-            "Fantasy",
-            "Indie",
-            "Meaningful Choices",
-            "RPG Maker",
-            "Story Rich"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English",
-            "French"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Smartphone"
-        ],
-        "made_with": [
-            "RPG Maker",
-            "Adobe Photoshop",
-            "Clip Studio Paint"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 October 2026 @ 09:55 UTC",
-        "added_at": "2026-10-01T01:08:48Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles",
-            "Interactive tutorial"
-        ]
-    },
-    {
-        "url": "https://comfortkuma.itch.io/next-station-the-moon",
-        "name": "Next Station: The Moon [DEMO]",
-        "dev": "Comfort Kuma Studios",
-        "description": "Romance gods of death!!",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "30 September 2026 @ 15:47 UTC",
-        "rating": "4.9",
-        "rating_count": "61",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMjc5MDQ1LnBuZw==/original/6U775X.png",
-        "tags": [
-            "Amare",
-            "Dark",
-            "Dating Sim",
-            "Fantasy",
-            "Horror",
-            "Otome",
-            "Queer",
-            "Romance",
-            "Story Rich",
-            "Yandere"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-01T01:08:50Z",
-        "updated_at": "16 October 2026 @ 11:16 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://askgames.itch.io/after-me-demo",
-        "name": "After Me Demo",
-        "dev": "ASKGAMES",
-        "description": "A psychological horror the first person.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "14 September 2024 @ 19:31 UTC",
-        "rating": "4.7",
-        "rating_count": "20",
-        "average_session": "A few seconds",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE3Nzk2MDU2LnBuZw==/original/l4wfz6.png",
-        "tags": [
-            "3D",
-            "Creepy",
-            "Horror",
-            "Psychological Horror",
-            "Singleplayer",
-            "Survival Horror"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "Danish",
-            "German",
-            "English",
-            "Esperanto",
-            "Russian",
-            "Chinese"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Xbox controller"
-        ],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "29 September 2026 @ 06:11 UTC",
-        "added_at": "2026-10-01T01:08:53Z",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://chaostheorygames.itch.io/all-the-birds",
         "name": "All The Birds",
         "dev": "chaostheorygames",
@@ -20549,5 +19622,249 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-20T14:40:15Z"
+    },
+    {
+        "url": "https://ao-85.itch.io/who-is-nana",
+        "name": "WHO IS NANA?",
+        "dev": "AO 85",
+        "description": "A pixel-art horror game made in 72 hours for Ludum Dare 60 theme: Old Tech.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 04:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTExNjI5LnBuZw==/original/20y04j.png",
+        "tags": [
+            "2D",
+            "Creepy",
+            "Cute",
+            "Horror",
+            "Mystery",
+            "Pixel Art",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T16:23:35Z"
+    },
+    {
+        "url": "https://dazylude.itch.io/an-old-joke",
+        "name": "An Old Joke",
+        "dev": "DazyLude",
+        "description": "Jokes? I know jokes, yeah. A silly puzzle game about the generation gap.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 21:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDc1ODU4LnBuZw==/original/IKxFL0.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Godot",
+            "Ludum Dare 60",
+            "No AI",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot",
+            "Adobe Photoshop",
+            "Audacity",
+            "Krita",
+            "FL Studio"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T16:23:39Z"
+    },
+    {
+        "url": "https://fionafenali.itch.io/in-my-image",
+        "name": "In My Image",
+        "dev": "FionaFenali, SlimeMom420, secondshow, Pretender8",
+        "description": "A short visual novel / raising sim about cultivating a homunculus.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 01:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQwMzE3LnBuZw==/original/JFByIc.png",
+        "tags": [
+            "chicaghoul2026",
+            "Horror"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T16:23:42Z"
+    },
+    {
+        "url": "https://gdestroyer12.itch.io/teyvat-academy",
+        "name": "Teyvat Academy",
+        "dev": "Gdestroyer12",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 23:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTA0MDQ3LnBuZw==/original/bVNgZH.png",
+        "tags": [
+            "genshin-impact",
+            "Point & Click",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T16:23:44Z"
+    },
+    {
+        "url": "https://jotabot.itch.io/in-the-shadows",
+        "name": "In The Shadows",
+        "dev": "Jotabot, tooniighted, cabycat, DrSteph, Kea, itscoldmusic",
+        "description": "You're suddenly locked in an apartment building. Suspicion and distrust hang in the air.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 October 2026 @ 02:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDIwMDE3LnBuZw==/original/5Bva3z.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "suspense"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T16:23:48Z"
+    },
+    {
+        "url": "https://progdamn.itch.io/brother-hurry-and-put-the-disc-in",
+        "name": "Brother, hurry and put the disc in...",
+        "dev": "progdamn, AlcuniStrani, zagush",
+        "description": "Game about a sister who ends up into a fantasy world, and her brother, who tries to help her escape while remaining IRL",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 21:40 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDk3NjI5LnBuZw==/original/BZgm1W.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Ludum Dare 60",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T16:23:52Z"
     }
 ]
