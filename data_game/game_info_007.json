@@ -19653,5 +19653,414 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-20T04:23:38Z"
+    },
+    {
+        "url": "https://alfredo7.itch.io/dissosidate",
+        "name": "Dissocidate",
+        "dev": "AlfredusGames",
+        "description": "Dissocidate es una novela visual en donde acompañas a una chica llamada Aliza en lo que para ella es un día normal, hasta que aparece un compañero de clase llamado Arthur.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 03:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDkyNTg4LnBuZw==/original/i5zN3R.png",
+        "tags": [
+            "2D",
+            "FPS",
+            "Otome",
+            "Prototype"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:23:34Z"
+    },
+    {
+        "url": "https://basic-eagles.itch.io/recaller",
+        "name": "Recaller",
+        "dev": "basic_eagles",
+        "description": "​A game where you work as a call operator.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 11:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDU3NTkzLnBuZw==/original/c%2BmqXG.png",
+        "tags": [
+            "3D",
+            "Furry",
+            "Indie",
+            "Ludum Dare 60",
+            "No AI",
+            "Pixel Art",
+            "Psychological Horror",
+            "Retro",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:23:38Z"
+    },
+    {
+        "url": "https://danchicu.itch.io/pigeon-prompt-engineer",
+        "name": "Pigeon Prompt Engineer",
+        "dev": "Dan, Kirbcicle, unpickel, Levycheng02",
+        "description": "We decided to make a visual novel based on the idea that the Project Pigeon was a resounding success, and that, because of that, all of modern automation and technology relies on trained pigeons...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 20:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDk3MDcwLnBuZw==/original/Zbl%2F4a.png",
+        "tags": [
+            "Cozy",
+            "Cute",
+            "Hand-drawn",
+            "Narrative",
+            "No AI",
+            "office",
+            "pigeon",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:23:41Z"
+    },
+    {
+        "url": "https://dannpops.itch.io/karoshi",
+        "name": "Karoshi",
+        "dev": "dannpops, angie_disa, marivc, filoshi, Jossspsy, thisislizzy",
+        "description": "En Japón existe una palabra para morir de tanto trabajar: karoshi.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 16:09 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDM3MTk2LnBuZw==/original/Eez05A.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 04:59 UTC",
+        "added_at": "2026-10-20T08:23:45Z"
+    },
+    {
+        "url": "https://jmrcl.itch.io/in-the-shadows",
+        "name": "In The Shadows",
+        "dev": "Jotabot, tooniighted, cabycat, DrSteph, Kea, itscoldmusic",
+        "description": "You're suddenly locked in an apartment building. Suspicion and distrust hang in the air.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 October 2026 @ 02:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDIwMDE3LnBuZw==/original/5Bva3z.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "suspense"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:23:48Z"
+    },
+    {
+        "url": "https://matthewdrake.itch.io/fayonline",
+        "name": "FayOnline",
+        "dev": "Matthew Drake",
+        "description": "An interactive narrative game about the last day of a virtual pet site",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 14:36 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDgzMzg4LnBuZw==/original/9vawsK.png",
+        "tags": [
+            "Ludum Dare",
+            "Ludum Dare 60",
+            "Narrative",
+            "No AI",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:23:51Z"
+    },
+    {
+        "url": "https://mirroring-foxes-studio.itch.io/rezero-if",
+        "name": "Re:Zero IF (Gluttony Route Visual Novel)",
+        "dev": "Mirroring Foxes Studio",
+        "description": "A dark visual novel adapting the Tsugihagu (Gluttony) IF route from Re:Zero. Piece yourself together",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 21:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ4Nzk4LnBuZw==/original/9o4dgG.png",
+        "tags": [
+            "Anime",
+            "Dark Fantasy",
+            "Fangame",
+            "Psychological Horror",
+            "rezero",
+            "Singleplayer",
+            "Story Rich",
+            "subaru-natsuki"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Japanese",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "pygame"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 01:24 UTC",
+        "added_at": "2026-10-20T08:23:55Z"
+    },
+    {
+        "url": "https://negentropy-ko.itch.io/the-shadows",
+        "name": "The Shadows",
+        "dev": "NEGENTROPY",
+        "description": "Back to the day you died — with your memories. No potions: to live, close in and execute.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "26 September 2026 @ 13:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjc0MTgyLnBuZw==/original/J4hs0m.png",
+        "tags": [
+            "2D",
+            "Action RPG",
+            "Dark Fantasy",
+            "Fantasy",
+            "Hack and Slash",
+            "Pixel Art",
+            "Side Scroller",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Japanese",
+            "Korean",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [
+            "Color-blind friendly",
+            "Configurable controls",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 October 2026 @ 12:56 UTC",
+        "added_at": "2026-10-20T08:23:58Z"
+    },
+    {
+        "url": "https://pumpkycookie.itch.io/pager-13",
+        "name": "Pager №13",
+        "dev": "pumpkycookie",
+        "description": "A little romantic novel with a whimsical mystery.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 13:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDc5NTUzLnBuZw==/original/oE8ZQH.png",
+        "tags": [
+            "2D",
+            "Mystery",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:24:01Z"
+    },
+    {
+        "url": "https://veryfujii.itch.io/be-my-lover-4-a-day",
+        "name": "Be My Lover 4 a Day",
+        "dev": "FUFUDEFOOL",
+        "description": "Release Date: TBA !!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 19:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTQzMjI2LnBuZw==/original/v8p7jm.png",
+        "tags": [
+            "2D",
+            "adultcontent",
+            "Dating Sim",
+            "Otome",
+            "Psychological Horror",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T08:24:04Z"
     }
 ]
