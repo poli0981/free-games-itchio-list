@@ -20062,5 +20062,455 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-20T08:24:04Z"
+    },
+    {
+        "url": "https://benjithepro17.itch.io/baldi-70",
+        "name": "Baldi 7.0",
+        "dev": "Baldi89989",
+        "description": "Information Baldi 7.0 is a modification that introduces new features to the original game.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2022 @ 22:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzODU3NDQxLmpwZw==/original/7j%2FI8Q.jpg",
+        "tags": [
+            "Baldi's Basics"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Joystick",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:23:34Z"
+    },
+    {
+        "url": "https://bergice.itch.io/lurkers",
+        "name": "lurkers.io",
+        "dev": "bergice",
+        "description": "Online zombie survival and other games such as open world survival!",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "27",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxNzQ2MzkucG5n/original/wEKsj3.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "deathmatch",
+            "Multiplayer",
+            "Open World",
+            "Pixel Art",
+            "Side Scroller",
+            "Zombies"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "libGDX"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 October 2026 @ 17:22 UTC",
+        "added_at": "2026-10-20T12:23:38Z"
+    },
+    {
+        "url": "https://danielmorenoroldan.itch.io/asdasd-the-clicker-game",
+        "name": "asdasd: The Clicker Game",
+        "dev": "Daniel Moreno Roldán",
+        "description": "A Windows 95–style clicker where cats and monkeys automate writing, satirizing meaningless digital work.",
+        "genre": "N/A",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MDE3NDkzLmpwZw==/original/SA5Nfw.jpg",
+        "tags": [
+            "Clicker",
+            "Desktop Pet",
+            "Idle",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:23:41Z"
+    },
+    {
+        "url": "https://filgreen3.itch.io/coup-of-appliance",
+        "name": "Coup of Appliance",
+        "dev": "filgreen3",
+        "description": "What if all appliances staged a coup against you?",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 21:33 UTC",
+        "rating": "5.0",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDc1NTc5LmdpZg==/original/l56lIY.gif",
+        "tags": [
+            "Comedy",
+            "Cute",
+            "JRPG",
+            "Ludum Dare 60",
+            "Pixel Art",
+            "Retro",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 07:17 UTC",
+        "added_at": "2026-10-20T12:23:45Z"
+    },
+    {
+        "url": "https://goblinwithsocks.itch.io/idle-guild",
+        "name": "Idle Guild",
+        "dev": "Goblin With Socks Software",
+        "description": "a tiny guild living at the bottom of your screen",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 October 2026 @ 01:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODk2NjQ3LnBuZw==/original/yR4DI6.png",
+        "tags": [
+            "Idle",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:23:47Z"
+    },
+    {
+        "url": "https://gridmere.itch.io/gridmere",
+        "name": "Gridmere",
+        "dev": "Gridmere",
+        "description": "Craft items, build worlds and create anything you want!",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NjY3NTg5LnBuZw==/original/sfPBIa.png",
+        "tags": [
+            "2D",
+            "Creative",
+            "MMORPG",
+            "Pixel Art",
+            "Sandbox",
+            "social"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 October 2026 @ 17:28 UTC",
+        "added_at": "2026-10-20T12:23:51Z"
+    },
+    {
+        "url": "https://outstar.itch.io/blokia-designer",
+        "name": "Blokia Designer",
+        "dev": "outstar",
+        "description": "Design phones like it's 2000",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 21:46 UTC",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDUyNDI4LnBuZw==/original/S6Qk75.png",
+        "tags": [
+            "2000",
+            "design",
+            "designer",
+            "Ludum Dare",
+            "Ludum Dare 60",
+            "Management",
+            "phone",
+            "Retro",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:23:54Z"
+    },
+    {
+        "url": "https://rychz.itch.io/the-binding-of-isaac-rtx",
+        "name": "The Binding of Isaac RTX!",
+        "dev": "Rychz",
+        "description": "The Binding of Isaac RTX!",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwMDQ1NzE0LnBuZw==/original/H27anN.png",
+        "tags": [
+            "3D",
+            "Gore",
+            "Indie",
+            "Roguelike",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:23:56Z"
+    },
+    {
+        "url": "https://smestorp.itch.io/candy-quest-3-edge-of-sweetness",
+        "name": "Candy Quest 3: Edge of Sweetness",
+        "dev": "Michael Brough",
+        "description": "text frenzy",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "8",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTAwMy81MTA5LnBuZw==/original/Us5ghl.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:24:00Z"
+    },
+    {
+        "url": "https://thelatteteam.itch.io/bbieal-wiiu",
+        "name": "Baldi's Basics in Education and Learning Wii U",
+        "dev": "The Latte Team",
+        "description": "Once you anger Baldi, there's no turning back, and if he finds you...",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE0MjEwMjg3LnBuZw==/original/LikzKj.png",
+        "tags": [
+            "3D",
+            "Baldi's Basics",
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "Unity",
+            "wii-u"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:24:03Z"
+    },
+    {
+        "url": "https://tinyworkers.itch.io/get-to-work-gnome",
+        "name": "Get to Work, Gnomes! Christmas Factory",
+        "dev": "tinyWorkers",
+        "description": "Manage lazy gnomes, craft as many gifts as you can, and save Christmas!",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.0",
+        "rating_count": "6",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDQ0ODM3LnBuZw==/original/IO%2BfPj.png",
+        "tags": [
+            "Clicker",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "Management"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Japanese",
+            "Korean"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 October 2026 @ 18:54 UTC",
+        "added_at": "2026-10-20T12:24:06Z"
+    },
+    {
+        "url": "https://yotogi-chan.itch.io/yuasama-cardgame",
+        "name": "yuasama cardgame",
+        "dev": "yotogi_chan",
+        "description": "N/A",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T12:24:08Z"
     }
 ]
