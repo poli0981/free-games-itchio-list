@@ -784,5 +784,11 @@
         "name": "One More Saturday",
         "reason": "Game became paid",
         "deleted_at": "2026-10-19T02:57:22Z"
+    },
+    {
+        "url": "https://meta-and-flash.itch.io/flash-taggers",
+        "name": "🪵Twig Tagg🪵",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-20T02:55:15Z"
     }
 ]

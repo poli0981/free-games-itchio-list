@@ -12099,7 +12099,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "12 October 2026 @ 17:10 UTC",
+        "updated_at": "13 October 2026 @ 18:13 UTC",
         "added_at": "2026-10-12T15:11:48Z"
     },
     {
@@ -18584,12 +18584,11 @@
             "Text"
         ],
         "accessibility": [
-            "Subtitles",
-            "One button"
+            "Interactive tutorial"
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "18 October 2026 @ 17:33 UTC",
+        "updated_at": "19 October 2026 @ 08:00 UTC",
         "added_at": "2026-10-19T04:23:32Z"
     },
     {
@@ -18820,7 +18819,7 @@
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 10:13 UTC",
         "rating": "4.9",
-        "rating_count": "8",
+        "rating_count": "9",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDIyMjE2LnBuZw==/original/M2s46I.png",
@@ -18887,7 +18886,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T08:23:51Z"
+        "added_at": "2026-10-19T08:23:51Z",
+        "updated_at": "19 October 2026 @ 23:03 UTC"
     },
     {
         "url": "https://queencontract.itch.io/purple-pleasure",
@@ -19009,7 +19009,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T08:24:01Z"
+        "added_at": "2026-10-19T08:24:01Z",
+        "updated_at": "20 October 2026 @ 00:55 UTC"
     },
     {
         "url": "https://slemkatt.itch.io/a-sandwich-adventure",
@@ -19021,7 +19022,7 @@
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 14:19 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDMxODMxLnBuZw==/original/iasLWG.png",
@@ -19096,8 +19097,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 17:56 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "1.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "N/A",
@@ -19421,8 +19422,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 19:37 UTC",
-        "rating": "4.5",
-        "rating_count": "11",
+        "rating": "4.4",
+        "rating_count": "16",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ2MTczLnBuZw==/original/%2BMrFg6.png",
