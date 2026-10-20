@@ -19475,5 +19475,183 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-19T20:23:45Z"
+    },
+    {
+        "url": "https://deby-studio.itch.io/the-cursed-box",
+        "name": "The Cursed Box",
+        "dev": "Deby_studio",
+        "description": "A cursed box, a dangerous obsession, and choices that change everything.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "30",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDU0ODk2LnBuZw==/original/nwufU5.png",
+        "tags": [
+            "Dark",
+            "drama",
+            "Horror",
+            "Psychological Horror",
+            "Romance",
+            "Yandere",
+            "yanderedate"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 October 2026 @ 05:51 UTC",
+        "added_at": "2026-10-20T04:23:31Z"
+    },
+    {
+        "url": "https://meniir.itch.io/twilight-at-the-banyan-tree",
+        "name": "Twilight at the Banyan Tree (Beta)",
+        "dev": "Meniir",
+        "description": "June 1999. Can B.J. Habibie survive the fall of the New Order?",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 12:03 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDg2ODM0LnBuZw==/original/IDR3vO.png",
+        "tags": [
+            "Alternate History",
+            "Historical",
+            "indonesia",
+            "political-simulation",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Indonesian"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Adobe Photoshop",
+            "Lightweight Java Game Library",
+            "Audacity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T04:23:34Z"
+    },
+    {
+        "url": "https://mithikagames.itch.io/breadwinner",
+        "name": "Breadwinner",
+        "dev": "Mithika Games",
+        "description": "A short horror game about splitting one salary across a whole family.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "Mithika Studio",
+        "release_date": "04 October 2026 @ 15:43 UTC",
+        "rating": "5.0",
+        "rating_count": "12",
+        "average_session": "About an hour",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjkzMDc0LnBuZw==/original/htL8cP.png",
+        "tags": [
+            "Atmospheric",
+            "Dark",
+            "filipino",
+            "Horror",
+            "Life Simulation",
+            "Management",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Tagalog"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 04:17 UTC",
+        "added_at": "2026-10-20T04:23:36Z"
+    },
+    {
+        "url": "https://targaciej.itch.io/paragra",
+        "name": "Paragra - Paragliding Adventures",
+        "dev": "RainbowTrain",
+        "description": "Arcade Paragliding",
+        "genre": "Sports",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 12:40 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDc0ODc1LnBuZw==/original/BSc2A%2F.png",
+        "tags": [
+            "2D",
+            "8-Bit",
+            "Flying",
+            "paragliding",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-20T04:23:38Z"
     }
 ]
