@@ -20133,5 +20133,404 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-21T04:23:44Z"
+    },
+    {
+        "url": "https://cz758175.itch.io/the-incense-still-burns",
+        "name": "The Incense Still Burns",
+        "dev": "CZ758175",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 14:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:33Z"
+    },
+    {
+        "url": "https://digitalwaifudelivery.itch.io/sin-igame",
+        "name": "Sin-igame",
+        "dev": "DWD Studios",
+        "description": "Purged from the depths of Hell, you are cast into an alternate, fractured universe .",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 18:31 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODE4OTIxLnBuZw==/original/FoLone.png",
+        "tags": [
+            "bleach",
+            "Dating Sim",
+            "Management",
+            "Story Rich",
+            "Tactical",
+            "War"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:36Z"
+    },
+    {
+        "url": "https://entink.itch.io/pip-os",
+        "name": "PIP OS",
+        "dev": "Entink",
+        "description": "Old office work simulator, with a twist...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 12:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDk4Mjg5LnBuZw==/original/sBK7YZ.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "Ludum Dare 60",
+            "office",
+            "old-tech",
+            "Retro",
+            "Thriller",
+            "windows-xp"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:40Z"
+    },
+    {
+        "url": "https://lianaavk.itch.io/beyo",
+        "name": "Beyond The Veil",
+        "dev": "LianaAvk",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 22:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTAxNzMxLnBuZw==/original/mmhaAE.png",
+        "tags": [
+            "2D",
+            "Ludum Dare 60",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:44Z"
+    },
+    {
+        "url": "https://mlouvet.itch.io/dallas",
+        "name": "Dallas Quest (Commodore 64 FR)",
+        "dev": "Oldschool Is Beautiful",
+        "description": "L'aventure Américaine en Français sur C64 !",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 04:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDQyNTY4LmpwZw==/original/bTBTjH.jpg",
+        "tags": [
+            "Commodore 64",
+            "franais",
+            "french"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:47Z"
+    },
+    {
+        "url": "https://nekolele.itch.io/agos",
+        "name": "AGOS",
+        "dev": "nekolele",
+        "description": "An Interactive Hybrid Animation Simulating the Decision-Making of an Individual during a Flood Disaster",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 08:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTE2MzkyLnBuZw==/original/sgnxPd.png",
+        "tags": [
+            "Animation"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:50Z"
+    },
+    {
+        "url": "https://quiirisk.itch.io/stepmom-who-fell-on-a-hike",
+        "name": "Stepmom Who Fell on a Hike",
+        "dev": "Carrie Brooks",
+        "description": "Stepmom Who Fell on a Hike is a choice-driven psychological drama visual novel exploring fragile relationships, emotional betrayal, and the consequences of hesitation.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 13:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTIyMTI2LmpwZw==/original/9lZVvd.jpg",
+        "tags": [
+            "2D",
+            "Casual",
+            "Dating Sim",
+            "Incremental",
+            "Indie",
+            "nature"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:52Z"
+    },
+    {
+        "url": "https://studio-chicle.itch.io/adamas",
+        "name": "Adamas",
+        "dev": "studio_chicle",
+        "description": "Adamas [Beta 1.0] — Studio Chicle Adamas is an adult visual novel where you follow the story of a young man, his girlfriend, and the women who become part of his life.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 19:41 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDk0NDg5LmpwZWc=/original/GX5UaH.jpeg",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:56Z"
+    },
+    {
+        "url": "https://studiohexttrpg.itch.io/biophage-jaeger",
+        "name": "Biophage Jaeger",
+        "dev": "StudioHexTTRPG",
+        "description": "a Biophage Visual Novel",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 14:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MjA3NDgzLnBuZw==/original/2Lqf22.png",
+        "tags": [
+            "Dark",
+            "Horror",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:23:59Z"
+    },
+    {
+        "url": "https://wake44466.itch.io/real-intelligence",
+        "name": "Real Intelligence",
+        "dev": "wake44466, rzh7070, RustyAshburn, Ker0o141, AkylaiAAA",
+        "description": "In a post-human world , there remains a vast library containing all the knowledge of the former civilization, overseen by its own AI consciousness.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 10:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDY3NjgyLnBuZw==/original/owTDvz.png",
+        "tags": [
+            "Ludum Dare",
+            "Multiple Endings",
+            "Singleplayer",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 12:06 UTC",
+        "added_at": "2026-10-21T08:24:03Z"
+    },
+    {
+        "url": "https://xtheredviper.itch.io/ashes-of-beau",
+        "name": "Ashes of Beau",
+        "dev": "Carolini Brito",
+        "description": "🥀 Ashes of Beau Até onde alguém iria para preservar a própria beleza?",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 00:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTA1NjE1LmpwZw==/original/%2F%2F1hmR.jpg",
+        "tags": [
+            "Dark Fantasy",
+            "Gothic",
+            "Horror",
+            "LGBT",
+            "Mystery",
+            "Point & Click",
+            "Story Rich",
+            "Victorian"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:24:08Z"
     }
 ]
