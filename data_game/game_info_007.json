@@ -19866,5 +19866,171 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-20T16:23:52Z"
+    },
+    {
+        "url": "https://gabrielcassimiro.itch.io/cake-clicker-recake",
+        "name": "Cake Clicker - Recake",
+        "dev": "Gabriel Cassimiro",
+        "description": "One cake at a time. That's how your little kitchen becomes a bistro, and grows into a palace of cakes.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.7",
+        "rating_count": "23",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTA5MTc1LmpwZw==/original/uMJLYr.jpg",
+        "tags": [
+            "2D",
+            "AI Generated",
+            "cake",
+            "cake-clicker",
+            "Casual",
+            "Clicker",
+            "Halloween",
+            "idle-game",
+            "Isometric",
+            "minigames"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 12:27 UTC",
+        "added_at": "2026-10-21T00:23:34Z"
+    },
+    {
+        "url": "https://misha.itch.io/echoes-of-twilight",
+        "name": "Echoes of Twilight",
+        "dev": "Misha, Mewyn",
+        "description": "Oh, the servers of your favourite MMO shut down! How are you gonna keep in touch with your friends?",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 October 2026 @ 04:40 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzYxNTQ5LnBuZw==/original/lBKeeu.png",
+        "tags": [
+            "deduction",
+            "Detective",
+            "fake-os",
+            "Mystery",
+            "Narrative",
+            "No AI",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Godot",
+            "Adobe Photoshop"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "High-contrast"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "13 October 2026 @ 09:07 UTC",
+        "added_at": "2026-10-21T00:23:38Z"
+    },
+    {
+        "url": "https://puapka.itch.io/dentata",
+        "name": "Dentata",
+        "dev": "Puapka",
+        "description": "A dead mall opens in a small town in western poland , inviting a perspective to pasts and futures of its inhabitants.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 October 2026 @ 00:15 UTC",
+        "rating": "5.0",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTA2NjkzLmpwZw==/original/%2Fgu4lc.jpg",
+        "tags": [
+            "plural",
+            "Romance",
+            "Slice Of Life",
+            "Yaoi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 15:35 UTC",
+        "added_at": "2026-10-21T00:23:42Z"
+    },
+    {
+        "url": "https://torcado.itch.io/manymancer",
+        "name": "Manymancer",
+        "dev": "torcado",
+        "description": "Use your items wisely",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 00:29 UTC",
+        "rating": "4.4",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTA0NDAwLnBuZw==/original/hk%2Fhh9.png",
+        "tags": [
+            "broughlike",
+            "Ludum Dare 60",
+            "Magic",
+            "Minimalist",
+            "Roguelike",
+            "Roguelite",
+            "stra",
+            "Vector"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T00:23:45Z"
     }
 ]
