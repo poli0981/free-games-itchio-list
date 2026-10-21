@@ -20005,5 +20005,133 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-21T00:23:45Z"
+    },
+    {
+        "url": "https://liminace.itch.io/little-red-fangs",
+        "name": "Little Red Fangs - DAY 1",
+        "dev": "LiminAce",
+        "description": "\"Stay a night or two with me. No, I don't need you! I don't need you at all!!!\"",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 October 2026 @ 01:38 UTC",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDIzMDIwLnBuZw==/original/AjcgTJ.png",
+        "tags": [
+            "Atmospheric",
+            "Boys' Love",
+            "Dark Fantasy",
+            "Dating Sim",
+            "Fairy Tale",
+            "Horror",
+            "Slice Of Life",
+            "Vampire",
+            "Yandere",
+            "Yaoi"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "FL Studio"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 04:00 UTC",
+        "added_at": "2026-10-21T04:23:36Z"
+    },
+    {
+        "url": "https://rarelikeaunicorn.itch.io/vvvvvvv",
+        "name": "VVVVVVV",
+        "dev": "rare",
+        "description": "It's your turn to join the crew!",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 11:02 UTC",
+        "rating": "4.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTc1MjcyLmdpZg==/original/cRGxzg.gif",
+        "tags": [
+            "Fangame",
+            "PICO-8",
+            "Pixel Art",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "PICO-8"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T04:23:40Z"
+    },
+    {
+        "url": "https://tsomyst.itch.io/lavoice",
+        "name": "LAVOICE",
+        "dev": "Tsomyst",
+        "description": "Um FPS Voxel onde tudo que você fala se materializa na sua frente... TUDO!",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 01:13 UTC",
+        "rating": "5.0",
+        "rating_count": "8",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTA3MDMwLnBuZw==/original/rY6zAl.png",
+        "tags": [
+            "Arena Shooter",
+            "Destruction",
+            "Fast-Paced",
+            "First-Person",
+            "Multiplayer",
+            "Physics",
+            "PvP",
+            "voice-controlled",
+            "Voxel"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Microphone"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T04:23:44Z"
     }
 ]
