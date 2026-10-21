@@ -587,7 +587,7 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "ai_disclosure": "No AI",
+        "ai_disclosure": "N/A",
         "ai_content": [],
         "accessibility": []
     },
@@ -722,7 +722,7 @@
         "made_with": [],
         "safe_virus": "?",
         "notes": "",
-        "ai_disclosure": "No AI",
+        "ai_disclosure": "N/A",
         "ai_content": [],
         "accessibility": []
     },
@@ -891,7 +891,8 @@
         "ai_content": [],
         "accessibility": [
             "High-contrast"
-        ]
+        ],
+        "updated_at": "18 October 2026 @ 16:51 UTC"
     },
     {
         "url": "https://theonepieceisreai.itch.io/froggy-run",
@@ -1701,8 +1702,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "3.8",
-        "rating_count": "16",
+        "rating": "3.9",
+        "rating_count": "18",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3MzMwODcwLnBuZw==/original/rKRNrA.png",
@@ -2394,7 +2395,7 @@
         "publisher": "N/A",
         "release_date": "31 December 2024 @ 12:59 UTC",
         "rating": "4.9",
-        "rating_count": "350",
+        "rating_count": "351",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE5MTg3NzU5LmpwZw==/original/ZwJZeR.jpg",
@@ -2436,7 +2437,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "1427",
+        "rating_count": "1428",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvMjc5NDEzLzEzNTYxMDguZ2lm/original/60xArw.gif",

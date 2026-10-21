@@ -790,5 +790,11 @@
         "name": "🪵Twig Tagg🪵",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-20T02:55:15Z"
+    },
+    {
+        "url": "https://baldigaming99.itch.io/geometry-dash-220922091-apkandpc",
+        "name": "Geometry Dash 2.209/2.2091 (APK and PC).",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-21T02:55:57Z"
     }
 ]
