@@ -40,5 +40,144 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-21T08:24:10Z"
+    },
+    {
+        "url": "https://cineeeekk.itch.io/castle-builddefend",
+        "name": "Castle: Build&Defend",
+        "dev": "Cineeeekk",
+        "description": "Build by day. Hold until dawn.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 17:36 UTC",
+        "rating": "4.8",
+        "rating_count": "5",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTE4MDI3LmpwZw==/original/NJs7zi.jpg",
+        "tags": [
+            "3D",
+            "base-building",
+            "building",
+            "castle",
+            "defense",
+            "Isometric",
+            "Medieval",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "French",
+            "Polish",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 20:39 UTC",
+        "added_at": "2026-10-21T12:23:36Z"
+    },
+    {
+        "url": "https://cosmicadventuresquad.itch.io/project-hail-meowy",
+        "name": "Project Hail Meowy",
+        "dev": "Cosmic Adventure Squad",
+        "description": "Punch the card. Save the tuna.",
+        "genre": "Strategy",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 15:20 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDk2MzkwLmdpZg==/original/u1oxzb.gif",
+        "tags": [
+            "ascii",
+            "Cats",
+            "Ludum Dare 60",
+            "Mouse only",
+            "Retro",
+            "Roguelike",
+            "Space Sim",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T12:23:43Z"
+    },
+    {
+        "url": "https://doctorhummer.itch.io/irule",
+        "name": "I.RULE",
+        "dev": "DoctorHummer, toncho_",
+        "description": "The Binding of Isaac fangame, heavily inspired by Plants vs. Zombies",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "500",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzgwNDQwODUucG5n/original/H%2Bqt0z.png",
+        "tags": [
+            "Fangame",
+            "Roguelike",
+            "Roguelite",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T12:23:49Z"
     }
 ]
