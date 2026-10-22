@@ -375,5 +375,576 @@
         "notes": "",
         "updated_at": "21 October 2026 @ 22:32 UTC",
         "added_at": "2026-10-22T00:23:35Z"
+    },
+    {
+        "url": "https://auriaca.itch.io/nakphachonphrai-first-light",
+        "name": "นักผจญไพร | First Light",
+        "dev": "Auriaca",
+        "description": "explore adventure 2.5D game",
+        "genre": "Adventure",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 07:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTU3NzU3LnBuZw==/original/Exr0Tp.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:39Z"
+    },
+    {
+        "url": "https://dreamtalegames.itch.io/aeronauts",
+        "name": "Аэронавты: Авантюристы",
+        "dev": "Dreamtale Games",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 08:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTU5NjQwLnBuZw==/original/Z7JQI1.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:43Z"
+    },
+    {
+        "url": "https://lavris.itch.io/techromancy",
+        "name": "Techromancy",
+        "dev": "Lavris",
+        "description": "A horror date-sim about digital immortality, old tech, and questionable romance. Available in English(Demo) and Russian.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 12:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTYzNjA2LnBuZw==/original/axaVOD.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Horror",
+            "Pixel Art",
+            "Ren'Py",
+            "Retro",
+            "Robots",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:46Z"
+    },
+    {
+        "url": "https://narurinya.itch.io/phnxddd",
+        "name": "Phainaxa Fangame - DANCEDANCEDANCE",
+        "dev": "narurinya",
+        "description": "HSR Phainaxa Fangame Preview",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 07:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTIxMzkxLmpwZw==/original/0tITH5.jpg",
+        "tags": [
+            "Boys' Love",
+            "Dating Sim",
+            "Fangame",
+            "honkai-star-rail",
+            "phainaxa",
+            "RPG Maker",
+            "RPG Maker MZ",
+            "Yaoi"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:49Z"
+    },
+    {
+        "url": "https://oppai-games.itch.io/quickie-fantasy-adventure",
+        "name": "Quickie: Fantasy Adventure",
+        "dev": "Oppai Games",
+        "description": "Gather your companions and set off on an sexy quest to save your beloved home!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 07:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTU0OTgzLnBuZw==/original/I7ARR3.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Cute",
+            "Dating Sim",
+            "Fantasy",
+            "Indie",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:52Z"
+    },
+    {
+        "url": "https://oworlon.itch.io/femboy-apocalypse",
+        "name": "Femboy Apocalypse",
+        "dev": "oworlon",
+        "description": "Femboy Apocalypse is a single-player adult visual novel combining post-apocalyptic mystery, character-driven drama, romance, and explicit adult encounters.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 13:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTY3MTgwLmpwZw==/original/IDfNQQ.jpg",
+        "tags": [
+            "Anime",
+            "artificial-intelligence",
+            "Casual",
+            "Cute",
+            "Female Protagonist",
+            "Incremental",
+            "Indie"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:55Z"
+    },
+    {
+        "url": "https://raxeris.itch.io/just-a-sip",
+        "name": "JUST A SIP",
+        "dev": "raxeris",
+        "description": "how much of you would you give him? A starving vampire, 7 nights, 7 glow-ups, 5 endings. Every click is a sip of blood.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 04:41 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTUwMzg3LnBuZw==/original/%2FZYUqk.png",
+        "tags": [
+            "Clicker",
+            "Creepy",
+            "Dating Sim",
+            "Halloween",
+            "Multiple Endings",
+            "Romance",
+            "Story Rich",
+            "Vampire",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Turkish",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:58Z"
+    },
+    {
+        "url": "https://tand0c.itch.io/st-kilda-beach-in-winter",
+        "name": "St Kilda Beach in Winter",
+        "dev": "sun(ny)",
+        "description": "Twine experiment (Originally a comic idea), musings in my head from a workshop",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 09:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTYwNTU1LmdpZg==/original/XyLq7n.gif",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:24:01Z"
+    },
+    {
+        "url": "https://featurekreep.itch.io/choo-choo-mania",
+        "name": "Choo Choo Mania",
+        "dev": "FeatureKreep",
+        "description": "Connect train stations 🚂 (PICO-8)",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 08:30 UTC",
+        "rating": "4.3",
+        "rating_count": "13",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTU5NDY4LnBuZw==/original/Z9Yg30.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Cozy",
+            "PICO-8",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "Trains"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "PICO-8"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:24:05Z"
+    },
+    {
+        "url": "https://orderframe.itch.io/shrimply-genetics",
+        "name": "Shrimply Genetics",
+        "dev": "ambrosia04",
+        "description": "A genetic idle game about raising, collecting, and discovering shrimp!",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5OTcyMTcwLnBuZw==/original/6WF%2F8R.png",
+        "tags": [
+            "2D",
+            "Animals",
+            "Idle",
+            "Indie",
+            "minigames",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 October 2026 @ 15:28 UTC",
+        "added_at": "2026-10-22T04:24:08Z"
+    },
+    {
+        "url": "https://saveslot0.itch.io/relicta-in-memoriam",
+        "name": "Relicta in Memoriam",
+        "dev": "SaveSlot0",
+        "description": "Seek the truth. Face the evil. Pray it will be enough.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "10",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNTczODg4LnBuZw==/original/%2Fo%2BviY.png",
+        "tags": [
+            "Horror",
+            "Indie",
+            "Mystery",
+            "Pixel Art",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America",
+            "Italian"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:24:10Z"
+    },
+    {
+        "url": "https://sheepolution.itch.io/troll-the-king",
+        "name": "Troll the King",
+        "dev": "Sheepolution, Shores",
+        "description": "Screw with letters from carrier pigeons to annoy the kings",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 01:39 UTC",
+        "rating": "4.6",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTI1NTAzLnBuZw==/original/ucalhj.png",
+        "tags": [
+            "Ludum Dare",
+            "Ludum Dare 60"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "LÖVE"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 October 2026 @ 17:30 UTC",
+        "added_at": "2026-10-22T04:24:14Z"
+    },
+    {
+        "url": "https://strafkollektiv.itch.io/the-dreaming-keep",
+        "name": "The Dreaming Keep",
+        "dev": "Strafkollektiv",
+        "description": "Cut through the oneric darkness.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 October 2026 @ 03:51 UTC",
+        "rating": "4.9",
+        "rating_count": "8",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzQ2NDM0LnBuZw==/original/Ug9lRY.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Difficult",
+            "Fantasy",
+            "First-Person",
+            "Godot",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 October 2026 @ 00:22 UTC",
+        "added_at": "2026-10-22T04:24:18Z"
+    },
+    {
+        "url": "https://veltes.itch.io/von-neumann",
+        "name": "Von Neumann",
+        "dev": "veltes",
+        "description": "A game about self-replicating space probes",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "21",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTg1NTYyLnBuZw==/original/5COVhj.png",
+        "tags": [
+            "2D",
+            "Automation",
+            "Idle",
+            "Incremental",
+            "Sci-fi",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Blender",
+            "Godot",
+            "Inkscape"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 October 2026 @ 21:45 UTC",
+        "added_at": "2026-10-22T04:24:22Z"
     }
 ]
