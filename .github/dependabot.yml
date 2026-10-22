@@ -26,6 +26,7 @@ updates:
           - 'vite'
           - '@vitejs/*'
           - 'typescript'
+          - '@typescript/*'
           - 'typescript-eslint'
           - 'eslint*'
           - '@eslint/*'
@@ -36,12 +37,14 @@ updates:
           - 'wrangler'
           - '@cloudflare/*'
     ignore:
-      # typescript-eslint supports TypeScript < 6.1 only.
+      # `typescript` is an alias of @typescript/typescript6 (the 6.0 API):
+      # typescript-eslint supports TypeScript < 6.1 only. TypeScript 7 itself
+      # is `@typescript/native`. Never move the alias to a new major.
       - dependency-name: 'typescript'
-        versions: ['>=6.1']
-      # Match the Node 24 runtime.
+        update-types: ['version-update:semver-major']
+      # Match the Node 26 runtime.
       - dependency-name: '@types/node'
-        versions: ['>=25']
+        versions: ['>=27']
 
   - package-ecosystem: pip
     directory: /

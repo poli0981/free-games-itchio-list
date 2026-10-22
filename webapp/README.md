@@ -8,7 +8,7 @@ One codebase for everything people see of the catalog:
 - the **admin** app at `/admin/` — Maintainer only, behind Cloudflare Access;
 - the **desktop and Android apps** — the same public app wrapped with Tauri 2 (see [`TAURI.md`](TAURI.md)).
 
-Stack: React 19 + TypeScript 6 + Vite 8 (Rolldown) + Tailwind CSS 4 (`@tailwindcss/vite`, tokens in
+Stack: React 19 + TypeScript 7 + Vite 8 (Rolldown) + Tailwind CSS 4 (`@tailwindcss/vite`, tokens in
 [`src/index.css`](src/index.css)) + shadcn/ui (Radix), TanStack Query, React Router 8, Zustand, and the
 self-hosted Geist fonts. The Worker is plain TypeScript on Cloudflare Workers
 (R2, D1, Images, Turnstile, Rate Limiting, Access).
@@ -33,7 +33,7 @@ key entries) and rewrites old `#/…` links to real paths ([`src/lib/legacy.ts`]
 
 ## Local dev
 
-Requires Node.js 22.22+ (CI uses the version in [`.node-version`](.node-version)) and npm. The full
+Requires Node.js 26+ (CI uses the version in [`.node-version`](.node-version)) and npm. The full
 setup, including the Python pipeline, is in [`docs/dev_env.md`](../docs/dev_env.md).
 
 ```sh

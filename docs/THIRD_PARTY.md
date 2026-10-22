@@ -74,15 +74,16 @@ components. Section 7 lists every service the project uses.
 The apps render with the system web view that the operating system provides: WebView2 on Windows,
 WKWebView on macOS (Safari/WebKit 16.4 or later), WebKitGTK on Linux and Android System WebView on Android.
 
-## 4. Data pipeline (Python 3.14)
+## 4. Data pipeline (Python 3.15)
 
 | Package | Version | Used for | License |
 |---|---|---|---|
 | [requests](https://requests.readthedocs.io) | 2.34+ | HTTP requests to public itch.io pages | Apache-2.0 |
 | [beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/) | 4.15+ | Parsing itch.io pages | MIT |
+| [urllib3](https://urllib3.readthedocs.io) | 2.8+ | Retry policy of the scraper's HTTP session | MIT |
 
-These pull in `urllib3` (MIT), `certifi` (MPL-2.0), `charset-normalizer` (MIT), `idna` (BSD-3-Clause) and
-`soupsieve` (MIT).
+These pull in `certifi` (MPL-2.0), `charset-normalizer` (MIT), `idna` (BSD-3-Clause) and `soupsieve`
+(MIT).
 
 ## 5. Development and test tooling (never shipped)
 
@@ -104,8 +105,9 @@ These tools never end up in a build, but they keep the code honest.
 - **[ESLint](https://eslint.org)** with `@eslint/js`, **[typescript-eslint](https://typescript-eslint.io)**,
   `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh` and `globals` (all MIT): webapp linting.
   Config: [`webapp/eslint.config.js`](../webapp/eslint.config.js). Run: `cd webapp && npm run lint`
-- **[TypeScript](https://www.typescriptlang.org)** 6.0 (Apache-2.0): `noUnusedLocals` and
-  `noUnusedParameters` reject unused code at build time. Run: `cd webapp && npx tsc -b`
+- **[TypeScript](https://www.typescriptlang.org)** 7.0 (Apache-2.0): `noUnusedLocals` and
+  `noUnusedParameters` reject unused code at build time. Run: `cd webapp && npx tsc -b`. The 6.0 API
+  (`@typescript/typescript6`, installed as `typescript`) stays for typescript-eslint, which needs it
 
 ### Build, test and deploy
 

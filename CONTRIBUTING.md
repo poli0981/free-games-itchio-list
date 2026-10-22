@@ -80,7 +80,7 @@ Details live in the [Terms of Use](docs/ToS.md) and the [Disclaimer](docs/DISCLA
 
 Full instructions (Worker, local D1, secrets, Tauri, Android) are in **[`docs/dev_env.md`](docs/dev_env.md)**; the Tauri/Android build notes are in [`webapp/TAURI.md`](webapp/TAURI.md). The short version:
 
-**Python pipeline** (Python 3.14, see `.python-version`):
+**Python pipeline** (Python 3.15, see `.python-version`):
 
 ```sh
 python -m venv .venv
@@ -96,7 +96,7 @@ To try a real scrape locally: add a URL to `scripts/temp_link.json`, then run
 `python scripts/update_info.py --out patch.json` and `python scripts/apply_patch.py patch.json`
 (don't commit the result; see the PR rules above).
 
-**Webapp + Worker** (Node.js 22.22+, CI uses the version in `webapp/.node-version`):
+**Webapp + Worker** (Node.js 26+, CI uses the version in `webapp/.node-version`):
 
 ```sh
 cd webapp

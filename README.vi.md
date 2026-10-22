@@ -113,7 +113,7 @@ Pipeline cư xử lịch sự với itch.io: nó tự xưng danh là `FreeItchGa
 - **Cloudflare Worker** ([`webapp/worker/`](webapp/worker/)): phục vụ website và `/data`, cổng xác minh (Cloudflare Turnstile), proxy ảnh (`/img`, ảnh bìa WebP đã thu nhỏ lưu trên Cloudflare R2), API Suggest, hàng chờ duyệt (Cloudflare D1), API quản trị và lịch phát hiện qua RSS. Cấu hình: [`webapp/wrangler.jsonc`](webapp/wrangler.jsonc).
 - **App quản trị** ([`webapp/admin/`](webapp/admin/)): màn hình duyệt chỉ dành cho Maintainer tại `/admin`, đứng sau Cloudflare Access. Nó ghi vào repo này dưới danh nghĩa một GitHub App.
 - **Vỏ native** ([`webapp/src-tauri/`](webapp/src-tauri/)): Tauri 2 cho Windows, macOS, Linux và Android. Xem [`webapp/TAURI.md`](webapp/TAURI.md).
-- **Pipeline dữ liệu** ([`scripts/`](scripts/), Python 3.14): scraper, refresh, patch/apply và validate, chạy bằng GitHub Actions.
+- **Pipeline dữ liệu** ([`scripts/`](scripts/), Python 3.15): scraper, refresh, patch/apply và validate, chạy bằng GitHub Actions.
 
 Việc deploy do Cloudflare Workers Builds đảm nhận (thư mục gốc `webapp`, `npm run build`, rồi `npx wrangler deploy`): mỗi lần push vào `main` sẽ tự động lên site.
 

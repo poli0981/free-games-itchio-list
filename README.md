@@ -169,7 +169,7 @@ The pipeline is polite to itch.io: it identifies itself as
   Cloudflare Access. It writes to this repo as a GitHub App.
 - **Native shell** ([`webapp/src-tauri/`](webapp/src-tauri/)): Tauri 2 for Windows, macOS, Linux and
   Android. See [`webapp/TAURI.md`](webapp/TAURI.md).
-- **Data pipeline** ([`scripts/`](scripts/), Python 3.14): scraper, refresh, patch/apply and validation,
+- **Data pipeline** ([`scripts/`](scripts/), Python 3.15): scraper, refresh, patch/apply and validation,
   run by GitHub Actions.
 
 Deploys happen through Cloudflare Workers Builds (root dir `webapp`, `npm run build`, then

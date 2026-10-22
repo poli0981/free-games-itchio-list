@@ -48,7 +48,6 @@ concurrency:
 
 env:
   PYTHONUNBUFFERED: '1'
-  PYTHONUTF8: '1'
 
 jobs:
   scan:

@@ -15,12 +15,17 @@ JetBrains 2026.x (paid lineup):
 VS Code, Sublime, vim, etc. all work fine; nothing JetBrains-specific is
 checked into the repo.
 
+TypeScript 7 (the `tsc` that `npm run build` runs) is a native binary without `tsserver`. In VS Code,
+install the TypeScript Native Preview extension (`TypeScriptTeam.native-preview`) for the TS 7
+language server. In WebStorm, use its TypeScript 7 support or point *Languages & Frameworks →
+TypeScript* at `webapp/node_modules/@typescript/old` (TypeScript 6.0, which reports the same errors).
+
 ## Language toolchains
 
 | Stack | Required | Used for |
 |-------|----------|----------|
-| Python | 3.14 (`.python-version`) | Data pipeline (`scripts/`) and its tests |
-| Node.js | 22.22+ (CI uses `webapp/.node-version`) | Web app, admin app, Worker, Tauri front end |
+| Python | 3.15 (`.python-version`) | Data pipeline (`scripts/`) and its tests |
+| Node.js | 26+ (CI uses `webapp/.node-version`) | Web app, admin app, Worker, Tauri front end |
 | npm | ships with Node.js | Dependencies (`npm ci` from `package-lock.json`) |
 | Wrangler | project dependency (`npx wrangler`) | Local Worker, local D1, deploys |
 | Rust | stable (via `rustup`) | Tauri desktop / Android builds only |
@@ -39,8 +44,8 @@ python -m venv .venv
 pip install -r requirements-dev.txt
 ```
 
-On Windows, set `PYTHONUTF8=1` (PowerShell: `$env:PYTHONUTF8 = "1"`) so Python reads and writes
-the catalog files as UTF-8.
+Python 3.15 reads and writes files as UTF-8 by default (UTF-8 mode, PEP 686), so Windows no longer
+needs `PYTHONUTF8=1`.
 
 ### Checks (same as `python-ci.yml`)
 
