@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -74,6 +75,19 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:8787',
       '/img': 'http://localhost:8787',
+    },
+  },
+  test: {
+    // `npm run test:coverage` writes coverage/lcov.info for SonarQube Cloud
+    // (.github/workflows/sonarcloud.yml); plain `npm test` measures nothing.
+    // Paths from the repository root, where the scanner resolves them.
+    coverage: {
+      provider: 'v8',
+      // Source files, including those no test loads (at 0 %) — not index.html,
+      // the D1 migrations, the test helpers or type declarations.
+      include: ['**/*.{ts,tsx,mjs}'],
+      exclude: ['**/*.d.ts', 'worker/test/**', 'src-tauri/**'],
+      reporter: [['lcovonly', { projectRoot: repoRoot }], 'text-summary'],
     },
   },
   clearScreen: false,

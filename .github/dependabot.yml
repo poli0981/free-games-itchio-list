@@ -21,6 +21,9 @@ updates:
         patterns: ['@radix-ui/*', 'radix-ui']
       tauri-js:
         patterns: ['@tauri-apps/*']
+      # @vitest/coverage-v8 requires the exact vitest version (peer dependency).
+      vitest:
+        patterns: ['vitest', '@vitest/*']
       build-tooling:
         patterns:
           - 'vite'

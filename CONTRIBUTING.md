@@ -67,7 +67,7 @@ Details live in the [Terms of Use](docs/ToS.md) and the [Disclaimer](docs/DISCLA
 
 **PR rules** (the non-negotiable part):
 
-- **CI must pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) and Webapp CI (type generation check, lint, knip, tests, build, `wrangler deploy --dry-run`) both run on PRs. Red CI = no merge.
+- **CI must pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) and Webapp CI (type generation check, lint, knip, tests, build, `wrangler deploy --dry-run`) both run on PRs. Red CI = no merge. SonarQube Cloud also analyses each PR (with test coverage) and reports its quality gate as the "SonarCloud Code Analysis" check.
 - **PRs are merged with squash** (one PR becomes one commit on `main`) **or a merge commit, never by fast-forward**, so make the PR title a good commit message (the repo uses the `type(scope): summary` style, e.g. `fix(web): …`).
 - **Licensing is inbound = outbound.** By opening a PR you agree that your contribution is licensed under the same license as the part it changes: **MIT** for code, **CC BY 4.0** for catalog data and documentation (see [README → License](README.md#license)). Only submit work you have the right to submit.
 - **Never commit secrets**: no tokens, API keys, `.dev.vars` / `.env` files, private keys (such as the GitHub App key) or signing keystores. If you pushed one by accident, report it privately (security@poli0981.dev) and rotate it; deleting the commit is not enough.

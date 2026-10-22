@@ -5,6 +5,8 @@
 -r requirements.in
 ruff>=0.17.1
 pytest>=9.1.1
+# `pytest --cov`: coverage.xml for SonarQube Cloud (.github/workflows/sonarcloud.yml).
+pytest-cov>=7.1.0
 vulture>=2.16
 pillow>=13.0.0
 # pytest needs it on Windows only; listed so a lock compiled on Linux (Dependabot) still installs there.

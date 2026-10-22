@@ -163,6 +163,7 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'jose', version: '6.2', license: 'MIT', url: 'https://github.com/panva/jose', category: 'dev' },
   { name: 'Wrangler', version: '4.147', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
   { name: 'Vitest', version: '5.0', license: 'MIT', url: 'https://vitest.dev', category: 'dev' },
+  { name: '@vitest/coverage-v8', version: '5.0', license: 'MIT', url: 'https://vitest.dev/guide/coverage', category: 'dev' },
 
   // Desktop / mobile (Tauri)
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },

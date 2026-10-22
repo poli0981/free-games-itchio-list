@@ -1,0 +1,149 @@
+# SonarQube Cloud: CI-based analysis with test coverage
+# (https://sonarcloud.io/project/overview?id=poli0981_free-games-itchio-list).
+# Automatic Analysis is switched off on sonarcloud.io — while it is on, the
+# scanner refuses to run. Settings: sonar-project.properties. The SonarQube
+# Cloud app reports each PR's quality gate as the "SonarCloud Code Analysis" check.
+#
+#   token    — is SONAR_TOKEN available? Dependabot and fork PRs get no
+#              repository secrets: the analysis is skipped there, not failed.
+#   coverage — pytest-cov and Vitest (v8) coverage reports, without the token.
+#   scan     — sonarqube-scan-action with those reports; the only job that sees
+#              the token, and it runs no project or dependency code.
+name: SonarQube Cloud
+
+on:
+  push:
+    branches: [main]
+    # Data commits (the pipeline's, the admin Worker's) and docs change no code.
+    paths-ignore:
+      - 'data_game/**'
+      - 'scripts/temp_link.json'
+      - 'scripts/deleted_games.json'
+      - 'scripts/state/**'
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - 'data_game/**'
+      - 'scripts/temp_link.json'
+      - 'scripts/deleted_games.json'
+      - 'scripts/state/**'
+      - '**.md'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: sonarcloud-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  token:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    outputs:
+      present: ${{ steps.check.outputs.present }}
+    steps:
+      - name: Check for SONAR_TOKEN
+        id: check
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          if [ -n "$SONAR_TOKEN" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::No SONAR_TOKEN in this run (Dependabot or fork PR): SonarQube Cloud analysis skipped."
+          fi
+
+  coverage:
+    needs: token
+    if: needs.token.outputs.present == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version-file: .github/python-version
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+
+      # Hash-locked, wheels only (CLAUDE.md, gotcha 40).
+      - name: Install Python dependencies
+        run: |
+          pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
+
+      - name: Pytest with coverage
+        run: pytest --cov --cov-report=xml
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: webapp/.node-version
+          cache: npm
+          cache-dependency-path: webapp/package-lock.json
+
+      - name: Install npm dependencies
+        working-directory: webapp
+        run: npm ci --ignore-scripts
+
+      - name: Vitest with coverage
+        working-directory: webapp
+        run: npm run test:coverage
+
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: coverage
+          path: |
+            coverage.xml
+            webapp/coverage/lcov.info
+          retention-days: 1
+          if-no-files-found: error
+
+  scan:
+    needs: coverage
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Full history: blame data, and the new-code diff of a PR.
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Download coverage reports
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: coverage
+
+      # The app version is the analysis version, so on main "new code" (New Code
+      # definition: previous version) starts over at each version bump.
+      - name: Read the app version
+        id: version
+        run: |
+          version=$(jq -r .version webapp/package.json)
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::webapp/package.json has no x.y.z version"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: SonarQube Cloud scan
+        uses: SonarSource/sonarqube-scan-action@d209202bc7d53ff1cc128f7f907dac145c9d6ae9 # v8.3.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: -Dsonar.projectVersion=${{ steps.version.outputs.version }}

@@ -22,3 +22,11 @@ ignore_names = ["no_network"]
 testpaths = ["tests"]
 # tests/conftest.py blocks all network access; parser tests use saved fixtures.
 addopts = "-q"
+
+# `pytest --cov --cov-report=xml` writes coverage.xml for SonarQube Cloud
+# (.github/workflows/sonarcloud.yml); plain `pytest` measures nothing.
+# Relative paths, so the scan job resolves them in its own checkout.
+[tool.coverage.run]
+source = ["scripts"]
+relative_files = true
+branch = true

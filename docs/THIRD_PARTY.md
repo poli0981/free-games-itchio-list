@@ -115,10 +115,12 @@ These tools never end up in a build, but they keep the code honest.
 |---|---|---|
 | [Vite](https://vite.dev) 8 and `@vitejs/plugin-react` | Bundling the site, the admin app and the apps' front end | MIT |
 | [Vitest](https://vitest.dev) 5 | Tests (`npm test`) | MIT |
+| [`@vitest/coverage-v8`](https://vitest.dev/guide/coverage) 5 | Test coverage for SonarQube Cloud (`npm run test:coverage`) | MIT |
 | [Wrangler](https://developers.cloudflare.com/workers/wrangler/) 4 | Local Worker dev, D1 migrations, deploys | MIT OR Apache-2.0 |
 | [`@tauri-apps/cli`](https://tauri.app) 2 | Building the desktop and Android apps | Apache-2.0 OR MIT |
 | `@types/node`, `@types/react`, `@types/react-dom` | Type definitions | MIT |
 | [pytest](https://pytest.org) | Python tests (network blocked) | MIT |
+| [pytest-cov](https://pytest-cov.readthedocs.io) and [coverage.py](https://coverage.readthedocs.io) | Python test coverage for SonarQube Cloud (`pytest --cov`) | MIT; Apache-2.0 |
 | [Pillow](https://python-pillow.github.io) | [`webapp/scripts/gen_assets.py`](../webapp/scripts/gen_assets.py), which generates the icons and the social preview image | MIT-CMU |
 
 ## 6. GitHub Actions
@@ -126,7 +128,8 @@ These tools never end up in a build, but they keep the code honest.
 The workflows in [`.github/workflows/`](../.github/workflows/) use `actions/checkout`, `actions/setup-node`,
 `actions/setup-python`, `actions/setup-java`, `actions/cache`, `actions/upload-artifact`,
 `actions/download-artifact`, `android-actions/setup-android`, `dtolnay/rust-toolchain`,
-`tauri-apps/tauri-action` and reusable workflows from [poli0981/.github](https://github.com/poli0981/.github).
+`tauri-apps/tauri-action`, `SonarSource/sonarqube-scan-action` and reusable workflows from
+[poli0981/.github](https://github.com/poli0981/.github).
 Every external action is pinned to a commit SHA. The actions run on GitHub's runners and are not
 distributed with the project; each one is under the license in its own repository.
 
@@ -137,6 +140,7 @@ distributed with the project; each one is under the license in its own repositor
 | **Cloudflare** | DNS, CDN, WAF, TLS; Workers and static assets (the website); R2 (resized cover images); D1 (the review queue); Images (resizing); Turnstile (the verification page and the Suggest page); Web Analytics (cookieless, aggregate); Workers Logs; Access (admin login); Rate Limiting |
 | **Google Workspace** | The Maintainer's mailbox on poli0981.dev, which receives the project's contact addresses |
 | **GitHub** | Code, catalog data, issues and discussions, Actions (the pipeline), release downloads |
+| **SonarQube Cloud** (SonarSource) | Code analysis and test coverage of the public repository, on pushes to `main` and on pull requests |
 | **itch.io** | Where the games live; the pipeline and RSS discovery read public itch.io pages and feeds |
 | **Discord** | Receives automated CI and release notifications only |
 
