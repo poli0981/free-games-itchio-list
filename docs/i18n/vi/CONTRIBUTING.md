@@ -84,7 +84,7 @@ Chi tiết có trong [Điều khoản sử dụng](ToS.md) và [Tuyên bố mi�
 
 Hướng dẫn đầy đủ (Worker, D1 cục bộ, secret, Tauri, Android) nằm trong **[`docs/dev_env.md`](../../dev_env.md)** ([VI](dev_env.md)); ghi chú build Tauri/Android nằm trong [`webapp/TAURI.md`](../../../webapp/TAURI.md). Bản ngắn gọn:
 
-**Pipeline Python** (Python 3.14, xem `.python-version`):
+**Pipeline Python** (Python 3.15, xem `.python-version`):
 
 ```sh
 python -m venv .venv
@@ -100,7 +100,7 @@ Muốn thử cào thật trên máy: thêm một URL vào `scripts/temp_link.jso
 `python scripts/update_info.py --out patch.json` và `python scripts/apply_patch.py patch.json`
 (đừng commit kết quả; xem quy tắc PR ở trên).
 
-**Webapp + Worker** (Node.js 22.22+, CI dùng phiên bản trong `webapp/.node-version`):
+**Webapp + Worker** (Node.js 26+, CI dùng phiên bản trong `webapp/.node-version`):
 
 ```sh
 cd webapp

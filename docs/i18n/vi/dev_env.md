@@ -17,12 +17,17 @@ JetBrains 2026.x (dòng trả phí):
 
 VS Code, Sublime, vim, v.v. đều dùng tốt; repo không chứa gì đặc thù của JetBrains.
 
+TypeScript 7 (bản `tsc` mà `npm run build` chạy) là binary native, không có `tsserver`. Trong VS Code,
+cài extension TypeScript Native Preview (`TypeScriptTeam.native-preview`) để dùng language server của
+TS 7. Trong WebStorm, dùng chế độ hỗ trợ TypeScript 7 hoặc trỏ *Languages & Frameworks → TypeScript*
+tới `webapp/node_modules/@typescript/old` (TypeScript 6.0, báo cùng các lỗi).
+
 ## Toolchain ngôn ngữ
 
 | Stack | Yêu cầu | Dùng cho |
 |-------|---------|----------|
-| Python | 3.14 (`.python-version`) | Pipeline dữ liệu (`scripts/`) và test của nó |
-| Node.js | 22.22+ (CI dùng `webapp/.node-version`) | Web app, admin app, Worker, phần front end của Tauri |
+| Python | 3.15 (`.python-version`) | Pipeline dữ liệu (`scripts/`) và test của nó |
+| Node.js | 26+ (CI dùng `webapp/.node-version`) | Web app, admin app, Worker, phần front end của Tauri |
 | npm | đi kèm Node.js | Dependency (`npm ci` theo `package-lock.json`) |
 | Wrangler | dependency của dự án (`npx wrangler`) | Worker chạy local, D1 local, deploy |
 | Rust | stable (qua `rustup`) | Chỉ để build Tauri desktop / Android |
@@ -41,8 +46,8 @@ python -m venv .venv
 pip install -r requirements-dev.txt
 ```
 
-Trên Windows, đặt `PYTHONUTF8=1` (PowerShell: `$env:PYTHONUTF8 = "1"`) để Python đọc và ghi các
-file catalog dưới dạng UTF-8.
+Python 3.15 mặc định đọc và ghi file dưới dạng UTF-8 (UTF-8 mode, PEP 686), nên trên Windows không
+cần đặt `PYTHONUTF8=1` nữa.
 
 ### Kiểm tra (giống `python-ci.yml`)
 

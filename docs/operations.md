@@ -24,7 +24,7 @@ secret: secrets are only ever typed into Cloudflare (`wrangler secret put`) or a
 Do these once (and again with the `-staging` names for the staging Worker).
 
 1. **Build settings** (Worker → Settings → Build): root directory `webapp`; build command
-   `npm run build`; deploy command `npx wrangler deploy`; build variable `NODE_VERSION=24` (no
+   `npm run build`; deploy command `npx wrangler deploy`; build variable `NODE_VERSION=26` (no
    `VITE_CF_BEACON_TOKEN`: the zone injects Web Analytics, step 10). The staging Worker, if you use
    it, is deployed by hand (`npx wrangler deploy --env staging`); turn its builds for non-production
    branches **off** (otherwise every push to `main` also gets a preview build there).

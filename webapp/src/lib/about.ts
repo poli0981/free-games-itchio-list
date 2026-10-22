@@ -136,7 +136,7 @@ export const LEGAL_VI_INDEX_URL =
 export const THIRD_PARTY: ThirdParty[] = [
   // Core
   { name: 'React', version: '19.3', license: 'MIT', url: 'https://react.dev', category: 'core' },
-  { name: 'TypeScript', version: '6.0', license: 'Apache-2.0', url: 'https://www.typescriptlang.org', category: 'core' },
+  { name: 'TypeScript', version: '7.0', license: 'Apache-2.0', url: 'https://www.typescriptlang.org', category: 'core' },
   { name: 'Vite', version: '8.3', license: 'MIT', url: 'https://vite.dev', category: 'core' },
   { name: 'React Router', version: '8.4', license: 'MIT', url: 'https://reactrouter.com', category: 'core' },
   { name: 'Zustand', version: '5.0', license: 'MIT', url: 'https://github.com/pmndrs/zustand', category: 'core' },
