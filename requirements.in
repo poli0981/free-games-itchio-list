@@ -1,0 +1,6 @@
+# Runtime dependencies of the data pipeline (scripts/). requirements.txt is the
+# hash-locked compile of this file; regenerate it after an edit (CLAUDE.md, gotcha 40):
+#   pip-compile --generate-hashes --allow-unsafe --strip-extras requirements.in
+requests>=2.34.2,<3
+beautifulsoup4>=4.15.0,<5
+urllib3>=2.8.0,<3

@@ -81,7 +81,7 @@ jobs:
 
       - name: Install npm deps
         working-directory: webapp
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Initialize Android project
         working-directory: webapp

@@ -36,7 +36,7 @@ api() {
 }
 
 output() {
-  if [ -n "${GITHUB_OUTPUT:-}" ]; then echo "$1" >>"$GITHUB_OUTPUT"; fi
+  if [[ -n "${GITHUB_OUTPUT:-}" ]]; then echo "$1" >>"$GITHUB_OUTPUT"; fi
 }
 
 commits=$(api "repos/$GITHUB_REPOSITORY/commits?sha=main&per_page=100" \
@@ -44,14 +44,14 @@ commits=$(api "repos/$GITHUB_REPOSITORY/commits?sha=main&per_page=100" \
 declare -A parent=()
 sha=""
 while read -r commit first_parent; do
-  [ -n "$commit" ] || continue
-  [ -n "$sha" ] || sha=$commit
+  [[ -n "$commit" ]] || continue
+  [[ -n "$sha" ]] || sha=$commit
   parent[$commit]=$first_parent
 done <<<"$commits"
 
 now=$(date -u +%s)
 for _ in $(seq 1 "$MAX_COMMITS"); do
-  [ -n "$sha" ] && [ -n "${parent[$sha]+set}" ] || break
+  [[ -n "$sha" && -n "${parent[$sha]+set}" ]] || break
   run=$(api --method GET "repos/$GITHUB_REPOSITORY/commits/$sha/check-runs" \
     -f check_name="$CHECK_NAME" -f filter=latest --jq \
     '[.check_runs[] | select(.app.slug == "cloudflare-workers-and-pages")] | first
@@ -67,7 +67,7 @@ for _ in $(seq 1 "$MAX_COMMITS"); do
       ;;
     *)
       age_h=$(((now - $(date -u -d "$completed" +%s)) / 3600))
-      if [ "$age_h" -lt "$WINDOW_H" ]; then
+      if [[ "$age_h" -lt "$WINDOW_H" ]]; then
         echo "::error::The Cloudflare build of ${sha:0:7} ended '$conclusion' — freeitchgames.win is not up to date: $url"
         output "failed_id=$id"
         output "failed_url=$url"

@@ -21,6 +21,7 @@
 import { missingConfig, type WorkerEnv } from './env'
 import { challengePage, crawlerUnavailable } from './gate-page'
 import { HttpError, LOCAL_HOSTS, errorResponse, isObject, json, rateKey, readJson } from './http'
+import { trimEnd } from './text'
 import { siteverify } from './turnstile'
 
 const COOKIE = '__Host-fig_gate'
@@ -98,10 +99,8 @@ async function macKey(secret: string): Promise<CryptoKey> {
 const macInput = (iat: number) => encoder.encode(`fig-gate|v1|${iat}`)
 
 function toBase64Url(bytes: ArrayBuffer): string {
-  return btoa(String.fromCharCode(...new Uint8Array(bytes)))
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=+$/, '')
+  const b64 = btoa(String.fromCharCode(...new Uint8Array(bytes)))
+  return trimEnd(b64.replace(/\+/g, '-').replace(/\//g, '_'), '=')
 }
 
 function fromBase64Url(text: string): Uint8Array {

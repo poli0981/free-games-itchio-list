@@ -1,0 +1,11 @@
+# Lint and test tools on top of the runtime pins (`-c`). requirements-dev.txt is
+# the hash-locked compile of this file; regenerate it after an edit (CLAUDE.md, gotcha 40):
+#   pip-compile --generate-hashes --allow-unsafe --strip-extras requirements-dev.in
+-c requirements.txt
+-r requirements.in
+ruff>=0.17.1
+pytest>=9.1.1
+vulture>=2.16
+pillow>=13.0.0
+# pytest needs it on Windows only; listed so a lock compiled on Linux (Dependabot) still installs there.
+colorama

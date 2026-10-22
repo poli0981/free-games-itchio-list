@@ -16,6 +16,7 @@
  */
 import { catalogUrls, type DataSource } from './data'
 import { json } from './http'
+import { trimEnd } from './text'
 
 // Keep in sync with the <Routes> in src/App.tsx.
 const ROUTES = new Set(['/', '/games', '/charts', '/removed', '/settings', '/about', '/suggest'])
@@ -52,7 +53,7 @@ async function isGameSlug(slug: string, src: DataSource): Promise<boolean> {
 }
 
 async function isAppRoute(pathname: string, src: DataSource): Promise<boolean> {
-  const path = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname
+  const path = pathname.length > 1 ? trimEnd(pathname, '/') : pathname
   if (ROUTES.has(path) || ERROR_PREVIEW_ROUTE.test(path)) return true
   const game = GAME_ROUTE.exec(path)
   return game !== null && (await isGameSlug(game[1], src))
@@ -72,7 +73,7 @@ export async function handleMiss(request: Request, url: URL, assets: Fetcher, ga
     const cors = url.pathname.startsWith('/data/') ? { 'Access-Control-Allow-Origin': '*' } : undefined
     return json({ error: 'not_found' }, 404, cors)
   }
-  const moved = MOVED[url.pathname.replace(/\/+$/, '')]
+  const moved = MOVED[trimEnd(url.pathname, '/')]
   if (moved) return Response.redirect(new URL(moved + url.search, url).toString(), 301)
   // Before the shell is fetched, so a conditional request (If-None-Match)
   // without a pass gets the verification page, never a 304 for a cached shell.

@@ -55,13 +55,13 @@ export function parseFeed(xml: string): FeedItem[] {
     const url = tag(block, 'link') ?? tag(block, 'guid')
     if (!url) continue
     const rawTitle = tag(block, 'title') ?? ''
-    const brackets = [...rawTitle.matchAll(/\[([^\]]+)\]/g)].map((m) => m[1].trim())
+    const brackets = [...rawTitle.matchAll(/\[([^[\]]+)\]/g)].map((m) => m[1].trim())
     const genre = brackets.find((b) => !NOT_GENRE.has(b.toLowerCase())) ?? null
     const price = tag(block, 'price') ?? ''
     const image = tag(block, 'imageurl')
     items.push({
       url,
-      title: tag(block, 'plainTitle') ?? rawTitle.replace(/\s*\[[^\]]*\]/g, '').trim(),
+      title: tag(block, 'plainTitle') ?? rawTitle.replace(/\[[^[\]]*\]/g, '').replace(/\s+/g, ' ').trim(),
       image: image?.startsWith('https://img.itch.zone/') ? image : null,
       genre,
       free: /^[^0-9]*0+(?:[.,]0+)?$/.test(price) || brackets.some((b) => b.toLowerCase() === 'free'),

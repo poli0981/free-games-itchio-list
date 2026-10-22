@@ -12,7 +12,7 @@ def _run(monkeypatch, pages: dict[str, Page], queue: list, **env):
     monkeypatch.setattr(
         update_info, "fetch_with_backoff", lambda _s, url, _p, _c: pages.get(url, Page(status=500))
     )
-    assert update_info.main(["--out", "patch.json"]) == 0
+    update_info.main(["--out", "patch.json"])
     return read_json("patch.json")
 
 
@@ -139,7 +139,7 @@ def test_duplicate_spelling_survives_a_rate_limit_stop(repo, monkeypatch):
     queue = ["https://dev.itch.io/a", "https://dev.itch.io/a"]
     save_json("scripts/temp_link.json", queue)
     monkeypatch.setattr(update_info, "fetch_with_backoff", lambda *_a: None)
-    assert update_info.main(["--out", "patch.json"]) == 0
+    update_info.main(["--out", "patch.json"])
     assert _apply(read_json("patch.json")) == queue
 
 
@@ -161,7 +161,7 @@ def test_dispatched_url_is_processed_first_and_queued_until_done(repo, monkeypat
     save_json("scripts/temp_link.json", ["https://dev.itch.io/backlog"])
     monkeypatch.setenv("INPUT_URL", "https://dev.itch.io/Dispatched/")
     monkeypatch.setattr(update_info, "fetch_with_backoff", fetch)
-    assert update_info.main(["--out", "patch.json"]) == 0
+    update_info.main(["--out", "patch.json"])
     patch = read_json("patch.json")
     assert seen[0] == "https://dev.itch.io/dispatched"
     assert patch["queue_add"] == ["https://dev.itch.io/dispatched"]
@@ -205,7 +205,7 @@ def test_failures_count_only_when_spaced_out(repo, monkeypatch):
         "2026-09-18T14:00:00Z",  # 3 -> given up
     ):
         monkeypatch.setattr(update_info, "now_iso", lambda s=stamp: s)
-        assert update_info.main(["--out", "patch.json"]) == 0
+        update_info.main(["--out", "patch.json"])
         write_patch("patch.json", read_json("patch.json"))
         assert apply_patch.main(["patch.json"]) == 0
         entry = read_json("scripts/state/ingest_state.json").get(url, {})

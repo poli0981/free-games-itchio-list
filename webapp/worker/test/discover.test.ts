@@ -35,6 +35,12 @@ describe('parseFeed', () => {
     expect(items[2].free).toBe(false)
     expect(items[3].image).toBeNull() // only img.itch.zone covers are kept
   })
+
+  it('falls back to the title without its [tags] when there is no plainTitle', () => {
+    const feed = `<rss><channel><item><title>Night Shift [Free] [Horror] [Windows]</title>
+<link>https://studio.itch.io/night-shift</link><price>$0.00</price></item></channel></rss>`
+    expect(parseFeed(feed)[0]).toMatchObject({ title: 'Night Shift', genre: 'Horror', free: true })
+  })
 })
 
 describe('pickFeed', () => {

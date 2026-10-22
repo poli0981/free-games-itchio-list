@@ -78,7 +78,7 @@ npm run lint                         # ESLint
 npm run knip                         # unused files / exports / deps
 npm test                             # Vitest: app + Worker (D1 tests run a local workerd)
 npm run build                        # includes tsc -b (or run npx tsc -b on its own)
-npx wrangler deploy --dry-run --env=""
+npm run cf:check                     # wrangler deploy --dry-run (deploys nothing)
 ```
 
 After editing `wrangler.jsonc`, run `npm run cf:types` and commit the regenerated

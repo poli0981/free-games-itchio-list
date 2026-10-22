@@ -3,6 +3,7 @@
  * for tests of the SQL in queue.ts. Runs workerd through wrangler's platform proxy.
  */
 import { getPlatformProxy } from 'wrangler'
+import { compareCodeUnits } from '../text'
 
 const MIGRATIONS = import.meta.glob<string>('../migrations/*.sql', { query: '?raw', import: 'default', eager: true })
 
@@ -11,9 +12,9 @@ export async function testDb(): Promise<{ db: D1Database; dispose: () => Promise
     configPath: new URL('./wrangler.test.jsonc', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'),
     persist: false,
   })
-  for (const name of Object.keys(MIGRATIONS).sort()) {
+  for (const name of Object.keys(MIGRATIONS).sort(compareCodeUnits)) {
     const statements = MIGRATIONS[name]
-      .replace(/--.*$/gm, '')
+      .replace(/--[^\r\n]*/g, '')
       .split(';')
       .map((s) => s.trim())
       .filter(Boolean)

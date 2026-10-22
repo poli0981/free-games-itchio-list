@@ -47,6 +47,11 @@ pip install -r requirements-dev.txt
 Python 3.15 reads and writes files as UTF-8 by default (UTF-8 mode, PEP 686), so Windows no longer
 needs `PYTHONUTF8=1`.
 
+Both requirements files pin every package with its hashes; pip checks them on install. To add or
+change a dependency, edit `requirements.in` or `requirements-dev.in` and recompile the lock with
+pip-tools — the command is at the top of each `.in` file (run it on Python 3.14, which Dependabot
+can read; CLAUDE.md, gotcha 40).
+
 ### Checks (same as `python-ci.yml`)
 
 ```sh
@@ -171,7 +176,7 @@ npm run knip                           # unused files / exports / dependencies
 npm test                               # Vitest: app + Worker; D1 tests start a local workerd
 npx tsc -b                             # type-check only (npm run build runs it too)
 npm run build
-npx wrangler deploy --dry-run --env=""  # validates the Worker config, deploys nothing
+npm run cf:check                       # wrangler deploy --dry-run: validates the Worker config, deploys nothing
 ```
 
 After editing `wrangler.jsonc`, run `npm run cf:types` and commit the regenerated

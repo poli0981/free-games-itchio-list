@@ -10,6 +10,7 @@ on:
       - 'tests/**'
       - 'data_game/**'
       - 'requirements*.txt'
+      - 'requirements*.in'
       - 'pyproject.toml'
       - '.github/python-version'
       - '.github/workflows/python-ci.yml'
@@ -20,6 +21,7 @@ on:
       - 'tests/**'
       - 'data_game/**'
       - 'requirements*.txt'
+      - 'requirements*.in'
       - 'pyproject.toml'
       - '.github/python-version'
       - '.github/workflows/python-ci.yml'
@@ -49,10 +51,15 @@ jobs:
           # supports Python <= 3.14 only (CLAUDE.md gotcha 39).
           python-version-file: .github/python-version
           cache: pip
-          cache-dependency-path: requirements-dev.txt
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
 
+      # Both hash-locked files at once: pip fails if their pins disagree.
+      # Wheels only, so no package runs a build script here.
       - name: Install dependencies
-        run: pip install -r requirements-dev.txt
+        run: |
+          pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
 
       - name: Ruff
         run: |

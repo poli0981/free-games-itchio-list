@@ -46,8 +46,8 @@ export function aiDisclosureCounts(games: Game[]): CountEntry[] {
 }
 
 function parseRating(rating: string): number | null {
-  const n = parseFloat(rating)
-  return isFinite(n) ? n : null
+  const n = Number.parseFloat(rating)
+  return Number.isFinite(n) ? n : null
 }
 
 export function classifyOnline(games: Game[]): { online: number; offline: number } {

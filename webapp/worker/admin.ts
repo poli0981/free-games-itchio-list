@@ -50,6 +50,7 @@ import {
   type QueueStore,
 } from './queue'
 import { repoOps, type IngestView, type RepoOps } from './repo'
+import { trimEnd } from './text'
 
 const STATUSES: readonly CandidateStatus[] = ['pending', 'rejected', 'queued', 'ingested', 'failed']
 const THUMB_WIDTHS = [160, 640]
@@ -538,7 +539,7 @@ export async function adminApi(request: Request, url: URL, ctx: AdminContext): P
 }
 
 async function route(request: Request, url: URL, ctx: AdminContext): Promise<Response> {
-  const route = `${request.method} ${url.pathname.replace(/\/+$/, '')}`
+  const route = `${request.method} ${trimEnd(url.pathname, '/')}`
   switch (route) {
     case 'GET /api/admin/me':
       return json({ email: ctx.actor, writes: ctx.repo !== null, repo: ctx.repoName ?? null })

@@ -77,8 +77,8 @@ def create_session() -> requests.Session:
         raise_on_status=False,
     )
     adapter = HTTPAdapter(max_retries=retry)
+    # Every URL we fetch is canonical https (canonical.py); no adapter for plain http.
     session.mount("https://", adapter)
-    session.mount("http://", adapter)
     return session
 
 
@@ -233,7 +233,9 @@ def find_title(soup: BeautifulSoup) -> str:
 
 def has_info_panel(soup: BeautifulSoup) -> bool:
     wrapper = soup.find("div", class_="info_panel_wrapper")
-    return bool(wrapper and wrapper.find("table"))
+    if not wrapper:
+        return False
+    return wrapper.find("table") is not None
 
 
 def is_password_protected(soup: BeautifulSoup) -> bool:
@@ -370,7 +372,9 @@ def _cap(text: str) -> str:
 def extract_tagline(soup: BeautifulSoup) -> str:
     """The creator's "short description or tagline" (itch.io puts it in og:description)."""
     meta = soup.find("meta", property="og:description")
-    text = " ".join(str(meta.get("content", "")).split()) if meta else ""
+    if not meta:
+        return NA
+    text = " ".join(str(meta.get("content", "")).split())
     return _cap(text) if text else NA
 
 
@@ -399,8 +403,10 @@ def extract_description(soup: BeautifulSoup) -> str:
 # ---------------------------------------------------------------------------
 def extract_thumbnail(soup: BeautifulSoup) -> str:
     meta = soup.find("meta", property="og:image")
-    if meta and str(meta.get("content", "")).startswith("http"):
-        return meta["content"]
+    if meta:
+        content = str(meta.get("content", ""))
+        if content.startswith("http"):
+            return content
 
     ss = soup.find("div", class_="screenshot_list")
     if ss:
@@ -429,7 +435,8 @@ def detect_nsfw(soup: BeautifulSoup, tags, *texts: str) -> str:
         return "Yes"
     if any(text != NA and _NSFW_RE.search(text) for text in texts):
         return "Yes"
-    if soup.find("div", class_=["view_game_warning", "mature_content_notice"]):
+    # Either notice (a class list in find() would mean the same; ".a.b" would need both).
+    if soup.select_one("div.view_game_warning, div.mature_content_notice"):
         return "Yes"
     return "No"
 

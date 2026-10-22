@@ -1,6 +1,53 @@
 # Changelog — 4.4.x
 
-Release notes for 4.4.0 and 4.4.1, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+Release notes for 4.4.0 to 4.4.2, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [4.4.2] - 2026-10-22 (Toolchain upgrade, code-scan fixes)
+
+A maintenance release: nothing you would notice changes on the site or in the apps. The project now
+builds with TypeScript 7, Node 26 and Python 3.15, and the issues a SonarQube Cloud scan of the
+repository reported are fixed — the one that mattered was a path check in the Worker's not-found
+handler that a crafted address could make expensive.
+
+### Upgrade notes
+
+- **Nothing to accept again**: no policy changed.
+- **Desktop and Android apps**: install 4.4.2 over 4.4.1 as usual.
+- **Building or running your own copy?** Use Node 26 for the web app and Python 3.15 for the
+  pipeline. The Python dependencies are now pinned with hashes: `pip install -r requirements-dev.txt`
+  works as before; to change one, edit `requirements.in` or `requirements-dev.in` and recompile with
+  pip-tools (the command is at the top of each file).
+
+### Fixed
+
+- **Worker**: trailing slashes on request paths (not-found handler, admin routes, the Access issuer)
+  and the verification cookie's base64 padding are trimmed by a loop instead of a regular expression
+  that backtracked — a path with a long run of slashes cost quadratic CPU time on a public route. The
+  itch.io feed and collection parsers lost three more expressions of that kind; a collection link's
+  attributes are now read by splitting on quotes.
+- **Pipeline**: itch.io's two mature-content notices are matched by one CSS selector, so either of
+  them still marks a game NSFW (each now has a test). A few checks are written out so the scanner can
+  follow them, without a change in behaviour, and the scraper no longer sets up plain-http requests
+  (every page it fetches is https).
+
+### Changed
+
+- **Build tooling** (#149, #154): TypeScript 7.0, the native compiler, runs the type check, with the
+  6.0 API installed beside it for typescript-eslint. Node 26 builds the web app and the release apps,
+  and npm runs only the install scripts of esbuild and workerd. Python 3.15 runs the pipeline (UTF-8
+  mode is now the default); its CI pin moved to `.github/python-version`, out of Dependabot's way.
+- **Supply chain**: the pipeline's Python dependencies, indirect ones included, are locked with hashes
+  (`requirements.txt`, `requirements-dev.txt`, compiled from `requirements*.in`) and installed from
+  wheels only, so a new release of a dependency can no longer slip into the jobs that commit to the
+  catalog. CI and the release builds install npm packages with `--ignore-scripts`, and the Workers
+  config check runs the project's own wrangler (`npm run cf:check`).
+- **Code scanning**: `.sonarcloud.properties` keeps the saved itch.io test pages out of the scan;
+  the maintainer's `i18n-edit` script reads its operations from stdin instead of a file path.
+- **Dependencies**: React 19.3.1 (#141), TanStack Query 5.104.4 (#142, #150), Radix UI primitives
+  (#143), `@tauri-apps/api` 2.12.4, CLI 2.12.3 and `plugin-opener` 2.7.2 (#144) with the matching
+  crates `tauri-build` 2.7.3, `tauri-plugin-opener` 2.7.2 and `tauri-plugin-single-instance` 2.5.4
+  (#146), lucide-react 1.59.0 (#152), Vitest 5.0.5 (#153), Ruff 0.17.1 and Pillow 13 (#147),
+  `actions/setup-java` 6.1.0 and `dtolnay/rust-toolchain` in the release workflows (#148).
 
 ## [4.4.1] - 2026-10-16 (Extension and bot retired)
 
