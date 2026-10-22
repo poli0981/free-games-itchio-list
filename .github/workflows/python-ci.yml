@@ -11,7 +11,7 @@ on:
       - 'data_game/**'
       - 'requirements*.txt'
       - 'pyproject.toml'
-      - '.python-version'
+      - '.github/python-version'
       - '.github/workflows/python-ci.yml'
   push:
     branches: [main]
@@ -21,7 +21,7 @@ on:
       - 'data_game/**'
       - 'requirements*.txt'
       - 'pyproject.toml'
-      - '.python-version'
+      - '.github/python-version'
       - '.github/workflows/python-ci.yml'
 
 permissions: {}
@@ -45,7 +45,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version-file: .python-version
+          # Not .python-version: Dependabot's pip updater reads that file and
+          # supports Python <= 3.14 only (CLAUDE.md gotcha 39).
+          python-version-file: .github/python-version
           cache: pip
           cache-dependency-path: requirements-dev.txt
 

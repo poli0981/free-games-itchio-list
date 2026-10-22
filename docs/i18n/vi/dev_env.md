@@ -26,7 +26,7 @@ tới `webapp/node_modules/@typescript/old` (TypeScript 6.0, báo cùng các l�
 
 | Stack | Yêu cầu | Dùng cho |
 |-------|---------|----------|
-| Python | 3.15 (`.python-version`) | Pipeline dữ liệu (`scripts/`) và test của nó |
+| Python | 3.15 (`.github/python-version`) | Pipeline dữ liệu (`scripts/`) và test của nó |
 | Node.js | 26+ (CI dùng `webapp/.node-version`) | Web app, admin app, Worker, phần front end của Tauri |
 | npm | đi kèm Node.js | Dependency (`npm ci` theo `package-lock.json`) |
 | Wrangler | dependency của dự án (`npx wrangler`) | Worker chạy local, D1 local, deploy |
