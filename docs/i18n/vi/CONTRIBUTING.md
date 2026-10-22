@@ -84,7 +84,7 @@ Chi tiết có trong [Điều khoản sử dụng](ToS.md) và [Tuyên bố mi�
 
 Hướng dẫn đầy đủ (Worker, D1 cục bộ, secret, Tauri, Android) nằm trong **[`docs/dev_env.md`](../../dev_env.md)** ([VI](dev_env.md)); ghi chú build Tauri/Android nằm trong [`webapp/TAURI.md`](../../../webapp/TAURI.md). Bản ngắn gọn:
 
-**Pipeline Python** (Python 3.15, xem `.python-version`):
+**Pipeline Python** (Python 3.15, xem `.github/python-version`):
 
 ```sh
 python -m venv .venv

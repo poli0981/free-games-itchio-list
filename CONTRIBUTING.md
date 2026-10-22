@@ -80,7 +80,7 @@ Details live in the [Terms of Use](docs/ToS.md) and the [Disclaimer](docs/DISCLA
 
 Full instructions (Worker, local D1, secrets, Tauri, Android) are in **[`docs/dev_env.md`](docs/dev_env.md)**; the Tauri/Android build notes are in [`webapp/TAURI.md`](webapp/TAURI.md). The short version:
 
-**Python pipeline** (Python 3.15, see `.python-version`):
+**Python pipeline** (Python 3.15, see `.github/python-version`):
 
 ```sh
 python -m venv .venv

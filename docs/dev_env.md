@@ -24,7 +24,7 @@ TypeScript* at `webapp/node_modules/@typescript/old` (TypeScript 6.0, which repo
 
 | Stack | Required | Used for |
 |-------|----------|----------|
-| Python | 3.15 (`.python-version`) | Data pipeline (`scripts/`) and its tests |
+| Python | 3.15 (`.github/python-version`) | Data pipeline (`scripts/`) and its tests |
 | Node.js | 26+ (CI uses `webapp/.node-version`) | Web app, admin app, Worker, Tauri front end |
 | npm | ships with Node.js | Dependencies (`npm ci` from `package-lock.json`) |
 | Wrangler | project dependency (`npx wrangler`) | Local Worker, local D1, deploys |
