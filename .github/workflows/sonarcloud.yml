@@ -7,8 +7,8 @@
 #   token    — is SONAR_TOKEN available? Dependabot and fork PRs get no
 #              repository secrets: the analysis is skipped there, not failed.
 #   coverage — pytest-cov and Vitest (v8) coverage reports, without the token.
-#   scan     — sonarqube-scan-action with those reports; the only job that sees
-#              the token, and it runs no project or dependency code.
+#   scan     — sonarqube-scan-action with those reports: the only step that
+#              uses the token, in a job that runs no project or dependency code.
 name: SonarQube Cloud
 
 on:
