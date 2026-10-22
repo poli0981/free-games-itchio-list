@@ -1166,5 +1166,33 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-22T08:23:57Z"
+    },
+    {
+        "url": "https://piro775.itch.io/efp-fangame",
+        "name": "Escape From Playtime Fangame",
+        "dev": "PIRO775",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 11:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjk0MDkyLnBuZw==/original/ohS7l8.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T12:23:56Z"
     }
 ]
