@@ -58,7 +58,8 @@ jobs:
       # Both hash-locked files at once: pip fails if their pins disagree.
       # Wheels only, so no package runs a build script here.
       - name: Install dependencies
-        run: pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
+        run: |
+          pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
 
       - name: Ruff
         run: |
