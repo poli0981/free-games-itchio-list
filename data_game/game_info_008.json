@@ -946,5 +946,225 @@
         "notes": "",
         "updated_at": "21 October 2026 @ 21:45 UTC",
         "added_at": "2026-10-22T04:24:22Z"
+    },
+    {
+        "url": "https://ajaxdoesshit.itch.io/attic-love",
+        "name": "Attic Love",
+        "dev": "NekoJax",
+        "description": "El es tuyo",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 20:34 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTc4NDIzLnBuZw==/original/4oNBmM.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Mystery",
+            "No AI"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T08:23:39Z"
+    },
+    {
+        "url": "https://archiepvc.itch.io/death-of-a-party",
+        "name": "Death of a Party",
+        "dev": "Zoë Collier, ✧Kaelin✧",
+        "description": "YOUR CHILDHOOD ENDS TONIGHT",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 10:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTEzMTIxLnBuZw==/original/RibjvX.png",
+        "tags": [
+            "2D",
+            "Coming Of Age",
+            "Dark",
+            "First-Person",
+            "Hand-drawn",
+            "Indie",
+            "Psychological Horror",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T08:23:42Z"
+    },
+    {
+        "url": "https://augustine-ina.itch.io/comfort-and-warmth",
+        "name": "Comfort and Warmth",
+        "dev": "augustine ina",
+        "description": "Comfort and Warmth Some days are hard.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 15:46 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTcyMTI1LmdpZg==/original/xqrLTa.gif",
+        "tags": [
+            "2D",
+            "Anime",
+            "Casual",
+            "Female Protagonist",
+            "Indie",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T08:23:46Z"
+    },
+    {
+        "url": "https://cloud9games.itch.io/echo",
+        "name": "ECHO",
+        "dev": "Cloud9games",
+        "description": "Millie just wanted a fun day at the arcade with her friends.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 18:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTMyODcxLnBuZw==/original/YFWMs2.png",
+        "tags": [
+            "2D",
+            "Boss battle",
+            "Cozy",
+            "Creepy",
+            "Mystery",
+            "Pixel Art",
+            "Singleplayer",
+            "Sprites"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T08:23:50Z"
+    },
+    {
+        "url": "https://exca.itch.io/tea-cup-dragon",
+        "name": "Tea Cup Dragon",
+        "dev": "Exca, classheikki",
+        "description": "Grow tea, make friends ♥",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 12:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTY3Njc3LnBuZw==/original/NwyY%2FY.png",
+        "tags": [
+            "Cozy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T08:23:54Z"
+    },
+    {
+        "url": "https://mlazuli.itch.io/redecorar",
+        "name": "Redecorar",
+        "dev": "Mlazuli",
+        "description": "indie",
+        "genre": "Puzzle",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 19:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTQ3MTI2LnBuZw==/original/zt1Yy4.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Indie"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T08:23:57Z"
     }
 ]
