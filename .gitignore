@@ -15,6 +15,7 @@
 
 /webapp/node_modules/
 /webapp/dist/
+/webapp/coverage/
 /webapp/src-tauri/target/
 /webapp/src-tauri/gen/
 

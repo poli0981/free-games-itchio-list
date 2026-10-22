@@ -62,6 +62,9 @@ vulture                                  # dead code
 python scripts/validate.py               # checks every catalog data file
 ```
 
+`pytest --cov --cov-report=xml` also measures coverage and writes `coverage.xml`, as the SonarQube
+Cloud workflow (`sonarcloud.yml`) does.
+
 ### Try a real scrape
 
 These make real requests to itch.io:
@@ -178,6 +181,9 @@ npx tsc -b                             # type-check only (npm run build runs it 
 npm run build
 npm run cf:check                       # wrangler deploy --dry-run: validates the Worker config, deploys nothing
 ```
+
+`npm run test:coverage` runs the tests with v8 coverage and writes `coverage/lcov.info`, as the
+SonarQube Cloud workflow (`sonarcloud.yml`) does.
 
 After editing `wrangler.jsonc`, run `npm run cf:types` and commit the regenerated
 `worker-configuration.d.ts`.

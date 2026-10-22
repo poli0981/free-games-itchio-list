@@ -63,6 +63,9 @@ vulture                                  # code chết
 python scripts/validate.py               # kiểm tra mọi file dữ liệu catalog
 ```
 
+`pytest --cov --cov-report=xml` đo thêm coverage và ghi `coverage.xml`, giống workflow SonarQube Cloud
+(`sonarcloud.yml`).
+
 ### Thử scrape thật
 
 Các lệnh này gửi request thật tới itch.io:
@@ -179,6 +182,9 @@ npx tsc -b                             # chỉ kiểm tra kiểu (npm run build 
 npm run build
 npm run cf:check                       # wrangler deploy --dry-run: kiểm tra cấu hình Worker, không deploy gì
 ```
+
+`npm run test:coverage` chạy test kèm coverage v8 và ghi `coverage/lcov.info`, giống workflow
+SonarQube Cloud (`sonarcloud.yml`).
 
 Sau khi sửa `wrangler.jsonc`, chạy `npm run cf:types` và commit file `worker-configuration.d.ts` vừa
 được tạo lại.

@@ -71,7 +71,7 @@ Chi tiết có trong [Điều khoản sử dụng](ToS.md) và [Tuyên bố mi�
 
 **Quy tắc PR** (phần không thương lượng):
 
-- **CI phải pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) và Webapp CI (kiểm tra type sinh ra, lint, knip, test, build, `wrangler deploy --dry-run`) đều chạy trên PR. CI đỏ = không merge.
+- **CI phải pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) và Webapp CI (kiểm tra type sinh ra, lint, knip, test, build, `wrangler deploy --dry-run`) đều chạy trên PR. CI đỏ = không merge. SonarQube Cloud cũng phân tích mỗi PR (kèm test coverage) và báo quality gate qua check "SonarCloud Code Analysis".
 - **PR được merge bằng squash** (một PR thành một commit trên `main`) **hoặc merge commit, không bao giờ fast-forward**, nên hãy đặt tiêu đề PR như một commit message tốt (repo dùng kiểu `type(scope): tóm tắt`, ví dụ `fix(web): …`).
 - **Giấy phép theo nguyên tắc inbound = outbound.** Khi mở PR, bạn đồng ý rằng đóng góp của mình được cấp phép theo cùng giấy phép với phần mà nó thay đổi: **MIT** cho mã nguồn, **CC BY 4.0** cho dữ liệu danh mục và tài liệu (xem [README → Giấy phép](../../../README.vi.md#giấy-phép)). Chỉ gửi những gì bạn có quyền gửi.
 - **Không bao giờ commit secret**: không token, API key, file `.dev.vars` / `.env`, private key (chẳng hạn khóa của GitHub App) hay keystore dùng để ký. Nếu lỡ push một cái, hãy báo riêng (security@poli0981.dev) và thay mới (rotate) nó; chỉ xóa commit là không đủ.
