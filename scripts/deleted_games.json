@@ -796,5 +796,17 @@
         "name": "Geometry Dash 2.209/2.2091 (APK and PC).",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-21T02:55:57Z"
+    },
+    {
+        "url": "https://teo-tormo.itch.io/sf2cengcd",
+        "name": "Street Fighter II Champion Edition for Neo Geo CD",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-22T02:56:06Z"
+    },
+    {
+        "url": "https://twindark.itch.io/godseater",
+        "name": "GodsEater",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-22T02:56:10Z"
     }
 ]
