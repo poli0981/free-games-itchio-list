@@ -36,8 +36,10 @@ jobs:
           cache: npm
           cache-dependency-path: webapp/package-lock.json
 
+      # No install scripts: esbuild's and workerd's postinstall only check their
+      # platform binary, which their launchers find without it.
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       # The web build never runs `tauri build`, which refuses mismatched
       # crate / npm versions; without this a Dependabot bump on one side
@@ -61,4 +63,4 @@ jobs:
         run: npm run build
 
       - name: Validate Workers config (dry run)
-        run: npx wrangler deploy --dry-run --env=""
+        run: npm run cf:check

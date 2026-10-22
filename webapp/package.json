@@ -19,6 +19,7 @@
     "test": "vitest run",
     "check:tauri": "node scripts/check-tauri-versions.mjs",
     "cf:types": "wrangler types --env-file=types.env --strict-vars=false",
+    "cf:check": "wrangler deploy --dry-run --env=",
     "cf:dev": "wrangler dev"
   },
   "dependencies": {

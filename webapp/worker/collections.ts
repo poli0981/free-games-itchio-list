@@ -80,9 +80,18 @@ export function collectionPageUrl(id: string, slug: string, page: number): strin
   return `${collectionUrl(id, slug)}?format=json${page > 1 ? `&page=${page}` : ''}`
 }
 
+const ATTRIBUTE_NAME = /^[a-zA-Z_:][-a-zA-Z0-9_:.]*$/
+
+/** A tag's double-quoted attributes, read by splitting on the quotes (a name="value" regex backtracks). */
 function attributes(tag: string): Map<string, string> {
   const out = new Map<string, string>()
-  for (const m of tag.matchAll(/([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*"([^"]*)"/g)) out.set(m[1].toLowerCase(), m[2])
+  const parts = tag.split('"') // outside, value, outside, value, …; an unclosed value is dropped
+  for (let i = 1; i < parts.length - 1; i += 2) {
+    const before = parts[i - 1].trimEnd()
+    if (!before.endsWith('=')) continue
+    const name = before.slice(0, -1).trimEnd().split(/\s+/).pop() ?? ''
+    if (ATTRIBUTE_NAME.test(name)) out.set(name.toLowerCase(), parts[i])
+  }
   return out
 }
 
@@ -92,7 +101,7 @@ function hasClasses(attrs: Map<string, string>, ...names: string[]): boolean {
 }
 
 function text(html: string): string {
-  return decodeEntities(html.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim()
+  return decodeEntities(html.replace(/<[^<>]*>/g, ' ')).replace(/\s+/g, ' ').trim()
 }
 
 function parseCell(cell: string): CollectionItem | null {

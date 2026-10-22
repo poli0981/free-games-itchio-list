@@ -49,6 +49,10 @@ pip install -r requirements-dev.txt
 Python 3.15 mặc định đọc và ghi file dưới dạng UTF-8 (UTF-8 mode, PEP 686), nên trên Windows không
 cần đặt `PYTHONUTF8=1` nữa.
 
+Hai file requirements ghim mọi package kèm hash; pip kiểm tra hash khi cài. Muốn thêm hoặc đổi một
+dependency, sửa `requirements.in` hoặc `requirements-dev.in` rồi compile lại lock bằng pip-tools —
+lệnh nằm ở đầu mỗi file `.in` (chạy bằng Python 3.14, bản Dependabot đọc được; CLAUDE.md, gotcha 40).
+
 ### Kiểm tra (giống `python-ci.yml`)
 
 ```sh
@@ -173,7 +177,7 @@ npm run knip                           # file / export / dependency không dùng
 npm test                               # Vitest: app + Worker; test D1 khởi động một workerd local
 npx tsc -b                             # chỉ kiểm tra kiểu (npm run build cũng chạy bước này)
 npm run build
-npx wrangler deploy --dry-run --env=""  # kiểm tra cấu hình Worker, không deploy gì
+npm run cf:check                       # wrangler deploy --dry-run: kiểm tra cấu hình Worker, không deploy gì
 ```
 
 Sau khi sửa `wrangler.jsonc`, chạy `npm run cf:types` và commit file `worker-configuration.d.ts` vừa

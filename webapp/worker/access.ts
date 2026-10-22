@@ -8,6 +8,7 @@
  * here: signature against the team's JWKS, issuer, and the application's AUD.
  */
 import { createRemoteJWKSet, jwtVerify, type JWTPayload } from 'jose'
+import { trimEnd } from './text'
 
 export interface AccessEnv {
   ACCESS_TEAM_DOMAIN: string // https://<team>.cloudflareaccess.com
@@ -39,7 +40,7 @@ async function verify(request: Request, env: AccessEnv, audience: string): Promi
   const token = request.headers.get('cf-access-jwt-assertion')
   if (!token) throw new AccessError('missing Access token')
   // The issuer is the bare origin; tolerate a trailing slash pasted from the dashboard.
-  const team = env.ACCESS_TEAM_DOMAIN.trim().replace(/\/+$/, '')
+  const team = trimEnd(env.ACCESS_TEAM_DOMAIN.trim(), '/')
   try {
     const { payload } = await jwtVerify(token, jwks(team), { issuer: team, audience })
     return payload

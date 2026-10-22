@@ -78,7 +78,7 @@ def record_outcome(patch: dict, url: str, outcome: str) -> None:
     patch["ingest_outcomes"][url] = {"outcome": outcome, "at": now_iso()}
 
 
-def main(argv: list[str] | None = None) -> int:
+def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(description="Scrape queued links into a patch.")
     ap.add_argument("--out", required=True, help="patch file to write")
     ap.add_argument("--deadline-min", type=float, default=50.0)
@@ -115,7 +115,7 @@ def main(argv: list[str] | None = None) -> int:
     if not queue:
         print("No links to process (temp_link.json empty and no INPUT_URL).")
         write_patch(args.out, patch)
-        return 0
+        return
 
     catalog_urls = get_all_urls(load_all_games())
     deleted_urls = {e.get("url") for e in load_json(DELETED_LOG)}
@@ -216,8 +216,7 @@ def main(argv: list[str] | None = None) -> int:
         f"{stats['duplicate']} duplicates, {stats['deleted']} previously deleted, "
         f"{stats['invalid']} invalid, {stats['retry']} to retry, {stats['gave_up']} given up."
     )
-    return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()

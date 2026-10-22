@@ -44,7 +44,7 @@ export const useTracking = create<TrackingState>()(
         set((s) =>
           urls.length === 0
             ? s
-            : { batches: capBatches([{ id: `${at}-${Math.random().toString(36).slice(2, 8)}`, label, at, urls }, ...s.batches]) },
+            : { batches: capBatches([{ id: `${at}-${crypto.randomUUID().slice(0, 8)}`, label, at, urls }, ...s.batches]) },
         ),
       forget: (id) => set((s) => ({ batches: s.batches.filter((b) => b.id !== id) })),
     }),

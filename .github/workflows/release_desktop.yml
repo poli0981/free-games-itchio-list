@@ -121,7 +121,7 @@ jobs:
 
       - name: Install npm deps
         working-directory: webapp
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Build Tauri app
         uses: tauri-apps/tauri-action@1deb371b0cd8bd54025b384f1cd735e725c4060f # action-v1.0.0

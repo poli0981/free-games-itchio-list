@@ -23,7 +23,10 @@ export function useSeoHead(): void {
   const { pathname } = useLocation()
   useEffect(() => {
     if (isTauri()) return
-    const path = pathname.length > 1 ? pathname.replace(/\/+$/, '') : '/'
+    // A loop, not /\/+$/ (which backtracks on a long run of slashes).
+    let end = pathname.length
+    while (end > 1 && pathname[end - 1] === '/') end--
+    const path = pathname.slice(0, end)
     const canonical = headTag('link[rel="canonical"]', () => {
       const link = document.createElement('link')
       link.rel = 'canonical'

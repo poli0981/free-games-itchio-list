@@ -11,6 +11,7 @@
 
 const CHUNK_SIZE = 500
 const MIN_FILL = 250
+const DEFAULT_SIZES = { chunkSize: CHUNK_SIZE, minFill: MIN_FILL }
 
 /** The only fields a maintainer edits; everything else is scraper-owned. */
 const EDITABLE_FIELDS = ['safe_virus', 'notes', 'nsfw'] as const
@@ -181,7 +182,7 @@ export function applyAdminChange(
   edits: Map<string, FieldEdit>,
   removals: { url: string; reason: string }[],
   now: Date,
-  sizes: { chunkSize: number; minFill: number } = { chunkSize: CHUNK_SIZE, minFill: MIN_FILL },
+  sizes: { chunkSize: number; minFill: number } = DEFAULT_SIZES,
 ): CatalogChange {
   const games = files.chunks.flat().map((g) => ({ ...g }))
   const editedUrls: string[] = []

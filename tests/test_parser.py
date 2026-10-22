@@ -127,6 +127,14 @@ def test_mature_notice_marks_nsfw():
     assert record["nsfw"] == "Yes"
 
 
+@pytest.mark.parametrize("notice", ["view_game_warning", "mature_content_notice"])
+def test_either_mature_notice_alone_marks_nsfw(notice):
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(f'<div class="{notice}"></div>', "html.parser")
+    assert detect_nsfw(soup, [], NA) == "Yes"
+
+
 @pytest.mark.parametrize(
     ("tags", "description", "expected"),
     [

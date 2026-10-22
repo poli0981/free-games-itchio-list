@@ -2,10 +2,13 @@
 // (src/lib/i18n/en.ts and vi.ts) with the TypeScript parser, so multi-line
 // values and section comments survive.
 //
-//   node scripts/i18n-edit.mjs ops.json
+//   node scripts/i18n-edit.mjs < ops.json     # PowerShell: Get-Content ops.json | node scripts/i18n-edit.mjs
 //   ops.json: { "remove": ["exact.key", "prefix.*"],
 //               "set": { "key": { "en": "…", "vi": "…" } } }
 //   node scripts/i18n-edit.mjs --unused   # list keys never referenced in src/
+//
+// The operations come on stdin, not as a file path: the script only ever
+// touches the two dictionaries.
 //
 // New keys are appended at the end of the object; the compiler enforces that
 // vi.ts has exactly the keys of en.ts (Record<MessageKey, string>).
@@ -50,7 +53,11 @@ if (process.argv[2] === '--unused') {
   process.exit(0)
 }
 
-const ops = JSON.parse(readFileSync(process.argv[2], 'utf8'))
+if (process.stdin.isTTY) {
+  console.error('usage: node scripts/i18n-edit.mjs < ops.json   (or --unused)')
+  process.exit(2)
+}
+const ops = JSON.parse(readFileSync(0, 'utf8'))
 const matches = (key, pattern) => (pattern.endsWith('.*') ? key.startsWith(pattern.slice(0, -1)) : key === pattern)
 
 for (const [lang, path] of Object.entries(FILES)) {

@@ -18,6 +18,7 @@ import {
 } from './catalog'
 import { GITHUB_CONFIG, missingConfig, type WorkerEnv } from './env'
 import { commitWithRetry, headOid, listDir, readFile, type CommitInput, type GitHubEnv } from './github'
+import { compareCodeUnits } from './text'
 
 const TEMP_LINK = 'scripts/temp_link.json'
 const DELETED_LOG = 'scripts/deleted_games.json'
@@ -56,7 +57,7 @@ async function readJsonFile<T>(env: GitHubEnv, path: string, head: string, fallb
 
 /** The catalog files at `head`, chunks in the same order as data_store.py. */
 async function readCatalog(env: GitHubEnv, head: string): Promise<CatalogFiles> {
-  const names = (await listDir(env, 'data_game', head)).filter((n) => CHUNK_FILE.test(n)).sort()
+  const names = (await listDir(env, 'data_game', head)).filter((n) => CHUNK_FILE.test(n)).sort(compareCodeUnits)
   const [chunks, index, history, deleted] = await Promise.all([
     Promise.all(names.map((n) => readJsonFile<Game[]>(env, `data_game/${n}`, head, []))),
     readJsonFile<CatalogIndex | null>(env, 'data_game/index.json', head, null),
@@ -92,7 +93,7 @@ export function withQueued(queueText: string | null, urls: string[]): { text: st
 export function withUnblocked(currentText: string | null, urls: string[]): { text: string; added: number } {
   const parsed: unknown = currentText === null ? [] : JSON.parse(currentText)
   const current = Array.isArray(parsed) ? parsed.filter((u): u is string => typeof u === 'string') : []
-  const next = [...new Set([...current, ...urls])].sort()
+  const next = [...new Set([...current, ...urls])].sort(compareCodeUnits)
   return { text: dumps(next), added: next.length - current.length }
 }
 
