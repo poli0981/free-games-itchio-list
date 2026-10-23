@@ -689,8 +689,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "21 October 2026 @ 08:30 UTC",
-        "rating": "4.3",
-        "rating_count": "13",
+        "rating": "4.5",
+        "rating_count": "21",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMTU5NDY4LnBuZw==/original/Z9Yg30.png",
@@ -725,7 +725,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-22T04:24:05Z"
+        "added_at": "2026-10-22T04:24:05Z",
+        "updated_at": "22 October 2026 @ 12:56 UTC"
     },
     {
         "url": "https://orderframe.itch.io/shrimply-genetics",
@@ -824,7 +825,7 @@
         "publisher": "N/A",
         "release_date": "20 October 2026 @ 01:39 UTC",
         "rating": "4.6",
-        "rating_count": "7",
+        "rating_count": "18",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMTI1NTAzLnBuZw==/original/ucalhj.png",
@@ -848,7 +849,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "21 October 2026 @ 17:30 UTC",
+        "updated_at": "23 October 2026 @ 00:58 UTC",
         "added_at": "2026-10-22T04:24:14Z"
     },
     {
@@ -906,8 +907,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "21",
+        "rating": "4.7",
+        "rating_count": "28",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMTg1NTYyLnBuZw==/original/5COVhj.png",
@@ -944,7 +945,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "21 October 2026 @ 21:45 UTC",
+        "updated_at": "22 October 2026 @ 16:23 UTC",
         "added_at": "2026-10-22T04:24:22Z"
     },
     {
