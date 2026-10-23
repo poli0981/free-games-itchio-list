@@ -2042,5 +2042,73 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-23T08:24:25Z"
+    },
+    {
+        "url": "https://barribob.itch.io/golem-quest",
+        "name": "Golem Quest",
+        "dev": "Barribob",
+        "description": "Create an unstoppable golem!",
+        "genre": "Role Playing",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 14:50 UTC",
+        "rating": "4.5",
+        "rating_count": "37",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTM4ODYzLnBuZw==/original/gj1dRH.png",
+        "tags": [
+            "Auto Battler",
+            "Idle",
+            "Incremental",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T16:23:46Z"
+    },
+    {
+        "url": "https://ericrod.itch.io/pong",
+        "name": "PROGRAMAR MAL - Pong",
+        "dev": "Eric Rodríguez",
+        "description": "Primer proyecto de la serie PROGRAMAR MAL donde se desarrolla un clon del clásico Pong.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 15:19 UTC",
+        "rating": "4.8",
+        "rating_count": "9",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTgxODAxLnBuZw==/original/jKW8xE.png",
+        "tags": [
+            "2D",
+            "Arcade"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T16:23:50Z"
     }
 ]
