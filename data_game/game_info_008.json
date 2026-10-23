@@ -1195,5 +1195,576 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-22T12:23:56Z"
+    },
+    {
+        "url": "https://dadddydarko.itch.io/the-wickerman-and-i",
+        "name": "The Wickerman and I",
+        "dev": "DadddyDarko",
+        "description": "A beekeeper must marry by Midsummer, so she has a husband woven from willow. A folk-tale romance with four endings.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 04:07 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTkzNTc3LnBuZw==/original/LPSx0N.png",
+        "tags": [
+            "Cozy",
+            "Fantasy",
+            "Female Protagonist",
+            "Folklore",
+            "Multiple Endings",
+            "Ren'Py",
+            "Romance",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:19Z"
+    },
+    {
+        "url": "https://gnemying.itch.io/blooming-rues",
+        "name": "Blooming Rues [ALIEN STAGE fangame]",
+        "dev": "meyi",
+        "description": "An IVAN & TILL fanmade visual novel",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 22:00 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzE5MzkwLnBuZw==/original/ClOOW8.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:22Z"
+    },
+    {
+        "url": "https://komitsu.itch.io/a-living-thing",
+        "name": "a living thing",
+        "dev": "Komitsu",
+        "description": "from a pink yarn",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 10:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjAzNTQ5LnBuZw==/original/SMoew6.png",
+        "tags": [
+            "Cute",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:25Z"
+    },
+    {
+        "url": "https://lampyr-interactive.itch.io/nocturne-academy",
+        "name": "Nocturne Academy",
+        "dev": "LAMPYR Interactive",
+        "description": "A gothic anime visual novel. Twelve monster girls, one human, 33 endings.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 10:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjAzNjMyLnBuZw==/original/yVohb8.png",
+        "tags": [
+            "AI Generated",
+            "Anime",
+            "Fantasy",
+            "Indie",
+            "Romance",
+            "Singleplayer",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:29Z"
+    },
+    {
+        "url": "https://laurzzz.itch.io/automated-love-obsession",
+        "name": "Automated Love Obsession",
+        "dev": "Laurs/Levi",
+        "description": "We hope you enjoy your visit at the Celestial Funtime Center!",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 22:29 UTC",
+        "rating": "4.8",
+        "rating_count": "19",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzE2NzcyLnBuZw==/original/%2BanOVe.png",
+        "tags": [
+            "Colorful",
+            "Creepy",
+            "demo",
+            "Indie",
+            "No AI",
+            "Robots",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py",
+            "Audacity",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:31Z"
+    },
+    {
+        "url": "https://leekexe.itch.io/sound-of-what",
+        "name": "VisualNovelGameYipppeeeeee",
+        "dev": "leek.exe",
+        "description": "A short visual novel with sound mixing mechanics!",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 04:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MTk0NDIwLnBuZw==/original/PvGHrW.png",
+        "tags": [
+            "2D",
+            "Indie",
+            "Pixel Art",
+            "Queer",
+            "Short",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:33Z"
+    },
+    {
+        "url": "https://miss-signal-guy.itch.io/waiting-for-the-bus",
+        "name": "Waiting for the Bus",
+        "dev": "Miss_Signal_Guy!",
+        "description": "Bus station",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 19:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTc5NTA3LmpwZw==/original/ebVAJ%2F.jpg",
+        "tags": [
+            "Horror",
+            "horror-game",
+            "Pixel Art",
+            "RPG Maker",
+            "RPG Maker MV",
+            "sad-story",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:36Z"
+    },
+    {
+        "url": "https://needy-aoi.itch.io/doki-doki-second-draft",
+        "name": "Doki Doki Second Draft",
+        "dev": "Aoi",
+        "description": "Same club. Kinder story. A wholesome, full-length DDLC fan mod.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 07:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk4NTUwLnBuZw==/original/rMmHCB.png",
+        "tags": [
+            "Anime",
+            "Cute",
+            "Dating Sim",
+            "ddlc",
+            "doki-doki-literature-club",
+            "Fangame",
+            "Ren'Py",
+            "Romance",
+            "Slice Of Life",
+            "Wholesome"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:40Z"
+    },
+    {
+        "url": "https://o-yu.itch.io/simons-play-house",
+        "name": "Simon's play house/賽蒙的家家酒",
+        "dev": "O-Yu",
+        "description": "Survival in a deadly house play. Is the end of this game destruction, or salvation for a twisted soul?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 02:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk5MzY3LmpwZw==/original/mjPGTE.jpg",
+        "tags": [
+            "Anime",
+            "demo",
+            "family-love",
+            "Fangame",
+            "Horror",
+            "human-experimentation",
+            "Mystery",
+            "Psychological Horror",
+            "simon-says"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:43Z"
+    },
+    {
+        "url": "https://quingi.itch.io/anamnesis",
+        "name": "Anamnesis",
+        "dev": "QuinGi",
+        "description": "Remember what happened. For me.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 05:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk2OTY5LnBuZw==/original/9XpOKX.png",
+        "tags": [
+            "No AI"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:46Z"
+    },
+    {
+        "url": "https://thomas-tung.itch.io/day-five-v1",
+        "name": "Day Five - v1",
+        "dev": "Thomas Tung",
+        "description": "N/A",
+        "genre": "Educational",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 13:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjA1NDA2LmpwZw==/original/HLf%2F3Q.jpg",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:48Z"
+    },
+    {
+        "url": "https://anttihaavikko.itch.io/carbineball",
+        "name": "Carbineball",
+        "dev": "anttihaavikko",
+        "description": "Carbineball is my take on pinball.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 20:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ4OTg1LmdpZg==/original/sSTozz.gif",
+        "tags": [
+            "2D",
+            "Godot",
+            "Ludum Dare",
+            "Ludum Dare 60",
+            "No AI",
+            "Pinball"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:51Z"
+    },
+    {
+        "url": "https://digital-mosaic-games.itch.io/living-scraps",
+        "name": "Living Scraps",
+        "dev": "Digital Mosaic Games",
+        "description": "A short adventure about a robot who is in charge of scrapping other robots.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 15:21 UTC",
+        "rating": "4.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDg1NDIzLmdpZg==/original/pWaKLJ.gif",
+        "tags": [
+            "Dystopian",
+            "No AI",
+            "Pixel Art",
+            "Point & Click",
+            "Robots",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:55Z"
+    },
+    {
+        "url": "https://funbanan.itch.io/abattlacus",
+        "name": "Abattlacus",
+        "dev": "FunB4nan",
+        "description": "Abacus autobattler roguelike",
+        "genre": "Strategy",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 22:20 UTC",
+        "rating": "4.8",
+        "rating_count": "40",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTE1MjMzLnBuZw==/original/d3Kkz%2B.png",
+        "tags": [
+            "Auto Battler",
+            "Deck Building",
+            "Idle",
+            "Incremental",
+            "Ludum Dare",
+            "Ludum Dare 60",
+            "Management",
+            "Roguelike",
+            "Roguelite",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "22 October 2026 @ 00:09 UTC",
+        "added_at": "2026-10-23T04:24:58Z"
+    },
+    {
+        "url": "https://krivosrun99990.itch.io/chickenwar",
+        "name": "CHICKENWAR",
+        "dev": "krivosrun99990",
+        "description": "Chickenwar is a first-person shooter where heavily armed chickens fight a very serious war.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 07:16 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk4NjkzLnBuZw==/original/YYyxHG.png",
+        "tags": [
+            "3D"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:25:00Z"
     }
 ]
