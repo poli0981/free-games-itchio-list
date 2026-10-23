@@ -2110,5 +2110,288 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-23T16:23:50Z"
+    },
+    {
+        "url": "https://b0nifacy.itch.io/reroll",
+        "name": "Re:roll",
+        "dev": "B0nifacy",
+        "description": "A cozy slice-of-life visual novel about friendships, romance, and a little bit of luck.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 00:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjI2NDcwLmdpZg==/original/bMJsFX.gif",
+        "tags": [
+            "Casual",
+            "Dating Sim",
+            "Female Protagonist",
+            "LGBT",
+            "Meaningful Choices",
+            "Ren'Py",
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:23:43Z"
+    },
+    {
+        "url": "https://ch3ckpo1nt.itch.io/monster-fight",
+        "name": "Monster Fight",
+        "dev": "ch3ckpo1nt",
+        "description": "A little game about fighting a monster",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 20:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjI0MDA0LnBuZw==/original/2Ac8Lj.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:23:46Z"
+    },
+    {
+        "url": "https://dan1322.itch.io/sekedar-mengingatkan-visual-novel",
+        "name": "Sekedar Mengingatkan : Visual Novel",
+        "dev": "Dan",
+        "description": "Sekedar Mengingatkan : Visual Novel \"Parodi untuk meme jum'at sekedar mengingatkan dalam bentuk visual novel\" \"Gak sholat jum'at?\" \"Malas\" \"Sekedar mengingatkan\" \"Infokan masjid terdekat\"...",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 19:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjE5NDIzLmpwZWc=/original/meKcKz.jpeg",
+        "tags": [],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:23:49Z"
+    },
+    {
+        "url": "https://hikkka.itch.io/ousama-game",
+        "name": "Ousama Game",
+        "dev": "Hikkka",
+        "description": "Halloween special",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 12:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjIwMzQxLnBuZw==/original/J5QKdn.png",
+        "tags": [
+            "Atmospheric",
+            "Halloween",
+            "Horror",
+            "LGBTQIA",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Ren'Py",
+            "Short",
+            "Spooky"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:23:53Z"
+    },
+    {
+        "url": "https://irineesan.itch.io/let-down-your-hair",
+        "name": "Let Down Your Hair",
+        "dev": "irineesan",
+        "description": "Alternate universe for Rapunzel with different POV",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 16:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjE0MTc0LnBuZw==/original/yRvQS7.png",
+        "tags": [
+            "alternate-universe",
+            "Fantasy",
+            "friendship",
+            "princess"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:23:55Z"
+    },
+    {
+        "url": "https://kayquin.itch.io/kuroshio",
+        "name": "Kuroshio",
+        "dev": "Kayquin",
+        "description": "Tu mamá muerta, tu padre un jefe yakuza. Valparaíso–Yokohama, 1992. Una novela visual con 12 finales.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 20:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjExMjQ3LnBuZw==/original/Ni3Uwk.png",
+        "tags": [
+            "chile",
+            "japan",
+            "Multiple Endings",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:23:59Z"
+    },
+    {
+        "url": "https://wanyuhsieh.itch.io/being-a-master-demon-slayer-in-ancient-times",
+        "name": "Being a Master Demon Slayer in Ancient Times",
+        "dev": "WanyuHsieh",
+        "description": "After being knocked flying by a virtual truck, you can travel back to ancient times.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 05:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjM4MzgxLmpwZw==/original/uWeC9s.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:24:01Z"
+    },
+    {
+        "url": "https://yahikoashs.itch.io/taiwanese-oyster-omelette",
+        "name": "Taiwanese oyster-omelette",
+        "dev": "yahikoashs",
+        "description": "N/A",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 01:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjMyNjM4LnBuZw==/original/klnwI8.png",
+        "tags": [
+            "Cooking",
+            "current",
+            "taiwan"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T20:24:03Z"
     }
 ]
