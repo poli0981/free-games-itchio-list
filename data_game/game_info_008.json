@@ -1766,5 +1766,281 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-23T04:25:00Z"
+    },
+    {
+        "url": "https://elemony.itch.io/the-deviation-line",
+        "name": "此在偏差线/The Deviation Line",
+        "dev": "DollerA",
+        "description": "此次的偏差，并不是我所期望的......",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 12:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjA2NTA2LmpwZw==/original/YCHHFq.jpg",
+        "tags": [
+            "2D",
+            "Furry"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:23:59Z"
+    },
+    {
+        "url": "https://glitterandsaline.itch.io/out-of-touch",
+        "name": "Out Of Touch",
+        "dev": "Evie",
+        "description": "A dating sim where you're the problem.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 20:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjIwMTgzLnBuZw==/original/VQwmje.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:03Z"
+    },
+    {
+        "url": "https://jahemas.itch.io/hotshot",
+        "name": "HotShot",
+        "dev": "Jahemas",
+        "description": "A first person shooter that is based on a Japanese salary man avenging his dead wife.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 08:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjAwNzEyLnBuZw==/original/MzSziu.png",
+        "tags": [
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:10Z"
+    },
+    {
+        "url": "https://kazeneko.itch.io/0317",
+        "name": "03.17 - Psychologic Horror Game",
+        "dev": "kazeneko",
+        "description": "It's 3:16 a.m. in Cebeci, Ankara.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 20:28 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjIzMTI5LnBuZw==/original/Q6czf7.png",
+        "tags": [
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Turkish"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:12Z"
+    },
+    {
+        "url": "https://leiathecat1220.itch.io/tiny-black-legs",
+        "name": "Tiny Black Legs",
+        "dev": "Goofball",
+        "description": "On a cold winter night, you encounter someone..",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 18:38 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjE4NTMwLnBuZw==/original/SzbIEU.png",
+        "tags": [
+            "Horror",
+            "LGBTQIA",
+            "No AI",
+            "Pixel Art",
+            "Queer",
+            "Short"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:15Z"
+    },
+    {
+        "url": "https://mothfox1.itch.io/butterfly",
+        "name": "Butterfly",
+        "dev": "MothFox1",
+        "description": "A short story about a butterfly with beautifully colored wings.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 18:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTY5NTc0LnBuZw==/original/zV7t5P.png",
+        "tags": [
+            "No AI"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:19Z"
+    },
+    {
+        "url": "https://vavanessaz.itch.io/the-witch-and-the-swan",
+        "name": "The Witch And The Swan",
+        "dev": "Vanessa",
+        "description": "— Content: A silly game about a Witch and her Swan familiar!",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 19:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTg2MDk5LnBuZw==/original/9OPfh%2B.png",
+        "tags": [
+            "Cute",
+            "Fantasy",
+            "No AI",
+            "Short",
+            "Sprites"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:23Z"
+    },
+    {
+        "url": "https://vempyy.itch.io/jungle-tag",
+        "name": "Jungle tag V99",
+        "dev": "VEMPYY",
+        "description": "Gtag copy",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 20:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjIzNTQ1LnBuZw==/original/CkjlMQ.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Fantasy",
+            "gtag",
+            "Horror",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T08:24:25Z"
     }
 ]
