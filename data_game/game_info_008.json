@@ -2393,5 +2393,346 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-23T20:24:03Z"
+    },
+    {
+        "url": "https://amy-sparkle.itch.io/a",
+        "name": "A",
+        "dev": "Amy_Sparkle",
+        "description": "One control: key A.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 11:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQ2MzY3LnBuZw==/original/aQEkMI.png",
+        "tags": [
+            "one-button"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:23:41Z"
+    },
+    {
+        "url": "https://chipibaka.itch.io/zigzag-dungeon",
+        "name": "ZIGZAG DUNGEON",
+        "dev": "chipibaka",
+        "description": "You chose the wrong dungeon and now you need to get out of it!",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 11:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQ4MjIxLnBuZw==/original/EzCNsv.png",
+        "tags": [
+            "Comedy",
+            "Dungeon Crawler",
+            "Fantasy",
+            "First-Person",
+            "littlejs",
+            "Pixel Art",
+            "Roguelite"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:23:44Z"
+    },
+    {
+        "url": "https://heart-of-unicornia.itch.io/halloween-2026",
+        "name": "Halloween Game 2026",
+        "dev": "Heart of Unicornia",
+        "description": "It's almost Halloween and Heart is missing!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 13:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDU3MjY2LnBuZw==/original/sSIoQl.png",
+        "tags": [
+            "Ghosts",
+            "Halloween",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:23:47Z"
+    },
+    {
+        "url": "https://jep129.itch.io/ninety-days",
+        "name": "九十日・卷一《重陽》（免費）",
+        "dev": "JEP129",
+        "description": "臘月初九，顧家滿門抄斬。你死在刑場上，醒在九十天前。",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 10:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk4NjcyLmpwZw==/original/xGVmIr.jpg",
+        "tags": [
+            "chinese",
+            "choices-matter",
+            "Historical",
+            "Multiple Endings",
+            "Mystery",
+            "Romance",
+            "Story Rich",
+            "time-loop"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:23:50Z"
+    },
+    {
+        "url": "https://lunabloomgames.itch.io/made-just-for-you",
+        "name": "Made Just for You: A Gothic Halloween Escape Game",
+        "dev": "LunaBloomGames",
+        "description": "Explore a mysterious mansion, gather ingredients, make chocolates, and discover how your gifts change your fate.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 04:02 UTC",
+        "rating": "2.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTY3MTUzLnBuZw==/original/n0CU3I.png",
+        "tags": [
+            "Dark Fantasy",
+            "Escape Game",
+            "Halloween",
+            "indie-game",
+            "Multiple Endings",
+            "Mystery",
+            "Point & Click",
+            "valentines-day"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:23:54Z"
+    },
+    {
+        "url": "https://marikraigames.itch.io/most-v-nikuda",
+        "name": "Мост в никуда (демо)",
+        "dev": "MariKraiGames",
+        "description": "A visual novel about a bridge between lives. Songs by Varissa, choices and three endings.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 07:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQwNDA0LnBuZw==/original/7gKEaY.png",
+        "tags": [
+            "Anime",
+            "Atmospheric",
+            "choices-matter",
+            "Multiple Endings",
+            "Mystery",
+            "psychological",
+            "Ren'Py",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:23:57Z"
+    },
+    {
+        "url": "https://preciousthingtostole.itch.io/dojomaker",
+        "name": "Rinataraxia's Dojo Maker",
+        "dev": "preciousthingtostole",
+        "description": "Script maker for project I'm working on as Rinataraxia Circle.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 06:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQyOTU2LmpwZw==/original/fs58kq.jpg",
+        "tags": [
+            "fate"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:24:01Z"
+    },
+    {
+        "url": "https://stirkexd.itch.io/halloween-vampire-hunt",
+        "name": "Halloween Vampire Hunt",
+        "dev": "Stirkexd, Stark",
+        "description": "You are a hunter, and your mission is to investigate a possible monster sighting in the surrounding area.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 11:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQ3Mjc1LnBuZw==/original/ULgZVb.png",
+        "tags": [
+            "2D",
+            "No AI",
+            "Pixel Art",
+            "RPG Maker",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:24:03Z"
+    },
+    {
+        "url": "https://tuurensaari-games.itch.io/tuurensaari-stories-1",
+        "name": "Tuurensaari Stories: 1",
+        "dev": "Tuurensaari Games",
+        "description": "A semi-short visual novel story about the events of Tuurensaari.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 10:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQ2MTY5LnBuZw==/original/cXBC78.png",
+        "tags": [
+            "Comedy",
+            "Horror",
+            "Indie",
+            "Short",
+            "Singleplayer",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T00:24:07Z"
     }
 ]
