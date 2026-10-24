@@ -2845,5 +2845,211 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-24T12:23:40Z"
+    },
+    {
+        "url": "https://bbgames-it.itch.io/indiana-jones-and-the-temple-of-doom-unofficial",
+        "name": "Indiana Jones and the temple of doom - Unofficial",
+        "dev": "BBGames",
+        "description": "The man with the hat and the wip is back to an adventure!",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 07:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjA3OTk3LnBuZw==/original/k%2Fq5xG.png",
+        "tags": [
+            "lucasarts",
+            "Pixel Art",
+            "Point & Click",
+            "Retro"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T20:23:41Z"
+    },
+    {
+        "url": "https://drowsyrui.itch.io/rpg-in-another-world",
+        "name": "RPG In Another World",
+        "dev": "DrowsyRui",
+        "description": "Isekai text based RPG story game",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "20",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5MzM4ODYxLmpwZw==/original/8uRJQ3.jpg",
+        "tags": [
+            "Character Customization",
+            "cyoa",
+            "Fantasy",
+            "Isekai",
+            "Meaningful Choices",
+            "Solo RPG",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 04:18 UTC",
+        "added_at": "2026-10-24T20:23:44Z"
+    },
+    {
+        "url": "https://purmalis.itch.io/system-intruder",
+        "name": "SYSTEM INTRUDER",
+        "dev": "purmalis",
+        "description": "First-person cyberpunk survival horror in the style of classic 3D games.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 October 2026 @ 12:44 UTC",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTg0NjQ0LnBuZw==/original/H8H%2FdC.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Cyberpunk",
+            "Female Protagonist",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Sci-fi",
+            "Survival Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller"
+        ],
+        "made_with": [
+            "Blender",
+            "Construct",
+            "GIMP",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 16:11 UTC",
+        "added_at": "2026-10-24T20:23:48Z"
+    },
+    {
+        "url": "https://raktsra.itch.io/1inasamkhyeya",
+        "name": "หนึ่งในอสงไขย",
+        "dev": "Raktsra",
+        "description": "N/A",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 15:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjc4ODU0LmpwZw==/original/MF2vBR.jpg",
+        "tags": [
+            "mythology"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 18:24 UTC",
+        "added_at": "2026-10-24T20:23:52Z"
+    },
+    {
+        "url": "https://shintoworks.itch.io/rei-tashitokimashita",
+        "name": "霊、足しときました。 / Rei, Tashitokimashita.",
+        "dev": "shintoworks",
+        "description": "心霊写真を捏造する在宅ワーク / A work-from-home gig faking ghost photos.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 02:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjc5MDExLnBuZw==/original/Cl4GaG.png",
+        "tags": [
+            "2D",
+            "Creepy",
+            "Dark",
+            "Horror",
+            "japanese",
+            "Narrative",
+            "photography",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T20:23:55Z"
     }
 ]
