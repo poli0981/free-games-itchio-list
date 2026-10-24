@@ -2630,5 +2630,135 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-24T00:24:07Z"
+    },
+    {
+        "url": "https://amygood.itch.io/the-cat-did-it",
+        "name": "The Cat Did It",
+        "dev": "AmyGood",
+        "description": "One tidy house. One quiet afternoon. One cat.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 04:08 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjgxMzQzLnBuZw==/original/8%2FHMwG.png",
+        "tags": [
+            "3D",
+            "Cats",
+            "Cozy",
+            "Cute",
+            "Destruction",
+            "Funny",
+            "pets",
+            "Physics",
+            "Sandbox"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Japanese",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Three.js"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 04:49 UTC",
+        "added_at": "2026-10-24T08:23:40Z"
+    },
+    {
+        "url": "https://modernvintagegamer.itch.io/splatterhouse-aga",
+        "name": "Splatterhouse : A1200 Edition (AGA Amiga)",
+        "dev": "Dimitris Giannakis - MVG",
+        "description": "A port of Splatterhouse PC Engine for any AGA Amiga 1200 or CD32",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 07:13 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjM5NTM2LnBuZw==/original/cz0XEa.png",
+        "tags": [
+            "2D",
+            "aga",
+            "Amiga",
+            "Arcade",
+            "Gore",
+            "Horror",
+            "Pixel Art",
+            "Retro",
+            "Side Scroller",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T08:23:44Z"
+    },
+    {
+        "url": "https://yellow44-bedibbstudios.itch.io/caventure",
+        "name": "Caventure",
+        "dev": "Yellow44-BedibbStudios",
+        "description": "vr game",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 15:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjIyNTYzLnBuZw==/original/OyF2U8.png",
+        "tags": [
+            "Multiplayer",
+            "Open World",
+            "Sandbox",
+            "Virtual Reality (VR)"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Oculus Rift",
+            "OSVR (Open-Source Virtual Reality)",
+            "HTC Vive",
+            "Oculus Quest"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "High-contrast"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T08:23:47Z"
     }
 ]
