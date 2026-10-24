@@ -808,5 +808,59 @@
         "name": "GodsEater",
         "reason": "Game became paid",
         "deleted_at": "2026-10-22T02:56:10Z"
+    },
+    {
+        "url": "https://m0dgames.itch.io/granny-remake-free-pc-android",
+        "name": "Granny Remake Free",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-24T02:54:26Z"
+    },
+    {
+        "url": "https://ethane1.itch.io/home-watcher",
+        "name": "Home Watcher",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-24T02:54:30Z"
+    },
+    {
+        "url": "https://ethane1.itch.io/warehouse",
+        "name": "Warehouse Shift",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-24T02:54:33Z"
+    },
+    {
+        "url": "https://zackabrah.itch.io/seedfolk",
+        "name": "Seedfolk",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-24T02:54:37Z"
+    },
+    {
+        "url": "https://2tonmucho.itch.io/suburb2065",
+        "name": "Suburb2065-PC/Japanese-",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-24T02:54:40Z"
+    },
+    {
+        "url": "https://tattershallstudios.itch.io/gravewell",
+        "name": "Gravewell",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-24T02:54:43Z"
+    },
+    {
+        "url": "https://oppai-games.itch.io/quickie-fantasy-adventure",
+        "name": "Quickie: Fantasy Adventure",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-24T02:54:47Z"
+    },
+    {
+        "url": "https://oworlon.itch.io/femboy-apocalypse",
+        "name": "Femboy Apocalypse",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-24T02:54:51Z"
+    },
+    {
+        "url": "https://augustine-ina.itch.io/comfort-and-warmth",
+        "name": "Comfort and Warmth",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-10-24T02:54:55Z"
     }
 ]

@@ -9321,46 +9321,6 @@
         "accessibility": []
     },
     {
-        "url": "https://m0dgames.itch.io/granny-remake-free-pc-android",
-        "name": "Granny Remake Free",
-        "dev": "modgames, MalomStudios",
-        "description": "Granny Remake Now For Free!",
-        "genre": "Action",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIxMDM2MzIyLnBuZw==/original/FDtbuV.png",
-        "tags": [
-            "3D",
-            "Escape Game",
-            "First-Person",
-            "granny",
-            "granny-remake",
-            "grannyremake",
-            "grannyremakefree",
-            "Horror",
-            "Ludum Dare 54",
-            "scary-assassin"
-        ],
-        "platforms": [
-            "Windows",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 September 2026 @ 05:05 UTC",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://lolscrubs.itch.io/human-harvest",
         "name": "Human Harvest",
         "dev": "Lolscrubs",
@@ -10150,45 +10110,6 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://ethane1.itch.io/home-watcher",
-        "name": "Home Watcher",
-        "dev": "Ethane1",
-        "description": "You were told to keep an eye out. But who’s watching you?",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "Ethane1",
-        "release_date": "22 July 2025 @ 12:40 UTC",
-        "rating": "4.2",
-        "rating_count": "16",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIyMjcyODE3LnBuZw==/original/zQlpkS.png",
-        "tags": [
-            "Atmospheric",
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "Photorealistic",
-            "Psychological Horror",
-            "Spooky",
-            "Walking simulator"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "27 August 2026 @ 21:27 UTC",
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
@@ -18770,46 +18691,6 @@
         ]
     },
     {
-        "url": "https://ethane1.itch.io/warehouse",
-        "name": "Warehouse Shift",
-        "dev": "Ethane1",
-        "description": "PLAY AS WAREHOUSE WORKER AT NIGHT",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "3.1",
-        "rating_count": "12",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MTY1NTQxLnBuZw==/original/FetbTc.png",
-        "tags": [
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "Indie",
-            "Psychological Horror",
-            "Short",
-            "Singleplayer",
-            "Spooky",
-            "Walking simulator"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "27 August 2026 @ 21:26 UTC",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://totally-fungal.itch.io/doomori-2",
         "name": "DOOMORI - ETERNAL",
         "dev": "Totally Fungal",
@@ -19360,51 +19241,6 @@
         ],
         "accessibility": [],
         "updated_at": "16 October 2026 @ 22:45 UTC"
-    },
-    {
-        "url": "https://zackabrah.itch.io/seedfolk",
-        "name": "Seedfolk",
-        "dev": "Junklab",
-        "description": "Every seed is a mystery",
-        "genre": "Simulation",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MzYyNjgzLnBuZw==/original/gXMtRF.png",
-        "tags": [
-            "Cozy",
-            "Cute",
-            "Farming",
-            "Feel Good",
-            "Gardening",
-            "Isometric",
-            "nature",
-            "Pixel Art",
-            "Relaxing",
-            "Wholesome"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Aseprite",
-            "Tiled",
-            "Phaser"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
     },
     {
         "url": "https://gavin8.itch.io/mirror-abyss-shadow-of-the-blood-moon",
