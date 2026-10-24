@@ -2760,5 +2760,90 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-24T08:23:47Z"
+    },
+    {
+        "url": "https://megugames.itch.io/powder-peak-tycoon",
+        "name": "Powder Peak Tycoon",
+        "dev": "megugames",
+        "description": "Turn one little sled hill into a giant ski resort. Idle tycoon with managers, seasons and a lodge on the summit.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 11:45 UTC",
+        "rating": "3.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjQ3NDIwLnBuZw==/original/HzrF0X.png",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Singleplayer",
+            "Tycoon",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T12:23:37Z"
+    },
+    {
+        "url": "https://soytg.itch.io/shape-of-you-crossing",
+        "name": "Shape of You: Crossing",
+        "dev": "soytg",
+        "description": "Every body you wear teaches you something. The last thing it teaches you is who you are.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 16:46 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjU5NDUzLnBuZw==/original/3AEIIm.png",
+        "tags": [
+            "bodyswap",
+            "Male protagonist",
+            "Sci-fi",
+            "tfgames",
+            "tggames",
+            "tgtf",
+            "transformation",
+            "Transgender"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-24T12:23:40Z"
     }
 ]
