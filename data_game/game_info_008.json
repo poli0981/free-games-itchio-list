@@ -3932,5 +3932,254 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-25T04:25:08Z"
+    },
+    {
+        "url": "https://cadmiumivy.itch.io/skys-door",
+        "name": "Sky's Door",
+        "dev": "CadmiumIvy",
+        "description": "Visual novel",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 14:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjk4MjgxLnBuZw==/original/LxQrEh.png",
+        "tags": [
+            "2D",
+            "Indie",
+            "No AI",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:23:38Z"
+    },
+    {
+        "url": "https://glodory-studio.itch.io/late-night",
+        "name": "Late Order",
+        "dev": "RyzexGames",
+        "description": "Night shifts at a small-town pizza place, a girl nobody has seen in three weeks, and an order nobody placed.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 20:57 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzEzNjEwLnBuZw==/original/WYUSfx.png",
+        "tags": [
+            "Atmospheric",
+            "Funny",
+            "Horror",
+            "Low-poly",
+            "PSX (PlayStation)",
+            "Retro",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "Arabic",
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Turkish",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:23:45Z"
+    },
+    {
+        "url": "https://l0rdluiz.itch.io/my-dear-cherry",
+        "name": "My Dear Cherry",
+        "dev": "L0rdLuiz",
+        "description": "Cherry lives a serene life with her son on her side, she hopes to see him grow up healthy and happy.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 06:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjg1ODk2LmpwZWc=/original/6FbdT%2F.jpeg",
+        "tags": [
+            "Horror",
+            "Point & Click",
+            "Psychological Horror"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:23:48Z"
+    },
+    {
+        "url": "https://midwestemorevival.itch.io/disappear-here",
+        "name": "disappear here",
+        "dev": "midwestemorevival",
+        "description": "thoughts from late summer. turns out i forgot to make these internal thoughts public.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 13:22 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjk2OTQ4LnBuZw==/original/M0OlqV.png",
+        "tags": [
+            "Decker",
+            "No AI",
+            "poetry"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:23:51Z"
+    },
+    {
+        "url": "https://nekotorine.itch.io/kawafuku",
+        "name": "KawaFuku 〜 Can Cute Clothes Alone Really Save The World !?",
+        "dev": "riri",
+        "description": "Four girls are brought together by a strange fairy, who claims that a goddess called \"Mother Dressmaker\" intends to bring about the end of the world.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 21:16 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTQ2MDQ5LnBuZw==/original/f3qvxg.png",
+        "tags": [
+            "Anime",
+            "Kinetic Novel",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:23:55Z"
+    },
+    {
+        "url": "https://philiaaa.itch.io/crisisstage",
+        "name": "CRISISSTAGE",
+        "dev": "philiaaa",
+        "description": "A psychological horror 2D visual novel game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 14:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjk0NTczLnBuZw==/original/ZpJZ4u.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:23:57Z"
+    },
+    {
+        "url": "https://sphearicalking.itch.io/embering-everheart",
+        "name": "Embering Everheart",
+        "dev": "SphearicalKing",
+        "description": "Blazes crumbing and reshaping world",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 21:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzE2MzQ4LnBuZw==/original/XxRDWG.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T08:24:00Z"
     }
 ]
