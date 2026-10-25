@@ -862,5 +862,17 @@
         "name": "Comfort and Warmth",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-10-24T02:54:55Z"
+    },
+    {
+        "url": "https://emika-games.itch.io/absolutely-nothing-good",
+        "name": "ABSOLUTELY NOTHING GOOD",
+        "reason": "Game became paid",
+        "deleted_at": "2026-10-25T02:55:35Z"
+    },
+    {
+        "url": "https://geistworld.itch.io/lupa-rossi-redux",
+        "name": "Lupa Rossi Redux",
+        "reason": "Game page is password-protected",
+        "deleted_at": "2026-10-25T02:55:39Z"
     }
 ]
