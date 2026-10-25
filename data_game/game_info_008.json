@@ -4181,5 +4181,73 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-25T08:24:00Z"
+    },
+    {
+        "url": "https://tasogare-vore.itch.io/marunomi-supporter",
+        "name": "丸吞まれ屋",
+        "dev": "tasogare_vore",
+        "description": "捕食者を体内からサポートするVOREゲーム",
+        "genre": "Role Playing",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 14:04 UTC",
+        "rating": "3.8",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjk2MDE0LnBuZw==/original/VX0Wbm.png",
+        "tags": [
+            "digestion",
+            "Fantasy",
+            "prey",
+            "stomach",
+            "support-role",
+            "vore"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T12:23:39Z"
+    },
+    {
+        "url": "https://thebaldporter.itch.io/336-9-v25-android-port",
+        "name": "3^36-9 V2.5 android port",
+        "dev": ">:3 Cubed Extended 53x2",
+        "description": "The android port everyone has been begging other porters to do....",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 05:41 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjg0NjcwLmpwZw==/original/z8MXeo.jpg",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T12:23:41Z"
     }
 ]
