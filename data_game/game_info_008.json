@@ -3051,5 +3051,886 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-24T20:23:55Z"
+    },
+    {
+        "url": "https://altila.itch.io/scattered-flowers",
+        "name": "Scattered Flowers",
+        "dev": "Altila",
+        "description": "STORY Akihiro and Chiharu were in love with each other.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 15:28 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjU1NjI4LmpwZw==/original/xBaEu8.jpg",
+        "tags": [
+            "2D",
+            "Anime",
+            "Indie",
+            "Male protagonist",
+            "Multiple Endings",
+            "No AI",
+            "Ren'Py",
+            "Romance",
+            "supernatural"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:39Z"
+    },
+    {
+        "url": "https://cheesynerd27.itch.io/10-days-to-ithaka",
+        "name": "10 Days to Ithaka",
+        "dev": "CheesyNerd27, Expressbadger12, Murphy-Clark",
+        "description": "Odysseus must discover which of his crew have been replaced by monsters",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 19:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjY1MjYwLnBuZw==/original/R8sIfS.png",
+        "tags": [
+            "Horror",
+            "LGBTQIA",
+            "Mystery",
+            "mythology",
+            "Narrative"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:42Z"
+    },
+    {
+        "url": "https://danyifri.itch.io/the-trees-were-walking",
+        "name": "[DanyiFridei] The Trees Were Walking",
+        "dev": "DanyiFri",
+        "description": "\"No, like.. They stood up and started... walking.\"",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 08:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjg3ODg1LnBuZw==/original/Z%2FpALl.png",
+        "tags": [
+            "Folklore",
+            "Furry",
+            "Horror"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:46Z"
+    },
+    {
+        "url": "https://demonward.itch.io/best-friends-for-dinner",
+        "name": "Best Friends for Dinner!",
+        "dev": "Demonward",
+        "description": "A Sheep and a Wolf become unhinged best friends forever!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 21:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjczMTE5LnBuZw==/original/YOmrQX.png",
+        "tags": [
+            "Dark Humor",
+            "Furry",
+            "Horror",
+            "Kinetic Novel",
+            "Monster Girls",
+            "No AI",
+            "Ren'Py",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:48Z"
+    },
+    {
+        "url": "https://draklord123.itch.io/watcher",
+        "name": "Watcher",
+        "dev": "Drak",
+        "description": "DON'T trust what you see",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 03:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTg5MjM2LnBuZw==/original/OlliYa.png",
+        "tags": [
+            "1-bit",
+            "Atmospheric",
+            "Horror",
+            "No AI",
+            "Pixel Art",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:51Z"
+    },
+    {
+        "url": "https://gizmood.itch.io/project-love",
+        "name": "Project Love",
+        "dev": "gizmo",
+        "description": "Can your love \"save\" them?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 04:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjgyMjkwLnBuZw==/original/tIrDWH.png",
+        "tags": [
+            "Mental Health",
+            "psychedelic",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:54Z"
+    },
+    {
+        "url": "https://igoraidiary.itch.io/monsoon",
+        "name": "Monsoon",
+        "dev": "igor.ai.diary",
+        "description": "Ten days of rain. One body in the pool. Nobody leaves the island.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 13:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjE0OTA4LnBuZw==/original/WMoU%2BP.png",
+        "tags": [
+            "Detective",
+            "Multiple Endings",
+            "Mystery",
+            "Noir",
+            "Ren'Py",
+            "Romance",
+            "Story Rich",
+            "Thriller",
+            "tropical"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:23:57Z"
+    },
+    {
+        "url": "https://k-ramstack.itch.io/the-manor-and-the-sea",
+        "name": "The Manor and The Sea",
+        "dev": "K-Ramstack",
+        "description": "A doomed relationship between two old men",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 16:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjU4MDQwLnBuZw==/original/VICEgM.png",
+        "tags": [
+            "Atmospheric",
+            "Boys' Love",
+            "Dark Fantasy",
+            "Horror",
+            "Male protagonist",
+            "Narrative",
+            "Queer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:01Z"
+    },
+    {
+        "url": "https://lenlen403.itch.io/enlils-enigma",
+        "name": "[ ENLIL'S ENIGMA ]",
+        "dev": "helen",
+        "description": "OLD GODS BECOME NEW TECHNOLOGIES",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 15:09 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTI3MzY1LnBuZw==/original/ryu%2F%2F%2F.png",
+        "tags": [
+            "Atmospheric",
+            "denpa",
+            "Psychological Horror",
+            "Short",
+            "solarpunk"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:04Z"
+    },
+    {
+        "url": "https://monsaru.itch.io/encephalophage",
+        "name": "Encéphalophage",
+        "dev": "Monsaru, GreySkies_of_the_Dead",
+        "description": "A short vn about the existential horror of being a body snatcher.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 06:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjgxMzAyLnBuZw==/original/7YrAWt.png",
+        "tags": [
+            "Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:07Z"
+    },
+    {
+        "url": "https://rinuinui.itch.io/natsu-no-uchini-en",
+        "name": "I Want to Save My Classmate from a Cult Before Summer Ends",
+        "dev": "RINUINUI",
+        "description": "Count the sins of the dead at a summer laundromat.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 01:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjM3NTc2LnBuZw==/original/ea5Asj.png",
+        "tags": [
+            "cult",
+            "Female Protagonist",
+            "Math",
+            "Multiple Endings",
+            "Mystery",
+            "Short",
+            "Slice Of Life",
+            "Story Rich",
+            "summer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:11Z"
+    },
+    {
+        "url": "https://smol-kitten.itch.io/el-sereno",
+        "name": "El Sereno de Barquillo",
+        "dev": "Smol Kitten",
+        "description": "La primera noche de un sereno en 1851",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 09:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjkwMTU1LnBuZw==/original/F4%2B5M3.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "Spanish; Castilian",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "High-contrast",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:14Z"
+    },
+    {
+        "url": "https://stubby-artist.itch.io/from-rose-to-thorn",
+        "name": "From Rose to Thorn",
+        "dev": "stubby_artist",
+        "description": "A short linear visual novel",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 17:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjU2NDUzLnBuZw==/original/tgM4Em.png",
+        "tags": [
+            "2D",
+            "Dark",
+            "Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:18Z"
+    },
+    {
+        "url": "https://threwen.itch.io/the-door",
+        "name": "The Door",
+        "dev": "threwen, Darzington",
+        "description": "Every witch must go through The Door. What is waiting for YOU?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 03:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjc5ODkwLmdpZg==/original/b6vAGg.gif",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Ghosts",
+            "Horror",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer",
+            "Spooky",
+            "witches"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:21Z"
+    },
+    {
+        "url": "https://through-the-window.itch.io/the-ota-express",
+        "name": "The OTA Express",
+        "dev": "Through the Window Studios",
+        "description": "Emergency maintenance is inevitable.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 21:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjM5MzUyLnBuZw==/original/6IpE2a.png",
+        "tags": [
+            "Abstract",
+            "Horror",
+            "Pixel Art",
+            "Robots"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:25Z"
+    },
+    {
+        "url": "https://yetilongago.itch.io/long-time-listener",
+        "name": "Long-Time Listener",
+        "dev": "yetilongago, UkeleleBoy",
+        "description": "A late-night radio host’s apartment slowly stops being hers",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 00:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjc2NTcyLnBuZw==/original/dyQdET.png",
+        "tags": [
+            "Aseprite",
+            "Horror",
+            "Narrative",
+            "Point & Click",
+            "Psychological Horror",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:29Z"
+    },
+    {
+        "url": "https://yukidaruman.itch.io/desk-no-31",
+        "name": "Desk No. 31",
+        "dev": "yukidaruman",
+        "description": "Transfer to a Japanese high school. Thirty students. Thirty-one desks. Today is the first snow.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 05:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjgzNjMxLnBuZw==/original/niNUrD.png",
+        "tags": [
+            "Horror",
+            "japan",
+            "Multiple Endings",
+            "Mystery",
+            "school",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Japanese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:32Z"
+    },
+    {
+        "url": "https://bucket-full-games.itch.io/chair-champions",
+        "name": "CHAIR Champions 0.4.1.5 Halloween Edition 🎃",
+        "dev": "Bucket-full-games",
+        "description": "Choose your office chair, buckle up & race through different buildings - and beyond!",
+        "genre": "Racing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "8",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3MjU2NDE5LnBuZw==/original/b55gER.png",
+        "tags": [
+            "2D",
+            "Halloween",
+            "mario-kart",
+            "No AI",
+            "Pixel Art",
+            "Retro",
+            "Split Screen",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "French",
+            "Japanese",
+            "Polish",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Touchscreen",
+            "Smartphone",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Godot",
+            "GIMP"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 11:55 UTC",
+        "added_at": "2026-10-25T04:24:36Z"
+    },
+    {
+        "url": "https://carachapadu.itch.io/double-dragon-zeebo-md",
+        "name": "Double Dragon Zeebo : MD",
+        "dev": "carachapadu",
+        "description": "Port started in 2025, whenever one got me burnt out, I'd switch to this one, since it's simpler, I managed to make much more progress than the other one.",
+        "genre": "Fighting",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "23 October 2026 @ 21:47 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjcwMDUyLnBuZw==/original/J8t6lz.png",
+        "tags": [
+            "genesis",
+            "Mega Drive",
+            "port",
+            "sega",
+            "sgdk"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:40Z"
+    },
+    {
+        "url": "https://hirazi.itch.io/factory-go",
+        "name": "ファクトリ囲碁",
+        "dev": "ひらじ",
+        "description": "スチームパンク工場建築対戦ゲーム！領土を広げ相手の工場を爆破しよう！",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 12:02 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjc0NTQyLnBuZw==/original/uMQz5U.png",
+        "tags": [
+            "Board Game",
+            "go",
+            "Local multiplayer",
+            "Multiplayer",
+            "Singleplayer",
+            "Steampunk",
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:24:43Z"
+    },
+    {
+        "url": "https://levion.itch.io/chainedpath",
+        "name": "Chained Path",
+        "dev": "levion",
+        "description": "Choose your path. Chain your skills. A turn based roguelite.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "16",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjY5OTYwLnBuZw==/original/NI0qkG.png",
+        "tags": [
+            "Dungeon Crawler",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite",
+            "Turn-based",
+            "Turn-based Strategy",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 21:29 UTC",
+        "added_at": "2026-10-25T04:25:03Z"
+    },
+    {
+        "url": "https://lil999999.itch.io/sahi",
+        "name": "sahi",
+        "dev": "lil999999",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 17:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:25:05Z"
+    },
+    {
+        "url": "https://nebudi.itch.io/ndd",
+        "name": "Not deep dungeon",
+        "dev": "nebudi",
+        "description": "Not deep dungeon — ремейк моей же одноименной игры, сделанной много лет назад. Игра представляет из себя небольшой рогалик, который рассчитан на короткие, но интенсивные забеги. Управление WASD —...",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 13:23 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTQ2OTA3LnBuZw==/original/0sOUbL.png",
+        "tags": [
+            "8x8",
+            "GameMaker",
+            "Pixel Art",
+            "Roguelike"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T04:25:08Z"
     }
 ]
