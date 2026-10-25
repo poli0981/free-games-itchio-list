@@ -4530,5 +4530,109 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-25T16:23:59Z"
+    },
+    {
+        "url": "https://isobeye.itch.io/tamam-ulan-asker-kahretsin-2-mobile-port",
+        "name": "TAMAM ULAN ASKER (KAHRETSİN 2) MOBILE PORT",
+        "dev": "IsoBeye",
+        "description": "TAMAM YETER ULAN, KAHRETSİN!",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 06:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzMwNjkwLnBuZw==/original/ZpwgBq.png",
+        "tags": [
+            "2D",
+            "3D"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T20:23:37Z"
+    },
+    {
+        "url": "https://nanstudiotw.itch.io/nobunaga-mobile",
+        "name": "信長之野望 手機版 Nobunaga Mobile-V3",
+        "dev": "NanStudioTw",
+        "description": "織田軍 vs 聯合軍，手機上的 5v5 信長 MOBA｜A fan-made 5v5 MOBA for Android",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 18:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzA5MjE5LnBuZw==/original/QhDF0L.png",
+        "tags": [
+            "Local multiplayer",
+            "moba",
+            "Multiplayer"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T20:23:40Z"
+    },
+    {
+        "url": "https://thornido.itch.io/tiny-bastion",
+        "name": "Tiny Bastion",
+        "dev": "Thornido",
+        "description": "A cozy tower defence incremental: hold the castle, grow stronger, beat the Red King.",
+        "genre": "Survival",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 20:21 UTC",
+        "rating": "3.2",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjk1NjU2LnBuZw==/original/HAdlxS.png",
+        "tags": [
+            "castle",
+            "Casual",
+            "Idle",
+            "Incremental",
+            "Medieval",
+            "Pixel Art",
+            "Tower Defense",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-25T20:23:43Z"
     }
 ]
