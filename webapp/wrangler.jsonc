@@ -64,8 +64,10 @@
       "migrations_dir": "./worker/migrations"
     }
   ],
-  // Per-IP limits (an IPv6 client by its /64), counted per Cloudflare location;
-  // over a limit the Worker answers 429 + Retry-After (worker/ratelimit.ts).
+  // Per-IP limits (an IPv6 client by its /64), counted per machine of each
+  // Cloudflare data centre (approximate: they hold for a client on one
+  // connection, not for one that opens a new connection per request); over a
+  // limit the Worker answers 429 + Retry-After (worker/ratelimit.ts).
   // Every request that runs the Worker counts against one of RL_SITE (app
   // pages, the public /api, the readable /data JSON, misses), RL_IMG (covers:
   // a Games page shows up to 100) or RL_ADMIN (/admin + /api/admin, behind

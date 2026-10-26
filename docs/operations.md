@@ -139,7 +139,9 @@ Do these once (and again with the `-staging` names for the staging Worker).
     no bot token is needed).
 15. **Rate limits** — two layers, both per client IP (an IPv6 client by its /64 in the Worker).
     - **Layer 1, the zone's WAF rule** (Security → WAF → **Rate limiting rules**). It runs before the
-      Worker, so a request it blocks costs no Worker request, and it is the only limit on static files.
+      Worker, so a request it blocks costs no Worker request, it is the only limit on static files, and
+      it counts across the whole data centre — the only limit a flood of new connections can't spread
+      out of (see layer 2).
       On the Free plan there is **one** rule, counted by IP over **10 seconds**, with a 10-second block;
       if a rule already exists (the old one for `/api/*`), edit it rather than adding one. Settings:
       - Rule name `Flood guard`. *If incoming requests match* → *Edit expression*:
@@ -164,19 +166,29 @@ Do these once (and again with the `-staging` names for the staging Worker).
       (`/admin` + `/api/admin`); on top, `RL_SUGGEST` 5 (Suggest POSTs) and `RL_GATE` 20 (verification
       POSTs). Over a limit: 429 + `Retry-After: 60` — JSON `{"error":"rate_limited"}` for the API,
       covers and files (with CORS on `/data`), a small "Too many requests" page (EN/VI, no script) for
-      app pages. Verified bots (the gate's header) are never counted. Change a limit in
+      app pages. Verified bots (the gate's header) are never counted. **These counts are loose**:
+      each machine of a data centre counts on its own and syncs late, so they hold for a client that
+      keeps one connection (browsers use one HTTP/2 connection, scripts with keep-alive) but hardly
+      for one that opens a new connection per request — measured after the 4.5.0 deploy, 1,000 such
+      requests in a minute got no 429. That is the WAF rule's job. Change a limit in
       `wrangler.jsonc` (then `npm run cf:types`); keep `period` 60 and a new `namespace_id` per binding in
       88xx (staging 89xx) — the ids are account-wide, and the account's other Workers use the low numbers.
       The counts are approximate and fail open (a missing binding or a limiter error lets requests
       through).
-    - **Test** after a change (it blocks your own IP for up to a minute):
+    - **Test** after a change (it blocks your own IP for up to a minute). The Worker's limits, over
+      **one** connection (a single `curl` with many URLs reuses it):
       ```sh
-      seq 150 | xargs -P 30 -I{} curl -s -o /dev/null -w "%{http_code}\n" https://freeitchgames.win/api/health | sort | uniq -c
+      curl -s -o /dev/null -w "%{http_code}\n" $(printf 'https://freeitchgames.win/api/health %.0s' $(seq 200)) | sort | uniq -c
       curl -s https://freeitchgames.win/api/health   # {"error":"rate_limited"} → the Worker; "error code: 1015" → the WAF rule
       ```
-      About 120 answer 200 and the rest 429. To see the WAF rule fire, send more than its threshold
-      within 10 s (`seq 400 | xargs -P 60 …`): the extra requests get `error code: 1015` and show up in
-      Security → Events. Worker 429s show up in Workers Logs (sampled, `head_sampling_rate` 0.1).
+      About 120 answer 200 and the rest 429 (fewer pass if you sent requests in the last minute). The
+      WAF rule, with a new connection per request, more than its threshold within 10 s:
+      ```sh
+      seq 400 | xargs -P 60 -I{} curl -s -o /dev/null -w "%{http_code}\n" https://freeitchgames.win/api/health | sort | uniq -c
+      ```
+      Past ~300 the answers turn into 429 `error code: 1015` (Security → Events lists them); without
+      the rule all 400 answer 200. Worker 429s show up in Workers Logs (sampled,
+      `head_sampling_rate` 0.1).
 
 ## 2. GitHub
 

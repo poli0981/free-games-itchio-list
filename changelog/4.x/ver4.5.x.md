@@ -28,7 +28,9 @@ requests") and has to wait a minute. Nothing changes in the desktop and Android 
   (`Retry-After: 60`) and are never cached. The admin shows "Too many requests from this connection".
 - **A first layer in front of the Worker**: the maintainer's runbook (`docs/operations.md`, section 1
   step 15) sets up a Cloudflare WAF rate-limiting rule that blocks floods before they reach the site's
-  code, and covers the static files the Worker never sees.
+  code, and covers the static files the Worker never sees. The Worker's own counts are approximate
+  (Cloudflare counts them per server and syncs them late), so the WAF rule is what holds against a
+  flood that opens a new connection for every request.
 
 ### Fixed
 
