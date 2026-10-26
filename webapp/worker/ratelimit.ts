@@ -15,8 +15,12 @@
  * Suggest and the gate's POST keep their own, stricter limits on top
  * (RL_SUGGEST, RL_GATE). Verified bots (the gate's Transform Rule header) are
  * not counted, so a crawl never rate-limits itself out of the index. Counts
- * are per Cloudflare location and approximate (the binding's design). Fails
- * open: a missing binding or a failing limiter lets the request through.
+ * are approximate (the binding's design): each machine of a data centre
+ * counts on its own and syncs late, so a client that keeps one connection
+ * (a browser, a script with keep-alive) is held to the limit, but one that
+ * opens a new connection per request is barely counted — the WAF rule is the
+ * limit for floods. Fails open: a missing binding or a failing limiter lets
+ * the request through.
  */
 import type { WorkerEnv } from './env'
 import { botPass } from './gate'
