@@ -4634,5 +4634,222 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-25T20:23:43Z"
+    },
+    {
+        "url": "https://2gold.itch.io/find-me",
+        "name": "FIND ME",
+        "dev": "2gold_LittleLineLives",
+        "description": "Returns to an unknown place with someone unknown.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 08:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzMyNDg4LnBuZw==/original/K%2FnzeM.png",
+        "tags": [
+            "2gold",
+            "findme",
+            "Post-apocalyptic",
+            "sf"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T00:24:45Z"
+    },
+    {
+        "url": "https://haridraws.itch.io/the-murmuring-depths",
+        "name": "The Murmuring Depths",
+        "dev": "haridraws, toadlett",
+        "description": "a haunting deepsea story game, with illustrations & soundtrack",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 13:41 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NzE5MjA4LmpwZw==/original/I4sdD1.jpg",
+        "tags": [
+            "Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T00:24:50Z"
+    },
+    {
+        "url": "https://jpde.itch.io/apex-sweeper",
+        "name": "Apex Sweeper",
+        "dev": "Team JPDE",
+        "description": "A Sonic Mystery Game based on the IDW Comics!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "25",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NTk0MTQ3LmpwZw==/original/wjGCKT.jpg",
+        "tags": [
+            "2D",
+            "Characters",
+            "Narrative",
+            "No AI",
+            "Singleplayer",
+            "sonic",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "25 October 2026 @ 13:32 UTC",
+        "added_at": "2026-10-26T00:24:57Z"
+    },
+    {
+        "url": "https://sora-lab.itch.io/dxsuzuki-handover-dx",
+        "name": "Suzuki's Great Handover Operation DX!",
+        "dev": "Sora_Lab",
+        "description": "Take over from Mr. Suzuki, complete the handover, and face a nine-point AI audit!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 08:12 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzMyMzEzLnBuZw==/original/2YmqBe.png",
+        "tags": [
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T00:25:02Z"
+    },
+    {
+        "url": "https://spiritguide-games.itch.io/shadowstarter",
+        "name": "Dragon Soul: Awakening // ShadowStarter",
+        "dev": "Spiritguide Games",
+        "description": "Your shadow would like to meet you... and they may bite?",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 14:31 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjMyMjA4LnBuZw==/original/x0ufHd.png",
+        "tags": [
+            "Dragons",
+            "Fantasy",
+            "fourth-wall",
+            "Halloween",
+            "Meaningful Choices",
+            "meta",
+            "Ren'Py",
+            "Story Rich",
+            "Turn-Based Combat"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T00:25:07Z"
+    },
+    {
+        "url": "https://vaalribbok.itch.io/end-of-the-world-is-nice",
+        "name": "End of the world is nice",
+        "dev": "vaalribbok",
+        "description": "Short story.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 23:00 UTC",
+        "rating": "3.3",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzE4NDY5LnBuZw==/original/c2m8la.png",
+        "tags": [
+            "Narrative",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T00:25:12Z"
     }
 ]
