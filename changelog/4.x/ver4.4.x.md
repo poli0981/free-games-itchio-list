@@ -1,6 +1,39 @@
 # Changelog — 4.4.x
 
-Release notes for 4.4.0 to 4.4.2, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+Release notes for 4.4.0 to 4.4.3, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [4.4.3] - 2026-10-26 (Dependency and security updates)
+
+A maintenance release: nothing changes on the site or in the apps. It brings the week's dependency
+updates and closes the open security advisories in the project's build tools.
+
+### Upgrade notes
+
+- **Nothing to accept again**: no policy changed.
+- **Desktop and Android apps**: install 4.4.3 over 4.4.2 as usual.
+
+### Security
+
+- **Build tools**: wrangler's local development server (miniflare) pins `undici` 7.29.1, which has
+  three advisories (GHSA-xjj6-f33q-929c, high; GHSA-4qv8-2p9j-2685 and GHSA-f72v-6w45-q472,
+  moderate). An npm `overrides` entry lifts it to 7.30.1 until miniflare does so itself. `zod`,
+  which the lint tools use, moves to 4.6.7 (GHSA-mrhx-c7xc-m3w5). Neither package is part of the site,
+  the Worker or the apps; `npm audit` now reports none.
+- **Desktop and Android apps**: the Rust dependencies are refreshed, among them `tokio` 1.54.1
+  (RUSTSEC-2026-0386) and a `yoke-derive` release that replaces a yanked one. `cargo audit` reports no
+  vulnerabilities; its remaining warnings are on Linux libraries that Tauri depends on (`glib`, the
+  `zbus` family), which have no fixed release yet.
+
+### Changed
+
+- **Code scanning** (#157): SonarQube Cloud analyses the repository in CI instead of its automatic
+  analysis, and imports the test coverage of the Python and TypeScript suites.
+- **Dependencies** (the updates of Dependabot #159–#163, and a few more): React Router 8.5.0,
+  TanStack Query 5.104.5, jose 6.2.13, lucide-react 1.61.0, Zustand 5.0.16, Vite 8.3.5,
+  wrangler 4.152.0 (its generated Worker types refreshed), ESLint 10.13.0, typescript-eslint 8.72.0,
+  knip 6.42.1 (it now follows the stylesheet's imports, so its config no longer has to exempt
+  Tailwind), the Tauri CLI 2.12.4 and the `tauri` crate 2.12.5; Ruff 0.17.2, coverage 7.17.0 and
+  certifi 2026.10.23 for the pipeline; `actions/setup-python` 7.1.0 in the workflows.
 
 ## [4.4.2] - 2026-10-22 (Toolchain upgrade, code-scan fixes)
 
