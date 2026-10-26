@@ -4862,5 +4862,167 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-26T00:25:12Z"
+    },
+    {
+        "url": "https://koalapanda54.itch.io/flakeparty",
+        "name": "Flakeparty",
+        "dev": "KoalaPanda, DasLittlePuma",
+        "description": "Build the perfect cereal bowl and score insane amounts of points with crazy builds",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "16",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzQ2OTY2LnBuZw==/original/FrGG48.png",
+        "tags": [
+            "Casual",
+            "Deck Building",
+            "Incremental",
+            "Management",
+            "Point & Click",
+            "Relaxing",
+            "Roguelike",
+            "Singleplayer",
+            "Unity",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "26 October 2026 @ 03:32 UTC",
+        "added_at": "2026-10-26T04:23:45Z"
+    },
+    {
+        "url": "https://muchamaker.itch.io/super-pancake-flip",
+        "name": "超パンケーキ返し",
+        "dev": "MuchaMaker",
+        "description": "60秒で何回転？ 上にスワイプして、指定の面でキャッチ！",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 11:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzM5MTIyLnBuZw==/original/PwqsFG.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T04:23:48Z"
+    },
+    {
+        "url": "https://themilitarysimularper.itch.io/ragdoll-sandbox",
+        "name": "Ragdoll sandbox",
+        "dev": "TheMilitarySimularper",
+        "description": "A game where you can watch dummies suffer.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 13:19 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzQxOTUyLnBuZw==/original/fXi%2BkY.png",
+        "tags": [
+            "2D",
+            "2d-physics",
+            "blood-physics",
+            "dismemberment",
+            "Gore",
+            "Physics",
+            "physics-sandbox",
+            "procedural-damage",
+            "ragdoll-physics",
+            "Sandbox"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T04:23:52Z"
+    },
+    {
+        "url": "https://vegros101.itch.io/great-expanse-road-to-immortality",
+        "name": "Great Expanse: Road to Immortality",
+        "dev": "Vegros101",
+        "description": "A text-based xianxia life sim. Cultivate, feud and ascend across three worlds, one year at a time.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "9",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMDUwNDQ0LnBuZw==/original/e24xXo.png",
+        "tags": [
+            "cultivation",
+            "Fantasy",
+            "Life Simulation",
+            "Text based",
+            "xianxia"
+        ],
+        "platforms": [
+            "HTML5",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "25 October 2026 @ 16:18 UTC",
+        "added_at": "2026-10-26T04:23:55Z"
     }
 ]
