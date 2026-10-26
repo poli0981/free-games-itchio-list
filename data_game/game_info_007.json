@@ -1,283 +1,5 @@
 [
     {
-        "url": "https://chaostheorygames.itch.io/all-the-birds",
-        "name": "All The Birds",
-        "dev": "chaostheorygames",
-        "description": "Build an Australian bird reserve, photograph new species, and hire a crew of eccentric birders to help.",
-        "genre": "Simulation",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "07 September 2026 @ 07:07 UTC",
-        "rating": "4.6",
-        "rating_count": "61",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5NzU0NTEwLnBuZw==/original/xHKtaV.png",
-        "tags": [
-            "Casual",
-            "Clicker",
-            "Cozy",
-            "Cute",
-            "Hand-drawn",
-            "Idle",
-            "Incremental",
-            "Relaxing"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "20 October 2026 @ 07:21 UTC",
-        "added_at": "2026-10-01T01:08:56Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://chaostheorygames.itch.io/stoneheart-archive",
-        "name": "Stoneheart Archive",
-        "dev": "chaostheorygames",
-        "description": "Moving-base survival roguelike. Free Web Playable",
-        "genre": "Strategy",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "41",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4Mzk0NDQyLnBuZw==/original/yJg9%2BL.png",
-        "tags": [
-            "3D",
-            "Exploration",
-            "Fantasy",
-            "Incremental",
-            "Procedural Generation",
-            "Roguelike",
-            "Singleplayer",
-            "Tower Defense"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "04 September 2026 @ 22:41 UTC",
-        "added_at": "2026-10-01T01:09:00Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://cutegamesclub.itch.io/bug-boy-summer",
-        "name": "Bug Boy Summer",
-        "dev": "cutegamesclub",
-        "description": "collect cute bug boys and keep them in jars <3 (Mobile friendly!)",
-        "genre": "Strategy",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "20 September 2026 @ 10:14 UTC",
-        "rating": "4.5",
-        "rating_count": "17",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMTE3NDUzLnBuZw==/original/Gdpc5U.png",
-        "tags": [
-            "boys",
-            "bug",
-            "collectible",
-            "collection",
-            "Cute",
-            "Gacha",
-            "Incremental",
-            "insect",
-            "kawaii",
-            "museum"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "29 September 2026 @ 13:29 UTC",
-        "added_at": "2026-10-01T01:09:04Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://cuteshadow.itch.io/tokidoki-tactical-squad",
-        "name": "Tokidoki Tactical Squad",
-        "dev": "CuteShadow",
-        "description": "A retro yuri visual novel featuring military girls.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "28",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIzMzY5NzEyLnBuZw==/original/4VqPr6.png",
-        "tags": [
-            "Anime",
-            "ddlc",
-            "Female Protagonist",
-            "Psychological Horror",
-            "Retro",
-            "Romance",
-            "Sci-fi",
-            "Slice Of Life",
-            "Yandere",
-            "Yuri"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "24 September 2026 @ 16:27 UTC",
-        "added_at": "2026-10-01T01:09:08Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://davemakes.itch.io/nara-mari",
-        "name": "Nara Mari",
-        "dev": "davemakes",
-        "description": "Spaghetti saucing falling block game",
-        "genre": "Puzzle",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 04:23 UTC",
-        "rating": "4.4",
-        "rating_count": "5",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMwNjI5LnBuZw==/original/%2F7R8np.png",
-        "tags": [
-            "falling-block",
-            "PICO-8"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "PICO-8"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-01T01:09:12Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://dokkodolabs.itch.io/neo-forge",
-        "name": "Neo Forge: MTG Commander vs AI",
-        "dev": "DokkodoLabs",
-        "description": "Play Magic: The Gathering Commander/EDH vs AI, 1v1 or 4-player, plus Standard and a roguelite mode. Free and offline.",
-        "genre": "Card Game",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "01 September 2026 @ 06:29 UTC",
-        "rating": "4.3",
-        "rating_count": "23",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNTY5MDczLnBuZw==/original/HEBhL5.png",
-        "tags": [
-            "commander",
-            "Deck Building",
-            "edh",
-            "forge",
-            "magic-the-gathering",
-            "mtg",
-            "offline",
-            "Roguelite",
-            "Singleplayer",
-            "tcg"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux",
-            "Android"
-        ],
-        "languages": [
-            "Arabic",
-            "German",
-            "English",
-            "Spanish; Castilian",
-            "Spanish; Latin America",
-            "French",
-            "Italian",
-            "Japanese",
-            "Korean",
-            "Portuguese (Brazil)",
-            "Russian",
-            "Chinese"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "24 October 2026 @ 21:19 UTC",
-        "added_at": "2026-10-01T01:09:16Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics"
-        ],
-        "accessibility": [
-            "Interactive tutorial"
-        ]
-    },
-    {
         "url": "https://ellian.itch.io/longestini",
         "name": "Longestini",
         "dev": "Ellian",
@@ -20407,5 +20129,421 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-21T08:24:08Z"
+    },
+    {
+        "url": "https://yuhaolin2005.itch.io/qingxuan-volume1",
+        "name": "Qingxuan: The Alchemy Hall Cold Case",
+        "dev": "YuhaoLin2005",
+        "description": "A complete story-driven cultivation idle game. Twelve chapters, eight endings. Volume 1 public test.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 13:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTI0NzYyLnBuZw==/original/m88d8C.png",
+        "tags": [
+            "cultivation",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Mystery",
+            "Singleplayer",
+            "Story Rich",
+            "Text based",
+            "xianxia"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T08:24:10Z"
+    },
+    {
+        "url": "https://cineeeekk.itch.io/castle-builddefend",
+        "name": "Castle: Build&Defend",
+        "dev": "Cineeeekk",
+        "description": "Build by day. Hold until dawn.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 October 2026 @ 17:36 UTC",
+        "rating": "4.9",
+        "rating_count": "9",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTE4MDI3LmpwZw==/original/NJs7zi.jpg",
+        "tags": [
+            "3D",
+            "base-building",
+            "building",
+            "castle",
+            "defense",
+            "Isometric",
+            "Medieval",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "French",
+            "Polish",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 October 2026 @ 20:39 UTC",
+        "added_at": "2026-10-21T12:23:36Z"
+    },
+    {
+        "url": "https://cosmicadventuresquad.itch.io/project-hail-meowy",
+        "name": "Project Hail Meowy",
+        "dev": "Cosmic Adventure Squad",
+        "description": "Punch the card. Save the tuna.",
+        "genre": "Strategy",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 October 2026 @ 15:20 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDk2MzkwLmdpZg==/original/u1oxzb.gif",
+        "tags": [
+            "ascii",
+            "Cats",
+            "Ludum Dare 60",
+            "Mouse only",
+            "Retro",
+            "Roguelike",
+            "Space Sim",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T12:23:43Z"
+    },
+    {
+        "url": "https://doctorhummer.itch.io/irule",
+        "name": "I.RULE",
+        "dev": "DoctorHummer, toncho_",
+        "description": "The Binding of Isaac fangame, heavily inspired by Plants vs. Zombies",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "503",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzgwNDQwODUucG5n/original/H%2Bqt0z.png",
+        "tags": [
+            "Fangame",
+            "Roguelike",
+            "Roguelite",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T12:23:49Z"
+    },
+    {
+        "url": "https://pickpawket.itch.io/a-trick-of-his-light",
+        "name": "A Trick of His Light",
+        "dev": "pickpawket",
+        "description": "For EGDC's \"Trick\" game jam :) Artwork by L_T Written by lilaofthelake Programmed by pickpawket",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 20:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTI4MDAzLnBuZw==/original/btWi2q.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T16:23:38Z"
+    },
+    {
+        "url": "https://sakiness.itch.io/everlune",
+        "name": "EverLune BETA",
+        "dev": "SakiNess",
+        "description": "A romance visual novel where everything goes wrong... the moment it pulls you into the game.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 03:58 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTM4MDg5LnBuZw==/original/mksM5w.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Destruction",
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "Romance",
+            "somethings-wrong"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T16:23:41Z"
+    },
+    {
+        "url": "https://vhan-5.itch.io/u-dont-get-it",
+        "name": "U DON'T GET IT",
+        "dev": "Vhan || 반",
+        "description": "\"I knew you wouldn't get it... or did you?\" A dark psychological visual novel about obsession, expectations, and uncovered truths....",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 21:36 UTC",
+        "rating": "4.6",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTQwNjIxLnBuZw==/original/WplE0T.png",
+        "tags": [
+            "Creepy",
+            "Indie",
+            "kuudere",
+            "LGBTQIA",
+            "Psychological Horror",
+            "Ren'Py",
+            "Romance",
+            "Story Rich",
+            "Yandere"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-21T16:23:44Z",
+        "updated_at": "22 October 2026 @ 01:12 UTC"
+    },
+    {
+        "url": "https://alchemysheep.itch.io/game-is-full-of-bugs",
+        "name": "Game is Full of Bugs",
+        "dev": "AlchemySheep",
+        "description": "Demo",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 October 2026 @ 14:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMDcxNzM3LnBuZw==/original/aqgn1X.png",
+        "tags": [
+            "2D",
+            "bullet-heaven",
+            "Dungeon Crawler",
+            "Indie",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite",
+            "Singleplayer",
+            "Top-Down",
+            "Twin Stick Shooter"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 October 2026 @ 14:22 UTC",
+        "added_at": "2026-10-22T00:23:31Z"
+    },
+    {
+        "url": "https://traumalab.itch.io/trauma-lab",
+        "name": "Trauma lab",
+        "dev": "TraumaLab",
+        "description": "An anatomy and physics sandbox. Every bullet is tracked through skin, muscle, bone and organ.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 15:06 UTC",
+        "rating": "4.7",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTI5MDA2LnBuZw==/original/wLPm93.png",
+        "tags": [
+            "anatomy",
+            "browser",
+            "Gore",
+            "medical",
+            "Physics",
+            "ragdoll",
+            "Sandbox",
+            "Singleplayer",
+            "Violent"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 October 2026 @ 22:32 UTC",
+        "added_at": "2026-10-22T00:23:35Z"
+    },
+    {
+        "url": "https://auriaca.itch.io/nakphachonphrai-first-light",
+        "name": "นักผจญไพร | First Light",
+        "dev": "Auriaca",
+        "description": "explore adventure 2.5D game",
+        "genre": "Adventure",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 07:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTU3NzU3LnBuZw==/original/Exr0Tp.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-22T04:23:39Z"
     }
 ]

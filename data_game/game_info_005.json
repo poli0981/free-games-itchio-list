@@ -19863,5 +19863,139 @@
             "Text"
         ],
         "accessibility": []
+    },
+    {
+        "url": "https://bonetosser.itch.io/1on1-simulator",
+        "name": "1on1練習シミュレーター",
+        "dev": "bonetosser",
+        "description": "【これは何？】 「AIが部下役を務める、1on1の練習用ソフトウェア」——として社内の全管理職に配布された、選択式の短編ノベルゲームです。 あなたは大企業の課長。3人の部下との1on1に挑みます。 ・元気だけはある新人 ・ギークなエンジニア ・怯えながら7年目を迎えた総務 誠実に向き合うもよし、名言を連発するもよし、観葉植物の配置を提案するもよし。 すべての選択は、あなたの自由です。...",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzU0NDA0LnBuZw==/original/eZfXOW.png",
+        "tags": [
+            "Comedy",
+            "free",
+            "japanese",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://chadthemadlad.itch.io/bnuuy-quest",
+        "name": "Bnuuy quest",
+        "dev": "chadthemadlad",
+        "description": "bnuuy quest",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzUyODAxLnBuZw==/original/E1JbDG.png",
+        "tags": [
+            "bnuuy",
+            "bunny",
+            "No AI"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://duckrow.itch.io/pleasure-planet",
+        "name": "Pleasure Planet",
+        "dev": "duck",
+        "description": "Visual novel created for global game jam 2026",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzUyMjI3LnBuZw==/original/eWZsQb.png",
+        "tags": [
+            "2D",
+            "Global Game Jam",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://luigiwuigi.itch.io/after-the-last-bell",
+        "name": "After The Last Bell.",
+        "dev": "Laluigi",
+        "description": "PSX visual novel",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzQ3ODcxLnBuZw==/original/HdyhIS.png",
+        "tags": [
+            "Homebrew",
+            "Prototype",
+            "PSX (PlayStation)",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": []
     }
 ]

@@ -1,139 +1,5 @@
 [
     {
-        "url": "https://bonetosser.itch.io/1on1-simulator",
-        "name": "1on1練習シミュレーター",
-        "dev": "bonetosser",
-        "description": "【これは何？】 「AIが部下役を務める、1on1の練習用ソフトウェア」——として社内の全管理職に配布された、選択式の短編ノベルゲームです。 あなたは大企業の課長。3人の部下との1on1に挑みます。 ・元気だけはある新人 ・ギークなエンジニア ・怯えながら7年目を迎えた総務 誠実に向き合うもよし、名言を連発するもよし、観葉植物の配置を提案するもよし。 すべての選択は、あなたの自由です。...",
-        "genre": "Interactive Fiction",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MzU0NDA0LnBuZw==/original/eZfXOW.png",
-        "tags": [
-            "Comedy",
-            "free",
-            "japanese",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics",
-            "Text"
-        ],
-        "accessibility": []
-    },
-    {
-        "url": "https://chadthemadlad.itch.io/bnuuy-quest",
-        "name": "Bnuuy quest",
-        "dev": "chadthemadlad",
-        "description": "bnuuy quest",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MzUyODAxLnBuZw==/original/E1JbDG.png",
-        "tags": [
-            "bnuuy",
-            "bunny",
-            "No AI"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://duckrow.itch.io/pleasure-planet",
-        "name": "Pleasure Planet",
-        "dev": "duck",
-        "description": "Visual novel created for global game jam 2026",
-        "genre": "Visual Novel",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MzUyMjI3LnBuZw==/original/eWZsQb.png",
-        "tags": [
-            "2D",
-            "Global Game Jam",
-            "No AI"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://luigiwuigi.itch.io/after-the-last-bell",
-        "name": "After The Last Bell.",
-        "dev": "Laluigi",
-        "description": "PSX visual novel",
-        "genre": "Visual Novel",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MzQ3ODcxLnBuZw==/original/HdyhIS.png",
-        "tags": [
-            "Homebrew",
-            "Prototype",
-            "PSX (PlayStation)",
-            "Romance"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": []
-    },
-    {
         "url": "https://steveomatic.itch.io/cafe-confessions",
         "name": "Café Confessions",
         "dev": "Steveomatic",
@@ -20236,5 +20102,283 @@
         "ai_disclosure": "N/A",
         "ai_content": [],
         "accessibility": []
+    },
+    {
+        "url": "https://chaostheorygames.itch.io/all-the-birds",
+        "name": "All The Birds",
+        "dev": "chaostheorygames",
+        "description": "Build an Australian bird reserve, photograph new species, and hire a crew of eccentric birders to help.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "07 September 2026 @ 07:07 UTC",
+        "rating": "4.6",
+        "rating_count": "61",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NzU0NTEwLnBuZw==/original/xHKtaV.png",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Cozy",
+            "Cute",
+            "Hand-drawn",
+            "Idle",
+            "Incremental",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 07:21 UTC",
+        "added_at": "2026-10-01T01:08:56Z",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://chaostheorygames.itch.io/stoneheart-archive",
+        "name": "Stoneheart Archive",
+        "dev": "chaostheorygames",
+        "description": "Moving-base survival roguelike. Free Web Playable",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "41",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4Mzk0NDQyLnBuZw==/original/yJg9%2BL.png",
+        "tags": [
+            "3D",
+            "Exploration",
+            "Fantasy",
+            "Incremental",
+            "Procedural Generation",
+            "Roguelike",
+            "Singleplayer",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "04 September 2026 @ 22:41 UTC",
+        "added_at": "2026-10-01T01:09:00Z",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://cutegamesclub.itch.io/bug-boy-summer",
+        "name": "Bug Boy Summer",
+        "dev": "cutegamesclub",
+        "description": "collect cute bug boys and keep them in jars <3 (Mobile friendly!)",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 September 2026 @ 10:14 UTC",
+        "rating": "4.5",
+        "rating_count": "17",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTE3NDUzLnBuZw==/original/Gdpc5U.png",
+        "tags": [
+            "boys",
+            "bug",
+            "collectible",
+            "collection",
+            "Cute",
+            "Gacha",
+            "Incremental",
+            "insect",
+            "kawaii",
+            "museum"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 13:29 UTC",
+        "added_at": "2026-10-01T01:09:04Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://cuteshadow.itch.io/tokidoki-tactical-squad",
+        "name": "Tokidoki Tactical Squad",
+        "dev": "CuteShadow",
+        "description": "A retro yuri visual novel featuring military girls.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "28",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMzY5NzEyLnBuZw==/original/4VqPr6.png",
+        "tags": [
+            "Anime",
+            "ddlc",
+            "Female Protagonist",
+            "Psychological Horror",
+            "Retro",
+            "Romance",
+            "Sci-fi",
+            "Slice Of Life",
+            "Yandere",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 September 2026 @ 16:27 UTC",
+        "added_at": "2026-10-01T01:09:08Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://davemakes.itch.io/nara-mari",
+        "name": "Nara Mari",
+        "dev": "davemakes",
+        "description": "Spaghetti saucing falling block game",
+        "genre": "Puzzle",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "28 September 2026 @ 04:23 UTC",
+        "rating": "4.4",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzMwNjI5LnBuZw==/original/%2F7R8np.png",
+        "tags": [
+            "falling-block",
+            "PICO-8"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "PICO-8"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-01T01:09:12Z",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://dokkodolabs.itch.io/neo-forge",
+        "name": "Neo Forge: MTG Commander vs AI",
+        "dev": "DokkodoLabs",
+        "description": "Play Magic: The Gathering Commander/EDH vs AI, 1v1 or 4-player, plus Standard and a roguelite mode. Free and offline.",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 September 2026 @ 06:29 UTC",
+        "rating": "4.3",
+        "rating_count": "23",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTY5MDczLnBuZw==/original/HEBhL5.png",
+        "tags": [
+            "commander",
+            "Deck Building",
+            "edh",
+            "forge",
+            "magic-the-gathering",
+            "mtg",
+            "offline",
+            "Roguelite",
+            "Singleplayer",
+            "tcg"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "Arabic",
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Chinese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "24 October 2026 @ 21:19 UTC",
+        "added_at": "2026-10-01T01:09:16Z",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [
+            "Interactive tutorial"
+        ]
     }
 ]
