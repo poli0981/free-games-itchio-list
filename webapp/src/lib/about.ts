@@ -8,7 +8,7 @@ export interface ThirdParty {
 
 export const APP = {
   name: 'Free Itch Games',
-  version: '4.4.3',
+  version: '4.5.0',
   repo: 'https://github.com/poli0981/free-games-itchio-list',
   license: 'code MIT · data CC BY 4.0',
 } as const

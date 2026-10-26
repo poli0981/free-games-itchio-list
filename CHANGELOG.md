@@ -3,12 +3,13 @@
 All notable changes to this project, newest first. The notes of each release live in
 [`changelog/`](changelog/), one file per minor version: `changelog/<major>.x/ver<major>.<minor>.x.md`.
 
-**Latest release: [4.4.3](changelog/4.x/ver4.4.x.md#443---2026-10-26-dependency-and-security-updates) (2026-10-26) — Dependency and security updates.**
+**Latest release: [4.5.0](changelog/4.x/ver4.5.x.md#450---2026-10-27-rate-limits-for-the-whole-site) (2026-10-27) — Rate limits for the whole site.**
 
 ## 4.x
 
 | Version | Date | Highlights |
 |---|---|---|
+| [4.5.0](changelog/4.x/ver4.5.x.md#450---2026-10-27-rate-limits-for-the-whole-site) | 2026-10-27 | Rate limits for the whole site (HTTP 429), WAF guide |
 | [4.4.3](changelog/4.x/ver4.4.x.md#443---2026-10-26-dependency-and-security-updates) | 2026-10-26 | Dependency and security updates (build-tool advisories closed) |
 | [4.4.2](changelog/4.x/ver4.4.x.md#442---2026-10-22-toolchain-upgrade-code-scan-fixes) | 2026-10-22 | Toolchain upgrade (TypeScript 7, Node 26, Python 3.15), code-scan fixes |
 | [4.4.1](changelog/4.x/ver4.4.x.md#441---2026-10-16-extension-and-bot-retired) | 2026-10-16 | Extension and bot retired (archived repos), ingest API removed |

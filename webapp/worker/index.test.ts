@@ -110,3 +110,72 @@ describe('router, gate off', () => {
     expect(res.status).not.toBe(403)
   })
 })
+
+describe('rate limits', () => {
+  /** The binding's behaviour for one window: the first `limit` requests per key pass. */
+  function bucket(limit: number) {
+    const counts = new Map<string, number>()
+    return {
+      limit: vi.fn(async ({ key }: RateLimitOptions) => {
+        const n = (counts.get(key) ?? 0) + 1
+        counts.set(key, n)
+        return { success: n <= limit }
+      }),
+    }
+  }
+
+  function limited(over: Record<string, unknown> = {}) {
+    return env({ RL_SITE: bucket(120), RL_IMG: bucket(600), RL_ADMIN: bucket(300), ...over })
+  }
+
+  const IP = { 'cf-connecting-ip': '198.51.100.20' }
+
+  it('lets 120 requests a window through, then answers a burst with 429', async () => {
+    const e = limited()
+    const statuses = await Promise.all(Array.from({ length: 150 }, () => run('/api/health', IP, e).then((r) => r.status)))
+    expect(statuses.filter((s) => s === 200)).toHaveLength(120)
+    expect(statuses.filter((s) => s === 429)).toHaveLength(30)
+    // Other clients are not affected.
+    expect((await run('/api/health', { 'cf-connecting-ip': '198.51.100.21' }, e)).status).toBe(200)
+  })
+
+  it('stops a flooding client before any work: pages, API, data', async () => {
+    const e = limited({ RL_SITE: bucket(0) })
+    const page = await run('/games', IP, e)
+    expect([page.status, page.headers.get('content-type')]).toEqual([429, 'text/html; charset=utf-8'])
+    expect(page.headers.get('retry-after')).toBe('60')
+    const suggest = await run('/api/suggest', IP, e)
+    expect(await suggest.json()).toEqual({ error: 'rate_limited' })
+    expect((await run('/data/index.json', { ...IP, origin: 'tauri://localhost' }, e)).status).toBe(429)
+    expect((e as ReturnType<typeof env>).ASSETS.fetch).not.toHaveBeenCalled()
+  })
+
+  it('limits covers on their own budget, before the gate and the edge cache', async () => {
+    const e = limited({ RL_IMG: bucket(2) })
+    const statuses = []
+    for (let i = 0; i < 3; i++) statuses.push((await run('/img/160/abc/original/x.png', IP, e)).status)
+    expect(statuses).toEqual([403, 403, 429])
+    expect(cache.match).not.toHaveBeenCalled()
+    // Pages still work for the same client.
+    expect((await run('/games', IP, e)).status).toBe(200)
+  })
+
+  it('counts an IPv6 client by its /64', async () => {
+    const e = limited({ RL_SITE: bucket(1) })
+    expect((await run('/api/health', { 'cf-connecting-ip': '2001:db8:5:6::1' }, e)).status).toBe(200)
+    expect((await run('/api/health', { 'cf-connecting-ip': '2001:db8:5:6:ffff::2' }, e)).status).toBe(429)
+  })
+
+  it('never limits verified bots', async () => {
+    const e = limited({ RL_SITE: bucket(0) })
+    const res = await run('/games', { ...IP, 'x-fig-known-bot': BOT }, e)
+    expect(await res.text()).toBe(SHELL)
+  })
+
+  it('limits the admin on its own budget', async () => {
+    const e = limited({ RL_ADMIN: bucket(0) })
+    expect((await run('/api/admin/queue', IP, e)).status).toBe(429)
+    expect((await run('/admin/', IP, e)).status).toBe(429)
+    expect((await run('/api/health', IP, e)).status).toBe(200)
+  })
+})
