@@ -182,12 +182,14 @@ Do these once (and again with the `-staging` names for the staging Worker).
       curl -s https://freeitchgames.win/api/health   # {"error":"rate_limited"} → the Worker; "error code: 1015" → the WAF rule
       ```
       About 120 answer 200 and the rest 429 (fewer pass if you sent requests in the last minute). The
-      WAF rule, with a new connection per request, more than its threshold within 10 s:
+      WAF rule needs more than 300 requests within 10 s — faster than `xargs curl` gets from a home
+      connection (~20 a second). Node's `fetch` keeps a pool of connections and does it:
       ```sh
-      seq 400 | xargs -P 60 -I{} curl -s -o /dev/null -w "%{http_code}\n" https://freeitchgames.win/api/health | sort | uniq -c
+      node -e "let n=0,t={};const go=async()=>{while(n++<800){const r=await fetch('https://freeitchgames.win/api/health');const b=await r.text();const k=r.status==200?'200':b.includes('1015')?'WAF 1015':b.includes('rate_limited')?'Worker 429':r.status;t[k]=(t[k]||0)+1}};Promise.all(Array.from({length:100},go)).then(()=>console.log(t))"
       ```
-      Past ~300 the answers turn into 429 `error code: 1015` (Security → Events lists them); without
-      the rule all 400 answer 200. Worker 429s show up in Workers Logs (sampled,
+      Measured on 2026-10-27 with the rule above: 800 requests in 4.9 s → 111 × 200, 201 × Worker 429,
+      488 × WAF 1015 (from 1.4 s on), and the site answered normally again 10 s later. Security →
+      Events lists the WAF blocks; Worker 429s show up in Workers Logs (sampled,
       `head_sampling_rate` 0.1).
 
 ## 2. GitHub
