@@ -165,7 +165,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
       POSTs). Over a limit: 429 + `Retry-After: 60` — JSON `{"error":"rate_limited"}` for the API,
       covers and files (with CORS on `/data`), a small "Too many requests" page (EN/VI, no script) for
       app pages. Verified bots (the gate's header) are never counted. Change a limit in
-      `wrangler.jsonc` (then `npm run cf:types`); keep `period` 60 and a new `namespace_id` per binding.
+      `wrangler.jsonc` (then `npm run cf:types`); keep `period` 60 and a new `namespace_id` per binding in
+      88xx (staging 89xx) — the ids are account-wide, and the account's other Workers use the low numbers.
       The counts are approximate and fail open (a missing binding or a limiter error lets requests
       through).
     - **Test** after a change (it blocks your own IP for up to a minute):

@@ -30,6 +30,13 @@ requests") and has to wait a minute. Nothing changes in the desktop and Android 
   step 15) sets up a Cloudflare WAF rate-limiting rule that blocks floods before they reach the site's
   code, and covers the static files the Worker never sees.
 
+### Fixed
+
+- **Suggest and verification limits counted other sites too**: a rate limit's namespace is shared by
+  every Worker of the Cloudflare account, and the two existing limits used the same numbers as other
+  Workers there, so their visits could use up this site's Suggest or verification allowance. All of
+  this site's limits now have namespaces of their own.
+
 ### Changed
 
 - **Security policy**: says how the site limits requests (EN + VI); no new obligations.

@@ -145,5 +145,7 @@ describe('wrangler.jsonc', () => {
     const ids = [undefined, 'staging'].flatMap((envName) => limits(envName).map((r) => r.namespace_id))
     expect(ids.length).toBeGreaterThanOrEqual(10)
     expect(new Set(ids).size).toBe(ids.length)
+    // Namespaces are account-wide: other Workers on the account use the low numbers.
+    expect(ids.filter((id) => !/^8[89]\d\d$/.test(id))).toEqual([])
   })
 })

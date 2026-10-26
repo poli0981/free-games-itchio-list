@@ -74,14 +74,17 @@
   // RL_GATE (the gate's is higher: carrier-grade NAT puts many phones behind
   // one address). Static assets never run the Worker: the zone's WAF
   // rate-limiting rule is the first layer for everything (docs/operations.md
-  // §1 step 15). Keep "period" 60 (the Retry-After). Each binding needs its own
-  // namespace_id; 1002 was the retired ingest API's.
+  // §1 step 15). Keep "period" 60 (the Retry-After). A namespace_id is
+  // account-wide: two bindings with the same one share their counters, even in
+  // different Workers. Other Workers on this account use the low numbers
+  // (1001–1006…), so this one keeps to 88xx (staging 89xx; before 4.5.0 it had
+  // 1001–1003 / 2001–2003, shared with them).
   "ratelimits": [
-    { "name": "RL_SUGGEST", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } },
-    { "name": "RL_GATE", "namespace_id": "1003", "simple": { "limit": 20, "period": 60 } },
-    { "name": "RL_SITE", "namespace_id": "1004", "simple": { "limit": 120, "period": 60 } },
-    { "name": "RL_IMG", "namespace_id": "1005", "simple": { "limit": 600, "period": 60 } },
-    { "name": "RL_ADMIN", "namespace_id": "1006", "simple": { "limit": 300, "period": 60 } }
+    { "name": "RL_SUGGEST", "namespace_id": "8801", "simple": { "limit": 5, "period": 60 } },
+    { "name": "RL_GATE", "namespace_id": "8803", "simple": { "limit": 20, "period": 60 } },
+    { "name": "RL_SITE", "namespace_id": "8804", "simple": { "limit": 120, "period": 60 } },
+    { "name": "RL_IMG", "namespace_id": "8805", "simple": { "limit": 600, "period": 60 } },
+    { "name": "RL_ADMIN", "namespace_id": "8806", "simple": { "limit": 300, "period": 60 } }
   ],
   // RSS discovery (one feed per run) + queue bookkeeping, worker/index.ts scheduled().
   "triggers": { "crons": ["23 */4 * * *"] },
@@ -116,11 +119,11 @@
         { "binding": "DB", "database_name": "freeitchgames-staging", "migrations_dir": "./worker/migrations" }
       ],
       "ratelimits": [
-        { "name": "RL_SUGGEST", "namespace_id": "2001", "simple": { "limit": 5, "period": 60 } },
-        { "name": "RL_GATE", "namespace_id": "2003", "simple": { "limit": 20, "period": 60 } },
-        { "name": "RL_SITE", "namespace_id": "2004", "simple": { "limit": 120, "period": 60 } },
-        { "name": "RL_IMG", "namespace_id": "2005", "simple": { "limit": 600, "period": 60 } },
-        { "name": "RL_ADMIN", "namespace_id": "2006", "simple": { "limit": 300, "period": 60 } }
+        { "name": "RL_SUGGEST", "namespace_id": "8901", "simple": { "limit": 5, "period": 60 } },
+        { "name": "RL_GATE", "namespace_id": "8903", "simple": { "limit": 20, "period": 60 } },
+        { "name": "RL_SITE", "namespace_id": "8904", "simple": { "limit": 120, "period": 60 } },
+        { "name": "RL_IMG", "namespace_id": "8905", "simple": { "limit": 600, "period": 60 } },
+        { "name": "RL_ADMIN", "namespace_id": "8906", "simple": { "limit": 300, "period": 60 } }
       ],
       // No RSS polling from staging: production is the only itch.io client.
       "triggers": { "crons": [] },
