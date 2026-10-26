@@ -3094,7 +3094,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T04:23:39Z"
+        "added_at": "2026-10-25T04:23:39Z",
+        "updated_at": "25 October 2026 @ 06:01 UTC"
     },
     {
         "url": "https://cheesynerd27.itch.io/10-days-to-ithaka",
@@ -3247,8 +3248,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 04:56 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjgyMjkwLnBuZw==/original/tIrDWH.png",
@@ -3311,7 +3312,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T04:23:57Z"
+        "added_at": "2026-10-25T04:23:57Z",
+        "updated_at": "25 October 2026 @ 14:08 UTC"
     },
     {
         "url": "https://k-ramstack.itch.io/the-manor-and-the-sea",
@@ -3502,7 +3504,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T04:24:14Z"
+        "added_at": "2026-10-25T04:24:14Z",
+        "updated_at": "25 October 2026 @ 20:09 UTC"
     },
     {
         "url": "https://stubby-artist.itch.io/from-rose-to-thorn",
@@ -3513,8 +3516,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "23 October 2026 @ 17:05 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjU2NDUzLnBuZw==/original/tgM4Em.png",
@@ -3788,7 +3791,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T04:24:40Z"
+        "added_at": "2026-10-25T04:24:40Z",
+        "updated_at": "25 October 2026 @ 10:20 UTC"
     },
     {
         "url": "https://hirazi.itch.io/factory-go",
@@ -3800,7 +3804,7 @@
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 12:02 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjc0NTQyLnBuZw==/original/uMQz5U.png",
@@ -3829,7 +3833,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T04:24:43Z"
+        "added_at": "2026-10-25T04:24:43Z",
+        "updated_at": "25 October 2026 @ 16:53 UTC"
     },
     {
         "url": "https://levion.itch.io/chainedpath",
@@ -3840,8 +3845,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.2",
-        "rating_count": "16",
+        "rating": "4.1",
+        "rating_count": "18",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjY5OTYwLnBuZw==/original/NI0qkG.png",
@@ -3910,7 +3915,7 @@
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 13:23 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMTQ2OTA3LnBuZw==/original/0sOUbL.png",
@@ -3977,7 +3982,7 @@
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 20:57 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "3",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzEzNjEwLnBuZw==/original/WYUSfx.png",
@@ -4022,10 +4027,13 @@
             "Sounds",
             "Text"
         ],
-        "accessibility": [],
+        "accessibility": [
+            "Subtitles"
+        ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T08:23:45Z"
+        "added_at": "2026-10-25T08:23:45Z",
+        "updated_at": "26 October 2026 @ 00:38 UTC"
     },
     {
         "url": "https://l0rdluiz.itch.io/my-dear-cherry",
@@ -4131,8 +4139,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 14:15 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjk0NTczLnBuZw==/original/ZpJZ4u.png",
@@ -4152,7 +4160,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T08:23:57Z"
+        "added_at": "2026-10-25T08:23:57Z",
+        "updated_at": "25 October 2026 @ 15:30 UTC"
     },
     {
         "url": "https://sphearicalking.itch.io/embering-everheart",
@@ -4191,8 +4200,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 14:04 UTC",
-        "rating": "3.8",
-        "rating_count": "5",
+        "rating": "4.1",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjk2MDE0LnBuZw==/original/VX0Wbm.png",
@@ -4592,7 +4601,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T20:23:40Z"
+        "added_at": "2026-10-25T20:23:40Z",
+        "updated_at": "26 October 2026 @ 01:20 UTC"
     },
     {
         "url": "https://thornido.itch.io/tiny-bastion",
@@ -4603,8 +4613,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 20:21 UTC",
-        "rating": "3.2",
-        "rating_count": "4",
+        "rating": "3.7",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjk1NjU2LnBuZw==/original/HAdlxS.png",
@@ -4633,7 +4643,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-25T20:23:43Z"
+        "added_at": "2026-10-25T20:23:43Z",
+        "updated_at": "25 October 2026 @ 21:16 UTC"
     },
     {
         "url": "https://2gold.itch.io/find-me",
@@ -4710,7 +4721,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "25",
+        "rating_count": "26",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI4NTk0MTQ3LmpwZw==/original/wjGCKT.jpg",
