@@ -11,6 +11,7 @@ export const ERROR_TEXT: Record<string, string> = {
   github_error: 'GitHub refused the change.',
   network_error: 'The server could not be reached. Check the connection and try again.',
   internal_error: 'Something went wrong on the server.',
+  rate_limited: 'Too many requests from this connection. Wait a minute, then try again.',
   not_found: 'Not found.',
   invalid_body: 'The request was malformed.',
   invalid_json: 'The request was malformed.',

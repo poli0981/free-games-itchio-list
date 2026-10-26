@@ -1,8 +1,9 @@
 /**
- * The verification page of the bot gate (gate.ts). Self-contained: inline CSS
+ * The verification page of the bot gate (gate.ts), and the "too many
+ * requests" page of the rate limits (ratelimit.ts). Self-contained: inline CSS
  * and scripts, system fonts, the logo inline — nothing of the app loads before
- * the visitor passes. Built by the Worker, so it sets its own security headers
- * (public/_headers only covers static assets).
+ * the visitor passes. Built by the Worker, so they set their own security
+ * headers (public/_headers only covers static assets).
  *
  * Status 200 with noindex: link-preview bots still read the site's og: tags,
  * search engines don't index the page. Verified crawlers never see it (gate.ts);
@@ -262,6 +263,66 @@ export function challengePage(request: Request, opts: ChallengeOptions): Respons
       'Cache-Control': 'no-store',
       'X-Robots-Tag': 'noindex, nofollow',
       'Content-Security-Policy': gateCsp(nonce),
+    },
+  })
+}
+
+// ── Too many requests ────────────────────────────────────────────────────────
+
+const LIMITED = {
+  title: { en: 'Too many requests — Free Itch Games', vi: 'Quá nhiều yêu cầu — Free Itch Games' },
+  heading: { en: 'Too many requests', vi: 'Quá nhiều yêu cầu' },
+  lead: {
+    en: 'Your connection sent too many requests in a short time. Wait a minute, then reload the page.',
+    vi: 'Kết nối của bạn đã gửi quá nhiều yêu cầu trong thời gian ngắn. Hãy đợi một phút rồi tải lại trang.',
+  },
+}
+
+/** No script at all: the page only shows text (Accept-Language picks it, the system theme colours it). */
+const LIMITED_CSP = [
+  "default-src 'none'",
+  "style-src 'unsafe-inline'",
+  "img-src 'self'",
+  "base-uri 'none'",
+  "form-action 'none'",
+  "frame-ancestors 'none'",
+].join('; ')
+
+function renderRateLimited(lang: Lang): string {
+  return `<!doctype html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>${esc(LIMITED.title[lang])}</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>${CSS}</style>
+</head>
+<body>
+<main>
+<div class="brand">${LOGO}<span>Free Itch Games</span></div>
+<h1>${both(LIMITED.heading)}</h1>
+<p class="lead">${both(LIMITED.lead)}</p>
+</main>
+</body>
+</html>
+`
+}
+
+/** An app page request over its rate limit (429). */
+export function rateLimitedPage(request: Request, retryAfter: number): Response {
+  const lang = pickLanguage(request.headers.get('accept-language'))
+  return new Response(request.method === 'HEAD' ? null : renderRateLimited(lang), {
+    status: 429,
+    headers: {
+      ...PAGE_HEADERS,
+      'Content-Type': 'text/html; charset=utf-8',
+      'Cache-Control': 'no-store',
+      'Retry-After': String(retryAfter),
+      'X-Robots-Tag': 'noindex, nofollow',
+      'Content-Security-Policy': LIMITED_CSP,
     },
   })
 }

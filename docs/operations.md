@@ -15,6 +15,7 @@ secret: secrets are only ever typed into Cloudflare (`wrangler secret put`) or a
 | Access app "Admin" | Cloudflare Zero Trust | Login for `/admin` + `/api/admin/*`. |
 | Turnstile widget | Cloudflare Turnstile | The verification gate in front of the web app (action `gate`) and anti-spam on `/suggest` (action `suggest`). |
 | Transform Rule "Verified bots skip the gate" | Cloudflare → Rules → Transform Rules | Adds `x-fig-known-bot: <GATE_BOT_TOKEN>` to requests from Cloudflare-verified bots, so search engines and link previews skip the gate (section 1, step 14). |
+| Rate limits | WAF rule (Security → WAF → Rate limiting rules) + the Worker's `ratelimits` bindings | Two layers of per-IP limits: the WAF rule stops floods before they run (and bill) the Worker; the Worker answers what still gets through with 429 per kind of traffic (section 1, step 15). |
 | GitHub App | GitHub → Settings → Developer settings | The Worker's identity for commits (queue approvals, edits, removals). |
 | GitHub Actions | [`.github/workflows/`](../.github/workflows) | Data pipeline (`refresh.yml`, `update.yml`, `force_update.yml`), CI, releases, build monitor. |
 | Staging Worker `free-games-itchio-list-staging` | `staging.freeitchgames.win` (whole host behind Access) | Optional pre-release checks, deployed by hand from any branch with `npx wrangler deploy --env staging` (`wrangler.jsonc` → `env.staging`). |
@@ -81,8 +82,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
     DMARC for poli0981.dev live in that zone's Cloudflare DNS). freeitchgames.win needs no mail setup.
 12. **Zone settings**: SSL/TLS Full (strict), Always Use HTTPS, minimum TLS 1.2, TLS 1.3 on; Smart
     Tiered Cache; Browser Cache TTL "Respect existing headers"; Rocket Loader and Email Obfuscation
-    **off** (they rewrite HTML and break the CSP); WAF managed rules on; one rate-limiting rule for
-    `/api/*`; Bot Fight Mode **off** (it can't be skipped for the apps; the
+    **off** (they rewrite HTML and break the CSP); WAF managed rules on; the rate-limiting rule of
+    step 15; Bot Fight Mode **off** (it can't be skipped for the apps; the
     verification gate covers the web app instead). Keep HSTS
     `preload` only if every subdomain (including `staging`) will always be HTTPS.
     - Measured 2026-10-03: TLS 1.0/1.1 are refused, TLS 1.3 and HTTP/3 answer, `http://` redirects
@@ -136,6 +137,46 @@ Do these once (and again with the `-staging` names for the staging Worker).
     `SITE_ORIGIN=http://localhost:8787` and a 32+ character `GATE_SECRET` in `webapp/.dev.vars`, then
     `npm run build && npx wrangler dev` (on localhost the cookie is `fig_gate`, without `Secure`, and
     no bot token is needed).
+15. **Rate limits** — two layers, both per client IP (an IPv6 client by its /64 in the Worker).
+    - **Layer 1, the zone's WAF rule** (Security → WAF → **Rate limiting rules**). It runs before the
+      Worker, so a request it blocks costs no Worker request, and it is the only limit on static files.
+      On the Free plan there is **one** rule, counted by IP over **10 seconds**, with a 10-second block;
+      if a rule already exists (the old one for `/api/*`), edit it rather than adding one. Settings:
+      - Rule name `Flood guard`. *If incoming requests match* → *Edit expression*:
+        ```
+        (not cf.client.bot and not starts_with(http.request.uri.path, "/assets/") and not starts_with(http.request.uri.path, "/data/pack/"))
+        ```
+        (In the builder: *Verified Bot* equals off, *URI Path* does not start with `/assets/`, *URI
+        Path* does not start with `/data/pack/`, joined with And. If the editor refuses
+        `starts_with`, use `not http.request.uri.path wildcard r"/assets/*"` and the same for
+        `/data/pack/*`.) Bundles and packs stay out: they are free static assets with a long cache, and
+        a first visit loads a few dozen of them at once. Verified bots stay out like at the gate.
+      - *With the same characteristics*: IP. *When rate exceeds*: **300 requests** per **10 seconds**
+        (30 a second; a person scrolling the Games list fast loads about 100 covers in that time).
+        *Then take action*: **Block**, default response (429, Cloudflare's "error 1015" page), for
+        10 seconds. Deploy.
+      - Lower it once Security → Events shows what real traffic looks like; don't go below ~150 per
+        10 s (a Games page asks for up to 100 covers).
+    - **Layer 2, the Worker** ([`webapp/worker/ratelimit.ts`](../webapp/worker/ratelimit.ts),
+      `ratelimits` in `wrangler.jsonc`, deployed with every build — nothing to set up). Every request
+      that runs the Worker counts, per 60 s and per Cloudflare location: `RL_SITE` 120 (app pages, the
+      public `/api`, the readable `/data` JSON, misses), `RL_IMG` 600 (`/img` covers), `RL_ADMIN` 300
+      (`/admin` + `/api/admin`); on top, `RL_SUGGEST` 5 (Suggest POSTs) and `RL_GATE` 20 (verification
+      POSTs). Over a limit: 429 + `Retry-After: 60` — JSON `{"error":"rate_limited"}` for the API,
+      covers and files (with CORS on `/data`), a small "Too many requests" page (EN/VI, no script) for
+      app pages. Verified bots (the gate's header) are never counted. Change a limit in
+      `wrangler.jsonc` (then `npm run cf:types`); keep `period` 60 and a new `namespace_id` per binding in
+      88xx (staging 89xx) — the ids are account-wide, and the account's other Workers use the low numbers.
+      The counts are approximate and fail open (a missing binding or a limiter error lets requests
+      through).
+    - **Test** after a change (it blocks your own IP for up to a minute):
+      ```sh
+      seq 150 | xargs -P 30 -I{} curl -s -o /dev/null -w "%{http_code}\n" https://freeitchgames.win/api/health | sort | uniq -c
+      curl -s https://freeitchgames.win/api/health   # {"error":"rate_limited"} → the Worker; "error code: 1015" → the WAF rule
+      ```
+      About 120 answer 200 and the rest 429. To see the WAF rule fire, send more than its threshold
+      within 10 s (`seq 400 | xargs -P 60 …`): the extra requests get `error code: 1015` and show up in
+      Security → Events. Worker 429s show up in Workers Logs (sampled, `head_sampling_rate` 0.1).
 
 ## 2. GitHub
 
@@ -210,6 +251,10 @@ Do these once (and again with the `-staging` names for the staging Worker).
   ```
   `npx wrangler tail` shows the `legacy-data: 410` lines with the requesting `Origin`: an installed
   app that sends an unexpected one would show up there.
+- **Visitors report "Too many requests" / error 1015**: "error 1015" is the WAF rule (section 1,
+  step 15) — raise its threshold in the dashboard, effective within a minute. The site's own "Too many
+  requests" page or `{"error":"rate_limited"}` is the Worker: raise the limit in `wrangler.jsonc` and
+  deploy. Both reset by themselves (10 s / 60 s).
 - **Verification gate misbehaving** (visitors stuck on the check, crawl errors in Search Console):
   `npx wrangler secret delete GATE_SECRET` turns it off at once; then look at `npx wrangler tail` and
   `curl -s https://freeitchgames.win/api/verify`.

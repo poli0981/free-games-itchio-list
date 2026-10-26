@@ -13,6 +13,9 @@
  *   /admin, /admin/* admin app shell, maintainer only (admin.ts)
  *   /data/*.json    readable catalog JSON, for apps 4.0–4.1.1 only (legacy-data.ts)
  *
+ * Every request is first counted against its per-client rate limit
+ * (ratelimit.ts; over it → 429).
+ *
  * Cron: one RSS feed per run into the review queue, queue bookkeeping (with
  * the pipeline's ingest outcomes), the admin's automatic rules (auto-approve,
  * watched itch.io collections — automation.ts), then retention.
@@ -27,6 +30,7 @@ import { json } from './http'
 import { handleImg } from './img'
 import { handleLegacyData } from './legacy-data'
 import { QueueStore } from './queue'
+import { rateLimit } from './ratelimit'
 import { repoOps } from './repo'
 import { handleMiss } from './spa'
 import { handleSuggest } from './suggest'
@@ -38,6 +42,8 @@ function queueStore(env: WorkerEnv): QueueStore | null {
 export default {
   async fetch(request, env: WorkerEnv, ctx): Promise<Response> {
     const url = new URL(request.url)
+    const limited = await rateLimit(request, url, env)
+    if (limited) return limited
     const path = url.pathname
     const data = { assets: env.ASSETS, origin: url.origin }
     const gate = gateConfig(env, url)

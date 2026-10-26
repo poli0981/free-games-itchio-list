@@ -3,7 +3,7 @@ import { ApiError, SessionExpired } from './api'
 import { ERROR_TEXT, errorText } from './texts'
 
 // The sources of every error the admin API answers with.
-const SOURCES = import.meta.glob<string>(['../worker/admin.ts', '../worker/http.ts'], {
+const SOURCES = import.meta.glob<string>(['../worker/admin.ts', '../worker/http.ts', '../worker/ratelimit.ts'], {
   query: '?raw',
   import: 'default',
   eager: true,
@@ -12,8 +12,11 @@ const SOURCES = import.meta.glob<string>(['../worker/admin.ts', '../worker/http.
 describe('admin error texts', () => {
   it('has wording for every error code of the admin API', () => {
     const codes = new Set(
-      Object.values(SOURCES).flatMap((src) => [...src.matchAll(/HttpError\(\d{3}, '([a-z_]+)'/g)].map((m) => m[1])),
+      Object.values(SOURCES).flatMap((src) =>
+        [...src.matchAll(/HttpError\(\d{3}, '([a-z_]+)'|json\(\{ error: '([a-z_]+)' \}/g)].map((m) => m[1] ?? m[2]),
+      ),
     )
+    expect(codes).toContain('rate_limited')
     expect(codes.size).toBeGreaterThan(15)
     expect([...codes].filter((c) => !(c in ERROR_TEXT))).toEqual([])
   })

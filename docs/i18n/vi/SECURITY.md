@@ -78,7 +78,7 @@ Những gì repository thực sự làm:
 - **Dependabot** ([`.github/dependabot.yml`](../../../.github/dependabot.yml)) được cấu hình để giữ các dependency npm, pip, GitHub Actions và cargo luôn được cập nhật.
 - Mọi **GitHub Action của bên thứ ba đều được ghim theo commit SHA đầy đủ**, và mỗi workflow khai báo `permissions` ở mức tối thiểu cần thiết.
 - Các thao tác ghi vào repository từ trang quản trị của website đều đi qua một **GitHub App** (commit được xác minh), và trang quản trị nằm sau Cloudflare Access (đăng nhập GitHub hoặc mã PIN dùng một lần qua email) và chỉ dành cho Người duy trì.
-- Form Suggest được bảo vệ bằng Cloudflare Turnstile và giới hạn tốc độ.
+- Website giới hạn số request mà một địa chỉ có thể gửi trong thời gian ngắn (một quy tắc WAF của Cloudflare, rồi các giới hạn theo từng loại đường dẫn trong Worker, trả về HTTP 429), và form Suggest còn có thêm Cloudflare Turnstile cùng một giới hạn chặt hơn của riêng nó.
 - File APK Android được ký bằng khóa của dự án. Chỉ cài APK, cũng như các ứng dụng desktop, từ trang [GitHub Releases](https://github.com/poli0981/free-games-itchio-list/releases) của dự án.
 
 Nếu một lỗ hổng đã biết trong dependency thực sự ảnh hưởng tới một thành phần đang chạy (website, Worker, pipeline hoặc các ứng dụng), hãy báo cáo riêng tư như ở [§1](#1-báo-cáo-lỗ-hổng). Nếu đó chỉ là một dependency lỗi thời, không có tác động thực tế, thì mở issue hoặc pull request thông thường là được.

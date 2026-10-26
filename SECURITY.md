@@ -76,7 +76,7 @@ What the repository actually does:
 - **Dependabot** ([`.github/dependabot.yml`](.github/dependabot.yml)) is configured to keep npm, pip, GitHub Actions and cargo dependencies current.
 - Every third-party **GitHub Action is pinned by full commit SHA**, and each workflow declares least-privilege `permissions`.
 - Writes to the repository from the website's admin go through a **GitHub App** (verified commits), and the admin page is behind Cloudflare Access (GitHub login or one-time email PIN) and limited to the Maintainer.
-- The Suggest form is protected by Cloudflare Turnstile and rate limiting.
+- The website limits how many requests one address can send in a short time (a Cloudflare WAF rule, then per-route limits in the Worker that answer HTTP 429), and the Suggest form adds Cloudflare Turnstile and a stricter limit of its own.
 - The Android APK is signed with the project's key. Install it, and the desktop apps, only from the project's [GitHub Releases](https://github.com/poli0981/free-games-itchio-list/releases) page.
 
 If a known vulnerability in a dependency actually affects a deployed component (the website, the Worker, the pipeline or the apps), report it privately as in [§1](#1-reporting-a-vulnerability). If it is just an outdated dependency with no practical impact, a normal issue or pull request is fine.
