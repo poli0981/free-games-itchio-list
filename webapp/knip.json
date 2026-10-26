@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
   "project": [
-    "src/**/*.{ts,tsx}",
+    "src/**/*.{ts,tsx,css}",
     "admin/**/*.{ts,tsx}",
     "worker/**/*.ts",
     "vite-plugins/**/*.ts"
@@ -13,9 +13,5 @@
   },
   "entry": [
     "admin/main.tsx"
-  ],
-  "ignoreDependencies": [
-    "tailwindcss",
-    "tw-animate-css"
   ]
 }
