@@ -7531,5 +7531,195 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-27T12:42:52Z"
+    },
+    {
+        "url": "https://amethyscent.itch.io/mahla",
+        "name": "Mahla",
+        "dev": "amethyscent",
+        "description": "Trapped Underground With an Ant Girl",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 01:42 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzcxMjQwLmdpZg==/original/awxRkO.gif",
+        "tags": [
+            "Anime",
+            "First-Person",
+            "Horror",
+            "Monster Girls",
+            "Multiple Endings",
+            "Narrative",
+            "Point & Click",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T16:23:46Z"
+    },
+    {
+        "url": "https://cuahoangde.itch.io/juhoon-dep-trai-qua-troi",
+        "name": "juhoon dep trai qua troi",
+        "dev": "cuahoangde",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 04:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzk1MzkyLmpwZw==/original/NnTa1v.jpg",
+        "tags": [
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T16:23:49Z"
+    },
+    {
+        "url": "https://farismorgan.itch.io/3-days-to-confess",
+        "name": "3-Days to Confess",
+        "dev": "Faris",
+        "description": "A 3-day dating sim where every choice shapes Adam's chance to confess.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 16:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDAxMTgxLnBuZw==/original/V9zcVF.png",
+        "tags": [
+            "choices-matter",
+            "Dating Sim",
+            "Godot",
+            "indonesian",
+            "Multiple Endings",
+            "Pixel Art",
+            "Romance",
+            "school",
+            "time-loop"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T16:23:53Z"
+    },
+    {
+        "url": "https://krowlin.itch.io/the-date-perfect",
+        "name": "An (Almost) Perfect Date [Short game]",
+        "dev": "Krowlin",
+        "description": "A visual novel short",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 23:16 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzY0MjkyLnBuZw==/original/1oj1Wp.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Short"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T16:23:57Z"
+    },
+    {
+        "url": "https://rian-threeden.itch.io/ant-crisis-loving-story-in-a-small-world",
+        "name": "Ant Crisis ~ Loving Story in a Small World (Jam build)",
+        "dev": "rian_Threeden/CLAUSMOTHER3, Alkamyst",
+        "description": "Point and click Ant dating sim for the Albright Fall 2026 Game jam!",
+        "genre": "Puzzle",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 17:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDAxNTM3LnBuZw==/original/evDrfU.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot",
+            "Paint.net"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T16:23:59Z"
     }
 ]
