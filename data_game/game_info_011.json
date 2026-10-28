@@ -8515,5 +8515,882 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T08:35:48Z"
+    },
+    {
+        "url": "https://atenebris.itch.io/oregrid",
+        "name": "OreGrid",
+        "dev": "Atenebris, InfinitusDigitalis",
+        "description": "OreGrid - idle mining game",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 12:14 UTC",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzI2NDg1LnBuZw==/original/TsDGTG.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Clicker",
+            "High Score",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Relaxing",
+            "Singleplayer",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:25Z"
+    },
+    {
+        "url": "https://mismatched-wings.itch.io/affectionadorationabsolution",
+        "name": "Affection/Adoration/Absolution",
+        "dev": "Mismatched Wings",
+        "description": "Longing for love in the cold",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "43",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNjExMDI0LnBuZw==/original/mrx8tE.png",
+        "tags": [
+            "Eroge",
+            "LGBT",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:28Z"
+    },
+    {
+        "url": "https://bibixp.itch.io/you-know-we-kinda-suck-right",
+        "name": "You Know We Kinda Suck, Right?",
+        "dev": "BibiXP",
+        "description": "Two toxic queerplatonic witches try to make it through another day. Night. Whatever.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "15",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyMTMzOTY5LnBuZw==/original/iSDntB.png",
+        "tags": [
+            "Fantasy",
+            "Female Protagonist",
+            "Lesbian",
+            "LGBTQIA",
+            "Magic",
+            "Pixel Art",
+            "Queer",
+            "toxic-yuri",
+            "witches",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:32Z"
+    },
+    {
+        "url": "https://freecodecamp.itch.io/learn-to-code-rpg",
+        "name": "Learn to Code RPG",
+        "dev": "freeCodeCamp.org",
+        "description": "Learn to code and get a dev job 🎯",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "22 December 2021 @ 17:00 UTC",
+        "rating": "4.7",
+        "rating_count": "59",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc2OTc2ODcucG5n/original/KGkTTn.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Kinetic Novel",
+            "Multiple Endings",
+            "Ren'Py",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls",
+            "High-contrast",
+            "Blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:35Z"
+    },
+    {
+        "url": "https://snekofspice.itch.io/for-the-betterment-of-society",
+        "name": "FOR THE BETTERMENT OF SOCIETY",
+        "dev": "Snek RK",
+        "description": "Within these walls, I am your enemy",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMTQzMTk3LnBuZw==/original/tub%2FNP.png",
+        "tags": [
+            "2D",
+            "Dark",
+            "Gay",
+            "LGBT",
+            "LGBTQIA",
+            "Mental Health",
+            "No AI",
+            "noise",
+            "Short",
+            "Transgender"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:39Z"
+    },
+    {
+        "url": "https://sadvnsfromtom.itch.io/triceratops-necromancer",
+        "name": "Triceratops Necromancer",
+        "dev": "sadvnsfromtom, RailgunRabbit",
+        "description": "A lonely ice mage has a crush on her healer.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMTI0ODE2LnBuZw==/original/93zrPq.png",
+        "tags": [
+            "Adult",
+            "Female Protagonist",
+            "Furry",
+            "Gore",
+            "Lesbian",
+            "LGBT",
+            "No AI",
+            "NSFW",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Defold"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:42Z"
+    },
+    {
+        "url": "https://shroomychrist-studios.itch.io/human-expenditure-program",
+        "name": "HUMAN EXPENDITURE PROGRAM",
+        "dev": "SHROOMYCHRIST",
+        "description": "His life in your hands.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 September 2025 @ 21:00 UTC",
+        "rating": "4.7",
+        "rating_count": "182",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzMTEzOTIzLnBuZw==/original/LiMAqM.png",
+        "tags": [
+            "drama",
+            "Horror",
+            "Psychological Horror",
+            "sad",
+            "suspense",
+            "Thriller",
+            "Virtual Pet"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:45Z"
+    },
+    {
+        "url": "https://brushie.itch.io/fooddiary",
+        "name": "Food Diary/食べ物日記",
+        "dev": "_brushie",
+        "description": "FlavorTown is just a Dream",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTU0NTA0LzcwODIzNS5wbmc=/original/zlTEy0.png",
+        "tags": [
+            "Game Jam",
+            "yume-nikki"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:48Z"
+    },
+    {
+        "url": "https://saturngames.itch.io/kissy-kissy-purr-purr",
+        "name": "Kissy Kissy Purr Purr!",
+        "dev": "Saturngames",
+        "description": "A visual novel about cat girls, doujinshi and robotics!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE2MzgzOTk4LnBuZw==/original/4p3H6d.png",
+        "tags": [
+            "cat-girl",
+            "LGBT",
+            "Ren'Py"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:51Z"
+    },
+    {
+        "url": "https://saturngames.itch.io/18782",
+        "name": "18782",
+        "dev": "Saturngames",
+        "description": "18782 Storyline: Arakawa is an 18 year old boy who’s absolutely obsessed with an up-and-coming visual kei vocalist named Yukio.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1NjgzMDEzLnBuZw==/original/nG59R3.png",
+        "tags": [
+            "RPG Maker"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:54Z"
+    },
+    {
+        "url": "https://zenoslots.itch.io/narcotizedr",
+        "name": "narcotizeDR",
+        "dev": "ًًً",
+        "description": "♡ Love, Medicine, and Rituals.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "8",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE0MTIzNjQxLnBuZw==/original/gwnffs.png",
+        "tags": [
+            "Cute",
+            "Female Protagonist",
+            "Horror",
+            "LGBT",
+            "Multiple Endings",
+            "Point & Click",
+            "RPG Maker",
+            "Short",
+            "Yuri"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:24:57Z"
+    },
+    {
+        "url": "https://zenoslots.itch.io/madlabparty",
+        "name": "MAD LAB PARTY",
+        "dev": "ًًً",
+        "description": "Kill someone to meet your ‘fan’ in the act?!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3OTQzMDUwLnBuZw==/original/H6pqOl.png",
+        "tags": [
+            "Boys' Love",
+            "Cute",
+            "Halloween",
+            "LGBT",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Romance",
+            "RPG Maker",
+            "Yaoi"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:00Z"
+    },
+    {
+        "url": "https://saibibi.itch.io/votum",
+        "name": "Votum",
+        "dev": "Saibibi",
+        "description": "A girl, a house, and a vow to be kept.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.3",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyOTA3NTYyLnBuZw==/original/v6ah1G.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "No AI",
+            "RPG Maker",
+            "Short"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:03Z"
+    },
+    {
+        "url": "https://jingshing.itch.io/dragoncastle",
+        "name": "DragonCastle龍城",
+        "dev": "JingShing",
+        "description": "a game base on zelda like and soul like.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzk2MTY4NjkucG5n/original/TxeGnm.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "Top Down Adventure",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Chinese",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "pygame"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:07Z"
+    },
+    {
+        "url": "https://riekay.itch.io/zwei-club-mate-bitte",
+        "name": "Zwei Club Mate bitte",
+        "dev": "Henni",
+        "description": "Two girls sipping Club Mate while having a conversation about their trans experiences.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "11",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyOTg3ODY0LmpwZw==/original/LYvGij.jpg",
+        "tags": [
+            "3D",
+            "Female Protagonist",
+            "Mental Health",
+            "No AI",
+            "Queer",
+            "Short",
+            "Slice Of Life",
+            "Transgender",
+            "Voice Acting",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "German",
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:10Z"
+    },
+    {
+        "url": "https://cicadaqueen.itch.io/cold-call",
+        "name": "Cold Call",
+        "dev": "Cicada Queen V",
+        "description": "A short psychological horror visual novel about trauma and abuse.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyMDg1MjE5LmdpZg==/original/7o4SeJ.gif",
+        "tags": [
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:13Z"
+    },
+    {
+        "url": "https://snekofspice.itch.io/she-was-swallowed-by-the-sun",
+        "name": "She Was Swallowed By The Sun",
+        "dev": "Snek RK",
+        "description": "EROGURO YURI CANNIBALISM TRAGEDY",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "46",
+        "average_session": "A few hours",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4NzgxMTQxLnBuZw==/original/9HfAgW.png",
+        "tags": [
+            "Adult",
+            "body-horror",
+            "Female Protagonist",
+            "futanari",
+            "Gore",
+            "Kinetic Novel",
+            "Lesbian",
+            "NSFW",
+            "Transgender",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 September 2026 @ 07:14 UTC",
+        "added_at": "2026-10-28T12:25:16Z"
+    },
+    {
+        "url": "https://melodicsoft.itch.io/witness-link",
+        "name": "WITNESS LINK (chapter one out now)",
+        "dev": "MelodicSoft",
+        "description": "Magical Girl Violence",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5MDE1ODYyLnBuZw==/original/cMbxv5.png",
+        "tags": [
+            "Transgender",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:20Z"
+    },
+    {
+        "url": "https://phantastiq.itch.io/tea-haus",
+        "name": "Tea Haus",
+        "dev": "J.R. Timmerman",
+        "description": "A sapphic, painterly visual novel. Romance-optional.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwOTc1OTk3LnBuZw==/original/osufhb.png",
+        "tags": [
+            "dialogue-jam-2025",
+            "No AI",
+            "Otome",
+            "painterly",
+            "Romance",
+            "romance-optional",
+            "sapphic",
+            "womens-game-fest-2025"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:23Z"
+    },
+    {
+        "url": "https://pride-col.itch.io/nothing-like-you",
+        "name": "Nothing Like You",
+        "dev": "Pride",
+        "description": "A Terminal Status side game for the 2025 Intersex Jam",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxOTIwNzEyLnBuZw==/original/PSmM3Q.png",
+        "tags": [
+            "first-date",
+            "intersex",
+            "LGBTQIA",
+            "Narrative",
+            "pastel",
+            "sapphic",
+            "Sci-fi",
+            "Short",
+            "time-loop"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:26Z"
+    },
+    {
+        "url": "https://2-gorblins-in-a-studio.itch.io/on-the-dimming-and-the-customs-thereof",
+        "name": "On the Dimming and the Customs Thereof",
+        "dev": "2 Gorblins in a Studio",
+        "description": "From the woods and beyond of Widdershins Hollow come 6 whimsical and weird visitors in a 12-page digest zine for Cairn 2e, playable with most OSR games.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 13:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDM0NTYxLnBuZw==/original/5t6byR.png",
+        "tags": [
+            "Fantasy",
+            "No AI",
+            "Tabletop role-playing game"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:49Z"
+    },
+    {
+        "url": "https://joereilly.itch.io/expeditions",
+        "name": "Expeditions",
+        "dev": "Joe Reilly",
+        "description": "A Pointcrawl Supplement for Cairn 2e",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 13:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzkxNzMzLnBuZw==/original/4fILkz.png",
+        "tags": [
+            "cairn",
+            "Print & Play",
+            "Tabletop",
+            "Tabletop role-playing game"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T12:25:53Z"
     }
 ]
