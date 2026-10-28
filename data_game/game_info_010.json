@@ -1882,8 +1882,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "26 October 2026 @ 14:35 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5ODc2NTc1LnBuZw==/original/4EwxdH.png",
@@ -1912,7 +1912,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-27T12:26:36Z"
+        "added_at": "2026-10-27T12:26:36Z",
+        "updated_at": "27 October 2026 @ 20:03 UTC"
     },
     {
         "url": "https://noblemaster.itch.io/retro-commander",
@@ -4766,7 +4767,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "1439",
+        "rating_count": "1440",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3NzAzNDcucG5n/original/oOKsLf.png",
@@ -5256,7 +5257,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "6294",
+        "rating_count": "6293",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzc2OTc0OTEucG5n/original/hO%2Bgz%2B.png",
@@ -7577,7 +7578,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-27T16:23:46Z"
+        "added_at": "2026-10-27T16:23:46Z",
+        "updated_at": "27 October 2026 @ 23:46 UTC"
     },
     {
         "url": "https://cuahoangde.itch.io/juhoon-dep-trai-qua-troi",
@@ -12608,7 +12610,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "3.6",
-        "rating_count": "615",
+        "rating_count": "616",
         "average_session": "A few hours",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzE3MzM5ODg0LmpwZw==/original/RkSEEf.jpg",
@@ -13376,8 +13378,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "26 October 2026 @ 14:08 UTC",
-        "rating": "4.7",
-        "rating_count": "15",
+        "rating": "4.6",
+        "rating_count": "17",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTA1MjMzLmdpZg==/original/vgxOnv.gif",
