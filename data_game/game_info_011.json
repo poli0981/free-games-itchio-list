@@ -1,0 +1,242 @@
+[
+    {
+        "url": "https://theoying.itch.io/errant-knight",
+        "name": "Errant Knight",
+        "dev": "theo ying, imcoffeecats, Andi Harper",
+        "description": "Wuxia-inspired VN about a knight desperate for mean older women",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "18",
+        "average_session": "A few hours",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0NDMwODYxLnBuZw==/original/cYENLm.png",
+        "tags": [
+            "Adult",
+            "Fantasy",
+            "LGBT",
+            "Multiple Endings",
+            "Narrative",
+            "No AI",
+            "nonbinary-protagonist",
+            "Queer",
+            "wuxia",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:18Z"
+    },
+    {
+        "url": "https://liberato.itch.io/girly-jam",
+        "name": "My Paper Wardrobe",
+        "dev": "liberato",
+        "description": "Create outfits and share them with other players!",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "16",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIyOTAzMzU2LmdpZg==/original/dTqmZY.gif",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Cute",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:21Z"
+    },
+    {
+        "url": "https://foeaudiobook.itch.io/littlepip",
+        "name": "Fallout: Equestria",
+        "dev": "Fallout Equestria Audiobook Project",
+        "description": "The Fallout Equestria Audiobook Project was a crowdfunding campaign with the goal of hiring a professional VA to voice the epic tale of Littlepip.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "41",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQ0NTA0OTguanBn/original/H5wmYt.jpg",
+        "tags": [],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "Blind friendly",
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:23Z"
+    },
+    {
+        "url": "https://ppilotco.itch.io/kigurumi-and-identity",
+        "name": "Kigurumi and Identity (2022)",
+        "dev": "Ppilotco",
+        "description": "an academic art zine",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "24",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0Mjc4MzgwLnBuZw==/original/0XH0af.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:27Z"
+    },
+    {
+        "url": "https://bunibonbun.itch.io/scythebat",
+        "name": "SCYTHEBAT",
+        "dev": "bonbon",
+        "description": "toxic yuri at the end of the world",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNzc4NzAzLnBuZw==/original/FQ1W6I.png",
+        "tags": [
+            "Experimental",
+            "Lesbian",
+            "Post-apocalyptic",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:30Z"
+    },
+    {
+        "url": "https://creative-liberties.itch.io/posology",
+        "name": "Posology",
+        "dev": "Creative Liberties, arbibenh, chr0meguts, Averyyang",
+        "description": "Bullet hell roguelike shoot 'em up",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNzY5NDcxLnBuZw==/original/MSXpJa.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:32Z"
+    },
+    {
+        "url": "https://maolong.itch.io/fetid-fecundity",
+        "name": "Fetid Fecundity",
+        "dev": "Maolong",
+        "description": "A life changing encounter with a vampire",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNjA3NTg0LnBuZw==/original/yiLGC9.png",
+        "tags": [
+            "Horror",
+            "LGBT",
+            "LGBTQIA",
+            "Transgender",
+            "Vampire"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:36Z"
+    }
+]
