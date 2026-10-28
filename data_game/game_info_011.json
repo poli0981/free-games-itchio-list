@@ -9392,5 +9392,326 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T12:25:53Z"
+    },
+    {
+        "url": "https://3218961440qqcom.itch.io/ludio",
+        "name": "ludio",
+        "dev": "3218961440@qq.com",
+        "description": "Step into a story https://ludio.chat/,connect with AI characters, and shape what happens next through conversation.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 02:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDYyMjUwLnBuZw==/original/tOa%2BVK.png",
+        "tags": [
+            "AI Generated",
+            "Character Customization",
+            "Dating Sim",
+            "Fantasy",
+            "Romance",
+            "Singleplayer",
+            "Story Rich",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:16Z"
+    },
+    {
+        "url": "https://drawnouttravels.itch.io/down-the-forest-path",
+        "name": "Down the Forest Path",
+        "dev": "drawnouttravels",
+        "description": "A curious box arrives from your childhood home, filled with old memories and drawings from someone you dearly miss.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 18:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDI5NDQ0LnBuZw==/original/2bQJkq.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:20Z"
+    },
+    {
+        "url": "https://hammmershark.itch.io/dating-sim-not-set-in-hell-prototype",
+        "name": "Dating sim NOT set in Hell prototype",
+        "dev": "Hammmershark",
+        "description": "You welcome a person into The Land of the Punished",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 00:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDUyNzQ4LnBuZw==/original/Jt%2FnA%2F.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "No AI",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:23Z"
+    },
+    {
+        "url": "https://jindalu.itch.io/do-this-properly",
+        "name": "Do This Properly",
+        "dev": "JinDalu",
+        "description": "Three people noticed you this week.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 21:26 UTC",
+        "rating": "4.8",
+        "rating_count": "4",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzM5NjA5LnBuZw==/original/5nZGxj.png",
+        "tags": [
+            "choices-matter",
+            "Dark",
+            "Multiple Endings",
+            "Mystery",
+            "Psychological Horror",
+            "Ren'Py",
+            "Romance",
+            "Story Rich",
+            "Thriller"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:27Z"
+    },
+    {
+        "url": "https://nezowo.itch.io/gacha-gotcha",
+        "name": "Gacha Gotcha!",
+        "dev": "nezowo",
+        "description": "My capstone game about gacha mechanics!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 10:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDI5ODM0LnBuZw==/original/o%2Fa%2Bip.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Gacha",
+            "Ren'Py",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:31Z"
+    },
+    {
+        "url": "https://schooldaze.itch.io/high-school-lunch-simulator",
+        "name": "High School Lunch Simulator",
+        "dev": "schooldaze",
+        "description": "Forty minutes. Six flights of stairs. Whatever the children rejected.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 00:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDYwMzYwLnBuZw==/original/QyKfMa.png",
+        "tags": [
+            "Comedy",
+            "Ren'Py",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:35Z"
+    },
+    {
+        "url": "https://wyza.itch.io/7-nonexistent",
+        "name": "7: NONEXISTENT",
+        "dev": "wyza",
+        "description": "A school mystery visual novel. Investigate clues, conflicting testimony, and a seventh floor that should not exist.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 15:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDE3NjI2LnBuZw==/original/zk9FlW.png",
+        "tags": [
+            "Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T16:24:38Z"
+    },
+    {
+        "url": "https://the-l0bster.itch.io/pocket-platformer",
+        "name": "Pocket platformer",
+        "dev": "The l0bster",
+        "description": "Code free tool for creating platformer games",
+        "genre": "Platformer",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "87",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzcyMDI4NTAucG5n/original/746zRP.png",
+        "tags": [
+            "2D",
+            "8-Bit",
+            "Animation",
+            "Game engine",
+            "Level Editor",
+            "Metroidvania",
+            "Pixel Art",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "28 October 2026 @ 14:26 UTC",
+        "added_at": "2026-10-28T16:24:41Z"
     }
 ]
