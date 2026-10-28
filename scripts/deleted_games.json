@@ -874,5 +874,11 @@
         "name": "Lupa Rossi Redux",
         "reason": "Game page is password-protected",
         "deleted_at": "2026-10-25T02:55:39Z"
+    },
+    {
+        "url": "https://stelladevt.itch.io/mascot-testimonial-css-for-itchio",
+        "name": "Mascot Testimonial CSS for itch.io",
+        "reason": "Not a game",
+        "deleted_at": "2026-10-28T02:41:27Z"
     }
 ]
