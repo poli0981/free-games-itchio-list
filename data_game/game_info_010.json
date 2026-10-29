@@ -19432,5 +19432,56 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T00:36:14Z"
+    },
+    {
+        "url": "https://theoying.itch.io/errant-knight",
+        "name": "Errant Knight",
+        "dev": "theo ying, imcoffeecats, Andi Harper",
+        "description": "Wuxia-inspired VN about a knight desperate for mean older women",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "18",
+        "average_session": "A few hours",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0NDMwODYxLnBuZw==/original/cYENLm.png",
+        "tags": [
+            "Adult",
+            "Fantasy",
+            "LGBT",
+            "Multiple Endings",
+            "Narrative",
+            "No AI",
+            "nonbinary-protagonist",
+            "Queer",
+            "wuxia",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-28T00:36:18Z"
     }
 ]
