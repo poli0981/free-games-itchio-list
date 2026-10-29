@@ -957,5 +957,284 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-29T12:24:32Z"
+    },
+    {
+        "url": "https://igoraidiary.itch.io/on-three",
+        "name": "На счет три / On Three",
+        "dev": "igor.ai.diary",
+        "description": "Ваша история любви в формате игры. Your love story, turned into a game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 22:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDI0Njc3LnBuZw==/original/UJus9H.png",
+        "tags": [
+            "browser",
+            "Cute",
+            "english",
+            "gift",
+            "Romance",
+            "russian",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:23:41Z"
+    },
+    {
+        "url": "https://kittium.itch.io/care-4-me",
+        "name": "Care 4 Me",
+        "dev": "kittium",
+        "description": "is life better as your crush's digital pet?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 00:58 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDk0MDg5LmpwZw==/original/Olda5Y.jpg",
+        "tags": [
+            "Furry",
+            "Lesbian",
+            "Pixel Art",
+            "Romance",
+            "Singleplayer",
+            "Virtual Pet",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:23:44Z"
+    },
+    {
+        "url": "https://npcstudio.itch.io/starlight-diary",
+        "name": "STARLIGHT DIARY",
+        "dev": "Npc Studio",
+        "description": "A psychological horror visual novel about a diary , Some secrets are better left forgotten.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 04:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTEyNzkzLnBuZw==/original/MreZpe.png",
+        "tags": [
+            "3D",
+            "Anime",
+            "Female Protagonist",
+            "Horror",
+            "Multiple Endings",
+            "Mystery",
+            "Psychological Horror",
+            "Story Rich",
+            "supernatural"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "RPG Maker",
+            "Adobe Photoshop"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button",
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:23:47Z"
+    },
+    {
+        "url": "https://sakurarose3.itch.io/offline-mode",
+        "name": "Offline Mode",
+        "dev": "SakuraRose3",
+        "description": "Two years of duo queue. Today, you finally meet in person.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 20:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDk4OTg1LnBuZw==/original/zyavOa.png",
+        "tags": [
+            "Anime",
+            "Boys' Love",
+            "choices-matter",
+            "Comedy",
+            "Cute",
+            "Dating Sim",
+            "LGBT",
+            "Multiple Endings",
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:23:51Z"
+    },
+    {
+        "url": "https://slapstickgames1524.itch.io/what-comes-aroundgoes-around",
+        "name": "What Comes Around...Goes Around!",
+        "dev": "SlapStickGames1524",
+        "description": "You play as the vindictive heiress, Prithi Pahntibhat...and you are furious!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 17:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDkyMDgzLmpwZw==/original/k5avcz.jpg",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:23:54Z"
+    },
+    {
+        "url": "https://starlight-productions.itch.io/rotten-hearts",
+        "name": "Rotten Hearts",
+        "dev": "Starlight",
+        "description": "Stuck in a bunker; post-apocalypse. You hear a strange noise coming from within the scientist lab",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 04:27 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTExNjQ2LnBuZw==/original/7Dn2ez.png",
+        "tags": [
+            "Horror",
+            "Indie",
+            "LGBT",
+            "Monsters",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:23:58Z"
+    },
+    {
+        "url": "https://tuxum.itch.io/fnaf-reforged",
+        "name": "Five Night's at Freddy's Reforged",
+        "dev": "Tuxum",
+        "description": "Continuation of Five Nights at Freddy's Minus by decentgames.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 22:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDY3NjM2LnBuZw==/original/VGkaS2.png",
+        "tags": [
+            "crude-humor",
+            "Five Nights at Freddy's",
+            "Funny"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T16:24:00Z"
     }
 ]
