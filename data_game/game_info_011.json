@@ -248,8 +248,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 05:33 UTC",
-        "rating": "4.6",
-        "rating_count": "13",
+        "rating": "4.5",
+        "rating_count": "26",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDIyOTE5LnBuZw==/original/w2zbaM.png",
@@ -276,7 +276,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T04:24:21Z"
+        "added_at": "2026-10-28T04:24:21Z",
+        "updated_at": "29 October 2026 @ 01:21 UTC"
     },
     {
         "url": "https://jaco-van-hemert.itch.io/eldritch-apocalypse",
@@ -287,8 +288,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.2",
-        "rating_count": "4",
+        "rating": "4.0",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI4NzUyOTk5LmdpZg==/original/fWLWxi.gif",
@@ -2257,7 +2258,7 @@
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 12:00 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "3",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDI0NzU5LnBuZw==/original/25wyAY.png",
@@ -2294,7 +2295,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T08:24:11Z"
+        "added_at": "2026-10-28T08:24:11Z",
+        "updated_at": "29 October 2026 @ 02:12 UTC"
     },
     {
         "url": "https://endpaper.itch.io/fairs-fair-prologue",
@@ -2406,7 +2408,7 @@
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 21:03 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDUxMDMwLnBuZw==/original/45R5VC.png",
@@ -2475,8 +2477,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 12:28 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDMzMDk4LnBuZw==/original/gJtszy.png",
@@ -3489,7 +3491,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "488",
+        "rating_count": "489",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIwNzkxNTcuZ2lm/original/Zmc7TN.gif",
@@ -3851,7 +3853,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.3",
-        "rating_count": "102",
+        "rating_count": "103",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvMjk2ODY4LzE0NTAyNTAuZ2lm/original/5em2Zf.gif",
@@ -8525,8 +8527,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 12:14 UTC",
-        "rating": "4.0",
-        "rating_count": "2",
+        "rating": "4.2",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzI2NDg1LnBuZw==/original/TsDGTG.png",
@@ -8555,7 +8557,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T12:24:25Z"
+        "added_at": "2026-10-28T12:24:25Z",
+        "updated_at": "29 October 2026 @ 03:16 UTC"
     },
     {
         "url": "https://mismatched-wings.itch.io/affectionadorationabsolution",
@@ -9433,7 +9436,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T16:24:16Z"
+        "added_at": "2026-10-28T16:24:16Z",
+        "updated_at": "29 October 2026 @ 03:11 UTC"
     },
     {
         "url": "https://drawnouttravels.itch.io/down-the-forest-path",
@@ -9521,7 +9525,7 @@
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 21:26 UTC",
         "rating": "4.8",
-        "rating_count": "4",
+        "rating_count": "5",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzM5NjA5LnBuZw==/original/5nZGxj.png",
@@ -9835,13 +9839,13 @@
         ],
         "ai_disclosure": "AI Assisted",
         "ai_content": [
-            "Code",
-            "Text"
+            "Code"
         ],
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T20:24:05Z"
+        "added_at": "2026-10-28T20:24:05Z",
+        "updated_at": "29 October 2026 @ 01:22 UTC"
     },
     {
         "url": "https://hundredrabbits.itch.io/catpot",
