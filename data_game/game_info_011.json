@@ -15914,5 +15914,80 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T20:35:24Z"
+    },
+    {
+        "url": "https://kutedo19.itch.io/movecorp",
+        "name": "MOVECORP",
+        "dev": "kutedo19",
+        "description": "Move a mountain grain by grain for a company that lives off government grants. Because SI",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "27 October 2026 @ 21:21 UTC",
+        "rating": "4.1",
+        "rating_count": "8",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDU0NTE1LnBuZw==/original/ezCrg0.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Dark Humor",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "satire"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T04:24:13Z"
+    },
+    {
+        "url": "https://nanstudiotw.itch.io/naruto-kizuna-mobile",
+        "name": "魔獸《火影忍者羈絆TD》Naruto TD v0.3.23",
+        "dev": "NanStudioTw",
+        "description": "魔獸三經典守城《火影忍者羈絆》手機版｜48 位忍者 × 30 波守城 × AI 隊友",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 14:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDY0OTUwLnBuZw==/original/GF%2BWeq.png",
+        "tags": [
+            "Anime",
+            "Singleplayer",
+            "Tower Defense",
+            "warcraft-3"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T04:24:15Z"
     }
 ]
