@@ -1236,5 +1236,118 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-29T16:24:00Z"
+    },
+    {
+        "url": "https://buituandai133.itch.io/debug-the-monolith",
+        "name": "Debug the Monolith",
+        "dev": "buituandai133",
+        "description": "An incremental game about fixing a million bugs in a legacy monolith — while your AI agents quietly add new ones.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 15:43 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDg0OTM2LnBuZw==/original/LwPL1L.png",
+        "tags": [
+            "Clicker",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "programming",
+            "Typing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T20:24:20Z"
+    },
+    {
+        "url": "https://lastflagstanding.itch.io/last-flag-standing",
+        "name": "Last Flag Standing",
+        "dev": "lastflagstanding",
+        "description": "196 countries. Roll the dice. Only one flag survives.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 04:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTQ0MDQ5LmdpZg==/original/%2F2AFmi.gif",
+        "tags": [
+            "countries",
+            "Dice",
+            "flags",
+            "geography",
+            "map",
+            "Singleplayer",
+            "Turn-based",
+            "War",
+            "world-map"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T20:24:23Z"
+    },
+    {
+        "url": "https://thelands.itch.io/the-lands",
+        "name": "The Lands",
+        "dev": "thelands",
+        "description": "18+ Open-world political satire RPG. Climb from village head to prime minister: honest or corrupt, your choice.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 06:10 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTE1Njg1LmpwZWc=/original/Wmd3d%2F.jpeg",
+        "tags": [
+            "your-choice"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T20:24:26Z"
     }
 ]
