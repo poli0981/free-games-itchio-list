@@ -805,5 +805,157 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-29T08:30:40Z"
+    },
+    {
+        "url": "https://alexferb24.itch.io/one-button-to-infinity",
+        "name": "One Button to Infinity",
+        "dev": "alexferb24",
+        "description": "Start with one button. Build, automate, and push a machine until it begins to answer back.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 16:44 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDg5MDM4LnBuZw==/original/it6q01.png",
+        "tags": [
+            "Automation",
+            "Idle",
+            "Incremental",
+            "Minimalist",
+            "Sci-fi",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T12:24:22Z"
+    },
+    {
+        "url": "https://bblir.itch.io/mega-met",
+        "name": "Mega Met",
+        "dev": "BBLIR",
+        "description": "A Mega Man fan game which features Metalls (Mets) as the entire cast of characters, enemies and bosses.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 18:01 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTc5NzE5LnBuZw==/original/4hS4uV.png",
+        "tags": [
+            "8-Bit",
+            "Fangame",
+            "megaman",
+            "rockman"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T12:24:25Z"
+    },
+    {
+        "url": "https://mblw.itch.io/i-was-reborn-as-a-warlord-of-patinko-orcs-and-i-need-to-crush-my-enemy",
+        "name": "ORCHINKO: I was reborn as a Warlord of Patinko Orcs and I need to crush Humans!",
+        "dev": "Mblw",
+        "description": "Launch hoards of patinko Orcs and crush the walls in an Incremental pachinko roguelike",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 16:30 UTC",
+        "rating": "4.5",
+        "rating_count": "4",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDM0MzU1LmdpZg==/original/43SsVV.gif",
+        "tags": [
+            "Deck Building",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "orcs",
+            "pachinko",
+            "Pinball",
+            "Roguelike",
+            "Roguelite",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Phaser"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [
+            "Interactive tutorial",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T12:24:29Z"
+    },
+    {
+        "url": "https://tri-state-crew.itch.io/fs25-international-durastar-dump",
+        "name": "FS25 International Durastar Dump",
+        "dev": "Tri-State Crew",
+        "description": "Donations are non-refundable and go directly toward producing more content on itch.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 15:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDg1OTk4LnBuZw==/original/tDR6%2F%2B.png",
+        "tags": [
+            "Farming Simulator",
+            "Farming Simulator 25"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-29T12:24:32Z"
     }
 ]
