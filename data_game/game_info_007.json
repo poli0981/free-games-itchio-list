@@ -10903,7 +10903,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "13 October 2026 @ 18:13 UTC",
+        "updated_at": "22 October 2026 @ 03:59 UTC",
         "added_at": "2026-10-12T15:11:48Z"
     },
     {
@@ -17229,8 +17229,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "2.5",
-        "rating_count": "4",
+        "rating": "3.3",
+        "rating_count": "6",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5ODM1OTg2LnBuZw==/original/96VJnR.png",
@@ -17265,7 +17265,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "19 October 2026 @ 08:00 UTC",
+        "updated_at": "25 October 2026 @ 21:18 UTC",
         "added_at": "2026-10-19T04:23:32Z"
     },
     {
@@ -17309,8 +17309,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 14:06 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTQxNjY1LnBuZw==/original/EwWVUM.png",
@@ -17382,7 +17382,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T08:23:38Z"
+        "added_at": "2026-10-19T08:23:38Z",
+        "updated_at": "22 October 2026 @ 07:40 UTC"
     },
     {
         "url": "https://jiufoduck.itch.io/recycle-yourself",
@@ -17496,7 +17497,7 @@
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 10:13 UTC",
         "rating": "4.9",
-        "rating_count": "9",
+        "rating_count": "10",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDIyMjE2LnBuZw==/original/M2s46I.png",
@@ -17532,7 +17533,7 @@
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 18:06 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "4",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDM5NTM2LnBuZw==/original/c3ToqD.png",
@@ -17564,7 +17565,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-19T08:23:51Z",
-        "updated_at": "19 October 2026 @ 23:03 UTC"
+        "updated_at": "22 October 2026 @ 21:04 UTC"
     },
     {
         "url": "https://queencontract.itch.io/purple-pleasure",
@@ -17642,7 +17643,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T08:23:57Z"
+        "added_at": "2026-10-19T08:23:57Z",
+        "updated_at": "20 October 2026 @ 12:43 UTC"
     },
     {
         "url": "https://rhidel.itch.io/malfoid-sim",
@@ -17653,8 +17655,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 10:06 UTC",
-        "rating": "1.0",
-        "rating_count": "1",
+        "rating": "2.3",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTkzOTI5LnBuZw==/original/YkA%2FXb.png",
@@ -17687,7 +17689,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-19T08:24:01Z",
-        "updated_at": "20 October 2026 @ 00:55 UTC"
+        "updated_at": "28 October 2026 @ 04:55 UTC"
     },
     {
         "url": "https://slemkatt.itch.io/a-sandwich-adventure",
@@ -17699,7 +17701,7 @@
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 14:19 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDMxODMxLnBuZw==/original/iasLWG.png",
@@ -17736,11 +17738,11 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 17:56 UTC",
-        "rating": "1.0",
-        "rating_count": "1",
+        "rating": "3.7",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
-        "thumbnail": "N/A",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzE1ODY4LnBuZw==/original/S7s7PY.png",
         "tags": [
             "Comedy",
             "Co-op",
@@ -17771,10 +17773,13 @@
             "Sounds",
             "Text"
         ],
-        "accessibility": [],
+        "accessibility": [
+            "Subtitles"
+        ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T12:23:40Z"
+        "added_at": "2026-10-19T12:23:40Z",
+        "updated_at": "24 October 2026 @ 21:35 UTC"
     },
     {
         "url": "https://antpunch.itch.io/memloss",
@@ -17807,7 +17812,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T16:23:36Z"
+        "added_at": "2026-10-19T16:23:36Z",
+        "updated_at": "20 October 2026 @ 21:24 UTC"
     },
     {
         "url": "https://littledibble.itch.io/seas-the-day",
@@ -17852,7 +17858,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T16:23:40Z"
+        "added_at": "2026-10-19T16:23:40Z",
+        "updated_at": "20 October 2026 @ 16:39 UTC"
     },
     {
         "url": "https://mediocrisis.itch.io/geeneses-game",
@@ -17882,7 +17889,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T16:23:44Z"
+        "added_at": "2026-10-19T16:23:44Z",
+        "updated_at": "23 October 2026 @ 05:37 UTC"
     },
     {
         "url": "https://melomell.itch.io/encaprichada",
@@ -17929,8 +17937,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 18:55 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.0",
+        "rating_count": "4",
         "average_session": "A few hours",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDQxMjA3LnBuZw==/original/bwR49J.png",
@@ -17975,8 +17983,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "4.3",
+        "rating_count": "3",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIxMDQzMTgxLnBuZw==/original/ZVLam%2F.png",
@@ -18062,7 +18070,7 @@
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 19:37 UTC",
         "rating": "4.4",
-        "rating_count": "16",
+        "rating_count": "43",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ2MTczLnBuZw==/original/%2BMrFg6.png",
@@ -18083,7 +18091,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T20:23:41Z"
+        "added_at": "2026-10-19T20:23:41Z",
+        "updated_at": "27 October 2026 @ 16:04 UTC"
     },
     {
         "url": "https://kaaexperienced.itch.io/hypnosnake-simulator",
@@ -18094,8 +18103,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "18 October 2026 @ 16:56 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.7",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "N/A",
@@ -18113,7 +18122,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-19T20:23:45Z"
+        "added_at": "2026-10-19T20:23:45Z",
+        "updated_at": "20 October 2026 @ 17:54 UTC"
     },
     {
         "url": "https://deby-studio.itch.io/the-cursed-box",
