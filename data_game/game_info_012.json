@@ -1349,5 +1349,343 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-29T20:24:26Z"
+    },
+    {
+        "url": "https://bientsie.itch.io/the-sundial",
+        "name": "The Sundial",
+        "dev": "Bean, Bryhemian, Skullwyrm",
+        "description": "What would you do if you were a knight, created for the sole purpose of being a sacrifice.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 13:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTI2NDI0LnBuZw==/original/ZZ8nDo.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Female Protagonist",
+            "LGBT",
+            "LGBTQIA",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:15Z"
+    },
+    {
+        "url": "https://enna-art.itch.io/halloween-night-a-naruhina-novel-game",
+        "name": "Halloween night (A NaruHina Novel Game)",
+        "dev": "Enna Art",
+        "description": "A text game with Naruto and Hinata in Halloween night",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 08:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTA2MDYyLmpwZw==/original/vYuiMQ.jpg",
+        "tags": [
+            "Halloween",
+            "naruhina",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:18Z"
+    },
+    {
+        "url": "https://miowrites.itch.io/lucas-night",
+        "name": "Luca's Night",
+        "dev": "Mio.",
+        "description": "One winter night in 1890s Rome, a young valet moves between three rooms, revisiting the past he shares with three men.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 10:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM5NTI4LmpwZw==/original/1AJXgP.jpg",
+        "tags": [
+            "Boys' Love",
+            "Historical",
+            "LGBT",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Microphone"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:22Z"
+    },
+    {
+        "url": "https://sayukix.itch.io/magica-girls-era",
+        "name": "Magica Girls Era",
+        "dev": "Asah",
+        "description": "Magical Girl Card Game",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 09:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTIwNzM1LnBuZw==/original/3iJnAk.png",
+        "tags": [
+            "AI Generated",
+            "Anime",
+            "Cozy",
+            "Fantasy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:27Z"
+    },
+    {
+        "url": "https://schoubye.itch.io/samhain-trail",
+        "name": "Samhain Trail",
+        "dev": "Schoubye",
+        "description": "A horror text-based adventure game about transporting your possessed son through the bog of famine Ireland",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 18:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDkzMDk5LnBuZw==/original/fToSgF.png",
+        "tags": [
+            "Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:29Z"
+    },
+    {
+        "url": "https://tomnie12344.itch.io/the-eye-below",
+        "name": "The eye below",
+        "dev": "Tomnie12344",
+        "description": "You will play as a diver who has strayed into a mysterious area with only a movable grappling hook.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 07:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTE2ODY1LnBuZw==/original/%2FGuez2.png",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:33Z"
+    },
+    {
+        "url": "https://threetare.itch.io/eighth-heaven",
+        "name": "Eighth Heaven",
+        "dev": "threetare, R_Man_composer, goatParadox, papersephone, avi2",
+        "description": "Two stories about changing the person you love",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "52",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NDQ1MDAwLnBuZw==/original/Pu1mXT.png",
+        "tags": [
+            "Female Protagonist",
+            "fungi",
+            "Lesbian",
+            "Psychological Horror",
+            "Queer",
+            "Ren'Py",
+            "Sci-fi",
+            "Short",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:37Z"
+    },
+    {
+        "url": "https://caimluna.itch.io/invisible-opus",
+        "name": "INVISIBLE OPUS",
+        "dev": "Caim Luna",
+        "description": "You are a knight tasked to find poems...",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "10",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3OTI2NjU1LnBuZw==/original/ihbsQY.png",
+        "tags": [
+            "Exploration",
+            "Horror",
+            "No AI",
+            "RPG Maker",
+            "rpg-maker-vx-ace",
+            "Singleplayer",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T00:24:40Z"
+    },
+    {
+        "url": "https://datasparrow.itch.io/shardana-hydro-trail-gp",
+        "name": "Shardana: Hydro Trail GP",
+        "dev": "Data Sparrow",
+        "description": "High-Octane Naval Racing in the 24th Century",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 July 2023 @ 18:00 UTC",
+        "rating": "4.3",
+        "rating_count": "12",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5MzUyODczLnBuZw==/original/NFLEy6.png",
+        "tags": [
+            "Board Game",
+            "Low-poly",
+            "PSX (PlayStation)",
+            "Sci-fi",
+            "y2k"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 October 2026 @ 13:08 UTC",
+        "added_at": "2026-10-30T00:24:46Z"
     }
 ]
