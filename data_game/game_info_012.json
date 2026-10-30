@@ -2393,5 +2393,109 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-30T08:25:08Z"
+    },
+    {
+        "url": "https://arelvox.itch.io/sparkmind",
+        "name": "SPARKMIND",
+        "dev": "arelvox",
+        "description": "Idle game: grow a glowing brain, upload it into an AI and spread it across the cosmos.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 08:49 UTC",
+        "rating": "2.8",
+        "rating_count": "8",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTE5MzgzLnBuZw==/original/2dAxxH.png",
+        "tags": [
+            "artificial-intelligence",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 10:00 UTC",
+        "added_at": "2026-10-30T16:24:14Z"
+    },
+    {
+        "url": "https://lensan.itch.io/aria-sandbox",
+        "name": "Aria Sandbox",
+        "dev": "LENSAN",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 00:07 UTC",
+        "rating": "4.4",
+        "rating_count": "14",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTA2MTMwLnBuZw==/original/eXxYDd.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T16:24:17Z"
+    },
+    {
+        "url": "https://wolflifetime.itch.io/to-the-moon",
+        "name": "【FR Novella Collection】FVN「”To The Moon” / “去月球”」",
+        "dev": "wolflifetime",
+        "description": "【XXL WOOFIA】SideStory「”To The Moon”」 \"Famido × Ricano\" fan-made spin-off story!",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 15:59 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDQ2MzMxLnBuZw==/original/Dzqpnd.png",
+        "tags": [
+            "famido",
+            "Furry",
+            "fvn",
+            "LGBT",
+            "ricano",
+            "to-the-moon",
+            "xxlwoofia"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T16:24:20Z"
     }
 ]
