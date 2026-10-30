@@ -1689,5 +1689,709 @@
         "notes": "",
         "updated_at": "29 October 2026 @ 13:08 UTC",
         "added_at": "2026-10-30T00:24:46Z"
+    },
+    {
+        "url": "https://bokendev-studio.itch.io/turbovektor",
+        "name": "TurboVektor",
+        "dev": "BokenDev Studios - Iker Lobo",
+        "description": "Vector 3D anti-gravity racing for the ZX Spectrum 128K and 48K",
+        "genre": "Racing",
+        "status": "In development",
+        "publisher": "BokenDev Studios",
+        "release_date": "29 October 2026 @ 13:01 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTI3ODkxLnBuZw==/original/t6muSw.png",
+        "tags": [
+            "8-Bit",
+            "Futuristic",
+            "Retro",
+            "ZX Spectrum"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:12Z"
+    },
+    {
+        "url": "https://fanplaylab.itch.io/wuguan",
+        "name": "打破三觀只留五官",
+        "dev": "fanplaylab",
+        "description": "捏一張像你的臉、答 8 題，拿到惡搞五官鑑定書，再幫你配對合拍的人。",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 15:08 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTMyNzk1LmpwZw==/original/fLan%2B5.jpg",
+        "tags": [
+            "2D",
+            "Casual",
+            "Character Customization",
+            "chinese",
+            "Dating Sim",
+            "Funny",
+            "personality-test",
+            "Quiz",
+            "Short",
+            "taiwan"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:16Z"
+    },
+    {
+        "url": "https://golden-log-games.itch.io/idle-countdown",
+        "name": "The Idle Countdown",
+        "dev": "Golden Log Games",
+        "description": "Idle game where when the countdown hits 0, you automatically prestige. This is the updated version of the game.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 01:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTA3NjI5LnBuZw==/original/bJZK6N.png",
+        "tags": [
+            "Clicker",
+            "countdown",
+            "GameMaker",
+            "Idle",
+            "Incremental",
+            "numbers",
+            "prestige",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:19Z"
+    },
+    {
+        "url": "https://icshark.itch.io/nine-heavens",
+        "name": "Nine Heavens: Path to Immortality",
+        "dev": "icShark",
+        "description": "Nine Heavens: Path to Immortality Millions remain trapped in the cycle of birth, aging, sickness, and death.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NzEwMTM4LnBuZw==/original/DTLloB.png",
+        "tags": [
+            "AI Generated",
+            "cultivation",
+            "Fantasy",
+            "Singleplayer",
+            "Story Rich",
+            "Text based",
+            "wuxia",
+            "xianxia"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 04:33 UTC",
+        "added_at": "2026-10-30T08:24:23Z"
+    },
+    {
+        "url": "https://lyones.itch.io/splashland-is-closed",
+        "name": "SPLASHLAND IS CLOSED!",
+        "dev": "Lyones",
+        "description": "Free demo: the first two nights. Fish the dark bay behind an abandoned water park, and follow the rules.",
+        "genre": "Survival",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 17:27 UTC",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDkzODY2LnBuZw==/original/XyJrWJ.png",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "First-Person",
+            "Fishing",
+            "five-nights-at-freddys",
+            "Horror",
+            "jump-scare",
+            "point--click",
+            "Psychological Horror",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:26Z"
+    },
+    {
+        "url": "https://codename-b.itch.io/closing-time",
+        "name": "Closing Time",
+        "dev": "codename_B",
+        "description": "1Bit point and click escape room",
+        "genre": "Interactive Fiction",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 18:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTQwODA4LnBuZw==/original/7VjbMP.png",
+        "tags": [
+            "Escape Game",
+            "escape-room",
+            "No AI",
+            "Point & Click",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:29Z"
+    },
+    {
+        "url": "https://csuh4.itch.io/the-boiled-one-veggie",
+        "name": "The Boiled One",
+        "dev": "csuh4",
+        "description": "Find who boiled a broccoli",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 17:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM3MDgwLnBuZw==/original/U0FmtY.png",
+        "tags": [
+            "Mystery",
+            "No AI"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:33Z"
+    },
+    {
+        "url": "https://jdcorley.itch.io/case-missing-trooper",
+        "name": "The Case of the Missing Motorcycle Trooper",
+        "dev": "JDCorley",
+        "description": "A Silent Hill 1/Umineko Fan Game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 17:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5MzIxMjA2LmpwZw==/original/WA3zZG.jpg",
+        "tags": [
+            "Detective",
+            "Fangame",
+            "Horror",
+            "No AI",
+            "silent-hill",
+            "umineko"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:36Z"
+    },
+    {
+        "url": "https://kaw7n.itch.io/celeste-duvidas-por-favor",
+        "name": "Dúvidas, Por favor!",
+        "dev": "Kaw7n",
+        "description": "Todos os monitores da Unifor foram capturados pela antiga Moema, e sobrou só você para atender os alunos!",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 19:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDU5NDYxLnBuZw==/original/BXTqrr.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Casual",
+            "minigames",
+            "No AI",
+            "Pixel Art",
+            "Point & Click",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:39Z"
+    },
+    {
+        "url": "https://lintilion.itch.io/the-phantom-thief-returns",
+        "name": "The Phantom Thief Returns",
+        "dev": "lintilion",
+        "description": "the Phantom Thief is on the loose.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 17:05 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM4MTQzLmpwZw==/original/syql0R.jpg",
+        "tags": [
+            "2D",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:42Z"
+    },
+    {
+        "url": "https://mayilzadeyunus.itch.io/1961",
+        "name": "1961",
+        "dev": "mayilzadeyunus",
+        "description": "A student disappears. An old school record points to 1961. Uncover the truth behind Room 214.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 20:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTQ1OTMyLnBuZw==/original/Bb9%2BYF.png",
+        "tags": [
+            "Atmospheric",
+            "choices-matter",
+            "Horror",
+            "investigation",
+            "Mystery",
+            "Psychological Horror",
+            "Story Rich",
+            "suspense"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Turkish"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:46Z"
+    },
+    {
+        "url": "https://pilargarcia.itch.io/los-casos-de-dominguez-final1",
+        "name": "Los Casos de Dominguez _ 29/10",
+        "dev": "Pilargarcia",
+        "description": "Juego 2D de Point and Click Adéntrate en la Casona Alvear, un laberinto de opulencia y sombras en la Argentina de 1929, donde el robo de las legendarias milanesas de la abuela Consuelo es solo la...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 13:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTI4NDEyLnBuZw==/original/WvKv2Y.png",
+        "tags": [
+            "2D",
+            "Detective",
+            "Noir",
+            "Point & Click",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:50Z"
+    },
+    {
+        "url": "https://reyyyeah.itch.io/beautiful-prosodies",
+        "name": "Beautiful Prosodies",
+        "dev": "Reyyyeah",
+        "description": "2D Point & Click Adventure",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 15:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODgyMTk1LnBuZw==/original/Z1Rzdd.png",
+        "tags": [
+            "2D",
+            "Cozy",
+            "demo",
+            "Point & Click",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:53Z"
+    },
+    {
+        "url": "https://rottenpeas.itch.io/ghost-ranch",
+        "name": "Ghost Ranch",
+        "dev": "Rottenpeas",
+        "description": "I compile the data of their death",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 15:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTI1MjYyLnBuZw==/original/F3u9OM.png",
+        "tags": [
+            "3D Platformer",
+            "Atmospheric",
+            "Godot",
+            "Music",
+            "Narrative",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Surreal"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:24:56Z"
+    },
+    {
+        "url": "https://sakurarose3.itch.io/femboy-dating",
+        "name": "Femboy Dating",
+        "dev": "SakuraRose3",
+        "description": "Two years of duo queue. Today, you finally meet in person.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "28 October 2026 @ 20:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTQxNDIyLnBuZw==/original/0LFbG%2F.png",
+        "tags": [
+            "Anime",
+            "Boys' Love",
+            "choices-matter",
+            "Comedy",
+            "Cute",
+            "Dating Sim",
+            "LGBT",
+            "Multiple Endings",
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:25:00Z"
+    },
+    {
+        "url": "https://savageemoji.itch.io/lucky-grin",
+        "name": "Lucky Grin",
+        "dev": "SavageEmoji",
+        "description": "20 free tokens. No money. No catch. Just games. Everybody wins eventually. :)",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 20:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM4MDI3LnBuZw==/original/lLc%2FEe.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Horror",
+            "Indie",
+            "Multiple Endings",
+            "No AI",
+            "Pixel Art",
+            "Psychological Horror",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:25:02Z"
+    },
+    {
+        "url": "https://exoskeletaljunction.itch.io/photocopycat",
+        "name": "photocopycat",
+        "dev": "exoskeletaljunction",
+        "description": "bootlegged everything",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5OTc4NzQ4LmpwZw==/original/ftskGG.jpg",
+        "tags": [
+            "Experimental",
+            "Female Protagonist",
+            "Funny",
+            "Kinetic Novel",
+            "LGBT",
+            "Mental Health",
+            "Queer",
+            "Romance",
+            "Transgender",
+            "weird"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:25:05Z"
+    },
+    {
+        "url": "https://thankyouthankyou.itch.io/dead-air",
+        "name": "DEAD · AIR",
+        "dev": "thankyouthankyou",
+        "description": "Some signs aren't meant for you.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NDc2MTQ1LnBuZw==/original/rGFHWx.png",
+        "tags": [
+            "Horror",
+            "Lesbian",
+            "LGBT",
+            "Short",
+            "Singleplayer",
+            "Transgender",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T08:25:08Z"
     }
 ]
