@@ -2497,5 +2497,302 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-30T16:24:20Z"
+    },
+    {
+        "url": "https://deby-studio.itch.io/who-is-the-yandere",
+        "name": "Who is the yandere?",
+        "dev": "Deby's Studio",
+        "description": "Someone in this hotel is obsessed with you. You have five days to discover who they are.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 02:49 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTgxODcxLmpwZWc=/original/56JIHg.jpeg",
+        "tags": [
+            "Dating Sim",
+            "otomo-game",
+            "Psychological Horror",
+            "Romance",
+            "who-is-the-yandere",
+            "Yandere",
+            "yandere-love",
+            "yandere-themes"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T20:24:23Z"
+    },
+    {
+        "url": "https://dewakuneiei.itch.io/2-sides",
+        "name": "2 Sides",
+        "dev": "deewa_, Monkey_Making_Game, MRTYS, liamt15, violetmaves",
+        "description": "Two doors. Two fates. Which side will you choose?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 21:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM0NTI5LnBuZw==/original/skdjwq.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Black and White",
+            "Horror",
+            "Noir",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer",
+            "thai"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T20:24:27Z"
+    },
+    {
+        "url": "https://pajorn.itch.io/evermore",
+        "name": "EVERMORE",
+        "dev": "PAJORN.",
+        "description": "This is a Gothic love story.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 18:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTQxMDAyLnBuZw==/original/Y3z1vT.png",
+        "tags": [
+            "2D",
+            "Gothic"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T20:24:30Z"
+    },
+    {
+        "url": "https://pusana77.itch.io/ghostgirlrocket",
+        "name": "Ghost Girl Rocket",
+        "dev": "pusana77",
+        "description": "bullet hell rpg you play as a \"Krasue\" Thai ghost",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 02:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDE2MDg3LnBuZw==/original/iCHwiM.png",
+        "tags": [
+            "2D",
+            "Noir",
+            "Pixel Art",
+            "Singleplayer",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T20:24:33Z"
+    },
+    {
+        "url": "https://tonypai.itch.io/a-chance-that-isnt-yours",
+        "name": "不屬於你的機會",
+        "dev": "Tony Pai",
+        "description": "三十天，三位女孩，一個答案。Thirty days, three girls, one answer. 繁中 / English",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "29 October 2026 @ 17:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM1MDA3LnBuZw==/original/3mxotn.png",
+        "tags": [
+            "Anime",
+            "Dating Sim",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Romance",
+            "Short",
+            "Slice Of Life",
+            "Story Rich",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-30T20:24:36Z"
+    },
+    {
+        "url": "https://ia97lies.itch.io/situation-normal",
+        "name": "Situation Normal",
+        "dev": "Artificials",
+        "description": "Get in, destroy the boss, and get the hell out.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "6",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4NzUxNDM5LnBuZw==/original/iWRjyr.png",
+        "tags": [
+            "2D",
+            "Fast-Paced",
+            "Funny",
+            "Singleplayer",
+            "Speedrun"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Gamepad (any)",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "libGDX",
+            "Blender",
+            "Tiled",
+            "Inkscape"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 09:48 UTC",
+        "added_at": "2026-10-30T20:24:39Z"
+    },
+    {
+        "url": "https://maiu-online.itch.io/maiu-online",
+        "name": "Maiu Online",
+        "dev": "Maiu Online",
+        "description": "3D browser MMORPG - early access",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 August 2024 @ 22:00 UTC",
+        "rating": "4.2",
+        "rating_count": "5",
+        "average_session": "Days or more",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTU3NzE3LmpwZw==/original/FLd735.jpg",
+        "tags": [
+            "3D",
+            "Action RPG",
+            "babylonjs",
+            "bevy",
+            "Hack and Slash",
+            "Indie",
+            "mmo",
+            "MMORPG",
+            "rust"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Rust",
+            "Bevy Engine"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 02:09 UTC",
+        "added_at": "2026-10-30T20:24:42Z"
     }
 ]
