@@ -3623,5 +3623,550 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-31T12:24:32Z"
+    },
+    {
+        "url": "https://adairtrashart.itch.io/ghost-node",
+        "name": "ghost_node",
+        "dev": "AdairTrashart",
+        "description": "A denpa vn that comes with a desktop assistant!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 20:32 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjg5MDM3LnBuZw==/original/kNRgOp.png",
+        "tags": [
+            "Creepy",
+            "Desktop Pet",
+            "Experimental",
+            "No AI"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:15Z"
+    },
+    {
+        "url": "https://ahmwma.itch.io/bonespoke",
+        "name": "bone-spoke",
+        "dev": "ahmwma",
+        "description": "(conversations in the dirt)",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 04:49 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjA5NzAyLnBuZw==/original/NvHfDJ.png",
+        "tags": [
+            "Decker",
+            "Short",
+            "Skeletons"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:20Z"
+    },
+    {
+        "url": "https://anonuser2026.itch.io/a-viagem-de-flvio",
+        "name": "A Viagem de Flávio",
+        "dev": "anonuser2026",
+        "description": "Sátira. Flávio perdeu e precisa fugir do país. Ajude ou atrapalhe.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 23:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [
+            "Comedy",
+            "mobile",
+            "Pixel Art",
+            "Runner",
+            "satire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:23Z"
+    },
+    {
+        "url": "https://blamerobots.itch.io/the-tell-tale-hearts",
+        "name": "The Tell-Tale Hearts",
+        "dev": "blamerobots",
+        "description": "Short anthology sound novel reinterpreting classic works for the electronic age",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 00:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTczNzYyLmdpZg==/original/gCYjBn.gif",
+        "tags": [
+            "Atmospheric",
+            "denpa",
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer",
+            "Story Rich",
+            "Surreal"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:27Z"
+    },
+    {
+        "url": "https://blvck-sheep.itch.io/clr-hws2026",
+        "name": "CLR HALLOWEEN SPECIAL / 2026",
+        "dev": "blvck sheep",
+        "description": "Six familiar faces. One isn't human. Flirt, ask questions, and decide who to let in.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 00:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjAyNDc4LnBuZw==/original/%2By6ahc.png",
+        "tags": [
+            "2D",
+            "AI Generated"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:30Z"
+    },
+    {
+        "url": "https://bnuibuni.itch.io/the-low-path",
+        "name": "The Low Path",
+        "dev": "BnuiBuni",
+        "description": "A horror visual novel about the burdens you bear for yourself and others",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 00:19 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjAwODc5LnBuZw==/original/wCpCca.png",
+        "tags": [
+            "2D",
+            "Forest",
+            "Horror",
+            "LGBT",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:33Z"
+    },
+    {
+        "url": "https://bunny-bureau.itch.io/angels-mania",
+        "name": "Angels Mania",
+        "dev": "Bunny Bureau",
+        "description": "GENRE Otome · Romantic Comedy · Visual Novel THEMES K-pop · Romance · Slice of Life · Choices AGE RATING 17+ (Demo) FORMAT Single-player · Interactive Story · POV About the Game.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 16:50 UTC",
+        "rating": "3.3",
+        "rating_count": "6",
+        "average_session": "A few seconds",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDgxNTU3LnBuZw==/original/XZVdQi.png",
+        "tags": [
+            "Adult",
+            "Dating Sim",
+            "Erotic",
+            "First-Person",
+            "Otome",
+            "relationship",
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:37Z"
+    },
+    {
+        "url": "https://darkwolfcat.itch.io/the-knocker-horror",
+        "name": "THE KNOCKER",
+        "dev": "Darkwolfcat",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 13:56 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTc4MTc3LmpwZw==/original/hKb%2B5%2F.jpg",
+        "tags": [
+            "Horror",
+            "Psychological Horror",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:40Z"
+    },
+    {
+        "url": "https://earlyspringflora.itch.io/the-early-spring-floras-story",
+        "name": "The Early Spring — Flora's Story",
+        "dev": "earlyspringflora",
+        "description": "A choice-driven anime fan visual novel: live Flora's first spring at Lime, follow the show's path or wander off it.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 04:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDA0OTY3LnBuZw==/original/vP8SOx.png",
+        "tags": [
+            "Anime",
+            "Fangame",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:44Z"
+    },
+    {
+        "url": "https://itsnotpeksi.itch.io/bewitched-on-halloween",
+        "name": "Bewitched on Halloween",
+        "dev": "ItsnotPeksi",
+        "description": "Deep in a forest you are an apprentice of a Wizard, who is leaving you by yourself on the night of Halloween.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 19:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM3MDQ1LnBuZw==/original/Ziba4r.png",
+        "tags": [
+            "Cozy",
+            "Halloween"
+        ],
+        "platforms": [
+            "HTML5",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:46Z"
+    },
+    {
+        "url": "https://matchabiru.itch.io/potion-pals",
+        "name": "Potion Pals",
+        "dev": "Matchabiru",
+        "description": "Make potions with your new pal morgana",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 19:23 UTC",
+        "rating": "4.3",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTkxNDUyLnBuZw==/original/W3pzta.png",
+        "tags": [
+            "Crafting",
+            "transformation",
+            "weight-gain"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:50Z"
+    },
+    {
+        "url": "https://star1here.itch.io/wherefireflieslead",
+        "name": "Where Fireflies Lead",
+        "dev": "Star",
+        "description": "a forest festival, a long night, and the perfect date with a stranger.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 20:57 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjA0MTA3LnBuZw==/original/Ay%2F2R3.png",
+        "tags": [
+            "Cozy",
+            "Cute",
+            "Fangame",
+            "Mystery",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:52Z"
+    },
+    {
+        "url": "https://syring4.itch.io/offscript",
+        "name": "OFF SCRIPT",
+        "dev": "Syring4",
+        "description": "Hello!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 00:23 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzczNzk3LnBuZw==/original/gsiGKr.png",
+        "tags": [
+            "Creepy",
+            "creepypasta",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "No AI",
+            "Psychological Horror",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:24:56Z"
+    },
+    {
+        "url": "https://v-sathvik-reddy.itch.io/paintscapes",
+        "name": "PaintScapes",
+        "dev": "v_sathvik_reddy",
+        "description": "Restore the Art, Reclaim Reality",
+        "genre": "Action",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 18:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTg5MzI1LnBuZw==/original/LKuAjm.png",
+        "tags": [
+            "2D",
+            "Godot"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:25:00Z"
+    },
+    {
+        "url": "https://vinca-roseus.itch.io/anima-automation",
+        "name": "Anima Automation",
+        "dev": "Vinca_Roseus",
+        "description": "Date your local unstable android today!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 04:16 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTg0Nzg3LnBuZw==/original/quuVUv.png",
+        "tags": [
+            "Amare",
+            "Dark",
+            "Dating Sim",
+            "LGBT",
+            "Narrative",
+            "Romance",
+            "Sci-fi",
+            "Story Rich",
+            "Transgender"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T16:25:04Z"
     }
 ]
