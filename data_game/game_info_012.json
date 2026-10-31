@@ -3181,5 +3181,192 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-31T00:25:06Z"
+    },
+    {
+        "url": "https://madoguchimoto.itch.io/wairo-de-bingo",
+        "name": "賄賂でビンゴ！",
+        "dev": "MADOGUCHIMOTO",
+        "description": "ワイロ飛び交うビンゴ大会！ 司会者を買収して玉をこっそり細工しろ！",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 08:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTcwNzM4LnBuZw==/original/5qXZHs.png",
+        "tags": [
+            "bingo",
+            "bluffing",
+            "japanese"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T04:24:11Z"
+    },
+    {
+        "url": "https://redwolf-fenrir.itch.io/the-demon-king-and-the-hero",
+        "name": "The Demon King and the Hero",
+        "dev": "redwolf_fenrir",
+        "description": "vore！！！vore！！！vore！！！",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 14:34 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTc5NjIxLmpwZw==/original/Xs2S1b.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T04:24:15Z"
+    },
+    {
+        "url": "https://rockingprojects.itch.io/kill-the-hero",
+        "name": "Kill The Hero",
+        "dev": "rockingprojects",
+        "description": "Dungeon Builder and Defense Autobattler",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzYyOTgwLnBuZw==/original/BxxiHO.png",
+        "tags": [
+            "2D",
+            "Auto Battler",
+            "Deck Building",
+            "Difficult",
+            "Multiplayer",
+            "No AI",
+            "Retro",
+            "Singleplayer",
+            "Tower Defense",
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Polish",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 17:29 UTC",
+        "added_at": "2026-10-31T04:24:19Z"
+    },
+    {
+        "url": "https://thebaldporter.itch.io/3-android-port",
+        "name": ">:3 android port",
+        "dev": ">:3 Cubed Extended 53x2",
+        "description": ">:3 port",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 11:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTcxOTczLmpwZw==/original/JMMgHi.jpg",
+        "tags": [
+            "Baldi's Basics"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T04:24:23Z"
+    },
+    {
+        "url": "https://thinking-cat-games.itch.io/incredig",
+        "name": "Incredig",
+        "dev": "ThinKING Cat Game",
+        "description": "Incremental game about digging",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 06:28 UTC",
+        "rating": "4.2",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTYyNzI3LnBuZw==/original/b0IGps.png",
+        "tags": [
+            "2D",
+            "Automation",
+            "Exploration",
+            "Idle",
+            "Incremental",
+            "mining",
+            "Pixel Art",
+            "Sci-fi",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T04:24:27Z"
     }
 ]
