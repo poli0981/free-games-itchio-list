@@ -2794,5 +2794,390 @@
         "notes": "",
         "updated_at": "30 October 2026 @ 02:09 UTC",
         "added_at": "2026-10-30T20:24:42Z"
+    },
+    {
+        "url": "https://3timessleepy.itch.io/decomposed",
+        "name": "DECOMPOSED",
+        "dev": "3Timessleepy",
+        "description": "*Note: This game is currently available in Thai language only.* \"An apocalyptic outbreak in the office, and they still won't let you go home.\" \"ต่อให้เชื้อระบาดจนทั้งออฟฟิศกลายพันธุ์......",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 09:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM0MjkzLnBuZw==/original/Hl8Vfs.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:32Z"
+    },
+    {
+        "url": "https://chaithaimai.itch.io/nightmare-in-veggieland",
+        "name": "Nightmare in Veggieland",
+        "dev": "chaithaimai",
+        "description": "Nightmare in Veggieland You play as Pudding , a child who hates eating vegetables and seems to have been cursed!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 09:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTY0NDQxLnBuZw==/original/%2FCCfJ8.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Horror",
+            "Top-Down",
+            "Turn-based"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:35Z"
+    },
+    {
+        "url": "https://daedae-7371.itch.io/feliz-cum",
+        "name": "Feliz cum",
+        "dev": "daedae_7371",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 08:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTY1OTY1LnBuZw==/original/iyQBGJ.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:38Z"
+    },
+    {
+        "url": "https://hi-hamguin.itch.io/may-we-be-together-forever",
+        "name": "May We be Together Forever",
+        "dev": "Hi-Hamguin",
+        "description": "( Dev recommend to play on download version!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 07:42 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTY0MDEyLnBuZw==/original/EarU20.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "No AI",
+            "Pixel Art",
+            "Romance",
+            "RPG Maker",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:41Z"
+    },
+    {
+        "url": "https://ijwhfunn.itch.io/bens-playground",
+        "name": "BENs_Playground",
+        "dev": "IJustWannaHaveFunn",
+        "description": "Should you continue to explore…?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 11:59 UTC",
+        "rating": "5.0",
+        "rating_count": "16",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDcwMjAxLnBuZw==/original/UkntzU.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "creepypasta",
+            "Halloween",
+            "Multiple Endings",
+            "Mystery",
+            "Pixel Art",
+            "RPG Maker",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:45Z"
+    },
+    {
+        "url": "https://isadora-calicunha.itch.io/salo-de-maquiagem",
+        "name": "Salão de Maquiagem",
+        "dev": "isadora calicunha",
+        "description": "Jogo de maquiar clientes num salão rosa cute",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 09:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTY2ODY1LnBuZw==/original/iPpsh9.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:49Z"
+    },
+    {
+        "url": "https://koirasu.itch.io/rewinded",
+        "name": "Rewinded",
+        "dev": "KoiraSu",
+        "description": "How come I end up where I started How come I end up where I went wrong?",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 09:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:52Z"
+    },
+    {
+        "url": "https://pieroshi.itch.io/dreamless-drama",
+        "name": "Dreamless Drama",
+        "dev": "PieroShi",
+        "description": "Sometimes, moving forward can be terrifying.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 08:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTM2ODc5LnBuZw==/original/tI4bsd.png",
+        "tags": [
+            "2D",
+            "Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:56Z"
+    },
+    {
+        "url": "https://samasarax.itch.io/intruder",
+        "name": "Intruder",
+        "dev": "Samasarax",
+        "description": "An unfamiliar face lurking in the shadows, watching your every move.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 08:49 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTQwMzg5LnBuZw==/original/LGt0P0.png",
+        "tags": [
+            "2D",
+            "Dark",
+            "Godot",
+            "Halloween",
+            "Horror",
+            "Pixel Art",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:24:59Z"
+    },
+    {
+        "url": "https://samiksha-saxena.itch.io/where-love-stays",
+        "name": "Where Love Stays",
+        "dev": "Samiksha Saxena",
+        "description": "Where Love Stays: Help Grandpa and Dolly uncover precious memories through simple puzzles and heartfelt moments.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 10:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTcwNzgxLnBuZw==/original/f6QYb%2B.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GDevelop"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:25:03Z"
+    },
+    {
+        "url": "https://tysore.itch.io/spririts-on-demand",
+        "name": "Spirits on Demand",
+        "dev": "tysore, luhshin, Nebustar, smileywalnut, Bluewing, isthisenne",
+        "description": "Go to a speed dating event full",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 07:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTYzNTk0LnBuZw==/original/5DghlV.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "Halloween",
+            "No AI",
+            "Romance",
+            "Singleplayer",
+            "Spooky"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T00:25:06Z"
     }
 ]
