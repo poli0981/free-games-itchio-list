@@ -3368,5 +3368,260 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-31T04:24:27Z"
+    },
+    {
+        "url": "https://funbanan.itch.io/nasubi",
+        "name": "NASUBI",
+        "dev": "FunB4nan, st1sdan",
+        "description": "YOU TOOK PART IN A CONTROVERSIAL TV SHOW",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "112",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTkyMTUxLnBuZw==/original/Nt%2FH4t.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Horror",
+            "Idle",
+            "Incremental",
+            "ps1",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Blender",
+            "Aseprite",
+            "Godot",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 19:48 UTC",
+        "added_at": "2026-10-31T12:24:15Z"
+    },
+    {
+        "url": "https://gabbydarienzo.itch.io/obsession",
+        "name": "OBSESSED With Fashion",
+        "dev": "gabby darienzo",
+        "description": "A horror dress up game (inspired by the movie Obsession)",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 15:54 UTC",
+        "rating": "4.8",
+        "rating_count": "10",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDQ3MDAxLmpwZw==/original/M9vH7e.jpg",
+        "tags": [
+            "2D",
+            "Dress Up",
+            "fashion",
+            "Halloween",
+            "Horror",
+            "horror-movie",
+            "No AI",
+            "obsession",
+            "Spooky"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T12:24:19Z"
+    },
+    {
+        "url": "https://iinksk.itch.io/danganronpa-another-remaster",
+        "name": "Danganronpa Another Remaster",
+        "dev": "ink",
+        "description": "Danganronpa Another Remaster",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 21:58 UTC",
+        "rating": "4.9",
+        "rating_count": "11",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTg4NTc4LnBuZw==/original/MOx2Af.png",
+        "tags": [
+            "2D",
+            "danganronpa",
+            "Fangame",
+            "Indie",
+            "Mystery",
+            "Pixel Art",
+            "Singleplayer",
+            "Sprites",
+            "Story Rich"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T12:24:22Z"
+    },
+    {
+        "url": "https://jakecook2400.itch.io/mobilesuitgundam-firered",
+        "name": "MobileSuitGundam - FireRed",
+        "dev": "jakecook2400",
+        "description": "A Gundam inspired retheme of the much loved Pokemon - FireRed",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 16:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTg1ODYwLnBuZw==/original/MC7Ru3.png",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "Retro",
+            "Singleplayer",
+            "Sprites"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T12:24:25Z"
+    },
+    {
+        "url": "https://memorious.itch.io/dark-parts",
+        "name": "Dark Parts",
+        "dev": "Memo",
+        "description": "Existential & relationship horror",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "149",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1ODcwNjQ1LmdpZg==/original/b9v%2Fg3.gif",
+        "tags": [
+            "Amare",
+            "Dark",
+            "Dating Sim",
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Romance",
+            "Slice Of Life",
+            "Story Rich",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "31 October 2026 @ 02:00 UTC",
+        "added_at": "2026-10-31T12:24:28Z"
+    },
+    {
+        "url": "https://vikintor.itch.io/pulcra-remastered",
+        "name": "Pulcra Remastered 🜏",
+        "dev": "vikintor",
+        "description": "🜏PSYCHOSIS INDUCING VIDEOGAME🜏",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 23:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTUwNTg2LmdpZg==/original/9vSQ7I.gif",
+        "tags": [
+            "3D",
+            "Arcade",
+            "Horror",
+            "No AI",
+            "Psychological Horror",
+            "Survival Horror"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T12:24:32Z"
     }
 ]
