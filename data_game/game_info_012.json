@@ -4270,5 +4270,73 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-31T20:24:23Z"
+    },
+    {
+        "url": "https://alan1st.itch.io/tui-ba-gang",
+        "name": "Túi Ba Gang",
+        "dev": "alan1st",
+        "description": "Trinh thám 2D: chàng viết thuê về phố cũ, soi từng tờ giấy để minh oan cho cha.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "30 October 2026 @ 17:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTg2Mzk2LnBuZw==/original/HFAixU.png",
+        "tags": [
+            "2D",
+            "Detective",
+            "Mystery",
+            "Story Rich",
+            "vietnamese"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Vietnamese"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "31 October 2026 @ 19:44 UTC",
+        "added_at": "2026-10-31T23:39:40Z"
+    },
+    {
+        "url": "https://sopdev.itch.io/gorilla-forest",
+        "name": "غوريلا الغابة",
+        "dev": "sop",
+        "description": "هذه لعبة سويتها من افكار المتابعين فقط، طلبت منهم يعطوني افكار لقتال زعيم وانا طبقتها، اعطونا رأيكم",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 15:23 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjMwMDAyLnBuZw==/original/6JfNr7.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-31T23:39:44Z"
     }
 ]
