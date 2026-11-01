@@ -4719,5 +4719,281 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T08:23:59Z"
+    },
+    {
+        "url": "https://devhourgames.itch.io/loveland",
+        "name": "Loveland",
+        "dev": "DEVHOUR GAMES",
+        "description": "A horror game about...frogs",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "74",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzc1MDQ5NjcucG5n/original/ubeMDb.png",
+        "tags": [
+            "Atmospheric",
+            "cryptid",
+            "Detective",
+            "Horror",
+            "Immersive",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "31 October 2026 @ 20:40 UTC",
+        "added_at": "2026-11-01T12:24:12Z"
+    },
+    {
+        "url": "https://fatihnecdet.itch.io/solo-tale",
+        "name": "Solo Tale",
+        "dev": "Fatih",
+        "description": "Split your dice, slay six bosses, die prepared. A brutal dice roguelike in your browser — EN & TR.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTM0NDcwLnBuZw==/original/o%2FhOTG.png",
+        "tags": [
+            "2D",
+            "Dice",
+            "Difficult",
+            "Fantasy",
+            "grid-based",
+            "permadeath",
+            "Roguelike",
+            "Singleplayer",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Turkish"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "31 October 2026 @ 19:21 UTC",
+        "added_at": "2026-11-01T12:24:15Z"
+    },
+    {
+        "url": "https://lucille-karma.itch.io/deltarune-northernlight",
+        "name": "DELTARUNE: NORTHERNLIGHT",
+        "dev": "Lucille Karma",
+        "description": "An imagined, unofficial rematch fight against DELTARUNE's Roaring Knight.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 15:25 UTC",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDg1NTE2LnBuZw==/original/GbXGoZ.png",
+        "tags": [
+            "2D",
+            "Boss battle",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "SDL"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T12:24:18Z"
+    },
+    {
+        "url": "https://pebble-games.itch.io/islands",
+        "name": "Islands",
+        "dev": "Pebble Games",
+        "description": "Craft, build and sail an endless sea of islands",
+        "genre": "Survival",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 13:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjI1MzIyLnBuZw==/original/%2BA1UO5.png",
+        "tags": [
+            "Boss battle",
+            "Crafting",
+            "Exploration",
+            "Low-poly",
+            "Multiplayer",
+            "Open World",
+            "Procedural Generation",
+            "Sandbox"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Portuguese (Brazil)",
+            "Turkish"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Blender",
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T12:24:20Z"
+    },
+    {
+        "url": "https://st265-samet.itch.io/rem-hoca-le-haloween-partisi",
+        "name": "İrem Hoca İle Haloween Partisi!!",
+        "dev": "St265 Samet",
+        "description": "TEK VE ORJİNAL MOD BUDUR!",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 18:47 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQwMjk3LnBuZw==/original/PwxCjo.png",
+        "tags": [
+            "Horror",
+            "Indie",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T12:24:24Z"
+    },
+    {
+        "url": "https://valenzuelagustavo.itch.io/tmnt-arcade-game-megadrive-port",
+        "name": "TMNT: Arcade Game - Megadrive Port",
+        "dev": "aguara.fox",
+        "description": "TMNT_Genesis_Megadrive_port",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "6",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5OTc4NTczLnBuZw==/original/Yb26mC.png",
+        "tags": [
+            "16-bit",
+            "2D",
+            "Beat 'em up",
+            "Pixel Art"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "01 November 2026 @ 01:30 UTC",
+        "added_at": "2026-11-01T12:24:26Z"
+    },
+    {
+        "url": "https://yosoyaika.itch.io/starbot-zone",
+        "name": "Starbot Zone",
+        "dev": "YoSoyAika",
+        "description": "32 Edition",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 22:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQzNzM5LnBuZw==/original/e6bgub.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T12:24:30Z"
     }
 ]
