@@ -4489,5 +4489,235 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T04:24:44Z"
+    },
+    {
+        "url": "https://greenglas.itch.io/loserween",
+        "name": "Loserween",
+        "dev": "GreenGlas Studios",
+        "description": "A losertown Halloween special",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 00:59 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjE5MDQ1LnBuZw==/original/f1%2FgTE.png",
+        "tags": [
+            "Cute",
+            "Furry"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T08:23:43Z"
+    },
+    {
+        "url": "https://ikarusangel.itch.io/ilovemymom",
+        "name": "I Love My Mom",
+        "dev": "Ikarus",
+        "description": "Help a Cute Bunny Girl survive her Mom's Funeral!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 21:04 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQ3MzU0LmdpZg==/original/BVClt%2B.gif",
+        "tags": [
+            "Horror",
+            "Liminal space",
+            "Psychological Horror",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T08:23:46Z"
+    },
+    {
+        "url": "https://kerps.itch.io/luminous",
+        "name": "Luminous",
+        "dev": "kerps, ae, Ms. Ichigo, CursedSensei, Xien Ong, Fernsz1",
+        "description": "Dress to impress the Luminous Order, or come out of your shell.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 14:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjI2MjMyLmpwZw==/original/8gJkFS.jpg",
+        "tags": [
+            "2D",
+            "Colorful",
+            "crabs",
+            "Cute",
+            "Dress Up",
+            "fashion",
+            "Multiple Endings",
+            "No AI",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T08:23:50Z"
+    },
+    {
+        "url": "https://ruizukun-dev.itch.io/super-natural-dating-sim",
+        "name": "SUPER NATURAL DATING SIM",
+        "dev": "COCOLEMON",
+        "description": "A dark romance visual novel. See what others can't, choose whom to trust, and decide how much love should cost.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 02:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "Days or more",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTA4NjMyLnBuZw==/original/pBrMUO.png",
+        "tags": [
+            "choices-matter",
+            "Dating Sim",
+            "Female Protagonist",
+            "Multiple Endings",
+            "Mystery",
+            "Otome",
+            "Romance",
+            "Story Rich",
+            "supernatural"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T08:23:53Z"
+    },
+    {
+        "url": "https://sunlun.itch.io/111am",
+        "name": "1:11AM",
+        "dev": "SunLun",
+        "description": "⚠️ CONTENT WARNING: This game contains heavy themes, including self-harm, depression, suicide, and psychological horror.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 18:43 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjM1OTEwLnBuZw==/original/WTAo3X.png",
+        "tags": [
+            "Black and White",
+            "Gothic",
+            "Horror",
+            "Psychological Horror",
+            "Story Rich",
+            "Surreal"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T08:23:57Z"
+    },
+    {
+        "url": "https://yaboibrainz.itch.io/stego-in-my-spotlight",
+        "name": "Stego in my Spotlight",
+        "dev": "YaBoiBrainz",
+        "description": "A visual novel about love, pride, and a dino girl.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 19:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjAzMDgwLnBuZw==/original/byeIvw.png",
+        "tags": [
+            "Dating Sim",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T08:23:59Z"
     }
 ]
