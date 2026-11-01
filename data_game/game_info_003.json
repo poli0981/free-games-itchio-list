@@ -17529,56 +17529,6 @@
         "accessibility": []
     },
     {
-        "url": "https://gabrielnjlc.itch.io/dont-close-your-eyes",
-        "name": "Don’t Close Your Eyes (DEMO)",
-        "dev": "Gabrielndjldc",
-        "description": "Wake Up Harry",
-        "genre": "Puzzle",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "6",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3MzA1Nzg1LnBuZw==/original/ParFKS.png",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "Liminal space",
-            "PSX (PlayStation)",
-            "Retro",
-            "Scary",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English",
-            "Portuguese (Portugal)",
-            "Portuguese (Brazil)"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Blender",
-            "FL Studio"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Text"
-        ],
-        "accessibility": []
-    },
-    {
         "url": "https://tost-games.itch.io/concrete-abyss",
         "name": "Concrete Abyss (Demo)",
         "dev": "TOST, LeN",
@@ -20101,48 +20051,6 @@
         "languages": [],
         "inputs": [],
         "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://digitalwaste.itch.io/moroz",
-        "name": "MOROZ",
-        "dev": "DigitalWaste",
-        "description": "MOROZ gonna be inside you.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIyNjU1OTE5LmpwZw==/original/NM0NSe.jpg",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "First-Person",
-            "Music",
-            "Narrative",
-            "PSX (PlayStation)",
-            "Psychological Horror",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
         "safe_virus": "?",
         "notes": "",
         "ai_disclosure": "No AI",

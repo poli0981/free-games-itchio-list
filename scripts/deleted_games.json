@@ -880,5 +880,41 @@
         "name": "Mascot Testimonial CSS for itch.io",
         "reason": "Not a game",
         "deleted_at": "2026-10-28T02:41:27Z"
+    },
+    {
+        "url": "https://gabrielnjlc.itch.io/dont-close-your-eyes",
+        "name": "Don’t Close Your Eyes (DEMO)",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-01T02:49:55Z"
+    },
+    {
+        "url": "https://digitalwaste.itch.io/moroz",
+        "name": "MOROZ",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-01T02:49:57Z"
+    },
+    {
+        "url": "https://little-ones.itch.io/cozy-game-company",
+        "name": "Cozy Game Company",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-01T02:50:01Z"
+    },
+    {
+        "url": "https://arubberducky.itch.io/futanari-destroying-sex-robot",
+        "name": "Futanari Destroying Sex Robot",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-01T02:50:04Z"
+    },
+    {
+        "url": "https://quiirisk.itch.io/stepmom-who-fell-on-a-hike",
+        "name": "Stepmom Who Fell on a Hike",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-01T02:50:07Z"
+    },
+    {
+        "url": "https://bokendev-studio.itch.io/turbovektor",
+        "name": "TurboVektor",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-01T02:50:10Z"
     }
 ]
