@@ -4995,5 +4995,290 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T12:24:30Z"
+    },
+    {
+        "url": "https://casatin1.itch.io/kitty",
+        "name": "KITTY",
+        "dev": "casatin",
+        "description": "kityILY",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 21:35 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQ0NTY2LmpwZw==/original/EnjR8y.jpg",
+        "tags": [
+            "2D",
+            "Casual",
+            "Cute",
+            "First-Person",
+            "Horror",
+            "Indie",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:13Z"
+    },
+    {
+        "url": "https://elnite-interactive.itch.io/either-human-or-monster",
+        "name": "Either Human or Monster",
+        "dev": "Elnite Interactive, Tory, Foxzzz",
+        "description": "Play as new mediator at Irregional Council in a world where Monster or Human lives together.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 16:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjM5ODE2LmpwZw==/original/vvlHsB.jpg",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Narrative"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:15Z"
+    },
+    {
+        "url": "https://exoskeletaljunction.itch.io/bachelorsdegree",
+        "name": "bachelorsdegree",
+        "dev": "exoskeletaljunction",
+        "description": "Consequence of discretionary income",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 20:37 UTC",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQzNTA3LnBuZw==/original/hnk6FS.png",
+        "tags": [
+            "americana",
+            "Decker"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:19Z"
+    },
+    {
+        "url": "https://medowlarken.itch.io/first-night",
+        "name": "First Night",
+        "dev": "medowlarken",
+        "description": "a werewolf survival game",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 23:27 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjUxNTczLmpwZw==/original/Xd4J5L.jpg",
+        "tags": [
+            "Comedy",
+            "cyoa",
+            "Fantasy",
+            "Horror",
+            "Meaningful Choices",
+            "supernatural",
+            "Survival Horror",
+            "Twine",
+            "werewolves"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:22Z"
+    },
+    {
+        "url": "https://omeg12.itch.io/the-kraken-sleepeth",
+        "name": "The Kraken Sleepeth",
+        "dev": "Omeg12",
+        "description": "An adaptation of Lord Tennyson's Kraken",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 17:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTk1Mjg3LmpwZw==/original/h9CI1k.jpg",
+        "tags": [
+            "Sci-fi"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:24Z"
+    },
+    {
+        "url": "https://popularfront.itch.io/abm",
+        "name": "A BLEAK MOUNTAIN",
+        "dev": "Popular Front",
+        "description": "He's Not Coming Home",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 04:06 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjU3OTU2LnBuZw==/original/6CRojI.png",
+        "tags": [
+            "Atmospheric",
+            "Experimental",
+            "Furry",
+            "No AI",
+            "Psychological Horror",
+            "relationship",
+            "Short",
+            "Story Rich",
+            "Surreal"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:28Z"
+    },
+    {
+        "url": "https://sumebl.itch.io/my-hbbd",
+        "name": "MY !^!",
+        "dev": "sumebl",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 04:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjU5MDA0LnBuZw==/original/dCzJGq.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:32Z"
+    },
+    {
+        "url": "https://temers-studio.itch.io/dragons-heart-the-crimson-rebirth",
+        "name": "Dragon's Heart: Crimson Rebirth",
+        "dev": "Temers Studio",
+        "description": "A high fantasy adventure visual novel",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 16:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTAwMDU1LnBuZw==/original/kPbC9H.png",
+        "tags": [
+            "Boys' Love",
+            "Characters",
+            "Fantasy",
+            "LGBT",
+            "LGBTQIA",
+            "Meaningful Choices",
+            "Narrative",
+            "Singleplayer",
+            "Sprites"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T16:24:36Z"
     }
 ]
