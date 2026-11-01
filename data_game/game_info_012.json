@@ -4301,5 +4301,193 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-31T23:39:44Z"
+    },
+    {
+        "url": "https://forkedpush.itch.io/starfall-hearts",
+        "name": "Starfall Hearts",
+        "dev": "Fork Dev",
+        "description": "A cozy pixel-art fantasy dating sim",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 09:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjE4OTUyLnBuZw==/original/7evPyF.png",
+        "tags": [
+            "Anime",
+            "Cozy",
+            "Cute",
+            "Dating Sim",
+            "Fantasy",
+            "minigames",
+            "Multiple Endings",
+            "Pixel Art",
+            "Romance",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T04:24:30Z"
+    },
+    {
+        "url": "https://he-k.itch.io/dating-a-table",
+        "name": "Dating a Table",
+        "dev": "He_k",
+        "description": "A visual novel about having a romantic relationship with a table",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 06:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjEwODQ4LnBuZw==/original/ttARO6.png",
+        "tags": [
+            "bishoujo",
+            "Dating Sim",
+            "Romance",
+            "weird"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T04:24:33Z"
+    },
+    {
+        "url": "https://moonshinersgames.itch.io/heartbite",
+        "name": "HeartBite",
+        "dev": "moonshinersgames",
+        "description": "Your essence or your choice",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 08:16 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjk4OTg5LnBuZw==/original/pBbp4z.png",
+        "tags": [
+            "Godot",
+            "Mystery",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T04:24:37Z"
+    },
+    {
+        "url": "https://ss-ltd.itch.io/collision-demo",
+        "name": "C❤️LLISION™ [DÉMO.]",
+        "dev": "SS LTD.",
+        "description": "« A sudden crash, an amnesic awake... To a bittersweet truth. »",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 18:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTc0ODQxLmdpZg==/original/xNPbCL.gif",
+        "tags": [
+            "2D",
+            "Male protagonist",
+            "Retro",
+            "Romance",
+            "Scratch"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "French"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Scratch"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T04:24:41Z"
+    },
+    {
+        "url": "https://thebaldporter.itch.io/the-b-game-android-port",
+        "name": "THE -B GAME ANDROID PORT",
+        "dev": ">:3 Cubed Extended 53x2",
+        "description": "The minus b game is real Credits: Mod creator: https://gamebanana.com/members/5453913 Mod link: https://gamebanana.com/mods/722940 Movement fix: https://gemesplayyt.itch.io/ Enjoy",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 08:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjE0MzI4LmpwZw==/original/H8gaZe.jpg",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-01T04:24:44Z"
     }
 ]
