@@ -5864,5 +5864,227 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-02T04:24:50Z"
+    },
+    {
+        "url": "https://cavemanon.itch.io/volcaldera-ashfall",
+        "name": "Volcaldera Ashfall",
+        "dev": "Cavemanon",
+        "description": "The Pre-historic Romance a million and three years in MS Paint to tell.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 20:02 UTC",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTA4OTQ3LnBuZw==/original/5jhMSD.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Romance",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T08:24:20Z"
+    },
+    {
+        "url": "https://kirishisha.itch.io/neforformilfa2",
+        "name": "Нефор для милфы 2",
+        "dev": "Kirishisha",
+        "description": "Вторая часть визуальной новеллы о нефорах на милфуслугах!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 18:36 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjg4NjU3LnBuZw==/original/oNTMR0.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Cute",
+            "Funny",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T08:24:23Z"
+    },
+    {
+        "url": "https://leafyrowlet.itch.io/split-wing",
+        "name": "Split Wing",
+        "dev": "LeafyRowlet",
+        "description": "A dating sim - but not everything is as it seems...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 15:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjg0MDU1LmpwZw==/original/s%2FzHRi.jpg",
+        "tags": [
+            "Dating Sim",
+            "Horror",
+            "Lovecraftian Horror",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T08:24:27Z"
+    },
+    {
+        "url": "https://nytraam.itch.io/spooky-escape",
+        "name": "A Spooky Escape (CJ)",
+        "dev": "Nytram, Jooper74, Senopic, amelchior",
+        "description": "An escape from a Monster House Party!",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 00:58 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQ4NjQ4LnBuZw==/original/bj23rj.png",
+        "tags": [
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GDevelop"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T08:24:30Z"
+    },
+    {
+        "url": "https://songgming.itch.io/conversation-survivor",
+        "name": "Conversation survivor",
+        "dev": "songgming",
+        "description": "A comedy anime RPG where every conversation is a battle. Keep them interested — or run away in shame.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 15:10 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjc5OTc4LnBuZw==/original/ODPD%2Bp.png",
+        "tags": [
+            "Anime",
+            "Characters",
+            "Comedy",
+            "Cute",
+            "Dating Sim",
+            "Meaningful Choices",
+            "Romance",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T08:24:33Z"
+    },
+    {
+        "url": "https://the-clear-air-collective.itch.io/resident-arcwevil",
+        "name": "Resident ArcwEvil",
+        "dev": "The Clear Air Collective",
+        "description": "A text based adventure adaptation of Resident Evil 2 (1998)",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 18:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjg5MDcyLmpwZw==/original/S8DzR2.jpg",
+        "tags": [
+            "Atmospheric",
+            "Characters",
+            "Horror",
+            "Singleplayer",
+            "Survival Horror",
+            "Zombies"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T08:24:35Z"
     }
 ]
