@@ -6541,5 +6541,206 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-02T16:25:02Z"
+    },
+    {
+        "url": "https://akka11.itch.io/lucky-ticket-tycoon",
+        "name": "Lucky Ticket Tycoon",
+        "dev": "akka11",
+        "description": "Scratch tickets, collect prizes and build a ticket empire. Cozy pixel idle game.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 15:48 UTC",
+        "rating": "2.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDc4NjI2LnBuZw==/original/nkoqdi.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Relaxing",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T20:24:18Z"
+    },
+    {
+        "url": "https://bonnie-studios.itch.io/voxide",
+        "name": "VoXide (Minecraft-like for PS1)",
+        "dev": "Bonnie Studios",
+        "description": "Mine, craft and build a home on the original PlayStation.",
+        "genre": "Survival",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5MDkyNjM0LnBuZw==/original/iLScx6.png",
+        "tags": [
+            "Crafting",
+            "Homebrew",
+            "PSX (PlayStation)",
+            "Retro",
+            "Sandbox",
+            "Voxel"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 October 2026 @ 17:19 UTC",
+        "added_at": "2026-11-02T20:24:22Z"
+    },
+    {
+        "url": "https://gatolinie.itch.io/undertale-vs-gojo",
+        "name": "UNDERTALE VS GOJO",
+        "dev": "Gatolinie",
+        "description": "Can Genocide Frisk defeat the strongest sorcerer in history?",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3Njk1NTY5LnBuZw==/original/8DmGYq.png",
+        "tags": [
+            "Anime",
+            "Boss battle",
+            "Difficult",
+            "Fangame",
+            "gojo",
+            "jujutsu-kaisen",
+            "Pixel Art",
+            "Undertale"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "26 October 2026 @ 22:34 UTC",
+        "added_at": "2026-11-02T20:24:25Z"
+    },
+    {
+        "url": "https://orange-boy-0.itch.io/a-game-about-building-swarms-playtest-a",
+        "name": "A Game About Building Swarms [playtest]",
+        "dev": "Orange_boy_0",
+        "description": "Incremental, Build Swarm of Lil Guys Hunt the Mammoth",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 16:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTE1MjA2LnBuZw==/original/AKDFxM.png",
+        "tags": [
+            "Auto Battler",
+            "Boss battle",
+            "Clicker",
+            "Incremental",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "02 November 2026 @ 18:19 UTC",
+        "added_at": "2026-11-02T20:24:28Z"
+    },
+    {
+        "url": "https://stevenhart.itch.io/idle-brick-breaker",
+        "name": "Idle Brick Breaker",
+        "dev": "steven.hart",
+        "description": "Buy and upgrade fancy bullets to destroy the level!",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 07:46 UTC",
+        "rating": "2.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzE1NTkyLnBuZw==/original/26jrp1.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Breakout",
+            "Casual",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Relaxing",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T20:24:31Z"
     }
 ]
