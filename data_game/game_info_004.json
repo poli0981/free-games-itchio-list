@@ -10992,59 +10992,6 @@
         "accessibility": []
     },
     {
-        "url": "https://msky-dev.itch.io/sandtrix",
-        "name": "Sandtrix",
-        "dev": "msky-dev",
-        "description": "Retro Falling Sand Puzzle Game",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "06 June 2023 @ 06:29 UTC",
-        "rating": "4.7",
-        "rating_count": "410",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyMzkyNTE3LnBuZw==/original/S611Q8.png",
-        "tags": [
-            "2D",
-            "falling-sand",
-            "Pixel Art",
-            "Retro",
-            "Sandbox",
-            "setris",
-            "Tetris",
-            "weird"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Gamepad (any)",
-            "Touchscreen"
-        ],
-        "made_with": [
-            "libGDX",
-            "Lightweight Java Game Library"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "07 October 2026 @ 05:09 UTC",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [
-            "Color-blind friendly",
-            "High-contrast"
-        ]
-    },
-    {
         "url": "https://lixiangames.itch.io/sinking-iron",
         "name": "Sinking Iron",
         "dev": "LixianGames",

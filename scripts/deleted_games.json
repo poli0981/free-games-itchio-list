@@ -916,5 +916,11 @@
         "name": "TurboVektor",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-11-01T02:50:10Z"
+    },
+    {
+        "url": "https://msky-dev.itch.io/sandtrix",
+        "name": "Sandtrix",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-02T02:49:51Z"
     }
 ]
