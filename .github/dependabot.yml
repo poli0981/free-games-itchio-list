@@ -1,5 +1,5 @@
-# Dependabot version updates. Security updates are enabled separately in
-# Settings → Code security (they are not limited by open-pull-requests-limit).
+# Dependabot version updates. Security updates are a separate switch in
+# Settings → Code security (when on, they are not limited by open-pull-requests-limit).
 version: 2
 updates:
   - package-ecosystem: npm
