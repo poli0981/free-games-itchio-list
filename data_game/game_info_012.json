@@ -5479,5 +5479,390 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T20:24:35Z"
+    },
+    {
+        "url": "https://arclyn.itch.io/bea-is-scaring-me",
+        "name": "Bea Is Scaring Me",
+        "dev": "ArcLyn",
+        "description": "Tell me what you are.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 09:09 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjY2NDczLnBuZw==/original/zQu5rM.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:18Z"
+    },
+    {
+        "url": "https://champochuu.itch.io/tahan",
+        "name": "Tahan",
+        "dev": "Chuu, embdev",
+        "description": "Protect their innocence as a Filipino taho vendor.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 20:12 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjM4NzY4LnBuZw==/original/yJB3wt.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:22Z"
+    },
+    {
+        "url": "https://garlicsos.itch.io/salamat-doc",
+        "name": "Salamat, Doc!",
+        "dev": "garlicsos",
+        "description": "https://docs.google.com/document/d/1rbWezJi3fiwLEmJs7JW8pY3PwoMZTzE9MW6C190rv8Q/edit?usp=sharing",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 11:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjcxNTM3LnBuZw==/original/AvVbRT.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:24Z"
+    },
+    {
+        "url": "https://graysodacan.itch.io/across-the-table",
+        "name": "Across The Table",
+        "dev": "graysodacan, AgentAcee, MoonlightVirus, Toomanydashes2, enjelhollies, Uhan, Addhesive, Linley, qt_eustaquio",
+        "description": "In the wake of your partner’s tragic passing, you act as a widowed grieving single parent that is struggling to reconnect with your two distant teenagers, through mandatory Sunday dinners in the...",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 11:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTY5OTI0LnBuZw==/original/mqJzyh.png",
+        "tags": [
+            "Point & Click"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:27Z"
+    },
+    {
+        "url": "https://khangmera.itch.io/aethercraft",
+        "name": "Aethercraft The Infinite Depths",
+        "dev": "khangmera",
+        "description": "Im 16 years old i hope you have nice try and donate for me thank you so much!",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 12:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjY3MzEyLnBuZw==/original/k%2FE2sZ.png",
+        "tags": [
+            "2D",
+            "Dungeons & Dragons",
+            "Fantasy",
+            "Horror",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:30Z"
+    },
+    {
+        "url": "https://kzai-producer.itch.io/history",
+        "name": "歷史",
+        "dev": "有毒的K仔",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 12:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjAxOTY1LnBuZw==/original/z05%2Fvv.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:33Z"
+    },
+    {
+        "url": "https://nqztan.itch.io/heatwave-elegy",
+        "name": "HEATWAVE ELEGY",
+        "dev": "nqztan, tytrahedron",
+        "description": "The world has fallen into ruin. Everyone you love is dead.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 06:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjU5MTY0LnBuZw==/original/KDhC5m.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "No AI",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:37Z"
+    },
+    {
+        "url": "https://alfri00.itch.io/ballrollterror",
+        "name": "BallRollTerror",
+        "dev": "alfri00",
+        "description": "Very short roll balling game with a big surprise dont miss it!!!!",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 13:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjc1MjY5LnBuZw==/original/BsT8Kr.png",
+        "tags": [
+            "Atmospheric",
+            "Horror",
+            "Indie",
+            "Low-poly",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:41Z"
+    },
+    {
+        "url": "https://meal-ticket-games.itch.io/fine-whatever",
+        "name": "Fine, Whatever!",
+        "dev": "Meal Ticket Games",
+        "description": "the new game of aliens and pigs",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 15:23 UTC",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjc5OTIyLnBuZw==/original/NKBqVR.png",
+        "tags": [
+            "2D",
+            "Aliens",
+            "collage",
+            "flatgame",
+            "pigs"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "PixiJS"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:44Z"
+    },
+    {
+        "url": "https://posmnaut.itch.io/gas-station-weed-simulator-2024",
+        "name": "Gas Station Weed Simulator 2024",
+        "dev": "posmnaut, Waritine, 3denemy, VanOrhari, Parker Duffie, Jack",
+        "description": "Based on Real Events",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3OTY5MzgwLmdpZg==/original/effIgY.gif",
+        "tags": [
+            "Atmospheric",
+            "Godot"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:48Z"
+    },
+    {
+        "url": "https://tzschk.itch.io/oakpointe",
+        "name": "Oakpointe",
+        "dev": "tzschk",
+        "description": "A cozy October walking sim in a sprawling suburban neighborhood.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 09:06 UTC",
+        "rating": "4.9",
+        "rating_count": "16",
+        "average_session": "Days or more",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjEzMTMxLnBuZw==/original/SopxnE.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Cozy",
+            "First-Person",
+            "Halloween",
+            "Low-poly",
+            "Procedural Generation",
+            "PSX (PlayStation)",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-02T04:24:50Z"
     }
 ]
