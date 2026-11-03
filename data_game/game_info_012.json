@@ -7671,5 +7671,104 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-03T12:24:41Z"
+    },
+    {
+        "url": "https://arleco-fon.itch.io/ultima-luz-do-circo",
+        "name": "Última Luz do Circo",
+        "dev": "Arleco Fon",
+        "description": "A tiny clown, a forgotten circus, and a magical world waiting to come back to life",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 00:00 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzQ5MTUzLnBuZw==/original/a1%2B56K.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Characters",
+            "Cute",
+            "Exploration",
+            "Indie",
+            "Narrative",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T16:24:41Z"
+    },
+    {
+        "url": "https://nicolepires.itch.io/quem-ama-cuida-proteja-adriana",
+        "name": "Quem Ama Cuida: Proteja Adriana",
+        "dev": "nicolepires",
+        "description": "quem ama cuida, proteja Adriana, arthur, adriana, pilar",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 22:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzQzOTA1LnBuZw==/original/SpvXDC.png",
+        "tags": [
+            "Flappy Bird"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T16:24:44Z"
+    },
+    {
+        "url": "https://triss2203.itch.io/deltarune-a-new-pov",
+        "name": "DELTARUNE a new pov",
+        "dev": "Triss2203",
+        "description": "my first dumb game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 20:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzQwNjQzLnBuZw==/original/%2Bn4uHL.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T16:24:47Z"
     }
 ]
