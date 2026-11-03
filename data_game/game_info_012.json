@@ -7770,5 +7770,109 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-03T16:24:47Z"
+    },
+    {
+        "url": "https://gemesplayyt.itch.io/grrmondays",
+        "name": "#GRRMONDAYS android port",
+        "dev": "aplex!",
+        "description": "Grrmondays",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 22:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T20:24:16Z"
+    },
+    {
+        "url": "https://red-anarhy173.itch.io/sprunki-peppers-take",
+        "name": "Sprunki Pepper's Take",
+        "dev": "РЭД анархий",
+        "description": "My verison of Sprunki I’ve tested the game, and it should run for everyone without any lag, however, if it still runs slowly for you for some reason, try disabling a few in-game settings though...",
+        "genre": "Rhythm",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 03:50 UTC",
+        "rating": "1.7",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzUzODA5LnBuZw==/original/6XC2gB.png",
+        "tags": [
+            "Fangame",
+            "Incredibox",
+            "Music"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T20:24:18Z"
+    },
+    {
+        "url": "https://rikahelleaven.itch.io/rikas-kaiju-stomp-down",
+        "name": "Rika Helleaven's Kaiju Stomp Down",
+        "dev": "RikaHelleaven",
+        "description": "Play as an OP Otaku Kaiju Girl herself Rika Helleaven!",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 11:29 UTC",
+        "rating": "1.7",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzE3MzM4LnBuZw==/original/YTSHZl.png",
+        "tags": [
+            "Anime",
+            "Arcade",
+            "Casual",
+            "Destruction",
+            "First-Person",
+            "giantess",
+            "High Score",
+            "kaiju",
+            "mobile",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T20:24:22Z"
     }
 ]
