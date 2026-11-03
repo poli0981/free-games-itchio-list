@@ -922,5 +922,23 @@
         "name": "Sandtrix",
         "reason": "Game became paid",
         "deleted_at": "2026-11-02T02:49:51Z"
+    },
+    {
+        "url": "https://kikinndev.itch.io/lost-in-the-store",
+        "name": "Lost In The Store",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-03T02:50:25Z"
+    },
+    {
+        "url": "https://lucius39.itch.io/happy-chicken-master",
+        "name": "Happy chicken master",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-03T02:50:29Z"
+    },
+    {
+        "url": "https://thomas-tung.itch.io/day-five-v1",
+        "name": "Day Five - v1",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-03T02:50:32Z"
     }
 ]

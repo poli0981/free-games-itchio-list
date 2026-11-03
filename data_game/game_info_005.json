@@ -12058,56 +12058,6 @@
         "accessibility": []
     },
     {
-        "url": "https://kikinndev.itch.io/lost-in-the-store",
-        "name": "Lost In The Store",
-        "dev": "KikinnDev",
-        "description": "Mom left you alone at the register, what will you do?",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.4",
-        "rating_count": "11",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MTc4NTYxLnBuZw==/original/Jj0JD1.png",
-        "tags": [
-            "3D",
-            "Atmospheric",
-            "Creepy",
-            "First-Person",
-            "Horror",
-            "PSX (PlayStation)",
-            "Retro",
-            "Scary",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Xbox controller"
-        ],
-        "made_with": [
-            "Blender",
-            "Aseprite",
-            "Godot",
-            "GIMP",
-            "Paint.net"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://pyramid-unpacker.itch.io/remnonremgame",
         "name": "RemNonRem",
         "dev": "Pyramid Unpacker",
@@ -19482,31 +19432,6 @@
         "platforms": [
             "Windows"
         ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://lucius39.itch.io/happy-chicken-master",
-        "name": "Happy chicken master",
-        "dev": "lucius39",
-        "description": "Simple platformer with some interesting mechanics",
-        "genre": "Platformer",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI4MzYwMTkwLnBuZw==/original/e6sG4d.png",
-        "tags": [],
-        "platforms": [],
         "languages": [],
         "inputs": [],
         "made_with": [],

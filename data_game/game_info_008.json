@@ -1068,34 +1068,6 @@
         "updated_at": "24 October 2026 @ 20:17 UTC"
     },
     {
-        "url": "https://thomas-tung.itch.io/day-five-v1",
-        "name": "Day Five - v1",
-        "dev": "Thomas Tung",
-        "description": "N/A",
-        "genre": "Educational",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "22 October 2026 @ 13:12 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxMjA1NDA2LmpwZw==/original/HLf%2F3Q.jpg",
-        "tags": [],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-23T04:24:48Z"
-    },
-    {
         "url": "https://anttihaavikko.itch.io/carbineball",
         "name": "Carbineball",
         "dev": "anttihaavikko",
@@ -2234,8 +2206,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "23 October 2026 @ 04:08 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.0",
+        "rating_count": "2",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjgxMzQzLnBuZw==/original/8%2FHMwG.png",
@@ -2288,7 +2260,7 @@
         "publisher": "N/A",
         "release_date": "23 October 2026 @ 07:13 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjM5NTM2LnBuZw==/original/cz0XEa.png",
@@ -2313,7 +2285,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-24T08:23:44Z"
+        "added_at": "2026-10-24T08:23:44Z",
+        "updated_at": "01 November 2026 @ 00:54 UTC"
     },
     {
         "url": "https://yellow44-bedibbstudios.itch.io/caventure",
@@ -2364,8 +2337,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "23 October 2026 @ 11:45 UTC",
-        "rating": "4.0",
-        "rating_count": "3",
+        "rating": "4.2",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjQ3NDIwLnBuZw==/original/HzrF0X.png",
@@ -2406,8 +2379,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "23 October 2026 @ 16:46 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "2.7",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjU5NDUzLnBuZw==/original/3AEIIm.png",
@@ -2438,7 +2411,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-24T12:23:40Z"
+        "added_at": "2026-10-24T12:23:40Z",
+        "updated_at": "31 October 2026 @ 19:34 UTC"
     },
     {
         "url": "https://bbgames-it.itch.io/indiana-jones-and-the-temple-of-doom-unofficial",
@@ -2449,8 +2423,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 07:00 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "4.3",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjA3OTk3LnBuZw==/original/k%2Fq5xG.png",
@@ -2476,7 +2450,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-24T20:23:41Z"
+        "added_at": "2026-10-24T20:23:41Z",
+        "updated_at": "29 October 2026 @ 12:05 UTC"
     },
     {
         "url": "https://drowsyrui.itch.io/rpg-in-another-world",
@@ -2488,7 +2463,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "20",
+        "rating_count": "21",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5MzM4ODYxLmpwZw==/original/8uRJQ3.jpg",
@@ -2520,7 +2495,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "24 October 2026 @ 04:18 UTC",
+        "updated_at": "29 October 2026 @ 05:00 UTC",
         "added_at": "2026-10-24T20:23:44Z"
     },
     {
@@ -2532,8 +2507,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "17 October 2026 @ 12:44 UTC",
-        "rating": "4.5",
-        "rating_count": "2",
+        "rating": "4.7",
+        "rating_count": "3",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTg0NjQ0LnBuZw==/original/H8H%2FdC.png",
@@ -2570,7 +2545,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "24 October 2026 @ 20:32 UTC",
+        "updated_at": "02 November 2026 @ 01:05 UTC",
         "added_at": "2026-10-24T20:23:48Z"
     },
     {
@@ -2601,7 +2576,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "24 October 2026 @ 18:24 UTC",
+        "updated_at": "03 November 2026 @ 00:15 UTC",
         "added_at": "2026-10-24T20:23:52Z"
     },
     {
