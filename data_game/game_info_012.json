@@ -6742,5 +6742,318 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-02T20:24:31Z"
+    },
+    {
+        "url": "https://fomit667.itch.io/mercantileghostgirl",
+        "name": "Меркантильная Девушка Призрак",
+        "dev": "Fomit667",
+        "description": "Паразитируй на своём парне - призраке, но не расстаньтесь с ним.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 22:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjk4MjY0LnBuZw==/original/lAFtPG.png",
+        "tags": [
+            "2D",
+            "Ghosts",
+            "Pixel Art",
+            "russian",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Russian"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:19Z"
+    },
+    {
+        "url": "https://joyever.itch.io/adoptmeplease",
+        "name": "Adopt Me Please",
+        "dev": "Joyever Studio",
+        "description": "Something's been wrong at the shelter lately...",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 08:28 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzE2ODMzLnBuZw==/original/DRQggR.png",
+        "tags": [
+            "Cute",
+            "Multiple Endings",
+            "Point & Click",
+            "Psychological Horror",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:23Z"
+    },
+    {
+        "url": "https://newcanvas.itch.io/lustration-a-detective-story",
+        "name": "Lustration: A Detective Story",
+        "dev": "NC Play, chaostheorygames",
+        "description": "A noir detective game where every lead costs you something.",
+        "genre": "Puzzle",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 06:28 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTM5NDAzLnBuZw==/original/K%2BULNp.png",
+        "tags": [
+            "Atmospheric",
+            "Detective",
+            "Mystery",
+            "Narrative",
+            "Singleplayer",
+            "Story Rich",
+            "supernatural"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:27Z"
+    },
+    {
+        "url": "https://sakawayuna.itch.io/2640the-seventh-knock",
+        "name": "代號2640：第七次敲門",
+        "dev": "sakawayuna",
+        "description": "四人踏入舊宅，循著敲門聲，找出火災當晚被遺忘的真相。",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 13:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzQ3MzY1LnBuZw==/original/d1n5XW.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:30Z"
+    },
+    {
+        "url": "https://sashucity.itch.io/ds",
+        "name": "DS",
+        "dev": "sashucity",
+        "description": "yet another DS game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 07:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjcwMDk0LmpwZWc=/original/ga4nDD.jpeg",
+        "tags": [
+            "bioshock-like"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:34Z"
+    },
+    {
+        "url": "https://sleepydragonatelier.itch.io/lock-in-geek-out",
+        "name": "LOCK IN, GEEK OUT!",
+        "dev": "Sleepy Dragon Atelier",
+        "description": "We can do both!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 09:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjYwMDE2LnBuZw==/original/%2FVdhd7.png",
+        "tags": [
+            "Amare",
+            "Dating Sim",
+            "LGBT"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:36Z"
+    },
+    {
+        "url": "https://texdev-studio.itch.io/lucys-wardrobe",
+        "name": "Lucy's wardrobe",
+        "dev": "TEXDEV studio, Feezart, texatle, NastyaMem_01",
+        "description": "Помоги ей",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 22:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjkyMTQ2LnBuZw==/original/WzISss.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:39Z"
+    },
+    {
+        "url": "https://thm-n.itch.io/borrowed-skin",
+        "name": "BORROWED SKIN",
+        "dev": "THM_N, Vo1djv",
+        "description": "------------------------------------------------------------------------------ Static Horror Novel You play Lydia a 24 years old woman, in an apartment she knows by heart.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 09:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MzM2Njg0LnBuZw==/original/tkpYq%2B.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "Pixel Art",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T00:24:43Z"
+    },
+    {
+        "url": "https://blorengerhymes.itch.io/mosey-land",
+        "name": "Mosey Land",
+        "dev": "blorengerhymes",
+        "description": "An NES-style autoscroller",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 02:42 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTAwODIzLnBuZw==/original/L9Zjmv.png",
+        "tags": [
+            "No AI",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "02 November 2026 @ 01:16 UTC",
+        "added_at": "2026-11-03T00:24:47Z"
     }
 ]
