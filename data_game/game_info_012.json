@@ -7424,5 +7424,252 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-03T08:24:39Z"
+    },
+    {
+        "url": "https://alexisgelin.itch.io/idle-marble",
+        "name": "Idle Marble",
+        "dev": "Alexis",
+        "description": "Build a marble run, watch the balls roll, earn coins, upgrade everything.",
+        "genre": "Strategy",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 11:15 UTC",
+        "rating": "4.0",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzQ2OTg0LnBuZw==/original/7ctEp8.png",
+        "tags": [
+            "3D",
+            "build",
+            "Cozy",
+            "Creative",
+            "Idle",
+            "Incremental",
+            "marble",
+            "track"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T12:24:22Z"
+    },
+    {
+        "url": "https://chrisroger.itch.io/crimes-of-crow",
+        "name": "Crimes of Crow",
+        "dev": "chrisroger",
+        "description": "Run a crow crime syndicate and rob the whole city, one peck at a time.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 11:29 UTC",
+        "rating": "4.0",
+        "rating_count": "3",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTA3MjAyLnBuZw==/original/WaYb4n.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "crows",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "Indie",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T12:24:25Z"
+    },
+    {
+        "url": "https://goktug-sugar.itch.io/dusty-bones",
+        "name": "Dusty Bones",
+        "dev": "Goktug Sugar",
+        "description": "Four billion years lie under your camp.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 10:37 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzE4MjQxLnBuZw==/original/DqpTap.png",
+        "tags": [
+            "Cozy",
+            "Dinosaurs",
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T12:24:29Z"
+    },
+    {
+        "url": "https://jpenjoyplay.itch.io/tower-of-the-dragons-girth",
+        "name": "Tower of the Dragon's Girth",
+        "dev": "JPENJOYPLAY",
+        "description": "I’ve created my second game.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 19:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzM4NDY1LnBuZw==/original/%2FbkgFh.png",
+        "tags": [
+            "2D",
+            "Dragons",
+            "expantion",
+            "fat",
+            "Singleplayer",
+            "Text based",
+            "transformation",
+            "weight-gain",
+            "weightgain"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T12:24:31Z"
+    },
+    {
+        "url": "https://portgatestudios.itch.io/hexlands",
+        "name": "HexLands",
+        "dev": "Portgate Studios",
+        "description": "Roguelike city builder, set on peaceful, medieval islands. Manage your resources, synergize perks and more!",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.8",
+        "rating_count": "10",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI1ODEzMjM2LnBuZw==/original/xAFUlf.png",
+        "tags": [
+            "City Builder",
+            "Medieval",
+            "Roguelike",
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "02 November 2026 @ 18:44 UTC",
+        "added_at": "2026-11-03T12:24:34Z"
+    },
+    {
+        "url": "https://leaf-tilde.itch.io/man-made-woman",
+        "name": "Man Made Woman",
+        "dev": "Leaf Tilde",
+        "description": "April thought knew what she was signing up for when she agreed to become Nico's next \"project\". (TM/TF)",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 01:12 UTC",
+        "rating": "4.7",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzA1NjA2LnBuZw==/original/q5Yscv.png",
+        "tags": [
+            "Adult",
+            "bimbo",
+            "Erotic",
+            "medical",
+            "mobster",
+            "Romance",
+            "t4t",
+            "transformation",
+            "Transgender",
+            "transhet"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T12:24:41Z"
     }
 ]
