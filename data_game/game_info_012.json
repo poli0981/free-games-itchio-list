@@ -7055,5 +7055,134 @@
         "notes": "",
         "updated_at": "02 November 2026 @ 01:16 UTC",
         "added_at": "2026-11-03T00:24:47Z"
+    },
+    {
+        "url": "https://featurekreep.itch.io/sleigh-the-spire",
+        "name": "Sleigh the Spire 🎄🎁",
+        "dev": "FeatureKreep",
+        "description": "A Christmas-themed deckbuilder",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "31 October 2026 @ 22:45 UTC",
+        "rating": "4.7",
+        "rating_count": "19",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjY4NTMxLnBuZw==/original/lf9HZN.png",
+        "tags": [
+            "Christmas",
+            "Cozy",
+            "Cute",
+            "Deck Building",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite",
+            "Turn-based",
+            "Turn-Based Combat"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T04:24:16Z"
+    },
+    {
+        "url": "https://mxretrodev.itch.io/prehistoric-isle-md",
+        "name": "Prehistoric Isle MD",
+        "dev": "MXRetroDev",
+        "description": "Prehistoric Isle arcade port for Mega Drive / SEGA Genesis",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 16:37 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzMyNDU1LnBuZw==/original/LF8x15.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-03T04:24:19Z"
+    },
+    {
+        "url": "https://swagtopus.itch.io/outpost-alpha",
+        "name": "OUTPOST: Zombie Last Stand",
+        "dev": "Swag",
+        "description": "Hold the wall. Pick your cards. Burn, freeze and shred the horde. Every run makes you stronger.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "14",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzMxMDgzLmdpZg==/original/cKfUUg.gif",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "Retro",
+            "Roguelite",
+            "Singleplayer",
+            "Top down shooter",
+            "Tower Defense",
+            "Zombies"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "Portuguese (Portugal)",
+            "Russian",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "02 November 2026 @ 16:29 UTC",
+        "added_at": "2026-11-03T04:24:21Z"
     }
 ]
