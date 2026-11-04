@@ -8519,5 +8519,212 @@
         "notes": "",
         "updated_at": "03 November 2026 @ 23:10 UTC",
         "added_at": "2026-11-04T12:24:20Z"
+    },
+    {
+        "url": "https://digifluxstudios.itch.io/exald",
+        "name": "EXALD — Alpha 0.1",
+        "dev": "DigifluxStudios",
+        "description": "Your first day aboard humanity’s newest starship. Your last chance at an ordinary life.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 16:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzc1OTE1LmpwZw==/original/mY9R1r.jpg",
+        "tags": [
+            "Anime",
+            "Exploration",
+            "Meaningful Choices",
+            "Mechs",
+            "Sci-fi",
+            "Singleplayer",
+            "Space",
+            "Story Rich",
+            "Turn-Based Combat"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T16:23:46Z"
+    },
+    {
+        "url": "https://epic-works.itch.io/an-immortals-journey",
+        "name": "An Immortal's Journey",
+        "dev": "Epic works",
+        "description": "A second life is a rare gift, but Immortality will take considerably more work to achieve.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 00:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzgzNDU4LnBuZw==/original/HnN26Q.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "cultivation",
+            "Romance",
+            "Singleplayer",
+            "Story Rich",
+            "xianxia"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T16:23:49Z"
+    },
+    {
+        "url": "https://hpotch.itch.io/unforgettable",
+        "name": "Unforgettable",
+        "dev": "HPotch",
+        "description": "Unforgettable is best experienced without context and on a dedicated build.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 00:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzkwODUxLnBuZw==/original/JU32G1.png",
+        "tags": [
+            "2D",
+            "Hand-drawn",
+            "Mental Health",
+            "Narrative",
+            "Point & Click",
+            "Short",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Blender",
+            "Audacity",
+            "Krita"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T16:23:52Z"
+    },
+    {
+        "url": "https://larryzhao.itch.io/alchemy-merge",
+        "name": "Alchemy Merge",
+        "dev": "larryzhao",
+        "description": "Alchemy Merge is a cozy merge-and-idle game you can play right in your browser.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 02:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzkzMTM5LnBuZw==/original/e73NX3.png",
+        "tags": [
+            "2D",
+            "alchemy",
+            "Casual",
+            "Clicker",
+            "Crafting",
+            "Idle",
+            "merge",
+            "mobile",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T16:23:56Z"
+    },
+    {
+        "url": "https://nanach1i.itch.io/danganokronpa",
+        "name": "danganOKronpa",
+        "dev": "nanachiii",
+        "description": "nao me pergutnem. gente sera q se eu traduzir pro ingles alguem ve?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 23:47 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzkwNTQxLmpwZw==/original/mj7O48.jpg",
+        "tags": [
+            "Characters",
+            "danganronpa",
+            "Funny",
+            "Sprites"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T16:23:59Z"
     }
 ]
