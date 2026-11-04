@@ -8099,5 +8099,290 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-04T00:24:54Z"
+    },
+    {
+        "url": "https://combobombgames.itch.io/quiet-care",
+        "name": "Quiet Care",
+        "dev": "Combo Bomb Games",
+        "description": "Play as Zoe, left alone to take care of her younger brother Leo for 4 days. Keep him safe until your parents return.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "24 October 2026 @ 22:26 UTC",
+        "rating": "4.7",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzkxMTk0LmdpZg==/original/6Lpn1o.gif",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Creepy",
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "storygame"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 November 2026 @ 23:15 UTC",
+        "added_at": "2026-11-04T04:24:29Z"
+    },
+    {
+        "url": "https://crevasse.itch.io/eco-power-towns",
+        "name": "Eco Power Towns",
+        "dev": "Ovidiu Tepes",
+        "description": "A cozy game about green energy",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MDkxMjc0LnBuZw==/original/eR6YSF.png",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Economy"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "High-contrast",
+            "One button",
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T04:24:33Z"
+    },
+    {
+        "url": "https://edward-la-barbera.itch.io/laszlovania",
+        "name": "Laszlovania",
+        "dev": "Edward La Barbera",
+        "description": "\"This is the way we game in Tucson, Arizoña.\"",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 20:58 UTC",
+        "rating": "5.0",
+        "rating_count": "8",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTc4NTQyLnBuZw==/original/z%2BuCsD.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Nintendo DS",
+            "Horror",
+            "Metroidvania",
+            "No AI",
+            "Pixel Art",
+            "Vampire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 November 2026 @ 22:44 UTC",
+        "added_at": "2026-11-04T04:24:36Z"
+    },
+    {
+        "url": "https://grave-hour-studios.itch.io/never-made-it-home",
+        "name": "Never Made It Home",
+        "dev": "Grave Hour Studios",
+        "description": "She finished the night shift alone. The office was empty. The streets were quiet. All she had to do was walk home.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "21",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjIzMTYxLnBuZw==/original/CCvl80.png",
+        "tags": [
+            "filipino",
+            "First-Person",
+            "Godot",
+            "Horror",
+            "Mystery",
+            "Narrative",
+            "Psychological Horror",
+            "Short",
+            "Story Rich",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "21 October 2026 @ 02:16 UTC",
+        "added_at": "2026-11-04T04:24:39Z"
+    },
+    {
+        "url": "https://seenthai.itch.io/this-role-you",
+        "name": "This Role: You are Sheep",
+        "dev": "SeenThai",
+        "description": "Welcome to This Role: You Are Sheep!",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 October 2026 @ 09:25 UTC",
+        "rating": "4.5",
+        "rating_count": "14",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwOTE0OTEyLmpwZw==/original/nr6bJq.jpg",
+        "tags": [
+            "3D",
+            "Creepy",
+            "Funny",
+            "Horror",
+            "Indie",
+            "No AI",
+            "Singleplayer",
+            "Third Person",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T04:24:42Z"
+    },
+    {
+        "url": "https://tairer.itch.io/with-bruised-blood",
+        "name": "With Bruised Blood",
+        "dev": "taire",
+        "description": "Become a vampire, solve mysteries, and try not to eat your friends.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "66",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MTQyNzIxLmdpZg==/original/yzbzbV.gif",
+        "tags": [
+            "Amare",
+            "Character Customization",
+            "Horror",
+            "LGBT",
+            "Romance",
+            "Story Rich",
+            "supernatural",
+            "Text based",
+            "Twine",
+            "Vampire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 October 2026 @ 23:20 UTC",
+        "added_at": "2026-11-04T04:24:45Z"
+    },
+    {
+        "url": "https://yotogi-chan.itch.io/yua-faphero",
+        "name": "yua_faphero",
+        "dev": "yotogi_chan",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 11:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T04:24:49Z"
     }
 ]
