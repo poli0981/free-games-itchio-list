@@ -940,5 +940,47 @@
         "name": "Day Five - v1",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-11-03T02:50:32Z"
+    },
+    {
+        "url": "https://countlessbathory.itch.io/autumns-end",
+        "name": "Autumn's end (FREE UNTIL HALLOWEEN)",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-04T02:50:09Z"
+    },
+    {
+        "url": "https://mimu2026.itch.io/empty-box",
+        "name": "Empty Box-DEMO",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-04T02:50:12Z"
+    },
+    {
+        "url": "https://sasbyxan.itch.io/farm-factory-demo",
+        "name": "Farm Factory | Demo",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-04T02:50:16Z"
+    },
+    {
+        "url": "https://raxeris.itch.io/99",
+        "name": "99%",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-04T02:50:18Z"
+    },
+    {
+        "url": "https://andrealphus.itch.io/that-time-i-got-reincarnated-as-a-barbarian",
+        "name": "That Time I Got Reincarnated As A Barbarian",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-04T02:50:21Z"
+    },
+    {
+        "url": "https://nytraam.itch.io/spooky-escape",
+        "name": "A Spooky Escape (CJ)",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-04T02:50:24Z"
+    },
+    {
+        "url": "https://xeif.itch.io/kizuna-zx-spectrum",
+        "name": "KIZUNA - ZX Spectrum",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-04T02:50:27Z"
     }
 ]
