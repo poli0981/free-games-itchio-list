@@ -8384,5 +8384,140 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-04T04:24:49Z"
+    },
+    {
+        "url": "https://attiach-madge.itch.io/la-o-meurs-les-toiles",
+        "name": "La où meurs les étoiles",
+        "dev": "ATTIACH_Madge",
+        "description": "Suivez l'histoire d'une jeune fille et de son chat.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 11:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzY2Mjg0LnBuZw==/original/RsaEf1.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T12:24:10Z"
+    },
+    {
+        "url": "https://nanaroba.itch.io/he-is-the-house",
+        "name": "He is the house",
+        "dev": "Nanaroba",
+        "description": "Synopsis You have just purchased a house—one that had previously been impossible to sell.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 13:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTk3NDAwLnBuZw==/original/koByMW.png",
+        "tags": [
+            "Indie",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T12:24:13Z"
+    },
+    {
+        "url": "https://superail02.itch.io/which-one-do-you-desire",
+        "name": "Which One do You Desire?",
+        "dev": "SuperAil02",
+        "description": "You go back to your hometown and meet up with your childhood friends!???",
+        "genre": "Visual Novel",
+        "status": "On hold",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 15:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzcxMzIwLnBuZw==/original/vBxo%2Bw.png",
+        "tags": [
+            "No AI",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T12:24:17Z"
+    },
+    {
+        "url": "https://zegley.itch.io/box-out",
+        "name": "Box Out!",
+        "dev": "ZeggyGames",
+        "description": "A Logic-Based, Puzzle-Platformer Adventure",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.5",
+        "rating_count": "35",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzk2ODM3ODYuZ2lm/original/Pdq6VB.gif",
+        "tags": [
+            "2D",
+            "Co-op",
+            "couch-co-op",
+            "Multiplayer",
+            "Pixel Art",
+            "Puzzle-Platformer",
+            "Sci-fi",
+            "Two Player"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "Unity",
+            "Aseprite"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 November 2026 @ 23:10 UTC",
+        "added_at": "2026-11-04T12:24:20Z"
     }
 ]
