@@ -8726,5 +8726,42 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-04T16:23:59Z"
+    },
+    {
+        "url": "https://paintedhouses.itch.io/fleshtube",
+        "name": "Fleshtube: An Online Exclusive Series",
+        "dev": "paintedhouses",
+        "description": "[Torture Jam VN] New Episodes Every Meat Monday",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMjU1MDE3LmpwZw==/original/M8nhRi.jpg",
+        "tags": [
+            "Adult",
+            "Female Protagonist",
+            "Horror",
+            "No AI",
+            "Violent",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-04T20:25:27Z"
     }
 ]
