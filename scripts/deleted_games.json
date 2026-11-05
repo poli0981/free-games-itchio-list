@@ -982,5 +982,17 @@
         "name": "KIZUNA - ZX Spectrum",
         "reason": "Game became paid",
         "deleted_at": "2026-11-04T02:50:27Z"
+    },
+    {
+        "url": "https://nanaroba.itch.io/the-intruder",
+        "name": "The Intruder (DEMO)",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-05T02:50:12Z"
+    },
+    {
+        "url": "https://glodory-studio.itch.io/late-night",
+        "name": "Late Order",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-05T02:50:15Z"
     }
 ]
