@@ -8763,5 +8763,73 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-04T20:25:27Z"
+    },
+    {
+        "url": "https://romeo-de-brito.itch.io/chre-terre",
+        "name": "Chère Terre",
+        "dev": "Romeo DE BRITO",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "03 November 2026 @ 20:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzg0Nzg1LmpwZw==/original/a9vM5Z.jpg",
+        "tags": [
+            "2D",
+            "Colorful"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T00:24:36Z"
+    },
+    {
+        "url": "https://vampanella.itch.io/bpm",
+        "name": "B;P;M",
+        "dev": "vampanella",
+        "description": "A short visual novel",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 09:37 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODAzMjc2LnBuZw==/original/DOxzen.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "denpa",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T00:24:40Z"
     }
 ]
