@@ -9353,5 +9353,118 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-05T12:23:49Z"
+    },
+    {
+        "url": "https://dlgkrwn02.itch.io/deulsup-dogam",
+        "name": "Field Notes: Grandfather's Sanctuary · 들숲 도감",
+        "dev": "dlgkrwn02",
+        "description": "Catch Korea's wild animals alive and rebuild grandfather's sanctuary · 무료판 1장 한국 51종",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODAxNDE5LnBuZw==/original/VrrulK.png",
+        "tags": [
+            "Animals",
+            "Cozy",
+            "creature-collector",
+            "Exploration",
+            "Fishing",
+            "Management",
+            "Pixel Art",
+            "Relaxing",
+            "Top-Down",
+            "zoo"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Korean"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "05 November 2026 @ 13:34 UTC",
+        "added_at": "2026-11-05T20:24:10Z"
+    },
+    {
+        "url": "https://theslantedroom.itch.io/hold-the-tide",
+        "name": "Hold the Tide",
+        "dev": "theslantedroom",
+        "description": "Keep your village alive while the sea keeps rising.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "05 November 2026 @ 02:22 UTC",
+        "rating": "3.5",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODQwMTEzLnBuZw==/original/ubrwfg.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T20:24:14Z"
+    },
+    {
+        "url": "https://garsall0p.itch.io/travelsketchbook2026",
+        "name": "_travelsketchbook2026",
+        "dev": "Ivan Papiol",
+        "description": "⋆༺ The perfectly pocket-sized cardboard sketchbook that I dragged everywhere for a few months during 2026 ༻⋆ (web and mobile friendly thanks to Jeremy Oduber's Electric Zine Maker Reader )",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 13:10 UTC",
+        "rating": "5.0",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzIwNzkwLnBuZw==/original/lxcj67.png",
+        "tags": [
+            "sketchbook"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T20:24:18Z"
     }
 ]
