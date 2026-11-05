@@ -9147,5 +9147,211 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-05T08:23:56Z"
+    },
+    {
+        "url": "https://brokenbytes.itch.io/fix-it-felix-jr-amiga",
+        "name": "Fix-It Felix Jr. - Amiga",
+        "dev": "brokenbytes",
+        "description": "The arcade adventure comes to the Commodore Amiga!",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 19:14 UTC",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODI3MTk0LnBuZw==/original/c07LjA.png",
+        "tags": [
+            "2D",
+            "Amiga",
+            "ocs",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T12:23:34Z"
+    },
+    {
+        "url": "https://fayer.itch.io/muertitos",
+        "name": "Muertitos",
+        "dev": "Fáyer🔥",
+        "description": "Muertitos, a matching game to die for!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 20:05 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzkxMzIzLnBuZw==/original/kQwOC%2F.png",
+        "tags": [
+            "2D",
+            "match-3"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T12:23:37Z"
+    },
+    {
+        "url": "https://fayer.itch.io/palabraz",
+        "name": "Palabraz",
+        "dev": "Fáyer🔥",
+        "description": "Un juego de destreza ortográfica",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 20:04 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODI0NDE1LnBuZw==/original/SmnQQD.png",
+        "tags": [
+            "Arcade",
+            "spanish",
+            "Word game"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T12:23:39Z"
+    },
+    {
+        "url": "https://numberoneskull.itch.io/shmurgendurgenburgerdungen-reuploaded-all-phases",
+        "name": "Shmurgendurgenburgerdungen reuploaded all phases",
+        "dev": "NumberOneSkull",
+        "description": "Youtube https://www.youtube.com/@NumberOneSkull Facebook https://www.facebook.com/share/14e5e4FRwPS/ Twitter https://x.com/NumberOneSkull İnstagram...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 11:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvNTI5ODI0OS8zMTgwODAzOC5wbmc=/347x500/yGZUWT.png",
+        "tags": [
+            "Baldi's Basics",
+            "Dogs",
+            "numberoneskull",
+            "tch"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T12:23:41Z"
+    },
+    {
+        "url": "https://tarpingames.itch.io/multi-purpose-wheel-incremental",
+        "name": "Multi Purpose Wheel Incremental",
+        "dev": "TarpinGames",
+        "description": "Rotate everything in this new spin on the Incremental genre!",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 14:05 UTC",
+        "rating": "4.1",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODczMzM5LnBuZw==/original/vQ7hVH.png",
+        "tags": [
+            "Casual",
+            "Comedy",
+            "Idle",
+            "Incremental",
+            "Isometric",
+            "Management",
+            "Minimalist",
+            "Physics"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T12:23:46Z"
+    },
+    {
+        "url": "https://thelands.itch.io/ninja",
+        "name": "Ninja",
+        "dev": "thelands",
+        "description": "A pixel-art stealth game through the real history of Japan's ninja — from the Tenshō Iga War (1578) to the Black Ships (1854).",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 17:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODIzODMzLnBuZw==/original/bB4SD5.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T12:23:49Z"
     }
 ]
