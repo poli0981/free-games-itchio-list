@@ -8907,5 +8907,245 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-05T04:23:41Z"
+    },
+    {
+        "url": "https://dizzyrpy.itch.io/the-plot-twist",
+        "name": "The Plot Twist",
+        "dev": "dizzy.rpy",
+        "description": "Should you trust them?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 17:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODE2OTQ0LnBuZw==/original/%2FCd5T0.png",
+        "tags": [
+            "Crime",
+            "Gay",
+            "Mental Health",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Romance",
+            "Third Person"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T08:23:38Z"
+    },
+    {
+        "url": "https://fitafeet.itch.io/dissonant-friendship",
+        "name": "Dissonant Friendship",
+        "dev": "fitafeet",
+        "description": "\"Dissonant Friendship\" Bertujuan untuk meningkatkan berpikir kritis player dengan cara membedakan opini dan fakta dari cerita toxic dalam game ini; Terutama manipulasi.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 03:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzk2NTQzLnBuZw==/original/756Jlc.png",
+        "tags": [
+            "2D",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T08:23:42Z"
+    },
+    {
+        "url": "https://h4ru3614.itch.io/project-a",
+        "name": "Project-A",
+        "dev": "H4RU3614, derpoid",
+        "description": "You have 10-seconds to search the clinic before the Doctor arrives",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 14:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODEwMzA1LnBuZw==/original/APQMnb.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Horror",
+            "Multiple Endings",
+            "No AI",
+            "Point & Click",
+            "Psychological Horror",
+            "RPG Maker",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Blender",
+            "RPG Maker",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T08:23:45Z"
+    },
+    {
+        "url": "https://muuuzita.itch.io/de-mame-para-chika",
+        "name": "De: Mamãe, Para: Chika",
+        "dev": "MUUUzita",
+        "description": "Uma nova cidade, novos encontros e uma jornada de descobertas sobre crescer e encontrar a si mesma.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 09:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODA0NjY0LnBuZw==/original/PTEpoo.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Indie",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T08:23:49Z"
+    },
+    {
+        "url": "https://saifrel.itch.io/underhand",
+        "name": "Underhand [BETA]",
+        "dev": "Saifrel",
+        "description": "A quiet Tokyo street. A new apartment. A student who knows far too much about you",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 21:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODMxNzc4LnBuZw==/original/VZzcBO.png",
+        "tags": [
+            "3D",
+            "Anime",
+            "Atmospheric",
+            "Exploration",
+            "Horror",
+            "japan",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Story Rich",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T08:23:52Z"
+    },
+    {
+        "url": "https://sommuuk.itch.io/batyr",
+        "name": "Batyr — Tatar Fairy Tale",
+        "dev": "Sommuuk",
+        "description": "A magical adventure through the world of Tatar fairy tales.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 20:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODI5MTUzLnBuZw==/original/8koNFa.png",
+        "tags": [
+            "2D",
+            "Cartoon",
+            "Fairy Tale",
+            "Folklore",
+            "Singleplayer",
+            "tatar"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-05T08:23:56Z"
     }
 ]
