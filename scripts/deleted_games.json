@@ -994,5 +994,11 @@
         "name": "Late Order",
         "reason": "Game became paid",
         "deleted_at": "2026-11-05T02:50:15Z"
+    },
+    {
+        "url": "https://lemos.itch.io/lure-of-the-vulpine-voice",
+        "name": "Lure of the Vulpine Voice",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-06T02:49:50Z"
     }
 ]
