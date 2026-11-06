@@ -10699,5 +10699,91 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-06T16:24:14Z"
+    },
+    {
+        "url": "https://debuz.itch.io/kritsana",
+        "name": "Kritsana",
+        "dev": "Debuz Studio",
+        "description": "Mental Illness... or Something Worse?",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "41",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NjM5NzQ3LnBuZw==/original/JZUdvE.png",
+        "tags": [
+            "anomaly",
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "Horror",
+            "Point & Click",
+            "Psychological Horror",
+            "Scary",
+            "Short",
+            "Spooky"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Thai"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 08:47 UTC",
+        "added_at": "2026-11-06T20:23:37Z"
+    },
+    {
+        "url": "https://nerderror.itch.io/stone-idle",
+        "name": "Stone Idle",
+        "dev": "nerdError",
+        "description": "Touch the stone, enjoy the results..",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "06 November 2026 @ 07:35 UTC",
+        "rating": "2.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODg2MDEwLnBuZw==/original/4xCtDx.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-06T20:23:41Z"
     }
 ]
