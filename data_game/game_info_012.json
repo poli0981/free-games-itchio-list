@@ -9466,5 +9466,90 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-05T20:24:18Z"
+    },
+    {
+        "url": "https://godaughtr.itch.io/brainsharing",
+        "name": "BRAINSHARING",
+        "dev": "Vesta Zara",
+        "description": "One hundred scabs singing in unison (18+)",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 November 2026 @ 04:25 UTC",
+        "rating": "5.0",
+        "rating_count": "16",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjU4OTE4LnBuZw==/original/WOVDoz.png",
+        "tags": [
+            "Adult",
+            "Horror",
+            "LGBT",
+            "mlm",
+            "No AI",
+            "Psychological Horror",
+            "Transgender",
+            "transmasc",
+            "Yaoi"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-06T00:23:44Z"
+    },
+    {
+        "url": "https://dominoclub.itch.io/erostasis",
+        "name": "EROSTASIS",
+        "dev": "DOMINO CLUB, candle, Beck Michalak",
+        "description": "body horror meet n fuck",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "436",
+        "average_session": "About a half-hour",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwMjMwOTg5LnBuZw==/original/XjBOxk.png",
+        "tags": [
+            "Adult",
+            "biopunk",
+            "Cyberpunk",
+            "Erotic",
+            "Horror",
+            "Monsters",
+            "NSFW",
+            "Sci-fi",
+            "sex"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-06T00:23:48Z"
     }
 ]
