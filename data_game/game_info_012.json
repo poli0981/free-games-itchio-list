@@ -9552,5 +9552,162 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-06T00:23:48Z"
+    },
+    {
+        "url": "https://deeddomanion.itch.io/deed-dominion",
+        "name": "Deed & Dominion",
+        "dev": "DEEDDOMANION",
+        "description": "Build your real estate empire in a living city.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 November 2026 @ 11:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODU2MjMyLnBuZw==/original/CPt602.png",
+        "tags": [
+            "3D",
+            "building",
+            "City Builder",
+            "Economy",
+            "Indie",
+            "Management",
+            "real-estate",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-06T04:23:59Z"
+    },
+    {
+        "url": "https://nerderror.itch.io/fruit-clicker",
+        "name": "Fruit Clicker",
+        "dev": "nerdError",
+        "description": "Cozy and juicy clicker game with beautiful visuals",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "05 November 2026 @ 13:34 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODU1OTYwLnBuZw==/original/jvGD4U.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Cozy",
+            "Idle",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-06T04:24:03Z"
+    },
+    {
+        "url": "https://notsospecialgames.itch.io/testimonium",
+        "name": "TESTIMONIUM",
+        "dev": "notsospecialgames",
+        "description": "A VHS descent into ritual and rot.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "01 July 2025 @ 07:11 UTC",
+        "rating": "4.4",
+        "rating_count": "68",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDkyNTEwLnBuZw==/original/YUO6LD.png",
+        "tags": [
+            "Creepy",
+            "First-Person",
+            "Horror",
+            "PSX (PlayStation)",
+            "Psychological Horror",
+            "Scary",
+            "Short",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "05 November 2026 @ 14:17 UTC",
+        "added_at": "2026-11-06T04:24:06Z"
+    },
+    {
+        "url": "https://soodarong.itch.io/twisty-infinity",
+        "name": "Twisty Infinity",
+        "dev": "soodarong",
+        "description": "Buy a twisty puzzle, watch it solve itself, and keep going until the cubes fill the universe.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "05 November 2026 @ 05:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODQ0MDYwLnBuZw==/original/8JT3z9.png",
+        "tags": [
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-06T04:24:09Z"
     }
 ]
