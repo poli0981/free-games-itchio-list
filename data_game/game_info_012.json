@@ -11400,5 +11400,294 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-07T08:24:12Z"
+    },
+    {
+        "url": "https://ahiddendev.itch.io/hidden",
+        "name": "SHADOW STALKER",
+        "dev": "HiddenDev",
+        "description": "Now on a custom engine. No Steam Required.",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "8",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIxMDEyNzUyLmpwZw==/original/%2BKKOj%2B.jpg",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "First-Person",
+            "Halloween",
+            "Horror",
+            "Multiplayer",
+            "Spooky",
+            "Unreal Engine"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "Adobe Photoshop",
+            "Substance Painter & designer",
+            "Krita"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 17:23 UTC",
+        "added_at": "2026-11-07T12:23:40Z"
+    },
+    {
+        "url": "https://depra.itch.io/bleeding",
+        "name": "BLEEDING",
+        "dev": "Depra",
+        "description": "Hardcore dieselpunk FPS about blue-collar worker with combat prosthetic anvil who tears enemies apart unstoppable force",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "19",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3MDM1OTgyLnBuZw==/original/OZX19o.png",
+        "tags": [
+            "Doom",
+            "Fast-Paced",
+            "First-Person",
+            "FPS",
+            "Gore",
+            "No AI",
+            "Singleplayer",
+            "Violent"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 19:19 UTC",
+        "added_at": "2026-11-07T12:23:44Z"
+    },
+    {
+        "url": "https://leerier.itch.io/symptoms-of-devotion",
+        "name": "Symptoms of Devotion [BETA TEST]",
+        "dev": "Shitten",
+        "description": "Some illnesses are harder to recover from than others.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "06 November 2026 @ 23:03 UTC",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTEzNjg0LnBuZw==/original/%2FuDdFx.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-07T12:23:46Z"
+    },
+    {
+        "url": "https://lewarts.itch.io/the-adventures-of-lewart",
+        "name": "The Adventures Of Lewart",
+        "dev": "LewArts",
+        "description": "a gameboy game about lewart and a bunch of jaboody memes",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzY3ODgxMjAucG5n/original/HgOwQg.png",
+        "tags": [
+            "analogue",
+            "analogue-pocket",
+            "Comedy",
+            "Game Boy",
+            "Game Boy Advance",
+            "Homebrew",
+            "jaboody",
+            "lewart",
+            "pocket",
+            "Retro"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 20:24 UTC",
+        "added_at": "2026-11-07T12:23:50Z"
+    },
+    {
+        "url": "https://r-f.itch.io/tower-defense",
+        "name": "Tower-Defense",
+        "dev": "R-F",
+        "description": "Tower Defense is a simple game. The goal is to​ kill all the enemies before they reach the end of the path.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 April 2017 @ 22:00 UTC",
+        "rating": "3.4",
+        "rating_count": "9",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1hZ2UvMTI2MjU3LzU4NjI5NS5wbmc=/original/puZaFr.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Godot",
+            "High Score",
+            "Top-Down",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 21:16 UTC",
+        "added_at": "2026-11-07T12:23:54Z"
+    },
+    {
+        "url": "https://red-river-modding.itch.io/sorensen-welding-24r22-precision-planter",
+        "name": "Sorensen Welding 24R22 Precision planter",
+        "dev": "Red River Modding",
+        "description": "FS25",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "06 November 2026 @ 17:15 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTAyMzU4LnBuZw==/original/sA1vrr.png",
+        "tags": [
+            "Farming Simulator",
+            "Farming Simulator 25"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-07T12:23:57Z"
+    },
+    {
+        "url": "https://trey2k23.itch.io/martin-no-filter-fighters-unofficial-fan-game",
+        "name": "Martin: No Filter Fighters (Unofficial Fan Game).",
+        "dev": "Trey2k23",
+        "description": "TWO NEW FIGHTERS: Hustle Man and Ol' Otis 🔥 Hustle Man opens up shop, throws free-range chicken and plays \"Pick Up the Pieces\" on a kazoo sax.",
+        "genre": "Fighting",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "60",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNTI4NzQwLmpwZw==/original/vAGCvh.jpg",
+        "tags": [
+            "2D",
+            "Arcade",
+            "browser",
+            "Comedy",
+            "Fangame",
+            "Funny",
+            "Local multiplayer",
+            "Multiplayer",
+            "Versus"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "07 November 2026 @ 01:11 UTC",
+        "added_at": "2026-11-07T12:24:00Z"
     }
 ]
