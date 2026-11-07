@@ -1000,5 +1000,17 @@
         "name": "Lure of the Vulpine Voice",
         "reason": "Game became paid",
         "deleted_at": "2026-11-06T02:49:50Z"
+    },
+    {
+        "url": "https://star2dfd.itch.io/starlock",
+        "name": "StarLock v2.2.12",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-07T02:49:35Z"
+    },
+    {
+        "url": "https://hotpink.itch.io/cryptid-park",
+        "name": "Cryptid Park",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-07T02:49:40Z"
     }
 ]

@@ -194,11 +194,11 @@
         "dev": "Jungle Pixel Studio",
         "description": "Vacuum, sort and count down a dragon's hoard of 100,000 treasures.",
         "genre": "Simulation",
-        "status": "Released",
+        "status": "In development",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 05:33 UTC",
-        "rating": "4.5",
-        "rating_count": "26",
+        "rating": "4.2",
+        "rating_count": "65",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDIyOTE5LnBuZw==/original/w2zbaM.png",
@@ -220,13 +220,15 @@
         "made_with": [
             "Unity"
         ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Text"
+        ],
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T04:24:21Z",
-        "updated_at": "29 October 2026 @ 01:21 UTC"
+        "updated_at": "06 November 2026 @ 16:51 UTC"
     },
     {
         "url": "https://jaco-van-hemert.itch.io/eldritch-apocalypse",
@@ -237,8 +239,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.0",
-        "rating_count": "5",
+        "rating": "3.7",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI4NzUyOTk5LmdpZg==/original/fWLWxi.gif",
@@ -2207,7 +2209,7 @@
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 12:00 UTC",
         "rating": "5.0",
-        "rating_count": "3",
+        "rating_count": "4",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDI0NzU5LnBuZw==/original/25wyAY.png",
@@ -2245,7 +2247,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T08:24:11Z",
-        "updated_at": "29 October 2026 @ 02:12 UTC"
+        "updated_at": "05 November 2026 @ 10:49 UTC"
     },
     {
         "url": "https://endpaper.itch.io/fairs-fair-prologue",
@@ -2256,8 +2258,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 17:59 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjYzNDIyLnBuZw==/original/wZUC6m.png",
@@ -2290,8 +2292,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 07:42 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDIxNTAzLnBuZw==/original/sYzrb%2F.png",
@@ -2309,7 +2311,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T08:24:16Z"
+        "added_at": "2026-10-28T08:24:16Z",
+        "updated_at": "04 November 2026 @ 21:00 UTC"
     },
     {
         "url": "https://harper-crane.itch.io/said-the-swan-to-the-rook",
@@ -2345,7 +2348,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T08:24:19Z"
+        "added_at": "2026-10-28T08:24:19Z",
+        "updated_at": "04 November 2026 @ 20:44 UTC"
     },
     {
         "url": "https://icedlemons.itch.io/clowntastic-romance",
@@ -2356,8 +2360,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 21:03 UTC",
-        "rating": "5.0",
-        "rating_count": "5",
+        "rating": "4.8",
+        "rating_count": "33",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDUxMDMwLnBuZw==/original/45R5VC.png",
@@ -2537,8 +2541,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 19:39 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "4.0",
+        "rating_count": "1",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjA3NDE3LnBuZw==/original/GYOyc6.png",
@@ -2617,8 +2621,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "12 October 2026 @ 05:07 UTC",
-        "rating": "4.2",
-        "rating_count": "5",
+        "rating": "4.0",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNzg2ODQyLmpwZw==/original/3kGP0u.jpg",
@@ -2910,7 +2914,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "292",
+        "rating_count": "293",
         "average_session": "About a half-hour",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzI2MTQ0NjIuZ2lm/original/Ezf9e0.gif",
@@ -3366,8 +3370,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "3",
+        "rating": "4.5",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvNjk4MjkvNTExMDEwLnBuZw==/original/jcYl5o.png",
@@ -3440,7 +3444,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "489",
+        "rating_count": "490",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIwNzkxNTcuZ2lm/original/Zmc7TN.gif",
@@ -4020,12 +4024,13 @@
         "made_with": [
             "Unity"
         ],
-        "ai_disclosure": "N/A",
+        "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T08:27:23Z"
+        "added_at": "2026-10-28T08:27:23Z",
+        "updated_at": "03 November 2026 @ 12:25 UTC"
     },
     {
         "url": "https://cowthing.itch.io/frog-smith",
@@ -4153,7 +4158,7 @@
         "publisher": "N/A",
         "release_date": "08 February 2014 @ 23:00 UTC",
         "rating": "4.9",
-        "rating_count": "1166",
+        "rating_count": "1169",
         "average_session": "A few hours",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzExNTMyODk5LmpwZw==/original/Iti70A.jpg",
@@ -7384,7 +7389,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "94",
+        "rating_count": "95",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE2NzgxNTc1LnBuZw==/original/FRG%2B7x.png",
@@ -7594,7 +7599,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "178",
+        "rating_count": "179",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvMzA1MDc3LzE0OTYzMzkucG5n/original/cqOdXi.png",
@@ -8266,7 +8271,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "210",
+        "rating_count": "211",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE2MjI5ODE2LmdpZg==/original/vaNJEi.gif",
@@ -8477,7 +8482,7 @@
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 12:14 UTC",
         "rating": "4.2",
-        "rating_count": "4",
+        "rating_count": "13",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzI2NDg1LnBuZw==/original/TsDGTG.png",
@@ -8507,7 +8512,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T12:24:25Z",
-        "updated_at": "29 October 2026 @ 03:16 UTC"
+        "updated_at": "31 October 2026 @ 00:09 UTC"
     },
     {
         "url": "https://mismatched-wings.itch.io/affectionadorationabsolution",
@@ -8518,8 +8523,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "43",
+        "rating": "4.8",
+        "rating_count": "44",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIzNjExMDI0LnBuZw==/original/mrx8tE.png",
@@ -8731,7 +8736,7 @@
         "publisher": "N/A",
         "release_date": "12 September 2025 @ 21:00 UTC",
         "rating": "4.7",
-        "rating_count": "182",
+        "rating_count": "183",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIzMTEzOTIzLnBuZw==/original/LiMAqM.png",
@@ -9320,8 +9325,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "26 October 2026 @ 13:19 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzkxNzMzLnBuZw==/original/4fILkz.png",
@@ -9379,6 +9384,7 @@
         "made_with": [],
         "ai_disclosure": "AI Assisted",
         "ai_content": [
+            "Graphics",
             "Sounds",
             "Text"
         ],
@@ -9386,7 +9392,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T16:24:16Z",
-        "updated_at": "29 October 2026 @ 03:11 UTC"
+        "updated_at": "06 November 2026 @ 08:19 UTC"
     },
     {
         "url": "https://drawnouttravels.itch.io/down-the-forest-path",
@@ -9473,8 +9479,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 21:26 UTC",
-        "rating": "4.8",
-        "rating_count": "5",
+        "rating": "4.9",
+        "rating_count": "8",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzM5NjA5LnBuZw==/original/5nZGxj.png",
@@ -9506,7 +9512,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T16:24:27Z"
+        "added_at": "2026-10-28T16:24:27Z",
+        "updated_at": "31 October 2026 @ 21:25 UTC"
     },
     {
         "url": "https://nezowo.itch.io/gacha-gotcha",
@@ -9546,7 +9553,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T16:24:31Z"
+        "added_at": "2026-10-28T16:24:31Z",
+        "updated_at": "02 November 2026 @ 03:29 UTC"
     },
     {
         "url": "https://schooldaze.itch.io/high-school-lunch-simulator",
@@ -9627,7 +9635,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T16:24:38Z"
+        "added_at": "2026-10-28T16:24:38Z",
+        "updated_at": "01 November 2026 @ 15:26 UTC"
     },
     {
         "url": "https://the-l0bster.itch.io/pocket-platformer",
@@ -9639,7 +9648,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "87",
+        "rating_count": "88",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzcyMDI4NTAucG5n/original/746zRP.png",
@@ -9676,8 +9685,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 15:40 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "4.8",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDQzNjYzLnBuZw==/original/IwfNfj.png",
@@ -9703,7 +9712,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-28T20:23:59Z"
+        "added_at": "2026-10-28T20:23:59Z",
+        "updated_at": "30 October 2026 @ 13:58 UTC"
     },
     {
         "url": "https://caramelgames.itch.io/another-christmas-game",
@@ -9714,8 +9724,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.3",
-        "rating_count": "10",
+        "rating": "4.1",
+        "rating_count": "11",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE0MzgwNjIzLnBuZw==/original/INJPYm.png",
@@ -9749,7 +9759,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "28 October 2026 @ 02:53 UTC",
+        "updated_at": "04 November 2026 @ 14:22 UTC",
         "added_at": "2026-10-28T20:24:02Z"
     },
     {
@@ -9761,8 +9771,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "27 October 2026 @ 19:14 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "4.9",
+        "rating_count": "9",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDM5ODM2LnBuZw==/original/1QjKya.png",
@@ -9790,11 +9800,14 @@
         "ai_content": [
             "Code"
         ],
-        "accessibility": [],
+        "accessibility": [
+            "Subtitles",
+            "Interactive tutorial"
+        ],
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-28T20:24:05Z",
-        "updated_at": "29 October 2026 @ 01:22 UTC"
+        "updated_at": "06 November 2026 @ 16:48 UTC"
     },
     {
         "url": "https://hundredrabbits.itch.io/catpot",
@@ -9875,7 +9888,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "165",
+        "rating_count": "166",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE0MDU3NDcxLnBuZw==/original/zEHKks.png",
@@ -10441,7 +10454,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "21",
+        "rating_count": "22",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzQ1MzY0MTEucG5n/original/NGJMkH.png",
@@ -11106,7 +11119,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "58",
+        "rating_count": "59",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE1NDA3OTE2LmdpZg==/original/ENkXdr.gif",
@@ -11593,8 +11606,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "34",
+        "rating": "4.8",
+        "rating_count": "35",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE0OTQ3NjA4LnBuZw==/original/bq3bWb.png",
@@ -11920,7 +11933,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.6",
-        "rating_count": "148",
+        "rating_count": "154",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE1MTI2OTM5LmdpZg==/original/Rfglig.gif",
@@ -11951,7 +11964,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "24 October 2026 @ 03:00 UTC",
+        "updated_at": "07 November 2026 @ 02:41 UTC",
         "added_at": "2026-10-28T20:28:15Z"
     },
     {
@@ -11998,7 +12011,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "45",
+        "rating_count": "46",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzEzNjE5MDE0LnBuZw==/original/xQuPY%2F.png",
@@ -12407,7 +12420,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "5.0",
-        "rating_count": "3",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE0NTk1NDg5LnBuZw==/original/jHJzJl.png",
@@ -12426,7 +12439,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "24 October 2026 @ 12:31 UTC",
+        "updated_at": "03 November 2026 @ 19:11 UTC",
         "added_at": "2026-10-28T20:28:55Z"
     },
     {
@@ -13195,7 +13208,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "14 October 2026 @ 00:20 UTC",
+        "updated_at": "06 November 2026 @ 02:12 UTC",
         "added_at": "2026-10-28T20:30:12Z"
     },
     {
