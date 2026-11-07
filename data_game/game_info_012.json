@@ -11689,5 +11689,149 @@
         "notes": "",
         "updated_at": "07 November 2026 @ 01:11 UTC",
         "added_at": "2026-11-07T12:24:00Z"
+    },
+    {
+        "url": "https://game-center-mayonaka.itch.io/happy-together",
+        "name": "【○が消えた入り江】Happy Together 【二次創作】",
+        "dev": "Game Center Mayonaka",
+        "description": "映画『○が消えた入り江』ファンゲーム",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "06 November 2026 @ 21:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzkyMjg2LnBuZw==/original/1BPKFD.png",
+        "tags": [
+            "Fangame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-07T16:24:40Z"
+    },
+    {
+        "url": "https://liliana666.itch.io/the-stars-are-too-far-away",
+        "name": "The Stars Are Too Far Away",
+        "dev": "Liliana Lucifer",
+        "description": "A dreamer realized their hopes were mere pipe dreams",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 05:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTIzNzU2LnBuZw==/original/4oWiN%2B.png",
+        "tags": [
+            "Fairy Tale"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-07T16:24:46Z"
+    },
+    {
+        "url": "https://robinloverproduction.itch.io/my-femboy-roommate-epilogue",
+        "name": "My Femboy Roommate Epilogue",
+        "dev": "Robin Lover",
+        "description": "you have just helped get your roommate's stalker arrest and now the two of you are dating, are you able to date him for a year and complete the game, or will you be a terrible boyfriend and face...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 01:18 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTE3MDU3LnBuZw==/original/u1%2BwD8.png",
+        "tags": [
+            "2D",
+            "bl",
+            "Romance",
+            "vn",
+            "yoai"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-07T16:24:52Z"
+    },
+    {
+        "url": "https://t1zm.itch.io/kochou-no-ami",
+        "name": "胡蝶の網 -Digital Psyche-",
+        "dev": "t1zm",
+        "description": "噂が、現実を書き換える。",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "06 November 2026 @ 13:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODkyMTQ2LnBuZw==/original/OG9YmU.png",
+        "tags": [
+            "Atmospheric",
+            "gender-bender",
+            "Horror",
+            "Mystery",
+            "Psychological Horror",
+            "Short",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Japanese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-07T16:24:59Z"
     }
 ]
