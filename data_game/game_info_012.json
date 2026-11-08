@@ -12230,5 +12230,483 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-08T08:24:10Z"
+    },
+    {
+        "url": "https://goatyflower.itch.io/please-i-dont-want-endless-love-anymore",
+        "name": "Please I dont want endless love anymore!",
+        "dev": "GoatyFlower",
+        "description": "ABOUT THE GAME Two adventurers.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 22:34 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTUwNTQwLnBuZw==/original/dBBJde.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Fantasy",
+            "Female Protagonist",
+            "LGBTQIA",
+            "Otome",
+            "Queer",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:32Z"
+    },
+    {
+        "url": "https://gutsydemise.itch.io/soul-bound",
+        "name": "Soul Bound",
+        "dev": "Gutsy",
+        "description": "short horror VN",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 10:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTU3MTE2LnBuZw==/original/ek0kxC.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "No AI",
+            "Survival Horror",
+            "vtuber"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:36Z"
+    },
+    {
+        "url": "https://jflecole.itch.io/neon-debt",
+        "name": "Neon Debt",
+        "dev": "jflecole",
+        "description": "A broke father, a stolen AI in his skull, a city that sells minds. Card fights, hard choices, 3 endings.",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 12:22 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTU4NTk2LnBuZw==/original/NHQcaA.png",
+        "tags": [
+            "Cyberpunk",
+            "Solo RPG"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:38Z"
+    },
+    {
+        "url": "https://kira-ith.itch.io/etoile-rouge",
+        "name": "Étoile rouge",
+        "dev": "Kira",
+        "description": "To truly understand someone, should you use your head or your heart?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 16:09 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTMzMDY5LnBuZw==/original/aNTFnf.png",
+        "tags": [
+            "Boys' Love",
+            "Gay",
+            "LGBT",
+            "LGBTQIA",
+            "Mystery",
+            "No AI",
+            "Queer",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Chinese"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:41Z"
+    },
+    {
+        "url": "https://manyface.itch.io/the-great-gate-of-black-stone",
+        "name": "The Great Gate of Black Stone",
+        "dev": "manyface",
+        "description": "And you are everything I want and you are everything I need.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 22:04 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTUzODAzLnBuZw==/original/lkuPnd.png",
+        "tags": [
+            "Female Protagonist",
+            "mixed-media",
+            "plural"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:43Z"
+    },
+    {
+        "url": "https://niaauoo.itch.io/datelinetdb",
+        "name": "Dateline Tdb",
+        "dev": "niaauoo",
+        "description": "Jogo fanmade do canal Turma da Batatinha ＜（＾－＾）＞",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 01:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTU5NDkxLmpwZWc=/original/B1G1bB.jpeg",
+        "tags": [
+            "Dating Sim",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:46Z"
+    },
+    {
+        "url": "https://wolfberry-f.itch.io/lighter",
+        "name": "LIGHTER",
+        "dev": "Wolfberry-F",
+        "description": "To those loves entombed in ice and snow.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 22:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQxOTIzLnBuZw==/original/hgPxPn.png",
+        "tags": [
+            "Atmospheric",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:52Z"
+    },
+    {
+        "url": "https://cozy-games-from-the-hell.itch.io/captwist",
+        "name": "Captwist",
+        "dev": "Cozy Games From The Hell",
+        "description": "Flip Caps. Get Rich.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 15:00 UTC",
+        "rating": "4.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTM4OTMxLmpwZw==/original/tbAraY.jpg",
+        "tags": [
+            "2D",
+            "Casual",
+            "gambling",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "No AI",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:54Z"
+    },
+    {
+        "url": "https://elite-nameless.itch.io/datatheft",
+        "name": "DATATHEFT",
+        "dev": "elite_nameless",
+        "description": "DATATHEFT takes place in an FNTD (Five Night Tower Defence, on Roblox) AU where an infection has broken out.",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 18:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQ3MDc1LnBuZw==/original/%2FCL0bv.png",
+        "tags": [
+            "Five Nights at Freddy's",
+            "Horror",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:23:57Z"
+    },
+    {
+        "url": "https://gatotin024.itch.io/shovikmiheart",
+        "name": "dress up fangame",
+        "dev": "gatotin024",
+        "description": "tw: shotacon my first attempt at making a dress-up game",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 05:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY1OTc2LnBuZw==/original/9EnWdd.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:24:00Z"
+    },
+    {
+        "url": "https://level102.itch.io/echoloc",
+        "name": "ECHOLOC",
+        "dev": "level102",
+        "description": "You are blind. Click your tongue to see. They hear it too.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 19:13 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTA4MjM0LnBuZw==/original/k%2Bva%2Bs.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Horror",
+            "maze",
+            "Roguelite"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Arabic",
+            "Bengali",
+            "Catalan; Valencian",
+            "German",
+            "English",
+            "Esperanto",
+            "Spanish; Castilian",
+            "Basque",
+            "French",
+            "Galician",
+            "Hindi",
+            "Indonesian",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Mongolian",
+            "Marathi (Marāṭhī)",
+            "Malay",
+            "Nepali",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)",
+            "Romanian Moldavian Moldovan",
+            "Russian",
+            "Sinhala Sinhalese",
+            "Swahili",
+            "Tamil",
+            "Telugu",
+            "Turkish",
+            "Urdu",
+            "Vietnamese",
+            "Chinese",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:24:03Z"
+    },
+    {
+        "url": "https://paledoptera.itch.io/no-cats",
+        "name": "HERE COME THE CATS",
+        "dev": "Paledoptera",
+        "description": "A Deltarune fan-fight against a hunting pack of cats.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 21:59 UTC",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQyOTcwLnBuZw==/original/vQKg8n.png",
+        "tags": [
+            "Arcade",
+            "deltarune",
+            "Experimental",
+            "Fangame",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T20:24:07Z"
     }
 ]
