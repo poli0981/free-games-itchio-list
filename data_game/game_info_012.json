@@ -11802,5 +11802,433 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-07T20:24:49Z"
+    },
+    {
+        "url": "https://ashthedreamchaser.itch.io/immortal-huntress",
+        "name": "Immortal Huntress",
+        "dev": "Ash TheDreamChaser",
+        "description": "Not every prey is a safe bet for a vampire just before dawn.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 20:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQ3ODEzLmpwZw==/original/Q1YvEF.jpg",
+        "tags": [
+            "ebook",
+            "Fantasy",
+            "Narrative",
+            "routevn",
+            "Short",
+            "Urban",
+            "Vampire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:38Z"
+    },
+    {
+        "url": "https://edenringgo.itch.io/recloverschool-chapter1",
+        "name": "ReCloverSchool Chapter1",
+        "dev": "EdenRingGO",
+        "description": "fan-visual novel game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 10:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTI4OTAzLmpwZw==/original/DJ2Rqe.jpg",
+        "tags": [
+            "Fangame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:42Z"
+    },
+    {
+        "url": "https://gremlintheodd.itch.io/maggies-bad-day",
+        "name": "Maggie's Bad Day",
+        "dev": "GremlinTheOdd",
+        "description": "Its Magdalenes first day at work! And she's about to have a very Bad Day.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 16:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODQzODQxLnBuZw==/original/aAacqo.png",
+        "tags": [
+            "2D",
+            "Female Protagonist",
+            "Hand-drawn",
+            "No AI",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:44Z"
+    },
+    {
+        "url": "https://hopthemoon.itch.io/odichat",
+        "name": "OdiChat",
+        "dev": "Hop the Moon",
+        "description": "You got hired to moderate a private server full of rising online stars! Enforce the rules and help the community grow!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "Leap Game Studios",
+        "release_date": "07 November 2026 @ 19:46 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzgwNDU3LnBuZw==/original/Ry4dN%2B.png",
+        "tags": [
+            "Anime",
+            "Cozy",
+            "Dating Sim",
+            "Funny",
+            "Indie",
+            "LGBT",
+            "Mystery",
+            "Otome",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:48Z"
+    },
+    {
+        "url": "https://karme2.itch.io/nosferat",
+        "name": "nosferat",
+        "dev": "karme2",
+        "description": "A small visual novel featuring Nosferatu from 1922.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 14:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODcwMDE2LnBuZw==/original/2q1P4Z.png",
+        "tags": [
+            "8-Bit",
+            "Amstrad CPC",
+            "lisp"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:51Z"
+    },
+    {
+        "url": "https://mindyorzi.itch.io/lian-gogogo",
+        "name": "Lian, GOGOGO!",
+        "dev": "mindyorzi, QUAaaa, XiaozhiChenshi",
+        "description": "LIANXIAO",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 09:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTMwNDg2LmpwZw==/original/KmXdFt.jpg",
+        "tags": [
+            "Cozy",
+            "Fantasy",
+            "Pixel Art",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:55Z"
+    },
+    {
+        "url": "https://selamoonix.itch.io/irvines-school-of-romance-simulator",
+        "name": "爾文心動校園模擬器- Irvine's School of Romance Simulator",
+        "dev": "selamoonix",
+        "description": "A parody game about dating tumblr sexymen (not really)",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 15:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNDA2MjgxLnBuZw==/original/ZrFHQe.png",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Dating Sim",
+            "Indie",
+            "Multiple Endings",
+            "Otome",
+            "Parody",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:23:58Z"
+    },
+    {
+        "url": "https://shina1320.itch.io/cihuacatl",
+        "name": "Cihuacóatl",
+        "dev": "Shina",
+        "description": "YandereBoy",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 06:08 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTI0MDMxLnBuZw==/original/oY6t9W.png",
+        "tags": [
+            "Fantasy",
+            "No AI",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:24:01Z"
+    },
+    {
+        "url": "https://thegrandstudio.itch.io/a-cold-day-in-port-calloway",
+        "name": "A Cold Day in Port Calloway",
+        "dev": "The Grand Studio",
+        "description": "A missing brother, a body in the harbor, and a city that's already decided how this ends.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 19:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTUyOTk3LnBuZw==/original/MEd%2Fex.png",
+        "tags": [
+            "1950s",
+            "Crime",
+            "Detective",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Mystery",
+            "Noir",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:24:05Z"
+    },
+    {
+        "url": "https://totemmore.itch.io/enigmore",
+        "name": "Enigmore",
+        "dev": "ToTEMMORE",
+        "description": "의뢰를 받고 간 마을 '이니그모어' 속 3x3 논리 퍼즐로 진범을 밝히는 미스터리 추리게임",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 19:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzA1OTI1LnBuZw==/original/7FVN%2BE.png",
+        "tags": [
+            "2D",
+            "Detective",
+            "Mystery"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:24:07Z"
+    },
+    {
+        "url": "https://wiwa-4444.itch.io/pistachio-3d",
+        "name": "pistachio 3D",
+        "dev": "Will",
+        "description": "hello, pistachio",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "07 November 2026 @ 20:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQ5OTI3LnBuZw==/original/j2vanH.png",
+        "tags": [
+            "3D",
+            "No AI",
+            "pistachio",
+            "Pixel Art",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-08T08:24:10Z"
     }
 ]
