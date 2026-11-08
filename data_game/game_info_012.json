@@ -176,7 +176,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "5.0",
-        "rating_count": "7",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzEwODg4NDg3LnBuZw==/original/zbFfXv.png",
@@ -815,8 +815,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "28 October 2026 @ 16:44 UTC",
-        "rating": "3.4",
-        "rating_count": "5",
+        "rating": "4.2",
+        "rating_count": "18",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDg5MDM4LnBuZw==/original/it6q01.png",
@@ -842,7 +842,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T12:24:22Z"
+        "added_at": "2026-10-29T12:24:22Z",
+        "updated_at": "01 November 2026 @ 11:46 UTC"
     },
     {
         "url": "https://bblir.itch.io/mega-met",
@@ -854,7 +855,7 @@
         "publisher": "N/A",
         "release_date": "28 October 2026 @ 18:01 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwMTc5NzE5LnBuZw==/original/4hS4uV.png",
@@ -875,7 +876,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T12:24:25Z"
+        "added_at": "2026-10-29T12:24:25Z",
+        "updated_at": "31 October 2026 @ 10:11 UTC"
     },
     {
         "url": "https://mblw.itch.io/i-was-reborn-as-a-warlord-of-patinko-orcs-and-i-need-to-crush-my-enemy",
@@ -886,8 +888,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "28 October 2026 @ 16:30 UTC",
-        "rating": "4.2",
-        "rating_count": "10",
+        "rating": "4.6",
+        "rating_count": "60",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDM0MzU1LmdpZg==/original/43SsVV.gif",
@@ -917,10 +919,8 @@
         "made_with": [
             "Phaser"
         ],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
         "accessibility": [
             "Interactive tutorial",
             "One button"
@@ -928,7 +928,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-29T12:24:29Z",
-        "updated_at": "30 October 2026 @ 00:21 UTC"
+        "updated_at": "04 November 2026 @ 17:25 UTC"
     },
     {
         "url": "https://tri-state-crew.itch.io/fs25-international-durastar-dump",
@@ -1000,7 +1000,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-29T16:23:41Z",
-        "updated_at": "30 October 2026 @ 01:48 UTC"
+        "updated_at": "31 October 2026 @ 12:35 UTC"
     },
     {
         "url": "https://kittium.itch.io/care-4-me",
@@ -1011,8 +1011,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 00:58 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.8",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDk0MDg5LmpwZw==/original/Olda5Y.jpg",
@@ -1052,8 +1052,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 04:01 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "3.7",
+        "rating_count": "3",
         "average_session": "A few hours",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTEyNzkzLnBuZw==/original/MreZpe.png",
@@ -1093,7 +1093,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T16:23:47Z"
+        "added_at": "2026-10-29T16:23:47Z",
+        "updated_at": "01 November 2026 @ 02:49 UTC"
     },
     {
         "url": "https://sakurarose3.itch.io/offline-mode",
@@ -1104,8 +1105,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "28 October 2026 @ 20:40 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDk4OTg1LnBuZw==/original/zyavOa.png",
@@ -1137,7 +1138,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T16:23:51Z"
+        "added_at": "2026-10-29T16:23:51Z",
+        "updated_at": "07 November 2026 @ 02:06 UTC"
     },
     {
         "url": "https://slapstickgames1524.itch.io/what-comes-aroundgoes-around",
@@ -1175,7 +1177,7 @@
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 04:27 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTExNjQ2LnBuZw==/original/7Dn2ez.png",
@@ -1202,7 +1204,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T16:23:58Z"
+        "added_at": "2026-10-29T16:23:58Z",
+        "updated_at": "02 November 2026 @ 04:48 UTC"
     },
     {
         "url": "https://tuxum.itch.io/fnaf-reforged",
@@ -1248,8 +1251,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "28 October 2026 @ 15:43 UTC",
-        "rating": "3.7",
-        "rating_count": "3",
+        "rating": "3.8",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDg0OTM2LnBuZw==/original/LwPL1L.png",
@@ -1275,7 +1278,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T20:24:20Z"
+        "added_at": "2026-10-29T20:24:20Z",
+        "updated_at": "01 November 2026 @ 15:45 UTC"
     },
     {
         "url": "https://lastflagstanding.itch.io/last-flag-standing",
@@ -1286,8 +1290,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 04:12 UTC",
-        "rating": "1.0",
-        "rating_count": "1",
+        "rating": "4.2",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTQ0MDQ5LmdpZg==/original/%2F2AFmi.gif",
@@ -1315,7 +1319,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T20:24:23Z"
+        "added_at": "2026-10-29T20:24:23Z",
+        "updated_at": "07 November 2026 @ 04:36 UTC"
     },
     {
         "url": "https://thelands.itch.io/the-lands",
@@ -1327,7 +1332,7 @@
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 06:10 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTE1Njg1LmpwZWc=/original/Wmd3d%2F.jpeg",
@@ -1350,7 +1355,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-29T20:24:26Z"
+        "added_at": "2026-10-29T20:24:26Z",
+        "updated_at": "07 November 2026 @ 17:53 UTC"
     },
     {
         "url": "https://bientsie.itch.io/the-sundial",
@@ -1504,7 +1510,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T00:24:27Z"
+        "added_at": "2026-10-30T00:24:27Z",
+        "updated_at": "04 November 2026 @ 10:06 UTC"
     },
     {
         "url": "https://schoubye.itch.io/samhain-trail",
@@ -1583,7 +1590,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "52",
+        "rating_count": "54",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI4NDQ1MDAwLnBuZw==/original/Pu1mXT.png",
@@ -1629,7 +1636,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "10",
+        "rating_count": "11",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3OTI2NjU1LnBuZw==/original/ihbsQY.png",
@@ -9555,41 +9562,6 @@
         "added_at": "2026-11-06T00:23:48Z"
     },
     {
-        "url": "https://deeddomanion.itch.io/deed-dominion",
-        "name": "Deed & Dominion",
-        "dev": "DEEDDOMANION",
-        "description": "Build your real estate empire in a living city.",
-        "genre": "Strategy",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "05 November 2026 @ 11:40 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxODU2MjMyLnBuZw==/original/CPt602.png",
-        "tags": [
-            "3D",
-            "building",
-            "City Builder",
-            "Economy",
-            "Indie",
-            "Management",
-            "real-estate",
-            "Singleplayer"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-11-06T04:23:59Z"
-    },
-    {
         "url": "https://nerderror.itch.io/fruit-clicker",
         "name": "Fruit Clicker",
         "dev": "nerdError",
@@ -9710,38 +9682,6 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-06T04:24:09Z"
-    },
-    {
-        "url": "https://choic-e.itch.io/whyher",
-        "name": "I Can't Fix Her",
-        "dev": "choic_e",
-        "description": "You are dating a total lunatic.",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "05 November 2026 @ 11:51 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxODUzNTA0LnBuZw==/original/uW4mlA.png",
-        "tags": [
-            "Yaoi"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code"
-        ],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-11-06T08:23:33Z"
     },
     {
         "url": "https://faewails.itch.io/pentacles",
@@ -10221,40 +10161,6 @@
         "notes": "",
         "added_at": "2026-11-06T08:24:13Z",
         "updated_at": "06 November 2026 @ 14:07 UTC"
-    },
-    {
-        "url": "https://zackanuar.itch.io/heir-of-the-dog",
-        "name": "Heir of the Dog",
-        "dev": "Zackanuar",
-        "description": "Discover the darker side of Victorian London in this British point & click comedy adventure.",
-        "genre": "Puzzle",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "05 November 2026 @ 14:42 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxODU5MDY2LmpwZw==/original/2%2BNrgA.jpg",
-        "tags": [
-            "2D",
-            "Dark Humor",
-            "Funny",
-            "Retro",
-            "Story Rich"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-11-06T08:24:17Z"
     },
     {
         "url": "https://c00lme.itch.io/red-banner-1993",
@@ -10799,8 +10705,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "06 November 2026 @ 03:38 UTC",
-        "rating": "3.7",
-        "rating_count": "7",
+        "rating": "3.9",
+        "rating_count": "11",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxODM3NzA4LnBuZw==/original/bK7fgU.png",
@@ -10849,7 +10755,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-07T04:23:38Z"
+        "added_at": "2026-11-07T04:23:38Z",
+        "updated_at": "07 November 2026 @ 12:31 UTC"
     },
     {
         "url": "https://shinobiz72.itch.io/archived",
@@ -10959,8 +10866,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "06 November 2026 @ 12:25 UTC",
-        "rating": "1.0",
-        "rating_count": "1",
+        "rating": "3.0",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxODkyNzMzLnBuZw==/original/HMcbBl.png",
@@ -11182,7 +11089,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-07T08:23:54Z"
+        "added_at": "2026-11-07T08:23:54Z",
+        "updated_at": "07 November 2026 @ 09:12 UTC"
     },
     {
         "url": "https://hiviga.itch.io/goodbye-aurora",
@@ -11460,8 +11368,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "19",
+        "rating": "4.9",
+        "rating_count": "21",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI3MDM1OTgyLnBuZw==/original/OZX19o.png",
@@ -11506,7 +11414,7 @@
         "publisher": "N/A",
         "release_date": "06 November 2026 @ 23:03 UTC",
         "rating": "5.0",
-        "rating_count": "5",
+        "rating_count": "12",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxOTEzNjg0LnBuZw==/original/%2FuDdFx.png",

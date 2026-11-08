@@ -1012,5 +1012,23 @@
         "name": "Cryptid Park",
         "reason": "Game became paid",
         "deleted_at": "2026-11-07T02:49:40Z"
+    },
+    {
+        "url": "https://deeddomanion.itch.io/deed-dominion",
+        "name": "Deed & Dominion",
+        "reason": "Game page is password-protected",
+        "deleted_at": "2026-11-08T02:50:59Z"
+    },
+    {
+        "url": "https://choic-e.itch.io/whyher",
+        "name": "I Can't Fix Her",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-08T02:51:07Z"
+    },
+    {
+        "url": "https://zackanuar.itch.io/heir-of-the-dog",
+        "name": "Heir of the Dog",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-08T02:51:11Z"
     }
 ]
