@@ -128,10 +128,7 @@ function SocialGroupSection({ group }: { group: SocialGroup }) {
   const noteKey = GROUP_NOTE[group]
   return (
     <div className="space-y-2">
-      <h3
-        id={group === 'support' ? 'support' : undefined}
-        className="text-sm font-semibold text-muted-foreground scroll-mt-20"
-      >
+      <h3 id={group === 'support' ? 'support' : undefined} lang="en" className="text-sm font-semibold text-muted-foreground">
         {SOCIAL_GROUP_LABELS[group]}
       </h3>
       {noteKey && <p className="text-xs text-muted-foreground">{t(noteKey)}</p>}
@@ -204,11 +201,13 @@ export default function About() {
         <CardContent className="space-y-2 text-sm">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-medium">{DEV.name}</span>
-            <Badge variant="secondary" className="text-xs">
+            <Badge variant="secondary" lang="en" className="text-xs">
               {DEV.role}
             </Badge>
           </div>
-          <p className="text-muted-foreground">{DEV.blurb}</p>
+          <p lang="en" className="text-muted-foreground">
+            {DEV.blurb}
+          </p>
           <ul className="space-y-1.5">
             {DEV_LINKS.map(({ href, label, icon: Icon }) => (
               <li key={href}>
@@ -244,7 +243,9 @@ export default function About() {
                   <Badge variant="secondary" className="font-mono text-xs">{tool.model}</Badge>
                 )}
               </div>
-              <p className="text-muted-foreground">{tool.role}</p>
+              <p lang="en" className="text-muted-foreground">
+                {tool.role}
+              </p>
             </div>
           ))}
         </CardContent>
@@ -302,7 +303,7 @@ export default function About() {
             return (
               <div key={group} className="space-y-2">
                 {i > 0 && <Separator />}
-                <h3 className="text-sm font-semibold text-muted-foreground">
+                <h3 lang="en" className="text-sm font-semibold text-muted-foreground">
                   {LEGAL_GROUP_LABELS[group]}
                 </h3>
                 <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
@@ -312,10 +313,12 @@ export default function About() {
                         href={link.url}
                         className="inline-flex items-center gap-1 font-medium hover:underline"
                       >
-                        {link.name}
+                        <span lang="en">{link.name}</span>
                         <ExternalLinkIcon className="h-3 w-3 opacity-50" />
                       </ExtLink>
-                      <p className="mt-0.5 text-xs text-muted-foreground">{link.description}</p>
+                      <p lang="en" className="mt-0.5 text-xs text-muted-foreground">
+                        {link.description}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -323,7 +326,7 @@ export default function About() {
             )
           })}
           <p className="pt-1 text-xs text-muted-foreground">
-            Tiếng Việt:{' '}
+            <span lang="vi">Tiếng Việt</span>:{' '}
             <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium hover:underline">
               docs/i18n/vi/
             </ExtLink>{' '}
@@ -343,7 +346,9 @@ export default function About() {
               {UPSTREAM_DATA.source}
             </ExtLink>
           </p>
-          <p className="text-muted-foreground">{UPSTREAM_DATA.note}</p>
+          <p lang="en" className="text-muted-foreground">
+            {UPSTREAM_DATA.note}
+          </p>
         </CardContent>
       </Card>
 

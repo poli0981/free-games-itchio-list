@@ -11,7 +11,7 @@ export default function ErrorPreview() {
   const { code } = useParams()
   const t = useT()
   const status = Number(code)
-  useDocumentTitle(`Error ${code ?? ''}`)
+  useDocumentTitle(t('titles.error', { code: code ?? '' }))
   return (
     <div className="flex h-full flex-col">
       <p className="px-6 pt-4 text-center text-xs text-muted-foreground">

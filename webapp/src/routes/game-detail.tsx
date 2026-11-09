@@ -125,7 +125,6 @@ function CopyLink({ url }: { url: string }) {
 function GameDetailView({ game }: { game: Game }) {
   const t = useT()
   const fmt = useFormat()
-  useDocumentTitle(game.name)
   const location = useLocation()
   const navigate = useNavigate()
   // Came from the list: going back returns to the same entry (scroll position,
@@ -280,10 +279,22 @@ export default function GameDetail() {
   const { slug } = useParams()
   const decoded = slug ? decodeURIComponent(slug) : undefined
   const { game, data, isLoading, isError, error, refetch } = useGameBySlug(decoded)
+  const showNsfw = usePrefs((s) => s.showNsfw)
+  // One title for every state of the page (the not-found page and the 18+ notice included).
+  useDocumentTitle(
+    isLoading || (isError && !data)
+      ? undefined
+      : !game
+        ? t('error.gameNotFound.title')
+        : isNsfw(game) && !showNsfw
+          ? t('nsfw.gate.title')
+          : game.name,
+  )
 
   if (isLoading) {
     return (
-      <div className="mx-auto flex max-w-[1120px] flex-col gap-7 px-4 pt-7 sm:px-8">
+      <div role="status" className="mx-auto flex max-w-[1120px] flex-col gap-7 px-4 pt-7 sm:px-8">
+        <span className="sr-only">{t('common.loading')}</span>
         <Skeleton className="h-4 w-40" />
         <div className="grid gap-10 md:grid-cols-[minmax(0,520px)_minmax(0,1fr)]">
           <Skeleton className="aspect-[630/500] rounded-[14px]" />
@@ -336,7 +347,7 @@ function NsfwGate({ game }: { game: Game }) {
       <h1 className="text-2xl font-semibold tracking-tight">{t('nsfw.gate.title')}</h1>
       <p className="text-muted-foreground">{t('nsfw.gate.desc')}</p>
       <div className="flex flex-wrap gap-2">
-        <Button onClick={requestNsfw}>{t('nsfw.gate.show')}</Button>
+        <Button onClick={() => requestNsfw()}>{t('nsfw.gate.show')}</Button>
         <Button variant="outline" asChild>
           <Link to="/games">{t('detail.backToGames')}</Link>
         </Button>

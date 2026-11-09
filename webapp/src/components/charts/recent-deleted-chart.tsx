@@ -22,11 +22,11 @@ export function RecentDeletedChart({ deleted }: { deleted: DeletedGameEntry[] })
       description={t('charts.recentDeleted.desc', { shown: recent.length, total: fmt.number(deleted.length) })}
     >
       <div className="h-full overflow-y-auto pr-2">
-        <ul className="space-y-1.5 text-sm">
-          {recent.length === 0 ? (
-            <p className="text-muted-foreground">{t('charts.recentDeleted.empty')}</p>
-          ) : (
-            recent.map((d) => {
+        {recent.length === 0 ? (
+          <p className="text-sm text-muted-foreground">{t('charts.recentDeleted.empty')}</p>
+        ) : (
+          <ul className="space-y-1.5 text-sm">
+            {recent.map((d) => {
               const key = reasonKey(d.reason)
               return (
                 // Phones: the reason goes under the name, which would otherwise shrink to a few letters.
@@ -44,9 +44,9 @@ export function RecentDeletedChart({ deleted }: { deleted: DeletedGameEntry[] })
                   </Badge>
                 </li>
               )
-            })
-          )}
-        </ul>
+            })}
+          </ul>
+        )}
       </div>
     </ChartCard>
   )

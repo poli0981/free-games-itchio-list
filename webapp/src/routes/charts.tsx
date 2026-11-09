@@ -44,7 +44,7 @@ const PAGE = 'mx-auto max-w-[1440px] px-4 pt-6 pb-12 sm:px-8 md:pt-7'
 // Phones: one full-width row of equal tabs. A wrapping row overflowed the
 // fixed-height bar with the Vietnamese labels; the labels never shrink below
 // their text, and on the narrowest screens the bar scrolls instead.
-const TABS_LIST = 'max-md:flex max-md:h-11 max-md:w-full max-md:overflow-x-auto max-md:scrollbar-hide'
+const TABS_LIST = 'max-md:flex max-md:h-11 max-md:w-full max-md:overflow-x-auto max-md:py-1.5 max-md:scrollbar-hide'
 const TAB = 'max-md:h-full max-md:flex-1 max-md:px-1 max-md:text-[13px]'
 
 // A tab shown once stays mounted: switching back must not rebuild its charts and
@@ -116,7 +116,7 @@ export default function Charts() {
       </Heading>
 
       <Tabs value={tab} onValueChange={select}>
-        <TabsList className={TABS_LIST}>
+        <TabsList aria-label={t('charts.tabs.label')} className={TABS_LIST}>
           {TABS.map(({ id, preload }) => (
             <TabsTrigger
               key={id}

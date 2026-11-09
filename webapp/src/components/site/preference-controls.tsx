@@ -12,7 +12,7 @@ const THEMES: { value: Theme; key: MessageKey }[] = [
   { value: 'system', key: 'theme.system' },
 ]
 
-/** A small single-choice button row. */
+/** A small single-choice button row. An option's `lang` marks a label in another language. */
 function Segmented<T extends string>({
   label,
   value,
@@ -21,7 +21,7 @@ function Segmented<T extends string>({
 }: {
   label: string
   value: T
-  options: { value: T; label: string; icon?: LucideIcon }[]
+  options: { value: T; label: string; icon?: LucideIcon; lang?: string }[]
   onChange: (v: T) => void
 }) {
   return (
@@ -40,7 +40,7 @@ function Segmented<T extends string>({
             )}
           >
             {o.icon && <o.icon className="size-3.5" aria-hidden="true" />}
-            {o.label}
+            {o.lang ? <span lang={o.lang}>{o.label}</span> : o.label}
           </button>
         ))}
       </div>
@@ -71,8 +71,8 @@ export function LanguageChoice() {
       value={language}
       onChange={(l) => void switchLanguage(l)}
       options={[
-        { value: 'en', label: 'English' },
-        { value: 'vi', label: 'Tiếng Việt' },
+        { value: 'en', label: 'English', lang: 'en' },
+        { value: 'vi', label: 'Tiếng Việt', lang: 'vi' },
       ]}
     />
   )
@@ -95,20 +95,72 @@ export function DensityChoice() {
   )
 }
 
+/** A labelled switch; the optional description is tied to it (aria-describedby). */
+export function SwitchRow({
+  id,
+  label,
+  description,
+  checked,
+  onCheckedChange,
+  strong = Boolean(description),
+}: {
+  id: string
+  label: string
+  description?: string
+  checked: boolean
+  onCheckedChange: (on: boolean) => void
+  strong?: boolean
+}) {
+  return (
+    <div className="flex items-center justify-between gap-4">
+      <div className="space-y-0.5">
+        <label htmlFor={id} className={cn('text-sm', strong && 'font-medium')}>
+          {label}
+        </label>
+        {description && (
+          <p id={`${id}-desc`} className="text-sm text-muted-foreground">
+            {description}
+          </p>
+        )}
+      </div>
+      <Switch
+        id={id}
+        checked={checked}
+        onCheckedChange={onCheckedChange}
+        aria-describedby={description ? `${id}-desc` : undefined}
+      />
+    </div>
+  )
+}
+
 /** The "Hide scrollbars" switch row; `describe` adds the longer explanation (Settings). */
 export function ScrollbarsToggle({ id, describe = false }: { id: string; describe?: boolean }) {
   const t = useT()
   const hide = usePrefs((s) => s.hideScrollbars)
   const setHide = usePrefs((s) => s.setHideScrollbars)
   return (
-    <div className="flex items-center justify-between gap-4">
-      <div className="space-y-0.5">
-        <label htmlFor={id} className={cn('text-sm', describe && 'font-medium')}>
-          {t('settings.appearance.scrollbars')}
-        </label>
-        {describe && <p className="text-sm text-muted-foreground">{t('settings.appearance.scrollbarsDesc')}</p>}
-      </div>
-      <Switch id={id} checked={hide} onCheckedChange={setHide} />
-    </div>
+    <SwitchRow
+      id={id}
+      label={t('settings.appearance.scrollbars')}
+      description={describe ? t('settings.appearance.scrollbarsDesc') : undefined}
+      checked={hide}
+      onCheckedChange={setHide}
+    />
+  )
+}
+
+/** Turns the "/" search shortcut on or off (WCAG 2.1.4). */
+export function SlashShortcutToggle({ id }: { id: string }) {
+  const t = useT()
+  const enabled = usePrefs((s) => s.slashShortcut)
+  const setEnabled = usePrefs((s) => s.setSlashShortcut)
+  return (
+    <SwitchRow
+      id={id}
+      label={t('settings.a11y.slash')}
+      description={t('settings.a11y.slashDesc')}
+      checked={enabled}
+      onCheckedChange={setEnabled}
+    />
   )
 }

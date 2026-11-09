@@ -1,4 +1,5 @@
-import { Link } from 'react-router'
+import { useRef } from 'react'
+import { Link, useLocation } from 'react-router'
 import { Popover, PopoverClose, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { Switch } from '@/components/ui/switch'
 import { useT } from '@/lib/i18n'
@@ -12,14 +13,22 @@ import { DensityChoice, LanguageChoice, ScrollbarsToggle, ThemeChoice } from './
 /** Theme, language, density, scrollbars and 18+ — the settings people change often. */
 export function DisplayMenu({ className }: { className?: string }) {
   const t = useT()
+  const { pathname } = useLocation()
+  const openedOn = useRef(pathname)
+  const trigger = useRef<HTMLButtonElement>(null)
   const showNsfw = usePrefs((s) => s.showNsfw)
   const setShowNsfw = usePrefs((s) => s.setShowNsfw)
   // The button shows the theme in use: light, dark or following the system.
   const ThemeIcon = THEME_ICON[useThemeStore((s) => s.theme)]
 
   return (
-    <Popover>
+    <Popover
+      onOpenChange={(open) => {
+        if (open) openedOn.current = pathname
+      }}
+    >
       <PopoverTrigger
+        ref={trigger}
         aria-label={t('header.display')}
         className={cn(
           'flex size-9 items-center justify-center rounded-lg border text-muted-foreground hover:bg-accent hover:text-foreground',
@@ -28,7 +37,15 @@ export function DisplayMenu({ className }: { className?: string }) {
       >
         <ThemeIcon className="size-4" aria-hidden="true" />
       </PopoverTrigger>
-      <PopoverContent align="end" aria-label={t('header.display')} className="w-72 space-y-4">
+      <PopoverContent
+        align="end"
+        aria-label={t('header.display')}
+        // "All settings" opened another page: focus belongs to its heading, not back on this button.
+        onCloseAutoFocus={(e) => {
+          if (pathname !== openedOn.current) e.preventDefault()
+        }}
+        className="max-h-[var(--radix-popover-content-available-height)] w-72 space-y-4 overflow-y-auto"
+      >
         <ThemeChoice />
         <LanguageChoice />
         <DensityChoice />
@@ -40,7 +57,8 @@ export function DisplayMenu({ className }: { className?: string }) {
           <Switch
             id="menu-nsfw"
             checked={showNsfw}
-            onCheckedChange={(on) => (on ? requestNsfw() : setShowNsfw(false))}
+            // The menu closes when the dialog opens: focus returns to its button afterwards.
+            onCheckedChange={(on) => (on ? requestNsfw(trigger.current) : setShowNsfw(false))}
           />
         </div>
         <PopoverClose asChild>

@@ -122,6 +122,9 @@
 
   html {
     color-scheme: light;
+    /* What keyboard focus or a #link scrolls to stays clear of the sticky header
+       (3.5rem, plus the notch on phones) — WCAG 2.4.11. */
+    scroll-padding-top: calc(3.5rem + env(safe-area-inset-top) + 0.5rem);
   }
   html.dark {
     color-scheme: dark;
@@ -143,6 +146,12 @@
     outline-offset: 2px;
   }
 
+  /* Where reading starts after a page change or a closed dialog (components/focus-target.ts):
+     a heading focused from script, not a control, so no ring. */
+  [data-focus-target]:focus {
+    outline: none;
+  }
+
   /* Tailwind 4 gives buttons the default cursor; keep the pointer of the v3 UI. */
   button:not(:disabled),
   [role='button']:not(:disabled) {
@@ -154,6 +163,8 @@
     ::before,
     ::after {
       animation-duration: 0.01ms !important;
+      /* Looping animations (skeleton pulse, spinners) run once instead of flickering. */
+      animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }

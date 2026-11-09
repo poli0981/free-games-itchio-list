@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
+import { useT } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
 export type ChartTab = 'overview' | 'reach' | 'quality' | 'discovery'
@@ -43,8 +44,10 @@ const LAYOUT: Record<ChartTab, { described: boolean; tall?: boolean }[]> = {
 }
 
 export function TabSkeleton({ tab }: { tab: ChartTab }) {
+  const t = useT()
   return (
-    <div className="space-y-4" aria-busy="true">
+    <div role="status" className="space-y-4" aria-busy="true">
+      <span className="sr-only">{t('common.loading')}</span>
       {tab === 'overview' && <KpiSkeleton />}
       <div className="grid gap-4 md:grid-cols-2">
         {LAYOUT[tab].map((card, i) => (

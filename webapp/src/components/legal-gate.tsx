@@ -1,7 +1,8 @@
-import { useState, type ReactNode } from 'react'
+import { useRef, useState, type ReactNode } from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { ArrowUpRight } from 'lucide-react'
 import { ExtLink } from '@/components/ext-link'
+import { focusElement, focusPageHeading, pageHeading, whenPresent } from '@/components/focus-target'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { LEGAL_LINKS, LEGAL_VI_INDEX_URL } from '@/lib/about'
@@ -14,9 +15,10 @@ import { usePrefs, LEGAL_VERSION } from '@/stores/prefs'
  * renders behind it (a deep link lands where it pointed once accepted; its
  * data and covers come from this site). The apps load covers straight from
  * itch.io, so there nothing behind the gate loads until it is accepted.
- * Radix Dialog provides the focus trap, aria-modal and hides the rest of the
- * page from assistive technology while it is open. It re-appears whenever
- * `LEGAL_VERSION` changes.
+ * Radix Dialog traps focus and hides the rest of the page from assistive
+ * technology while it is open (aria-hidden on everything else; it sets no
+ * aria-modal). After Accept, focus moves to the page's heading. It re-appears
+ * whenever `LEGAL_VERSION` changes.
  */
 
 // The documents being accepted — URLs come from about.ts, never hardcoded.
@@ -48,6 +50,7 @@ function LegalGateDialog() {
   const lang = usePrefs((s) => s.language)
   const acceptLegal = usePrefs((s) => s.acceptLegal)
   const [checked, setChecked] = useState(false)
+  const checkbox = useRef<HTMLButtonElement>(null)
 
   return (
     <DialogPrimitive.Root open>
@@ -57,6 +60,11 @@ function LegalGateDialog() {
           onEscapeKeyDown={(e) => e.preventDefault()}
           onPointerDownOutside={(e) => e.preventDefault()}
           onInteractOutside={(e) => e.preventDefault()}
+          // Accepted: start reading at the page (in the apps it only mounts now).
+          onCloseAutoFocus={(e) => {
+            e.preventDefault()
+            whenPresent(pageHeading, focusElement, { missing: focusPageHeading })
+          }}
           className="fixed top-1/2 left-1/2 z-50 flex max-h-[92dvh] w-[calc(100%-2rem)] max-w-[540px] -translate-x-1/2 -translate-y-1/2 flex-col gap-[18px] overflow-y-auto rounded-2xl border bg-popover p-6 text-popover-foreground shadow-2xl sm:p-7"
         >
           <div className="space-y-2">
@@ -73,7 +81,10 @@ function LegalGateDialog() {
               const text = DOC_TEXT[link.name]
               return (
                 <li key={link.name} className="border-b last:border-b-0">
-                  <ExtLink href={link.url} className="flex items-center gap-3 px-3.5 py-3 hover:bg-accent">
+                  <ExtLink
+                    href={link.url}
+                    className="flex items-center gap-3 px-3.5 py-3 hover:bg-accent focus-visible:-outline-offset-2"
+                  >
                     <span className="flex min-w-0 flex-1 flex-col gap-0.5">
                       <span className="text-sm font-medium">{text ? t(text.name) : link.name}</span>
                       <span className="text-[13px] text-muted-foreground">
@@ -97,7 +108,12 @@ function LegalGateDialog() {
           )}
 
           <label className="flex items-start gap-2.5 text-sm leading-normal">
-            <Checkbox checked={checked} onCheckedChange={(v) => setChecked(v === true)} className="mt-0.5 size-[18px]" />
+            <Checkbox
+              ref={checkbox}
+              checked={checked}
+              onCheckedChange={(v) => setChecked(v === true)}
+              className="mt-0.5 size-[18px]"
+            />
             <span>{t('legal.gate.checkboxLabel')}</span>
           </label>
 
@@ -108,7 +124,12 @@ function LegalGateDialog() {
                 <a href="https://itch.io">{t('legal.gate.leave')}</a>
               </Button>
             )}
-            <Button disabled={!checked} onClick={() => acceptLegal()}>
+            {/* aria-disabled, not disabled: the button stays reachable with Tab and says
+                why it doesn't work yet — pressing it moves focus to the checkbox. */}
+            <Button
+              aria-disabled={!checked}
+              onClick={() => (checked ? acceptLegal() : checkbox.current?.focus())}
+            >
               {t('legal.gate.accept')}
             </Button>
           </div>

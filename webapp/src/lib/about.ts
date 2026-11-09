@@ -133,6 +133,12 @@ export const LEGAL_GROUP_LABELS: Record<LegalGroup, string> = {
 export const LEGAL_VI_INDEX_URL =
   'https://github.com/poli0981/free-games-itchio-list/tree/main/docs/i18n/vi'
 
+/** The accessibility statement in the visitor's language (the English one controls). */
+export const ACCESSIBILITY_URLS = {
+  en: `${REPO_BLOB}/ACCESSIBILITY.md`,
+  vi: `${REPO_BLOB}/docs/i18n/vi/ACCESSIBILITY.md`,
+} as const
+
 export const THIRD_PARTY: ThirdParty[] = [
   // Core
   { name: 'React', version: '19.3', license: 'MIT', url: 'https://react.dev', category: 'core' },

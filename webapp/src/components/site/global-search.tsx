@@ -6,39 +6,50 @@ import { fold } from '@/lib/game-filters'
 import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import { cn, slugify } from '@/lib/utils'
+import { usePrefs } from '@/stores/prefs'
 
 const MAX_SUGGESTIONS = 6
 
-/** "/" focuses the search box unless the visitor is already typing somewhere. */
-function useSlashShortcut(target: RefObject<HTMLInputElement | null>) {
+/**
+ * "/" focuses the search box unless the visitor is already typing somewhere,
+ * the box isn't on screen (the phone header has none) or a dialog is open
+ * (Radix hides the rest of the page from assistive technology then). It can be
+ * switched off in Settings (WCAG 2.1.4).
+ */
+function useSlashShortcut(target: RefObject<HTMLInputElement | null>, enabled: boolean) {
   useEffect(() => {
+    if (!enabled) return
     const onKey = (e: globalThis.KeyboardEvent) => {
-      if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return
+      if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey || e.defaultPrevented || e.isComposing) return
       const el = e.target as HTMLElement | null
       if (el && (el.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(el.tagName))) return
+      const input = target.current
+      if (!input || !input.getClientRects().length || input.closest('[aria-hidden="true"],[inert]')) return
       e.preventDefault()
-      target.current?.focus()
+      input.focus()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [target])
+  }, [target, enabled])
 }
 
 /**
  * Header search: suggests matching games while typing (Enter or click opens
- * one); Enter without a pick shows all results on the Games page.
+ * one); Enter without a pick, or the last option, shows all results on the
+ * Games page.
  */
 export function GlobalSearch({ className }: { className?: string }) {
   const t = useT()
   const fmt = useFormat()
   const navigate = useNavigate()
   const games = useVisibleGames()
+  const shortcut = usePrefs((s) => s.slashShortcut)
   const input = useRef<HTMLInputElement>(null)
   const listId = useId()
   const [value, setValue] = useState('')
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(-1)
-  useSlashShortcut(input)
+  useSlashShortcut(input, shortcut)
 
   const suggestions = useMemo(() => {
     const needle = fold(value.trim())
@@ -68,16 +79,21 @@ export function GlobalSearch({ className }: { className?: string }) {
     input.current?.blur()
   }
 
+  // The options: every suggestion, then "see all results" (index = suggestions.length).
+  const optionCount = suggestions.length + 1
+  const hasQuery = value.trim().length > 0
+
   const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     // Enter / arrows that finish an IME composition (e.g. Vietnamese Telex) aren't commands.
     if (e.nativeEvent.isComposing || e.keyCode === 229) return
-    if (e.key === 'ArrowDown' && suggestions.length) {
+    if (e.key === 'ArrowDown' && hasQuery) {
       e.preventDefault()
       setOpen(true)
-      setActive((i) => (i + 1) % suggestions.length)
-    } else if (e.key === 'ArrowUp' && suggestions.length) {
+      setActive((i) => (i + 1) % optionCount)
+    } else if (e.key === 'ArrowUp' && hasQuery) {
       e.preventDefault()
-      setActive((i) => (i <= 0 ? suggestions.length - 1 : i - 1))
+      setOpen(true)
+      setActive((i) => (i <= 0 ? optionCount - 1 : i - 1))
     } else if (e.key === 'Enter') {
       e.preventDefault()
       if (active >= 0 && suggestions[active]) goToGame(suggestions[active].url)
@@ -90,10 +106,17 @@ export function GlobalSearch({ className }: { className?: string }) {
 
   // The catalog size, as on the Welcome page (18+ games count even while hidden).
   const total = games.data ? games.data.games.length + games.hiddenNsfw : undefined
-  const showList = open && value.trim().length > 0
+  const showList = open && hasQuery
+  const allIndex = suggestions.length
+  const count = suggestions.length
+  const countText = !showList
+    ? ''
+    : count === 0
+      ? t('header.search.count.none')
+      : t(count === 1 ? 'header.search.count.one' : 'header.search.count', { n: count })
 
   return (
-    <div className={cn('relative', className)}>
+    <search className={cn('relative', className)}>
       <label className="flex h-9 items-center gap-2 rounded-lg border bg-card px-3 text-muted-foreground focus-within:border-primary">
         <Search className="size-4 shrink-0" aria-hidden="true" />
         <input
@@ -104,7 +127,8 @@ export function GlobalSearch({ className }: { className?: string }) {
           aria-expanded={showList}
           aria-controls={listId}
           aria-autocomplete="list"
-          aria-activedescendant={active >= 0 ? `${listId}-${active}` : undefined}
+          aria-activedescendant={showList && active >= 0 ? `${listId}-${active}` : undefined}
+          aria-keyshortcuts={shortcut ? '/' : undefined}
           value={value}
           placeholder={total ? t('header.search.placeholder', { n: fmt.number(total) }) : t('header.search.label')}
           onChange={(e) => {
@@ -115,12 +139,18 @@ export function GlobalSearch({ className }: { className?: string }) {
           onFocus={() => setOpen(true)}
           onBlur={() => setTimeout(close, 120)}
           onKeyDown={onKeyDown}
-          className="min-w-0 flex-1 bg-transparent text-sm text-foreground outline-hidden placeholder:text-muted-foreground [&::-webkit-search-cancel-button]:hidden"
+          className="min-w-0 flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden [&::-webkit-search-cancel-button]:hidden"
         />
-        <kbd className="rounded border px-1.5 font-mono text-[11px]" aria-hidden="true">
-          /
-        </kbd>
+        {shortcut && (
+          <kbd className="rounded border px-1.5 font-mono text-[11px]" aria-hidden="true">
+            /
+          </kbd>
+        )}
       </label>
+      {/* How many suggestions there are, read out politely while typing. */}
+      <p role="status" className="sr-only">
+        {countText}
+      </p>
       {showList && (
         <ul
           id={listId}
@@ -143,11 +173,15 @@ export function GlobalSearch({ className }: { className?: string }) {
             </li>
           ))}
           <li
+            id={`${listId}-${allIndex}`}
             role="option"
-            aria-selected={false}
+            aria-selected={active === allIndex}
             onMouseDown={(e) => e.preventDefault()}
             onClick={goToResults}
-            className="cursor-pointer border-t px-3 py-2 text-muted-foreground hover:bg-accent"
+            className={cn(
+              'cursor-pointer border-t px-3 py-2 text-muted-foreground hover:bg-accent',
+              active === allIndex && 'bg-accent',
+            )}
           >
             {suggestions.length
               ? t('header.search.all', { q: value.trim() })
@@ -155,6 +189,6 @@ export function GlobalSearch({ className }: { className?: string }) {
           </li>
         </ul>
       )}
-    </div>
+    </search>
   )
 }
