@@ -381,6 +381,7 @@ export const en = {
   "charts.table.kind": "Kind",
   "charts.table.use": "Used for",
   "charts.a11y.keys": "Use the left and right arrow keys to read each value. The data table below the chart lists them all.",
+  "footer.accessibility": "Accessibility",
 } as const
 
 export type MessageKey = keyof typeof en

@@ -383,4 +383,5 @@ export const vi: Record<MessageKey, string> = {
   "charts.table.kind": "Loại",
   "charts.table.use": "Dùng cho",
   "charts.a11y.keys": "Dùng phím mũi tên trái và phải để đọc từng giá trị. Bảng dữ liệu bên dưới biểu đồ liệt kê đầy đủ.",
+  "footer.accessibility": "Trợ năng",
 }

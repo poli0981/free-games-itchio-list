@@ -22,6 +22,7 @@ References # (link if any)
 ### Checklist
 - [ ] Tested locally (Python: `pytest`, `ruff check scripts tests webapp/scripts`; webapp: `npm test`, `npm run lint`, `npm run knip`, `npx tsc -b`)
 - [ ] Doesn't break the daily refresh or the ingest workflow
+- [ ] UI changes pass the [accessibility checklist](https://github.com/poli0981/free-games-itchio-list/blob/main/ACCESSIBILITY.md#8-for-contributors): keyboard, focus, labels in `en.ts` + `vi.ts`, contrast (`npm test`), reduced motion, one screen-reader check
 - [ ] New npm dependency? Added it to `webapp/src/lib/about.ts` so the About page lists it
 - [ ] Edited `webapp/wrangler.jsonc`? Ran `npm run cf:types`
 - [ ] I agree my contribution is licensed under the MIT License (see `LICENSE`)

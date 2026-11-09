@@ -21,6 +21,7 @@ Closes # (link issue number if any)
 - [ ] Tested locally — Python: `pytest`, `ruff check scripts tests webapp/scripts`, `python scripts/validate.py`; webapp: `npm test`, `npm run lint`, `npx tsc -b`
 - [ ] No new bugs introduced (hopefully)
 - [ ] No secrets, tokens or personal data in the diff
+- [ ] Touched the UI? It still works with the keyboard alone and a screen reader ([checklist](https://github.com/poli0981/free-games-itchio-list/blob/main/ACCESSIBILITY.md#8-for-contributors))
 - [ ] I agree my contribution is licensed under the MIT License (see `LICENSE`)
 - [ ] Followed the vibe (chill, no drama)
 

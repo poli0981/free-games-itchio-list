@@ -45,6 +45,10 @@ Everything lives on the website, **<https://freeitchgames.win>**:
 - **18+ content is hidden by default.** Games flagged `nsfw: Yes` stay hidden (covers included) unless
   you opt in under Settings after confirming you are 18 or older. That choice is stored only in your
   browser.
+- **Made for every way of browsing.** Everything works with the keyboard alone and with screen readers,
+  colours meet the WCAG contrast ratios in both themes, every chart has a data table, and the site
+  follows your system's reduced-motion and contrast settings. What works, the known gaps and how to
+  report a barrier: [ACCESSIBILITY.md](ACCESSIBILITY.md).
 
 Every link goes to the game's own page on itch.io. Cover images on the website are resized copies served
 by freeitchgames.win, so your browser does not contact itch.io until you click a link.
@@ -286,6 +290,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 - **Remove a game / fix its data**: email takedown@poli0981.dev or open a
   ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 - **Report bugs**: use the "Bug Report" issue template.
+- **Accessibility barriers**: use the ["Accessibility barrier" issue template](https://github.com/poli0981/free-games-itchio-list/issues/new?template=accessibility.yml) or email
+  contact@poli0981.dev. See [ACCESSIBILITY.md](ACCESSIBILITY.md).
 - **Request features**: use the "Feature Request / Improvement" template, or send a PR.
 - **Security issues**: report them privately, never in a public issue. See [SECURITY.md](SECURITY.md).
 - **Privacy questions**: see the [Privacy Policy](docs/PrivacyPolicy.md) or email privacy@poli0981.dev.
@@ -350,6 +356,7 @@ belong to their respective owners.
 - [EULA](docs/EULA.md): covers the desktop and Android apps only
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Security Policy](SECURITY.md)
+- [Accessibility statement](ACCESSIBILITY.md): what works with assistive technology, known gaps, how to report a barrier
 - [NOTICE](NOTICE.md)
 
 Contact (the Maintainer's own mailbox on poli0981.dev):

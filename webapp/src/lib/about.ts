@@ -117,6 +117,7 @@ export const LEGAL_LINKS: LegalLink[] = [
   { name: 'EULA',             description: 'License terms of the desktop and Android apps.',                        url: `${REPO_BLOB}/docs/EULA.md`,           group: 'policy', inGate: true, appOnly: true },
   { name: 'Code of Conduct',  description: 'Be kind. Contributor Covenant 2.1, adapted.',                           url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
   { name: 'Security Policy',  description: 'How to report a vulnerability privately.',                              url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
+  { name: 'Accessibility',    description: 'What works with a keyboard, screen readers and other assistive technology, known gaps, how to report a barrier.', url: `${REPO_BLOB}/ACCESSIBILITY.md`, group: 'policy' },
   { name: 'Content removal',  description: 'Creators and rights holders: ask for a game to be removed or corrected.', url: `${REPO_BLOB}/.github/ISSUE_TEMPLATE/remove_game.yml`, group: 'policy' },
 
   // Meta

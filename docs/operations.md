@@ -214,14 +214,19 @@ Do these once (and again with the `-staging` names for the staging Worker).
    `webapp/src-tauri/tauri.conf.json`, `webapp/src-tauri/Cargo.toml` + `Cargo.lock`, and the version
    badges of `README.md` / `README.vi.md`. Write the notes in
    `changelog/<major>.x/ver<major>.<minor>.x.md` and add the row to [`CHANGELOG.md`](../CHANGELOG.md).
-2. Open a PR; when CI is green, merge it with squash or a merge commit — never fast-forward. A push
+2. Run the accessibility smoke test ([`ACCESSIBILITY.md`](../ACCESSIBILITY.md) §4) on the preview or the
+   merged site: the main tasks with the keyboard only, a screen reader spot check (Narrator, NVDA or
+   VoiceOver), 200 % zoom and a narrow window, reduced motion, and a Windows contrast theme. If a
+   change made a known limitation go away (or added one), update §6 of the statement and its
+   Vietnamese mirror.
+3. Open a PR; when CI is green, merge it with squash or a merge commit — never fast-forward. A push
    that touches the changelog posts to Discussions → General unless the head commit says
    `[skip-discuss]` (the release announcement usually covers it).
-3. Apply any new D1 migration and set any new secret **before** the merge deploys code that needs them.
-4. Tag from `main`: `git fetch origin && git tag -s vX.Y.Z origin/main -m "…"`, then
+4. Apply any new D1 migration and set any new secret **before** the merge deploys code that needs them.
+5. Tag from `main`: `git fetch origin && git tag -s vX.Y.Z origin/main -m "…"`, then
    `git push origin vX.Y.Z`. `release_desktop.yml` opens one draft release and the desktop and Android
    jobs upload into it (12 assets for 4.x). Never create the release by hand first.
-5. When every asset is there, edit the title and notes (from the changelog), then
+6. When every asset is there, edit the title and notes (from the changelog), then
    `gh release edit vX.Y.Z --draft=false` — that fires the Discord and Discussions announcements.
 
 ## 4. Routine

@@ -1,0 +1,103 @@
+name: ♿ Accessibility barrier
+description: Something on the website or in the apps doesn't work with your keyboard, screen reader, zoom, contrast settings or other assistive technology
+title: "[Accessibility] "
+labels: ["accessibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report this. Every report helps, even a partial one — describe what happened in your own words, and skip whatever you'd rather not share. Please don't include health information.
+
+        Prefer email, or don't have a GitHub account? Write to **contact@poli0981.dev** (English or Vietnamese). What happens next, and the response targets, are in [ACCESSIBILITY.md](https://github.com/poli0981/free-games-itchio-list/blob/main/ACCESSIBILITY.md#7-reporting-an-accessibility-barrier).
+
+        **Found a security vulnerability?** Please don't file it here: report it privately (see SECURITY.md).
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      description: Pick all that apply.
+      multiple: true
+      options:
+        - Website (freeitchgames.win)
+        - Desktop app — Windows
+        - Desktop app — macOS
+        - Desktop app — Linux
+        - Android app
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or screen
+      description: The address of the page, or the screen in the app.
+      placeholder: e.g. https://freeitchgames.win/charts, or "the Games list in the Android app"
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What were you trying to do, and what happened?
+      description: What you expected, what happened instead, and the steps to get there if you can.
+      placeholder: |
+        e.g. I pressed Tab to reach the "Platform" filter, but focus jumped back to the top of the page.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of barrier? (optional)
+      multiple: true
+      options:
+        - Keyboard (can't reach or use something, focus lost or hidden)
+        - Screen reader (missing or wrong name, nothing announced, wrong reading order)
+        - Zoom, text size or layout at large sizes
+        - Colour or contrast (including Windows contrast themes)
+        - Motion or animation
+        - Charts
+        - Language (read in the wrong language or voice)
+        - Speech input or switch access
+        - Something else
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How much does it get in your way?
+      description: Just your best guess; it may change during triage.
+      options:
+        - Critical — I can't do a main task at all (find, open or read a game, change settings)
+        - Serious — I can, but only with great effort or a workaround
+        - Moderate — annoying or inconsistent, but I get there
+        - Minor — a small polish issue
+    validations:
+      required: true
+
+  - type: input
+    id: assistive-tech
+    attributes:
+      label: Assistive technology and version (if any)
+      placeholder: e.g. Windows Narrator, NVDA 2026.1, VoiceOver on iOS 26, TalkBack, keyboard only, Windows contrast theme
+
+  - type: input
+    id: environment
+    attributes:
+      label: Device, operating system, browser or app version
+      description: The app version is shown on the About page.
+      placeholder: e.g. Windows 11 + Edge 142; Android 15 + app 4.6.0
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or recording (optional)
+      description: Paste or drag files here. Please hide any personal information.
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue you agree to follow the project's [Code of Conduct](https://github.com/poli0981/free-games-itchio-list/blob/main/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow the Code of Conduct.
+          required: true
