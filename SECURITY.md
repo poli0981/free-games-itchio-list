@@ -1,6 +1,6 @@
 # Security Policy
 
-Last updated: 2026-10-16
+Last updated: 2026-10-27
 
 Applies from: the release of version 4.0.0.
 

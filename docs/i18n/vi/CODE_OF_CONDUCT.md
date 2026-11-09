@@ -4,7 +4,7 @@ Cập nhật lần cuối: 2026-09-29
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`CODE_OF_CONDUCT.md`](../../../CODE_OF_CONDUCT.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-29 (English source revision 2026-09-29). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`CODE_OF_CONDUCT.md`](../../../CODE_OF_CONDUCT.md).
 
 Đây là một repo sở thích nhỏ về game itch.io miễn phí, do một dev noob đang thất nghiệp vận hành: poli0981 (SkullMute), dưới đây gọi là "Người duy trì". Nói đơn giản: hãy cư xử đàng hoàng. Người duy trì là introvert max level với kỹ năng xã hội bằng không, nên mình cùng giữ mọi thứ tích cực nhé.
 

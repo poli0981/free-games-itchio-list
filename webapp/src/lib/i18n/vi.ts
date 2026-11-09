@@ -82,7 +82,7 @@ export const vi: Record<MessageKey, string> = {
   "about.social.title": "Tìm mình ở nơi khác",
   "about.thirdParty.core": "Cốt lõi",
   "about.thirdParty.data": "Tầng dữ liệu",
-  "about.thirdParty.desc": "Các thư viện mã nguồn mở mà ứng dụng này dựa trên. Nhấp vào tên bất kỳ để mở trang chủ dự án; tên giấy phép liên kết tới mã định danh SPDX.",
+  "about.thirdParty.desc": "Các thư viện mã nguồn mở mà ứng dụng này dựa trên. Nhấp vào tên bất kỳ để mở trang chủ dự án.",
   "about.thirdParty.desktop": "Desktop (Tauri)",
   "about.thirdParty.dev": "Công cụ dev",
   "about.thirdParty.title": "Phần mềm bên thứ ba",

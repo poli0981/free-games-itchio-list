@@ -80,7 +80,7 @@ export const en = {
   "about.social.title": "Find me elsewhere",
   "about.thirdParty.core": "Core",
   "about.thirdParty.data": "Data layer",
-  "about.thirdParty.desc": "Open-source libraries this app builds on. Click any name for the project's home page; license names link to the SPDX identifier.",
+  "about.thirdParty.desc": "Open-source libraries this app builds on. Click any name for the project's home page.",
   "about.thirdParty.desktop": "Desktop (Tauri)",
   "about.thirdParty.dev": "Dev tooling",
   "about.thirdParty.title": "Third-party software",

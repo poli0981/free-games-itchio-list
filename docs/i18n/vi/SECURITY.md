@@ -1,10 +1,10 @@
 # Chính sách bảo mật (Security Policy)
 
-Cập nhật lần cuối: 2026-10-16
+Cập nhật lần cuối: 2026-10-27
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-18 (English source revision 2026-09-18). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`SECURITY.md`](../../../SECURITY.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-27 (English source revision 2026-10-27). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`SECURITY.md`](../../../SECURITY.md).
 
 Chào bạn — đây là một dự án sở thích do một người vận hành, poli0981 (SkullMute), dưới đây gọi là "Người duy trì": một danh mục được tuyển chọn gồm các game itch.io miễn phí. Từ v4, dự án gồm một **website chỉ đọc** tại https://freeitchgames.win (chạy trên một Cloudflare Worker), một **pipeline dữ liệu Python** trên GitHub Actions, và các **ứng dụng desktop và Android chỉ đọc**. Không có tài khoản công khai, không đăng nhập và không thanh toán; lần đăng nhập duy nhất là trang quản trị riêng của Người duy trì, được bảo vệ bởi Cloudflare Access. Bề mặt tấn công nhỏ — nhưng nếu bạn tìm thấy lỗ hổng, Người duy trì thực sự muốn được biết.
 

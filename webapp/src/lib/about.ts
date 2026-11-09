@@ -118,7 +118,7 @@ export const LEGAL_LINKS: LegalLink[] = [
   { name: 'Code of Conduct',  description: 'Be kind. Contributor Covenant 2.1, adapted.',                           url: `${REPO_BLOB}/CODE_OF_CONDUCT.md`,     group: 'policy' },
   { name: 'Security Policy',  description: 'How to report a vulnerability privately.',                              url: `${REPO_BLOB}/SECURITY.md`,            group: 'policy' },
   { name: 'Accessibility',    description: 'What works with a keyboard, screen readers and other assistive technology, known gaps, how to report a barrier.', url: `${REPO_BLOB}/ACCESSIBILITY.md`, group: 'policy' },
-  { name: 'Content removal',  description: 'Creators and rights holders: ask for a game to be removed or corrected.', url: `${REPO_BLOB}/.github/ISSUE_TEMPLATE/remove_game.yml`, group: 'policy' },
+  { name: 'Content removal',  description: 'Creators and rights holders: ask for a game to be removed or corrected.', url: 'https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml', group: 'policy' },
 
   // Meta
   { name: 'Licenses & notice', description: 'Code: MIT. Data and docs: CC BY 4.0. Not affiliated with itch.io.',    url: `${REPO_BLOB}/NOTICE.md`,              group: 'meta', inGate: true },
@@ -154,23 +154,23 @@ export const THIRD_PARTY: ThirdParty[] = [
   { name: 'Geist / Geist Mono (Fontsource)', version: '5.3', license: 'OFL-1.1', url: 'https://vercel.com/font', category: 'ui' },
   { name: 'shadcn/ui', version: 'pattern', license: 'MIT', url: 'https://ui.shadcn.com', category: 'ui' },
   { name: 'Radix UI', version: '1.x / 2.x', license: 'MIT', url: 'https://www.radix-ui.com', category: 'ui' },
-  { name: 'lucide-react', version: '1.61', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
+  { name: 'lucide-react', version: '1.69', license: 'ISC', url: 'https://lucide.dev', category: 'ui' },
   { name: 'class-variance-authority', version: '0.7', license: 'Apache-2.0', url: 'https://cva.style', category: 'ui' },
   { name: 'tailwind-merge', version: '3.7', license: 'MIT', url: 'https://github.com/dcastil/tailwind-merge', category: 'ui' },
   { name: 'clsx', version: '2.1', license: 'MIT', url: 'https://github.com/lukeed/clsx', category: 'ui' },
   { name: 'Recharts', version: '3.10', license: 'MIT', url: 'https://recharts.org', category: 'ui' },
 
   // Data
-  { name: 'TanStack Query', version: '5.104', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
-  { name: 'TanStack Query Persist Client', version: '5.104', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query', version: '5.106', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
+  { name: 'TanStack Query Persist Client', version: '5.106', license: 'MIT', url: 'https://tanstack.com/query', category: 'data' },
   { name: 'idb-keyval', version: '6.3', license: 'Apache-2.0', url: 'https://github.com/jakearchibald/idb-keyval', category: 'data' },
   { name: 'fflate', version: '0.8', license: 'MIT', url: 'https://github.com/101arrowz/fflate', category: 'data' },
 
   // Hosting / tooling (Cloudflare)
   { name: 'jose', version: '6.2', license: 'MIT', url: 'https://github.com/panva/jose', category: 'dev' },
-  { name: 'Wrangler', version: '4.152', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
-  { name: 'Vitest', version: '5.0', license: 'MIT', url: 'https://vitest.dev', category: 'dev' },
-  { name: '@vitest/coverage-v8', version: '5.0', license: 'MIT', url: 'https://vitest.dev/guide/coverage', category: 'dev' },
+  { name: 'Wrangler', version: '4.158', license: 'MIT OR Apache-2.0', url: 'https://developers.cloudflare.com/workers/wrangler/', category: 'dev' },
+  { name: 'Vitest', version: '5.1', license: 'MIT', url: 'https://vitest.dev', category: 'dev' },
+  { name: '@vitest/coverage-v8', version: '5.1', license: 'MIT', url: 'https://vitest.dev/guide/coverage', category: 'dev' },
 
   // Desktop / mobile (Tauri)
   { name: 'Tauri', version: '2.x', license: 'Apache-2.0 OR MIT', url: 'https://tauri.app', category: 'desktop' },

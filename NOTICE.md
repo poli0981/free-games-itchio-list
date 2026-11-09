@@ -1,6 +1,6 @@
 # Notice
 
-Last updated: 2026-09-29
+Last updated: 2026-10-16
 
 Applies from: the release of version 4.0.0.
 

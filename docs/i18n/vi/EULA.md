@@ -4,7 +4,7 @@ Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: khi phát hành phiên bản 4.2.0.
 
-Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-03 (English source revision 2026-10-03). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-16 (English source revision 2026-10-16). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 
 > Bản tiếng Anh: [`docs/EULA.md`](../../EULA.md).
 
