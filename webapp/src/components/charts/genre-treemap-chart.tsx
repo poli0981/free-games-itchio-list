@@ -6,7 +6,7 @@ import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
-import { PALETTE } from './palette'
+import { PALETTE, PALETTE_LABEL } from './palette'
 
 interface TreemapCellProps {
   x?: number
@@ -41,7 +41,7 @@ function TreemapCell(props: TreemapCellProps) {
         strokeWidth={2}
       />
       {label && height > 24 && (
-        <text x={x + 6} y={y + 18} fill="var(--background)" fontSize={12} fontWeight={600}>
+        <text x={x + 6} y={y + 18} fill={PALETTE_LABEL[index % PALETTE.length]} fontSize={12} fontWeight={600}>
           {label}
         </text>
       )}

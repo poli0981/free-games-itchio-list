@@ -19,9 +19,10 @@ export function OnlineOfflineChart({ games }: { games: Game[] }) {
     <ChartCard title={t('charts.onlineOffline.title')} description={t('charts.onlineOffline.desc')}>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
-          <Pie {...SERIES_ANIMATION} data={data} dataKey="count" nameKey="key" innerRadius="50%" outerRadius="80%" stroke={SLICE_STROKE}>
-            <Cell fill={PALETTE[2]} />
-            <Cell fill={PALETTE[3]} />
+          {/* Blue and orange: apart in lightness and for colour-blind readers (green and amber were not). */}
+          <Pie {...SERIES_ANIMATION} data={data} dataKey="count" nameKey="key" innerRadius="50%" outerRadius="80%" paddingAngle={2} stroke={SLICE_STROKE}>
+            <Cell fill={PALETTE[4]} />
+            <Cell fill={PALETTE[6]} />
           </Pie>
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={split.online + split.offline} />} />
           <Legend {...LEGEND_BASE} />

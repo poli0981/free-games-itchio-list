@@ -185,7 +185,7 @@ export default function About() {
         <CardContent className="space-y-2 text-sm">
           <p>
             {t('about.app.descPrefix')}
-            <ExtLink href={APP.repo} className="font-medium hover:underline">
+            <ExtLink href={APP.repo} className="font-medium underline underline-offset-4">
               free-games-itchio-list
             </ExtLink>
             {t('about.app.descSuffix')}
@@ -273,7 +273,7 @@ export default function About() {
           <p className="text-xs text-muted-foreground">{t('about.social.desc')}</p>
           <p className="text-xs text-muted-foreground">
             {t('about.social.allLinks')}{' '}
-            <ExtLink href={DEV.linksUrl} className="font-medium text-foreground hover:underline">
+            <ExtLink href={DEV.linksUrl} className="font-medium text-foreground underline underline-offset-4">
               {DEV.linksUrl.replace(/^https:\/\/|\/$/g, '')}
             </ExtLink>
           </p>
@@ -327,7 +327,7 @@ export default function About() {
           })}
           <p className="pt-1 text-xs text-muted-foreground">
             <span lang="vi">Tiếng Việt</span>:{' '}
-            <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium hover:underline">
+            <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium underline underline-offset-4">
               docs/i18n/vi/
             </ExtLink>{' '}
             {t('about.legal.viNote')}
@@ -342,7 +342,7 @@ export default function About() {
         <CardContent className="space-y-2 text-sm">
           <p>
             {t('about.upstream.source')}{' '}
-            <ExtLink href={UPSTREAM_DATA.url} className="font-medium hover:underline">
+            <ExtLink href={UPSTREAM_DATA.url} className="font-medium underline underline-offset-4">
               {UPSTREAM_DATA.source}
             </ExtLink>
           </p>

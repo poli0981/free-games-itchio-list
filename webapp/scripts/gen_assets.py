@@ -20,7 +20,7 @@ SANS = FONTS / "geist" / "files" / "geist-latin-wght-normal.woff2"
 MONO = FONTS / "geist-mono" / "files" / "geist-mono-latin-wght-normal.woff2"
 
 # Same values as the dark theme tokens in src/index.css.
-ACCENT = (124, 92, 255)  # --primary #7c5cff
+ACCENT = (124, 92, 255)  # --brand #7c5cff (the logo purple; buttons use the darker --primary)
 BG = (11, 11, 12)  # --background #0b0b0c
 TEXT = (237, 237, 239)  # --foreground
 MUTED = (155, 155, 164)  # --muted-foreground

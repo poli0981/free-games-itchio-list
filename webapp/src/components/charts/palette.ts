@@ -1,17 +1,25 @@
+import { readableOn } from '@/lib/color'
+
 // Shared chart colour palette. Kept in its own file so chart-card.tsx
 // stays a component-only module (React Fast Refresh friendly).
+// Every colour keeps 3:1 against the card in both themes (WCAG 1.4.11; the
+// green, amber, sky, orange and emerald were darkened for the light card) —
+// src/contrast.test.ts checks it.
 export const PALETTE = [
-  '#7c5cff', // the site accent (--primary)
-  'hsl(330 81% 60%)',
-  'hsl(142 71% 45%)',
-  'hsl(38 92% 50%)',
-  'hsl(217 91% 60%)',
-  'hsl(199 89% 48%)',
-  'hsl(20 90% 55%)',
-  'hsl(173 58% 39%)',
-  'hsl(280 65% 60%)',
-  'hsl(160 60% 45%)',
+  '#7c5cff', // the brand purple (--brand)
+  '#ec4699',
+  '#1b9d4a',
+  '#c76c05',
+  '#3c83f6',
+  '#0b84bc',
+  '#e9560c',
+  '#2a9d90',
+  '#af57db',
+  '#238b68',
 ]
+
+/** Label colour for text drawn on each palette colour (the treemap cells), 4.5:1 or better. */
+export const PALETTE_LABEL = PALETTE.map((color) => readableOn(color))
 
 /** "Unknown / not disclosed" slices: a mid gray that reads on both themes' cards. */
 export const NEUTRAL = '#6b6b74'

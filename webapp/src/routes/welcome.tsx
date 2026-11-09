@@ -45,7 +45,7 @@ export default function Welcome() {
         <div className="mt-1.5 flex flex-wrap items-center gap-2.5">
           <Link
             to="/games"
-            className="flex h-[42px] items-center gap-2 rounded-[9px] bg-primary px-[18px] text-[15px] font-medium text-primary-foreground hover:opacity-90"
+            className="flex h-[42px] items-center gap-2 rounded-[9px] bg-primary px-[18px] text-[15px] font-medium text-primary-foreground hover:bg-primary/90"
           >
             {total ? t('welcome.browse', { n: total }) : t('nav.games')}
             <ArrowRight className="size-[15px]" aria-hidden="true" />
@@ -65,7 +65,7 @@ export default function Welcome() {
       <section aria-label={t('welcome.features')} className="grid gap-4 md:grid-cols-3">
         {FEATURES.map((f) => (
           <article key={f.mark} className="flex flex-col gap-2.5 rounded-xl border bg-card p-[22px]" data-card-pad>
-            <span className="flex size-8 items-center justify-center rounded-lg bg-muted font-mono text-[13px] font-medium text-primary">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-muted font-mono text-[13px] font-medium text-primary-text">
               {f.mark}
             </span>
             <h2 className="text-base font-semibold">{t(f.title)}</h2>

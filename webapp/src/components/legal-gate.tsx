@@ -100,7 +100,7 @@ function LegalGateDialog() {
 
           {lang === 'vi' && (
             <p className="text-xs text-muted-foreground">
-              <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium underline-offset-4 hover:underline">
+              <ExtLink href={LEGAL_VI_INDEX_URL} className="font-medium underline underline-offset-4">
                 docs/i18n/vi/
               </ExtLink>{' '}
               — {t('legal.gate.viLink')}

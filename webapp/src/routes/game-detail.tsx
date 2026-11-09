@@ -220,7 +220,7 @@ function GameDetailView({ game }: { game: Game }) {
           <div className="flex flex-wrap gap-2.5">
             <ExtLink
               href={game.url}
-              className="flex h-[42px] items-center gap-2 rounded-[9px] bg-primary px-[18px] text-[15px] font-medium text-primary-foreground hover:opacity-90"
+              className="flex h-[42px] items-center gap-2 rounded-[9px] bg-primary px-[18px] text-[15px] font-medium text-primary-foreground hover:bg-primary/90"
             >
               {t('detail.openOnItch')}
               <ArrowUpRight className="size-3.5" aria-hidden="true" />

@@ -42,7 +42,7 @@ export default function Suggest() {
       <div className="mx-auto flex max-w-xl flex-col gap-3 px-4 pt-6 pb-12 sm:px-8 md:pt-7">
         <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.suggest')}</h1>
         <p className="text-muted-foreground">{t('suggest.webOnly')}</p>
-        <ExtLink href={`${SITE_ORIGIN}/suggest`} className="text-primary underline-offset-4 hover:underline">
+        <ExtLink href={`${SITE_ORIGIN}/suggest`} className="text-primary-text underline underline-offset-4">
           {t('suggest.openWebsite')}
         </ExtLink>
       </div>

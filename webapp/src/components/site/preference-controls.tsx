@@ -36,7 +36,7 @@ function Segmented<T extends string>({
             onClick={() => onChange(o.value)}
             className={cn(
               'flex h-8 items-center justify-center gap-1.5 rounded-md text-xs text-muted-foreground hover:text-foreground',
-              value === o.value && 'bg-card font-medium text-foreground shadow-xs',
+              value === o.value && 'bg-card font-medium text-foreground shadow-xs ring-1 ring-primary',
             )}
           >
             {o.icon && <o.icon className="size-3.5" aria-hidden="true" />}

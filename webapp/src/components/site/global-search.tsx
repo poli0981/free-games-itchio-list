@@ -117,7 +117,7 @@ export function GlobalSearch({ className }: { className?: string }) {
 
   return (
     <search className={cn('relative', className)}>
-      <label className="flex h-9 items-center gap-2 rounded-lg border bg-card px-3 text-muted-foreground focus-within:border-primary">
+      <label className="flex h-9 items-center gap-2 rounded-lg border border-input bg-card px-3 text-muted-foreground focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
         <Search className="size-4 shrink-0" aria-hidden="true" />
         <input
           ref={input}
@@ -166,7 +166,10 @@ export function GlobalSearch({ className }: { className?: string }) {
               aria-selected={i === active}
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => goToGame(game.url)}
-              className={cn('flex cursor-pointer flex-col px-3 py-2', i === active && 'bg-accent')}
+              className={cn(
+                'flex cursor-pointer flex-col px-3 py-2',
+                i === active && 'bg-accent shadow-[inset_3px_0_0_var(--primary)]',
+              )}
             >
               <span className="truncate font-medium">{game.name}</span>
               <span className="truncate text-xs text-muted-foreground">{game.dev}</span>
@@ -180,7 +183,7 @@ export function GlobalSearch({ className }: { className?: string }) {
             onClick={goToResults}
             className={cn(
               'cursor-pointer border-t px-3 py-2 text-muted-foreground hover:bg-accent',
-              active === allIndex && 'bg-accent',
+              active === allIndex && 'bg-accent shadow-[inset_3px_0_0_var(--primary)]',
             )}
           >
             {suggestions.length

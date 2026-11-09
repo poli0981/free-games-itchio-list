@@ -129,7 +129,7 @@ function FilterOptions({
             onChange={(e) => setFind(e.target.value)}
             placeholder={t('common.search')}
             aria-label={`${t('common.search')}: ${label}`}
-            className="h-8 w-full rounded-md border bg-background px-2.5 text-sm focus:border-primary focus-visible:outline-hidden"
+            className="h-8 w-full rounded-md border border-input bg-background px-2.5 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus-visible:outline-hidden"
           />
         </div>
       )}

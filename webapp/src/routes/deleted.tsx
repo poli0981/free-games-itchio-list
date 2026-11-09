@@ -44,7 +44,7 @@ export default function Removed() {
       </div>
 
       {sorted.length > 10 && (
-        <label className="flex h-11 items-center gap-2 rounded-[10px] border bg-card px-3 text-muted-foreground focus-within:border-primary md:h-[34px] md:w-80 md:rounded-lg">
+        <label className="flex h-11 items-center gap-2 rounded-[10px] border border-input bg-card px-3 text-muted-foreground focus-within:border-primary focus-within:ring-1 focus-within:ring-primary md:h-[34px] md:w-80 md:rounded-lg">
           <Search className="size-4 shrink-0 md:size-[15px]" aria-hidden="true" />
           <input
             type="search"

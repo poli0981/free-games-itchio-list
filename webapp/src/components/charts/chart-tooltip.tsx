@@ -28,7 +28,11 @@ export function ChartTooltipContent({ active, payload, label, total, labelFormat
           const color = colorOf?.(entry) ?? entry.color ?? entry.fill
           return (
             <li key={`${String(entry.name)}-${i}`} className="flex items-center gap-2">
-              <span aria-hidden="true" className="size-2.5 shrink-0 rounded-[3px]" style={{ background: color }} />
+              <span
+                aria-hidden="true"
+                className="size-2.5 shrink-0 rounded-[3px] forced-color-adjust-none"
+                style={{ background: color }}
+              />
               <span className="text-muted-foreground">{entry.name}</span>
               <span className="ml-auto pl-4 font-mono font-medium tabular-nums">
                 {Number.isFinite(value) ? fmt.number(value) : String(entry.value ?? '')}

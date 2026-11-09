@@ -26,8 +26,8 @@ const MENU: { to: string; key: MessageKey; end?: boolean }[] = [
 
 function BrandMark({ className }: { className?: string }) {
   return (
-    <span className={cn('flex size-[26px] items-center justify-center rounded-[7px] bg-primary', className)}>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
+    <span className={cn('flex size-[26px] items-center justify-center rounded-[7px] bg-brand text-white', className)}>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />
       </svg>
     </span>
@@ -86,7 +86,9 @@ function MobileMenu() {
               className={({ isActive }) =>
                 cn(
                   'flex min-h-11 items-center rounded-lg px-3 text-[15px]',
-                  isActive ? 'bg-accent font-medium' : 'text-muted-foreground hover:bg-accent',
+                  isActive
+                    ? 'bg-accent font-medium underline decoration-primary decoration-2 underline-offset-[6px]'
+                    : 'text-muted-foreground hover:bg-accent',
                 )
               }
             >
@@ -122,7 +124,10 @@ export function SiteHeader() {
               className={({ isActive }) =>
                 cn(
                   'rounded-md px-2.5 py-1.5 text-sm',
-                  isActive ? 'bg-accent font-medium text-foreground' : 'text-muted-foreground hover:text-foreground',
+                  // The current page is underlined too: the fill alone is too faint to see.
+                  isActive
+                    ? 'bg-accent font-medium text-foreground underline decoration-primary decoration-2 underline-offset-[6px]'
+                    : 'text-muted-foreground hover:text-foreground',
                 )
               }
             >
