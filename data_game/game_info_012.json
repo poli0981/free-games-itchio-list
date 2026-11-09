@@ -13990,5 +13990,214 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-09T16:26:23Z"
+    },
+    {
+        "url": "https://emlise.itch.io/seasonshift",
+        "name": "Season Shift",
+        "dev": "Emlise, NDI",
+        "description": "Shift the world",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 03:04 UTC",
+        "rating": "4.8",
+        "rating_count": "33",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA0MTYzLmdpZg==/original/dzAyqs.gif",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Cute",
+            "Female Protagonist",
+            "No AI",
+            "Pixel Art",
+            "Relaxing",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T20:23:46Z"
+    },
+    {
+        "url": "https://gimugimu-games.itch.io/slot-factory",
+        "name": "Slot Factory",
+        "dev": "gimugimu",
+        "description": "Spin, chain combos, and build your own steampunk slot factory.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 17:07 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTg2MTcwLnBuZw==/original/lP6UfB.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Clicker",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Short",
+            "slot-machine",
+            "Steampunk"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T20:23:50Z"
+    },
+    {
+        "url": "https://gwilym.itch.io/the-deconsecration-initiative",
+        "name": "The Deconsecration Initiative",
+        "dev": "gwilym",
+        "description": "A short incremental game about building a machine to kill a god",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 01:25 UTC",
+        "rating": "4.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTk4MzEwLnBuZw==/original/46BkZc.png",
+        "tags": [
+            "2D",
+            "City Builder",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "No AI",
+            "Pixel Art",
+            "satire",
+            "weird"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T20:23:53Z"
+    },
+    {
+        "url": "https://krokozavrgame.itch.io/horror2026",
+        "name": "UNCLAIMED",
+        "dev": "krokozavrgame, Volchock",
+        "description": "Work the counter. Check the cameras. Try to make it through your shift.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 06:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDM2MDIwLnBuZw==/original/Z%2BJXG3.png",
+        "tags": [
+            "First-Person",
+            "Horror",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T20:23:57Z"
+    },
+    {
+        "url": "https://lee-courgette.itch.io/pluvia",
+        "name": "PLUVIA — Be the Rain",
+        "dev": "Lee_courgette",
+        "description": "Be the rain. Grow a pixel valley, grant its villages’ wishes — and drink up the floods before they drown them.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 00:22 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA2MTQ0LnBuZw==/original/2Pvm9D.png",
+        "tags": [
+            "Casual",
+            "Cozy",
+            "Idle",
+            "Incremental",
+            "nature",
+            "Physics",
+            "Pixel Art",
+            "Relaxing",
+            "Sandbox"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T20:24:01Z"
     }
 ]
