@@ -11,7 +11,7 @@ A Vietnamese translation is available at [`docs/i18n/vi/ACCESSIBILITY.md`](docs/
 > **TL;DR**
 >
 > - The goal is [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Level AA for the website and the apps. That is a target, not a certificate: nobody outside the project has audited it.
-> - Every page works with the keyboard alone and with a screen reader. The Maintainer tests with the keyboard only and Windows Narrator.
+> - Every page works with the keyboard alone and with a screen reader. The Maintainer tests with the keyboard only, Windows Narrator, and VoiceOver on an iPhone.
 > - Colours meet the WCAG contrast ratios in the light and dark themes, and a test checks them on every change. Windows contrast themes are supported, and the site follows your system's "reduce motion" setting.
 > - Every chart comes with a data table.
 > - Known gaps are listed in [§6](#6-known-limitations).
@@ -89,6 +89,7 @@ It doesn't cover:
 ## 4. How it is tested
 
 - **By the Maintainer, by hand** (November 2026): the website on Windows 11 and the Windows desktop app, with the keyboard only (mouse switched off) and Windows Narrator. No blocking problems were found.
+- **On a real phone** (November 2026, version 4.6.0): the website on an iPhone 14 Pro with VoiceOver, in Safari, Chrome and Brave. It passed.
 - **For 4.6.0**: the main pages and dialogs were walked through with the keyboard, and their accessibility tree was checked (names, roles, headings, landmarks, announcements) in English and Vietnamese, on a desktop and a phone-sized screen.
 - **Automatically, on every change**: the contrast test above and the app's unit tests (where focus goes after a page change, the chart tables).
 - **Before each release**: a short smoke test. That means a keyboard pass through the main tasks, a screen reader spot check, 200 % zoom and a narrow window, reduced motion, and a Windows contrast theme.
@@ -104,8 +105,8 @@ It doesn't cover:
 
 Assistive technology:
 
-- **Tested**: Windows Narrator on Windows 11, and keyboard-only use.
-- **Expected to work, not regularly tested**: NVDA and JAWS on Windows, VoiceOver on macOS and iOS, TalkBack on Android, browser zoom, Windows contrast themes, speech input. They rely on the same standard markup.
+- **Tested**: Windows Narrator on Windows 11, VoiceOver on iOS (iPhone 14 Pro: Safari, Chrome and Brave), and keyboard-only use.
+- **Expected to work, not regularly tested**: NVDA and JAWS on Windows, VoiceOver on macOS, TalkBack on Android, browser zoom, Windows contrast themes, speech input. They rely on the same standard markup.
 - **Limited**: Orca in the Linux desktop app, because WebKitGTK supports screen readers less well than the browsers do.
 
 ## 6. Known limitations

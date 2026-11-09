@@ -11,7 +11,7 @@ Cập nhật lần cuối: 2026-11-09
 > **Tóm tắt (TL;DR)**
 >
 > - Mục tiêu là [WCAG 2.2](https://www.w3.org/TR/WCAG22/) mức AA cho website và các ứng dụng. Đó là mục tiêu, không phải chứng nhận: chưa có ai ngoài dự án đánh giá.
-> - Mọi trang đều dùng được chỉ với bàn phím và với trình đọc màn hình. Người duy trì kiểm tra bằng bàn phím (không dùng chuột) và Windows Narrator.
+> - Mọi trang đều dùng được chỉ với bàn phím và với trình đọc màn hình. Người duy trì kiểm tra bằng bàn phím (không dùng chuột), Windows Narrator, và VoiceOver trên iPhone.
 > - Màu sắc đạt tỉ lệ tương phản WCAG ở cả giao diện sáng và tối, và một bài test kiểm tra lại sau mỗi thay đổi. Hỗ trợ chế độ tương phản (Contrast themes) của Windows và làm theo thiết lập "giảm chuyển động" của hệ thống.
 > - Mỗi biểu đồ đều có bảng dữ liệu đi kèm.
 > - Các hạn chế đã biết nằm ở [§6](#6-các-hạn-chế-đã-biết).
@@ -89,6 +89,7 @@ Tuyên bố này không áp dụng cho:
 ## 4. Cách kiểm tra
 
 - **Người duy trì kiểm tra thủ công** (tháng 11/2026): website trên Windows 11 và ứng dụng desktop Windows, chỉ dùng bàn phím (tắt chuột) và Windows Narrator. Không thấy lỗi nào chặn việc sử dụng.
+- **Trên điện thoại thật** (tháng 11/2026, phiên bản 4.6.0): website trên iPhone 14 Pro với VoiceOver, trong Safari, Chrome và Brave. Kết quả: đạt.
 - **Cho bản 4.6.0**: các trang chính và hộp thoại được đi hết bằng bàn phím, và cây trợ năng (accessibility tree) của chúng được kiểm tra (tên, vai trò, tiêu đề, vùng mốc, thông báo) bằng tiếng Anh và tiếng Việt, trên màn hình máy tính và màn hình cỡ điện thoại.
 - **Tự động, sau mỗi thay đổi**: bài test tương phản ở trên và các unit test của ứng dụng (focus đi đâu sau khi đổi trang, bảng dữ liệu biểu đồ).
 - **Trước mỗi lần phát hành**: một lượt kiểm tra nhanh. Gồm đi hết các việc chính bằng bàn phím, thử nhanh với trình đọc màn hình, phóng to 200 % và cửa sổ hẹp, giảm chuyển động, và một chế độ tương phản của Windows.
@@ -104,8 +105,8 @@ Tuyên bố này không áp dụng cho:
 
 Công cụ hỗ trợ (assistive technology):
 
-- **Đã kiểm tra**: Windows Narrator trên Windows 11, và dùng chỉ bàn phím.
-- **Dự kiến dùng được, chưa kiểm tra thường xuyên**: NVDA và JAWS trên Windows, VoiceOver trên macOS và iOS, TalkBack trên Android, phóng to của trình duyệt, chế độ tương phản của Windows, nhập liệu bằng giọng nói. Chúng dựa trên cùng mã HTML chuẩn.
+- **Đã kiểm tra**: Windows Narrator trên Windows 11, VoiceOver trên iOS (iPhone 14 Pro: Safari, Chrome và Brave), và dùng chỉ bàn phím.
+- **Dự kiến dùng được, chưa kiểm tra thường xuyên**: NVDA và JAWS trên Windows, VoiceOver trên macOS, TalkBack trên Android, phóng to của trình duyệt, chế độ tương phản của Windows, nhập liệu bằng giọng nói. Chúng dựa trên cùng mã HTML chuẩn.
 - **Hạn chế**: Orca trong ứng dụng desktop Linux, vì WebKitGTK hỗ trợ trình đọc màn hình kém hơn các trình duyệt.
 
 ## 6. Các hạn chế đã biết
