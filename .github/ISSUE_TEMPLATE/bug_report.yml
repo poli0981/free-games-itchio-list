@@ -10,6 +10,7 @@ body:
 
         **Found a security vulnerability?** Please don't file it here — report it privately via https://github.com/poli0981/free-games-itchio-list/security/advisories/new or security@poli0981.dev.
         Want a game removed (or you're its creator)? Use the "Remove a Game" template instead.
+        Something doesn't work with your keyboard, screen reader, zoom or contrast settings? The "Accessibility barrier" template asks the right questions.
 
   - type: dropdown
     id: where

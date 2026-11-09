@@ -1,10 +1,11 @@
 import { useMemo } from 'react'
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { countByArray } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { chartAria, LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -12,11 +13,18 @@ export function PlatformChart({ games }: { games: Game[] }) {
   const t = useT()
   const data = useMemo(() => countByArray(games, 'platforms'), [games])
   return (
-    <ChartCard title={t('charts.platform.title')} description={t('charts.platform.desc')}>
+    // No shares in the table: a game can count for several platforms.
+    <ChartCard
+      id="platform"
+      title={t('charts.platform.title')}
+      description={t('charts.platform.desc')}
+      table={{ label: t('games.filter.platform'), value: t('charts.series.games'), rows: tableRows(data) }}
+    >
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
+        <PieChart {...chartAria('platform')}>
           <Pie
             {...SERIES_ANIMATION}
+            rootTabIndex={-1}
             data={data}
             dataKey="count"
             nameKey="key"

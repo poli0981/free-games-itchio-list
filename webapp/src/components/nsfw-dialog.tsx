@@ -1,4 +1,6 @@
+import { useRef } from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
+import { focusPageHeading } from '@/components/focus-target'
 import { Button } from '@/components/ui/button'
 import { useT } from '@/lib/i18n'
 import { useNsfwPrompt } from '@/lib/nsfw'
@@ -9,13 +11,28 @@ export function NsfwDialog() {
   const t = useT()
   const open = useNsfwPrompt((s) => s.open)
   const setShowNsfw = usePrefs((s) => s.setShowNsfw)
+  const opener = useRef<Element | null>(null)
   const close = () => useNsfwPrompt.setState({ open: false })
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={(next) => !next && close()}>
       <DialogPrimitive.Portal>
         <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60" />
-        <DialogPrimitive.Content className="fixed top-1/2 left-1/2 z-50 flex w-[calc(100%-2rem)] max-w-[420px] -translate-x-1/2 -translate-y-1/2 flex-col gap-4 rounded-2xl border bg-popover p-6 text-popover-foreground shadow-2xl">
+        <DialogPrimitive.Content
+          // There is no Radix trigger: remember the control that opened the dialog
+          // (still focused at this point) and return there — or to the page's
+          // heading when it is gone (the 18+ gate is replaced by the game page).
+          onOpenAutoFocus={() => {
+            opener.current = document.activeElement
+          }}
+          onCloseAutoFocus={(e) => {
+            e.preventDefault()
+            const target = useNsfwPrompt.getState().returnFocus ?? opener.current
+            if (target instanceof HTMLElement && target.isConnected) target.focus({ preventScroll: true })
+            else focusPageHeading()
+          }}
+          className="fixed top-1/2 left-1/2 z-50 flex max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-[420px] -translate-x-1/2 -translate-y-1/2 flex-col gap-4 overflow-y-auto rounded-2xl border bg-popover p-6 text-popover-foreground shadow-2xl"
+        >
           <div className="space-y-2">
             <DialogPrimitive.Title className="text-lg font-semibold tracking-tight">
               {t('nsfw.dialog.title')}

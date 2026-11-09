@@ -35,7 +35,8 @@ function Rating({ game, withCount }: { game: Game; withCount?: boolean }) {
   if (rating === null) {
     return (
       <span className="text-muted-foreground" title={t('games.noRating')}>
-        —
+        <span aria-hidden="true">—</span>
+        <span className="sr-only">{t('games.noRating')}</span>
       </span>
     )
   }
@@ -43,14 +44,18 @@ function Rating({ game, withCount }: { game: Game; withCount?: boolean }) {
   return (
     <span className="font-mono text-[13px] whitespace-nowrap">
       <span aria-hidden="true">★ </span>
+      {/* The phone list has no column header: say what the number is. */}
+      {!withCount && <span className="sr-only">{t('detail.rating')} </span>}
       {fmt.rating(rating)}
       {withCount && count > 0 && (
         <span
           className="text-muted-foreground"
           title={t(count === 1 ? 'games.ratingCount.one' : 'games.ratingCount', { count: fmt.number(count) })}
         >
-          {' '}
-          ({fmt.number(count)})
+          <span aria-hidden="true"> ({fmt.number(count)})</span>
+          <span className="sr-only">
+            , {t(count === 1 ? 'games.ratingCount.one' : 'games.ratingCount', { count: fmt.number(count) })}
+          </span>
         </span>
       )}
     </span>

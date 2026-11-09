@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router'
 import { Code2, Menu } from 'lucide-react'
 import { ExtLink } from '@/components/ext-link'
@@ -26,8 +26,8 @@ const MENU: { to: string; key: MessageKey; end?: boolean }[] = [
 
 function BrandMark({ className }: { className?: string }) {
   return (
-    <span className={cn('flex size-[26px] items-center justify-center rounded-[7px] bg-primary', className)}>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
+    <span className={cn('flex size-[26px] items-center justify-center rounded-[7px] bg-brand text-white', className)}>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />
       </svg>
     </span>
@@ -45,23 +45,38 @@ function MobileMenu() {
   const t = useT()
   const [open, setOpen] = useState(false)
   const location = useLocation()
+  const openedOn = useRef(location.pathname)
   useEffect(() => {
     // Back/forward navigation doesn't go through the links' onClick.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setOpen(false)
   }, [location.pathname])
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
+    <Sheet
+      open={open}
+      onOpenChange={(next) => {
+        if (next) openedOn.current = location.pathname
+        setOpen(next)
+      }}
+    >
       <SheetTrigger
         aria-label={t('header.menu')}
         className="flex size-11 items-center justify-center rounded-lg text-foreground hover:bg-accent"
       >
         <Menu className="size-5" aria-hidden="true" />
       </SheetTrigger>
-      <SheetContent side="right" className="w-72 p-0 pt-[env(safe-area-inset-top)]">
+      <SheetContent
+        side="right"
+        closeLabel={t('common.close')}
+        // A link in the menu opened another page: focus belongs to its heading (App.tsx), not to this button.
+        onCloseAutoFocus={(e) => {
+          if (location.pathname !== openedOn.current) e.preventDefault()
+        }}
+        className="w-72 p-0 pt-[env(safe-area-inset-top)]"
+      >
         <SheetTitle className="sr-only">{t('header.nav')}</SheetTitle>
         <SheetDescription className="sr-only">{t('header.navDescription')}</SheetDescription>
-        <nav aria-label={t('header.nav')} className="flex flex-col gap-1 p-4 pt-14">
+        <nav aria-label={t('header.mainNav')} className="flex flex-col gap-1 p-4 pt-14">
           {MENU.map((m) => (
             <NavLink
               key={m.to}
@@ -71,7 +86,9 @@ function MobileMenu() {
               className={({ isActive }) =>
                 cn(
                   'flex min-h-11 items-center rounded-lg px-3 text-[15px]',
-                  isActive ? 'bg-accent font-medium' : 'text-muted-foreground hover:bg-accent',
+                  isActive
+                    ? 'bg-accent font-medium underline decoration-primary decoration-2 underline-offset-[6px]'
+                    : 'text-muted-foreground hover:bg-accent',
                 )
               }
             >
@@ -99,7 +116,7 @@ export function SiteHeader() {
           <BrandMark />
           <span className="text-[15px] font-semibold tracking-tight">Free Itch Games</span>
         </Link>
-        <nav aria-label={t('header.nav')} className="flex items-center gap-1">
+        <nav aria-label={t('header.mainNav')} className="flex items-center gap-1">
           {NAV.map((n) => (
             <NavLink
               key={n.to}
@@ -107,7 +124,10 @@ export function SiteHeader() {
               className={({ isActive }) =>
                 cn(
                   'rounded-md px-2.5 py-1.5 text-sm',
-                  isActive ? 'bg-accent font-medium text-foreground' : 'text-muted-foreground hover:text-foreground',
+                  // The current page is underlined too: the fill alone is too faint to see.
+                  isActive
+                    ? 'bg-accent font-medium text-foreground underline decoration-primary decoration-2 underline-offset-[6px]'
+                    : 'text-muted-foreground hover:text-foreground',
                 )
               }
             >

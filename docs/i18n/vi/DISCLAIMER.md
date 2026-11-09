@@ -4,7 +4,7 @@ Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-13 (English source revision 2026-10-13). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/DISCLAIMER.md`](../../DISCLAIMER.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-16 (English source revision 2026-10-16). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/DISCLAIMER.md`](../../DISCLAIMER.md).
 
 Dự án này — repository `free-games-itchio-list` và website **[freeitchgames.win](https://freeitchgames.win)** — là một dự án sở thích: một danh mục được tuyển chọn và tự động cập nhật gồm các game miễn phí trên [itch.io](https://itch.io). Dự án do một dev người Việt đang thất nghiệp, poli0981 (SkullMute), vận hành — dưới đây gọi là "Người duy trì" — với các trợ lý AI gánh phần lớn việc nặng. Làm ra vì vibes, để khám phá game indie và giải khuây. Không hứa hẹn gì lớn lao — nhưng các điều khoản mang tính pháp lý dưới đây là thật.
 

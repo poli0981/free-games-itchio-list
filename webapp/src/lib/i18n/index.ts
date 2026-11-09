@@ -34,11 +34,16 @@ export async function switchLanguage(lang: Language): Promise<void> {
 /** Call once at startup: preload VI if it was the persisted preference. */
 export function initI18n(): void {
   if (usePrefs.getState().language === 'vi') void ensureVi()
-  // <html lang> follows the preference (screen readers, hyphenation, translation prompts).
-  document.documentElement.lang = usePrefs.getState().language
-  usePrefs.subscribe((s) => {
-    document.documentElement.lang = s.language
-  })
+  // <html lang> follows the text actually on screen (screen readers pick their voice from it,
+  // also hyphenation and translation prompts): Vietnamese only once its dictionary is in,
+  // until then the page still shows English.
+  const apply = () => {
+    const lang = usePrefs.getState().language
+    document.documentElement.lang = lang === 'vi' && !useViDict.getState().dict ? 'en' : lang
+  }
+  apply()
+  usePrefs.subscribe(apply)
+  useViDict.subscribe(apply)
 }
 
 function format(template: string, params?: Record<string, string | number>): string {

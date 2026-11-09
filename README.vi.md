@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.5.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.6.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
@@ -9,7 +9,7 @@
 [![Data & docs: CC BY 4.0](https://img.shields.io/badge/data%20%26%20docs-CC%20BY%204.0-lightgrey.svg)](data_game/LICENSE.md)
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-09 (English source revision 2026-11-09). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 >
 > Bản tiếng Anh tại [`README.md`](README.md) là bản chính thức. Bản dịch tiếng Việt của các tài liệu chính sách nằm trong [`docs/i18n/vi/`](docs/i18n/vi/).
 
@@ -39,6 +39,7 @@ Mọi thứ nằm trên website **<https://freeitchgames.win>**:
 - **Đã gỡ** (Removed): mọi game bị loại khỏi danh mục, kèm lý do (<https://freeitchgames.win/removed>).
 - **Kiểm tra nhanh trước.** Lần đầu vào, rồi khoảng mỗi 48 giờ, trang sẽ chạy một bước kiểm tra Cloudflare Turnstile ngắn để chặn bot. Thường nó tự qua rồi mở đúng trang bạn cần. Dữ liệu trong `/data` và các ứng dụng không cần bước này.
 - **Nội dung 18+ bị ẩn theo mặc định.** Game được đánh dấu `nsfw: Yes` sẽ bị ẩn (kể cả ảnh bìa) trừ khi bạn tự bật trong Settings sau khi xác nhận mình đủ 18 tuổi. Lựa chọn đó chỉ được lưu trong trình duyệt của bạn.
+- **Dành cho mọi cách duyệt web.** Mọi thứ dùng được chỉ với bàn phím và với trình đọc màn hình, màu sắc đạt tỉ lệ tương phản WCAG ở cả hai giao diện, mỗi biểu đồ có bảng dữ liệu, và site làm theo thiết lập giảm chuyển động và tương phản của hệ thống. Những gì đã hỗ trợ, các hạn chế đã biết và cách báo rào cản: [Trợ năng](docs/i18n/vi/ACCESSIBILITY.md) ([EN](ACCESSIBILITY.md)).
 
 Mọi link đều dẫn tới trang riêng của game trên itch.io. Ảnh bìa trên website là bản thu nhỏ do freeitchgames.win phục vụ, nên trình duyệt của bạn không kết nối tới itch.io cho tới khi bạn bấm vào một link.
 
@@ -221,6 +222,7 @@ Xem [CONTRIBUTING (tiếng Việt)](docs/i18n/vi/CONTRIBUTING.md) để có hư�
 - **Thêm game**: dùng [trang Suggest](https://freeitchgames.win/suggest).
 - **Gỡ game / sửa dữ liệu**: gửi email tới takedown@poli0981.dev hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 - **Báo lỗi**: dùng issue template "Bug Report".
+- **Rào cản trợ năng**: dùng [issue template "Accessibility barrier"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=accessibility.yml) hoặc gửi email tới contact@poli0981.dev. Xem [Trợ năng](docs/i18n/vi/ACCESSIBILITY.md) ([EN](ACCESSIBILITY.md)).
 - **Đề xuất tính năng**: dùng template "Feature Request / Improvement", hoặc gửi PR.
 - **Vấn đề bảo mật**: báo cáo riêng tư, đừng bao giờ mở issue công khai. Xem [SECURITY](docs/i18n/vi/SECURITY.md) ([EN](SECURITY.md)).
 - **Câu hỏi về quyền riêng tư**: xem [Chính sách quyền riêng tư](docs/i18n/vi/PrivacyPolicy.md) ([EN](docs/PrivacyPolicy.md)) hoặc gửi email tới privacy@poli0981.dev.
@@ -277,6 +279,7 @@ Bản tiếng Việt nằm trong [`docs/i18n/vi/`](docs/i18n/vi/); bản tiếng
 - [EULA](docs/i18n/vi/EULA.md) ([EN](docs/EULA.md)): chỉ áp dụng cho app desktop và Android
 - [Quy tắc ứng xử](docs/i18n/vi/CODE_OF_CONDUCT.md) ([EN](CODE_OF_CONDUCT.md))
 - [Chính sách bảo mật (Security Policy)](docs/i18n/vi/SECURITY.md) ([EN](SECURITY.md))
+- [Tuyên bố trợ năng (Accessibility)](docs/i18n/vi/ACCESSIBILITY.md) ([EN](ACCESSIBILITY.md)): những gì đã hỗ trợ cho công cụ trợ năng, các hạn chế đã biết, cách báo rào cản
 - [NOTICE](NOTICE.md)
 
 Liên hệ (hộp thư riêng của Maintainer trên poli0981.dev):

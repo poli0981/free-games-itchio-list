@@ -28,7 +28,7 @@ key entries) and rewrites old `#/…` links to real paths ([`src/lib/legacy.ts`]
 | [`vite-plugins/catalog-data.ts`](vite-plugins/catalog-data.ts) | Bundles the catalog into `dist/data/` (packs + legacy JSON) + `sitemap.xml` |
 | [`public/`](public/) | Static files; [`public/_headers`](public/_headers) sets headers + CSP for them |
 | [`src-tauri/`](src-tauri/) | Tauri 2 shell for the desktop and Android apps |
-| [`scripts/`](scripts/) | `gen_assets.py` (PWA icons + OG image), `i18n-edit.mjs` (edit `en`/`vi` keys together) |
+| [`scripts/`](scripts/) | `gen_assets.py` (PWA icons + OG image), `i18n-edit.mjs` (edit `en`/`vi` keys together), `check-tauri-versions.mjs` (`npm run check:tauri`), and the repo-level tests `check-csp-hashes.test.mjs` (inline script hashes in the CSPs) and `check-contrast.test.mjs` (WCAG contrast of the colour tokens and the chart palette) |
 | [`wrangler.jsonc`](wrangler.jsonc) | Worker config: assets, bindings, vars, cron, `staging` env |
 
 ## Local dev
@@ -73,6 +73,7 @@ Path alias `@/*` → `src/*`. Vite injects `__BUILD_DATE__` for the About page.
 The same steps as [`webapp-ci.yml`](../.github/workflows/webapp-ci.yml):
 
 ```sh
+npm run check:tauri                  # Tauri crates and their npm packages share major.minor
 npm run cf:types -- --check          # worker-configuration.d.ts matches wrangler.jsonc
 npm run lint                         # ESLint
 npm run knip                         # unused files / exports / deps
@@ -95,7 +96,7 @@ local secrets can't leak into it. Secrets are typed by hand in [`worker/env.ts`]
 | `/charts` | [src/routes/charts.tsx](src/routes/charts.tsx) | Charts + KPI cards across 4 tabs |
 | `/removed` | [src/routes/deleted.tsx](src/routes/deleted.tsx) | Removed games, with reasons (`/deleted` redirects here) |
 | `/suggest` | [src/routes/suggest.tsx](src/routes/suggest.tsx) | Suggest a game (Turnstile, goes to the review queue) |
-| `/settings` | [src/routes/settings.tsx](src/routes/settings.tsx) | Theme, language, density, 18+ content opt-in (the header's display menu has the same) |
+| `/settings` | [src/routes/settings.tsx](src/routes/settings.tsx) | Theme, language, density, hide scrollbars, accessibility (the "/" search shortcut), 18+ content opt-in (the header's display menu has most of them) |
 | `/about` | [src/routes/about.tsx](src/routes/about.tsx) | Project info, legal links, third-party credits |
 | `/errors/:code` | [src/routes/error-preview.tsx](src/routes/error-preview.tsx) | Hidden error-page preview (not in the nav) |
 

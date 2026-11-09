@@ -19,13 +19,12 @@ export const CardHeader = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivEleme
 )
 CardHeader.displayName = 'CardHeader'
 
-export const CardTitle = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
-  ({ className, ...props }, ref) => (
-    <div
-      ref={ref}
-      className={cn('text-2xl font-semibold leading-none tracking-tight', className)}
-      {...props}
-    />
+/** A real heading (h2): the About cards and the chart cards sit right under the page's h1. */
+export const CardTitle = forwardRef<HTMLHeadingElement, HTMLAttributes<HTMLHeadingElement>>(
+  ({ className, children, ...props }, ref) => (
+    <h2 ref={ref} className={cn('text-2xl font-semibold leading-none tracking-tight', className)} {...props}>
+      {children}
+    </h2>
   ),
 )
 CardTitle.displayName = 'CardTitle'

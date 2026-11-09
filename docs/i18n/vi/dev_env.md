@@ -1,6 +1,6 @@
 # Môi trường phát triển
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-09-24 (English source revision 2026-09-24). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-09 (English source revision 2026-11-09). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 > Bản gốc: [`dev_env.md`](../../dev_env.md).
 
 Bộ công cụ Maintainer dùng để viết và kiểm thử code trong repo này, và cách chạy từng phần trên máy.
@@ -174,6 +174,7 @@ các việc bảo trì queue. Hãy dùng hạn chế.
 
 ```sh
 cd webapp
+npm run check:tauri                    # crate Tauri và package npm tương ứng cùng major.minor
 npm run cf:types -- --check            # worker-configuration.d.ts khớp với wrangler.jsonc
 npm run lint                           # ESLint
 npm run knip                           # file / export / dependency không dùng

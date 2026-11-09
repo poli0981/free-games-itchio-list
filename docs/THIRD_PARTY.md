@@ -1,6 +1,6 @@
 # Third-party components
 
-Last updated: 2026-10-03
+Last updated: 2026-11-09
 
 Applies from: the release of version 4.0.0.
 
@@ -28,22 +28,22 @@ shared UI components).
 | Component | Version | Used for | License |
 |---|---|---|---|
 | [React](https://react.dev) (`react`, `react-dom`) | 19.3 | UI framework | MIT |
-| [React Router](https://reactrouter.com) (`react-router`) | 8.4 | Routing | MIT |
+| [React Router](https://reactrouter.com) (`react-router`) | 8.5 | Routing | MIT |
 | [Zustand](https://github.com/pmndrs/zustand) | 5.0 | Preference and theme stores | MIT |
-| [TanStack Query](https://tanstack.com/query) (`@tanstack/react-query`, `react-query-persist-client`) | 5.103 | Data fetching and the local catalog cache | MIT |
+| [TanStack Query](https://tanstack.com/query) (`@tanstack/react-query`, `react-query-persist-client`) | 5.106 | Data fetching and the local catalog cache | MIT |
 | [idb-keyval](https://github.com/jakearchibald/idb-keyval) | 6.3 | IndexedDB storage for the compressed catalog cache | Apache-2.0 |
 | [fflate](https://github.com/101arrowz/fflate) | 0.8 | Decompressing the catalog where the browser has no Compression Streams (older Safari / iOS) | MIT |
 | [Recharts](https://recharts.org) | 3.10 | Charts | MIT |
 | [Radix UI](https://www.radix-ui.com) primitives (`@radix-ui/react-checkbox`, `-dialog`, `-label`, `-popover`, `-separator`, `-slot`, `-switch`, `-tabs`) | 1.x / 2.x | Accessible UI building blocks | MIT |
 | [shadcn/ui](https://ui.shadcn.com) | pattern | Component patterns copied into `webapp/src/components/ui/` | MIT |
-| [lucide-react](https://lucide.dev) | 1.47 | Icons | ISC |
+| [lucide-react](https://lucide.dev) | 1.69 | Icons | ISC |
 | [class-variance-authority](https://cva.style) | 0.7 | Component variants | Apache-2.0 |
 | [clsx](https://github.com/lukeed/clsx) | 2.1 | Class-name helper | MIT |
 | [tailwind-merge](https://github.com/dcastil/tailwind-merge) | 3.7 | Class-name merging | MIT |
 | [Tailwind CSS](https://tailwindcss.com) (`tailwindcss`, `@tailwindcss/vite`) and [tw-animate-css](https://github.com/Wombosvideo/tw-animate-css) | 4.3 / 1.4 | Generate the site's CSS at build time | MIT |
 | [Geist and Geist Mono](https://vercel.com/font) (`@fontsource-variable/geist`, `@fontsource-variable/geist-mono`) | 5.3 | The site's typefaces | OFL-1.1 (fonts), MIT (Fontsource packaging) |
-| [`@tauri-apps/api`](https://github.com/tauri-apps/tauri/tree/dev/packages/api) | 2.11 | App-only bridge to the native shell | Apache-2.0 OR MIT |
-| [`@tauri-apps/plugin-opener`](https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener) | 2.5 | App-only: opens itch.io links in the system browser | Apache-2.0 OR MIT |
+| [`@tauri-apps/api`](https://github.com/tauri-apps/tauri/tree/dev/packages/api) | 2.12 | App-only bridge to the native shell | Apache-2.0 OR MIT |
+| [`@tauri-apps/plugin-opener`](https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener) | 2.7 | App-only: opens itch.io links in the system browser | Apache-2.0 OR MIT |
 
 `@tanstack/react-query-devtools` (MIT) is listed as a dependency but only renders in development builds.
 

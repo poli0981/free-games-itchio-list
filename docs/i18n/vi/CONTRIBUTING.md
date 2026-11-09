@@ -1,6 +1,6 @@
 # Hướng dẫn đóng góp
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-13 (English source revision 2026-10-13). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-09 (English source revision 2026-11-09). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 >
 > Bản tiếng Anh tại [`CONTRIBUTING.md`](../../../CONTRIBUTING.md) là bản chính thức.
 
@@ -45,6 +45,7 @@ Chi tiết có trong [Điều khoản sử dụng](ToS.md) và [Tuyên bố mi�
 - Checkbox cho các lỗi thường gặp (link chết, cờ sai, trang hỏng, v.v.).
 - Chi tiết + ảnh chụp màn hình + mức độ khẩn cấp.
 - **Vấn đề bảo mật không phải lỗi để đăng lên tracker công khai.** Hãy báo cáo riêng tư: xem [SECURITY](SECURITY.md).
+- **Rào cản trợ năng** (bàn phím, trình đọc màn hình, phóng to, tương phản, chuyển động…): dùng template **[Accessibility barrier]** ([link trực tiếp](https://github.com/poli0981/free-games-itchio-list/issues/new?template=accessibility.yml)), hoặc gửi email tới contact@poli0981.dev nếu bạn không muốn dùng GitHub. Điều gì xảy ra tiếp theo nằm trong [Trợ năng](ACCESSIBILITY.md#7-báo-cáo-rào-cản-trợ-năng).
 - Nếu phức tạp, xem mục "Muốn thảo luận thêm?" bên dưới.
 
 ### 4. Đề xuất tính năng / cải tiến
@@ -71,14 +72,15 @@ Chi tiết có trong [Điều khoản sử dụng](ToS.md) và [Tuyên bố mi�
 
 **Quy tắc PR** (phần không thương lượng):
 
-- **CI phải pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) và Webapp CI (kiểm tra type sinh ra, lint, knip, test, build, `wrangler deploy --dry-run`) đều chạy trên PR. CI đỏ = không merge. SonarQube Cloud cũng phân tích mỗi PR (kèm test coverage) và báo quality gate qua check "SonarCloud Code Analysis".
+- **CI phải pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) và Webapp CI (kiểm tra phiên bản Tauri crate/npm, kiểm tra type sinh ra, lint, knip, test, build, `wrangler deploy --dry-run`) đều chạy trên PR. CI đỏ = không merge. SonarQube Cloud cũng phân tích mỗi PR (kèm test coverage) và báo quality gate qua check "SonarCloud Code Analysis".
 - **PR được merge bằng squash** (một PR thành một commit trên `main`) **hoặc merge commit, không bao giờ fast-forward**, nên hãy đặt tiêu đề PR như một commit message tốt (repo dùng kiểu `type(scope): tóm tắt`, ví dụ `fix(web): …`).
 - **Giấy phép theo nguyên tắc inbound = outbound.** Khi mở PR, bạn đồng ý rằng đóng góp của mình được cấp phép theo cùng giấy phép với phần mà nó thay đổi: **MIT** cho mã nguồn, **CC BY 4.0** cho dữ liệu danh mục và tài liệu (xem [README → Giấy phép](../../../README.vi.md#giấy-phép)). Chỉ gửi những gì bạn có quyền gửi.
 - **Không bao giờ commit secret**: không token, API key, file `.dev.vars` / `.env`, private key (chẳng hạn khóa của GitHub App) hay keystore dùng để ký. Nếu lỡ push một cái, hãy báo riêng (security@poli0981.dev) và thay mới (rotate) nó; chỉ xóa commit là không đủ.
 - **Không sửa tay `data_game/`.** Thay đổi dữ liệu phải đi qua pipeline (một patch + `apply_patch.py`, có chạy `validate.py`), để các tiến trình ghi đồng thời không đè lên nhau.
 - Không commit output build hay file sinh ra: `webapp/dist/`, `webapp/.wrangler/`, `webapp/src-tauri/target/`, `webapp/src-tauri/gen/`. (`webapp/src-tauri/Cargo.lock` **có** được commit; hãy cập nhật nó khi bạn sửa `Cargo.toml`.)
 - Thêm dependency npm? Thêm luôn vào danh sách `THIRD_PARTY` trong `webapp/src/lib/about.ts` để trang About ghi công.
-- Link ngoài mới trong app? Dùng `<ExtLink href="…">` từ `webapp/src/components/ext-link.tsx`, đừng dùng `<a href="…" target="_blank">` thuần: anchor thuần chạy được trên web nhưng im lặng hỏng trong các app Tauri.
+- Link ngoài mới trong app? Dùng `<ExtLink href="…">` từ `webapp/src/components/ext-link.tsx`, đừng dùng `<a href="…" target="_blank">` thuần: anchor thuần chạy được trên web nhưng im lặng hỏng trong các app Tauri (và ExtLink báo cho trình đọc màn hình rằng link mở thẻ mới).
+- **Trợ năng**: thay đổi giao diện phải vẫn dùng được chỉ với bàn phím và với trình đọc màn hình, và giữ tỉ lệ tương phản (`npm test` kiểm tra màu). Danh sách kiểm tra nằm trong [Trợ năng → Dành cho người đóng góp](ACCESSIBILITY.md#8-dành-cho-người-đóng-góp) và trong pull request template.
 
 ### 8. Thiết lập môi trường dev (tóm tắt)
 

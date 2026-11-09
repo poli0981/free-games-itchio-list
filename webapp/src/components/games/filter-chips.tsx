@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { ChevronDown, Eye, EyeOff, X } from 'lucide-react'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { fold, RATING_STEPS } from '@/lib/game-filters'
@@ -66,9 +66,21 @@ export function FilterMenu({
   /** Called when the menu opens, so counts are only computed for the open menu. */
   getOptions: () => FilterOption[]
 }) {
+  const t = useT()
   return (
     <ChipPopover
-      label={selected.length ? `${label} · ${selected.length}` : label}
+      label={
+        selected.length ? (
+          <>
+            {label}
+            {/* "Genre · 2" on screen, "Genre, 2 selected" for screen readers (the visible words stay first). */}
+            <span aria-hidden="true"> · {selected.length}</span>
+            <span className="sr-only">, {t('games.filter.selected', { n: selected.length })}</span>
+          </>
+        ) : (
+          label
+        )
+      }
       name={label}
       active={selected.length > 0}
       wide
@@ -93,6 +105,8 @@ function FilterOptions({
   const fmt = useFormat()
   const [find, setFind] = useState('')
   const options = useMemo(() => getOptions(), [getOptions])
+  const finder = useRef<HTMLInputElement>(null)
+  const group = useRef<HTMLDivElement>(null)
 
   const needle = fold(find.trim())
   const matching = needle ? options.filter((o) => fold(o.label).includes(needle)) : options
@@ -109,16 +123,17 @@ function FilterOptions({
       {options.length > 8 && (
         <div className="border-b p-2">
           <input
+            ref={finder}
             type="search"
             value={find}
             onChange={(e) => setFind(e.target.value)}
             placeholder={t('common.search')}
             aria-label={`${t('common.search')}: ${label}`}
-            className="h-8 w-full rounded-md border bg-background px-2.5 text-sm outline-hidden focus:border-primary"
+            className="h-8 w-full rounded-md border border-input bg-background px-2.5 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus-visible:outline-hidden"
           />
         </div>
       )}
-      <div role="group" aria-label={label} className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-1">
+      <div ref={group} role="group" aria-label={label} className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-1">
         <ul>
           {listed.map((o) => (
             <li key={o.value}>
@@ -130,7 +145,12 @@ function FilterOptions({
                   className="size-4 shrink-0 accent-primary"
                 />
                 <span className="min-w-0 flex-1 truncate">{o.label}</span>
-                <span className="font-mono text-xs text-muted-foreground">{fmt.number(o.count)}</span>
+                <span className="font-mono text-xs text-muted-foreground">
+                  <span aria-hidden="true">{fmt.number(o.count)}</span>
+                  <span className="sr-only">
+                    , {t(o.count === 1 ? 'games.countShort.one' : 'games.countShort', { n: fmt.number(o.count) })}
+                  </span>
+                </span>
               </label>
             </li>
           ))}
@@ -148,7 +168,12 @@ function FilterOptions({
         <div className="border-t p-1.5">
           <button
             type="button"
-            onClick={() => onChange([])}
+            onClick={() => {
+              onChange([])
+              // This button goes away with the selection: keep focus inside the menu.
+              const next = finder.current ?? group.current?.querySelector('input')
+              next?.focus()
+            }}
             className="h-8 w-full rounded-md text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
           >
             {t('games.filter.clear')}
@@ -165,7 +190,21 @@ export function RatingMenu({ value, onChange }: { value: number | null; onChange
   const fmt = useFormat()
   const label = t('games.filter.rating')
   return (
-    <ChipPopover label={value === null ? label : `${label} · ${fmt.rating(value)}+`} name={label} active={value !== null}>
+    <ChipPopover
+      label={
+        value === null ? (
+          label
+        ) : (
+          <>
+            {label}
+            <span aria-hidden="true"> · {fmt.rating(value)}+</span>
+            <span className="sr-only">, {t('games.filter.ratingMin', { n: fmt.rating(value) })}</span>
+          </>
+        )
+      }
+      name={label}
+      active={value !== null}
+    >
       <div role="radiogroup" aria-label={label} className="p-1">
         {[null, ...RATING_STEPS].map((step) => (
           <label
@@ -209,6 +248,8 @@ export function NsfwChip({ shown, onShow, onHide }: { shown: boolean; onShow: ()
     >
       <Icon className="size-3.5" aria-hidden="true" />
       {t(shown ? 'games.nsfw.shown' : 'games.nsfw.hidden')}
+      {/* The title tooltip isn't read out: say what pressing it does. */}
+      <span className="sr-only">, {t(shown ? 'games.nsfw.hide' : 'games.nsfw.show')}</span>
     </button>
   )
 }
@@ -219,19 +260,46 @@ export interface ActivePill {
   onRemove: () => void
 }
 
-/** "Filters: Visual Novel ✕ · Rating ≥ 4.5 ✕ · Clear all". */
-export function ActiveFilters({ pills, onClearAll }: { pills: ActivePill[]; onClearAll: () => void }) {
+/**
+ * "Filters: Visual Novel ✕ · Rating ≥ 4.5 ✕ · Clear all". A removed pill takes its
+ * button with it: focus moves to the next remove button, or to `onEmpty` (the search
+ * box) once none is left.
+ */
+export function ActiveFilters({
+  pills,
+  onClearAll,
+  onEmpty,
+}: {
+  pills: ActivePill[]
+  onClearAll: () => void
+  onEmpty?: () => void
+}) {
   const t = useT()
+  const wrap = useRef<HTMLDivElement>(null)
+  const refocus = useRef<number | null>(null)
+  useEffect(() => {
+    const index = refocus.current
+    if (index === null) return
+    refocus.current = null
+    const buttons = wrap.current?.querySelectorAll<HTMLButtonElement>('button[data-remove]')
+    const next = buttons?.[Math.min(index, buttons.length - 1)]
+    if (next) next.focus()
+    else onEmpty?.()
+  }, [pills, onEmpty])
   if (pills.length === 0) return null
   return (
-    <div className="flex flex-wrap items-center gap-2 text-[13px] text-muted-foreground">
+    <div ref={wrap} className="flex flex-wrap items-center gap-2 text-[13px] text-muted-foreground">
       <span>{t('games.active')}</span>
-      {pills.map((p) => (
+      {pills.map((p, i) => (
         <span key={p.key} className="flex items-center gap-1 rounded-full bg-brand-soft py-0.5 pr-1 pl-2.5 text-foreground">
           {p.label}
           <button
             type="button"
-            onClick={p.onRemove}
+            data-remove
+            onClick={() => {
+              refocus.current = i
+              p.onRemove()
+            }}
             aria-label={t('games.pill.remove', { label: p.label })}
             className="flex size-6 items-center justify-center rounded-full text-muted-foreground hover:text-foreground"
           >
@@ -239,7 +307,14 @@ export function ActiveFilters({ pills, onClearAll }: { pills: ActivePill[]; onCl
           </button>
         </span>
       ))}
-      <button type="button" onClick={onClearAll} className="ml-1 underline underline-offset-4 hover:text-foreground">
+      <button
+        type="button"
+        onClick={() => {
+          refocus.current = 0
+          onClearAll()
+        }}
+        className="ml-1 underline underline-offset-4 hover:text-foreground"
+      >
         {t('games.clearAll')}
       </button>
     </div>

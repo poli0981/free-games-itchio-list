@@ -9,6 +9,7 @@ import { useT, type MessageKey } from '@/lib/i18n'
 import { isTauri } from '@/lib/runtime'
 import { SITE_ORIGIN } from '@/lib/config'
 import { loadTurnstile } from '@/lib/turnstile'
+import { usePrefs } from '@/stores/prefs'
 
 const MAX_NOTE = 500
 const ITCH_GAME = /^\s*(https?:\/\/)?[a-z0-9-]+\.itch\.io\/[a-z0-9_-]+\/?\s*$/i
@@ -41,7 +42,7 @@ export default function Suggest() {
       <div className="mx-auto flex max-w-xl flex-col gap-3 px-4 pt-6 pb-12 sm:px-8 md:pt-7">
         <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.suggest')}</h1>
         <p className="text-muted-foreground">{t('suggest.webOnly')}</p>
-        <ExtLink href={`${SITE_ORIGIN}/suggest`} className="text-primary underline-offset-4 hover:underline">
+        <ExtLink href={`${SITE_ORIGIN}/suggest`} className="text-primary-text underline underline-offset-4">
           {t('suggest.openWebsite')}
         </ExtLink>
       </div>
@@ -63,11 +64,15 @@ function SuggestForm() {
     },
     staleTime: 60_000,
   })
+  const language = usePrefs((s) => s.language)
   const [url, setUrl] = useState('')
+  // The link is checked once the visitor leaves the field or sends, not at the first keystroke.
+  const [touched, setTouched] = useState(false)
   const [note, setNote] = useState('')
   const [token, setToken] = useState('')
   const [sending, setSending] = useState(false)
   const [result, setResult] = useState<Result | null>(null)
+  const urlField = useRef<HTMLInputElement>(null)
   const widget = useRef<HTMLDivElement>(null)
   const widgetId = useRef<string | null>(null)
 
@@ -83,6 +88,7 @@ function SuggestForm() {
           sitekey,
           action: 'suggest',
           theme: 'auto',
+          language,
           callback: setToken,
           'expired-callback': () => setToken(''),
           'error-callback': () => setToken(''),
@@ -94,13 +100,25 @@ function SuggestForm() {
       if (widgetId.current) window.turnstile?.remove(widgetId.current)
       widgetId.current = null
     }
-  }, [sitekey])
+  }, [sitekey, language])
 
   const urlValid = ITCH_GAME.test(url)
+  const urlError = touched && url !== '' && !urlValid
+  const ready = urlValid && Boolean(token) && !sending
 
   async function submit(e: FormEvent) {
     e.preventDefault()
-    if (!urlValid || !token || sending) return
+    if (sending) return
+    // The button stays focusable (aria-disabled): say what is missing instead of doing nothing.
+    if (!urlValid) {
+      setTouched(true)
+      urlField.current?.focus()
+      return
+    }
+    if (!token) {
+      setResult({ tone: 'error', key: 'suggest.error.needChallenge' })
+      return
+    }
     setSending(true)
     setResult(null)
     try {
@@ -114,6 +132,7 @@ function SuggestForm() {
         setResult({ tone: data.status === 'received' ? 'ok' : 'error', key: STATUS_KEY[data.status] ?? 'suggest.error.generic' })
         if (data.status === 'received') {
           setUrl('')
+          setTouched(false)
           setNote('')
         }
       } else {
@@ -151,18 +170,20 @@ function SuggestForm() {
           <div className="space-y-1.5">
             <Label htmlFor="suggest-url">{t('suggest.url')}</Label>
             <Input
+              ref={urlField}
               id="suggest-url"
               type="url"
               inputMode="url"
               required
               value={url}
               onChange={(e) => setUrl(e.target.value)}
+              onBlur={() => setTouched(true)}
               placeholder="https://creator.itch.io/game"
-              aria-invalid={url !== '' && !urlValid}
+              aria-invalid={urlError}
               aria-describedby="suggest-url-hint"
             />
-            <p id="suggest-url-hint" className="text-xs text-muted-foreground">
-              {url !== '' && !urlValid ? t('suggest.error.invalidUrl') : t('suggest.urlHint')}
+            <p id="suggest-url-hint" className={urlError ? 'text-xs text-destructive' : 'text-xs text-muted-foreground'}>
+              {urlError ? t('suggest.error.invalidUrl') : t('suggest.urlHint')}
             </p>
           </div>
           <div className="space-y-1.5">
@@ -180,8 +201,8 @@ function SuggestForm() {
               {t('suggest.notePrivacy')} ({note.length}/{MAX_NOTE})
             </p>
           </div>
-          <div ref={widget} aria-label={t('suggest.challenge')} className="min-h-[65px]" />
-          <Button type="submit" disabled={!urlValid || !token || sending}>
+          <div ref={widget} role="group" aria-label={t('suggest.challenge')} className="min-h-[65px]" />
+          <Button type="submit" aria-disabled={!ready}>
             {sending ? t('suggest.sending') : t('suggest.submit')}
           </Button>
           {result && (

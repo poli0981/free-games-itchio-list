@@ -1,10 +1,11 @@
 import { useMemo } from 'react'
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { classifyOnline } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { chartAria, LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -16,12 +17,32 @@ export function OnlineOfflineChart({ games }: { games: Game[] }) {
     { key: t('charts.onlineOffline.offline'), count: split.offline },
   ]
   return (
-    <ChartCard title={t('charts.onlineOffline.title')} description={t('charts.onlineOffline.desc')}>
+    <ChartCard
+      id="online-offline"
+      title={t('charts.onlineOffline.title')}
+      description={t('charts.onlineOffline.desc')}
+      table={{
+        label: t('charts.table.kind'),
+        value: t('charts.series.games'),
+        rows: tableRows(data, split.online + split.offline),
+      }}
+    >
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
-          <Pie {...SERIES_ANIMATION} data={data} dataKey="count" nameKey="key" innerRadius="50%" outerRadius="80%" stroke={SLICE_STROKE}>
-            <Cell fill={PALETTE[2]} />
-            <Cell fill={PALETTE[3]} />
+        <PieChart {...chartAria('online-offline')}>
+          {/* Blue and orange: apart in lightness and for colour-blind readers (green and amber were not). */}
+          <Pie
+            {...SERIES_ANIMATION}
+            rootTabIndex={-1}
+            data={data}
+            dataKey="count"
+            nameKey="key"
+            innerRadius="50%"
+            outerRadius="80%"
+            paddingAngle={2}
+            stroke={SLICE_STROKE}
+          >
+            <Cell fill={PALETTE[4]} />
+            <Cell fill={PALETTE[6]} />
           </Pie>
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={split.online + split.offline} />} />
           <Legend {...LEGEND_BASE} />

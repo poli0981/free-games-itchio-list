@@ -8,6 +8,8 @@ interface TurnstileOptions {
   sitekey: string
   action?: string
   theme?: 'auto' | 'light' | 'dark'
+  /** The widget's language ('en', 'vi', … or 'auto'), so it matches the page around it. */
+  language?: string
   callback: (token: string) => void
   'expired-callback'?: () => void
   'error-callback'?: () => void

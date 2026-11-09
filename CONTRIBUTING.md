@@ -41,6 +41,7 @@ Details live in the [Terms of Use](docs/ToS.md) and the [Disclaimer](docs/DISCLA
 - Checkboxes for common bugs (dead links, wrong flags, broken page, etc.).
 - Details + screenshots + urgency level.
 - **Security problems are not bugs for the public tracker.** Report them privately: see [SECURITY.md](SECURITY.md).
+- **Accessibility barriers** (keyboard, screen reader, zoom, contrast, motion…): use the **[Accessibility barrier]** template ([direct link](https://github.com/poli0981/free-games-itchio-list/issues/new?template=accessibility.yml)), or email contact@poli0981.dev if you'd rather not use GitHub. What happens next is in [ACCESSIBILITY.md](ACCESSIBILITY.md#7-reporting-an-accessibility-barrier).
 - If it's complex, see "Discuss More" below.
 
 ### 4. Suggest Features or Improvements
@@ -67,14 +68,15 @@ Details live in the [Terms of Use](docs/ToS.md) and the [Disclaimer](docs/DISCLA
 
 **PR rules** (the non-negotiable part):
 
-- **CI must pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) and Webapp CI (type generation check, lint, knip, tests, build, `wrangler deploy --dry-run`) both run on PRs. Red CI = no merge. SonarQube Cloud also analyses each PR (with test coverage) and reports its quality gate as the "SonarCloud Code Analysis" check.
+- **CI must pass.** Python CI (ruff check + format, vulture, pytest, `validate.py`) and Webapp CI (Tauri crate/npm version check, type generation check, lint, knip, tests, build, `wrangler deploy --dry-run`) both run on PRs. Red CI = no merge. SonarQube Cloud also analyses each PR (with test coverage) and reports its quality gate as the "SonarCloud Code Analysis" check.
 - **PRs are merged with squash** (one PR becomes one commit on `main`) **or a merge commit, never by fast-forward**, so make the PR title a good commit message (the repo uses the `type(scope): summary` style, e.g. `fix(web): …`).
 - **Licensing is inbound = outbound.** By opening a PR you agree that your contribution is licensed under the same license as the part it changes: **MIT** for code, **CC BY 4.0** for catalog data and documentation (see [README → License](README.md#license)). Only submit work you have the right to submit.
 - **Never commit secrets**: no tokens, API keys, `.dev.vars` / `.env` files, private keys (such as the GitHub App key) or signing keystores. If you pushed one by accident, report it privately (security@poli0981.dev) and rotate it; deleting the commit is not enough.
 - **Don't edit `data_game/` by hand.** Data changes go through the pipeline (a patch + `apply_patch.py`, which runs `validate.py`), so concurrent writers never clobber each other.
 - Don't commit build output or generated files: `webapp/dist/`, `webapp/.wrangler/`, `webapp/src-tauri/target/`, `webapp/src-tauri/gen/`. (`webapp/src-tauri/Cargo.lock` **is** committed; keep it in sync when you change `Cargo.toml`.)
 - Adding an npm dependency? Also add it to the `THIRD_PARTY` list in `webapp/src/lib/about.ts` so the About page credits it.
-- New external link in the app? Use `<ExtLink href="…">` from `webapp/src/components/ext-link.tsx`, not a plain `<a href="…" target="_blank">`: plain anchors work on the web but silently break in the Tauri apps.
+- New external link in the app? Use `<ExtLink href="…">` from `webapp/src/components/ext-link.tsx`, not a plain `<a href="…" target="_blank">`: plain anchors work on the web but silently break in the Tauri apps (and ExtLink tells screen readers the link opens a new tab).
+- **Accessibility**: UI changes keep working with the keyboard alone and with screen readers, and keep the contrast ratios (`npm test` checks the colours). The checklist is in [ACCESSIBILITY.md → For contributors](ACCESSIBILITY.md#8-for-contributors) and in the pull request template.
 
 ### 8. Dev Setup (Summary)
 

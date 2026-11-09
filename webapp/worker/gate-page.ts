@@ -89,7 +89,7 @@ const LOGO =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#7c5cff"/><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" fill="#fff" transform="translate(7.375 7) scale(.75)"/></svg>'
 
 const CSS = `
-:root{--bg:#fafaf9;--fg:#17171a;--card:#fff;--border:#e4e4e0;--muted:#5e5e66;--primary:#7c5cff;--danger:#dc2626;--ok:#16a34a;color-scheme:light}
+:root{--bg:#fafaf9;--fg:#17171a;--card:#fff;--border:#e4e4e0;--muted:#5e5e66;--primary:#6a48f5;--danger:#dc2626;--ok:#15803d;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not(.light){--bg:#0b0b0c;--fg:#ededef;--card:#111114;--border:#232328;--muted:#9b9ba4;--danger:#ef4444;--ok:#22c55e;color-scheme:dark}}
 :root.dark{--bg:#0b0b0c;--fg:#ededef;--card:#111114;--border:#232328;--muted:#9b9ba4;--danger:#ef4444;--ok:#22c55e;color-scheme:dark}
 html[lang=en] [lang=vi],html[lang=vi] [lang=en]{display:none}

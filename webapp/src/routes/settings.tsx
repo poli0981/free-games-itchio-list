@@ -1,7 +1,15 @@
 import type { ReactNode } from 'react'
-import { Switch } from '@/components/ui/switch'
-import { DensityChoice, LanguageChoice, ScrollbarsToggle, ThemeChoice } from '@/components/site/preference-controls'
+import { ExtLink } from '@/components/ext-link'
+import {
+  DensityChoice,
+  LanguageChoice,
+  ScrollbarsToggle,
+  SlashShortcutToggle,
+  SwitchRow,
+  ThemeChoice,
+} from '@/components/site/preference-controls'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { ACCESSIBILITY_URLS } from '@/lib/about'
 import { requestNsfw } from '@/lib/nsfw'
 import { useT } from '@/lib/i18n'
 import { usePrefs } from '@/stores/prefs'
@@ -24,6 +32,7 @@ export default function Settings() {
   useDocumentTitle(t('titles.settings'))
   const showNsfw = usePrefs((s) => s.showNsfw)
   const setShowNsfw = usePrefs((s) => s.setShowNsfw)
+  const language = usePrefs((s) => s.language)
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8 md:pt-7">
@@ -36,20 +45,23 @@ export default function Settings() {
         <ScrollbarsToggle id="hide-scrollbars" describe />
       </Section>
 
+      <Section title={t('settings.a11y.title')} description={t('settings.a11y.desc')}>
+        <SlashShortcutToggle id="slash-shortcut" />
+        <p className="text-sm">
+          <ExtLink href={ACCESSIBILITY_URLS[language]} className="font-medium underline underline-offset-4">
+            {t('settings.a11y.statement')}
+          </ExtLink>
+        </p>
+      </Section>
+
       <Section title={t('settings.content.title')}>
-        <div className="flex items-center justify-between gap-4">
-          <div className="space-y-0.5">
-            <label htmlFor="show-nsfw" className="text-sm font-medium">
-              {t('settings.content.nsfw')}
-            </label>
-            <p className="text-sm text-muted-foreground">{t('settings.content.nsfwDesc')}</p>
-          </div>
-          <Switch
-            id="show-nsfw"
-            checked={showNsfw}
-            onCheckedChange={(on) => (on ? requestNsfw() : setShowNsfw(false))}
-          />
-        </div>
+        <SwitchRow
+          id="show-nsfw"
+          label={t('settings.content.nsfw')}
+          description={t('settings.content.nsfwDesc')}
+          checked={showNsfw}
+          onCheckedChange={(on) => (on ? requestNsfw() : setShowNsfw(false))}
+        />
       </Section>
     </div>
   )

@@ -45,7 +45,7 @@ export default function Welcome() {
         <div className="mt-1.5 flex flex-wrap items-center gap-2.5">
           <Link
             to="/games"
-            className="flex h-[42px] items-center gap-2 rounded-[9px] bg-primary px-[18px] text-[15px] font-medium text-primary-foreground hover:opacity-90"
+            className="flex h-[42px] items-center gap-2 rounded-[9px] bg-primary px-[18px] text-[15px] font-medium text-primary-foreground hover:bg-primary/90"
           >
             {total ? t('welcome.browse', { n: total }) : t('nav.games')}
             <ArrowRight className="size-[15px]" aria-hidden="true" />
@@ -65,7 +65,7 @@ export default function Welcome() {
       <section aria-label={t('welcome.features')} className="grid gap-4 md:grid-cols-3">
         {FEATURES.map((f) => (
           <article key={f.mark} className="flex flex-col gap-2.5 rounded-xl border bg-card p-[22px]" data-card-pad>
-            <span className="flex size-8 items-center justify-center rounded-lg bg-muted font-mono text-[13px] font-medium text-primary">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-muted font-mono text-[13px] font-medium text-primary-text">
               {f.mark}
             </span>
             <h2 className="text-base font-semibold">{t(f.title)}</h2>
@@ -82,15 +82,21 @@ export default function Welcome() {
           </Link>
         </div>
         <div className="overflow-hidden rounded-xl border bg-card">
-          {visible.isPending &&
-            Array.from({ length: 5 }).map((_, i) => <Skeleton key={i} className="m-3 h-9 rounded-md" />)}
+          {visible.isPending && (
+            <div role="status">
+              <span className="sr-only">{t('common.loading')}</span>
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Skeleton key={i} className="m-3 h-9 rounded-md" />
+              ))}
+            </div>
+          )}
           {recent.map((game) => {
             const rating = ratingOf(game)
             return (
               <Link
                 key={game.url}
                 to={`/games/${slugify(game.url)}`}
-                className="flex min-h-[58px] items-center gap-3.5 border-b px-4 py-2 last:border-b-0 hover:bg-accent/60"
+                className="flex min-h-[58px] items-center gap-3.5 border-b px-4 py-2 last:border-b-0 hover:bg-accent/60 focus-visible:-outline-offset-2"
                 data-row
               >
                 <GameThumb src={game.thumbnail} alt="" loading="lazy" decoding="async" className="h-9 w-12 shrink-0 rounded-md bg-thumb object-cover" />
@@ -103,7 +109,20 @@ export default function Welcome() {
                     {game.genre}
                   </span>
                 )}
-                <span className="w-16 text-right font-mono text-[13px]">{rating !== null ? `★ ${fmt.rating(rating)}` : '—'}</span>
+                <span className="w-16 text-right font-mono text-[13px]">
+                  {rating !== null ? (
+                    <>
+                      <span aria-hidden="true">★ </span>
+                      <span className="sr-only">{t('detail.rating')} </span>
+                      {fmt.rating(rating)}
+                    </>
+                  ) : (
+                    <>
+                      <span aria-hidden="true">—</span>
+                      <span className="sr-only">{t('games.noRating')}</span>
+                    </>
+                  )}
+                </span>
                 {game.added_at && (
                   <span className="hidden w-28 text-right font-mono text-xs text-muted-foreground md:inline">
                     {t('welcome.added', { date: fmt.date(game.added_at) })}

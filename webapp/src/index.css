@@ -12,6 +12,12 @@
  * for active chips and selected filters, `--thumb` the cover placeholder,
  * `--scrollbar-*` the scrollbar thumb (muted-foreground with alpha; the
  * accent while dragged).
+ *
+ * Contrast (WCAG 2.2 AA, checked by src/contrast.test.ts): `--primary` is a
+ * shade darker than the brand purple so white text on it reaches 4.5:1;
+ * `--primary-text` is the accent as text (lighter in dark mode); `--brand` is
+ * the logo's own purple (logos are exempt); `--input` outlines fields and the
+ * off switch at 3:1; `--destructive-solid` fills destructive buttons.
  */
 :root {
   --background: #fafaf9;
@@ -20,8 +26,10 @@
   --card-foreground: #17171a;
   --popover: #ffffff;
   --popover-foreground: #17171a;
-  --primary: #7c5cff;
+  --primary: #6a48f5;
   --primary-foreground: #ffffff;
+  --primary-text: #6a48f5;
+  --brand: #7c5cff;
   --secondary: #f0efec;
   --secondary-foreground: #17171a;
   --muted: #f0efec;
@@ -30,9 +38,10 @@
   --accent-foreground: #17171a;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --success: #16a34a;
+  --destructive-solid: #dc2626;
+  --success: #15803d;
   --border: #e4e4e0;
-  --input: #e4e4e0;
+  --input: #8a8a93;
   --ring: #7c5cff;
   --brand-soft: #7c5cff24; /* the accent at 14 % (8-digit hex: no color-mix, iOS 15 safe) */
   --thumb: #e7e5ef;
@@ -49,8 +58,10 @@
   --card-foreground: #ededef;
   --popover: #131316;
   --popover-foreground: #ededef;
-  --primary: #7c5cff;
+  --primary: #6a48f5;
   --primary-foreground: #ffffff;
+  --primary-text: #9a83ff;
+  --brand: #7c5cff;
   --secondary: #1c1c22;
   --secondary-foreground: #ededef;
   --muted: #1c1c22;
@@ -59,9 +70,10 @@
   --accent-foreground: #ededef;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
+  --destructive-solid: #dc2626;
   --success: #22c55e;
   --border: #232328;
-  --input: #26262b;
+  --input: #6b6b75;
   --ring: #7c5cff;
   --brand-soft: #7c5cff38; /* 22 % */
   --thumb: #1f1d27;
@@ -81,6 +93,8 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-text: var(--primary-text);
+  --color-brand: var(--brand);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -89,6 +103,7 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-solid: var(--destructive-solid);
   --color-success: var(--success);
   --color-border: var(--border);
   --color-input: var(--input);
@@ -122,6 +137,9 @@
 
   html {
     color-scheme: light;
+    /* What keyboard focus or a #link scrolls to stays clear of the sticky header
+       (3.5rem, plus the notch on phones) — WCAG 2.4.11. */
+    scroll-padding-top: calc(3.5rem + env(safe-area-inset-top) + 0.5rem);
   }
   html.dark {
     color-scheme: dark;
@@ -143,6 +161,12 @@
     outline-offset: 2px;
   }
 
+  /* Where reading starts after a page change or a closed dialog (components/focus-target.ts):
+     a heading focused from script, not a control, so no ring. */
+  [data-focus-target]:focus {
+    outline: none;
+  }
+
   /* Tailwind 4 gives buttons the default cursor; keep the pointer of the v3 UI. */
   button:not(:disabled),
   [role='button']:not(:disabled) {
@@ -154,6 +178,8 @@
     ::before,
     ::after {
       animation-duration: 0.01ms !important;
+      /* Looping animations (skeleton pulse, spinners) run once instead of flickering. */
+      animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
@@ -162,8 +188,10 @@
   /* Themed scrollbars where there is a mouse; touch screens keep their own
      overlay bars. Chromium and Safari use the ::-webkit-scrollbar rules;
      Firefox has only the standard properties, set for it alone, because in
-     Chromium 121+ scrollbar-color / scrollbar-width switch the webkit rules off. */
-  @media (hover: hover) and (pointer: fine) {
+     Chromium 121+ scrollbar-color / scrollbar-width switch the webkit rules off.
+     Not in forced-colours mode (Windows contrast themes): the translucent thumb
+     would disappear there, the system's own scrollbars don't. */
+  @media (hover: hover) and (pointer: fine) and (forced-colors: none) {
     ::-webkit-scrollbar {
       width: 12px;
       height: 12px;
@@ -194,6 +222,8 @@
         scrollbar-width: thin;
       }
     }
+  }
+  @media (hover: hover) and (pointer: fine) {
     /* The page's scrollbar takes room here: keep that room reserved, so the
        layout does not jump sideways when a page (or a Charts tab) gets taller
        or shorter than the window. While a dialog locks scrolling the gutter is
@@ -211,6 +241,16 @@
    included. Keep the ring for keyboard focus only (the :focus-visible rule above). */
 .recharts-wrapper :focus:not(:focus-visible) {
   outline: none;
+}
+
+/* Axis text and lines in the theme's muted colour: Recharts' own #666 reads at
+   only 3.3:1 on the dark card. CSS beats the SVG attributes Recharts sets. */
+.recharts-cartesian-axis-tick-value {
+  fill: var(--muted-foreground);
+}
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  stroke: var(--muted-foreground);
 }
 
 /* Phones: chart text at caption size. Legends otherwise take the 16px body size
@@ -266,4 +306,48 @@ html[data-scrollbars='hidden'] *::-webkit-scrollbar {
 }
 html[data-scrollbars='hidden'] {
   scrollbar-gutter: auto;
+}
+
+/* Windows contrast themes (forced colours): the system replaces our colours,
+   so a state drawn only with a fill or a shadow disappears. Selected tabs,
+   pressed toggles, the current page and the active search option take the
+   system highlight instead; switches get an outline and a visible thumb; chart
+   text and lines follow the system text colour (SVG keeps author colours). */
+@media (forced-colors: active) {
+  [role='tab'][data-state='active'],
+  [aria-pressed='true'],
+  a[aria-current='page'],
+  [role='option'][aria-selected='true'] {
+    background-color: Highlight;
+    color: HighlightText;
+  }
+  [role='tab'][data-state='active'] *,
+  [aria-pressed='true'] *,
+  a[aria-current='page'] *,
+  [role='option'][aria-selected='true'] * {
+    color: HighlightText;
+  }
+  button[role='switch'] {
+    border-color: ButtonText;
+  }
+  button[role='switch'] > span {
+    background-color: ButtonText;
+  }
+  button[role='switch'][data-state='checked'] {
+    border-color: Highlight;
+    background-color: Highlight;
+  }
+  button[role='switch'][data-state='checked'] > span {
+    background-color: HighlightText;
+  }
+  .recharts-text {
+    fill: CanvasText;
+  }
+  .recharts-cartesian-axis-line,
+  .recharts-cartesian-axis-tick-line {
+    stroke: CanvasText;
+  }
+  .recharts-cartesian-grid line {
+    stroke: GrayText;
+  }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowUp } from 'lucide-react'
+import { focusPageHeading, scrollBehavior } from '@/components/focus-target'
 import { useT } from '@/lib/i18n'
 
 /** Floating "back to top" button once the window has scrolled a screen or so. */
@@ -20,7 +21,11 @@ export default function ScrollToTop() {
     <button
       type="button"
       aria-label={t('common.scrollToTop')}
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      onClick={() => {
+        window.scrollTo({ top: 0, behavior: scrollBehavior() })
+        // The button disappears at the top: keyboard focus continues from the page's heading.
+        focusPageHeading()
+      }}
       className="fixed right-5 bottom-[calc(1.25rem+env(safe-area-inset-bottom))] z-30 flex size-11 items-center justify-center rounded-full border bg-card text-foreground shadow-lg hover:bg-accent"
     >
       <ArrowUp className="size-5" aria-hidden="true" />

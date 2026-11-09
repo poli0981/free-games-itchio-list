@@ -35,14 +35,16 @@ export default function Removed() {
         <h1 className="text-[26px] font-semibold tracking-[-0.02em]">{t('titles.deleted')}</h1>
         <p className="max-w-[680px] text-sm leading-relaxed text-muted-foreground">{t('deleted.intro')}</p>
         {!deleted.isPending && (
-          <p className="font-mono text-xs text-muted-foreground">
-            {t(sorted.length === 1 ? 'deleted.count.one' : 'deleted.count', { count: fmt.number(sorted.length) })}
+          <p role="status" className="font-mono text-xs text-muted-foreground">
+            {needle
+              ? t('deleted.countFiltered', { shown: fmt.number(shown.length), count: fmt.number(sorted.length) })
+              : t(sorted.length === 1 ? 'deleted.count.one' : 'deleted.count', { count: fmt.number(sorted.length) })}
           </p>
         )}
       </div>
 
       {sorted.length > 10 && (
-        <label className="flex h-11 items-center gap-2 rounded-[10px] border bg-card px-3 text-muted-foreground focus-within:border-primary md:h-[34px] md:w-80 md:rounded-lg">
+        <label className="flex h-11 items-center gap-2 rounded-[10px] border border-input bg-card px-3 text-muted-foreground focus-within:border-primary focus-within:ring-1 focus-within:ring-primary md:h-[34px] md:w-80 md:rounded-lg">
           <Search className="size-4 shrink-0 md:size-[15px]" aria-hidden="true" />
           <input
             type="search"
@@ -50,13 +52,14 @@ export default function Removed() {
             onChange={(e) => setFind(e.target.value)}
             placeholder={t('deleted.search')}
             aria-label={t('deleted.search')}
-            className="min-w-0 flex-1 bg-transparent text-[15px] text-foreground outline-hidden placeholder:text-muted-foreground md:text-[13px]"
+            className="min-w-0 flex-1 bg-transparent text-[15px] text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden md:text-[13px]"
           />
         </label>
       )}
 
       {deleted.isPending ? (
-        <div className="space-y-2">
+        <div role="status" className="space-y-2">
+          <span className="sr-only">{t('common.loading')}</span>
           {Array.from({ length: 6 }).map((_, i) => (
             <Skeleton key={i} className="h-14 rounded-lg" />
           ))}
@@ -93,9 +96,12 @@ export default function Removed() {
                     </span>
                   </span>
                   <span className="text-[13px] text-muted-foreground max-md:col-start-1 max-md:row-start-2" title={d.reason}>
+                    {/* The column header row is hidden from screen readers: each value says what it is. */}
+                    <span className="sr-only">{t('deleted.col.reason')}: </span>
                     {key ? t(key) : d.reason}
                   </span>
                   <span className="text-right font-mono text-xs text-muted-foreground max-md:col-start-2 max-md:row-start-1">
+                    <span className="sr-only">{t('deleted.col.date')}: </span>
                     {fmt.date(d.deleted_at)}
                   </span>
                 </li>

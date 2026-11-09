@@ -1,11 +1,12 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { countByArray, topN } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
+import { BAR_CURSOR, chartAria, SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -14,12 +15,21 @@ export function AccessibilityChart({ games }: { games: Game[] }) {
   const fmt = useFormat()
   const data = useMemo(() => topN(countByArray(games, 'accessibility'), 10), [games])
   return (
-    <ChartCard title={t('charts.accessibility.title')} description={t('charts.accessibility.desc')}>
+    <ChartCard
+      id="accessibility"
+      title={t('charts.accessibility.title')}
+      description={t('charts.accessibility.desc')}
+      table={
+        data.length
+          ? { label: t('games.filter.access'), value: t('charts.series.games'), rows: tableRows(data) }
+          : undefined
+      }
+    >
       {data.length === 0 ? (
         <p className="flex h-full items-center justify-center text-sm text-muted-foreground">{t('charts.empty')}</p>
       ) : (
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} layout="vertical" margin={{ left: 20 }}>
+          <BarChart {...chartAria('accessibility')} data={data} layout="vertical" margin={{ left: 20 }}>
             <CartesianGrid horizontal={false} strokeDasharray="3 3" />
             <XAxis type="number" allowDecimals={false} tickFormatter={fmt.number} />
             <YAxis

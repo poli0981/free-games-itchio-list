@@ -173,6 +173,7 @@ the queue bookkeeping. Use it sparingly.
 
 ```sh
 cd webapp
+npm run check:tauri                    # Tauri crates and their npm packages share major.minor
 npm run cf:types -- --check            # worker-configuration.d.ts matches wrangler.jsonc
 npm run lint                           # ESLint
 npm run knip                           # unused files / exports / dependencies

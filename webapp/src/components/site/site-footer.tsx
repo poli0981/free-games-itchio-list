@@ -1,7 +1,9 @@
 import { Link } from 'react-router'
 import { ExtLink } from '@/components/ext-link'
+import { ACCESSIBILITY_URLS } from '@/lib/about'
 import { useT, type MessageKey } from '@/lib/i18n'
 import { isAndroid, isTauri } from '@/lib/runtime'
+import { usePrefs } from '@/stores/prefs'
 import { REPO_URL } from './site-header'
 
 const DOCS = `${REPO_URL}/blob/main`
@@ -16,6 +18,7 @@ const LINKS: { key: MessageKey; href: string }[] = [
 
 export function SiteFooter() {
   const t = useT()
+  const language = usePrefs((s) => s.language)
   return (
     <footer className="border-t pb-[env(safe-area-inset-bottom)]">
       <div className="mx-auto flex max-w-[1440px] flex-col gap-3 px-4 py-5 text-[13px] text-muted-foreground sm:px-8 lg:flex-row lg:items-center lg:gap-6">
@@ -33,6 +36,10 @@ export function SiteFooter() {
               {t(l.key)}
             </ExtLink>
           ))}
+          {/* The accessibility statement in the visitor's language. */}
+          <ExtLink href={ACCESSIBILITY_URLS[language]} className="hover:text-foreground">
+            {t('footer.accessibility')}
+          </ExtLink>
           <Link to="/about#support" className="hover:text-foreground">
             {t('footer.support')}
           </Link>

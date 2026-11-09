@@ -1,6 +1,6 @@
 # Catalog data license
 
-Last updated: 2026-10-03
+Last updated: 2026-11-09
 
 Applies from: the release of version 4.0.0.
 
@@ -113,7 +113,7 @@ a guarantee. The project does not scan downloads. See the [Disclaimer](../docs/D
 ## 7. Corrections and removals
 
 Game creators and rights holders can ask for a game to be removed or its data corrected. Email
-**takedown@freeitchgames.win** or open the
+**takedown@poli0981.dev** or open the
 ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
 Include the game URL, who you are (creator, rights holder, or someone acting for them) and the reason. The
 full process is in the [Terms of Use](../docs/ToS.md).
@@ -134,4 +134,4 @@ to the Data from version 4.0.0 on.
 
 *This is a plain-language summary written by a hobby maintainer, not a lawyer, and it is not legal advice.
 If this file and the CC BY 4.0 legal code disagree, the legal code wins. Questions:
-**legal@freeitchgames.win**.*
+**legal@poli0981.dev**.*

@@ -4,7 +4,7 @@ Cập nhật lần cuối: 2026-10-16
 
 Áp dụng từ: ngày 2026-10-13 đối với Website, và từ phiên bản 4.4.0 đối với các Ứng dụng.
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-13 (English source revision 2026-10-13). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-10-16 (English source revision 2026-10-16). Nếu có khác biệt, bản tiếng Anh được ưu tiên. Bản gốc: [`docs/PrivacyPolicy.md`](../../PrivacyPolicy.md).
 
 Chính sách quyền riêng tư này giải thích dự án `free-games-itchio-list` xử lý những dữ liệu cá nhân nào, vì sao, ai hỗ trợ xử lý, dữ liệu được lưu trong bao lâu và bạn có những quyền gì. Chính sách áp dụng cho website **https://freeitchgames.win**, các ứng dụng desktop và Android, dữ liệu danh mục công khai và repository. Nói ngắn gọn: không có tài khoản, không quảng cáo, không cookie theo dõi. Dự án giữ ít dữ liệu nhất có thể, và phần lớn những gì tồn tại chỉ nằm trong trình duyệt của chính bạn.
 

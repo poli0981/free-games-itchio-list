@@ -69,8 +69,10 @@ function optionLabel(key: ListFilter, value: string, t: (key: MessageKey) => str
 }
 
 function ListSkeleton() {
+  const t = useT()
   return (
-    <div className="overflow-hidden rounded-xl border bg-card">
+    <div role="status" className="overflow-hidden rounded-xl border bg-card">
+      <span className="sr-only">{t('common.loading')}</span>
       {Array.from({ length: 8 }).map((_, i) => (
         <div key={i} className="flex h-14 items-center gap-3 border-b px-4 last:border-b-0">
           <Skeleton className="h-9 w-12 rounded-md" />
@@ -138,6 +140,8 @@ export default function Games() {
   // Counts for a filter ignore that filter's own choices, so picking a second
   // genre still shows how many games it would add.
   const listRef = useRef<HTMLDivElement>(null)
+  const searchInput = useRef<HTMLInputElement>(null)
+  const focusSearch = useCallback(() => searchInput.current?.focus(), [])
   const focusList = useRef(false)
   useEffect(() => {
     if (!focusList.current) return
@@ -178,6 +182,8 @@ export default function Games() {
     setText('')
     setOwnQ('')
     update({ ...emptyQuery(), sort: query.sort })
+    // The button disappears with the empty state.
+    focusSearch()
   }
 
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
@@ -216,21 +222,22 @@ export default function Games() {
       <ToggleChip label={t('games.filter.browser')} pressed={query.browser} onChange={(browser) => update({ browser })} />
       {MORE_FILTERS.map(filterMenu)}
       {(games.hiddenNsfw > 0 || showNsfw) && (
-        <NsfwChip shown={showNsfw} onShow={requestNsfw} onHide={() => setShowNsfw(false)} />
+        <NsfwChip shown={showNsfw} onShow={() => requestNsfw()} onHide={() => setShowNsfw(false)} />
       )}
     </>
   )
 
   const search = (
-    <label className="flex h-11 items-center gap-2 rounded-[10px] border bg-card px-3 text-muted-foreground focus-within:border-primary md:h-[34px] md:w-80 md:rounded-lg">
+    <label className="flex h-11 items-center gap-2 rounded-[10px] border border-input bg-card px-3 text-muted-foreground focus-within:border-primary focus-within:ring-1 focus-within:ring-primary md:h-[34px] md:w-80 md:rounded-lg">
       <Search className="size-4 shrink-0 md:size-[15px]" aria-hidden="true" />
       <input
+        ref={searchInput}
         type="search"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder={t('games.search.placeholder')}
-        aria-label={t('header.search.label')}
-        className="min-w-0 flex-1 bg-transparent text-[15px] text-foreground outline-hidden placeholder:text-muted-foreground md:text-[13px] [&::-webkit-search-cancel-button]:hidden"
+        aria-label={t('games.search.label')}
+        className="min-w-0 flex-1 bg-transparent text-[15px] text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden md:text-[13px] [&::-webkit-search-cancel-button]:hidden"
       />
       {text && (
         <button
@@ -240,6 +247,7 @@ export default function Games() {
             setText('')
             setOwnQ('')
             update({ q: '' })
+            focusSearch()
           }}
           className="-mr-1 flex size-8 items-center justify-center rounded-md hover:text-foreground md:size-6"
         >
@@ -255,7 +263,7 @@ export default function Games() {
       <select
         value={query.sort}
         onChange={(e) => update({ sort: e.target.value as SortKey })}
-        className="h-9 rounded-lg border bg-card px-2 text-[13px] text-foreground md:h-8"
+        className="h-9 rounded-lg border border-input bg-card px-2 text-[13px] text-foreground md:h-8"
       >
         {SORT_KEYS.map((key) => (
           <option key={key} value={key}>
@@ -292,7 +300,7 @@ export default function Games() {
   } else {
     content = (
       <>
-        <div ref={listRef} tabIndex={-1} className="outline-hidden">
+        <div ref={listRef} tabIndex={-1} className="outline-none">
           {isMobile ? (
             <GamesList games={rows} back={back} />
           ) : (
@@ -317,7 +325,8 @@ export default function Games() {
         <>
           <h1 className="sr-only">{t('titles.games')}</h1>
           {search}
-          <div className="scrollbar-hide -mx-4 flex gap-2 overflow-x-auto px-4">{chips}</div>
+          {/* py-1: room for the chips' focus outline inside the scroller. */}
+          <div className="scrollbar-hide -mx-4 -my-1 flex gap-2 overflow-x-auto px-4 py-1">{chips}</div>
           <div className="flex items-center justify-between gap-3">
             <p role="status" className="font-mono text-xs text-muted-foreground">
               {t(results.length === 1 ? 'games.countShort.one' : 'games.countShort', {
@@ -347,7 +356,7 @@ export default function Games() {
           </div>
         </>
       )}
-      <ActiveFilters pills={pills} onClearAll={clearFilters} />
+      <ActiveFilters pills={pills} onClearAll={clearFilters} onEmpty={focusSearch} />
       {query.q && descs.failed && (
         <p className="text-sm text-muted-foreground">
           {t('games.search.descFailed')}{' '}

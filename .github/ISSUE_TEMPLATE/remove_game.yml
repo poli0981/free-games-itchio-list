@@ -1,7 +1,7 @@
 name: 🚫 Remove a Game (or copyright request)
 description: Ask to remove games from the catalog or correct their data, including requests from creators and rights holders (max 10 per issue)
 title: "[Remove Games] "
-labels: ["removal"]
+labels: ["delete-game"]
 body:
   - type: markdown
     attributes:
