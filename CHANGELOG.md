@@ -3,12 +3,13 @@
 All notable changes to this project, newest first. The notes of each release live in
 [`changelog/`](changelog/), one file per minor version: `changelog/<major>.x/ver<major>.<minor>.x.md`.
 
-**Latest release: [4.5.0](changelog/4.x/ver4.5.x.md#450---2026-10-27-rate-limits-for-the-whole-site) (2026-10-27) — Rate limits for the whole site.**
+**Latest release: [4.6.0](changelog/4.x/ver4.6.x.md#460---2026-11-09-accessibility) (2026-11-09) — Accessibility.**
 
 ## 4.x
 
 | Version | Date | Highlights |
 |---|---|---|
+| [4.6.0](changelog/4.x/ver4.6.x.md#460---2026-11-09-accessibility) | 2026-11-09 | Accessibility: statement, keyboard and screen-reader fixes, chart data tables, WCAG contrast |
 | [4.5.0](changelog/4.x/ver4.5.x.md#450---2026-10-27-rate-limits-for-the-whole-site) | 2026-10-27 | Rate limits for the whole site (HTTP 429), WAF guide |
 | [4.4.3](changelog/4.x/ver4.4.x.md#443---2026-10-26-dependency-and-security-updates) | 2026-10-26 | Dependency and security updates (build-tool advisories closed) |
 | [4.4.2](changelog/4.x/ver4.4.x.md#442---2026-10-22-toolchain-upgrade-code-scan-fixes) | 2026-10-22 | Toolchain upgrade (TypeScript 7, Node 26, Python 3.15), code-scan fixes |
