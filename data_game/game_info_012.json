@@ -12708,5 +12708,361 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-08T20:24:07Z"
+    },
+    {
+        "url": "https://halconix.itch.io/mixed-signals",
+        "name": "Mixed Signals",
+        "dev": "halconillustrates",
+        "description": "Mixed Signals Mixed Signals is a narrative-driven visual novel where your choices drive your story.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 06:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTcxOTk2LnBuZw==/original/eekaz6.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:24:35Z"
+    },
+    {
+        "url": "https://madebycyber.itch.io/lastale-a-glass-of-memory",
+        "name": "Lastale: A Glass of Memory",
+        "dev": "MadebyCyber",
+        "description": "In the realm of inbetweeners, there's a bar with a mysterious Bartender, and he's here to help.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 08:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY4ODA3LnBuZw==/original/U7U%2Fi0.png",
+        "tags": [
+            "2D",
+            "Gothic",
+            "Horror",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:24:43Z"
+    },
+    {
+        "url": "https://mrsleeps.itch.io/the-mushroom-legend",
+        "name": "The Mushroom Legend",
+        "dev": "Mr. Sleeps",
+        "description": "Hop into a world deep in the magical forest where the villagers live in peace.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 08:42 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTU1ODg3LnBuZw==/original/5CEyR5.png",
+        "tags": [
+            "2D",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:24:48Z"
+    },
+    {
+        "url": "https://rurudayo.itch.io/of-flowers-and-space",
+        "name": "Of Flowers and Space",
+        "dev": "Ruru",
+        "description": "A game about isolation, losing hope, and finding it in another.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 04:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTgwODk0LnBuZw==/original/t9HcnF.png",
+        "tags": [
+            "3D",
+            "hopecore",
+            "isolation",
+            "Mental Health",
+            "neet",
+            "Romance",
+            "Story Rich",
+            "thatgamejam"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:24:54Z"
+    },
+    {
+        "url": "https://studio-maocha.itch.io/dress-the-colorblind-lady",
+        "name": "Dress the Colorblind Lady",
+        "dev": "Studio MaoCha, ghoustboi, cuppatina, owzwi",
+        "description": "Your one and only duty in this game is to serve the beautiful and most noble Lady Clarabella, whom misfortune had granted colourblindness that has led to many a social stumble in her early life.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 07:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY2NzM5LmpwZw==/original/peDbDT.jpg",
+        "tags": [
+            "2D",
+            "Dress Up",
+            "fashion",
+            "maid",
+            "No AI",
+            "paper",
+            "Ren'Py",
+            "Romance",
+            "wlw"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:25:02Z"
+    },
+    {
+        "url": "https://totallyaccuratecoding.itch.io/charon",
+        "name": "Charon",
+        "dev": "TACS - Totally Accurate Coding Simulator, lebgdu64, lolimdabeast, switchot",
+        "description": "You must free the souls trapped between life and death from their eternal wandering.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 07:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY3NDM1LnBuZw==/original/KTrXJ%2B.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Atmospheric",
+            "Black and White",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:25:08Z"
+    },
+    {
+        "url": "https://whatthehek.itch.io/chromameowncy",
+        "name": "Chromameowncy",
+        "dev": "what-the-hek",
+        "description": "Help Bianca bring life back into her Grandmother's house with chromamancy.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 06:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY2NTYzLnBuZw==/original/2X%2Bdo%2B.png",
+        "tags": [
+            "2D",
+            "Cats",
+            "Cozy",
+            "Magic"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:25:15Z"
+    },
+    {
+        "url": "https://yanrx.itch.io/if-this-reaches-you",
+        "name": "If this reaches you",
+        "dev": "yanrx, love_like_its_fri, littlelilypuffs, tobaitfishwith",
+        "description": "a cozy postcard decoration game :D",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 04:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTMwNTcyLnBuZw==/original/dGKX3Q.png",
+        "tags": [
+            "Animals",
+            "Cozy",
+            "Crafting",
+            "Cute",
+            "Hand-drawn",
+            "Narrative",
+            "Point & Click",
+            "Relaxing",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:25:21Z"
+    },
+    {
+        "url": "https://zachyee.itch.io/far-from-home-browser-build",
+        "name": "Far From Home (Browser Build)",
+        "dev": "zachyee",
+        "description": "A story about a kid going back to their foreign hometown.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 09:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTcxNTkxLnBuZw==/original/86DmYj.png",
+        "tags": [
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:25:25Z"
+    },
+    {
+        "url": "https://zhuluot.itch.io/please-accept-my-resume",
+        "name": "请收下我的简历！（Please accept my resume!）",
+        "dev": "ZhuLuOT",
+        "description": "一场属于应届生的近未来求职冒险",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 07:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY3NTUyLnBuZw==/original/1uzpij.png",
+        "tags": [
+            "2D",
+            "Singleplayer",
+            "storygame"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-09T00:25:33Z"
     }
 ]
