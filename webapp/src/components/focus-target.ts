@@ -4,13 +4,14 @@
 
 /**
  * Calls `found` with what `find` returns, right away or as soon as it appears
- * inside <main> (routes are lazy chunks; their content can arrive later).
- * Gives up after `timeout` ms and calls `missing`, if given. Returns a cancel.
+ * inside <main> (routes are lazy chunks; on a slow connection their content
+ * can take seconds). Gives up after `timeout` ms and calls `missing`, if
+ * given. Returns a cancel.
  */
 export function whenPresent<T extends Element>(
   find: () => T | null,
   found: (el: T) => void,
-  { timeout = 5000, missing }: { timeout?: number; missing?: () => void } = {},
+  { timeout = 10_000, missing }: { timeout?: number; missing?: () => void } = {},
 ): () => void {
   const now = find()
   if (now) {
