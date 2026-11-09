@@ -1663,41 +1663,6 @@
         "added_at": "2026-10-30T00:24:40Z"
     },
     {
-        "url": "https://datasparrow.itch.io/shardana-hydro-trail-gp",
-        "name": "Shardana: Hydro Trail GP",
-        "dev": "Data Sparrow",
-        "description": "High-Octane Naval Racing in the 24th Century",
-        "genre": "Racing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "24 July 2023 @ 18:00 UTC",
-        "rating": "4.3",
-        "rating_count": "12",
-        "average_session": "About an hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5MzUyODczLnBuZw==/original/NFLEy6.png",
-        "tags": [
-            "Board Game",
-            "Low-poly",
-            "PSX (PlayStation)",
-            "Sci-fi",
-            "y2k"
-        ],
-        "platforms": [],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "29 October 2026 @ 13:08 UTC",
-        "added_at": "2026-10-30T00:24:46Z"
-    },
-    {
         "url": "https://fanplaylab.itch.io/wuguan",
         "name": "打破三觀只留五官",
         "dev": "fanplaylab",
@@ -1734,7 +1699,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T08:24:16Z"
+        "added_at": "2026-10-30T08:24:16Z",
+        "updated_at": "02 November 2026 @ 23:07 UTC"
     },
     {
         "url": "https://golden-log-games.itch.io/idle-countdown",
@@ -1745,8 +1711,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 01:20 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "2.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTA3NjI5LnBuZw==/original/bJZK6N.png",
@@ -1833,7 +1799,7 @@
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 17:27 UTC",
         "rating": "5.0",
-        "rating_count": "6",
+        "rating_count": "10",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDkzODY2LnBuZw==/original/XyJrWJ.png",
@@ -2017,7 +1983,7 @@
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 17:05 UTC",
         "rating": "5.0",
-        "rating_count": "7",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTM4MTQzLmpwZw==/original/syql0R.jpg",
@@ -2161,7 +2127,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-30T08:24:53Z",
-        "updated_at": "30 October 2026 @ 19:04 UTC"
+        "updated_at": "08 November 2026 @ 16:40 UTC"
     },
     {
         "url": "https://rottenpeas.itch.io/ghost-ranch",
@@ -2209,8 +2175,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "28 October 2026 @ 20:40 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTQxNDIyLnBuZw==/original/0LFbG%2F.png",
@@ -2242,7 +2208,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T08:25:00Z"
+        "added_at": "2026-10-30T08:25:00Z",
+        "updated_at": "07 November 2026 @ 02:06 UTC"
     },
     {
         "url": "https://savageemoji.itch.io/lucky-grin",
@@ -2297,7 +2264,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "5.0",
-        "rating_count": "6",
+        "rating_count": "9",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5OTc4NzQ4LmpwZw==/original/ftskGG.jpg",
@@ -2374,8 +2341,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 08:49 UTC",
-        "rating": "2.8",
-        "rating_count": "8",
+        "rating": "2.9",
+        "rating_count": "11",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTE5MzgzLnBuZw==/original/2dAxxH.png",
@@ -2402,7 +2369,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "30 October 2026 @ 10:00 UTC",
+        "updated_at": "06 November 2026 @ 21:12 UTC",
         "added_at": "2026-10-30T16:24:14Z"
     },
     {
@@ -2414,8 +2381,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 00:07 UTC",
-        "rating": "4.4",
-        "rating_count": "15",
+        "rating": "4.5",
+        "rating_count": "20",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTA2MTMwLnBuZw==/original/eXxYDd.png",
@@ -2442,8 +2409,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "29 October 2026 @ 15:59 UTC",
-        "rating": "4.7",
-        "rating_count": "3",
+        "rating": "4.8",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDQ2MzMxLnBuZw==/original/Dzqpnd.png",
@@ -2479,7 +2446,7 @@
         "publisher": "N/A",
         "release_date": "30 October 2026 @ 02:49 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTgxODcxLmpwZWc=/original/56JIHg.jpeg",
@@ -2505,7 +2472,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T20:24:23Z"
+        "added_at": "2026-10-30T20:24:23Z",
+        "updated_at": "07 November 2026 @ 15:00 UTC"
     },
     {
         "url": "https://dewakuneiei.itch.io/2-sides",
@@ -2549,7 +2517,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T20:24:27Z"
+        "added_at": "2026-10-30T20:24:27Z",
+        "updated_at": "04 November 2026 @ 18:41 UTC"
     },
     {
         "url": "https://pajorn.itch.io/evermore",
@@ -2582,7 +2551,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T20:24:30Z"
+        "added_at": "2026-10-30T20:24:30Z",
+        "updated_at": "31 October 2026 @ 18:56 UTC"
     },
     {
         "url": "https://pusana77.itch.io/ghostgirlrocket",
@@ -2662,13 +2632,16 @@
         "made_with": [],
         "ai_disclosure": "AI Assisted",
         "ai_content": [
+            "Code",
             "Graphics",
-            "Sounds"
+            "Sounds",
+            "Text"
         ],
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-30T20:24:36Z"
+        "added_at": "2026-10-30T20:24:36Z",
+        "updated_at": "06 November 2026 @ 03:32 UTC"
     },
     {
         "url": "https://ia97lies.itch.io/situation-normal",
@@ -2679,8 +2652,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.0",
-        "rating_count": "6",
+        "rating": "4.1",
+        "rating_count": "7",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE4NzUxNDM5LnBuZw==/original/iWRjyr.png",
@@ -2716,7 +2689,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "30 October 2026 @ 09:48 UTC",
+        "updated_at": "06 November 2026 @ 04:54 UTC",
         "added_at": "2026-10-30T20:24:39Z"
     },
     {
@@ -2763,7 +2736,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "30 October 2026 @ 02:09 UTC",
+        "updated_at": "08 November 2026 @ 17:15 UTC",
         "added_at": "2026-10-30T20:24:42Z"
     },
     {
@@ -2795,7 +2768,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-31T00:24:32Z"
+        "added_at": "2026-10-31T00:24:32Z",
+        "updated_at": "06 November 2026 @ 15:08 UTC"
     },
     {
         "url": "https://chaithaimai.itch.io/nightmare-in-veggieland",
@@ -2803,7 +2777,7 @@
         "dev": "chaithaimai",
         "description": "Nightmare in Veggieland You play as Pudding , a child who hates eating vegetables and seems to have been cursed!",
         "genre": "Visual Novel",
-        "status": "Released",
+        "status": "Prototype",
         "publisher": "N/A",
         "release_date": "30 October 2026 @ 09:56 UTC",
         "rating": "N/A",
@@ -2829,7 +2803,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-31T00:24:35Z"
+        "added_at": "2026-10-31T00:24:35Z",
+        "updated_at": "03 November 2026 @ 11:34 UTC"
     },
     {
         "url": "https://daedae-7371.itch.io/feliz-cum",
@@ -2840,8 +2815,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "30 October 2026 @ 08:34 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "3.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTY1OTY1LnBuZw==/original/iyQBGJ.png",
@@ -2910,8 +2885,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "30 October 2026 @ 11:59 UTC",
-        "rating": "5.0",
-        "rating_count": "17",
+        "rating": "4.9",
+        "rating_count": "48",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNDcwMjAxLnBuZw==/original/UkntzU.png",
@@ -2940,7 +2915,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-31T00:24:45Z"
+        "added_at": "2026-10-31T00:24:45Z",
+        "updated_at": "31 October 2026 @ 12:21 UTC"
     },
     {
         "url": "https://isadora-calicunha.itch.io/salo-de-maquiagem",
@@ -3038,7 +3014,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-31T00:24:56Z"
+        "added_at": "2026-10-31T00:24:56Z",
+        "updated_at": "06 November 2026 @ 10:18 UTC"
     },
     {
         "url": "https://samasarax.itch.io/intruder",
@@ -3109,7 +3086,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-31T00:25:03Z"
+        "added_at": "2026-10-31T00:25:03Z",
+        "updated_at": "01 November 2026 @ 19:31 UTC"
     },
     {
         "url": "https://tysore.itch.io/spririts-on-demand",
@@ -11882,8 +11860,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "07 November 2026 @ 16:29 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxODQzODQxLnBuZw==/original/aAacqo.png",
@@ -11918,7 +11896,7 @@
         "publisher": "Leap Game Studios",
         "release_date": "07 November 2026 @ 19:46 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzgwNDU3LnBuZw==/original/Ry4dN%2B.png",
@@ -11960,7 +11938,7 @@
         "dev": "karme2",
         "description": "A small visual novel featuring Nosferatu from 1922.",
         "genre": "Visual Novel",
-        "status": "In development",
+        "status": "Released",
         "publisher": "N/A",
         "release_date": "07 November 2026 @ 14:33 UTC",
         "rating": "N/A",
@@ -11984,7 +11962,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-08T08:23:51Z"
+        "added_at": "2026-11-08T08:23:51Z",
+        "updated_at": "08 November 2026 @ 19:29 UTC"
     },
     {
         "url": "https://mindyorzi.itch.io/lian-gogogo",
@@ -12020,7 +11999,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-08T08:23:55Z"
+        "added_at": "2026-11-08T08:23:55Z",
+        "updated_at": "08 November 2026 @ 22:38 UTC"
     },
     {
         "url": "https://selamoonix.itch.io/irvines-school-of-romance-simulator",
@@ -12159,8 +12139,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "07 November 2026 @ 19:46 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzA1OTI1LnBuZw==/original/7FVN%2BE.png",
@@ -12301,7 +12281,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-08T20:23:36Z"
+        "added_at": "2026-11-08T20:23:36Z",
+        "updated_at": "08 November 2026 @ 22:45 UTC"
     },
     {
         "url": "https://jflecole.itch.io/neon-debt",
@@ -12348,8 +12329,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "07 November 2026 @ 16:09 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxOTMzMDY5LnBuZw==/original/aNTFnf.png",
@@ -12672,7 +12653,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-08T20:24:03Z"
+        "added_at": "2026-11-08T20:24:03Z",
+        "updated_at": "08 November 2026 @ 21:48 UTC"
     },
     {
         "url": "https://paledoptera.itch.io/no-cats",
@@ -12683,8 +12665,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "07 November 2026 @ 21:59 UTC",
-        "rating": "4.8",
-        "rating_count": "6",
+        "rating": "4.6",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxOTQyOTcwLnBuZw==/original/vQKg8n.png",
