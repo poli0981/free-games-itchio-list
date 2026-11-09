@@ -96,8 +96,11 @@ function ChartTable({ title, label, value, rows, formatKey }: ChartTableData & {
         {t('charts.table.show')}
       </summary>
       {open && (
-        // Scrolls on its own (the game count has a row per day); focusable so the keyboard can scroll it.
-        <div tabIndex={0} role="region" aria-label={title} className="mt-2 max-h-72 overflow-y-auto">
+        // Scrolls on its own (the game count has a row per day). A scrolling area with nothing focusable
+        // inside must take focus itself, or the keyboard can't scroll it (WCAG 2.1.1; axe's
+        // scrollable-region-focusable): the labelled region + tabIndex 0 pattern. Sonar's S6845
+        // (no tabIndex on non-interactive elements) doesn't know that exception.
+        <div tabIndex={0} /* NOSONAR */ role="region" aria-label={title} className="mt-2 max-h-72 overflow-y-auto">
           <table className="w-full border-collapse text-xs">
             <caption className="sr-only">{title}</caption>
             <thead className="sticky top-0 bg-card text-muted-foreground">

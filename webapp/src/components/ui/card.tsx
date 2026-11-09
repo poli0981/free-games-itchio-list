@@ -21,12 +21,10 @@ CardHeader.displayName = 'CardHeader'
 
 /** A real heading (h2): the About cards and the chart cards sit right under the page's h1. */
 export const CardTitle = forwardRef<HTMLHeadingElement, HTMLAttributes<HTMLHeadingElement>>(
-  ({ className, ...props }, ref) => (
-    <h2
-      ref={ref}
-      className={cn('text-2xl font-semibold leading-none tracking-tight', className)}
-      {...props}
-    />
+  ({ className, children, ...props }, ref) => (
+    <h2 ref={ref} className={cn('text-2xl font-semibold leading-none tracking-tight', className)} {...props}>
+      {children}
+    </h2>
   ),
 )
 CardTitle.displayName = 'CardTitle'
