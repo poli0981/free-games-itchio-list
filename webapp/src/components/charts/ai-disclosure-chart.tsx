@@ -2,11 +2,12 @@ import { useMemo } from 'react'
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { aiLabel } from '@/lib/ai-disclosure'
 import { aiDisclosureCounts } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { AI_ASSISTED, AI_NONE, AI_UNDISCLOSED } from '@/lib/game-filters'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
+import { chartAria, LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { NEUTRAL, PALETTE } from './palette'
 
@@ -25,11 +26,24 @@ export function AiDisclosureChart({ games }: { games: Game[] }) {
   )
   const total = data.reduce((sum, d) => sum + d.count, 0)
   return (
-    <ChartCard title={t('charts.ai.title')} description={t('charts.ai.desc')}>
+    <ChartCard
+      id="ai-disclosure"
+      title={t('charts.ai.title')}
+      description={t('charts.ai.desc')}
+      table={{
+        label: t('games.filter.ai'),
+        value: t('charts.series.games'),
+        rows: tableRows(
+          data.map((d) => ({ key: d.label, count: d.count })),
+          total,
+        ),
+      }}
+    >
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
+        <PieChart {...chartAria('ai-disclosure')}>
           <Pie
             {...SERIES_ANIMATION}
+            rootTabIndex={-1}
             data={data}
             dataKey="count"
             nameKey="label"

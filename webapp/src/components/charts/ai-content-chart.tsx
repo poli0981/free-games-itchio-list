@@ -1,11 +1,12 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { countByArray } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, SERIES_ANIMATION, TOOLTIP_BASE } from './chart-theme'
+import { BAR_CURSOR, chartAria, SERIES_ANIMATION, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -15,12 +16,21 @@ export function AiContentChart({ games }: { games: Game[] }) {
   const fmt = useFormat()
   const data = useMemo(() => countByArray(games, 'ai_content'), [games])
   return (
-    <ChartCard title={t('charts.aiContent.title')} description={t('charts.aiContent.desc')}>
+    <ChartCard
+      id="ai-content"
+      title={t('charts.aiContent.title')}
+      description={t('charts.aiContent.desc')}
+      table={
+        data.length
+          ? { label: t('charts.table.use'), value: t('charts.series.games'), rows: tableRows(data) }
+          : undefined
+      }
+    >
       {data.length === 0 ? (
         <p className="flex h-full items-center justify-center text-sm text-muted-foreground">{t('charts.empty')}</p>
       ) : (
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} layout="vertical" margin={{ left: 20 }}>
+          <BarChart {...chartAria('ai-content')} data={data} layout="vertical" margin={{ left: 20 }}>
             <CartesianGrid horizontal={false} strokeDasharray="3 3" />
             <XAxis type="number" allowDecimals={false} tickFormatter={fmt.number} />
             <YAxis dataKey="key" type="category" width={100} interval={0} tick={{ fontSize: 12 }} />

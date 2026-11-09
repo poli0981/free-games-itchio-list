@@ -1,12 +1,13 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { countBy, topN } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import { useIsMobile } from '@/lib/use-is-mobile'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, SERIES_ANIMATION, singleLineTick, TOOLTIP_BASE, truncateLabel } from './chart-theme'
+import { BAR_CURSOR, chartAria, SERIES_ANIMATION, singleLineTick, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -17,9 +18,13 @@ export function AvgSessionChart({ games }: { games: Game[] }) {
   const isMobile = useIsMobile()
   const data = useMemo(() => topN(countBy(games, 'average_session'), 8), [games])
   return (
-    <ChartCard title={t('charts.avgSession.title')}>
+    <ChartCard
+      id="avg-session"
+      title={t('charts.avgSession.title')}
+      table={{ label: t('detail.avgSession'), value: t('charts.series.games'), rows: tableRows(data) }}
+    >
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} layout={isMobile ? 'vertical' : 'horizontal'}>
+        <BarChart {...chartAria('avg-session')} data={data} layout={isMobile ? 'vertical' : 'horizontal'}>
           <CartesianGrid horizontal={!isMobile} strokeDasharray="3 3" />
           {isMobile ? (
             <XAxis type="number" allowDecimals={false} tickFormatter={fmt.number} />

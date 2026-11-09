@@ -1,5 +1,7 @@
+import { useContext, useEffect } from 'react'
 import type { TooltipContentProps, TooltipPayloadEntry } from 'recharts'
 import { useFormat } from '@/lib/format'
+import { ChartAnnounce } from './chart-theme'
 
 interface ChartTooltipContentProps extends Partial<Pick<TooltipContentProps, 'active' | 'payload' | 'label'>> {
   /** Sum of all slices of a pie whose slices cover the whole: adds each value's share. */
@@ -14,17 +16,31 @@ interface ChartTooltipContentProps extends Partial<Pick<TooltipContentProps, 'ac
  * Tooltip body for every chart: popover colours from the theme tokens, a swatch
  * per series, and numbers formatted for the chosen language. Pass it as
  * `content={<ChartTooltipContent />}`; Recharts fills in active/payload/label.
+ * The same text goes to the card's live region (ChartAnnounce), so stepping
+ * through a chart with the arrow keys reads each value out.
  */
 export function ChartTooltipContent({ active, payload, label, total, labelFormat, colorOf }: ChartTooltipContentProps) {
   const fmt = useFormat()
-  if (!active || !payload?.length) return null
+  const announce = useContext(ChartAnnounce)
+  const shown = Boolean(active && payload?.length)
   const heading = label === undefined || label === '' ? '' : labelFormat ? labelFormat(String(label)) : String(label)
+  const rows = (shown ? (payload ?? []) : []).map((entry) => {
+    const value = Number(entry.value)
+    const number = Number.isFinite(value) ? fmt.number(value) : String(entry.value ?? '')
+    const share = total && Number.isFinite(value) ? ` (${fmt.percent(value / total)})` : ''
+    return { entry, text: `${number}${share}` }
+  })
+  const spoken = rows.length
+    ? [heading, ...rows.map(({ entry, text }) => `${String(entry.name ?? '')} ${text}`.trim())].filter(Boolean).join(', ')
+    : ''
+  useEffect(() => announce(spoken), [announce, spoken])
+
+  if (!shown) return null
   return (
     <div className="min-w-36 rounded-md border bg-popover px-3 py-2 text-xs text-popover-foreground shadow-md">
       {heading && <p className="mb-1.5 font-medium">{heading}</p>}
       <ul className="space-y-1">
-        {payload.map((entry, i) => {
-          const value = Number(entry.value)
+        {rows.map(({ entry, text }, i) => {
           const color = colorOf?.(entry) ?? entry.color ?? entry.fill
           return (
             <li key={`${String(entry.name)}-${i}`} className="flex items-center gap-2">
@@ -34,10 +50,7 @@ export function ChartTooltipContent({ active, payload, label, total, labelFormat
                 style={{ background: color }}
               />
               <span className="text-muted-foreground">{entry.name}</span>
-              <span className="ml-auto pl-4 font-mono font-medium tabular-nums">
-                {Number.isFinite(value) ? fmt.number(value) : String(entry.value ?? '')}
-                {total && Number.isFinite(value) ? ` (${fmt.percent(value / total)})` : null}
-              </span>
+              <span className="ml-auto pl-4 font-mono font-medium tabular-nums">{text}</span>
             </li>
           )
         })}

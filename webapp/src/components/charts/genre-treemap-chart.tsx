@@ -1,10 +1,11 @@
 import { useMemo } from 'react'
 import { ResponsiveContainer, Tooltip, Treemap, type TooltipPayloadEntry } from 'recharts'
 import { genreTreemapData } from '@/lib/analytics'
+import { treemapRows } from '@/lib/chart-table'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
+import { chartAria, SERIES_ANIMATION, TOOLTIP_BASE, truncateLabel } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE, PALETTE_LABEL } from './palette'
 
@@ -62,9 +63,23 @@ export function GenreTreemapChart({ games }: { games: Game[] }) {
   // are valid treemap data at runtime, so cast through unknown.
   const treemapData = data as unknown as React.ComponentProps<typeof Treemap>['data']
   return (
-    <ChartCard title={t('charts.genreTreemap.title')} description={t('charts.genreTreemap.desc')}>
+    // The treemap can't be stepped through with the keyboard: its table (and the Genres chart) carry the numbers.
+    <ChartCard
+      id="genre-treemap"
+      title={t('charts.genreTreemap.title')}
+      description={t('charts.genreTreemap.desc')}
+      keyboard={false}
+      table={{ label: t('games.filter.genre'), value: t('charts.series.games'), rows: treemapRows(data) }}
+    >
       <ResponsiveContainer width="100%" height="100%">
-        <Treemap {...SERIES_ANIMATION} data={treemapData} dataKey="size" nameKey="name" content={<TreemapCell />}>
+        <Treemap
+          {...SERIES_ANIMATION}
+          {...chartAria('genre-treemap', { keys: false })}
+          data={treemapData}
+          dataKey="size"
+          nameKey="name"
+          content={<TreemapCell />}
+        >
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent colorOf={cellColor} />} />
         </Treemap>
       </ResponsiveContainer>

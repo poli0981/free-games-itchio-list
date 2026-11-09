@@ -376,4 +376,11 @@ export const vi: Record<MessageKey, string> = {
   "deleted.countFiltered": "{shown} / {count} mục",
   "charts.tabs.label": "Nhóm biểu đồ",
   "suggest.error.needChallenge": "Vui lòng hoàn tất bước kiểm tra chống spam trước.",
+  "charts.table.show": "Bảng dữ liệu",
+  "charts.table.share": "Tỷ lệ",
+  "charts.table.date": "Ngày",
+  "charts.table.month": "Tháng",
+  "charts.table.kind": "Loại",
+  "charts.table.use": "Dùng cho",
+  "charts.a11y.keys": "Dùng phím mũi tên trái và phải để đọc từng giá trị. Bảng dữ liệu bên dưới biểu đồ liệt kê đầy đủ.",
 }

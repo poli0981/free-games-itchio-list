@@ -18,6 +18,8 @@ export function RecentDeletedChart({ deleted }: { deleted: DeletedGameEntry[] })
   )
   return (
     <ChartCard
+      id="recent-deleted"
+      keyboard={false}
       title={t('charts.recentDeleted.title')}
       description={t('charts.recentDeleted.desc', { shown: recent.length, total: fmt.number(deleted.length) })}
     >

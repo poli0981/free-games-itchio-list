@@ -1,6 +1,33 @@
 // Shared Recharts props. The design tokens in index.css are hex colours, so
 // reference them as `var(--x)` — `hsl(var(--x))` is an invalid colour, which
 // SVG paints black and CSS drops (a transparent tooltip).
+import { createContext } from 'react'
+
+/** Element ids inside one chart card: its heading, description and keyboard hint. */
+export function chartIds(id: string) {
+  return { title: `chart-${id}-title`, desc: `chart-${id}-desc`, keys: `chart-${id}-keys` }
+}
+
+/**
+ * Spread on every chart (BarChart, LineChart, PieChart, Treemap). Recharts 3
+ * makes the chart a focusable role="application" with an empty <title>; this
+ * names it after its card's heading and describes it with the card's
+ * description and, for the charts you can step through, the arrow-key hint.
+ * (Recharts' own `title` prop would also show a browser tooltip.)
+ */
+export function chartAria(id: string, { keys = true }: { keys?: boolean } = {}) {
+  const ids = chartIds(id)
+  return {
+    'aria-labelledby': ids.title,
+    'aria-describedby': keys ? `${ids.desc} ${ids.keys}` : ids.desc,
+  }
+}
+
+/**
+ * Reads a chart's tooltip out (chart-tooltip.tsx → the card's polite live
+ * region): Recharts' own tooltip is a live region, a custom one isn't.
+ */
+export const ChartAnnounce = createContext<(text: string) => void>(() => {})
 
 /** Every <Tooltip>: no slide-in animation, no focus outline, above the legend. */
 export const TOOLTIP_BASE = {

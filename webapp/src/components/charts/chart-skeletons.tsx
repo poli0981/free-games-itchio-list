@@ -5,8 +5,11 @@ import { cn } from '@/lib/utils'
 
 export type ChartTab = 'overview' | 'reach' | 'quality' | 'discovery'
 
-/** A ChartCard while its tab loads: the same header lines and chart area, so nothing moves when it arrives. */
-function CardSkeleton({ described, tall }: { described: boolean; tall?: boolean }) {
+/**
+ * A ChartCard while its tab loads: the same header lines, chart area and "Data table"
+ * line, so nothing moves when it arrives.
+ */
+function CardSkeleton({ described, tall, table }: CardShape) {
   return (
     <Card>
       <CardHeader>
@@ -16,6 +19,11 @@ function CardSkeleton({ described, tall }: { described: boolean; tall?: boolean 
       <CardContent className={cn('h-72', tall && 'max-md:h-96')}>
         <Skeleton className="h-full w-full" />
       </CardContent>
+      {table && (
+        <div className="border-t px-5 py-3">
+          <Skeleton className="h-4 w-24" />
+        </div>
+      )}
     </Card>
   )
 }
@@ -35,12 +43,24 @@ function KpiSkeleton() {
   )
 }
 
-// Each tab's cards in order: with a description line or not; the Genres chart is taller on phones.
-const LAYOUT: Record<ChartTab, { described: boolean; tall?: boolean }[]> = {
-  overview: [{ described: true, tall: true }, ...Array.from({ length: 5 }, () => ({ described: true }))],
-  reach: [{ described: true }, { described: false }, { described: false }, { described: true }],
-  quality: Array.from({ length: 4 }, () => ({ described: true })),
-  discovery: Array.from({ length: 4 }, () => ({ described: true })),
+interface CardShape {
+  described: boolean
+  tall?: boolean
+  table?: boolean
+}
+
+// Each tab's cards in order: with a description line or not, with a data table or not
+// (all but the list of recent deletions); the Genres chart is taller on phones.
+const LAYOUT: Record<ChartTab, CardShape[]> = {
+  overview: [{ described: true, tall: true, table: true }, ...Array.from({ length: 5 }, () => ({ described: true, table: true }))],
+  reach: [
+    { described: true, table: true },
+    { described: false, table: true },
+    { described: false, table: true },
+    { described: true },
+  ],
+  quality: Array.from({ length: 4 }, () => ({ described: true, table: true })),
+  discovery: Array.from({ length: 4 }, () => ({ described: true, table: true })),
 }
 
 export function TabSkeleton({ tab }: { tab: ChartTab }) {

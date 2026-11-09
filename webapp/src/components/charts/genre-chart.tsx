@@ -1,11 +1,12 @@
 import { useMemo } from 'react'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { countBy, topN } from '@/lib/analytics'
+import { tableRows } from '@/lib/chart-table'
 import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { BAR_CURSOR, SERIES_ANIMATION, singleLineTick, TOOLTIP_BASE } from './chart-theme'
+import { BAR_CURSOR, chartAria, SERIES_ANIMATION, singleLineTick, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -15,9 +16,15 @@ export function GenreChart({ games }: { games: Game[] }) {
   const data = useMemo(() => topN(countBy(games, 'genre'), 15), [games])
   return (
     // Taller on phones, where the cards stack: 15 rows get room to breathe.
-    <ChartCard title={t('charts.genre.title')} description={t('charts.genre.desc')} contentClassName="max-md:h-96">
+    <ChartCard
+      id="genre"
+      title={t('charts.genre.title')}
+      description={t('charts.genre.desc')}
+      contentClassName="max-md:h-96"
+      table={{ label: t('games.filter.genre'), value: t('charts.series.games'), rows: tableRows(data) }}
+    >
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} layout="vertical" margin={{ left: 20 }}>
+        <BarChart {...chartAria('genre')} data={data} layout="vertical" margin={{ left: 20 }}>
           <CartesianGrid horizontal={false} strokeDasharray="3 3" />
           <XAxis type="number" tickFormatter={fmt.number} />
           {/* interval 0: every label. The default drops those whose line box doesn't

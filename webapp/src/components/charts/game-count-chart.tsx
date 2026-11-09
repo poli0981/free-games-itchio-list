@@ -1,9 +1,10 @@
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { historyRows } from '@/lib/chart-table'
 import { useFormat } from '@/lib/format'
 import { useT } from '@/lib/i18n'
 import type { CountHistoryPoint } from '@/types/game'
 import { ChartCard } from './chart-card'
-import { LINE_CURSOR, SERIES_ANIMATION, TOOLTIP_BASE } from './chart-theme'
+import { chartAria, LINE_CURSOR, SERIES_ANIMATION, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
 import { PALETTE } from './palette'
 
@@ -11,14 +12,28 @@ export function GameCountChart({ history }: { history: CountHistoryPoint[] }) {
   const t = useT()
   const fmt = useFormat()
   return (
-    <ChartCard title={t('charts.gameCount.title')} description={t('charts.gameCount.desc')}>
+    <ChartCard
+      id="game-count"
+      title={t('charts.gameCount.title')}
+      description={t('charts.gameCount.desc')}
+      table={
+        history.length
+          ? {
+              label: t('charts.table.date'),
+              value: t('charts.series.games'),
+              rows: historyRows(history),
+              formatKey: fmt.date,
+            }
+          : undefined
+      }
+    >
       {history.length === 0 ? (
         <p className="flex h-full items-center justify-center text-sm text-muted-foreground">
           {t('charts.gameCount.empty')}
         </p>
       ) : (
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={history} margin={{ left: 4, right: 8 }}>
+          <LineChart {...chartAria('game-count')} data={history} margin={{ left: 4, right: 8 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" tick={{ fontSize: 10 }} minTickGap={24} />
             <YAxis

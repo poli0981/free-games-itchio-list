@@ -374,6 +374,13 @@ export const en = {
   "deleted.countFiltered": "{shown} of {count} entries",
   "charts.tabs.label": "Chart groups",
   "suggest.error.needChallenge": "Please finish the anti-spam check first.",
+  "charts.table.show": "Data table",
+  "charts.table.share": "Share",
+  "charts.table.date": "Date",
+  "charts.table.month": "Month",
+  "charts.table.kind": "Kind",
+  "charts.table.use": "Used for",
+  "charts.a11y.keys": "Use the left and right arrow keys to read each value. The data table below the chart lists them all.",
 } as const
 
 export type MessageKey = keyof typeof en
