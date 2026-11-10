@@ -14216,5 +14216,460 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-09T20:24:01Z"
+    },
+    {
+        "url": "https://aesprion.itch.io/nib",
+        "name": "Nib",
+        "dev": "Aesprion",
+        "description": "A short story platformer in a fading sketchbook. Walk through the pages of a life and bring the colour back.",
+        "genre": "Platformer",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 08:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDEzOTY2LnBuZw==/original/dO5wBG.png",
+        "tags": [
+            "emotional",
+            "Hand-drawn",
+            "Minimalist",
+            "Narrative",
+            "Short",
+            "Side Scroller",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:23:43Z"
+    },
+    {
+        "url": "https://basket-cat.itch.io/the-lindwyrms-test",
+        "name": "The Lindwyrm's Test",
+        "dev": "Basket Cat",
+        "description": "A TM/F visual novel inspired by The Lindwyrm Prince fairy tale.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 04:11 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA4OTM4LnBuZw==/original/OzHx78.png",
+        "tags": [
+            "No AI",
+            "Queer",
+            "Romance",
+            "Transgender"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:23:46Z"
+    },
+    {
+        "url": "https://br0kenleg.itch.io/recall-vn",
+        "name": ".RECALL",
+        "dev": "br0kenleg",
+        "description": "a mortal cultist's love confession to someone he can barely understand",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 22:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQ5NzQ4LnBuZw==/original/3CAy%2By.png",
+        "tags": [
+            "Experimental",
+            "Hand-drawn",
+            "Kinetic Novel",
+            "Narrative",
+            "onscripter-en",
+            "Queer",
+            "Romance",
+            "Short",
+            "weird"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:23:50Z"
+    },
+    {
+        "url": "https://coordinatedmoths.itch.io/performance-review",
+        "name": "Performance Review",
+        "dev": "coordinatedmoths",
+        "description": "Are you ready for your post-death interview?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 01:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDAzODIyLnBuZw==/original/6hh85c.png",
+        "tags": [
+            "No AI"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:23:54Z"
+    },
+    {
+        "url": "https://doksa.itch.io/ursa-major",
+        "name": "Ursa Major",
+        "dev": "Doksa, Ruvik",
+        "description": "I want to become a star with you",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 11:51 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDE3MzM1LnBuZw==/original/dlrasQ.png",
+        "tags": [
+            "Creepy",
+            "Dark",
+            "denpa",
+            "Horror",
+            "Lesbian",
+            "LGBT",
+            "Psychological Horror",
+            "Short",
+            "Surreal",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:23:57Z"
+    },
+    {
+        "url": "https://gnomesanddreams.itch.io/anotherswill",
+        "name": "Another's Will",
+        "dev": "gnomesanddreams",
+        "description": "You came to the castle for a secret.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 08:58 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODU0MjcyLmpwZw==/original/VNxHpg.jpg",
+        "tags": [
+            "Atmospheric",
+            "Characters",
+            "Fantasy",
+            "Godot",
+            "Indie",
+            "Multiple Endings",
+            "Romance",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:00Z"
+    },
+    {
+        "url": "https://missm1.itch.io/cmo-romperme-por-dentro",
+        "name": "Cómo romperme por dentro",
+        "dev": "Miss Matanza 1",
+        "description": "Vida escolar, drama y romance, 3 desenlaces",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 01:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDAwMzQ5LnBuZw==/original/Xgs%2BHJ.png",
+        "tags": [
+            "drama",
+            "Female Protagonist",
+            "Romance",
+            "scholar",
+            "Slice Of Life",
+            "spanish"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:02Z"
+    },
+    {
+        "url": "https://mookichuu.itch.io/guilty-pleasure",
+        "name": "Guilty Pleasure",
+        "dev": "Mooki !!",
+        "description": "Not every confession is in a courtroom.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 01:45 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA1MTIyLnBuZw==/original/fcY2r7.png",
+        "tags": [
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:05Z"
+    },
+    {
+        "url": "https://oxymorondev.itch.io/girl",
+        "name": "girl",
+        "dev": "oxymoron",
+        "description": "a scream.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 04:00 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA3NzYzLnBuZw==/original/zhzXM5.png",
+        "tags": [
+            "No AI",
+            "RPG Maker",
+            "RPG Maker MV",
+            "Short",
+            "Singleplayer",
+            "Transgender"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:08Z"
+    },
+    {
+        "url": "https://quilm.itch.io/pridegoeth",
+        "name": "Pride Goeth",
+        "dev": "QuilM",
+        "description": "A doctor in the Andes struggles with mortality and an aging career.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 01:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDAxOTk2LnBuZw==/original/2qmgn3.png",
+        "tags": [
+            "No AI",
+            "Point & Click",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:10Z"
+    },
+    {
+        "url": "https://snadwichwich.itch.io/sailing-sentiments",
+        "name": "Sailing Sentiments",
+        "dev": "Snadwich, Delender1100",
+        "description": "------------------------------------------------------------------------------------------------------- Walk to reach the end Hold A then D to move...",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 23:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDAxOTE4LnBuZw==/original/KjFWM4.png",
+        "tags": [
+            "colossal",
+            "Cozy",
+            "Cute",
+            "giant",
+            "Simple"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:13Z"
+    },
+    {
+        "url": "https://thecrimsondm-vanillia.itch.io/solar-reborn-reincarnated-as-myself",
+        "name": "Solar Reborn: Reincarnated as myself.",
+        "dev": "TheCrimsonDM Vanillia",
+        "description": "What happens when a goddess dies, and is reborn as herself... oh and she's a mom now.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 03:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA3MjA1LnBuZw==/original/Cn51Xe.png",
+        "tags": [
+            "Animals",
+            "Comedy",
+            "Dating Sim",
+            "Furry",
+            "milf",
+            "mlp",
+            "mother",
+            "pony",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T04:24:16Z"
     }
 ]
