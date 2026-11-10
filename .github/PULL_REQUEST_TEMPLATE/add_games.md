@@ -12,6 +12,7 @@ Optional: short notes, why they rock, NSFW/safety concerns (the Maintainer sets 
 
 ### Checklist
 - [ ] All links are free itch.io game pages
+- [ ] Each page has its own browser build or download on itch.io (not only a link to another site)
 - [ ] No duplicates (searched https://freeitchgames.win/games)
 - [ ] Only `scripts/temp_link.json` changed, and it's still valid JSON
 - [ ] I agree my contribution is licensed under CC BY 4.0, like the rest of the catalog data (`data_game/LICENSE.md`)

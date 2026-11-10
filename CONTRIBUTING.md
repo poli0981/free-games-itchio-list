@@ -12,6 +12,7 @@ Games go through the website; everything else goes through the GitHub issue/PR t
 - Optional: a short note (why it's good, content warnings…), up to 500 characters. Notes are deleted after 180 days. Please don't put personal data in it.
 - A Cloudflare Turnstile check and a rate limit keep bots out; if you get blocked, wait a bit and try again.
 - Only **free** itch.io games. Paid games are dropped automatically when the game page is scraped.
+- The game must be playable or downloadable **on its itch.io page itself** (a browser build or an uploaded file). A page that only points to a launcher or a download on another site doesn't qualify, even when that is free: the [Disclaimer](docs/DISCLAIMER.md) tells visitors that any download happens on itch.io.
 - Nothing goes live instantly: every suggestion lands in a **review queue**, where the Maintainer approves or rejects it, by hand or through automatic rules (a suggestion without a warning flag that nobody rejected within about a day may be approved automatically). Approved links are then scraped by the data pipeline and show up on the site after the next deploy.
 
 Got a whole list? The **[Add Games (bulk list)]** issue template takes up to 15 links at once, and a PR that adds itch.io URLs to `scripts/temp_link.json` works too (use the [Add Games] PR template). Both go through the same review: the Maintainer checks every link before it is queued, and merging such a PR is the approval. Please don't edit `data_game/` by hand: the pipeline owns those files (see [section 7](#7-submit-code-changes-pr)).

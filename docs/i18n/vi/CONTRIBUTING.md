@@ -16,6 +16,7 @@ Game thì gửi qua website; mọi thứ khác thì qua các template issue/PR t
 - Tùy chọn: một ghi chú ngắn (vì sao game hay, cảnh báo nội dung…), tối đa 500 ký tự. Ghi chú bị xóa sau 180 ngày. Vui lòng đừng ghi dữ liệu cá nhân vào đó.
 - Một bước kiểm tra Cloudflare Turnstile và giới hạn tần suất giúp chặn bot; nếu bị chặn, đợi một lúc rồi thử lại.
 - Chỉ game itch.io **miễn phí**. Game trả phí sẽ tự động bị loại khi trang game được cào.
+- Game phải chơi được hoặc tải được **ngay trên trang itch.io của nó** (bản chạy trên trình duyệt hoặc file đã tải lên). Trang chỉ dẫn sang launcher hay link tải ở site khác thì không đủ điều kiện, kể cả khi miễn phí: [Tuyên bố miễn trừ](DISCLAIMER.md) nói với người dùng rằng mọi lượt tải diễn ra trên itch.io.
 - Không có gì lên site ngay lập tức: mọi đề xuất đều vào **hàng chờ duyệt**, nơi Maintainer duyệt hoặc từ chối, bằng tay hoặc qua quy tắc tự động (một đề xuất không có cờ cảnh báo mà không ai từ chối trong khoảng một ngày có thể được duyệt tự động). Link được duyệt sau đó được pipeline dữ liệu cào và xuất hiện trên site sau lần deploy kế tiếp.
 
 Có cả một danh sách? Issue template **[Add Games (bulk list)]** nhận tối đa 15 link một lần, và một PR thêm URL itch.io vào `scripts/temp_link.json` cũng được (dùng PR template [Add Games]). Cả hai đều đi qua cùng quy trình duyệt: Maintainer kiểm tra từng link trước khi đưa vào hàng chờ, và việc merge một PR như vậy chính là sự phê duyệt. Vui lòng đừng sửa tay `data_game/`: các file đó do pipeline quản lý (xem [mục 7](#7-gửi-thay-đổi-code-pr)).
