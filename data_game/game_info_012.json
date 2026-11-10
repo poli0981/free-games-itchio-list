@@ -14671,5 +14671,203 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-10T04:24:16Z"
+    },
+    {
+        "url": "https://fluffyblessing.itch.io/aeris-alis",
+        "name": "Aeris Alis",
+        "dev": "fluffyblessing, Cakethatisall",
+        "description": "Let's enjoy our time together... before it runs out.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 14:16 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzI5NzYyLmdpZg==/original/zkRQWF.gif",
+        "tags": [
+            "Mystery",
+            "Story Rich",
+            "supernatural",
+            "Urban"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T08:23:36Z"
+    },
+    {
+        "url": "https://jiaqizhang11.itch.io/when-the-phone-lights-up",
+        "name": "when the phone lights up 亮起的手机 (双语版)",
+        "dev": "jiaqizhang11",
+        "description": "A cozy little life simulation about choices, happiness, and the possibilities hidden in everyday life.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "08 November 2026 @ 22:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTk5NTkzLnBuZw==/original/D7uBH3.png",
+        "tags": [
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Mystery",
+            "philosophical",
+            "Story Rich",
+            "Surreal"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 November 2026 @ 06:32 UTC",
+        "added_at": "2026-11-10T08:23:38Z"
+    },
+    {
+        "url": "https://maxdemage.itch.io/k-pop-manager",
+        "name": "K-Pop Manager",
+        "dev": "MaXDemage",
+        "description": "A K-pop management sim and visual novel.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 11:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDE5NDgxLnBuZw==/original/lx%2Bvei.png",
+        "tags": [
+            "Anime",
+            "Dating Sim",
+            "kpop",
+            "Management",
+            "Multiple Endings",
+            "Ren'Py",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T08:23:41Z"
+    },
+    {
+        "url": "https://mintteag.itch.io/daily-assembly",
+        "name": "D.A.I.L.Y Assembly",
+        "dev": "Minty",
+        "description": "Too much garbage in your face?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 01:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDAyODY0LnBuZw==/original/KKcB3o.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "Indie",
+            "Multiple Endings",
+            "Pixel Art",
+            "Romance",
+            "RPG Maker"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T08:23:45Z"
+    },
+    {
+        "url": "https://real-school.itch.io/the-same-evening",
+        "name": "The Same Evening",
+        "dev": "Real School",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 18:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODk2OTg5LnBuZw==/original/idKD2m.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-10T08:23:49Z"
     }
 ]
