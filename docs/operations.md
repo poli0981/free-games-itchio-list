@@ -211,7 +211,8 @@ Do these once (and again with the `-staging` names for the staging Worker).
    `itch-rust` (`qodana-rust`, Early Access). Each project token is a repository secret:
    `QODANA_TOKEN_TS_JS`, `QODANA_TOKEN_PYTHON`, `QODANA_TOKEN_RUST` (Settings → Secrets and variables →
    Actions). `qodana.yml` runs the three jobs; the settings are `webapp/qodana.yaml`, `qodana.yaml`
-   and `webapp/src-tauri/qodana.yaml`. The three linters need an **Ultimate** licence: when the
+   and `webapp/src-tauri/qodana.yaml` (each with a quality gate of 0 problems: a finding fails its
+   job — fix it, or switch the inspection off there with the reason). The three linters need an **Ultimate** licence: when the
    trial or the subscription ends, the scans fail with a licence error — renew it, or delete
    `qodana.yml` and the three files (nothing else depends on them). A new token: Qodana Cloud →
    the project → Settings, then update the secret.

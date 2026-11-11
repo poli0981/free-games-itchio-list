@@ -32,6 +32,7 @@ for visitors.
   project — TypeScript / JavaScript (`webapp/`), Python (the data pipeline) and Rust (the Tauri
   shell) — on pull requests and on pushes to `main` that change code. It runs next to SonarQube
   Cloud and, like it, skips Dependabot and fork pull requests, which get no repository secrets.
+  All three projects start at 0 problems, and a new one fails its job.
 - **Badges** in both READMEs: project status, Python CI, SonarQube Cloud quality gate and coverage,
   Qodana, and the accessibility target.
 

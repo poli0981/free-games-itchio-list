@@ -8,6 +8,10 @@ linter: qodana-python
 withinDocker: false
 profile:
   name: qodana.recommended
+# The quality gate: any problem fails the job (and turns the README badge red).
+failureConditions:
+  severityThresholds:
+    any: 0
 exclude:
   - name: All
     paths:
