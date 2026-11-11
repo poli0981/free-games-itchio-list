@@ -1,0 +1,13 @@
+# Qodana for Rust (Early Access): the Tauri shell of the desktop and Android
+# apps. Run by .github/workflows/qodana.yml (job `rust`), reported to
+# https://qodana.cloud/projects/P2Rd7.
+version: "1.0"
+linter: qodana-rust
+profile:
+  name: qodana.recommended
+exclude:
+  - name: All
+    paths:
+      # Build output and the generated Android project.
+      - target
+      - gen
