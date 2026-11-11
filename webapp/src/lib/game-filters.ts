@@ -117,7 +117,7 @@ export function ratingOf(game: Game): number | null {
 }
 
 export function ratingCountOf(game: Game): number {
-  const n = Number.parseInt(String(game.rating_count).replace(/[^\d]/g, ''), 10)
+  const n = Number.parseInt(String(game.rating_count).replace(/\D/g, ''), 10)
   return Number.isFinite(n) ? n : 0
 }
 
@@ -160,8 +160,7 @@ export function filterGames(
       if (!wanted.some((v) => have.includes(v))) return false
     }
     if (query.minRating !== null && (ratingOf(game) ?? -1) < query.minRating) return false
-    if (query.browser && !playsInBrowser(game)) return false
-    return true
+    return !query.browser || playsInBrowser(game)
   })
 }
 

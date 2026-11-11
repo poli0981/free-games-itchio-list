@@ -1,22 +1,42 @@
 # Free Itch.io Games List
 
 [![Version](https://img.shields.io/badge/version-4.6.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Status: stable, maintenance only](https://img.shields.io/badge/status-stable%20%C2%B7%20maintenance%20only-brightgreen.svg)](#project-status)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
+[![Python CI](https://github.com/poli0981/free-games-itchio-list/actions/workflows/python-ci.yml/badge.svg?branch=main)](https://github.com/poli0981/free-games-itchio-list/actions/workflows/python-ci.yml)
+[![Quality gate](https://sonarcloud.io/api/project_badges/measure?project=poli0981_free-games-itchio-list&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=poli0981_free-games-itchio-list)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=poli0981_free-games-itchio-list&metric=coverage)](https://sonarcloud.io/summary/new_code?id=poli0981_free-games-itchio-list)
+[![Qodana](https://github.com/poli0981/free-games-itchio-list/actions/workflows/qodana.yml/badge.svg?branch=main)](https://github.com/poli0981/free-games-itchio-list/actions/workflows/qodana.yml)
+[![Accessibility: WCAG 2.2 AA target](https://img.shields.io/badge/accessibility-WCAG%202.2%20AA%20target-informational.svg)](ACCESSIBILITY.md)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
 [![Data & docs: CC BY 4.0](https://img.shields.io/badge/data%20%26%20docs-CC%20BY%204.0-lightgrey.svg)](data_game/LICENSE.md)
 [![Tiếng Việt](https://img.shields.io/badge/lang-Tiếng%20Việt-red.svg)](README.vi.md)
 
 > 🇻🇳 Tiếng Việt: see [`README.vi.md`](README.vi.md). Vietnamese translations of the policy docs live in [`docs/i18n/vi/`](docs/i18n/vi/). The English versions in this repo remain controlling for legal interpretation.
 
-A curated, auto-updating catalog of **2,600+ free games on [itch.io](https://itch.io)**. Browse it at
+A curated, auto-updating catalog of **5,900+ free games on [itch.io](https://itch.io)**. Browse it at
 **<https://freeitchgames.win>**: search, filter, sort, and jump to any game's itch.io page. The site is
 read-only for everyone: no accounts, no sign-in, no comments, no ads, no payments.
 
+## Project status
+
+**Stable, maintenance only** (since version 4.6.1, 2026-11-11). The project is feature-complete: the
+website, the apps and the data pipeline keep running, and the catalog keeps updating itself every day.
+
+- **What still happens**: security fixes (CVEs and reports made through [SECURITY.md](SECURITY.md)),
+  runtime and dependency updates (Node.js, Python, Rust, npm / pip / cargo packages, GitHub Actions),
+  and repairs when something stops the site or the daily data updates from working.
+- **What no longer happens**: new features, redesigns and refactors. Feature requests and code
+  pull requests are closed without review.
+- **Issues and pull requests are for the data only**: adding games, fixing a game's data, removing a
+  game. See [Contributing](#contributing).
+
 ## Table of contents
 
+- [Project status](#project-status)
 - [Browse the catalog](#browse-the-catalog)
 - [Desktop and Android apps](#desktop-and-android-apps)
 - [Add a game](#add-a-game)
@@ -239,6 +259,7 @@ docs/                   # Policies, dev environment, third-party list (+ Vietnam
 | Force update (`force_update.yml`) | Manual | Re-scrape every field (one URL or the next batch); keeps `safe_virus` / `notes` / `nsfw` |
 | RSS discovery and automatic rules (Cloudflare Worker) | Every 4 hours | Poll one itch.io feed per run into the review queue; auto-approve unflagged items after the waiting time; queue new free games of followed collections |
 | Python CI / Webapp CI | Pull requests (Python CI also on pushes to `main` that touch it) | Lint, tests, data validation / type-check, tests, build |
+| Code analysis (`sonarcloud.yml`, `qodana.yml`) | Pull requests and pushes to `main` that change code | SonarQube Cloud (with test coverage) and Qodana (TypeScript / JavaScript, Python, Rust) |
 | Deploy website | On push to `main` | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Build monitor (`deploy-status.yml`) | Hourly | Posts each failed Workers Build of `main` to Discord, once |
 | Release desktop / Android | On `v*` tag push | Tauri installers (Win/macOS/Linux) and signed APK → draft Release |
@@ -289,10 +310,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 - **Add games**: use the [Suggest page](https://freeitchgames.win/suggest).
 - **Remove a game / fix its data**: email takedown@poli0981.dev or open a
   ["Remove a game" issue](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
-- **Report bugs**: use the "Bug Report" issue template.
+- **Report a problem**: wrong data, a dead link, or something broken on the site or in the apps: use the
+  "Report a problem" issue template.
 - **Accessibility barriers**: use the ["Accessibility barrier" issue template](https://github.com/poli0981/free-games-itchio-list/issues/new?template=accessibility.yml) or email
   contact@poli0981.dev. See [ACCESSIBILITY.md](ACCESSIBILITY.md).
-- **Request features**: use the "Feature Request / Improvement" template, or send a PR.
+- **Features and code changes**: not accepted any more, the project is in
+  [maintenance mode](#project-status). Questions and feedback are welcome in
+  [Discussions](https://github.com/poli0981/free-games-itchio-list/discussions).
 - **Security issues**: report them privately, never in a public issue. See [SECURITY.md](SECURITY.md).
 - **Privacy questions**: see the [Privacy Policy](docs/PrivacyPolicy.md) or email privacy@poli0981.dev.
 - Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).

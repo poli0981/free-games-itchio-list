@@ -91,6 +91,8 @@ async function copyText(text: string): Promise<boolean> {
     document.body.appendChild(area)
     area.select()
     try {
+      // The fallback for webviews without the async Clipboard API.
+      // noinspection JSDeprecatedSymbols
       return document.execCommand('copy')
     } catch {
       return false

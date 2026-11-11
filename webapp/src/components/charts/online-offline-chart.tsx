@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
+import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { classifyOnline } from '@/lib/analytics'
 import { tableRows } from '@/lib/chart-table'
 import { useT } from '@/lib/i18n'
@@ -12,9 +12,10 @@ import { PALETTE } from './palette'
 export function OnlineOfflineChart({ games }: { games: Game[] }) {
   const t = useT()
   const split = useMemo(() => classifyOnline(games), [games])
+  // Blue and orange: apart in lightness and for colour-blind readers (green and amber were not).
   const data = [
-    { key: t('charts.onlineOffline.online'), count: split.online },
-    { key: t('charts.onlineOffline.offline'), count: split.offline },
+    { key: t('charts.onlineOffline.online'), count: split.online, fill: PALETTE[4] },
+    { key: t('charts.onlineOffline.offline'), count: split.offline, fill: PALETTE[6] },
   ]
   return (
     <ChartCard
@@ -29,7 +30,6 @@ export function OnlineOfflineChart({ games }: { games: Game[] }) {
     >
       <ResponsiveContainer width="100%" height="100%">
         <PieChart {...chartAria('online-offline')}>
-          {/* Blue and orange: apart in lightness and for colour-blind readers (green and amber were not). */}
           <Pie
             {...SERIES_ANIMATION}
             rootTabIndex={-1}
@@ -40,10 +40,7 @@ export function OnlineOfflineChart({ games }: { games: Game[] }) {
             outerRadius="80%"
             paddingAngle={2}
             stroke={SLICE_STROKE}
-          >
-            <Cell fill={PALETTE[4]} />
-            <Cell fill={PALETTE[6]} />
-          </Pie>
+          />
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={split.online + split.offline} />} />
           <Legend {...LEGEND_BASE} />
         </PieChart>

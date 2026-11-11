@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
+import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { countByArray } from '@/lib/analytics'
 import { tableRows } from '@/lib/chart-table'
 import { useT } from '@/lib/i18n'
@@ -7,11 +7,11 @@ import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { chartAria, LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
-import { PALETTE } from './palette'
+import { paletteFills } from './palette'
 
 export function PlatformChart({ games }: { games: Game[] }) {
   const t = useT()
-  const data = useMemo(() => countByArray(games, 'platforms'), [games])
+  const data = useMemo(() => paletteFills(countByArray(games, 'platforms')), [games])
   return (
     // No shares in the table: a game can count for several platforms.
     <ChartCard
@@ -32,11 +32,7 @@ export function PlatformChart({ games }: { games: Game[] }) {
             outerRadius="80%"
             paddingAngle={2}
             stroke={SLICE_STROKE}
-          >
-            {data.map((_, i) => (
-              <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
-            ))}
-          </Pie>
+          />
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent />} />
           <Legend {...LEGEND_BASE} />
         </PieChart>

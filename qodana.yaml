@@ -23,3 +23,7 @@ exclude:
       - scripts/state
       # itch.io pages saved as served, golden files and vectors for the tests.
       - tests/fixtures
+  # `${{ secrets.NAME }}` in a workflow is a reference to a secret, not a secret.
+  - name: HardcodedPasswords
+    paths:
+      - .github

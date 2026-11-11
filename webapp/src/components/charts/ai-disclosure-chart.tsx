@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
+import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { aiLabel } from '@/lib/ai-disclosure'
 import { aiDisclosureCounts } from '@/lib/analytics'
 import { tableRows } from '@/lib/chart-table'
@@ -21,7 +21,12 @@ const COLOR: Record<string, string> = {
 export function AiDisclosureChart({ games }: { games: Game[] }) {
   const t = useT()
   const data = useMemo(
-    () => aiDisclosureCounts(games).map((e) => ({ ...e, label: aiLabel(e.key, t) })),
+    () =>
+      aiDisclosureCounts(games).map((e) => ({
+        ...e,
+        label: aiLabel(e.key, t),
+        fill: COLOR[e.key] ?? PALETTE[8],
+      })),
     [games, t],
   )
   const total = data.reduce((sum, d) => sum + d.count, 0)
@@ -51,11 +56,7 @@ export function AiDisclosureChart({ games }: { games: Game[] }) {
             outerRadius="80%"
             paddingAngle={2}
             stroke={SLICE_STROKE}
-          >
-            {data.map((d) => (
-              <Cell key={d.key} fill={COLOR[d.key] ?? PALETTE[8]} />
-            ))}
-          </Pie>
+          />
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={total} />} />
           {/* In the data's order: no AI, AI-assisted, not disclosed. */}
           <Legend {...LEGEND_BASE} />

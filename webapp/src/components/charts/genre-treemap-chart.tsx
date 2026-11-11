@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, type ComponentProps } from 'react'
 import { ResponsiveContainer, Tooltip, Treemap, type TooltipPayloadEntry } from 'recharts'
 import { genreTreemapData } from '@/lib/analytics'
 import { treemapRows } from '@/lib/chart-table'
@@ -61,7 +61,7 @@ export function GenreTreemapChart({ games }: { games: Game[] }) {
   const data = useMemo(() => genreTreemapData(games, 12), [games])
   // Recharts' Treemap data prop demands an index signature; our typed nodes
   // are valid treemap data at runtime, so cast through unknown.
-  const treemapData = data as unknown as React.ComponentProps<typeof Treemap>['data']
+  const treemapData = data as unknown as ComponentProps<typeof Treemap>['data']
   return (
     // The treemap can't be stepped through with the keyboard: its table (and the Genres chart) carry the numbers.
     <ChartCard

@@ -16,3 +16,15 @@ exclude:
       - worker-configuration.d.ts
       # The Tauri shell is the Rust project (src-tauri/qodana.yaml).
       - src-tauri
+  # A Worker handler throws to its own catch on purpose: one place turns every
+  # failure into the response (worker/gate.ts, worker/suggest.ts).
+  - name: ExceptionCaughtLocallyJS
+  # The escapes of } and ] stay: without them a pattern only parses in
+  # non-unicode (Annex B) mode.
+  - name: RegExpRedundantEscape
+  # Catalog strings with typographic apostrophes are used as object keys.
+  - name: JSNonASCIINames
+  # The Node test scripts import by relative path: the @/ alias is Vite's.
+  - name: ES6PreferShortImport
+    paths:
+      - scripts

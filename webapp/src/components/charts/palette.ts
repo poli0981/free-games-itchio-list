@@ -23,3 +23,11 @@ export const PALETTE_LABEL = PALETTE.map((color) => readableOn(color))
 
 /** "Unknown / not disclosed" slices: a mid gray that reads on both themes' cards. */
 export const NEUTRAL = '#6b6b74'
+
+/**
+ * A pie slice takes its colour from the `fill` of its data entry (Recharts'
+ * `<Cell>` is deprecated and goes away in 4.0): the palette colours, in order.
+ */
+export function paletteFills<T extends object>(data: readonly T[]): (T & { fill: string })[] {
+  return data.map((entry, i) => ({ ...entry, fill: PALETTE[i % PALETTE.length] }))
+}

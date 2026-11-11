@@ -150,7 +150,7 @@ def select_targets(
     first_urls = {g["url"] for g in first}
     rest = sorted(
         (g for g in games if g["url"] not in first_urls),
-        key=lambda g: state.get(g["url"], {}).get(stamp, ""),
+        key=lambda game: state.get(game["url"], {}).get(stamp, ""),
     )
     return (first + rest)[:budget]
 

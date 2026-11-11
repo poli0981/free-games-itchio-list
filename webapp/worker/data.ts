@@ -26,7 +26,7 @@ export function resetDataCache(): void {
 async function fetchJson<T>(src: DataSource, file: string): Promise<T> {
   const res = await src.assets.fetch(new Request(`${src.origin}/data/${file}`))
   if (!res.ok) throw new Error(`${file}: ${res.status}`)
-  return res.json() as Promise<T>
+  return (await res.json()) as T
 }
 
 /**

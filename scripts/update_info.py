@@ -167,7 +167,6 @@ def main(argv: list[str] | None = None) -> None:
             stats["retry"] += 1
             continue
 
-        outcome = ""
         if page.status == 200 and page.soup is not None and is_password_protected(page.soup):
             outcome = "private"  # final: nobody can open it, so retrying won't help
         elif page.status == 200 and page.soup is not None:

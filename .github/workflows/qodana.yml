@@ -128,11 +128,13 @@ jobs:
             requirements.txt
             requirements-dev.txt
 
-      # Hash-locked, wheels only (CLAUDE.md, gotcha 40). The linter resolves
-      # imports from this interpreter.
+      # Hash-locked, wheels only (CLAUDE.md, gotcha 40). In native mode the
+      # linter finds no interpreter by itself: it gets this virtual environment
+      # (QODANA_PYTHON_PATH below) and resolves imports from it.
       - name: Install Python dependencies
         run: |
-          pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
+          python -m venv .venv
+          .venv/bin/pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
 
       - name: Qodana scan
         uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
@@ -147,6 +149,7 @@ jobs:
           cache-default-branch-only: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_PYTHON }}
+          QODANA_PYTHON_PATH: ${{ github.workspace }}/.venv/bin/python
 
   rust:
     name: Rust
@@ -165,11 +168,13 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      # qodana-rust ships only as a Docker image (Early Access).
+      # qodana-rust ships only as a Docker image (Early Access). The container
+      # runs as the runner's user, which can't write to the image's CARGO_HOME:
+      # the registry goes to the (cached) Qodana cache directory instead.
       - name: Qodana scan
         uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
         with:
-          args: --project-dir webapp/src-tauri --repository-root . --linter qodana-rust
+          args: --project-dir webapp/src-tauri --repository-root . --linter qodana-rust -e CARGO_HOME=/data/cache/cargo
           pr-mode: false
           post-pr-comment: false
           upload-result: true

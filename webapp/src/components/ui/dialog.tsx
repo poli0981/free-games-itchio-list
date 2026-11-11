@@ -1,6 +1,6 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { X } from 'lucide-react'
-import { forwardRef, type ComponentPropsWithoutRef, type ElementRef } from 'react'
+import { forwardRef, type ComponentPropsWithoutRef, type ComponentRef } from 'react'
 import { cn } from '@/lib/utils'
 
 export const Dialog = DialogPrimitive.Root
@@ -9,7 +9,7 @@ export const DialogDescription = DialogPrimitive.Description
 
 /** A centered modal panel (same look as the 18+ dialog), scrolling when taller than the screen. */
 export const DialogContent = forwardRef<
-  ElementRef<typeof DialogPrimitive.Content>,
+  ComponentRef<typeof DialogPrimitive.Content>,
   ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
   <DialogPrimitive.Portal>
