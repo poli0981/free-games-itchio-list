@@ -11939,50 +11939,6 @@
         "added_at": "2026-10-14T01:03:30Z"
     },
     {
-        "url": "https://kenmaryuji.itch.io/mineminemine",
-        "name": "MINE! MINE! MINE! (v1.2)",
-        "dev": "Kenma Ryuji",
-        "description": "Gothic romance, magic, FREE",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "11 October 2026 @ 17:41 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwODQ2NzYxLnBuZw==/original/sR8JxP.png",
-        "tags": [
-            "Anime",
-            "Dark Fantasy",
-            "Kinetic Novel",
-            "Male protagonist",
-            "Mystery",
-            "Romance",
-            "Story Rich",
-            "supernatural",
-            "Superpowers",
-            "War"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "20 October 2026 @ 11:05 UTC",
-        "added_at": "2026-10-14T01:03:33Z"
-    },
-    {
         "url": "https://kihyunmathee.itch.io/gray-and-blue",
         "name": "Gray City, Blue Eyes",
         "dev": "kihyun.math.ee",
@@ -14249,7 +14205,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-10-15T08:23:47Z"
+        "added_at": "2026-10-15T08:23:47Z",
+        "updated_at": "02 November 2026 @ 16:30 UTC"
     },
     {
         "url": "https://missooni.itch.io/nothing-of-value-lost",
@@ -14261,7 +14218,7 @@
         "publisher": "N/A",
         "release_date": "14 October 2026 @ 19:50 UTC",
         "rating": "5.0",
-        "rating_count": "4",
+        "rating_count": "5",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwODg1OTIzLnBuZw==/original/Z%2BssAf.png",
@@ -14440,7 +14397,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 October 2026 @ 00:19 UTC",
+        "updated_at": "08 November 2026 @ 21:37 UTC",
         "added_at": "2026-10-15T12:24:12Z"
     },
     {
@@ -14453,7 +14410,7 @@
         "publisher": "N/A",
         "release_date": "12 October 2026 @ 20:26 UTC",
         "rating": "4.9",
-        "rating_count": "43",
+        "rating_count": "45",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNjQxMDA1LnBuZw==/original/wbqjD%2B.png",
@@ -14492,7 +14449,7 @@
         "publisher": "N/A",
         "release_date": "30 June 2016 @ 22:00 UTC",
         "rating": "4.8",
-        "rating_count": "198",
+        "rating_count": "200",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1hZ2UvODM1MDIvMzkzNDQyLmpwZw==/original/BDih90.jpg",
@@ -14562,7 +14519,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-15T12:24:18Z",
-        "updated_at": "25 October 2026 @ 23:44 UTC"
+        "updated_at": "06 November 2026 @ 12:55 UTC"
     },
     {
         "url": "https://pantaloon-io.itch.io/lemonade-apocalypse",
@@ -14644,7 +14601,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-16T00:23:51Z",
-        "updated_at": "28 October 2026 @ 22:28 UTC"
+        "updated_at": "10 November 2026 @ 18:25 UTC"
     },
     {
         "url": "https://activedev.itch.io/legend-of-idle-playtest-demo",

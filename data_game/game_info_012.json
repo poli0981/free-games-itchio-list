@@ -4390,7 +4390,7 @@
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 08:16 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMjk4OTg5LnBuZw==/original/pBbp4z.png",
@@ -4411,7 +4411,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T04:24:37Z",
-        "updated_at": "01 November 2026 @ 19:49 UTC"
+        "updated_at": "04 November 2026 @ 12:24 UTC"
     },
     {
         "url": "https://ss-ltd.itch.io/collision-demo",
@@ -4497,7 +4497,7 @@
         "publisher": "N/A",
         "release_date": "01 November 2026 @ 00:59 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjE5MDQ1LnBuZw==/original/f1%2FgTE.png",
@@ -4555,7 +4555,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T08:23:46Z"
+        "added_at": "2026-11-01T08:23:46Z",
+        "updated_at": "02 November 2026 @ 20:06 UTC"
     },
     {
         "url": "https://kerps.itch.io/luminous",
@@ -4566,8 +4567,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 14:49 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjI2MjMyLmpwZw==/original/8gJkFS.jpg",
@@ -4679,10 +4680,13 @@
         ],
         "ai_disclosure": "No AI",
         "ai_content": [],
-        "accessibility": [],
+        "accessibility": [
+            "One button"
+        ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T08:23:57Z"
+        "added_at": "2026-11-01T08:23:57Z",
+        "updated_at": "08 November 2026 @ 06:14 UTC"
     },
     {
         "url": "https://yaboibrainz.itch.io/stego-in-my-spotlight",
@@ -4715,7 +4719,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T08:23:59Z"
+        "added_at": "2026-11-01T08:23:59Z",
+        "updated_at": "02 November 2026 @ 03:12 UTC"
     },
     {
         "url": "https://devhourgames.itch.io/loveland",
@@ -4727,7 +4732,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "76",
+        "rating_count": "81",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzc1MDQ5NjcucG5n/original/ubeMDb.png",
@@ -4841,7 +4846,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T12:24:18Z",
-        "updated_at": "01 November 2026 @ 22:28 UTC"
+        "updated_at": "04 November 2026 @ 23:46 UTC"
     },
     {
         "url": "https://pebble-games.itch.io/islands",
@@ -4897,7 +4902,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T12:24:20Z",
-        "updated_at": "01 November 2026 @ 20:04 UTC"
+        "updated_at": "02 November 2026 @ 10:12 UTC"
     },
     {
         "url": "https://st265-samet.itch.io/rem-hoca-le-haloween-partisi",
@@ -4940,8 +4945,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "7",
+        "rating": "4.8",
+        "rating_count": "10",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5OTc4NTczLnBuZw==/original/Yb26mC.png",
@@ -4962,7 +4967,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "01 November 2026 @ 15:24 UTC",
+        "updated_at": "10 November 2026 @ 22:56 UTC",
         "added_at": "2026-11-01T12:24:26Z"
     },
     {
@@ -4974,8 +4979,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 22:50 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "4.0",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjQzNzM5LnBuZw==/original/e6bgub.png",
@@ -5030,7 +5035,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T16:24:13Z"
+        "added_at": "2026-11-01T16:24:13Z",
+        "updated_at": "09 November 2026 @ 23:13 UTC"
     },
     {
         "url": "https://elnite-interactive.itch.io/either-human-or-monster",
@@ -5077,8 +5083,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 20:37 UTC",
-        "rating": "4.3",
-        "rating_count": "3",
+        "rating": "4.9",
+        "rating_count": "16",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjQzNTA3LnBuZw==/original/hnk6FS.png",
@@ -5108,8 +5114,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 23:27 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "4.7",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjUxNTczLmpwZw==/original/Xd4J5L.jpg",
@@ -5136,7 +5142,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-01T16:24:22Z",
-        "updated_at": "02 November 2026 @ 00:15 UTC"
+        "updated_at": "08 November 2026 @ 23:05 UTC"
     },
     {
         "url": "https://omeg12.itch.io/the-kraken-sleepeth",
@@ -5180,7 +5186,7 @@
         "publisher": "N/A",
         "release_date": "01 November 2026 @ 04:06 UTC",
         "rating": "5.0",
-        "rating_count": "2",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjU3OTU2LnBuZw==/original/6CRojI.png",
@@ -5250,8 +5256,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 16:27 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNTAwMDU1LnBuZw==/original/kPbC9H.png",
@@ -5279,7 +5285,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T16:24:36Z"
+        "added_at": "2026-11-01T16:24:36Z",
+        "updated_at": "11 November 2026 @ 02:57 UTC"
     },
     {
         "url": "https://3dcubegames.itch.io/twist-and-untangle",
@@ -5290,8 +5297,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 16:18 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "3.6",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjMzNjg1LnBuZw==/original/ZCfvHG.png",
@@ -5318,7 +5325,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T20:24:17Z"
+        "added_at": "2026-11-01T20:24:17Z",
+        "updated_at": "05 November 2026 @ 15:31 UTC"
     },
     {
         "url": "https://corgi-noir.itch.io/minifarm",
@@ -5459,7 +5467,7 @@
         "rating_count": "N/A",
         "average_session": "N/A",
         "nsfw": "No",
-        "thumbnail": "N/A",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzk2NTcyLmpwZw==/original/pDkbNQ.jpg",
         "tags": [
             "Fantasy",
             "No AI",
@@ -5474,7 +5482,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-01T20:24:35Z"
+        "added_at": "2026-11-01T20:24:35Z",
+        "updated_at": "04 November 2026 @ 03:50 UTC"
     },
     {
         "url": "https://arclyn.itch.io/bea-is-scaring-me",
@@ -14497,8 +14506,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "09 November 2026 @ 01:45 UTC",
-        "rating": "5.0",
-        "rating_count": "3",
+        "rating": "4.8",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMDA1MTIyLnBuZw==/original/fcY2r7.png",
@@ -14797,7 +14806,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-10T08:23:41Z"
+        "added_at": "2026-11-10T08:23:41Z",
+        "updated_at": "10 November 2026 @ 19:02 UTC"
     },
     {
         "url": "https://mintteag.itch.io/daily-assembly",
@@ -14975,8 +14985,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.2",
-        "rating_count": "16",
+        "rating": "4.3",
+        "rating_count": "17",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMDM4ODQzLmpwZw==/original/74gquB.jpg",
@@ -15400,7 +15410,7 @@
         "publisher": "N/A",
         "release_date": "09 November 2026 @ 16:35 UTC",
         "rating": "4.9",
-        "rating_count": "20",
+        "rating_count": "23",
         "average_session": "A few minutes",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMDEwMzQ4LnBuZw==/original/zgDZAu.png",

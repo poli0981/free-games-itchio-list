@@ -1036,5 +1036,17 @@
         "name": "Shardana: Hydro Trail GP",
         "reason": "Game became paid",
         "deleted_at": "2026-11-09T02:49:47Z"
+    },
+    {
+        "url": "https://bksil.itch.io/hyperfall",
+        "name": "Hyperfall",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-11T02:50:09Z"
+    },
+    {
+        "url": "https://kenmaryuji.itch.io/mineminemine",
+        "name": "MINE! MINE! MINE! (v1.2)",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-11T02:50:11Z"
     }
 ]
