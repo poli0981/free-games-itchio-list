@@ -14869,5 +14869,567 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-10T08:23:49Z"
+    },
+    {
+        "url": "https://amotohajime.itch.io/kingdom-estate-clicker",
+        "name": "Kingdom Estate Clicker",
+        "dev": "amotohajime",
+        "description": "Tap estates for gold, hire stewards and keep twenty estates running in this kingdom clicker",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 07:01 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDEyMzA3LnBuZw==/original/aNJL08.png",
+        "tags": [
+            "2D",
+            "Automation",
+            "Clicker",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Medieval",
+            "Pixel Art",
+            "Singleplayer",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 November 2026 @ 15:43 UTC",
+        "added_at": "2026-11-11T00:23:40Z"
+    },
+    {
+        "url": "https://ashikaze.itch.io/spiro-idle",
+        "name": "SPIRO IDLE",
+        "dev": "Ashikaze",
+        "description": "A relaxing idle game where spirographs draw themselves.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 13:56 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDIzNzUwLnBuZw==/original/p5jVSb.png",
+        "tags": [
+            "Ambient",
+            "Casual",
+            "generative",
+            "Idle",
+            "Incremental",
+            "Math",
+            "Relaxing",
+            "spirograph",
+            "zen"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Japanese"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:23:44Z"
+    },
+    {
+        "url": "https://brainfog-games.itch.io/logo-idle",
+        "name": "Logo Idle",
+        "dev": "Brainfog Games",
+        "description": "Wishlist it on Steam or join us on Discord !",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "16",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDM4ODQzLmpwZw==/original/74gquB.jpg",
+        "tags": [
+            "Idle",
+            "Incremental",
+            "Indie",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Dutch",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "09 November 2026 @ 22:21 UTC",
+        "added_at": "2026-11-11T00:23:47Z"
+    },
+    {
+        "url": "https://collegeready.itch.io/stratus-university",
+        "name": "Success Prints Crash Course",
+        "dev": "CollegeReady, wattse, sollytowerstests, CollegeSimulator",
+        "description": "Crush your first semester of college!",
+        "genre": "Educational",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 12:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDA2MjM1LmpwZw==/original/9q6OOJ.jpg",
+        "tags": [
+            "college",
+            "Life Simulation"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:23:50Z"
+    },
+    {
+        "url": "https://gernata.itch.io/paws-menu",
+        "name": "Paws Menu",
+        "dev": "Gernata",
+        "description": "Cats inside your computer. Pet them, play with them, and try to keep them from shoving your windows around.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 16:45 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzU4ODE2LnBuZw==/original/p85sXS.png",
+        "tags": [
+            "2D",
+            "Cats",
+            "Desktop Pet",
+            "Idle",
+            "No AI"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 November 2026 @ 23:29 UTC",
+        "added_at": "2026-11-11T00:23:52Z"
+    },
+    {
+        "url": "https://jeevejayla.itch.io/tails-from-alteria",
+        "name": "Tails From Alteria",
+        "dev": "Smol Beans Studio",
+        "description": "Twins for the win!",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.1",
+        "rating_count": "7",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMTA4NDgucG5n/original/%2BxMNkV.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Action RPG",
+            "Funny",
+            "Furry",
+            "paperverse",
+            "Turn-Based Combat",
+            "Unreal Engine"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Unreal Engine"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 November 2026 @ 08:35 UTC",
+        "added_at": "2026-11-11T00:23:55Z"
+    },
+    {
+        "url": "https://kirby2000.itch.io/great-giana-sisters-zx",
+        "name": "The Great Giana Sisters (ZX Spectrum)",
+        "dev": "kirby2000",
+        "description": "Giana's 33 stages on the Spectrum: 48K tape, 48K single load, 128K and +3 disk",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 15:53 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTY2ODk2LnBuZw==/original/F3lzYd.png",
+        "tags": [
+            "2D",
+            "8-Bit",
+            "giana-sisters",
+            "Homebrew",
+            "Pixel Art",
+            "Retro",
+            "speccy",
+            "ZX Spectrum"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:23:57Z"
+    },
+    {
+        "url": "https://lowcarb.itch.io/eyedball-c64",
+        "name": "EyedBall (C64)",
+        "dev": "LC-Games",
+        "description": "Help Eyedball complete his quest",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "4",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NTI3NjU5LnBuZw==/original/a7OT24.png",
+        "tags": [
+            "2D",
+            "8-Bit",
+            "Arcade",
+            "Commodore 64",
+            "Pixel Art",
+            "Retro",
+            "Rotation",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Joystick"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 22:48 UTC",
+        "added_at": "2026-11-11T00:24:01Z"
+    },
+    {
+        "url": "https://mrylxy.itch.io/the-midnight-troupe",
+        "name": "The Midnight Troupe",
+        "dev": "mrylxy",
+        "description": "Interactive Fiction",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 04:31 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDUxMTQ4LnBuZw==/original/3Xo%2FNn.png",
+        "tags": [
+            "Dark Fantasy",
+            "Horror",
+            "LGBTQIA",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:24:04Z"
+    },
+    {
+        "url": "https://mymadnessworks.itch.io/guesthour",
+        "name": "guesthour",
+        "dev": "Ivan Zanotti's MyMadnessWorks",
+        "description": "It is good etiquette to honor your guest",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 November 2026 @ 18:16 UTC",
+        "rating": "4.9",
+        "rating_count": "19",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTczMjU0LnBuZw==/original/VmIWkn.png",
+        "tags": [
+            "Atmospheric",
+            "GameMaker",
+            "Mouse only",
+            "Narrative",
+            "No AI",
+            "Psychological Horror",
+            "Singleplayer",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "06 November 2026 @ 11:17 UTC",
+        "added_at": "2026-11-11T00:24:08Z"
+    },
+    {
+        "url": "https://osisama-2525.itch.io/dice-no-shun-tatupu",
+        "name": "Dice No.順タップ",
+        "dev": "osisama_2525",
+        "description": "いれいすのファンメイドミニゲームです。 赤のRun Gameをタップしたら始まります！！ ※非営利の個人ファン作品です。公式画像・音声は使用していません。",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 08:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDE0NTU0LnBuZw==/original/z03wW1.png",
+        "tags": [
+            "Fangame",
+            "japanese",
+            "Reflex",
+            "Time Attack"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:24:11Z"
+    },
+    {
+        "url": "https://pacdude.itch.io/supermarket-spree-dx",
+        "name": "Supermarket Spree DX",
+        "dev": "Pacdude Games",
+        "description": "Go wild in the aisles in this fun retro throwback!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "04 December 2023 @ 05:00 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE3MTA5OTA5LnBuZw==/original/SeZo7g.png",
+        "tags": [
+            "Game Boy",
+            "gameshow",
+            "Singleplayer",
+            "Trivia"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Adobe Photoshop",
+            "GB Studio"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "09 November 2026 @ 04:39 UTC",
+        "added_at": "2026-11-11T00:24:14Z"
+    },
+    {
+        "url": "https://ptik-devs.itch.io/ar-3d-bencana-alam",
+        "name": "AR 3D | Bencana Alam",
+        "dev": "PTIK Devs",
+        "description": "AUGMENTED REALITY 3D Media Pembelajaran & Simulasi Mitigasi Kebencanaan Berbasis 3D AR 📖 Tentang Permainan AR Tata Cara Penanggulangan Bencana Alam adalah aplikasi edukasi interaktif yang membantu...",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 18:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDI3Mzc0LnBuZw==/original/ovZUKG.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:24:18Z"
+    },
+    {
+        "url": "https://basicbean.itch.io/i-accidentally-time-traveled-to-the-year-2088-and-all-i-want-to-do-is-wash-my-ro",
+        "name": "I accidentally time-traveled to the year 2088 and all I want to do is wash my robot girlfriend!",
+        "dev": "basicbean",
+        "description": "wash your robot gf!",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 16:35 UTC",
+        "rating": "4.9",
+        "rating_count": "20",
+        "average_session": "A few minutes",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDEwMzQ4LnBuZw==/original/zgDZAu.png",
+        "tags": [
+            "3D",
+            "Adult",
+            "Lesbian",
+            "No AI",
+            "Short",
+            "Transgender",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Blender",
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T00:24:21Z"
     }
 ]
