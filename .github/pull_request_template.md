@@ -1,6 +1,9 @@
 <!--
-Thanks for the PR! For a more specific checklist, add ?template=bug_fix.md (or new_features.md,
-documentation.md, add_games.md) to this page's address — they live in .github/PULL_REQUEST_TEMPLATE/.
+The project is in maintenance mode (stable, no new features — see README → Project status).
+Pull requests from contributors are accepted for ONE thing: adding itch.io URLs to
+scripts/temp_link.json. For that, add ?template=add_games.md to this page's address.
+Code, UI and docs pull requests are closed without review; a game's data is fixed or removed
+through an issue or email (CONTRIBUTING.md). This template is the Maintainer's own checklist.
 -->
 
 ### What and why

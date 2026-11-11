@@ -299,7 +299,7 @@ def _write_outputs(stats: dict) -> None:
             ("Errors / parse failures", f"{stats['errors']} / {stats['parse_fail']}"),
             ("HTTP 429/503", stats["http_429"]),
             ("Stopped", stats["stopped"] or "completed"),
-            ("Duration", f"{stats['duration_s'] / 60:.1f} min"),
+            ("Duration", f"{float(stats['duration_s']) / 60:.1f} min"),
         ]
         with open(summary, "a", encoding="utf-8") as f:
             f.write("### Catalog refresh\n\n| | |\n|---|---|\n")

@@ -69,7 +69,7 @@ components. Section 7 lists every service the project uses.
 | [tauri](https://tauri.app), `tauri-build` | 2 | App shell and build helper | Apache-2.0 OR MIT |
 | [tauri-plugin-opener](https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/opener) | 2 | Opening links in the system browser | Apache-2.0 OR MIT |
 | [tauri-plugin-single-instance](https://github.com/tauri-apps/plugins-workspace/tree/v2/plugins/single-instance) | 2 | Desktop only: focuses the running window instead of starting a second copy | Apache-2.0 OR MIT |
-| [serde](https://serde.rs), [serde_json](https://github.com/serde-rs/json) | 1 | Serialization | MIT OR Apache-2.0 |
+| [serde](https://serde.rs) | 1 | Serialization | MIT OR Apache-2.0 |
 
 The apps render with the system web view that the operating system provides: WebView2 on Windows,
 WKWebView on macOS (Safari/WebKit 16.4 or later), WebKitGTK on Linux and Android System WebView on Android.
@@ -128,7 +128,7 @@ These tools never end up in a build, but they keep the code honest.
 The workflows in [`.github/workflows/`](../.github/workflows/) use `actions/checkout`, `actions/setup-node`,
 `actions/setup-python`, `actions/setup-java`, `actions/cache`, `actions/upload-artifact`,
 `actions/download-artifact`, `android-actions/setup-android`, `dtolnay/rust-toolchain`,
-`tauri-apps/tauri-action`, `SonarSource/sonarqube-scan-action` and reusable workflows from
+`tauri-apps/tauri-action`, `SonarSource/sonarqube-scan-action`, `JetBrains/qodana-action` and reusable workflows from
 [poli0981/.github](https://github.com/poli0981/.github).
 Every external action is pinned to a commit SHA. The actions run on GitHub's runners and are not
 distributed with the project; each one is under the license in its own repository.
@@ -141,6 +141,7 @@ distributed with the project; each one is under the license in its own repositor
 | **Google Workspace** | The Maintainer's mailbox on poli0981.dev, which receives the project's contact addresses |
 | **GitHub** | Code, catalog data, issues and discussions, Actions (the pipeline), release downloads |
 | **SonarQube Cloud** (SonarSource) | Code analysis and test coverage of the public repository, on pushes to `main` and on pull requests |
+| **Qodana** (JetBrains) | Code analysis of the public repository (TypeScript / JavaScript, Python, Rust), on pushes to `main` and on pull requests |
 | **itch.io** | Where the games live; the pipeline and RSS discovery read public itch.io pages and feeds |
 | **Discord** | Receives automated CI and release notifications only |
 

@@ -1,6 +1,6 @@
 # Chính sách bảo mật (Security Policy)
 
-Cập nhật lần cuối: 2026-10-27
+Cập nhật lần cuối: 2026-11-11
 
 Áp dụng từ: khi phát hành phiên bản 4.0.0.
 
@@ -50,6 +50,8 @@ Tiện ích trình duyệt (poli0981/itch-f2p-extension) và Telegram bot (poli0
 | Các bản phát hành cũ hơn (gồm toàn bộ 3.x trở về trước) | Không — vui lòng cập nhật |
 
 Bản sửa cho website có hiệu lực ngay khi được deploy. Các ứng dụng không tự cập nhật: bản sửa được phát hành trong một bản release mới, bạn tải về từ GitHub Releases.
+
+Từ phiên bản 4.6.1, dự án ở **chế độ bảo trì**: không có tính năng mới, nhưng việc vá bảo mật và cập nhật runtime, thư viện phụ thuộc vẫn tiếp tục như mô tả ở đây.
 
 ## 4. Những gì bạn có thể mong đợi
 

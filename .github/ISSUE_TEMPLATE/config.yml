@@ -6,3 +6,9 @@ contact_links:
   - name: 🔒 Report a security vulnerability (private)
     url: https://github.com/poli0981/free-games-itchio-list/security/advisories/new
     about: Please report vulnerabilities privately here (or email security@poli0981.dev), never in a public issue.
+  - name: 💬 Questions, feedback, anything else
+    url: https://github.com/poli0981/free-games-itchio-list/discussions
+    about: Issues are for the catalog data only (add, fix or remove a game). Everything else goes to Discussions.
+  - name: 🧊 Feature requests are closed
+    url: https://github.com/poli0981/free-games-itchio-list#project-status
+    about: The project is stable and in maintenance mode — security fixes and dependency updates only. Feature requests and code pull requests are closed without review.

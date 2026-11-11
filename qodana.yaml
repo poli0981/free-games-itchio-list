@@ -27,3 +27,6 @@ exclude:
   - name: HardcodedPasswords
     paths:
       - .github
+  # It reads requirements.txt only; Pillow, for webapp/scripts/gen_assets.py,
+  # is a development dependency (requirements-dev.txt).
+  - name: PyPackageRequirementsInspection

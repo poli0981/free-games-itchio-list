@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.6.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.6.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Trạng thái: ổn định, chỉ bảo trì](https://img.shields.io/badge/status-stable%20%C2%B7%20maintenance%20only-brightgreen.svg)](#trạng-thái-dự-án)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)

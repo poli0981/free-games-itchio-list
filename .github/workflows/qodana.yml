@@ -168,13 +168,22 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      # qodana-rust ships only as a Docker image (Early Access). The container
-      # runs as the runner's user, which can't write to the image's CARGO_HOME:
-      # the registry goes to the (cached) Qodana cache directory instead.
+      # tauri::generate_context!() refuses to expand without the frontend
+      # directory (frontendDist): an empty page stands in for the web build.
+      - name: Stand-in for the web build
+        run: |
+          mkdir -p webapp/dist
+          echo '<!doctype html><title>stand-in</title>' > webapp/dist/index.html
+
+      # qodana-rust ships only as a Docker image (Early Access). It runs as
+      # root so that its bootstrap (webapp/src-tauri/qodana.yaml) can install
+      # the C toolchain and the libraries Tauri links against; the crates go
+      # to the (cached) Qodana cache directory. `cargo check` runs the build
+      # scripts of the locked dependencies in that container.
       - name: Qodana scan
         uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
         with:
-          args: --project-dir webapp/src-tauri --repository-root . --linter qodana-rust -e CARGO_HOME=/data/cache/cargo
+          args: --project-dir webapp/src-tauri --repository-root . --linter qodana-rust -u root -e CARGO_HOME=/data/cache/cargo
           pr-mode: false
           post-pr-comment: false
           upload-result: true
