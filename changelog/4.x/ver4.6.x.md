@@ -1,6 +1,66 @@
 # Changelog — 4.6.x
 
-Release notes for 4.6.0, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+Release notes for 4.6.0 – 4.6.1, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [4.6.1] - 2026-11-11 (Stable: maintenance mode)
+
+The project is now **stable and in maintenance mode**. It is feature-complete: the website, the apps
+and the data pipeline keep running, and the catalog keeps updating itself every day. Nothing changes
+for visitors.
+
+### What maintenance mode means
+
+- **Still done**: security fixes (CVEs and reports made through [SECURITY.md](../../SECURITY.md)),
+  runtime and dependency updates (Node.js, Python, Rust, npm / pip / cargo packages, GitHub Actions),
+  and repairs when something stops the site or the daily data updates from working.
+- **Not done any more**: new features, redesigns and refactors.
+- **Issues and pull requests are for the data only**: adding games, fixing a game's data, removing a
+  game. Accessibility barriers and security reports keep their own channels
+  ([ACCESSIBILITY.md](../../ACCESSIBILITY.md), [SECURITY.md](../../SECURITY.md)). Feature requests
+  and code pull requests are closed without review; questions and feedback are welcome in
+  [Discussions](https://github.com/poli0981/free-games-itchio-list/discussions).
+
+### Upgrade notes
+
+- **Nothing to accept again**: no policy changed.
+- **Desktop and Android apps**: 4.6.1 behaves like 4.6.0. Install it over 4.6.0 if you want the
+  current version number; there is no need to.
+
+### Added
+
+- **Qodana (JetBrains) code analysis in CI** (`qodana.yml`): three jobs, one per Qodana Cloud
+  project — TypeScript / JavaScript (`webapp/`), Python (the data pipeline) and Rust (the Tauri
+  shell) — on pull requests and on pushes to `main` that change code. It runs next to SonarQube
+  Cloud and, like it, skips Dependabot and fork pull requests, which get no repository secrets.
+  All three projects start at 0 problems, and a new one fails its job.
+- **Badges** in both READMEs: project status, Python CI, SonarQube Cloud quality gate and coverage,
+  Qodana, and the accessibility target.
+
+### Changed
+
+- **Docs for maintenance mode** (EN + VI): a "Project status" section in the READMEs, CONTRIBUTING
+  rewritten around the data-only scope, a note in SECURITY.md, and the runbook
+  ([docs/operations.md](../../docs/operations.md)) with the Qodana setup.
+- **Issue and pull request templates**: "Bug Report" became "Report a problem" (wrong data, or
+  something that broke); the Feature Request, Feedback and General templates and the Bug Fix, New
+  Feature and Documentation pull request templates are gone; the issue chooser points to
+  Discussions.
+- **The README's game count**: 5,900+ (it still said 2,600+).
+
+### Fixed
+
+Findings of the first Qodana reports. None changes what the site or the apps do.
+
+- **Pie charts no longer use Recharts' deprecated `Cell`** (removed in Recharts 4.0): each slice
+  takes its colour from its data entry. Colours and legends are unchanged.
+- **React 19 types**: `ElementRef` → `ComponentRef` in the UI components, `FormEvent` →
+  `SubmitEvent` on the Suggest form, and a `React.` type used without an import.
+- **Small cleanups**: an awaited `res.json()` in the Worker's data loader, a simpler regular
+  expression and return statement in the Games filters, and three Python nits in the pipeline (a
+  shadowed name and an untyped number format in `refresh.py`, a value assigned but never read in
+  `update_info.py`).
+- **The Tauri shell no longer declares `serde_json`**, which its own code never used (Tauri still
+  brings it in).
 
 ## [4.6.0] - 2026-11-09 (Accessibility)
 

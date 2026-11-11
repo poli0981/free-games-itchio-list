@@ -1,6 +1,6 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { X } from 'lucide-react'
-import { forwardRef, type ComponentPropsWithoutRef, type ElementRef } from 'react'
+import { forwardRef, type ComponentPropsWithoutRef, type ComponentRef } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
@@ -9,7 +9,7 @@ export const SheetTrigger = DialogPrimitive.Trigger
 const SheetPortal = DialogPrimitive.Portal
 
 const SheetOverlay = forwardRef<
-  ElementRef<typeof DialogPrimitive.Overlay>,
+  ComponentRef<typeof DialogPrimitive.Overlay>,
   ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Overlay
@@ -47,7 +47,7 @@ export interface SheetContentProps
 }
 
 export const SheetContent = forwardRef<
-  ElementRef<typeof DialogPrimitive.Content>,
+  ComponentRef<typeof DialogPrimitive.Content>,
   SheetContentProps
 >(({ side = 'right', className, children, showClose = true, closeLabel = 'Close', ...props }, ref) => (
   <SheetPortal>
@@ -66,7 +66,7 @@ export const SheetContent = forwardRef<
 SheetContent.displayName = 'SheetContent'
 
 export const SheetTitle = forwardRef<
-  ElementRef<typeof DialogPrimitive.Title>,
+  ComponentRef<typeof DialogPrimitive.Title>,
   ComponentPropsWithoutRef<typeof DialogPrimitive.Title>
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Title
@@ -78,7 +78,7 @@ export const SheetTitle = forwardRef<
 SheetTitle.displayName = 'SheetTitle'
 
 export const SheetDescription = forwardRef<
-  ElementRef<typeof DialogPrimitive.Description>,
+  ComponentRef<typeof DialogPrimitive.Description>,
   ComponentPropsWithoutRef<typeof DialogPrimitive.Description>
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Description

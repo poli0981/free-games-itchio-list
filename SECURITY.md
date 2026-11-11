@@ -1,6 +1,6 @@
 # Security Policy
 
-Last updated: 2026-10-27
+Last updated: 2026-11-11
 
 Applies from: the release of version 4.0.0.
 
@@ -48,6 +48,8 @@ The browser extension (poli0981/itch-f2p-extension) and the Telegram bot (poli09
 | Older releases (including all 3.x and earlier) | No — please update |
 
 Fixes to the website go live when they are deployed. The apps do not update themselves: fixes ship in a new release, which you download from GitHub Releases.
+
+Since version 4.6.1 the project is in **maintenance mode**: no new features, but security fixes and runtime and dependency updates continue as described here.
 
 ## 4. What to expect
 

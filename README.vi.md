@@ -1,22 +1,37 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.6.0-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.6.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Trạng thái: ổn định, chỉ bảo trì](https://img.shields.io/badge/status-stable%20%C2%B7%20maintenance%20only-brightgreen.svg)](#trạng-thái-dự-án)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
 [![Forks](https://img.shields.io/github/forks/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/network/members)
 [![Last Updated](https://img.shields.io/github/last-commit/poli0981/free-games-itchio-list?label=last%20updated)](https://github.com/poli0981/free-games-itchio-list/commits/main)
+[![Python CI](https://github.com/poli0981/free-games-itchio-list/actions/workflows/python-ci.yml/badge.svg?branch=main)](https://github.com/poli0981/free-games-itchio-list/actions/workflows/python-ci.yml)
+[![Quality gate](https://sonarcloud.io/api/project_badges/measure?project=poli0981_free-games-itchio-list&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=poli0981_free-games-itchio-list)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=poli0981_free-games-itchio-list&metric=coverage)](https://sonarcloud.io/summary/new_code?id=poli0981_free-games-itchio-list)
+[![Qodana](https://github.com/poli0981/free-games-itchio-list/actions/workflows/qodana.yml/badge.svg?branch=main)](https://github.com/poli0981/free-games-itchio-list/actions/workflows/qodana.yml)
+[![Trợ năng: mục tiêu WCAG 2.2 AA](https://img.shields.io/badge/accessibility-WCAG%202.2%20AA%20target-informational.svg)](docs/i18n/vi/ACCESSIBILITY.md)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
 [![Data & docs: CC BY 4.0](https://img.shields.io/badge/data%20%26%20docs-CC%20BY%204.0-lightgrey.svg)](data_game/LICENSE.md)
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-09 (English source revision 2026-11-09). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-11 (English source revision 2026-11-11). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 >
 > Bản tiếng Anh tại [`README.md`](README.md) là bản chính thức. Bản dịch tiếng Việt của các tài liệu chính sách nằm trong [`docs/i18n/vi/`](docs/i18n/vi/).
 
-Một danh mục được tuyển chọn và tự động cập nhật gồm **hơn 2,600 game miễn phí trên [itch.io](https://itch.io)**. Duyệt tại **<https://freeitchgames.win>**: tìm kiếm, lọc, sắp xếp và mở thẳng trang itch.io của bất kỳ game nào. Website chỉ để xem, với tất cả mọi người: không tài khoản, không đăng nhập, không bình luận, không quảng cáo, không thanh toán.
+Một danh mục được tuyển chọn và tự động cập nhật gồm **hơn 5,900 game miễn phí trên [itch.io](https://itch.io)**. Duyệt tại **<https://freeitchgames.win>**: tìm kiếm, lọc, sắp xếp và mở thẳng trang itch.io của bất kỳ game nào. Website chỉ để xem, với tất cả mọi người: không tài khoản, không đăng nhập, không bình luận, không quảng cáo, không thanh toán.
+
+## Trạng thái dự án
+
+**Ổn định, chỉ bảo trì** (từ phiên bản 4.6.1, 2026-11-11). Dự án đã đủ tính năng: website, các ứng dụng và pipeline dữ liệu vẫn chạy, danh mục vẫn tự cập nhật mỗi ngày.
+
+- **Những gì vẫn được làm**: vá bảo mật (CVE và báo cáo gửi qua [SECURITY](docs/i18n/vi/SECURITY.md)), cập nhật runtime và thư viện phụ thuộc (Node.js, Python, Rust, gói npm / pip / cargo, GitHub Actions), và sửa khi có gì đó làm website hoặc việc cập nhật dữ liệu hằng ngày ngừng chạy.
+- **Những gì không còn làm**: tính năng mới, thiết kế lại, refactor. Đề xuất tính năng và pull request về code sẽ bị đóng mà không review.
+- **Issue và pull request chỉ dành cho dữ liệu**: thêm game, sửa dữ liệu của một game, gỡ game. Xem [Đóng góp](#đóng-góp).
 
 ## Mục lục
 
+- [Trạng thái dự án](#trạng-thái-dự-án)
 - [Duyệt danh mục](#duyệt-danh-mục)
 - [Ứng dụng desktop và Android](#ứng-dụng-desktop-và-android)
 - [Thêm game](#thêm-game)
@@ -177,6 +192,7 @@ docs/                   # Chính sách, môi trường dev, danh sách bên th�
 | Force update (`force_update.yml`) | Thủ công | Cào lại mọi trường (một URL hoặc lô tiếp theo); giữ nguyên `safe_virus` / `notes` / `nsfw` |
 | Phát hiện qua RSS và quy tắc tự động (Cloudflare Worker) | Mỗi 4 giờ | Đọc một feed itch.io mỗi lượt vào hàng chờ duyệt; tự duyệt mục không có cờ sau thời gian chờ; đưa game miễn phí mới của collection được theo dõi vào hàng chờ ingest |
 | Python CI / Webapp CI | Pull request (Python CI còn chạy khi push vào `main` chạm tới phần Python) | Lint, test, validate dữ liệu / type-check, test, build |
+| Phân tích code (`sonarcloud.yml`, `qodana.yml`) | Pull request và push vào `main` có đổi code | SonarQube Cloud (kèm test coverage) và Qodana (TypeScript / JavaScript, Python, Rust) |
 | Deploy website | Khi push vào `main` | Cloudflare Workers Builds (`webapp/wrangler.jsonc`) → freeitchgames.win |
 | Theo dõi build (`deploy-status.yml`) | Mỗi giờ | Báo mỗi Workers Build lỗi của `main` lên Discord, một lần |
 | Release desktop / Android | Khi push tag `v*` | Trình cài đặt Tauri (Win/macOS/Linux) và APK đã ký → draft Release |
@@ -221,9 +237,9 @@ Xem [CONTRIBUTING (tiếng Việt)](docs/i18n/vi/CONTRIBUTING.md) để có hư�
 
 - **Thêm game**: dùng [trang Suggest](https://freeitchgames.win/suggest).
 - **Gỡ game / sửa dữ liệu**: gửi email tới takedown@poli0981.dev hoặc mở issue ["Remove a game"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=remove_game.yml).
-- **Báo lỗi**: dùng issue template "Bug Report".
+- **Báo sự cố**: dữ liệu sai, link chết, hoặc có gì đó hỏng trên website hay trong ứng dụng: dùng issue template "Report a problem".
 - **Rào cản trợ năng**: dùng [issue template "Accessibility barrier"](https://github.com/poli0981/free-games-itchio-list/issues/new?template=accessibility.yml) hoặc gửi email tới contact@poli0981.dev. Xem [Trợ năng](docs/i18n/vi/ACCESSIBILITY.md) ([EN](ACCESSIBILITY.md)).
-- **Đề xuất tính năng**: dùng template "Feature Request / Improvement", hoặc gửi PR.
+- **Tính năng và thay đổi code**: không còn được nhận, dự án đang ở [chế độ bảo trì](#trạng-thái-dự-án). Câu hỏi và góp ý xin gửi vào [Discussions](https://github.com/poli0981/free-games-itchio-list/discussions).
 - **Vấn đề bảo mật**: báo cáo riêng tư, đừng bao giờ mở issue công khai. Xem [SECURITY](docs/i18n/vi/SECURITY.md) ([EN](SECURITY.md)).
 - **Câu hỏi về quyền riêng tư**: xem [Chính sách quyền riêng tư](docs/i18n/vi/PrivacyPolicy.md) ([EN](docs/PrivacyPolicy.md)) hoặc gửi email tới privacy@poli0981.dev.
 - Vui lòng tuân thủ [Quy tắc ứng xử](docs/i18n/vi/CODE_OF_CONDUCT.md) ([EN](CODE_OF_CONDUCT.md)).

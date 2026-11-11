@@ -186,6 +186,10 @@ npm run cf:check                       # wrangler deploy --dry-run: validates th
 `npm run test:coverage` runs the tests with v8 coverage and writes `coverage/lcov.info`, as the
 SonarQube Cloud workflow (`sonarcloud.yml`) does.
 
+Qodana (JetBrains) also analyses the code in CI (`qodana.yml`: TypeScript / JavaScript, Python and
+Rust, each with its own `qodana.yaml`). It needs the project tokens, so it has no local command here;
+the same inspections are built into WebStorm, PyCharm and RustRover.
+
 After editing `wrangler.jsonc`, run `npm run cf:types` and commit the regenerated
 `worker-configuration.d.ts`.
 

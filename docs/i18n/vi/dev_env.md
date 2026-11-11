@@ -1,6 +1,6 @@
 # Môi trường phát triển
 
-> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-09 (English source revision 2026-11-09). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
+> Bản dịch từ bản tiếng Anh cập nhật ngày 2026-11-11 (English source revision 2026-11-11). Nếu có khác biệt, bản tiếng Anh được ưu tiên.
 > Bản gốc: [`dev_env.md`](../../dev_env.md).
 
 Bộ công cụ Maintainer dùng để viết và kiểm thử code trong repo này, và cách chạy từng phần trên máy.
@@ -186,6 +186,10 @@ npm run cf:check                       # wrangler deploy --dry-run: kiểm tra c
 
 `npm run test:coverage` chạy test kèm coverage v8 và ghi `coverage/lcov.info`, giống workflow
 SonarQube Cloud (`sonarcloud.yml`).
+
+Qodana (JetBrains) cũng phân tích code trong CI (`qodana.yml`: TypeScript / JavaScript, Python và
+Rust, mỗi phần có `qodana.yaml` riêng). Nó cần token của project nên không có lệnh chạy cục bộ ở đây;
+các inspection tương tự có sẵn trong WebStorm, PyCharm và RustRover.
 
 Sau khi sửa `wrangler.jsonc`, chạy `npm run cf:types` và commit file `worker-configuration.d.ts` vừa
 được tạo lại.

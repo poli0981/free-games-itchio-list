@@ -1,0 +1,36 @@
+# Qodana for Python: the data pipeline (scripts/), its tests and the Python
+# maintainer tool in webapp/scripts/. Run by .github/workflows/qodana.yml
+# (job `python`), reported to https://qodana.cloud/projects/GgGnX.
+# The web app and the Tauri shell have their own projects: webapp/qodana.yaml
+# and webapp/src-tauri/qodana.yaml.
+version: "1.0"
+linter: qodana-python
+withinDocker: false
+profile:
+  name: qodana.recommended
+# The quality gate: any problem fails the job (and turns the README badge red).
+failureConditions:
+  severityThresholds:
+    any: 0
+exclude:
+  - name: All
+    paths:
+      # Analysed by the other two Qodana projects.
+      - webapp/src
+      - webapp/admin
+      - webapp/worker
+      - webapp/vite-plugins
+      - webapp/public
+      - webapp/src-tauri
+      # The catalog and the pipeline's state: data, not code.
+      - data_game
+      - scripts/state
+      # itch.io pages saved as served, golden files and vectors for the tests.
+      - tests/fixtures
+  # `${{ secrets.NAME }}` in a workflow is a reference to a secret, not a secret.
+  - name: HardcodedPasswords
+    paths:
+      - .github
+  # It reads requirements.txt only; Pillow, for webapp/scripts/gen_assets.py,
+  # is a development dependency (requirements-dev.txt).
+  - name: PyPackageRequirementsInspection

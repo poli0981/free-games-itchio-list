@@ -1,0 +1,23 @@
+# Qodana for Rust (Early Access): the Tauri shell of the desktop and Android
+# apps. Run by .github/workflows/qodana.yml (job `rust`), reported to
+# https://qodana.cloud/projects/P2Rd7.
+version: "1.0"
+linter: qodana-rust
+profile:
+  name: qodana.recommended
+# The quality gate: any problem fails the job (and turns the README badge red).
+failureConditions:
+  severityThresholds:
+    any: 0
+# The linter evaluates build scripts and expands macros with `cargo check`,
+# and its image has neither a C linker nor the libraries Tauri links against.
+# Needs root in the container (the workflow passes `-u root`).
+bootstrap: |
+  apt-get update -qq
+  DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends build-essential pkg-config libwebkit2gtk-4.1-dev libayatana-appindicator3-dev librsvg2-dev libssl-dev libxdo-dev
+exclude:
+  - name: All
+    paths:
+      # Build output and the generated Android project.
+      - target
+      - gen

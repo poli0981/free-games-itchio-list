@@ -85,6 +85,8 @@ export function GlobalSearch({ className }: { className?: string }) {
 
   const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     // Enter / arrows that finish an IME composition (e.g. Vietnamese Telex) aren't commands.
+    // Safari fires that keydown after compositionend, with isComposing false: only keyCode 229 tells.
+    // noinspection JSDeprecatedSymbols
     if (e.nativeEvent.isComposing || e.keyCode === 229) return
     if (e.key === 'ArrowDown' && hasQuery) {
       e.preventDefault()

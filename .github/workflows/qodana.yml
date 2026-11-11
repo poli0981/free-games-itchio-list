@@ -1,0 +1,195 @@
+# Qodana (JetBrains) static analysis, one linter per Qodana Cloud project:
+#
+#   typescript — qodana-js      webapp/              https://qodana.cloud/projects/wwgZ1
+#   python     — qodana-python  the repository root  https://qodana.cloud/projects/GgGnX
+#   rust       — qodana-rust    webapp/src-tauri/    https://qodana.cloud/projects/P2Rd7
+#
+# Each project has its own token (a repository secret) and its own settings
+# file (`qodana.yaml` in the directory above). Every run analyses the whole
+# project (`pr-mode: false`), so a pull request and `main` report the same way.
+#
+# Dependabot and fork PRs get no repository secrets: the analysis is skipped
+# there, not failed (the `tokens` job). Dependencies are installed before the
+# scan, in steps that don't see the token.
+name: Qodana
+
+on:
+  push:
+    branches: [main]
+    # Data commits (the pipeline's, the admin Worker's) and docs change no code.
+    paths-ignore:
+      - 'data_game/**'
+      - 'scripts/temp_link.json'
+      - 'scripts/deleted_games.json'
+      - 'scripts/state/**'
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - 'data_game/**'
+      - 'scripts/temp_link.json'
+      - 'scripts/deleted_games.json'
+      - 'scripts/state/**'
+      - '**.md'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: qodana-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tokens:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    outputs:
+      present: ${{ steps.check.outputs.present }}
+    steps:
+      - name: Check for the Qodana tokens
+        id: check
+        env:
+          TOKEN_TS_JS: ${{ secrets.QODANA_TOKEN_TS_JS }}
+          TOKEN_PYTHON: ${{ secrets.QODANA_TOKEN_PYTHON }}
+          TOKEN_RUST: ${{ secrets.QODANA_TOKEN_RUST }}
+        run: |
+          if [ -n "$TOKEN_TS_JS" ] && [ -n "$TOKEN_PYTHON" ] && [ -n "$TOKEN_RUST" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::No Qodana tokens in this run (Dependabot or fork PR): Qodana analysis skipped."
+          fi
+
+  typescript:
+    name: TypeScript / JavaScript
+    needs: tokens
+    if: needs.tokens.outputs.present == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      checks: write # the action's annotations
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: webapp/.node-version
+          cache: npm
+          cache-dependency-path: webapp/package-lock.json
+
+      # The linter resolves imports and types from node_modules.
+      - name: Install npm dependencies
+        working-directory: webapp
+        run: npm ci --ignore-scripts
+
+      - name: Qodana scan
+        uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
+        with:
+          args: --project-dir webapp --repository-root . --linter qodana-js --within-docker false
+          pr-mode: false
+          post-pr-comment: false
+          upload-result: true
+          artifact-name: qodana-report-typescript
+          primary-cache-key: qodana-2026.2-js-${{ github.ref }}-${{ github.sha }}
+          additional-cache-key: qodana-2026.2-js-${{ github.ref }}
+          cache-default-branch-only: true
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_TS_JS }}
+
+  python:
+    name: Python
+    needs: tokens
+    if: needs.tokens.outputs.present == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version-file: .github/python-version
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+
+      # Hash-locked, wheels only (CLAUDE.md, gotcha 40). In native mode the
+      # linter finds no interpreter by itself: it gets this virtual environment
+      # (QODANA_PYTHON_PATH below) and resolves imports from it.
+      - name: Install Python dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install --require-hashes --only-binary :all: -r requirements.txt -r requirements-dev.txt
+
+      - name: Qodana scan
+        uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
+        with:
+          args: --linter qodana-python --within-docker false
+          pr-mode: false
+          post-pr-comment: false
+          upload-result: true
+          artifact-name: qodana-report-python
+          primary-cache-key: qodana-2026.2-python-${{ github.ref }}-${{ github.sha }}
+          additional-cache-key: qodana-2026.2-python-${{ github.ref }}
+          cache-default-branch-only: true
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_PYTHON }}
+          QODANA_PYTHON_PATH: ${{ github.workspace }}/.venv/bin/python
+
+  rust:
+    name: Rust
+    needs: tokens
+    if: needs.tokens.outputs.present == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      # tauri::generate_context!() refuses to expand without the frontend
+      # directory (frontendDist): an empty page stands in for the web build.
+      - name: Stand-in for the web build
+        run: |
+          mkdir -p webapp/dist
+          echo '<!doctype html><title>stand-in</title>' > webapp/dist/index.html
+
+      # qodana-rust ships only as a Docker image (Early Access). It runs as
+      # root so that its bootstrap (webapp/src-tauri/qodana.yaml) can install
+      # the C toolchain and the libraries Tauri links against; the crates go
+      # to the (cached) Qodana cache directory. `cargo check` runs the build
+      # scripts of the locked dependencies in that container.
+      - name: Qodana scan
+        uses: JetBrains/qodana-action@3e8d76ff0e0241618abd808682f426afe84bab3f # v2026.2.2
+        with:
+          args: --project-dir webapp/src-tauri --repository-root . --linter qodana-rust -u root -e CARGO_HOME=/data/cache/cargo
+          pr-mode: false
+          post-pr-comment: false
+          upload-result: true
+          artifact-name: qodana-report-rust
+          primary-cache-key: qodana-2026.2-rust-${{ github.ref }}-${{ github.sha }}
+          additional-cache-key: qodana-2026.2-rust-${{ github.ref }}
+          cache-default-branch-only: true
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_RUST }}

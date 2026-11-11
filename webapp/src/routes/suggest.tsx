@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type SubmitEvent } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -106,7 +106,7 @@ function SuggestForm() {
   const urlError = touched && url !== '' && !urlValid
   const ready = urlValid && Boolean(token) && !sending
 
-  async function submit(e: FormEvent) {
+  async function submit(e: SubmitEvent<HTMLFormElement>) {
     e.preventDefault()
     if (sending) return
     // The button stays focusable (aria-disabled): say what is missing instead of doing nothing.

@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
+import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { countBy } from '@/lib/analytics'
 import { tableRows } from '@/lib/chart-table'
 import { useT } from '@/lib/i18n'
@@ -7,11 +7,11 @@ import type { Game } from '@/types/game'
 import { ChartCard } from './chart-card'
 import { chartAria, LEGEND_BASE, SERIES_ANIMATION, SLICE_STROKE, TOOLTIP_BASE } from './chart-theme'
 import { ChartTooltipContent } from './chart-tooltip'
-import { PALETTE } from './palette'
+import { paletteFills } from './palette'
 
 export function StatusChart({ games }: { games: Game[] }) {
   const t = useT()
-  const data = useMemo(() => countBy(games, 'status'), [games])
+  const data = useMemo(() => paletteFills(countBy(games, 'status')), [games])
   const total = data.reduce((sum, d) => sum + d.count, 0)
   return (
     <ChartCard
@@ -30,11 +30,7 @@ export function StatusChart({ games }: { games: Game[] }) {
             nameKey="key"
             outerRadius="80%"
             stroke={SLICE_STROKE}
-          >
-            {data.map((_, i) => (
-              <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
-            ))}
-          </Pie>
+          />
           <Tooltip {...TOOLTIP_BASE} content={<ChartTooltipContent total={total} />} />
           <Legend {...LEGEND_BASE} />
         </PieChart>

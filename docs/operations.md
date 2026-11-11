@@ -206,6 +206,16 @@ Do these once (and again with the `-staging` names for the staging Worker).
    `GH_TOKEN`, `TELEGRAM_BOT_TOKEN` and the three `DISCUSSION_*` secrets, which no workflow used any
    more, were deleted on 2026-10-16.
 4. **Signing key**: the old key `03F965C2E2DB5C6B` was exposed; sign with the replacement key.
+5. **Qodana** (JetBrains, <https://qodana.cloud>): one Qodana Cloud project per linter, because a
+   project takes one linter — `itch-typescript` (`qodana-js`), `itch-python` (`qodana-python`) and
+   `itch-rust` (`qodana-rust`, Early Access). Each project token is a repository secret:
+   `QODANA_TOKEN_TS_JS`, `QODANA_TOKEN_PYTHON`, `QODANA_TOKEN_RUST` (Settings → Secrets and variables →
+   Actions). `qodana.yml` runs the three jobs; the settings are `webapp/qodana.yaml`, `qodana.yaml`
+   and `webapp/src-tauri/qodana.yaml` (each with a quality gate of 0 problems: a finding fails its
+   job — fix it, or switch the inspection off there with the reason). The three linters need an **Ultimate** licence: when the
+   trial or the subscription ends, the scans fail with a licence error — renew it, or delete
+   `qodana.yml` and the three files (nothing else depends on them). A new token: Qodana Cloud →
+   the project → Settings, then update the secret.
 
 ## 3. Releasing a version
 
@@ -231,6 +241,10 @@ Do these once (and again with the `-staging` names for the staging Worker).
 
 ## 4. Routine
 
+- **Maintenance mode** (since 4.6.1): the project is stable. The work left is the weekly dependency
+  sweep, security fixes, runtime updates and the items below; feature requests and code pull
+  requests are closed with a pointer to README → Project status. Issues stay open for the data
+  only (add, fix, remove a game), accessibility barriers and things that broke.
 - **Mass-change alert** (Discord, "mass_change=true"): itch.io probably changed its page markup. Look at
   a few flagged games on itch.io. If the parser is wrong, fix `scripts/scraper.py`; if the removals
   are real, dispatch **Refresh catalog** with `allow_mass_removal`.
