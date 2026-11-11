@@ -16231,5 +16231,611 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-11T08:25:41Z"
+    },
+    {
+        "url": "https://cleyw07.itch.io/contalmaster",
+        "name": "ContalMaster",
+        "dev": "CleyW07",
+        "description": "Domine conceitos e resolva quebra-cabeças dinâmicos nesta jornada interativa.",
+        "genre": "Educational",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 02:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg4MjU0LnBuZw==/original/BjaAEL.png",
+        "tags": [
+            "2D",
+            "Backgrounds",
+            "Godot",
+            "Indie",
+            "minigames",
+            "Narrative",
+            "Singleplayer",
+            "Tutorial"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "Configurable controls",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:13Z"
+    },
+    {
+        "url": "https://computerfish.itch.io/cyranoid",
+        "name": "CYRANOID",
+        "dev": "computer.fish, wonderseabreeze",
+        "description": "Come, rest your weary eyes, dream. The Sanctum is waiting.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 22:02 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDgxMzIwLnBuZw==/original/Wjd9uz.png",
+        "tags": [
+            "Atmospheric",
+            "Dark Humor",
+            "denpa",
+            "Horror",
+            "Kinetic Novel",
+            "Lesbian",
+            "Psychological Horror",
+            "Queer",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:16Z"
+    },
+    {
+        "url": "https://forgottenrainynights.itch.io/wheretherearenoangels",
+        "name": "Where There Are No Angels",
+        "dev": "forgottenrainynights",
+        "description": "It's an ordinary winter day, walk to school with your best friend.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 20:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDU3OTMyLnBuZw==/original/3%2BSoED.png",
+        "tags": [
+            "2D",
+            "denpa",
+            "first-person-pov",
+            "Horror",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:20Z"
+    },
+    {
+        "url": "https://ghostfuneral.itch.io/angel-city",
+        "name": "Angel City",
+        "dev": "Sam",
+        "description": "A denpa psychological horror visual novel about apathy, a boy who wants silence, and something that wants to be heard",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 22:45 UTC",
+        "rating": "5.0",
+        "rating_count": "7",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDI0Nzg5LnBuZw==/original/9AgEIX.png",
+        "tags": [
+            "Anime",
+            "Horror",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Singleplayer",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:23Z"
+    },
+    {
+        "url": "https://hyperthinks.itch.io/superposition",
+        "name": "SUPERPOSITION",
+        "dev": "hyperthinks",
+        "description": "Somewhere, a radio tower broadcasts itself in perpetuity.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 21:19 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDgwNjgyLnBuZw==/original/HdRizk.png",
+        "tags": [
+            "denpa",
+            "Psychological Horror",
+            "Ren'Py",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:26Z"
+    },
+    {
+        "url": "https://istoleyurvamps.itch.io/a-date-with-the-silver-fuller-a-fangame",
+        "name": "A Date with the Silver Fuller (A Fangame)",
+        "dev": "Vamps",
+        "description": "Have the most Splended day with your favorite Knight~",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 02:50 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTUyNDI1LnBuZw==/original/c5kuIm.png",
+        "tags": [
+            "Dating Sim",
+            "Fangame",
+            "final-fantasy",
+            "LGBTQIA",
+            "No AI",
+            "Otome",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:29Z"
+    },
+    {
+        "url": "https://jessmck.itch.io/turn-a-new-leaf",
+        "name": "Turn a New Leaf",
+        "dev": "JessMcK",
+        "description": "Sneak into a medieval monastery to steal a book that's worth a kingdom...",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 03:21 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDUxMDEzLnBuZw==/original/FPBkKe.png",
+        "tags": [
+            "2D",
+            "Black and White",
+            "Cozy",
+            "Hand-drawn",
+            "Historical",
+            "Medieval",
+            "No AI",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "GIMP",
+            "Adobe Photoshop",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:31Z"
+    },
+    {
+        "url": "https://kaninbun.itch.io/godotproject",
+        "name": "GODOTproject",
+        "dev": "kaninbun",
+        "description": "In a distant future: Massive holes in the earth that seemingly lead to nothing have been opening up in caves.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 02:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDkwNTQxLmpwZw==/original/seiMuJ.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:34Z"
+    },
+    {
+        "url": "https://mattemade.itch.io/yamada-days",
+        "name": "Yamada Days",
+        "dev": "matte, FL0NNE, RailgunRabbit, Ren_",
+        "description": "It's too loud, it's too bright, it's too hot. And it only gets worse.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 00:00 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDc2NTkwLmdpZg==/original/SovmTD.gif",
+        "tags": [
+            "Atmospheric",
+            "Dark",
+            "denpa",
+            "Female Protagonist",
+            "Mental Health",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Short",
+            "Voice Acting",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "GIMP",
+            "Inkscape",
+            "Audacity",
+            "Krita"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "Subtitles",
+            "Blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:37Z"
+    },
+    {
+        "url": "https://nxt-maru.itch.io/reika-wants-you",
+        "name": "Reika Wants You",
+        "dev": "NxT Maru",
+        "description": "“A first date. A beautiful girl. A rather unusual appetite.”",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 20:30 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDk5NzUyLnBuZw==/original/PcS%2FbQ.png",
+        "tags": [
+            "Dark Humor",
+            "Dating Sim",
+            "denpa",
+            "Horror",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Psychological Horror",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:41Z"
+    },
+    {
+        "url": "https://okyeswe.itch.io/lunacy",
+        "name": "Lunacy",
+        "dev": "okyeswe",
+        "description": "Murder mystery visual novel about only trusting the sky and no one else.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 23:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg1Mzc4LmpwZw==/original/mBxuV4.jpg",
+        "tags": [
+            "Anime",
+            "Atmospheric",
+            "Dark",
+            "Mystery",
+            "Narrative",
+            "No AI",
+            "Psychological Horror",
+            "Story Rich",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:44Z"
+    },
+    {
+        "url": "https://repuestopersonal.itch.io/the-circus-of-love",
+        "name": "The circus of love",
+        "dev": "Repuestopersonal",
+        "description": "Un circo de payasos raros que quieren ser mas que tu amigo.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 22:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDgzOTYyLmpwZw==/original/Oj9cxp.jpg",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:48Z"
+    },
+    {
+        "url": "https://snugboat11.itch.io/yonder",
+        "name": "YONDER",
+        "dev": "SnugBoat11",
+        "description": "The deep waters covered them; they sank to the depths like a stone",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 23:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg0MDkwLnBuZw==/original/Jnl3eX.png",
+        "tags": [
+            "Creepy",
+            "Dark",
+            "denpa",
+            "Horror",
+            "Narrative",
+            "Psychological Horror",
+            "Story Rich",
+            "Surreal",
+            "weird"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:50Z"
+    },
+    {
+        "url": "https://spectraldoe.itch.io/the-developer",
+        "name": "The Developer",
+        "dev": "SpectralDoe",
+        "description": "A 10 minute monologue about working in game dev",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 23:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg1NzMxLnBuZw==/original/nx3Am1.png",
+        "tags": [
+            "Low-poly",
+            "No AI",
+            "Retro",
+            "Voice Acting"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:54Z"
+    },
+    {
+        "url": "https://veriyerisgames.itch.io/yuri-lilith",
+        "name": "Yuri Lilith",
+        "dev": "VeriyerisGames",
+        "description": "About the Game Clara is a kind and caring teacher with a secret side.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 01:42 UTC",
+        "rating": "3.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ2NTE4LnBuZw==/original/b6ilwm.png",
+        "tags": [
+            "bdsm",
+            "feet",
+            "Female Protagonist",
+            "humiliation",
+            "Lesbian",
+            "Romance",
+            "spanking",
+            "teacher",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T16:24:56Z"
     }
 ]
