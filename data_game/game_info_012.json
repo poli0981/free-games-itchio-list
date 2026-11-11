@@ -15441,5 +15441,795 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-11T00:24:21Z"
+    },
+    {
+        "url": "https://ballmuncha6.itch.io/monoautonomy",
+        "name": "Monoautonomy",
+        "dev": "ballmuncha6",
+        "description": "To each their own",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 09:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDcyMTU5LnBuZw==/original/9O8kd9.png",
+        "tags": [
+            "2D",
+            "denpa",
+            "Horror",
+            "No AI",
+            "pencil-art",
+            "Ren'Py",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:38Z"
+    },
+    {
+        "url": "https://bax888.itch.io/digimahou",
+        "name": "Digital Mahou Shoujo: [StellA;☆Luminous]",
+        "dev": "Bax888, celerii, xmiyakiix, Rangaroll",
+        "description": "A denpa-magical girl visual novel about a girl who discovers powers that let her play hero in the Digital World.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 11:46 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDU0MzkyLnBuZw==/original/m9s4Ya.png",
+        "tags": [
+            "denpa",
+            "Female Protagonist",
+            "magical-girl",
+            "Psychological Horror",
+            "Ren'Py",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:42Z"
+    },
+    {
+        "url": "https://chiwirin.itch.io/survive-the-alien",
+        "name": "Survive the Alien",
+        "dev": "Chiwirin",
+        "description": "A yandere alien who wants to be your friend... at any cost.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 18:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTQ4MzAyLnBuZw==/original/iHVphs.png",
+        "tags": [
+            "Aliens",
+            "Boys' Love",
+            "Cute",
+            "Horror",
+            "Male protagonist",
+            "Psychological Horror",
+            "Sci-fi",
+            "Short",
+            "Space",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:44Z"
+    },
+    {
+        "url": "https://dew-xx.itch.io/vermis-mentis-mental-virus",
+        "name": "vermis mentis : mental virus",
+        "dev": "♡ dew ♡",
+        "description": "Content warnings!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 17:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDcyODEyLnBuZw==/original/%2BJzlfW.png",
+        "tags": [
+            "denpa",
+            "Psychological Horror",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:48Z"
+    },
+    {
+        "url": "https://dreamfishing.itch.io/ego-paradox",
+        "name": "Ego_Paradox",
+        "dev": "dreamfishing",
+        "description": "Short story about signals and connections",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 15:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDM5MDA2LnBuZw==/original/y%2FpOuC.png",
+        "tags": [
+            "Horror",
+            "Kinetic Novel",
+            "Narrative",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:52Z"
+    },
+    {
+        "url": "https://frillysquiid.itch.io/paradiseinaroom",
+        "name": "Paradise in a Room",
+        "dev": "♡ ophelia ♡",
+        "description": "Together forever. In this rotten, long gone world. ♡",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 16:54 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDMwMDkwLnBuZw==/original/9nhoe0.png",
+        "tags": [
+            "denpa",
+            "Psychological Horror",
+            "Ren'Py",
+            "Slice Of Life",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:55Z"
+    },
+    {
+        "url": "https://giopara.itch.io/have-mercy-on-me",
+        "name": "Have Mercy On Me",
+        "dev": "giopara",
+        "description": "Write the song to close out 'humanity'.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 02:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ2NzYxLnBuZw==/original/BmG4EW.png",
+        "tags": [
+            "Atmospheric",
+            "Meaningful Choices",
+            "Minimalist",
+            "Multiple Endings",
+            "Music",
+            "No AI",
+            "Psychological Horror",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:24:58Z"
+    },
+    {
+        "url": "https://hallow-cat.itch.io/my-neighbor-maria",
+        "name": "My Neighbor Maria",
+        "dev": "Hallow",
+        "description": "\"Four years ago, Maria died. Today, she's knocking at my door again.\"",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 18:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ2NzYyLnBuZw==/original/US2wjp.png",
+        "tags": [
+            "Dark",
+            "denpa",
+            "Horror",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Narrative",
+            "Psychological Horror",
+            "Retro",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:02Z"
+    },
+    {
+        "url": "https://hazel-traveler.itch.io/appelle",
+        "name": "___ appelle",
+        "dev": "hazel_traveler",
+        "description": "Chaque jour tu reçois un appel de ___.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 18:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDgxNTI0LmpwZw==/original/WViYli.jpg",
+        "tags": [
+            "Bitsy",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:05Z"
+    },
+    {
+        "url": "https://lkx1121-gif.itch.io/the-limits-of-love",
+        "name": "The Limits of Love",
+        "dev": "lkx1121-gif",
+        "description": "How far would you go for the ones you love, without losing yourself?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 03:49 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ5ODc1LnBuZw==/original/MCPCp%2F.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:09Z"
+    },
+    {
+        "url": "https://mcq-heartmark.itch.io/sea-swallow-me-whole",
+        "name": "Sea, Swallow Me Whole ~ไซเรนผู้สถิตอยู่ในโทรศัพท์~ [BETA version]",
+        "dev": "MCQ♡",
+        "description": "Mom always knows best.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 14:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDY2MTI2LnBuZw==/original/K%2FYIr4.png",
+        "tags": [
+            "denpa",
+            "Horror",
+            "LGBT",
+            "Psychological Horror",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:11Z"
+    },
+    {
+        "url": "https://pathos-soft.itch.io/eclipsing-binary-star",
+        "name": "Eclipsing Binary Star",
+        "dev": "pathos",
+        "description": "\"If you were to share your night sky with me... would you see what I see?\" You can see it in the distance.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 05:20 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ5NTk5LnBuZw==/original/Bpq0rC.png",
+        "tags": [
+            "denpa",
+            "nvl",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:15Z"
+    },
+    {
+        "url": "https://pinkfiremage.itch.io/my-eyes-are-a-lens",
+        "name": "My eyes are a lens",
+        "dev": "Pinkfiremage",
+        "description": "The tape records everything your mind tries to bury.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 11:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzAxNjQyLmdpZg==/original/VhJUoh.gif",
+        "tags": [
+            "2000s",
+            "Atmospheric",
+            "camcorder",
+            "camera",
+            "Kinetic Novel",
+            "Male protagonist",
+            "Multiple Endings",
+            "Mystery",
+            "Psychological Horror",
+            "video"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:17Z"
+    },
+    {
+        "url": "https://shin8byte.itch.io/dear-night",
+        "name": "よるにおくる",
+        "dev": "Shin8byte",
+        "description": "不眠症向けビジュアルノベル",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 09:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ4NjE4LnBuZw==/original/X2jht4.png",
+        "tags": [
+            "2D",
+            "mobile",
+            "Pixel Art",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Japanese"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:20Z"
+    },
+    {
+        "url": "https://sinnia.itch.io/human-food-concept",
+        "name": "Human Food Concept",
+        "dev": "Sinnia",
+        "description": "Escape from a mysteryous place where you can become their meal.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 22:16 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjQ3Nzg4LmpwZw==/original/RPqgdl.jpg",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Dark Humor",
+            "Escape Game",
+            "Horror",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Short",
+            "Violent"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py",
+            "Paint Tool SAI"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:23Z"
+    },
+    {
+        "url": "https://spoogyoogie.itch.io/earths-last-live",
+        "name": "Earth's Last Live",
+        "dev": "spoogyoogie, jshimmer",
+        "description": "On humanity's last day, two strangers find each other through the internet.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 20:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDUxOTE4LnBuZw==/original/%2BaL%2FSv.png",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "Ren'Py",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:28Z"
+    },
+    {
+        "url": "https://tc-arcade.itch.io/case-zero-episode-1",
+        "name": "CASE ZERO: Episode 1 - The Last Message",
+        "dev": "TC Arcade",
+        "description": "A missing friend. A doctored photograph. One night to uncover the truth.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 11:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzE1MDgzLnBuZw==/original/%2FnrXFa.png",
+        "tags": [
+            "Detective",
+            "Meaningful Choices",
+            "Mystery",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:31Z"
+    },
+    {
+        "url": "https://thedragonslair.itch.io/morph",
+        "name": "MORPH",
+        "dev": "thedragonslair",
+        "description": "Turn the frog into a prince.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 10:33 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDU4MjQ5LmpwZw==/original/57MklD.jpg",
+        "tags": [
+            "2D",
+            "Comedy",
+            "Magic",
+            "Medieval",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:33Z"
+    },
+    {
+        "url": "https://vilajur.itch.io/whatwillremainch1",
+        "name": "WhatWillRemainCh1",
+        "dev": "vilajur, tinycatboy",
+        "description": "+18, read the warnings at the start of the game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 16:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDY5NjYwLnBuZw==/original/pkNKW8.png",
+        "tags": [
+            "Horror",
+            "Psychological Horror",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:37Z"
+    },
+    {
+        "url": "https://wiosnavn.itch.io/spring-after-piracy",
+        "name": "Spring after Piracy",
+        "dev": "Wiosna",
+        "description": "Romance (or befriend) former Pirates.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 17:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDY4NDE3LnBuZw==/original/lHtNVs.png",
+        "tags": [
+            "Cozy",
+            "Dating Sim",
+            "LGBT",
+            "No AI",
+            "Period Piece",
+            "Pirates",
+            "Relaxing",
+            "Ren'Py",
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-11T08:25:41Z"
     }
 ]
