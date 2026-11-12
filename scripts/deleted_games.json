@@ -1048,5 +1048,17 @@
         "name": "MINE! MINE! MINE! (v1.2)",
         "reason": "Game became paid",
         "deleted_at": "2026-11-11T02:50:11Z"
+    },
+    {
+        "url": "https://wistarck.itch.io/joyandme",
+        "name": "Joy and me Chapter 1",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-12T02:49:43Z"
+    },
+    {
+        "url": "https://star2dfd.itch.io/starbetablock",
+        "name": "StarCensor v0.1",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-12T02:49:47Z"
     }
 ]
