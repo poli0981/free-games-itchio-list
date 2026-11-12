@@ -18216,5 +18216,263 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-12T12:24:54Z"
+    },
+    {
+        "url": "https://bakubs.itch.io/noise",
+        "name": "喧嚣NOISE",
+        "dev": "狗罐头",
+        "description": "这是以架空世界为背景的兽人同性向视觉小说。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 17:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTA5MTE3LmpwZw==/original/AxYbvx.jpg",
+        "tags": [
+            "Furry",
+            "Gay"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:33Z"
+    },
+    {
+        "url": "https://jesmer7.itch.io/red-rum",
+        "name": "Red Rum",
+        "dev": "Jesmer7",
+        "description": "A Palindromic, Noir-Style Detective Visual Novel",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 23:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTI4MDYwLnBuZw==/original/%2BePJ4F.png",
+        "tags": [
+            "Murder Mystery",
+            "Point & Click"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:37Z"
+    },
+    {
+        "url": "https://prettylittlesai-ko.itch.io/king-duck",
+        "name": "King Duck",
+        "dev": "prettylittlesai_ko",
+        "description": "Your mission is simple: retrieve the missing crown for King Duck!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 21:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTIyNTU2LnBuZw==/original/U2Lm3M.png",
+        "tags": [
+            "Pixel Art",
+            "unsettling"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:41Z"
+    },
+    {
+        "url": "https://sellessnee.itch.io/bleeding-love-new",
+        "name": "Bleeding Love (visual novel)",
+        "dev": "sellessne",
+        "description": "Novela visual de romance y vampiros",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 00:43 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTI4NTU2LmpwZWc=/original/CoTQ8Y.jpeg",
+        "tags": [
+            "Dark Fantasy",
+            "Female Protagonist",
+            "Romance",
+            "Vampire"
+        ],
+        "platforms": [
+            "HTML5",
+            "macOS",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:44Z"
+    },
+    {
+        "url": "https://sellessnee.itch.io/scent-of-roses",
+        "name": "Scent of Roses",
+        "dev": "sellessne",
+        "description": "Dark romance vampire visual novel",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 00:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTMwMjY2LmpwZWc=/original/tl%2BL%2Fk.jpeg",
+        "tags": [],
+        "platforms": [
+            "HTML5",
+            "macOS",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:48Z"
+    },
+    {
+        "url": "https://sunflowerdenpa.itch.io/rotten-love",
+        "name": "Rotten Love",
+        "dev": "sunflowerdenpa",
+        "description": "Rotten Love is a kinetic novel with denpa and yuri elements.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 00:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg4NzExLnBuZw==/original/ihlTKh.png",
+        "tags": [
+            "Female Protagonist",
+            "Kinetic Novel",
+            "LGBTQIA",
+            "Surreal",
+            "suspense",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:51Z"
+    },
+    {
+        "url": "https://thinkaboutitgames.itch.io/the-love-of-my-life",
+        "name": "The Love of My Life",
+        "dev": "Thinkaboutitgames",
+        "description": "“Marriage is not tested when love is easy.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 02:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTMzNjgwLmpwZw==/original/Gk7xan.jpg",
+        "tags": [
+            "Choices Matter",
+            "Emotional",
+            "Life Simulation",
+            "Management",
+            "Multiple Endings",
+            "Narrative",
+            "Psychological",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T16:24:55Z"
     }
 ]
