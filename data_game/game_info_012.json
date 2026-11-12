@@ -17435,5 +17435,305 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-12T00:24:24Z"
+    },
+    {
+        "url": "https://alexisgelin.itch.io/find-the-clover",
+        "name": "Find the Clover",
+        "dev": "Alexis, Clarisse.T",
+        "description": "Find a clover in a MIILION!",
+        "genre": "Action",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "02 November 2026 @ 11:16 UTC",
+        "rating": "4.4",
+        "rating_count": "58",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzcyNDE3LnBuZw==/original/%2FKuui1.png",
+        "tags": [
+            "2D",
+            "clover",
+            "Grass",
+            "Idle",
+            "Incremental",
+            "leprechauns",
+            "million",
+            "Singleplayer",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 November 2026 @ 04:11 UTC",
+        "added_at": "2026-11-12T04:23:45Z"
+    },
+    {
+        "url": "https://dadddydarko.itch.io/scrapyard-robot-mobile",
+        "name": "Scrapyard Robot (Mobile)",
+        "dev": "DadddyDarko",
+        "description": "Haul scrap, rebuild an old friend, and green a dusty yard. Made for phones, played sideways.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 05:53 UTC",
+        "rating": "4.9",
+        "rating_count": "7",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDk0MTA5LmdpZg==/original/KQQTS5.gif",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Cozy",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Relaxing",
+            "Singleplayer",
+            "Touch-Friendly"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T04:23:49Z"
+    },
+    {
+        "url": "https://evil-nidal.itch.io/rewindscape-out-of-tracking",
+        "name": "RewindScape: Out of tracking",
+        "dev": "Evil Nidal",
+        "description": "A 3D platformer where the only way out is to rewind the whole game.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 10:00 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDk4NDgwLnBuZw==/original/402FpN.png",
+        "tags": [
+            "3D",
+            "rewind"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T04:23:53Z"
+    },
+    {
+        "url": "https://ophanimkei.itch.io/omma",
+        "name": "Ommatophilia",
+        "dev": "malaika",
+        "description": "are you tired of watching life go by?",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "38",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5MDgxMTczLnBuZw==/original/lLoBxA.png",
+        "tags": [
+            "Atmospheric",
+            "Colorful",
+            "Horror",
+            "LGBT",
+            "narrative-driven",
+            "Pixel Art",
+            "Psychological Horror",
+            "RPG Maker",
+            "Surreal"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 November 2026 @ 05:21 UTC",
+        "added_at": "2026-11-12T04:23:55Z"
+    },
+    {
+        "url": "https://pizza-tower-19-plus.itch.io/noises-halloween-bash",
+        "name": "Noise's Halloween Bash",
+        "dev": "PTPTeam Jr",
+        "description": "A 2.5D Frankenstein's Platformer, set in the Pizza Tower Classic world!",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "40",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIzNzc5ODIxLnBuZw==/original/oV7ljD.png",
+        "tags": [
+            "2.5D",
+            "Fangame",
+            "GameMaker",
+            "Halloween",
+            "Pizza Tower"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Blender",
+            "GameMaker",
+            "Aseprite"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "10 November 2026 @ 01:07 UTC",
+        "added_at": "2026-11-12T04:23:59Z"
+    },
+    {
+        "url": "https://playfactorynz.itch.io/yes",
+        "name": "Yes, You all are Wrong!",
+        "dev": "PlayFactoryNZ",
+        "description": "He started a fight in the comments. They took it offline.",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 04:36 UTC",
+        "rating": "3.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg3NzI2LnBuZw==/original/cH3lV8.png",
+        "tags": [
+            "Incremental",
+            "Pixel Art",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T04:24:02Z"
+    },
+    {
+        "url": "https://programancer.itch.io/mangore-the-magnificent",
+        "name": "Mangore the Magnificent",
+        "dev": "Programancer",
+        "description": "Escape Artist Extrordinere",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "9",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE0NTczODE2LnBuZw==/original/P74P%2Be.png",
+        "tags": [
+            "jam",
+            "junkboy",
+            "mangore",
+            "No AI",
+            "programancer",
+            "surasshu"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 November 2026 @ 13:34 UTC",
+        "added_at": "2026-11-12T04:24:05Z"
     }
 ]
