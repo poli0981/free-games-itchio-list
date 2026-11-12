@@ -16837,5 +16837,622 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-11T16:24:56Z"
+    },
+    {
+        "url": "https://bannerfall.itch.io/siege-wing",
+        "name": "Siege Wing",
+        "dev": "bannerfall",
+        "description": "One attack helicopter vs a medieval army",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 17:37 UTC",
+        "rating": "3.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDcxMDUwLnBuZw==/original/mYJbOX.png",
+        "tags": [
+            "3D",
+            "Arcade",
+            "Atmospheric",
+            "Flight",
+            "helicopter",
+            "Medieval",
+            "Singleplayer",
+            "threejs",
+            "webgl"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:23:33Z"
+    },
+    {
+        "url": "https://ccchesh.itch.io/dodoroma",
+        "name": "Dodoroma: Speedrunner Simulator Prototype",
+        "dev": "chesh",
+        "description": "In this game you'll manage the player who speedruns this famous indie hit Dodoroma!",
+        "genre": "Adventure",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 14:04 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDY1MDg3LnBuZw==/original/JTKpF%2B.png",
+        "tags": [
+            "Fantasy",
+            "Incremental",
+            "Text based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:23:36Z"
+    },
+    {
+        "url": "https://demonmode.itch.io/living-mine",
+        "name": "LIVING MINE",
+        "dev": "DemonMode",
+        "description": "Smash living stone golems, build a mining empire and rebirth stronger. A pixel-art idle clicker.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 11:28 UTC",
+        "rating": "4.8",
+        "rating_count": "4",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDc4MjgwLnBuZw==/original/BZ%2FIHv.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Cute",
+            "Idle",
+            "Incremental",
+            "Mining",
+            "Pixel Art",
+            "Singleplayer",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Russian",
+            "Ukrainian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 November 2026 @ 19:42 UTC",
+        "added_at": "2026-11-12T00:23:40Z"
+    },
+    {
+        "url": "https://frostleafgames.itch.io/infinigon",
+        "name": "Infinigon",
+        "dev": "FrostLeafGames",
+        "description": "Two triangles make a square.",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 06:36 UTC",
+        "rating": "4.8",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDUyNTM5LnBuZw==/original/%2FrXdWG.png",
+        "tags": [
+            "Casual",
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 November 2026 @ 07:29 UTC",
+        "added_at": "2026-11-12T00:23:44Z"
+    },
+    {
+        "url": "https://gemesplayyt.itch.io/slysh-ty-hater-sashi-i-tani-remastered-android-port",
+        "name": "SLYSH TY HATER SASHI I TANI REMASTERED android port",
+        "dev": "aplex!",
+        "description": "wow!!",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 04:31 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDkyNTQ3LnBuZw==/original/o%2B0OLE.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:23:48Z"
+    },
+    {
+        "url": "https://giacodev.itch.io/helbreath-idle",
+        "name": "Helbreath Idle",
+        "dev": "giacodev",
+        "description": "Helbreath on your taskbar: your party fights, loots and levels up while you do something else. Online and free.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 13:42 UTC",
+        "rating": "2.6",
+        "rating_count": "5",
+        "average_session": "Days or more",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDIxNzE5LnBuZw==/original/Vgv5ZK.png",
+        "tags": [
+            "Auto Battler",
+            "Casual",
+            "Fangame",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Loot",
+            "Pixel Art",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 November 2026 @ 16:27 UTC",
+        "added_at": "2026-11-12T00:23:51Z"
+    },
+    {
+        "url": "https://heartclicker.itch.io/heartclicker",
+        "name": "Heart Clicker",
+        "dev": "heartclicker",
+        "description": "A flirty anime idle clicker. Win 15 adult heroines over, one click at a time.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 12:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDYyNjE2LnBuZw==/original/uPd8xF.png",
+        "tags": [
+            "Anime",
+            "Casual",
+            "Clicker",
+            "Cute",
+            "dating",
+            "ecchi",
+            "Idle",
+            "Incremental",
+            "Romance",
+            "waifu"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:23:55Z"
+    },
+    {
+        "url": "https://independentfish.itch.io/shrink-ray-roulette",
+        "name": "Shrink Ray Roulette",
+        "dev": "IndependentFish",
+        "description": "Play Russian roulette with a shrink ray.",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 02:08 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDg4OTc5LnBuZw==/original/bn7IQw.png",
+        "tags": [
+            "giant",
+            "giantess",
+            "macro",
+            "micro",
+            "russian-roulette",
+            "shrink",
+            "shrink-ray",
+            "size",
+            "size-kink"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:23:59Z"
+    },
+    {
+        "url": "https://jannituts.itch.io/minecrillion",
+        "name": "Minecrillion",
+        "dev": "Janni",
+        "description": "Minecraft Trivia, Obscure answers dive deeper",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 23:34 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQyNzIxLnBuZw==/original/sk7Xrh.png",
+        "tags": [
+            "2D",
+            "minigames",
+            "No AI",
+            "Pixel Art",
+            "Quiz",
+            "Trivia"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "11 November 2026 @ 23:37 UTC",
+        "added_at": "2026-11-12T00:24:02Z"
+    },
+    {
+        "url": "https://macgdc.itch.io/microgame-jam-2026",
+        "name": "Microgame Jam 2026",
+        "dev": "MacGDC",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 00:07 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:04Z"
+    },
+    {
+        "url": "https://razib-jahan-ferdous.itch.io/300-feet-grand-prix",
+        "name": "300 Feet Grand Prix",
+        "dev": "Razib Jahan Ferdous",
+        "description": "Three-lap kart racing on Dhaka's Purbachal 300 Feet Road at sunset",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 01:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ2MDg5LnBuZw==/original/R0cf7s.png",
+        "tags": [
+            "3D",
+            "Arcade",
+            "bangladesh",
+            "Cute",
+            "kart-racing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:07Z"
+    },
+    {
+        "url": "https://shkerebertgames.itch.io/spinsmash",
+        "name": "Spinsmash",
+        "dev": "ShkerebertGames",
+        "description": "Spin the tops, smash them together, get rich. A short incremental game.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "09 November 2026 @ 20:41 UTC",
+        "rating": "4.1",
+        "rating_count": "7",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ2MjA1LnBuZw==/original/AtLRdL.png",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Physics",
+            "Pixel Art",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Japanese",
+            "Portuguese (Brazil)",
+            "Ukrainian",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:11Z"
+    },
+    {
+        "url": "https://chapherestudios.itch.io/all-i-needed-was-an-aurora",
+        "name": "All I Needed Was an Aurora",
+        "dev": "chapherestudios",
+        "description": "Do you ever feel like you struggle with things?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 11:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODk0NTkzLnBuZw==/original/mEuEPS.png",
+        "tags": [
+            "3D",
+            "Comedy",
+            "Cozy",
+            "Cute"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:15Z"
+    },
+    {
+        "url": "https://leoght-studio.itch.io/tianxia",
+        "name": "Tianxia: All Under Heaven",
+        "dev": "Leoght Studio",
+        "description": "Decisions are what defines us yet they can be expensive. How then do we know which decision is right? Let us find out.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "10 November 2026 @ 21:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDgyNDgzLmpwZw==/original/3nXf2I.jpg",
+        "tags": [
+            "Life Simulation",
+            "Singleplayer",
+            "Solo RPG"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:18Z"
+    },
+    {
+        "url": "https://narrappp.itch.io/love-my-way",
+        "name": "Love My Way",
+        "dev": "Narrappp",
+        "description": "Typical dating sim game. This is my group's uni project and our first ever game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 11:46 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTAyMjY2LnBuZw==/original/S3hrIc.png",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:22Z"
+    },
+    {
+        "url": "https://ubetuk.itch.io/novellafancool",
+        "name": "Проблемы",
+        "dev": "UBetuk",
+        "description": "Приятного прохождения...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 08:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDk3NjE2LmpwZw==/original/BH0U7I.jpg",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-12T00:24:24Z"
     }
 ]
