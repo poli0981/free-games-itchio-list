@@ -18579,5 +18579,77 @@
         "notes": "",
         "updated_at": "05 November 2026 @ 16:46 UTC",
         "added_at": "2026-11-12T20:24:29Z"
+    },
+    {
+        "url": "https://desertsoftime.itch.io/angel-of-hot-topic",
+        "name": "Angel of Hot Topic",
+        "dev": "DesertsOfTime",
+        "description": "Explore what remains of an artist 10 years after they last posted.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 19:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTE4ODQ0LnBuZw==/original/XDHody.png",
+        "tags": [
+            "Detective",
+            "Mystery",
+            "Retro",
+            "Twine"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Twine"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T00:23:56Z"
+    },
+    {
+        "url": "https://oddjuanaout.itch.io/norma",
+        "name": "NORMA",
+        "dev": "oddjuanaout",
+        "description": "Four seconds for an image.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 08:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDk3Njc5LnBuZw==/original/USdxPt.png",
+        "tags": [
+            "filipino",
+            "Folklore",
+            "Horror"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T00:24:00Z"
     }
 ]
