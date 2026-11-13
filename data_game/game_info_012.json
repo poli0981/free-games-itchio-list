@@ -5701,42 +5701,6 @@
         "added_at": "2026-11-02T04:24:37Z"
     },
     {
-        "url": "https://alfri00.itch.io/ballrollterror",
-        "name": "BallRollTerror",
-        "dev": "alfri00",
-        "description": "Very short roll balling game with a big surprise dont miss it!!!!",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "01 November 2026 @ 13:33 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxNjc1MjY5LnBuZw==/original/BsT8Kr.png",
-        "tags": [
-            "Atmospheric",
-            "Horror",
-            "Indie",
-            "Low-poly",
-            "Relaxing"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-11-02T04:24:41Z"
-    },
-    {
         "url": "https://meal-ticket-games.itch.io/fine-whatever",
         "name": "Fine, Whatever!",
         "dev": "Meal Ticket Games",
@@ -6983,7 +6947,7 @@
         "publisher": "N/A",
         "release_date": "31 October 2026 @ 22:45 UTC",
         "rating": "4.7",
-        "rating_count": "29",
+        "rating_count": "95",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNjY4NTMxLnBuZw==/original/lf9HZN.png",
@@ -7013,14 +6977,17 @@
         "made_with": [
             "Construct"
         ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Sounds"
+        ],
         "accessibility": [
             "One button"
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-03T04:24:16Z"
+        "added_at": "2026-11-03T04:24:16Z",
+        "updated_at": "12 November 2026 @ 21:05 UTC"
     },
     {
         "url": "https://mxretrodev.itch.io/prehistoric-isle-md",
@@ -7031,8 +6998,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 16:37 UTC",
-        "rating": "5.0",
-        "rating_count": "5",
+        "rating": "4.8",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzMyNDU1LnBuZw==/original/LF8x15.png",
@@ -7047,7 +7014,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-03T04:24:19Z",
-        "updated_at": "03 November 2026 @ 19:50 UTC"
+        "updated_at": "13 November 2026 @ 01:31 UTC"
     },
     {
         "url": "https://swagtopus.itch.io/outpost-alpha",
@@ -7058,8 +7025,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "14",
+        "rating": "4.5",
+        "rating_count": "17",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzMxMDgzLmdpZg==/original/cKfUUg.gif",
@@ -7092,15 +7059,12 @@
         "made_with": [],
         "ai_disclosure": "AI Assisted",
         "ai_content": [
-            "Code",
-            "Graphics",
-            "Sounds",
-            "Text"
+            "Graphics"
         ],
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "02 November 2026 @ 16:29 UTC",
+        "updated_at": "07 November 2026 @ 14:49 UTC",
         "added_at": "2026-11-03T04:24:21Z"
     },
     {
@@ -7200,10 +7164,13 @@
         "made_with": [],
         "ai_disclosure": "No AI",
         "ai_content": [],
-        "accessibility": [],
+        "accessibility": [
+            "Subtitles"
+        ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-03T08:24:26Z"
+        "added_at": "2026-11-03T08:24:26Z",
+        "updated_at": "08 November 2026 @ 17:27 UTC"
     },
     {
         "url": "https://patreko.itch.io/balco-13",
@@ -7243,7 +7210,7 @@
         "dev": "SOlaCoder005",
         "description": "What's Zenning about?",
         "genre": "Visual Novel",
-        "status": "In development",
+        "status": "Prototype",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 20:21 UTC",
         "rating": "N/A",
@@ -7268,7 +7235,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-03T08:24:34Z"
+        "added_at": "2026-11-03T08:24:34Z",
+        "updated_at": "12 November 2026 @ 14:43 UTC"
     },
     {
         "url": "https://team-auxy.itch.io/auxy-and-i",
@@ -7352,8 +7320,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 11:15 UTC",
-        "rating": "4.1",
-        "rating_count": "7",
+        "rating": "4.2",
+        "rating_count": "23",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzQ2OTg0LnBuZw==/original/7ctEp8.png",
@@ -7381,7 +7349,7 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-03T12:24:22Z",
-        "updated_at": "04 November 2026 @ 00:54 UTC"
+        "updated_at": "04 November 2026 @ 12:52 UTC"
     },
     {
         "url": "https://chrisroger.itch.io/crimes-of-crow",
@@ -7392,8 +7360,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 11:29 UTC",
-        "rating": "4.0",
-        "rating_count": "6",
+        "rating": "4.2",
+        "rating_count": "18",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTA3MjAyLnBuZw==/original/WaYb4n.png",
@@ -7440,8 +7408,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 10:37 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.5",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzE4MjQxLnBuZw==/original/DqpTap.png",
@@ -7469,7 +7437,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-03T12:24:29Z"
+        "added_at": "2026-11-03T12:24:29Z",
+        "updated_at": "06 November 2026 @ 11:58 UTC"
     },
     {
         "url": "https://jpenjoyplay.itch.io/tower-of-the-dragons-girth",
@@ -7480,8 +7449,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 19:02 UTC",
-        "rating": "2.8",
-        "rating_count": "4",
+        "rating": "3.3",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzM4NDY1LnBuZw==/original/%2FbkgFh.png",
@@ -7552,7 +7521,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "02 November 2026 @ 18:44 UTC",
+        "updated_at": "08 November 2026 @ 09:45 UTC",
         "added_at": "2026-11-03T12:24:34Z"
     },
     {
@@ -7565,7 +7534,7 @@
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 01:12 UTC",
         "rating": "4.7",
-        "rating_count": "6",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzA1NjA2LnBuZw==/original/q5Yscv.png",
@@ -7602,7 +7571,7 @@
         "publisher": "N/A",
         "release_date": "03 November 2026 @ 00:00 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzQ5MTUzLnBuZw==/original/a1%2B56K.png",
@@ -7728,8 +7697,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "03 November 2026 @ 03:50 UTC",
-        "rating": "2.2",
-        "rating_count": "13",
+        "rating": "2.6",
+        "rating_count": "26",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzUzODA5LnBuZw==/original/6XC2gB.png",
@@ -7760,8 +7729,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 11:29 UTC",
-        "rating": "1.9",
-        "rating_count": "13",
+        "rating": "2.1",
+        "rating_count": "19",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzE3MzM4LnBuZw==/original/YTSHZl.png",
@@ -7793,7 +7762,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-03T20:24:22Z"
+        "added_at": "2026-11-03T20:24:22Z",
+        "updated_at": "09 November 2026 @ 05:41 UTC"
     },
     {
         "url": "https://1296740.itch.io/tetr1zz-eternal-laugh",
@@ -7824,7 +7794,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-04T00:24:28Z"
+        "added_at": "2026-11-04T00:24:28Z",
+        "updated_at": "07 November 2026 @ 21:35 UTC"
     },
     {
         "url": "https://9ryuq.itch.io/morihime",
@@ -7835,8 +7806,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "16",
+        "rating": "4.6",
+        "rating_count": "36",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI5MjI4NDU3LnBuZw==/original/FNIIoC.png",
@@ -7962,7 +7933,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-04T00:24:44Z"
+        "added_at": "2026-11-04T00:24:44Z",
+        "updated_at": "07 November 2026 @ 08:18 UTC"
     },
     {
         "url": "https://lyyycaena.itch.io/fangirl-simulator",
@@ -7973,8 +7945,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "03 November 2026 @ 11:19 UTC",
-        "rating": "4.0",
-        "rating_count": "1",
+        "rating": "4.2",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzY0NTU5LnBuZw==/original/2bookl.png",
@@ -7998,7 +7970,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-04T00:24:47Z"
+        "added_at": "2026-11-04T00:24:47Z",
+        "updated_at": "08 November 2026 @ 17:42 UTC"
     },
     {
         "url": "https://spicypineneedles.itch.io/fairycorner",
@@ -17442,11 +17415,11 @@
         "dev": "Alexis, Clarisse.T",
         "description": "Find a clover in a MIILION!",
         "genre": "Action",
-        "status": "Prototype",
+        "status": "In development",
         "publisher": "N/A",
         "release_date": "02 November 2026 @ 11:16 UTC",
-        "rating": "4.4",
-        "rating_count": "58",
+        "rating": "4.3",
+        "rating_count": "78",
         "average_session": "About an hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxNzcyNDE3LnBuZw==/original/%2FKuui1.png",
@@ -17493,7 +17466,7 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "12 November 2026 @ 04:11 UTC",
+        "updated_at": "12 November 2026 @ 05:08 UTC",
         "added_at": "2026-11-12T04:23:45Z"
     },
     {
@@ -17505,8 +17478,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 November 2026 @ 05:53 UTC",
-        "rating": "4.9",
-        "rating_count": "7",
+        "rating": "4.6",
+        "rating_count": "11",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMDk0MTA5LmdpZg==/original/KQQTS5.gif",
@@ -17584,7 +17557,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "38",
+        "rating_count": "40",
         "average_session": "A few hours",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE5MDgxMTczLnBuZw==/original/lLoBxA.png",
@@ -17674,8 +17647,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 November 2026 @ 04:36 UTC",
-        "rating": "3.5",
-        "rating_count": "2",
+        "rating": "3.0",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMDg3NzI2LnBuZw==/original/cH3lV8.png",
@@ -17708,8 +17681,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "9",
+        "rating": "4.4",
+        "rating_count": "14",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzE0NTczODE2LnBuZw==/original/P74P%2Be.png",
@@ -17883,8 +17856,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 November 2026 @ 15:35 UTC",
-        "rating": "5.0",
-        "rating_count": "3",
+        "rating": "4.6",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMDM3MDg4LnBuZw==/original/%2BFELkb.png",
@@ -18141,7 +18114,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "12 November 2026 @ 05:24 UTC",
+        "updated_at": "12 November 2026 @ 22:09 UTC",
         "added_at": "2026-11-12T12:24:48Z"
     },
     {
@@ -18182,8 +18155,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 November 2026 @ 18:20 UTC",
-        "rating": "5.0",
-        "rating_count": "3",
+        "rating": "4.1",
+        "rating_count": "7",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTE0NDM2LmdpZg==/original/5f0fh0.gif",
@@ -18428,7 +18401,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-12T16:24:51Z"
+        "added_at": "2026-11-12T16:24:51Z",
+        "updated_at": "13 November 2026 @ 01:36 UTC"
     },
     {
         "url": "https://thinkaboutitgames.itch.io/the-love-of-my-life",
@@ -18484,8 +18458,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "11 November 2026 @ 20:27 UTC",
-        "rating": "4.6",
-        "rating_count": "5",
+        "rating": "4.5",
+        "rating_count": "6",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTM4Nzc2LnBuZw==/original/T1a0S1.png",
@@ -18554,7 +18528,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "8",
+        "rating_count": "9",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIzMjg0ODg4LnBuZw==/original/I2bzJW.png",

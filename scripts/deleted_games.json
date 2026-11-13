@@ -1060,5 +1060,47 @@
         "name": "StarCensor v0.1",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-11-12T02:49:47Z"
+    },
+    {
+        "url": "https://pollikk-studios.itch.io/marketfield",
+        "name": "Marketfield",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-13T02:49:46Z"
+    },
+    {
+        "url": "https://red-anarhy173.itch.io/sprunki-hypershifted-peppers-take",
+        "name": "Sprunki Hypershifted Pepper's Take",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-13T02:49:50Z"
+    },
+    {
+        "url": "https://funday-games.itch.io/booster-pack-heroes",
+        "name": "Booster Pack Heroes",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-13T02:49:54Z"
+    },
+    {
+        "url": "https://leonncamayo.itch.io/failrooms",
+        "name": "FailRooms - Demo",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-13T02:49:56Z"
+    },
+    {
+        "url": "https://joerenwick.itch.io/girl-scarecrow",
+        "name": "Girl & Scarecrow DEMO",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-13T02:50:00Z"
+    },
+    {
+        "url": "https://vempyy.itch.io/jungle-tag",
+        "name": "Jungle tag V99",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-13T02:50:03Z"
+    },
+    {
+        "url": "https://alfri00.itch.io/ballrollterror",
+        "name": "BallRollTerror",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-13T02:50:07Z"
     }
 ]
