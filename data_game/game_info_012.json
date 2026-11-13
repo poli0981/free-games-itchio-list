@@ -18346,5 +18346,301 @@
         "notes": "",
         "updated_at": "30 October 2026 @ 17:17 UTC",
         "added_at": "2026-11-13T12:25:16Z"
+    },
+    {
+        "url": "https://chengjamie8.itch.io/ocean-archive-what-did-you-eat",
+        "name": "Ocean Archive: What Did You Eat?",
+        "dev": "chengjamie8",
+        "description": "A so-called visual novel with simple yet hypocrite story.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 17:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:15Z"
+    },
+    {
+        "url": "https://comictm.itch.io/oubliette-duels",
+        "name": "Oubliette Duels",
+        "dev": "ComicTM",
+        "description": "Prove who you really are with a Card Duel against 6 other ponies.",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 05:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTgyMjgyLnBuZw==/original/cuDPP7.png",
+        "tags": [
+            "mlp",
+            "my-little-pony",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:18Z"
+    },
+    {
+        "url": "https://fablecrush.itch.io/the-moon-court",
+        "name": "The Moon Court",
+        "dev": "FableCrush",
+        "description": "☾ THE MOON COURT ☽ Three forbidden romances.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 02:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTc0NjgyLmpwZw==/original/FBv3yp.jpg",
+        "tags": [
+            "browser",
+            "Choices Matter",
+            "Dating Sim",
+            "Fantasy",
+            "LGBTQIA",
+            "Multiple Endings",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:20Z"
+    },
+    {
+        "url": "https://giulianag.itch.io/la-sombra-del-pasillo",
+        "name": "La sombra del pasillo.",
+        "dev": "Giulianag",
+        "description": "Una novela visual de terror y romance oscuro donde tus respuestas definen si sobrevives a la noche.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 04:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTc4NzgzLnBuZw==/original/5yn8do.png",
+        "tags": [
+            "Horror",
+            "Psychological Horror",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:23Z"
+    },
+    {
+        "url": "https://goodmorningdev.itch.io/god-hates-dinosaurs",
+        "name": "GOD HATES DINOSAURS",
+        "dev": "GOOD MORNING!",
+        "description": "it's hard being gay and also a dinosaur",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 23:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTc4NDM4LnBuZw==/original/TCTLEN.png",
+        "tags": [
+            "Coming Of Age",
+            "Furry",
+            "Psychological Horror",
+            "Queer",
+            "religious"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:26Z"
+    },
+    {
+        "url": "https://kobatax-office.itch.io/boki3-club",
+        "name": "県立掬星台高校簿記部へようこそ ～目指せ日商簿記3級～",
+        "dev": "小林敬幸税理士事務所",
+        "description": "簿記部の3人と学ぶ、日商簿記3級の独学ノベル。全12章＋演習問題＋CBT模擬試験。",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 21:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ3NzI0LnBuZw==/original/NHKR8q.png",
+        "tags": [
+            "accounting",
+            "Anime"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:30Z"
+    },
+    {
+        "url": "https://nanaimibuenamor.itch.io/nanai-mi-buen-amor",
+        "name": "Nanai: Mi Buen Amor",
+        "dev": "NANAI",
+        "description": "Enfréntate a una secta oscura y devuelve la fe a la Isla de las Leyendas.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 04:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTgzMjAxLnBuZw==/original/NnI%2FA1.png",
+        "tags": [
+            "Dating Sim",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:33Z"
+    },
+    {
+        "url": "https://yukai-games.itch.io/its-just-a-game",
+        "name": "It's Just a Game",
+        "dev": "YUKAI Games",
+        "description": "A one-night romance in a full-dive game... or so she thought.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 18:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTU2MTM0LnBuZw==/original/6tZBF0.png",
+        "tags": [
+            "AI Assisted",
+            "Anime",
+            "Fantasy",
+            "Female Protagonist",
+            "josei",
+            "Otome",
+            "Romance",
+            "Story Rich",
+            "Voice Acting",
+            "vrmmo"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T16:24:37Z"
     }
 ]
