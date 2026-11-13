@@ -20204,5 +20204,72 @@
         "ai_disclosure": "No AI",
         "ai_content": [],
         "accessibility": []
+    },
+    {
+        "url": "https://s-xavier-uy.itch.io/hero-society",
+        "name": "Hero Society",
+        "dev": "S Xavier Uy",
+        "description": "A puzzle mechanic game where you move the stones to a good spot for it to lit, puzzle the stones to lit all the fire and there're selectable modes too with a different pattern stages.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NTM3MDkyLnBuZw==/original/awDnMJ.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Dating Sim",
+            "Fantasy",
+            "Romance",
+            "RPG Maker",
+            "Singleplayer",
+            "Superhero",
+            "supernatural"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://birdofmeadow.itch.io/project-astra",
+        "name": "Project Astra",
+        "dev": "BIRDOFMEADOW",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NDAyNzg0LnBuZw==/original/0JRE0N.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": []
     }
 ]

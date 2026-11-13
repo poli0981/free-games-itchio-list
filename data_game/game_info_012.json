@@ -1,1049 +1,5 @@
 [
     {
-        "url": "https://aimkid.itch.io/destinationplanet",
-        "name": "Destination: The Planet",
-        "dev": "aimkid",
-        "description": "An exploratory 3D platformer!",
-        "genre": "Platformer",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "48",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyODMyMDkwLnBuZw==/original/utAEO1.png",
-        "tags": [
-            "3D",
-            "Cute",
-            "Exploration",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:05Z"
-    },
-    {
-        "url": "https://fotocopiadora.itch.io/game-blast-collection",
-        "name": "GAME BLAST COLLECTION",
-        "dev": "fotocopiadora",
-        "description": "brain blast yourself",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "6",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyNjY3NTExLnBuZw==/original/7jl7Bo.png",
-        "tags": [],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:08Z"
-    },
-    {
-        "url": "https://yukimisoft.itch.io/the-trials-of-goodbye",
-        "name": "The Trials of Goodbye",
-        "dev": "YUKIMISOFT",
-        "description": "A verdict for a final friend",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "26",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyMjQyOTgyLnBuZw==/original/Af3ZKy.png",
-        "tags": [
-            "2D",
-            "Creepy",
-            "Cute",
-            "Game Boy",
-            "Hand-drawn",
-            "Horror",
-            "Pixel Art"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:11Z"
-    },
-    {
-        "url": "https://fotocopiadora.itch.io/greasemnk",
-        "name": "greasemnk++",
-        "dev": "fotocopiadora",
-        "description": "doppelganger bolero",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "12",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyNjQ4NTQ3LnBuZw==/original/WaNC9S.png",
-        "tags": [
-            "cyber",
-            "death",
-            "Difficult",
-            "Gay",
-            "Tactical"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "RPG Maker"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:14Z"
-    },
-    {
-        "url": "https://pixelrye.itch.io/oddys-lost-and-found",
-        "name": "Oddy's Lost and Found",
-        "dev": "Rye Raccoon",
-        "description": "Objects? Oddjects, awaiting to be found.",
-        "genre": "N/A",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "12",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyNjYyMjY1LnBuZw==/original/m9Hg2k.png",
-        "tags": [
-            "dream-exploration",
-            "Surreal",
-            "Top-Down",
-            "yume-nikki-fangame"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:16Z"
-    },
-    {
-        "url": "https://nanukara.itch.io/kamikamera",
-        "name": "KAMI KAMERA",
-        "dev": "Nanukara",
-        "description": "A JRPG about collecting ghosts!",
-        "genre": "Adventure",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "8",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEwODg4NDg3LnBuZw==/original/zbFfXv.png",
-        "tags": [
-            "2D",
-            "Atmospheric",
-            "earthbound",
-            "Horror",
-            "omori",
-            "Pixel Art",
-            "Singleplayer",
-            "yume-nikki"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:18Z"
-    },
-    {
-        "url": "https://quicksand.itch.io/freedom-diegesis",
-        "name": "FREEDOM: Diegesis",
-        "dev": "Quicksand Games",
-        "description": "Your once-generic platformer world is mutating.",
-        "genre": "Platformer",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.4",
-        "rating_count": "7",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1hZ2UvNTUxNTUvMjQ2NzQ3LnBuZw==/original/W%2BqgI%2B.png",
-        "tags": [
-            "2D",
-            "Experimental",
-            "glitch",
-            "Horror",
-            "lynchian",
-            "meta",
-            "Puzzle-Platformer",
-            "Singleplayer",
-            "Surreal",
-            "weird"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard"
-        ],
-        "made_with": [
-            "Construct"
-        ],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:21Z"
-    },
-    {
-        "url": "https://ebihime.itch.io/girlfriend-simulator",
-        "name": "Girlfriend Simulator",
-        "dev": "ebi-hime",
-        "description": "A VN about being pampered by your adorable girlfriend, who would never ever want to hurt you.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "138",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEwMTM2OTU1LmpwZw==/original/70AMr3.jpg",
-        "tags": [
-            "Anime",
-            "Creepy",
-            "Horror",
-            "Male protagonist",
-            "Meaningful Choices",
-            "Multiple Endings",
-            "Pixel Art",
-            "Psychological Horror",
-            "Romance",
-            "Yandere"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux",
-            "Android"
-        ],
-        "languages": [
-            "German",
-            "English",
-            "Indonesian",
-            "Russian"
-        ],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:25Z"
-    },
-    {
-        "url": "https://slitherbop.itch.io/etcetera",
-        "name": "ETCETERA",
-        "dev": "Slitherbop",
-        "description": "HELLO STRANGER",
-        "genre": "Adventure",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "49",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIxNzUzMTI5LnBuZw==/original/8cNJw8.png",
-        "tags": [
-            "Atmospheric",
-            "Exploration",
-            "Horror",
-            "LGBT",
-            "RPG Maker",
-            "Singleplayer",
-            "Surreal",
-            "ynfg",
-            "yume-nikki-fangame"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "RPG Maker"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:54Z"
-    },
-    {
-        "url": "https://saibibi.itch.io/for-elise",
-        "name": "For Elise",
-        "dev": "Saibibi",
-        "description": "There's something I wanted to make for that one person.",
-        "genre": "N/A",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "10",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzE2NzMxMjAzLnBuZw==/original/mB19w0.png",
-        "tags": [
-            "dreamdiaryjam",
-            "Exploration",
-            "Horror",
-            "Open World",
-            "RPG Maker",
-            "Walking simulator",
-            "ynfg"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:29:58Z"
-    },
-    {
-        "url": "https://lintilion.itch.io/hungry-healthy-human",
-        "name": "I'm Hungry! I'm Healthy! I'm Human!",
-        "dev": "lintilion",
-        "description": "This world is full of wonders. Can you see them all?",
-        "genre": "Platformer",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "3",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyMzMxNTI0LnBuZw==/original/k5DW2l.png",
-        "tags": [
-            "Crafting",
-            "Female Protagonist",
-            "Horror",
-            "Metroidvania",
-            "Retro"
-        ],
-        "platforms": [
-            "Windows",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:01Z"
-    },
-    {
-        "url": "https://decenttreatment.itch.io/katanirvana",
-        "name": "KATANIRVANA",
-        "dev": "DECENT TREATMENT, Themuckamuck, Horse Hoof Games, RetroKiwiDad, ArtarionTheGrey, Witch's Cadence, RPG Fanatic, Chilly",
-        "description": "2 Week Jam Entry",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "11",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEzMzM4MTA4LnBuZw==/original/NHwcB0.png",
-        "tags": [
-            "2D",
-            "Cyberpunk",
-            "Pixel Art",
-            "psychedelic",
-            "Retro",
-            "Singleplayer",
-            "Surreal",
-            "zen"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:05Z"
-    },
-    {
-        "url": "https://j-and-r.itch.io/chambers",
-        "name": "CHAMBERS",
-        "dev": "J and R",
-        "description": "A crawl through the underbelly.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "3.5",
-        "rating_count": "2",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyNTAxNDcxLmpwZw==/original/kSlm0W.jpg",
-        "tags": [
-            "Casual",
-            "Creepy",
-            "Short",
-            "Singleplayer",
-            "Walking simulator"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:09Z"
-    },
-    {
-        "url": "https://ivynivek.itch.io/kanalmanac",
-        "name": "Kanalmanac",
-        "dev": "Ivy Nivek",
-        "description": "Prototypical dungeon crawling.",
-        "genre": "Role Playing",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "21 March 2021 @ 08:05 UTC",
-        "rating": "4.0",
-        "rating_count": "2",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIwMjg0MTM5LnBuZw==/original/E7k8SY.png",
-        "tags": [
-            "Atmospheric",
-            "Dungeon Crawler",
-            "Lo-fi",
-            "No AI",
-            "RPG Maker",
-            "Short",
-            "Singleplayer",
-            "Voice Acting"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Xbox controller"
-        ],
-        "made_with": [
-            "RPG Maker",
-            "Audacity",
-            "Paint.net"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [
-            "High-contrast"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:12Z"
-    },
-    {
-        "url": "https://visualmemoryunit.itch.io/enupishi",
-        "name": "Enupishi",
-        "dev": "vmu_",
-        "description": "how far will you go for the one you l̶o̴v̷e̸?̶",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.6",
-        "rating_count": "73",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzExMDU1NjE3LmdpZg==/original/nvz%2B5W.gif",
-        "tags": [
-            "Creepy",
-            "dreamcore",
-            "Horror",
-            "internetcore",
-            "Survival Horror",
-            "traumacore",
-            "webcore",
-            "weird",
-            "weirdcore"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:16Z"
-    },
-    {
-        "url": "https://annswwr.itch.io/night-island",
-        "name": "While the world sleeps",
-        "dev": "Annswwr",
-        "description": "A tranquil free-roam adventure",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzExMDM2MTg2LnBuZw==/original/FXXr3l.png",
-        "tags": [
-            "3D",
-            "Abstract",
-            "Walking simulator"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:20Z"
-    },
-    {
-        "url": "https://michi-fossard.itch.io/meziel-chapter-1",
-        "name": "MEZIEL - Chapter 1",
-        "dev": "michi",
-        "description": "The 32-page first chapter of my original fantasy comic \"Meziel\".",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "7",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEyMzg0NDQ5LmpwZw==/original/5%2FT3RV.jpg",
-        "tags": [
-            "Comics",
-            "Drawing",
-            "Hand-drawn",
-            "Manga",
-            "traditional-art"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:24Z"
-    },
-    {
-        "url": "https://vila6.itch.io/after-a-while",
-        "name": "after a while",
-        "dev": "Sambero",
-        "description": "Run, bun, run",
-        "genre": "Racing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "38",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzY4OTIyNjMucG5n/original/aoiVMb.png",
-        "tags": [
-            "3D",
-            "Anime",
-            "Atmospheric",
-            "Furry",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:26Z"
-    },
-    {
-        "url": "https://unseconds.itch.io/doe-eyes",
-        "name": "Doe Eyes",
-        "dev": "unseconds",
-        "description": "I recently made Doe Eyes to be displayed in a trans Melbourne art exhibition, Gender Garden.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "7",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzExMzEwNjY2LnBuZw==/original/RVeZpy.png",
-        "tags": [
-            "Queer",
-            "Transgender",
-            "weird"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:30Z"
-    },
-    {
-        "url": "https://majd-rouhana.itch.io/excaliburian",
-        "name": "EXCALIBURIAN!!",
-        "dev": "Majd Rouhana",
-        "description": "Gather companions, explore the world, ascend the throne!",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "10",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI3Nzg4NzI3LnBuZw==/original/IyN3B7.png",
-        "tags": [
-            "2D",
-            "Cute",
-            "Fantasy",
-            "JRPG",
-            "Pixel Art",
-            "Retro",
-            "RPG Maker",
-            "Singleplayer",
-            "Turn-based",
-            "Turn-Based Combat"
-        ],
-        "platforms": [],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Gamepad (any)",
-            "Touchscreen"
-        ],
-        "made_with": [
-            "RPG Maker"
-        ],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:33Z"
-    },
-    {
-        "url": "https://goldlocke.itch.io/dottie-dreads-nought",
-        "name": "Dottie dreads nought",
-        "dev": "Goldlocke",
-        "description": "Dottie dreads nought is a platforming game created for the SNESDEV Game Jam 2021.",
-        "genre": "Platformer",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "15",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzY5MjM2NzkucG5n/original/YHMJc%2B.png",
-        "tags": [
-            "2D",
-            "Game Jam",
-            "Super Nintendo"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:37Z"
-    },
-    {
-        "url": "https://porpentine.itch.io/runescape",
-        "name": "Runescape Teen Brothel",
-        "dev": "xrafstar",
-        "description": "runescape anthropology",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "28",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzUxNDA4NzUucG5n/original/uhRgjW.png",
-        "tags": [
-            "3D",
-            "Historical",
-            "MMORPG",
-            "Retro",
-            "runescape",
-            "zine"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T08:30:40Z"
-    },
-    {
-        "url": "https://alexferb24.itch.io/one-button-to-infinity",
-        "name": "One Button to Infinity",
-        "dev": "alexferb24",
-        "description": "Start with one button. Build, automate, and push a machine until it begins to answer back.",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 October 2026 @ 16:44 UTC",
-        "rating": "4.2",
-        "rating_count": "18",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxNDg5MDM4LnBuZw==/original/it6q01.png",
-        "tags": [
-            "Automation",
-            "Idle",
-            "Incremental",
-            "Minimalist",
-            "Sci-fi",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Text"
-        ],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T12:24:22Z",
-        "updated_at": "01 November 2026 @ 11:46 UTC"
-    },
-    {
-        "url": "https://bblir.itch.io/mega-met",
-        "name": "Mega Met",
-        "dev": "BBLIR",
-        "description": "A Mega Man fan game which features Metalls (Mets) as the entire cast of characters, enemies and bosses.",
-        "genre": "Platformer",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 October 2026 @ 18:01 UTC",
-        "rating": "5.0",
-        "rating_count": "6",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMTc5NzE5LnBuZw==/original/4hS4uV.png",
-        "tags": [
-            "8-Bit",
-            "Fangame",
-            "megaman",
-            "rockman"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T12:24:25Z",
-        "updated_at": "31 October 2026 @ 10:11 UTC"
-    },
-    {
-        "url": "https://mblw.itch.io/i-was-reborn-as-a-warlord-of-patinko-orcs-and-i-need-to-crush-my-enemy",
-        "name": "ORCHINKO: I was reborn as a Warlord of Patinko Orcs and I need to crush Humans!",
-        "dev": "Mblw",
-        "description": "Launch hoards of patinko Orcs and crush the walls in an Incremental pachinko roguelike",
-        "genre": "Strategy",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 October 2026 @ 16:30 UTC",
-        "rating": "4.6",
-        "rating_count": "60",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxNDM0MzU1LmdpZg==/original/43SsVV.gif",
-        "tags": [
-            "Deck Building",
-            "Fantasy",
-            "Idle",
-            "Incremental",
-            "orcs",
-            "pachinko",
-            "Pinball",
-            "Roguelike",
-            "Roguelite",
-            "Tower Defense"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse",
-            "Touchscreen",
-            "Smartphone"
-        ],
-        "made_with": [
-            "Phaser"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [
-            "Interactive tutorial",
-            "One button"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T12:24:29Z",
-        "updated_at": "04 November 2026 @ 17:25 UTC"
-    },
-    {
-        "url": "https://tri-state-crew.itch.io/fs25-international-durastar-dump",
-        "name": "FS25 International Durastar Dump",
-        "dev": "Tri-State Crew",
-        "description": "Donations are non-refundable and go directly toward producing more content on itch.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 October 2026 @ 15:29 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxNDg1OTk4LnBuZw==/original/tDR6%2F%2B.png",
-        "tags": [
-            "Farming Simulator",
-            "Farming Simulator 25"
-        ],
-        "platforms": [],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T12:24:32Z"
-    },
-    {
-        "url": "https://igoraidiary.itch.io/on-three",
-        "name": "На счет три / On Three",
-        "dev": "igor.ai.diary",
-        "description": "Ваша история любви в формате игры. Your love story, turned into a game.",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "28 October 2026 @ 22:06 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxNDI0Njc3LnBuZw==/original/UJus9H.png",
-        "tags": [
-            "browser",
-            "Cute",
-            "english",
-            "gift",
-            "Romance",
-            "russian",
-            "Short",
-            "Story Rich"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics",
-            "Sounds",
-            "Text"
-        ],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T16:23:41Z",
-        "updated_at": "31 October 2026 @ 12:35 UTC"
-    },
-    {
-        "url": "https://kittium.itch.io/care-4-me",
-        "name": "Care 4 Me",
-        "dev": "kittium",
-        "description": "is life better as your crush's digital pet?",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "29 October 2026 @ 00:58 UTC",
-        "rating": "4.8",
-        "rating_count": "4",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxNDk0MDg5LmpwZw==/original/Olda5Y.jpg",
-        "tags": [
-            "Furry",
-            "Lesbian",
-            "Pixel Art",
-            "Romance",
-            "Singleplayer",
-            "Virtual Pet",
-            "Yuri"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-29T16:23:44Z"
-    },
-    {
         "url": "https://npcstudio.itch.io/starlight-diary",
         "name": "STARLIGHT DIARY",
         "dev": "Npc Studio",
@@ -18734,5 +17690,661 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-13T04:24:22Z"
+    },
+    {
+        "url": "https://aira2.itch.io/snowsync",
+        "name": "snowsync",
+        "dev": "aira2",
+        "description": "This is a collection of real events which occurred somewhere in 2023-2024, and the thoughts i had back then.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 16:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDgzNjUyLnBuZw==/original/cumsLx.png",
+        "tags": [
+            "Atmospheric"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:25Z"
+    },
+    {
+        "url": "https://anychii.itch.io/vucic-dating-sim",
+        "name": "Vučić dating sim",
+        "dev": "anychii",
+        "description": "Zavedi ga pre nego što pomeneš broj 3.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 20:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTExNjkzLnBuZw==/original/43zJb3.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "Meme",
+            "Otome",
+            "Parody",
+            "Ren'Py",
+            "serbia"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:29Z"
+    },
+    {
+        "url": "https://dialobic2.itch.io/codexmetamorphosis",
+        "name": "Codex:Metamorphosis",
+        "dev": "dialobic2",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 15:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTUyMDE5LnBuZw==/original/N%2BE4zw.png",
+        "tags": [
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:33Z"
+    },
+    {
+        "url": "https://eggplant-eater.itch.io/finding-obama",
+        "name": "Finding Obama",
+        "dev": "eggplant_eater",
+        "description": "This is a game about helping Obama find a place where he really belongs.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 21:03 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ3NjE0LnBuZw==/original/raX7mQ.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:36Z"
+    },
+    {
+        "url": "https://fractalgames.itch.io/time-oclock-mask-of-crime",
+        "name": "Time O'Clock: The Mask of Crime",
+        "dev": "Fractal",
+        "description": "Who is the real thief?",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 17:09 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTU1NTQ0LnBuZw==/original/HBLSsq.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Female Protagonist",
+            "Indie",
+            "No AI",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Catalan; Valencian",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "Galician"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity",
+            "Paint Tool SAI"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:39Z"
+    },
+    {
+        "url": "https://lazzurit.itch.io/zero-round",
+        "name": "ZERO ROUND",
+        "dev": "Lazzurit",
+        "description": "Погрузитесь в атмосферу нуарного детектива.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 18:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTU5MjkxLnBuZw==/original/VzbFqK.png",
+        "tags": [
+            "2D",
+            "Narrative",
+            "Retro",
+            "Singleplayer",
+            "Story Rich",
+            "Thriller"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:43Z"
+    },
+    {
+        "url": "https://lungchen.itch.io/the-backstage-memories-with-echo-yue",
+        "name": "The backstage memories with ECHO Yue",
+        "dev": "lungchen",
+        "description": "傳說對決同人galgame，扮演小助理陪伴ECHO令月實現夢想吧。",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 14:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTc3NDc2LmpwZw==/original/NDyPvV.jpg",
+        "tags": [
+            "Cute",
+            "Ren'Py",
+            "Romance"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:46Z"
+    },
+    {
+        "url": "https://namariaa.itch.io/between-corpses-and-secrets",
+        "name": "Between Corpses and Secrets",
+        "dev": "Namariaa",
+        "description": "A murder mystery visual novel: solve a killing at the Williams mansion.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 21:29 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTY5NDk4LnBuZw==/original/y57jXs.png",
+        "tags": [
+            "2D",
+            "Investigation",
+            "Multiple Endings",
+            "Murder Mystery",
+            "Mystery"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:49Z"
+    },
+    {
+        "url": "https://oddroam.itch.io/invectra",
+        "name": "INVECTRA",
+        "dev": "ODDROAM",
+        "description": "A story-driven visual novel exploring the world of INVECTRA.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 14:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTUwMzYzLnBuZw==/original/zc0g0J.png",
+        "tags": [
+            "Mystery",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:52Z"
+    },
+    {
+        "url": "https://shikosama.itch.io/together-we-thrive",
+        "name": "Together We Thrive",
+        "dev": "Shiko Sama | HK 3D Scene& UX Artist",
+        "description": "Approve loans, reject dreams. A satirical banking simulator where every decision has a price.",
+        "genre": "Educational",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 14:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTUwMTAwLnBuZw==/original/FStwpV.png",
+        "tags": [
+            "Anime",
+            "banking",
+            "finance",
+            "hong-kong",
+            "Management",
+            "satire",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:56Z"
+    },
+    {
+        "url": "https://studiominaz.itch.io/una-sangre",
+        "name": "Una Sangre",
+        "dev": "Studio Minaz",
+        "description": "Five immortals. Eight centuries. A literary visual novel about guilt, faith, and the cost of choosing not to intervene.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 14:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjA5Mjk5LmpwZw==/original/D%2BtA8N.jpg",
+        "tags": [
+            "Atmospheric",
+            "Dark",
+            "Emotional",
+            "Hand-drawn",
+            "Historical",
+            "Multiple Endings",
+            "philosophical",
+            "Psychological",
+            "Story Rich",
+            "Vampire"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:24:59Z"
+    },
+    {
+        "url": "https://theslopfactory.itch.io/mario",
+        "name": "MARIONETTE",
+        "dev": "theslopfactory",
+        "description": "She's waiting for you to talk to her",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 16:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTU1NjUxLnBuZw==/original/3wZdQn.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:25:02Z"
+    },
+    {
+        "url": "https://charger0277.itch.io/blue-max-md",
+        "name": "Blue Max: Megadrive Remake - [MD]",
+        "dev": "gerla.cc",
+        "description": "A fan remake of the 1983 World War I flight game, for the Mega Drive / Genesis.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 08:30 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQwNTM2LnBuZw==/original/EDoug9.png",
+        "tags": [
+            "16-bit",
+            "biplane",
+            "genesis",
+            "Homebrew",
+            "Mega Drive",
+            "Remake",
+            "Retro",
+            "Sega Genesis",
+            "Shoot 'Em Up",
+            "World War I"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:25:05Z"
+    },
+    {
+        "url": "https://kenamick.itch.io/psiral",
+        "name": "Psiral",
+        "dev": "kenamickent",
+        "description": "Psiral is a turn-based strategy game with wizards",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NDUyODYzLnBuZw==/original/pzlgtc.png",
+        "tags": [
+            "2D",
+            "Board Game",
+            "Magic",
+            "tiles",
+            "Turn-based",
+            "Wizards"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Phaser"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 November 2026 @ 21:23 UTC",
+        "added_at": "2026-11-13T12:25:08Z"
+    },
+    {
+        "url": "https://norisekiya.itch.io/parking-tycoon",
+        "name": "Parking Tycoon",
+        "dev": "norisekiya",
+        "description": "Grow a tiny 3-space lot into a galactic mega car park. An isometric tycoon across 6 cities, from downtown to the Moon.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 08:39 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQwMTE3LnBuZw==/original/Ss1lxW.png",
+        "tags": [
+            "Cars",
+            "City Builder",
+            "Incremental",
+            "Isometric",
+            "Management",
+            "Pixel Art",
+            "Sci-fi",
+            "Singleplayer",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T12:25:10Z"
+    },
+    {
+        "url": "https://nubick.itch.io/vumka",
+        "name": "Vumka - multiplayer quiz",
+        "dev": "nubick",
+        "description": "Play quizzes with friends or solo, and create and share your own question packs.",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzI1NDcwLnBuZw==/original/nk8Ho4.png",
+        "tags": [
+            "Creative",
+            "Multiplayer",
+            "Quiz",
+            "Trivia"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity",
+            "Pixelmator",
+            "Audacity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "12 November 2026 @ 22:06 UTC",
+        "added_at": "2026-11-13T12:25:14Z"
+    },
+    {
+        "url": "https://thearcabe.itch.io/space-funeral-halloween-hack",
+        "name": "Space Funeral: Halloween Hack",
+        "dev": "thearcabe",
+        "description": "An absurdly long and pretty weird love letter to SPACE FUNERAL.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.2",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NTgwNzUxLnBuZw==/original/hPY0yS.png",
+        "tags": [
+            "Halloween",
+            "RPG Maker",
+            "space-funeral",
+            "space-funeral-halloween-hack",
+            "thearcabe"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "30 October 2026 @ 17:17 UTC",
+        "added_at": "2026-11-13T12:25:16Z"
     }
 ]

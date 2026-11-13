@@ -1,150 +1,5 @@
 [
     {
-        "url": "https://red-rabbit-games.itch.io/bonniegameletsgo",
-        "name": "Five Nights at Bonnies Remastered",
-        "dev": "Red Rabbit Games",
-        "description": "Five Nights at Bonnie's Remastered is a game that was previously worked on and cancelled by GhostGamesX but I decided to dig it out of the trash, and complete it.",
-        "genre": "Strategy",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "8",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIxMzc4MjEzLnBuZw==/original/vmPMQx.png",
-        "tags": [
-            "Fangame",
-            "fivenightsatbonnies",
-            "fivenightsatbonniesremastered",
-            "fnabr",
-            "Five Nights at Freddy's",
-            "Horror",
-            "Point & Click"
-        ],
-        "platforms": [
-            "Windows",
-            "Android"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://toothandclaw.itch.io/our-lady-of-sorrow",
-        "name": "Our Lady of Sorrow",
-        "dev": "ToothandClaw",
-        "description": "A Short Found Footage Horror Game set in an Old Abbey in Ireland.",
-        "genre": "Adventure",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.3",
-        "rating_count": "207",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzg2ODkwNDAuZ2lm/original/OPwQLu.gif",
-        "tags": [
-            "Atmospheric",
-            "First-Person",
-            "foundfootage",
-            "Horror",
-            "Scary"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://hauntedps1.itch.io/eek3-2020-virtual-showfloor",
-        "name": "EEK3 2020 Virtual Show Floor",
-        "dev": "The Haunted PS1",
-        "description": "A virtual tour of EEK3!",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "88",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzM3MTIyOTEucG5n/original/MvzxW3.png",
-        "tags": [
-            "eek3",
-            "Horror",
-            "Low-poly",
-            "PSX (PlayStation)",
-            "Retro"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://c2phos.itch.io/sweet-dreams",
-        "name": "Sweet Dreams",
-        "dev": "C2PHOS",
-        "description": "You struggle to stay awake on the train...",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "419",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzExOTA5MjQ3LnBuZw==/original/6aROcW.png",
-        "tags": [
-            "Atmospheric",
-            "Creepy",
-            "Dark",
-            "Horror",
-            "Psychological Horror",
-            "Ren'Py",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "16 September 2026 @ 13:14 UTC",
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://lucid-a96.itch.io/historia-act-1-doug",
         "name": "Historia Chapter 1 - Doug",
         "dev": "Lucid A96",
@@ -19887,6 +19742,278 @@
         "ai_content": [
             "Code"
         ],
+        "accessibility": []
+    },
+    {
+        "url": "https://steveomatic.itch.io/cafe-confessions",
+        "name": "Café Confessions",
+        "dev": "Steveomatic",
+        "description": "Every customer is carrying something. Today's special is listening.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "2.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MzAxNTMwLnBuZw==/original/aD1zSU.png",
+        "tags": [
+            "anthology",
+            "browser-game",
+            "Casual",
+            "Cozy",
+            "emotional",
+            "Narrative",
+            "Relaxing",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://limerentheart.itch.io/unwritten",
+        "name": "UNWRITTEN",
+        "dev": "Limerent Heart",
+        "description": "Every story starts unwritten. The quill is yours.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4NjIyMjQxLnBuZw==/original/Sa1iIK.png",
+        "tags": [
+            "Amare",
+            "Fantasy",
+            "Female Protagonist",
+            "Indie",
+            "LGBT",
+            "Otome",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 October 2026 @ 08:34 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://finslay3.itch.io/sapphire-cage-half-demo",
+        "name": "Ꞩⱥꝑꝑħīɍē Ȼⱥꞡē (DISCONTINUED)",
+        "dev": "~Eyeless",
+        "description": "Stalker, Yandere",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MjgzMDU5LmdpZg==/original/E%2BxU8N.gif",
+        "tags": [
+            "obsession",
+            "Psychological Horror",
+            "stalker",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "26 September 2026 @ 08:02 UTC",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://usagisake.itch.io/locked-in",
+        "name": "Locked In",
+        "dev": "usagisake",
+        "description": "You've been kidnapped and you can't move. Talk with your captor.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4Mjc4OTYxLnBuZw==/original/y8K0H7.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Cute",
+            "Horror",
+            "Indie",
+            "No AI",
+            "Psychological Horror",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": []
+    },
+    {
+        "url": "https://jing-ouie.itch.io/taiken-sara-web",
+        "name": "サーラと精霊の神殿 Web体験版",
+        "dev": "JING（ジン）",
+        "description": "妖精が見える少女と、精霊をめぐる旅のはじまり。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MjgwMTczLnBuZw==/original/wZJRZ0.png",
+        "tags": [
+            "Anime",
+            "demo",
+            "Fantasy",
+            "Female Protagonist",
+            "Kinetic Novel",
+            "Ren'Py",
+            "Singleplayer",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://grey-sectordev.itch.io/mushoku-tensei-cliff-story-gs-dev",
+        "name": "Mushoku Tensei: Cliff Story",
+        "dev": "Grey Sector.Dev",
+        "description": "A dramatic fanmade RPG about Cliff [ENG/RU/pt-BR]",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNjczNjQ2LnBuZw==/original/tw%2B1iF.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Dark Fantasy",
+            "Fantasy",
+            "RPG Maker",
+            "russian",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "08 October 2026 @ 23:10 UTC",
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": []
+    },
+    {
+        "url": "https://zbbxooo.itch.io/demo",
+        "name": "Demo",
+        "dev": "zbbxooo",
+        "description": "欢迎！ / Welcome ! 这是一个很短很短的小游戏。如果你只是想要正常通关的话， 直接在这个网页页面内就可以做到啦！ 当然，如果你愿意的话，完全可以下载一份 Windows 版本到电脑上本地游玩 (oﾟvﾟ)ノ 我们会非常高兴！ 游戏普通的流程很短，如果不打算为难自己的话，可以在 10 分钟内速通 哦 (:з)∠) [EN] This is a very, very short...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI4MjU4Njc1LnBuZw==/original/SzpVFM.png",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Dice",
+            "Female Protagonist",
+            "Godot",
+            "Relaxing",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Chinese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "ai_disclosure": "N/A",
+        "ai_content": [],
         "accessibility": []
     }
 ]
