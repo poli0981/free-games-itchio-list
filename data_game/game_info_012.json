@@ -18625,5 +18625,114 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-13T00:24:00Z"
+    },
+    {
+        "url": "https://blake-gocey.itch.io/birds-are-not-real",
+        "name": "Birds Are Not Real",
+        "dev": "Blake Gocey",
+        "description": "Birds aren’t real. Build them. A conspiracy clicker where you mass-produce robot pigeons to spy on the world.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 02:53 UTC",
+        "rating": "4.8",
+        "rating_count": "12",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTMwOTIxLnBuZw==/original/Y39pMr.png",
+        "tags": [
+            "birds",
+            "cartoony",
+            "Casual",
+            "Clicker",
+            "conspiracy",
+            "Funny",
+            "Idle",
+            "Incremental",
+            "Robots",
+            "satire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T04:24:17Z"
+    },
+    {
+        "url": "https://lidoli.itch.io/goat-climb",
+        "name": "Goat Climb",
+        "dev": "LIDO",
+        "description": "Climb a near-vertical cliff as a mountain goat. Footholds are one hoof wide.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 11:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ0NDk2LnBuZw==/original/uPoxLs.png",
+        "tags": [
+            "climbing",
+            "goat",
+            "Mountains"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T04:24:19Z"
+    },
+    {
+        "url": "https://noanoa.itch.io/echo-noein-battlefront",
+        "name": "ECHO NOEIN: 残響戦線",
+        "dev": "noanoa",
+        "description": "Run gameをクリックするとゲームが始まります。 くっぴーが3時間ぐらいで作ってしまったローグライトゲーム。 （趣味・AI開発の勉強で作ったゲームです。アセットは、趣味で作っている別のゲームから流用しています） A roguelite game that Kuppy (Claude AI) made in just about three hours.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 13:00 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ1MDUzLnBuZw==/original/UN76eL.png",
+        "tags": [
+            "AI Assisted",
+            "Roguelite"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-13T04:24:22Z"
     }
 ]
