@@ -1,146 +1,5 @@
 [
     {
-        "url": "https://ossuario.itch.io/my-own-sweet-dionaea",
-        "name": "My Own Sweet Dionaea",
-        "dev": "Ossuario",
-        "description": "Created a plant hybrid and he may want to kiss or eat you.",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "159",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzIzMzgzNTY0LmpwZw==/original/5Bsz%2Fm.jpg",
-        "tags": [
-            "Amare",
-            "body-horror",
-            "Dystopian",
-            "Gothic",
-            "Horror",
-            "Otome",
-            "Psychological Horror",
-            "Romance",
-            "Sci-fi",
-            "Yandere"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "01 October 2026 @ 14:06 UTC",
-        "added_at": "2026-10-03T04:17:58Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [
-            "Subtitles",
-            "High-contrast",
-            "One button"
-        ]
-    },
-    {
-        "url": "https://juba13.itch.io/idle-anglersv1",
-        "name": "Idle Anglers",
-        "dev": "Juba",
-        "description": "A small lake, a grandfather's nets, and a global fishing empire waiting to be built — one click at a time.",
-        "genre": "Simulation",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "04 September 2026 @ 00:55 UTC",
-        "rating": "2.0",
-        "rating_count": "5",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5NzUxMzA4LmpwZWc=/original/zD4zle.jpeg",
-        "tags": [
-            "2D",
-            "Casual",
-            "Clicker",
-            "Fishing",
-            "Idle",
-            "Incremental",
-            "Management",
-            "Pixel Art",
-            "Story Rich"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Mouse"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "07 November 2026 @ 07:21 UTC",
-        "added_at": "2026-10-03T04:18:01Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics"
-        ],
-        "accessibility": [
-            "One button"
-        ]
-    },
-    {
-        "url": "https://ikarusangel.itch.io/time-bound",
-        "name": "Time Bound",
-        "dev": "Ikarus",
-        "description": "Stuck in a time loop with a yandere",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "01 October 2026 @ 10:19 UTC",
-        "rating": "4.9",
-        "rating_count": "29",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwNTIyMzc2LnBuZw==/original/CuQk56.png",
-        "tags": [
-            "Horror",
-            "Psychological Horror",
-            "Romance",
-            "Time Travel",
-            "Yandere"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-03T04:18:04Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "updated_at": "05 November 2026 @ 19:05 UTC"
-    },
-    {
         "url": "https://zilluzion.itch.io/enter-sempiternity",
         "name": "Enter Sempiternity",
         "dev": "zilluzion, Patty",
@@ -20500,5 +20359,165 @@
         "notes": "",
         "added_at": "2026-10-23T04:24:31Z",
         "updated_at": "30 October 2026 @ 14:23 UTC"
+    },
+    {
+        "url": "https://leekexe.itch.io/sound-of-what",
+        "name": "VisualNovelGameYipppeeeeee",
+        "dev": "leek.exe",
+        "description": "A short visual novel with sound mixing mechanics!",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 04:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MTk0NDIwLnBuZw==/original/PvGHrW.png",
+        "tags": [
+            "2D",
+            "Indie",
+            "Pixel Art",
+            "Queer",
+            "Short",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:33Z"
+    },
+    {
+        "url": "https://miss-signal-guy.itch.io/waiting-for-the-bus",
+        "name": "Waiting for the Bus",
+        "dev": "Miss_Signal_Guy!",
+        "description": "Bus station",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "21 October 2026 @ 19:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTc5NTA3LmpwZw==/original/ebVAJ%2F.jpg",
+        "tags": [
+            "Horror",
+            "horror-game",
+            "Pixel Art",
+            "RPG Maker",
+            "RPG Maker MV",
+            "sad-story",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:36Z"
+    },
+    {
+        "url": "https://needy-aoi.itch.io/doki-doki-second-draft",
+        "name": "Doki Doki Second Draft",
+        "dev": "Aoi",
+        "description": "Same club. Kinder story. A wholesome, full-length DDLC fan mod.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 07:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk4NTUwLnBuZw==/original/rMmHCB.png",
+        "tags": [
+            "Anime",
+            "Cute",
+            "Dating Sim",
+            "ddlc",
+            "doki-doki-literature-club",
+            "Fangame",
+            "Ren'Py",
+            "Romance",
+            "Slice Of Life",
+            "Wholesome"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:40Z"
+    },
+    {
+        "url": "https://o-yu.itch.io/simons-play-house",
+        "name": "Simon's play house/賽蒙的家家酒",
+        "dev": "O-Yu",
+        "description": "Survival in a deadly house play. Is the end of this game destruction, or salvation for a twisted soul?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 October 2026 @ 02:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk5MzY3LmpwZw==/original/mjPGTE.jpg",
+        "tags": [
+            "Anime",
+            "demo",
+            "family-love",
+            "Fangame",
+            "Horror",
+            "human-experimentation",
+            "Mystery",
+            "Psychological Horror",
+            "simon-says"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-23T04:24:43Z"
     }
 ]

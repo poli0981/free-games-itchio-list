@@ -1,165 +1,5 @@
 [
     {
-        "url": "https://leekexe.itch.io/sound-of-what",
-        "name": "VisualNovelGameYipppeeeeee",
-        "dev": "leek.exe",
-        "description": "A short visual novel with sound mixing mechanics!",
-        "genre": "Visual Novel",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "22 October 2026 @ 04:17 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI2MTk0NDIwLnBuZw==/original/PvGHrW.png",
-        "tags": [
-            "2D",
-            "Indie",
-            "Pixel Art",
-            "Queer",
-            "Short",
-            "Singleplayer",
-            "Unity"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-23T04:24:33Z"
-    },
-    {
-        "url": "https://miss-signal-guy.itch.io/waiting-for-the-bus",
-        "name": "Waiting for the Bus",
-        "dev": "Miss_Signal_Guy!",
-        "description": "Bus station",
-        "genre": "Role Playing",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "21 October 2026 @ 19:50 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxMTc5NTA3LmpwZw==/original/ebVAJ%2F.jpg",
-        "tags": [
-            "Horror",
-            "horror-game",
-            "Pixel Art",
-            "RPG Maker",
-            "RPG Maker MV",
-            "sad-story",
-            "Short"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-23T04:24:36Z"
-    },
-    {
-        "url": "https://needy-aoi.itch.io/doki-doki-second-draft",
-        "name": "Doki Doki Second Draft",
-        "dev": "Aoi",
-        "description": "Same club. Kinder story. A wholesome, full-length DDLC fan mod.",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "22 October 2026 @ 07:15 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk4NTUwLnBuZw==/original/rMmHCB.png",
-        "tags": [
-            "Anime",
-            "Cute",
-            "Dating Sim",
-            "ddlc",
-            "doki-doki-literature-club",
-            "Fangame",
-            "Ren'Py",
-            "Romance",
-            "Slice Of Life",
-            "Wholesome"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-23T04:24:40Z"
-    },
-    {
-        "url": "https://o-yu.itch.io/simons-play-house",
-        "name": "Simon's play house/賽蒙的家家酒",
-        "dev": "O-Yu",
-        "description": "Survival in a deadly house play. Is the end of this game destruction, or salvation for a twisted soul?",
-        "genre": "Visual Novel",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "22 October 2026 @ 02:07 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk5MzY3LmpwZw==/original/mjPGTE.jpg",
-        "tags": [
-            "Anime",
-            "demo",
-            "family-love",
-            "Fangame",
-            "Horror",
-            "human-experimentation",
-            "Mystery",
-            "Psychological Horror",
-            "simon-says"
-        ],
-        "platforms": [
-            "HTML5",
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics"
-        ],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-23T04:24:43Z"
-    },
-    {
         "url": "https://quingi.itch.io/anamnesis",
         "name": "Anamnesis",
         "dev": "QuinGi",
@@ -17154,5 +16994,166 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-26T16:35:11Z"
+    },
+    {
+        "url": "https://winkingcorvid.itch.io/love-limit",
+        "name": "Love Limit",
+        "dev": "Winking Corvid",
+        "description": "Your blind date invades Earth!?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "417",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI0NDY0Mzg0LnBuZw==/original/jm8bY2.png",
+        "tags": [
+            "Comedy",
+            "Dating Sim",
+            "josei",
+            "Multiple Endings",
+            "Otome",
+            "Ren'Py",
+            "Romance",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T16:35:15Z"
+    },
+    {
+        "url": "https://slitherbop.itch.io/paper-angel",
+        "name": "PAPER ANGEL",
+        "dev": "Slitherbop",
+        "description": "HOW ARE YOU FEELING?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "137",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEwOTAwNDQzLnBuZw==/original/FNWQpx.png",
+        "tags": [
+            "Atmospheric",
+            "First-Person",
+            "RPG Maker",
+            "Short",
+            "Singleplayer",
+            "soup",
+            "Surreal",
+            "winter"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T16:35:18Z"
+    },
+    {
+        "url": "https://aedonys-the-great.itch.io/lake-placid",
+        "name": "Lake Placid",
+        "dev": "aedonys_the_great",
+        "description": "A cozy fishing game. Catch 52 species, meet the locals, and discover what glimmers beneath the lake.",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 08:35 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzM4MzM4LnBuZw==/original/fMpuSR.png",
+        "tags": [
+            "Atmospheric",
+            "Cozy",
+            "Exploration",
+            "Fishing",
+            "Pixel Art",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-26T20:23:49Z",
+        "updated_at": "01 November 2026 @ 08:17 UTC"
+    },
+    {
+        "url": "https://ryanyul.itch.io/raise-your-ai",
+        "name": "Raise Your AI",
+        "dev": "ryanyul",
+        "description": "Upgrade one dusty old PC into the world's strongest AI — an idle game in about an hour.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "25 October 2026 @ 15:32 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMzQ1ODQ5LnBuZw==/original/IxGS8E.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "26 October 2026 @ 16:47 UTC",
+        "added_at": "2026-10-26T20:23:53Z"
     }
 ]

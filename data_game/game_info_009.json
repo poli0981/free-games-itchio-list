@@ -1,166 +1,5 @@
 [
     {
-        "url": "https://winkingcorvid.itch.io/love-limit",
-        "name": "Love Limit",
-        "dev": "Winking Corvid",
-        "description": "Your blind date invades Earth!?",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.9",
-        "rating_count": "417",
-        "average_session": "A few hours",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI0NDY0Mzg0LnBuZw==/original/jm8bY2.png",
-        "tags": [
-            "Comedy",
-            "Dating Sim",
-            "josei",
-            "Multiple Endings",
-            "Otome",
-            "Ren'Py",
-            "Romance",
-            "Sci-fi"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse"
-        ],
-        "made_with": [
-            "Ren'Py"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-26T16:35:15Z"
-    },
-    {
-        "url": "https://slitherbop.itch.io/paper-angel",
-        "name": "PAPER ANGEL",
-        "dev": "Slitherbop",
-        "description": "HOW ARE YOU FEELING?",
-        "genre": "Visual Novel",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "4.8",
-        "rating_count": "137",
-        "average_session": "A few minutes",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzEwOTAwNDQzLnBuZw==/original/FNWQpx.png",
-        "tags": [
-            "Atmospheric",
-            "First-Person",
-            "RPG Maker",
-            "Short",
-            "Singleplayer",
-            "soup",
-            "Surreal",
-            "winter"
-        ],
-        "platforms": [
-            "Windows"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [],
-        "made_with": [
-            "RPG Maker"
-        ],
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-26T16:35:18Z"
-    },
-    {
-        "url": "https://aedonys-the-great.itch.io/lake-placid",
-        "name": "Lake Placid",
-        "dev": "aedonys_the_great",
-        "description": "A cozy fishing game. Catch 52 species, meet the locals, and discover what glimmers beneath the lake.",
-        "genre": "Adventure",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "26 October 2026 @ 08:35 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxMzM4MzM4LnBuZw==/original/fMpuSR.png",
-        "tags": [
-            "Atmospheric",
-            "Cozy",
-            "Exploration",
-            "Fishing",
-            "Pixel Art",
-            "Relaxing"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Godot"
-        ],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Code",
-            "Graphics"
-        ],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-10-26T20:23:49Z",
-        "updated_at": "01 November 2026 @ 08:17 UTC"
-    },
-    {
-        "url": "https://ryanyul.itch.io/raise-your-ai",
-        "name": "Raise Your AI",
-        "dev": "ryanyul",
-        "description": "Upgrade one dusty old PC into the world's strongest AI — an idle game in about an hour.",
-        "genre": "N/A",
-        "status": "Released",
-        "publisher": "N/A",
-        "release_date": "25 October 2026 @ 15:32 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMxMzQ1ODQ5LnBuZw==/original/IxGS8E.png",
-        "tags": [
-            "Clicker",
-            "Idle",
-            "Incremental"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [],
-        "accessibility": [],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "26 October 2026 @ 16:47 UTC",
-        "added_at": "2026-10-26T20:23:53Z"
-    },
-    {
         "url": "https://coffeetron.itch.io/pumpkin-carver",
         "name": "Pumpkin Carver",
         "dev": "coffeetron",
@@ -18232,5 +18071,131 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-10-27T08:33:16Z"
+    },
+    {
+        "url": "https://gordyh.itch.io/temple-of-the-3-wolf-moon",
+        "name": "Temple Of The 3 Wolf Moon",
+        "dev": "Gordy Higgins",
+        "description": "A druidic temple of healing has been overrun by lycans, in this OPD for Cairn",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1MjI1NTYzLnBuZw==/original/LvHnc%2F.png",
+        "tags": [
+            "cairn",
+            "One-page",
+            "One-shot",
+            "OSR",
+            "Tabletop role-playing game"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T08:33:19Z"
+    },
+    {
+        "url": "https://catshavenolord.itch.io/door-hoard",
+        "name": "Door Hoard of the Door Lords",
+        "dev": "Cats Have No Lord",
+        "description": "A Door-Filled Funhouse Dungeon",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1MTk2Mzc4LnBuZw==/original/2yjEHN.png",
+        "tags": [
+            "cairn",
+            "dungeon",
+            "OSR",
+            "Tabletop role-playing game"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T08:33:22Z"
+    },
+    {
+        "url": "https://junkyardtornado.itch.io/mud-readers-deep",
+        "name": "Mud Reader's Deep (Cairn)",
+        "dev": "JunkyardTornado",
+        "description": "one-page rules agnostic dungeon adventure about going into a cave in order to get a fortune read.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1MTI0ODg0LnBuZw==/original/9BpWUJ.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T08:33:25Z"
+    },
+    {
+        "url": "https://chrisair.itch.io/face-of-hgradal-jaquays-memorial",
+        "name": "Face of Hgradal",
+        "dev": "ChrisAir",
+        "description": "A 10 room dungeon for Cairn 2e, in honor of Jennell Jacquays.",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE2NTk4NzM2LnBuZw==/original/M3hocF.png",
+        "tags": [
+            "cairn",
+            "Fantasy",
+            "into-the-odd",
+            "nsr",
+            "OSR",
+            "pen-and-paper",
+            "rules-lite",
+            "Tabletop",
+            "Tabletop role-playing game"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-10-27T08:33:28Z",
+        "updated_at": "03 November 2026 @ 05:40 UTC"
     }
 ]

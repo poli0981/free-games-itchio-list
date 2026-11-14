@@ -1,0 +1,473 @@
+[
+    {
+        "url": "https://inzuri.itch.io/conga-hell",
+        "name": "Conga Hell",
+        "dev": "inzuri",
+        "description": "Conga your way straight to hell and make some friends along the way.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 16:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTY4MDQwLmpwZw==/original/mX%2FHXJ.jpg",
+        "tags": [],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Aseprite"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "Configurable controls"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:25Z"
+    },
+    {
+        "url": "https://jessica-joyce-fisher.itch.io/time-for-a-cuppa",
+        "name": "Time For A Cuppa?",
+        "dev": "Jessica_Joyce-Fisher",
+        "description": "If you make the wrong decisions, you most certainly won't have time for a cup of tea...",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 08:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxOTAwNTQwLnBuZw==/original/BUiDpT.png",
+        "tags": [
+            "FMV",
+            "Game Design",
+            "Horror",
+            "Meaningful Choices",
+            "Narrative",
+            "Prototype",
+            "Psychological Horror",
+            "storygame",
+            "video"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:28Z"
+    },
+    {
+        "url": "https://kenzakustudiogame.itch.io/21-hearts",
+        "name": "21 Hearts · 21 แต้มเดิมพันใจ",
+        "dev": "kenzakustudiogame",
+        "description": "ดวลไพ่กับสาวทั้งหก แล้วเลือกคำตอบ",
+        "genre": "Card Game",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 09:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTkxNTI5LnBuZw==/original/JnL9q1.png",
+        "tags": [
+            "2D",
+            "blackjack",
+            "Dating Sim",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:31Z"
+    },
+    {
+        "url": "https://kkairos.itch.io/what-happens-to-nelly-bryce",
+        "name": "What Happens to Nelly Bryce",
+        "dev": "kkairos",
+        "description": "It's your old college pal, Nelly. What does she want?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 07:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwNzE3MjMyLnBuZw==/original/vuN24T.png",
+        "tags": [
+            "Fairy Tale",
+            "Hand-drawn",
+            "paranormal",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:34Z"
+    },
+    {
+        "url": "https://marigoldpetals.itch.io/the-other-end",
+        "name": "The Other End [Chapter 1]",
+        "dev": "MarigoldPetals",
+        "description": "You never really know who’s on the other end.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 11:37 UTC",
+        "rating": "5.0",
+        "rating_count": "15",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjI2NTg5LnBuZw==/original/dLPYY8.png",
+        "tags": [
+            "Dark",
+            "Dating Sim",
+            "Female Protagonist",
+            "Horror",
+            "Otome",
+            "Psychological Horror",
+            "Ren'Py",
+            "Romance",
+            "Story Rich",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:38Z"
+    },
+    {
+        "url": "https://rurumachin.itch.io/white-knight-syndrome",
+        "name": "White Knight Syndrome",
+        "dev": "RuruMachin",
+        "description": "final projectですわ",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 09:05 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTg5NzMxLnBuZw==/original/rsjW9v.png",
+        "tags": [
+            "Cute",
+            "Female Protagonist",
+            "Horror",
+            "Indie",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Romance",
+            "Violent",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:42Z"
+    },
+    {
+        "url": "https://starwanderer7.itch.io/future-memory-origin",
+        "name": "Future Memory Origin",
+        "dev": "starwanderer7",
+        "description": "fantasy knightcore",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 17:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDc2MDcyLmpwZw==/original/TzoEgz.jpg",
+        "tags": [
+            "Atmospheric",
+            "Fantasy",
+            "Female Protagonist",
+            "knightcore",
+            "Male protagonist",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:44Z"
+    },
+    {
+        "url": "https://zqxv666.itch.io/everyday-life",
+        "name": "Everyday Life",
+        "dev": "ZQXV666",
+        "description": "A new beginning awaits… pick your own choices in life….",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 14:42 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjAwNzMzLmpwZWc=/original/IZVf6O.jpeg",
+        "tags": [
+            "2D",
+            "Casual",
+            "Choices Matter",
+            "Life Simulation",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:46Z"
+    },
+    {
+        "url": "https://boiler700.itch.io/slay-the-goblinz",
+        "name": "Slay the GoblinZ!",
+        "dev": "Boiler700",
+        "description": "The Princess has been kidnapped! Play as a knight hired to rescue Her Highness in this short fantasy incremental game.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 15:12 UTC",
+        "rating": "4.4",
+        "rating_count": "5",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ4Nzk5LnBuZw==/original/LzVnr3.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Casual",
+            "Idle",
+            "Incremental",
+            "Indie",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:49Z"
+    },
+    {
+        "url": "https://gemesplayyt.itch.io/lolpeephone",
+        "name": "LOLPEEPHONE",
+        "dev": "aplex!",
+        "description": "escape lolpeephone https://www.donationalerts.com/r/gemes_play1 shitpost robloc oh also the windows build has an old build inside of it if your intersted",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 21:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE3OTY1LnBuZw==/original/qvl5Sa.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:53Z"
+    },
+    {
+        "url": "https://gemesplayyt.itch.io/shmurgendurgenburgendurgen",
+        "name": "Shmurgendurgenburgendurgen",
+        "dev": "aplex!",
+        "description": "oh no!! baldi got burgered im sorry but did he just say his last name is BURGER?",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 19:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjEyNDU4LnBuZw==/original/addfNX.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:24:56Z"
+    },
+    {
+        "url": "https://gemesplayyt.itch.io/welcome-to-indonesian-techtok-bradar",
+        "name": "WELCOME TO INDONESIAN TECHTOK BRADAR android port",
+        "dev": "aplex!",
+        "description": "original is https://gamebanana.com/mods/740030 yeah ok have fun with this port (man i sure DO hope nothing BAD happens! on a non playtested port) support me at...",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 20:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE1NDg4LnBuZw==/original/Rr%2BT2c.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:25:00Z"
+    },
+    {
+        "url": "https://lidoli.itch.io/shadow-kanji-simulator",
+        "name": "Shadow Kanji Simulator",
+        "dev": "LIDO",
+        "description": "Draw only the shadows — and watch the kanji appear.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 19:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjA4OTg1LnBuZw==/original/IDCeJj.png",
+        "tags": [
+            "Drawing",
+            "kanji"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T12:25:03Z"
+    }
+]
