@@ -18875,5 +18875,229 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-14T00:24:34Z"
+    },
+    {
+        "url": "https://abhimonk.itch.io/spectral-slash",
+        "name": "Spectral Slash",
+        "dev": "abhimonk",
+        "description": "Melee combat deckbuilder. Slash to gain energy, use energy to play cards.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "66",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzEyNjk3Mjk1LmdpZg==/original/vU2pUL.gif",
+        "tags": [
+            "1-bit",
+            "2D",
+            "Deck Building",
+            "LÖVE",
+            "melee",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite",
+            "Side Scroller"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "LÖVE"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T04:23:48Z"
+    },
+    {
+        "url": "https://fitnessvr.itch.io/city-run-vr",
+        "name": "City Run VR Ultimate: Free Indoor Running, Jogging & Cardio Fitness Workout",
+        "dev": "fitnessvr",
+        "description": "100% FREE! No treadmill required! VR indoor running, jogging & cardio fitness workout on Meta Quest 3/3S/2.",
+        "genre": "Sports",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjAwMTgyLnBuZw==/original/bOV5LG.png",
+        "tags": [
+            "cardio",
+            "fitness",
+            "jogging",
+            "meta-quest-3",
+            "No AI",
+            "running",
+            "running-simulator",
+            "treadmill",
+            "vr-fitness",
+            "workout"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "Spanish; Latin America",
+            "French",
+            "Italian",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Oculus Quest"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "High-contrast",
+            "One button",
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "13 November 2026 @ 15:10 UTC",
+        "added_at": "2026-11-14T04:23:52Z"
+    },
+    {
+        "url": "https://nicthethicc.itch.io/dungeon-janitor",
+        "name": "Dungeon Janitor",
+        "dev": "Nicholas (1/2 of Hooded Traveler Games)",
+        "description": "Clean up the messy dungeon, collect and recycle resources and find forgotten loot in this incremental “chore-like”.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 14:52 UTC",
+        "rating": "3.7",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDk2NTc0LnBuZw==/original/er4jjC.png",
+        "tags": [
+            "Casual",
+            "Cozy",
+            "Dungeon",
+            "Idle",
+            "Incremental",
+            "Management",
+            "No AI",
+            "Pixel Art",
+            "Relaxing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T04:23:56Z"
+    },
+    {
+        "url": "https://objetdiscret.itch.io/tai-fab-kitchen",
+        "name": "Taiyaki Fabulous Test Kitchen",
+        "dev": "objetdiscret",
+        "description": "Nonogram Exploration Adventure",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 14:03 UTC",
+        "rating": "4.9",
+        "rating_count": "7",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDc5Mjg0LnBuZw==/original/fuh7oC.png",
+        "tags": [
+            "Cozy",
+            "Cute",
+            "Exploration",
+            "Funny",
+            "Game Boy",
+            "Nonogram",
+            "Picross",
+            "Pixel Art",
+            "Relaxing",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T04:23:59Z"
+    },
+    {
+        "url": "https://yiskr.itch.io/moon-jar-dokkaebi",
+        "name": "Moon Jar Dokkaebi",
+        "dev": "Yiskr",
+        "description": "A short dokkaebi merge puzzle / 달항아리에서 도깨비를 합쳐 아기 용을 달로 보내는 짧은 퍼즐",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 13:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTgwMjY4LnBuZw==/original/xIfGiQ.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Cute",
+            "Folklore",
+            "Merge",
+            "Physics",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Korean"
+        ],
+        "inputs": [
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T04:24:02Z"
     }
 ]
