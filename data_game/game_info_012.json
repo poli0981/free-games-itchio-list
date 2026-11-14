@@ -18722,5 +18722,146 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-13T20:24:18Z"
+    },
+    {
+        "url": "https://allotropygames.itch.io/taso-idle",
+        "name": "Taso Idle",
+        "dev": "Allotropy Games",
+        "description": "Flip tasos, sell your stack, and put your little brothers to work in a nostalgic incremental game.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "12 November 2026 @ 20:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTg3NzMyLnBuZw==/original/%2B77AQj.png",
+        "tags": [
+            "Automation",
+            "Casual",
+            "Character Customization",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Relaxing",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T00:24:24Z"
+    },
+    {
+        "url": "https://amirulrsly.itch.io/mazequiz-prototype1",
+        "name": "MazeQuiz Prototype1",
+        "dev": "AmirulRsly",
+        "description": "A prototype for MazeQuiz",
+        "genre": "N/A",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 09:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwODg1MTMwLnBuZw==/original/0dayWn.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T00:24:26Z"
+    },
+    {
+        "url": "https://sam-yam.itch.io/braindead",
+        "name": "BRAINDEAD",
+        "dev": "samyam",
+        "description": "zombie MMO",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 05:41 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODc3MjY1LnBuZw==/original/HgXOi6.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T00:24:30Z"
+    },
+    {
+        "url": "https://shootingstarrfish.itch.io/devil-gacha-nightmare",
+        "name": "Devil Gacha NIGHTMARE",
+        "dev": "ShootingStarrfish",
+        "description": "they don't call it a nightmare for no reason",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 08:02 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ5NjYyLnBuZw==/original/2A4gpi.png",
+        "tags": [
+            "Gacha",
+            "Meme",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T00:24:34Z"
     }
 ]
