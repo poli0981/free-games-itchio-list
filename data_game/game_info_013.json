@@ -897,5 +897,118 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-14T16:24:56Z"
+    },
+    {
+        "url": "https://aealosoftware.itch.io/limbo",
+        "name": "Eye of Limbo",
+        "dev": "Aealo Software",
+        "description": "Rouguelike bullet hell",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 October 2026 @ 05:35 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5MDc4NjYwLnBuZw==/original/AudZ3j.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Bullet Hell",
+            "Local Co-Op",
+            "Pixel Art",
+            "Retro",
+            "Roguelite",
+            "Shoot 'Em Up",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "29 October 2026 @ 14:52 UTC",
+        "added_at": "2026-11-14T20:23:56Z"
+    },
+    {
+        "url": "https://kyo-hei.itch.io/hellversus",
+        "name": "Hellversus",
+        "dev": "kyo-hei",
+        "description": "Hellversus is UNOFFICIAL \"Helltaker\" figting game。 This build is the latest version as of December 2025.",
+        "genre": "Fighting",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "67",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzgwMjAwODMucG5n/original/%2FxTc4B.png",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 November 2026 @ 07:44 UTC",
+        "added_at": "2026-11-14T20:23:59Z"
+    },
+    {
+        "url": "https://subair77.itch.io/literasi-mb",
+        "name": "Literasi Moderasi Beragama",
+        "dev": "Subair77",
+        "description": "Game Edukasi Moderasi Plus Panca Cinta",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 09:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE4NTczNjIxLnBuZw==/original/VfxIej.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T20:24:02Z"
     }
 ]
