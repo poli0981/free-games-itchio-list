@@ -469,5 +469,433 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-14T12:25:03Z"
+    },
+    {
+        "url": "https://asn7.itch.io/jjkfight",
+        "name": "Jujutsu kaisan fight",
+        "dev": "asn7",
+        "description": "https://jjk-fight.base44.app/",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 12:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjU1MzA3LnBuZw==/original/eXOwTd.png",
+        "tags": [
+            "2D",
+            "Animation",
+            "Anime",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 November 2026 @ 15:49 UTC",
+        "added_at": "2026-11-14T16:24:17Z"
+    },
+    {
+        "url": "https://hachuw.itch.io/sebelum-tengah-malam",
+        "name": "Sebelum tengah Malam",
+        "dev": "hachuw",
+        "description": "my exam project",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 04:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjMxNDQ1LnBuZw==/original/yjZQ7m.png",
+        "tags": [
+            "Horror",
+            "No AI",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:20Z"
+    },
+    {
+        "url": "https://jugofmilk.itch.io/operation-117",
+        "name": "Operation 1:17",
+        "dev": "jugofmilk",
+        "description": "A game about the perils of letting artificial intelligence dominate your life. Currently an extremely early demo!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 14:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTk4OTEzLnBuZw==/original/Toonwb.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:24Z"
+    },
+    {
+        "url": "https://lobsterlinguine.itch.io/a-case-of-observed-fantasy",
+        "name": "A Case of Observed Fantasy",
+        "dev": "pandashark",
+        "description": "Finding a man who isn't hiding.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 03:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjI4NzQ5LnBuZw==/original/pzAD1b.png",
+        "tags": [
+            "Magical Realism",
+            "Mystery",
+            "shroomjam"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:28Z"
+    },
+    {
+        "url": "https://miand.itch.io/una-tarde-con-william",
+        "name": "Una tarde con William",
+        "dev": "Miand",
+        "description": "N/A",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 05:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjM0MDg1LnBuZw==/original/26Ak0o.png",
+        "tags": [
+            "2D",
+            "Five Nights at Freddy's"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:32Z"
+    },
+    {
+        "url": "https://qoawallpa.itch.io/valley",
+        "name": "Valley",
+        "dev": "QoaWallpa",
+        "description": "El azar, el orden de los registros públicos y la infinita paciencia de las gallinas.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 06:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDQ3OTQzLmpwZw==/original/qMHpMS.jpg",
+        "tags": [
+            "AI Assisted",
+            "Atmospheric",
+            "Comedy",
+            "demo",
+            "Detective",
+            "Ren'Py",
+            "satire",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:36Z"
+    },
+    {
+        "url": "https://redacted-pickle.itch.io/karl-and-max",
+        "name": "Karl and Max",
+        "dev": "REDACTED PICKLE",
+        "description": "A comedy that is about 2 german guys",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 23:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjIyMTkzLnBuZw==/original/pUQJw5.png",
+        "tags": [
+            "Alternate History",
+            "Comedy",
+            "Gay",
+            "No AI"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:38Z"
+    },
+    {
+        "url": "https://sebastiansalas94.itch.io/lucky-bingo",
+        "name": "Lucky Bingo",
+        "dev": "Sebastian Salas Movilla",
+        "description": "Short psychological-horror point-and-click game.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 05:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjMzMTQzLnBuZw==/original/Ppjqtq.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "No AI",
+            "Point & Click",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:42Z"
+    },
+    {
+        "url": "https://shin8byte.itch.io/yokuyubyo",
+        "name": "翼有病",
+        "dev": "Shin8byte",
+        "description": "希死念慮無料体験キャンペーン実施中！",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 01:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDU0MzIzLnBuZw==/original/5dYKXj.png",
+        "tags": [
+            "2D",
+            "mobile",
+            "Pixel Art",
+            "Retro",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Japanese"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "TyranoBuilder"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:45Z"
+    },
+    {
+        "url": "https://stubby-artist.itch.io/slime-rave",
+        "name": "SLIME RAVE",
+        "dev": "stubby_artist",
+        "description": "A work in progress visual novel for the KU 2026 Fall Alumni Jam!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 20:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE2NDQ1LnBuZw==/original/q6adjr.png",
+        "tags": [
+            "2D",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:49Z"
+    },
+    {
+        "url": "https://the-hidden-king.itch.io/deadlock-the-hidden-story",
+        "name": "Deadlock: The Hidden Story",
+        "dev": "the hidden king",
+        "description": "A mature, original story set in the Deadlock universe — where forbidden desires and dark rituals shape fate.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 18:14 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjEwMTc5LmpwZw==/original/Fs9Y6d.jpg",
+        "tags": [
+            "2D",
+            "deadlock",
+            "Romance"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:52Z"
+    },
+    {
+        "url": "https://threefoundseven.itch.io/the-last-summer-of-shizume",
+        "name": "Summer of Shizume (Mega Drive / Genesis)",
+        "dev": "Three Found Seven",
+        "description": "The Last Summer of Shizume A mystery visual novel for the Sega Mega Drive / Genesis.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 04:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjI3NzkyLnBuZw==/original/nPwHVV.png",
+        "tags": [
+            "Atmospheric",
+            "Homebrew",
+            "Mega Drive",
+            "Mystery",
+            "Pixel Art",
+            "Retro",
+            "Sega Genesis",
+            "Story Rich",
+            "Summer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-14T16:24:56Z"
     }
 ]
