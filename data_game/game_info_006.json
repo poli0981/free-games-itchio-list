@@ -13071,55 +13071,6 @@
         ]
     },
     {
-        "url": "https://zapakitul.itch.io/night-cart-the-immortal-plague",
-        "name": "Night Cart: The Immortal Plague",
-        "dev": "Bacioiu Ciprian",
-        "description": "A first-person gothic adventure where you drive a horse-drawn cart through plague-ridden Transylvania.",
-        "genre": "Adventure",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "13",
-        "average_session": "About a half-hour",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzI5Mzk5MTMxLnBuZw==/original/3Fcgn4.png",
-        "tags": [
-            "Action-Adventure",
-            "Atmospheric",
-            "Controller",
-            "Exploration",
-            "Fantasy",
-            "First-Person",
-            "Horses",
-            "Short",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "Windows",
-            "macOS",
-            "Linux"
-        ],
-        "languages": [
-            "English"
-        ],
-        "inputs": [
-            "Keyboard",
-            "Mouse",
-            "Gamepad (any)"
-        ],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "updated_at": "15 October 2026 @ 09:03 UTC",
-        "added_at": "2026-09-25T20:50:43Z",
-        "ai_disclosure": "No AI",
-        "ai_content": [],
-        "accessibility": []
-    },
-    {
         "url": "https://bigblue9988.itch.io/jm-grain-carts",
         "name": "J&M X Series Grain Carts",
         "dev": "BigBlue9988",
@@ -16793,44 +16744,6 @@
         "accessibility": []
     },
     {
-        "url": "https://turtlevaniagames.itch.io/penguin-planet",
-        "name": "Penguin Planet",
-        "dev": "Turtlevania Games",
-        "description": "Scoop snow, hire penguins, and grow a little colony among the stars.",
-        "genre": "Simulation",
-        "status": "Prototype",
-        "publisher": "N/A",
-        "release_date": "28 September 2026 @ 21:29 UTC",
-        "rating": "2.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzU0MDQ5LnBuZw==/original/r%2BbjAs.png",
-        "tags": [
-            "Clicker",
-            "Idle",
-            "Incremental",
-            "Singleplayer"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [
-            "Unity"
-        ],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T01:47:51Z",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Graphics",
-            "Sounds"
-        ],
-        "accessibility": []
-    },
-    {
         "url": "https://choicegaming.itch.io/wick-and-tide",
         "name": "Wick & Tide",
         "dev": "ChoiceGaming",
@@ -19072,49 +18985,6 @@
         "added_at": "2026-09-30T08:27:31Z",
         "ai_disclosure": "No AI",
         "ai_content": [],
-        "accessibility": []
-    },
-    {
-        "url": "https://shibaki-dev.itch.io/ninefold",
-        "name": "Ninefold",
-        "dev": "shibaki_dev",
-        "description": "An idle cultivation game, painted in ink. Nothing is ever taken away for being away.",
-        "genre": "Simulation",
-        "status": "In development",
-        "publisher": "N/A",
-        "release_date": "29 September 2026 @ 13:21 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
-        "average_session": "N/A",
-        "nsfw": "No",
-        "thumbnail": "https://img.itch.zone/aW1nLzMwMzczNjU5LnBuZw==/original/xutXsj.png",
-        "tags": [
-            "chinese",
-            "cultivation",
-            "Fantasy",
-            "Hand-drawn",
-            "Idle",
-            "Incremental",
-            "mobile",
-            "Relaxing",
-            "Singleplayer",
-            "xianxia"
-        ],
-        "platforms": [
-            "HTML5"
-        ],
-        "languages": [],
-        "inputs": [],
-        "made_with": [],
-        "safe_virus": "?",
-        "notes": "",
-        "added_at": "2026-09-30T08:27:34Z",
-        "updated_at": "01 October 2026 @ 16:45 UTC",
-        "ai_disclosure": "AI Assisted",
-        "ai_content": [
-            "Graphics",
-            "Sounds"
-        ],
         "accessibility": []
     },
     {

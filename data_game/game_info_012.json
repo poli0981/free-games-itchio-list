@@ -7023,8 +7023,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "24 October 2026 @ 22:26 UTC",
-        "rating": "4.8",
-        "rating_count": "12",
+        "rating": "4.6",
+        "rating_count": "33",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxMzkxMTk0LmdpZg==/original/6Lpn1o.gif",
@@ -7063,8 +7063,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.4",
+        "rating_count": "14",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2MDkxMjc0LnBuZw==/original/eR6YSF.png",
@@ -7093,7 +7093,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-04T04:24:33Z"
+        "added_at": "2026-11-04T04:24:33Z",
+        "updated_at": "10 November 2026 @ 08:11 UTC"
     },
     {
         "url": "https://edward-la-barbera.itch.io/laszlovania",
@@ -7104,8 +7105,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "26 October 2026 @ 20:58 UTC",
-        "rating": "5.0",
-        "rating_count": "8",
+        "rating": "4.5",
+        "rating_count": "15",
         "average_session": "N/A",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNTc4NTQyLnBuZw==/original/z%2BuCsD.png",
@@ -7130,7 +7131,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "03 November 2026 @ 22:44 UTC",
+        "updated_at": "08 November 2026 @ 03:15 UTC",
         "added_at": "2026-11-04T04:24:36Z"
     },
     {
@@ -7142,8 +7143,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "22",
+        "rating": "4.1",
+        "rating_count": "36",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwNjIzMTYxLnBuZw==/original/CCvl80.png",
@@ -7194,7 +7195,7 @@
         "publisher": "N/A",
         "release_date": "16 October 2026 @ 09:25 UTC",
         "rating": "4.6",
-        "rating_count": "18",
+        "rating_count": "39",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMwOTE0OTEyLmpwZw==/original/nr6bJq.jpg",
@@ -7237,7 +7238,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "69",
+        "rating_count": "77",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI4MTQyNzIxLmdpZg==/original/yzbzbV.gif",
@@ -7401,8 +7402,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.5",
-        "rating_count": "37",
+        "rating": "4.6",
+        "rating_count": "42",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzk2ODM3ODYuZ2lm/original/Pdq6VB.gif",
@@ -7427,12 +7428,16 @@
             "Unity",
             "Aseprite"
         ],
-        "ai_disclosure": "N/A",
-        "ai_content": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "04 November 2026 @ 22:21 UTC",
+        "updated_at": "14 November 2026 @ 02:45 UTC",
         "added_at": "2026-11-04T12:24:20Z"
     },
     {
@@ -7564,7 +7569,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-04T16:23:52Z"
+        "added_at": "2026-11-04T16:23:52Z",
+        "updated_at": "06 November 2026 @ 16:04 UTC"
     },
     {
         "url": "https://larryzhao.itch.io/alchemy-merge",
@@ -7721,8 +7727,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "04 November 2026 @ 09:37 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "4.9",
+        "rating_count": "8",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMxODAzMjc2LnBuZw==/original/DOxzen.png",
@@ -7745,7 +7751,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-05T00:24:40Z"
+        "added_at": "2026-11-05T00:24:40Z",
+        "updated_at": "10 November 2026 @ 14:50 UTC"
     },
     {
         "url": "https://gemesplayyt.itch.io/bunun-tadina-bak-android-port",
@@ -17592,7 +17599,7 @@
         "publisher": "N/A",
         "release_date": "12 November 2026 @ 02:53 UTC",
         "rating": "4.8",
-        "rating_count": "12",
+        "rating_count": "13",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTMwOTIxLnBuZw==/original/Y39pMr.png",
@@ -17621,7 +17628,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-13T04:24:17Z"
+        "added_at": "2026-11-13T04:24:17Z",
+        "updated_at": "13 November 2026 @ 23:04 UTC"
     },
     {
         "url": "https://lidoli.itch.io/goat-climb",
@@ -17665,7 +17673,7 @@
         "publisher": "N/A",
         "release_date": "12 November 2026 @ 13:00 UTC",
         "rating": "4.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTQ1MDUzLnBuZw==/original/UN76eL.png",
@@ -17799,7 +17807,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-13T12:24:33Z"
+        "added_at": "2026-11-13T12:24:33Z",
+        "updated_at": "13 November 2026 @ 18:25 UTC"
     },
     {
         "url": "https://eggplant-eater.itch.io/finding-obama",
@@ -17910,7 +17919,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-13T12:24:43Z"
+        "added_at": "2026-11-13T12:24:43Z",
+        "updated_at": "13 November 2026 @ 20:31 UTC"
     },
     {
         "url": "https://lungchen.itch.io/the-backstage-memories-with-echo-yue",
@@ -17946,7 +17956,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-13T12:24:46Z"
+        "added_at": "2026-11-13T12:24:46Z",
+        "updated_at": "13 November 2026 @ 17:39 UTC"
     },
     {
         "url": "https://namariaa.itch.io/between-corpses-and-secrets",
@@ -17954,7 +17965,7 @@
         "dev": "Namariaa",
         "description": "A murder mystery visual novel: solve a killing at the Williams mansion.",
         "genre": "Visual Novel",
-        "status": "In development",
+        "status": "Released",
         "publisher": "N/A",
         "release_date": "12 November 2026 @ 21:29 UTC",
         "rating": "N/A",
@@ -18110,7 +18121,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-13T12:24:59Z"
+        "added_at": "2026-11-13T12:24:59Z",
+        "updated_at": "13 November 2026 @ 17:45 UTC"
     },
     {
         "url": "https://theslopfactory.itch.io/mario",
@@ -18121,8 +18133,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "12 November 2026 @ 16:36 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTU1NjUxLnBuZw==/original/3wZdQn.png",
@@ -18501,8 +18513,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "12 November 2026 @ 23:40 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTc4NDM4LnBuZw==/original/TCTLEN.png",
