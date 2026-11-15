@@ -2355,5 +2355,179 @@
         "notes": "",
         "updated_at": "14 November 2026 @ 00:03 UTC",
         "added_at": "2026-11-15T16:24:28Z"
+    },
+    {
+        "url": "https://brainbox.itch.io/seven-spells-of-destruction",
+        "name": "The Seven Spells Of Destruction",
+        "dev": "Brainbox.cc",
+        "description": "Remember Fighting Fantasy and Lone Wolf? The gamebook has become multiplayer. Your adventure awaits.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjgyMzY4LnBuZw==/original/9RtkfR.png",
+        "tags": [
+            "Fantasy",
+            "high-fantasy",
+            "Massively multiplayer",
+            "Medieval",
+            "Narrative",
+            "Open World",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unreal Engine",
+            "Blender",
+            "GIMP",
+            "Inkscape",
+            "Audacity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [
+            "Blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 November 2026 @ 02:56 UTC",
+        "added_at": "2026-11-15T20:24:08Z"
+    },
+    {
+        "url": "https://landfishgames.itch.io/pufferfish-on-land",
+        "name": "Pufferfish on Land",
+        "dev": "Landfish Games",
+        "description": "Dash, dive, hold your breath. A speedrunnable platformer about a fish on land.",
+        "genre": "Platformer",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5NDA4MDgzLnBuZw==/original/njFwEh.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "Level Editor",
+            "Pixel Art",
+            "Precision Platformer",
+            "Singleplayer",
+            "Speedrun"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Aseprite",
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 November 2026 @ 04:16 UTC",
+        "added_at": "2026-11-15T20:24:10Z"
+    },
+    {
+        "url": "https://neon-ark.itch.io/harvest-keep",
+        "name": "Harvest Keep: Idle Defense",
+        "dev": "Neon Ark",
+        "description": "Your King fights on his own. Upgrade, rebuild the keep and hold back the hordes.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 21:12 UTC",
+        "rating": "2.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjcwNTczLnBuZw==/original/85375x.png",
+        "tags": [
+            "2D",
+            "Auto Battler",
+            "Castle",
+            "Casual",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Medieval",
+            "Singleplayer",
+            "Tower Defense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T20:24:13Z"
+    },
+    {
+        "url": "https://untitled-draft-studio.itch.io/accidental-hotpot",
+        "name": "(中文)沒想到我開了一間火鍋店",
+        "dev": "Untitled Draft Studio",
+        "description": "從一間小火鍋店開始，擺桌、上菜、擴店，一鍋一鍋滾出你的火鍋王國。",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 05:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjg2NzU4LnBuZw==/original/19r%2B0D.png",
+        "tags": [
+            "2D",
+            "hotpot",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T20:24:17Z"
     }
 ]
