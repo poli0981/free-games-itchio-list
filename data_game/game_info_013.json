@@ -1010,5 +1010,268 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-14T20:24:02Z"
+    },
+    {
+        "url": "https://alderdevstudio.itch.io/only-when-no-ones-watching",
+        "name": "Only When No One's Watching",
+        "dev": "alder.dev.studio",
+        "description": "Осенний кампус Новой Англии, грант и университетские тайны.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "13 November 2026 @ 21:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE1MjIxLnBuZw==/original/SZhPWR.png",
+        "tags": [
+            "Choices Matter",
+            "Drama",
+            "LGBT",
+            "Meaningful Choices",
+            "relationship",
+            "Romance",
+            "storygame",
+            "Story Rich",
+            "university"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 November 2026 @ 23:28 UTC",
+        "added_at": "2026-11-15T00:24:27Z"
+    },
+    {
+        "url": "https://cumic06.itch.io/serendipity",
+        "name": "Serendipity",
+        "dev": "cumic06",
+        "description": "Find the lucky numbers hidden in your customers’ stories, then paint them onto handmade talismans.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 10:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjQ4NDY2LnBuZw==/original/fOCWnq.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T00:24:31Z"
+    },
+    {
+        "url": "https://lampbearergames.itch.io/otherworld-sovereign",
+        "name": "Otherworld Sovereign",
+        "dev": "Lampbearer Games",
+        "description": "Isekai RPG: play as a man or woman, raid dungeons, build a castle, find love and rise from reborn nobody to ruler.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 12:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjM4NDkwLnBuZw==/original/xVJdf0.png",
+        "tags": [
+            "Character Customization",
+            "Dating Sim",
+            "Fantasy",
+            "Isekai",
+            "kingdom-building",
+            "Otome",
+            "Ren'Py",
+            "Turn-Based Combat"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T00:24:35Z"
+    },
+    {
+        "url": "https://orchida.itch.io/carnation-girls-chapter-1",
+        "name": "Carnation Girls: chapter 1 + prologue",
+        "dev": "Orchida",
+        "description": "November 2nd, 113 AR, 7:53am.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 13:17 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI5Mjc1MTM3LnBuZw==/original/jiULaf.png",
+        "tags": [
+            "Anime",
+            "Mystery",
+            "Ren'Py"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Playstation controller"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T00:24:40Z"
+    },
+    {
+        "url": "https://prismaticspurt.itch.io/echo-pool",
+        "name": "ECHO // POOL",
+        "dev": "prismaticspurt",
+        "description": "Just a small fangame visual novel based on Neverness to Everness",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 09:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjM5MDE3LmpwZw==/original/2WOvmI.jpg",
+        "tags": [
+            "Anime",
+            "Multiple Endings",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T00:24:43Z"
+    },
+    {
+        "url": "https://reahanamd.itch.io/nine-lives-one-bad-day",
+        "name": "Nine Lives & One Bad Day",
+        "dev": "reahanamd",
+        "description": "A guys life that bounces back when he meets biscuit. Does his life change back to normal? Find out by playing our game!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 11:39 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjQ0OTk5LnBuZw==/original/j9mV%2Bq.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T00:24:48Z"
+    },
+    {
+        "url": "https://spaseengineer.itch.io/madoka-magica-portable-rus",
+        "name": "Madoka Magica Portable rus",
+        "dev": "spaseengineer",
+        "description": "Фанатский перевод PSP-игры «Mahou Shoujo Madoka☆Magica Portable» на русский язык",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 10:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjQxNzgwLnBuZw==/original/0l8PuY.png",
+        "tags": [
+            "fan-translation",
+            "madoka-magica",
+            "Playstation Portable",
+            "rom-hack",
+            "russian",
+            "translation"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T00:24:50Z"
     }
 ]
