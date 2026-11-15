@@ -2123,5 +2123,237 @@
         "notes": "",
         "updated_at": "14 November 2026 @ 23:28 UTC",
         "added_at": "2026-11-15T12:25:02Z"
+    },
+    {
+        "url": "https://keltime.itch.io/fanta-stic",
+        "name": "FANTA-stic",
+        "dev": "keltime",
+        "description": "A short and (un)serious ren'py game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 23:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjc3MDM5LnBuZw==/original/aqhXXo.png",
+        "tags": [
+            "Dark",
+            "Funny",
+            "No AI",
+            "Violent"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T16:24:13Z"
+    },
+    {
+        "url": "https://le3sa.itch.io/stay-on-the-line-narrative-horror",
+        "name": "Stay On The Line",
+        "dev": "LE3SA",
+        "description": "Narrative Horror where your choices effect the outcome.",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 00:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjc3MzgwLnBuZw==/original/VadFFW.png",
+        "tags": [
+            "Horror",
+            "Narrative",
+            "Point & Click",
+            "Psychological Horror",
+            "Singleplayer",
+            "storygame"
+        ],
+        "platforms": [
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T16:24:17Z"
+    },
+    {
+        "url": "https://legocraft1000.itch.io/hatsune-mikus-bouncing-odyssey",
+        "name": "Hatsune Miku's Bouncing Odyssey",
+        "dev": "legocraft1000",
+        "description": "This is a an amazing game containing multiple beloved characters from franchaises such as Vocaloid, Project Moon, and Undertale.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 00:12 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjc3MzkxLmpwZw==/original/ePS%2Fgv.jpg",
+        "tags": [
+            "2D",
+            "Fangame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T16:24:20Z"
+    },
+    {
+        "url": "https://m1rrarr.itch.io/gakuen-high-school-basketball-club",
+        "name": "Gakuen High School Basketball Club",
+        "dev": "norah s, 4rarepositoria, micetorats",
+        "description": "2D interactive fiction",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 03:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjgzNjc5LnBuZw==/original/4wDiEx.png",
+        "tags": [
+            "2D",
+            "Basketball",
+            "Indie",
+            "Narrative",
+            "No AI",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T16:24:22Z"
+    },
+    {
+        "url": "https://songim.itch.io/bounce-back-soon",
+        "name": "Bounce Back Soon",
+        "dev": "songim",
+        "description": "Be A Brave Soldier.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 01:23 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjc5Mjc5LnBuZw==/original/iB1tFC.png",
+        "tags": [
+            "2D",
+            "Dark Fantasy",
+            "Dystopian",
+            "Military",
+            "Post-apocalyptic",
+            "Psychological",
+            "Short",
+            "War"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T16:24:24Z"
+    },
+    {
+        "url": "https://kikamack.itch.io/bard-builder",
+        "name": "Bard Builder",
+        "dev": "kikamack",
+        "description": "make your own fantasy character!",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE5NjQ1MjEwLnBuZw==/original/oCRIz5.png",
+        "tags": [
+            "artgame",
+            "avatar",
+            "Character Customization",
+            "Characters",
+            "Cute",
+            "Indie",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 November 2026 @ 00:03 UTC",
+        "added_at": "2026-11-15T16:24:28Z"
     }
 ]
