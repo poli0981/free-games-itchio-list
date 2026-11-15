@@ -1493,5 +1493,635 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-15T04:24:01Z"
+    },
+    {
+        "url": "https://adamdjames.itch.io/bin-wizards-lost-tape",
+        "name": "Bin Wizards: Lost Tape",
+        "dev": "adamdjames",
+        "description": "Return home, great wizard",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 16:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjU2MDA3LnBuZw==/original/kEuBJi.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:14Z"
+    },
+    {
+        "url": "https://asabirdnest.itch.io/peregrination",
+        "name": "Peregrination",
+        "dev": "Asa˚ . ྀིྀི୧ ❤︎ ୨ ྀིྀི.",
+        "description": "Some people think Hell is full of fire and brimstone. I think Hell is bureaucracy. We are not the same.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 17:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjYwNDQ4LnBuZw==/original/7qxpPj.png",
+        "tags": [
+            "Atmospheric",
+            "Fantasy",
+            "Multiple Endings",
+            "No AI",
+            "Psychological",
+            "religion",
+            "Story Rich",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:17Z"
+    },
+    {
+        "url": "https://bluerose404.itch.io/milk-from-his-body",
+        "name": "Milk from his body",
+        "dev": "BlueROSE404",
+        "description": "An alien gifts his own milk in a peaceful neighborhood on Earth.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 18:54 UTC",
+        "rating": "4.8",
+        "rating_count": "6",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjY0MDEzLnBuZw==/original/i%2Fs%2BiC.png",
+        "tags": [
+            "Aliens",
+            "Horror",
+            "Male protagonist",
+            "RPG Maker",
+            "Sci-fi",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:21Z"
+    },
+    {
+        "url": "https://bubuzukegames.itch.io/16heroes",
+        "name": "性格診断「あなたが勇者だったら、世界はどうなる？」",
+        "dev": "BuBuzukeGames",
+        "description": "勇者に任命された朝、魔王からヘッドハンティング。MBTI風診断つき短編コメディ",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 15:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTMxODkzLnBuZw==/original/VjTNOZ.png",
+        "tags": [
+            "personality-quiz-game"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:24Z"
+    },
+    {
+        "url": "https://frythox.itch.io/ashers-last-confession",
+        "name": "Asher's Last Confession",
+        "dev": "Frythox",
+        "description": "This game is an indie gay novel",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 12:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjQ3NTkzLnBuZw==/original/d9gOIx.png",
+        "tags": [
+            "2D",
+            "Gay",
+            "Indie",
+            "LGBT",
+            "LGBTQIA",
+            "Narrative",
+            "Pixel Art",
+            "Romance"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:28Z"
+    },
+    {
+        "url": "https://grossgirlgames.itch.io/the-human-the-omega",
+        "name": "The Human & The Omega",
+        "dev": "GrossGirlGames",
+        "description": "An omegaverse BL romance between an ordinary human and an alien Omega who believes he's found his future mate.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "GrossGirlGames",
+        "release_date": "14 November 2026 @ 20:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjY2NDkwLnBuZw==/original/D7b8p8.png",
+        "tags": [
+            "2D",
+            "Boys' Love",
+            "Cozy",
+            "Cute",
+            "Gay",
+            "LGBT",
+            "Romance",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker",
+            "Aseprite",
+            "Phaser"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:31Z"
+    },
+    {
+        "url": "https://ltorrao.itch.io/angueira",
+        "name": "Watercolours: Angueira",
+        "dev": "LTorrao",
+        "description": "Watercolour",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 14:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjU0NzEzLnBuZw==/original/4laewz.png",
+        "tags": [
+            "watercolor"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:34Z"
+    },
+    {
+        "url": "https://rxnna.itch.io/inspottery",
+        "name": "Inspottery",
+        "dev": "springberries",
+        "description": "A downloadable game for Windows, macOS, and Linux",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 14:19 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjUxODI4LnBuZw==/original/3IOKaM.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Indie",
+            "No AI",
+            "Point & Click",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:37Z"
+    },
+    {
+        "url": "https://savidovey.itch.io/rue-the-day",
+        "name": "Rue The Day",
+        "dev": "savi",
+        "description": "Will you forgive yourself?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 12:30 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjQ4NTQ1LnBuZw==/original/e%2FfiRt.png",
+        "tags": [
+            "2D",
+            "darker-themes",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:39Z"
+    },
+    {
+        "url": "https://shamina101.itch.io/morose-placidity",
+        "name": "Morose Placidity",
+        "dev": "shamina101",
+        "description": "A burnt out university student rediscovers his spark and love for music",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 12:37 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjQ2ODExLnBuZw==/original/y268iz.png",
+        "tags": [
+            "2D",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:42Z"
+    },
+    {
+        "url": "https://thetallyman.itch.io/tallyman",
+        "name": "Tallyman",
+        "dev": "thetallyman",
+        "description": "He keeps count of everyone you crossed off.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 20:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODM4MjMwLnBuZw==/original/ZfaXJB.png",
+        "tags": [
+            "Detective",
+            "Escape Room",
+            "Horror",
+            "Mystery",
+            "Point & Click",
+            "Psychological Horror",
+            "Story Rich",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:44Z"
+    },
+    {
+        "url": "https://valkyriejuni.itch.io/torture-shu-itsuki",
+        "name": "TORTURE SHU ITSUKI",
+        "dev": "valkyriejuni",
+        "description": "you can torture shu itsuki in this game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 19:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjYzOTk4LmpwZw==/original/bwEgmW.jpg",
+        "tags": [
+            "ensemble-stars",
+            "enstars",
+            "Horror",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:47Z"
+    },
+    {
+        "url": "https://jbhatab.itch.io/ashen-crown-staging",
+        "name": "Ashen Crown (Staging)",
+        "dev": "jbhatab",
+        "description": "Private staging builds of a dark-fantasy action RPG for the development team.",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 22:09 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjU2Njk5LnBuZw==/original/gzimE%2F.png",
+        "tags": [],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:49Z"
+    },
+    {
+        "url": "https://lackedragon.itch.io/alchemy-of-beast-demo",
+        "name": "Alchemy of Beasts - Prototype",
+        "dev": "Lacke",
+        "description": "Fight against the forest's curse with Alchemy or become one of its Beasts.",
+        "genre": "Adventure",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "32",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE0MTg2NjU5LnBuZw==/original/6PCRE%2B.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Creepy",
+            "Fantasy",
+            "Pixel Art",
+            "Psychological Horror",
+            "RPG Maker",
+            "Short",
+            "Singleplayer",
+            "transformation"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 November 2026 @ 01:59 UTC",
+        "added_at": "2026-11-15T12:24:53Z"
+    },
+    {
+        "url": "https://mattte.itch.io/hyper-clashers",
+        "name": "Hyper Clashers",
+        "dev": "mattte",
+        "description": "Pure arcade anti-gravity racing where you directly control the engines instead of traditional steering.",
+        "genre": "Racing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 08:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE3NjAwLmpwZw==/original/KVyOAK.jpg",
+        "tags": [
+            "anti-gravity-racing",
+            "Arcade",
+            "Cel-Shaded",
+            "Controller",
+            "Fast-Paced",
+            "gamepad",
+            "Vehicles"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Xbox controller",
+            "Gamepad (any)",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Three.js"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:56Z"
+    },
+    {
+        "url": "https://patricias.itch.io/adulttale-chara-costume",
+        "name": "AdultTale Chara Costume",
+        "dev": "Patricias",
+        "description": "The VS AdultTale Chara mod for LoveManiac is here!",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "14 November 2026 @ 15:08 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjUzNDk2LnBuZw==/original/aywoFp.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-15T12:24:59Z"
+    },
+    {
+        "url": "https://tarjan.itch.io/gates-of-integrity",
+        "name": "Gates Of Integrity [DOS], [Windows]",
+        "dev": "Tarjan",
+        "description": "Very classic RPG",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "13",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzU2NjguanBn/original/kawrUR.jpg",
+        "tags": [
+            "bards-tale",
+            "DOS",
+            "Dungeon Crawler",
+            "Fantasy",
+            "maze",
+            "Medieval",
+            "MS-DOS",
+            "Retro",
+            "Turn-based"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "14 November 2026 @ 23:28 UTC",
+        "added_at": "2026-11-15T12:25:02Z"
     }
 ]
