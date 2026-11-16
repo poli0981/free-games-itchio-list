@@ -1126,5 +1126,17 @@
         "name": "Abyssal drift",
         "reason": "Game page no longer exists (HTTP 404)",
         "deleted_at": "2026-11-14T02:49:44Z"
+    },
+    {
+        "url": "https://red-sauce.itch.io/prerolled",
+        "name": "Prerolled",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-16T02:51:34Z"
+    },
+    {
+        "url": "https://marx-of-high-water.itch.io/the-shepherdex",
+        "name": "The Shepherdex",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-16T02:51:38Z"
     }
 ]
