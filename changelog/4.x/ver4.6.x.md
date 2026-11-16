@@ -1,6 +1,19 @@
 # Changelog — 4.6.x
 
-Release notes for 4.6.0 – 4.6.1, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+Release notes for 4.6.0 – 4.6.2, newest first. Every version: [CHANGELOG.md](../../CHANGELOG.md).
+
+## [4.6.2] - 2026-11-16 (Dependency updates)
+
+Update deps:
+
+- **Desktop and Android apps**: wry 0.57.2 (Android crash and memory-leak fixes, macOS crash fixes,
+  a Windows focus fix), tauri-plugin-opener 2.7.3, and the other Rust crates (`cargo update`).
+- **Website**: TanStack Query 5.107.1, Zustand 5.1.0, lucide-react 1.72.0, jose 6.2.17.
+- **Data pipeline**: Soup Sieve 4.1.
+- **Tooling**: Vite 8.3.8, @vitejs/plugin-react 6.3.0, Tailwind CSS 4.3.5, Wrangler 4.161.0,
+  typescript-eslint 8.72.2, knip 6.45.1, coverage 7.17.3, Ruff 0.17.5.
+
+No policy changed: nothing to accept again.
 
 ## [4.6.1] - 2026-11-11 (Stable: maintenance mode)
 

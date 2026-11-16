@@ -1,6 +1,6 @@
 # Free Itch.io Games List
 
-[![Version](https://img.shields.io/badge/version-4.6.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.6.2-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Status: stable, maintenance only](https://img.shields.io/badge/status-stable%20%C2%B7%20maintenance%20only-brightgreen.svg)](#project-status)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
@@ -17,7 +17,7 @@
 
 > 🇻🇳 Tiếng Việt: see [`README.vi.md`](README.vi.md). Vietnamese translations of the policy docs live in [`docs/i18n/vi/`](docs/i18n/vi/). The English versions in this repo remain controlling for legal interpretation.
 
-A curated, auto-updating catalog of **5,900+ free games on [itch.io](https://itch.io)**. Browse it at
+A curated, auto-updating catalog of **6,000+ free games on [itch.io](https://itch.io)**. Browse it at
 **<https://freeitchgames.win>**: search, filter, sort, and jump to any game's itch.io page. The site is
 read-only for everyone: no accounts, no sign-in, no comments, no ads, no payments.
 
