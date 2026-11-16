@@ -3217,5 +3217,546 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-16T04:24:26Z"
+    },
+    {
+        "url": "https://aubrey-clery.itch.io/ophelia-in-the-underworld",
+        "name": "Ophelia In The Underworld",
+        "dev": "Aubrey Clery, Sierresmthn, scrimbos, Tadhg-d",
+        "description": "When Ophelia’s just-ex-girlfriend dies and is sent to hell, she can’t accept that they left it on such bitter terms.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 14:58 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzExODQzLnBuZw==/original/X%2F6o1F.png",
+        "tags": [
+            "Female Protagonist",
+            "Godot",
+            "LGBT",
+            "Queer",
+            "Short",
+            "Singleplayer",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:23:48Z"
+    },
+    {
+        "url": "https://cheulhamarxist.itch.io/save-vnidia",
+        "name": "Save VNIDIA",
+        "dev": "cheulhamarxist",
+        "description": "IvanTill",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 16:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE5ODEwLnBuZw==/original/aHAGHT.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:23:51Z"
+    },
+    {
+        "url": "https://cyaboron.itch.io/a-brewing-thought",
+        "name": "A Brewing Thought",
+        "dev": "Cyaboron, FunkyYosh",
+        "description": "Parigo is fading, yet the Rusty Abode remains open. Run the café, listen to unfamiliar locals, and rewrite their fates.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 16:56 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzAxNjA1LnBuZw==/original/g6Ms3j.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Cozy",
+            "Multiple Endings",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:23:55Z"
+    },
+    {
+        "url": "https://doublebun.itch.io/soft-spores",
+        "name": "Soft Spores",
+        "dev": "doublebun",
+        "description": "[UNFINISHED - GIVE THIS ONE LIKE A FEW DAYS IN THE OVEN] You are a fungus that has taken over a recently deceased human, trying to quit your meaningless existence thus far in search for connection...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 16:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE5NDc3LnBuZw==/original/cm0D6H.png",
+        "tags": [
+            "awesome"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:23:57Z"
+    },
+    {
+        "url": "https://eluoolio.itch.io/sakana-mangaka",
+        "name": "SAKANA MANGAKA",
+        "dev": "Eluo, alberted, Septonks, Digasnamai, Adrian, Littlegaimakesgame",
+        "description": "Sakana needs to be a mangaka",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 14:03 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzA3Mzc5LnBuZw==/original/EpDVnG.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Cute",
+            "Funny",
+            "Music"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:01Z"
+    },
+    {
+        "url": "https://fakhreyza.itch.io/not-my-type",
+        "name": "Not My Type",
+        "dev": "Fakhreyza",
+        "description": "Narrative Visual Novel with typing mechanic",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 16:46 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE3ODQwLnBuZw==/original/wCEPWA.png",
+        "tags": [
+            "Narrative",
+            "Typing"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:05Z"
+    },
+    {
+        "url": "https://moonapie.itch.io/silene",
+        "name": "Silene",
+        "dev": "MoonaPie",
+        "description": "Decide your fate as a knight-princess",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 12:47 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzAxODAyLmpwZw==/original/GxdcWQ.jpg",
+        "tags": [
+            "Choices Matter",
+            "Fantasy",
+            "Female Protagonist",
+            "knight",
+            "Manga",
+            "Medieval",
+            "Multiple Endings",
+            "Otome",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Adobe Photoshop",
+            "Audacity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [
+            "Color-blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:07Z"
+    },
+    {
+        "url": "https://nashi1337.itch.io/aither",
+        "name": "Aither — If AI was a guy",
+        "dev": "Nashi1337",
+        "description": "What if AI was just some guy in an office, manually working on your prompts?",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 11:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE3ODg5LnBuZw==/original/LNPj9n.png",
+        "tags": [
+            "Walking simulator"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:10Z"
+    },
+    {
+        "url": "https://net455.itch.io/halcyon",
+        "name": "Halcyon",
+        "dev": "net455",
+        "description": "WHAT COULD YOU HAVE DONE?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 12:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzYzOTQwLmpwZw==/original/1%2By514.jpg",
+        "tags": [
+            "Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:13Z"
+    },
+    {
+        "url": "https://rkvictoria.itch.io/samba",
+        "name": "Samba",
+        "dev": "rkvictoria",
+        "description": "The Last Wish",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 18:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzI0OTUzLnBuZw==/original/GvfDOb.png",
+        "tags": [
+            "Atmospheric",
+            "Casual",
+            "Cozy",
+            "Cute",
+            "gdevelop",
+            "Indie",
+            "Music",
+            "Narrative",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GDevelop"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:17Z"
+    },
+    {
+        "url": "https://sammyhere.itch.io/erasing-you-erasing-me",
+        "name": "Erasing you, erasing me",
+        "dev": "Sammyhere",
+        "description": "A recent phenomenon has started to emerge in which cracks of space- spaces that should not exist- have started to form.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 18:19 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzI1NjM3LnBuZw==/original/AdyBVV.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:20Z"
+    },
+    {
+        "url": "https://smokythrill.itch.io/girlblogging",
+        "name": "girlblogging ♡",
+        "dev": "wagyu",
+        "description": "⊹₊˚ ♡ ˚₊⊹ One ordinary day, probably You wake up in a room you recognise: it belongs to the girlblogger you follow.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 13:45 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzA0OTExLnBuZw==/original/dCD%2F8%2F.png",
+        "tags": [
+            "2000s",
+            "2D",
+            "Cute",
+            "satire"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:22Z"
+    },
+    {
+        "url": "https://the-real-john-videogames.itch.io/address-me",
+        "name": "Address Me",
+        "dev": "the-real-john-videogames, Hallow, chuii_gum, trashk3tchup",
+        "description": "The Ultimate Guide to Everyday Social Interaction",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 14:44 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzEwMDQ5LnBuZw==/original/ZQ7Ud2.png",
+        "tags": [
+            "2D",
+            "No AI"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:25Z"
+    },
+    {
+        "url": "https://ybg-ali.itch.io/escape-hell",
+        "name": "Escape Hell",
+        "dev": "ybg_ali",
+        "description": "You and your friend teleport to hell...esacpe from it and uncover the reasons",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 12:09 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjk4NDkzLnBuZw==/original/w9q6P2.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:29Z"
+    },
+    {
+        "url": "https://zekrocruz.itch.io/on-it-sir",
+        "name": "On It, Sir!",
+        "dev": "ZekroCruz, semangkarism, sloenz, aqilzaki",
+        "description": "Be the editor. Choose the news. Decide who you become.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 14:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzEyMTUyLmpwZw==/original/gX2W%2FY.jpg",
+        "tags": [
+            "2D",
+            "Casual",
+            "Characters",
+            "Cozy",
+            "Multiple Endings",
+            "Short",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Indonesian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T08:24:31Z"
     }
 ]
