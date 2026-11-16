@@ -3758,5 +3758,880 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-16T08:24:31Z"
+    },
+    {
+        "url": "https://acidbottle.itch.io/tumblepop",
+        "name": "Tumblepop",
+        "dev": "acidbottle",
+        "description": "Amiga AGA arcade port of Tumblepop by DataEast",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 15:03 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzEwNzE1LnBuZw==/original/FH9aoH.png",
+        "tags": [
+            "aga",
+            "Amiga",
+            "Arcade",
+            "Pixel Art",
+            "single-screen",
+            "Two Player"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:14Z"
+    },
+    {
+        "url": "https://coffeepowerupgames.itch.io/roxy-apple-runner",
+        "name": "Capple Roxy Runner",
+        "dev": "CoffeePowerUp!",
+        "description": "Guests are coming! It's time to make apple pies... but I'm all outta apples!",
+        "genre": "Platformer",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 19:50 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzMzOTQzLnBuZw==/original/i%2FKwcn.png",
+        "tags": [
+            "2D",
+            "anthro",
+            "Casual",
+            "Cute",
+            "Endless Runner",
+            "Furry",
+            "Godot",
+            "infinite-runner",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Aseprite",
+            "Godot",
+            "GIMP",
+            "Audacity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:18Z"
+    },
+    {
+        "url": "https://lenx697.itch.io/cazador-ticci-toby",
+        "name": "Cazador_ Ticci Toby",
+        "dev": "Lenx697",
+        "description": "Y si?. . Una cazadora hábil y nada convencional con respecto a sus presas entrar en bosque prohibido",
+        "genre": "Interactive Fiction",
+        "status": "On hold",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 21:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [
+            "2D",
+            "creepypasta"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:21Z"
+    },
+    {
+        "url": "https://rbgamedev.itch.io/gnome-more-work",
+        "name": "Gnome More Work",
+        "dev": "rbgamedev",
+        "description": "A cozy incremental game about helping gnomes grow a giant tree. Unlock new resources and upgrades, and bet it all on red",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 10:06 UTC",
+        "rating": "1.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMzEwNzgyLnBuZw==/original/w09Ys9.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "gnomes",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Singleplayer",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:24Z"
+    },
+    {
+        "url": "https://retrobr.itch.io/mkr",
+        "name": "Mortal Kombat Remastered - Sega Genesis",
+        "dev": "retrobr",
+        "description": "An all-new port of the original arcade Mortal Kombat for Sega Genesis / Mega Drive",
+        "genre": "Fighting",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 14:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzA0MTIxLnBuZw==/original/SlbM8G.png",
+        "tags": [
+            "Mega Drive",
+            "Sega Genesis"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:27Z"
+    },
+    {
+        "url": "https://shinobiz72.itch.io/alex-kidd-the-arcade-game-on-megadrivegenesis",
+        "name": "ALEX KIDD the arcade game on MEGADRIVE/GENESIS",
+        "dev": "ShinobiZ",
+        "description": "Alex Kidd The Lost Stars - Mega Drive / Genesis 1.0 Beta Join Alex and Stella in this unofficial adaptation of the System 16A arcade game for a standard Mega Drive / Genesis.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 16:37 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE4NjMyLnBuZw==/original/oiH8JP.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:30Z"
+    },
+    {
+        "url": "https://shtoza.itch.io/hidden-arms",
+        "name": "Hidden Arms : The Board Game",
+        "dev": "Shtoza",
+        "description": "Every soldier hides a secret weapon. Guess right or lose the battle.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 01:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzY1OTgzLnBuZw==/original/lXZgZ1.png",
+        "tags": [
+            "3D",
+            "Board Game",
+            "Casual",
+            "Multiplayer",
+            "rock-paper-scissors",
+            "Singleplayer",
+            "toys",
+            "Turn-based"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:34Z"
+    },
+    {
+        "url": "https://sytstudio.itch.io/isaac-mobile",
+        "name": "The Binding of Isaac: Mobile (Unofficial Android Port)",
+        "dev": "SYTStudio",
+        "description": "Experience The Binding of Isaac on Android. Full game, native controls and engine",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "6",
+        "average_session": "Days or more",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjI2ODkyLnBuZw==/original/LzWKwY.png",
+        "tags": [
+            "2D",
+            "android",
+            "binding-of-isaac",
+            "Fangame",
+            "isaac",
+            "mobile",
+            "port",
+            "tears"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "15 November 2026 @ 22:49 UTC",
+        "added_at": "2026-11-16T16:24:38Z"
+    },
+    {
+        "url": "https://theoriainteractive.itch.io/kilim",
+        "name": "Kilim",
+        "dev": "theoriainteractive",
+        "description": "Sweep the shuttle, weave the rug, sell it, build a bigger loom. A 15-minute weaving incremental.",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 12:04 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzAyMjMyLnBuZw==/original/%2BxAO8H.png",
+        "tags": [
+            "Clicker",
+            "Cozy",
+            "Idle",
+            "Incremental",
+            "Mouse only",
+            "Relaxing",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:40Z"
+    },
+    {
+        "url": "https://volux434.itch.io/waste-deep",
+        "name": "Waste Deep",
+        "dev": "Volux434",
+        "description": "Haul radioactive junk, sink it in the cooling pond, and automate the job before your dosimeter maxes out.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 16:39 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE4NDcyLnBuZw==/original/3g%2BerK.png",
+        "tags": [
+            "3D",
+            "Automation",
+            "Casual",
+            "First-Person",
+            "Idle",
+            "Incremental",
+            "Low-poly",
+            "Physics",
+            "Singleplayer",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:44Z"
+    },
+    {
+        "url": "https://apthmenace11.itch.io/the-great-glow-up",
+        "name": "The Great Glow Up",
+        "dev": "ApthMenace11, Paikeasammaripa, CIO-ash-enterprise",
+        "description": "Bakery competition glow-up story",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 21:48 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzI2MjY1LnBuZw==/original/8eS1HP.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "No AI",
+            "Ren'Py",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:47Z"
+    },
+    {
+        "url": "https://coolbino.itch.io/crime",
+        "name": "Crime or Punishment",
+        "dev": "coolbino, jo--garden, moniistar",
+        "description": "What are you ready to do to for your community?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 21:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzM5MjEwLnBuZw==/original/30myic.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "No AI",
+            "storygame"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:50Z"
+    },
+    {
+        "url": "https://dixition.itch.io/datura",
+        "name": "Datura",
+        "dev": "Dixition~, starry.riverzz",
+        "description": "Rise and Fall theme Dystopian and a bit of horror(Zombie)",
+        "genre": "Interactive Fiction",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 22:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzQ1MDg3LmpwZw==/original/8JoYD0.jpg",
+        "tags": [
+            "Indie",
+            "My First Game Jam",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:54Z"
+    },
+    {
+        "url": "https://gds025.itch.io/ecos-de-gusev",
+        "name": "Echoes of Gusev",
+        "dev": "gds.025",
+        "description": "An exploration and recolection game on the surface of mars.",
+        "genre": "Educational",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 23:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzUzNjkzLnBuZw==/original/HQ%2F0JV.png",
+        "tags": [
+            "Exploration",
+            "Godot",
+            "Indie",
+            "Space"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:24:59Z"
+    },
+    {
+        "url": "https://guineaa.itch.io/tca-maria-e-sofia-itchio",
+        "name": "Resgate um cachorro",
+        "dev": "Guineaa",
+        "description": "Trabalho tca",
+        "genre": "Educational",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 21:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzM0OTg4LnBuZw==/original/jic0um.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:03Z"
+    },
+    {
+        "url": "https://horizonhuez.itch.io/mrp",
+        "name": "More Resources, Please!",
+        "dev": "HorizonHuez",
+        "description": "A Papers!, Please Fangame",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 05:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzY5MTc5LnBuZw==/original/nMkRzP.png",
+        "tags": [
+            "2D",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:07Z"
+    },
+    {
+        "url": "https://mattsgonnamine.itch.io/the-waystation-cafe",
+        "name": "The Waystation Cafe",
+        "dev": "Mattsgonnamine, Deckpop, k-nap, Venus, Soda_Warlock, Divinelight1518",
+        "description": "Welcome to the Waystation Cafe, Earth's intergalactic pit-stop for celestial beings!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 00:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzQ5ODA3LnBuZw==/original/iv7kyY.png",
+        "tags": [
+            "cafe",
+            "Dating Sim",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:10Z"
+    },
+    {
+        "url": "https://peanutypowers.itch.io/my-wish",
+        "name": "My wish...",
+        "dev": "Peanutypowers",
+        "description": "What would you wish for if you could have anything?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 01:42 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzYwMDU3LmpwZw==/original/0D96qY.jpg",
+        "tags": [
+            "2D",
+            "8-Bit",
+            "Bitsy",
+            "LGBT",
+            "No AI",
+            "Retro",
+            "Short",
+            "Top-Down",
+            "Transgender"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "bitsy"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:12Z"
+    },
+    {
+        "url": "https://poyoyi.itch.io/trapped-in-his-mask",
+        "name": "Trapped in his mask",
+        "dev": "poyoyi",
+        "description": "¿Hasta qué punto puede ser engañada una persona?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 02:57 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzY0NjA2LnBuZw==/original/wxAPAy.png",
+        "tags": [
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:15Z"
+    },
+    {
+        "url": "https://tackish.itch.io/one-last-call",
+        "name": "One Last Call",
+        "dev": "Tackish, FlatTire, Tauntbuddy, snowiiiee, MuffinThi3f",
+        "description": "The world is going to end in 2 hours, but you have unfinished business with someone you love. Will you call her in time?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 23:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzQ3MDE3LnBuZw==/original/DNZPgF.png",
+        "tags": [],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:18Z"
+    },
+    {
+        "url": "https://team-daan.itch.io/heavens-tapestry",
+        "name": "Heaven's Tapestry",
+        "dev": "Team Daan",
+        "description": "A game about creating the Heaven's Tapestry, finding the impostor herald and solving puzzles.",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 00:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNTMyOTgwLnBuZw==/original/aqmgvG.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "Multiple Endings",
+            "Mystery",
+            "Narrative",
+            "Singleplayer",
+            "Top-Down"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot",
+            "GIMP",
+            "Inkscape",
+            "Krita"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:44Z"
+    },
+    {
+        "url": "https://tintop.itch.io/beans-black-coffee",
+        "name": "Bean's Black Coffee",
+        "dev": "TinTop",
+        "description": "See the DARK SIDE of coffee",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 22:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzM1MDkzLnBuZw==/original/wl9%2Fd9.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Cooking",
+            "No AI",
+            "Point & Click",
+            "Short",
+            "Singleplayer",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:48Z"
+    },
+    {
+        "url": "https://wondertrash.itch.io/jensen-huang-dating-simulator",
+        "name": "Jensen Huang Dating Simulator",
+        "dev": "wondertrash",
+        "description": "You just lost your position as the CEO of Nvidia after being caught lollygagging with a Chinese BADDIE!",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 19:57 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzIzMDU2LnBuZw==/original/fDHT7h.png",
+        "tags": [
+            "Cute",
+            "Dating Sim",
+            "Meaningful Choices",
+            "Multiple Endings",
+            "Romance",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T16:25:50Z"
     }
 ]
