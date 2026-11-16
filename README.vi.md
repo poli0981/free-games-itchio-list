@@ -1,6 +1,6 @@
 # Danh sách Game Itch.io Miễn Phí
 
-[![Version](https://img.shields.io/badge/version-4.6.1-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
+[![Version](https://img.shields.io/badge/version-4.6.2-blue.svg)](https://github.com/poli0981/free-games-itchio-list/releases/latest)
 [![Trạng thái: ổn định, chỉ bảo trì](https://img.shields.io/badge/status-stable%20%C2%B7%20maintenance%20only-brightgreen.svg)](#trạng-thái-dự-án)
 [![Website](https://img.shields.io/badge/website-freeitchgames.win-purple.svg)](https://freeitchgames.win)
 [![Stars](https://img.shields.io/github/stars/poli0981/free-games-itchio-list?style=social)](https://github.com/poli0981/free-games-itchio-list/stargazers)
@@ -19,7 +19,7 @@
 >
 > Bản tiếng Anh tại [`README.md`](README.md) là bản chính thức. Bản dịch tiếng Việt của các tài liệu chính sách nằm trong [`docs/i18n/vi/`](docs/i18n/vi/).
 
-Một danh mục được tuyển chọn và tự động cập nhật gồm **hơn 5,900 game miễn phí trên [itch.io](https://itch.io)**. Duyệt tại **<https://freeitchgames.win>**: tìm kiếm, lọc, sắp xếp và mở thẳng trang itch.io của bất kỳ game nào. Website chỉ để xem, với tất cả mọi người: không tài khoản, không đăng nhập, không bình luận, không quảng cáo, không thanh toán.
+Một danh mục được tuyển chọn và tự động cập nhật gồm **hơn 6,000 game miễn phí trên [itch.io](https://itch.io)**. Duyệt tại **<https://freeitchgames.win>**: tìm kiếm, lọc, sắp xếp và mở thẳng trang itch.io của bất kỳ game nào. Website chỉ để xem, với tất cả mọi người: không tài khoản, không đăng nhập, không bình luận, không quảng cáo, không thanh toán.
 
 ## Trạng thái dự án
 
