@@ -4633,5 +4633,277 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-16T16:25:50Z"
+    },
+    {
+        "url": "https://betmma.itch.io/glossy-quagmire",
+        "name": "東方勘艶陥 ～ Glossy Quagmire",
+        "dev": "Betmma",
+        "description": "Non-Euclidean touhou fangame",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI3NTQ4ODE2LnBuZw==/original/qgqwTL.png",
+        "tags": [
+            "Fangame",
+            "non-eucledian",
+            "Shoot 'Em Up",
+            "Touhou"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "languages": [
+            "English",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard"
+        ],
+        "made_with": [
+            "LÖVE"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 November 2026 @ 08:28 UTC",
+        "added_at": "2026-11-16T20:24:28Z"
+    },
+    {
+        "url": "https://bncc-387.itch.io/koy-koy-yen-br-kat-moble-by-bncc-387",
+        "name": "KOY KOY YENİ BİR KAT MOBİLE BY BNCC_387",
+        "dev": "BNCC_387",
+        "description": "MODUN SAHİBİ BEN DGLİM BEN MOBİLE PORTLADİM İYİ OYUNLAR DİLERİM BİDE APOLLO İP ATLATİRKEN İTEMİN YANİNDA JUMP DİYE BİR BUTON CİKİYOR ONA BASİNCA ZİPLAYABİLİRSİNİZ",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 07:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzczMTkwLmpwZw==/original/OW%2Bqsi.jpg",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T20:24:32Z"
+    },
+    {
+        "url": "https://neonmoss-studio.itch.io/get-your-grass-to-mars",
+        "name": "Get Your Grass to Mars",
+        "dev": "NeonMoss Studio",
+        "description": "Turn Mars green, one watering can at a time.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 15:43 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE0MDg5LmpwZw==/original/g2aByf.jpg",
+        "tags": [
+            "3D",
+            "Casual",
+            "Cozy",
+            "Farming",
+            "Incremental",
+            "Management",
+            "mars",
+            "Relaxing",
+            "Space",
+            "Third Person"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T20:24:34Z"
+    },
+    {
+        "url": "https://polycube2.itch.io/fih",
+        "name": "LSD:FIH",
+        "dev": "PolyCube",
+        "description": "FISH WITH AN AWP",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 01:39 UTC",
+        "rating": "4.9",
+        "rating_count": "36",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzYyODgxLnBuZw==/original/xqKkN%2F.png",
+        "tags": [
+            "3D",
+            "aim",
+            "Movement Shooter",
+            "sniper",
+            "Third Person"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T20:24:38Z"
+    },
+    {
+        "url": "https://testgames1122.itch.io/test12",
+        "name": "공겜임",
+        "dev": "TESTGAMES1122",
+        "description": "N/A",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 08:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "N/A",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T20:24:42Z"
+    },
+    {
+        "url": "https://thyregud.itch.io/slot-breaker",
+        "name": "Slot Breaker",
+        "dev": "thyregud",
+        "description": "The house always loses. An idle game where you break slot machines. No real money.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 18:52 UTC",
+        "rating": "3.7",
+        "rating_count": "3",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzI1Mzc1LnBuZw==/original/eE4Fes.png",
+        "tags": [
+            "2D",
+            "Casino",
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Parody",
+            "Pixel Art",
+            "Short",
+            "Singleplayer",
+            "slot-machine"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Phaser"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 November 2026 @ 19:55 UTC",
+        "added_at": "2026-11-16T20:24:45Z"
+    },
+    {
+        "url": "https://ugiomin31-ops.itch.io/fifth-voice",
+        "name": "다섯 번째 목소리 (The Fifth Voice)",
+        "dev": "ugiomin31-ops",
+        "description": "철거 직전의 산골 민박으로 떠난 심야답사. 다섯 번째 대답은 누구의 목소리였나.",
+        "genre": "Adventure",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 04:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODgwMjI1LnBuZw==/original/n3dLb7.png",
+        "tags": [
+            "Atmospheric",
+            "First-Person",
+            "Horror",
+            "korean",
+            "Mystery",
+            "Psychological Horror",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-16T20:24:49Z"
     }
 ]
