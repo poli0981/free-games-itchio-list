@@ -5966,5 +5966,135 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-17T16:24:29Z"
+    },
+    {
+        "url": "https://hellobadomenbureaucom.itch.io/rest-in-process",
+        "name": "Rest In Process",
+        "dev": "Bad Omen Bureau",
+        "description": "A pixel art idle tycoon about automating a funeral home staffed by undead.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 17:25 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ1MzU5LnBuZw==/original/cIhxuR.png",
+        "tags": [
+            "Automation",
+            "cemetery",
+            "Dark Humor",
+            "Gothic",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Pixel Art",
+            "Skeletons",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 November 2026 @ 20:04 UTC",
+        "added_at": "2026-11-17T20:23:42Z"
+    },
+    {
+        "url": "https://properbritishgamer.itch.io/addicted-to-holes",
+        "name": "Addicted To Holes",
+        "dev": "properbritishgamer",
+        "description": "an incremental game about digging the deepest hole you can with the biggest bombs you can afford",
+        "genre": "N/A",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 01:19 UTC",
+        "rating": "4.2",
+        "rating_count": "8",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDExODMyLnBuZw==/original/8p3wIJ.png",
+        "tags": [
+            "Casual",
+            "Clicker",
+            "Explosions",
+            "Idle",
+            "Incremental",
+            "Mining",
+            "Pixel Art",
+            "Relaxing",
+            "Sandbox",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T20:23:46Z"
+    },
+    {
+        "url": "https://yonyon4.itch.io/ts-cleaning-battle",
+        "name": "[TS]女の子になっちゃうお掃除対決 / The Gender-Bending Cleaning Battle",
+        "dev": "よんよん",
+        "description": "TS",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 23:38 UTC",
+        "rating": "2.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzY1NzY3LnBuZw==/original/JR%2FmmJ.png",
+        "tags": [
+            "3D",
+            "Anime",
+            "Cleaning",
+            "Comedy",
+            "First-Person",
+            "gender-bender",
+            "japanese",
+            "Story Rich",
+            "transformation",
+            "tsf"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T20:23:49Z"
     }
 ]
