@@ -5023,5 +5023,280 @@
         "notes": "",
         "updated_at": "03 November 2026 @ 13:36 UTC",
         "added_at": "2026-11-17T00:24:38Z"
+    },
+    {
+        "url": "https://boticlawn.itch.io/the-last-sheet",
+        "name": "The Last Sheet",
+        "dev": "boticlawn",
+        "description": "Unroll a mountain of toilet paper, one sheet at a time. A cozy first-person factory.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 18:25 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzI2Mzc5LnBuZw==/original/kRrWc%2B.png",
+        "tags": [
+            "3D",
+            "Automation",
+            "Cozy",
+            "Factory",
+            "First-Person",
+            "Funny",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 November 2026 @ 23:06 UTC",
+        "added_at": "2026-11-17T04:23:59Z"
+    },
+    {
+        "url": "https://d3e.itch.io/dead-cut",
+        "name": "Dead Cut",
+        "dev": "d3e",
+        "description": "The zombie apocalypse won't stop this director! 🔴🎬DRIFT, DIRECT, HAVE FUN!",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 00:27 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzgwOTUyLnBuZw==/original/IMmCNo.png",
+        "tags": [
+            "3D",
+            "Comedy",
+            "Fast-Paced",
+            "Zombies"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 November 2026 @ 01:16 UTC",
+        "added_at": "2026-11-17T04:24:03Z"
+    },
+    {
+        "url": "https://outpost-42-games.itch.io/nemzeti-kozpenzkereso",
+        "name": "Nemzeti Közpénzkereső",
+        "dev": "Outpost 42 Games",
+        "description": "Szagold ki a milliárdokat az NVVH kutyájaként, vagy mentsd ki oligarchaként ebben a szatirikus aknakeresőben!",
+        "genre": "Puzzle",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 17:50 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzE5MDM3LmpwZw==/original/9ePeU3.jpg",
+        "tags": [
+            "2D",
+            "browser-game",
+            "hungarian",
+            "Logic",
+            "magyar",
+            "Minesweeper",
+            "Parody",
+            "Political",
+            "satire",
+            "Time Attack"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Hungarian"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 November 2026 @ 22:41 UTC",
+        "added_at": "2026-11-17T04:24:06Z"
+    },
+    {
+        "url": "https://prodster44.itch.io/chrono-loop",
+        "name": "Chrono Loop",
+        "dev": "Prodster44",
+        "description": "Your timeline is collapsing. Loop until you find a way to fix it.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 22:05 UTC",
+        "rating": "2.7",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzM0NjU3LnBuZw==/original/xrcFUf.png",
+        "tags": [
+            "2D",
+            "Idle",
+            "Incremental",
+            "Roguelite",
+            "Sci-fi",
+            "Singleplayer",
+            "Space",
+            "Time Loop",
+            "Time Travel"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 November 2026 @ 04:11 UTC",
+        "added_at": "2026-11-17T04:24:10Z"
+    },
+    {
+        "url": "https://teyhouse.itch.io/tiny-dungeon-incrementel",
+        "name": "Tiny Dungeon Incremental",
+        "dev": "teyhouse",
+        "description": "Hire heroes, raid dungeons, sell the loot.",
+        "genre": "N/A",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "15 November 2026 @ 21:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzMzMTI0LnBuZw==/original/lILTse.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Dungeon Crawler",
+            "Fantasy",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Three.js"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T04:24:13Z"
+    },
+    {
+        "url": "https://wildforge.itch.io/bombar",
+        "name": "Bombar",
+        "dev": "Wild Forge, MrRendy100",
+        "description": "Bombar — an urban exploration and digging extraction simulator set in post-Soviet Russia. [DEMO]",
+        "genre": "Adventure",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 15:04 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzA5OTQ4LnBuZw==/original/UddyHz.png",
+        "tags": [
+            "Atmospheric",
+            "Character Customization",
+            "Characters",
+            "Exploration",
+            "First-Person",
+            "Psychological Horror",
+            "Retro",
+            "Singleplayer",
+            "Town"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T04:24:16Z"
     }
 ]
