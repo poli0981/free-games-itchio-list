@@ -2575,7 +2575,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T04:23:36Z"
+        "added_at": "2026-11-16T04:23:36Z",
+        "updated_at": "16 November 2026 @ 22:43 UTC"
     },
     {
         "url": "https://asmnms.itch.io/the-ink-of-desception",
@@ -2647,7 +2648,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T04:23:42Z"
+        "added_at": "2026-11-16T04:23:42Z",
+        "updated_at": "16 November 2026 @ 23:58 UTC"
     },
     {
         "url": "https://hn3dxtz.itch.io/all-roads-lead-to-beans",
@@ -2771,8 +2773,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 10:24 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMjgyNTIxLnBuZw==/original/SGD8JL.png",
@@ -2870,7 +2872,7 @@
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 08:25 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMjkzNDUyLmpwZw==/original/vSVzgh.jpg",
@@ -2908,8 +2910,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "3",
+        "rating": "4.8",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMzAyMzc4LnBuZw==/original/vdo58q.png",
@@ -2965,7 +2967,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T04:24:07Z"
+        "added_at": "2026-11-16T04:24:07Z",
+        "updated_at": "17 November 2026 @ 01:05 UTC"
     },
     {
         "url": "https://muptoshin.itch.io/muptoshi",
@@ -3036,12 +3039,11 @@
             "Sounds",
             "Text"
         ],
-        "accessibility": [
-            "Subtitles"
-        ],
+        "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T04:24:11Z"
+        "added_at": "2026-11-16T04:24:11Z",
+        "updated_at": "16 November 2026 @ 17:02 UTC"
     },
     {
         "url": "https://pantherbroii.itch.io/kuthira",
@@ -3080,8 +3082,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 12:30 UTC",
-        "rating": "2.5",
-        "rating_count": "4",
+        "rating": "3.5",
+        "rating_count": "11",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMzAzMDk2LnBuZw==/original/m%2BMPaJ.png",
@@ -3152,8 +3154,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 04:50 UTC",
-        "rating": "3.1",
-        "rating_count": "8",
+        "rating": "3.0",
+        "rating_count": "12",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMjgxMTgxLmdpZg==/original/95ky8l.gif",
@@ -3185,7 +3187,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T04:24:23Z"
+        "added_at": "2026-11-16T04:24:23Z",
+        "updated_at": "16 November 2026 @ 18:00 UTC"
     },
     {
         "url": "https://wibredev.itch.io/wish-break",
@@ -3216,7 +3219,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T04:24:26Z"
+        "added_at": "2026-11-16T04:24:26Z",
+        "updated_at": "16 November 2026 @ 22:14 UTC"
     },
     {
         "url": "https://aubrey-clery.itch.io/ophelia-in-the-underworld",
@@ -3618,7 +3622,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T08:24:20Z"
+        "added_at": "2026-11-16T08:24:20Z",
+        "updated_at": "16 November 2026 @ 19:41 UTC"
     },
     {
         "url": "https://smokythrill.itch.io/girlblogging",
@@ -3651,7 +3656,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T08:24:22Z"
+        "added_at": "2026-11-16T08:24:22Z",
+        "updated_at": "16 November 2026 @ 23:58 UTC"
     },
     {
         "url": "https://the-real-john-videogames.itch.io/address-me",
@@ -4067,7 +4073,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "15 November 2026 @ 22:49 UTC",
+        "updated_at": "16 November 2026 @ 20:04 UTC",
         "added_at": "2026-11-16T16:24:38Z"
     },
     {
@@ -4079,8 +4085,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 12:04 UTC",
-        "rating": "5.0",
-        "rating_count": "1",
+        "rating": "4.0",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMzAyMjMyLnBuZw==/original/%2BxAO8H.png",
@@ -4122,7 +4128,7 @@
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 16:39 UTC",
         "rating": "4.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMzE4NDcyLnBuZw==/original/3g%2BerK.png",
@@ -4594,7 +4600,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T16:25:48Z"
+        "added_at": "2026-11-16T16:25:48Z",
+        "updated_at": "17 November 2026 @ 02:53 UTC"
     },
     {
         "url": "https://wondertrash.itch.io/jensen-huang-dating-simulator",
@@ -4606,7 +4613,7 @@
         "publisher": "N/A",
         "release_date": "15 November 2026 @ 19:57 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMzIzMDU2LnBuZw==/original/fDHT7h.png",
@@ -4758,8 +4765,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "16 November 2026 @ 01:39 UTC",
-        "rating": "4.9",
-        "rating_count": "36",
+        "rating": "4.8",
+        "rating_count": "46",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMzYyODgxLnBuZw==/original/xqKkN%2F.png",
@@ -4782,7 +4789,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-16T20:24:38Z"
+        "added_at": "2026-11-16T20:24:38Z",
+        "updated_at": "17 November 2026 @ 02:17 UTC"
     },
     {
         "url": "https://testgames1122.itch.io/test12",
@@ -4859,7 +4867,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "16 November 2026 @ 19:55 UTC",
+        "updated_at": "16 November 2026 @ 23:17 UTC",
         "added_at": "2026-11-16T20:24:45Z"
     },
     {
