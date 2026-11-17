@@ -5820,5 +5820,151 @@
         "notes": "",
         "updated_at": "14 November 2026 @ 21:26 UTC",
         "added_at": "2026-11-17T12:24:48Z"
+    },
+    {
+        "url": "https://aelur.itch.io/exquisite-cadaver",
+        "name": "Exquisite Cadaver",
+        "dev": "aelur",
+        "description": "Dating in NY can't be that bad, can it?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 22:16 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMjI3NjAxLnBuZw==/original/PHJmPQ.png",
+        "tags": [
+            "Dark",
+            "Female Protagonist",
+            "Horror",
+            "No AI",
+            "Romance",
+            "Short",
+            "Singleplayer",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T16:24:18Z"
+    },
+    {
+        "url": "https://ash-ashtroom.itch.io/dont-look-back",
+        "name": "Don't Look Back",
+        "dev": "Ashtroom",
+        "description": "He said \"don't look back.\" Now we're falling and it's your fault, probably.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.6",
+        "rating_count": "131",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjc0NDM1LmpwZw==/original/XUYAix.jpg",
+        "tags": [
+            "Amare",
+            "Comedy",
+            "Fantasy",
+            "Indie",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 November 2026 @ 15:40 UTC",
+        "added_at": "2026-11-17T16:24:22Z"
+    },
+    {
+        "url": "https://buniindustries.itch.io/wolf-mama-family-time",
+        "name": "Family Time: Yes, Darling! — Wolf Mama Interactive Story",
+        "dev": "Buni Industries",
+        "description": "Come home to Wolf Mama and 512 pups. Your choices lead to eight endings.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 23:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDA3ODkwLnBuZw==/original/DDaJrx.png",
+        "tags": [
+            "Multiple Endings",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T16:24:25Z"
+    },
+    {
+        "url": "https://luna-nv.itch.io/happy-birthday-princess",
+        "name": "Happy Birthday, Princess",
+        "dev": "Luna_NV",
+        "description": "💜 HAPPY BIRTHDAY, PRINCESS Una historia de amor, un encuentro inesperado y un cumpleaños que jamás olvidarás. ¿Y si un encuentro casual terminara convirtiéndose en una historia de amor?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 00:51 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDExMTgyLnBuZw==/original/LNR1cV.png",
+        "tags": [
+            "Anime",
+            "Multiple Endings",
+            "Romance"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T16:24:29Z"
     }
 ]
