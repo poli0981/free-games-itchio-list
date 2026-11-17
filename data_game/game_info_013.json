@@ -4905,5 +4905,115 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-16T20:24:49Z"
+    },
+    {
+        "url": "https://donnertech.itch.io/vela",
+        "name": "Vela",
+        "dev": "DonnerTech, squishycat10, TheArtificer, Jackmahoy, A Prophetic Pest",
+        "description": "Make sure your browser has WebGPU enabled , Firefox does not have this enabled by default, and the game will not start without it.",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 04:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzY5ODM0LmpwZw==/original/WKrJXc.jpg",
+        "tags": [
+            "3D",
+            "cover-shooter",
+            "FPS",
+            "wsu"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T00:24:31Z"
+    },
+    {
+        "url": "https://yile325.itch.io/symbiosis",
+        "name": "symbiosis",
+        "dev": "@颐乐_yile",
+        "description": "eitaku同人作品",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 07:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzcwMjMwLnBuZw==/original/eqV%2FJI.png",
+        "tags": [
+            "2D",
+            "Fangame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-17T00:24:35Z"
+    },
+    {
+        "url": "https://mimi-star-star.itch.io/yoga",
+        "name": "yoga",
+        "dev": "mimi star star",
+        "description": "Find a comfortable seat, root your sitz bones into the earth, and rest your fingers on your keyboard for a delightful vinyasa flow.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 October 2026 @ 06:19 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMDQ5NTIwLmdpZg==/original/eUIsDq.gif",
+        "tags": [
+            "Cozy",
+            "Explosions",
+            "flash",
+            "Funny",
+            "Godot",
+            "Hand-drawn",
+            "ikiki",
+            "No AI",
+            "Relaxing",
+            "yoga"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "03 November 2026 @ 13:36 UTC",
+        "added_at": "2026-11-17T00:24:38Z"
     }
 ]
