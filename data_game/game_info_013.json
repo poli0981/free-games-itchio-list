@@ -6096,5 +6096,248 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-17T20:23:49Z"
+    },
+    {
+        "url": "https://godzillafan1.itch.io/shin-godzilla-mngame",
+        "name": "Shin Godzilla Tokyo destruction",
+        "dev": "godzillafan1",
+        "description": "A Shin godzilla minigame!",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 08:32 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDIzNzYzLmpwZw==/original/hVoRqy.jpg",
+        "tags": [
+            "2D",
+            "Singleplayer"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:39Z"
+    },
+    {
+        "url": "https://kumokurosaki1101.itch.io/enantio",
+        "name": "ENANTIO",
+        "dev": "黒崎くも KumoKurosaki",
+        "description": "深夜的極短篇。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 12:39 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDIwOTc3LnBuZw==/original/Xq9%2BFA.png",
+        "tags": [
+            "lang-zh",
+            "No AI",
+            "Otome",
+            "RPG Maker"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:43Z"
+    },
+    {
+        "url": "https://lostfana.itch.io/mark-of-arkananta",
+        "name": "Mark of Arkananta",
+        "dev": "Fana",
+        "description": "Di tengah tanah yang terlupakan dan ketimpangan kerajaan yang kejam, Agrace berduka atas kematian ibunya.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 13:26 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDMzMDY4LnBuZw==/original/%2FzYO7j.png",
+        "tags": [
+            "Turn-based Strategy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:47Z"
+    },
+    {
+        "url": "https://mariotouma.itch.io/kasra",
+        "name": "Kasra",
+        "dev": "mariotouma",
+        "description": "Kasra (Broke) is a role-playing game that explores the realities of managing money, time, and well-being.",
+        "genre": "Role Playing",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 11:31 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzgwNDkxLnBuZw==/original/gBAUuq.png",
+        "tags": [
+            "Global Game Jam",
+            "Godot",
+            "nar"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:49Z"
+    },
+    {
+        "url": "https://mobbarley.itch.io/backatitagain",
+        "name": "Back at it Again",
+        "dev": "MobBarley",
+        "description": "Game i made for a good friend.(Only in spanish for now, translation update coming soon)",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 09:53 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDIzNTkwLnBuZw==/original/VVd6GO.png",
+        "tags": [],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:52Z"
+    },
+    {
+        "url": "https://paleta-studio.itch.io/majicity",
+        "name": "Magicity",
+        "dev": "Paleta Studio",
+        "description": "Crees que tu habilidad dará poderes a la gente de la ciudad?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 10:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDI4MTU5LmpwZw==/original/K3g79y.jpg",
+        "tags": [
+            "2D",
+            "Pixel Art",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Joystick",
+            "Smartphone"
+        ],
+        "made_with": [
+            "GIMP",
+            "Inkscape",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:54Z"
+    },
+    {
+        "url": "https://reelationship.itch.io/reel-love",
+        "name": "Reel Love",
+        "dev": "Reelationship",
+        "description": "Where do you draw the line between what's real and ideal?",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 09:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDM2NDYxLnBuZw==/original/X4Zvi1.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T00:23:58Z"
     }
 ]
