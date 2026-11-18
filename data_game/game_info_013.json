@@ -7093,5 +7093,490 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-18T12:24:54Z"
+    },
+    {
+        "url": "https://gemesplayyt.itch.io/caseoh-121-i-tihnk",
+        "name": "Caseoh 1.2.1 (i tihnk)",
+        "dev": "aplex!",
+        "description": "since no one in the bbac wanted to do it i have to do it myself equals three unplaytested",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 17:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQzMTIyLnBuZw==/original/jb6ePm.png",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:23:51Z"
+    },
+    {
+        "url": "https://jmxxp.itch.io/invox",
+        "name": "Invox",
+        "dev": "Jmxxp",
+        "description": "Crie qualquer coisa com a sua voz.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 23:56 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE4MjQ2LnBuZw==/original/GwJQNl.png",
+        "tags": [
+            "3D",
+            "Creative",
+            "Destruction",
+            "Funny",
+            "modding",
+            "Multiplayer",
+            "Physics",
+            "Sandbox",
+            "voice-controlled",
+            "Voxel"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Voice control",
+            "Smartphone",
+            "Microphone"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "Configurable controls",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:23:55Z"
+    },
+    {
+        "url": "https://modernvintagegamer.itch.io/kungfumaster-a500-edition",
+        "name": "Kung-Fu Master : A500 Edition (OCS Amiga)",
+        "dev": "Dimitris Giannakis - MVG",
+        "description": "Conversion of Kung Fu Master to the Amiga 500",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 18:38 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ1MzIwLnBuZw==/original/bVJlzS.png",
+        "tags": [],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:23:58Z"
+    },
+    {
+        "url": "https://soloroleplayers.itch.io/the-yes-oracle",
+        "name": "Yes! Oracle",
+        "dev": "SoloRolePlayers",
+        "description": "A simple yet effective tool for any TTRPG Solo Play",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 14:07 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzg1MTk1LnBuZw==/original/ipMsno.png",
+        "tags": [
+            "oracle",
+            "soloroleplayers",
+            "Solo RPG",
+            "Tabletop role-playing game"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:02Z"
+    },
+    {
+        "url": "https://svenunit.itch.io/ladder-to-the-moon",
+        "name": "Ladder to the Moon",
+        "dev": "svenunit",
+        "description": "An incremental about building a ladder all the way to the moon....",
+        "genre": "N/A",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 16:35 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQwOTQzLnBuZw==/original/mOpw3b.png",
+        "tags": [
+            "2D",
+            "Clicker",
+            "Godot",
+            "Incremental",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:06Z"
+    },
+    {
+        "url": "https://vnomis.itch.io/abadia-amiga",
+        "name": "La Abadía del Crimen / The Abbey of Crime (Amiga Version)",
+        "dev": "vnomis",
+        "description": "La Abadía del Crimen llega al Commodore Amiga.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 16:10 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDM4NDEwLmpwZWc=/original/Sh2bLP.jpeg",
+        "tags": [
+            "Amiga",
+            "Homebrew",
+            "Isometric"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:10Z"
+    },
+    {
+        "url": "https://yahaidev-ultra.itch.io/legend-hunter-archaeological-zone",
+        "name": "Legend Hunter archaeological Zone",
+        "dev": "yahaidev-ultra",
+        "description": "A beautiful pixel-art platformer game titled Legend Hunter: Archaeological Zone.",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 22:57 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNjM2MDM1LnBuZw==/original/Jacqe2.png",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:15Z"
+    },
+    {
+        "url": "https://impaincakes.itch.io/gpu-got-me-feeling",
+        "name": "GPU Got Me Feeling",
+        "dev": "paincakes",
+        "description": "A kawaii stock-market dating sim parody. Buy the dip. Win his heart. Don't get OVERCLOCKED.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 23:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDU0ODgyLnBuZw==/original/hfFtoS.png",
+        "tags": [
+            "Anime",
+            "Comedy",
+            "Cute",
+            "Dating Sim",
+            "Horror",
+            "Otome",
+            "Parody",
+            "Psychological Horror",
+            "Romance",
+            "Yandere"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:19Z"
+    },
+    {
+        "url": "https://missmystie.itch.io/fortune-my-beloved",
+        "name": "Fortune, My Beloved",
+        "dev": "Miss Mystie, fauxless, starlightfaerie, 5unly",
+        "description": "A narrative tarot game",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 04:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDY4NDU2LnBuZw==/original/MIHQO0.png",
+        "tags": [
+            "2D",
+            "Dark",
+            "Lesbian",
+            "Romance",
+            "storygame",
+            "Tarot",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:22Z"
+    },
+    {
+        "url": "https://mysteryt242.itch.io/higurashi-no-naku-koro-ni-shin",
+        "name": "Higurashi no Naku koro ni Shin",
+        "dev": "MysteryT242",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 00:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDU5NjI1LnBuZw==/original/wTVle3.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:27Z"
+    },
+    {
+        "url": "https://paleta-studio.itch.io/magicity",
+        "name": "Magicity",
+        "dev": "Paleta Studio",
+        "description": "Crees que tu habilidad dará poderes a la gente de la ciudad?",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 10:30 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDI4MTU5LmpwZw==/original/K3g79y.jpg",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Pixel Art",
+            "Retro",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "Spanish; Castilian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Joystick",
+            "Smartphone"
+        ],
+        "made_with": [
+            "GIMP",
+            "Inkscape",
+            "Clip Studio Paint"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 November 2026 @ 15:46 UTC",
+        "added_at": "2026-11-18T16:24:30Z"
+    },
+    {
+        "url": "https://sanokei.itch.io/basketball-trainer",
+        "name": "Basketball Trainer",
+        "dev": "Sanokei",
+        "description": "An FMV game to teach basketball",
+        "genre": "Sports",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 20:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQyOTQ1LnBuZw==/original/el2uZW.png",
+        "tags": [
+            "FMV",
+            "Kinetic Novel",
+            "Short",
+            "Singleplayer",
+            "storygame"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:35Z"
+    },
+    {
+        "url": "https://seiira-akila2.itch.io/last-goodbye-unsaid",
+        "name": "Last Goodbye, Unsaid.",
+        "dev": "SEII_",
+        "description": "A short visual novel about a goodbye that was never said.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 04:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDY1MjY2LnBuZw==/original/nL9S9j.png",
+        "tags": [
+            "2D",
+            "Emotional",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T16:24:38Z"
     }
 ]
