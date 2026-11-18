@@ -7578,5 +7578,145 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-18T16:24:38Z"
+    },
+    {
+        "url": "https://5days.itch.io/5-days-at-southwest",
+        "name": "5 Days at Southwest",
+        "dev": "5days",
+        "description": "The last week of senior year is a stealth game.",
+        "genre": "Survival",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 07:02 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTk1MjI2LnBuZw==/original/%2Fgb%2FZc.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T20:24:43Z"
+    },
+    {
+        "url": "https://gyungjipath.itch.io/jeungsukrevengegame",
+        "name": "증슥이의 복수",
+        "dev": "gyungjipath",
+        "description": "N/A",
+        "genre": "Fighting",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 14:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDM1OTYzLnBuZw==/original/MbdBUx.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T20:24:46Z"
+    },
+    {
+        "url": "https://lufistudio.itch.io/lunar-salvage",
+        "name": "Lunar Salvage",
+        "dev": "LufiStudio",
+        "description": "Harvest moon dust, build automated factories, and engineer an army of robots and drones!",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 23:35 UTC",
+        "rating": "2.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDU1ODQ3LnBuZw==/original/HBRK3h.png",
+        "tags": [
+            "2D",
+            "Automation",
+            "Cleaning",
+            "Idle",
+            "Incremental",
+            "Robots",
+            "Sci-fi",
+            "Space",
+            "Top-Down"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T20:24:49Z"
+    },
+    {
+        "url": "https://thefoxknocks.itch.io/nomad-idle-2",
+        "name": "Nomad Idle 2",
+        "dev": "The Fox Knocks",
+        "description": "Idle game auto-battler where you create builds and have your party kill hordes of enemies.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 22:14 UTC",
+        "rating": "3.7",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTk2NzMyLnBuZw==/original/MHCpPu.png",
+        "tags": [
+            "Auto Battler",
+            "Idle",
+            "Incremental"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T20:24:53Z"
     }
 ]
