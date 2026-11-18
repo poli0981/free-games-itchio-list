@@ -6586,5 +6586,512 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-18T04:24:25Z"
+    },
+    {
+        "url": "https://alfarezi-fhalevi.itch.io/wizard-quest",
+        "name": "WIZARD QUEST",
+        "dev": "Alfarezi_Fhalevi",
+        "description": "Dalam game ini kamu berperan sebagai resepsionis guild kecil.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 15:18 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDM3MzE2LnBuZw==/original/LZxbOk.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Construct"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:12Z"
+    },
+    {
+        "url": "https://blindboxd.itch.io/unbox",
+        "name": "UNBOX",
+        "dev": "blindboxd",
+        "description": "Unbox your true self.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 12:03 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDMzODA1LnBuZw==/original/%2BjbrKI.png",
+        "tags": [
+            "2D",
+            "Choices Matter",
+            "Multiple Endings",
+            "Narrative",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:16Z"
+    },
+    {
+        "url": "https://bobcgames.itch.io/the-rebirth",
+        "name": "Mother: The Rebirth",
+        "dev": "bobcgames",
+        "description": "A widower finds himself forced to confront his past and future in a Sci-Fi point-and-click adventure",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 18:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzUyNzY1LmpwZw==/original/U4SBay.jpg",
+        "tags": [
+            "Bara",
+            "Gay",
+            "LGBT",
+            "LGBTQIA",
+            "Point & Click",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:20Z"
+    },
+    {
+        "url": "https://godzillafan1.itch.io/mecha-godzilla-2021",
+        "name": "MECHA GODZILLA 2021",
+        "dev": "godzillafan1",
+        "description": "this is my second minigame!",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 14:57 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDM4MjIyLmpwZw==/original/%2F7oWD1.jpg",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:22Z"
+    },
+    {
+        "url": "https://kazeyoru-art.itch.io/wrong-username-fan",
+        "name": "Wrong Username - Tian Guan Ci Fu fan game",
+        "dev": "Kazeyoru",
+        "description": "За случайным сообщением может скрываться целая история",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 21:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ3Njg5LnBuZw==/original/THkTyE.png",
+        "tags": [
+            "2D",
+            "LGBT"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:26Z"
+    },
+    {
+        "url": "https://mangograhamfloatie.itch.io/polished-hearts-a-final-fantasy-9-fan-visual-novel",
+        "name": "Polished Hearts - A Final Fantasy 9 Fan Visual Novel",
+        "dev": "Lux Evangelica",
+        "description": "Tired of boring life? Escape in a dream marriage with Steiner!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 20:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDUwMjg4LnBuZw==/original/Te2xHL.png",
+        "tags": [
+            "2D",
+            "Fangame",
+            "Indie",
+            "No AI",
+            "Romance",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:29Z"
+    },
+    {
+        "url": "https://que-escapa.itch.io/malla-bory",
+        "name": "Maúlla, Bory",
+        "dev": "que_escapa",
+        "description": "Basado en hechos reales. Un viaje de supervivencia, frío y esperanza.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 19:40 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNzg1ODkzLnBuZw==/original/fox6cZ.png",
+        "tags": [
+            "2D",
+            "Cats"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:33Z"
+    },
+    {
+        "url": "https://spelledarn.itch.io/appleby",
+        "name": "Appleby: A Year Beneath the Blue",
+        "dev": "Johan Jakobsson",
+        "description": "A free noblebright, hopepunk visual novel. Five oath-sworn strangers, one brand-new village, and a year to make it home.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 15:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDI2Nzc2LmpwZw==/original/Ucmo4d.jpg",
+        "tags": [
+            "Anime",
+            "Choices Matter",
+            "Cozy",
+            "Fantasy",
+            "Female Protagonist",
+            "Otome",
+            "Romance",
+            "Slice Of Life",
+            "Story Rich",
+            "Wholesome"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:38Z"
+    },
+    {
+        "url": "https://stray-fawn-studio.itch.io/kill-your-darlings",
+        "name": "Kill Your Darlings",
+        "dev": "Stray Fawn Studio",
+        "description": "A time-management dating-sim RPG... with permadeath.",
+        "genre": "Role Playing",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 16:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMTk4MzcwLnBuZw==/original/TE7BfJ.png",
+        "tags": [
+            "2D",
+            "Dating Sim",
+            "JRPG",
+            "No AI",
+            "Perma Death",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:42Z"
+    },
+    {
+        "url": "https://suicideange1-mediaguy.itch.io/lovelorn",
+        "name": "LoveLorn",
+        "dev": "suicideange1 &mediaguy",
+        "description": "18+ Terrifying Horror",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 20:35 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDUwNjY1LnBuZw==/original/FkBMdv.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Dark",
+            "Female Protagonist",
+            "Hand-drawn",
+            "Horror",
+            "Meaningful Choices",
+            "No AI",
+            "Psychological Horror"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:45Z"
+    },
+    {
+        "url": "https://watercoolernotdeltarune.itch.io/changed-crimson",
+        "name": "Changed: Crimson",
+        "dev": "WaterCoolerNotDeltarune",
+        "description": "Changed & The Nascent Crimson God",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 20:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjE5ODAxLnBuZw==/original/1Y9HLq.png",
+        "tags": [
+            "Fangame",
+            "RPG Maker"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:47Z"
+    },
+    {
+        "url": "https://yungchoi.itch.io/go-back",
+        "name": "go back",
+        "dev": "yung.choi",
+        "description": "A bishōjo idle dating sim about going back to school and finally saying how you feel.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 14:24 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDc4NzY1LnBuZw==/original/MwNg7d.png",
+        "tags": [
+            "Anime",
+            "Clicker",
+            "Dating Sim",
+            "Idle",
+            "Multiple Endings",
+            "Romance",
+            "School"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Indonesian",
+            "Japanese",
+            "Korean",
+            "Thai",
+            "Vietnamese",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:50Z"
+    },
+    {
+        "url": "https://zeba-studio.itch.io/dont-take-it-over-qualified",
+        "name": "Dont Take It Over Qualified",
+        "dev": "Zeba Studio, NekoPlayThis, ai, finana23",
+        "description": "N/A",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 16:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQzODcwLnBuZw==/original/%2FVR4YY.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Office",
+            "Slice Of Life",
+            "Working Simulator"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T12:24:54Z"
     }
 ]
