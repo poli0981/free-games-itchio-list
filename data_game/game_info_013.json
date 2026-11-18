@@ -6339,5 +6339,252 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-18T00:23:58Z"
+    },
+    {
+        "url": "https://diehardtales.itch.io/ninja-headz-simulator",
+        "name": "NINJA HEADZ SIMULATOR",
+        "dev": "NinjaslayerOfficial/DiehardTalesGames",
+        "description": "この街にニンジャがいるはずなんだよ",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 11:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDI5NjcyLnBuZw==/original/fbyblv.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T04:24:10Z"
+    },
+    {
+        "url": "https://jawdandev.itch.io/nonogueram",
+        "name": "Nonogueram",
+        "dev": "Jawdan, Denton, befany",
+        "description": "Fast-paced Procedural Picross Puzzle Roguelike",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "54",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ1MzYxLnBuZw==/original/0yLX8Q.png",
+        "tags": [
+            "2D",
+            "Fantasy",
+            "Godot",
+            "Nonogram",
+            "Picross",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 November 2026 @ 23:00 UTC",
+        "added_at": "2026-11-18T04:24:13Z"
+    },
+    {
+        "url": "https://pr-crew.itch.io/prehistoric-relations-vn",
+        "name": "Prehistoric Relations",
+        "dev": "PR Crew",
+        "description": "Prehistoric Baddies™",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "121",
+        "average_session": "About a half-hour",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDM5ODU0LnBuZw==/original/2RD%2F93.png",
+        "tags": [
+            "Bara",
+            "Comedy",
+            "Dinosaurs",
+            "Fast-Paced",
+            "Furry",
+            "Gay",
+            "LGBT",
+            "Queer",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America",
+            "Portuguese (Brazil)",
+            "Tagalog",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "17 November 2026 @ 16:17 UTC",
+        "added_at": "2026-11-18T04:24:15Z"
+    },
+    {
+        "url": "https://primeprimeprime.itch.io/baldcraft-c-edton-androd-port",
+        "name": "BALDCRAFT C# EDİTİON ANDROİD PORT",
+        "dev": "Yemaldi",
+        "description": "YAY BALDCRAFT C# GAME İS NOW HAVE A ANDROİD PORT HELL YA Fixed İtemslot",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "17 November 2026 @ 07:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDIxODM0LmpwZw==/original/l7Hnlg.jpg",
+        "tags": [],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T04:24:17Z"
+    },
+    {
+        "url": "https://thibault-rivera.itch.io/funerama",
+        "name": "Funerama",
+        "dev": "Thibault Rivera",
+        "description": "A point-and-click adventure into the sick mind of a novelist.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "71",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2NzI4OTk2LnBuZw==/original/%2BLIVsE.png",
+        "tags": [
+            "Atmospheric",
+            "Creepy",
+            "Dark",
+            "dithering",
+            "Gore",
+            "Horror",
+            "Mystery",
+            "Point & Click"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Construct",
+            "Adobe Photoshop"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "Subtitles",
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "16 November 2026 @ 19:49 UTC",
+        "added_at": "2026-11-18T04:24:21Z"
+    },
+    {
+        "url": "https://w.itch.io/tombed",
+        "name": "Tombed",
+        "dev": "Anna Anthropy",
+        "description": "Danger Jane's narrow escape!",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "11 November 2026 @ 19:55 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMDc1NDQ2LnBuZw==/original/sJ7wyl.png",
+        "tags": [
+            "advancing-wall-of-doom",
+            "digging",
+            "Ludum Dare",
+            "ludum-dare-14"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-18T04:24:25Z"
     }
 ]
