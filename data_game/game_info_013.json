@@ -7718,5 +7718,255 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-18T20:24:53Z"
+    },
+    {
+        "url": "https://aekyem.itch.io/yours-truly",
+        "name": "Yours Truly",
+        "dev": "aekyem",
+        "description": "A love story written by yours truly.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 12:00 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDc4ODM2LnBuZw==/original/Ic4yDC.png",
+        "tags": [
+            "2D",
+            "Psychological Horror",
+            "Romance",
+            "Unity"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:04Z"
+    },
+    {
+        "url": "https://akikaze1016.itch.io/ore-no-yume-kitan",
+        "name": "俺の夢奇譚",
+        "dev": "Akikaze1016",
+        "description": "夢の街を歩く、100話の探索ノベル。",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 13:11 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDgyMjgwLmpwZw==/original/OYBcUI.jpg",
+        "tags": [],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:07Z"
+    },
+    {
+        "url": "https://alfreezzz.itch.io/yang-hemat-ya",
+        "name": "Yang Hemat Ya",
+        "dev": "alfreezzz",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 09:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDc0NTAzLnBuZw==/original/jRdLbH.png",
+        "tags": [
+            "2D"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:10Z"
+    },
+    {
+        "url": "https://mouazzam-ghori.itch.io/3dbikeracing2026",
+        "name": "3d bike racing 2026",
+        "dev": "Mouazzam ghori",
+        "description": "3D Bike Racing – Ultimate Motorcycle Racing Get ready for an exciting 3D motorcycle racing adventure!",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 12:38 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjExNTcyLnBuZw==/original/vmcnEV.png",
+        "tags": [
+            "2D",
+            "3D",
+            "Adult",
+            "Cute",
+            "Horror",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:14Z"
+    },
+    {
+        "url": "https://res1dentcrypt1d.itch.io/icouldreallyuseyourhelp",
+        "name": "i could (really) use your help",
+        "dev": "resident // cryptid",
+        "description": "local catboys do chores together very (w)holesome",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 08:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDU4NDYxLmpwZw==/original/hEpPN1.jpg",
+        "tags": [
+            "2D",
+            "No AI",
+            "Physics",
+            "Unity"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:20Z"
+    },
+    {
+        "url": "https://sejimayuuki.itch.io/anohinoelevator",
+        "name": "あの日のエレベーター",
+        "dev": "sejimayuuki",
+        "description": "SFサスペンスのノベルゲーム",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 12:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDgwMzYyLnBuZw==/original/6yfATy.png",
+        "tags": [
+            "free",
+            "Indie",
+            "Mystery",
+            "Sci-fi",
+            "suspense"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:23Z"
+    },
+    {
+        "url": "https://techtips34.itch.io/nothing-ever-happens",
+        "name": "Nothing Ever Happens",
+        "dev": "techtips34",
+        "description": "A character-driven romance visual novel about three women, an ordinary office, and the things people don't say.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 12:07 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDc2MTU4LnBuZw==/original/Q3uFXg.png",
+        "tags": [
+            "Anime",
+            "Choices Matter",
+            "Dating Sim",
+            "Psychological Horror",
+            "Romance",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T00:24:26Z"
     }
 ]
