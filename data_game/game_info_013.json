@@ -6381,8 +6381,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "N/A",
-        "rating": "4.7",
-        "rating_count": "54",
+        "rating": "4.6",
+        "rating_count": "59",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ1MzYxLnBuZw==/original/0yLX8Q.png",
@@ -6430,7 +6430,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.8",
-        "rating_count": "121",
+        "rating_count": "122",
         "average_session": "About a half-hour",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDM5ODU0LnBuZw==/original/2RD%2F93.png",
@@ -6516,7 +6516,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.9",
-        "rating_count": "71",
+        "rating_count": "83",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2NzI4OTk2LnBuZw==/original/%2BLIVsE.png",
@@ -6565,8 +6565,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "11 November 2026 @ 19:55 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMDc1NDQ2LnBuZw==/original/sJ7wyl.png",
@@ -6802,7 +6802,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-18T12:24:29Z"
+        "added_at": "2026-11-18T12:24:29Z",
+        "updated_at": "19 November 2026 @ 01:01 UTC"
     },
     {
         "url": "https://que-escapa.itch.io/malla-bory",
@@ -6943,8 +6944,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "17 November 2026 @ 20:35 UTC",
-        "rating": "N/A",
-        "rating_count": "N/A",
+        "rating": "5.0",
+        "rating_count": "1",
         "average_session": "N/A",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDUwNjY1LnBuZw==/original/FkBMdv.png",
@@ -7056,7 +7057,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-18T12:24:50Z"
+        "added_at": "2026-11-18T12:24:50Z",
+        "updated_at": "18 November 2026 @ 21:15 UTC"
     },
     {
         "url": "https://zeba-studio.itch.io/dont-take-it-over-qualified",
@@ -7120,7 +7122,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-18T16:23:51Z"
+        "added_at": "2026-11-18T16:23:51Z",
+        "updated_at": "18 November 2026 @ 19:44 UTC"
     },
     {
         "url": "https://jmxxp.itch.io/invox",
@@ -7249,8 +7252,8 @@
         "status": "Prototype",
         "publisher": "N/A",
         "release_date": "17 November 2026 @ 16:35 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "3.7",
+        "rating_count": "3",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDQwOTQzLnBuZw==/original/mOpw3b.png",
@@ -7310,7 +7313,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-18T16:24:10Z"
+        "added_at": "2026-11-18T16:24:10Z",
+        "updated_at": "18 November 2026 @ 23:13 UTC"
     },
     {
         "url": "https://yahaidev-ultra.itch.io/legend-hunter-archaeological-zone",
@@ -7505,7 +7509,7 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "updated_at": "18 November 2026 @ 15:46 UTC",
+        "updated_at": "18 November 2026 @ 21:13 UTC",
         "added_at": "2026-11-18T16:24:30Z"
     },
     {
@@ -7652,8 +7656,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "17 November 2026 @ 23:35 UTC",
-        "rating": "2.7",
-        "rating_count": "3",
+        "rating": "2.2",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDU1ODQ3LnBuZw==/original/HBRK3h.png",
@@ -7694,8 +7698,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "17 November 2026 @ 22:14 UTC",
-        "rating": "3.7",
-        "rating_count": "3",
+        "rating": "4.2",
+        "rating_count": "5",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMTk2NzMyLnBuZw==/original/MHCpPu.png",
@@ -7827,7 +7831,7 @@
         "publisher": "N/A",
         "release_date": "18 November 2026 @ 12:38 UTC",
         "rating": "1.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "N/A",
         "nsfw": "Yes",
         "thumbnail": "https://img.itch.zone/aW1nLzMyMjExNTcyLnBuZw==/original/vmcnEV.png",
