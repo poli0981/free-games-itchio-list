@@ -8983,5 +8983,118 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-19T16:24:10Z"
+    },
+    {
+        "url": "https://4thwarden.itch.io/the-octagon-within",
+        "name": "The Octagon Within",
+        "dev": "4thWarden",
+        "description": "Run an MMA gym. Build fighters. Watch every fight play out live and own the belt.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 17:15 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDYxNTExLnBuZw==/original/aaICtU.png",
+        "tags": [
+            "career",
+            "Management",
+            "mma",
+            "Procedural Generation",
+            "Singleplayer",
+            "windows"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 November 2026 @ 18:35 UTC",
+        "added_at": "2026-11-19T20:23:35Z"
+    },
+    {
+        "url": "https://blushrelay.itch.io/feed-my-girlfriend",
+        "name": "Feed My Girlfriend",
+        "dev": "blushrelay",
+        "description": "A cozy 3D weight gain game about one pizza a day",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 01:50 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTEwMDE1LnBuZw==/original/ihS52H.png",
+        "tags": [
+            "3D",
+            "Cooking",
+            "Cozy",
+            "Dress Up",
+            "fat",
+            "Life Simulation",
+            "pizza",
+            "Romance",
+            "Slice Of Life",
+            "weight-gain"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T20:23:38Z"
+    },
+    {
+        "url": "https://colpanic.itch.io/dkc3-kongplete",
+        "name": "Donkey Kong Country 3: Kong-plete!",
+        "dev": "ColPanic",
+        "description": "Four Kong Roster!",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 17:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDg5MTk0LnBuZw==/original/1KDYUF.png",
+        "tags": [
+            "Homebrew",
+            "romhack",
+            "Super Nintendo"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T20:23:40Z"
     }
 ]
