@@ -8136,5 +8136,559 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-19T04:24:21Z"
+    },
+    {
+        "url": "https://fleetingglance.itch.io/homebrew-antiques",
+        "name": "Homebrew Antiques (2 Hour Narrative Game Jam)",
+        "dev": "FleetingGlance, Literally_Leon, Starlava, Maze",
+        "description": "Waking up as a goblin and trying to navigate your new existance while running your shop.",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 16:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDkxMjgxLnBuZw==/original/d%2FqfnZ.png",
+        "tags": [
+            "Comedy",
+            "Cozy",
+            "Fantasy"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:23:58Z"
+    },
+    {
+        "url": "https://info-jeunes-occitanie.itch.io/mindset",
+        "name": "MINDSET",
+        "dev": "INFO-JEUNES OCCITANIE",
+        "description": "Roman visuel pour ateliers jeunes : 5 jours en stage, des choix, et tes compétences psychosociales en jeu.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 18:38 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDk1Nzc2LnBuZw==/original/9qELVE.png",
+        "tags": [
+            "2D",
+            "Choices Matter",
+            "french",
+            "Godot",
+            "Mental Health",
+            "psychology",
+            "Singleplayer",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:01Z"
+    },
+    {
+        "url": "https://jazzy-the-goober.itch.io/a-chat-with-canada-san",
+        "name": "a chat with canada-san!",
+        "dev": "jazzy_the_goober",
+        "description": "chat with canada! XD",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 15:26 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDg3Mzc5LnBuZw==/original/GWEde1.png",
+        "tags": [
+            "hetalia",
+            "hetalia-axis-powers",
+            "Retro"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:04Z"
+    },
+    {
+        "url": "https://liyou-ara.itch.io/mysterious-card",
+        "name": "Detective Gambler",
+        "dev": "Arandomniceguy",
+        "description": "Combine evidence cards and piece together a murder mystery in comic panels.",
+        "genre": "Card Game",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 11:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDcyNDQyLnBuZw==/original/RNV%2Bxc.png",
+        "tags": [
+            "2D",
+            "Detective",
+            "First-Person",
+            "Indie",
+            "Murder Mystery",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:07Z"
+    },
+    {
+        "url": "https://missduck101.itch.io/brain-vomit",
+        "name": "Brain Vomit",
+        "dev": "Duck / Audria",
+        "description": "A project about me and my brain.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 18:25 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1MjgzMjcyLmpwZw==/original/iRgkFn.jpg",
+        "tags": [
+            "Mental Health",
+            "Ren'Py",
+            "Short"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:11Z"
+    },
+    {
+        "url": "https://norinerd.itch.io/when-the-world-moves-too-fast",
+        "name": "When the World Moves too Fast",
+        "dev": "NoriNerd",
+        "description": "A little place to relax",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 20:47 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTAwNzkwLnBuZw==/original/MGJaJ0.png",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Cute",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:14Z"
+    },
+    {
+        "url": "https://time100ca.itch.io/the-comeback-year",
+        "name": "The Comeback Year",
+        "dev": "time100ca",
+        "description": "A school life-sim where growth never goes down. Choices, real quizzes, and one very important free throw.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 17:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDkyNjYyLnBuZw==/original/lrZrKV.png",
+        "tags": [
+            "Choices Matter",
+            "Cozy",
+            "html5",
+            "Life Simulation",
+            "School",
+            "Singleplayer",
+            "Slice Of Life",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:17Z"
+    },
+    {
+        "url": "https://buas.itch.io/icarus",
+        "name": "ICARUS",
+        "dev": "Breda University of Applied Sciences",
+        "description": "Pilot a cutting-edge combat mech in a stylish third-person action game.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.9",
+        "rating_count": "11",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwODE0Njg3LnBuZw==/original/2Bliqi.png",
+        "tags": [
+            "buas",
+            "buas-games",
+            "combat",
+            "combos",
+            "Indie",
+            "mecha",
+            "Mechs",
+            "Singleplayer",
+            "Unreal Engine"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 November 2026 @ 23:02 UTC",
+        "added_at": "2026-11-19T12:24:22Z"
+    },
+    {
+        "url": "https://buildarome.itch.io/build-a-rome",
+        "name": "Build-A-Rome",
+        "dev": "buildarome",
+        "description": "Find your name in Rome. Fight in the Arena, walk the living city, build your house.",
+        "genre": "Action",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 19:48 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMzg2MDUyLnBuZw==/original/BZWoOf.png",
+        "tags": [
+            "3D",
+            "ancient-rome",
+            "browser",
+            "City",
+            "gladiator",
+            "Historical",
+            "Low-poly",
+            "mobile",
+            "rome"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:25Z"
+    },
+    {
+        "url": "https://dermondhase.itch.io/exploding-judo-federation",
+        "name": "Exploding Judo Federation",
+        "dev": "der Mondhase",
+        "description": "Tech the grab or die!",
+        "genre": "Fighting",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.7",
+        "rating_count": "9",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzIwOTE3MDQ0LmdpZg==/original/ZHEEgU.gif",
+        "tags": [
+            "Arcade",
+            "Explosions",
+            "Local multiplayer",
+            "Multiplayer",
+            "No AI",
+            "PvP"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Xbox controller",
+            "Joystick",
+            "Playstation controller"
+        ],
+        "made_with": [
+            "Blender",
+            "Audacity",
+            "FL Studio",
+            "Paint.net"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Configurable controls",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "18 November 2026 @ 18:35 UTC",
+        "added_at": "2026-11-19T12:24:29Z"
+    },
+    {
+        "url": "https://jackkel-dragon.itch.io/blooming-nightshade",
+        "name": "Blooming Nightshade",
+        "dev": "Jackkel Dragon",
+        "description": "Lighthearted Romance",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.4",
+        "rating_count": "41",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzQyODU0MTYucG5n/original/4AeKoy.png",
+        "tags": [
+            "Female Protagonist",
+            "Lesbian",
+            "LGBT",
+            "Multiple Endings",
+            "Romance",
+            "Yuri"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "19 November 2026 @ 00:43 UTC",
+        "added_at": "2026-11-19T12:24:33Z"
+    },
+    {
+        "url": "https://oliver-kuso.itch.io/every-last-grain",
+        "name": "Every Last Grain",
+        "dev": "Oliver Kuso",
+        "description": "Clear the desert. One spoonful at a time.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 20:19 UTC",
+        "rating": "4.0",
+        "rating_count": "3",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDk0MDQxLnBuZw==/original/k4ENEH.png",
+        "tags": [
+            "3D",
+            "Cartoon",
+            "Casual",
+            "Desert",
+            "digging",
+            "First-Person",
+            "Funny",
+            "Incremental",
+            "Relaxing",
+            "satisfying"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:36Z"
+    },
+    {
+        "url": "https://techieopsoss.itch.io/uw-gd130-game",
+        "name": "Feed Me, Earthing!",
+        "dev": "Techie, LanaLiebert, Niswanji, bprn1, BeckWJohnson",
+        "description": "Inventory management puzzle game",
+        "genre": "Puzzle",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 20:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxODY2NjczLnBuZw==/original/b8cJcL.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "inventory-management",
+            "No AI",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:40Z"
+    },
+    {
+        "url": "https://fisheranimal.itch.io/husk",
+        "name": "Husk",
+        "dev": "Fisher",
+        "description": "So it was really, all fine at the end of the day.",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "16 November 2026 @ 23:22 UTC",
+        "rating": "5.0",
+        "rating_count": "9",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDA4NDg1LnBuZw==/original/lw%2BKAv.png",
+        "tags": [
+            "Adult",
+            "epub",
+            "Gore",
+            "Horror",
+            "LGBT",
+            "pdf",
+            "Queer",
+            "Transgender",
+            "zine"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T12:24:42Z"
     }
 ]
