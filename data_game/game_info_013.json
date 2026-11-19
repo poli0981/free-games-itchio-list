@@ -7972,5 +7972,169 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-19T00:24:26Z"
+    },
+    {
+        "url": "https://chromokun.itch.io/volcango",
+        "name": "Volcango",
+        "dev": "chromokun, H.",
+        "description": "Avoid extinction on a volcanic roulette wheel!",
+        "genre": "Strategy",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 16:01 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzI2MTI3NDc2LnBuZw==/original/6Kbx0m.png",
+        "tags": [
+            "2D",
+            "Animals",
+            "Board Game",
+            "Cartoon",
+            "Casual",
+            "Cute",
+            "Indie",
+            "Multiplayer",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Smartphone"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T04:24:11Z"
+    },
+    {
+        "url": "https://mmethodz.itch.io/ember-vault",
+        "name": "Ember Vault",
+        "dev": "mmethodz",
+        "description": "Ember Vault, a hit platformer for C64",
+        "genre": "Platformer",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 11:29 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few seconds",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ1MDI3LnBuZw==/original/84%2B2rC.png",
+        "tags": [
+            "6502",
+            "Commodore 64",
+            "d64",
+            "embervault",
+            "Fantasy"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [
+            "Gamepad (any)",
+            "Joystick"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T04:24:14Z"
+    },
+    {
+        "url": "https://needlehead18g.itch.io/vacancy",
+        "name": "Vacancy",
+        "dev": "NeedleHead18G",
+        "description": "A short R18-G horror game",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 06:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDY5NjM2LnBuZw==/original/%2FqAg8i.png",
+        "tags": [
+            "3D",
+            "ai-coded",
+            "Analog Horror",
+            "guro",
+            "Horror"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T04:24:17Z"
+    },
+    {
+        "url": "https://nevil511.itch.io/pixel-nuee",
+        "name": "Pixel Nuée",
+        "dev": "nevil511",
+        "description": "EN : A contemplative incremental game where thousands of pixels clash in swarms.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 01:22 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDYwNjA1LnBuZw==/original/yvxRnd.png",
+        "tags": [
+            "Ambient",
+            "Boss battle",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Relaxing",
+            "Roguelite",
+            "Short",
+            "Singleplayer",
+            "swarm"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T04:24:21Z"
     }
 ]
