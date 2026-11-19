@@ -8690,5 +8690,298 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-19T12:24:42Z"
+    },
+    {
+        "url": "https://albertnobody.itch.io/fin",
+        "name": "FIN.",
+        "dev": "AlbertNobody",
+        "description": "A Game About Processing Things.",
+        "genre": "Adventure",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 03:32 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDk1NDA2LnBuZw==/original/AvRnKq.png",
+        "tags": [
+            "3D",
+            "Atmospheric",
+            "Exploration",
+            "Horror",
+            "Narrative",
+            "No AI",
+            "Psychological Horror",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:23:45Z"
+    },
+    {
+        "url": "https://andromarinchik.itch.io/just-one-step",
+        "name": "Just One Step",
+        "dev": "andromarinchik",
+        "description": "Interactive Fiction, Sci-fi, Psychological, Choices Matter, Visual Novel",
+        "genre": "Interactive Fiction",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 00:49 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTA4NjkyLnBuZw==/original/RQEdp5.png",
+        "tags": [
+            "Choices Matter",
+            "Psychological",
+            "Sci-fi"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:23:48Z"
+    },
+    {
+        "url": "https://mangleds.itch.io/your-life-is-at-the-door",
+        "name": "Your Life Is At The Door",
+        "dev": "MANGLED",
+        "description": "Geim",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 23:42 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTA3NDAxLnBuZw==/original/2arZbI.png",
+        "tags": [
+            "3D",
+            "Cozy",
+            "Experimental",
+            "Horror",
+            "PSX (PlayStation)",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:23:52Z"
+    },
+    {
+        "url": "https://o-oualid.itch.io/that-time-i-let-a-cat-inside-my-house-while-i-was-depressed",
+        "name": "That Time I Let a Cat Inside My House While I Was Depressed",
+        "dev": "Oualid, Blatnik, kou, Tfen, stukjeaardbei",
+        "description": "Keyboard: WASD to move E to interact Xbox Game pad: left stick to move, A to interact",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 00:09 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTA3ODAxLnBuZw==/original/p9upct.png",
+        "tags": [
+            "2D",
+            "Pixel Art"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:23:56Z"
+    },
+    {
+        "url": "https://oxymorondev.itch.io/dying",
+        "name": "dying",
+        "dev": "oxymoron",
+        "description": "not a game.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 20:54 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTAxNDUzLnBuZw==/original/4U6uh%2B.png",
+        "tags": [
+            "No AI",
+            "RPG Maker",
+            "RPG Maker MV",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "One button"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:23:59Z"
+    },
+    {
+        "url": "https://piggyirl.itch.io/underclassmen-panic",
+        "name": "Underclassmen Panic!",
+        "dev": "Piggy",
+        "description": "Underclassmen Panic!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 01:06 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTA4ODAwLnBuZw==/original/cKvDGg.png",
+        "tags": [
+            "kingdom-hearts",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:24:02Z"
+    },
+    {
+        "url": "https://sukakanger.itch.io/wuxian",
+        "name": "WuXian",
+        "dev": "SukaKanger",
+        "description": "一支四人小队，二十七天，穿过一张地图上没有的雨林。 《雾线》是一部兽人题材的视觉小说。四名队员带着一张残缺的地图进入雨林，去找一座「从地图上消失」的旧站。二十七天，一条共同线加三条恋爱线，28 章，8 个结局。 全程免费，无内购、无广告、无付费墙。代码 MIT，原创剧情 CC BY 4.0。 · 游戏内「笔记本」随每一局记录你查到的情报：当前任务、路线、章节、四个人的好感 ·...",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "18 November 2026 @ 21:00 UTC",
+        "rating": "3.3",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTAxNTU2LnBuZw==/original/86wKx9.png",
+        "tags": [
+            "Bara",
+            "chinese",
+            "free",
+            "Furry",
+            "LGBT",
+            "Ren'Py",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:24:05Z"
+    },
+    {
+        "url": "https://wildlae.itch.io/out-of-service-beta",
+        "name": "out of service beta",
+        "dev": "wildlae",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 00:13 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTA3MjM3LnBuZw==/original/3d9Iwk.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-19T16:24:10Z"
     }
 ]
