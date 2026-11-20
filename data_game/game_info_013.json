@@ -7983,7 +7983,7 @@
         "publisher": "N/A",
         "release_date": "18 November 2026 @ 16:01 UTC",
         "rating": "5.0",
-        "rating_count": "1",
+        "rating_count": "2",
         "average_session": "A few minutes",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzI2MTI3NDc2LnBuZw==/original/6Kbx0m.png",
@@ -8030,7 +8030,7 @@
         "publisher": "N/A",
         "release_date": "18 November 2026 @ 11:29 UTC",
         "rating": "5.0",
-        "rating_count": "3",
+        "rating_count": "4",
         "average_session": "A few seconds",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDQ1MDI3LnBuZw==/original/84%2B2rC.png",
@@ -8053,7 +8053,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-19T04:24:14Z"
+        "added_at": "2026-11-19T04:24:14Z",
+        "updated_at": "19 November 2026 @ 14:53 UTC"
     },
     {
         "url": "https://needlehead18g.itch.io/vacancy",
@@ -8102,8 +8103,8 @@
         "status": "Released",
         "publisher": "N/A",
         "release_date": "18 November 2026 @ 01:22 UTC",
-        "rating": "5.0",
-        "rating_count": "2",
+        "rating": "4.5",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDYwNjA1LnBuZw==/original/yvxRnd.png",
@@ -8132,10 +8133,15 @@
             "Sounds",
             "Text"
         ],
-        "accessibility": [],
+        "accessibility": [
+            "Configurable controls",
+            "Interactive tutorial",
+            "One button"
+        ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-19T04:24:21Z"
+        "added_at": "2026-11-19T04:24:21Z",
+        "updated_at": "20 November 2026 @ 01:07 UTC"
     },
     {
         "url": "https://fleetingglance.itch.io/homebrew-antiques",
@@ -8384,7 +8390,8 @@
         "accessibility": [],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-19T12:24:17Z"
+        "added_at": "2026-11-19T12:24:17Z",
+        "updated_at": "19 November 2026 @ 22:25 UTC"
     },
     {
         "url": "https://buas.itch.io/icarus",
@@ -8479,7 +8486,7 @@
         "publisher": "N/A",
         "release_date": "N/A",
         "rating": "4.7",
-        "rating_count": "9",
+        "rating_count": "10",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzIwOTE3MDQ0LmdpZg==/original/ZHEEgU.gif",
@@ -8576,8 +8583,8 @@
         "status": "In development",
         "publisher": "N/A",
         "release_date": "18 November 2026 @ 20:19 UTC",
-        "rating": "4.0",
-        "rating_count": "3",
+        "rating": "4.6",
+        "rating_count": "9",
         "average_session": "About a half-hour",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNDk0MDQxLnBuZw==/original/k4ENEH.png",
@@ -8879,7 +8886,8 @@
         ],
         "safe_virus": "?",
         "notes": "",
-        "added_at": "2026-11-19T16:23:59Z"
+        "added_at": "2026-11-19T16:23:59Z",
+        "updated_at": "19 November 2026 @ 21:14 UTC"
     },
     {
         "url": "https://piggyirl.itch.io/underclassmen-panic",
@@ -9036,7 +9044,7 @@
         "publisher": "N/A",
         "release_date": "19 November 2026 @ 01:50 UTC",
         "rating": "5.0",
-        "rating_count": "3",
+        "rating_count": "4",
         "average_session": "N/A",
         "nsfw": "No",
         "thumbnail": "https://img.itch.zone/aW1nLzMyNTEwMDE1LnBuZw==/original/ihS52H.png",

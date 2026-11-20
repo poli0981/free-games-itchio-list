@@ -1138,5 +1138,23 @@
         "name": "The Shepherdex",
         "reason": "Game became paid",
         "deleted_at": "2026-11-16T02:51:38Z"
+    },
+    {
+        "url": "https://metoko.itch.io/hello-hello-world",
+        "name": "HELLO, HELLO WORLD!",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-20T02:50:43Z"
+    },
+    {
+        "url": "https://sad3d.itch.io/routine-feat",
+        "name": "Routine Feat",
+        "reason": "Game became paid",
+        "deleted_at": "2026-11-20T02:50:50Z"
+    },
+    {
+        "url": "https://someghost0.itch.io/the-ghostly-hour-diner",
+        "name": "The Ghostly Hour Diner",
+        "reason": "Game page no longer exists (HTTP 404)",
+        "deleted_at": "2026-11-20T02:50:56Z"
     }
 ]
