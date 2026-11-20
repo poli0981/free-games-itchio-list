@@ -9096,5 +9096,218 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-19T20:23:40Z"
+    },
+    {
+        "url": "https://game-nova-studios.itch.io/baby-islandfear-stays-in-heart",
+        "name": "Baby Island:Fear Stays In Heart",
+        "dev": "GameNova",
+        "description": "🏝️ BABY ISLAND: FEAR STAYS IN HEART A mysterious island.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 11:21 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMwMDk3OTUwLnBuZw==/original/LlAKAp.png",
+        "tags": [
+            "2D",
+            "Horror",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T00:23:43Z"
+    },
+    {
+        "url": "https://huntress-mds.itch.io/sapphire-seas",
+        "name": "Sapphire Seas; sleeping with the fishes",
+        "dev": "Huntress-MDS, Chortle",
+        "description": "A short dating sim proof of concept where you date a mermaid, as a mermaid!",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 06:28 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTE2ODc5LnBuZw==/original/DyJM1Q.png",
+        "tags": [
+            "2D",
+            "No AI",
+            "Side Scroller"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T00:23:47Z"
+    },
+    {
+        "url": "https://jewelswithwings.itch.io/vibe-check-fall",
+        "name": "Villainess Idolized By Everyone: Fervent Advent, Leisurely Lull",
+        "dev": "JewelswithWings",
+        "description": "There's a hurricane tonight",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 06:12 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDk2NDg5LnBuZw==/original/RrOeWp.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Fantasy",
+            "Female Protagonist",
+            "Otome",
+            "Romance",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Ren'Py",
+            "Krita"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T00:23:50Z"
+    },
+    {
+        "url": "https://paleta-studio.itch.io/horror-simulator",
+        "name": "Horror Simulator",
+        "dev": "Paleta Studio",
+        "description": "Simulaciones que dan miedo (o eso espero)",
+        "genre": "Survival",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 09:50 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTIxNDk1LnBuZw==/original/sDpi2O.png",
+        "tags": [
+            "Horror",
+            "No AI"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T00:23:53Z"
+    },
+    {
+        "url": "https://vaelionkrysto.itch.io/vydilmir-10",
+        "name": "Vydilmir 1.0",
+        "dev": "vaelion.krysto",
+        "description": "N/A",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 09:16 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDk4MDU2LnBuZw==/original/u6KPNR.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T00:23:56Z"
+    },
+    {
+        "url": "https://yukarifoxy.itch.io/the-girl-behind-the-blurred-glass",
+        "name": "The Girl Behind the Blurred Glass",
+        "dev": "YukariFoxy",
+        "description": "The Girl Behind the Blurred Glass This is the story of Sarah, a transgender woman who constantly struggles with the burden of how she used to look.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 00:36 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTA3OTkwLnBuZw==/original/WUMHh5.png",
+        "tags": [
+            "Indie",
+            "LGBT",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T00:24:00Z"
     }
 ]
