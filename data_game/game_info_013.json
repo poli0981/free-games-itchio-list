@@ -10482,5 +10482,383 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-20T16:24:13Z"
+    },
+    {
+        "url": "https://0piat3.itch.io/found",
+        "name": "FOUND",
+        "dev": "0piat3",
+        "description": "A retro low-poly survival horror game. Scavenge, craft, and survive the terrors of an uncharted island.",
+        "genre": "Survival",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxMTI1OTQzLmpwZw==/original/0vGQ%2FJ.jpg",
+        "tags": [
+            "3D",
+            "Co-op",
+            "Crafting",
+            "Horror",
+            "local",
+            "Multiplayer",
+            "Singleplayer",
+            "Zombies"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Turkish"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [
+            "Subtitles",
+            "Configurable controls",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 November 2026 @ 12:51 UTC",
+        "added_at": "2026-11-20T20:23:35Z"
+    },
+    {
+        "url": "https://bloofbloof.itch.io/hypnotica-quest",
+        "name": "Hypnotica Quest",
+        "dev": "Bloof",
+        "description": "A strange hypnotic adventure in an even stranger little town",
+        "genre": "Role Playing",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "3.9",
+        "rating_count": "13",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzE1NTM5MjI0LnBuZw==/original/8VXwqp.png",
+        "tags": [
+            "Cute",
+            "GameMaker",
+            "hypno",
+            "hypnosis",
+            "meditation",
+            "Pixel Art",
+            "Relaxing",
+            "Sci-fi",
+            "Top Down Adventure",
+            "Walking simulator"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "N/A",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 November 2026 @ 00:38 UTC",
+        "added_at": "2026-11-20T20:23:39Z"
+    },
+    {
+        "url": "https://brani-dev.itch.io/grand-theft-bratislava",
+        "name": "Grand Theft Bratislava",
+        "dev": "Brani_Dev",
+        "description": "SK Grand Theft Bratislava – GTB Otvorený svet Bratislavy v štýle GTA, priamo v prehliadači.",
+        "genre": "Action",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 21:10 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTQ2MzM1LnBuZw==/original/cSaPeU.png",
+        "tags": [
+            "AI Assisted",
+            "Cars",
+            "Driving",
+            "Low-poly",
+            "Open World",
+            "Roblox"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T20:23:43Z"
+    },
+    {
+        "url": "https://cynicalic.itch.io/the-cursed-reliquary",
+        "name": "The Cursed Reliquary",
+        "dev": "cynicalic",
+        "description": "A dark-fantasy idle mining game. Your Thralls dig, you forge, and something is buried below.",
+        "genre": "Simulation",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 14:17 UTC",
+        "rating": "3.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTMxMDg0LmpwZw==/original/2qJcQ8.jpg",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "Clicker",
+            "Dark Fantasy",
+            "Idle",
+            "Incremental",
+            "Mining",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T20:23:45Z"
+    },
+    {
+        "url": "https://datoast815.itch.io/payter-jriffin-boss-fight",
+        "name": "Payter Jriffin Boss Fight",
+        "dev": "DaToast815",
+        "description": "Fight against Payter Jriffin and his legally distinct family, friends, and other dudes",
+        "genre": "Shooter",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 04:50 UTC",
+        "rating": "5.0",
+        "rating_count": "3",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTU5NzcxLnBuZw==/original/NinhtQ.png",
+        "tags": [
+            "2D",
+            "Boss Fight",
+            "Fangame",
+            "No AI",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T20:23:48Z"
+    },
+    {
+        "url": "https://growsmith.itch.io/oldgarments",
+        "name": "Old Garments",
+        "dev": "growsmith",
+        "description": "Be careful with secondhand clothes-- especially when dressing as a giant vampire <3",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 02:34 UTC",
+        "rating": "1.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTU2NTYxLnBuZw==/original/MX2IqU.png",
+        "tags": [
+            "ass-expansion",
+            "breast-expansion",
+            "expansion",
+            "giantess",
+            "giantess-growth",
+            "growth",
+            "size"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T20:23:51Z"
+    },
+    {
+        "url": "https://littlelanterngamestudio.itch.io/you-greedy-goblin",
+        "name": "You Greedy Goblin",
+        "dev": "littlelanterngamestudio",
+        "description": "Small pan. Greedy goblin. Terrible odds. Back to the dungeon.",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 13:49 UTC",
+        "rating": "4.0",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTQwMzgwLnBuZw==/original/%2FevVbw.png",
+        "tags": [
+            "2D",
+            "Cozy",
+            "Fantasy",
+            "Incremental",
+            "Mining",
+            "Pixel Art",
+            "Roguelike",
+            "Roguelite",
+            "Short",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 November 2026 @ 15:57 UTC",
+        "added_at": "2026-11-20T20:23:55Z"
+    },
+    {
+        "url": "https://steamkensui.itch.io/pan-to-riches",
+        "name": "Pan to Riches",
+        "dev": "steam.kensui",
+        "description": "Dig dirt, swirl your pan, smelt gold bars and build a gold rush empire.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 13:04 UTC",
+        "rating": "4.5",
+        "rating_count": "2",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTI4MzQyLnBuZw==/original/w6vKQ0.png",
+        "tags": [
+            "3D",
+            "Clicker",
+            "gold",
+            "Idle",
+            "Incremental",
+            "Mining",
+            "Relaxing",
+            "Singleplayer",
+            "Tycoon"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T20:23:58Z"
+    },
+    {
+        "url": "https://tovrick.itch.io/sword-fight",
+        "name": "Sword Fight",
+        "dev": "Tovrick",
+        "description": "Idle sword-fighting and management game where you train disciples, duel rivals and build schools",
+        "genre": "Strategy",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 20:42 UTC",
+        "rating": "4.5",
+        "rating_count": "6",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDQxOTU4LmpwZw==/original/Jh1Qow.jpg",
+        "tags": [
+            "2D",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Moddable",
+            "Singleplayer",
+            "Swords"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T20:24:02Z"
     }
 ]
