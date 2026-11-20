@@ -10076,5 +10076,411 @@
         "safe_virus": "?",
         "notes": "",
         "added_at": "2026-11-20T12:24:19Z"
+    },
+    {
+        "url": "https://alonebythesea.itch.io/when-summers-gone",
+        "name": "when summer's gone",
+        "dev": "alonebythesea",
+        "description": "a 2D narrative game on academic burnout and anxiety awareness.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 02:22 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTU2NzI3LnBuZw==/original/9JfRKx.png",
+        "tags": [
+            "2D",
+            "Atmospheric",
+            "No AI",
+            "Pixel Art",
+            "RPG Maker",
+            "School",
+            "Short"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "RPG Maker"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:23:39Z"
+    },
+    {
+        "url": "https://anoverlycomplexusername.itch.io/myosotic",
+        "name": "Myosotic",
+        "dev": "AnOverlyComplexUsername",
+        "description": "use music to restore memories",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 00:16 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTUzMzY0LnBuZw==/original/VKz%2B6R.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "Music",
+            "Singleplayer"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:23:43Z"
+    },
+    {
+        "url": "https://bartsimoon.itch.io/doki-leaf-sim",
+        "name": "DOKI leaf simulator",
+        "dev": "bart",
+        "description": "A short unpolished visual novel about a self aware AI (˶>⩊<˶)",
+        "genre": "Visual Novel",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 21:33 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "Yes",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTQ1MjEwLnBuZw==/original/9RXsK8.png",
+        "tags": [
+            "Comedy",
+            "Horror",
+            "Parody",
+            "Prototype",
+            "Ren'Py",
+            "Retro",
+            "Short",
+            "weird",
+            "Yaoi"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:23:47Z"
+    },
+    {
+        "url": "https://gnatjb.itch.io/bread-adventure",
+        "name": "Bread Adventure",
+        "dev": "gnat",
+        "description": "make sourdough as dogs",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 23:03 UTC",
+        "rating": "5.0",
+        "rating_count": "4",
+        "average_session": "A few minutes",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTUwODU5LmdpZg==/original/r5OP7c.gif",
+        "tags": [
+            "2D",
+            "Animals",
+            "Cute",
+            "LGBT",
+            "Pixel Art",
+            "Short",
+            "Story Rich",
+            "Yuri"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "bitsy"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:23:51Z"
+    },
+    {
+        "url": "https://kanoseiii.itch.io/iris",
+        "name": "Iris",
+        "dev": "Kitsuna",
+        "description": "20 days until graduation, and you can't remember a thing. A 2D visual novel about memory, connection, and guilt.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 21:52 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTQ4ODQ2LnBuZw==/original/UhoRat.png",
+        "tags": [
+            "2D",
+            "Godot",
+            "No AI",
+            "Pixel Art",
+            "storygame",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:23:55Z"
+    },
+    {
+        "url": "https://kidrom.itch.io/someone-like-me",
+        "name": "Someone Like Me",
+        "dev": "KID",
+        "description": "Some things are easier to write down than to say out loud.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 23:01 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTQ5NTA4LnBuZw==/original/5S%2FMDk.png",
+        "tags": [
+            "Atmospheric",
+            "Cozy",
+            "Indie",
+            "No AI",
+            "Point & Click",
+            "Ren'Py",
+            "Transgender"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:23:59Z"
+    },
+    {
+        "url": "https://mrd2.itch.io/our-final-year",
+        "name": "Our Final Year",
+        "dev": "Mr.D22",
+        "description": "🎮 About the Game: Our Final Year Step into an emotional, choice-driven visual novel where every decision shapes your relationships, memories, and future.",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 21:20 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTQ3NjUwLnBuZw==/original/2f6D48.png",
+        "tags": [
+            "2D",
+            "Anime",
+            "Choices Matter",
+            "Drama",
+            "Ren'Py",
+            "Romance",
+            "School",
+            "Story Rich"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:24:02Z"
+    },
+    {
+        "url": "https://nerdgirl-art.itch.io/blind-dating",
+        "name": "Blind Dating!",
+        "dev": "nerdgirl_art",
+        "description": "HEY YOU!",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 23:59 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDc1ODg4LnBuZw==/original/1ocvZQ.png",
+        "tags": [
+            "2D",
+            "Casual",
+            "Cozy",
+            "Cute",
+            "Dating Sim",
+            "Indie",
+            "Short"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:24:05Z"
+    },
+    {
+        "url": "https://pinknarcissus.itch.io/save-the-girl",
+        "name": "Save The Girl",
+        "dev": "Pink Narcissus",
+        "description": "Save The Girl",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 22:24 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTEzNDY5LnBuZw==/original/q23Mbr.png",
+        "tags": [
+            "Furry",
+            "Horror",
+            "LGBT",
+            "Narrative",
+            "Queer",
+            "Short",
+            "Surreal"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Subtitles",
+            "Blind friendly"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:24:09Z"
+    },
+    {
+        "url": "https://someylette.itch.io/the-squire",
+        "name": "The Squire",
+        "dev": "someylette",
+        "description": "Help the Squire out of the dungeon!",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "19 November 2026 @ 15:06 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTMzMDEwLnBuZw==/original/tWtUvG.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Fantasy",
+            "Indie",
+            "Medieval",
+            "No AI",
+            "Pixel Art",
+            "Singleplayer",
+            "wareware"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-20T16:24:13Z"
     }
 ]
