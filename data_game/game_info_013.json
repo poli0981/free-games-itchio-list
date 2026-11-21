@@ -10862,5 +10862,481 @@
         "notes": "",
         "added_at": "2026-11-20T20:24:02Z",
         "updated_at": "20 November 2026 @ 23:06 UTC"
+    },
+    {
+        "url": "https://adriankiller17.itch.io/the-fifth-choice",
+        "name": "The Fifth Choice",
+        "dev": "AdrianKiller17",
+        "description": "Cinco hermanas. Un tutor. Cada elección pesa.",
+        "genre": "Visual Novel",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 14:19 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "A few hours",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTAyNTc2LnBuZw==/original/nsEHya.png",
+        "tags": [
+            "Anime",
+            "Choices Matter",
+            "Dating Sim",
+            "Fangame",
+            "minigames",
+            "Multiple Endings",
+            "Ren'Py",
+            "Romance",
+            "Slice Of Life"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android"
+        ],
+        "languages": [
+            "Spanish; Latin America"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Ren'Py"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:32Z"
+    },
+    {
+        "url": "https://alexisgelin.itch.io/last-ember",
+        "name": "Last Embers : Fire Hero",
+        "dev": "Alexis, Ravenlore",
+        "description": "Put out the fire!",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 14:12 UTC",
+        "rating": "4.8",
+        "rating_count": "16",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTg1MDM4LmpwZw==/original/9qhnIz.jpg",
+        "tags": [
+            "100",
+            "2D",
+            "completion",
+            "Fire",
+            "Incremental",
+            "minimap",
+            "Pixel Art",
+            "skilltree"
+        ],
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Korean",
+            "Dutch",
+            "Polish",
+            "Portuguese (Portugal)",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Chinese (Simplified)"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse",
+            "Xbox controller",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "Unity"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [
+            "Configurable controls",
+            "Interactive tutorial",
+            "Textless"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:34Z"
+    },
+    {
+        "url": "https://angyeety.itch.io/aion2-zikel-practice",
+        "name": "Aion2 Ludra Sanctuary Zikel Practice",
+        "dev": "angyeety",
+        "description": "Practice Aion2 Ludra Sanctuary Zikel Mech",
+        "genre": "N/A",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 18:34 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTg1ODk2LnBuZw==/original/jPwKt1.png",
+        "tags": [],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:38Z"
+    },
+    {
+        "url": "https://asobiei.itch.io/phobophilia-syndrome",
+        "name": "恐怖愛好症 - Phobophilia Syndrome-",
+        "dev": "asouei",
+        "description": "バッドエンドロールのその後の物語",
+        "genre": "Visual Novel",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 15:54 UTC",
+        "rating": "N/A",
+        "rating_count": "N/A",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNDMwODE1LnBuZw==/original/hdPHRF.png",
+        "tags": [
+            "Dark",
+            "Horror",
+            "Multiple Endings",
+            "Psychological Horror",
+            "scp",
+            "Text based"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:40Z"
+    },
+    {
+        "url": "https://billable-hours-games.itch.io/next-year-on-mars",
+        "name": "Next Year on Mars",
+        "dev": "Billable Hours Games",
+        "description": "Grow food on Mars, pack it into capsules and launch it to Earth.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 12:05 UTC",
+        "rating": "4.0",
+        "rating_count": "1",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTYyODQwLnBuZw==/original/tYYzT8.png",
+        "tags": [
+            "Casual",
+            "Cozy",
+            "Farming",
+            "Idle",
+            "Incremental",
+            "Management",
+            "mars",
+            "Pixel Art",
+            "Relaxing",
+            "Space"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "German",
+            "English",
+            "Spanish; Castilian",
+            "French",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Russian",
+            "Turkish",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Aseprite"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:44Z"
+    },
+    {
+        "url": "https://iosifislove.itch.io/slime-cleaning-idle",
+        "name": "Slime Cleaning Idle",
+        "dev": "iosifislove",
+        "description": "Clean up the dungeon after noisy adventurers!",
+        "genre": "Simulation",
+        "status": "Prototype",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 10:56 UTC",
+        "rating": "4.4",
+        "rating_count": "8",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyMjY2NjAzLnBuZw==/original/Gm1%2B1d.png",
+        "tags": [
+            "2D",
+            "Cute",
+            "Fantasy",
+            "Godot",
+            "Idle",
+            "Incremental",
+            "Pixel Art",
+            "Slime",
+            "Top-Down",
+            "upgrades"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English"
+        ],
+        "inputs": [
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:48Z"
+    },
+    {
+        "url": "https://ryn-d3v.itch.io/gambleborn",
+        "name": "Gambleborn",
+        "dev": "Ryn",
+        "description": "Slot-machine deckbuilder with a gun",
+        "genre": "Card Game",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "N/A",
+        "rating": "4.8",
+        "rating_count": "26",
+        "average_session": "About an hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMxNDQ4ODIyLmdpZg==/original/7dd0Rg.gif",
+        "tags": [
+            "Dark Fantasy",
+            "Deck Building",
+            "Dungeon Crawler",
+            "First-Person",
+            "Gambling",
+            "Roguelike",
+            "Roguelite",
+            "slots",
+            "Turn-based",
+            "Turn-Based Combat"
+        ],
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "languages": [
+            "English",
+            "Russian"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Mouse"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "No AI",
+        "ai_content": [],
+        "accessibility": [
+            "Color-blind friendly",
+            "Subtitles",
+            "High-contrast",
+            "Interactive tutorial"
+        ],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 November 2026 @ 19:44 UTC",
+        "added_at": "2026-11-21T12:23:52Z"
+    },
+    {
+        "url": "https://team-xf.itch.io/xeno-fighters-r",
+        "name": "Xeno Fighters R",
+        "dev": "Team XF",
+        "description": "Shmup fangame inspired by the Raiden Fighters series by Seibu Kaihatsu.",
+        "genre": "Shooter",
+        "status": "In development",
+        "publisher": "N/A",
+        "release_date": "22 August 2022 @ 07:00 UTC",
+        "rating": "4.9",
+        "rating_count": "24",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzExNTcwOTcyLnBuZw==/original/bbJZtu.png",
+        "tags": [
+            "2D",
+            "Arcade",
+            "Fangame",
+            "freeware",
+            "Shoot 'Em Up",
+            "Top down shooter"
+        ],
+        "platforms": [
+            "Windows"
+        ],
+        "languages": [
+            "English",
+            "Japanese"
+        ],
+        "inputs": [
+            "Keyboard",
+            "Gamepad (any)"
+        ],
+        "made_with": [
+            "GameMaker"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code",
+            "Graphics",
+            "Sounds",
+            "Text"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "updated_at": "20 November 2026 @ 12:28 UTC",
+        "added_at": "2026-11-21T12:23:56Z"
+    },
+    {
+        "url": "https://terabyte84.itch.io/toothpick-inc",
+        "name": "Toothpick Inc.",
+        "dev": "Terabyte - Mario Laganà",
+        "description": "A completely free idle strategy game about grandpa's toothpick workshop. First act in your browser.",
+        "genre": "Simulation",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "26 October 2026 @ 23:00 UTC",
+        "rating": "5.0",
+        "rating_count": "2",
+        "average_session": "About a half-hour",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTY3MTI5LnBuZw==/original/bmfJoM.png",
+        "tags": [
+            "Clicker",
+            "Idle",
+            "Incremental",
+            "Management",
+            "Story Rich"
+        ],
+        "platforms": [
+            "HTML5"
+        ],
+        "languages": [
+            "English",
+            "Spanish; Latin America",
+            "Italian",
+            "Portuguese (Brazil)"
+        ],
+        "inputs": [
+            "Mouse",
+            "Touchscreen"
+        ],
+        "made_with": [
+            "Godot"
+        ],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:23:58Z"
+    },
+    {
+        "url": "https://thall72.itch.io/krakout-amiga-aga-enhanced-edition",
+        "name": "Krakout – Amiga AGA Enhanced Edition",
+        "dev": "thall72",
+        "description": "Gremlin’s 1987 C64 classic, rebuilt for the A1200 with 256-colour graphics and arranged music.",
+        "genre": "Action",
+        "status": "Released",
+        "publisher": "N/A",
+        "release_date": "20 November 2026 @ 16:07 UTC",
+        "rating": "5.0",
+        "rating_count": "1",
+        "average_session": "N/A",
+        "nsfw": "No",
+        "thumbnail": "https://img.itch.zone/aW1nLzMyNTc5NDg5LnBuZw==/original/DpFTCF.png",
+        "tags": [
+            "Amiga",
+            "amiga-1200-aga",
+            "Arcade",
+            "Breakout",
+            "Commodore 64",
+            "port",
+            "Retro"
+        ],
+        "platforms": [],
+        "languages": [],
+        "inputs": [],
+        "made_with": [],
+        "ai_disclosure": "AI Assisted",
+        "ai_content": [
+            "Code"
+        ],
+        "accessibility": [],
+        "safe_virus": "?",
+        "notes": "",
+        "added_at": "2026-11-21T12:24:02Z"
     }
 ]
